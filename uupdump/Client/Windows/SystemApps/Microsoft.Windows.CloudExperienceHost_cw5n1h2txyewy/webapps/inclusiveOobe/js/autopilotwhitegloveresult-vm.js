@@ -14,6 +14,9 @@ define([
     class WhiteGloveResultViewModel {
         constructor(resourceStrings) {
             this.enterpriseManagementWorker = new EnterpriseDeviceManagement.Enrollment.ReflectedEnroller();
+            this.autopilotDiagnostics = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("MdmLogFix") ?
+                new CloudExperienceHostAPI.Diagnostics.AutopilotDiagnostics() :
+                this.enterpriseManagementWorker;
             this.pluginManager = new CloudExperienceHostAPI.Provisioning.PluginManager();
             this.autoPilotManager = new EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotServer();
             this.deviceManagementUtilities = new ModernDeployment.Autopilot.Core.DeviceManagementUtilities();
@@ -256,7 +259,7 @@ define([
                 this.subHeaderText(this.resourceStrings.CollectingLogsSpinnerText);
                 this.errorMessage(this.resourceStrings.CollectingLogsSpinnerText);
 
-                yield this.enterpriseManagementWorker.collectLogsEx(area, folderPath + file);
+                yield this.autopilotDiagnostics.collectLogsEx(area, folderPath + file);
 
                 this.isResetButtonDisabled(false);
                 this.isDiagnosticsDisabled(false);

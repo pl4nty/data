@@ -46,14 +46,8 @@ define(['lib/knockout', 'legacy/bridge',
     }
     let gamepadLegendEnabled = initializeIsGamepadLegendEnabled();
 
-    function initializeIsOOBEDeviceFormEnabled() {
-        let deviceFormEnabledObj = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("OOBEDeviceForm");
-        return (deviceFormEnabledObj.result && deviceFormEnabledObj.value);
-    }
-    let deviceFormEnabledOobe = initializeIsOOBEDeviceFormEnabled();
-
     let currentKeyInputModality;
-    if (gamepadEnabledOobe && deviceFormEnabledOobe) {
+    if (gamepadEnabledOobe) {
         currentKeyInputModality = "keyboard";
         if (CloudExperienceHostAPI.Environment.deviceForm === CloudExperienceHost.TargetDevice.HANDHELD) {
             currentKeyInputModality = "gamepad";
@@ -297,7 +291,7 @@ define(['lib/knockout', 'legacy/bridge',
             iFrameDocument.write(value.content);
             iFrameDocument.close();
 
-            if (gamepadEnabledOobe && deviceFormEnabledOobe) {
+            if (gamepadEnabledOobe) {
                 let updateTabIndexBasedOnInputModality = () => {
                     if (currentKeyInputModality === "gamepad") {
                         iFrameElement.setAttribute("tabindex", "0");
@@ -315,7 +309,7 @@ define(['lib/knockout', 'legacy/bridge',
             iFrameDocument.dir = value.dir;
             iFrameDocument.body.setAttribute("tabindex", "0");
             if (value.focusBody) {
-                if (gamepadEnabledOobe && deviceFormEnabledOobe) {
+                if (gamepadEnabledOobe) {
                     if (currentKeyInputModality === "gamepad") {
                         iFrameElement.focus();
                     }
@@ -339,12 +333,12 @@ define(['lib/knockout', 'legacy/bridge',
             if (value.frameTitle) {
                 iFrameDocument.title = value.frameTitle;
 
-                if (gamepadEnabledOobe && deviceFormEnabledOobe) {
+                if (gamepadEnabledOobe) {
                     iFrameElement.title = value.frameTitle;
                 }
             }
 
-            if (gamepadEnabledOobe && deviceFormEnabledOobe) {
+            if (gamepadEnabledOobe) {
                 let setPseudoFocus = () => {
                     iFrameElement.classList.add("pseudo-focused");
                     iFrameDocument.body.classList.add("pseudo-focused");

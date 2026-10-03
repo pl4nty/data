@@ -188,7 +188,7 @@ define([
                         }, this.PAGE_UNIVERSAL_TIMEOUT_MILLISECONDS);
 
                         let outputLogFilePath = folderPath + "\\" + this.DIAGNOSTICS_LOGS_EXPORT_FILE_NAME;
-                        return this.sessionUtilities.enrollmentApis.collectLogsEx(logsAreaValue, outputLogFilePath).then(() => {
+                        return this.sessionUtilities.autopilotDiagnostics.collectLogsEx(logsAreaValue, outputLogFilePath).then(() => {
                             if (hasTimedOut) {
                                 return;
                             }

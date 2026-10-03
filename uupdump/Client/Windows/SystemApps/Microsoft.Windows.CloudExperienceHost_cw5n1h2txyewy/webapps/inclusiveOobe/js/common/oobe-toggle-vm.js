@@ -29,11 +29,7 @@ define(["legacy/bridge"], (bridge) => {
             element.addEventListener("pointerdown", this.onPointerDown, true /*useCapture*/ );
 
             this.keydownHandler = this.onKeyDown.bind(this);
-            bridge.invoke("CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled", "DisableToggleOnArrowKeys").done(function (result) {
-                if (result) {
-                    this.element.addEventListener("keydown", this.keydownHandler, true /*useCapture*/);
-                }
-            }.bind(this));
+            element.addEventListener("keydown", this.keydownHandler, true /*useCapture*/);
         }
 
         onKeyDown(ev) {

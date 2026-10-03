@@ -5,6 +5,9 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
 
             this.resourceStrings = resourceStrings;
             this.enterpriseManagementWorker = new EnterpriseDeviceManagement.Enrollment.ReflectedEnroller();
+            this.autopilotDiagnostics = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("MdmLogFix") ?
+                new CloudExperienceHostAPI.Diagnostics.AutopilotDiagnostics() :
+                this.enterpriseManagementWorker;
             this.autoPilotSubscriptionManager = new EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotWnfSubscriptionManager();
             this.tpmNotificationManager = new ModernDeployment.Autopilot.Core.TpmNotification();
             this.autoPilotManager = new EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotServer();
@@ -448,7 +451,7 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
         collectLogsButtonClick() {
             bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_ProvisioningProgressPage_CollectLogs_Chosen");
             bridge.invoke("CloudExperienceHost.showFolderPicker").then(function (folderPath) {
-                this.enterpriseManagementWorker.collectLogs(folderPath).then(function () {
+                this.autopilotDiagnostics.collectLogs(folderPath).then(function () {
                 }, function (e) {
                     this.logFailureEvent("UnifiedEnrollment_ProvisioningProgressPage_CollectLogs_Failed", e);
                 });

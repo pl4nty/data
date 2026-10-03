@@ -1752,11 +1752,6 @@
             "successID": "OobeEulaAutoPilot",
             "cancelID": "OobeEulaAutoPilot",
             "abortID": "OobeEulaAutoPilot",
-            "disableBackNavigationToNode": {
-              "value": true,
-              "overrideValue": false,
-              "overrideFeature": "BackNavigationToEulaPage"
-            },
             "visibility": false
         },
         "OobeEulaAutoPilot": {
@@ -1967,7 +1962,6 @@
             "urlint": "https://sdx.microsoft-int.com/frx/cloud-backup-restore-aad",
             "preloadCheck": "CloudExperienceHost.BackupRestore.OobeAadCloudBackupRestore",
             "preloadCheckSkipOnFailure": true,
-            "requiredFeatureName": "OOBERestoreFlowControlforAAD",
             "supportedSignInIdentityProviders": [ "aad" ],
             "internetRequired": true,
             "skipReconnectHandler": true,
@@ -2167,10 +2161,23 @@
             "launcher": "js:OOBEReboot",
             "disableBackNavigationToNode": true,
             "visibility": false,
-            "successID": "OobeMSAValueProp",
+            "successID": "OobePrepTransitionToWoahConsumerAccounts",
+            "failID": "OobePrepTransitionToWoahConsumerAccounts",
+            "cancelID": "OobePrepTransitionToWoahConsumerAccounts",
+            "abortID": "OobePrepTransitionToWoahConsumerAccounts"
+        },
+        "OobePrepTransitionToWoahConsumerAccounts": {
+            "cxid": "OobePrepTransitionToWoahConsumerAccounts",
+            "launcher": "js:OobePrepTransitionToNextApp",
+            "requiredFeatureName": "ConsumerOobeMSAAndLocalTransitionReadiness_ShellHost",
+            "preloadCheck": "CloudExperienceHost.AccountAndServicesMSA.ConsumerAccountUndocking",
+            "preloadCheckSkipOnFailure": true,
+            "canExitCxh": true,
+            "disableBackNavigationToNode": true,
+            "disableErrorPageOnFailure": true,
+            "visibility": false,
             "failID": "OobeMSAValueProp",
-            "cancelID": "OobeMSAValueProp",
-            "abortID": "OobeMSAValueProp"
+            "preloadSkipID": "OobeMSAValueProp"
         },
         "OobeMSAValueProp": {
             "cxid": "OobeMSAValueProp",

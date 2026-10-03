@@ -21,10 +21,13 @@ var CloudExperienceHost;
         static hasInternetAccess() {
             let hasInternetAccess = false;
             let internetAccessOverride = CloudExperienceHostAPI.Environment.getRegValue("internetAccessOverride");
+            CloudExperienceHost.Telemetry.logEvent("hasInternetAccess_override", JSON.stringify({ value: internetAccessOverride, empty: (internetAccessOverride === "") }));
             if (internetAccessOverride !== "")
                 return (internetAccessOverride === "true");
             let connectionProfile = Windows.Networking.Connectivity.NetworkInformation.getInternetConnectionProfile();
-            if (connectionProfile && (connectionProfile.getNetworkConnectivityLevel() === Windows.Networking.Connectivity.NetworkConnectivityLevel.internetAccess)) {
+            let connectivityLevel = connectionProfile ? connectionProfile.getNetworkConnectivityLevel() : -1;
+            CloudExperienceHost.Telemetry.logEvent("hasInternetAccess_networkCheck", JSON.stringify({ hasProfile: (connectionProfile != null), connectivityLevel: connectivityLevel }));
+            if (connectionProfile && (connectivityLevel === Windows.Networking.Connectivity.NetworkConnectivityLevel.internetAccess)) {
                 if (connectionProfile.isWwanConnectionProfile && Environment._isOobeScenario() && !Environment.hasDataMartBeenChecked) {
                     Environment.wwanConnectionIsDataMartSim = Environment.isDataMartSim();
                     Environment.hasDataMartBeenChecked = true;
@@ -75,6 +78,78 @@ var CloudExperienceHost;
             catch (exception) {
             }
             return isDmSim;
+        }
+        static getNetworkAttributes() {
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("NDUPDevicePropertiesBridgeAPI")) {
+                let result = {
+                    ianaInterfaceType: 0,
+                    outboundMaxBitsPerSecond: 0,
+                    inboundMaxBitsPerSecond: 0,
+                    networkCostType: 0
+                };
+                try {
+                    let connectionProfile = Windows.Networking.Connectivity.NetworkInformation.getInternetConnectionProfile();
+                    if (connectionProfile) {
+                        if (connectionProfile.networkAdapter) {
+                            result.ianaInterfaceType = connectionProfile.networkAdapter.ianaInterfaceType;
+                            result.outboundMaxBitsPerSecond = connectionProfile.networkAdapter.outboundMaxBitsPerSecond;
+                            result.inboundMaxBitsPerSecond = connectionProfile.networkAdapter.inboundMaxBitsPerSecond;
+                        }
+                        let connectionCost = connectionProfile.getConnectionCost();
+                        if (connectionCost) {
+                            result.networkCostType = connectionCost.networkCostType;
+                        }
+                    }
+                }
+                catch (err) {
+                    CloudExperienceHost.Telemetry.logEvent("Environment_GetNetworkAttributes_Error", CloudExperienceHost.GetJsonFromError(err));
+                }
+                return result;
+            }
+            throw "ApiNonexistentOnClient";
+        }
+        static getNetworkUsage(durationMinutes) {
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("NDUPDevicePropertiesBridgeAPI")) {
+                try {
+                    if (!(durationMinutes > 0 && isFinite(durationMinutes))) {
+                        return WinJS.Promise.as({ bytesSent: 0, bytesReceived: 0 });
+                    }
+                    let connectionProfile = Windows.Networking.Connectivity.NetworkInformation.getInternetConnectionProfile();
+                    if (!connectionProfile) {
+                        return WinJS.Promise.as({ bytesSent: 0, bytesReceived: 0 });
+                    }
+                    let endTime = new Date();
+                    let startTime = new Date(endTime.getTime() - (durationMinutes * 60 * 1000));
+                    const dtaUsageGranularity_Total = 3;
+                    const triStates_DoNotCare = 0;
+                    let networkUsageStates = { roaming: triStates_DoNotCare, shared: triStates_DoNotCare };
+                    return new WinJS.Promise((completeDispatch, errorDispatch) => {
+                        connectionProfile.getNetworkUsageAsync(startTime, endTime, dtaUsageGranularity_Total, networkUsageStates).then((usageList) => {
+                            try {
+                                let bytesSent = 0;
+                                let bytesReceived = 0;
+                                for (let i = 0; i < usageList.length; i++) {
+                                    bytesSent += usageList[i].bytesSent;
+                                    bytesReceived += usageList[i].bytesReceived;
+                                }
+                                completeDispatch({ bytesSent: bytesSent, bytesReceived: bytesReceived });
+                            }
+                            catch (parseErr) {
+                                CloudExperienceHost.Telemetry.logEvent("Environment_GetNetworkUsage_Error", CloudExperienceHost.GetJsonFromError(parseErr));
+                                completeDispatch({ bytesSent: 0, bytesReceived: 0 });
+                            }
+                        }, (err) => {
+                            CloudExperienceHost.Telemetry.logEvent("Environment_GetNetworkUsage_Error", CloudExperienceHost.GetJsonFromError(err));
+                            completeDispatch({ bytesSent: 0, bytesReceived: 0 });
+                        });
+                    });
+                }
+                catch (err) {
+                    CloudExperienceHost.Telemetry.logEvent("Environment_GetNetworkUsage_Error", CloudExperienceHost.GetJsonFromError(err));
+                    return WinJS.Promise.as({ bytesSent: 0, bytesReceived: 0 });
+                }
+            }
+            throw "ApiNonexistentOnClient";
         }
         static getLicensingPoliciesAsync(namesJson) {
             return new WinJS.Promise(function (completeDispatch, errorDispatch, progressDispatch) {
@@ -167,21 +242,16 @@ var CloudExperienceHost;
             return retValue;
         }
         static getDeviceForm() {
-            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OOBEDeviceForm")) {
-                try {
-                    return CloudExperienceHostAPI.Environment.deviceForm.toString();
-                }
-                catch (exception) {
-                    CloudExperienceHost.Telemetry.logEvent("GetDeviceFormError", CloudExperienceHost.GetJsonFromError(exception));
-                }
+            try {
+                return CloudExperienceHostAPI.Environment.deviceForm.toString();
+            }
+            catch (exception) {
+                CloudExperienceHost.Telemetry.logEvent("GetDeviceFormError", CloudExperienceHost.GetJsonFromError(exception));
             }
             return "";
         }
         static isGamepadBasedDevice() {
-            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OOBEDeviceForm")) {
-                return CloudExperienceHostAPI.Environment.deviceForm == CloudExperienceHost.TargetDevice.HANDHELD;
-            }
-            return false;
+            return CloudExperienceHostAPI.Environment.deviceForm == CloudExperienceHost.TargetDevice.HANDHELD;
         }
         static getWindowsProductId() {
             return CloudExperienceHostAPI.Environment.windowsProductId.toString();
@@ -200,6 +270,30 @@ var CloudExperienceHost;
         static isSpeechDisabled() {
             let navMesh = CloudExperienceHost.getNavMesh();
             return navMesh && navMesh.getSpeechDisabled();
+        }
+        static getDeviceChassisType() {
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("NDUPDevicePropertiesBridgeAPI")) {
+                try {
+                    return CloudExperienceHostAPI.Environment.getDeviceChassisType();
+                }
+                catch (err) {
+                    CloudExperienceHost.Telemetry.logEvent("Environment_GetDeviceChassisType_Error", CloudExperienceHost.GetJsonFromError(err));
+                    return -1;
+                }
+            }
+            throw "ApiNonexistentOnClient";
+        }
+        static getPrimaryDiskType() {
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("NDUPDevicePropertiesBridgeAPI")) {
+                try {
+                    return CloudExperienceHostAPI.Environment.getPrimaryDiskType();
+                }
+                catch (err) {
+                    CloudExperienceHost.Telemetry.logEvent("Environment_GetPrimaryDiskType_Error", CloudExperienceHost.GetJsonFromError(err));
+                    return 0;
+                }
+            }
+            throw "ApiNonexistentOnClient";
         }
         static _isOobeScenario() {
             let isOobe = false;
@@ -233,6 +327,54 @@ var CloudExperienceHost;
         }
     }
     CloudExperienceHost.ScoobeContextHelper = ScoobeContextHelper;
+    class AccountAndServicesMSA {
+    }
+    AccountAndServicesMSA.ConsumerAccountUndocking = class {
+        static getShouldSkipAsync() {
+            return new WinJS.Promise(function (completeDispatch /*, errorDispatch, progressDispatch*/) {
+                var preLoadSkipTelemetryKey = "MSA_Transition_PreloadSkip";
+                if (!CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("ConsumerOobeMSAAndLocalTransitionReadiness_ShellHost")) {
+                    CloudExperienceHost.Telemetry.logEvent(preLoadSkipTelemetryKey, "Readiness feature not enabled");
+                    completeDispatch(true);
+                    return;
+                }
+                let isDomainJoinEnabled = CloudExperienceHostAPI.UtilStaticsCore.getLicensingPolicyValue("WorkstationService-DomainJoinEnabled");
+                if (isDomainJoinEnabled !== 0) {
+                    CloudExperienceHost.Telemetry.logEvent(preLoadSkipTelemetryKey, "AADJ enabled");
+                    completeDispatch(true);
+                    return;
+                }
+                try {
+                    let redirectionManager = CloudExperienceHostAPI.Redirection.RedirectionManager.getForUri("ms-cxh://oobe/identitytype");
+                    if (!redirectionManager || !redirectionManager.shellHostComponentId) {
+                        CloudExperienceHost.Telemetry.logEvent(preLoadSkipTelemetryKey, "WOAH not ready");
+                        completeDispatch(true);
+                        return;
+                    }
+                }
+                catch (err) {
+                    completeDispatch(true);
+                    return;
+                }
+                if (!CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeMsaAndLocalFlow_ShellHost")) {
+                    CloudExperienceHost.Telemetry.logEvent(preLoadSkipTelemetryKey, "MSA Feature not enabled");
+                    completeDispatch(true);
+                    return;
+                }
+                try {
+                    CloudExperienceHostAPI.UtilStaticsCore.setOobeTransitionScenario("ms-cxh://oobe/identitytype");
+                }
+                catch (err) {
+                    CloudExperienceHost.Telemetry.logEvent(preLoadSkipTelemetryKey, CloudExperienceHost.GetJsonFromError(err));
+                    completeDispatch(true); // If the API call fails, skip the transition to be safe
+                    return;
+                }
+                completeDispatch(false);
+            });
+        }
+    }
+    ;
+    CloudExperienceHost.AccountAndServicesMSA = AccountAndServicesMSA;
     class OobeExperimentationPages {
         static getShouldSkipAsync() {
             let msaDisallowed = (CloudExperienceHost.getAllowedIdentityProviders().indexOf(CloudExperienceHost.SignInIdentityProviders.MSA) == -1);
@@ -560,9 +702,7 @@ var CloudExperienceHost;
                     "HU", "HUN", "IE", "IRL", "IT", "ITA", "LV", "LVA", "LT", "LTU", "LU", "LUX", "MT", "MLT",
                     "NL", "NLD", "PL", "POL", "PT", "PRT", "RO", "ROU", "SK", "SVK", "SI", "SVN", "ES", "ESP",
                     "SE", "SWE", "GB", "GBR", "IS", "ISL", "LI", "LIE", "NO", "NOR", "CH", "CHE", "UK"];
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("MissingAADCRegions")) {
-                    aadcInScopeRegionList.push("GF", "GUF", "GP", "GLP", "MQ", "MTQ", "RE", "REU", "YT", "MYT");
-                }
+                aadcInScopeRegionList.push("GF", "GUF", "GP", "GLP", "MQ", "MTQ", "RE", "REU", "YT", "MYT");
                 return (aadcInScopeRegionList.indexOf(region) != -1);
             }
             static shouldRestrictionsApplyToAgeGroupAndRegion(ageGroup, region, shouldRestrictionsApplyToMinorOverStatutoryAge) {

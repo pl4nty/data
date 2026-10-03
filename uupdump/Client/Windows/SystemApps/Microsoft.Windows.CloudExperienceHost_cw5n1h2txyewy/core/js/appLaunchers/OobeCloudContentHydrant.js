@@ -4,7 +4,10 @@ define(['legacy/core'], (core) => {
     class OobeCloudContentHydrant {
 
         refreshFeatureConfigurations() {
-            if (!CloudExperienceHost.Environment.hasInternetAccess()) {
+            let hasInternet = CloudExperienceHost.Environment.hasInternetAccess();
+            CloudExperienceHost.Telemetry.logEvent("CloudContentHydrant_internetCheck", JSON.stringify({ hasInternetAccess: hasInternet }));
+            if (!hasInternet) {
+                CloudExperienceHost.Telemetry.logEvent("CloudContentHydrant_skippedNoInternet");
                 return WinJS.Promise.as(CloudExperienceHost.AppResult.abort);
             }
 

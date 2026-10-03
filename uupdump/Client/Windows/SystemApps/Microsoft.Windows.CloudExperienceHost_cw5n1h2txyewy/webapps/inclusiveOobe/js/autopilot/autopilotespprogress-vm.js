@@ -508,7 +508,7 @@ define([
 
             this.runAllRegisteredClickHandlersAsync(this.sessionUtilities.CLICKABLE_ITEM_ID_COLLECT_LOGS_BUTTON).then(() => {
                 this.commercialDiagnosticsUtilities.getExportLogsFolderPathAsync().then((folderPath) => {
-                    this.sessionUtilities.enrollmentApis.collectLogs(folderPath).then(() => {
+                    this.sessionUtilities.autopilotDiagnostics.collectLogs(folderPath).then(() => {
                     },
                         (e) => {
                             this.commercialDiagnosticsUtilities.logExceptionEvent(

@@ -12,6 +12,11 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
             let gamepadEnabledObj = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("GamepadEnabledOobe");
             this.isGamepadEnabled = gamepadEnabledObj.result && gamepadEnabledObj.value;
 
+            let oobeKeyboardConsolidationEnabled = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("OobeKeyboardConsolidation");
+            let keyboardConsolidationEnabledByVelocity = oobeKeyboardConsolidationEnabled.result && oobeKeyboardConsolidationEnabled.value;
+            let disableKeyboardConsolidation = CloudExperienceHostAPI.Environment.getRegValue("DisableKeyboardConsolidation") === "1";
+            this.isOobeKeyboardConsolidationEnabled = keyboardConsolidationEnabledByVelocity && !disableKeyboardConsolidation;
+
             this.onFooterKeyDown = this.onFooterKeyDown.bind(this);
 
             this.currentPanelIndex = ko.observable(0);
@@ -20,6 +25,8 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
             this.disableControl = ko.pureComputed(() => {
                 return this.processingFlag();
             });
+
+            this.showExtraKeyboardSelectionView = ko.observable(false);
 
             bridge.addEventListener(constants.Events.backButtonClicked, this.handleBackNavigation.bind(this));
 
@@ -44,9 +51,11 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
             this.currentSelectedDefaultInputLanguageKeyboardIndex = 0;
             this.selectedKeyboardForDefaultInputLanguage = ko.observable(this.keyboardsForDefaultInputLanguage[this.currentSelectedDefaultInputLanguageKeyboardIndex]);
 
-            this.keyboardSelectionTitle = ko.pureComputed(() => {
-                return this.resourceStrings.keyboardSelectionTitle.replace("%1", this.selectedKeyboardForDefaultInputLanguage().name);
-            });
+            if (!this.isOobeKeyboardConsolidationEnabled) {
+                this.keyboardSelectionTitle = ko.pureComputed(() => {
+                    return this.resourceStrings.keyboardSelectionTitle.replace("%1", this.selectedKeyboardForDefaultInputLanguage().name);
+                });
+            }
 
             let inputLanguagesVector = CloudExperienceHostAPI.OobeKeyboardStaticsCore.getInputLanguages();
             this.inputLanguages = [];
@@ -91,10 +100,18 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
 
             this.keyboardSelectionInit = () => {
                 bridge.invoke("CloudExperienceHost.setShowBackButton", false);
+
+                if (this.isOobeKeyboardConsolidationEnabled) {
+                    bridge.invoke("CloudExperienceHost.AppFrame.showGraphicAnimation", "keyboardLottie.json");
+                }
             }
 
             this.extraKeyboardChoiceInit = () => {
                 bridge.invoke("CloudExperienceHost.setShowBackButton", true);
+
+                if (this.isOobeKeyboardConsolidationEnabled) {
+                    bridge.invoke("CloudExperienceHost.AppFrame.showGraphicAnimation", "secondaryKeyboardLottie.json");
+                }
             }
 
             this.currentPanelIndex.subscribe((newStepIndex) => {
@@ -130,8 +147,18 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'legacy
 
             this.nextStep = () => {
                 if (!this.processingFlag()) {
-                    this.processingFlag(true);
-                    this.currentPanelIndex(this.currentPanelIndex() + 1);
+                    if (this.isOobeKeyboardConsolidationEnabled) {
+                        let item = ko.dataFor(this.currentPanelElement());
+                        if (item.isPrimaryKeyboardSelectionPanel && !this.showExtraKeyboardSelectionView()) {
+                            this.completeKeyboardFlow(false);
+                        } else {
+                            this.processingFlag(true);
+                            this.currentPanelIndex(this.currentPanelIndex() + 1);
+                        }
+                    } else {
+                        this.processingFlag(true);
+                        this.currentPanelIndex(this.currentPanelIndex() + 1);
+                    }
                 }
             }
 

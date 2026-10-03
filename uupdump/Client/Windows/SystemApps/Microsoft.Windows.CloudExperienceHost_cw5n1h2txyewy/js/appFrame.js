@@ -21,6 +21,15 @@ var CloudExperienceHost;
             });
         }
         AppFrame.setDisplayModeFullScreen = setDisplayModeFullScreen;
+        function setDisplayModeToDefault() {
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("SetDisplayModeToDefaultEnabled")) {
+                return requireAsync(['legacy/appViewManager']).then((result) => {
+                    return result.legacy_appViewManager.setDisplayModeToDefault();
+                });
+            }
+            return new WinJS.Promise(() => { });
+        }
+        AppFrame.setDisplayModeToDefault = setDisplayModeToDefault;
         function setBackgroundImage(appDataUri) {
             const identityProvider = CloudExperienceHost.IUserManager.getInstance().getSignInIdentityProvider();
             const isAADUser = (identityProvider === CloudExperienceHostAPI.SignInIdentityProviders.aad);

@@ -17,7 +17,8 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core'], (ko, b
             let selectedRegionCode;
             if (isWamUserPropertiesEnabled) {
                 let findRegion = (code) => this.regions.find((region) => region.codeTwoLetter === code);
-                selectedRegionCode = ((userInfo.length > 3 && userInfo[3] && findRegion(userInfo[3])) || findRegion(defaultRegion))?.codeTwoLetter;
+                let matchedRegion = (userInfo.length > 3 && userInfo[3] && findRegion(userInfo[3])) || findRegion(defaultRegion);
+                selectedRegionCode = matchedRegion ? matchedRegion.codeTwoLetter : undefined;
             } else {
                 selectedRegionCode = this.regions.find((region) => (region.codeTwoLetter === defaultRegion)).codeTwoLetter;
             }

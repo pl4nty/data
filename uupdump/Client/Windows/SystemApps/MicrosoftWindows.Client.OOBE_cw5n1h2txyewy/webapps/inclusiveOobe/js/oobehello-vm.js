@@ -252,7 +252,16 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
                           }
                           else if (this.skipOnIncompleteEnrollment) {
                               bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "HelloEnrollmentCanceled");
-                              bridge.fireEvent(constants.Events.done, constants.AppResult.cancel);
+                              // Restore foreground lock before navigating so the next page receives keyboard input
+                              bridge.invoke("CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled", "DefaultUserOobeShellHost").done((isEnabled) => {
+                                  if (isEnabled) {
+                                      bridge.invoke("CloudExperienceHost.AppFrame.restoreAppWindowFocus").done(() => {
+                                          bridge.fireEvent(constants.Events.done, constants.AppResult.cancel);
+                                      });
+                                  } else {
+                                      bridge.fireEvent(constants.Events.done, constants.AppResult.cancel);
+                                  }
+                              });
                           }
                           else {
                               bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "HelloEnrollmentCanceled");
@@ -327,6 +336,11 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
         }
 
         updateToConfirmationPage() {
+            bridge.invoke("CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled", "OobeHelloUndimChromeOnConfirmation").done((result) => {
+                if (result) {
+                    bridge.invoke("CloudExperienceHost.undimChrome");
+                }
+            });
             this.isConfirmationPageVisible(true);
             this.flexEndButtons([{
                 buttonText: resourceStrings.NextButtonText,
@@ -348,9 +362,16 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             this.title(resourceStrings.AllSetText2);
             this.subtitle("");
 
-            // Restore focus to the default focusable element as the flow is returning to this page
-            KoHelpers.setFocusOnAutofocusElement();
-
+            // Manually restore focus to the host window after bio enrollment
+            bridge.invoke("CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled", "DefaultUserOobeShellHost").done((isEnabled) => {
+                if (isEnabled) {
+                    bridge.invoke("CloudExperienceHost.AppFrame.restoreAppWindowFocus").done(() => {
+                        KoHelpers.setFocusOnAutofocusElement();
+                    });
+                } else {
+                    KoHelpers.setFocusOnAutofocusElement();
+                }
+            });
         }
 
         static _onResize(param) {

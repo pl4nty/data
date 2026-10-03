@@ -33,6 +33,14 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
                 }
             }
 
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeSipHidingXYFocusFix")) {
+                this._inputPane = this._inputPane || Windows.UI.ViewManagement.InputPane.getForCurrentView();
+                if (this._inputPane) {
+                    this._inputHidingListener = this.InputPaneHiding.bind(this);
+                    this._inputPane.addEventListener("hiding", this._inputHidingListener);
+                }
+            }
+
             this.initializeGamepadLegend();
 
             CloudExperienceHost.Globalization.Utils.setDocumentElementLangAndDir();
@@ -125,6 +133,20 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
                 }`;
             let op = this._webViewCtrl.invokeScriptAsync("eval", [scriptToInject]);
             op.start();
+        }
+
+        InputPaneHiding(e) {
+            if (this._webViewCtrl) {
+                let script = `
+                    (function() {
+                        var ae = document.activeElement;
+                        if (ae && ae.classList.contains('win-xyfocus-togglemode-active')) {
+                            ae.classList.remove('win-xyfocus-togglemode-active');
+                        }
+                    })()
+                `;
+                this._webViewCtrl.invokeScriptAsync("eval", script).start();
+            }
         }
 
         setInputModalityChangeListeners() {
@@ -292,6 +314,10 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
 
             if (this._inputPane && this._inputShowingListener) {
                 this._inputPane.removeEventListener("showing", this._inputShowingListener);
+            }
+
+            if (this._inputPane && this._inputHidingListener) {
+                this._inputPane.removeEventListener("hiding", this._inputHidingListener);
             }
         }
 
@@ -532,6 +558,24 @@ define(['lib/knockout', 'legacy/appViewManager', 'legacy/navigationManager', 'le
                         this.SetBackgroundImageUsingAppDataUri(updateTag);
                         completeDispatch();
                     }
+                    break;
+
+                case CloudExperienceHost.FrameViewModelUpdateType.SetDisplayModeToDefault:
+                    if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("SetDisplayModeToDefaultEnabled")) {
+                        const frameView = document.getElementById("oobeLightFrameView");
+                        const frameRootElement = frameView && frameView.parentElement;
+                        if (frameRootElement) {
+                            frameRootElement.classList.remove("fullscreen");
+
+                            setTimeout(() => {
+                                let frameRootGraphicElem = frameRootElement.getElementsByClassName("graphic");
+                                if (frameRootGraphicElem.length > 0) {
+                                    frameRootGraphicElem[0].classList.remove("collapsed");
+                                }
+                            }, 333);
+                        }
+                    }
+                    completeDispatch();
                     break;
             }
         }

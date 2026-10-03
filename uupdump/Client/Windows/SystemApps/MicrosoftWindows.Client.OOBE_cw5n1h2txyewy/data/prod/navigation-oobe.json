@@ -1,4 +1,30 @@
 {
+  "OOBETRANSITIONPROGRESS": {
+      "start": "TransitionProgress",
+      "frameName": "oobe-frame",
+      "personality": "CloudExperienceHost.Personality.LiteWhite",
+      "wallpaperBackdropEnabled": true,
+      "backdropScale": 1.2,
+      "notifyOnFirstVisible": true,
+      "webViewDisabled": true,
+    "TransitionProgress": {
+      "cxid": "TransitionProgress",
+      "launcher": "js:OobeTransitionProgress",
+      "requiredFeatureName": "OobeProgressTransition",
+      "frameAnimation": {
+          "value": "https://sdx.microsoft.com/Areas/FRX/Resources/Json/scoobeLottie.json",
+          "overrideValue": "https://sdx.microsoft.com/Areas/FRX/Resources/Json/scoobeNoEdgeLottie.json",
+          "overrideFeature": "ForwardCompatibleNavmesh",
+          "overrideFunction": "CloudExperienceHost.BrowserSettings.isEdgeUninstallable"
+      },
+      "customProperty": "{\"maxDuration\": 30}",
+      "canExitCxh": true,
+      "visibility": false,
+      "timeout": 45000,
+      "disableErrorPageOnFailure": true,
+      "measureId": 62679620
+    }
+  },
   "OOBEDEFAULTUSERSESSION": {
     "irisPlacementId": "88001035",
     "start": "StartSelector",
@@ -16,11 +42,16 @@
     "frameName": "oobe-frame",
     "personality": "CloudExperienceHost.Personality.LiteWhite",
     "wallpaperBackdropEnabled": true,
+    "backdropScale": 1.2,
     "speechCapable": true,
     "speechDisabled": true,
     "blockLateWebAppCalls": true,
     "blockEarlyExit": true,
-    "startFadeTransition": true,
+    "startFadeTransition": {
+      "value": true,
+      "overrideValue": false,
+      "overrideFeature": "OobeProgressTransition"
+    },
     "endFadeTransition": true,
     "StartSelector": {
       "cxid": "StartSelector",
@@ -55,6 +86,7 @@
       "cxid": "ReconnectionEntry",
       "frameAnimation": "wifiLottie.json",
       "url": "app-ext://OOBENetworkConnectionFlowExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory?target=DesktopLiteNetworkReconnect&persistent=true",
+      "urlExtension": "app-ext://systemextension.persistent/OOBENetworkConnectionFlowExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory/DesktopLiteNetworkReconnect",
       "requiredFeatureName": "OobeHostNetworkReconnect",
       "visibility": false,
       "successID": "InPlaceResume",
@@ -68,6 +100,7 @@
       "cxid": "ReconnectCaptivePortal",
       "frameAnimation": "wifiLottie.json",
       "url": "app-ext://OOBENetworkCaptivePortalExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory",
+      "urlExtension": "app-ext://systemextension/OOBENetworkCaptivePortalExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory",
       "requiredFeatureName": "OobeHostReconnectCaptivePortal",
       "credUIStyle": "Popup",
       "visibility": false,
@@ -101,35 +134,6 @@
       "disableErrorPageOnFailure": true,
       "visibility": false,
       "measureId": 48471668
-    },
-    "OobeMSAValueProp": {
-      "cxid": "OobeMSAValueProp",
-      "requiredFeatureName": "WebView2MSAFlowMigration",
-      "url": "https://sdx.microsoft.com/frx/msa-benefits",
-      "urlint": "https://sdx.microsoft-int.com/frx/msa-benefits",
-      "internetRequired": true,
-      "skipReconnectHandler": true,
-      "defaultID": "OobeMSA",
-      "visibility": false,
-      "ignoreResult": true,
-      "disableErrorPageOnFailure": true,
-      "measureId": 60612548
-    },
-    "OobeMSA": {
-      "cxid": "OobeMSA",
-      "requiredFeatureName": "WebView2MSAFlowMigration",
-      "url": "https://login.live.com/ppsecure/inlineconnect.srf?id=80600",
-      "urlint": "https://login.live-int.com/ppsecure/inlineconnect.srf?id=80600",
-      "queryStringBuilder": "CloudExperienceHost.MSA.getContextParametersForLogin",
-      "internetRequired": true,
-      "successID": "OobeWindowsAccountSyncConsent",
-      "failID": "OobeLocal",
-      "cancelID": "OobeIDPS",
-      "offlineID": "OobeLocal",
-      "disableBackNavigationToNode": true,
-      "abortID": "OobeLocal",
-      "disableErrorPageOnFailure": true,
-      "measureId": 60612531
     },
     "OobeWindowsAccountSyncConsent": {
       "cxid": "OobeWindowsAccountSyncConsent",
@@ -320,6 +324,377 @@
       "measureId": 57755751
     }
   },
+  "OOBEIDENTITYTYPE": {
+    "irisPlacementId": "88001035",
+    "start": "StartSelector",
+    "error": "OobeError",
+    "reconnectHandler": {
+      "handlerCxid": "OobeNetworkLossError",
+      "frequency": "OobeCustom",
+      "requiredFeatureName": "OobeHostNetworkReconnect"
+    },
+    "msaTicketContext": "OOBE",
+    "notifyOnFirstVisible": true,
+    "notifyOnLastFinished": true,
+    "initializeExternalModalRects": true,
+    "useBackstackForBackNavigation": true,
+    "frameName": "oobe-frame",
+    "personality": "CloudExperienceHost.Personality.LiteWhite",
+    "wallpaperBackdropEnabled": true,
+    "backdropScale": 1.2,
+    "speechCapable": true,
+    "speechDisabled": true,
+    "blockLateWebAppCalls": true,
+    "blockEarlyExit": true,
+    "startFadeTransition": {
+      "value": true,
+      "overrideValue": false,
+      "overrideFeature": "OobeProgressTransition"
+    },
+    "endFadeTransition": true,
+    "StartSelector": {
+      "cxid": "StartSelector",
+      "launcher": "js:OOBEStartSelector",
+      "successID": "OobeMSAValueProp",
+      "visibility": false,
+      "measureId": 48471513
+    },
+    "OobeError": {
+      "cxid": "OobeError",
+      "frameAnimation": "errorLottie.json",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeError-main.html",
+      "visibility": false,
+      "measureId": 48471631
+    },
+    "OobeNetworkLossError": {
+      "cxid": "OobeNetworkLossError",
+      "frameAnimation": "errorLottie.json",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeNetworkLossError-main.html",
+      "requiredFeatureName": "OobeHostNetworkReconnect",
+      "successID": "ReconnectionEntry",
+      "failID": "ReconnectionEntry",
+      "cancelID": "ReconnectionEntry",
+      "abortID": "ReconnectionEntry",
+      "disableErrorPageOnFailure": true,
+      "disableBackNavigationToNode": true,
+      "disableBackNavigationFromNode": true,
+      "visibility": false,
+      "measureId": 57739732
+    },
+    "ReconnectionEntry": {
+      "cxid": "ReconnectionEntry",
+      "frameAnimation": "wifiLottie.json",
+      "url": "app-ext://OOBENetworkConnectionFlowExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory?target=DesktopLiteNetworkReconnect&persistent=true",
+      "urlExtension": "app-ext://systemextension.persistent/OOBENetworkConnectionFlowExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory/DesktopLiteNetworkReconnect",
+      "requiredFeatureName": "OobeHostNetworkReconnect",
+      "visibility": false,
+      "successID": "InPlaceResume",
+      "failID": "InPlaceResumeReconnectionFailure",
+      "cancelID": "InPlaceResume",
+      "action1ID": "ReconnectCaptivePortal",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "measureId": 59180368
+    },
+    "ReconnectCaptivePortal": {
+      "cxid": "ReconnectCaptivePortal",
+      "frameAnimation": "wifiLottie.json",
+      "url": "app-ext://OOBENetworkCaptivePortalExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory",
+      "urlExtension": "app-ext://systemextension/OOBENetworkCaptivePortalExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory",
+      "requiredFeatureName": "OobeHostReconnectCaptivePortal",
+      "credUIStyle": "Popup",
+      "visibility": false,
+      "successID": "ReconnectionEntry",
+      "failID": "ReconnectionEntry",
+      "cancelID": "ReconnectionEntry",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "measureId": 59305782
+    },
+    "InPlaceResumeReconnectionFailure": {
+      "cxid": "InPlaceResumeReconnectionFailure",
+      "launcher": "js:InPlaceResumeReconnectionFailure",
+      "requiredFeatureName": "OobeHostNetworkReconnect",
+      "successID": "InPlaceResume",
+      "cancelID": "InPlaceResume",
+      "failID": "InPlaceResume",
+      "disableBackNavigationToNode": true,
+      "measureId": 40426734
+    },
+    "InPlaceResume": {
+      "cxid": "InPlaceResume",
+      "launcher": "js:InPlaceResume",
+      "failID": "StartSelector",
+      "disableBackNavigationToNode": true,
+      "measureId": 40426734
+    },
+    "OobeExit": {
+      "cxid": "OobeExit",
+      "launcher": "js:OobeSkipNode",
+      "canExitCxh": true,
+      "disableErrorPageOnFailure": true,
+      "visibility": false,
+      "measureId": 48471668
+    },
+    "OobeMSAValueProp": {
+      "cxid": "OobeMSAValueProp",
+      "url": "https://sdx.microsoft.com/frx/msa-benefits",
+      "urlint": "https://sdx.microsoft-int.com/frx/msa-benefits",
+      "preloadCheck": "CloudExperienceHost.AccountAndServicesMSA",
+      "internetRequired": true,
+      "skipReconnectHandler": true,
+      "defaultID": "OobeMSA",
+      "preloadSkipID": "TransitionToMSADefaultUserSession",
+      "visibility": false,
+      "ignoreResult": true,
+      "disableErrorPageOnFailure": true,
+      "measureId": 60612548
+    },
+    "OobeMSA": {
+      "cxid": "OobeMSA",
+      "url": "https://login.live.com/ppsecure/inlineconnect.srf?id=80600",
+      "urlint": "https://login.live-int.com/ppsecure/inlineconnect.srf?id=80600",
+      "queryStringBuilder": "CloudExperienceHost.MSA.getContextParametersForLogin",
+      "internetRequired": true,
+      "successID": "TransitionToMSADefaultUserSession",
+      "failID": "OobeLocal",
+      "cancelID": "OobeMSAValueProp",
+      "offlineID": "OobeLocal",
+      "disableBackNavigationToNode": true,
+      "abortID": "OobeLocal",
+      "disableErrorPageOnFailure": true,
+      "measureId": 60612531
+    },
+    "TransitionToMSADefaultUserSession": {
+      "cxid": "TransitionToMSADefaultUserSession",
+      "launcher": "js:ScenarioTransition",
+      "customProperty": "{ \"scenarioName\": \"OOBEDEFAULTUSERSESSION\" }",
+      "visibility": false,
+      "measureId": 63043024
+    },
+    "OobeLocal": {
+      "cxid": "OobeLocal",
+      "frameAnimation": "localaccountLottie.json",
+      "urlExtension": "app-ext://winui3extension/WindowsOobeAppHostXamlApplets/OobeLocal",
+      "successID": "TransitionToLocalDefaultUserSession",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "ignoreResult": true,
+      "canExitCxh": true,
+      "visibility": false,
+      "action1ID": "OobeMSA",
+      "measureId": 61906909
+    },
+    "TransitionToLocalDefaultUserSession": {
+      "cxid": "TransitionToLocalDefaultUserSession",
+      "launcher": "js:ScenarioTransition",
+      "customProperty": "{ \"scenarioName\": \"OOBELOCALDEFAULTUSERSESSION\" }",
+      "visibility": false,
+      "measureId": 63043118
+    }
+  },
+  "OOBELOCALDEFAULTUSERSESSION": {
+    "irisPlacementId": "88001035",
+    "start": "StartSelector",
+    "error": "OobeError",
+    "reconnectHandler": {
+      "handlerCxid": "OobeNetworkLossError",
+      "frequency": "OobeCustom",
+      "requiredFeatureName": "OobeHostNetworkReconnect"
+    },
+    "msaTicketContext": "OOBE",
+    "notifyOnFirstVisible": true,
+    "notifyOnLastFinished": true,
+    "initializeExternalModalRects": true,
+    "useBackstackForBackNavigation": true,
+    "frameName": "oobe-frame",
+    "personality": "CloudExperienceHost.Personality.LiteWhite",
+    "wallpaperBackdropEnabled": true,
+    "backdropScale": 1.2,
+    "speechCapable": true,
+    "speechDisabled": true,
+    "blockLateWebAppCalls": true,
+    "blockEarlyExit": true,
+    "startFadeTransition": {
+      "value": true,
+      "overrideValue": false,
+      "overrideFeature": "OobeProgressTransition"
+    },
+    "endFadeTransition": true,
+    "StartSelector": {
+      "cxid": "StartSelector",
+      "launcher": "js:OOBEStartSelector",
+      "successID": "OobeLocalHello",
+      "visibility": false,
+      "measureId": 48471513
+    },
+    "OobeError": {
+      "cxid": "OobeError",
+      "frameAnimation": "errorLottie.json",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeError-main.html",
+      "visibility": false,
+      "measureId": 48471631
+    },
+    "OobeNetworkLossError": {
+      "cxid": "OobeNetworkLossError",
+      "frameAnimation": "errorLottie.json",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeNetworkLossError-main.html",
+      "requiredFeatureName": "OobeHostNetworkReconnect",
+      "successID": "ReconnectionEntry",
+      "failID": "ReconnectionEntry",
+      "cancelID": "ReconnectionEntry",
+      "abortID": "ReconnectionEntry",
+      "disableErrorPageOnFailure": true,
+      "disableBackNavigationToNode": true,
+      "disableBackNavigationFromNode": true,
+      "visibility": false,
+      "measureId": 57739732
+    },
+    "ReconnectionEntry": {
+      "cxid": "ReconnectionEntry",
+      "frameAnimation": "wifiLottie.json",
+      "url": "app-ext://OOBENetworkConnectionFlowExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory?target=DesktopLiteNetworkReconnect&persistent=true",
+      "urlExtension": "app-ext://systemextension.persistent/OOBENetworkConnectionFlowExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory/DesktopLiteNetworkReconnect",
+      "requiredFeatureName": "OobeHostNetworkReconnect",
+      "visibility": false,
+      "successID": "InPlaceResume",
+      "failID": "InPlaceResumeReconnectionFailure",
+      "cancelID": "InPlaceResume",
+      "action1ID": "ReconnectCaptivePortal",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "measureId": 59180368
+    },
+    "ReconnectCaptivePortal": {
+      "cxid": "ReconnectCaptivePortal",
+      "frameAnimation": "wifiLottie.json",
+      "url": "app-ext://OOBENetworkCaptivePortalExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory",
+      "urlExtension": "app-ext://systemextension/OOBENetworkCaptivePortalExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory",
+      "requiredFeatureName": "OobeHostReconnectCaptivePortal",
+      "credUIStyle": "Popup",
+      "visibility": false,
+      "successID": "ReconnectionEntry",
+      "failID": "ReconnectionEntry",
+      "cancelID": "ReconnectionEntry",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "measureId": 59305782
+    },
+    "InPlaceResumeReconnectionFailure": {
+      "cxid": "InPlaceResumeReconnectionFailure",
+      "launcher": "js:InPlaceResumeReconnectionFailure",
+      "requiredFeatureName": "OobeHostNetworkReconnect",
+      "successID": "InPlaceResume",
+      "cancelID": "InPlaceResume",
+      "failID": "InPlaceResume",
+      "disableBackNavigationToNode": true,
+      "measureId": 40426734
+    },
+    "InPlaceResume": {
+      "cxid": "InPlaceResume",
+      "launcher": "js:InPlaceResume",
+      "failID": "StartSelector",
+      "disableBackNavigationToNode": true,
+      "measureId": 40426734
+    },
+    "OobeExit": {
+      "cxid": "OobeExit",
+      "launcher": "js:OobeSkipNode",
+      "canExitCxh": true,
+      "disableErrorPageOnFailure": true,
+      "visibility": false,
+      "measureId": 48471668
+    },
+    "OobeLocalHello": {
+      "cxid": "OobeLocalHello",
+      "urlExtension": "app-ext://winui3extension/WindowsOobeAppHostXamlApplets/OobeLocalHello",
+      "successID": "OobeLocalNGC",
+      "defaultID": "OobeLocalSettingsSelector",
+      "action1ID": "LearnMorePage",
+      "ignoreResult": true,
+      "disableBackNavigationToNodeOnSuccess": true,
+      "canExitCxh": true,
+      "visibility": false,
+      "measureId": 61748070
+    },
+    "OobeLocalNGC": {
+      "cxid": "OobeLocalNGC",
+      "frameAnimation": "lockandpinLottie.json",
+      "urlExtension": "app-ext://winui3extension/WindowsOobeAppHostXamlApplets/OobeLocalNGC",
+      "ignoreResult": true,
+      "disableBackNavigationToNodeOnSuccess": true,
+      "defaultID": "OobeLocalSettingsSelector",
+      "canExitCxh": true,
+      "visibility": false,
+      "measureId": 61747709
+    },
+    "LearnMorePage": {
+      "cxid": "LearnMorePage",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/learnmore-page.html",
+      "successID": "OobeLocalHello",
+      "visibility": false,
+      "measureId": 61748675
+    },
+    "OobeLocalSettingsSelector": {
+      "cxid": "OobeLocalSettingsSelector",
+      "launcher": "js:OobeSettingsSelector",
+      "defaultID": "OobeLocalSettings",
+      "action1ID": "OobeLocalSettingsMultiPage",
+      "action2ID": "OobeLocalSettingsAadc",
+      "visibility": false,
+      "measureId": 57819567
+    },
+    "OobeLocalSettings": {
+      "cxid": "OobeLocalSettings",
+      "frameAnimation": "privacysettingsLottie.json",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeprivacysettings-main.html",
+      "ignoreResult": true,
+      "defaultID": "OobeLocalUpdateSettings",
+      "visibility": false,
+      "measureId": 57819568
+    },
+    "OobeLocalSettingsMultiPage": {
+      "cxid": "OobeLocalSettingsMultiPage",
+      "frameAnimation": "privacysettingsLottie.json",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeprivacysettings-multipage-main.html",
+      "ignoreResult": true,
+      "defaultID": "OobeLocalUpdateSettings",
+      "visibility": false,
+      "measureId": 57819570
+    },
+    "OobeLocalSettingsAadc": {
+      "cxid": "OobeLocalSettingsAadc",
+      "frameAnimation": "privacysettingsLottie.json",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeprivacysettings-aadc-main.html",
+      "ignoreResult": true,
+      "defaultID": "OobeLocalUpdateSettings",
+      "visibility": false,
+      "measureId": 57819571
+    },
+    "OobeLocalUpdateSettings": {
+      "cxid": "OobeLocalUpdateSettings",
+      "frameAnimation": "updateSettingsLottie.json",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/OobeUpdateSettings-main.html",
+      "preloadCheck": "CloudExperienceHost.OobeUpdateSettings",
+      "defaultID": "OobeOemRegistrationPostSettings",
+      "visibility": false,
+      "measureId": 57751454
+    },
+    "OobeOemRegistrationPostSettings": {
+      "cxid": "OobeOemRegistrationPostSettings",
+      "frameAnimation": "oemRegistrationLottie.json",
+      "url": "ms-appx-web:///webapps/scoobe/view/oobeoemregistration-main.html",
+      "preloadCheck": "CloudExperienceHost.OobeOemRegistrationPostSettings",
+      "defaultID": "OobeTelemetryFlush",
+      "disableErrorPageOnFailure": true,
+      "visibility": false,
+      "measureId": 48471894
+    },
+    "OobeTelemetryFlush": {
+      "cxid": "OobeTelemetryFlush",
+      "launcher": "js:OobeTelemetryFlush",
+      "defaultID": "OobeExit",
+      "disableErrorPageOnFailure": true,
+      "disableBackNavigationToNode": true,
+      "visibility": false,
+      "measureId": 53473051
+    }
+  },
   "OOBE": {
     "irisPlacementId": "88001035",
     "start": "StartSelector",
@@ -378,11 +753,7 @@
       "cxid": "OobeOemRegistrationPostSettings",
       "frameAnimation": "oemRegistrationLottie.json",
       "url": "ms-appx-web:///webapps/scoobe/view/oobeoemregistration-main.html",
-      "preloadCheck": {
-        "value": "",
-        "overrideValue": "CloudExperienceHost.OobeOemRegistrationPostSettings",
-        "overrideFeature": "AddPreloadCheckIntoOEMRegistration"
-      },
+      "preloadCheck": "CloudExperienceHost.OobeOemRegistrationPostSettings",
       "successID": "OobeUserIntent",
       "exitID": "OobeUserIntent",
       "cancelID": "OobeUserIntent",
@@ -396,11 +767,7 @@
       "cxid": "OobeUserIntent",
       "url": "https://sdx.microsoft.com/frx/oobe-user-intent-preload",
       "urlint": "https://sdx.microsoft-int.com/frx/oobe-user-intent-preload",
-      "preloadCheck": {
-        "value": "",
-        "overrideValue": "CloudExperienceHost.OobeUserIntent",
-        "overrideFeature": "AddPreloadCheckToOtherEnduserOobePages"
-      },
+      "preloadCheck": "CloudExperienceHost.OobeUserIntent",
       "disableBackNavigationToNodeOnSuccess": true,
       "ignoreResult": true,
       "internetRequired": true,
@@ -508,11 +875,7 @@
       "cxid": "OobeGamepass",
       "url": "https://oloobe.officeapps.live.com/officeoobe/gamepass",
       "urlint": "https://oloobe.officeapps.live-int.com/officeoobe/gamepass",
-      "preloadCheck": {
-        "value": "",
-        "overrideValue": "CloudExperienceHost.OobeGamepass",
-        "overrideFeature": "AddPreloadCheckToOtherEnduserOobePages"
-      },
+      "preloadCheck": "CloudExperienceHost.OobeGamepass",
       "disableBackNavigationToNodeOnSuccess": true,
       "ignoreResult": true,
       "internetRequired": true,
@@ -642,11 +1005,7 @@
       "cxid": "OobeOemRegistrationPostSettings",
       "frameAnimation": "oemRegistrationHandheldLottie.json",
       "url": "ms-appx-web:///webapps/scoobe/view/oobeoemregistration-main.html",
-      "preloadCheck": {
-        "value": "",
-        "overrideValue": "CloudExperienceHost.OobeOemRegistrationPostSettings",
-        "overrideFeature": "AddPreloadCheckIntoOEMRegistration"
-      },
+      "preloadCheck": "CloudExperienceHost.OobeOemRegistrationPostSettings",
       "successID": "OobeGamepass",
       "exitID": "OobeGamepass",
       "cancelID": "OobeGamepass",
@@ -660,11 +1019,7 @@
       "cxid": "OobeGamepass",
       "url": "https://oloobe.officeapps.live.com/officeoobe/gamepass",
       "urlint": "https://oloobe.officeapps.live-int.com/officeoobe/gamepass",
-      "preloadCheck": {
-        "value": "",
-        "overrideValue": "CloudExperienceHost.OobeGamepass",
-        "overrideFeature": "AddPreloadCheckToOtherEnduserOobePages"
-      },
+      "preloadCheck": "CloudExperienceHost.OobeGamepass",
       "disableBackNavigationToNodeOnSuccess": true,
       "ignoreResult": true,
       "internetRequired": true,

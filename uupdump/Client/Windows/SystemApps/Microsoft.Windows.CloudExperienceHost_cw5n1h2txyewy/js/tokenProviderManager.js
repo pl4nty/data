@@ -248,6 +248,11 @@ var CloudExperienceHost;
             httpRequestMessage.headers.append("cxh-osVersionInfo", JSON.stringify(CloudExperienceHostAPI.Environment.osVersionInfo));
             httpRequestMessage.headers.append("cxh-msaBinaryVersion", CloudExperienceHostAPI.Environment.msaBinaryVersion);
             httpRequestMessage.headers.append("cxh-identityClientBinaryVersion", CloudExperienceHostAPI.Environment.identityClientBinaryVersion);
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("CxhStubWindowsFlightDataHeader")) {
+                if (context && context.windowsFlightData) {
+                    context.windowsFlightData = "";
+                }
+            }
             for (var key in context) {
                 httpRequestMessage.headers.append("cxh-" + key, context[key]);
             }

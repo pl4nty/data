@@ -91,6 +91,17 @@ var CloudExperienceHost;
         setBackgroundImage(appDataUri) {
             return this.notifyObserver(CloudExperienceHost.FrameViewModelUpdateType.SetBackgroundImage, appDataUri);
         }
+        setDisplayModeToDefault() {
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("SetDisplayModeToDefaultEnabled")) {
+                if (this.allowChangeDisplayMode) {
+                    return this.notifyObserver(CloudExperienceHost.FrameViewModelUpdateType.SetDisplayModeToDefault);
+                }
+                else {
+                    CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("Requested to change display mode to default when not allowed");
+                }
+            }
+            return new WinJS.Promise(() => { });
+        }
         setGamepadLegendDisplayOverrideForB(displayText) {
             if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("GamepadLegendEnabled")) {
                 return this.notifyObserversOfUpdateType(CloudExperienceHost.FrameViewModelUpdateType.GamepadLegendB, displayText);

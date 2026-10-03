@@ -22,7 +22,7 @@
 </head>
 <body class="webapp-inner">
     <script type="text/html" id="panel-template">
-        <div class="oobe-panel" data-bind="attr: { 'data-panel-index': KoHelpers.getElementIndex($element.parentElement) }, panelIndexVisible: $root.currentPanelIndex">
+        <div class="oobe-panel" data-prevent-focus-scroll="true" data-bind="attr: { 'data-panel-index': KoHelpers.getElementIndex($element.parentElement) }, panelIndexVisible: $root.currentPanelIndex">
             <div class="container-content">
                 <oobe-header params="title: title, subtitle: subtitle"></oobe-header>
                 <div class="content-box">

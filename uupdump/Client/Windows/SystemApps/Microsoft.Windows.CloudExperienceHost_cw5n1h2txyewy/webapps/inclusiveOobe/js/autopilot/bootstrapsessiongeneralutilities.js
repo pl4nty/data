@@ -102,6 +102,9 @@ define(['legacy/bridge'], (bridge) => {
             this.AUTOMATION_COMMAND_STATE_TEST_WAITING_FOR_PHASE_TO_EXIT_WITH_RESULT = "TestWaitingForPhaseToExitWithResult";
 
             this.enrollmentApis = new EnterpriseDeviceManagement.Enrollment.ReflectedEnroller();
+            this.autopilotDiagnostics = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("MdmLogFix") ?
+                new CloudExperienceHostAPI.Diagnostics.AutopilotDiagnostics() :
+                this.enrollmentApis;
             this.autopilotSubscriptionManager = new EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotWnfSubscriptionManager();
             this.tpmNotificationManager = new ModernDeployment.Autopilot.Core.TpmNotification();
             this.autopilotApis = new EnterpriseDeviceManagement.Service.AutoPilot.AutoPilotServer();

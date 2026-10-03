@@ -166,6 +166,11 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events', 'legacy/core', 'corejs
             if (!this.processingFlag()) {
                 this.processingFlag(true);
                 this.viewName("customize");
+                bridge.invoke("CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled", "OobeUpdateSettingsBackButtonFix").done(function (result) {
+                    if (result) {
+                        bridge.invoke("CloudExperienceHost.setShowBackButton", false); // Fall back to normal back button behavior
+                    }
+                });
                 KoHelpers.setFocusOnAutofocusElement();
             }
         }

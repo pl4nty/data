@@ -50,6 +50,7 @@
       <xs:enumeration value="ad" />
       <xs:enumeration value="ax" />
       <xs:enumeration value="be" />
+      <xs:enumeration value="bn" />
     </xs:restriction>
   </xs:simpleType>
 
@@ -63,6 +64,7 @@
       <xs:enumeration value="WPA2" />
       <xs:enumeration value="WPA2PSK" />
       <xs:enumeration value="WPA3SAE" />
+      <xs:enumeration value="PQC1X" />
     </xs:restriction>
   </xs:simpleType>
 

@@ -47,6 +47,10 @@
                     this.isWamUserPropertiesEnabled = (response.result === 1) && (response.value === 1);
                 }));
 
+                promises.push(bridge.invoke("CloudExperienceHost.FeatureStaging.tryGetIsFeatureEnabled", "OobeOemRegistrationNarratorTitleFix").then((response) => {
+                    this.isOemRegistrationNarratorTitleFixEnabled = (response.result === 1) && (response.value === 1);
+                }));
+
                 return WinJS.Promise.join(promises);
             });
         },
@@ -78,6 +82,12 @@
                 ko.applyBindings(vm);
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {
                     WinJS.Utilities.addClass(document.body, "pageLoaded");
+                    // Narrator announces document.title, and falls back to the page URL when it's empty.
+                    // The shared common-header only sets it while visible, but the panels are display:none
+                    // until "pageLoaded" and this page's title is static — so the header never sets it here.
+                    if (this.isOemRegistrationNarratorTitleFixEnabled && vm.title) {
+                        document.title = vm.title;
+                    }
                     modules.legacy_bridge.fireEvent(modules.legacy_events.Events.visible, true);
                     KoHelpers.setFocusOnAutofocusElement();
                 });

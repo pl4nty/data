@@ -269,15 +269,18 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events',
             require(['lib/knockout-winjs'], callback);
         }
 
-        static setFocusOnAutofocusElement() {
+        static setFocusOnAutofocusElement(preventScroll = false) {
             let currentPanel = document.querySelector('.current-visible-panel');
             // If there is no current panel, assume the page does not use panels and see if there is an autofocus element in the doc
             let autofocusElement = currentPanel ? currentPanel.querySelector("[autofocus='true']") : document.querySelector("[autofocus='true']");
             let firstInput = currentPanel ? currentPanel.querySelector("input") : null;
+            // preventScroll (opt-in): keep .scroll-view at scrollTop=0 so WV2 doesn't scroll the focus
+            // target into view and crop the content above it. Default keeps old behavior.
+            let focusOptions = { preventScroll: preventScroll };
             if (autofocusElement) {
-                autofocusElement.focus();
+                autofocusElement.focus(focusOptions);
             } else if (firstInput) {
-                firstInput.focus();
+                firstInput.focus(focusOptions);
             }
         }
 
@@ -301,6 +304,16 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events',
                     .then(html => {
                         let doc = iFrameElement.contentWindow.document;
                         doc.body.innerHTML = html;
+
+                        // Intercept fragment links so they scroll within the iframe instead of navigating to about:blank
+                        let fragmentLinks = doc.querySelectorAll('a[href^="#"]');
+                        if (fragmentLinks) fragmentLinks.forEach((link) => {
+                            link.onclick = (e) => {
+                                e.preventDefault();
+                                let target = doc.getElementById(link.getAttribute('href').substring(1)) || doc.documentElement;
+                                target.scrollIntoView();
+                            };
+                        });
 
                         let fileRef = doc.head.ownerDocument.createElement("link");
                         let cssOverride = "/webapps/inclusiveOobe/css/light-iframe-content.css";
@@ -546,11 +559,13 @@ define(['lib/knockout', 'legacy/bridge', 'legacy/events',
                                 document.dispatchEvent(new Event("panelChanged"));
                                 let autoFocusItem = element.querySelector("[autofocus='true']");
                                 let firstInput = element.querySelector("input");
+                                // preventScroll when the panel opts in via data-prevent-focus-scroll
+                                let focusOptions = { preventScroll: element.getAttribute("data-prevent-focus-scroll") === "true" };
                                 if (autoFocusItem) {
-                                    autoFocusItem.focus();
+                                    autoFocusItem.focus(focusOptions);
                                 } else if (firstInput) {
                                     // If there is no item with the autofocus attribute then fall back to setting focus on the first input element
-                                    firstInput.focus();
+                                    firstInput.focus(focusOptions);
                                 }
                                 return WinJS.UI.Animation.fadeIn(element);
                             }

@@ -12,7 +12,12 @@ var CloudExperienceHost;
                 });
             }
             static getCode() {
-                return new Windows.Globalization.GeographicRegion().code;
+                try {
+                    return new Windows.Globalization.GeographicRegion().code;
+                }
+                catch (e) {
+                    return "ZZ";
+                }
             }
             static isPrivacySensitiveRegion() {
                 let privacySensitiveRegionsList = ["AT", "AUT", "BE", "BEL", "BG", "BGR", "BR", "BRA", "CA", "CAN", "HR", "HRV", "CY", "CYP",
@@ -20,12 +25,8 @@ var CloudExperienceHost;
                     "HU", "HUN", "IS", "ISL", "IE", "IRL", "IT", "ITA", "KR", "KOR", "LV", "LVA", "LI", "LIE", "LT", "LTU",
                     "LU", "LUX", "MT", "MLT", "NL", "NLD", "NO", "NOR", "PL", "POL", "PT", "PRT", "RO", "ROU",
                     "SK", "SVK", "SI", "SVN", "ES", "ESP", "SE", "SWE", "CH", "CHE", "GB", "GBR"];
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("NewMultiPagePrivacy")) {
-                    privacySensitiveRegionsList.push("VN", "VNM");
-                }
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("MissingMultiPagePrivacy")) {
-                    privacySensitiveRegionsList.push("GF", "GUF", "GP", "GLP", "MQ", "MTQ", "RE", "REU", "YT", "MYT");
-                }
+                privacySensitiveRegionsList.push("VN", "VNM");
+                privacySensitiveRegionsList.push("GF", "GUF", "GP", "GLP", "MQ", "MTQ", "RE", "REU", "YT", "MYT");
                 let region = CloudExperienceHost.Globalization.GeographicRegion.getCode();
                 return (privacySensitiveRegionsList.indexOf(region) != -1);
             }

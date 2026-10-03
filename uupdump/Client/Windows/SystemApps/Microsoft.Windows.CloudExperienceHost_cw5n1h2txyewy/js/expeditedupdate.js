@@ -313,20 +313,14 @@ var CloudExperienceHost;
         static isNDUPAllowedByCSP() {
             CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_IsNDUPAllowedByCSPStarted");
             return new WinJS.Promise(function (completeDispatch, errorDispatch /*, progressDispatch*/) {
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("NDUPCSPBridgeAPI")) {
-                    try {
-                        const isNDUPAllowed = AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.OobeExpeditedUpdateManagerStatics").isNDUPAllowedByCSP();
-                        CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_isNDUPAllowedByCSPSucceeded", JSON.stringify(isNDUPAllowed));
-                        completeDispatch(isNDUPAllowed);
-                    }
-                    catch (err) {
-                        CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_isNDUPAllowedByCSPFailure", CloudExperienceHost.GetJsonFromError(err));
-                        errorDispatch(err);
-                    }
+                try {
+                    const isNDUPAllowed = AppObjectFactory.getInstance().getObjectFromString("CloudExperienceHostAPI.OobeExpeditedUpdateManagerStatics").isNDUPAllowedByCSP();
+                    CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_isNDUPAllowedByCSPSucceeded", JSON.stringify(isNDUPAllowed));
+                    completeDispatch(isNDUPAllowed);
                 }
-                else {
-                    CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_isNDUPAllowedByCSPFailure", "ApiNonexistentOnClient");
-                    errorDispatch("ApiNonexistentOnClient");
+                catch (err) {
+                    CloudExperienceHost.Telemetry.logEvent("ExpeditedUpdate_isNDUPAllowedByCSPFailure", CloudExperienceHost.GetJsonFromError(err));
+                    errorDispatch(err);
                 }
             });
         }

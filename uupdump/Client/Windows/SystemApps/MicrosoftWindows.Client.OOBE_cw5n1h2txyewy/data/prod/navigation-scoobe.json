@@ -2,7 +2,7 @@
     "SCOOBE": {
         "irisPlacementId": "88000709",
         "start": "StartSelector",
-        "error": "Error",
+        "error": "ScoobeError",
         "msaTicketContext": "OOBE",
         "notifyOnFirstVisible": true,
         "initializeExternalModalRects": true,
@@ -31,8 +31,8 @@
             "visibility": false,
             "measureId": 40324429
         },
-        "Error": {
-            "cxid": "Error",
+        "ScoobeError": {
+            "cxid": "ScoobeError",
             "frameAnimation": "errorLottie.json",
             "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeError-main.html",
             "visibility": false,

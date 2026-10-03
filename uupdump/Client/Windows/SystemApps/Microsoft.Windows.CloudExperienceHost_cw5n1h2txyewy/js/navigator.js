@@ -284,6 +284,11 @@ var CloudExperienceHost;
                 this._appendHttpHeaderWithFallback(httpRequestMessage, "cxh-colors", cxhColors);
             }
             var context = CloudExperienceHost.getContext();
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("CxhStubWindowsFlightDataHeader")) {
+                if (context && context.windowsFlightData) {
+                    context.windowsFlightData = "";
+                }
+            }
             for (var key in context) {
                 if (context[key]) {
                     this._appendHttpHeaderWithFallback(httpRequestMessage, "cxh-" + key, context[key]);
@@ -625,9 +630,7 @@ var CloudExperienceHost;
                 }
                 catch (e) {
                     CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("PreloadCheckError", JSON.stringify({ cxid: this._currentNode.cxid, preloadCheck: this._currentNode.preloadCheck, error: CloudExperienceHost.GetJsonFromError(e) }));
-                    if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("PreloadCheckErrorHandling")) {
-                        skipPromise = WinJS.Promise.as(!!this._currentNode.preloadCheckSkipOnFailure);
-                    }
+                    skipPromise = WinJS.Promise.as(!!this._currentNode.preloadCheckSkipOnFailure);
                 }
                 skipPromise = skipPromise.then(null, (e) => {
                     CloudExperienceHost.Telemetry.WebAppTelemetry.getInstance().logEvent("PreloadCheckAsyncError", JSON.stringify({ cxid: this._currentNode.cxid, preloadCheck: this._currentNode.preloadCheck, error: CloudExperienceHost.GetJsonFromError(e) }));

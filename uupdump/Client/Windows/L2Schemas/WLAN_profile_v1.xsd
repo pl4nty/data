@@ -187,6 +187,7 @@
                           <xs:enumeration value="ad" />
                           <xs:enumeration value="ax" />
                           <xs:enumeration value="be" />
+                          <xs:enumeration value="bn" />
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
@@ -226,6 +227,7 @@
                                 <xs:enumeration value="WPA3ENT" />
                                 <xs:enumeration value="WPA3SAE" />
                                 <xs:enumeration value="OWE" />
+                                <xs:enumeration value="PQC1X" />
                               </xs:restriction>
                             </xs:simpleType>
                           </xs:element>

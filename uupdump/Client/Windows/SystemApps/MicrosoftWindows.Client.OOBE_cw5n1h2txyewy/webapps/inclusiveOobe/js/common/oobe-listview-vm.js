@@ -1,4 +1,4 @@
-﻿define(() => {
+﻿define(["legacy/bridge"], (bridge) => {
     class OobeListViewModel {
         constructor(params, element) {
             this.element = element;
@@ -13,6 +13,14 @@
             this.onItemKeyUp = this.handleKeyUpNav.bind(this);
             this.focusSelectedItem();
             this.ensuredInCenter = false;
+
+            // Feature_WoahNarratorSelectedFix: explicitly set aria-selected="false" on unselected items
+            // so Narrator announces "not selected" instead of implying selection in WV2/Chromium.
+            // Remove the old behavior branch in the template when this feature is fully enabled.
+            this.WoahNarratorSelectedFix = ko.observable(false);
+            bridge.invoke("CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled", "WoahNarratorSelectedFix").done(function (result) {
+                this.WoahNarratorSelectedFix(result);
+            }.bind(this));
 
             // Forward the autofocus attribute onto our focusable list element
             if (element.hasAttribute("autofocus")) {

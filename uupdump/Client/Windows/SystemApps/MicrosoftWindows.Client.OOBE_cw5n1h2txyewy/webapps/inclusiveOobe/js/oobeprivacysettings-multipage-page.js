@@ -58,7 +58,7 @@
                 KoHelpers.waitForInitialComponentLoadAsync().then(() => {
                     WinJS.Utilities.addClass(document.body, "pageLoaded");
                     bridge.fireEvent(constants.Events.visible, true);
-                    KoHelpers.setFocusOnAutofocusElement();
+                    KoHelpers.setFocusOnAutofocusElement(true /* preventScroll */);
                     vm.firstPanelRender();
                 });
             });

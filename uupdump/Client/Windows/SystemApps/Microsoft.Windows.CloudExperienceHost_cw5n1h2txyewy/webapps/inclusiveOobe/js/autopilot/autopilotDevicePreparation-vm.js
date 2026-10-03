@@ -990,7 +990,7 @@ define([
 
                     return WinJS.Promise.timeout(
                         this.DIAGNOSTICS_LOGS_EXPORT_MAX_DURATION_IN_MILLISECONDS,
-                        this.sessionUtilities.enrollmentApis.collectLogsEx(this.DIAGNOSTICS_LOGS_EXPORT_AREA_DEFAULT, folderPath + "\\" + this.DIAGNOSTICS_LOGS_EXPORT_FILE_NAME)).then(
+                        this.sessionUtilities.autopilotDiagnostics.collectLogsEx(this.DIAGNOSTICS_LOGS_EXPORT_AREA_DEFAULT, folderPath + "\\" + this.DIAGNOSTICS_LOGS_EXPORT_FILE_NAME)).then(
                             () => {
                                 if (hasTimedOut) {
                                     return;

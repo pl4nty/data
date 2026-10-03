@@ -190,76 +190,60 @@ var CloudExperienceHost;
         var OobeAadCloudBackupRestore;
         (function (OobeAadCloudBackupRestore) {
             function getShouldSkipAsync() {
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("CommercialBrOOBETelemetry")) {
-                    CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_RestoreCodePresent");
-                }
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OOBERestoreFlowControlforAAD")) {
-                    return new WinJS.Promise(function (completeDispatch, errorDispatch) {
-                        let licensingPolicyPromise = WinJS.Promise.wrap(CloudExperienceHostAPI.UtilStaticsCore.getLicensingPolicyValue("OOBE-Skip-CloudBackupRestore"));
-                        let cspPromise = isRestoreAllowedByPolicyAsync();
-                        let regKeyPath = "Software\\Microsoft\\Windows\\CurrentVersion\\WindowsBackupAndRestore\\NodeValues";
-                        let regValueNameRestoreFlowStatus = "RestoreFlowStatus";
-                        let regValueNameRestoreFlowTimeStamp = "RestoreFlowTimeStamp";
-                        WinJS.Promise.join([licensingPolicyPromise, cspPromise]).then(([licensingPolicyValue, cspValue]) => {
-                            let shouldSkip = false;
-                            if (licensingPolicyValue != 0) {
-                                shouldSkip = true;
-                                CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_DisabledBySLPolicy");
-                                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RestoreCSPIntuneReporting")) {
-                                    CloudExperienceHostAPI.BackupRestoreManager.setRegistryStringValueForRestoreCSPAsync(regValueNameRestoreFlowStatus, "DisabledBySLPolicy");
-                                }
-                            }
-                            else if (cspValue == false) {
-                                shouldSkip = true;
-                                CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_DisabledByCsp");
-                                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RestoreCSPIntuneReporting")) {
-                                    CloudExperienceHostAPI.BackupRestoreManager.setRegistryStringValueForRestoreCSPAsync(regValueNameRestoreFlowStatus, "DisabledByCSP");
-                                }
-                            }
-                            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("CommercialBrOOBETelemetry")) {
-                                if (shouldSkip == false) {
-                                    CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_RestoreEnabled");
-                                }
-                            }
+                CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_RestoreCodePresent");
+                return new WinJS.Promise(function (completeDispatch, errorDispatch) {
+                    let licensingPolicyPromise = WinJS.Promise.wrap(CloudExperienceHostAPI.UtilStaticsCore.getLicensingPolicyValue("OOBE-Skip-CloudBackupRestore"));
+                    let cspPromise = isRestoreAllowedByPolicyAsync();
+                    let regKeyPath = "Software\\Microsoft\\Windows\\CurrentVersion\\WindowsBackupAndRestore\\NodeValues";
+                    let regValueNameRestoreFlowStatus = "RestoreFlowStatus";
+                    let regValueNameRestoreFlowTimeStamp = "RestoreFlowTimeStamp";
+                    WinJS.Promise.join([licensingPolicyPromise, cspPromise]).then(([licensingPolicyValue, cspValue]) => {
+                        let shouldSkip = false;
+                        if (licensingPolicyValue != 0) {
+                            shouldSkip = true;
+                            CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_DisabledBySLPolicy");
                             if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RestoreCSPIntuneReporting")) {
-                                if (shouldSkip == false) {
-                                    function getUtcTimestamp() {
-                                        return new Date().toISOString();
-                                    }
-                                    CloudExperienceHostAPI.BackupRestoreManager.setRegistryStringValueForRestoreCSPAsync(regValueNameRestoreFlowTimeStamp, getUtcTimestamp());
-                                }
+                                CloudExperienceHostAPI.BackupRestoreManager.setRegistryStringValueForRestoreCSPAsync(regValueNameRestoreFlowStatus, "DisabledBySLPolicy");
                             }
-                            completeDispatch(shouldSkip);
-                        }, (error) => {
-                            CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_PreloadCheckError", CloudExperienceHost.GetJsonFromError(error));
-                            errorDispatch(error);
-                        });
+                        }
+                        else if (cspValue == false) {
+                            shouldSkip = true;
+                            CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_DisabledByCsp");
+                            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RestoreCSPIntuneReporting")) {
+                                CloudExperienceHostAPI.BackupRestoreManager.setRegistryStringValueForRestoreCSPAsync(regValueNameRestoreFlowStatus, "DisabledByCSP");
+                            }
+                        }
+                        if (shouldSkip == false) {
+                            CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_RestoreEnabled");
+                        }
+                        if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("RestoreCSPIntuneReporting")) {
+                            if (shouldSkip == false) {
+                                function getUtcTimestamp() {
+                                    return new Date().toISOString();
+                                }
+                                CloudExperienceHostAPI.BackupRestoreManager.setRegistryStringValueForRestoreCSPAsync(regValueNameRestoreFlowTimeStamp, getUtcTimestamp());
+                            }
+                        }
+                        completeDispatch(shouldSkip);
+                    }, (error) => {
+                        CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_PreloadCheckError", CloudExperienceHost.GetJsonFromError(error));
+                        errorDispatch(error);
                     });
-                }
-                else {
-                    CloudExperienceHost.Telemetry.logEvent("Feature_OOBERestoreFlowControlforAAD_Disabled", "getShouldSkipAsync");
-                    throw "ApiNonexistentOnClient";
-                }
+                });
             }
             OobeAadCloudBackupRestore.getShouldSkipAsync = getShouldSkipAsync;
             function isRestoreAllowedByPolicyAsync() {
-                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OOBERestoreFlowControlforAAD")) {
-                    return new WinJS.Promise(function (completeDispatch, errorDispatch) {
-                        try {
-                            CloudExperienceHostAPI.BackupRestoreManager.isRestoreAllowedByPolicyAsync().then((isAllowed) => {
-                                completeDispatch(isAllowed);
-                            });
-                        }
-                        catch (error) {
-                            CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_PolicyBridgeError", CloudExperienceHost.GetJsonFromError(error));
-                            errorDispatch(error);
-                        }
-                    });
-                }
-                else {
-                    CloudExperienceHost.Telemetry.logEvent("Feature_OOBERestoreFlowControlforAAD_Disabled", "isRestoreAllowedByPolicyAsync");
-                    throw "ApiNonexistentOnClient";
-                }
+                return new WinJS.Promise(function (completeDispatch, errorDispatch) {
+                    try {
+                        CloudExperienceHostAPI.BackupRestoreManager.isRestoreAllowedByPolicyAsync().then((isAllowed) => {
+                            completeDispatch(isAllowed);
+                        });
+                    }
+                    catch (error) {
+                        CloudExperienceHost.Telemetry.logEvent("OobeAADCloudBackupRestore_PolicyBridgeError", CloudExperienceHost.GetJsonFromError(error));
+                        errorDispatch(error);
+                    }
+                });
             }
             function getMicrosoftEntraTenantIdAsync() {
                 if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("GetMicrosoftEntraTenantId")) {
@@ -366,6 +350,28 @@ var CloudExperienceHost;
                     throw "ApiNonexistentOnClient";
                 }
             }
+            static getAADUserSpoTokenAsync(callerUri, redirectUri) {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("FSIR_OdspMigration")) {
+                    return new WinJS.Promise(function (completeDispatch, errorDispatch) {
+                        try {
+                            CloudExperienceHostAPI.BackupRestoreManager.getAADUserSPOTokenAsync(callerUri, redirectUri).then((spoToken) => {
+                                completeDispatch(spoToken);
+                            }, (error) => {
+                                CloudExperienceHost.Telemetry.logEvent("BackupRestoreTokenProvider_GetAADUserSPOTokenAsyncError", CloudExperienceHost.GetJsonFromError(error));
+                                errorDispatch(error);
+                            });
+                        }
+                        catch (error) {
+                            CloudExperienceHost.Telemetry.logEvent("BackupRestoreTokenProvider_GetAADUserSPOTokenAsyncCatch", CloudExperienceHost.GetJsonFromError(error));
+                            errorDispatch(error);
+                        }
+                    });
+                }
+                else {
+                    CloudExperienceHost.Telemetry.logEvent("Feature_FSIR_OdspMigration_Disabled", "getAADUserSpoTokenAsync");
+                    throw "ApiNonexistentOnClient";
+                }
+            }
         }
         __decorate([
             CloudExperienceHost.BridgeHelpers.requireCallerUri,
@@ -375,6 +381,81 @@ var CloudExperienceHost;
             CloudExperienceHost.BridgeHelpers.requireCallerUri,
             CloudExperienceHost.BridgeHelpers.validateCallbackUri
         ], TokenProvider, "getAADUserPdrsTokenAsync", null);
+        __decorate([
+            CloudExperienceHost.BridgeHelpers.requireCallerUri,
+            CloudExperienceHost.BridgeHelpers.validateCallbackUri
+        ], TokenProvider, "getAADUserSpoTokenAsync", null);
         BackupRestore.TokenProvider = TokenProvider;
+        function httpGetWithNoUIAsync(url, headers, timeoutInSecs = 30) {
+            if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeRestoreSuppressCertPrompt")) {
+                if ((url == null) || (url.trim() == "")) {
+                    CloudExperienceHost.Telemetry.logEvent("httpGetWithNoUIAsync_invalidUrl");
+                    throw "InvalidUrl";
+                }
+                try {
+                    let filter = new Windows.Web.Http.Filters.HttpBaseProtocolFilter();
+                    filter.allowUI = false;
+                    let httpClient = new Windows.Web.Http.HttpClient(filter);
+                    let requestHeaders = httpClient.defaultRequestHeaders;
+                    if (headers) {
+                        for (const key in headers) {
+                            if (!requestHeaders.tryAppendWithoutValidation(key, headers[key])) {
+                                CloudExperienceHost.Telemetry.logEvent("httpGetWithNoUIAsync_headerAppendFailure", key);
+                            }
+                        }
+                    }
+                    let uri = new Windows.Foundation.Uri(url);
+                    let requestComplete = false;
+                    let timedOut = false;
+                    let timeoutPromise = WinJS.Promise.timeout(timeoutInSecs * 1000).then(() => { timedOut = true; return null; });
+                    let requestPromise = httpClient.getAsync(uri).then((httpResponse) => {
+                        let statusCode = httpResponse.statusCode;
+                        return httpResponse.content.readAsStringAsync().then((bodyText) => {
+                            requestComplete = true;
+                            return {
+                                status: statusCode,
+                                response: bodyText
+                            };
+                        }, (error) => {
+                            CloudExperienceHost.Telemetry.logEvent("httpGetWithNoUIAsync_readError", CloudExperienceHost.GetJsonFromError(error));
+                            throw error;
+                        });
+                    }, (error) => {
+                        CloudExperienceHost.Telemetry.logEvent("httpGetWithNoUIAsync_error", CloudExperienceHost.GetJsonFromError(error));
+                        throw error;
+                    });
+                    return WinJS.Promise.any([requestPromise, timeoutPromise]).then((result) => {
+                        if (requestComplete) {
+                            return result.value;
+                        }
+                        if (timedOut) {
+                            CloudExperienceHost.Telemetry.logEvent("httpGetWithNoUIAsync_timedOut", JSON.stringify({ timeoutInSecs: timeoutInSecs }));
+                            throw "httpGetWithNoUIAsync_TimedOut";
+                        }
+                        throw "httpGetWithNoUIAsync_Interrupted";
+                    }, (error) => {
+                        CloudExperienceHost.Telemetry.logEvent("httpGetWithNoUIAsync_promiseError", CloudExperienceHost.GetJsonFromError(error));
+                        throw error;
+                    }).then((result) => {
+                        httpClient.close();
+                        filter.close();
+                        return result;
+                    }, (error) => {
+                        httpClient.close();
+                        filter.close();
+                        throw error;
+                    });
+                }
+                catch (error) {
+                    CloudExperienceHost.Telemetry.logEvent("httpGetWithNoUIAsync_exception", CloudExperienceHost.GetJsonFromError(error));
+                    throw error;
+                }
+            }
+            else {
+                CloudExperienceHost.Telemetry.logEvent("Feature_OobeRestoreSuppressCertPrompt_Disabled", "httpGetWithNoUIAsync");
+                throw "ApiNonexistentOnClient";
+            }
+        }
+        BackupRestore.httpGetWithNoUIAsync = httpGetWithNoUIAsync;
     })(BackupRestore = CloudExperienceHost.BackupRestore || (CloudExperienceHost.BackupRestore = {}));
 })(CloudExperienceHost || (CloudExperienceHost = {}));

@@ -472,7 +472,10 @@ var CloudExperienceHost;
                 bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "UnifiedEnrollment_ProvisioningProgressPage_CollectLogs_Chosen");
                 bridge.invoke("CloudExperienceHost.showFolderPicker").then(function (folderPath) {
                     var enterpriseManagementWorker = new EnterpriseDeviceManagement.Enrollment.ReflectedEnroller();
-                    enterpriseManagementWorker.collectLogs(folderPath).then(function () {
+                    var diagnosticsCollector = CloudExperienceHostAPI.FeatureStaging.isOobeFeatureEnabled("MdmLogFix") ?
+                        new CloudExperienceHostAPI.Diagnostics.AutopilotDiagnostics() :
+                        enterpriseManagementWorker;
+                    diagnosticsCollector.collectLogs(folderPath).then(function () {
 
                     }, function (e) {
                         _logFailureEvent("UnifiedEnrollment_ProgressPage_CollectLogs_Failure", e);
