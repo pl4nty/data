@@ -1,0 +1,902 @@
+// MIT License
+//
+// Copyright (c) 2023-Present - Violet Hansen - (aka HotCakeX on GitHub) - Email Address: spynetgirl@outlook.com
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// See here for more information: https://github.com/HotCakeX/Harden-Windows-Security/blob/main/LICENSE
+//
+
+using System.Runtime.InteropServices;
+using System.Xml;
+
+namespace AppControlManager.SiPolicy;
+
+internal static class CustomSerialization
+{
+	/// <summary>
+	/// Generates an XML document from a given security policy object, encapsulating various attributes and elements.
+	/// </summary>
+	/// <param name="policy">The security policy object provides the necessary data to populate the XML structure.</param>
+	/// <returns>An XmlDocument representing the structured XML of the security policy.</returns>
+	/// <exception cref="InvalidOperationException">Thrown when required elements or attributes cannot be appended to the XML document.</exception>
+	internal static XmlDocument CreateXmlFromSiPolicy(SiPolicy policy)
+	{
+		XmlDocument xmlDoc = new();
+		XmlDeclaration xmlDecl = xmlDoc.CreateXmlDeclaration("1.0", "utf-8", null);
+		_ = xmlDoc.AppendChild(xmlDecl);
+
+		// Create root element
+		XmlElement root = xmlDoc.CreateElement("SiPolicy", Atlas.SiPolicyNamespace);
+		_ = xmlDoc.AppendChild(root);
+
+		// Set attributes for the root element
+		if (!string.IsNullOrEmpty(policy.FriendlyName))
+			root.SetAttribute("FriendlyName", policy.FriendlyName);
+
+		root.SetAttribute("PolicyType", s_policyTypeLabels[(int)policy.PolicyType]);
+
+		// VersionEx, PolicyID, BasePolicyID, PlatformID
+		if (!AppendTextElement(xmlDoc, root, "VersionEx", policy.VersionEx))
+		{
+			throw new InvalidOperationException("Could not get the policy version");
+		}
+		if (!AppendTextElement(xmlDoc, root, "PolicyID", policy.PolicyID))
+		{
+			throw new InvalidOperationException("Could not get the policy ID");
+		}
+		if (!AppendTextElement(xmlDoc, root, "BasePolicyID", policy.BasePolicyID))
+		{
+			throw new InvalidOperationException("Could not get the Base policy ID");
+		}
+		if (!AppendTextElement(xmlDoc, root, "PlatformID", policy.PlatformID))
+		{
+			throw new InvalidOperationException("Could not get the Platform ID");
+		}
+
+		// Rules
+		// Adding this first so if there are no rules, an empty Rules node will exist to satisfy the schema validation
+		XmlElement rulesElement = xmlDoc.CreateElement("Rules", Atlas.SiPolicyNamespace);
+		_ = root.AppendChild(rulesElement);
+
+		foreach (RuleType rule in CollectionsMarshal.AsSpan(policy.Rules))
+		{
+			XmlElement ruleElement = xmlDoc.CreateElement("Rule", Atlas.SiPolicyNamespace);
+
+			if (!AppendTextElement(xmlDoc, ruleElement, "Option", ConvertOptionType(rule.Item)))
+				continue;
+
+			_ = rulesElement.AppendChild(ruleElement);
+		}
+
+		// EKUs
+		if (policy.EKUs?.Count > 0)
+		{
+			XmlElement ekusElement = xmlDoc.CreateElement("EKUs", Atlas.SiPolicyNamespace);
+			_ = root.AppendChild(ekusElement);
+
+			foreach (EKU eku in CollectionsMarshal.AsSpan(policy.EKUs))
+			{
+				XmlElement ekuElement = xmlDoc.CreateElement("EKU", Atlas.SiPolicyNamespace);
+				ekuElement.SetAttribute("ID", eku.ID);
+
+				if (!string.IsNullOrEmpty(eku.FriendlyName))
+					ekuElement.SetAttribute("FriendlyName", eku.FriendlyName);
+
+				ekuElement.SetAttribute("Value", Convert.ToHexString(eku.Value.Span));
+				if (!string.IsNullOrEmpty(eku.OID))
+					ekuElement.SetAttribute("OID", eku.OID);
+				_ = ekusElement.AppendChild(ekuElement);
+			}
+		}
+
+		// FileRules
+		if (policy.FileRules?.Count > 0)
+		{
+			XmlElement fileRulesElement = xmlDoc.CreateElement("FileRules", Atlas.SiPolicyNamespace);
+			_ = root.AppendChild(fileRulesElement);
+
+			// Detect the types of each FileRule
+			foreach (object fr in CollectionsMarshal.AsSpan(policy.FileRules))
+			{
+				if (fr is Allow allow)
+				{
+					AppendAllow(xmlDoc, fileRulesElement, allow);
+				}
+				else if (fr is Deny deny)
+				{
+					AppendDeny(xmlDoc, fileRulesElement, deny);
+				}
+				else if (fr is FileAttrib fileAttrib)
+				{
+					AppendFileAttrib(xmlDoc, fileRulesElement, fileAttrib);
+				}
+				else if (fr is FileRule fileRule)
+				{
+					AppendFileRule(xmlDoc, fileRulesElement, fileRule);
+				}
+			}
+		}
+
+		// ArtifactRules
+		if (policy.ArtifactRules?.Count > 0)
+		{
+			XmlElement artifactRulesElement = xmlDoc.CreateElement("ArtifactRules", Atlas.SiPolicyNamespace);
+			_ = root.AppendChild(artifactRulesElement);
+
+			foreach (ArtifactRule artifactRule in CollectionsMarshal.AsSpan(policy.ArtifactRules))
+			{
+				XmlElement artifactRuleElement = xmlDoc.CreateElement("ArtifactRule", Atlas.SiPolicyNamespace);
+				artifactRuleElement.SetAttribute("ID", artifactRule.ID);
+				artifactRuleElement.SetAttribute("ArtifactType", artifactRule.ArtifactType.ToString());
+				artifactRuleElement.SetAttribute("Action", artifactRule.Action.ToString());
+				if (!string.IsNullOrEmpty(artifactRule.FriendlyName)) artifactRuleElement.SetAttribute("FriendlyName", artifactRule.FriendlyName);
+				if (!string.IsNullOrEmpty(artifactRule.ArtifactName)) artifactRuleElement.SetAttribute("ArtifactName", artifactRule.ArtifactName);
+				if (!string.IsNullOrEmpty(artifactRule.ArtifactDescription)) artifactRuleElement.SetAttribute("ArtifactDescription", artifactRule.ArtifactDescription);
+				if (!string.IsNullOrEmpty(artifactRule.MinimumVersion) && !string.Equals(artifactRule.MinimumVersion, "0.0.0.0", StringComparison.OrdinalIgnoreCase))
+					artifactRuleElement.SetAttribute("MinimumVersion", artifactRule.MinimumVersion);
+				if (!string.IsNullOrEmpty(artifactRule.MaximumVersion) && !string.Equals(artifactRule.MaximumVersion, Atlas.DefaultMaxVersion, StringComparison.OrdinalIgnoreCase))
+					artifactRuleElement.SetAttribute("MaximumVersion", artifactRule.MaximumVersion);
+
+				if (artifactRule.ArtifactHash?.Hash is not null && !artifactRule.ArtifactHash.Hash.Item.IsEmpty)
+				{
+					XmlElement artifactHashElement = xmlDoc.CreateElement("ArtifactHash", Atlas.SiPolicyNamespace);
+					XmlElement hashElement = xmlDoc.CreateElement("Hash", Atlas.SiPolicyNamespace);
+					XmlElement digestElement = xmlDoc.CreateElement(artifactRule.ArtifactHash.Hash.ItemElementName.ToString(), Atlas.SiPolicyNamespace);
+					digestElement.InnerText = Convert.ToHexString(artifactRule.ArtifactHash.Hash.Item.Span);
+					_ = hashElement.AppendChild(digestElement);
+					_ = artifactHashElement.AppendChild(hashElement);
+					_ = artifactRuleElement.AppendChild(artifactHashElement);
+				}
+
+				_ = artifactRulesElement.AppendChild(artifactRuleElement);
+			}
+		}
+
+		// Signers
+		if (policy.Signers?.Count > 0)
+		{
+			// Only create the <Signers> block if there are any signers since it is nullable (can be absent in the XML) according to the Schema.
+			// Don't append to the root yet
+			XmlElement signersElement = xmlDoc.CreateElement("Signers", Atlas.SiPolicyNamespace);
+
+			foreach (Signer signer in CollectionsMarshal.AsSpan(policy.Signers))
+			{
+				XmlElement signerElement = xmlDoc.CreateElement("Signer", Atlas.SiPolicyNamespace);
+				signerElement.SetAttribute("ID", signer.ID);
+
+				if (!string.IsNullOrEmpty(signer.Name))
+				{
+					signerElement.SetAttribute("Name", signer.Name);
+				}
+
+				if (signer.SignTimeAfter is not null && signer.SignTimeAfter.Value != DateTime.MinValue)
+					signerElement.SetAttribute("SignTimeAfter", signer.SignTimeAfter.Value.ToString("o"));
+
+				// CertRoot
+				if (signer.CertRoot.Value.IsEmpty) continue;
+				XmlElement certRootElement = xmlDoc.CreateElement("CertRoot", Atlas.SiPolicyNamespace);
+				certRootElement.SetAttribute("Type", signer.CertRoot.Type.ToString());
+				certRootElement.SetAttribute("Value", Convert.ToHexString(signer.CertRoot.Value.Span));
+				_ = signerElement.AppendChild(certRootElement);
+
+				// CertEKU(s)
+				if (signer.CertEKU is { Count: > 0 })
+				{
+					foreach (CertEKU certEku in CollectionsMarshal.AsSpan(signer.CertEKU))
+					{
+						XmlElement certEkuElement = xmlDoc.CreateElement("CertEKU", Atlas.SiPolicyNamespace);
+						certEkuElement.SetAttribute("ID", certEku.ID);
+						if (certEku.Condition is not null)
+							certEkuElement.SetAttribute("Condition", certEku.Condition.Value.ToString());
+						_ = signerElement.AppendChild(certEkuElement);
+					}
+				}
+
+				// CertIssuer, CertPublisher, CertOemID
+				if (signer.CertIssuer is not null)
+				{
+					if (!AppendAttributeElement(xmlDoc, signerElement, "CertIssuer", "Value", signer.CertIssuer.Value))
+					{
+						throw new InvalidOperationException("Could not get the CertIssuer value");
+					}
+				}
+				if (signer.CertPublisher is not null)
+				{
+					if (!AppendAttributeElement(xmlDoc, signerElement, "CertPublisher", "Value", signer.CertPublisher.Value))
+					{
+						throw new InvalidOperationException("Could not get the CertPublisher value");
+					}
+				}
+				if (signer.CertOemID is not null)
+				{
+					if (!AppendAttributeElement(xmlDoc, signerElement, "CertOemID", "Value", signer.CertOemID.Value))
+					{
+						throw new InvalidOperationException("Could not get the CertOemID value");
+					}
+				}
+
+				// FileAttribRef(s)
+				if (signer.FileAttribRef is { Count: > 0 })
+				{
+					foreach (FileAttribRef far in CollectionsMarshal.AsSpan(signer.FileAttribRef))
+					{
+						XmlElement farElement = xmlDoc.CreateElement("FileAttribRef", Atlas.SiPolicyNamespace);
+						farElement.SetAttribute("RuleID", far.RuleID);
+						_ = signerElement.AppendChild(farElement);
+					}
+				}
+
+				// ArtifactRuleRef(s)
+				if (signer.ArtifactRuleRef is { Count: > 0 })
+				{
+					foreach (ArtifactRuleRef artifactRuleRef in CollectionsMarshal.AsSpan(signer.ArtifactRuleRef))
+					{
+						XmlElement artifactRuleRefElement = xmlDoc.CreateElement("ArtifactRuleRef", Atlas.SiPolicyNamespace);
+						artifactRuleRefElement.SetAttribute("RuleID", artifactRuleRef.RuleID);
+						_ = signerElement.AppendChild(artifactRuleRefElement);
+					}
+				}
+				_ = signersElement.AppendChild(signerElement);
+			}
+			// Only append the Signers element to the root if it has valid elements and won't be empty
+			if (signersElement.HasChildNodes)
+				_ = root.AppendChild(signersElement);
+		}
+
+		// SigningScenarios
+		if (policy.SigningScenarios is { Count: > 0 })
+		{
+			XmlElement signingScenariosElement = xmlDoc.CreateElement("SigningScenarios", Atlas.SiPolicyNamespace);
+			_ = root.AppendChild(signingScenariosElement);
+
+			foreach (SigningScenario scenario in CollectionsMarshal.AsSpan(policy.SigningScenarios))
+			{
+				XmlElement scenarioElement = xmlDoc.CreateElement("SigningScenario", Atlas.SiPolicyNamespace);
+				scenarioElement.SetAttribute("Value", scenario.Value.ToString());
+				scenarioElement.SetAttribute("ID", scenario.ID);
+
+				if (!string.IsNullOrEmpty(scenario.FriendlyName))
+					scenarioElement.SetAttribute("FriendlyName", scenario.FriendlyName);
+
+				if (!string.IsNullOrEmpty(scenario.InheritedScenarios))
+					scenarioElement.SetAttribute("InheritedScenarios", scenario.InheritedScenarios);
+
+				if (scenario.MinimumHashAlgorithm is { } minimumHashAlgorithm && minimumHashAlgorithm != 0)
+					scenarioElement.SetAttribute("MinimumHashAlgorithm", minimumHashAlgorithm.ToString());
+
+				// ProductSigners
+				XmlElement prodSigners = xmlDoc.CreateElement("ProductSigners", Atlas.SiPolicyNamespace);
+				AppendProductSigners(xmlDoc, prodSigners, scenario.ProductSigners);
+				_ = scenarioElement.AppendChild(prodSigners);
+
+				// ArtifactSigners
+				if (scenario.ArtifactSigners is not null)
+				{
+					XmlElement artifactSignersElement = xmlDoc.CreateElement("ArtifactSigners", Atlas.SiPolicyNamespace);
+
+					ProductSigners artifactProductSigners = new()
+					{
+						AllowedSigners = scenario.ArtifactSigners.AllowedSigners,
+						DeniedSigners = scenario.ArtifactSigners.DeniedSigners
+					};
+					AppendProductSigners(xmlDoc, artifactSignersElement, artifactProductSigners);
+
+					if (scenario.ArtifactSigners.ArtifactRulesRef is not null)
+					{
+						XmlElement artifactRulesRefElement = xmlDoc.CreateElement("ArtifactRulesRef", Atlas.SiPolicyNamespace);
+						if (!string.IsNullOrEmpty(scenario.ArtifactSigners.ArtifactRulesRef.Workaround))
+							artifactRulesRefElement.SetAttribute("Workaround", scenario.ArtifactSigners.ArtifactRulesRef.Workaround);
+
+						foreach (ArtifactRuleRef artifactRuleRef in CollectionsMarshal.AsSpan(scenario.ArtifactSigners.ArtifactRulesRef.ArtifactRuleRef))
+						{
+							XmlElement artifactRuleRefElement = xmlDoc.CreateElement("ArtifactRuleRef", Atlas.SiPolicyNamespace);
+							artifactRuleRefElement.SetAttribute("RuleID", artifactRuleRef.RuleID);
+							_ = artifactRulesRefElement.AppendChild(artifactRuleRefElement);
+						}
+
+						if (artifactRulesRefElement.HasChildNodes)
+							_ = artifactSignersElement.AppendChild(artifactRulesRefElement);
+					}
+
+					if (artifactSignersElement.HasChildNodes)
+						_ = scenarioElement.AppendChild(artifactSignersElement);
+				}
+				// TestSigners
+				if (scenario.TestSigners is not null)
+				{
+					XmlElement testSigners = xmlDoc.CreateElement("TestSigners", Atlas.SiPolicyNamespace);
+					AppendTestSigners(xmlDoc, testSigners, scenario.TestSigners);
+					// Binary reverse conversion can materialize an empty TestSigners object when the CIP section only contains zero counts.
+					// The XML serializer should omit that empty optional section to match the original XML serialization semantics.
+					if (testSigners.HasChildNodes)
+						_ = scenarioElement.AppendChild(testSigners);
+				}
+				// TestSigningSigners
+				if (scenario.TestSigningSigners is not null)
+				{
+					XmlElement testSigningSigners = xmlDoc.CreateElement("TestSigningSigners", Atlas.SiPolicyNamespace);
+					AppendTestSigningSigners(xmlDoc, testSigningSigners, scenario.TestSigningSigners);
+					// Keep the optional TestSigningSigners section out of the XML when it has no serialized children.
+					// This prevents empty elements from being introduced during CIP to XML normalization.
+					if (testSigningSigners.HasChildNodes)
+						_ = scenarioElement.AppendChild(testSigningSigners);
+				}
+				// AppIDTags
+				if (scenario.AppIDTags is not null)
+				{
+					XmlElement appIDTagsElement = xmlDoc.CreateElement("AppIDTags", Atlas.SiPolicyNamespace);
+					if (scenario.AppIDTags.EnforceDLL is not null)
+						appIDTagsElement.SetAttribute("EnforceDLL", scenario.AppIDTags.EnforceDLL.ToString()?.ToLowerInvariant()); // Only lowercase "true" is considered valid by the schema
+
+					if (scenario.AppIDTags.AppIDTag is not null)
+					{
+						foreach (AppIDTag tag in CollectionsMarshal.AsSpan(scenario.AppIDTags.AppIDTag))
+						{
+							XmlElement tagElement = xmlDoc.CreateElement("AppIDTag", Atlas.SiPolicyNamespace);
+							tagElement.SetAttribute("Key", tag.Key);
+							tagElement.SetAttribute("Value", tag.Value);
+							_ = appIDTagsElement.AppendChild(tagElement);
+						}
+					}
+					_ = scenarioElement.AppendChild(appIDTagsElement);
+				}
+				_ = signingScenariosElement.AppendChild(scenarioElement);
+			}
+		}
+
+		// UpdatePolicySigners
+		if (policy.UpdatePolicySigners?.Count > 0)
+		{
+			XmlElement upsElement = xmlDoc.CreateElement("UpdatePolicySigners", Atlas.SiPolicyNamespace);
+			_ = root.AppendChild(upsElement);
+
+			foreach (UpdatePolicySigner ups in CollectionsMarshal.AsSpan(policy.UpdatePolicySigners))
+			{
+				XmlElement upsChild = xmlDoc.CreateElement("UpdatePolicySigner", Atlas.SiPolicyNamespace);
+				upsChild.SetAttribute("SignerId", ups.SignerId);
+				_ = upsElement.AppendChild(upsChild);
+			}
+		}
+
+		// CiSigners
+		if (policy.CiSigners?.Count > 0)
+		{
+			XmlElement ciElement = xmlDoc.CreateElement("CiSigners", Atlas.SiPolicyNamespace);
+			_ = root.AppendChild(ciElement);
+
+			foreach (CiSigner ci in CollectionsMarshal.AsSpan(policy.CiSigners))
+			{
+				XmlElement ciSignerElement = xmlDoc.CreateElement("CiSigner", Atlas.SiPolicyNamespace);
+				ciSignerElement.SetAttribute("SignerId", ci.SignerId);
+				_ = ciElement.AppendChild(ciSignerElement);
+			}
+		}
+
+		// HvciOptions
+		if (policy.HvciOptions is not null)
+			if (!AppendTextElement(xmlDoc, root, "HvciOptions", policy.HvciOptions.ToString()))
+			{
+				throw new InvalidOperationException("Could not get the HVCI Options value");
+			}
+
+		// Settings
+		if (policy.Settings is { Count: > 0 })
+		{
+			// Create element but don't append it to the root yet
+			XmlElement settingsElement = xmlDoc.CreateElement("Settings", Atlas.SiPolicyNamespace);
+
+			foreach (Setting setting in CollectionsMarshal.AsSpan(policy.Settings))
+			{
+				// If the Setting's value is null we shouldn't create any setting at all because it would be against the schema guidelines
+				if (setting is null || setting.Value is null || setting.Value.Item is null)
+					continue;
+
+				XmlElement settingElement = xmlDoc.CreateElement("Setting", Atlas.SiPolicyNamespace);
+				settingElement.SetAttribute("Provider", setting.Provider);
+				settingElement.SetAttribute("Key", setting.Key);
+				settingElement.SetAttribute("ValueName", setting.ValueName);
+
+				XmlElement valueElement = xmlDoc.CreateElement("Value", Atlas.SiPolicyNamespace);
+				if (setting.Value.Item is ReadOnlyMemory<byte> bMem)
+				{
+					if (!AppendTextElement(xmlDoc, valueElement, "Binary", Convert.ToHexString(bMem.Span)))
+					{
+						continue;
+					}
+				}
+				else if (setting.Value.Item is bool boolVal)
+				{
+					// Must be lowercase for CIP conversion to succeed, "True" is not ok but "true" is ok.
+					if (!AppendTextElement(xmlDoc, valueElement, "Boolean", boolVal ? "true" : "false"))
+					{
+						continue;
+					}
+				}
+				else if (setting.Value.Item is uint uintVal)
+				{
+					if (!AppendTextElement(xmlDoc, valueElement, "DWord", uintVal.ToString()))
+					{
+						continue;
+					}
+				}
+				else if (setting.Value.Item is string s)
+				{
+					if (!AppendTextElement(xmlDoc, valueElement, "String", s))
+					{
+						continue;
+					}
+				}
+				else
+				{
+					// If the value doesn't match then do not add this setting at all
+					continue;
+				}
+
+				_ = settingElement.AppendChild(valueElement);
+
+				_ = settingsElement.AppendChild(settingElement);
+			}
+
+			// Only append to the root if it is guaranteed that it won't be empty
+			if (settingsElement.HasChildNodes)
+				_ = root.AppendChild(settingsElement);
+		}
+
+		// Macros
+		if (policy.Macros is { Count: > 0 })
+		{
+			XmlElement macrosElement = xmlDoc.CreateElement("Macros", Atlas.SiPolicyNamespace);
+			_ = root.AppendChild(macrosElement);
+			foreach (MacrosMacro macro in CollectionsMarshal.AsSpan(policy.Macros))
+			{
+				XmlElement macroElement = xmlDoc.CreateElement("Macro", Atlas.SiPolicyNamespace);
+				macroElement.SetAttribute("Id", macro.Id);
+				macroElement.SetAttribute("Value", macro.Value);
+				_ = macrosElement.AppendChild(macroElement);
+			}
+		}
+
+		// Supplemental policy signers
+		if (policy.SupplementalPolicySigners is { Count: > 0 })
+		{
+			XmlElement suppElement = xmlDoc.CreateElement("SupplementalPolicySigners", Atlas.SiPolicyNamespace);
+			_ = root.AppendChild(suppElement);
+			foreach (SupplementalPolicySigner sps in CollectionsMarshal.AsSpan(policy.SupplementalPolicySigners))
+			{
+				XmlElement spsElement = xmlDoc.CreateElement("SupplementalPolicySigner", Atlas.SiPolicyNamespace);
+				spsElement.SetAttribute("SignerId", sps.SignerId);
+				_ = suppElement.AppendChild(spsElement);
+			}
+		}
+
+		// AppSettings (AppSettingRegion)
+		if (policy.AppSettings is { App.Count: > 0 })
+		{
+			XmlElement appSettingsElement = xmlDoc.CreateElement("AppSettings", Atlas.SiPolicyNamespace);
+			_ = root.AppendChild(appSettingsElement);
+			foreach (AppRoot app in CollectionsMarshal.AsSpan(policy.AppSettings.App))
+			{
+				XmlElement appElement = xmlDoc.CreateElement("App", Atlas.SiPolicyNamespace);
+				if (!string.IsNullOrEmpty(app.Manifest))
+					appElement.SetAttribute("Manifest", app.Manifest);
+				if (app.Setting is { Count: > 0 })
+				{
+					foreach (AppSetting appSetting in CollectionsMarshal.AsSpan(app.Setting))
+					{
+						XmlElement settingElem = xmlDoc.CreateElement("Setting", Atlas.SiPolicyNamespace);
+						// Name is an optional XML attribute in the schema, so omit it when the model has no value.
+						if (!string.IsNullOrEmpty(appSetting.Name))
+							settingElem.SetAttribute("Name", appSetting.Name);
+						if (appSetting.Value is { Count: > 0 })
+						{
+							foreach (string val in CollectionsMarshal.AsSpan(appSetting.Value))
+							{
+								if (!AppendTextElement(xmlDoc, settingElem, "Value", val))
+								{
+									continue;
+								}
+							}
+						}
+						_ = appElement.AppendChild(settingElem);
+					}
+				}
+				_ = appSettingsElement.AppendChild(appElement);
+			}
+		}
+
+		return xmlDoc;
+	}
+
+	// Helper for OptionType conversion
+	internal static string ConvertOptionType(OptionType option) => option switch
+	{
+		OptionType.EnabledUMCI => "Enabled:UMCI",
+		OptionType.EnabledBootMenuProtection => "Enabled:Boot Menu Protection",
+		OptionType.EnabledIntelligentSecurityGraphAuthorization => "Enabled:Intelligent Security Graph Authorization",
+		OptionType.EnabledInvalidateEAsonReboot => "Enabled:Invalidate EAs on Reboot",
+		OptionType.RequiredWHQL => "Required:WHQL",
+		OptionType.EnabledDeveloperModeDynamicCodeTrust => "Enabled:Developer Mode Dynamic Code Trust",
+		OptionType.EnabledAllowSupplementalPolicies => "Enabled:Allow Supplemental Policies",
+		OptionType.DisabledRuntimeFilePathRuleProtection => "Disabled:Runtime FilePath Rule Protection",
+		OptionType.EnabledRevokedExpiredAsUnsigned => "Enabled:Revoked Expired As Unsigned",
+		OptionType.EnabledAuditMode => "Enabled:Audit Mode",
+		OptionType.DisabledFlightSigning => "Disabled:Flight Signing",
+		OptionType.EnabledInheritDefaultPolicy => "Enabled:Inherit Default Policy",
+		OptionType.EnabledUnsignedSystemIntegrityPolicy => "Enabled:Unsigned System Integrity Policy",
+		OptionType.EnabledDynamicCodeSecurity => "Enabled:Dynamic Code Security",
+		OptionType.RequiredEVSigners => "Required:EV Signers",
+		OptionType.EnabledBootAuditOnFailure => "Enabled:Boot Audit On Failure",
+		OptionType.EnabledAdvancedBootOptionsMenu => "Enabled:Advanced Boot Options Menu",
+		OptionType.DisabledScriptEnforcement => "Disabled:Script Enforcement",
+		OptionType.RequiredEnforceStoreApplications => "Required:Enforce Store Applications",
+		OptionType.EnabledSecureSettingPolicy => "Enabled:Secure Setting Policy",
+		OptionType.EnabledManagedInstaller => "Enabled:Managed Installer",
+		OptionType.EnabledUpdatePolicyNoReboot => "Enabled:Update Policy No Reboot",
+		OptionType.EnabledConditionalWindowsLockdownPolicy => "Enabled:Conditional Windows Lockdown Policy",
+		OptionType.DisabledDefaultWindowsCertificateRemapping => "Disabled:Default Windows Certificate Remapping",
+		_ => throw new InvalidOperationException("Policy Rule Option is not valid")
+	};
+
+	/// <summary>
+	/// Labels for <see cref="PolicyType"/>.
+	/// This is more efficient than using a switch for retrieving the strings
+	/// but only for cases where the enum values are contiguous and start from 0, which is the case for <see cref="PolicyType"/>.
+	/// </summary>
+	internal static readonly string[] s_policyTypeLabels = [
+		"Base Policy",
+		"Supplemental Policy",
+		"AppID Tagging Policy",
+	];
+
+	// FileRules Helpers
+	private static void AppendAllow(XmlDocument doc, XmlElement parent, Allow allow)
+	{
+		XmlElement element = doc.CreateElement("Allow", Atlas.SiPolicyNamespace);
+		if (!string.IsNullOrEmpty(allow.ID)) element.SetAttribute("ID", allow.ID);
+		if (!string.IsNullOrEmpty(allow.FriendlyName)) element.SetAttribute("FriendlyName", allow.FriendlyName);
+		if (!string.IsNullOrEmpty(allow.FileName)) element.SetAttribute("FileName", allow.FileName);
+		if (!string.IsNullOrEmpty(allow.InternalName)) element.SetAttribute("InternalName", allow.InternalName);
+		if (!string.IsNullOrEmpty(allow.FileDescription)) element.SetAttribute("FileDescription", allow.FileDescription);
+		if (!string.IsNullOrEmpty(allow.ProductName)) element.SetAttribute("ProductName", allow.ProductName);
+		if (!string.IsNullOrEmpty(allow.PackageFamilyName)) element.SetAttribute("PackageFamilyName", allow.PackageFamilyName);
+		if (!string.IsNullOrEmpty(allow.PackageVersion)) element.SetAttribute("PackageVersion", allow.PackageVersion);
+		if (!string.IsNullOrEmpty(allow.MinimumFileVersion)) element.SetAttribute("MinimumFileVersion", allow.MinimumFileVersion);
+		if (!string.IsNullOrEmpty(allow.MaximumFileVersion)) element.SetAttribute("MaximumFileVersion", allow.MaximumFileVersion);
+		if (!allow.Hash.IsEmpty) element.SetAttribute("Hash", Convert.ToHexString(allow.Hash.Span));
+		if (!string.IsNullOrEmpty(allow.AppIDs)) element.SetAttribute("AppIDs", allow.AppIDs);
+		if (!string.IsNullOrEmpty(allow.FilePath)) element.SetAttribute("FilePath", allow.FilePath);
+		if (!string.IsNullOrEmpty(allow.RequireHotpatchID)) element.SetAttribute("RequireHotpatchID", allow.RequireHotpatchID);
+		if (allow.MinimumHotpatchSequence is not null) element.SetAttribute("MinimumHotpatchSequence", allow.MinimumHotpatchSequence.ToString());
+		if (allow.MaximumHotpatchSequence is not null) element.SetAttribute("MaximumHotpatchSequence", allow.MaximumHotpatchSequence.ToString());
+		_ = parent.AppendChild(element);
+	}
+
+	private static void AppendDeny(XmlDocument doc, XmlElement parent, Deny deny)
+	{
+		XmlElement element = doc.CreateElement("Deny", Atlas.SiPolicyNamespace);
+		if (!string.IsNullOrEmpty(deny.ID)) element.SetAttribute("ID", deny.ID);
+		if (!string.IsNullOrEmpty(deny.FriendlyName)) element.SetAttribute("FriendlyName", deny.FriendlyName);
+		if (!string.IsNullOrEmpty(deny.FileName)) element.SetAttribute("FileName", deny.FileName);
+		if (!string.IsNullOrEmpty(deny.InternalName)) element.SetAttribute("InternalName", deny.InternalName);
+		if (!string.IsNullOrEmpty(deny.FileDescription)) element.SetAttribute("FileDescription", deny.FileDescription);
+		if (!string.IsNullOrEmpty(deny.ProductName)) element.SetAttribute("ProductName", deny.ProductName);
+		if (!string.IsNullOrEmpty(deny.PackageFamilyName)) element.SetAttribute("PackageFamilyName", deny.PackageFamilyName);
+		if (!string.IsNullOrEmpty(deny.PackageVersion)) element.SetAttribute("PackageVersion", deny.PackageVersion);
+		if (!string.IsNullOrEmpty(deny.MinimumFileVersion)) element.SetAttribute("MinimumFileVersion", deny.MinimumFileVersion);
+		if (!string.IsNullOrEmpty(deny.MaximumFileVersion)) element.SetAttribute("MaximumFileVersion", deny.MaximumFileVersion);
+		if (!deny.Hash.IsEmpty) element.SetAttribute("Hash", Convert.ToHexString(deny.Hash.Span));
+		if (!string.IsNullOrEmpty(deny.AppIDs)) element.SetAttribute("AppIDs", deny.AppIDs);
+		if (!string.IsNullOrEmpty(deny.FilePath)) element.SetAttribute("FilePath", deny.FilePath);
+		_ = parent.AppendChild(element);
+	}
+
+	private static void AppendFileAttrib(XmlDocument doc, XmlElement parent, FileAttrib fileAttrib)
+	{
+		XmlElement element = doc.CreateElement("FileAttrib", Atlas.SiPolicyNamespace);
+		if (!string.IsNullOrEmpty(fileAttrib.ID)) element.SetAttribute("ID", fileAttrib.ID);
+		if (!string.IsNullOrEmpty(fileAttrib.FriendlyName)) element.SetAttribute("FriendlyName", fileAttrib.FriendlyName);
+		if (!string.IsNullOrEmpty(fileAttrib.FileName)) element.SetAttribute("FileName", fileAttrib.FileName);
+		if (!string.IsNullOrEmpty(fileAttrib.InternalName)) element.SetAttribute("InternalName", fileAttrib.InternalName);
+		if (!string.IsNullOrEmpty(fileAttrib.FileDescription)) element.SetAttribute("FileDescription", fileAttrib.FileDescription);
+		if (!string.IsNullOrEmpty(fileAttrib.ProductName)) element.SetAttribute("ProductName", fileAttrib.ProductName);
+		if (!string.IsNullOrEmpty(fileAttrib.PackageFamilyName)) element.SetAttribute("PackageFamilyName", fileAttrib.PackageFamilyName);
+		if (!string.IsNullOrEmpty(fileAttrib.PackageVersion)) element.SetAttribute("PackageVersion", fileAttrib.PackageVersion);
+		if (!string.IsNullOrEmpty(fileAttrib.MinimumFileVersion)) element.SetAttribute("MinimumFileVersion", fileAttrib.MinimumFileVersion);
+		if (!string.IsNullOrEmpty(fileAttrib.MaximumFileVersion)) element.SetAttribute("MaximumFileVersion", fileAttrib.MaximumFileVersion);
+		if (!fileAttrib.Hash.IsEmpty) element.SetAttribute("Hash", Convert.ToHexString(fileAttrib.Hash.Span));
+		if (!string.IsNullOrEmpty(fileAttrib.AppIDs)) element.SetAttribute("AppIDs", fileAttrib.AppIDs);
+		if (!string.IsNullOrEmpty(fileAttrib.FilePath)) element.SetAttribute("FilePath", fileAttrib.FilePath);
+		_ = parent.AppendChild(element);
+	}
+
+	private static void AppendFileRule(XmlDocument doc, XmlElement parent, FileRule fileRule)
+	{
+		XmlElement element = doc.CreateElement("FileRule", Atlas.SiPolicyNamespace);
+		if (!string.IsNullOrEmpty(fileRule.ID)) element.SetAttribute("ID", fileRule.ID);
+		if (!string.IsNullOrEmpty(fileRule.FriendlyName)) element.SetAttribute("FriendlyName", fileRule.FriendlyName);
+		if (!string.IsNullOrEmpty(fileRule.FileName)) element.SetAttribute("FileName", fileRule.FileName);
+		if (!string.IsNullOrEmpty(fileRule.InternalName)) element.SetAttribute("InternalName", fileRule.InternalName);
+		if (!string.IsNullOrEmpty(fileRule.FileDescription)) element.SetAttribute("FileDescription", fileRule.FileDescription);
+		if (!string.IsNullOrEmpty(fileRule.ProductName)) element.SetAttribute("ProductName", fileRule.ProductName);
+		if (!string.IsNullOrEmpty(fileRule.PackageFamilyName)) element.SetAttribute("PackageFamilyName", fileRule.PackageFamilyName);
+		if (!string.IsNullOrEmpty(fileRule.PackageVersion)) element.SetAttribute("PackageVersion", fileRule.PackageVersion);
+		if (!string.IsNullOrEmpty(fileRule.MinimumFileVersion)) element.SetAttribute("MinimumFileVersion", fileRule.MinimumFileVersion);
+		if (!string.IsNullOrEmpty(fileRule.MaximumFileVersion)) element.SetAttribute("MaximumFileVersion", fileRule.MaximumFileVersion);
+		if (!fileRule.Hash.IsEmpty) element.SetAttribute("Hash", Convert.ToHexString(fileRule.Hash.Span));
+		if (!string.IsNullOrEmpty(fileRule.AppIDs)) element.SetAttribute("AppIDs", fileRule.AppIDs);
+		if (!string.IsNullOrEmpty(fileRule.FilePath)) element.SetAttribute("FilePath", fileRule.FilePath);
+		element.SetAttribute("Type", fileRule.Type.ToString());
+		_ = parent.AppendChild(element);
+	}
+
+	// Signers Group Helpers
+	private static void AppendProductSigners(XmlDocument doc, XmlElement parent, ProductSigners ps)
+	{
+		if (ps.AllowedSigners is not null)
+		{
+			XmlElement allowedElement = doc.CreateElement("AllowedSigners", Atlas.SiPolicyNamespace);
+			if (!string.IsNullOrEmpty(ps.AllowedSigners.Workaround))
+				allowedElement.SetAttribute("Workaround", ps.AllowedSigners.Workaround);
+			if (ps.AllowedSigners.AllowedSigner.Count > 0)
+			{
+				foreach (AllowedSigner aSigner in CollectionsMarshal.AsSpan(ps.AllowedSigners.AllowedSigner))
+				{
+					XmlElement aSignerElement = doc.CreateElement("AllowedSigner", Atlas.SiPolicyNamespace);
+					if (!string.IsNullOrEmpty(aSigner.SignerId))
+						aSignerElement.SetAttribute("SignerId", aSigner.SignerId);
+					if (aSigner.ExceptDenyRule is not null)
+					{
+						foreach (ExceptDenyRule rule in CollectionsMarshal.AsSpan(aSigner.ExceptDenyRule))
+						{
+							XmlElement ruleElem = doc.CreateElement("ExceptDenyRule", Atlas.SiPolicyNamespace);
+							if (!string.IsNullOrEmpty(rule.DenyRuleID))
+								ruleElem.SetAttribute("DenyRuleID", rule.DenyRuleID);
+							_ = aSignerElement.AppendChild(ruleElem);
+						}
+					}
+					_ = allowedElement.AppendChild(aSignerElement);
+				}
+				_ = parent.AppendChild(allowedElement);
+			}
+		}
+		if (ps.DeniedSigners is not null)
+		{
+			XmlElement deniedElement = doc.CreateElement("DeniedSigners", Atlas.SiPolicyNamespace);
+			if (!string.IsNullOrEmpty(ps.DeniedSigners.Workaround))
+				deniedElement.SetAttribute("Workaround", ps.DeniedSigners.Workaround);
+
+			if (ps.DeniedSigners.DeniedSigner.Count > 0)
+			{
+				foreach (DeniedSigner dSigner in CollectionsMarshal.AsSpan(ps.DeniedSigners.DeniedSigner))
+				{
+					XmlElement dSignerElement = doc.CreateElement("DeniedSigner", Atlas.SiPolicyNamespace);
+					if (!string.IsNullOrEmpty(dSigner.SignerId))
+						dSignerElement.SetAttribute("SignerId", dSigner.SignerId);
+					if (dSigner.ExceptAllowRule is not null)
+					{
+						foreach (ExceptAllowRule rule in CollectionsMarshal.AsSpan(dSigner.ExceptAllowRule))
+						{
+							XmlElement ruleElem = doc.CreateElement("ExceptAllowRule", Atlas.SiPolicyNamespace);
+							if (!string.IsNullOrEmpty(rule.AllowRuleID))
+								ruleElem.SetAttribute("AllowRuleID", rule.AllowRuleID);
+							_ = dSignerElement.AppendChild(ruleElem);
+						}
+					}
+					_ = deniedElement.AppendChild(dSignerElement);
+				}
+				_ = parent.AppendChild(deniedElement);
+			}
+		}
+		if (ps.FileRulesRef is not null)
+		{
+			XmlElement fileRulesRefElement = doc.CreateElement("FileRulesRef", Atlas.SiPolicyNamespace);
+			if (!string.IsNullOrEmpty(ps.FileRulesRef.Workaround))
+				fileRulesRefElement.SetAttribute("Workaround", ps.FileRulesRef.Workaround);
+			if (ps.FileRulesRef.FileRuleRef.Count > 0)
+			{
+				foreach (FileRuleRef fr in CollectionsMarshal.AsSpan(ps.FileRulesRef.FileRuleRef))
+				{
+					XmlElement frElement = doc.CreateElement("FileRuleRef", Atlas.SiPolicyNamespace);
+					if (!string.IsNullOrEmpty(fr.RuleID))
+						frElement.SetAttribute("RuleID", fr.RuleID);
+					_ = fileRulesRefElement.AppendChild(frElement);
+				}
+				// Only append if it will have members because it cannot exist empty as `<FileRulesRef />` in the XML according to the schema.
+				_ = parent.AppendChild(fileRulesRefElement);
+			}
+		}
+	}
+
+	private static void AppendTestSigners(XmlDocument doc, XmlElement parent, TestSigners ts)
+	{
+		if (ts.AllowedSigners is not null)
+		{
+			XmlElement allowedElement = doc.CreateElement("AllowedSigners", Atlas.SiPolicyNamespace);
+			if (!string.IsNullOrEmpty(ts.AllowedSigners.Workaround))
+				allowedElement.SetAttribute("Workaround", ts.AllowedSigners.Workaround);
+			if (ts.AllowedSigners.AllowedSigner.Count > 0)
+			{
+				foreach (AllowedSigner aSigner in CollectionsMarshal.AsSpan(ts.AllowedSigners.AllowedSigner))
+				{
+					XmlElement aSignerElement = doc.CreateElement("AllowedSigner", Atlas.SiPolicyNamespace);
+					if (!string.IsNullOrEmpty(aSigner.SignerId))
+						aSignerElement.SetAttribute("SignerId", aSigner.SignerId);
+					if (aSigner.ExceptDenyRule is not null)
+					{
+						foreach (ExceptDenyRule rule in CollectionsMarshal.AsSpan(aSigner.ExceptDenyRule))
+						{
+							XmlElement ruleElem = doc.CreateElement("ExceptDenyRule", Atlas.SiPolicyNamespace);
+							if (!string.IsNullOrEmpty(rule.DenyRuleID))
+								ruleElem.SetAttribute("DenyRuleID", rule.DenyRuleID);
+							_ = aSignerElement.AppendChild(ruleElem);
+						}
+					}
+					_ = allowedElement.AppendChild(aSignerElement);
+				}
+				_ = parent.AppendChild(allowedElement);
+			}
+		}
+		if (ts.DeniedSigners is not null)
+		{
+			XmlElement deniedElement = doc.CreateElement("DeniedSigners", Atlas.SiPolicyNamespace);
+			if (!string.IsNullOrEmpty(ts.DeniedSigners.Workaround))
+				deniedElement.SetAttribute("Workaround", ts.DeniedSigners.Workaround);
+			if (ts.DeniedSigners.DeniedSigner.Count > 0)
+			{
+				foreach (DeniedSigner dSigner in CollectionsMarshal.AsSpan(ts.DeniedSigners.DeniedSigner))
+				{
+					XmlElement dSignerElement = doc.CreateElement("DeniedSigner", Atlas.SiPolicyNamespace);
+					if (!string.IsNullOrEmpty(dSigner.SignerId))
+						dSignerElement.SetAttribute("SignerId", dSigner.SignerId);
+					if (dSigner.ExceptAllowRule is not null)
+					{
+						foreach (ExceptAllowRule rule in CollectionsMarshal.AsSpan(dSigner.ExceptAllowRule))
+						{
+							XmlElement ruleElem = doc.CreateElement("ExceptAllowRule", Atlas.SiPolicyNamespace);
+							if (!string.IsNullOrEmpty(rule.AllowRuleID))
+								ruleElem.SetAttribute("AllowRuleID", rule.AllowRuleID);
+							_ = dSignerElement.AppendChild(ruleElem);
+						}
+					}
+					_ = deniedElement.AppendChild(dSignerElement);
+				}
+				_ = parent.AppendChild(deniedElement);
+			}
+		}
+		if (ts.FileRulesRef is not null)
+		{
+			XmlElement fileRulesRefElement = doc.CreateElement("FileRulesRef", Atlas.SiPolicyNamespace);
+			if (!string.IsNullOrEmpty(ts.FileRulesRef.Workaround))
+				fileRulesRefElement.SetAttribute("Workaround", ts.FileRulesRef.Workaround);
+			if (ts.FileRulesRef.FileRuleRef.Count > 0)
+			{
+				foreach (FileRuleRef fr in CollectionsMarshal.AsSpan(ts.FileRulesRef.FileRuleRef))
+				{
+					XmlElement frElement = doc.CreateElement("FileRuleRef", Atlas.SiPolicyNamespace);
+					if (!string.IsNullOrEmpty(fr.RuleID))
+						frElement.SetAttribute("RuleID", fr.RuleID);
+					_ = fileRulesRefElement.AppendChild(frElement);
+				}
+				// Only append if it will have members because it cannot exist empty as `<FileRulesRef />` in the XML according to the schema.
+				_ = parent.AppendChild(fileRulesRefElement);
+			}
+		}
+	}
+
+	private static void AppendTestSigningSigners(XmlDocument doc, XmlElement parent, TestSigningSigners tss)
+	{
+		if (tss.AllowedSigners is not null)
+		{
+			XmlElement allowedElement = doc.CreateElement("AllowedSigners", Atlas.SiPolicyNamespace);
+			if (!string.IsNullOrEmpty(tss.AllowedSigners.Workaround))
+				allowedElement.SetAttribute("Workaround", tss.AllowedSigners.Workaround);
+			if (tss.AllowedSigners.AllowedSigner.Count > 0)
+			{
+				foreach (AllowedSigner aSigner in CollectionsMarshal.AsSpan(tss.AllowedSigners.AllowedSigner))
+				{
+					XmlElement aSignerElement = doc.CreateElement("AllowedSigner", Atlas.SiPolicyNamespace);
+					if (!string.IsNullOrEmpty(aSigner.SignerId))
+						aSignerElement.SetAttribute("SignerId", aSigner.SignerId);
+					if (aSigner.ExceptDenyRule is not null)
+					{
+						foreach (ExceptDenyRule rule in CollectionsMarshal.AsSpan(aSigner.ExceptDenyRule))
+						{
+							XmlElement ruleElem = doc.CreateElement("ExceptDenyRule", Atlas.SiPolicyNamespace);
+							if (!string.IsNullOrEmpty(rule.DenyRuleID))
+								ruleElem.SetAttribute("DenyRuleID", rule.DenyRuleID);
+							_ = aSignerElement.AppendChild(ruleElem);
+						}
+					}
+					_ = allowedElement.AppendChild(aSignerElement);
+				}
+				_ = parent.AppendChild(allowedElement);
+			}
+		}
+		if (tss.DeniedSigners is not null)
+		{
+			XmlElement deniedElement = doc.CreateElement("DeniedSigners", Atlas.SiPolicyNamespace);
+			if (!string.IsNullOrEmpty(tss.DeniedSigners.Workaround))
+				deniedElement.SetAttribute("Workaround", tss.DeniedSigners.Workaround);
+			if (tss.DeniedSigners.DeniedSigner.Count > 0)
+			{
+				foreach (DeniedSigner dSigner in CollectionsMarshal.AsSpan(tss.DeniedSigners.DeniedSigner))
+				{
+					XmlElement dSignerElement = doc.CreateElement("DeniedSigner", Atlas.SiPolicyNamespace);
+					if (!string.IsNullOrEmpty(dSigner.SignerId))
+						dSignerElement.SetAttribute("SignerId", dSigner.SignerId);
+					if (dSigner.ExceptAllowRule is not null)
+					{
+						foreach (ExceptAllowRule rule in CollectionsMarshal.AsSpan(dSigner.ExceptAllowRule))
+						{
+							XmlElement ruleElem = doc.CreateElement("ExceptAllowRule", Atlas.SiPolicyNamespace);
+							if (!string.IsNullOrEmpty(rule.AllowRuleID))
+								ruleElem.SetAttribute("AllowRuleID", rule.AllowRuleID);
+							_ = dSignerElement.AppendChild(ruleElem);
+						}
+					}
+					_ = deniedElement.AppendChild(dSignerElement);
+				}
+				_ = parent.AppendChild(deniedElement);
+			}
+		}
+		if (tss.FileRulesRef is not null)
+		{
+			XmlElement fileRulesRefElement = doc.CreateElement("FileRulesRef", Atlas.SiPolicyNamespace);
+			if (!string.IsNullOrEmpty(tss.FileRulesRef.Workaround))
+				fileRulesRefElement.SetAttribute("Workaround", tss.FileRulesRef.Workaround);
+			if (tss.FileRulesRef.FileRuleRef.Count > 0)
+			{
+				foreach (FileRuleRef fr in CollectionsMarshal.AsSpan(tss.FileRulesRef.FileRuleRef))
+				{
+					XmlElement frElement = doc.CreateElement("FileRuleRef", Atlas.SiPolicyNamespace);
+					if (!string.IsNullOrEmpty(fr.RuleID))
+						frElement.SetAttribute("RuleID", fr.RuleID);
+					_ = fileRulesRefElement.AppendChild(frElement);
+				}
+				// Only append if it will have members because it cannot exist empty as `<FileRulesRef />` in the XML according to the schema.
+				_ = parent.AppendChild(fileRulesRefElement);
+			}
+		}
+	}
+
+	/// <summary>
+	/// Helper method, its return value must be checked by the caller and handled accordingly
+	/// </summary>
+	private static bool AppendTextElement(XmlDocument doc, XmlElement parent, string name, string? value)
+	{
+		if (!string.IsNullOrEmpty(value))
+		{
+			XmlElement element = doc.CreateElement(name, Atlas.SiPolicyNamespace);
+			element.InnerText = value;
+			_ = parent.AppendChild(element);
+
+			return true;
+		}
+		return false;
+	}
+
+	/// <summary>
+	/// Helper method, its return value must be checked by the caller and handled accordingly
+	/// </summary>
+	private static bool AppendAttributeElement(XmlDocument doc, XmlElement parent, string name, string attribute, string? value)
+	{
+		if (!string.IsNullOrEmpty(value))
+		{
+			XmlElement element = doc.CreateElement(name, Atlas.SiPolicyNamespace);
+			element.SetAttribute(attribute, value);
+			_ = parent.AppendChild(element);
+
+			return true;
+		}
+		return false;
+	}
+}

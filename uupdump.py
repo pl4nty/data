@@ -8,8 +8,6 @@ import time
 from pathlib import Path
 from asn1crypto import algos, cms, core, parser, x509
 
-WDACKING_COMMIT = 'e19beb9ecb0e6dd538e7a236a9705d27cdcee97b'
-
 def request(url, max_retries=6, retry_delay=10):
     response = requests.get(url)
     if response.status_code in (429, 500):
@@ -100,15 +98,8 @@ except subprocess.CalledProcessError as e:
     raise e
 
 # decompile CI policies (.cip/.p7b) to SiPolicy XML
-wdacking = os.path.join(temp_dir, 'wdacking')
-subprocess.run(['git', 'init', '-q', wdacking], check=True)
-subprocess.run(['git', '-C', wdacking, 'fetch', '-q', '--depth=1', 'https://github.com/antyg/wdacking', WDACKING_COMMIT], check=True)
-subprocess.run(['git', '-C', wdacking, 'checkout', '-q', 'FETCH_HEAD'], check=True)
 policies = [str(p.resolve()) for p in Path(root).rglob('*') if p.suffix.lower() in ('.cip', '.p7b')]
-subprocess.run([
-    'pwsh', '-NoProfile', '-Command',
-    f'Import-Module "{wdacking}/src/antyg-wdacking.psd1"; $input | % {{ (ConvertFrom-WDACBinary -Path $_).Save("$_.xml") }}',
-], input='\n'.join(policies), text=True, check=True)
+subprocess.run(['dotnet', 'run', '--project', 'cipdec', '--', *policies], check=True)
 
 # decompile certificate trust lists (.stl) to JSON; Microsoft extension values are undocumented, so kept as hex
 class CTLExtension(core.Sequence):

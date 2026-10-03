@@ -1,95 +1,90 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SiPolicy PolicyType="Supplemental Policy" xmlns="urn:schemas-microsoft-com:sipolicy">
   <VersionEx>0.0.0.0</VersionEx>
+  <PolicyID>{1678656C-05EF-481F-BC5B-EBD8C991502D}</PolicyID>
+  <BasePolicyID>{0283AC0F-FFF1-49AE-ADA1-8A933130CAD6}</BasePolicyID>
   <PlatformID>{2e07f7e4-194c-4d20-b7c9-6f44a6c5a234}</PlatformID>
-  <PolicyID>{1678656c-05ef-481f-bc5b-ebd8c991502d}</PolicyID>
-  <BasePolicyID>{0283ac0f-fff1-49ae-ada1-8a933130cad6}</BasePolicyID>
   <Rules />
   <EKUs>
-    <EKU ID="ID_EKU_E_1" Value="010A2B0601040182370A0306" FriendlyName="EKU 1" />
-    <EKU ID="ID_EKU_E_2" Value="010A2B0601040182373D0401" FriendlyName="EKU 2" />
-    <EKU ID="ID_EKU_E_3" Value="010A2B0601040182373D0501" FriendlyName="EKU 3" />
-    <EKU ID="ID_EKU_E_4" Value="010A2B0601040182370A0305" FriendlyName="EKU 4" />
+    <EKU ID="ID_EKU_E_0" Value="010A2B0601040182370A0306" />
+    <EKU ID="ID_EKU_E_1" Value="010A2B0601040182373D0401" />
+    <EKU ID="ID_EKU_E_2" Value="010A2B0601040182373D0501" />
+    <EKU ID="ID_EKU_E_3" Value="010A2B0601040182370A0305" />
   </EKUs>
-  <FileRules />
   <Signers>
-    <Signer ID="ID_SIGNER_S_1" Name="Signer 1">
+    <Signer ID="ID_SIGNER_A_0" Name="CN=Microsoft Development Root Certificate Authority 2014, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
       <CertRoot Type="Wellknown" Value="0E" />
     </Signer>
-    <Signer ID="ID_SIGNER_S_2" Name="Signer 2">
+    <Signer ID="ID_SIGNER_A_1" Name="CN=Microsoft Development Root Certificate Authority 2014, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_E_0" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_2" Name="CN=Microsoft Development Root Certificate Authority 2014, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
       <CertRoot Type="Wellknown" Value="0E" />
       <CertEKU ID="ID_EKU_E_1" />
     </Signer>
-    <Signer ID="ID_SIGNER_S_3" Name="Signer 3">
+    <Signer ID="ID_SIGNER_A_3" Name="CN=Microsoft Development Root Certificate Authority 2014, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
       <CertRoot Type="Wellknown" Value="0E" />
       <CertEKU ID="ID_EKU_E_2" />
     </Signer>
-    <Signer ID="ID_SIGNER_S_4" Name="Signer 4">
+    <Signer ID="ID_SIGNER_A_4" Name="CN=Microsoft Development Root Certificate Authority 2014, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
       <CertRoot Type="Wellknown" Value="0E" />
       <CertEKU ID="ID_EKU_E_3" />
     </Signer>
-    <Signer ID="ID_SIGNER_S_5" Name="Signer 5">
-      <CertRoot Type="Wellknown" Value="0E" />
-      <CertEKU ID="ID_EKU_E_4" />
+    <Signer ID="ID_SIGNER_A_5" Name="CN=Microsoft Root Certificate Authority 2011, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="07" />
+      <CertEKU ID="ID_EKU_E_0" />
     </Signer>
-    <Signer ID="ID_SIGNER_S_6" Name="Signer 6">
+    <Signer ID="ID_SIGNER_A_6" Name="CN=Microsoft Root Certificate Authority 2011, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
       <CertRoot Type="Wellknown" Value="07" />
       <CertEKU ID="ID_EKU_E_1" />
     </Signer>
-    <Signer ID="ID_SIGNER_S_7" Name="Signer 7">
+    <Signer ID="ID_SIGNER_A_7" Name="CN=Microsoft Root Certificate Authority 2011, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
       <CertRoot Type="Wellknown" Value="07" />
       <CertEKU ID="ID_EKU_E_2" />
     </Signer>
-    <Signer ID="ID_SIGNER_S_8" Name="Signer 8">
+    <Signer ID="ID_SIGNER_A_8" Name="CN=Microsoft Root Certificate Authority 2011, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
       <CertRoot Type="Wellknown" Value="07" />
       <CertEKU ID="ID_EKU_E_3" />
     </Signer>
-    <Signer ID="ID_SIGNER_S_9" Name="Signer 9">
-      <CertRoot Type="Wellknown" Value="07" />
-      <CertEKU ID="ID_EKU_E_4" />
-    </Signer>
-    <Signer ID="ID_SIGNER_S_10" Name="Signer 10">
+    <Signer ID="ID_SIGNER_A_9" Name="CN=Microsoft Root Certificate Authority 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
       <CertRoot Type="Wellknown" Value="06" />
-      <CertEKU ID="ID_EKU_E_1" />
+      <CertEKU ID="ID_EKU_E_0" />
     </Signer>
-    <Signer ID="ID_SIGNER_S_11" Name="Signer 11">
+    <Signer ID="ID_SIGNER_A_10" Name="CN=Microsoft Testing Root Certificate Authority 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
       <CertRoot Type="Wellknown" Value="0A" />
     </Signer>
   </Signers>
   <SigningScenarios>
-    <SigningScenario ID="ID_SIGNINGSCENARIO_DRIVERS" Value="131" FriendlyName="Driver Mode" MinimumHashAlgorithm="32780">
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_A_0">
       <ProductSigners>
         <AllowedSigners>
-          <AllowedSigner SignerId="ID_SIGNER_S_6" />
-          <AllowedSigner SignerId="ID_SIGNER_S_7" />
-          <AllowedSigner SignerId="ID_SIGNER_S_8" />
-          <AllowedSigner SignerId="ID_SIGNER_S_9" />
-          <AllowedSigner SignerId="ID_SIGNER_S_2" />
-          <AllowedSigner SignerId="ID_SIGNER_S_3" />
-          <AllowedSigner SignerId="ID_SIGNER_S_4" />
-          <AllowedSigner SignerId="ID_SIGNER_S_5" />
+          <AllowedSigner SignerId="ID_SIGNER_A_5" />
+          <AllowedSigner SignerId="ID_SIGNER_A_6" />
+          <AllowedSigner SignerId="ID_SIGNER_A_7" />
+          <AllowedSigner SignerId="ID_SIGNER_A_8" />
+          <AllowedSigner SignerId="ID_SIGNER_A_1" />
+          <AllowedSigner SignerId="ID_SIGNER_A_2" />
+          <AllowedSigner SignerId="ID_SIGNER_A_3" />
+          <AllowedSigner SignerId="ID_SIGNER_A_4" />
         </AllowedSigners>
       </ProductSigners>
-      <TestSigners />
-      <TestSigningSigners />
     </SigningScenario>
-    <SigningScenario ID="ID_SIGNINGSCENARIO_USERMODE" Value="12" FriendlyName="User Mode" MinimumHashAlgorithm="32780">
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_A_1">
       <ProductSigners>
         <AllowedSigners>
-          <AllowedSigner SignerId="ID_SIGNER_S_1" />
+          <AllowedSigner SignerId="ID_SIGNER_A_0" />
         </AllowedSigners>
       </ProductSigners>
-      <TestSigners />
-      <TestSigningSigners />
     </SigningScenario>
   </SigningScenarios>
   <UpdatePolicySigners>
-    <UpdatePolicySigner SignerId="ID_SIGNER_S_10" />
-    <UpdatePolicySigner SignerId="ID_SIGNER_S_2" />
-    <UpdatePolicySigner SignerId="ID_SIGNER_S_11" />
+    <UpdatePolicySigner SignerId="ID_SIGNER_A_9" />
+    <UpdatePolicySigner SignerId="ID_SIGNER_A_1" />
+    <UpdatePolicySigner SignerId="ID_SIGNER_A_10" />
   </UpdatePolicySigners>
   <CiSigners>
-    <CiSigner SignerId="ID_SIGNER_S_1" />
+    <CiSigner SignerId="ID_SIGNER_A_0" />
   </CiSigners>
   <HvciOptions>0</HvciOptions>
   <Settings>
