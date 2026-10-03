@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy PolicyType="Base Policy" xmlns="urn:schemas-microsoft-com:sipolicy">
+  <VersionEx>0.0.0.0</VersionEx>
+  <PolicyID>{0283AC0F-FFF1-49AE-ADA1-8A933130CAD6}</PolicyID>
+  <BasePolicyID>{0283AC0F-FFF1-49AE-ADA1-8A933130CAD6}</BasePolicyID>
+  <PlatformID>{2e07f7e4-194c-4d20-b7c9-6f44a6c5a234}</PlatformID>
+  <Rules>
+    <Rule>
+      <Option>Enabled:UMCI</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Intelligent Security Graph Authorization</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Developer Mode Dynamic Code Trust</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Allow Supplemental Policies</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Revoked Expired As Unsigned</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Inherit Default Policy</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Unsigned System Integrity Policy</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Advanced Boot Options Menu</Option>
+    </Rule>
+    <Rule>
+      <Option>Disabled:Script Enforcement</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Update Policy No Reboot</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Conditional Windows Lockdown Policy</Option>
+    </Rule>
+  </Rules>
+  <EKUs>
+    <EKU ID="ID_EKU_E_0" Value="010A2B0601040182370A0306" />
+    <EKU ID="ID_EKU_E_1" Value="010A2B0601040182373D0401" />
+    <EKU ID="ID_EKU_E_2" Value="010A2B0601040182373D0501" />
+    <EKU ID="ID_EKU_E_3" Value="010A2B0601040182370A0305" />
+    <EKU ID="ID_EKU_E_4" Value="010A2B0601040182374C0301" />
+  </EKUs>
+  <Signers>
+    <Signer ID="ID_SIGNER_A_0" Name="CN=Microsoft Identity Verification Root Certificate Authority 2020, O=Microsoft Corporation, C=US">
+      <CertRoot Type="Wellknown" Value="16" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_1" Name="AuthRoot.STL">
+      <CertRoot Type="Wellknown" Value="14" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_2" Name="CN=Microsoft Root Certificate Authority 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_E_0" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_3" Name="CN=Microsoft Root Certificate Authority 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_E_1" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_4" Name="CN=Microsoft Root Certificate Authority 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_E_2" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_5" Name="CN=Microsoft Root Certificate Authority 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_E_3" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_6" Name="CN=Microsoft Root Certificate Authority, DC=microsoft, DC=com">
+      <CertRoot Type="Wellknown" Value="05" />
+      <CertEKU ID="ID_EKU_E_3" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_7" Name="CN=Microsoft Root Authority 1997, OU=Microsoft Corporation, OU=Copyright (c) 1997 Microsoft Corp.">
+      <CertRoot Type="Wellknown" Value="04" />
+      <CertEKU ID="ID_EKU_E_3" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_8" Name="CN=Microsoft Root Authority 1997, OU=Microsoft Corporation, OU=Copyright (c) 1997 Microsoft Corp.">
+      <CertRoot Type="Wellknown" Value="04" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_9" Name="CN=Microsoft Root Certificate Authority, DC=microsoft, DC=com">
+      <CertRoot Type="Wellknown" Value="05" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_10" Name="CN=Microsoft Root Certificate Authority 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="06" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_11" Name="CN=Microsoft Root Certificate Authority 2011, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="07" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_12" Name="CN=Microsoft Code Verification Root, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="08" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_13" Name="CN=Microsoft Digital Media Authority 2005">
+      <CertRoot Type="Wellknown" Value="0C" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_14">
+      <CertRoot Type="TBS" Value="FC9EDE3DCCA09186B2D3BF9B738A2050CB1A554DA2DCADB55F3F72EE17721378" />
+      <CertEKU ID="ID_EKU_E_4" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_15" Name="CN=Microsoft Development Root Certificate Authority 2014, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_E_0" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_16" Name="CN=Microsoft Testing Root Certificate Authority 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="0A" />
+    </Signer>
+  </Signers>
+  <SigningScenarios>
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_A_0">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_A_2" />
+          <AllowedSigner SignerId="ID_SIGNER_A_3" />
+          <AllowedSigner SignerId="ID_SIGNER_A_4" />
+          <AllowedSigner SignerId="ID_SIGNER_A_5" />
+          <AllowedSigner SignerId="ID_SIGNER_A_6" />
+          <AllowedSigner SignerId="ID_SIGNER_A_7" />
+          <AllowedSigner SignerId="ID_SIGNER_A_12" />
+        </AllowedSigners>
+      </ProductSigners>
+    </SigningScenario>
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_A_1">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_A_1" />
+          <AllowedSigner SignerId="ID_SIGNER_A_0" />
+          <AllowedSigner SignerId="ID_SIGNER_A_8" />
+          <AllowedSigner SignerId="ID_SIGNER_A_9" />
+          <AllowedSigner SignerId="ID_SIGNER_A_10" />
+          <AllowedSigner SignerId="ID_SIGNER_A_11" />
+          <AllowedSigner SignerId="ID_SIGNER_A_12" />
+          <AllowedSigner SignerId="ID_SIGNER_A_13" />
+          <AllowedSigner SignerId="ID_SIGNER_A_14" />
+        </AllowedSigners>
+      </ProductSigners>
+    </SigningScenario>
+  </SigningScenarios>
+  <CiSigners>
+    <CiSigner SignerId="ID_SIGNER_A_1" />
+    <CiSigner SignerId="ID_SIGNER_A_14" />
+  </CiSigners>
+  <HvciOptions>0</HvciOptions>
+  <Settings>
+    <Setting Provider="Enterprise" Key="EnterprisePolicySettings" ValueName="UnsignedMstFileAllowed">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="Microsoft" Key="WindowsLockdownPolicySettings" ValueName="BrowserSmartscreenSuppressed">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="Microsoft" Key="WindowsLockdownPolicySettings" ValueName="DisableMshtmlUmci">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="Microsoft" Key="WindowsLockdownPolicySettings" ValueName="ISGSmartscreenTrustSuppressed">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="Microsoft" Key="WindowsLockdownPolicySettings" ValueName="ShellSmartscreenSuppressed">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="Microsoft" Key="WindowsLockdownPolicySettings" ValueName="VerifiedAndReputableAllowAntiMalware">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="Microsoft" Key="WindowsLockdownPolicySettings" ValueName="VerifiedAndReputablePerfMode">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="Microsoft" Key="WindowsLockdownPolicySettings" ValueName="VerifiedAndReputableTrustMode">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="Microsoft" Key="WindowsLockdownPolicySettings" ValueName="VerifiedAndReputableUI">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="Microsoft" Key="WindowsLockdownPolicySettings" ValueName="WindowsLockdownDangerousExtensionEnforcement">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="Microsoft" Key="WindowsLockdownPolicySettings" ValueName="WindowsLockdownDangerousExtensionValidation">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="Microsoft" Key="WindowsLockdownPolicySettings" ValueName="WindowsLockdownOfficeExtensions">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
+      <Value>
+        <String>27555.1000.240208</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+      <Value>
+        <String>VerifiedAndReputableDesktop</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="NoRevalidationUponRefresh" ValueName="NoRevalidationUponRefreshValue">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+  </Settings>
+</SiPolicy>

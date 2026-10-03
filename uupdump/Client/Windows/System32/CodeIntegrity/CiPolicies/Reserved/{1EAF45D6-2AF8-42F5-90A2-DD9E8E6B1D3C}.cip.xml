@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy PolicyType="Base Policy" xmlns="urn:schemas-microsoft-com:sipolicy">
+  <VersionEx>1.0.0.1</VersionEx>
+  <PolicyID>{1EAF45D6-2AF8-42F5-90A2-DD9E8E6B1D3C}</PolicyID>
+  <BasePolicyID>{1EAF45D6-2AF8-42F5-90A2-DD9E8E6B1D3C}</BasePolicyID>
+  <PlatformID>{2e07f7e4-194c-4d20-b7c9-6f44a6c5a234}</PlatformID>
+  <Rules>
+    <Rule>
+      <Option>Enabled:UMCI</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Developer Mode Dynamic Code Trust</Option>
+    </Rule>
+  </Rules>
+  <EKUs>
+    <EKU ID="ID_EKU_E_0" Value="010A2B0601040182370A0306" />
+    <EKU ID="ID_EKU_E_1" Value="010A2B0601040182370A0305" />
+  </EKUs>
+  <FileRules>
+    <Allow ID="ID_ALLOW_A_0" FileName="*" MinimumFileVersion="0.0.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_A_1" PackageFamilyName="%ALLOWEDPACKAGES%" PackageVersion="0.0.0.0" MinimumFileVersion="0.0.0.0" />
+  </FileRules>
+  <Signers>
+    <Signer ID="ID_SIGNER_A_0" Name="CN=Microsoft Root Certificate Authority 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_E_0" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_1" Name="CN=Microsoft Development Root Certificate Authority 2014, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_E_0" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_2" Name="CN=Microsoft Testing Root Certificate Authority 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="0A" />
+      <CertEKU ID="ID_EKU_E_0" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_3" Name="CN=Microsoft Root Certificate Authority 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_E_1" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_4" Name="CN=Microsoft Root Certificate Authority 2011, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="07" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_A_1" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_5" Name="CN=Microsoft Testing Root Certificate Authority 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US">
+      <CertRoot Type="Wellknown" Value="0A" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_A_1" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_6" Name="CN=Microsoft Identity Verification Root Certificate Authority 2020, O=Microsoft Corporation, C=US">
+      <CertRoot Type="Wellknown" Value="16" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_A_1" />
+    </Signer>
+    <Signer ID="ID_SIGNER_A_7" Name="AuthRoot.STL">
+      <CertRoot Type="Wellknown" Value="14" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_A_1" />
+    </Signer>
+  </Signers>
+  <SigningScenarios>
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_A_0">
+      <ProductSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_ALLOW_A_0" />
+        </FileRulesRef>
+      </ProductSigners>
+    </SigningScenario>
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_A_1">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_A_0" />
+          <AllowedSigner SignerId="ID_SIGNER_A_1" />
+          <AllowedSigner SignerId="ID_SIGNER_A_2" />
+          <AllowedSigner SignerId="ID_SIGNER_A_3" />
+          <AllowedSigner SignerId="ID_SIGNER_A_4" />
+          <AllowedSigner SignerId="ID_SIGNER_A_5" />
+          <AllowedSigner SignerId="ID_SIGNER_A_6" />
+          <AllowedSigner SignerId="ID_SIGNER_A_7" />
+        </AllowedSigners>
+      </ProductSigners>
+    </SigningScenario>
+  </SigningScenarios>
+  <UpdatePolicySigners>
+    <UpdatePolicySigner SignerId="ID_SIGNER_A_0" />
+  </UpdatePolicySigners>
+  <HvciOptions>0</HvciOptions>
+  <Settings>
+    <Setting Provider="Microsoft" Key="PolicySettings" ValueName="SignedPolicySessionOnlyLock">
+      <Value>
+        <Boolean>true</Boolean>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
+      <Value>
+        <String>1.0.0.1</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+      <Value>
+        <String>Microsoft Windows Trusted Launch Policy</String>
+      </Value>
+    </Setting>
+  </Settings>
+</SiPolicy>

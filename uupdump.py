@@ -1,9 +1,12 @@
+import json
 import os
 import shutil
 import requests
 import subprocess
 import tempfile
 import time
+from pathlib import Path
+from asn1crypto import algos, cms, core, parser, x509
 
 def request(url, max_retries=6, retry_delay=10):
     response = requests.get(url)
@@ -93,6 +96,43 @@ except subprocess.CalledProcessError as e:
     print(f"Output: {e.output}")
     print(f"Stderr: {e.stderr}")
     raise e
-    
+
+# decompile CI policies (.cip/.p7b) to SiPolicy XML
+policies = [str(p.resolve()) for p in Path(root).rglob('*') if p.suffix.lower() in ('.cip', '.p7b')]
+subprocess.run(['dotnet', 'run', '--project', 'cipdec', '--', *policies], check=True)
+
+# decompile certificate trust lists (.stl) to JSON; Microsoft extension values are undocumented, so kept as hex
+class CTLExtension(core.Sequence):
+    _fields = [('extn_id', core.ObjectIdentifier), ('critical', core.Boolean, {'default': False}), ('extn_value', core.OctetString)]
+class CTLExtensions(core.SequenceOf):
+    _child_spec = CTLExtension
+class TrustedSubject(core.Sequence):
+    _fields = [('subject_identifier', core.OctetString), ('subject_attributes', cms.CMSAttributes, {'optional': True})]
+class TrustedSubjects(core.SequenceOf):
+    _child_spec = TrustedSubject
+class CertificateTrustList(core.Sequence):
+    _fields = [
+        ('version', core.Integer, {'default': 0}),
+        ('subject_usage', core.SequenceOf, {'spec': core.ObjectIdentifier}),
+        ('list_identifier', core.OctetString, {'optional': True}),
+        ('sequence_number', core.Integer, {'optional': True}),
+        ('this_update', x509.Time),
+        ('next_update', x509.Time, {'optional': True}),
+        ('subject_algorithm', algos.DigestAlgorithm),
+        ('trusted_subjects', TrustedSubjects, {'optional': True}),
+        ('extensions', CTLExtensions, {'explicit': 0, 'optional': True}),
+    ]
+
+for stl in Path(root).rglob('*.stl'):
+    signed = cms.ContentInfo.load(stl.read_bytes())['content']
+    # Microsoft CTLs embed the SEQUENCE directly instead of wrapping it in an OCTET STRING
+    ctl = CertificateTrustList.load(parser.emit(0, 1, 16, signed['encap_content_info']['content'].contents))
+    out = {
+        'ctl': ctl.native,
+        'certificates': [c.chosen.subject.human_friendly for c in signed['certificates']],
+    }
+    with open(f'{stl}.json', 'w') as f:
+        json.dump(out, f, indent=2, default=lambda o: o.hex() if isinstance(o, bytes) else str(o))
+
 with open(update_id_file, 'w') as f:
     f.write(updateId)
