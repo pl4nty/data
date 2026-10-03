@@ -1773,7 +1773,7 @@
             ],
             "EnableTMGpt56": [
                 {
-                    "Flight": "TM.gpt56ReasoningNanoLunaModel",
+                    "Flight": "TM.freeSummaryV6AB",
                     "IsEnabled": true
                 }
             ],
@@ -3105,7 +3105,7 @@
         }
     },
     "TeamsGraphService": {
-        "buildVersion": "2026082801"
+        "buildVersion": "2026091603"
     },
     "TeamsInfoProtectionAuditService": {
         "rootSettingConfig": {
@@ -4842,6 +4842,7 @@
     },
     "TeamsNotificationFilteringService": {
         "ECSAuthForEDL": true,
+        "ECSAuthForSeal": true,
         "enableRemindersNotifications": true,
         "enableTenantDataMigration": true
     },
