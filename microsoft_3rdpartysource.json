@@ -189798,6 +189798,27 @@
     "platform": "macOS"
   },
   {
+    "name": "Microsoft Electron/42.11.8@a7cbe524/Linux/microsoft-electron-v42.11.8-a7cbe524ba661748a899bfa7bee85ceaae7c94a3-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "42.11.8@a7cbe524",
+    "dependency": "microsoft-electron-v42.11.8-a7cbe524ba661748a899bfa7bee85ceaae7c94a3-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/42.11.8@a7cbe524/Windows/microsoft-electron-v42.11.8-a7cbe524ba661748a899bfa7bee85ceaae7c94a3-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "42.11.8@a7cbe524",
+    "dependency": "microsoft-electron-v42.11.8-a7cbe524ba661748a899bfa7bee85ceaae7c94a3-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/42.11.8@a7cbe524/macOS/microsoft-electron-v42.11.8-a7cbe524ba661748a899bfa7bee85ceaae7c94a3-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "42.11.8@a7cbe524",
+    "dependency": "microsoft-electron-v42.11.8-a7cbe524ba661748a899bfa7bee85ceaae7c94a3-mac",
+    "platform": "macOS"
+  },
+  {
     "name": "Microsoft Electron/42.2.0@31f2b333/Linux/microsoft-electron-v42.2.0-31f2b33336687c837f252b0b3801e4e31fc8b04b-linux.tgz",
     "product": "Microsoft Electron",
     "release": "42.2.0@31f2b333",
@@ -190446,6 +190467,27 @@
     "product": "Microsoft Electron",
     "release": "44.4.3@97138b2e",
     "dependency": "microsoft-electron-v44.4.3-97138b2effe251f029223bf03b5d8d624aa90557-mac",
+    "platform": "macOS"
+  },
+  {
+    "name": "Microsoft Electron/44.4.5@4d2d8d25/Linux/microsoft-electron-v44.4.5-4d2d8d2547a0b257075f38a4b6e79eda6302c370-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.4.5@4d2d8d25",
+    "dependency": "microsoft-electron-v44.4.5-4d2d8d2547a0b257075f38a4b6e79eda6302c370-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/44.4.5@4d2d8d25/Windows/microsoft-electron-v44.4.5-4d2d8d2547a0b257075f38a4b6e79eda6302c370-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.4.5@4d2d8d25",
+    "dependency": "microsoft-electron-v44.4.5-4d2d8d2547a0b257075f38a4b6e79eda6302c370-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/44.4.5@4d2d8d25/macOS/microsoft-electron-v44.4.5-4d2d8d2547a0b257075f38a4b6e79eda6302c370-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.4.5@4d2d8d25",
+    "dependency": "microsoft-electron-v44.4.5-4d2d8d2547a0b257075f38a4b6e79eda6302c370-mac",
     "platform": "macOS"
   },
   {
