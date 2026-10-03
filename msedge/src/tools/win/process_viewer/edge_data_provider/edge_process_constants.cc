@@ -13,10 +13,6 @@ const char kExtensionProcessSwitch[] = "extension-process";
 const char kRendererProcess[] = "renderer";
 const char kGpuProcess[] = "gpu-process";
 const char kUtilityProcess[] = "utility";
-const char kPpapiPluginProcess[] = "ppapi";
-// The ppapi-broker process no longer exists in the product code, but we want
-// to be able to detect it in older versions of Edge.
-const char kPpapiBrokerProcess[] = "ppapi-broker";
 const char kCrashpadHandlerProcess[] = "crashpad-handler";
 const char kWatcherProcess[] = "watcher";
 

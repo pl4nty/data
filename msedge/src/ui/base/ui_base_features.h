@@ -21,6 +21,13 @@ BASE_DECLARE_FEATURE_PARAM(bool,
                            kSendEmptyGestureScrollUpdateFilterOutEmptyUpdates);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kExperimentalFlingAnimation);
+#if BUILDFLAG(IS_ANDROID)
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kDesktopFlingCurveOnAndroid);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kSuppressOverscrollGlow);
+#endif
+
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kFocusFollowsCursor);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kDragDropOnlySynthesizeHttpOrHttpsUrlsFromText);
@@ -73,6 +80,9 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern const char kApplyNativeOcclusionToCompositorTypeThrottle[];
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern const char kApplyNativeOcclusionToCompositorTypeThrottleAndRelease[];
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kHideCursorWhileTyping);
 #endif  // BUILDFLAG(IS_WIN)
 
 #if BUILDFLAG(IS_MAC)
@@ -82,7 +92,11 @@ BASE_DECLARE_FEATURE(kOnlyUseWindowResizeHelperOnResize);
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kCATransactionV2);
 inline constexpr base::FeatureParam<size_t> kCAContextMaxFencePorts{
     &kCATransactionV2, "ca_context_max_fence_ports", 4};
+
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kAsyncLiveResize);
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kAlphaInsteadOfCATransaction);
 #endif  // BUILDFLAG(IS_MAC)
 
 #if BUILDFLAG(IS_CHROMEOS)
@@ -121,6 +135,9 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kKeyboardAccessibleTooltip);
 COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsKeyboardAccessibleTooltipEnabled();
 
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kApplyScrollRailingInRenderer);
+
 #if BUILDFLAG(IS_CHROMEOS)
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kDeprecateAltClick);
 
@@ -133,10 +150,6 @@ BASE_DECLARE_FEATURE(kNotificationsIgnoreRequireInteraction);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 bool IsNotificationsIgnoreRequireInteractionEnabled();
 
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kSupportF11AndF12KeyShortcuts);
-
-COMPONENT_EXPORT(UI_BASE_FEATURES) bool AreF11AndF12ShortcutsEnabled();
 #endif  // BUILDFLAG(IS_CHROMEOS)
 
 #if BUILDFLAG(IS_OZONE)
@@ -272,11 +285,6 @@ BASE_DECLARE_FEATURE(kWriteBookmarkWithoutTitle);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kAsyncFullscreenWindowState);
 
-// Enable ClipboardChange event API
-// https://chromestatus.com/feature/5085102657503232
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kPlatformClipboardMonitor);
-
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kNonBlockingOsClipboardReads);
 
@@ -330,23 +338,58 @@ BASE_DECLARE_FEATURE_PARAM(int, kCompensationExpectedLatencyMs);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_PARAM(int, kCompensationAcceptableLatencyMs);
 
-// When enabled, Ctrl+Alt+Click (Cmd+Alt+Click on macOS) opens a link in a
-// split view alongside the current tab.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kSplitViewLinkOpen);
-
 // All feature flags associated with Glow Up, apart from those in ui_features.h
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kDesktopGlowUp);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kGlassFrame);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_PARAM(bool, kGlassExpandOnHoverEnabled);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kRoundedIcons);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kWebUIRoundedIcons);
+
+// Updates the default dark neutrals for the theme palette.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kChromeDarkNeutrals26);
+
+// Updates dark mode sys surface tokens.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kDarkModeSurfaceTokens);
+
+#if BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_CHROMEOS)
+// When enabled, reads the system accent color from the xdg-desktop-portal (the
+// org.freedesktop.appearance "accent-color" setting) and applies it as the
+// NativeTheme user color.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kUsePortalAccentColor);
+#endif
+
+// Enables performance optimizations for theme changes, including caching
+// ColorProviderKey, hierarchical theme observation, and coalescing updates.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kThemeChangeOptimization);
+
+// Kill switch for removing
+// RenderFrameHostManager::EnsureRenderFrameHostVisibilityConsistent.
+//
+// A RenderFrameHost will now either be made visible when navigation commits, or
+// when the WebContents is focused (if the WebContents is visible).
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kRemoveEnsureRFHVisibilityConsistent);
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kColorIdCssStyleSheetOptimization);
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 bool IsGlassFrameEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 bool IsRoundedIconsEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+bool IsWebUIRoundedIconsEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+bool IsColorIdCssStyleSheetOptimizationEnabled();
 
 }  // namespace features
 

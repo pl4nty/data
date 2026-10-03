@@ -6,6 +6,7 @@
 #define COMPONENTS_EDGE_IMPORT_CORE_FEATURES_EDGE_CONTINUOUS_IMPORT_FEATURES_H_
 
 #include "base/component_export.h"
+#include "base/edge_feature.h"
 #include "base/feature_list.h"
 #include "base/metrics/field_trial_params.h"
 
@@ -104,8 +105,28 @@ BASE_DECLARE_FEATURE(kEdgeContinuousImportWindowsRecommendations);
 // it's enabled for all users.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeContinuousMigrationExperience);
+// Enables local CI TAM (total addressable market) utility-history signal
+// collection: identifying profiles that could be brought into Continuous
+// Import but are not reachable by today's targeting. This feature never
+// delivers a campaign or banner; it only emits triggers and UMA.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kContinuousImportTamExpansionSignalCollection);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kEdgeContinuousMigrationUser);
+// Fires once basic targeting passes: Chrome is installed, policy allows CI, CI
+// is inactive, the profile is eligible and non-AAD, and Advance CI consent is
+// absent.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kCITamExpansionBasicTargetingConditionsMetTrigger);
+// Fires after the basic-targeting trigger when Chrome accounts for 50%-90% of
+// device browser network usage.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kCITamExpansionChromeCoverageConditionsMetTrigger);
+// Fires after both earlier triggers when at least 70% of eligible local History
+// visits are utility-driven. These cumulative triggers fire once per session;
+// a later gate change does not retract an earlier-stage trigger.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kCITamExpansionAllConditionsMetTrigger);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kNewlyConsentedCIUser);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
@@ -197,6 +218,25 @@ extern const base::FeatureParam<int>
 // activates the post -> cancel -> re-post-at-USER_BLOCKING path.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kUpgradeCIAutoImportPriorityInAutolaunchSuppression);
+
+// Pins the autolaunch-suppression keep-alive to a fixed process lifetime, so
+// every cohort holds the process equally long while the window CI may run in
+// stays cohort-specific. Without it the shorter-lived cohort exits before its
+// first metrics upload and its enrollments go unreported -- the SRM.
+//
+// Enabled by default as a kill switch only; it is not in the experiment
+// payload. The caller scopes it to the study by checking trial membership in
+// `kStartCIInAutolaunchSuppression`.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kEqualizedKeepAliveInAutolaunchSuppression);
+
+// Process lifetime (seconds) held in a CI-active suppressed session, identical
+// for every cohort. Must comfortably exceed the first metrics upload --
+// `kInitializationDelaySeconds` (30s) + `kInitialIntervalSeconds` (60s) on
+// desktop -- or the enrollment log still never goes out.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+extern const base::FeatureParam<int>
+    kEqualizedKeepAliveInAutolaunchSuppressionLifetimeInSeconds;
 
 // Browser usage threshold in which auto launch should be activated.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
@@ -432,6 +472,16 @@ BASE_DECLARE_FEATURE_TRIGGER(kMlSuggestedTabsShown);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kMlEligibleUserIgnoredCampaign);
 
+// Open tabs fallback generic triggers
+// Trigger when the user is a consumer and startup is set to New Tab.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kOpenTabsFallbackConsumerNewTab);
+
+// Trigger when the user is a consumer, startup is set to New Tab and there are
+// no previously imported tabs.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kOpenTabsFallbackConsumerNewTabNoImport);
+
 // Feature flag for open tabs perf optimization
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kCIOpenTabsPerfOptimization);
@@ -472,6 +522,23 @@ BASE_DECLARE_FEATURE(kEnableCIFromAnaheim);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 bool IsCIFromAnaheimEnabled();
 
+// Enables importing additional data types (history, autofill form data,
+// payments, and passwords) from Anaheim (Edge) during continuous import, in
+// addition to cookies. Unified Copilot only.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_COPILOT_FEATURE(kEnableAnaheimImportForAdditionalDataTypes);
+
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+bool IsAnaheimImportForAdditionalDataTypesEnabled();
+
+// Enables continuous Anaheim (Edge) import for AAD (work/school) accounts in
+// addition to MSA accounts. Unified Copilot only.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_COPILOT_FEATURE(kEnableAnaheimImportForAADAccounts);
+
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+bool IsAnaheimImportForAADAccountsEnabled();
+
 // Flag to enable encryption of all imported data (passwords, cookies, and
 // payments) with Aster app-bound keys in edge.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
@@ -491,6 +558,33 @@ BASE_DECLARE_FEATURE(kEncryptPaymentsWithAsterKey);
 // Requires kEdgeEncryptImportedDataWithAsterKey to be enabled.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kEncryptCookiesWithAsterKey);
+
+// One-time recovery import for passwords broken during Chrome's App-Bound
+// encryption rollout (~Aug 2024). Overrides the CI timestamp to re-import
+// missed rows.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeCIPasswordsImportRecovery);
+
+// One-time recovery import for payments broken during Chrome's App-Bound
+// encryption rollout (~Aug 2024).
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeCIPaymentsImportRecovery);
+
+// Feature flag for on-device fallback tabs when open tabs import fails.
+// Queries Chrome's History DB for recent frequent sites instead of
+// server-side ML (PersonalizedLaunch).
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kCIOpenTabsImportFailureFallback);
+
+// Variant values for kCIOpenTabsImportFailureFallback.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+extern const char kFallbackVariantRecentFrequentHistory[];
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+extern const char kFallbackVariantTopSites[];
+
+// Variant param for kCIOpenTabsImportFailureFallback.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+extern const base::FeatureParam<std::string> kCIOpenTabsFallbackVariant;
 
 }  // namespace edge_continuous_import
 }  // namespace features

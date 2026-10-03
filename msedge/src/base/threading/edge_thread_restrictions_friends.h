@@ -24,7 +24,6 @@
 
 #if DCHECK_IS_ON()
 #include "base/debug/stack_trace.h"
-#include "third_party/abseil-cpp/absl/types/optional.h"
 #endif
 
 // This file contains the forward declaration of Edge specific classes and

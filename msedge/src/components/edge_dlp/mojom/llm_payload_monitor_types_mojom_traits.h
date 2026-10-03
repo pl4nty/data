@@ -42,24 +42,6 @@ class StructTraits<dlp::mojom::LLMPayloadMonitorSitePolicyDataView,
 };
 
 template <>
-class StructTraits<dlp::mojom::DomainPolicyPartsDataView,
-                   dlp::LLMPayloadMonitorPolicies::DomainPolicyParts> {
- public:
-  static const std::string& domain(
-      const dlp::LLMPayloadMonitorPolicies::DomainPolicyParts& input) {
-    return input.domain;
-  }
-
-  static const dlp::LLMPayloadMonitorSitePolicy& policy(
-      const dlp::LLMPayloadMonitorPolicies::DomainPolicyParts& input) {
-    return input.policy;
-  }
-
-  static bool Read(dlp::mojom::DomainPolicyPartsDataView data,
-                   dlp::LLMPayloadMonitorPolicies::DomainPolicyParts* output);
-};
-
-template <>
 class StructTraits<dlp::mojom::LLMPayloadMonitorPoliciesDataView,
                    dlp::LLMPayloadMonitorPolicies> {
  public:
@@ -68,7 +50,7 @@ class StructTraits<dlp::mojom::LLMPayloadMonitorPoliciesDataView,
     return input.exact_urls;
   }
 
-  static std::vector<dlp::LLMPayloadMonitorPolicies::DomainPolicyParts> domains(
+  static base::flat_map<std::string, dlp::LLMPayloadMonitorSitePolicy> domains(
       const dlp::LLMPayloadMonitorPolicies& input) {
     return input.domains;
   }

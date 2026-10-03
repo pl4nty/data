@@ -13,7 +13,6 @@ namespace {
 class IpcThreadTest : public testing::Test {
  public:
   static void SetUpTestSuite() {
-    mojo::core::EnableMojoIpcz();
     mojo::core::Init({.is_broker_process = true});
   }
 };

@@ -50,18 +50,19 @@ template("edge_overlay_source_set_impl") {
     deps += [
       "//chrome/browser:browser_process",
       "//chrome/browser:edge_continuous_migration_utils",
+      "//chrome/browser:edge_global_features",
       "//chrome/browser:edge_instrumentation_prefs",
       "//chrome/browser:edge_migration_features",
       "//chrome/browser:edge_onramp_network_primary_browser_service",
-      "//chrome/browser:first_run",
       "//chrome/browser/autofill",
       "//chrome/browser/content_settings:content_settings_factory",
       "//chrome/browser/edge_lightning",
       "//chrome/browser/edge_user_usage_service",
       "//chrome/browser/extensions",
+      "//chrome/browser/first_run",
       "//chrome/browser/importer/extensions:extenions_migrator",
       "//chrome/browser/search:edge_instant_service",
-      "//chrome/browser/sessions:edge_sessions",
+      "//chrome/browser/sessions:edge_sessions_impl",
       "//chrome/browser/themes",
       "//chrome/browser/ui",
       "//chrome/browser/ui/startup:startup_tab",
@@ -77,13 +78,13 @@ template("edge_overlay_source_set_impl") {
       "//components/password_manager/core/browser/password_store:password_store_impl",
       "//components/privacy_sandbox:privacy_sandbox_prefs",
     ]
-    if (is_msedge_branded && is_win) {
+    if (is_win) {
       deps += [
-        "//chrome/browser:edge_first_run_import_manager_win",
         "//chrome/browser:edge_importer_auto_ie_sites_win",
         "//chrome/browser/edge_continuous_migration",
         "//chrome/browser/edge_continuous_migration:edge_continuous_migration_importer",
         "//chrome/browser/importer/edge_china_browsers:china_importer_utils",
+        "//components/edge_onramp:browser_name_enumeration",
         "//components/os_crypt/async/common",
       ]
     }
@@ -111,6 +112,7 @@ template("edge_overlay_source_set_browser_tests") {
 set_defaults("edge_overlay_source_set_unit_tests") {
   configs = []
 }
+
 template("edge_overlay_source_set_unit_tests") {
   source_set(target_name) {
     # Forward all variables from the invoker, except for "configs" has defaults.

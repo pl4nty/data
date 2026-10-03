@@ -19,6 +19,16 @@ namespace features {
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kAddressBarReadonly);
 COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsAddressBarReadonlyFeatureAllowed();
 
+// Gates the coordinated Copilot icon refresh. When disabled (the default),
+// every Copilot-icon surface renders the current icon. When enabled, each
+// surface swaps in the new icon variant in place (same slot, same size). This
+// single flag is the source of truth consumed by all native call sites and is
+// plumbed to the settings WebUI via loadTimeData (isCIconRefreshEnabled). It
+// lives in the ui/base layer so both chrome/browser surfaces and lower
+// components layers (e.g. components/omnibox) can consume the one flag.
+COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kEdgeCIconRefresh);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+bool IsCIconRefreshEnabled(bool trigger_usage = false);
 
 // If enabled, link preview will be generated when link is copied from within
 // the page.
@@ -114,30 +124,16 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kSidebarSearchAfterSearchWebFor);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 bool IsSidebarSearchAfterSearchWebForEnabled();
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kOpenSearchWebForInSidebar);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-bool IsOpenSearchWebForInSidebarEnabled();
-COMPONENT_EXPORT(UI_BASE_FEATURES)
 
 // If enabled, adds a sidebar search for image menu item to the context menu.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kSidebarSearchForImageAfterSearchWebFor);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 bool IsSidebarSearchForImageAfterSearchWebForEnabled();
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-
-// Fires when sidebar search menu is added to the context menu.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kSidebarSearchShownInContextMenu);
 
 // Fires when sidebar search for image is added to the context menu.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kSidebarSearchForImageShownInContextMenu);
-
-// Fires when sidebar search is opened.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kSidebarSearchOpened);
 
 // Trigger flag for Mica.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
@@ -152,13 +148,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsReactiveSearchEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kReactiveSearchWithAddressbar);
 COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsReactiveSearchAddressbarEnabled();
-
-// If enabled, launch a new SERP backround tab to accompany any windows
-// searches.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kEnhancedWindowsSearchOpenTab);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-bool IsEnhancedWindowsSearchOpenTabEnabled(bool trigger_usage = false);
 
 // If enabled, a new button will show as a new tool
 COMPONENT_EXPORT(UI_BASE_FEATURES)
@@ -183,6 +172,12 @@ BASE_DECLARE_FEATURE_PARAM(bool, kEdgeComposeInlineIgnoreWritingSuggestions);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_PARAM(bool,
                            kEdgeComposeInlineIgnoreWritingSuggestionsNewEntry);
+
+// When enabled (only takes effect together with kEdgeComposeInlineNewUX), the
+// Rewrite compose inline surface hides its input textarea and offers a
+// "Generate again" button to re-run the rewrite instead.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_PARAM(bool, kEdgeComposeInlineRewriteGenerateAgain);
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeComposeCopilotChat);
@@ -238,20 +233,12 @@ BASE_DECLARE_FEATURE(kTouchbarRing0WithSearch);
 // Supports command line enabling of high contrast controls for PiP
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kHighContrastForPip);
 
-// If enabled, will show the current Edge only PIP Experience.
-COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kEdgePipAdvanced);
-
 #if !BUILDFLAG(IS_ANDROID)
 // If enabled, will use the Picture in Picture UI which is more closely
 // aligned with the upstream UI.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgePipAlignedUI);
 #endif  // !BUILDFLAG(IS_ANDROID)
-
-// Returns true when the Edge-specific advanced PIP UI should be used.
-// This is the case when kEdgePipAdvanced is enabled and kEdgePipAlignedUI
-// (which re-aligns with upstream) is not overriding it.
-COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsEdgePipAdvancedUiEnabled();
 
 // Returns true when the Edge PiP aligned UI feature is enabled.
 // When |trigger_usage| is true, also activates the associated field trial
@@ -298,16 +285,26 @@ BASE_DECLARE_FEATURE(kToolbarMoreMenuButtonsEnabled);
 
 // Enable quick search mini menu in website.
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kWebOOUI);
-// Enable quick search mini menu in childe frame.
-COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kWebOOUIInChildFrame);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsWebOOUIInChildFrameEnabled();
 
-// If enabled, the panels refresh rate boosts up 2x (on VRR capable displays
-// that have a supporting driver).
+// If enabled, the browser will query the OS for variable refresh rate
+// displays, and if any are detected and `kRefreshRateBoostActionEnabled` is
+// true, will request a refresh rate boost from the OS on every scroll.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kRefreshRateBoostOnScroll);
 COMPONENT_EXPORT(UI_BASE_FEATURES) extern bool RefreshRateBoostOnScroll();
+
+// Returns true if the browser should request the DXGI refresh-rate boost.
+// The treatment arm of the scroll-boost parameter experiment sets the parameter
+// to false to suppress the boost while keeping the flag enabled in both arms,
+// so VRR detection and the kVRRCapableDisplayTrigger still fire for the whole
+// VRR-capable population regardless of whether the boost is active.
+COMPONENT_EXPORT(UI_BASE_FEATURES) extern bool RefreshRateBoostActionEnabled();
+
+// Trigger fired when the OS reports that the device is VRR capable.
+// VRR-capability detection and the push from the browser both run whenever
+// `kRefreshRateBoostOnScroll` is enabled.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kVRRCapableDisplayTrigger);
 
 // kRefreshRateBoostOnScroll should only be enabled on Windows 11 and newer
 // versions (since it depends on certain new OS APIs). However, since our lab
@@ -366,7 +363,7 @@ enum class SemanticTheme : int {
   kCompactNeutral = 1,  // MAI compact-neutral design system (default)
   kCompactThemed = 2,   // MAI compact-themed design system
   kDefault = 3,         // MAI default design system
-  kBebop = 4,           // MAI bebop design system
+  kOneCopilot = 4,      // MAI OneCopilot design system
 };
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FIRST_RUN_FEATURE(kMaiDesignSystem);
@@ -388,9 +385,23 @@ extern bool IsMAICompactThemedDesignSystemEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsMAIDefaultDesignSystemEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_COPILOT_FEATURE(kMAIBebopDesignSystem);
+BASE_DECLARE_FIRST_RUN_FEATURE(kEdgeDefaultBlueTheme);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsMAIBebopDesignSystemEnabled();
+extern bool IsEdgeDefaultBlueThemeEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_COPILOT_FEATURE(kMAIOneCopilotDesignSystem);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsMAIOneCopilotDesignSystemEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_COPILOT_FEATURE(kMAIOneCopilotWarmDesignSystem);
+// Gates the one-copilot-warm MAI token package.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsMAIOneCopilotWarmDesignSystemEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_COPILOT_FEATURE(kCopilotCaptionButtonSizeToken);
+// Gates sizing the caption buttons from the MAI caption button size token.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsCopilotCaptionButtonSizeTokenEnabled();
 
 // This is a helper util which gates the infra for runtime token injection in
 // html templates used in WebUI.
@@ -572,27 +583,43 @@ extern bool IsSystemCaptionStyleReadFromRegistryEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kSettingsAppearanceTrigger);
 
-// Fires when the Themes section is rendered in the Settings page.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kSettingsAppearanceThemesPageTrigger);
-
 // Fires when a user has a theme color applied (user color or autogenerated
 // theme color).
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kColorThemeAppliedTrigger);
+
+// Fires for an applied MAI baseline theme, excluding color and extension
+// themes.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kNonColorThemeAppliedTrigger);
+
+// Fires when Default Blue is applied.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kDefaultBlueThemeAppliedTrigger);
+
+// Fires when compact-neutral is applied.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kCompactNeutralThemeAppliedTrigger);
+
+// Fires when compact-themed is applied.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kCompactThemedThemeAppliedTrigger);
+
+// Fires at startup and on theme changes after a profile has used a default
+// theme, even if the current theme is different.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kDefaultThemeEverAppliedTrigger);
+
+// Fires when a user had a color theme when their color theme state was first
+// checked.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kColorThemeUserOnFirstCheckTrigger);
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kVisualRejuvConnectedTabs);
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kVisualRejuvMicaForConnectedTabs);
-
-#if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kSemanticColorTokens);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsEdgeSemanticColorTokenEnabled(bool trigger_usage = false);
-#endif  // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeAIThemeUndoEnabled(bool trigger_usage = false);
@@ -620,11 +647,19 @@ extern bool IsEdgeFixedBoundsForWebViewEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FIRST_RUN_FEATURE(kEdgeR1ColorThemes);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsEdgeR1ColorThemesEnabled();
-
+BASE_DECLARE_FIRST_RUN_FEATURE(kEdgeR1ColorThemesDeepTheme);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kEdgeR1ColorThemesSelfhost);
-#endif // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
+extern bool IsEdgeR1ColorThemesEnabled();
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsEdgeR1ColorThemesDeepThemeEnabled();
+
+#if BUILDFLAG(IS_WIN)
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeFollowDeviceColors);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsEdgeFollowDeviceColorsEnabled();
+#endif  // BUILDFLAG(IS_WIN)
+#endif  // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
 
 // If enabled, Edge DLP features will have access to the private clipboard.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
@@ -645,15 +680,6 @@ BASE_DECLARE_FEATURE(kEdgeToolbarButtonUIPolish);
 #endif  // BUILDFLAG(IS_MAC)
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgeToolbarButtonUIPolishEnabled();
-
-// If enabled, will use ThemeService-based dark mode detection (current
-// approach). If disabled, will use direct preference reading (legacy approach).
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kEdgeThemeServiceDarkMode);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsEdgeThemeServiceDarkModeEnabled(bool trigger_usage = false);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsNativeThemeUpstreamAlignmentEnabled(bool trigger_usage = false);
 
 #if BUILDFLAG(IS_MAC)
 // Bit flags for native context menu features.

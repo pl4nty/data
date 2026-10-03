@@ -27,7 +27,6 @@ class DataProviderWrapper final {
 };
 
 DataProviderWrapper::DataProviderWrapper() {
-  mojo::core::EnableMojoIpcz();
   mojo::core::Init({.is_broker_process = true});
   ipc_thread_.emplace();
 }

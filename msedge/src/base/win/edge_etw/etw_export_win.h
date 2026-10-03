@@ -33,6 +33,11 @@ BASE_EXPORT void SetETWRundown(
 
 BASE_EXPORT bool IsEtwEventEnabled(uint64_t keyword);
 
+// Returns whether the ETW exporter's track event config filters dynamic
+// (runtime-built) event names. Must stay true so that web-content-controlled
+// strings never become ETW TraceLogging event names.
+BASE_EXPORT bool IsDynamicEventNameFilteringEnabledForTesting();
+
 BASE_EXPORT void AddRqvDurationEventETW(const char* name, int64_t duration);
 BASE_EXPORT void AddEtwDurationEventETW(const char* category_group,
                                         const char* name,

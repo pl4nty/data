@@ -29,8 +29,15 @@ declare_args() {
                                 edge_clang_sample_profile_path != "")
 }
 
+declare_args() {
+  # Outline ASan checks to reduce code size at the cost of runtime performance.
+  # This is intended only for oversized static Linux sanitizer builds.
+  edge_enable_asan_outline_instrumentation = false
+}
+
 template("edge_overlay_group_all") {
-  # Intentionally empty to make the linking between BUILD.gn and BUILD_edge.gni work by adding targets into the BUILD.gn scope.
+  # Intentionally empty to make the linking between BUILD.gn and BUILD_edge.gni
+  # work by adding targets into the BUILD.gn scope.
   group(target_name) {
     forward_variables_from(invoker, "*", [])
   }
@@ -49,6 +56,38 @@ template("edge_overlay_config_treat_warnings_as_errors") {
 template("edge_overlay_config_default_warnings") {
   config(target_name) {
     forward_variables_from(invoker, "*", [])
+    # Edge overlays:
+  }
+}
+
+template("edge_overlay_config_tot_warnings") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+    # Edge overlays:
+  }
+}
+
+template("edge_overlay_config_libcxx_module") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    # Edge overlays:
+    if (use_clang_modules && is_win) {
+      # Interim workaround for a Windows SDK cppwinrt IWYU defect: winrt/base.h
+      # uses std::ratio_multiply / std::ratio but only #includes <chrono>. Under
+      # Clang modules (-fmodules-local-submodule-visibility) the libc++ <ratio>
+      # submodule is not transitively re-exported by <chrono>, so those names
+      # are invisible and every translation unit reaching winrt/base.h fails to
+      # compile. Force-include <ratio> so the submodule is imported into
+      # TU-local visibility before winrt/base.h is parsed. Non-modules builds
+      # are unaffected because <chrono> textually drags in <ratio> there. The
+      # upstream fix has landed in cppwinrt
+      # (https://github.com/microsoft/cppwinrt/pull/1612); remove this once it
+      # flows into the Windows SDK and we pick up that SDK.
+      # TODO(63301791): Remove /FIratio after ingesting an SDK with
+      # cppwinrt#1612.
+      cflags_cc += [ "/FIratio" ]
+    }
   }
 }
 
@@ -147,10 +186,22 @@ template("edge_overlay_config_compiler") {
     forward_variables_from(invoker, "*", [])
 
     # Edge overlays:
+    # ASan builds also instantiate unsanitized Rust host-tool toolchains.
+    if (edge_enable_asan_outline_instrumentation && is_asan) {
+      assert(is_linux, "ASan outlining is supported only for Linux ASan builds")
+
+      # Some build tools remove the sanitizer config. Use the backend option
+      # directly so Clang does not reject the public driver flag as unused.
+      cflags += [
+        "-mllvm",
+        "-asan-instrumentation-with-call-threshold=0",
+      ]
+      rustflags += [ "-Cllvm-args=-asan-instrumentation-with-call-threshold=0" ]
+    }
 
     if (!is_win) {
-      # Edge: To control the size of our debug artifacts, compile our Linux builds
-      # with -fdebug-types-section
+      # Edge: To control the size of our debug artifacts, compile our Linux
+      # builds with -fdebug-types-section
       if (is_posix && !is_apple) {
         cflags += [ "-fdebug-types-section" ]
         ldflags += [ "-fdebug-types-section" ]
@@ -166,11 +217,11 @@ template("edge_overlay_config_compiler") {
 
     if (!is_android) {
       rustflags += [
-        # Stack protection is needed to pass Binskim during Edge official builds.
-        # Without this option, Binskim will fail with BA2014,
-        # (DoNotDisableStackProtectionForFunctions). The `all` option is used for
-        # stack-protector as it is the most stable option as of now. Even still,
-        # `all` is also being stabilized, see:
+        # Stack protection is needed to pass Binskim during Edge official
+        # builds. Without this option, Binskim will fail with BA2014,
+        # (DoNotDisableStackProtectionForFunctions). The `all` option is used
+        # for stack-protector as it is the most stable option as of now. Even
+        # still, `all` is also being stabilized, see:
         # https://github.com/rust-lang/rust/pull/121742
       ]
     }
@@ -212,7 +263,8 @@ template("edge_overlay_config_clang_revision") {
                 "//third_party/llvm-build/Release+Asserts/cr_build_revision",
                 "trim string")
 
-        # Somehow our _clang_revision ends up with a list of platforms after the rev string
+        # Somehow our _clang_revision ends up with a list of platforms after the
+        # rev string
         _edge_clang_revision_parts = string_split(_edge_clang_revision, ",")
         _edge_clang_revision = _edge_clang_revision_parts[0]
 

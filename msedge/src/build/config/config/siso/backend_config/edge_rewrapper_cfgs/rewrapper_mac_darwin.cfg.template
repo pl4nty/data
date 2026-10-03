@@ -1,0 +1,12 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+server_address=unix:///tmp/reproxy.sock
+labels=type=compile,compiler=clang,lang=cpp
+exec_strategy=remote_local_fallback
+dial_timeout=10m
+exec_timeout=5m
+reclient_timeout=5m
+remote_wrapper=
+platform=TargetOS=Darwin,OSFamily=Darwin,container-image=edgeRBE,llvm_version=${clang_revision},python_version=2@3.11.8.chromium.35,cipd_version=${cipd_version}

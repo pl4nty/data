@@ -16,6 +16,25 @@ namespace text_prediction {
 COMPONENT_EXPORT(EDGE_TEXT_PREDICTION_FEATURES)
 extern bool IsUseMicrosoftTuringForTextPredictionEnabled();
 
+// If enabled, the Microsoft Turing text prediction service
+// (turing-writingassistance.edge.microsoft.com) is not contacted while Edge
+// runs as the unified Copilot app (copilotapp.exe), pending compliance work.
+// Scoped to the unified Copilot app via CopilotAppType::kUnifiedOnly and
+// enabled there by UnifiedCopilotPermanentFeatureOverrides.
+COMPONENT_EXPORT(EDGE_TEXT_PREDICTION_FEATURES)
+BASE_DECLARE_COPILOT_FEATURE(kTextPredictionDisabledInCopilotApp);
+
+// Returns false when running as the unified Copilot app (copilotapp.exe), where
+// the Microsoft Turing text prediction service
+// (turing-writingassistance.edge.microsoft.com) is disabled pending compliance
+// review (gated by kTextPredictionDisabledInCopilotApp). Returns true in all
+// other processes. Both the network master gate
+// (IsUseMicrosoftTuringForTextPredictionEnabled) and the host pref gate
+// (IsTextPredictionSettingEnabled) route their Copilot-app disable decision
+// through this helper.
+COMPONENT_EXPORT(EDGE_TEXT_PREDICTION_FEATURES)
+bool IsTextPredictionServiceEnabled();
+
 // This is a helper method to set current country code for test. Should only be
 // used by test.
 COMPONENT_EXPORT(EDGE_TEXT_PREDICTION_FEATURES)

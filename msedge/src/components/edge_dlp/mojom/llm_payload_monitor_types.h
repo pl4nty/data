@@ -35,13 +35,8 @@ struct LLMPayloadMonitorSitePolicy {
 };
 
 struct LLMPayloadMonitorPolicies {
-  struct DomainPolicyParts {
-    std::string domain;
-    LLMPayloadMonitorSitePolicy policy;
-  };
-
   base::flat_map<GURL, dlp::LLMPayloadMonitorSitePolicy> exact_urls;
-  std::vector<DomainPolicyParts> domains;
+  base::flat_map<std::string, dlp::LLMPayloadMonitorSitePolicy> domains;
 
  public:
   LLMPayloadMonitorPolicies();

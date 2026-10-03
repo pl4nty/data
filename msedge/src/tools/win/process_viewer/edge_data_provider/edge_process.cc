@@ -61,10 +61,6 @@ void EdgeProcess::OnCommandLineUpdated() {
       process_type = ProcessType::Gpu;
     } else if (process_type_string == kUtilityProcess) {
       process_type = ProcessType::Utility;
-    } else if (process_type_string == kPpapiPluginProcess) {
-      process_type = ProcessType::Plugin;
-    } else if (process_type_string == kPpapiBrokerProcess) {
-      process_type = ProcessType::PluginBroker;
     } else if (process_type_string == kCrashpadHandlerProcess) {
       process_type = ProcessType::CrashpadHandler;
     } else if (process_type_string == kWatcherProcess) {

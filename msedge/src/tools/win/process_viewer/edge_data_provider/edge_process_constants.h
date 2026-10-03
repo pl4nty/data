@@ -14,8 +14,6 @@ extern const char kExtensionProcessSwitch[];
 extern const char kRendererProcess[];
 extern const char kGpuProcess[];
 extern const char kUtilityProcess[];
-extern const char kPpapiPluginProcess[];
-extern const char kPpapiBrokerProcess[];
 extern const char kCrashpadHandlerProcess[];
 extern const char kWatcherProcess[];
 

@@ -1,0 +1,127 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+import("//build/config/chrome_build.gni")
+import("//build/config/compiler/compiler.gni")
+import("//build/toolchain/toolchain.gni")
+
+template("edge_overlay_config_win_compiler") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    # Debug component builds with full symbols (symbol_level=2) can generate
+    # PDBs that exceed the 8 GiB limit of the default 8192-byte page size.
+    # Override to use 16384 (16 GiB cap).
+    if (is_debug && is_component_build && symbol_level == 2) {
+      ldflags -= [ "/pdbpagesize:8192" ]
+      ldflags += [ "/pdbpagesize:16384" ]
+    }
+
+    # For Edge, enable /OPT:REF in debug and component builds to prevent
+    # overflow of symbol information in the resulting PDBs. This requires
+    # disabling incremental linking which isn't supported by lld anyways. Also
+    # ensure that ICF optimization is not on by default. Upstream only enables
+    # these optimizations in static release builds
+    # (!is_debug && !is_component_build).
+    if (is_debug || is_component_build) {
+      ldflags += [
+        "/OPT:REF",
+        "/OPT:NOICF",
+        "/INCREMENTAL:NO",
+      ]
+    }
+  }
+}
+
+template("edge_overlay_config_win_runtime_library") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    defines += [ "__WRL_DISABLE_STATIC_INITIALIZE__" ]
+  }
+}
+
+template("edge_overlay_config_win_delayloads_except_dbghelp") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    ldflags += [
+      "/DELAYLOAD:api-ms-win-power-setting-l1-1-1.dll",
+      "/DELAYLOAD:dnsapi.dll",
+      "/DELAYLOAD:ffmpeg.dll",
+      "/DELAYLOAD:mspdf.dll",
+      "/DELAYLOAD:oneds.dll",
+
+      # Edge specific dependency on d2d1.
+      "/DELAYLOAD:d2d1.dll",
+    ]
+
+    # ncrypt.dll is delay-loaded by chrome.dll only (see
+    # :delayloads_for_chrome_dll), so Edge does not delay-load it everywhere.
+    ldflags -= [ "/DELAYLOAD:ncrypt.dll" ]
+  }
+}
+
+template("edge_overlay_config_win_delayloads_not_for_child_dll") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    # version.dll is delay loaded here (chrome.exe and chrome_elf.dll) but not
+    # in chrome.dll, which imports it statically so sandboxed child processes
+    # can resolve it before LowerToken(). This matches upstream chrome.dll.
+    ldflags += [
+      "/DELAYLOAD:bcrypt.dll",
+      "/DELAYLOAD:version.dll",
+    ]
+  }
+}
+
+# Group to define Edge-only targets and import them into the BUILD.gn scope.
+template("edge_overlay_group_all") {
+  group(target_name) {
+    forward_variables_from(invoker, "*", [])
+  }
+
+  # This config (along with `:delayloads`) applies to chrome.dll. Entries should
+  # not appear in both this config and `:delayloads_except_dbghelp`.
+  #
+  # Do not add a DLL here if a *sandboxed* child process may need it after
+  # sandbox lockdown. A lowered token cannot map a new image, so a delay load
+  # that first resolves post-lockdown fails. Upstream keeps crypt32, dwrite,
+  # winmm and ws2_32 out of the child DLL for exactly this reason (see
+  # `:delayloads_not_for_child_dll`): chrome.dll imports them statically so the
+  # loader maps them before LowerToken(). Edge matches that, which is why those
+  # entries are deliberately absent below.
+  config("delayloads_for_chrome_dll") {
+    ldflags = [
+      "/DELAYLOAD:advapi32.dll",
+      "/DELAYLOAD:bcrypt.dll",
+      "/DELAYLOAD:dbghelp.dll",
+      "/DELAYLOAD:dhcpcsvc.dll",
+      "/DELAYLOAD:iphlpapi.dll",
+      "/DELAYLOAD:ncrypt.dll",
+      "/DELAYLOAD:secur32.dll",
+      "/DELAYLOAD:tbs.dll",
+      "/DELAYLOAD:uiautomationcore.dll",
+      "/DELAYLOAD:userenv.dll",
+      "/DELAYLOAD:winhttp.dll",
+      "/DELAYLOAD:winspool.drv",
+      "/DELAYLOAD:wintrust.dll",
+    ]
+  }
+
+  # Generating order files.
+  config("default_cygprofile_instrumentation") {
+    if (generate_order_files && !toolchain_for_rust_host_build_tools) {
+      assert(is_clang, "cygprofile instrumentation only works with clang")
+      assert(is_official_build, "order files should be made w/ official builds")
+      assert(!is_chrome_branded, "order files could leak internal symbol names")
+      configs = [ ":cygprofile_instrumentation" ]
+    }
+  }
+
+  config("cygprofile_instrumentation") {
+    cflags = [
+      "-Xclang",
+      "-finstrument-functions-after-inlining",
+    ]
+  }
+}

@@ -6,4 +6,5 @@ LIBRARY    "EmbeddedBrowserWebView.dll"
 
 EXPORTS
   CreateWebViewEnvironmentWithOptionsInternal
+  CreateSharedWebViewEnvironmentInternal
   DllCanUnloadNow

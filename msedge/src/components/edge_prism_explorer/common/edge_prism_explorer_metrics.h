@@ -3,8 +3,6 @@
 #ifndef COMPONENTS_EDGE_PRISM_EXPLORER_COMMON_EDGE_PRISM_EXPLORER_METRICS_H_
 #define COMPONENTS_EDGE_PRISM_EXPLORER_COMMON_EDGE_PRISM_EXPLORER_METRICS_H_
 
-#include "base/time/time.h"
-
 namespace edge_prism_explorer {
 namespace metrics {
 
@@ -13,6 +11,8 @@ namespace metrics {
 // Please keep in sync with "Microsoft.PrismExplorerOnHover.RendererEvents"
 // in src/tools/metrics/histograms/edge_enums.xml.
 // Entries with **Overlay** suffix are related to image having overlay.
+//
+// LINT.IfChange(PrismExplorerOnHoverRendererEvents)
 enum class PrismExplorerOnHoverRendererEvents {
   kHoverButton = 0,
   kHoverEligibleImage = 1,
@@ -26,8 +26,10 @@ enum class PrismExplorerOnHoverRendererEvents {
   kHoverButtonClickedOverlay = 9,
   kImageLookup = 10,
   kImageLookupOverlay = 11,
-  kMaxValue = kImageLookupOverlay,
+  kHoverButtonShown = 12,
+  kMaxValue = kHoverButtonShown,
 };
+// LINT.ThenChange(//tools/metrics/histograms/edge_enums.xml:Microsoft.PrismExplorerOnHover.RendererEvents)
 
 // These values are persisted to logs. Entries should not be renumbered or
 // removed and numeric values should never be reused.
@@ -37,7 +39,7 @@ enum class PrismExplorerOnHoverRendererEvents {
 // Entries with **Overlay** suffix are related to image having overlay.
 enum class PrismThreeButtonLayoutUsageEvents {
   kShowPrismButton = 0,
-  kSaveControlEngagement = 1,
+  // (Obsolete) kSaveControlEngagement = 1,
   kVisualSearchFlyoutAbandonment = 2,
   kSmartExploreDisable = 3,
   kVisualSearchIconHover = 4,
@@ -46,29 +48,13 @@ enum class PrismThreeButtonLayoutUsageEvents {
   kSendFeedback = 7,
   kVisualSearchClickTwoButton = 8,
   kSettingClick = 9,
-  kSaveControlLoadFail = 10,
+  // (Obsolete) kSaveControlLoadFail = 10,
   kVisualSearchLoadFail = 11,
   kVisualSearchClickThreeButton = 12,
-  kSaveControlHover = 13,
+  // (Obsolete) kSaveControlHover = 13,
   kVisualSearchClickTwoButtonOverlay = 14,
   kVisualSearchClickThreeButtonOverlay = 15,
   kMaxValue = kVisualSearchClickThreeButtonOverlay,
-};
-
-// These values are persisted to logs. Entries should not be renumbered or
-// removed and numeric values should never be reused.
-// Please keep in sync with
-// "Microsoft.PrismSmartExplorer.SaveControlFlyoutEvents" in
-// src/tools/metrics/histograms/edge_enums.xml.
-enum class PrismSaveControlFlyoutEvents {
-  kSaveItem = 0,
-  kDeleteItem,
-  kCreateCollection,
-  kClickLinkToOpenCollection,
-  kSavedInCollectionsCount,
-  kUserCollectionsCount,
-  kUnableToSave,
-  kMaxValue = kUnableToSave,
 };
 
 // These values are persisted to logs. Entries should not be renumbered or
@@ -156,17 +142,6 @@ void RecordPrismThreeButtonLayoutUsageEvents(
     PrismThreeButtonLayoutUsageEvents event);
 
 void RecordPrismExplorerFeedbackEvents(PrismSmartExplorerFeedbackEvents event);
-
-void RecordSaveControlFlyoutEvents(PrismSaveControlFlyoutEvents event);
-
-void RecordSaveControlShowFlyoutDuration(base::TimeDelta delta);
-
-void RecordSaveControlFlyoutCreateTime(base::TimeDelta delta);
-
-void RecordSaveControlIframeLoadTime(base::TimeDelta delta);
-
-void RecordSaveControlFlyoutStartRenderingTime(base::TimeDelta delta);
-
 
 void RecordAskCopilotImageAction(AskCopilotImageAction action);
 

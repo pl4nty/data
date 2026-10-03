@@ -733,28 +733,29 @@ describe('PasswordEditor Component Tests', () => {
 
             // Mock doAsyncValidate to return no errors
             sinon.stub(element, 'doAsyncValidate').resolves(new Map());
+            mockPasswordService.addPassword.resolves({ result: true, errorMsg: 0 });
 
             const closeMe = sinon.stub();
 
-            try {
-                await element.save(closeMe);
-            } catch (error) {
-                // Expect this to throw because santitinizePasswordModel will try to call trim() on null
-                expect(error).to.be.instanceOf(TypeError);
-                expect((error as TypeError).message).to.include('Cannot read properties of null');
-            }
+            // Null fields are coerced to empty strings, so save completes without throwing.
+            await element.save(closeMe);
 
-            // Save won't complete due to malformed data
-            expect(closeMe).to.not.have.been.called;
+            expect(mockPasswordService.addPassword).to.have.been.calledWith('https://', '', '', '');
         });
 
         it('should handle santitinizePasswordModel with null values directly', () => {
-            // Test the santitinizePasswordModel method directly with null values
-            expect(() => element.santitinizePasswordModel({
+            // Null fields are coerced to empty strings via ?? '' and do not throw.
+            const result = element.santitinizePasswordModel({
                 url: null as unknown as string,
                 username: null as unknown as string,
                 password: null as unknown as string,
-            })).to.throw(TypeError);
+                note: null as unknown as string,
+            });
+
+            expect(result.url).to.equal('https://');
+            expect(result.username).to.equal('');
+            expect(result.password).to.equal('');
+            expect(result.note).to.equal('');
         });
 
         it('should handle santitinizePasswordModel with undefined values', () => {

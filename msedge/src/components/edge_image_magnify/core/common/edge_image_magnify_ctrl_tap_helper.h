@@ -5,8 +5,9 @@
 #ifndef COMPONENTS_EDGE_IMAGE_MAGNIFY_CORE_COMMON_EDGE_IMAGE_MAGNIFY_CTRL_TAP_HELPER_H_
 #define COMPONENTS_EDGE_IMAGE_MAGNIFY_CORE_COMMON_EDGE_IMAGE_MAGNIFY_CTRL_TAP_HELPER_H_
 
+#include <optional>
+
 #include "base/time/time.h"
-#include "third_party/abseil-cpp/absl/types/optional.h"
 
 namespace edge_image_magnify {
 

@@ -116,21 +116,22 @@ BASE_EXPORT BASE_DECLARE_FEATURE(kMitigateAttachedInputSpinBySleeping);
 // flag for v8 in render
 BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeOomAndV8CrashOptimize);
 
+// Configures OOM intervention's renderer private-footprint threshold by
+// device memory tier.
+BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeOomInterventionMemoryTierThreshold);
+BASE_EXPORT BASE_DECLARE_FEATURE_PARAM(
+    int,
+    kEdgeOomInterventionHighEndPrivateFootprintThresholdPercent);
+BASE_EXPORT BASE_DECLARE_FEATURE_PARAM(
+    int,
+    kEdgeOomInterventionLowEndPrivateFootprintThresholdPercent);
+BASE_EXPORT BASE_DECLARE_FEATURE_PARAM(
+    int,
+    kEdgeOomInterventionMidEndPrivateFootprintThresholdPercent);
+
 // If enabled, will enable the OOM intervention feature on Android
 BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeRenderOomOptimize);
 
-// If enabled, partial low-end mode is enabled on Android for specific scopes
-BASE_EXPORT BASE_DECLARE_FEATURE(kEdgeLowEndMemoryExperimentPartial);
-
-BASE_EXPORT BASE_DECLARE_FEATURE_PARAM(std::string,
-                                       kEdgeLowEndMemoryExperimentScope);
-
-// Parameter name and values for kEdgeLowEndMemoryExperimentPartial
-BASE_EXPORT extern const char kEdgeLowEndMemoryExperimentParamName[];
-BASE_EXPORT extern const char kEdgeLowEndMemoryExperimentScopeJavaWithZygote[];
-BASE_EXPORT extern const char kEdgeLowEndMemoryExperimentScopeInProcessZygote[];
-BASE_EXPORT extern const char kEdgeLowEndMemoryExperimentScopeNativeWithGpu[];
-BASE_EXPORT extern const char kEdgeLowEndMemoryExperimentScopeInProcessGpu[];
 #endif  // BUILDFLAG(IS_ANDROID)
 
 }  // namespace features

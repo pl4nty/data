@@ -52,7 +52,6 @@ int WINAPI wWinMain(HINSTANCE, HINSTANCE, wchar_t*, int) {
   std::unique_ptr<mojo::core::ScopedIPCSupport> ipc_support;
 
   if (use_ipcz) {
-    mojo::core::EnableMojoIpcz();
     mojo::core::Init({.is_broker_process = true});
 
     ipc_thread = std::make_unique<base::Thread>("ipc!");

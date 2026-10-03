@@ -1,0 +1,32 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto3";
+
+option optimize_for = LITE_RUNTIME;
+
+package edge_llm.proto;
+
+// A single WebGPU shader/pipeline blob cache entry.
+message ShaderCacheEntry {
+  // Dawn cache key (already namespaced by the isolation key).
+  bytes key = 1;
+  // Serialized compiled shader/pipeline blob.
+  bytes value = 2;
+  // Time this entry was stored, in microseconds since the
+  // Windows epoch (base::Time::ToDeltaSinceWindowsEpoch().InMicroseconds()).
+  int64 stored_time_us = 3;
+}
+
+// On-disk snapshot of the EdgeOrtShaderCache. Persisted through the
+// `program_cache_file` handle and capped at a fixed byte budget.
+message ShaderCache {
+  // Format version; a mismatch invalidates the whole cache on load.
+  uint32 version = 1;
+  // Isolation key the snapshot was written with; a mismatch invalidates the
+  // whole cache on load.
+  string isolation_key = 2;
+  // Cache entries. No implied ordering.
+  repeated ShaderCacheEntry entries = 3;
+}

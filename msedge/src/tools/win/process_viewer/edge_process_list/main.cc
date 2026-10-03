@@ -192,7 +192,6 @@ int main(int argc, char* argv[]) {
   std::unique_ptr<base::Thread> ipc_thread;
   std::unique_ptr<mojo::core::ScopedIPCSupport> ipc_support;
 
-  mojo::core::EnableMojoIpcz();
   mojo::core::Init({.is_broker_process = true});
 
   ipc_thread = std::make_unique<base::Thread>("ipc!");

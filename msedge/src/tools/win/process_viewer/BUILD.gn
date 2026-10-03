@@ -99,10 +99,7 @@ source_set("edge_data_provider") {
 }
 
 mojom("mojom") {
-  cpp_only = true
-
   # Don't generate Blink variants of these bindings.
-  disable_variants = true
 
   sources = [ "common/edge_watcher.mojom" ]
 

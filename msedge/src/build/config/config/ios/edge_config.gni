@@ -4,6 +4,6 @@
 
 declare_args() {
   # Controls whether can speed up code signing progress by skipping running
-  # Intune and Citrix tools. Enabled by default for non-official environment.
+  # Intune tools. Enabled by default for non-official environment.
   ios_edge_speed_up_debug_code_signing = !is_official_build
 }

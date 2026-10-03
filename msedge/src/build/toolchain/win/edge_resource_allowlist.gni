@@ -1,0 +1,12 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+
+import("//build/config/cronet/config.gni")
+
+declare_args() {
+  edge_enable_resource_allowlist_input_collection =
+      is_official_build && host_os == "win" && target_os == "win" &&
+      !is_cronet_build
+}
+
+assert(!edge_enable_resource_allowlist_input_collection || host_os == "win",
+       "Resource allowlist input collection requires a Windows build host.")

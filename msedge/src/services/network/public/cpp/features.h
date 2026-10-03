@@ -12,20 +12,7 @@
 #include "base/metrics/field_trial_params.h"
 #include "base/time/time.h"
 
-namespace url {
-class Origin;
-}  // namespace url
-
 namespace network::features {
-
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kBlockAcceptClientHints);
-// Note: Do not use BASE_DECLARE_FEATURE_PARAM macro as this is called only once
-// per process to construct a static local instance.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-extern const base::FeatureParam<std::string> kBlockAcceptClientHintsBlockedSite;
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-bool ShouldBlockAcceptClientHintsFor(const url::Origin& origin);
 
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kNetworkErrorLogging);
@@ -79,10 +66,10 @@ BASE_DECLARE_FEATURE(kCorsNonWildcardRequestHeadersSupport);
 
 COMPONENT_EXPORT(NETWORK_CPP) BASE_DECLARE_FEATURE(kCombineResponseBody);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kOmitCorsClientCert);
+BASE_DECLARE_FEATURE(kCorsPreflightCacheKeyTaintedOrigin);
 
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kIgnoreCorsPreflightPolicy);
+BASE_DECLARE_FEATURE(kOmitCorsClientCert);
 
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kReduceAcceptLanguage);
@@ -163,16 +150,6 @@ BASE_DECLARE_FEATURE(kCloneDevToolsConnectionOnlyIfRequested);
 // Enables the Storage Access Headers semantics.
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kStorageAccessHeaders);
-// Should Sec-Ad-Auction-Event-Recording-Eligible be sent on requests made
-// with attributionsrc, and should Ad-Auction-Register-Event responses on
-// those requests be processed?
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kAdAuctionEventRegistration);
-
-// Runtime flag that changes default Permissions Policy for features
-// join-ad-interest-group and run-ad-auction to a more restricted EnableForSelf.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kAdInterestGroupAPIRestrictedPolicyByDefault);
 
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kDeprecateUnload);
@@ -197,90 +174,16 @@ BASE_DECLARE_FEATURE(kFrameAncestorsHeader);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kUpdateRequestForCorsRedirect);
 
+// https://crbug.com/513518289
+// When enabled, CorsURLLoader handles CORS redirects in-place via
+// network_loader_->FollowRedirect() rather than restarting the request via
+// StartRequest().
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kAvoidCorsURLLoaderRestartOnRedirect);
+
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kBrowsingTopics);
 
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kSharedStorageAPI);
-// Maximum number of URLs allowed to be included in the input parameter for
-// runURLSelectionOperation().
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(
-    size_t,
-    kSharedStorageURLSelectionOperationInputURLSizeLimit);
-// Maximum database page size in bytes. Must be a power of two between
-// 512 and 65536, inclusive.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(int, kMaxSharedStoragePageSize);
-// Maximum database in-memory cache size, in pages.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(int, kMaxSharedStorageCacheSize);
-// Maximum number of tries to initialize the database.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(int, kMaxSharedStorageInitTries);
-// Maximum number of keys or key-value pairs returned in each batch by
-// the async `keys()` and `entries()` iterators, respectively.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(int, kMaxSharedStorageIteratorBatchSize);
-// Maximum number of bits of entropy allowed per origin to output via the Shared
-// Storage API.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(int, kSharedStorageBitBudget);
-// Interval over which `kSharedStorageBitBudget` is defined.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(base::TimeDelta, kSharedStorageBudgetInterval);
-// Initial interval from service startup after which
-// SharedStorageManager first checks for any stale entries, purging any that it
-// finds.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(base::TimeDelta,
-                           kSharedStorageStalePurgeInitialInterval);
-// Second and subsequent intervals from service startup after
-// which SharedStorageManager checks for any stale entries, purging any that it
-// finds.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(base::TimeDelta,
-                           kSharedStorageStalePurgeRecurringInterval);
-// Length of time between last key write access and key expiration. When an
-// entry's data is older than this threshold, it will be auto-purged.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(base::TimeDelta, kSharedStorageStalenessThreshold);
-// Maximum depth of fenced frame where sharedStorage.selectURL() is allowed to
-// be invoked. The depth of a fenced frame is the number of the fenced frame
-// boundaries above that frame (i.e. the outermost main frame's frame tree has
-// fenced frame depth 0, a topmost fenced frame tree embedded in the outermost
-// main frame has fenced frame depth 1, etc).
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(
-    size_t,
-    kSharedStorageMaxAllowedFencedFrameDepthForSelectURL);
-// If enabled, sends additional details in the error message for the
-// rejected promise when shared storage is disabled, for local troubleshooting
-// and use in testing.
-//
-// NOTE: To preserve user privacy, this feature param MUST remain false by
-// default.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(bool,
-                           kSharedStorageExposeDebugMessageForSettingsStatus);
-
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kSharedStorageTransactionalBatchUpdate);
-
-// Backend storage + kill switch for Interest Group API origin trials.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kInterestGroupStorage);
-// Backend storage + kill switch for Interest Group API origin trials.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(int, kInterestGroupStorageMaxOwners);
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(int, kInterestGroupStorageMaxStoragePerOwner);
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(int, kInterestGroupStorageMaxGroupsPerOwner);
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(int, kInterestGroupStorageMaxNegativeGroupsPerOwner);
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE_PARAM(int, kInterestGroupStorageMaxOpsBeforeMaintenance);
 
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kIncreaseCookieAccessCacheSize);
@@ -315,6 +218,11 @@ BASE_DECLARE_FEATURE(kCSPScriptSrcHashesInV1);
 // See https://chromestatus.com/feature/5202380930678784
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kCacheSharingForPervasiveResources);
+
+// When enabled along with kCacheSharingForPervasiveResources, pervasive
+// shared dictionaries are supported via an unpartitioned, single-keyed store.
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kPervasiveSharedDictionaries);
 
 // When enabled, sends SameSite=Lax cookies for FedCM requests in addition to
 // SameSite=None.
@@ -408,10 +316,21 @@ BASE_DECLARE_FEATURE_PARAM(int, kDurableMessagesGlobalBufferSize);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kBypassRequestForbiddenHeadersCheck);
 
-// When enabled, the network service will prohibit modifications to the Origin
-// header in FollowRedirect.
+// When enabled, the network service will prohibit invalid modifications to the
+// Origin header in CorsURLLoader::FollowRedirect.
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kBlockOriginHeaderModificationOnRedirect);
+BASE_DECLARE_FEATURE(kBlockInvalidOriginHeaderModificationOnRedirect);
+
+// When enabled, the network service will prohibit invalid Origin headers in
+// CorsURLLoader::StartRequest.
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kBlockInvalidOriginHeader);
+
+// When enabled, the network service will prohibit non-browser processes from
+// removing security-sensitive headers (such as Origin and Sec- headers other
+// than Client Hints) in CorsURLLoader::FollowRedirect.
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kBlockSecurityHeaderRemovalOnRedirect);
 
 // If enabled, the variations headers for allowlisted domains will be included
 // in the Reporting API uploads.
@@ -440,16 +359,29 @@ BASE_DECLARE_FEATURE(kDelayInitialDohProbeTimeout);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE_PARAM(base::TimeDelta, kDelayInitialDohProbeTimeoutParam);
 
+// When enabled, sending to a multicast address via Direct Sockets requires the
+// 'direct-sockets-multicast' Permissions Policy.
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kRestrictForbiddenSecurityHeaders);
+BASE_DECLARE_FEATURE(kDirectSocketsUdpSendRequireMulticastPermissionPolicy);
 
-// Enables the Declarative Performance Observer feature.
-// When enabled, the network service will parse the `Performance-Observer`
-// HTTP response header to extract the telemetry policy for the document.
-// https://github.com/explainers-by-googlers/declarative-performance-observer
-// for more details.
+// Enables validating browser-initiated file upload requests from the network
+// service.
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kDeclarativePerformanceObserver);
+BASE_DECLARE_FEATURE(kBrowserInitiatedFileUploadValidation);
+
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kSafeRevalidation);
+
+// When enabled, binds URLLoaderFactory Mojo receiver to a high priority task
+// runner.
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kBindURLLoaderFactoryToHighPriorityTaskRunner);
+
+// When enabled, validates that ResourceRequest::isolated_world_origin matches
+// URLLoaderFactoryParams::isolated_world_origin_lock when
+// ignore_isolated_world_origin is false.
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kEnforceIsolatedWorldOriginLock);
 
 }  // namespace network::features
 

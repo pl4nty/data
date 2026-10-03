@@ -18,6 +18,10 @@ import("//build/config/ios/rules.gni")
 #       the name of the framework, please don’t include “.framework”
 #       e.g. framework_name = "IntuneMAMWalledGarden"
 #
+#   strip_symbols:
+#       Remove debug and local symbols from the output binary before signing.
+#       Defaults to false. The input framework and its dSYM are preserved.
+#
 #   bundle_resources:
 #       the resources which need be included in the .framework
 #       e.g.
@@ -88,6 +92,9 @@ template("ios_edge_framework_bundle_prebuilt") {
       "--output",
       rebase_path(outputs[0], root_build_dir),
     ]
+    if (defined(invoker.strip_symbols) && invoker.strip_symbols) {
+      args += [ "--strip-symbols" ]
+    }
     args += [ "--archs" ]
     _archs = [ target_cpu ] + additional_target_cpus
     foreach(_arch, _archs) {

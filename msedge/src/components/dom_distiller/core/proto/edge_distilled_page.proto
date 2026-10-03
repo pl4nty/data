@@ -75,4 +75,10 @@ message DistilledPageProto {
 
   // extraction algo type
   optional int32 extraction_algo_type = 12;
+
+  // Language of the source article.
+  optional string language = 13;
+
+  // The clean text content with all HTML tags stripped.
+  optional string text_content = 14;
 }

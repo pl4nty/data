@@ -8,7 +8,6 @@
 #include <cstdint>
 
 #include "base/notreached.h"
-#include "components/edge_abydos/buildflags.h"
 
 namespace ui {
 
@@ -17,7 +16,6 @@ enum class AbydosAction : uint8_t;
 enum class AbydosRequest : uint8_t;
 enum class AbydosResponse : uint8_t;
 
-// Edge only.
 // See also: //ui/base/ime/mojom/ime_types.mojom
 // Used to notify the external Abydos API of relevant events.
 // Sent from the Renderer Process to the Browser Process.
