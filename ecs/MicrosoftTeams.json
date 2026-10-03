@@ -1773,7 +1773,7 @@
             ],
             "EnableTMGpt56": [
                 {
-                    "Flight": "TM.freeSummaryV6AB",
+                    "Flight": "TM.gpt56ReasoningNanoLunaModel",
                     "IsEnabled": true
                 }
             ],
@@ -4842,7 +4842,6 @@
     },
     "TeamsNotificationFilteringService": {
         "ECSAuthForEDL": true,
-        "ECSAuthForSeal": true,
         "enableRemindersNotifications": true,
         "enableTenantDataMigration": true
     },
