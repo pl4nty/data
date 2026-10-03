@@ -1917,6 +1917,89 @@
                 }
             }
         },
+        "Floodgate_Campaign_MicrosoftDefenderXDR.b19027fb-8f49-48a3-b4a1-49a802ea059e": {
+            "CampaignId": "b19027fb-8f49-48a3-b4a1-49a802ea059e",
+            "EndTimeUtc": "2027-09-27T04:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-09-27T04:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "SessionCount",
+                            "Count": 4,
+                            "IsAggregate": true,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "CoreActions",
+                            "Count": 5,
+                            "IsAggregate": true,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AppUsage",
+                            "Count": 2,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Very disappointed",
+                                        "Somewhat disappointed ",
+                                        "Not disappointed",
+                                        "Relieved"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How would you feel if you could no longer use Exposure Management?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "How can we improve Exposure Management for you?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/b19027fb-8f49-48a3-b4a1-49a802ea059e/5a1b0590-d925-43e4-8ef2-f7c7b0c1d9a9/Web-MicrosoftDefenderXDR/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_MicrosoftDefenderXDR.b41f618b-f5f2-47e3-9da3-72b4dafd959b": {
             "CampaignId": "b41f618b-f5f2-47e3-9da3-72b4dafd959b",
             "EndTimeUtc": "2026-10-28T07:00:00Z",
