@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy PolicyType="Supplemental Policy" xmlns="urn:schemas-microsoft-com:sipolicy">
+  <VersionEx>0.0.0.0</VersionEx>
+  <PlatformID>{2e07f7e4-194c-4d20-b7c9-6f44a6c5a234}</PlatformID>
+  <PolicyID>{1939ed82-bfd5-4d32-b58e-d31d3c49715a}</PolicyID>
+  <BasePolicyID>{1283ac0f-fff1-49ae-ada1-8a933130cad6}</BasePolicyID>
+  <Rules>
+    <Rule>
+      <Option>Disabled:Runtime FilePath Rule Protection</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Managed Installer</Option>
+    </Rule>
+  </Rules>
+  <EKUs />
+  <FileRules>
+    <Allow ID="ID_ALLOW_A_0001" FilePath="C:\Data\test\*" />
+    <Allow ID="ID_ALLOW_A_0002" FilePath="C:\test\*" />
+  </FileRules>
+  <Signers>
+    <Signer ID="ID_SIGNER_S_1" Name="Signer 1">
+      <CertRoot Type="TBS" Value="53FEFC045D7668833ABFA335FC92E17572E921A509DC0919EE435989582DDFD9" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_2" Name="Signer 2">
+      <CertRoot Type="TBS" Value="300217091313D230385D9EB39B833B63BE0E3060EFECEC995918231E0B2D0A2A" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_3" Name="Signer 3">
+      <CertRoot Type="TBS" Value="5137EC4BA1F1245240719F163A47DB5D2A85AA6B6BA583A0DF1C11FC3E9E3D96" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_4" Name="Signer 4">
+      <CertRoot Type="Wellknown" Value="0A" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_5" Name="Signer 5">
+      <CertRoot Type="Wellknown" Value="0A" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_6" Name="Signer 6">
+      <CertRoot Type="Wellknown" Value="0A" />
+    </Signer>
+  </Signers>
+  <SigningScenarios>
+    <SigningScenario ID="ID_SIGNINGSCENARIO_DRIVERS" Value="131" FriendlyName="Driver Mode" MinimumHashAlgorithm="32780">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_S_5" />
+        </AllowedSigners>
+      </ProductSigners>
+      <TestSigners />
+      <TestSigningSigners />
+    </SigningScenario>
+    <SigningScenario ID="ID_SIGNINGSCENARIO_USERMODE" Value="12" FriendlyName="User Mode" MinimumHashAlgorithm="32780">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_S_1" />
+          <AllowedSigner SignerId="ID_SIGNER_S_2" />
+          <AllowedSigner SignerId="ID_SIGNER_S_3" />
+          <AllowedSigner SignerId="ID_SIGNER_S_4" />
+        </AllowedSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_ALLOW_A_0001" />
+          <FileRuleRef RuleID="ID_ALLOW_A_0002" />
+        </FileRulesRef>
+      </ProductSigners>
+      <TestSigners />
+      <TestSigningSigners />
+    </SigningScenario>
+  </SigningScenarios>
+  <UpdatePolicySigners>
+    <UpdatePolicySigner SignerId="ID_SIGNER_S_6" />
+  </UpdatePolicySigners>
+  <CiSigners>
+    <CiSigner SignerId="ID_SIGNER_S_1" />
+    <CiSigner SignerId="ID_SIGNER_S_2" />
+    <CiSigner SignerId="ID_SIGNER_S_3" />
+    <CiSigner SignerId="ID_SIGNER_S_4" />
+  </CiSigners>
+  <HvciOptions>0</HvciOptions>
+  <Settings>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
+      <Value>
+        <String>22549.1000.220201</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+      <Value>
+        <String>VerifiedAndReputableDesktopEvaluationTestSupplemental</String>
+      </Value>
+    </Setting>
+  </Settings>
+</SiPolicy>

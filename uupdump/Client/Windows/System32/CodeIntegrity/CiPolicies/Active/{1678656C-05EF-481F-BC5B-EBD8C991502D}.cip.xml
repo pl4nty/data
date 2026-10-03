@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy PolicyType="Supplemental Policy" xmlns="urn:schemas-microsoft-com:sipolicy">
+  <VersionEx>0.0.0.0</VersionEx>
+  <PlatformID>{2e07f7e4-194c-4d20-b7c9-6f44a6c5a234}</PlatformID>
+  <PolicyID>{1678656c-05ef-481f-bc5b-ebd8c991502d}</PolicyID>
+  <BasePolicyID>{0283ac0f-fff1-49ae-ada1-8a933130cad6}</BasePolicyID>
+  <Rules />
+  <EKUs>
+    <EKU ID="ID_EKU_E_1" Value="010A2B0601040182370A0306" FriendlyName="EKU 1" />
+    <EKU ID="ID_EKU_E_2" Value="010A2B0601040182373D0401" FriendlyName="EKU 2" />
+    <EKU ID="ID_EKU_E_3" Value="010A2B0601040182373D0501" FriendlyName="EKU 3" />
+    <EKU ID="ID_EKU_E_4" Value="010A2B0601040182370A0305" FriendlyName="EKU 4" />
+  </EKUs>
+  <FileRules />
+  <Signers>
+    <Signer ID="ID_SIGNER_S_1" Name="Signer 1">
+      <CertRoot Type="Wellknown" Value="0E" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_2" Name="Signer 2">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_E_1" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_3" Name="Signer 3">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_E_2" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_4" Name="Signer 4">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_E_3" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_5" Name="Signer 5">
+      <CertRoot Type="Wellknown" Value="0E" />
+      <CertEKU ID="ID_EKU_E_4" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_6" Name="Signer 6">
+      <CertRoot Type="Wellknown" Value="07" />
+      <CertEKU ID="ID_EKU_E_1" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_7" Name="Signer 7">
+      <CertRoot Type="Wellknown" Value="07" />
+      <CertEKU ID="ID_EKU_E_2" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_8" Name="Signer 8">
+      <CertRoot Type="Wellknown" Value="07" />
+      <CertEKU ID="ID_EKU_E_3" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_9" Name="Signer 9">
+      <CertRoot Type="Wellknown" Value="07" />
+      <CertEKU ID="ID_EKU_E_4" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_10" Name="Signer 10">
+      <CertRoot Type="Wellknown" Value="06" />
+      <CertEKU ID="ID_EKU_E_1" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_11" Name="Signer 11">
+      <CertRoot Type="Wellknown" Value="0A" />
+    </Signer>
+  </Signers>
+  <SigningScenarios>
+    <SigningScenario ID="ID_SIGNINGSCENARIO_DRIVERS" Value="131" FriendlyName="Driver Mode" MinimumHashAlgorithm="32780">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_S_6" />
+          <AllowedSigner SignerId="ID_SIGNER_S_7" />
+          <AllowedSigner SignerId="ID_SIGNER_S_8" />
+          <AllowedSigner SignerId="ID_SIGNER_S_9" />
+          <AllowedSigner SignerId="ID_SIGNER_S_2" />
+          <AllowedSigner SignerId="ID_SIGNER_S_3" />
+          <AllowedSigner SignerId="ID_SIGNER_S_4" />
+          <AllowedSigner SignerId="ID_SIGNER_S_5" />
+        </AllowedSigners>
+      </ProductSigners>
+      <TestSigners />
+      <TestSigningSigners />
+    </SigningScenario>
+    <SigningScenario ID="ID_SIGNINGSCENARIO_USERMODE" Value="12" FriendlyName="User Mode" MinimumHashAlgorithm="32780">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_S_1" />
+        </AllowedSigners>
+      </ProductSigners>
+      <TestSigners />
+      <TestSigningSigners />
+    </SigningScenario>
+  </SigningScenarios>
+  <UpdatePolicySigners>
+    <UpdatePolicySigner SignerId="ID_SIGNER_S_10" />
+    <UpdatePolicySigner SignerId="ID_SIGNER_S_2" />
+    <UpdatePolicySigner SignerId="ID_SIGNER_S_11" />
+  </UpdatePolicySigners>
+  <CiSigners>
+    <CiSigner SignerId="ID_SIGNER_S_1" />
+  </CiSigners>
+  <HvciOptions>0</HvciOptions>
+  <Settings>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
+      <Value>
+        <String>27766.241221-1700</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+      <Value>
+        <String>VerifiedAndReputableDesktopFlightSupplemental</String>
+      </Value>
+    </Setting>
+  </Settings>
+</SiPolicy>
