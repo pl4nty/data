@@ -23,7 +23,6 @@ if os.path.exists(update_id_file):
     with open(update_id_file, 'r') as f:
         existing_update_id = f.read().strip()
 
-# ring=canary returns NO_UPDATE_FOUND since ~29617; rs_prerelease builds are now served on ring=dev
 updates = request('https://api.uupdump.net/fetchupd.php?arch=amd64&ring=dev').json()
 update = updates['response']['updateArray'][0]
 updateId = update['updateId']

@@ -21,7 +21,7 @@ load_dotenv()
 
 
 def get_3rdparty_data():
-    # 3rdpartysource.microsoft.com/downloads now redirects to this paginated API (max 100 items per page)
+    # max 100 items per page
     url = "https://opensource.microsoft.com/3pc/downloads"
     session = requests.Session()
     items = []
@@ -37,7 +37,7 @@ def get_3rdparty_data():
             break
         page += 1
 
-    # The old API returned dependency names without the file extension
+    # Strip the file extension so selectors can match e.g. 'chromium'
     for item in items:
         if item.get('dependency') and '.' in item['dependency']:
             item['dependency'] = item['dependency'].rsplit('.', 1)[0]
@@ -523,8 +523,7 @@ def main():
     # exit()
 
     # Microsoft Edge for Windows
-    # chromium.zip used to wrap a nested zip, which needed the Azure unzip service.
-    # It's now a flat zip of the src/ tree under a single root folder, so read it directly.
+    # chromium.zip is a flat zip of the src/ tree under a single root folder, so read it in place
     latest_edge = get_latest_edge_release(data)
     print(f"\nLatest Edge version: {latest_edge['release']}")
     zip_url = latest_edge['url']
