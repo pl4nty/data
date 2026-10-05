@@ -63,11 +63,11 @@ jobs:
       - id: inference
         if: steps.prompt.outputs.changed == '1'
         continue-on-error: true
-        uses: actions/ai-inference@main
+        uses: actions/ai-inference@v2.1.1
         with:
           prompt-file: ${{ runner.temp }}/prompt
           model: ${{ vars.MODEL }}
-      - if: failure()
+      - if: steps.inference.outcome == 'failure'
         uses: actions/upload-artifact@v7
         with:
           name: prompt-file
@@ -102,17 +102,17 @@ jobs:
           Respond with only the commit message and no other text. Do not use markdown formatting.
           
           Here is the diff:
-          "@ | Out-File -FilePath "$RUNNER_TEMP/prompt" -Encoding utf8
+          "@ | Out-File -FilePath "$env:RUNNER_TEMP/prompt" -Encoding utf8
           
           git add .
-          git diff --cached --exit-code | Out-File -FilePath "$RUNNER_TEMP/prompt" -Append -Encoding utf8
+          git diff --cached --exit-code | Out-File -FilePath "$env:RUNNER_TEMP/prompt" -Append -Encoding utf8
           echo "changed=$LASTEXITCODE" >> $env:GITHUB_OUTPUT
           Write-Host $env:GITHUB_OUTPUT
           exit 0
       - id: inference
         if: steps.prompt.outputs.changed == '1'
         continue-on-error: true
-        uses: actions/ai-inference@main
+        uses: actions/ai-inference@v2.1.1
         with:
           prompt-file: ${{ runner.temp }}/prompt
           model: ${{ vars.MODEL }}
