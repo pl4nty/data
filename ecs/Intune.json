@@ -215,6 +215,7 @@
     },
     "INFRA_Auth": {
         "FlightingV2": {
+            "EnableMessageBusV3Publisher": true,
             "MBEnableProcessorClientSdkV3": true,
             "MBV1StorageWrapperUseEntraAuth": true,
             "UseFic": true,
@@ -1080,7 +1081,6 @@
     "UX_DeviceUsers": {
         "FlightingV2": {
             "EnableAppInventoryUXPrPMVR": true,
-            "EnableWindowsRemoteHelpUnattendedUX": true,
             "ManagedHomeScreenRemoteActions": true
         }
     },

@@ -1,5 +1,219 @@
 [
     {
+        "created": "2026-10-05T23:03:05",
+        "description": "<p>SharePoint administrators can use the Inactive files policy in SharePoint Advanced Management to automatically archive files based on when they were last accessed. The public preview is available through PowerShell only. Admins can set an inactivity threshold from 6 to 48 months, scope policies to all SharePoint sites or selected sites, include or exclude file types and sites, and use What-If mode to review impact before activation. Eligible files move to the Microsoft 365 Archive cold-storage tier while remaining in place and retaining their metadata, permissions, compliance, and searchability. Microsoft 365 Archive and pay-as-you-go billing must be enabled.</p>",
+        "id": 573699,
+        "locale": null,
+        "modified": "2026-10-05T23:03:05",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/powershell/module/microsoft.online.sharepoint.powershell/new-spofilearchivepolicy?view=sharepoint-ps#-lastaccessdatecriteria",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "SharePoint: Advanced Management - Inactive files policy"
+    },
+    {
+        "created": "2026-10-05T23:03:05",
+        "description": "<p>Microsoft OneDrive is introducing presentation mode in the OneDrive iOS app for users on iPad devices. Users select a new Presentation button in the PDF viewer to enter a focused, view-only experience that prevents free gesture scrolling between pages, reducing accidental page changes while presenting without moving the file to another app. The feature is not available on iPhone.</p>",
+        "id": 573697,
+        "locale": null,
+        "modified": "2026-10-05T23:03:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneDrive"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "OneDrive: Presentation mode for PDFs in the iOS app on iPad"
+    },
+    {
+        "created": "2026-10-05T23:03:05",
+        "description": "<p>Associates can trigger the <strong>Bulk add</strong> operation from the button grid on the transaction screen in Store Commerce. A drawer-based dialog opens where associates can paste or enter multiple item number and quantity pairs, with one pair specified per line.</p>\n<ul>\n<li>Supported formats include SKU x quantity, quantity x SKU, SKU quantity, quantity SKU, or SKU only (which defaults the quantity to 1).</li>\n<li>Multiple item number and quantity pairs can also be entered on a single line and separated by spaces or commas.</li>\n<li>Supported delimiters between item numbers and quantities include x, spaces, commas, and tab characters for Microsoft Excel paste scenarios. Input can also follow a CSV structure.</li>\n</ul>\n<p>Select <strong>Add to sale</strong> to process all items in a single operation.</p>\n<p>The system parses the input, resolves each item, and adds the items to the transaction. If an item requires variant selection, such as size or color, the variant selection dialog is displayed inline.</p>\n<h2>Feedback and error handling</h2>\n<ul>\n<li><strong>Success</strong>: The dialog closes and a confirmation message indicates that all items were added successfully.</li>\n<li><strong>Partial success</strong>: A warning message shows the number of items that were added and the number that failed. Failed items remain in the dialog so they can be corrected and resubmitted.</li>\n<li><strong>Failure</strong>: An error message is displayed. The dialog remains open and includes a collapsible error list that identifies the items that failed and the reason for each failure.</li>\n<li>Duplicate item numbers aren't merged and remain as separate transaction lines.</li>\n</ul>\n<h2>Entry point</h2>\n<p>The operation is accessed through the button grid, allowing merchants to add it to any button grid layout by using the existing screen layout designer.</p>\n<h2>Configuration</h2>\n<ul>\n<li><strong>Application</strong>: Store Commerce (Point of Sale)</li>\n<li><strong>Enabled by</strong>: Adding the <strong>Bulk add</strong> operation to a button grid through the screen layout designer in Commerce headquarters.</li>\n<li><strong>Setup</strong>: A store administrator or IT administrator configures a button grid layout to include the <strong>Bulk add</strong> operation. After the configuration is published, associates can access the operation from the transaction screen.</li>\n</ul>",
+        "id": 573275,
+        "locale": null,
+        "modified": "2026-10-05T23:03:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "July CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Add multiple items to a transaction using bulk entry"
+    },
+    {
+        "created": "2026-10-05T23:03:05",
+        "description": "<p>Quality Evaluation now supports recurring frequency for conversation evaluations. Previously, only event-based trigger evaluations were supported, meaning evaluations were created only when a conversation closed.<br>\nWith recurring evaluations, users can run bulk evaluations over previously closed conversations, evaluate future closed conversations, and sample selected conversations that match configured conditions. This enables ongoing quality monitoring, retrospective analysis, and targeted evaluation programs without relying solely on conversation-close events.</p>",
+        "id": 573267,
+        "locale": null,
+        "modified": "2026-10-05T23:03:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: Quality evaluation - Recurring conversation evaluations"
+    },
+    {
         "created": "2026-10-02T22:01:21",
         "description": "<p>Help people get started faster by automatically connecting new team members to relevant channels when they join a team. Improve engagement, accelerate onboarding, and make it easier to discover important information from day one.</p>",
         "id": 573452,
@@ -71,7 +285,7 @@
         "description": "<p>Organizations can enhance meeting security with synthetic audio and video (deepfake) detection solutions provided by certified third-party providers. Third-party detection solutions analyze meeting media for signs of synthetic or manipulated audio and video and send detection signals to Teams, enabling integrated in-meeting experiences and controls.  Important: Synthetic media detection is performed by the third-party provider. Microsoft Teams provides the platform integration and experiences for surfacing and acting on detection signals from supported providers.</p>",
         "id": 573451,
         "locale": null,
-        "modified": "2026-10-02T22:01:21",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -98,6 +312,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -128,6 +345,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -254,7 +474,7 @@
         "description": "<p>Impersonation Protection for Teams meetings helps users identify potentially deceptive participants and meeting organizers. When Teams detects a potential impersonation attempt, it surfaces warnings and risk indicators to help users recognize suspicious identities and make more informed decisions when joining or participating in a meeting.</p>",
         "id": 573157,
         "locale": null,
-        "modified": "2026-10-02T22:01:21",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -275,6 +495,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -299,6 +522,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -5659,7 +5885,7 @@
         "description": "<p>Incoming Teams calls don't wait for a break in your day. Intelligent call delegation provides AI-powered calling assistance so you can focus on the conversations that matter most. It answers calls and gathers context, helping you decide whether to pick up and engage the caller. It can also schedule follow-up appointments through an integration with Microsoft Bookings so you can reconnect with callers at a more convenient time.</p>",
         "id": 565216,
         "locale": null,
-        "modified": "2026-10-01T23:00:07",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -5671,6 +5897,9 @@
             },
             {
                 "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -5694,6 +5923,9 @@
             "platforms": [
                 {
                     "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
                 }
             ],
             "products": [
@@ -7246,7 +7478,7 @@
         "description": "<p>Improve accessibility by adding alternate text to images shared in Teams from OneDrive and SharePoint, helping users better understand visual content</p>",
         "id": 571687,
         "locale": null,
-        "modified": "2026-09-23T22:59:12",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -7257,7 +7489,22 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
                 "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -7273,11 +7520,26 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
                 {
                     "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -23215,15 +23477,15 @@
     },
     {
         "created": "2026-07-01T23:03:18",
-        "description": "Extend Microsoft Purview data security controls to the network layer to detect and protect sensitive data in text and prompts by integrating with Entra Internet Access. This integration enables organizations to intercept and inspect text and AI interactions at the network layer, enforce restrictive actions based on DLP policies, and detect risky user activity through Insider Risk Management. It helps prevent sensitive data from being shared with untrusted cloud applications through browsers, apps, APIs, add-ins, and more - including generative AI platforms, social media, collaborative platforms - while managing alerts and incidents through Purview and Microsoft Defender.",
+        "description": "<p>Extend Microsoft Purview data security controls to the network layer to detect and protect sensitive data in text and prompts by integrating with Entra Internet Access. This integration enables organizations to intercept and inspect text and AI interactions at the network layer, enforce restrictive actions based on DLP policies, and detect risky user activity through Insider Risk Management. It helps prevent sensitive data from being shared with untrusted cloud applications through browsers, apps, APIs, add-ins, and more - including generative AI platforms, social media, collaborative platforms - while managing alerts and incidents through Purview and Microsoft Defender.</p>",
         "id": 566528,
         "locale": null,
-        "modified": "2026-07-01T23:03:18",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -24630,15 +24892,15 @@
     },
     {
         "created": "2026-06-18T23:00:06",
-        "description": "A new feature will be introduced on the main Classification page, allowing users to test files against all available classifiers to identify the presence of sensitive information. Users will have the option to select a single classifier or run tests across all classifiers. This capability is designed to help users identify sensitive content within files and troubleshoot classification issues more efficiently. ",
+        "description": "<p>A new feature will be introduced on the main Classification page, allowing users to test files against all available classifiers to identify the presence of sensitive information. Users will have the option to select a single classifier or run tests across all classifiers. This capability is designed to help users identify sensitive content within files and troubleshoot classification issues more efficiently.</p>",
         "id": 566323,
         "locale": null,
-        "modified": "2026-06-18T23:00:06",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -25540,15 +25802,15 @@
     },
     {
         "created": "2026-06-15T23:00:45",
-        "description": "Endpoint DLP support for FTP and SFTP enables organizations to monitor and protect sensitive data transferred from managed endpoints using FTP and SFTP, helping prevent unauthorized data exfiltration while maintaining visibility and control.",
+        "description": "<p>Endpoint DLP support for FTP and SFTP enables organizations to monitor and protect sensitive data transferred from managed endpoints using FTP and SFTP, helping prevent unauthorized data exfiltration while maintaining visibility and control.</p>",
         "id": 565868,
         "locale": null,
-        "modified": "2026-08-11T22:53:53",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -27192,15 +27454,15 @@
     },
     {
         "created": "2026-06-04T23:15:54",
-        "description": "The new Microsoft Outlook for Windows will be available for US Government clouds (GCC-H and DoD sovereign environments). ",
+        "description": "<p>The new Microsoft Outlook for Windows will be available for US Government clouds (GCC-H and DoD sovereign environments).</p>",
         "id": 564913,
         "locale": null,
-        "modified": "2026-06-04T23:15:54",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -27479,15 +27741,15 @@
     },
     {
         "created": "2026-06-02T23:00:40",
-        "description": "MIP-label protected PDFs are now supported in the PDF previewer along with a built-in control's toolbar for easier navigation.",
+        "description": "<p>MIP-label protected PDFs are now supported in the PDF previewer along with a built-in control's toolbar for easier navigation.</p>",
         "id": 564970,
         "locale": null,
-        "modified": "2026-07-09T23:00:39",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -31944,9 +32206,9 @@
         "description": "<p>Teams meetings automatically create a corresponding Planner plan to capture meeting tasks. However, when teams use meetings as their primary collaboration surface for long-running initiatives, tasks from the same project can become scattered across multiple auto-generated plans. With this capability, users can now connect Teams meetings to existing Planner plans, so all related tasks across meetings can be tracked in one place.</p>",
         "id": 561490,
         "locale": null,
-        "modified": "2026-09-09T22:36:54",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -40432,15 +40694,15 @@
     },
     {
         "created": "2026-03-31T23:15:47",
-        "description": "Enables auto\u2011labeling of existing SharePoint files to match the default sensitivity label configured on their document library. This helps organizations close labeling gaps for data at rest and ensure consistent, secure\u2011by\u2011default protection across SharePoint libraries\u2014without relying on manual user labeling.",
+        "description": "<p>Enables auto\u2011labeling of existing SharePoint files to match the default sensitivity label configured on their document library. This helps organizations close labeling gaps for data at rest and ensure consistent, secure\u2011by\u2011default protection across SharePoint libraries\u2014without relying on manual user labeling.</p>",
         "id": 559105,
         "locale": null,
-        "modified": "2026-07-23T23:27:16",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -44837,15 +45099,15 @@
     },
     {
         "created": "2026-03-09T23:15:17",
-        "description": "We're expanding the Data Security Posture Agent with a new credential scanning capability. Discover exposed credentials and data security risks across scoped locations. Assign scanning tasks to the agent, track progress across stages, and take action on prioritized findings. The agent scans selected data locations, analyzing scoped files to detect credentials, such as Microsoft Entra user credentials, private keys, and API tokens. Each finding includes a risk score, AI-generated insights, confidence score, and credential category so you can review, confirm, and act from a single task board view.",
+        "description": "<p>We're expanding the Data Security Posture Agent with a new credential scanning capability. Discover exposed credentials and data security risks across scoped locations. Assign scanning tasks to the agent, track progress across stages, and take action on prioritized findings. The agent scans selected data locations, analyzing scoped files to detect credentials, such as Microsoft Entra user credentials, private keys, and API tokens. Each finding includes a risk score, AI-generated insights, confidence score, and credential category so you can review, confirm, and act from a single task board view. Updated October 5, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience.</p>",
         "id": 558436,
         "locale": null,
-        "modified": "2026-06-16T23:00:10",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -47755,15 +48017,15 @@
     },
     {
         "created": "2026-02-24T00:15:57",
-        "description": "This update introduces a co-branding experience in the Microsoft 365 Copilot app that helps organizations present an admin approved visual identifier directly within the Chat screen. Specifically, the experience enables administrators to leverage the organization-supported logo already managed in the Microsoft Admin Center theming settings and display it in the footer of the Chat screen, paired with a fixed label: \u201cApproved by\u201d.",
+        "description": "<p>This update introduces a co-branding experience in the Microsoft 365 Copilot app that helps organizations present an admin approved visual identifier directly within the Chat screen. Specifically, the experience enables administrators to leverage the organization-supported logo already managed in the Microsoft Admin Center theming settings and display it in the footer of the Chat screen, paired with a fixed label: \u201cApproved by\u201d.</p>",
         "id": 555852,
         "locale": null,
-        "modified": "2026-08-03T22:55:03",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -55919,15 +56181,15 @@
     },
     {
         "created": "2026-01-22T00:00:09",
-        "description": "With Teams Rooms on Windows consoles, you can quickly book a meeting room for immediate use, helping to avoid scheduling conflicts and ensure uninterrupted spontaneous meetings. Available in Teams Rooms Pro-licensed rooms.\n",
+        "description": "<p>With Teams Rooms on Windows consoles, you can quickly book a meeting room for immediate use, helping to avoid scheduling conflicts and ensure uninterrupted spontaneous meetings. Available in Teams Rooms Pro-licensed rooms.</p>",
         "id": 548648,
         "locale": null,
-        "modified": "2026-07-28T22:43:45",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -69705,12 +69967,12 @@
         "description": "<p>Extend Microsoft Purview Data Loss Prevention (DLP) policies to filter sensitive files at the network layer by integrating with Entra Global Secure Access Internet Access. This integration enables organizations to intercept and inspect files at the network layer and enforce restrictive actions based on DLP policy conditions. It helps prevent sensitive data from being shared with untrusted cloud applications through browsers, apps, APIs, add-ins, and more - including generative AI platforms, cloud storage, and content-sharing services - while managing alerts and incidents through Purview and Microsoft Defender. Updated July 17, 2026: The GA release of this item has moved. We apologize for any inconvenience.</p>",
         "id": 522096,
         "locale": null,
-        "modified": "2026-09-08T22:57:21",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -73966,12 +74228,12 @@
     },
     {
         "created": "2025-10-17T22:00:54",
-        "description": "Users in GCC-H will be able to use custom engine agents.",
+        "description": "<p>Users in GCC-H will be able to use custom engine agents.</p>",
         "id": 503771,
         "locale": null,
-        "modified": "2026-07-31T21:54:12",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -74015,12 +74277,12 @@
     },
     {
         "created": "2025-10-16T23:15:52",
-        "description": "<p>The PDF Viewer in Microsoft Edge is migrating to WebUI2, enhancing responsiveness and introducing a series of subtle visual upgrades aimed at improving overall usability and utility. This migration ensures UI coherence with the rest of the browser while maintaining the same user experience.<br>\nThe update focuses on improving underlying performance, consistency in design elements, and a smoother interaction without altering any existing workflows for users.</p>",
+        "description": "<p>The PDF Viewer in Microsoft Edge is enhancing responsiveness and introducing a series of subtle visual upgrades aimed at improving overall usability and utility. This migration ensures UI coherence with the rest of the browser while maintaining the same user experience.<br>\nThe update focuses on improving underlying performance, consistency in design elements, and a smoother interaction without altering any existing workflows for users.</p>",
         "id": 516043,
         "locale": null,
-        "modified": "2026-09-03T22:50:06",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -77030,9 +77292,9 @@
         "description": "<p>Viva Insights is creating an Agent Dashboard, designed to be a central place for leaders, delegates and analysts to understand how your organization is adopting agents. #copilotcontrolsystem</p>",
         "id": 506749,
         "locale": null,
-        "modified": "2026-09-03T22:50:06",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2027",
         "publicPreviewDate": "February CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -91354,10 +91616,10 @@
         "description": "<p>Enables cloud attachment preservation for users put on infinite hold so that file versions shared are preserved across any OneDrive or SharePoint site. This is a new capability which is different from the existing capability of applying label to cloud attachments and links present in OneDrive and SharePoint and shared in Exchange, Teams, Viva Engage and Copilot</p>",
         "id": 493752,
         "locale": null,
-        "modified": "2026-10-01T23:00:07",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
-        "publicPreviewDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "May CY2027",
+        "publicPreviewDate": "March CY2027",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -95974,9 +96236,9 @@
         "description": "<p>Enterprise customers can view sensitivity labels applied to MIP protected PDF to be well informed of the data classification to enable them to handle such sensitive documents. This change will be available in the new PDF viewer on Microsoft Edge.</p>",
         "id": 489232,
         "locale": null,
-        "modified": "2026-09-11T22:10:10",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -108942,15 +109204,15 @@
     },
     {
         "created": "2023-09-19T23:09:27",
-        "description": "<div><span style=\"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black;\">Just-in-time\nprotection for SharePoint in Microsoft Purview DLP allows organizations to\nextend protection to unclassified files in SharePoint and apply restrictions\ndefined in DLP policies at the time of egress</span>. </div>",
+        "description": "<div><span>Microsoft has decided to not move forward with this feature.\n<p>Just-in-time<br>\nprotection for SharePoint in Microsoft Purview DLP allows organizations to<br>\nextend protection to unclassified files in SharePoint and apply restrictions<br>\ndefined in DLP policies at the time of egress. </p></span></div><p></p>",
         "id": 139457,
         "locale": null,
-        "modified": "2025-11-21T00:00:57",
+        "modified": "2026-10-05T23:03:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

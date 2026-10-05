@@ -46,7 +46,7 @@
         "LightBakeIn3P": 1,
         "OcclusionBakeIn3P": 1,
         "catalogUrl": "https://catalog.mesh.cloud.microsoft/api",
-        "clientMinimumVersion": "6.2615.0",
+        "clientMinimumVersion": "6.2618.0",
         "collectorUrl": "https://us-mobile.events.data.microsoft.com/OneCollector/1.0/",
         "echoRequestsInterval": 15,
         "isEUTenant": false,
@@ -1773,7 +1773,7 @@
             ],
             "EnableTMGpt56": [
                 {
-                    "Flight": "TM.gpt56ReasoningNanoLunaModel",
+                    "Flight": "TM.freeSummaryV6AB",
                     "IsEnabled": true
                 }
             ],
@@ -4842,6 +4842,7 @@
     },
     "TeamsNotificationFilteringService": {
         "ECSAuthForEDL": true,
+        "ECSAuthForSeal": true,
         "enableRemindersNotifications": true,
         "enableTenantDataMigration": true
     },
