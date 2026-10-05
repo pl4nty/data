@@ -285,6 +285,7 @@
                 "SVC_DeviceLifecycle",
                 "SVC_DeviceManagementIntent",
                 "SVC_DeviceQuery",
+                "SVC_DeviceRuleEvaluation",
                 "SVC_DFCI",
                 "SVC_DiagnosticService",
                 "SVC_Edu",
