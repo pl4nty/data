@@ -78424,85 +78424,6 @@
     },
     {
         "created": "2025-09-22T23:00:43",
-        "description": "Create GPT-5-powered agents using Agent Builder inside Microsoft 365 Copilot. ",
-        "id": 502552,
-        "locale": null,
-        "modified": "2025-12-05T00:00:35",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Developer"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Developer"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): GPT-5 in Agent Builder inside Microsoft 365 Copilot "
-    },
-    {
-        "created": "2025-09-22T23:00:43",
         "description": "Improved discovery of Copilot connector sources in Microsoft 365 Copilot (optionally add chat) with Content Source filter(s).",
         "id": 502541,
         "locale": null,
@@ -89530,55 +89451,6 @@
             ]
         },
         "title": "Microsoft Teams: Saved messages"
-    },
-    {
-        "created": "2025-06-17T23:30:52",
-        "description": "This release will enhance Amplify reporting by adding click through rate metric. A new card will show the percentage of unique users who clicked on a link from the publication, providing insights into user engagement with the campaign.",
-        "id": 496373,
-        "locale": null,
-        "modified": "2025-12-05T00:00:35",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "July CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Amplify - Support for click through rate metric in Amplify reporting"
     },
     {
         "created": "2025-06-17T23:30:52",
@@ -100986,55 +100858,6 @@
             ]
         },
         "title": "Windows 365: Available from New Zealand North"
-    },
-    {
-        "created": "2025-02-21T00:15:07",
-        "description": "Amplify reports will provide a breakdown of the channels shown in the Unique viewers card. The tool tip will show the top 5 channel audiences and their contribution to the overall numbers for each publication channel presented in the report. ",
-        "id": 481156,
-        "locale": null,
-        "modified": "2025-12-05T00:00:35",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Amplify - Audience breakdown tooltip"
     },
     {
         "created": "2025-02-20T00:15:26",

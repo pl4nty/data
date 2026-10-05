@@ -2672,6 +2672,13 @@
         "ocvAppId": "2952",
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
+    "PLGSDK": {
+        "EnableConsumptiveBillingCreditRequestScenarios": true,
+        "EnableConsumptiveBillingIrisContent": false,
+        "PLGSDKConsumptiveBilling": true,
+        "PLGSDKConsumptiveBillingOlsLive": true,
+        "enableCreateHandlerForMechanicalImprovements": true
+    },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
         "PeopleInTaskbarDFVersion": "1.20260613.9.0",

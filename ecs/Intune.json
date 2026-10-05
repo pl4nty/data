@@ -933,7 +933,6 @@
             "EGMDirectPnsV2SidecarNotifications": true,
             "EGSmartDrop": true,
             "EnableEgCacheInExternalProcessor": true,
-            "EnableFastNotificationsLibrary": true,
             "EnableFnlEgLaneBatchPublishing": true,
             "EnableMdmFnlCacheService": true,
             "EnableMdmFnlEgClassificationCache": true,
