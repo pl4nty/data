@@ -13,4 +13,7 @@ message LocalWorkspaceData {
   // The Spacework was created locally when sync was disabled.
   // Useful for determining subsequent sign-in / sign-out behavior.
   optional bool created_before_syncing_spaceworks = 1;
+
+  // The immutable Copilot conversation ID represented by this Spacework.
+  optional string copilot_conversation_id = 2;
 }

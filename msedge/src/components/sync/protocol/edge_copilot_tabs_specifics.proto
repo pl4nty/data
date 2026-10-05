@@ -1,0 +1,45 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+
+// If you change or add any fields in this file, update proto_visitors.h and
+// potentially proto_enum_conversions.{h, cc}.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+import "components/sync/protocol/unique_position.proto";
+
+// A single Copilot App browsing tab. Conversation tabs are a flat sync type:
+// there is no parent conversation entity in Sync. The conversation itself is
+// owned by Copilot, and conversation_id is only the grouping key that lets a
+// Copilot client associate this tab with that external conversation. The
+// schema contains only the data required to sync Copilot conversation tabs.
+message EdgeCopilotTabsSpecifics {
+  // Stable identifier for this tab and the sync client tag/storage key.
+  optional string guid = 1;
+
+  // Timestamps for conflict resolution and CRUD operations.
+  optional int64 creation_time_windows_epoch_micros = 2;
+  optional int64 update_time_windows_epoch_micros = 3;
+
+  // Fields 4 and 5 belonged to the abandoned hierarchical prototype. Field 11
+  // represented pinned tabs, which Copilot conversations do not support.
+  reserved 4, 5, 11;
+  reserved "pinned";
+
+  // Identifier of the Copilot conversation that owns this tab. This is not the
+  // GUID of another sync entity.
+  optional string conversation_id = 6;
+
+  // Position of the tab relative to other tabs with the same conversation_id.
+  optional UniquePosition position = 7;
+
+  optional string url = 8;
+  optional string title = 9;
+  optional string favicon_url = 10;
+}

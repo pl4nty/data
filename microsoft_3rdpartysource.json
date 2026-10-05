@@ -144445,6 +144445,34 @@
     "platform": "Windows x86"
   },
   {
+    "name": "Microsoft Edge/157.0.4320.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4320.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4320.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4320.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4320.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4320.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4320.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4320.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
     "name": "Microsoft Edge/74.1.96.24/Windows x64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "74.1.96.24",
