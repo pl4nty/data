@@ -257,6 +257,7 @@
         "EnableLlmProxyConsumerServing": true,
         "EnableLlmProxyForConsumerUsers": true,
         "EnableLlmProxyGeographyAuthorization": true,
+        "EnableWorkflowModelAccess": true,
         "EnabledModels": [
             {
                 "context_window": 1000000,
@@ -1063,6 +1064,7 @@
         "EnableAgentActivityPanel": false,
         "EnableAgentCardType": true,
         "EnableAgentDetailsPanel": true,
+        "EnableAgentObservabilityUpload": true,
         "EnableAllPersonIdsDirectoryResolution": true,
         "EnableAtMentionInChatTeachingMoment": true,
         "EnableAttributionLogging": true,
