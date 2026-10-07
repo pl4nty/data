@@ -1136,6 +1136,9 @@
         "filterAssignPlanByServiceInstance": true,
         "scplConnectToStorageAccountMgmt": true,
         "windows365client": {
+            "Aspen": {
+                "enableHealthCheckAvdDiagnostics": true
+            },
             "GUI": {
                 "EnableBootToCloudSignInToPhysicalDevice": true,
                 "enableTheme": true
@@ -1158,7 +1161,6 @@
         "CVEReporting": true,
         "ContinueSavingTenantDataToMonolithSqlServer": true,
         "DSSApi": true,
-        "DefaultSettingUpdater": true,
         "DevicesReportNewTitle": true,
         "DisableDssLegacyForwarding": true,
         "DisableInstallLatestWindows10OnWindows11IneligibleDevice": true,
@@ -1193,7 +1195,6 @@
         "HideReportSummaryTab": true,
         "HideReportingPaused": true,
         "HotpatchOnByDefaultOptOut": true,
-        "IntunePartnerSyncRepair": true,
         "MigrationAddClientBrokerInstallAdminAction": true,
         "NoFeatureActivation": true,
         "PolicyDeviceStatusesReadFromScaleUnitKusto": true,

@@ -42,11 +42,6 @@
                 }
             ]
         },
-        "FeatureFlagRefactorExperiment": {
-            "enableFeatures": [
-                "msNurturingFeatureFlagRefactor"
-            ]
-        },
         "ReadAloudIconOnAddressBarLogicBased": {
             "enableFeatures": [
                 "msReadAloudIconOnAddressBarLogicBased",

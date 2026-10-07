@@ -31,8 +31,7 @@
             "IncludePartnersInApiResponse": true,
             "LockOnDisconnect": true,
             "MakeServerSessionCreationFailedErrorRetryable": true,
-            "ReserveCloudPc": true,
-            "UserPresenceDetection": true
+            "ReserveCloudPc": true
         },
         "AvailabilityZoneRestrictedForImageSvc": true,
         "AvailabilityZoneRestrictedForPlcy": true,

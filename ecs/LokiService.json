@@ -373,22 +373,6 @@
             },
             {
                 "context_window": 1050000,
-                "id": "gpt-5.6-terra",
-                "name": "GPT-5.6 Terra",
-                "reasoning_efforts": [
-                    "none",
-                    "low",
-                    "medium",
-                    "high",
-                    "xhigh",
-                    "max"
-                ],
-                "supported_endpoints": [
-                    "/responses"
-                ]
-            },
-            {
-                "context_window": 1050000,
                 "id": "gpt-5.6-luna",
                 "name": "GPT-5.6 Luna",
                 "reasoning_efforts": [
@@ -443,7 +427,6 @@
                         "claude-sonnet-4.6",
                         "claude-haiku-4.5",
                         "gpt-5.6-sol",
-                        "gpt-5.6-terra",
                         "gpt-5.6-luna",
                         "gpt-5.5",
                         "gpt-5-mini",
@@ -458,7 +441,6 @@
                         "claude-sonnet-4.6",
                         "claude-haiku-4.5",
                         "gpt-5.6-sol",
-                        "gpt-5.6-terra",
                         "gpt-5.6-luna",
                         "gpt-5.5",
                         "gpt-5-mini",
@@ -477,7 +459,6 @@
                         "claude-sonnet-4.6",
                         "claude-haiku-4.5",
                         "gpt-5.6-sol",
-                        "gpt-5.6-terra",
                         "gpt-5.6-luna",
                         "gpt-5.5",
                         "gpt-5-mini",
@@ -492,7 +473,6 @@
                         "claude-sonnet-4.6",
                         "claude-haiku-4.5",
                         "gpt-5.6-sol",
-                        "gpt-5.6-terra",
                         "gpt-5.6-luna",
                         "gpt-5.5",
                         "gpt-5-mini",
@@ -727,7 +707,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20260921.3.0",
+        "LpcVersion": "1.20260927.13.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -795,6 +775,7 @@
         "isAIx100": false,
         "isCardTypeLoggingEnabled": true,
         "isDeclineGroupPendingMemberEnabled": true,
+        "isDlmEnabledInHorizontalOrgExplorer": true,
         "isFeedbackForCopilotQnAPairsEnabled": false,
         "isFeedbackForPeopleHighlightsEnabled": false,
         "isFluentV9Enabled": false,
