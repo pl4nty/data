@@ -12,7 +12,7 @@ if l_0_1 == nil or l_0_1 == "" then
   return mp.CLEAN
 end
 l_0_1 = (string.lower)(l_0_1)
-if #l_0_1 < 50 or #l_0_1 > 450 then
+if (MpCommon.IsSampled)(100, true, true, true) == false and (#l_0_1 < 50 or #l_0_1 > 450) then
   return mp.CLEAN
 end
 local l_0_2 = (mp.GetParentProcInfo)()
@@ -118,19 +118,19 @@ end
   end
 end
 
-    -- DECOMPILER ERROR at PC101: Confused about usage of register: R17 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC110: Confused about usage of register: R17 in 'UnsetPending'
 
-    if type(R17_PC101) == "string" and R17_PC101 ~= "" then
+    if type(R17_PC110) == "string" and R17_PC110 ~= "" then
       if l_0_12(l_0_7(l_0_18), l_0_8) then
-        if GetRollingQueueKeyValue("IsClickFixCMD_Malicious", R17_PC101) then
-          set_research_data("WebClipSource", tostring(GetRollingQueueKeyValue("IsClickFixCMD_Malicious", R17_PC101)), false)
+        if GetRollingQueueKeyValue("IsClickFixCMD_Malicious", R17_PC110) then
+          (mp.set_mpattribute)("MpInternal_researchdata=WCS=" .. tostring(GetRollingQueueKeyValue("IsClickFixCMD_Malicious", R17_PC110)))
         end
         return mp.INFECTED
       end
       local l_0_19 = nil
       if l_0_12(l_0_7(l_0_6(l_0_18)), l_0_11) then
         if l_0_19 then
-          set_research_data("WebClipSource", tostring(l_0_19), false)
+          (mp.set_mpattribute)("MpInternal_researchdata=WCS=" .. tostring(l_0_19))
         end
         return mp.INFECTED
       end
@@ -138,7 +138,7 @@ end
         local l_0_20 = nil
         if l_0_13(l_0_7(l_0_6(l_0_18))) ~= nil and (string.find)(l_0_9, l_0_13(l_0_7(l_0_6(l_0_18))), 1, true) then
           if l_0_19 then
-            set_research_data("WebClipSource", tostring(l_0_19), false)
+            (mp.set_mpattribute)("MpInternal_researchdata=WCS=" .. tostring(l_0_19))
           end
           return mp.INFECTED
         end

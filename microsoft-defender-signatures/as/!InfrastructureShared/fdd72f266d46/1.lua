@@ -9,37 +9,46 @@ if not l_0_1 then
   return mp.CLEAN
 end
 local l_0_2 = (string.find)(l_0_1, "echo", 1, true)
-local l_0_3 = (string.find)(l_0_1, "|%s*base64%s+%-%-?d")
-local l_0_4 = (string.find)(l_0_1, "|%s*[bkdz]?a?sh")
-if not l_0_2 or not l_0_3 or not l_0_4 then
-  return mp.CLEAN
-end
-if l_0_3 <= l_0_2 or l_0_4 <= l_0_3 then
-  return mp.CLEAN
-end
-local l_0_5 = (string.match)(l_0_1, "echo%s+(.-)%s*|%s*base64")
-if not l_0_5 then
-  return mp.CLEAN
-end
-l_0_5 = (string.gsub)(l_0_5, "^[\'\"]", "")
-l_0_5 = (string.gsub)(l_0_5, "[\'\"]$", "")
-local l_0_6 = (string.gsub)(l_0_5, "[^A-Za-z0-9+/=]", "")
-local l_0_7 = #l_0_6
-if l_0_7 < 10 or l_0_7 > 131072 then
-  return mp.CLEAN
-end
-local l_0_8 = l_0_7 % 4
-if l_0_8 == 1 then
-  return mp.CLEAN
-end
-local l_0_9 = (MpCommon.Base64Decode)(l_0_6)
-if l_0_9 and #l_0_9 > 0 then
-  local l_0_10 = math_min(#l_0_9, 1024)
-  local l_0_11 = (string.sub)(l_0_9, 1, l_0_10)
-  set_research_data("DecodedPayload", l_0_11, false)
-  set_research_data("PayloadSize", tostring(#l_0_9), false)
-end
 do
-  return mp.INFECTED
+  if not (string.find)(l_0_1, "|%s*base64%s+%-d") then
+    local l_0_3, l_0_4 = (string.find)(l_0_1, "|%s*base64%s+%-%-decode")
+  end
+  local l_0_5 = nil
+  if not l_0_2 or not l_0_5 or not (string.find)(l_0_1, "|%s*[bkdz]?a?sh") then
+    return mp.CLEAN
+  end
+  if l_0_5 <= l_0_2 or (string.find)(l_0_1, "|%s*[bkdz]?a?sh") <= l_0_5 then
+    return mp.CLEAN
+  end
+  local l_0_6 = nil
+  if not (string.match)(l_0_1, "echo%s+(.-)%s*|%s*base64") then
+    return mp.CLEAN
+  end
+  local l_0_7 = nil
+  local l_0_8 = nil
+  -- DECOMPILER ERROR at PC86: Confused about usage of register: R7 in 'UnsetPending'
+
+  if #(string.gsub)((string.gsub)((string.gsub)((string.match)(l_0_1, "echo%s+(.-)%s*|%s*base64"), "^[\'\"]", ""), "[\'\"]$", ""), "[^A-Za-z0-9+/=]", "") < 10 or #(string.gsub)((string.gsub)((string.gsub)((string.match)(l_0_1, "echo%s+(.-)%s*|%s*base64"), "^[\'\"]", ""), "[\'\"]$", ""), "[^A-Za-z0-9+/=]", "") > 131072 then
+    return mp.CLEAN
+  end
+  -- DECOMPILER ERROR at PC91: Confused about usage of register: R7 in 'UnsetPending'
+
+  local l_0_9 = nil
+  if #(string.gsub)((string.gsub)((string.gsub)((string.match)(l_0_1, "echo%s+(.-)%s*|%s*base64"), "^[\'\"]", ""), "[\'\"]$", ""), "[^A-Za-z0-9+/=]", "") % 4 == 1 then
+    return mp.CLEAN
+  end
+  local l_0_10 = nil
+  if (MpCommon.Base64Decode)(l_0_8) and #(MpCommon.Base64Decode)(l_0_8) > 0 then
+    if (string.match)((MpCommon.Base64Decode)(l_0_8), "^sudo%s+lsof%s+%-a%s+%-p%s+%d+%s+%-d%s+cwd%s+%-Fn%s+2>/dev/null%s*|%s*sed%s+%-n%s+\'s/%^n//p\'%s*|%s*head%s+%-1%s*$") then
+      return mp.CLEAN
+    end
+    local l_0_11 = nil
+    local l_0_12 = nil
+    set_research_data("DecodedPayload", (string.sub)(l_0_11, 1, math_min(#(MpCommon.Base64Decode)(l_0_8), 1024)), false)
+    set_research_data("PayloadSize", tostring(#l_0_11), false)
+  end
+  do
+    return mp.INFECTED
+  end
 end
 

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2beb35cd02158\1.luac 
+-- Command line: lua\!InfrastructureShared\337b31f8ea7c9\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -41,7 +41,7 @@ end
       local l_0_11 = nil
       local l_0_12 = nil
       local l_0_13 = nil
-      if verify_socket_fd_triplet(get_socket_fd_from_dup_event(this_sigattrlog[2]), get_socket_fd_from_dup_event(this_sigattrlog[3]), get_socket_fd_from_dup_event(this_sigattrlog[4])) then
+      if verify_socket_fd_triplet(get_socket_fd_from_dup_event(this_sigattrlog[3]), get_socket_fd_from_dup_event(this_sigattrlog[4]), get_socket_fd_from_dup_event(this_sigattrlog[5])) then
         return mp.INFECTED
       end
       return mp.CLEAN
