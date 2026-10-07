@@ -1047,5 +1047,214 @@
       "visibility": false,
       "measureId": 53473051
     }
+  },
+  "OOBEENTRY": {
+    "start": "StartSelector",
+    "error": "OobeError",
+    "reconnectHandler": {
+      "handlerCxid": "OobeNetworkLossError",
+      "frequency": "OobeCustom"
+    },
+    "msaTicketContext": "OOBE",
+    "notifyOnFirstVisible": true,
+    "notifyOnLastFinished": true,
+    "initializeExternalModalRects": true,
+    "useBackstackForBackNavigation": true,
+    "frameName": "oobe-frame",
+    "personality": "CloudExperienceHost.Personality.LiteWhite",
+    "wallpaperBackdropEnabled": true,
+    "backdropScale": 1.2,
+    "speechCapable": true,
+    "speechDisabled": true,
+    "blockLateWebAppCalls": true,
+    "blockEarlyExit": true,
+    "endFadeTransition": true,
+    "StartSelector": {
+      "cxid": "StartSelector",
+      "launcher": "js:OOBEStartSelector",
+      "successID": "OobeLanguage",
+      "visibility": false,
+      "measureId": 48471513
+    },
+    "OobeError": {
+      "cxid": "OobeError",
+      "frameAnimation": "errorLottie.json",
+      "url": "ms-appx-web:///webapps/inclusiveOobe/view/oobeError-main.html",
+      "visibility": false,
+      "measureId": 48471631
+    },
+    "OobeNetworkLossError": {
+      "cxid": "OobeNetworkLossError",
+      "frameAnimation": "errorLottie.json",
+      "urlExtension": "app-ext://winui3extension/WindowsOobeAppHostXamlApplets/OobeNetworkLossError",
+      "successID": "ReconnectionEntry",
+      "failID": "ReconnectionEntry",
+      "cancelID": "ReconnectionEntry",
+      "abortID": "ReconnectionEntry",
+      "disableErrorPageOnFailure": true,
+      "disableBackNavigationToNode": true,
+      "disableBackNavigationFromNode": true,
+      "visibility": false,
+      "measureId": 63376540
+    },
+    "ReconnectionEntry": {
+      "cxid": "ReconnectionEntry",
+      "frameAnimation": "wifiLottie.json",
+      "urlExtension": "app-ext://systemextension.persistent/OOBENetworkConnectionFlowExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory/DesktopLiteNetworkReconnect",
+      "visibility": false,
+      "successID": "InPlaceResume",
+      "failID": "InPlaceResumeReconnectionFailure",
+      "cancelID": "InPlaceResume",
+      "action1ID": "ReconnectCaptivePortal",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "measureId": 59180368
+    },
+    "ReconnectCaptivePortal": {
+      "cxid": "ReconnectCaptivePortal",
+      "frameAnimation": "wifiLottie.json",
+      "urlExtension": "app-ext://systemextension/OOBENetworkCaptivePortalExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory",
+      "credUIStyle": "Popup",
+      "visibility": false,
+      "successID": "ReconnectionEntry",
+      "failID": "ReconnectionEntry",
+      "cancelID": "ReconnectionEntry",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "measureId": 59305782
+    },
+    "InPlaceResumeReconnectionFailure": {
+      "cxid": "InPlaceResumeReconnectionFailure",
+      "launcher": "js:InPlaceResumeReconnectionFailure",
+      "successID": "InPlaceResume",
+      "cancelID": "InPlaceResume",
+      "failID": "InPlaceResume",
+      "disableBackNavigationToNode": true,
+      "measureId": 40426734
+    },
+    "InPlaceResume": {
+      "cxid": "InPlaceResume",
+      "launcher": "js:InPlaceResume",
+      "failID": "StartSelector",
+      "disableBackNavigationToNode": true,
+      "measureId": 40426734
+    },
+    "OobeLanguage": {
+      "cxid": "OobeLanguage",
+      "frameAnimation": "languageLottie.json",
+      "urlExtension": "app-ext://winui3extension/WindowsOobeAppHostXamlApplets/OobeLanguage",
+      "timeout": 60000,
+      "disableBackNavigationToNodeOnSuccess": true,
+      "successID": "OobeRegion",
+      "failID": "OobeRegion",
+      "cancelID": "OobeRegion",
+      "abortID": "OobeRegion",
+      "visibility": false,
+      "measureId": 63376384
+    },
+    "OobeRegion": {
+      "cxid": "OobeRegion",
+      "frameAnimation": "regionLottie.json",
+      "urlExtension": "app-ext://winui3extension/WindowsOobeAppHostXamlApplets/OobeRegion",
+      "timeout": 60000,
+      "successID": "OobeKeyboard",
+      "failID": "OobeKeyboard",
+      "cancelID": "OobeKeyboard",
+      "abortID": "OobeKeyboard",
+      "visibility": false,
+      "measureId": 63376401
+    },
+    "OobeKeyboard": {
+      "cxid": "OobeKeyboard",
+      "frameAnimation": "keyboardLottie.json",
+      "urlExtension": "app-ext://winui3extension/WindowsOobeAppHostXamlApplets/OobeKeyboard",
+      "timeout": 60000,
+      "successID": "OobeWireless",
+      "failID": "OobeWireless",
+      "cancelID": "OobeWireless",
+      "abortID": "OobeWireless",
+      "disableBackNavigationToNode": true,
+      "visibility": false,
+      "measureId": 63376424
+    },
+    "OobeWireless": {
+      "cxid": "OobeWireless",
+      "frameAnimation": "wifiLottie.json",
+      "urlExtension": "app-ext://systemextension/OOBENetworkConnectionFlowExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory/DesktopLiteNetworkConnect",
+      "preloadCheck": "CloudExperienceHost.Wireless",
+      "successID": "OobeNetworkLogging",
+      "failID": "OobeRequiredServiceEvent",
+      "cancelID": "OobeRequiredServiceEvent",
+      "action1ID": "OobeCaptivePortal",
+      "preloadSkipID": "OobeWirelessSkippable",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "measureId": 63376443
+    },
+    "OobeWirelessSkippable": {
+      "cxid": "OobeWirelessSkippable",
+      "frameAnimation": "wifiLottie.json",
+      "urlExtension": "app-ext://systemextension/OOBENetworkConnectionFlowExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory/DesktopLiteNetworkConnectSkippable",
+      "preloadCheck": "CloudExperienceHost.WirelessSkippable",
+      "successID": "OobeNetworkLogging",
+      "failID": "OobeRequiredServiceEvent",
+      "cancelID": "OobeRequiredServiceEvent",
+      "action1ID": "OobeCaptivePortal",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "measureId": 63376445
+    },
+    "OobeCaptivePortal": {
+      "cxid": "OobeCaptivePortal",
+      "frameAnimation": "wifiLottie.json",
+      "urlExtension": "app-ext://systemextension/OOBENetworkCaptivePortalExtensions/WindowsUdk.System.UserProfile.UserOnboardingExtensionFactory",
+      "successID": "OobeWireless",
+      "failID": "OobeWireless",
+      "cancelID": "OobeWireless",
+      "disableBackNavigationToNodeOnSuccess": true,
+      "measureId": 59305782
+    },
+    "OobeNetworkLogging": {
+      "cxid": "OobeNetworkLogging",
+      "launcher": "js:OobeNetworkLogging",
+      "ignoreResult": true,
+      "successID": "OobeRequiredServiceEvent",
+      "failID": "OobeRequiredServiceEvent",
+      "visibility": false,
+      "disableErrorPageOnFailure": true,
+      "measureId": 63376452
+    },
+    "OobeRequiredServiceEvent": {
+      "cxid": "OobeRequiredServiceEvent",
+      "url": "https://sdx.microsoft.com/frx/oobe-required-service-event",
+      "urlint": "https://sdx.microsoft-int.com/frx/oobe-required-service-event",
+      "ignoreResult": true,
+      "internetRequired": true,
+      "successID": "OobeZdp",
+      "failID": "OobeZdp",
+      "cancelID": "OobeZdp",
+      "offlineID": "OobeZdp",
+      "abortID": "OobeZdp",
+      "visibility": false,
+      "disableErrorPageOnFailure": true,
+      "measureId": 63376454
+    },
+    "OobeZdp": {
+      "cxid": "OobeZdp",
+      "urlExtension": "app-ext://winui3extension/WindowsOobeAppHostXamlApplets/OobeZdp",
+      "frameAnimation": "zdpLottie.json",
+      "ignoreResult": true,
+      "internetRequired": true,
+      "successID": "TransitionToOobeIdentityType",
+      "failID": "TransitionToOobeIdentityType",
+      "cancelID": "TransitionToOobeIdentityType",
+      "offlineID": "TransitionToOobeIdentityType",
+      "abortID": "TransitionToOobeIdentityType",
+      "visibility": false,
+      "measureId": 63376457
+    },
+    "TransitionToOobeIdentityType": {
+      "cxid": "TransitionToOobeIdentityType",
+      "launcher": "js:ScenarioTransition",
+      "customProperty": "{ \"scenarioName\": \"OOBEIDENTITYTYPE\" }",
+      "visibility": false,
+      "measureId": 63376482
+    }
   }
 }

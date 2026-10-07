@@ -460,6 +460,7 @@
     },
   "SCOOBESUBSRENEWAL": {
     "irisPlacementId": "88001131",
+    "supportsDarkTheme": true,
     "start": "PlaceholderSkipNode",
     "msaTicketContext": "OOBE",
     "notifyOnFirstVisible": true,

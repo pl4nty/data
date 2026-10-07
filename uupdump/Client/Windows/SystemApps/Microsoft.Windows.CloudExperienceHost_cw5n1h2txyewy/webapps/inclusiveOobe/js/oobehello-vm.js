@@ -366,13 +366,7 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
         }
 
         updateToConfirmationPage() {
-            let featureEnabledObj = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("OobeHelloNarrationFixOnConfirmation");
             this.isConfirmationPageVisible(true);
-
-            if (!(featureEnabledObj.result && featureEnabledObj.value)) {
-                this.title(resourceStrings.AllSetText);
-                this.subtitle("");
-            }
 
             this.flexEndButtons([{
                 buttonText: resourceStrings.NextButtonText,
@@ -391,23 +385,19 @@ define(['lib/knockout', 'oobesettings-data', 'legacy/bridge', 'legacy/events', '
             this.processingFlag(false);
             this.contentContainerVisibility(true);
 
-            if (featureEnabledObj.result && featureEnabledObj.value) {
+            let gamepadEnabledObj = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("GamepadEnabledOobe");
 
-                let gamepadEnabledObj = CloudExperienceHostAPI.FeatureStaging.tryGetIsFeatureEnabled("GamepadEnabledOobe");
-                
-                this.title(resourceStrings.AllSetText);
-                this.subtitle("");
+            this.title(resourceStrings.AllSetText);
+            this.subtitle("");
 
-                if (gamepadEnabledObj.result && gamepadEnabledObj.value) {
-                    try {
-                        CloudExperienceHostAPI.UtilStaticsCore.injectTabKey(false /*holdShift*/);
-                    }
-                    catch (err) {
-                        bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "InjectTabKeyFailed", core.GetJsonFromError(error));
-                    }
+            if (gamepadEnabledObj.result && gamepadEnabledObj.value) {
+                try {
+                    CloudExperienceHostAPI.UtilStaticsCore.injectTabKey(false /*holdShift*/);
+                }
+                catch (err) {
+                    bridge.invoke("CloudExperienceHost.Telemetry.logEvent", "InjectTabKeyFailed", core.GetJsonFromError(error));
                 }
             }
-
         }
 
         getEnrollmentPersonality() {

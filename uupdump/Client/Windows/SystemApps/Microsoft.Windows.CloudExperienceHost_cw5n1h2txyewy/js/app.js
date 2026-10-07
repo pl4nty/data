@@ -463,6 +463,11 @@ var CloudExperienceHost;
     (function (CredUI) {
         function setTransparencyOptionOnCredUICoordinator() {
             try {
+                if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeCredUIPopupHandheldFix")) {
+                    if (CloudExperienceHost.Environment.isGamepadBasedDevice()) {
+                        return false;
+                    }
+                }
                 let coordinator = WindowsUdk.Security.Credentials.UI.CredUICoordinator.getForCurrentView();
                 if (coordinator &&
                     (coordinator.styleOptions & WindowsUdk.Security.Credentials.UI.CredUICoordinatorStyleOptions.inlineFluentTheme) &&

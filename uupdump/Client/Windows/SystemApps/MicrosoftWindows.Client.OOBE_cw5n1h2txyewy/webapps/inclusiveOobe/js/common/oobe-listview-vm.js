@@ -22,6 +22,13 @@
                 this.WoahNarratorSelectedFix(result);
             }.bind(this));
 
+            // Feature_OobeListViewGamepadNav: gamepad navigation within the list. Unlike the arrow keys,
+            // focus is not held on the first/last item, so XY focus can move out of the list.
+            this.gamepadNavEnabled = false;
+            bridge.invoke("CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled", "OobeListViewGamepadNav").done((result) => {
+                this.gamepadNavEnabled = result;
+            });
+
             // Forward the autofocus attribute onto our focusable list element
             if (element.hasAttribute("autofocus")) {
                 this.listRootElement.setAttribute("autofocus", true);
@@ -89,14 +96,40 @@
             }
         }
 
+        // Returns the item roughly one screenful away from currentElement, assuming equal height rows.
+        handlePageKey(goingUp, currentElement, scrollView) {
+            let elementToFocus = currentElement;
+            let itemHeight = currentElement.offsetHeight;
+            if (itemHeight) {
+                let itemsOnScreen = scrollView.offsetHeight / itemHeight;
+                for (let i = 0; i < itemsOnScreen && (goingUp ? elementToFocus.previousElementSibling : elementToFocus.nextElementSibling); i++) {
+                    elementToFocus = goingUp ? elementToFocus.previousElementSibling : elementToFocus.nextElementSibling;
+                }
+            }
+            return elementToFocus;
+        }
+
         handleKeyNav(item, e) {
             let currentElement = e.target;
             let scrollView = this.element.querySelector(".scroll-view");
             let elementToFocus = null;
             let goingUp = false;
             switch (e.keyCode) {
+                case WinJS.Utilities.Key.GamepadDPadDown:
+                case WinJS.Utilities.Key.GamepadLeftThumbstickDown:
+                    if (this.gamepadNavEnabled) {
+                        elementToFocus = currentElement.nextElementSibling;
+                    }
+                    break;
                 case WinJS.Utilities.Key.downArrow:
                     elementToFocus = currentElement.nextElementSibling || currentElement;
+                    break;
+                case WinJS.Utilities.Key.GamepadDPadUp:
+                case WinJS.Utilities.Key.GamepadLeftThumbstickUp:
+                    if (this.gamepadNavEnabled) {
+                        goingUp = true;
+                        elementToFocus = currentElement.previousElementSibling;
+                    }
                     break;
                 case WinJS.Utilities.Key.upArrow:
                     goingUp = true;
@@ -109,18 +142,17 @@
                 case WinJS.Utilities.Key.end:
                     elementToFocus = this.listRootElement.lastElementChild;
                     break;
+                case WinJS.Utilities.Key.GamepadLeftTrigger:
+                    goingUp = true;
+                case WinJS.Utilities.Key.GamepadRightTrigger:
+                    if (this.gamepadNavEnabled) {
+                        elementToFocus = this.handlePageKey(goingUp, currentElement, scrollView);
+                    }
+                    break;
                 case WinJS.Utilities.Key.pageUp:
                     goingUp = true;
                 case WinJS.Utilities.Key.pageDown:
-                    elementToFocus = currentElement;
-                    // Basic implementation assuming equal height rows
-                    let itemHeight = currentElement.offsetHeight;
-                    if (itemHeight) {
-                        let itemsOnScreen = scrollView.offsetHeight / itemHeight;
-                        for (let i = 0; i < itemsOnScreen && (goingUp ? elementToFocus.previousElementSibling : elementToFocus.nextElementSibling); i++) {
-                            elementToFocus = goingUp ? elementToFocus.previousElementSibling : elementToFocus.nextElementSibling;
-                        }
-                    }
+                    elementToFocus = this.handlePageKey(goingUp, currentElement, scrollView);
                     break;
                 case WinJS.Utilities.Key.space:
                     // Default (selectionFollowsFocus is true): To prevent the space key from causing

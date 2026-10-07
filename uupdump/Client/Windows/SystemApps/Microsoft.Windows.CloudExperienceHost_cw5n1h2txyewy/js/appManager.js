@@ -602,8 +602,16 @@ var CloudExperienceHost;
                         y: clientRect.top * window.devicePixelRatio
                     };
                     CloudExperienceHost.Telemetry.AppTelemetry.getInstance().logEvent("UpdatingCredUICoordinatorRect", JSON.stringify(physicalPixelRect));
-                    coordinator.styleOptions = coordinator.styleOptions | WindowsUdk.Security.Credentials.UI.CredUICoordinatorStyleOptions.useCoordinatorPlacement |
-                        WindowsUdk.Security.Credentials.UI.CredUICoordinatorStyleOptions.inlineFluentTheme;
+                    if (CloudExperienceHost.FeatureStaging.isOobeFeatureEnabled("OobeCredUIPopupHandheldFix")) {
+                        if (!CloudExperienceHost.Environment.isGamepadBasedDevice()) {
+                            coordinator.styleOptions = coordinator.styleOptions | WindowsUdk.Security.Credentials.UI.CredUICoordinatorStyleOptions.useCoordinatorPlacement |
+                                WindowsUdk.Security.Credentials.UI.CredUICoordinatorStyleOptions.inlineFluentTheme;
+                        }
+                    }
+                    else {
+                        coordinator.styleOptions = coordinator.styleOptions | WindowsUdk.Security.Credentials.UI.CredUICoordinatorStyleOptions.useCoordinatorPlacement |
+                            WindowsUdk.Security.Credentials.UI.CredUICoordinatorStyleOptions.inlineFluentTheme;
+                    }
                     coordinator.placement = physicalPixelRect;
                     coordinator.reportChanged();
                 }

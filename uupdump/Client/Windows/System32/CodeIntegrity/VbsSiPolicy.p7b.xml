@@ -19,12 +19,12 @@
   <FileRules>
     <Allow ID="ID_ALLOW_A_0" FileName="*" MinimumFileVersion="0.0.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_A_1" FileName="AzureAttest.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
-    <FileAttrib ID="ID_FILEATTRIB_A_2" FileName="AzureAttest.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_2" FileName="AzureAttest.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_3" FileName="bcrypt.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_4" FileName="bcrypt.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_5" FileName="bcrypt.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_6" FileName="bcrypt.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_7" FileName="bcrypt.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_7" FileName="bcrypt.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_8" FileName="bcrypt.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_9" FileName="bcrypt.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_10" FileName="bcrypt.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
@@ -38,14 +38,14 @@
     <FileAttrib ID="ID_FILEATTRIB_A_18" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_19" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_20" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
-    <FileAttrib ID="ID_FILEATTRIB_A_21" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_21" FileName="bcryptprimitives.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_22" FileName="bcryptprimitives.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_23" FileName="BioIso.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14392.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_24" FileName="BioIso.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_25" FileName="BioIso.exe" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_26" FileName="BioIso.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_27" FileName="BioIso.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.19041.7699" />
-    <FileAttrib ID="ID_FILEATTRIB_A_28" FileName="BioIso.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_28" FileName="BioIso.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_29" FileName="cng.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_30" FileName="cng.sys" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_31" FileName="cng.sys" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
@@ -54,7 +54,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_34" FileName="cng.sys" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_35" FileName="cng.sys" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_36" FileName="cng.sys" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
-    <FileAttrib ID="ID_FILEATTRIB_A_37" FileName="cng.sys" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_37" FileName="cng.sys" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_38" FileName="cng.sys" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_39" FileName="cryptbase.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14392.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_40" FileName="cryptbase.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
@@ -62,7 +62,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_42" FileName="cryptbase.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_43" FileName="cryptbase.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_44" FileName="cryptbase.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
-    <FileAttrib ID="ID_FILEATTRIB_A_45" FileName="cryptbase.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_45" FileName="cryptbase.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_46" FileName="cryptbase.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_47" FileName="cryptbase.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_48" FileName="cryptbase.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
@@ -74,36 +74,36 @@
     <FileAttrib ID="ID_FILEATTRIB_A_54" FileName="cryptsp.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_55" FileName="cryptsp.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_56" FileName="cryptsp.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
-    <FileAttrib ID="ID_FILEATTRIB_A_57" FileName="cryptsp.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_57" FileName="cryptsp.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_58" FileName="cryptsp.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
-    <FileAttrib ID="ID_FILEATTRIB_A_59" FileName="ETW.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_59" FileName="ETW.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_60" FileName="FaceDetectorResources.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_61" FileName="FaceDetectorResources.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_61" FileName="FaceDetectorResources.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_62" FileName="FaceDetectorResources.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_63" FileName="FaceDetectorResources.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_64" FileName="FaceDetectorResources.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_65" FileName="FaceDetectorResources.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_66" FileName="FaceProcessorCore.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
-    <FileAttrib ID="ID_FILEATTRIB_A_67" FileName="FaceProcessorCore.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_67" FileName="FaceProcessorCore.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_68" FileName="FaceProcessorCore.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_69" FileName="FaceProcessorCore.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_70" FileName="FaceProcessorCore.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_71" FileName="FaceProcessorCore.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_72" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_73" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_74" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_74" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_75" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_76" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_77" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_78" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_79" FileName="FaceRecognitionEngineAdapter.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_80" FileName="FaceRecognitionEngineAdapterResources.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
-    <FileAttrib ID="ID_FILEATTRIB_A_81" FileName="FaceRecognitionEngineAdapterResources.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_81" FileName="FaceRecognitionEngineAdapterResources.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_82" FileName="FaceRecognitionEngineAdapterResources.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_83" FileName="FaceRecognitionEngineAdapterResources.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_84" FileName="FaceRecognitionEngineAdapterResources.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_85" FileName="FaceRecognitionEngineAdapterResources.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
-    <FileAttrib ID="ID_FILEATTRIB_A_86" FileName="FaceRecognitionEngineAdapterResourcesCore.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_86" FileName="FaceRecognitionEngineAdapterResourcesCore.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_87" FileName="FaceRecognitionEngineAdapterResourcesCore.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_88" FileName="FaceRecognitionEngineAdapterResourcesCore.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_89" FileName="FaceRecognitionEngineAdapterResourcesCore.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
@@ -114,10 +114,10 @@
     <FileAttrib ID="ID_FILEATTRIB_A_94" FileName="FaceRecognitionEngineAdapterResourcesSecure.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_95" FileName="FaceRecognitionEngineAdapterResourcesSecure.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_96" FileName="FaceRecognitionEngineAdapterResourcesSecure.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_97" FileName="FaceRecognitionEngineAdapterResourcesSecure.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_97" FileName="FaceRecognitionEngineAdapterResourcesSecure.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_98" FileName="FaceRecognitionEngineAdapterResourcesSecure.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_99" FileName="FaceRecognitionEngineAdapterResourcesSecure.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
-    <FileAttrib ID="ID_FILEATTRIB_A_100" FileName="FaceRecognitionEngineAdapterResources_v2.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_100" FileName="FaceRecognitionEngineAdapterResources_v2.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_101" FileName="FaceRecognitionEngineAdapterResources_v2.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_102" FileName="FaceRecognitionEngineAdapterResources_v2.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_103" FileName="FaceRecognitionEngineAdapterResources_v2.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
@@ -127,16 +127,16 @@
     <FileAttrib ID="ID_FILEATTRIB_A_107" FileName="FaceRecognitionEngineAdapterResources_v3.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_108" FileName="FaceRecognitionEngineAdapterResources_v3.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_109" FileName="FaceRecognitionEngineAdapterResources_v3.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
-    <FileAttrib ID="ID_FILEATTRIB_A_110" FileName="FaceRecognitionEngineAdapterResources_v3.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_110" FileName="FaceRecognitionEngineAdapterResources_v3.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_111" FileName="FaceRecognitionEngineAdapterResources_v3.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_112" FileName="FaceRecognitionEngineAdapterResources_v4.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_113" FileName="FaceRecognitionEngineAdapterResources_v4.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_114" FileName="FaceRecognitionEngineAdapterResources_v4.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_115" FileName="FaceRecognitionEngineAdapterResources_v4.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
-    <FileAttrib ID="ID_FILEATTRIB_A_116" FileName="FaceRecognitionEngineAdapterResources_v4.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_116" FileName="FaceRecognitionEngineAdapterResources_v4.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_117" FileName="FaceRecognitionEngineAdapterResources_v4.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_118" FileName="FaceRecognitionEngineAdapterResources_v4.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_119" FileName="FaceRecognitionEngineAdapterResources_v5.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_119" FileName="FaceRecognitionEngineAdapterResources_v5.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_120" FileName="FaceRecognitionEngineAdapterResources_v5.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_121" FileName="FaceRecognitionEngineAdapterResources_v5.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_122" FileName="FaceRecognitionEngineAdapterResources_v5.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
@@ -148,17 +148,17 @@
     <FileAttrib ID="ID_FILEATTRIB_A_128" FileName="FaceRecognitionSensorAdapter.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_129" FileName="FaceRecognitionSensorAdapter.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_130" FileName="FaceRecognitionSensorAdapter.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
-    <FileAttrib ID="ID_FILEATTRIB_A_131" FileName="FaceRecognitionSensorAdapter.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_131" FileName="FaceRecognitionSensorAdapter.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_132" FileName="FaceRecognitionSensorAdapterResources.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_133" FileName="FaceRecognitionSensorAdapterResources.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_134" FileName="FaceRecognitionSensorAdapterResources.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_135" FileName="FaceRecognitionSensorAdapterResources.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_136" FileName="FaceRecognitionSensorAdapterResources.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
-    <FileAttrib ID="ID_FILEATTRIB_A_137" FileName="FaceRecognitionSensorAdapterResources.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_137" FileName="FaceRecognitionSensorAdapterResources.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_138" FileName="FaceTrackerInternal.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_139" FileName="FaceTrackerInternal.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_140" FileName="FaceTrackerInternal.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
-    <FileAttrib ID="ID_FILEATTRIB_A_141" FileName="FaceTrackerInternal.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_141" FileName="FaceTrackerInternal.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_142" FileName="FaceTrackerInternal.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_143" FileName="FaceTrackerInternal.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_144" FileName="FsIso.exe" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
@@ -166,13 +166,13 @@
     <FileAttrib ID="ID_FILEATTRIB_A_146" FileName="FsIso.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_147" FileName="FsIso.exe" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_148" FileName="FsIso.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
-    <FileAttrib ID="ID_FILEATTRIB_A_149" FileName="FsIso.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_149" FileName="FsIso.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_150" FileName="FsIso.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_151" FileName="FsIso.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_152" FileName="hciusageenc.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_153" FileName="hciusageenc.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_154" FileName="hciusageenc.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_155" FileName="hciusageenc.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_155" FileName="hciusageenc.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_156" FileName="hvaa64.exe" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_157" FileName="hvaa64.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_158" FileName="hvaa64.exe" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
@@ -180,10 +180,10 @@
     <FileAttrib ID="ID_FILEATTRIB_A_160" FileName="hvaa64.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_161" FileName="hvaa64.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_162" FileName="hvaa64.exe" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
-    <FileAttrib ID="ID_FILEATTRIB_A_163" FileName="hvaa64.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_163" FileName="hvaa64.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_164" FileName="hvaa64.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_165" FileName="hvax64.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
-    <FileAttrib ID="ID_FILEATTRIB_A_166" FileName="hvax64.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_166" FileName="hvax64.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_167" FileName="hvax64.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_168" FileName="hvax64.exe" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_169" FileName="hvax64.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
@@ -197,13 +197,13 @@
     <FileAttrib ID="ID_FILEATTRIB_A_177" FileName="hvix64.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_178" FileName="hvix64.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_179" FileName="hvix64.exe" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
-    <FileAttrib ID="ID_FILEATTRIB_A_180" FileName="hvix64.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_180" FileName="hvix64.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_181" FileName="hvloader.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_182" FileName="hvloader.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_183" FileName="hvloader.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_184" FileName="hvloader.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_185" FileName="hvloader.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
-    <FileAttrib ID="ID_FILEATTRIB_A_186" FileName="hvloader.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_186" FileName="hvloader.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_187" FileName="hvloader.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_188" FileName="hvloader.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_189" FileName="hvloader.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
@@ -216,7 +216,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_196" FileName="iumbase.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_197" FileName="iumbase.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_198" FileName="iumbase.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
-    <FileAttrib ID="ID_FILEATTRIB_A_199" FileName="iumbase.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_199" FileName="iumbase.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_200" FileName="iumbase.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_201" FileName="iumbase.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_202" FileName="iumcrypt.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
@@ -227,14 +227,14 @@
     <FileAttrib ID="ID_FILEATTRIB_A_207" FileName="iumcrypt.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_208" FileName="iumcrypt.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_209" FileName="iumcrypt.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
-    <FileAttrib ID="ID_FILEATTRIB_A_210" FileName="iumcrypt.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_210" FileName="iumcrypt.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_211" FileName="iumcrypt.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_212" FileName="iumdll.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_213" FileName="iumdll.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_214" FileName="iumdll.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_215" FileName="iumdll.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_216" FileName="iumdll.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
-    <FileAttrib ID="ID_FILEATTRIB_A_217" FileName="iumdll.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_217" FileName="iumdll.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_218" FileName="iumdll.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_219" FileName="iumdll.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_220" FileName="iumdll.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
@@ -243,18 +243,18 @@
     <FileAttrib ID="ID_FILEATTRIB_A_223" FileName="IumSdk.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_224" FileName="IumSdk.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_225" FileName="IumSdk.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
-    <FileAttrib ID="ID_FILEATTRIB_A_226" FileName="IumSdk.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_226" FileName="IumSdk.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_227" FileName="IumSdk.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_228" FileName="IumSdk.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_229" FileName="IumSdk.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_230" FileName="IumSdk.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_231" FileName="IumSdk.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
-    <FileAttrib ID="ID_FILEATTRIB_A_232" FileName="Kerb3961.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_232" FileName="Kerb3961.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_233" FileName="Kerb3961.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_234" FileName="Kerb3961.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_235" FileName="Kerb3961.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_236" FileName="Kerb3961.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
-    <FileAttrib ID="ID_FILEATTRIB_A_237" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_237" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_238" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_239" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_240" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
@@ -265,7 +265,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_245" FileName="KerbClientSHared.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_246" FileName="KerbClientSHared.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_247" FileName="kernel32" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
-    <FileAttrib ID="ID_FILEATTRIB_A_248" FileName="kernel32" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_248" FileName="kernel32" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_249" FileName="kernel32" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_250" FileName="kernel32" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_251" FileName="kernel32" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
@@ -276,7 +276,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_256" FileName="kernel32.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_257" FileName="Kernelbase.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_258" FileName="Kernelbase.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
-    <FileAttrib ID="ID_FILEATTRIB_A_259" FileName="Kernelbase.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_259" FileName="Kernelbase.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_260" FileName="Kernelbase.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_261" FileName="Kernelbase.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_262" FileName="Kernelbase.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
@@ -292,13 +292,13 @@
     <FileAttrib ID="ID_FILEATTRIB_A_272" FileName="LsaIso.exe" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_273" FileName="LsaIso.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_274" FileName="LsaIso.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
-    <FileAttrib ID="ID_FILEATTRIB_A_275" FileName="LsaIso.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_275" FileName="LsaIso.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_276" FileName="LsaIso.exe" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_277" FileName="msasn1.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_278" FileName="msasn1.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_279" FileName="msasn1.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_280" FileName="msasn1.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
-    <FileAttrib ID="ID_FILEATTRIB_A_281" FileName="msasn1.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_281" FileName="msasn1.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_282" FileName="msasn1.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_283" FileName="msasn1.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_284" FileName="msasn1.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
@@ -306,7 +306,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_286" FileName="msasn1.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_287" FileName="msvcp_win.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_288" FileName="msvcp_win.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
-    <FileAttrib ID="ID_FILEATTRIB_A_289" FileName="msvcp_win.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_289" FileName="msvcp_win.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_290" FileName="msvcp_win.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_291" FileName="msvcp_win.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_292" FileName="msvcp_win.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
@@ -318,7 +318,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_298" FileName="msvcrt.dll" MinimumFileVersion="7.0.26100.32000" MaximumFileVersion="7.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_299" FileName="msvcrt.dll" MinimumFileVersion="7.0.19100.0" MaximumFileVersion="7.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_300" FileName="msvcrt.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="7.0.14393.9489" />
-    <FileAttrib ID="ID_FILEATTRIB_A_301" FileName="msvcrt.dll" MinimumFileVersion="7.0.29426.0" MaximumFileVersion="7.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_301" FileName="msvcrt.dll" MinimumFileVersion="7.0.29426.0" MaximumFileVersion="7.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_302" FileName="msvcrt.dll" MinimumFileVersion="7.0.26172.0" MaximumFileVersion="7.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_303" FileName="msvcrt.dll" MinimumFileVersion="7.0.20400.0" MaximumFileVersion="7.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_304" FileName="msvcrt.dll" MinimumFileVersion="7.0.27000.0" MaximumFileVersion="7.0.28000.2930" />
@@ -328,7 +328,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_308" FileName="NgcIso.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_309" FileName="NgcIso.exe" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_310" FileName="NgcIso.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
-    <FileAttrib ID="ID_FILEATTRIB_A_311" FileName="NgcIso.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_311" FileName="NgcIso.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_312" FileName="NgcIso.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_313" FileName="nsi.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_314" FileName="nsi.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
@@ -339,8 +339,8 @@
     <FileAttrib ID="ID_FILEATTRIB_A_319" FileName="nsi.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_320" FileName="nsi.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_321" FileName="nsi.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
-    <FileAttrib ID="ID_FILEATTRIB_A_322" FileName="nsi.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
-    <FileAttrib ID="ID_FILEATTRIB_A_323" FileName="ntdll.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_322" FileName="nsi.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_323" FileName="ntdll.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_324" FileName="ntdll.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_325" FileName="ntdll.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_326" FileName="ntdll.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
@@ -358,7 +358,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_338" FileName="NtlmShared.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_339" FileName="NtlmShared.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_340" FileName="NtlmShared.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_341" FileName="NtlmShared.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_341" FileName="NtlmShared.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_342" FileName="NtlmShared.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_343" FileName="onnxruntime.dll" MinimumFileVersion="1.10.2201.0" MaximumFileVersion="1.10.2201.2622" />
     <FileAttrib ID="ID_FILEATTRIB_A_344" FileName="onnxruntime.dll" MinimumFileVersion="1.17.2403.0" MaximumFileVersion="1.17.2403.1200" />
@@ -369,12 +369,12 @@
     <FileAttrib ID="ID_FILEATTRIB_A_349" FileName="psp.exe" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_350" FileName="psp.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_351" FileName="psp.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_352" FileName="psp.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_352" FileName="psp.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_353" FileName="psp.exe" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_354" FileName="psp.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_355" FileName="rpcrt4.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_356" FileName="rpcrt4.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
-    <FileAttrib ID="ID_FILEATTRIB_A_357" FileName="rpcrt4.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_357" FileName="rpcrt4.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_358" FileName="rpcrt4.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_359" FileName="rpcrt4.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_360" FileName="rpcrt4.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
@@ -383,7 +383,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_363" FileName="rpcrt4.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_364" FileName="rpcrt4.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_365" FileName="sbresources.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
-    <FileAttrib ID="ID_FILEATTRIB_A_366" FileName="sbresources.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_366" FileName="sbresources.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_367" FileName="sbresources.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_368" FileName="sbresources.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_369" FileName="sbresources.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
@@ -394,12 +394,12 @@
     <FileAttrib ID="ID_FILEATTRIB_A_374" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_375" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_376" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
-    <FileAttrib ID="ID_FILEATTRIB_A_377" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_377" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_378" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_379" FileName="SDFHOST.DLL" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_380" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_381" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
-    <FileAttrib ID="ID_FILEATTRIB_A_382" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_382" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_383" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_384" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_385" FileName="SdfUsbXhci.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
@@ -409,7 +409,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_389" FileName="sechost.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_390" FileName="sechost.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_391" FileName="sechost.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_392" FileName="sechost.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_392" FileName="sechost.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_393" FileName="sechost.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_394" FileName="sechost.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_395" FileName="sechost.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
@@ -419,7 +419,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_399" FileName="securekernel.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_400" FileName="securekernel.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_401" FileName="securekernel.exe" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
-    <FileAttrib ID="ID_FILEATTRIB_A_402" FileName="securekernel.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_402" FileName="securekernel.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_403" FileName="securekernel.exe" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_404" FileName="securekernel.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_405" FileName="securekernel.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
@@ -428,14 +428,14 @@
     <FileAttrib ID="ID_FILEATTRIB_A_408" FileName="secureusbvideo.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_409" FileName="secureusbvideo.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_410" FileName="secureusbvideo.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_411" FileName="secureusbvideo.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_411" FileName="secureusbvideo.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_412" FileName="secureusbvideo.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_413" FileName="SFAPE.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
-    <FileAttrib ID="ID_FILEATTRIB_A_414" FileName="SFAPE.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_414" FileName="SFAPE.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_415" FileName="SFAPE.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_416" FileName="SFAPE.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_417" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
-    <FileAttrib ID="ID_FILEATTRIB_A_418" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_418" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_419" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_420" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_421" FileName="SgrmEnclave.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
@@ -448,10 +448,10 @@
     <FileAttrib ID="ID_FILEATTRIB_A_428" FileName="skci.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_429" FileName="skci.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_430" FileName="skci.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
-    <FileAttrib ID="ID_FILEATTRIB_A_431" FileName="skci.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_431" FileName="skci.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_432" FileName="skci.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_433" FileName="skci.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
-    <FileAttrib ID="ID_FILEATTRIB_A_434" FileName="TBS.DLL" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_434" FileName="TBS.DLL" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_435" FileName="TBS.DLL" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_436" FileName="TBS.DLL" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_437" FileName="TBS.DLL" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
@@ -462,7 +462,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_442" FileName="TBS.DLL" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_443" FileName="TBS.DLL" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_444" FileName="tcblaunch.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
-    <FileAttrib ID="ID_FILEATTRIB_A_445" FileName="tcblaunch.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_445" FileName="tcblaunch.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_446" FileName="tcblaunch.exe" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_447" FileName="tcblaunch.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_448" FileName="tcblaunch.exe" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
@@ -470,7 +470,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_450" FileName="tcblaunch.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_451" FileName="tcblaunch.exe" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_452" FileName="tcblaunch.exe" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
-    <FileAttrib ID="ID_FILEATTRIB_A_453" FileName="tcbloader.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_453" FileName="tcbloader.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_454" FileName="tcbloader.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_455" FileName="tcbloader.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_456" FileName="tcbloader.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
@@ -487,9 +487,9 @@
     <FileAttrib ID="ID_FILEATTRIB_A_467" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_468" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_469" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_470" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_470" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_471" FileName="TpmEngUM.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
-    <FileAttrib ID="ID_FILEATTRIB_A_472" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_472" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_473" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_474" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_475" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
@@ -499,19 +499,19 @@
     <FileAttrib ID="ID_FILEATTRIB_A_479" FileName="TpmEngUM138.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_480" FileName="tprt.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_481" FileName="tprt.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_482" FileName="tprt.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_482" FileName="tprt.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_483" FileName="ucrtbase.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_484" FileName="ucrtbase.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_485" FileName="ucrtbase.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_486" FileName="ucrtbase.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_487" FileName="ucrtbase.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
-    <FileAttrib ID="ID_FILEATTRIB_A_488" FileName="ucrtbase.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_488" FileName="ucrtbase.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_489" FileName="ucrtbase.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_490" FileName="ucrtbase.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_491" FileName="ucrtbase.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_492" FileName="ucrtbase.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
-    <FileAttrib ID="ID_FILEATTRIB_A_493" FileName="ucrtbase_enclave.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
-    <FileAttrib ID="ID_FILEATTRIB_A_494" FileName="veinterop.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_493" FileName="ucrtbase_enclave.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_494" FileName="veinterop.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_495" FileName="veinterop.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_496" FileName="vertdll.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_497" FileName="vertdll.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
@@ -519,15 +519,15 @@
     <FileAttrib ID="ID_FILEATTRIB_A_499" FileName="vertdll.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_500" FileName="vertdll.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_501" FileName="vertdll.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
-    <FileAttrib ID="ID_FILEATTRIB_A_502" FileName="vertdll.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_502" FileName="vertdll.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_503" FileName="vertdll.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_504" FileName="vertdll.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_505" FileName="vmsvc.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_506" FileName="vmsvc.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
-    <FileAttrib ID="ID_FILEATTRIB_A_507" FileName="vmsvc.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_507" FileName="vmsvc.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_508" FileName="vmsvc.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_509" FileName="vmsvc.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
-    <FileAttrib ID="ID_FILEATTRIB_A_510" FileName="Win32u.DLL" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_510" FileName="Win32u.DLL" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_511" FileName="Win32u.DLL" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_512" FileName="Win32u.DLL" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_513" FileName="Win32u.DLL" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
@@ -542,11 +542,11 @@
     <FileAttrib ID="ID_FILEATTRIB_A_522" FileName="winload.sys" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_523" FileName="winload.sys" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_524" FileName="winload.sys" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
-    <FileAttrib ID="ID_FILEATTRIB_A_525" FileName="winload.sys" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_525" FileName="winload.sys" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_526" FileName="wow64.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_527" FileName="wow64.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_528" FileName="wow64.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
-    <FileAttrib ID="ID_FILEATTRIB_A_529" FileName="wow64.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_529" FileName="wow64.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_530" FileName="wow64.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_531" FileName="wow64.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_532" FileName="wow64.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
@@ -555,8 +555,8 @@
     <FileAttrib ID="ID_FILEATTRIB_A_535" FileName="wow64.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
     <FileAttrib ID="ID_FILEATTRIB_A_536" FileName="wow64base.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_537" FileName="wow64base.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_538" FileName="wow64base.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
-    <FileAttrib ID="ID_FILEATTRIB_A_539" FileName="wow64con.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_538" FileName="wow64base.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_539" FileName="wow64con.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_540" FileName="wow64con.dll" MinimumFileVersion="10.0.26100.32000" MaximumFileVersion="10.0.26100.33409" />
     <FileAttrib ID="ID_FILEATTRIB_A_541" FileName="wow64con.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_542" FileName="wow64con.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
@@ -568,8 +568,8 @@
     <FileAttrib ID="ID_FILEATTRIB_A_548" FileName="wow64cpu.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_549" FileName="wow64cpu.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
     <FileAttrib ID="ID_FILEATTRIB_A_550" FileName="wow64cpu.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
-    <FileAttrib ID="ID_FILEATTRIB_A_551" FileName="wow64cpu.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
-    <FileAttrib ID="ID_FILEATTRIB_A_552" FileName="wow64lg2.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_551" FileName="wow64cpu.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_552" FileName="wow64lg2.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_553" FileName="wow64lg2.dll" MinimumFileVersion="10.0.20400.0" MaximumFileVersion="10.0.22621.7559" />
     <FileAttrib ID="ID_FILEATTRIB_A_554" FileName="wow64lg2.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_555" FileName="wow64lg2.dll" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
@@ -577,7 +577,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_557" FileName="wow64lg2.dll" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_558" FileName="wow64lg2.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_559" FileName="wow64lg2.dll" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
-    <FileAttrib ID="ID_FILEATTRIB_A_560" FileName="ws2_32.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_560" FileName="ws2_32.dll" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_561" FileName="ws2_32.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.14393.9489" />
     <FileAttrib ID="ID_FILEATTRIB_A_562" FileName="ws2_32.dll" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_563" FileName="ws2_32.dll" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
@@ -589,7 +589,7 @@
     <FileAttrib ID="ID_FILEATTRIB_A_569" FileName="ws2_32.dll" MinimumFileVersion="10.0.18000.0" MaximumFileVersion="10.0.19041.7699" />
     <FileAttrib ID="ID_FILEATTRIB_A_570" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.19100.0" MaximumFileVersion="10.0.20348.5599" />
     <FileAttrib ID="ID_FILEATTRIB_A_571" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.27000.0" MaximumFileVersion="10.0.28000.2930" />
-    <FileAttrib ID="ID_FILEATTRIB_A_572" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29680.999" />
+    <FileAttrib ID="ID_FILEATTRIB_A_572" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.29426.0" MaximumFileVersion="10.0.29683.999" />
     <FileAttrib ID="ID_FILEATTRIB_A_573" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.14400.0" MaximumFileVersion="10.0.17763.9219" />
     <FileAttrib ID="ID_FILEATTRIB_A_574" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.26172.0" MaximumFileVersion="10.0.26172.33410" />
     <FileAttrib ID="ID_FILEATTRIB_A_575" FileName="WUDFCompanionHost.exe" MinimumFileVersion="10.0.23000.0" MaximumFileVersion="10.0.26100.9415" />
@@ -1812,7 +1812,7 @@
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.29657.0 (10.0.29680.1000)</String>
+        <String>10.0.29657.0 (10.0.29683.1000)</String>
       </Value>
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
