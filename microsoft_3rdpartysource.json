@@ -6587,6 +6587,97 @@
     "platform": null
   },
   {
+    "name": "Automatic cluster-local CA rotation for Certificate Management extension/0.1.19/github.com_hashicorp_errwrap@v1.1.0.zip",
+    "product": "Automatic cluster-local CA rotation for Certificate Management extension",
+    "release": "0.1.19",
+    "dependency": "github.com_hashicorp_errwrap@v1.1.0",
+    "platform": null
+  },
+  {
+    "name": "Automatic cluster-local CA rotation for Certificate Management extension/0.1.19/github.com_hashicorp_go-cleanhttp@v0.5.2.zip",
+    "product": "Automatic cluster-local CA rotation for Certificate Management extension",
+    "release": "0.1.19",
+    "dependency": "github.com_hashicorp_go-cleanhttp@v0.5.2",
+    "platform": null
+  },
+  {
+    "name": "Automatic cluster-local CA rotation for Certificate Management extension/0.1.19/github.com_hashicorp_go-multierror@v1.1.1.zip",
+    "product": "Automatic cluster-local CA rotation for Certificate Management extension",
+    "release": "0.1.19",
+    "dependency": "github.com_hashicorp_go-multierror@v1.1.1",
+    "platform": null
+  },
+  {
+    "name": "Automatic cluster-local CA rotation for Certificate Management extension/0.1.19/github.com_hashicorp_go-retryablehttp@v0.7.8.zip",
+    "product": "Automatic cluster-local CA rotation for Certificate Management extension",
+    "release": "0.1.19",
+    "dependency": "github.com_hashicorp_go-retryablehttp@v0.7.8",
+    "platform": null
+  },
+  {
+    "name": "Automatic cluster-local CA rotation for Certificate Management extension/0.1.19/github.com_hashicorp_go-rootcerts@v1.0.2.zip",
+    "product": "Automatic cluster-local CA rotation for Certificate Management extension",
+    "release": "0.1.19",
+    "dependency": "github.com_hashicorp_go-rootcerts@v1.0.2",
+    "platform": null
+  },
+  {
+    "name": "Automatic cluster-local CA rotation for Certificate Management extension/0.1.19/github.com_hashicorp_go-secure-stdlib_cryptoutil@v0.1.1.zip",
+    "product": "Automatic cluster-local CA rotation for Certificate Management extension",
+    "release": "0.1.19",
+    "dependency": "github.com_hashicorp_go-secure-stdlib_cryptoutil@v0.1.1",
+    "platform": null
+  },
+  {
+    "name": "Automatic cluster-local CA rotation for Certificate Management extension/0.1.19/github.com_hashicorp_go-secure-stdlib_parseutil@v0.2.0.zip",
+    "product": "Automatic cluster-local CA rotation for Certificate Management extension",
+    "release": "0.1.19",
+    "dependency": "github.com_hashicorp_go-secure-stdlib_parseutil@v0.2.0",
+    "platform": null
+  },
+  {
+    "name": "Automatic cluster-local CA rotation for Certificate Management extension/0.1.19/github.com_hashicorp_go-secure-stdlib_strutil@v0.1.2.zip",
+    "product": "Automatic cluster-local CA rotation for Certificate Management extension",
+    "release": "0.1.19",
+    "dependency": "github.com_hashicorp_go-secure-stdlib_strutil@v0.1.2",
+    "platform": null
+  },
+  {
+    "name": "Automatic cluster-local CA rotation for Certificate Management extension/0.1.19/github.com_hashicorp_go-sockaddr@v1.0.7.zip",
+    "product": "Automatic cluster-local CA rotation for Certificate Management extension",
+    "release": "0.1.19",
+    "dependency": "github.com_hashicorp_go-sockaddr@v1.0.7",
+    "platform": null
+  },
+  {
+    "name": "Automatic cluster-local CA rotation for Certificate Management extension/0.1.19/github.com_hashicorp_go-uuid@v1.0.3.zip",
+    "product": "Automatic cluster-local CA rotation for Certificate Management extension",
+    "release": "0.1.19",
+    "dependency": "github.com_hashicorp_go-uuid@v1.0.3",
+    "platform": null
+  },
+  {
+    "name": "Automatic cluster-local CA rotation for Certificate Management extension/0.1.19/github.com_hashicorp_hcl@v1.0.1-vault-7.zip",
+    "product": "Automatic cluster-local CA rotation for Certificate Management extension",
+    "release": "0.1.19",
+    "dependency": "github.com_hashicorp_hcl@v1.0.1-vault-7",
+    "platform": null
+  },
+  {
+    "name": "Automatic cluster-local CA rotation for Certificate Management extension/0.1.19/github.com_hashicorp_vault_api@v1.23.0.zip",
+    "product": "Automatic cluster-local CA rotation for Certificate Management extension",
+    "release": "0.1.19",
+    "dependency": "github.com_hashicorp_vault_api@v1.23.0",
+    "platform": null
+  },
+  {
+    "name": "Automatic cluster-local CA rotation for Certificate Management extension/0.1.19/github.com_hashicorp_vault_sdk@v0.25.1.zip",
+    "product": "Automatic cluster-local CA rotation for Certificate Management extension",
+    "release": "0.1.19",
+    "dependency": "github.com_hashicorp_vault_sdk@v0.25.1",
+    "platform": null
+  },
+  {
     "name": "Automatic cluster-local CA rotation for cert-manager for Arc-enabled Kubernetes/0.1.14/github.com_hashicorp_errwrap@v1.1.0.zip",
     "product": "Automatic cluster-local CA rotation for cert-manager for Arc-enabled Kubernetes",
     "release": "0.1.14",
@@ -144543,6 +144634,69 @@
     "platform": "Windows x86"
   },
   {
+    "name": "Microsoft Edge/156.0.4314.10-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.10-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.10-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.10-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.10-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.10-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.8-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.8-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.8-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.8-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.8-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.8-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.8-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.8-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.8-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.8-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.8-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.8-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
     "name": "Microsoft Edge/157.0.4315.0-NA/Linux x64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "157.0.4315.0-NA",
@@ -144634,6 +144788,20 @@
     "platform": "Linux x64"
   },
   {
+    "name": "Microsoft Edge/157.0.4322.0-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4322.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4322.0-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4322.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
     "name": "Microsoft Edge/157.0.4322.0-NA/Windows arm64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "157.0.4322.0-NA",
@@ -144651,6 +144819,132 @@
     "name": "Microsoft Edge/157.0.4322.0-NA/Windows x86/chromium.zip",
     "product": "Microsoft Edge",
     "release": "157.0.4322.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4323.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4323.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4323.0-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4323.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4323.0-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4323.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4323.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4323.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4323.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4323.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4323.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4323.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4324.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4324.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4324.0-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4324.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4324.0-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4324.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4324.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4324.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4324.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4324.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4324.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4324.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4325.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4325.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4325.0-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4325.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4325.0-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4325.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4325.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4325.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4325.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4325.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4325.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4325.0-NA",
     "dependency": "chromium",
     "platform": "Windows x86"
   },
@@ -190575,6 +190869,27 @@
     "platform": "macOS"
   },
   {
+    "name": "Microsoft Electron/43.7.8@60b3081e/Linux/microsoft-electron-v43.7.8-60b3081e56cfaac618d869a06531a3eb4ea676a7-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.7.8@60b3081e",
+    "dependency": "microsoft-electron-v43.7.8-60b3081e56cfaac618d869a06531a3eb4ea676a7-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/43.7.8@60b3081e/Windows/microsoft-electron-v43.7.8-60b3081e56cfaac618d869a06531a3eb4ea676a7-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.7.8@60b3081e",
+    "dependency": "microsoft-electron-v43.7.8-60b3081e56cfaac618d869a06531a3eb4ea676a7-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/43.7.8@60b3081e/macOS/microsoft-electron-v43.7.8-60b3081e56cfaac618d869a06531a3eb4ea676a7-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.7.8@60b3081e",
+    "dependency": "microsoft-electron-v43.7.8-60b3081e56cfaac618d869a06531a3eb4ea676a7-mac",
+    "platform": "macOS"
+  },
+  {
     "name": "Microsoft Electron/44.0.0@5439f381/Linux/microsoft-electron-v44.0.0-5439f3815a7e516a227ec279d2c91e82a4a55fd2-linux.tgz",
     "product": "Microsoft Electron",
     "release": "44.0.0@5439f381",
@@ -190698,6 +191013,27 @@
     "product": "Microsoft Electron",
     "release": "44.4.5@4d2d8d25",
     "dependency": "microsoft-electron-v44.4.5-4d2d8d2547a0b257075f38a4b6e79eda6302c370-mac",
+    "platform": "macOS"
+  },
+  {
+    "name": "Microsoft Electron/44.5.1@8340d347/Linux/microsoft-electron-v44.5.1-8340d34702ffa10d1056d3f3eaad2cc367a1c275-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.5.1@8340d347",
+    "dependency": "microsoft-electron-v44.5.1-8340d34702ffa10d1056d3f3eaad2cc367a1c275-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/44.5.1@8340d347/Windows/microsoft-electron-v44.5.1-8340d34702ffa10d1056d3f3eaad2cc367a1c275-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.5.1@8340d347",
+    "dependency": "microsoft-electron-v44.5.1-8340d34702ffa10d1056d3f3eaad2cc367a1c275-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/44.5.1@8340d347/macOS/microsoft-electron-v44.5.1-8340d34702ffa10d1056d3f3eaad2cc367a1c275-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.5.1@8340d347",
+    "dependency": "microsoft-electron-v44.5.1-8340d34702ffa10d1056d3f3eaad2cc367a1c275-mac",
     "platform": "macOS"
   },
   {
@@ -269174,6 +269510,174 @@
     "name": "azureotelcollector/0.162.0/linux-arm64/github.com_hashicorp_serf_coordinate_v0.10.4.zip",
     "product": "azureotelcollector",
     "release": "0.162.0",
+    "dependency": "github.com_hashicorp_serf_coordinate_v0.10.4",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-amd64/github.com_hashicorp_consul_api_v1.33.7.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_consul_api_v1.33.7",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-amd64/github.com_hashicorp_errwrap_v1.1.0.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_errwrap_v1.1.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-amd64/github.com_hashicorp_go-cleanhttp_v0.5.2.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-cleanhttp_v0.5.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-amd64/github.com_hashicorp_go-immutable-radix_v1.3.1.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-immutable-radix_v1.3.1",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-amd64/github.com_hashicorp_go-multierror_v1.1.1.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-multierror_v1.1.1",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-amd64/github.com_hashicorp_go-retryablehttp_v0.7.8.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-retryablehttp_v0.7.8",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-amd64/github.com_hashicorp_go-rootcerts_v1.0.2.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-rootcerts_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-amd64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-amd64/github.com_hashicorp_golang-lru_simplelru_v1.0.2.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_golang-lru_simplelru_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-amd64/github.com_hashicorp_golang-lru_v2_v1.0.2.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-amd64/github.com_hashicorp_nomad_api_v0.0.0-20260724112153-37c73b2918bd.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_nomad_api_v0.0.0-20260724112153-37c73b2918bd",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-amd64/github.com_hashicorp_serf_coordinate_v0.10.4.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_serf_coordinate_v0.10.4",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-arm64/github.com_hashicorp_consul_api_v1.33.7.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_consul_api_v1.33.7",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-arm64/github.com_hashicorp_errwrap_v1.1.0.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_errwrap_v1.1.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-arm64/github.com_hashicorp_go-cleanhttp_v0.5.2.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-cleanhttp_v0.5.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-arm64/github.com_hashicorp_go-immutable-radix_v1.3.1.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-immutable-radix_v1.3.1",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-arm64/github.com_hashicorp_go-multierror_v1.1.1.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-multierror_v1.1.1",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-arm64/github.com_hashicorp_go-retryablehttp_v0.7.8.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-retryablehttp_v0.7.8",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-arm64/github.com_hashicorp_go-rootcerts_v1.0.2.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-rootcerts_v1.0.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-arm64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-arm64/github.com_hashicorp_golang-lru_simplelru_v1.0.2.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_golang-lru_simplelru_v1.0.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-arm64/github.com_hashicorp_golang-lru_v2_v1.0.2.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v1.0.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-arm64/github.com_hashicorp_nomad_api_v0.0.0-20260724112153-37c73b2918bd.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_nomad_api_v0.0.0-20260724112153-37c73b2918bd",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "azureotelcollector/0.162.1/linux-arm64/github.com_hashicorp_serf_coordinate_v0.10.4.zip",
+    "product": "azureotelcollector",
+    "release": "0.162.1",
     "dependency": "github.com_hashicorp_serf_coordinate_v0.10.4",
     "platform": "linux-arm64"
   },

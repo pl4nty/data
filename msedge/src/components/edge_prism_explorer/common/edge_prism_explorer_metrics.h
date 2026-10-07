@@ -8,6 +8,22 @@ namespace metrics {
 
 // These values are persisted to logs. Entries should not be renumbered or
 // removed and numeric values should never be reused.
+// LINT.IfChange(VisualSearchEntryPoint)
+enum class VisualSearchEntryPoint {
+  kPrismOnHover = 0,
+  kContextMenuImage = 1,
+  kContextMenuAreaSelection = 2,
+  kWebCapture = 3,
+  kEdgeDesktop = 4,
+  kEdgeLensHotkey = 5,
+  kOmnibox = 6,
+  kExternalProtocol = 7,
+  kMaxValue = kExternalProtocol,
+};
+// LINT.ThenChange(//tools/metrics/histograms/edge_enums.xml:VisualSearchEntryPoint)
+
+// These values are persisted to logs. Entries should not be renumbered or
+// removed and numeric values should never be reused.
 // Please keep in sync with "Microsoft.PrismExplorerOnHover.RendererEvents"
 // in src/tools/metrics/histograms/edge_enums.xml.
 // Entries with **Overlay** suffix are related to image having overlay.
@@ -134,6 +150,9 @@ enum class CleanupAutoHideResult {
   kNotRun = 3,       // Not run auto hide
   kMaxValue = kNotRun,
 };
+
+// Records an invocation attempt, not a successful search or a unique user.
+void RecordVisualSearchEntryPoint(VisualSearchEntryPoint entry_point);
 
 void RecordPrismExplorerOnHoverRendererEvent(
     PrismExplorerOnHoverRendererEvents event);

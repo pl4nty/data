@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2148013,
+    "size": 2150538,
     "file_count": 187
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 16925090,
+    "size": 17016042,
     "file_count": 851
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 34151285,
-    "file_count": 4103
+    "size": 34186802,
+    "file_count": 4105
   },
   {
     "name": "boringssl",
@@ -96,7 +96,7 @@
   },
   {
     "name": "checkstyle",
-    "size": 45366,
+    "size": 45404,
     "file_count": 11
   },
   {
@@ -206,7 +206,7 @@
   },
   {
     "name": "eigen3",
-    "size": 21912258,
+    "size": 21940635,
     "file_count": 2316
   },
   {
@@ -236,7 +236,7 @@
   },
   {
     "name": "federated_compute",
-    "size": 433468,
+    "size": 436116,
     "file_count": 126
   },
   {
@@ -276,8 +276,8 @@
   },
   {
     "name": "glslang",
-    "size": 46225061,
-    "file_count": 3706
+    "size": 46226346,
+    "file_count": 3708
   },
   {
     "name": "googletest",
@@ -286,8 +286,8 @@
   },
   {
     "name": "gperf",
-    "size": 2615255,
-    "file_count": 212
+    "size": 2650615,
+    "file_count": 214
   },
   {
     "name": "grpc",
@@ -376,7 +376,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 30958,
+    "size": 31005,
     "file_count": 2
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19130347,
+    "size": 19131883,
     "file_count": 19
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4753237,
+    "size": 4754775,
     "file_count": 641
   },
   {
@@ -751,8 +751,8 @@
   },
   {
     "name": "tflite",
-    "size": 1958585,
-    "file_count": 553
+    "size": 1950079,
+    "file_count": 551
   },
   {
     "name": "tflite_support",
@@ -776,7 +776,7 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 1682021,
+    "size": 1686379,
     "file_count": 28
   },
   {
@@ -806,8 +806,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7905109,
-    "file_count": 205
+    "size": 7873100,
+    "file_count": 206
   },
   {
     "name": "vulkan_memory_allocator",
@@ -841,7 +841,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 28839656,
+    "size": 28944181,
     "file_count": 608
   },
   {
