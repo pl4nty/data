@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Michelangelus fonts",
+    "downloadDescription": "Michelangelus fonts",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Michelangelus Fonts.zip",
+            "url": "https://download.microsoft.com/download/e8912dd7-c7e6-4ca1-a36b-c121d3fb238f/Michelangelus Fonts.zip",
+            "size": "409405",
+            "version": "1.10",
+            "datePublished": "10/6/2026 7:21:14 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Michelangelus fonts for use in Microsoft 365 applications and in applications that do not have access to the Microsoft 365 Cloud Fonts service (https://aka.ms/officefonts).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.10",
+    "detailsSection_file_name": [
+        "Michelangelus Fonts.zip"
+    ],
+    "detailsSection_file_size": [
+        "399.8 KB"
+    ],
+    "detailsSection_file_date": "10/6/2026",
+    "systemRequirementsSection": "Windows, macOS or any operating system that supports and allows the installation of OpenType font files.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Extract the font files from the .zip file and install them on your device.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108856",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

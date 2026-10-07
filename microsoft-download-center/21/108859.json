@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "TestEsrpRelease - dummy publishing experiment",
+    "downloadDescription": "Dummy installer for an ESRP publication experiment. Not a production application.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "TestEsrpRelease-1.0.0.0-x64.msix",
+            "url": "https://download.microsoft.com/download/5723028d-7832-446e-9bad-d831ebaa5856/TestEsrpRelease-1.0.0.0-x64.msix",
+            "size": "84568",
+            "version": "1.0.0.0",
+            "datePublished": "10/7/2026 10:34:36 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Dummy installer for an ESRP publication experiment. Not a production application.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.0",
+    "detailsSection_file_name": [
+        "TestEsrpRelease-1.0.0.0-x64.msix"
+    ],
+    "detailsSection_file_size": [
+        "82.6 KB"
+    ],
+    "detailsSection_file_date": "10/7/2026",
+    "systemRequirementsSection": "Windows 10 or Windows 11 on an x64 device.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the App Installer or MSIX for test evaluation. This dummy application is not intended for production use.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108859",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
