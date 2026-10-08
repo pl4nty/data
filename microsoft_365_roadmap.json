@@ -959,10 +959,10 @@
     },
     {
         "created": "2026-10-02T22:01:21",
-        "description": "<p>Organizations can enhance meeting security with synthetic audio and video (deepfake) detection solutions provided by certified third-party providers. Third-party detection solutions analyze meeting media for signs of synthetic or manipulated audio and video and send detection signals to Teams, enabling integrated in-meeting experiences and controls.  Important: Synthetic media detection is performed by the third-party provider. Microsoft Teams provides the platform integration and experiences for surfacing and acting on detection signals from supported providers.</p>",
+        "description": "<p>Organizations can enhance meeting security with synthetic audio and video detection solutions provided by certified third-party providers. Third-party detection solutions analyze meeting media for signs of synthetic or manipulated audio and video and send detection signals to Teams, enabling integrated in-meeting experiences and controls.  Important: Synthetic media detection is performed by the third-party provider. Microsoft Teams provides the platform integration and experiences for surfacing and acting on detection signals from supported providers.</p>",
         "id": 573451,
         "locale": null,
-        "modified": "2026-10-06T22:56:31",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -1022,7 +1022,7 @@
                 }
             ]
         },
-        "title": "Microsoft Teams: Third-party synthetic audio and video (deepfake) detection in Microsoft Teams"
+        "title": "Microsoft Teams: Third-party synthetic audio and video detection in Microsoft Teams"
     },
     {
         "created": "2026-10-02T22:01:21",
@@ -1145,7 +1145,7 @@
         "description": "<p>Impersonation Protection for Teams meetings helps users identify potentially deceptive participants and meeting organizers. When Teams detects a potential impersonation attempt, it surfaces warnings and risk indicators to help users recognize suspicious identities and make more informed decisions when joining or participating in a meeting.</p>",
         "id": 573157,
         "locale": null,
-        "modified": "2026-10-05T23:03:05",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -1156,10 +1156,19 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
+                "tagName": "Android"
+            },
+            {
                 "tagName": "Desktop"
             },
             {
+                "tagName": "iOS"
+            },
+            {
                 "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -1179,10 +1188,19 @@
             ],
             "platforms": [
                 {
+                    "tagName": "Android"
+                },
+                {
                     "tagName": "Desktop"
                 },
                 {
+                    "tagName": "iOS"
+                },
+                {
                     "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -11864,9 +11882,9 @@
         "description": "<p>Customers can now view value insights in the Agent 365 Dashboard in Microsoft Viva Insights (Copilot Analytics). These insights help business leaders and change and adoption specialists understand not only whether agents are being used, but also the estimated assisted hours agents provide and the types of work contributing to that value.</p>\n<p>This update builds on the existing Agent 365 Dashboard adoption experience by connecting agent activity with a clearer view of the work agents support across the organization.</p>",
         "id": 570847,
         "locale": null,
-        "modified": "2026-10-06T22:56:31",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "November CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -14174,12 +14192,12 @@
     },
     {
         "created": "2026-08-26T22:50:58",
-        "description": "Workspaces Inline Switching manages multiple Workspaces in a single window. Selecting a Workspace swaps in its tabs, theme, and context, with an easy return to the default space. ",
+        "description": "<p>Workspaces Inline Switching manages multiple Workspaces in a single window. Selecting a Workspace swaps in its tabs, theme, and context, with an easy return to the default space.</p>",
         "id": 568786,
         "locale": null,
-        "modified": "2026-08-26T22:50:58",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -16839,15 +16857,15 @@
     },
     {
         "created": "2026-08-10T22:43:02",
-        "description": "Microsoft Edge is introducing an updated horizontal tab-strip appearance on Windows and macOS. The treatment uses rounded tabs with revised spacing and aligns related tab-strip controls with the refreshed browser-frame design. Tab behavior and enterprise data handling remain unchanged. ",
+        "description": "<p>Microsoft Edge is introducing an updated horizontal tab-strip appearance on Windows and macOS. The treatment uses rounded tabs with revised spacing and aligns related tab-strip controls with the refreshed browser-frame design. Tab behavior and enterprise data handling remain unchanged. Note: We have made the decision to cancel this planned release. We apologize for any inconvenience this may cause.</p>",
         "id": 568793,
         "locale": null,
-        "modified": "2026-08-10T22:43:02",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19431,12 +19449,12 @@
     },
     {
         "created": "2026-07-28T22:43:45",
-        "description": "Apply sensitivity labels to Microsoft Entra cloud security groups to extend the classification and governance you already use for Microsoft 365 groups. The same labels you publish in the Microsoft Purview portal and configure for groups and sites apply automatically to cloud security groups, with no separate label configuration required.",
+        "description": "<p>Apply sensitivity labels to Microsoft Entra cloud security groups to extend the classification and governance you already use for Microsoft 365 groups. The same labels you publish in the Microsoft Purview portal and configure for groups and sites apply automatically to cloud security groups, with no separate label configuration required.</p>",
         "id": 568217,
         "locale": null,
-        "modified": "2026-07-28T22:43:45",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19614,12 +19632,12 @@
     },
     {
         "created": "2026-07-28T22:43:45",
-        "description": "Workforce Insights (WFI) Agent in Microsoft 365 Copilot is an agent designed to help leaders, managers, and their delegates quickly understand their organization by turning complex workforce data into clear, actionable insights. With WFI Agent, leaders can quickly explore their organization\u2019s structure, team composition, skills inventories, and flexible work patterns to move from insight to action in a single, unified experience directly in Copilot or Teams. ",
+        "description": "<p>Workforce Insights (WFI) Agent in Microsoft 365 Copilot is an agent designed to help leaders, managers, and their delegates quickly understand their organization by turning complex workforce data into clear, actionable insights. With WFI Agent, leaders can quickly explore their organization\u2019s structure, team composition, skills inventories, and flexible work patterns to move from insight to action in a single, unified experience directly in Copilot or Teams.</p>",
         "id": 515145,
         "locale": null,
-        "modified": "2026-07-28T22:43:45",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19754,15 +19772,15 @@
     },
     {
         "created": "2026-07-22T22:41:54",
-        "description": "This feature allows SharePoint News authors to distribute posts to an Engage community or storyline while preserving full fidelity rendering and a unified conversation experience. SharePoint News post will appear consistently in Engage across feeds, digests, Outlook, Teams, desktop, web and mobile apps. When distributed, the SharePoint News comments module is replaced with the richer Engage conversation module, ensuring a single, shared discussion thread across surfaces.",
+        "description": "<p>This feature allows SharePoint News authors to distribute posts to an Engage community or storyline while preserving full fidelity rendering and a unified conversation experience. SharePoint News post will appear consistently in Engage across feeds, digests, Outlook, Teams, desktop, web and mobile apps. When distributed, the SharePoint News comments module is replaced with the richer Engage conversation module, ensuring a single, shared discussion thread across surfaces.</p>",
         "id": 568074,
         "locale": null,
-        "modified": "2026-07-22T22:41:54",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -24712,12 +24730,12 @@
         "description": "<p>Discussion post previews allow users to review how their discussion posts will appear before publishing, helping them catch formatting issues, validate content, and post with greater confidence.</p>",
         "id": 566699,
         "locale": null,
-        "modified": "2026-09-11T22:10:10",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -25679,15 +25697,15 @@
     },
     {
         "created": "2026-06-18T23:00:06",
-        "description": "A new export functionality will be introduced in two locations: the Data Loss Prevention > Policies page and the Information Protection > Label publishing policies page. This feature will allow users to export their existing DLP configurations and label policies, including schema, as a downloadable ZIP file. The exported file can be attached to support tickets to accelerate troubleshooting. ",
+        "description": "<p>A new export functionality will be introduced in two locations: the Data Loss Prevention &gt; Policies page and the Information Protection &gt; Label publishing policies page. This feature will allow users to export their existing DLP configurations and label policies, including schema, as a downloadable ZIP file. The exported file can be attached to support tickets to accelerate troubleshooting.</p>",
         "id": 566321,
         "locale": null,
-        "modified": "2026-06-18T23:00:06",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -38987,15 +39005,15 @@
     },
     {
         "created": "2026-04-14T23:00:25",
-        "description": "Plan Mode for Copilot in Excel helps users make complex changes with confidence by outlining a clear, step by step approach before anything in the workbook is updated. Users can review how Copilot intends to complete the task, see which data or capabilities may be used, and adjust the plan as needed\u2014ensuring edits are intentional, transparent, and aligned with their goals before they\u2019re applied. This makes it easier to tackle multi step or high impact tasks while staying in control of every change.",
+        "description": "<p>Plan Mode for Copilot in Excel helps users make complex changes with confidence by outlining a clear, step by step approach before anything in the workbook is updated. Users can review how Copilot intends to complete the task, see which data or capabilities may be used, and adjust the plan as needed\u2014ensuring edits are intentional, transparent, and aligned with their goals before they\u2019re applied. This makes it easier to tackle multi step or high impact tasks while staying in control of every change.</p>",
         "id": 560338,
         "locale": null,
-        "modified": "2026-04-14T23:00:25",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -60701,12 +60719,12 @@
     },
     {
         "created": "2025-12-16T00:15:28",
-        "description": "Edge for Business will soon help users quickly take contextual action on their open pages using contextual nudges attached to the Copilot icon in the toolbar",
+        "description": "<p>Edge for Business will soon help users quickly take contextual action on their open pages using contextual nudges attached to the Copilot icon in the toolbar</p>",
         "id": 537284,
         "locale": null,
-        "modified": "2026-05-07T23:15:02",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -79223,15 +79241,15 @@
     },
     {
         "created": "2025-09-22T23:00:43",
-        "description": "Improved discovery of Copilot connector sources in Microsoft 365 Copilot (optionally add chat) with Content Source filter(s).",
+        "description": "<p>Improved discovery of Copilot connector sources in Microsoft 365 Copilot (optionally add chat) with Content Source filter(s).</p>",
         "id": 502541,
         "locale": null,
-        "modified": "2026-07-23T23:27:16",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -93498,21 +93516,18 @@
     },
     {
         "created": "2025-05-13T11:00:17",
-        "description": "Use Copilot to see a summary of the latest comments and changes made to your Word, Excel and PowerPoint files using the Copilot chat pane.",
+        "description": "<p>Use Copilot to see a summary of the latest comments and changes made to your Word files using the Copilot chat pane.</p>",
         "id": 489825,
         "locale": null,
-        "modified": "2026-04-13T23:15:13",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "DoD"
             },
             {
                 "tagName": "Desktop"
@@ -93540,9 +93555,6 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -93573,7 +93585,7 @@
                 }
             ]
         },
-        "title": "Microsoft Copilot (Microsoft 365): Overview of recent comments and changes in Word, Excel, PowerPoint"
+        "title": "Microsoft Copilot (Microsoft 365): Overview of recent comments and changes in Word"
     },
     {
         "created": "2025-05-09T22:15:45",
@@ -93885,12 +93897,12 @@
         "description": "<p>We're now introducing the third generation of the Microsoft 365 sharing experience designed to make collaboration simpler, smarter, and more secure by default. At the heart of this update is the new hero link, a single, powerful link that controls access to your files. Whether you copy a link, share via email, or send the URL from your browser, you now have a seamless and consistent way to share and stay in control of your files.</p>",
         "id": 492622,
         "locale": null,
-        "modified": "2026-10-01T23:00:07",
+        "modified": "2026-10-07T23:01:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

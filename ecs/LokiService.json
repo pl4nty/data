@@ -515,10 +515,6 @@
                 "runtime_id": "gpt-56-reasoning-sol"
             },
             {
-                "id": "gpt-5.6-terra",
-                "runtime_id": "gpt-56-reasoning-mini-terra"
-            },
-            {
                 "id": "gpt-5.6-luna",
                 "runtime_id": "gpt-56-reasoning-nano-luna"
             },
@@ -539,6 +535,12 @@
                 "runtime_id": "gpt-6-astra"
             }
         ],
+        "PromptDlpApplication": {
+            "applicationLocation": "Copilot.M365.CodeTab",
+            "maxTextCharacters": 2000000,
+            "processContentIntegratedApplicationName": "Loki",
+            "protectionScopeIntegratedApplicationName": "Loki"
+        },
         "ScenarioIdMappings": [
             {
                 "appId": "c0ab8ce9-e9a0-42e7-b064-33d422df41f1",

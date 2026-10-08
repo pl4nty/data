@@ -531,6 +531,7 @@
         "EnableHideMoveHostPoolActionHistory": true,
         "EnableHidePreviewString": true,
         "EnableHighlightDynamicTableUX": true,
+        "EnableHoboImageLocationFallback": true,
         "EnableHostPoolBackfillWorkspaceHoboTag": true,
         "EnableHotDeviceBillingEvent": true,
         "EnableIPsAvailableForAzureConnection": true,
