@@ -320,6 +320,21 @@
             },
             {
                 "context_window": 1000000,
+                "id": "claude-opus-5.5",
+                "name": "Claude Opus 5.5",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 1000000,
                 "id": "claude-sonnet-5",
                 "name": "Claude Sonnet 5",
                 "reasoning_efforts": [
@@ -348,9 +363,39 @@
                 ]
             },
             {
+                "context_window": 1000000,
+                "id": "claude-sonnet-5.5",
+                "name": "Claude Sonnet 5.5",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
                 "context_window": 200000,
                 "id": "claude-haiku-4.5",
                 "name": "Claude Haiku 4.5",
+                "supported_endpoints": [
+                    "/v1/messages"
+                ]
+            },
+            {
+                "context_window": 1000000,
+                "id": "claude-haiku-5.5",
+                "name": "Claude Haiku 5.5",
+                "reasoning_efforts": [
+                    "low",
+                    "medium",
+                    "high",
+                    "xhigh",
+                    "max"
+                ],
                 "supported_endpoints": [
                     "/v1/messages"
                 ]
@@ -499,6 +544,10 @@
                 "runtime_id": "anthropic-claude-opus-4-6"
             },
             {
+                "id": "claude-opus-5.5",
+                "runtime_id": "anthropic-claude-opus-5-5"
+            },
+            {
                 "id": "claude-sonnet-5",
                 "runtime_id": "anthropic-claude-sonnet-5"
             },
@@ -507,8 +556,16 @@
                 "runtime_id": "anthropic-claude-sonnet-4-6"
             },
             {
+                "id": "claude-sonnet-5.5",
+                "runtime_id": "anthropic-claude-sonnet-5-5"
+            },
+            {
                 "id": "claude-haiku-4.5",
                 "runtime_id": "anthropic-claude-haiku-4-5"
+            },
+            {
+                "id": "claude-haiku-5.5",
+                "runtime_id": "anthropic-claude-haiku-5-5"
             },
             {
                 "id": "gpt-5.6-sol",
@@ -538,6 +595,11 @@
         "PromptDlpApplication": {
             "applicationLocation": "Copilot.M365.CodeTab",
             "maxTextCharacters": 2000000,
+            "processContentIntegratedApplicationName": "Loki",
+            "protectionScopeIntegratedApplicationName": "Loki"
+        },
+        "PurviewWebGroundingApplication": {
+            "applicationLocation": "Copilot.M365.CodeTab",
             "processContentIntegratedApplicationName": "Loki",
             "protectionScopeIntegratedApplicationName": "Loki"
         },
@@ -1154,6 +1216,7 @@
         "EnableTeamsLicenseCheck": true,
         "EnableTidRoutingOnExternalDomain": true,
         "EnableTopics": false,
+        "EnableUnifiedActorTokenProvider": true,
         "EnableUserPreferenceV2": true,
         "EnableVNextQuery": true,
         "EnableVivaLearning": true,
