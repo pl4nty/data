@@ -416,6 +416,7 @@
             "EnableCopeDeviceLocateNewPermissions": true,
             "EnableCredentialProviderForAuthenticator": true,
             "EnableDcv2StringListMergeConflictResolution": true,
+            "EnableDefenderAutolaunch": true,
             "EnableDeviceInventory": true,
             "EnableDeviceNameTemplate": true,
             "EnableDiscoveredAppsStateFilter": true,
@@ -1027,7 +1028,8 @@
             "EnableAndroidWpMigrationReport": true,
             "EnableCredentialProviderPolicyAE": true,
             "EnableCredentialProviderPolicyBYOD": true,
-            "EnableGrantMobileThreatDefensePartnerRole": true
+            "EnableGrantMobileThreatDefensePartnerRole": true,
+            "EnableLaunchDefenderOnSetup": true
         }
     },
     "UX_AppLifecycle": {

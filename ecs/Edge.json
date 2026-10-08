@@ -3090,13 +3090,7 @@
     "EdgeRuntime": {
         "UACompatibilityFix": {
             "enableFeatures": [
-                "msUACompatibilityDefaultFix"
-            ],
-            "parameters": [
-                {
-                    "name": "ApplyUACompatibilityDefaultFix",
-                    "value": "true"
-                }
+                "msUACompatibilityFix"
             ]
         }
     },
