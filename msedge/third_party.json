@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2150538,
+    "size": 2150520,
     "file_count": 187
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 34186802,
-    "file_count": 4105
+    "size": 34217771,
+    "file_count": 4103
   },
   {
     "name": "boringssl",
@@ -81,7 +81,7 @@
   },
   {
     "name": "breakpad",
-    "size": 18005601,
+    "size": 18005868,
     "file_count": 1010
   },
   {
@@ -96,12 +96,12 @@
   },
   {
     "name": "checkstyle",
-    "size": 45404,
-    "file_count": 11
+    "size": 46688,
+    "file_count": 12
   },
   {
     "name": "chromium-bidi",
-    "size": 35808,
+    "size": 35806,
     "file_count": 5
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "name": "dawn",
-    "size": 163201558,
+    "size": 163201580,
     "file_count": 19238
   },
   {
@@ -206,8 +206,8 @@
   },
   {
     "name": "eigen3",
-    "size": 21940635,
-    "file_count": 2316
+    "size": 22013885,
+    "file_count": 2322
   },
   {
     "name": "entity_extraction",
@@ -236,7 +236,7 @@
   },
   {
     "name": "federated_compute",
-    "size": 436116,
+    "size": 437816,
     "file_count": 126
   },
   {
@@ -291,8 +291,8 @@
   },
   {
     "name": "grpc",
-    "size": 31327812,
-    "file_count": 3477
+    "size": 31328331,
+    "file_count": 3478
   },
   {
     "name": "gsettings-desktop-schemas",
@@ -376,7 +376,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 31005,
+    "size": 31052,
     "file_count": 2
   },
   {
@@ -396,7 +396,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 68340,
+    "size": 69757,
     "file_count": 47
   },
   {
@@ -496,7 +496,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 409514218,
+    "size": 409513706,
     "file_count": 379
   },
   {
@@ -516,7 +516,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 302014,
+    "size": 302588,
     "file_count": 46
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4754775,
+    "size": 4769202,
     "file_count": 641
   },
   {
@@ -726,7 +726,7 @@
   },
   {
     "name": "spirv-tools",
-    "size": 202909,
+    "size": 203544,
     "file_count": 11
   },
   {
@@ -751,7 +751,7 @@
   },
   {
     "name": "tflite",
-    "size": 1950079,
+    "size": 1958945,
     "file_count": 551
   },
   {
@@ -776,7 +776,7 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 1686379,
+    "size": 1691609,
     "file_count": 28
   },
   {
@@ -791,7 +791,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1531790,
+    "size": 1532423,
     "file_count": 23
   },
   {
@@ -801,12 +801,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2811171,
+    "size": 2813138,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7873100,
+    "size": 7873129,
     "file_count": 206
   },
   {

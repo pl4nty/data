@@ -2,7 +2,7 @@
 
 
 After cloning **depot_tools** in the instructions below, checkout the commit
-**a07c06fe67a1a9d64ac4728df3a11c1ceb0cf73e** before proceeding.
+**8a5434051036b32412a2ecb10c213a72e3f3ccb9** before proceeding.
 
 
 # Building Edge Project for Windows
