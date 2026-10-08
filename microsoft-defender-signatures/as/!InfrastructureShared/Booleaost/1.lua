@@ -3,26 +3,30 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and (string.find)(l_0_0, "\\program files", 1, true) then
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
   return mp.CLEAN
 end
-local l_0_1 = (this_sigattrlog[17]).utf8p2
-local l_0_2 = (string.find)(l_0_1, "Bytes:", 1, true)
-if not l_0_2 then
+local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_3 = l_0_1:sub(l_0_2)
-local l_0_4 = tonumber(l_0_3:match("Bytes:(%d+)"))
-local l_0_5 = (string.find)(l_0_1, "Count:", 1, true)
-if not l_0_5 then
+local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+if l_0_1 == nil then
   return mp.CLEAN
 end
-local l_0_6 = tonumber(l_0_3:match("Count:(%d+)"))
-if l_0_4 and l_0_4 > 52000000 and l_0_4 < 75000000 and l_0_6 > 5500 and l_0_6 < 7000 then
-  (bm.add_related_string)("ReadVM", "Bytes: " .. l_0_4 .. " Count: " .. l_0_6, bm.RelatedStringBMReport)
-  add_parents()
-  return mp.INFECTED
+;
+(mp.set_mpattribute)("MpDisableCaching")
+local l_0_2 = {}
+;
+(table.insert)(l_0_2, l_0_0)
+;
+(MpCommon.SetPersistContextNoPath)("Lua:MSIL/Quiltran.D", l_0_2, 0)
+if l_0_0 ~= l_0_1 then
+  return mp.CLEAN
 end
-return mp.CLEAN
+local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+if l_0_3 ~= nil then
+  (MpCommon.RequestSmsOnProcess)(l_0_3, MpCommon.SMS_SCAN_MED)
+end
+return mp.INFECTED
 

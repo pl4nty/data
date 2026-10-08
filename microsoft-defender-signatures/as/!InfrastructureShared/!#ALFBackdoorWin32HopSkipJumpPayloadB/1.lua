@@ -25,6 +25,7 @@ local l_0_4 = (MpCommon.PathToWin32Path)(l_0_1 .. "\\" .. l_0_3)
 if l_0_4 == nil or l_0_4 == "" then
   return mp.CLEAN
 end
+set_research_data("HopPayloadPath", l_0_4, false)
 local l_0_5 = (sysio.IsFileExists)(l_0_4)
 if l_0_5 then
   (mp.ReportLowfi)(l_0_4, 892398022)

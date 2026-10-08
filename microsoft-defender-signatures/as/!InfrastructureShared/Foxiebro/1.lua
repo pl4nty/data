@@ -3,26 +3,42 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and (string.find)(l_0_0, "\\program files", 1, true) then
+if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
   return mp.CLEAN
 end
-local l_0_1 = (this_sigattrlog[17]).utf8p2
-local l_0_2 = (string.find)(l_0_1, "Bytes:", 1, true)
-if not l_0_2 then
+local l_0_0 = (mp.getfilesize)()
+if l_0_0 <= 300 or l_0_0 > 500000 then
   return mp.CLEAN
 end
-local l_0_3 = l_0_1:sub(l_0_2)
-local l_0_4 = tonumber(l_0_3:match("Bytes:(%d+)"))
-local l_0_5 = (string.find)(l_0_1, "Count:", 1, true)
-if not l_0_5 then
+local l_0_1 = (MpCommon.PathToWin32Path)((mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE)))
+local l_0_2 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+if l_0_1 == nil or l_0_2 == nil then
   return mp.CLEAN
 end
-local l_0_6 = tonumber(l_0_3:match("Count:(%d+)"))
-if l_0_4 and l_0_4 > 52000000 and l_0_4 < 75000000 and l_0_6 > 5500 and l_0_6 < 7000 then
-  (bm.add_related_string)("ReadVM", "Bytes: " .. l_0_4 .. " Count: " .. l_0_6, bm.RelatedStringBMReport)
-  add_parents()
-  return mp.INFECTED
+if IsInternetCache(l_0_1) == true or IsLowConfNPath(l_0_1) == true then
+  return mp.CLEAN
 end
-return mp.CLEAN
+if l_0_1:find("\\program files\\", 1, true) or l_0_1:find("\\clientaccess\\owa\\prem\\", 1, true) or l_0_1:find(":\\windows\\", 1, true) or l_0_1:find(":\\program files (x86)\\", 1, true) or l_0_1:find("\\google\\chrome\\user data\\default\\extensions\\", 1, true) or l_0_1:find("\\google\\chrome\\user data\\profile", 1, true) or l_0_1:find("\\device\\harddiskvolume", 1, true) or l_0_1:find(":\\inetpub\\", 1, true) or l_0_1:find("\\netlogon\\", 1, true) or l_0_1:find(":\\programdata\\microsoft\\grouppolicy\\users\\", 1, true) or l_0_1:find("\\mozilla\\firefox\\profiles\\", 1, true) or l_0_1:find("\\programdata\\lenovo\\userguide", 1, true) or l_0_1:find("\\google\\chrome\\user data\\default\\extensions", 1, true) or l_0_1:find("\\appdata\\roaming\\aida\\", 1, true) then
+  return mp.CLEAN
+end
+if (string.find)(l_0_1, "^\\\\[^\\]+\\") then
+  return mp.CLEAN
+end
+if l_0_2:find("support_menu.vbs", 1, true) or l_0_1:find("bku_plus_connect.vbs", 1, true) or l_0_1:find("replaceagent.vbs", 1, true) or l_0_1:find("install.vbs", 1, true) or l_0_1:find("setdefaultappbyprotocol.vbs", 1, true) or l_0_1:find("gis-admin_cfg_", 1, true) or l_0_1:find("mk_inventory.vbs", 1, true) then
+  return mp.CLEAN
+end
+local l_0_3 = ((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)):lower()
+if l_0_3 ~= nil then
+  local l_0_4 = l_0_3:match("[^\\]+$")
+  local l_0_5 = {}
+  l_0_5["wscript.exe"] = ""
+  l_0_5["cscript.exe"] = ""
+  l_0_5["explorer.exe"] = ""
+  if l_0_4 ~= nil and l_0_5[l_0_4] then
+    return mp.INFECTED
+  end
+end
+do
+  return mp.CLEAN
+end
 

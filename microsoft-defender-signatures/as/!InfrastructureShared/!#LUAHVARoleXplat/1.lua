@@ -6,32 +6,31 @@
 if GetRollingQueue("ExtendedHvaDeviceProperties") ~= nil then
   return mp.CLEAN
 end
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+if not l_0_0 then
+  return mp.CLEAN
+end
+local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+if not l_0_1 then
+  return mp.CLEAN
+end
 if (mp.get_mpattribute)("Lua:ZimbraMailServer") then
-  local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH)
-  if l_0_0 == nil or #l_0_0 < 4 then
-    return mp.CLEAN
-  end
-  local l_0_1 = "/opt/zimbra/"
-  if l_0_0 and (string.sub)(l_0_0, 1, #l_0_1) == l_0_1 then
-    RegisterHvaDeviceRole("ZimbraMailServer")
-  end
+  RegisterHvaDeviceRole("ZimbraMailServer")
 else
-  do
-    if (mp.get_mpattribute)("Lua:SambaAD") then
-      local l_0_2 = nil
-      local l_0_3 = "(?i)/samba_dnsupdate|samba: task\\[|samba --foreground"
-      local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
-      if l_0_4 ~= nil then
-        l_0_2 = (mp.GetProcessCommandLine)(l_0_4)
-      end
-      if l_0_2 then
-        local l_0_5, l_0_6 = (MpCommon.StringRegExpSearch)(l_0_3, l_0_2)
-        if l_0_5 then
-          RegisterHvaDeviceRole("SambaActiveDirectory")
-        end
-      end
+  if (mp.get_mpattribute)("Lua:SambaAD") then
+    local l_0_2 = "(?i)/samba_dnsupdate|samba: task\\[|samba --foreground"
+    local l_0_3, l_0_4 = (MpCommon.StringRegExpSearch)(l_0_2, l_0_1)
+    if l_0_3 then
+      RegisterHvaDeviceRole("SambaActiveDirectory")
     end
+  else
     do
+      if (mp.get_mpattribute)("Lua:OktaAgent") and ((string.find)(l_0_1, "OktaLDAPAgent.jar", 1, true) or (string.find)(l_0_1, "OktaProvisioningAgent.jar", 1, true)) then
+        RegisterHvaDeviceRole("OktaAuthAgent")
+      end
+      if (mp.get_mpattribute)("Lua:Linux:ProcName_java") and (string.find)(l_0_1, "-Dkc.home.dir=", 1, true) and (string.find)(l_0_1, "/keycloak/", 1, true) then
+        RegisterHvaDeviceRole("KeyCloakIAM")
+      end
       return mp.CLEAN
     end
   end

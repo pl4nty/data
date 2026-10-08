@@ -3,26 +3,68 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and (string.find)(l_0_0, "\\program files", 1, true) then
+if (mp.GetResmgrBasePlugin)() ~= "Regkeyvalue" then
   return mp.CLEAN
 end
-local l_0_1 = (this_sigattrlog[17]).utf8p2
-local l_0_2 = (string.find)(l_0_1, "Bytes:", 1, true)
-if not l_0_2 then
+local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+if not l_0_0 then
   return mp.CLEAN
 end
-local l_0_3 = l_0_1:sub(l_0_2)
-local l_0_4 = tonumber(l_0_3:match("Bytes:(%d+)"))
-local l_0_5 = (string.find)(l_0_1, "Count:", 1, true)
-if not l_0_5 then
-  return mp.CLEAN
+local l_0_1 = {}
+local l_0_2 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Extensions")
+do
+  if l_0_2 then
+    local l_0_3 = (sysio.RegEnumValues)(l_0_2)
+    if l_0_3 then
+      l_0_1.Extensions_Perf_Count = #l_0_3
+    end
+  end
+  l_0_2 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Extensions")
+  do
+    if l_0_2 then
+      local l_0_4 = (sysio.RegEnumValues)(l_0_2)
+      if l_0_4 then
+        l_0_1.Extensions_Policies_Count = #l_0_4
+      end
+    end
+    l_0_2 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Paths")
+    do
+      if l_0_2 then
+        local l_0_5 = (sysio.RegEnumValues)(l_0_2)
+        if l_0_5 then
+          l_0_1.Paths_Perf_Count = #l_0_5
+        end
+      end
+      l_0_2 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Paths")
+      do
+        if l_0_2 then
+          local l_0_6 = (sysio.RegEnumValues)(l_0_2)
+          if l_0_6 then
+            l_0_1.Paths_Policies_Count = #l_0_6
+          end
+        end
+        l_0_2 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Processes")
+        do
+          if l_0_2 then
+            local l_0_7 = (sysio.RegEnumValues)(l_0_2)
+            if l_0_7 then
+              l_0_1.Processes_Perf_Count = #l_0_7
+            end
+          end
+          l_0_2 = (sysio.RegOpenKey)("HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\Exclusions\\Processes")
+          do
+            if l_0_2 then
+              local l_0_8 = (sysio.RegEnumValues)(l_0_2)
+              if l_0_8 then
+                l_0_1.Processes_Policies_Count = #l_0_8
+              end
+            end
+            set_research_data("ExclusionsCount", (MpCommon.Base64Encode)(safeJsonSerialize(l_0_1)), false)
+            return mp.INFECTED
+          end
+        end
+      end
+    end
+  end
 end
-local l_0_6 = tonumber(l_0_3:match("Count:(%d+)"))
-if l_0_4 and l_0_4 > 52000000 and l_0_4 < 75000000 and l_0_6 > 5500 and l_0_6 < 7000 then
-  (bm.add_related_string)("ReadVM", "Bytes: " .. l_0_4 .. " Count: " .. l_0_6, bm.RelatedStringBMReport)
-  add_parents()
-  return mp.INFECTED
-end
-return mp.CLEAN
 

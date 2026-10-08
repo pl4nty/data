@@ -3,26 +3,35 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and (string.find)(l_0_0, "\\program files", 1, true) then
-  return mp.CLEAN
+local l_0_0 = (string.lower)((mp.getfilename)())
+if l_0_0 ~= nil then
+  local l_0_1 = (string.sub)(l_0_0, -3)
+  local l_0_2 = (string.sub)(l_0_0, -4)
+  if l_0_0:match("%->.+/") or l_0_0:match("%->.+\\") or l_0_0:match("%->.+%->") then
+    return mp.CLEAN
+  end
+  if l_0_1 == ".js" or l_0_2 == ".jse" or l_0_2 == ".vbs" or l_0_2 == ".vbe" or l_0_2 == ".wsf" then
+    local l_0_3 = (MpCommon.PathToWin32Path)((mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE)))
+    if l_0_3 == nil then
+      return mp.CLEAN
+    end
+    if IsInternetCache(l_0_3) == true then
+      return mp.INFECTED
+    end
+    do
+      do
+        if l_0_3:find(":\\users\\[^\\]+\\appdata\\local\\temp", 1, true) then
+          local l_0_4 = (string.match)(l_0_3, "\\appdata\\local\\temp\\(.+)")
+          if l_0_4 and not l_0_4:find("\\", 1, true) then
+            (mp.set_mpattribute)("Lua:JsObfusPathInclusion.A")
+          end
+        end
+        if l_0_3:find("\\program files\\", 1, true) or l_0_3:find("\\clientaccess\\owa\\prem\\", 1, true) or l_0_3:find(":\\windows\\", 1, true) or l_0_3:find(":\\program files (x86)\\", 1, true) or l_0_3:find("\\google\\chrome\\user data\\default\\extensions\\", 1, true) or l_0_3:find("\\google\\chrome\\user data\\profile", 1, true) or l_0_3:find("\\device\\harddiskvolume", 1, true) or l_0_3:find(":\\inetpub\\", 1, true) or l_0_3:find("\\netlogon\\", 1, true) or l_0_3:find(":\\programdata\\microsoft\\grouppolicy\\users\\", 1, true) or l_0_3:find("\\mozilla\\firefox\\profiles\\", 1, true) or l_0_3:find("\\programdata\\lenovo\\userguide", 1, true) or l_0_3:find("\\google\\chrome\\user data\\default\\extensions", 1, true) or l_0_3:find("documents and settings", 1, true) then
+          return mp.INFECTED
+        end
+        return mp.CLEAN
+      end
+    end
+  end
 end
-local l_0_1 = (this_sigattrlog[17]).utf8p2
-local l_0_2 = (string.find)(l_0_1, "Bytes:", 1, true)
-if not l_0_2 then
-  return mp.CLEAN
-end
-local l_0_3 = l_0_1:sub(l_0_2)
-local l_0_4 = tonumber(l_0_3:match("Bytes:(%d+)"))
-local l_0_5 = (string.find)(l_0_1, "Count:", 1, true)
-if not l_0_5 then
-  return mp.CLEAN
-end
-local l_0_6 = tonumber(l_0_3:match("Count:(%d+)"))
-if l_0_4 and l_0_4 > 52000000 and l_0_4 < 75000000 and l_0_6 > 5500 and l_0_6 < 7000 then
-  (bm.add_related_string)("ReadVM", "Bytes: " .. l_0_4 .. " Count: " .. l_0_6, bm.RelatedStringBMReport)
-  add_parents()
-  return mp.INFECTED
-end
-return mp.CLEAN
 

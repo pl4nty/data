@@ -3,26 +3,26 @@
 
 -- params : ...
 -- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
-if l_0_0 and (string.find)(l_0_0, "\\program files", 1, true) then
+if not (mp.get_mpattribute)("MpContentDetected") and not (mp.get_mpattributesubstring)("Detection:Trojan:Win") and not (mp.get_mpattributesubstring)("Detection:HackTool:Win") and not (mp.get_mpattributesubstring)("Detection:RemoteAccess:Win") then
   return mp.CLEAN
 end
-local l_0_1 = (this_sigattrlog[17]).utf8p2
-local l_0_2 = (string.find)(l_0_1, "Bytes:", 1, true)
-if not l_0_2 then
+local l_0_0 = (mp.getfilename)(mp.FILEPATH_QUERY_LOWERCASE)
+if (string.sub)(l_0_0, 0, 4) == "\\\\?\\" then
+  l_0_0 = (string.sub)(l_0_0, 5)
+end
+if l_0_0:sub(1, 8) == "\\device\\" then
+  l_0_0 = (MpCommon.PathToWin32Path)(l_0_0)
+  if l_0_0 == nil then
+    return mp.CLEAN
+  end
+  l_0_0 = (string.lower)(l_0_0)
+end
+if not (string.find)(l_0_0, "^c:\\windows\\%w+%.exe$") then
   return mp.CLEAN
 end
-local l_0_3 = l_0_1:sub(l_0_2)
-local l_0_4 = tonumber(l_0_3:match("Bytes:(%d+)"))
-local l_0_5 = (string.find)(l_0_1, "Count:", 1, true)
-if not l_0_5 then
-  return mp.CLEAN
+local l_0_1 = (MpCommon.QueryPersistContext)(l_0_0, "NewWrittenBySystemProcessDetected")
+if not l_0_1 then
+  (MpCommon.AppendPersistContext)(l_0_0, "NewWrittenBySystemProcessDetected", 5)
 end
-local l_0_6 = tonumber(l_0_3:match("Count:(%d+)"))
-if l_0_4 and l_0_4 > 52000000 and l_0_4 < 75000000 and l_0_6 > 5500 and l_0_6 < 7000 then
-  (bm.add_related_string)("ReadVM", "Bytes: " .. l_0_4 .. " Count: " .. l_0_6, bm.RelatedStringBMReport)
-  add_parents()
-  return mp.INFECTED
-end
-return mp.CLEAN
+return mp.INFECTED
 
