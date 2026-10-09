@@ -1,5 +1,769 @@
 [
     {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>The first updates will focus on visual details, such as icons, spacing and alignment. Users of classic Outlook for Windows will begin seeing refinements to familiar mail and calendar surfaces. The initial visual updates are intended to improve clarity and consistency without changing how users perform their tasks.</p>",
+        "id": 574115,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "Current Channel"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Current Channel"
+                }
+            ]
+        },
+        "title": "Outlook: Upcoming visual improvements and a more consistent Outlook experience"
+    },
+    {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>When a Teams Rooms on Android device acts as an organizer, co-organizer, or presenter in a structured meeting or webinar, you have access to the private chat for event management known as the Event Group. You can also switch to a separate chat with attendees, enabling smooth event experiences for all. Available in Teams Rooms Pro-licensed rooms.</p>",
+        "id": 574107,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Chat for organizers and presenters in structured meetings and webinars on Teams Rooms on Android"
+    },
+    {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>With this new capability, users of Copilot in SharePoint will be able to view saved and unsaved preview content side by side with chat.  Users will also be able to interact with created HTML forms and confirm responses to send to chat.</p>",
+        "id": 574106,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "SharePoint: AI input widget and content preview in Copilot"
+    },
+    {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>Approvers need access to the financial information behind an expense to make accurate approval decisions without leaving the approval experience. Dynamics 365 expense management mobile app will surface relevant financial dimensions directly within expense report approvals in the mobile app. Approvers can review financial coding in context before making a decision, helping reduce unnecessary navigation and keep expense approvals moving.</p>",
+        "id": 573709,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Review financial dimensions when approving expenses on mobile"
+    },
+    {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>Organizations operating across different regions need to record mileage expenses using the units of measure appropriate for their employees and local requirements. Dynamics 365 Project Operations will support kilometers (km) as a configurable unit of measure for mileage expenses, in addition to miles. Organizations can configure the appropriate mileage unit for their business, helping employees record mileage expenses accurately using the measurement standard relevant to their regional requirements.</p>",
+        "id": 573707,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Track mileage expenses using kilometers"
+    },
+    {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>Event group chat, the private chat for organizers, co-organizers, and presenters in an event or structured meeting, will support external presenters.</p>",
+        "id": 573706,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: External presenter support for event group chat"
+    },
+    {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>All users in Events larger than 1,000 users or in any Event optimized for a large audience can now chat with one another in a public event chat in GCC.</p>",
+        "id": 573625,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Event Chat now available for Events optimized for a large audience in GCC"
+    },
+    {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>For Teams meetings and events, a new streaming switchboard will soon be available to easily manage and send NDI sources out to production software.</p>",
+        "id": 573453,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Streaming switchboard for Network Device Interface (NDI) Sources"
+    },
+    {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>Copilot in OneNote can generate new content and directly edit when in edit mode. In this mode you can create, rename, and delete pages, sections, or notebooks as well as add or edit content in pages. Copilot can bring content from across WorkIQ as well as complete actions across other workflows such as creating Word, Excel, and PowerPoint files.</p>",
+        "id": 573446,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "OneNote"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneNote"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Copilot Chat in OneNote can create, edit, and refine content"
+    },
+    {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>Microsoft Planner will be updated with a cleaner, more modern interface, improved navigation, responsive layouts, and a more consistent experience across Planner in Teams and Planner for the web.</p>",
+        "id": 573274,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Planner"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Planner"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Planner: Refreshed experience and new capabilities"
+    },
+    {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>This feature supports controlled returns and packing slip cancellations for stocked item requirements originating in Finance and Supply Chain Management. You can open the Packing slip journal from the Item requirements page and cancel packing slips for eligible independent item requirements. Packing slip posting performs the physical inventory update while deferring the financial update, allowing cancellation before invoicing or finalization. Cancellation reverses the project cost, returns the item requirement to open order, and creates negative material usage and sales transactions through dual-write. Negative quantities remain blocked when entered directly in Dataverse.</p>\n<p>This feature also enables the ability to create new item requirements for both positive consumption and negative return scenarios with product dimensions such as serial number to support returns or warranty scenarios.</p>\n<p>The feature is off by default. To enable it, in Feature management, enable Enable packing slip cancellation for integrated deployments. It requires Enable packing slip cancellation for item requirements and Enable stocked products usage for resource/non-stock scenarios features to also be enabled.</p>\n<p>To see the project cost posting, be sure to enable Post packing slip in ledger in Accounts receivable parameters to create the physical inventory voucher and display project cost. Fixed-price projects also require the feature Finalize uninvoiced stocked items before inventory can be financially finalized.</p>\n<p>Turning off the integrated cancellation feature restores the previous posting behavior and removes cancellation availability.</p>\n<p>This feature applies to the Project Operations connected with ERP deployment type.</p>",
+        "id": 573252,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Cancel packing slips for stocked item requirements"
+    },
+    {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>For an event that needs registration, send email invites to the selected people and groups who will be invited to register to the event</p>",
+        "id": 573250,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Invite attendees to register"
+    },
+    {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>Customers can now view reporting for agents from third-party platforms in the Agent 365 Dashboard in Microsoft Viva Insights (Copilot Analytics). This expanded coverage provides a more comprehensive view of agent activity across their organization.</p>",
+        "id": 573169,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Expanded agent coverage in Agent Dashboard"
+    },
+    {
+        "created": "2026-10-08T23:04:12",
+        "description": "<p>We're rolling out new capabilities for Copilot Notebook audio overview that make it easier to navigate longer content with topic-based episodes, new audio formats such as Critique and Debate, support enterprise information protection with sensitivity labels, and expand audio overview context to more content types.</p>",
+        "id": 570966,
+        "locale": null,
+        "modified": "2026-10-08T23:04:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "OneNote"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "OneNote"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Audio Overview updates in Copilot Notebooks"
+    },
+    {
         "created": "2026-10-06T22:56:31",
         "description": "<p>Previously, auto-expanding archive mailbox expansion was supported only up to 1.5\u202fTB, after which mailboxes would become inoperative. Archive mailboxes can now automatically expand beyond the 1.5\u202fTB limit, ensuring uninterrupted retention and enabling scalable archive growth as storage thresholds are reached. This capability to expand archives beyond 1.5 TB will be available to customers with eligible E5 licenses.</p>",
         "id": 573702,
@@ -27351,15 +28115,15 @@
     },
     {
         "created": "2026-06-09T23:15:32",
-        "description": "Admins now have a dedicated dashboard in the Teams Admin Center to view Interpreter usage across their organization. Track adoption and usage trends in one place to better understand how Interpreter is being used.",
+        "description": "<p>We have decided not to move forward with this change at this time. We apologize for any inconvenience. Admins now have a dedicated dashboard in the Teams Admin Center to view Interpreter usage across their organization. Track adoption and usage trends in one place to better understand how Interpreter is being used.</p>",
         "id": 565217,
         "locale": null,
-        "modified": "2026-06-16T23:00:10",
+        "modified": "2026-10-08T23:04:12",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -35877,9 +36641,9 @@
         "description": "<p>At Ignite, Microsoft is introducing a major evolution of Purview Data Security Posture Management (DSPM) to help organizations strengthen data security and confidently embrace AI. The new DSPM experience unifies visibility and control across traditional data and AI-driven environments, delivering outcome-based guided workflows that turn insights into actionable steps\u2014so teams can prioritize risks and remediate faster. It brings AI observability, enhanced posture reporting, and intelligent Security Copilot agents to automate tasks like triage and policy management. Plus, Purview now extends coverage beyond Microsoft data with third-party signals from partners like BigID, Cyera, OneTrust, and Varonis, giving security teams a single, streamlined view of sensitive data across clouds and platforms. Together, these innovations make DSPM the central hub for managing data security posture in the era of AI. We are also extending Data Risk Assessments to Fabric and to item-level analysis with new remediation actions like bulk disabling of overshared SharePoint links.</p>",
         "id": 561036,
         "locale": null,
-        "modified": "2026-09-30T23:31:03",
+        "modified": "2026-10-08T23:04:12",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -46979,15 +47743,15 @@
     },
     {
         "created": "2026-03-04T00:00:25",
-        "description": "Meeting organizers can now easily delete meeting generated content including recording, transcript, AI summary, and notes through the new delete button in recap page. Shared files in the meeting won't be deleted.",
+        "description": "<p>Meeting organizers can now easily delete meeting generated content including recording, transcript, AI summary, and notes through the new delete button in recap page. Shared files in the meeting won't be deleted.</p>",
         "id": 557170,
         "locale": null,
-        "modified": "2026-05-11T23:15:11",
+        "modified": "2026-10-08T23:04:12",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -47376,15 +48140,15 @@
     },
     {
         "created": "2026-02-27T23:15:13",
-        "description": "Centralized notification settings streamline channel notification setup and management. Available in Teams settings, users have a single place to review and adjust notifications for all visible channels, instead of managing each individually.",
+        "description": "<p>Centralized notification settings streamline channel notification setup and management. Available in Teams settings, users have a single place to review and adjust notifications for all visible channels, instead of managing each individually.</p>",
         "id": 557970,
         "locale": null,
-        "modified": "2026-08-26T22:50:58",
+        "modified": "2026-10-08T23:04:12",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -51948,15 +52712,15 @@
     },
     {
         "created": "2026-02-11T00:15:04",
-        "description": "You can now reference an email with Work IQ when using Edit with Copilot in PowerPoint to create a presentation.",
+        "description": "<p>You can now reference an email with Work IQ when using Edit with Copilot in PowerPoint to create a presentation.</p>",
         "id": 555886,
         "locale": null,
-        "modified": "2026-06-05T22:00:28",
+        "modified": "2026-10-08T23:04:12",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -99177,15 +99941,15 @@
     },
     {
         "created": "2025-03-24T23:00:41",
-        "description": "We will be adding declarative agents support in Copilot Chat in Outlook. This roadmap item tracks availability in Outlook for Mac.",
+        "description": "<p>We will be adding declarative agents support in Copilot Chat in Outlook. This roadmap item tracks availability in Outlook for Mac.</p>",
         "id": 486696,
         "locale": null,
-        "modified": "2025-10-27T23:15:26",
+        "modified": "2026-10-08T23:04:12",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

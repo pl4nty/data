@@ -215,7 +215,6 @@
     },
     "INFRA_Auth": {
         "FlightingV2": {
-            "EnableMessageBusV3Publisher": true,
             "MBEnableProcessorClientSdkV3": true,
             "MBV1StorageWrapperUseEntraAuth": true,
             "UseFic": true,
@@ -946,6 +945,7 @@
             "IC3TimeoutFallbackToWNS": true,
             "NCSDelayBetweenBatches": 25,
             "NCSSqlAggParallelCount": 3,
+            "PatchIMEAgentVersionInWindowsSidecarInfo": true,
             "PopulateSearch": true,
             "SqlAggEGCache": true,
             "SuppressTamperProtectionRefreshNotifications": true,

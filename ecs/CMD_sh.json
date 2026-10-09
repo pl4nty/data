@@ -1488,7 +1488,7 @@
         "ShowActionStatusTabFor1P": false,
         "ShowServiceReleaseInAllCloudPcs": true,
         "SkipDryRunForBackfillApexSeatSubscriptionUniqueIds": true,
-        "SkipDryRunForCleanupZeroTermSubscriptionLicenses ": true,
+        "SkipDryRunForCleanupZeroTermSubscriptionLicenses": false,
         "SkipDryRunForFixApexMultiYearSubscriptionTerm": true,
         "SkipUnenrollIntuneOnDppFailure": true,
         "SkipUnenrollIntuneOnDppFailureForFLDParity": "true",
