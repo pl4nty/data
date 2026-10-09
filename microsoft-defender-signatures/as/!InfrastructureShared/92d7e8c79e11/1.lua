@@ -35,13 +35,16 @@ if l_0_2 ~= nil then
   if l_0_4:find("\\programdata\\servicenow\\", 1, true) then
     return mp.CLEAN
   end
+  if l_0_4:find("\\programfiles\\servicenow\\", 1, true) then
+    return mp.CLEAN
+  end
 end
 do
   local l_0_5 = (mp.GetParentProcInfo)(l_0_2.ppid)
   do
     if l_0_5 ~= nil then
       local l_0_6 = (string.lower)(l_0_5.image_path)
-      if l_0_6 ~= nil and (l_0_1[l_0_6:match("([^\\]+)$")] or (string.find)(l_0_6, ":\\windows\\assembly\\nativeimages_", 1, true) or (string.find)(l_0_6, ":\\programdata\\ctes\\components\\", 1, true)) then
+      if l_0_6 ~= nil and (l_0_1[l_0_6:match("([^\\]+)$")] or (string.find)(l_0_6, ":\\windows\\assembly\\nativeimages_", 1, true) or (string.find)(l_0_6, ":\\programdata\\ctes\\components\\", 1, true) or (string.find)(l_0_6, ":\\programfiles\\servicenow\\", 1, true) or (string.find)(l_0_6, ":\\programdata\\servicenow\\", 1, true)) then
         return mp.CLEAN
       end
     end

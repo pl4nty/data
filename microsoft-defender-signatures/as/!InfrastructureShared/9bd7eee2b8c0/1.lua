@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\87d72f338c8d\1.luac 
+-- Command line: lua\!InfrastructureShared\9bd7eee2b8c0\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -24,6 +24,7 @@ do
     return mp.CLEAN
   end
   l_0_4 = l_0_4:gsub(":%\\\\", "://")
+  l_0_4 = l_0_4:gsub(":/\\", "://")
   local l_0_5 = {}
   l_0_5.SIG_CONTEXT = "CMD"
   l_0_5.CONTENT_SOURCE = "MSIEXEC_CMDLINE"

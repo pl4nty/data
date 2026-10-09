@@ -1273,7 +1273,7 @@ do
   end
 end
 
-  -- DECOMPILER ERROR at PC483: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC487: freeLocal<0 in 'ReleaseLocals'
 
   -- WARNING: undefined locals caused missing assignments!
 end
