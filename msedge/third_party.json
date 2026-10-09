@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 1141563,
+    "size": 1135029,
     "file_count": 49
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 17016042,
+    "size": 17017844,
     "file_count": 851
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 34217771,
+    "size": 34223865,
     "file_count": 4103
   },
   {
@@ -151,8 +151,8 @@
   },
   {
     "name": "dawn",
-    "size": 163201580,
-    "file_count": 19238
+    "size": 163158636,
+    "file_count": 19226
   },
   {
     "name": "dbus",
@@ -206,8 +206,8 @@
   },
   {
     "name": "eigen3",
-    "size": 22013885,
-    "file_count": 2322
+    "size": 22087067,
+    "file_count": 2336
   },
   {
     "name": "entity_extraction",
@@ -526,7 +526,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19131883,
+    "size": 19143659,
     "file_count": 19
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4769202,
+    "size": 4780529,
     "file_count": 641
   },
   {
@@ -686,7 +686,7 @@
   },
   {
     "name": "screen-ai",
-    "size": 4507341,
+    "size": 5220136,
     "file_count": 83
   },
   {
@@ -751,8 +751,8 @@
   },
   {
     "name": "tflite",
-    "size": 1958945,
-    "file_count": 551
+    "size": 1963840,
+    "file_count": 556
   },
   {
     "name": "tflite_support",
@@ -776,7 +776,7 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 1691609,
+    "size": 1695061,
     "file_count": 28
   },
   {
@@ -806,7 +806,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7873129,
+    "size": 7876770,
     "file_count": 206
   },
   {

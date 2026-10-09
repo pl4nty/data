@@ -144802,6 +144802,69 @@
     "platform": "Windows x86"
   },
   {
+    "name": "Microsoft Edge/156.0.4314.14-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.14-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.14-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.14-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.14-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.14-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.15-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.15-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.15-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.15-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.15-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.15-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.15-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.15-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.15-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.15-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.15-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.15-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
     "name": "Microsoft Edge/156.0.4314.8-NA/Linux x64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "156.0.4314.8-NA",
@@ -145192,6 +145255,90 @@
     "release": "157.0.4327.0-canary",
     "dependency": "chromium",
     "platform": "Android arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4328.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4328.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4328.0-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4328.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4328.0-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4328.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4328.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4328.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4328.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4328.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4328.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4328.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4329.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4329.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4329.0-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4329.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4329.0-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4329.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4329.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4329.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4329.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4329.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4329.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4329.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
   },
   {
     "name": "Microsoft Edge/74.1.96.24/Windows x64/chromium.zip",
@@ -191321,6 +191468,27 @@
     "product": "Microsoft Electron",
     "release": "44.5.1@8340d347",
     "dependency": "microsoft-electron-v44.5.1-8340d34702ffa10d1056d3f3eaad2cc367a1c275-mac",
+    "platform": "macOS"
+  },
+  {
+    "name": "Microsoft Electron/44.7.0@0a7cd4a6/Linux/microsoft-electron-v44.7.0-0a7cd4a6cafc9dc18f7b73f3b48dc5c849b6f85c-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.7.0@0a7cd4a6",
+    "dependency": "microsoft-electron-v44.7.0-0a7cd4a6cafc9dc18f7b73f3b48dc5c849b6f85c-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/44.7.0@0a7cd4a6/Windows/microsoft-electron-v44.7.0-0a7cd4a6cafc9dc18f7b73f3b48dc5c849b6f85c-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.7.0@0a7cd4a6",
+    "dependency": "microsoft-electron-v44.7.0-0a7cd4a6cafc9dc18f7b73f3b48dc5c849b6f85c-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/44.7.0@0a7cd4a6/macOS/microsoft-electron-v44.7.0-0a7cd4a6cafc9dc18f7b73f3b48dc5c849b6f85c-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.7.0@0a7cd4a6",
+    "dependency": "microsoft-electron-v44.7.0-0a7cd4a6cafc9dc18f7b73f3b48dc5c849b6f85c-mac",
     "platform": "macOS"
   },
   {
@@ -270655,6 +270823,34 @@
     "platform": null
   },
   {
+    "name": "cirrus-otel-collector/0.162.1/linux-amd64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.162.1/linux-amd64/github.com_hashicorp_golang-lru_v2_v1.0.2.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.162.1/linux-arm64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.162.1/linux-arm64/github.com_hashicorp_golang-lru_v2_v1.0.2.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.162.1",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v1.0.2",
+    "platform": "linux-arm64"
+  },
+  {
     "name": "com.ibm.wala.util/1.5.7/1.5.7.zip",
     "product": "com.ibm.wala.util",
     "release": "1.5.7",
@@ -274802,6 +274998,174 @@
     "name": "opentelemetry-collector-internal/0.162.1/linux-arm64/github.com_hashicorp_serf_coordinate_v0.10.4.zip",
     "product": "opentelemetry-collector-internal",
     "release": "0.162.1",
+    "dependency": "github.com_hashicorp_serf_coordinate_v0.10.4",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-amd64/github.com_hashicorp_consul_api_v1.33.7.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_consul_api_v1.33.7",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-amd64/github.com_hashicorp_errwrap_v1.1.0.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_errwrap_v1.1.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-amd64/github.com_hashicorp_go-cleanhttp_v0.5.2.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_go-cleanhttp_v0.5.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-amd64/github.com_hashicorp_go-immutable-radix_v1.3.1.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_go-immutable-radix_v1.3.1",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-amd64/github.com_hashicorp_go-multierror_v1.1.1.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_go-multierror_v1.1.1",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-amd64/github.com_hashicorp_go-retryablehttp_v0.7.8.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_go-retryablehttp_v0.7.8",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-amd64/github.com_hashicorp_go-rootcerts_v1.0.2.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_go-rootcerts_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-amd64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-amd64/github.com_hashicorp_golang-lru_simplelru_v1.0.2.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_golang-lru_simplelru_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-amd64/github.com_hashicorp_golang-lru_v2_v1.0.2.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-amd64/github.com_hashicorp_nomad_api_v0.0.0-20260724112153-37c73b2918bd.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_nomad_api_v0.0.0-20260724112153-37c73b2918bd",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-amd64/github.com_hashicorp_serf_coordinate_v0.10.4.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_serf_coordinate_v0.10.4",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-arm64/github.com_hashicorp_consul_api_v1.33.7.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_consul_api_v1.33.7",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-arm64/github.com_hashicorp_errwrap_v1.1.0.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_errwrap_v1.1.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-arm64/github.com_hashicorp_go-cleanhttp_v0.5.2.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_go-cleanhttp_v0.5.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-arm64/github.com_hashicorp_go-immutable-radix_v1.3.1.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_go-immutable-radix_v1.3.1",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-arm64/github.com_hashicorp_go-multierror_v1.1.1.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_go-multierror_v1.1.1",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-arm64/github.com_hashicorp_go-retryablehttp_v0.7.8.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_go-retryablehttp_v0.7.8",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-arm64/github.com_hashicorp_go-rootcerts_v1.0.2.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_go-rootcerts_v1.0.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-arm64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-arm64/github.com_hashicorp_golang-lru_simplelru_v1.0.2.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_golang-lru_simplelru_v1.0.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-arm64/github.com_hashicorp_golang-lru_v2_v1.0.2.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v1.0.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-arm64/github.com_hashicorp_nomad_api_v0.0.0-20260724112153-37c73b2918bd.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
+    "dependency": "github.com_hashicorp_nomad_api_v0.0.0-20260724112153-37c73b2918bd",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.162.2/linux-arm64/github.com_hashicorp_serf_coordinate_v0.10.4.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.162.2",
     "dependency": "github.com_hashicorp_serf_coordinate_v0.10.4",
     "platform": "linux-arm64"
   },

@@ -19,16 +19,8 @@ namespace features {
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kAddressBarReadonly);
 COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsAddressBarReadonlyFeatureAllowed();
 
-// Gates the coordinated Copilot icon refresh. When disabled (the default),
-// every Copilot-icon surface renders the current icon. When enabled, each
-// surface swaps in the new icon variant in place (same slot, same size). This
-// single flag is the source of truth consumed by all native call sites and is
-// plumbed to the settings WebUI via loadTimeData (isCIconRefreshEnabled). It
-// lives in the ui/base layer so both chrome/browser surfaces and lower
-// components layers (e.g. components/omnibox) can consume the one flag.
+// Tracks the rollout of the refreshed Copilot icon.
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kEdgeCIconRefresh);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-bool IsCIconRefreshEnabled(bool trigger_usage = false);
 
 // If enabled, link preview will be generated when link is copied from within
 // the page.
@@ -420,18 +412,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsVisualRejuvMicaInShorelineEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsVisualRejuvMicaEnabledInCentralContainer();
-
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kMacFrostedGlassVisualEffect);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kMacFrostedGlassVisualEffectTrigger);
-// if enabled, frosted glass visual effect will be shown in Edge Mac Window.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsMacFrostedGlassVisualEffectEnabled();
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern int GetMacFrostedGlassVisualEffectBackgroundAlpha();
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern int GetMacFrostedGlassVisualEffectTabAlpha();
 
 // If enabled, the ring 0 icons will look minimal and more compact.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
