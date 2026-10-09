@@ -19964,6 +19964,90 @@
     "platform": null
   },
   {
+    "name": "Certificate Management extension/1.2.1/github.com_hashicorp_errwrap@v1.1.0.zip",
+    "product": "Certificate Management extension",
+    "release": "1.2.1",
+    "dependency": "github.com_hashicorp_errwrap@v1.1.0",
+    "platform": null
+  },
+  {
+    "name": "Certificate Management extension/1.2.1/github.com_hashicorp_go-cleanhttp@v0.5.2.zip",
+    "product": "Certificate Management extension",
+    "release": "1.2.1",
+    "dependency": "github.com_hashicorp_go-cleanhttp@v0.5.2",
+    "platform": null
+  },
+  {
+    "name": "Certificate Management extension/1.2.1/github.com_hashicorp_go-multierror@v1.1.1.zip",
+    "product": "Certificate Management extension",
+    "release": "1.2.1",
+    "dependency": "github.com_hashicorp_go-multierror@v1.1.1",
+    "platform": null
+  },
+  {
+    "name": "Certificate Management extension/1.2.1/github.com_hashicorp_go-retryablehttp@v0.7.8.zip",
+    "product": "Certificate Management extension",
+    "release": "1.2.1",
+    "dependency": "github.com_hashicorp_go-retryablehttp@v0.7.8",
+    "platform": null
+  },
+  {
+    "name": "Certificate Management extension/1.2.1/github.com_hashicorp_go-rootcerts@v1.0.2.zip",
+    "product": "Certificate Management extension",
+    "release": "1.2.1",
+    "dependency": "github.com_hashicorp_go-rootcerts@v1.0.2",
+    "platform": null
+  },
+  {
+    "name": "Certificate Management extension/1.2.1/github.com_hashicorp_go-secure-stdlib_cryptoutil@v0.1.1.zip",
+    "product": "Certificate Management extension",
+    "release": "1.2.1",
+    "dependency": "github.com_hashicorp_go-secure-stdlib_cryptoutil@v0.1.1",
+    "platform": null
+  },
+  {
+    "name": "Certificate Management extension/1.2.1/github.com_hashicorp_go-secure-stdlib_parseutil@v0.2.0.zip",
+    "product": "Certificate Management extension",
+    "release": "1.2.1",
+    "dependency": "github.com_hashicorp_go-secure-stdlib_parseutil@v0.2.0",
+    "platform": null
+  },
+  {
+    "name": "Certificate Management extension/1.2.1/github.com_hashicorp_go-secure-stdlib_strutil@v0.1.2.zip",
+    "product": "Certificate Management extension",
+    "release": "1.2.1",
+    "dependency": "github.com_hashicorp_go-secure-stdlib_strutil@v0.1.2",
+    "platform": null
+  },
+  {
+    "name": "Certificate Management extension/1.2.1/github.com_hashicorp_go-sockaddr@v1.0.7.zip",
+    "product": "Certificate Management extension",
+    "release": "1.2.1",
+    "dependency": "github.com_hashicorp_go-sockaddr@v1.0.7",
+    "platform": null
+  },
+  {
+    "name": "Certificate Management extension/1.2.1/github.com_hashicorp_hcl@v1.0.1-vault-7.zip",
+    "product": "Certificate Management extension",
+    "release": "1.2.1",
+    "dependency": "github.com_hashicorp_hcl@v1.0.1-vault-7",
+    "platform": null
+  },
+  {
+    "name": "Certificate Management extension/1.2.1/github.com_hashicorp_vault_api@v1.23.0.zip",
+    "product": "Certificate Management extension",
+    "release": "1.2.1",
+    "dependency": "github.com_hashicorp_vault_api@v1.23.0",
+    "platform": null
+  },
+  {
+    "name": "Certificate Management extension/1.2.1/github.com_hashicorp_vault_sdk@v0.25.1.zip",
+    "product": "Certificate Management extension",
+    "release": "1.2.1",
+    "dependency": "github.com_hashicorp_vault_sdk@v0.25.1",
+    "platform": null
+  },
+  {
     "name": "ChakraCore/1.11.1/gcc-5_5.4.0-6ubuntu1~16.04.4.zip",
     "product": "ChakraCore",
     "release": "1.11.1",
@@ -145094,6 +145178,20 @@
     "release": "157.0.4327.0-NA",
     "dependency": "chromium",
     "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4327.0-canary/Android arm/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4327.0-canary",
+    "dependency": "chromium",
+    "platform": "Android arm"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4327.0-canary/Android arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4327.0-canary",
+    "dependency": "chromium",
+    "platform": "Android arm64"
   },
   {
     "name": "Microsoft Edge/74.1.96.24/Windows x64/chromium.zip",
