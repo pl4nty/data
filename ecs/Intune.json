@@ -911,6 +911,7 @@
     "SVC_RACerts": {
         "FlightingV2": {
             "BYPASS-DisallowingUnknownExtensions": false,
+            "ClearAsyncRequestStateChangeTracking": false,
             "CloudPKILeafCertificateReportingv2": true,
             "DeviceActionCertRevocationMessage": true,
             "DigiCert_SMIME": true,

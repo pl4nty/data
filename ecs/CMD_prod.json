@@ -1171,6 +1171,7 @@
         "EnableDriverHotQueryTest": true,
         "EnableFIREAlerting": true,
         "EnableNewDeviceReadiness": true,
+        "EnableNonDssBatchAccountMove": true,
         "EnableOnByDefault": true,
         "EnableOnByDefaultReportingBanner": true,
         "EnableOnboardedTestTenants": true,
