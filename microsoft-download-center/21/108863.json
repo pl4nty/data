@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Segoe Fluent Icons font for Windows 11",
+    "downloadDescription": "Segoe Fluent Icons font for Windows 11.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Segoe-Fluent-Icons.zip",
+            "url": "https://download.microsoft.com/download/e67899fc-9e91-433c-91c6-876b3b98d787/Segoe-Fluent-Icons.zip",
+            "size": "212313",
+            "version": "1.56",
+            "datePublished": "10/9/2026 8:00:13 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Segoe Fluent Icons font for Windows 11.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.56",
+    "detailsSection_file_name": [
+        "Segoe-Fluent-Icons.zip"
+    ],
+    "detailsSection_file_size": [
+        "207.3 KB"
+    ],
+    "detailsSection_file_date": "10/9/2026",
+    "systemRequirementsSection": "Windows 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Open Settings \u2192 Personalization \u2192 Fonts.\nDrag the font file into the Add fonts area.\nWindows installs the font automatically.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108863",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
