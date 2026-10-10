@@ -143906,6 +143906,27 @@
     "platform": "Windows x86"
   },
   {
+    "name": "Microsoft Edge/155.0.4283.48-NA/iOS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "155.0.4283.48-NA",
+    "dependency": "chromium",
+    "platform": "iOS arm64"
+  },
+  {
+    "name": "Microsoft Edge/155.0.4283.48-Stable/Android arm/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "155.0.4283.48-Stable",
+    "dependency": "chromium",
+    "platform": "Android arm"
+  },
+  {
+    "name": "Microsoft Edge/155.0.4283.48-Stable/Android arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "155.0.4283.48-Stable",
+    "dependency": "chromium",
+    "platform": "Android arm64"
+  },
+  {
     "name": "Microsoft Edge/156.0.4284.0-NA/Linux x64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "156.0.4284.0-NA",
@@ -190649,6 +190670,27 @@
     "product": "Microsoft Electron",
     "release": "42.11.10@99fa62c7",
     "dependency": "microsoft-electron-v42.11.10-99fa62c7f337efe7b08483f7a153d04c459cfd60-mac",
+    "platform": "macOS"
+  },
+  {
+    "name": "Microsoft Electron/42.11.12@384bfb59/Linux/microsoft-electron-v42.11.12-384bfb599e6fd69b4867ac45f0054ef347540e8f-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "42.11.12@384bfb59",
+    "dependency": "microsoft-electron-v42.11.12-384bfb599e6fd69b4867ac45f0054ef347540e8f-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/42.11.12@384bfb59/Windows/microsoft-electron-v42.11.12-384bfb599e6fd69b4867ac45f0054ef347540e8f-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "42.11.12@384bfb59",
+    "dependency": "microsoft-electron-v42.11.12-384bfb599e6fd69b4867ac45f0054ef347540e8f-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/42.11.12@384bfb59/macOS/microsoft-electron-v42.11.12-384bfb599e6fd69b4867ac45f0054ef347540e8f-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "42.11.12@384bfb59",
+    "dependency": "microsoft-electron-v42.11.12-384bfb599e6fd69b4867ac45f0054ef347540e8f-mac",
     "platform": "macOS"
   },
   {
