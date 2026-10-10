@@ -145362,6 +145362,20 @@
     "platform": "Windows x86"
   },
   {
+    "name": "Microsoft Edge/157.0.4329.0-canary/Android arm/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4329.0-canary",
+    "dependency": "chromium",
+    "platform": "Android arm"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4329.0-canary/Android arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4329.0-canary",
+    "dependency": "chromium",
+    "platform": "Android arm64"
+  },
+  {
     "name": "Microsoft Edge/74.1.96.24/Windows x64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "74.1.96.24",
