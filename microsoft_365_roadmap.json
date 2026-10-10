@@ -1,5 +1,506 @@
 [
     {
+        "created": "2026-10-09T22:04:35",
+        "description": "<p>Public APIs for the Import tasks capability enable customers and partners to programmatically import tasks from one project into another. Organizations can call these APIs from custom applications, integrations, or automated workflows instead of requiring a user to initiate each import manually.</p>\n<p>The APIs support repeatable project-creation and planning scenarios, such as populating new projects with tasks from templates or previously completed projects. Customers can incorporate task imports into their existing project provisioning and automation processes.</p>",
+        "id": 574365,
+        "locale": null,
+        "modified": "2026-10-09T22:04:35",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Rolling out",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Import task - Public API support"
+    },
+    {
+        "created": "2026-10-09T22:04:35",
+        "description": "<p>AI-powered Data Enrichment now lets admins choose which data sources the agent uses to enrich records. Outlook emails, Teams meetings, and the new CRM notes source each have their own control toggle, and the agent keeps running as long as at least one source is toggled on. Admins no longer need to connect every permission before they create the agent. With CRM notes, the agent extracts insights from manual notes added to supported records and uses them to enrich those records, with no tenant admin consent needed to use CRM notes. Only notes added by users with a Dynamics 365 Sales Premium license are used, and Dataverse search is needed only for emails and Teams meetings, since notes are already linked to their records.</p>\n<p>These control toggles are available automatically. Admins can turn each source on or off in the Agent behavior section of the Data Enrichment settings. Outlook emails and Teams meetings stay off until their permissions are connected, and connecting a permission never turns a source on by itself. For organizations already using the agent, CRM notes is off by default and a banner lets admins know it's available. For new organizations, CRM notes is on by default.</p>",
+        "id": 574364,
+        "locale": null,
+        "modified": "2026-10-09T22:04:35",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Rolling out",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Sales"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Sales"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Sales: Choose the data sources AI-powered Data Enrichment uses, including CRM notes"
+    },
+    {
+        "created": "2026-10-09T22:04:35",
+        "description": "<p>We are refreshing the way we organize the Analytics &amp; Reports area in the Pro Management portal to make it more user-friendly.</p>",
+        "id": 574362,
+        "locale": null,
+        "modified": "2026-10-09T22:04:35",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Pro Management portal Analytics & Reports Design Refresh"
+    },
+    {
+        "created": "2026-10-09T22:04:35",
+        "description": "<p>Business Performance Planning introduce Virtualization to optimizes how the Matrix visual renders large planning datasets. Rather than loading and displaying the entire dataset at once, the visual progressively renders the rows and columns needed as users scroll, expand, collapse, and navigate through the Matrix. This reduces the amount of data processed by the browser at any one time and helps maintain visual responsiveness at scale.</p>",
+        "id": 574119,
+        "locale": null,
+        "modified": "2026-10-09T22:04:35",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Improved Matrix visual performance for large table"
+    },
+    {
+        "created": "2026-10-09T22:04:35",
+        "description": "<p>Connect with more attendees than ever before with Teams Events, now supporting up to 20,000 registrations for organizers with valid Attendee packs.</p>",
+        "id": 574110,
+        "locale": null,
+        "modified": "2026-10-09T22:04:35",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Events now support up to 20,000 registrations, making it easier to reach and engage larger audiences at scale"
+    },
+    {
+        "created": "2026-10-09T22:04:35",
+        "description": "<p>Organizations often use business-specific data and criteria to determine when suppliers require follow-up on purchase orders. The Procurement Agent will enable buyers to extend supplier follow-up criteria using related standard, extended, and custom table data. Buyers can add table joins and use fields from those tables as filter conditions, providing greater flexibility to determine which purchase order lines qualify for supplier follow-up based on their organization\u2019s processes and data.</p>",
+        "id": 573704,
+        "locale": null,
+        "modified": "2026-10-09T22:04:35",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Supply Chain Management"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Supply Chain Management"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Supply Chain Management: Procurement Agent - Customize the Procurement Agent supplier follow-up criteria"
+    },
+    {
+        "created": "2026-10-09T22:04:35",
+        "description": "<p>Users can now schedule appointments and meetings directly from chat. Simply ask Copilot to create an appointment or schedule a meeting with colleagues, and it will find available times, book rooms, draft agendas, and send invites\u2014all within the chat experience.</p>",
+        "id": 573220,
+        "locale": null,
+        "modified": "2026-10-09T22:04:35",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Scheduling with Copilot"
+    },
+    {
+        "created": "2026-10-09T22:04:35",
+        "description": "<p>Copilot Studio now connects to Microsoft's shared plugin registry, making it easier for makers to discover and use plugins, connectors, and other available capabilities. This integration provides a more consistent way to extend agents with capabilities across Microsoft's AI ecosystem.</p>",
+        "id": 570669,
+        "locale": null,
+        "modified": "2026-10-09T22:04:35",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Discover and use shared plugins in Copilot Studio"
+    },
+    {
+        "created": "2026-10-09T22:04:35",
+        "description": "<p>Users can more easily work with SharePoint files in Outlook by saving email attachments directly to SharePoint and searching across SharePoint sites for files from the file picker.</p>",
+        "id": 570442,
+        "locale": null,
+        "modified": "2026-10-09T22:04:35",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Improved SharePoint file experience in file picker in Outlook mobile apps"
+    },
+    {
         "created": "2026-10-08T23:04:12",
         "description": "<p>The first updates will focus on visual details, such as icons, spacing and alignment. Users of classic Outlook for Windows will begin seeing refinements to familiar mail and calendar surfaces. The initial visual updates are intended to improve clarity and consistency without changing how users perform their tasks.</p>",
         "id": 574115,
@@ -53,15 +554,24 @@
         "description": "<p>When a Teams Rooms on Android device acts as an organizer, co-organizer, or presenter in a structured meeting or webinar, you have access to the private chat for event management known as the Event Group. You can also switch to a separate chat with attendees, enabling smooth event experiences for all. Available in Teams Rooms Pro-licensed rooms.</p>",
         "id": 574107,
         "locale": null,
-        "modified": "2026-10-08T23:04:12",
+        "modified": "2026-10-09T22:04:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "October CY2026",
+        "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Android"
@@ -71,15 +581,21 @@
             },
             {
                 "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -95,9 +611,6 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -261,7 +774,7 @@
         "description": "<p>Event group chat, the private chat for organizers, co-organizers, and presenters in an event or structured meeting, will support external presenters.</p>",
         "id": 573706,
         "locale": null,
-        "modified": "2026-10-08T23:04:12",
+        "modified": "2026-10-09T22:04:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -288,6 +801,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -318,6 +834,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -591,7 +1110,7 @@
         "description": "<p>For an event that needs registration, send email invites to the selected people and groups who will be invited to register to the event</p>",
         "id": 573250,
         "locale": null,
-        "modified": "2026-10-08T23:04:12",
+        "modified": "2026-10-09T22:04:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -602,6 +1121,15 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
                 "tagName": "Web"
             },
             {
@@ -609,12 +1137,24 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -630,6 +1170,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -13281,12 +13824,12 @@
         "description": "<p>Microsoft Teams will provide additional protection for QR codes shared by external users in messages. Images containing QR codes from external senders will be obscured by default and require users to reveal them before viewing or scanning. This helps reduce the risk of phishing and fraud by encouraging more deliberate interaction with QR code content.</p>",
         "id": 570439,
         "locale": null,
-        "modified": "2026-09-04T22:03:41",
+        "modified": "2026-10-09T22:04:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -13433,12 +13976,12 @@
         "description": "<p>Teams administrators will be able to use a meeting policy to control whether profane words are masked in live transcription and saved meeting transcripts. Filtering remains on by default. When an organizer is assigned a policy that turns filtering off, profane words can appear without masking in both the live and saved transcript, while live captions continue to follow each participant's existing profanity setting.</p>",
         "id": 570467,
         "locale": null,
-        "modified": "2026-09-03T22:50:06",
+        "modified": "2026-10-09T22:04:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -14791,15 +15334,15 @@
     },
     {
         "created": "2026-08-26T22:50:58",
-        "description": "Configure the connectors your agent needs, with a simple in-chat sign-in instead of a full settings experience.",
+        "description": "<p>Configure the connectors your agent needs, with a simple in-chat sign-in instead of a full settings experience.</p>",
         "id": 569930,
         "locale": null,
-        "modified": "2026-08-26T22:50:58",
+        "modified": "2026-10-09T22:04:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -32461,15 +33004,15 @@
     },
     {
         "created": "2026-05-13T23:00:44",
-        "description": "You can release your secure print jobs by scanning a QR code at any printer and access your print workflows from a browser on any device, all signed in with your Microsoft 365 account.",
+        "description": "<p>You can release your secure print jobs by scanning a QR code at any printer and access your print workflows from a browser on any device, all signed in with your Microsoft 365 account.</p>",
         "id": 561922,
         "locale": null,
-        "modified": "2026-08-24T22:41:12",
+        "modified": "2026-10-09T22:04:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -33284,15 +33827,15 @@
     },
     {
         "created": "2026-05-11T23:15:11",
-        "description": "Users will be able access an AI generated audio summary of SharePoint News posts in the SharePoint app for Teams (Viva Connections).",
+        "description": "<p>Users will be able access an AI generated audio summary of SharePoint News posts in the SharePoint app for Teams (Viva Connections).</p>",
         "id": 562018,
         "locale": null,
-        "modified": "2026-08-26T22:50:58",
+        "modified": "2026-10-09T22:04:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -37846,12 +38389,12 @@
     },
     {
         "created": "2026-04-21T23:00:01",
-        "description": "Site owners have a critical role to play in ensuring accuracy of site information, including the site's necessity, its owners, members, permissions, and sharing settings. We\u2019re introducing the Governance Reviews Dashboard in Private Preview, a centralized view where site owners can see all pending site governance reviews (inactivity, ownership, attestation) across the sites they own.\nThe dashboard shows required actions, due timelines, and site enforcement status and allows site owners to take action directly from one place. Combined with consolidated policy notifications, it replaces multiple emails with a single, actionable governance surface. ",
+        "description": "<p>Site owners have a critical role to play in ensuring accuracy of site information, including the site's necessity, its owners, members, permissions, and sharing settings. We\u2019re introducing the Governance Reviews Dashboard in Private Preview, a centralized view where site owners can see all pending site governance reviews (inactivity, ownership, attestation) across the sites they own.<br>\nThe dashboard shows required actions, due timelines, and site enforcement status and allows site owners to take action directly from one place. Combined with consolidated policy notifications, it replaces multiple emails with a single, actionable governance surface.</p>",
         "id": 560541,
         "locale": null,
-        "modified": "2026-04-21T23:00:01",
+        "modified": "2026-10-09T22:04:35",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -56761,15 +57304,15 @@
     },
     {
         "created": "2026-01-28T00:00:53",
-        "description": "When users insert content in a prompt using 'Add Work Content' under the Plus menu, the content will only appear as a pill in the Input Box UI and will not be repeated as part of the user's prompt. This helps to simplify the Input Box and reserve it for prompt creation. Updated April 22, 2026: We are moving this item back to In Development and will be relaunching after further updates. We apologize for any inconvenience. ",
+        "description": "<p>When users insert content in a prompt using 'Add Work Content' under the Plus menu, the content will only appear as a pill in the Input Box UI and will not be repeated as part of the user's prompt. This helps to simplify the Input Box and reserve it for prompt creation. Updated April 22, 2026: We are moving this item back to In Development and will be relaunching after further updates. We apologize for any inconvenience.</p>",
         "id": 552592,
         "locale": null,
-        "modified": "2026-06-03T23:00:57",
+        "modified": "2026-10-09T22:04:35",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -62924,12 +63467,12 @@
     },
     {
         "created": "2025-12-05T23:45:06",
-        "description": "A modern experience for the New Tab Page (NTP) on Microsoft Edge for Business.",
+        "description": "<p>A modern experience for the New Tab Page (NTP) on Microsoft Edge for Business.</p>",
         "id": 536577,
         "locale": null,
-        "modified": "2026-07-02T23:12:48",
+        "modified": "2026-10-09T22:04:35",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -80621,12 +81164,12 @@
     },
     {
         "created": "2025-09-18T16:15:27",
-        "description": "Agents in Viva Engage communities supports communities by answering questions, facilitating knowledge sharing, citing sources, and scaling expertise.",
+        "description": "<p>Community Agent helps members get answers to questions in Viva Engage communities using community knowledge and connected sources. Community admins can choose to require human review before answers are posted or allow automatic posting.</p>",
         "id": 499898,
         "locale": null,
-        "modified": "2026-07-21T22:37:32",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "modified": "2026-10-09T22:04:35",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/viva/engage/community-agent",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -80672,7 +81215,7 @@
                 }
             ]
         },
-        "title": "Microsoft Copilot (Microsoft 365): Viva Engage - Agents in communities"
+        "title": "Microsoft Copilot (Microsoft 365): Viva Engage - Community Agent"
     },
     {
         "created": "2025-09-17T23:00:20",
@@ -113021,9 +113564,9 @@
         "description": "<div>Optical character recognition (OCR) support will detect sensitive content in images and subsequently apply data loss prevention (DLP) policies to prevent exfiltration of that sensitive data on your Windows endpoint devices. This release supports key file types like JPG, JPEG, PNG, TIFF, BMP and PDF (image only PDF). </div>",
         "id": 160008,
         "locale": null,
-        "modified": "2026-07-13T23:07:14",
+        "modified": "2026-10-09T22:04:35",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
