@@ -4842,7 +4842,6 @@
     },
     "TeamsNotificationFilteringService": {
         "ECSAuthForEDL": true,
-        "ECSAuthForSeal": true,
         "enableRemindersNotifications": true,
         "enableTenantDataMigration": true
     },
