@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.20515.40129-->
+    <!--Build: 16.0.20522.40132-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -78,7 +78,7 @@
       <o:url>https://onedrive.live.com</o:url>
     </o:service>
     <o:service o:name="OneDriveLogUploadService" o:authentication="2">
-      <o:url>https://storage.live.com/clientlogs/uploadlocation</o:url>
+      <o:url>https://soak3.test.storage.live.com/clientlogs/uploadlocation</o:url>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="ssl.live.com" o:headerValue="Passport1.4 from-PP='{}&amp;p='"/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://onedrive.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
@@ -442,19 +442,19 @@
       <o:url>https://apis.live.net/v5.0/</o:url>
     </o:service>
     <o:service o:name="FontService">
-      <o:url>https://fs.microsoft.com/fs/1.3</o:url>
+      <o:url>https://fs-edog.microsoft.com/fs/1.3</o:url>
     </o:service>
     <o:service o:name="FontService2">
-      <o:url>https://fs.microsoft.com/fs/2.2</o:url>
+      <o:url>https://fs-edog.microsoft.com/fs/2.2</o:url>
     </o:service>
     <o:service o:name="FontService1cdnEndpoint">
       <o:url>https://res.public.onecdn.static.microsoft/mro1cdnstorage/fonts/prod/4.42</o:url>
     </o:service>
     <o:service o:name="ResourceServiceEndpoint2">
-      <o:url>https://fs.microsoft.com/fs/2.2</o:url>
+      <o:url>https://fs-edog.microsoft.com/fs/2.2</o:url>
     </o:service>
     <o:service o:name="ResourceServiceiOS2">
-      <o:url>https://fs.microsoft.com/fs/iOS/2.8</o:url>
+      <o:url>https://fs-edog.microsoft.com/fs/iOS/2.8</o:url>
     </o:service>
     <o:service o:name="ResourcesOnDemandEndpoint">
       <o:url>https://officecdn.microsoft.com/pr/uiraas/ios/</o:url>
@@ -463,7 +463,7 @@
       <o:url>https://fs.microsoft.com/fs/lexicons/2.7</o:url>
     </o:service>
     <o:service o:name="ProofingDownloadService1CDN">
-      <o:url>https://res.public.onecdn.static.microsoft/mro1cdnstorage/proofing-android/prod/2.7</o:url>
+      <o:url>https://res.public.onecdn.static.microsoft/mro1cdnstorage/proofing-android/edog/2.7</o:url>
     </o:service>
     <o:service o:name="ProtectionSDKEndpoint">
       <o:url>https://api.aadrm.com</o:url>
@@ -475,7 +475,7 @@
       <o:url>https://mobile.events.data.microsoft.com/OneCollector/1.0/</o:url>
     </o:service>
     <o:service o:name="OArtResourceServiceEndpoint">
-      <o:url>https://fs.microsoft.com/fs/oart/1.5</o:url>
+      <o:url>https://fs-edog.microsoft.com/fs/oart/1.5</o:url>
     </o:service>
     <o:service o:name="OArtInkEffectHubbleCDN">
       <o:url>https://res.public.onecdn.static.microsoft/m365content/publish</o:url>
@@ -484,10 +484,10 @@
       <o:url>https://cr.office.com</o:url>
     </o:service>
     <o:service o:name="ExcelResourceServiceEndpoint">
-      <o:url>https://fs.microsoft.com/fs/ExcelResources/1.2</o:url>
+      <o:url>https://fs-edog.microsoft.com/fs/ExcelResources/1.2</o:url>
     </o:service>
     <o:service o:name="ExcelRichValueIcons">
-      <o:url>https://fs.microsoft.com/fs/RichValueIcons/3.29</o:url>
+      <o:url>https://fs-edog.microsoft.com/fs/RichValueIcons/3.29</o:url>
     </o:service>
     <o:service o:name="ExcelRichValueIconsOneCdn">
       <o:url>https://res.public.onecdn.static.microsoft/mro1cdnstorage/excel-rich-value-icon/prod/3.29/</o:url>
