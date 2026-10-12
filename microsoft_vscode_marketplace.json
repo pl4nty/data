@@ -370,6 +370,13 @@
             }
         },
         "JJHO.MicrosoftVisualStudioInternationalPack10SR1": true,
+        "JMH-Design.decipher": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Lumen \u2014 Plain-Language Agent Explainer",
+                "id": "JMH-Design.lumen-explainer"
+            }
+        },
         "JuliaComputing.juliasim-studio": {
             "disallowInstall": true,
             "extension": {
@@ -411,6 +418,13 @@
             "extension": {
                 "displayName": "ICE - Integrated Conversational Environment",
                 "id": "LeaForest.integrated-conversational-environment"
+            }
+        },
+        "LitiaEeloo.zls": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Zydeco (Cajun)",
+                "id": "LitiaEeloo.cajun-zydeco-language-server"
             }
         },
         "LuqueDaniel.languague-renpy": {
@@ -492,6 +506,10 @@
         "NilsSoderman.quickprint": true,
         "NilsSoderman.sitemap-generator": true,
         "OfficeDeveloperTeam.MicrosoftOffice365APIToolsforVisualStudio2013": true,
+        "Oracle.mysql-shell-for-vs-code": {
+            "additionalInfo": "This extension is now available as a standalone application: [MySQL Workbench](https://dev.mysql.com/downloads/workbench/).",
+            "disallowInstall": true
+        },
         "Oracle.oracledevtools": {
             "disallowInstall": false,
             "extension": {
@@ -675,6 +693,13 @@
             "extension": {
                 "displayName": "Foundry Training Workbench",
                 "id": "ms-windows-ai-studio.vscode-foundry-training"
+            }
+        },
+        "Thomka.wynnscript": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Wynnscript",
+                "id": "Wynncraft.wynnscript-lang"
             }
         },
         "Togusa09.tmlanguage": {
@@ -1655,6 +1680,7 @@
         },
         "jroesch.lean": true,
         "jsiwhitehead.vscode-maraca": true,
+        "jsjlewis96.one-dark-pro-italic-vivid": true,
         "juanm04.rinfo-unlp": {
             "disallowInstall": true,
             "extension": {
@@ -2068,6 +2094,13 @@
                 "id": "stkb.rewrap"
             }
         },
+        "ng-galien.plpgsql-debugger": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "PostgreSQL Workbench",
+                "id": "ng-galien.postgresql-workbench"
+            }
+        },
         "nguyenhoainam121n.turbo-console-writeLine-for-c-sharp": {
             "disallowInstall": true,
             "extension": {
@@ -2105,6 +2138,7 @@
                 "id": "ninoseki.vscode-mogami"
             }
         },
+        "niudai.vscode-zhihu": true,
         "nobuhito.printcode": {
             "disallowInstall": false,
             "extension": {
@@ -2117,6 +2151,13 @@
             "extension": {
                 "displayName": "Noir Language Support",
                 "id": "noir-lang.vscode-noir"
+            }
+        },
+        "numaru.vscode-ceedling-test-adapter": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Ceedling",
+                "id": "throw-the-switch.vscode-ceedling"
             }
         },
         "nyncral.dwm-git-simpleuse": {
