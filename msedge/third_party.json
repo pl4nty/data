@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2150520,
-    "file_count": 187
+    "size": 2165795,
+    "file_count": 188
   },
   {
     "name": "android_build_tools",
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 17017844,
+    "size": 17018013,
     "file_count": 851
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 34223865,
-    "file_count": 4103
+    "size": 34245840,
+    "file_count": 4104
   },
   {
     "name": "boringssl",
@@ -101,7 +101,7 @@
   },
   {
     "name": "chromium-bidi",
-    "size": 35806,
+    "size": 37044,
     "file_count": 5
   },
   {
@@ -206,8 +206,8 @@
   },
   {
     "name": "eigen3",
-    "size": 22087067,
-    "file_count": 2336
+    "size": 22204369,
+    "file_count": 2341
   },
   {
     "name": "entity_extraction",
@@ -276,8 +276,8 @@
   },
   {
     "name": "glslang",
-    "size": 46226346,
-    "file_count": 3708
+    "size": 46313259,
+    "file_count": 3734
   },
   {
     "name": "googletest",
@@ -336,7 +336,7 @@
   },
   {
     "name": "icu",
-    "size": 162929682,
+    "size": 162938710,
     "file_count": 7202
   },
   {
@@ -391,8 +391,8 @@
   },
   {
     "name": "kotlinc",
-    "size": 318011,
-    "file_count": 53
+    "size": 321660,
+    "file_count": 52
   },
   {
     "name": "lens_server_proto",
@@ -411,7 +411,7 @@
   },
   {
     "name": "libc++abi",
-    "size": 31041,
+    "size": 31624,
     "file_count": 7
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19143659,
+    "size": 19149803,
     "file_count": 19
   },
   {
@@ -571,8 +571,8 @@
   },
   {
     "name": "oak",
-    "size": 289954,
-    "file_count": 148
+    "size": 294304,
+    "file_count": 151
   },
   {
     "name": "omnibox_proto",
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4780529,
+    "size": 4782347,
     "file_count": 641
   },
   {
@@ -676,8 +676,8 @@
   },
   {
     "name": "rust",
-    "size": 3030029,
-    "file_count": 381
+    "size": 3087268,
+    "file_count": 405
   },
   {
     "name": "rust-toolchain",
@@ -776,7 +776,7 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 1695061,
+    "size": 1700547,
     "file_count": 28
   },
   {
@@ -801,12 +801,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2813138,
+    "size": 2813565,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7876770,
+    "size": 7814501,
     "file_count": 206
   },
   {
@@ -818,6 +818,11 @@
     "name": "wayland-protocols",
     "size": 264234,
     "file_count": 65
+  },
+  {
+    "name": "webdriver",
+    "size": 409521,
+    "file_count": 19
   },
   {
     "name": "webgl",

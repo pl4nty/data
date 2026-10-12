@@ -68,6 +68,13 @@ COMPONENT_EXPORT(NETWORK_CPP) BASE_DECLARE_FEATURE(kCombineResponseBody);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kCorsPreflightCacheKeyTaintedOrigin);
 
+// When enabled, disallows treating 'Intervention' as a CORS-safelisted header
+// in network/CORS checks (aligning with WHATWG Fetch) and stops attaching the
+// outgoing 'Intervention' HTTP request header to document.write intervention
+// fetches in Blink.
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kDisallowInterventionInCorsSafelistedHeaders);
+
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kOmitCorsClientCert);
 

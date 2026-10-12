@@ -35,7 +35,7 @@ template("edge_overlay_config_win_runtime_library") {
   config(target_name) {
     forward_variables_from(invoker, "*", [])
 
-    defines += [ "__WRL_DISABLE_STATIC_INITIALIZE__" ]
+    defines += [ "__WRL_DISABLE_STATIC_INITIALIZE__=" ]
   }
 }
 
