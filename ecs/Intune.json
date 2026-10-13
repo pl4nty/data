@@ -523,6 +523,7 @@
             "EnableComplianceCalculationCache": true,
             "EnableCompliancePolicyAssignmentHelperAuthority": true,
             "EnableComplianceUpdateReportingPublisher": true,
+            "EnableDeleteStalePartners": true,
             "EnableDeviceCleanupPtiDeletion": true,
             "EnablePartnerDeviceHealthComplianceAggregator2": true,
             "EnablePtiApiRoleBackfill": true,
