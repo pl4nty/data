@@ -28,8 +28,34 @@ else
       if (mp.get_mpattribute)("Lua:OktaAgent") and ((string.find)(l_0_1, "OktaLDAPAgent.jar", 1, true) or (string.find)(l_0_1, "OktaProvisioningAgent.jar", 1, true)) then
         RegisterHvaDeviceRole("OktaAuthAgent")
       end
-      if (mp.get_mpattribute)("Lua:Linux:ProcName_java") and (string.find)(l_0_1, "-Dkc.home.dir=", 1, true) and (string.find)(l_0_1, "/keycloak/", 1, true) then
-        RegisterHvaDeviceRole("KeyCloakIAM")
+      if (mp.get_mpattribute)("Lua:Linux:ProcName_java") then
+        if (string.find)(l_0_1, "-Dkc.home.dir=", 1, true) and (string.find)(l_0_1, "/keycloak/", 1, true) then
+          RegisterHvaDeviceRole("KeyCloakIAM")
+        else
+          if (string.find)(l_0_1, "-Dsolr.solr.home", 1, true) then
+            RegisterHvaDeviceRole("ApacheSolr")
+          else
+            if (string.find)(l_0_1, "-Datlassian.", 1, true) then
+              RegisterHvaDeviceRole("AtlassianSuite")
+            else
+              if (string.find)(l_0_1, "jboss-modules.jar", 1, true) or (string.find)(l_0_1, "-Djboss.home.dir", 1, true) or (string.find)(l_0_1, "org.jboss.Main", 1, true) or (string.find)(l_0_1, "org.jboss.as.standalone", 1, true) then
+                RegisterHvaDeviceRole("JbossWildfly")
+              else
+                if (string.find)(l_0_1, "weblogic.Server", 1, true) or (string.find)(l_0_1, "-Dweblogic.Name", 1, true) or (string.find)(l_0_1, "com.oracle.classloader.weblogic", 1, true) or (string.find)(l_0_1, "-Dweblogic.RootDirectory", 1, true) then
+                  RegisterHvaDeviceRole("OracleWeblogic")
+                else
+                  if (string.find)(l_0_1, "org.apache.catalina.startup.Bootstrap", 1, true) or (string.find)(l_0_1, "-Dcatalina.home", 1, true) then
+                    RegisterHvaDeviceRole("ApacheTomcat")
+                  else
+                    if (string.find)(l_0_1, "org.eclipse.jetty.start.Main", 1, true) or (string.find)(l_0_1, "-Djetty.home", 1, true) or (string.find)(l_0_1, "-Djetty.base", 1, true) then
+                      RegisterHvaDeviceRole("EclipseJetty")
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
       end
       return mp.CLEAN
     end
