@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 34245840,
+    "size": 34254760,
     "file_count": 4104
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "name": "dawn",
-    "size": 163158636,
+    "size": 163158772,
     "file_count": 19226
   },
   {
@@ -206,7 +206,7 @@
   },
   {
     "name": "eigen3",
-    "size": 22204369,
+    "size": 22232153,
     "file_count": 2341
   },
   {
@@ -276,8 +276,8 @@
   },
   {
     "name": "glslang",
-    "size": 46313259,
-    "file_count": 3734
+    "size": 46314601,
+    "file_count": 3736
   },
   {
     "name": "googletest",
@@ -526,7 +526,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19149803,
+    "size": 19165163,
     "file_count": 19
   },
   {
@@ -576,8 +576,8 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 78298,
-    "file_count": 38
+    "size": 78605,
+    "file_count": 37
   },
   {
     "name": "oneds_sdk",
@@ -596,8 +596,8 @@
   },
   {
     "name": "openscreen",
-    "size": 1222542,
-    "file_count": 297
+    "size": 1278674,
+    "file_count": 299
   },
   {
     "name": "openxr",
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4782347,
+    "size": 4786064,
     "file_count": 641
   },
   {
@@ -676,8 +676,8 @@
   },
   {
     "name": "rust",
-    "size": 3087268,
-    "file_count": 405
+    "size": 3087387,
+    "file_count": 404
   },
   {
     "name": "rust-toolchain",
@@ -746,7 +746,7 @@
   },
   {
     "name": "test_fonts",
-    "size": 74635,
+    "size": 74616,
     "file_count": 13
   },
   {
@@ -806,7 +806,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7814501,
+    "size": 7812408,
     "file_count": 206
   },
   {

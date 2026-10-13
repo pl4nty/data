@@ -111,6 +111,10 @@ BASE_DECLARE_FEATURE(kEdgeContinuousMigrationExperience);
 // delivers a campaign or banner; it only emits triggers and UMA.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kContinuousImportTamExpansionSignalCollection);
+// Enables Chrome-usage and utility-history evaluation after the shared basic
+// targeting trigger. Keep disabled in the experiment's control arm.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kContinuousImportTamExpansionEligibilityEvaluation);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kEdgeContinuousMigrationUser);
 // Fires once basic targeting passes: Chrome is installed, policy allows CI, CI
