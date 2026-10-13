@@ -1321,6 +1321,7 @@
         "EnableVivaTopicsUserResolution": true,
         "ExcludedPropertyBagKeys": [],
         "ExperimentalFieldsForSetOfUsersInMsitEnabled": false,
+        "ExportPgsMeProfileExtensions": true,
         "ExtendedUserInfoCacheTtl": "1d",
         "ExtendedUserInfoMyselfCacheTtl": "1d",
         "FeedInsightFilterAndRankerSettings": "",

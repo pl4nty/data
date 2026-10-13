@@ -4,95 +4,6 @@
         "test": "test"
     },
     "ChillAdminCopilot": {
-        "Floodgate_Campaign_AdminPortal.277ce749-64ef-483c-940f-a3fe816dcccc": {
-            "CampaignId": "277ce749-64ef-483c-940f-a3fe816dcccc",
-            "EndTimeUtc": "2026-10-05T23:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 100,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-12-01T00:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "Copilot_Trial_Disable",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2,
-                "UxSchema": {
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Survey Prompt",
-                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "promptSubText1",
-                                    "questionLabel": "What's your main reason for turning off Copilot trials?",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Help us improve Copilot trials for your organization"
-                        },
-                        {
-                            "displayName": "MultiSelect Verbatim",
-                            "id": "7e1d47c6-99f7-4649-b16f-242f263cbc94",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "Need more admin control for managing trials (e.g. enablement, timing, revocation)",
-                                        "Rollout or pilot plan isn't finalized",
-                                        "Need to show Copilot's return on investment to leadership before enabling trials",
-                                        "Trials create administrative overhead ",
-                                        "Security or compliance concerns with unsupervised trials ",
-                                        "Organization uses a different AI solution",
-                                        "Other"
-                                    ],
-                                    "id": "multiselect1",
-                                    "questionLabel": "What's your main reason for turning off Copilot trials?",
-                                    "required": true,
-                                    "type": "MultipleChoice",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "verbatim1",
-                                    "questionLabel": "Please tell us more (optional). What would help your organization feel ready for Copilot trials?",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/277ce749-64ef-483c-940f-a3fe816dcccc/8c20a2f6-a881-464e-a2e3-bda5723fec51/Web-AdminPortal/",
-                    "variables": {}
-                }
-            }
-        },
         "Floodgate_Campaign_AdminPortal.3efd818d-0d7b-4dee-87f1-87940c7e6dd9": {
             "CampaignId": "3efd818d-0d7b-4dee-87f1-87940c7e6dd9",
             "EndTimeUtc": "2026-12-05T08:00:00Z",
@@ -2989,100 +2900,6 @@
                 }
             }
         },
-        "Floodgate_Campaign_Security&ComplianceCenter.cbe6cd2b-8b3f-43a4-82d1-9f9a378339de": {
-            "CampaignId": "cbe6cd2b-8b3f-43a4-82d1-9f9a378339de",
-            "EndTimeUtc": "2026-10-10T21:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 100,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-09-13T21:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "NewSiemSetupKickoffProcessSEQ",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 2,
-                "UxSchema": {
-                    "additionalCapabilities": {
-                        "email": {
-                            "targetPage": 0
-                        }
-                    },
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Vertical Rating with Verbatim Question",
-                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "1 - Very difficult",
-                                        "2",
-                                        "3",
-                                        "4",
-                                        "5",
-                                        "6",
-                                        "7 - Very easy"
-                                    ],
-                                    "id": "singleselect1",
-                                    "questionLabel": "How easy or difficult was it to kick off your new SIEM setup process?",
-                                    "required": true,
-                                    "type": "SingleSelect",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "comment1",
-                                    "questionLabel": "Help us understand why you chose this rating.",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        },
-                        {
-                            "displayName": "Thank You",
-                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
-                            "isFinalPage": true,
-                            "questions": [
-                                {
-                                    "id": "thankYouText1",
-                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": null
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/cbe6cd2b-8b3f-43a4-82d1-9f9a378339de/523a937a-3fce-4599-9a7d-f2e96394c67c/Web-Security&ComplianceCenter/",
-                    "variables": {}
-                }
-            }
-        },
         "Floodgate_Campaign_Security&ComplianceCenter.d72fe0e3-ce52-4216-9e92-1045609d886f": {
             "CampaignId": "d72fe0e3-ce52-4216-9e92-1045609d886f",
             "EndTimeUtc": "2027-05-30T21:00:00Z",
@@ -3378,7 +3195,7 @@
         },
         "Floodgate_Campaign_SharePoint.79808b4a-7a47-47f5-be77-2c8d304f28c6": {
             "CampaignId": "79808b4a-7a47-47f5-be77-2c8d304f28c6",
-            "EndTimeUtc": "2026-10-30T16:00:00Z",
+            "EndTimeUtc": "2026-11-30T16:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {
@@ -3522,7 +3339,7 @@
         },
         "Floodgate_Campaign_SharePoint.83384bc2-8bc8-4738-bb5e-0b05e181a988": {
             "CampaignId": "83384bc2-8bc8-4738-bb5e-0b05e181a988",
-            "EndTimeUtc": "2026-10-30T16:00:00Z",
+            "EndTimeUtc": "2026-12-07T16:00:00Z",
             "GovernedChannelType": 0,
             "NominationScheme": {
                 "CooldownPeriod": {

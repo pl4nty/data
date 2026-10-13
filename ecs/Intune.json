@@ -518,6 +518,7 @@
             "EGM_UseRedisCache": true,
             "EnableAadDeviceChangeDedup": true,
             "EnableAndroidWorkPoliciesLookupForAMAPIMigratedDevices": true,
+            "EnableBYOCPartnerCompliance": true,
             "EnableCleanUp": true,
             "EnableComplianceCalculationCache": true,
             "EnableCompliancePolicyAssignmentHelperAuthority": true,
@@ -1052,6 +1053,7 @@
     },
     "UX_Compliance": {
         "FlightingV2": {
+            "EnableBYOCPartnerComplianceUX": true,
             "EnableUXForCustomComplianceForMacOS": true
         }
     },
