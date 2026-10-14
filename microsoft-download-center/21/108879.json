@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "TestEsrpRelease dummy",
+    "downloadDescription": "TestEsrpRelease dummy",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "TestEsrpRelease (2).msix",
+            "url": "https://download.microsoft.com/download/b2fa0541-c3f3-4096-b02a-5451bf9420c3/testesrp.msix",
+            "size": "84568",
+            "version": "1.0.0.0",
+            "datePublished": "10/14/2026 6:43:59 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "TestEsrpRelease dummy",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.0",
+    "detailsSection_file_name": [
+        "TestEsrpRelease (2).msix"
+    ],
+    "detailsSection_file_size": [
+        "82.6 KB"
+    ],
+    "detailsSection_file_date": "10/14/2026",
+    "systemRequirementsSection": "TestEsrpRelease dummy",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "TestEsrpRelease dummy",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108879",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
