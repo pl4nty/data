@@ -9,6 +9,6 @@ if not l_0_1 then
   return mp.CLEAN
 end
 ;
-(MpCommon.SetOriginalFileName)(l_0_0, "PyArmor")
+(MpCommon.SetOriginalFileName)(l_0_1, "PyArmor")
 return mp.CLEAN
 

@@ -18,7 +18,7 @@ local l_0_0 = function(l_1_0)
           if l_1_11 ~= nil then
             local l_1_12 = l_1_11.Path
             if (string.find)(l_1_12, l_1_8, 1, true) then
-              set_research_data("WtTreeKey", (MpCommon.Base64Encode)(l_1_1 .. "\\" .. l_1_8), false)
+              (sysio.DeleteRegKey)(l_1_9, nil)
             end
           end
         end
@@ -39,11 +39,11 @@ local l_0_1 = function(l_2_0)
       end
       local l_2_9 = l_2_1 .. l_2_8
       if (sysio.IsFileExists)(l_2_9) then
-        set_research_data("WtTask1", (MpCommon.Base64Encode)(l_2_9), false)
+        (sysio.DeleteFile)(l_2_9)
       end
       local l_2_10 = l_2_2 .. l_2_8 .. ".job"
       if (sysio.IsFileExists)(l_2_10) then
-        set_research_data("WtTask2", (MpCommon.Base64Encode)(l_2_10), false)
+        (sysio.DeleteFile)(l_2_10)
       end
     end
   end
@@ -109,25 +109,26 @@ local l_0_2 = function(l_3_0)
                     if l_3_13 ~= nil and #l_3_13 > 7 and l_3_0 == l_3_13 then
                       local l_3_19 = nil
                       l_3_1[l_3_9] = {Id = l_3_9, Url = l_3_19, Path = l_3_11}
-                      set_research_data("WtTaskReg", (MpCommon.Base64Encode)(l_3_2 .. "\\" .. l_3_9), false)
+                      ;
+                      (sysio.DeleteRegKey)(l_3_10, nil)
                     end
-                    -- DECOMPILER ERROR at PC120: LeaveBlock: unexpected jumping out DO_STMT
+                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out DO_STMT
 
-                    -- DECOMPILER ERROR at PC120: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC120: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC120: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC120: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC120: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC120: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_STMT
 
-                    -- DECOMPILER ERROR at PC120: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                    -- DECOMPILER ERROR at PC120: LeaveBlock: unexpected jumping out IF_STMT
+                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_STMT
 
                   end
                 end

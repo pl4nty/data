@@ -35,8 +35,9 @@ if not l_0_3 then
   l_0_4 = l_0_4.CLEAN
   return l_0_4
 end
-l_0_4 = set_research_data
-l_0_4("WtInfectedUrl", (MpCommon.Base64Encode)(l_0_1))
+l_0_4 = bm
+l_0_4 = l_0_4.add_related_string
+l_0_4("WtInfectedUrl", l_0_1, bm.RelatedStringBMReport)
 l_0_4 = pcall
 l_0_4(MpCommon.RollingQueueCreate, "WalletThiefQueue", 4, 60, 1)
 l_0_4 = AppendToRollingQueue
