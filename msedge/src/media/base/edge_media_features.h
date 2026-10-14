@@ -28,10 +28,8 @@ namespace edge {
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 BASE_DECLARE_FEATURE(kAutoplayBlockListUI);
 
-#if !BUILDFLAG(IS_CHROMEOS)
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeGlobalMediaControlsUpdatedUI);
-#endif  // !BUILDFLAG(IS_CHROMEOS)
 
 #if BUILDFLAG(EDGE_ENABLE_CDM_OVERRIDE_WIN_10)
 // Permission to override the Cdm string per domain policies

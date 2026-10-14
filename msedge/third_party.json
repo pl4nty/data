@@ -11,8 +11,8 @@
   },
   {
     "name": "android_deps",
-    "size": 1134747,
-    "file_count": 49
+    "size": 1131005,
+    "file_count": 48
   },
   {
     "name": "android_prebuilts",
@@ -21,7 +21,7 @@
   },
   {
     "name": "android_sdk",
-    "size": 3267,
+    "size": 3256,
     "file_count": 2
   },
   {
@@ -71,12 +71,12 @@
   },
   {
     "name": "blink",
-    "size": 34254760,
-    "file_count": 4104
+    "size": 34267176,
+    "file_count": 4105
   },
   {
     "name": "boringssl",
-    "size": 80164,
+    "size": 80202,
     "file_count": 15
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "name": "dawn",
-    "size": 163158772,
+    "size": 163158787,
     "file_count": 19226
   },
   {
@@ -206,7 +206,7 @@
   },
   {
     "name": "eigen3",
-    "size": 22232153,
+    "size": 22232342,
     "file_count": 2341
   },
   {
@@ -276,8 +276,8 @@
   },
   {
     "name": "glslang",
-    "size": 46314601,
-    "file_count": 3736
+    "size": 46330344,
+    "file_count": 3746
   },
   {
     "name": "googletest",
@@ -391,12 +391,12 @@
   },
   {
     "name": "kotlinc",
-    "size": 321660,
+    "size": 322457,
     "file_count": 52
   },
   {
     "name": "lens_server_proto",
-    "size": 69757,
+    "size": 70331,
     "file_count": 47
   },
   {
@@ -496,7 +496,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 409513706,
+    "size": 409516266,
     "file_count": 379
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4786064,
+    "size": 4786140,
     "file_count": 641
   },
   {
@@ -711,7 +711,7 @@
   },
   {
     "name": "speech-dispatcher",
-    "size": 41827,
+    "size": 41857,
     "file_count": 8
   },
   {
@@ -776,8 +776,8 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 1700859,
-    "file_count": 28
+    "size": 1709585,
+    "file_count": 32
   },
   {
     "name": "usb_ids",
@@ -846,7 +846,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 28932772,
+    "size": 29103004,
     "file_count": 608
   },
   {
