@@ -1,0 +1,161 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Exchange Server SE RTM SU11 (KB5128895)",
+    "downloadDescription": "Security Update for Exchange Server SE RTM SU11 (KB5128895)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5128895-x64-zh-hant.exe",
+            "url": "https://download.microsoft.com/download/ff69247e-f90f-495d-a846-0de5527f3849/ExchangeSubscriptionEdition-KB5128895-x64-zh-hant.exe",
+            "size": "361346400",
+            "version": "15.02.2562.056",
+            "datePublished": "10/13/2026 4:00:32 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5128895-x64-zh-hans.exe",
+            "url": "https://download.microsoft.com/download/ff69247e-f90f-495d-a846-0de5527f3849/ExchangeSubscriptionEdition-KB5128895-x64-zh-hans.exe",
+            "size": "361346360",
+            "version": "15.02.2562.056",
+            "datePublished": "10/13/2026 4:00:32 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5128895-x64-ru.exe",
+            "url": "https://download.microsoft.com/download/ff69247e-f90f-495d-a846-0de5527f3849/ExchangeSubscriptionEdition-KB5128895-x64-ru.exe",
+            "size": "361346400",
+            "version": "15.02.2562.056",
+            "datePublished": "10/13/2026 4:00:32 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5128895-x64-pt.exe",
+            "url": "https://download.microsoft.com/download/ff69247e-f90f-495d-a846-0de5527f3849/ExchangeSubscriptionEdition-KB5128895-x64-pt.exe",
+            "size": "361346400",
+            "version": "15.02.2562.056",
+            "datePublished": "10/13/2026 4:00:32 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5128895-x64-ko.exe",
+            "url": "https://download.microsoft.com/download/ff69247e-f90f-495d-a846-0de5527f3849/ExchangeSubscriptionEdition-KB5128895-x64-ko.exe",
+            "size": "361346400",
+            "version": "15.02.2562.056",
+            "datePublished": "10/13/2026 4:00:32 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5128895-x64-ja.exe",
+            "url": "https://download.microsoft.com/download/ff69247e-f90f-495d-a846-0de5527f3849/ExchangeSubscriptionEdition-KB5128895-x64-ja.exe",
+            "size": "361346400",
+            "version": "15.02.2562.056",
+            "datePublished": "10/13/2026 4:00:32 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5128895-x64-it.exe",
+            "url": "https://download.microsoft.com/download/ff69247e-f90f-495d-a846-0de5527f3849/ExchangeSubscriptionEdition-KB5128895-x64-it.exe",
+            "size": "361346400",
+            "version": "15.02.2562.056",
+            "datePublished": "10/13/2026 4:00:32 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5128895-x64-fr.exe",
+            "url": "https://download.microsoft.com/download/ff69247e-f90f-495d-a846-0de5527f3849/ExchangeSubscriptionEdition-KB5128895-x64-fr.exe",
+            "size": "361346360",
+            "version": "15.02.2562.056",
+            "datePublished": "10/13/2026 4:00:32 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5128895-x64-es.exe",
+            "url": "https://download.microsoft.com/download/ff69247e-f90f-495d-a846-0de5527f3849/ExchangeSubscriptionEdition-KB5128895-x64-es.exe",
+            "size": "361346360",
+            "version": "15.02.2562.056",
+            "datePublished": "10/13/2026 4:00:32 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ExchangeSubscriptionEdition-KB5128895-x64-en.exe",
+            "url": "https://download.microsoft.com/download/ff69247e-f90f-495d-a846-0de5527f3849/ExchangeSubscriptionEdition-KB5128895-x64-en.exe",
+            "size": "361346360",
+            "version": "15.02.2562.056",
+            "datePublished": "10/13/2026 4:00:32 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSubscriptionEdition-KB5128895-x64-de.exe",
+            "url": "https://download.microsoft.com/download/ff69247e-f90f-495d-a846-0de5527f3849/ExchangeSubscriptionEdition-KB5128895-x64-de.exe",
+            "size": "361346360",
+            "version": "15.02.2562.056",
+            "datePublished": "10/13/2026 4:00:32 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange Server SE (KB128895) Hash Table.docx",
+            "url": "https://download.microsoft.com/download/ff69247e-f90f-495d-a846-0de5527f3849/Exchange Server SE (KB128895) Hash Table.docx",
+            "size": "17936",
+            "version": "15.02.2562.056",
+            "datePublished": "10/13/2026 4:00:32 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Please see the KB article for more information about content in this update.</u></b>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5128895",
+        "name": "KB5128895"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.02.2562.056",
+    "detailsSection_file_name": [
+        "ExchangeSubscriptionEdition-KB5128895-x64-zh-hant.exe",
+        "ExchangeSubscriptionEdition-KB5128895-x64-zh-hans.exe",
+        "ExchangeSubscriptionEdition-KB5128895-x64-ru.exe",
+        "ExchangeSubscriptionEdition-KB5128895-x64-pt.exe",
+        "ExchangeSubscriptionEdition-KB5128895-x64-ko.exe",
+        "ExchangeSubscriptionEdition-KB5128895-x64-ja.exe",
+        "ExchangeSubscriptionEdition-KB5128895-x64-it.exe",
+        "ExchangeSubscriptionEdition-KB5128895-x64-fr.exe",
+        "ExchangeSubscriptionEdition-KB5128895-x64-es.exe",
+        "ExchangeSubscriptionEdition-KB5128895-x64-en.exe",
+        "ExchangeSubscriptionEdition-KB5128895-x64-de.exe",
+        "Exchange Server SE (KB128895) Hash Table.docx"
+    ],
+    "detailsSection_file_size": [
+        "344.6 MB",
+        "344.6 MB",
+        "344.6 MB",
+        "344.6 MB",
+        "344.6 MB",
+        "344.6 MB",
+        "344.6 MB",
+        "344.6 MB",
+        "344.6 MB",
+        "344.6 MB",
+        "344.6 MB",
+        "17.5 KB"
+    ],
+    "detailsSection_file_date": "10/13/2026",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server Subscription Edition System Requirements and Prerequisites</b><br />\nFor information about Exchange Subscription Edition system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624053\">Exchange Subscription Edition System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624054\">Exchange Subscription Edition Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration. For more detailed system requirements, please refer to the Exchange Server Subscription Edition <a href=\"http://go.microsoft.com/fwlink/?LinkId=532633\">Technical Documentation Library</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "<b>We recommend that you restart your server before you install an update.</b><br /><br />\n<u>Then, follow these steps:</u><br />\n<ol>\n    <li>To start the download, select the <b>Download</b> button, and then do one of the following:\n        <ul>\n            <li><b>a.</b> To start the installation immediately, <i>temporarily disable any anti-virus software</i> and then select <b>Run</b>.</li>\n            <li><b>b.</b> To copy the download file to your computer for installation at a later time, select <b>Save</b>.</li>\n        </ul>\n    </li>\n\n    <li><i>Temporarily disable any anti-virus software</i> before starting the installation.</li>\n    <li>After the installation is completed, <i>re-enable the antivirus software</i>, and then restart your computer.\n        <br />(The installation program may prompt you to restart. <b>We strongly recommend that you restart the computer even if you are not prompted to do this.</b>)\n    </li>\n</ol>\n<br />\n\nIf problems occur during or after the installation, please see\n\n<a href=\"https://aka.ms/exupdatefaq\">Fix failed Exchange Server updates</a> and run the <a href=\"https://aka.ms/ExchangeHealthChecker\">Exchange Server Health Checker</a> tool. Check <a href=\"https://aka.ms/ExchangeTeamBlog\">Exchange Team Blog</a> for latest news on updates. Microsoft Support is available for any persistent problems.",
+    "additionalInformationSection": "<b><u>Exchange Server Subscription Edition File Hash Information</u></b><br/><br/>\n\n<ol>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5128895-x64-de.exe<br/>\n    <b>Language:</b> <i>German (de-de)</i><br/>\n    <b>SHA 256:</b> 25CE890FF5DB5BBF9181B4F44B65E2D47C08663E3AFC379496925ACA7A538EA2\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5128895-x64-en.exe<br/>\n    <b>Language:</b> <i>English (en-us)</i><br/>\n    <b>SHA 256:</b> 5EB5A93016841B80F019B128F7354A4459FD48C3B53CF49AAC14CBEA32ABDF9B\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5128895-x64-es.exe<br/>\n    <b>Language:</b> <i>Spanish (es-es)</i><br/>\n    <b>SHA 256:</b> 269244FEBDA079020D24B0BB436371500BA854291154C66675573CCD1E4F5C45\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5128895-x64-fr.exe<br/>\n    <b>Language:</b> <i>French (fr-fr)</i><br/>\n    <b>SHA 256:</b> A5A5382A6984FC780702A36DEAA4AC26835578C9BA73445614BD381DF33E546E\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5128895-x64-it.exe<br/>\n    <b>Language:</b> <i>Italian (it-it)</i><br/>\n    <b>SHA 256:</b> 0CFBAA29FFA160B0AB7E43C739E3E3A65FE15E303A4EC76FEA72E5834A2F7F49\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5128895-x64-ja.exe<br/>\n    <b>Language:</b> <i>Japanese (ja-jp)</i><br/>\n    <b>SHA 256:</b> 625D0413A876E7885D21F030F4169883DDF4BBE9B4D6683876FC2456B9B7B361\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5128895-x64-ko.exe<br/>\n    <b>Language:</b> <i>Korean (ko-kr)</i><br/>\n    <b>SHA 256:</b> 9FE3D51D855021725BEE8FCCBE1E356E75857583B9050E6E320ECC62CAC8ACA9\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5128895-x64-pt.exe<br/>\n    <b>Language:</b> <i>Portuguese-Brazil (pt-br)</i><br/>\n    <b>SHA 256:</b> DF92DAAC9A96E0292F2616CF7A585F69A0CD986F1E920CAA10474B0383E878EA\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5128895-x64-ru.exe<br/>\n    <b>Language:</b> <i>Russian (ru-ru)</i><br/>\n    <b>SHA 256:</b> 7C9DB1682D788CEBE5B83B2749A88D7637D53A1CB8D388BB0DF5A03870E52AF1\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5128895-x64-zh-hans.exe<br/>\n    <b>Language:</b> <i>Chinese-China (zh-cn)</i><br/>\n    <b>SHA 256:</b> C90F47D8875A5EC97046EAADB53CFBC4124CEBBF1D72CA5AF8E82E0029E33388\n  </li>\n  <li>\n    <b>File Name:</b> ExchangeSubscriptionEdition-KB5128895-x64-zh-hant.exe<br/>\n    <b>Language:</b> <i>Chinese-Taiwan (zh-tw)</i><br/>\n    <b>SHA 256:</b> 04A39347076E8D980A268B48B8661240AD6BF68A70073CB13EE6629F118A6A82\n  </li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108875",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
