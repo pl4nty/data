@@ -307,7 +307,8 @@
         "azureml://registries/azureml-fireworks/models/fw-kimi-k2.6",
         "azureml://registries/azureml-fireworks/models/fw-deepseek-v3.1-terminus",
         "azureml://registries/azureml-fireworks/models/fw-glm-5",
-        "azureml://registries/azureml-fireworks/models/fw-minimax-m2.5"
+        "azureml://registries/azureml-fireworks/models/fw-minimax-m2.5",
+        "azureml://registries/azure-baseten/models/b10-standard-testing"
     ],
     "completionMaaP": [
         "azureml://registries/azureml/models/mistralai-mixtral-8x7b-v01",

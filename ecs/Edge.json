@@ -460,6 +460,10 @@
                 },
                 {
                     "applied_policy": "OptOut",
+                    "domain": "www.google.com.hk"
+                },
+                {
+                    "applied_policy": "OptOut",
                     "domain": "gemini.google.com"
                 },
                 {

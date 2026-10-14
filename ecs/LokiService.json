@@ -265,7 +265,11 @@
             {
                 "context_window": 1000000,
                 "id": "claude-opus-5",
+                "inferenceProviders": [
+                    "anthropic"
+                ],
                 "name": "Claude Opus 5",
+                "publisher": "Anthropic",
                 "reasoning_efforts": [
                     "low",
                     "medium",
@@ -280,7 +284,11 @@
             {
                 "context_window": 1000000,
                 "id": "claude-opus-4.8",
+                "inferenceProviders": [
+                    "anthropic"
+                ],
                 "name": "Claude Opus 4.8",
+                "publisher": "Anthropic",
                 "reasoning_efforts": [
                     "low",
                     "medium",
@@ -295,7 +303,11 @@
             {
                 "context_window": 1000000,
                 "id": "claude-opus-4.7",
+                "inferenceProviders": [
+                    "anthropic"
+                ],
                 "name": "Claude Opus 4.7",
+                "publisher": "Anthropic",
                 "reasoning_efforts": [
                     "low",
                     "medium",
@@ -310,7 +322,11 @@
             {
                 "context_window": 1000000,
                 "id": "claude-opus-4.6",
+                "inferenceProviders": [
+                    "anthropic"
+                ],
                 "name": "Claude Opus 4.6",
+                "publisher": "Anthropic",
                 "reasoning_efforts": [
                     "low",
                     "medium",
@@ -324,7 +340,11 @@
             {
                 "context_window": 1000000,
                 "id": "claude-opus-5.5",
+                "inferenceProviders": [
+                    "anthropic"
+                ],
                 "name": "Claude Opus 5.5",
+                "publisher": "Anthropic",
                 "reasoning_efforts": [
                     "low",
                     "medium",
@@ -339,7 +359,11 @@
             {
                 "context_window": 1000000,
                 "id": "claude-sonnet-5",
+                "inferenceProviders": [
+                    "anthropic"
+                ],
                 "name": "Claude Sonnet 5",
+                "publisher": "Anthropic",
                 "reasoning_efforts": [
                     "low",
                     "medium",
@@ -354,7 +378,11 @@
             {
                 "context_window": 1000000,
                 "id": "claude-sonnet-4.6",
+                "inferenceProviders": [
+                    "anthropic"
+                ],
                 "name": "Claude Sonnet 4.6",
+                "publisher": "Anthropic",
                 "reasoning_efforts": [
                     "low",
                     "medium",
@@ -368,7 +396,11 @@
             {
                 "context_window": 1000000,
                 "id": "claude-sonnet-5.5",
+                "inferenceProviders": [
+                    "anthropic"
+                ],
                 "name": "Claude Sonnet 5.5",
+                "publisher": "Anthropic",
                 "reasoning_efforts": [
                     "low",
                     "medium",
@@ -383,7 +415,11 @@
             {
                 "context_window": 200000,
                 "id": "claude-haiku-4.5",
+                "inferenceProviders": [
+                    "anthropic"
+                ],
                 "name": "Claude Haiku 4.5",
+                "publisher": "Anthropic",
                 "supported_endpoints": [
                     "/v1/messages"
                 ]
@@ -391,7 +427,11 @@
             {
                 "context_window": 1000000,
                 "id": "claude-haiku-5.5",
+                "inferenceProviders": [
+                    "anthropic"
+                ],
                 "name": "Claude Haiku 5.5",
+                "publisher": "Anthropic",
                 "reasoning_efforts": [
                     "low",
                     "medium",
@@ -406,7 +446,11 @@
             {
                 "context_window": 1050000,
                 "id": "gpt-5.6-sol",
+                "inferenceProviders": [
+                    "microsoft"
+                ],
                 "name": "GPT-5.6 Sol",
+                "publisher": "OpenAI",
                 "reasoning_efforts": [
                     "none",
                     "low",
@@ -422,7 +466,11 @@
             {
                 "context_window": 1050000,
                 "id": "gpt-5.6-luna",
+                "inferenceProviders": [
+                    "microsoft"
+                ],
                 "name": "GPT-5.6 Luna",
+                "publisher": "OpenAI",
                 "reasoning_efforts": [
                     "none",
                     "low",
@@ -438,7 +486,11 @@
             {
                 "context_window": 264000,
                 "id": "gpt-5-mini",
+                "inferenceProviders": [
+                    "microsoft"
+                ],
                 "name": "GPT-5 mini",
+                "publisher": "OpenAI",
                 "reasoning_efforts": [
                     "low",
                     "medium",

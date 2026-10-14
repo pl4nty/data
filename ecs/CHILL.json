@@ -2093,6 +2093,118 @@
             }
         }
     },
+    "ChillMicrosoft_Advertising_Editor": {
+        "Floodgate_Campaign_MicrosoftAdvertisingEditor.43cd7153-5b59-4908-bc18-29aa2152361f": {
+            "CampaignId": "43cd7153-5b59-4908-bc18-29aa2152361f",
+            "EndTimeUtc": "2027-09-08T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 5184000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 5097600,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-09-08T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "EditorCSATSurveyTrigger",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 1
+                        }
+                    },
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Very Satisfied",
+                                        "Moderately satisfied",
+                                        "Neutral",
+                                        "Moderately dissatisfied",
+                                        "Very dissatisfied"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How satisfied are you with the overall experience of using Microsoft Advertising Platform?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "What can we do to improve your experience with the Microsoft Advertising Editor?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Likert Scale",
+                            "id": "6e0d1d39-3fb5-447a-a014-ddb8b903c070",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "horizontalStatements": [
+                                        "Microsoft Advertising Editor enables me to perform all bulk operations I need to do on my Microsoft Advertising account(s). ",
+                                        "Microsoft Advertising Editor is a reliable tool."
+                                    ],
+                                    "id": "likert1",
+                                    "questionLabel": "To what extent do you agree with these statements?",
+                                    "required": true,
+                                    "type": "Likert",
+                                    "verticalOptions": [
+                                        "Completely disagree",
+                                        "Disagree",
+                                        "Neither agree nor disagree",
+                                        "Agree",
+                                        "Completely agree"
+                                    ],
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment2",
+                                    "questionLabel": "Is there anything else you would like to share?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": false
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/43cd7153-5b59-4908-bc18-29aa2152361f/33b6a6b4-8b5b-4d05-82e0-b6772e5a692c/Web-MicrosoftAdvertisingEditor/",
+                    "variables": {}
+                }
+            }
+        }
+    },
     "ChillNexusInteractiveAI": {
         "Floodgate_Campaign_Dynamics365FinanceandOperations.d8b3a33a-a708-497a-b248-27a9b98faa76": {
             "CampaignId": "d8b3a33a-a708-497a-b248-27a9b98faa76",
