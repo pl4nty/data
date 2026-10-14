@@ -1540,6 +1540,7 @@
         "Nh_Enable_Iframe_Support": true,
         "Nh_Enable_OcclusionManager": true,
         "Nh_Enable_Request_Caching": true,
+        "Nh_Enable_Screen_Wake_Lock": true,
         "Nh_Enable_Skip_Channel_Join": true,
         "Nh_Enable_Svc_Tunneling": true,
         "Nh_Enable_Webauthn": true,
