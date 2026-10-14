@@ -257,6 +257,7 @@
         "EnableLlmProxyConsumerServing": true,
         "EnableLlmProxyForConsumerUsers": true,
         "EnableLlmProxyGeographyAuthorization": true,
+        "EnableLlmProxyModelProviderFiltering": true,
         "EnableLlmProxyToolCallBuckets": true,
         "EnablePassportForLlmApi": true,
         "EnableWorkflowModelAccess": true,
@@ -446,19 +447,6 @@
                 "supported_endpoints": [
                     "/chat/completions"
                 ]
-            },
-            {
-                "context_window": 256000,
-                "id": "mai-code-1-flash",
-                "name": "MAI Code 1 Flash",
-                "reasoning_efforts": [
-                    "low",
-                    "medium",
-                    "high"
-                ],
-                "supported_endpoints": [
-                    "/responses"
-                ]
             }
         ],
         "KnownToolCallBuckets": {
@@ -566,8 +554,7 @@
                         "gpt-5.6-sol",
                         "gpt-5.6-luna",
                         "gpt-5.5",
-                        "gpt-5-mini",
-                        "mai-code-1-flash"
+                        "gpt-5-mini"
                     ],
                     "enterprise": [
                         "claude-opus-5",
@@ -581,8 +568,7 @@
                         "gpt-5.6-sol",
                         "gpt-5.6-luna",
                         "gpt-5.5",
-                        "gpt-5-mini",
-                        "mai-code-1-flash"
+                        "gpt-5-mini"
                     ]
                 }
             },
@@ -602,8 +588,7 @@
                         "gpt-5.6-sol",
                         "gpt-5.6-luna",
                         "gpt-5.5",
-                        "gpt-5-mini",
-                        "mai-code-1-flash"
+                        "gpt-5-mini"
                     ],
                     "enterprise": [
                         "claude-opus-5.5",
@@ -619,8 +604,7 @@
                         "gpt-5.6-sol",
                         "gpt-5.6-luna",
                         "gpt-5.5",
-                        "gpt-5-mini",
-                        "mai-code-1-flash"
+                        "gpt-5-mini"
                     ]
                 }
             }
@@ -681,10 +665,6 @@
             {
                 "id": "gpt-5-mini",
                 "runtime_id": "gpt-56-reasoning-nano-luna"
-            },
-            {
-                "id": "mai-code-1-flash",
-                "runtime_id": "mai-code-1-flash"
             },
             {
                 "id": "gpt-6-astra",
@@ -775,8 +755,7 @@
             "gpt-5.6-sol"
         ],
         "chat_fallback": [
-            "claude-opus-5",
-            "mai-code-1-flash"
+            "claude-opus-5"
         ],
         "workflows": {
             "CodeTab": {
@@ -788,8 +767,7 @@
                     "gpt-5.6-sol"
                 ],
                 "chat_fallback": [
-                    "claude-opus-5",
-                    "mai-code-1-flash"
+                    "claude-opus-5"
                 ]
             },
             "GitHubCopilot": {
@@ -801,8 +779,7 @@
                     "gpt-5.6-sol"
                 ],
                 "chat_fallback": [
-                    "claude-opus-5",
-                    "mai-code-1-flash"
+                    "claude-opus-5"
                 ]
             }
         }

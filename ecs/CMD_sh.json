@@ -49,6 +49,7 @@
         "CASUseFlexProductType": true,
         "CasColdDataConsistencyCheck": true,
         "CasHandleFlexStop": true,
+        "CasImproveActiveApi": true,
         "CasReconcileWdsFlexLifecyclePolicies": true,
         "CasSkipFldWdsCpcDeallocation": false,
         "CheckDevicePowerStatus": true,

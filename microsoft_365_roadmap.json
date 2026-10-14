@@ -1,5 +1,1024 @@
 [
     {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>This is a new web part available for modern page editors in SharePoint. The web part can be configured to use any M365 Copilot agent.</p>",
+        "id": 575298,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "SharePoint: Agent chat web part"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Microsoft Purview Data Loss Prevention is extending Administrative Units support to Microsoft 365 Copilot, Copilot Chat, and Cowork. This enables organizations to delegate management of supported Copilot DLP policies to administrators within their assigned Administrative Units, supporting regional, departmental, and regulatory boundaries without granting tenant-wide policy-management permissions. Existing tenant-wide policies continue to apply, and configuration is optional for organizations choosing to use Administrative Unit (AU)-scoped management.</p>",
+        "id": 575287,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Loss Prevention-Admin Units Support for Copilot & Cowork DLP"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Microsoft Purview server-side auto-labeling will support legacy Microsoft Office file formats, including Word (.doc), Excel (.xls), and PowerPoint (.ppt). Organizations can automatically evaluate and apply sensitivity labels to these files in SharePoint and OneDrive.</p>",
+        "id": 574363,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Information Protection-Auto-labeling for legacy Office files"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>The Microsoft Visio Desktop MCP Server enables compatible AI clients to connect with the Visio Desktop application to create, read, and update Visio diagrams using natural language. It runs locally on Windows and requires a licensed Visio Desktop application.</p>",
+        "id": 574125,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Developer"
+            },
+            {
+                "tagName": "Visio"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Developer"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Visio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Visio: Desktop Model Context Protocol (MCP) Server"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>This feature provides reusable MCP tools for Store Commerce POS returns. These tools expose Commerce return capabilities as structured actions that customers, partners, and agent developers can use to build conversational or agentic return experiences.</p>\n<p>The tools enable agentic experiences to look up the original purchase using supported identifiers such as receipt, order, invoice, or confirmation number; retrieve matching transactions and returnable lines; identify items that are returnable, partially returnable, already returned, or not returnable; create a return using selected lines, quantities, and reason codes; determine eligible refund options for original-tender refund scenarios; and execute eligible original-tender refunds through existing Commerce return and payment logic.</p>\n<p>The tools can also explain return eligibility, policy restrictions, and why specific lines may or may not be returnable. They can analyze prior returns and refunds to surface duplicate-refund risk, frequent-return patterns, cross-store return history, or other return-risk indicators. Tool responses provide structured data that host experiences can use to present return details, choices, summaries, and next steps in the experience they build.<br>\nCustomers can use these tools from POS-embedded agents, chat-based copilots, workflow orchestrators, or other agentic surfaces.</p>\n<p>Setup is performed by an administrator, IT owner, or implementation partner. Customers configure the host surface, authorize the agent or integration to call the tools, and maintain existing Commerce return policies, reason codes, tender rules, and payment configuration.</p>",
+        "id": 574124,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Enable MCP tools for POS returns"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Business performance planning improves the performance and flexibility of writeback from the Matrix visual.<br>\nWriteback processing has been optimized to improve performance for planning adjustments, particularly for larger splash and multi-update operations. The improvements also optimize writeback for users with dimension security, where additional security validation is required.<br>\nIn addition, report designers no longer need to include a field from every cube dimension in the Matrix visual to enable writeback. The Matrix can now be designed using only the dimensions relevant to the planning experience while still supporting writeback to the underlying cube.</p>",
+        "id": 574118,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Improved planning writeback performance and flexibility"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Administrators can now assign Microsoft Dataverse group teams backed by Microsoft Entra groups to Business performance planning dimension security groups. Previously, dimension security assignments were limited to individual users. The updated experience allows administrators to view and add eligible Entra group-backed teams alongside users, with separate membership information for each assignment type.</p>\n<p>To use this capability, the Dataverse group team must first be configured correctly and assigned an appropriate Business performance planning security role.</p>",
+        "id": 574117,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-planning/bpp-security",
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Manage dimension security with Microsoft Entra groups"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Create and manage contextual discussion threads directly on planning cubes and dimensions. Users can comment on dimension cells, detailed or aggregate cube cells, and reporting rows; reply to and mention colleagues; receive email notifications; and resolve or reactivate discussions. Public and private visibility options, together with an All Comments view, filters, export, and role-based management actions, support collaboration throughout the planning cycle.</p>",
+        "id": 574116,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Collaborative comments for planning cubes and dimensions"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Consolidated AI settings make it easier for makers and admins to find and manage AI capabilities for model-driven apps across two complementary surfaces.</p>\n<p>In Maker Studio, the <strong>Settings</strong> dialog in the model app form designer adds a new top-level <strong>Copilot and AI</strong> tab. Makers can see and adjust all available AI options for the app in one place instead of finding them scattered among all the other settings.</p>\n<p>In the Power Platform admin center, model-driven app AI settings are consolidated from <strong>Environment &gt; Settings</strong> into <strong>Copilot Hub &gt; Power Apps</strong>. This provides a central location for settings such as Generative pages, Copilot in apps, and the in-app AI skills. The in-app skill settings are organized into these groups:</p>\n<ul>\n<li><strong>Data entry:</strong> Form fill assistance.</li>\n<li><strong>Summary:</strong> Row summaries.</li>\n<li><strong>Data analysis:</strong> AI-generated charts and natural-language search and filtering.</li>\n</ul>\n<p>Labels and descriptions are aligned across Maker Studio and Copilot Hub so makers and admins can understand how the controls relate.</p>\n<p>As part of this consolidation, the old model-driven app AI switches under <strong>Environment &gt; Settings</strong> will also be retired and removed.</p>\n<h3>Availability</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2610.3</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Admins or makers</td>\n</tr>\n</tbody>\n</table>",
+        "id": 574104,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Power Apps: Manage model-driven app AI features from consolidated settings"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Business end-users and buyers can define and maintain their own outbound follow-up scenarios and use them wherever built-in scenarios are used today:</p>\n<ol>\n<li>Scenario maintenance \u2014 a dedicated setup page where users create, edit, and maintain custom follow-up scenarios. Each scenario carries its own name, the instructions that shape the email the agent writes, and the business entity it applies to.</li>\n<li>Scenario-driven configuration \u2014 follow-up configurations are built around the chosen scenario, so criteria, email content, and agent behavior all follow the scenario the user selected.</li>\n<li>Scenario-driven runtime \u2014 when the agent runs, it generates and sends messages according to the selected scenario's intent and instructions.</li>\n<li>Self-describing configuration history \u2014 scenario details are captured with each saved configuration, so the audit history of an agent configuration remains readable even if the underlying scenario definition is later changed or removed.</li>\n</ol>",
+        "id": 573705,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Supply Chain Management"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Supply Chain Management"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Supply Chain Management: Procurement Agent - Define custom scenarios for agent-generated supplier emails"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Shared mailbox users and delegates with read and manage (full access) and/or mail folder-level permission will now be able to access Copilot Chat directly from their shared and delegate mailboxes in classic Outlook, when added as a <a href=\"https://support.microsoft.com/en-us/outlook/sharing/open-and-use-a-shared-mailbox-in-outlook\">resource</a>.</p>",
+        "id": 573698,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Copilot Chat available in shared and delegate mailboxes"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Quickly get started with modern single-page application (SPA) development by creating a site directly from Power Pages Studio. Continue building and customizing your experience using your preferred development tools and frameworks.</p>",
+        "id": 573277,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Pages"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Pages"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Power Pages: Create Power Pages SPA site from the Power Pages studio"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Provide a unified intelligence layer that helps agents discover, reason over, and use organizational knowledge.</p>",
+        "id": 570870,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Work IQ"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Work IQ"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Work IQ: Microsoft IQ"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Enable agents to use supported REST endpoints as tools through governed Work IQ integrations.</p>",
+        "id": 570868,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Developer"
+            },
+            {
+                "tagName": "Work IQ"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Developer"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Work IQ"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Work IQ: REST endpoint tools "
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Enable A2A and MCP tasks to request missing information or authorization and then resume.</p>",
+        "id": 570852,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Work IQ"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Work IQ"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Work IQ: A2A and MCP elicitation"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Enable durable long-running A2A and MCP tasks with progress tracking, later result retrieval, and cancellation.</p>",
+        "id": 570851,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Developer"
+            },
+            {
+                "tagName": "Work IQ"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Developer"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Work IQ"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Work IQ: A2A and MCP long running tasks"
+    },
+    {
+        "created": "2026-10-13T23:01:05",
+        "description": "<p>Enable agents to retrieve relevant Microsoft 365 content and context through Work IQ.</p>",
+        "id": 570673,
+        "locale": null,
+        "modified": "2026-10-13T23:01:05",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Developer"
+            },
+            {
+                "tagName": "Work IQ"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Developer"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Work IQ"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Work IQ: Retrieve"
+    },
+    {
         "created": "2026-10-12T23:01:05",
         "description": "<p>With this feature, admins can scope their network data security data loss prevention policies, integrated with Entra GSA Internet Access, to apply to all websites (<em>.</em>) or all websites except specific cloud apps, allowing them to apply protection to cloud apps and websites that are not in the Defender Cloud App Catalog.</p>",
         "id": 575285,
@@ -224,7 +1243,7 @@
         "description": "<p>Review shared files without losing conversation context. When you open a PDF, Markdown, or HTML file from a Teams chat or channel message, the conversation appears alongside the file and takes you directly to where it was shared, allowing you to catch up on the discussion and respond without closing the file preview or switching back to chat.</p>",
         "id": 574094,
         "locale": null,
-        "modified": "2026-10-12T23:01:05",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -233,6 +1252,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Desktop"
@@ -248,12 +1276,24 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -275,6 +1315,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -1366,7 +2409,7 @@
         "description": "<p>All users in Events larger than 1,000 users or in any Event optimized for a large audience can now chat with one another in a public event chat in GCC, GCC High and DoD.</p>",
         "id": 573625,
         "locale": null,
-        "modified": "2026-10-12T23:01:05",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -1383,10 +2426,19 @@
                 "tagName": "DoD"
             },
             {
+                "tagName": "Android"
+            },
+            {
                 "tagName": "Desktop"
             },
             {
+                "tagName": "iOS"
+            },
+            {
                 "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -1409,10 +2461,19 @@
             ],
             "platforms": [
                 {
+                    "tagName": "Android"
+                },
+                {
                     "tagName": "Desktop"
                 },
                 {
+                    "tagName": "iOS"
+                },
+                {
                     "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -2351,10 +3412,10 @@
     },
     {
         "created": "2026-10-06T22:56:31",
-        "description": "<p>Extends the Fluent-based modern, refreshed look for model-driven apps to the mail app, providing consistent controls, spacing, colors, and visual treatment when users work in that app. This was previously enabled for the monthly channel with the 2602.1 release and is now being enabled for the semiannual channel with the 2609.3 release.</p>\n<p>Availability</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Impacted products</td>\n<td>All model-driven apps</td>\n</tr>\n<tr>\n<td>Release channel</td>\n<td>Semiannual</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2609.3 build</td>\n</tr>\n<tr>\n<td>Dependencies</td>\n<td>N/A</td>\n</tr>\n<tr>\n<td>Feature activation</td>\n<td>Default on</td>\n</tr>\n</tbody>\n</table>",
+        "description": "<p>Extends the Fluent-based modern, refreshed look for model-driven apps to the mail app, providing consistent controls, spacing, colors, and visual treatment when users work in that app. This was previously enabled for the monthly channel with the 2602.1 release and is now being enabled for the semiannual channel with the 2609.3 release.</p>\n<p>Availability</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Release channel</td>\n<td>Semiannual</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2609.3</td>\n</tr>\n<tr>\n<td>Feature scope</td>\n<td>Users (always enabled)</td>\n</tr>\n</tbody>\n</table>",
         "id": 571681,
         "locale": null,
-        "modified": "2026-10-06T22:56:31",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": "https://learn.microsoft.com/en-us/power-apps/user/modern-fluent-design",
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
@@ -3059,10 +4120,10 @@
     },
     {
         "created": "2026-10-02T22:01:21",
-        "description": "<p>Extends the modern, refreshed look to embedded app experiences so model-driven app content retains consistent Fluent styling and interaction patterns when it appears inside another host. This was previously enabled for the monthly channel with the 2602.1 release and is now being enabled for the semiannual channel with the 2609.3 release.</p>\n<p>Availability</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Impacted Products</td>\n<td>All model-driven apps</td>\n</tr>\n<tr>\n<td>Release Channel</td>\n<td>Semiannual</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2609.3 build</td>\n</tr>\n<tr>\n<td>Dependencies</td>\n<td>N/A</td>\n</tr>\n<tr>\n<td>Feature Activation</td>\n<td>Default on</td>\n</tr>\n</tbody>\n</table>",
+        "description": "<p>Extends the modern, refreshed look to embedded app experiences so model-driven app content retains consistent Fluent styling and interaction patterns when it appears inside another host. This was previously enabled for the monthly channel with the 2602.1 release and is now being enabled for the semiannual channel with the 2609.3 release.</p>\n<p>Availability</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Release Channel</td>\n<td>Semiannual</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2609.3</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (always enabled)</td>\n</tr>\n</tbody>\n</table>",
         "id": 571682,
         "locale": null,
-        "modified": "2026-10-02T22:01:21",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": "https://learn.microsoft.com/en-us/power-apps/user/modern-fluent-design",
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
@@ -8656,7 +9717,7 @@
         "description": "<p>Legal plugins in Copilot provide purpose-built skills to help legal professionals summarize, draft, review, and redline legal documents. Available in Word and Cowork, these plugins can use work context from Microsoft 365 and connect to supported third-party legal sources.</p>",
         "id": 571884,
         "locale": null,
-        "modified": "2026-09-28T22:58:08",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "April CY2026",
@@ -8677,6 +9738,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -8701,6 +9765,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -9194,7 +10261,7 @@
         "description": "<p>Cloud Update is expanding rollback options for devices on Monthly Enterprise Channel. Administrators will be able to roll back devices to a release from two versions prior, with the latest available security updates for that release, and keep devices in the rolled-back state across subsequent releases until they are ready to resume updates. This provides additional time to investigate and resolve compatibility issues while maintaining security coverage and centralized control through the Microsoft 365 Apps admin center.</p>",
         "id": 572673,
         "locale": null,
-        "modified": "2026-09-24T22:58:55",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": "https://learn.microsoft.com/microsoft-365-apps/admin-center/cloud-update-pause-rollback",
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "September CY2026",
@@ -9254,7 +10321,7 @@
                 }
             ]
         },
-        "title": "Microsoft 365 app: Cloud Update - Extended rollback support for Monthly Enterprise Channel"
+        "title": "Microsoft 365 Apps: Cloud Update - Extended rollback support for Monthly Enterprise Channel"
     },
     {
         "created": "2026-09-24T22:58:55",
@@ -9874,10 +10941,10 @@
     },
     {
         "created": "2026-09-23T22:59:12",
-        "description": "<p>Model-driven apps now support configurable display density settings that let users choose how information is spaced throughout the application. Users can select from three density options:</p>\n<ul>\n<li>Comfortable (default)</li>\n<li>Cozy</li>\n<li>Compact<br>\n\u200b</li>\n</ul>\n<p>Each density setting adjusts layout spacing while maintaining accessibility target-size requirements. Administrators and makers can configure default density settings at the environment and app level, while individual users can personalize the experience by selecting their preferred density. User preferences take precedence over administrator-configured defaults.<br>\n\u200b<br>\nDisplay density requires the Header and Navigation Refresh experience to be enabled, and will be enabled by default for apps that have Header and Navigation Refresh enabled. Makers can disable display density for their apps using the app setting if needed.<br>\n\u200b<br>\nSome controls and components may not yet support display density. These controls will continue to render using their standard spacing regardless of the selected density setting. Custom component developers can add support for display density by adopting Fluent design spacing tokens. Learn more in the documentation.<br>\n\u200b<br>\nAvailability</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Impacted products</td>\n<td>All model-driven apps</td>\n</tr>\n<tr>\n<td>Release channel</td>\n<td>All</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2609.1 build</td>\n</tr>\n<tr>\n<td>Dependencies</td>\n<td>Header and navigation refresh enabled</td>\n</tr>\n<tr>\n<td>Feature activation</td>\n<td>Default on</td>\n</tr>\n</tbody>\n</table>",
+        "description": "<p>Model-driven apps now support configurable display density settings that let users choose how information is spaced throughout the application. Users can select from three density options:</p>\n<ul>\n<li>Comfortable (default)</li>\n<li>Cozy</li>\n<li>Compact<br>\n\u200b</li>\n</ul>\n<p>Each density setting adjusts layout spacing while maintaining accessibility target-size requirements. Administrators and makers can configure default density settings at the environment and app level, while individual users can personalize the experience by selecting their preferred density. User preferences take precedence over administrator-configured defaults.<br>\n\u200b<br>\nDisplay density requires the Header and Navigation Refresh experience to be enabled, and will be enabled by default for apps that have Header and Navigation Refresh enabled. Makers can disable display density for their apps using the app setting if needed.<br>\n\u200b<br>\nSome controls and components may not yet support display density. These controls will continue to render using their standard spacing regardless of the selected density setting. Custom component developers can add support for display density by adopting Fluent design spacing tokens. Learn more in the documentation.<br>\n\u200b<br>\nAvailability</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Release channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2609.1</td>\n</tr>\n<tr>\n<td>Dependencies</td>\n<td>Header and navigation refresh enabled</td>\n</tr>\n<tr>\n<td>Feature scope</td>\n<td>Users (enabled by default)</td>\n</tr>\n</tbody>\n</table>",
         "id": 572682,
         "locale": null,
-        "modified": "2026-09-23T22:59:12",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": "https://learn.microsoft.com/en-us/power-apps/user/appearance-settings",
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "September CY2026",
@@ -13964,12 +15031,12 @@
         "description": "<p>This feature is a collection of improvements including updates to the auto-save experience for comments, simplifying survey navigation through buttons by consolidating the \"Skip\" and \"Done\" buttons into a single \"Next\" button, and to give the survey taker greater control over question progression by refining the auto-scroll behavior when updating answers to questions.</p>",
         "id": 570429,
         "locale": null,
-        "modified": "2026-09-08T22:57:21",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -18253,12 +19320,12 @@
         "description": "<p>You will now be able to add multiple steps to your workflow when building one from scratch.</p>",
         "id": 569209,
         "locale": null,
-        "modified": "2026-09-04T22:03:41",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -20485,9 +21552,9 @@
         "description": "<p>We are introducing a more streamlined messaging experience that displays more content on screen while improving readability when using Teams on mobile. These updates make it easier to scan conversations and follow the discussion flow, helping users stay productive and engaged wherever they work.</p>",
         "id": 568067,
         "locale": null,
-        "modified": "2026-09-14T23:03:47",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -26507,9 +27574,9 @@
         "description": "<p>Search, chat, and explore the web from one search box with Copilot-suggested actions and curated work content to help your users get things done faster on the Copilot new tab page. Users will see upgraded Copilot new tab page functionality and features.</p>",
         "id": 566703,
         "locale": null,
-        "modified": "2026-09-15T23:00:36",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -30158,13 +31225,13 @@
     },
     {
         "created": "2026-06-03T23:00:57",
-        "description": "The Microsoft Rights Management (RMS) connector is moving from shared-secret authentication to certificate-based authentication, improving its security posture. With this update, administrators configure their own Microsoft Entra app registration and certificate, then use the new PowerShell module to configure the certificate for each workload (Connector, Exchange, SharePoint, and FCI). New PowerShell cmdlets handle certificate import, registry configuration, private-key permissions, and validation. As part of this change, the connector setup no longer provisions an Entra service principal or issues a shared secret on the customer's behalf. Customers should plan to register an Entra ID application and upload a certificate before installing or upgrading the connector.\n",
+        "description": "<p>The Microsoft Rights Management (RMS) connector is moving from shared-secret authentication to certificate-based authentication, improving its security posture. With this update, administrators configure their own Microsoft Entra app registration and certificate, then use the new PowerShell module to configure the certificate for each workload (Connector, Exchange, SharePoint, and FCI). New PowerShell cmdlets handle certificate import, registry configuration, private-key permissions, and validation. As part of this change, the connector setup no longer provisions an Entra service principal or issues a shared secret on the customer's behalf. Customers should plan to register an Entra ID application and upload a certificate before installing or upgrading the connector.</p>",
         "id": 564617,
         "locale": null,
-        "modified": "2026-09-02T22:56:59",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2027",
-        "publicPreviewDate": "July CY2026",
+        "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -33325,7 +34392,7 @@
         "description": "<p>Users can now upload videos directly into a Teams event or meeting from OneDrive from the \"Manage view\" options when an organizer has turned on Manage What Attendees See mode. This ensures a smoother high quality video playback with a more consistent experience for attendees.</p>",
         "id": 562340,
         "locale": null,
-        "modified": "2026-09-23T22:59:12",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -33337,12 +34404,6 @@
             },
             {
                 "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
             },
             {
                 "tagName": "Desktop"
@@ -33367,12 +34428,6 @@
                 },
                 {
                     "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -33950,12 +35005,12 @@
     },
     {
         "created": "2026-05-12T23:00:33",
-        "description": "AI agent skill to detect and alert unhealthy policy sync and device configuration.",
+        "description": "<p>AI agent skill to detect and alert unhealthy policy sync and device configuration.</p>",
         "id": 562016,
         "locale": null,
-        "modified": "2026-08-12T22:47:48",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -35154,9 +36209,9 @@
         "description": "<p>This feature is bringing the Information Protection Filer Labeler and Viewer applications to the MacOS platform. Enabling customers to have the same capabilities available on Mac. Core functionality will be available with the exception of the Advanced label-based protection feature.</p>",
         "id": 561327,
         "locale": null,
-        "modified": "2026-09-03T22:50:06",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -42084,7 +43139,7 @@
         "description": "<p>Teams will store AI-generated meeting memory files for meetings where Intelligent Recap was turned on, allowing Copilot (and Facilitator) to retain key insights from meetings beyond transcript retention periods and when a transcript was not saved. This enables Copilot to continue answering questions about past meetings even after the transcript expires or the meeting is over. Admins can also configure how long this AI-generated meeting memory file is stored.</p>",
         "id": 558933,
         "locale": null,
-        "modified": "2026-10-12T23:01:05",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -42138,7 +43193,7 @@
                 }
             ]
         },
-        "title": "Microsoft Teams: AI-generated meeting memory for knowledge retention"
+        "title": "Microsoft Teams: AI-generated meeting memory for knowledge retention (formerly AI-generated meeting archive)"
     },
     {
         "created": "2026-04-08T23:00:03",
@@ -44308,15 +45363,15 @@
     },
     {
         "created": "2026-03-25T23:15:06",
-        "description": "Intelligent recap can now be generated without retaining a transcript after the meeting. Meeting organizers can choose this setting from the meeting options before the meeting, or organizers and eligible participants can enable it during the meeting. After the meeting, the AI Summary will be available, but other elements of the recap may not be available (Chapters, Topics, Mentions, Audio recap).",
+        "description": "<p>Intelligent recap can now be generated without retaining a transcript after the meeting. Meeting organizers can choose this setting from the meeting options before the meeting, or organizers and eligible participants can enable it during the meeting. After the meeting, the AI Summary will be available, but other elements of the recap may not be available (Chapters, Topics, Mentions, Audio recap).</p>",
         "id": 558286,
         "locale": null,
-        "modified": "2026-07-28T22:43:45",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -46006,12 +47061,12 @@
         "description": "<p>Administrators can choose a severity threshold and receive alerts when a new Edge update includes security fixes that meet or exceed that level, including zero day fixes. This helps organizations quickly identify updates that may require attention, while avoiding unnecessary notifications for routine releases.</p>",
         "id": 558435,
         "locale": null,
-        "modified": "2026-09-17T23:00:45",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -71387,15 +72442,15 @@
     },
     {
         "created": "2025-11-04T00:00:10",
-        "description": "The HubSpot connector allows users using the Researcher agent to be able to leverage 3rd party information from HubSpot to enrich generated responses with relevant information.",
+        "description": "<p>The HubSpot connector allows users using the Researcher agent to be able to leverage 3rd party information from HubSpot to enrich generated responses with relevant information.</p>",
         "id": 501292,
         "locale": null,
-        "modified": "2025-11-04T00:00:10",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -106583,10 +107638,10 @@
         "description": "<p>This creates the ability to apply Retention to each SharePoint or OneDrive item based on when it was last accessed by a user. #copilotcontrolsystem</p>",
         "id": 472030,
         "locale": null,
-        "modified": "2026-09-10T23:01:27",
+        "modified": "2026-10-13T23:01:05",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2027",
-        "publicPreviewDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "January CY2027",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
