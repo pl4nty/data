@@ -255,6 +255,7 @@
         "ConsumerMeteringSkill": "LlmProxyConsumer",
         "EnableLlmProxyConsumerMetering": true,
         "EnableLlmProxyConsumerServing": true,
+        "EnableLlmProxyEnterpriseUsage": true,
         "EnableLlmProxyForConsumerUsers": true,
         "EnableLlmProxyGeographyAuthorization": true,
         "EnableLlmProxyModelProviderFiltering": true,

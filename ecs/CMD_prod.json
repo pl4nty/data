@@ -1217,7 +1217,6 @@
         "HideReportSummaryTab": true,
         "HideReportingPaused": true,
         "HotpatchOnByDefaultOptOut": true,
-        "MigrationAddClientBrokerInstallAdminAction": true,
         "NoFeatureActivation": true,
         "PolicyDeviceStatusesReadFromScaleUnitKusto": true,
         "QualityUpdateGraph": true,

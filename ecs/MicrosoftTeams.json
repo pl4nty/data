@@ -4902,6 +4902,7 @@
         "PPTReactionDataExpireInHours": 20,
         "SubstrateParallelRequestSize": 2,
         "SupportedThreadIdFormatInSignal": "^((.+)@thread.v2)|((.+)@thread.tacv2)|((.+)@thread.skype)|((.+)@unq.gbl.spaces)|((.+)preview(.+))$",
+        "UseMsalPopTokenForSubstrate": true,
         "UseSdsClientSdk": true
     },
     "TeamsVerticalsEngageExperience": {},
