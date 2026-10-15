@@ -145649,6 +145649,48 @@
     "platform": "Android arm64"
   },
   {
+    "name": "Microsoft Edge/157.0.4339.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4339.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4339.0-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4339.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4339.0-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4339.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4339.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4339.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4339.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4339.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4339.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4339.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
     "name": "Microsoft Edge/74.1.96.24/Windows x64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "74.1.96.24",
@@ -191545,6 +191587,27 @@
     "product": "Microsoft Electron",
     "release": "43.6.0@74a49293",
     "dependency": "microsoft-electron-v43.6.0-74a492930b2f21f04fdd31792f6ac36f8f99abe2-mac",
+    "platform": "macOS"
+  },
+  {
+    "name": "Microsoft Electron/43.7.10@f317baa8/Linux/microsoft-electron-v43.7.10-f317baa8895e87cc1151d4ce91e7c8bece1d8b56-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.7.10@f317baa8",
+    "dependency": "microsoft-electron-v43.7.10-f317baa8895e87cc1151d4ce91e7c8bece1d8b56-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/43.7.10@f317baa8/Windows/microsoft-electron-v43.7.10-f317baa8895e87cc1151d4ce91e7c8bece1d8b56-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.7.10@f317baa8",
+    "dependency": "microsoft-electron-v43.7.10-f317baa8895e87cc1151d4ce91e7c8bece1d8b56-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/43.7.10@f317baa8/macOS/microsoft-electron-v43.7.10-f317baa8895e87cc1151d4ce91e7c8bece1d8b56-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.7.10@f317baa8",
+    "dependency": "microsoft-electron-v43.7.10-f317baa8895e87cc1151d4ce91e7c8bece1d8b56-mac",
     "platform": "macOS"
   },
   {
@@ -271176,6 +271239,34 @@
     "name": "cirrus-otel-collector/0.162.1/linux-arm64/github.com_hashicorp_golang-lru_v2_v1.0.2.zip",
     "product": "cirrus-otel-collector",
     "release": "0.162.1",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v1.0.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.163.0/linux-amd64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.163.0",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.163.0/linux-amd64/github.com_hashicorp_golang-lru_v2_v1.0.2.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.163.0",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.163.0/linux-arm64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.163.0",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.163.0/linux-arm64/github.com_hashicorp_golang-lru_v2_v1.0.2.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.163.0",
     "dependency": "github.com_hashicorp_golang-lru_v2_v1.0.2",
     "platform": "linux-arm64"
   },
