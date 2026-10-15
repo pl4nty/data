@@ -373,7 +373,8 @@
         }
     },
     "IntuneLinuxCP": {
-        "dynamic_pinning_audit_mode_enabled": true
+        "dynamic_pinning_audit_mode_enabled": true,
+        "dynamic_pinning_enforced_mode_enabled": true
     },
     "SVC_AdHocQuery": {
         "FlightingV2": {
@@ -876,7 +877,8 @@
         "FlightingV2": {
             "EnableCertReplacementBackgroundTask": true,
             "EnforceExpiredCertificateChainValidation": true,
-            "EnforceExpiredUdaCertificateValidation": true
+            "EnforceExpiredUdaCertificateValidation": true,
+            "ValidateAadDeviceTokenTenantForActAsUda": true
         }
     },
     "SVC_Pivot": {
@@ -985,7 +987,9 @@
     },
     "SVC_Updates": {
         "FlightingV2": {
-            "MoveToApLs": true
+            "DotNetUpdateSyncEnabled": true,
+            "MoveToApLs": true,
+            "QualityUpdateApprovalEnabled": true
         }
     },
     "Segmentation": {

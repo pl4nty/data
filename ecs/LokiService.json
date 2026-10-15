@@ -993,6 +993,7 @@
         "isbriefingenabled": false,
         "iscardheaderv2enabled": false,
         "iscollectorurloverrideenabled": true,
+        "iscompanynameinheaderenabled": false,
         "iscustompropertiespanelenabled": true,
         "isdotnetcoreendpointenabledintopiccard": true,
         "isexpandedviewbuttonenabled": false,
