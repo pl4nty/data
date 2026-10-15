@@ -1060,6 +1060,7 @@
         "RASHandleAbuseTenant": true,
         "RDAgentBootLoaderStoppedSnapshotHealth": true,
         "RMSCarryNewPolicyIdForReprovisionEvent": true,
+        "RMSEnableConcernKeyedDesiredStateToken": true,
         "RMSEnablePowerStatusEventInsideDevice": true,
         "RMSEnablePrivilegedAdminCheckForLegacyAPI": true,
         "RMSEnableResolveInconsistentCloudPCsWithTypeMissingAssignment": true,

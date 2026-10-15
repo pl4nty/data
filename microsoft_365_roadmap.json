@@ -1,5 +1,609 @@
 [
     {
+        "created": "2026-10-14T23:01:02",
+        "description": "<p>Microsoft Teams will introduce near-real-time detection of malicious QR codes shared in messages. By analyzing destinations embedded in QR codes, Teams can identify potential phishing and fraud threats and apply additional protections to malicious content, extending existing URL protection to QR-based attacks.</p>",
+        "id": 576198,
+        "locale": null,
+        "modified": "2026-10-14T23:01:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Mobile"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Mobile"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Near-real-time detection of malicious QR codes in messages"
+    },
+    {
+        "created": "2026-10-14T23:01:02",
+        "description": "<p>Participants joining webinars and structured meetings from Teams Rooms on Android can view and interact with PowerPoint Live presentations. This provides greater flexibility and accessibility while keeping room participants aligned with the active presentation.</p>",
+        "id": 576195,
+        "locale": null,
+        "modified": "2026-10-14T23:01:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: PowerPoint Live support for webinars and structured meetings on Teams Rooms on Android"
+    },
+    {
+        "created": "2026-10-14T23:01:02",
+        "description": "<p>For non-channel Microsoft Teams meetings, collaborative meeting notes, including Loop-powered meeting notes and Facilitator notes, will be stored in the meeting organizer's OneDrive for Business instead of the OneDrive of the person who starts the notes. This update provides more consistent ownership and management of meeting content while preserving the existing note-taking and collaboration experience for meeting participants.</p>",
+        "id": 576194,
+        "locale": null,
+        "modified": "2026-10-14T23:01:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Loop meeting notes stored in the meeting organizer's OneDrive"
+    },
+    {
+        "created": "2026-10-14T23:01:02",
+        "description": "<p>Microsoft Teams is introducing AI-powered phishing detection that uses conversation context to identify phishing and social engineering in higher-risk messaging scenarios, primarily external first-contact chats. Additional protection may apply in certain regions or scenarios. The capability is used only for security protection, and users may see warnings when suspicious activity is detected.</p>",
+        "id": 575288,
+        "locale": null,
+        "modified": "2026-10-14T23:01:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Phishing Detection in Teams Messaging"
+    },
+    {
+        "created": "2026-10-14T23:01:02",
+        "description": "<p>When Copilot Chat uses memory to personalize a response, users can now see what informed the answer. Select Sources beneath the response, then open the Personalization tab to view the custom instructions, saved memories, memories learned from conversations, and past chats that shaped the response. From there, users can return to a cited chat to pick up where they left off or review and delete saved memories. Memory citations appear only when memory is turned on.</p>",
+        "id": 574111,
+        "locale": null,
+        "modified": "2026-10-14T23:01:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Copilot response personalization - Memory citations"
+    },
+    {
+        "created": "2026-10-14T23:01:02",
+        "description": "<p>Gain proactive visibility into meeting quality across your organization with AI-powered insights in the Teams admin center that identify emerging patterns, highlight impacted users and locations, and surface likely causes with recommended actions. This helps IT administrators detect and address issues earlier, improve meeting quality, and stay ahead of potential disruptions.</p>",
+        "id": 574108,
+        "locale": null,
+        "modified": "2026-10-14T23:01:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Admin center - Intelligent insights for meeting quality"
+    },
+    {
+        "created": "2026-10-14T23:01:02",
+        "description": "<p>Quality evaluation plans now support a Once frequency type for both case evaluations and conversation evaluations. When creating an evaluation plan, users can select Once from the Frequency type dropdown to run the evaluation a single time instead of on a recurring schedule or trigger-based cadence.</p>\n<p>This option is useful for one-time evaluation runs where ongoing recurrence is not needed. Once selected, the plan is configured to execute only one time based on the specified plan start date.</p>",
+        "id": 573266,
+        "locale": null,
+        "modified": "2026-10-14T23:01:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: Quality evaluation - One-Time Evaluation Frequency"
+    },
+    {
+        "created": "2026-10-14T23:01:02",
+        "description": "<p>Planner Agent brings Planner\u2019s intelligent work management directly into Copilot Chat, enabling users to create, update, and manage personal tasks and shared basic plans without switching context. Integrated across Microsoft 365, it provides insights into priorities, deadlines, and at-risk work, along with interactive task cards to help users stay organized and keep work moving.</p>\n<p>Building on the initial launch, planned improvements include:</p>\n<ul>\n<li>Improved context handling and support for larger plans.</li>\n<li>Higher-quality responses through model upgrades, refined prompts, and better grounding.</li>\n<li>Greater reliability and reduced latency for more consistent, responsive interactions.</li>\n<li>Expanded task management capabilities, including broader task assignment support.</li>\n<li>User experience enhancements to make managing tasks and plans in Copilot Chat more intuitive.</li>\n<li>New capabilities, including scheduled task catch-ups.</li>\n</ul>",
+        "id": 573168,
+        "locale": null,
+        "modified": "2026-10-14T23:01:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Planner"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Planner"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Planner: Planner Agent in Copilot V2 Improvements"
+    },
+    {
+        "created": "2026-10-14T23:01:02",
+        "description": "<p>Microsoft Purview Adaptive Scopes will provide administrators with explicit control over lifecycle-state evaluation for recipients and site owners, helping ensure policy targeting and scope membership remain aligned with organizational requirements.</p>",
+        "id": 572676,
+        "locale": null,
+        "modified": "2026-10-14T23:01:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Adaptive Scope evaluation control with recipient and site owner lifecycle status"
+    },
+    {
+        "created": "2026-10-14T22:53:09",
+        "description": "<p>This feature adds support for token-level encryption during authentication, allowing Power Pages to accept encrypted ID tokens in addition to signed tokens. It ensures secure claim transmission, improves compatibility with advanced identity providers, and strengthens overall authentication security without changing existing sign-in flows.</p>\n<p>Business Value:</p>\n<p>You can integrate with more secure identity providers to meet stricter security and compliance requirements. This helps you expand into high-trust scenarios and allows your organization to confidently use Power Pages for sensitive, external-facing applications.</p>\n<p>Enabled for:</p>\n<p>Enabled for end users automatically</p>",
+        "id": 576395,
+        "locale": null,
+        "modified": "2026-10-14T22:53:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "August CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Pages"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Pages"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Power Pages: Design studio - Enhance OpenID Connect with encrypted token support"
+    },
+    {
         "created": "2026-10-13T23:01:05",
         "description": "<p>This is a new web part available for modern page editors in SharePoint. The web part can be configured to use any M365 Copilot agent.</p>",
         "id": 575298,
@@ -9013,10 +9617,10 @@
     },
     {
         "created": "2026-09-30T23:31:03",
-        "description": "<p>With this feature, users get an out-of-the-box solution for translation services, so they don't need to bring their own web resources. Service representatives get updated feature usage with more configurations. They can tailor their conversations more accurately based on their existing skills and preferences. The feature is transparent yet modernized with new settings, making conversations easier to consume in a language of the representative's choice.</p>\n<p>[Internal Note - ADO: https://dev.azure.com/dynamicscrm/OneCRM/_workitems/edit/6709713]</p>",
+        "description": "<p>With this feature, users get an out-of-the-box solution for translation services, so they don't need to bring their own web resources. Service representatives get updated feature usage with more configurations. They can tailor their conversations more accurately based on their existing skills and preferences. The feature is transparent yet modernized with new settings, making conversations easier to consume in a language of the representative's choice.</p>",
         "id": 573245,
         "locale": null,
-        "modified": "2026-09-30T23:31:03",
+        "modified": "2026-10-14T23:01:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "November CY2026",
@@ -9025,6 +9629,9 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Dynamics 365 Contact Center"
@@ -9042,7 +9649,11 @@
                     "tagName": "Worldwide (Standard Multi-Tenant)"
                 }
             ],
-            "platforms": [],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
             "products": [
                 {
                     "tagName": "Dynamics 365 Contact Center"
@@ -12596,9 +13207,9 @@
         "description": "<p>Express face enrollment makes it easier for users to create a face profile in Teams by using their camera during eligible meetings, after they opt in. Once enrolled, users can be recognized in supported Teams Rooms experiences, helping identify who is in the room and improving downstream meeting experiences such as Copilot and recap. Admins can enable or disable the feature for their organization.</p>",
         "id": 570846,
         "locale": null,
-        "modified": "2026-09-21T23:04:49",
+        "modified": "2026-10-14T23:01:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -16874,12 +17485,12 @@
         "description": "<p>Users can now use the Teams Meet app to discover events across their organization, track what important events are upcoming, and plan and organize their own professional events. With this release, Meet app will be renamed to Events app.</p>",
         "id": 569934,
         "locale": null,
-        "modified": "2026-10-12T23:01:05",
+        "modified": "2026-10-14T23:01:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -19006,15 +19617,15 @@
     },
     {
         "created": "2026-08-13T22:42:07",
-        "description": "Microsoft Teams browser app users will be able to pop out calls into a simplified call window that stays available while they navigate away from, hide, or minimize the tab or progressive web app (PWA) hosting the call. This helps users multitask and collaborate more easily during calls.",
+        "description": "<p>Microsoft Teams browser app users will be able to pop out calls into a simplified call window that stays available while they navigate away from, hide, or minimize the tab or progressive web app (PWA) hosting the call. This helps users multitask and collaborate more easily during calls.</p>",
         "id": 569206,
         "locale": null,
-        "modified": "2026-08-26T22:50:58",
+        "modified": "2026-10-14T23:01:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -25576,116 +26187,6 @@
     },
     {
         "created": "2026-07-08T23:10:57",
-        "description": "<p>Walking into a customer meeting with incomplete context can mean missed risks, overlooked issues, and conversations that fall flat. With access to richer data, like service tickets, directly in your meeting prep, you can spot open issues and opportunities before the conversation starts. This insight helps you engage more meaningfully, build stronger relationships, and drive better sales outcomes. UPDATE: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
-        "id": 567003,
-        "locale": null,
-        "modified": "2026-09-28T22:58:08",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2027",
-        "publicPreviewDate": "September CY2026",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Enrich Sales agent meeting prep with more data sources"
-    },
-    {
-        "created": "2026-07-08T23:10:57",
-        "description": "<p>Sales agent gives you strong CRM-based account and opportunity summaries, but important context is often spread across non-CRM systems. With this capability, you can add insights from any application to enrich account and opportunity summaries in Sales agent, so sellers get a unified view of their accounts and deals in one place without switching applications. UPDATE: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
-        "id": 567002,
-        "locale": null,
-        "modified": "2026-09-28T22:58:08",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2027",
-        "publicPreviewDate": "September CY2026",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Add custom insights to record summaries in Sales agent"
-    },
-    {
-        "created": "2026-07-08T23:10:57",
         "description": "A multi\u2011channel outreach capability, spanning web chat, voice, SMS, and email, is critical for meeting customers in the channel they naturally prefer and increasing the likelihood of timely engagement. By activating the agent across multiple surfaces, we ensure continuity of conversations, reduce drop\u2011off when a single channel fails, and support the FY27 goal of always\u2011on, end\u2011to\u2011end engagement from initial intent to close. This creates higher response rates, faster qualification, and a more seamless handoff to sales motions.",
         "id": 567001,
         "locale": null,
@@ -25738,61 +26239,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Engage customers across multiple channels (web, voice, SMS & email)"
-    },
-    {
-        "created": "2026-07-08T23:10:57",
-        "description": "<p>To reach their sales goals, sales teams need to constantly generate enough pipeline. They need to decide which inbound leads to engage. This decision takes a lot of time because sellers must sift through large amounts of data across tools and data sources. This data includes information from internal systems like their CRM and external resources like the web and third-party data services.<br>\nSales Agent handles the work of reviewing every available data source to create a comprehensive summary for each lead. As a seller, you can quickly decide whether to engage with a prospect or pass on them. Sales Agent reviews every lead in your queue and gathers information. It synthesizes insights that are specific to your business. At a glance, you can see if a lead is worth reaching out to and what they're interested in. Use this information to personalize your engagement with the prospect. With Sales Agent, you spend less time and get higher response rates, leading to a larger, more qualified pipeline. UPDATE: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
-        "id": 567000,
-        "locale": null,
-        "modified": "2026-09-28T22:58:08",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
-        "publicPreviewDate": "June CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Engage prospects faster with Sales Agent-enriched leads"
     },
     {
         "created": "2026-07-07T23:10:08",
@@ -38828,15 +39274,15 @@
     },
     {
         "created": "2026-04-24T22:00:04",
-        "description": "We\u2019re introducing a new guided diagnostics experience to help users understand why their DLP policies may not be behaving as expected. This experience provides a clear summary of why a DLP action was taken on a document, including which policies were triggered, the order of evaluation, and detailed insights into which conditions evaluated as true or false.\nFor Microsoft 365 E5 customers, the experience also includes Copilot-powered insights and tailored recommendations to accelerate troubleshooting and policy optimization.",
+        "description": "<p>We\u2019re introducing a new guided diagnostics experience to help users understand why their DLP policies may not be behaving as expected. This experience provides a clear summary of why a DLP action was taken on a document, including which policies were triggered, the order of evaluation, and detailed insights into which conditions evaluated as true or false.<br>\nFor Microsoft 365 E5 customers, the experience also includes Copilot-powered insights and tailored recommendations to accelerate troubleshooting and policy optimization.</p>",
         "id": 561032,
         "locale": null,
-        "modified": "2026-08-04T22:45:42",
+        "modified": "2026-10-14T23:01:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -48663,61 +49109,6 @@
     },
     {
         "created": "2026-03-09T23:15:17",
-        "description": "<p>We're expanding the Data Security Posture Agent with a new credential scanning capability. Discover exposed credentials and data security risks across scoped locations. Assign scanning tasks to the agent, track progress across stages, and take action on prioritized findings. The agent scans selected data locations, analyzing scoped files to detect credentials, such as Microsoft Entra user credentials, private keys, and API tokens. Each finding includes a risk score, AI-generated insights, confidence score, and credential category so you can review, confirm, and act from a single task board view. Updated October 5, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience.</p>",
-        "id": 558436,
-        "locale": null,
-        "modified": "2026-10-05T23:03:05",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
-        "publicPreviewDate": "March CY2026",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview: Credential Scanning in Data Security Posture Agent "
-    },
-    {
-        "created": "2026-03-09T23:15:17",
         "description": "Data Lifecycle Management allows compliance admins to retain, review and delete content in M365 workloads.\u202fDeletion\u202fof content to adhere to compliance requirements, admins can set up Retention policies or labels.\u202fTo\u202fhelp\u202fprevent inadvertent data loss, M365 retention labels policies and M365 retention policies\u202fdo\u202fnot\u202fhard\u202fdelete content\u202fimmediately and keeps the data in Recycle Bins for\u202f93 days\u202ffor ODSP.\u202fHard delete\u202fitself is a very costly process as it\u202fopens\u202fMicrosoft to heavy legal implications in case of any data loss incident that may occur due to a misconfigured policy or regression.\u202fPriority Cleanup feature allows users to bypass retention,\u202fand eDiscovery holds to help customers comply to changing legal/compliance requirements\u202for manage data spillage\u202fscenarios.\u202fThis feature requires the ability\u202fto hard\u202fdelete specific files from the scoped locations.\u202f Ability to select hard delete configuration for a Priority cleanup policy for OneDrive and SharePoint content and skip recycle bins.",
         "id": 558343,
         "locale": null,
@@ -55699,61 +56090,6 @@
             ]
         },
         "title": "Microsoft Teams: Microsoft Teams: Secure Reliable Transport (SRT) Support for Teams town halls"
-    },
-    {
-        "created": "2026-02-11T00:15:04",
-        "description": "<p>With AI Interpreter, Teams Phone Devices provide real\u2011time language interpretation directly within the call experience. Users can participate naturally in multilingual conversations while the device interprets spoken audio, reducing language barriers and supporting clearer communication in everyday calling scenarios. Updated September 22, 2026: We have decided not to move forward with this change at this time. A planned future release will be communicated separately once timelines are available. We apologize for any inconvenience.</p>",
-        "id": 553594,
-        "locale": null,
-        "modified": "2026-09-22T22:57:16",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Built\u2011in AI Interpreter for Calls on Teams Phone Devices"
     },
     {
         "created": "2026-02-10T00:15:36",
@@ -66688,15 +67024,15 @@
     },
     {
         "created": "2025-11-26T00:45:03",
-        "description": "Today, IT admins manually review trust data for Teams apps and agents in the Teams admin center to ensure they meet organizational security, privacy, and compliance standards. This feature introduces a scalable, automated evaluation process. Admins can define their organization\u2019s trust requirements once, and the system will automatically assess each app and agent\u2014generating an evaluation score and detailed evaluation report tailored to those requirements. This enables faster, more consistent decision-making by clearly identifying which apps and agents meet the organization\u2019s standards and where further review is needed.",
+        "description": "<p>Today, IT admins manually review trust data for Teams apps and agents in the Teams admin center to ensure they meet organizational security, privacy, and compliance standards. This feature introduces a scalable, automated evaluation process. Admins can define their organization\u2019s trust requirements once, and the system will automatically assess each app and agent\u2014generating an evaluation score and detailed evaluation report tailored to those requirements. This enables faster, more consistent decision-making by clearly identifying which apps and agents meet the organization\u2019s standards and where further review is needed.</p>",
         "id": 532720,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-10-14T23:01:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -76532,61 +76868,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Copilot voice support in Word & PowerPoint. "
-    },
-    {
-        "created": "2025-10-22T23:15:17",
-        "description": "With Agents in Notebooks, use the specialized skills and knowledge of Agents on the content that matter most to your task at hand, whether it\u2019s transforming complex data into clear insights and visualizations with Analyst, or creating stunning designs with Designer.",
-        "id": 516041,
-        "locale": null,
-        "modified": "2026-06-02T23:00:40",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "In development",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Expanded Agent Support in Copilot Notebooks"
     },
     {
         "created": "2025-10-22T23:15:17",
@@ -105270,15 +105551,15 @@
     },
     {
         "created": "2023-10-20T22:29:17",
-        "description": "<div><span style=\"font-family:&quot;Segoe UI&quot;, sans-serif;font-size:12px;text-align:left;background-color:rgb(255, 255, 255);display:inline !important;\">Co-organizers can edit webinar details, publish the event, and cancel the event, similar to the organizer.</span> </div>",
+        "description": "<div><span>Co-organizers can edit webinar details, publish the event, and cancel the event, similar to the organizer.</span> </div>",
         "id": 168524,
         "locale": null,
-        "modified": "2025-01-15T00:00:52",
+        "modified": "2026-10-14T23:01:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -110623,61 +110904,6 @@
         "title": "Microsoft Purview compliance portal: Insider Risk Management - Progressive alert scoring"
     },
     {
-        "created": "2023-09-19T23:09:27",
-        "description": "<div><span>Microsoft has decided to not move forward with this feature.\n<p>Just-in-time<br>\nprotection for SharePoint in Microsoft Purview DLP allows organizations to<br>\nextend protection to unclassified files in SharePoint and apply restrictions<br>\ndefined in DLP policies at the time of egress. </p></span></div><p></p>",
-        "id": 139457,
-        "locale": null,
-        "modified": "2026-10-05T23:03:05",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "October CY2026",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Data Loss Prevention - Just in time protection (JIT) on SharePoint"
-    },
-    {
         "created": "2023-08-04T22:05:15",
         "description": "Remediations are script packages that can detect and fix common support issues on a user's device before they even realize there's a problem. These remediations can help reduce support calls. On demand remediations enables admins to execute a remediation on demand and as soon as possible on a single device.",
         "id": 124890,
@@ -111042,61 +111268,6 @@
             ]
         },
         "title": "Outlook: Additional features on the profile card in Outlook Mobile"
-    },
-    {
-        "created": "2024-11-01T23:00:59",
-        "description": "<p>Extend your sensitivity labels to specific or all subscriptions within Azure Storage and Azure SQL Server via auto-labeling policy. Clearly define labeling conditions for data sources beyond M365 without fear of it interfering with existing M365 files configurations. Updated September 24, 2026: We have decided not to move forward with this change at this time and will communicate via a new Roadmap item when we choose to proceed. We apologize for any inconvenience.</p>",
-        "id": 429876,
-        "locale": null,
-        "modified": "2026-09-24T22:58:55",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2026",
-        "publicPreviewDate": "July CY2024",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Information Protection - MIP auto-labeling for Azure SQL & Storage"
     },
     {
         "created": "2024-05-09T23:00:20",
