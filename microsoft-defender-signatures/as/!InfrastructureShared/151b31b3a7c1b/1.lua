@@ -3,36 +3,43 @@
 
 -- params : ...
 -- function num : 0
--- DECOMPILER ERROR at PC5: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[4]).matched then
-    local l_0_0 = nil
+local l_0_0 = (versioning.GetOrgID)()
+if isnull(l_0_0) then
+  return mp.CLEAN
+end
+local l_0_1 = {}
+l_0_1["26e8b179-9fbe-40fd-8f34-37cdee8c4766"] = true
+l_0_1["e6e2b814-cd64-4ac3-9e16-91753ff30617"] = true
+l_0_1["bcfa1838-fccc-4999-9d5b-5ec1ac1a4776"] = true
+l_0_1["9ee8ddb9-e98f-4b86-a160-fe3b96f39cc6"] = true
+if not l_0_1[(string.lower)(l_0_0)] then
+  return mp.CLEAN
+end
+local l_0_2 = nil
+if (this_sigattrlog[4]).matched then
+  l_0_2 = "cmd"
+else
+  if (this_sigattrlog[5]).matched then
+    l_0_2 = "powershell"
   else
-  end
-  -- DECOMPILER ERROR at PC19: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched then
-      local l_0_1 = "powershell"
+    if (this_sigattrlog[6]).matched then
+      l_0_2 = "pwsh"
     else
-    end
-    -- DECOMPILER ERROR at PC33: Overwrote pending register: R0 in 'AssignReg'
-
-    if not (this_sigattrlog[7]).matched or (this_sigattrlog[8]).matched then
-      local l_0_2, l_0_3, l_0_4, l_0_5 = "mshta"
-    else
-      do
-        do return mp.CLEAN end
-        -- DECOMPILER ERROR at PC41: Confused about usage of register: R0 in 'UnsetPending'
-
-        ;
-        (bm.add_related_string)("susp_iis_spawn_child", l_0_2, bm.RelatedStringBMReport)
-        add_parents()
-        TrackPidAndTechniqueBM("BM", "T1505.003", "iis_worker_susp_spawn", 28800)
-        return mp.INFECTED
+      if (this_sigattrlog[7]).matched then
+        l_0_2 = "mshta"
+      else
+        if (this_sigattrlog[8]).matched then
+          l_0_2 = "certutil"
+        else
+          return mp.CLEAN
+        end
       end
     end
   end
 end
+;
+(bm.add_related_string)("susp_iis_spawn_child", l_0_2, bm.RelatedStringBMReport)
+add_parents()
+TrackPidAndTechniqueBM("BM", "T1505.003", "iis_worker_susp_spawn", 28800)
+return mp.INFECTED
 

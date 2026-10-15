@@ -9,6 +9,6 @@ local l_0_2 = GetRollingQueueKeyValue(l_0_0, l_0_1)
 if not isnull(l_0_2) then
   return mp.CLEAN
 end
-AppendToRollingQueue(l_0_0, l_0_1, 1, 86400)
+AppendToRollingQueue(l_0_0, l_0_1, 1, 604800)
 return mp.INFECTED
 
