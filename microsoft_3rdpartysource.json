@@ -145838,6 +145838,13 @@
     "platform": "Windows x86"
   },
   {
+    "name": "Microsoft Edge/158.0.4343.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4343.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
     "name": "Microsoft Edge/74.1.96.24/Windows x64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "74.1.96.24",
