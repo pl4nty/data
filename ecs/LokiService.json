@@ -606,8 +606,7 @@
                         "claude-haiku-4.5",
                         "gpt-5.6-sol",
                         "gpt-5.6-luna",
-                        "gpt-5.5",
-                        "gpt-5-mini"
+                        "gpt-5.5"
                     ],
                     "enterprise": [
                         "claude-opus-5",
@@ -620,8 +619,7 @@
                         "claude-haiku-4.5",
                         "gpt-5.6-sol",
                         "gpt-5.6-luna",
-                        "gpt-5.5",
-                        "gpt-5-mini"
+                        "gpt-5.5"
                     ]
                 }
             },
@@ -640,8 +638,7 @@
                         "claude-haiku-4.5",
                         "gpt-5.6-sol",
                         "gpt-5.6-luna",
-                        "gpt-5.5",
-                        "gpt-5-mini"
+                        "gpt-5.5"
                     ],
                     "enterprise": [
                         "claude-opus-5.5",
@@ -656,8 +653,7 @@
                         "claude-haiku-4.5",
                         "gpt-5.6-sol",
                         "gpt-5.6-luna",
-                        "gpt-5.5",
-                        "gpt-5-mini"
+                        "gpt-5.5"
                     ]
                 }
             }
@@ -785,11 +781,11 @@
             },
             {
                 "appId": "aebc6443-996d-45c2-90f0-388ff96faa56",
-                "workflow": "GitHubCopilot"
+                "workflow": "CodeTab"
             },
             {
                 "appId": "5ecc71bb-0fa6-4d6b-a31b-de12184c4b1a",
-                "workflow": "GitHubCopilot"
+                "workflow": "CodeTab"
             },
             {
                 "appId": "ea31b3ac-3225-4c75-b81e-34e3091871d5",

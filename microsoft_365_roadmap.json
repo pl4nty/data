@@ -1,16 +1,19 @@
 [
     {
-        "created": "2026-10-14T23:01:02",
-        "description": "<p>Microsoft Teams will introduce near-real-time detection of malicious QR codes shared in messages. By analyzing destinations embedded in QR codes, Teams can identify potential phishing and fraud threats and apply additional protections to malicious content, extending existing URL protection to QR-based attacks.</p>",
-        "id": 576198,
+        "created": "2026-10-15T22:47:30",
+        "description": "<p>We're enabling PDF annotation for sensitivity-label protected PDFs in OneDrive and SharePoint on the web. With this update, users who have the appropriate usage rights can annotate these protected PDFs in place in their browser while preserving the file's sensitivity label, encryption, and usage rights when changes are saved.</p>",
+        "id": 576276,
         "locale": null,
-        "modified": "2026-10-14T23:01:02",
+        "modified": "2026-10-15T22:47:30",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
             {
                 "tagName": "GCC"
             },
@@ -21,13 +24,473 @@
                 "tagName": "DoD"
             },
             {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneDrive"
+                },
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "OneDrive: PDF annotation for sensitivity-label protected PDFs in OneDrive/SharePoint web viewer"
+    },
+    {
+        "created": "2026-10-15T22:47:30",
+        "description": "<p>Get a closer look at shared content in Teams calls and meetings with <strong>pinch-to-zoom using your touchpad</strong>. Quickly zoom in to make small text and detailed visuals easier to see, then zoom back out for the full view. Existing zoom controls remain available.</p>",
+        "id": 576193,
+        "locale": null,
+        "modified": "2026-10-15T22:47:30",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
                 "tagName": "Desktop"
             },
             {
                 "tagName": "Mac"
             },
             {
-                "tagName": "Mobile"
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Pinch to zoom in on shared screens"
+    },
+    {
+        "created": "2026-10-15T22:47:30",
+        "description": "<p>Task grid full-screen mode enables project managers and team members to expand the task grid to use the available screen space. By minimizing surrounding page elements, users gain a larger workspace for viewing and managing task hierarchies, schedules, assignments, dependencies, and other task details.</p>\n<p>Users can enter full-screen mode when they need a focused planning experience and return to the standard project view when they need access to other project information.</p>",
+        "id": 575291,
+        "locale": null,
+        "modified": "2026-10-15T22:47:30",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Full-screen mode on task grid"
+    },
+    {
+        "created": "2026-10-15T22:47:30",
+        "description": "<p>Copilot Search brings AI-powered, natural-language search to SharePoint and OneDrive, combining relevant results, AI-generated summaries with source references, intuitive filters, and a seamless handoff to Copilot.</p>",
+        "id": 573696,
+        "locale": null,
+        "modified": "2026-10-15T22:47:30",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneDrive"
+                },
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "SharePoint: Copilot Search in SharePoint and OneDrive"
+    },
+    {
+        "created": "2026-10-15T22:47:30",
+        "description": "<p>Facilitator can help you spot suspected attempts by people outside your organization to trick you into sharing sensitive information during a meeting. When Facilitator is in your meeting, its Protection skill uses AI to check the meeting transcript for signs of possible social engineering. If it detects a suspected attempt, you'll see a warning in the meeting, with options to end or to temporarily restrict information sharing.</p>",
+        "id": 573450,
+        "locale": null,
+        "modified": "2026-10-15T22:47:30",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Facilitator's enhanced protection skill can alert you to potential scams"
+    },
+    {
+        "created": "2026-10-15T22:47:30",
+        "description": "<p>Prompt columns can now store multilple lines of text as prompt output, enabling longer and detailed AI-generated insights to be stored in your tables.</p>",
+        "id": 573279,
+        "locale": null,
+        "modified": "2026-10-15T22:47:30",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "Microsoft Dataverse"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                },
+                {
+                    "tagName": "Microsoft Dataverse"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Power Apps: Prompt Columns - multiple lines of text output    "
+    },
+    {
+        "created": "2026-10-15T22:47:30",
+        "description": "<p>Prompt columns can now generate AI values for records that already exist in your table, not just new or updated ones. Makers can choose to apply a prompt to existing records in bulk, optionally filtered to just the rows they need, so historical data gets the same AI-generated insights as incoming data, without touching each record one at a time.</p>",
+        "id": 570865,
+        "locale": null,
+        "modified": "2026-10-15T22:47:30",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "Microsoft Dataverse"
+            },
+            {
+                "tagName": "Microsoft Power Platform governance and administration"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                },
+                {
+                    "tagName": "Microsoft Dataverse"
+                },
+                {
+                    "tagName": "Microsoft Power Platform governance and administration"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Dataverse: Prompt column values in bulk for existing records (backfill)"
+    },
+    {
+        "created": "2026-10-14T23:01:02",
+        "description": "<p>Microsoft Teams will introduce near-real-time detection of malicious QR codes shared in messages. By analyzing destinations embedded in QR codes, Teams can identify potential phishing and fraud threats and apply additional protections to malicious content, extending existing URL protection to QR-based attacks.</p>",
+        "id": 576198,
+        "locale": null,
+        "modified": "2026-10-15T22:47:30",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
             },
             {
                 "tagName": "Web"
@@ -42,6 +505,9 @@
         "tagsContainer": {
             "cloudInstances": [
                 {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
                     "tagName": "GCC"
                 },
                 {
@@ -53,13 +519,16 @@
             ],
             "platforms": [
                 {
+                    "tagName": "Android"
+                },
+                {
                     "tagName": "Desktop"
                 },
                 {
-                    "tagName": "Mac"
+                    "tagName": "iOS"
                 },
                 {
-                    "tagName": "Mobile"
+                    "tagName": "Mac"
                 },
                 {
                     "tagName": "Web"
@@ -132,7 +601,7 @@
         "description": "<p>For non-channel Microsoft Teams meetings, collaborative meeting notes, including Loop-powered meeting notes and Facilitator notes, will be stored in the meeting organizer's OneDrive for Business instead of the OneDrive of the person who starts the notes. This update provides more consistent ownership and management of meeting content while preserving the existing note-taking and collaboration experience for meeting participants.</p>",
         "id": 576194,
         "locale": null,
-        "modified": "2026-10-14T23:01:02",
+        "modified": "2026-10-15T22:47:30",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -143,7 +612,19 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
+                "tagName": "Android"
+            },
+            {
                 "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -163,7 +644,19 @@
             ],
             "platforms": [
                 {
+                    "tagName": "Android"
+                },
+                {
                     "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -315,10 +808,10 @@
         "description": "<p>Gain proactive visibility into meeting quality across your organization with AI-powered insights in the Teams admin center that identify emerging patterns, highlight impacted users and locations, and surface likely causes with recommended actions. This helps IT administrators detect and address issues earlier, improve meeting quality, and stay ahead of potential disruptions.</p>",
         "id": 574108,
         "locale": null,
-        "modified": "2026-10-14T23:01:02",
+        "modified": "2026-10-15T22:47:30",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "September CY2026",
+        "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -11396,7 +11889,7 @@
         "description": "<p>Microsoft Copilot in the Dynamics 365 Field Service mobile app brings conversational AI chat capabilities directly to frontline workers. Once enabled, technicians can ask natural-language questions about Dynamics 365 Field Service data and receive contextual answers based on the app experience and their organization\u2019s Dataverse data. With standard capabilities, Dataverse Q&amp;A supports questions such as \u201cWhat is the work history of this asset?\u201d or \u201cWho worked on this job last?\u201d Organizations can also extend the with custom experiences and agents available to frontline and back-office users.</p>",
         "id": 571663,
         "locale": null,
-        "modified": "2026-09-24T22:58:55",
+        "modified": "2026-10-15T22:47:30",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2027",
         "publicPreviewDate": "",
@@ -11419,7 +11912,7 @@
                 "tagName": "Dynamics 365 Field Service"
             },
             {
-                "tagName": "Targeted Release"
+                "tagName": "General Availability"
             }
         ],
         "tagsContainer": {
@@ -11446,7 +11939,7 @@
             ],
             "releasePhase": [
                 {
-                    "tagName": "Targeted Release"
+                    "tagName": "General Availability"
                 }
             ]
         },
@@ -16793,15 +17286,15 @@
     },
     {
         "created": "2026-09-01T22:59:38",
-        "description": "A Copilot-generated canvas that turns workbook data into a polished, interactive view of key visualizations, metrics, and insights. As workbook data changes, it automatically updates to reflect the latest information. Users can modify the canvas by chatting with Copilot.",
+        "description": "<p>A Copilot-generated canvas that turns workbook data into a polished, interactive view of key visualizations, metrics, and insights. As workbook data changes, it automatically updates to reflect the latest information. Users can modify the canvas by chatting with Copilot.</p>",
         "id": 569424,
         "locale": null,
-        "modified": "2026-09-01T22:59:38",
+        "modified": "2026-10-15T22:47:30",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -27953,9 +28446,9 @@
         "description": "<p>Remote meeting participants know who is in the room and better follow the conversation with new IntelliFrame people labels that identify in-room participants and provide a hover-over contact card using voice and face profiles on intelligent cameras and in the cloud. Available with Teams Rooms on Windows licensed for Teams Rooms Pro.</p>",
         "id": 566700,
         "locale": null,
-        "modified": "2026-09-24T22:58:55",
+        "modified": "2026-10-15T22:47:30",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -29647,15 +30140,15 @@
     },
     {
         "created": "2026-06-16T23:00:10",
-        "description": "Users can now sign in to Microsoft Edge using a Google account in addition to the Microsoft account from the profile menu and Edge sign-in screen. Available for Windows and macOS devices.  Admins can control availability to this feature using the NonMicrosoftAccountSignInEnabled policy.",
+        "description": "<p>Users can now sign in to Microsoft Edge using a Google account in addition to the Microsoft account from the profile menu and Edge sign-in screen. Available for Windows and macOS devices.  Admins can control availability to this feature using the NonMicrosoftAccountSignInEnabled policy.</p>",
         "id": 565860,
         "locale": null,
-        "modified": "2026-08-21T22:00:23",
+        "modified": "2026-10-15T22:47:30",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -29692,7 +30185,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Sign in to Edge with a Google account"
+        "title": "Microsoft Edge: v.154 - Sign in to Edge with a Google account"
     },
     {
         "created": "2026-06-15T23:00:45",
@@ -36149,7 +36642,7 @@
         "description": "<p>We\u2019re making it easier to give your Access apps a polished, up-to-date feel. With the new CornerRadius property, you can add rounded corners to form controls\u2014bringing a softer, more modern look to your designs.</p>",
         "id": 561854,
         "locale": null,
-        "modified": "2026-09-14T23:03:47",
+        "modified": "2026-10-15T22:47:30",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "September CY2026",
@@ -36173,9 +36666,6 @@
             },
             {
                 "tagName": "Preview"
-            },
-            {
-                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -36203,9 +36693,6 @@
                 },
                 {
                     "tagName": "Preview"
-                },
-                {
-                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -44226,12 +44713,12 @@
         "description": "<p>Microsoft Teams automatically organizes your chats with new built in sections that help reduce clutter and keep conversations easy to find. Muted chats (on by default) are grouped together in a dedicated area, while meeting chats (off by default) can be collected into a single section for quick access. You\u2019re always in control, as each section can be turned on or off based on your preferences. The new Meeting chats section will replace the Meeting chats filter, that was previously available at the top of the chat and channel list. Updated July 20, 2026: We have temporarily rolled back this feature. We apologize for any inconvenience.</p>",
         "id": 559605,
         "locale": null,
-        "modified": "2026-09-22T22:57:16",
+        "modified": "2026-10-15T22:47:30",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -44381,12 +44868,12 @@
     },
     {
         "created": "2026-04-01T23:15:50",
-        "description": "Facilitator now automatically detects open questions raised during a Teams meeting and offers to help answer them using web search. When a participant asks a question (e.g., \u201cWhat is an LLM?\u201d) and no one answers, Facilitator posts a prompt offering to find an answer. Participants can select \u201cYes\u201d to have the agent retrieve and share the information.",
+        "description": "<p>Facilitator now automatically detects open questions raised during a Teams meeting and offers to help answer them using web search. When a participant asks a question (e.g., \u201cWhat is an LLM?\u201d) and no one answers, Facilitator posts a prompt offering to find an answer. Participants can select \u201cYes\u201d to have the agent retrieve and share the information.</p>",
         "id": 558341,
         "locale": null,
-        "modified": "2026-08-26T22:50:58",
+        "modified": "2026-10-15T22:47:30",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -60508,10 +60995,10 @@
     },
     {
         "created": "2026-01-17T01:15:10",
-        "description": "Watermarking Protection in Microsoft Edge helps organizations visibly reinforce data protection policies by overlaying a persistent watermark on sensitive content viewed in the browser. This feature is designed to deter unauthorized sharing, support compliance efforts, and increase user awareness when handling confidential information.  ",
+        "description": "<p>Watermarking Protection in Microsoft Edge helps organizations visibly reinforce data protection policies by overlaying a persistent watermark on sensitive content viewed in the browser. This feature is designed to deter unauthorized sharing, support compliance efforts, and increase user awareness when handling confidential information.</p>",
         "id": 547827,
         "locale": null,
-        "modified": "2026-01-17T01:15:10",
+        "modified": "2026-10-15T22:47:30",
         "moreInfoLink": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-management-watermark-protection",
         "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
@@ -60529,9 +61016,6 @@
             },
             {
                 "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -60553,9 +61037,6 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -78736,9 +79217,9 @@
         "description": "<p>This enables users to export row-level Copilot metrics from the Copilot Dashboard for reporting and deeper analysis.</p>",
         "id": 500872,
         "locale": null,
-        "modified": "2026-09-17T23:00:45",
+        "modified": "2026-10-15T22:47:30",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -79029,9 +79510,9 @@
         "description": "<p>Align the community feeds default experience with expected user behaviors; support triage and content review for users who want to read every message in a community.</p>",
         "id": 513275,
         "locale": null,
-        "modified": "2026-10-01T23:00:07",
+        "modified": "2026-10-15T22:47:30",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
