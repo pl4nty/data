@@ -359,6 +359,9 @@
         "azureml://registries/azureml-meta/models/llama-2-13b",
         "azureml://registries/azureml-meta/models/llama-2-70b"
     ],
+    "decisionServerless": [
+        "azureml://registries/azureml-msr/models/Microsoft-Decision-1"
+    ],
     "earlyAccessAssetIds": [],
     "healthMaaP": [
         "azureml://registries/azureml/models/medimageparse",

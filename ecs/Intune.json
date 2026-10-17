@@ -976,7 +976,9 @@
         "FlightingV2": {
             "EnableAppleDirectActionDetection": true,
             "EnableComplianceMonitorConfigDelivery": true,
+            "EnableDepIntegrityCheck": true,
             "EnableDirectActionStatusPublishing": true,
+            "EnableGWGnTIntegrityCheck": true,
             "EnableRemoteHelpCertExpiry": true,
             "RemoveEmsPolicyUnencryptedScript": true,
             "SetEmsPolicyEncryptedScript": true,
@@ -1070,7 +1072,6 @@
             "DeviceLifecycleAgentUI": true,
             "EnableGetSyncStatusUI": true,
             "EnableGetSyncStatusUI_iOS": true,
-            "EnableSingleDeviceReactView": true,
             "HideCartToClass": true,
             "ShowAFDBanner": true,
             "ShowVulnerabilityAgentRunSurvey": true
