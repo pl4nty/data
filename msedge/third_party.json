@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 1131005,
+    "size": 1130522,
     "file_count": 48
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 17018013,
+    "size": 17019539,
     "file_count": 851
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 34267899,
-    "file_count": 4105
+    "size": 34268179,
+    "file_count": 4104
   },
   {
     "name": "boringssl",
@@ -161,7 +161,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 5512254,
+    "size": 5512679,
     "file_count": 64
   },
   {
@@ -206,8 +206,8 @@
   },
   {
     "name": "eigen3",
-    "size": 22232342,
-    "file_count": 2341
+    "size": 22523331,
+    "file_count": 2351
   },
   {
     "name": "entity_extraction",
@@ -241,8 +241,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 100697706,
-    "file_count": 11677
+    "size": 101833380,
+    "file_count": 11914
   },
   {
     "name": "flac",
@@ -276,8 +276,8 @@
   },
   {
     "name": "glslang",
-    "size": 46330344,
-    "file_count": 3746
+    "size": 46364493,
+    "file_count": 3764
   },
   {
     "name": "googletest",
@@ -336,7 +336,7 @@
   },
   {
     "name": "icu",
-    "size": 162938710,
+    "size": 162940170,
     "file_count": 7202
   },
   {
@@ -346,7 +346,7 @@
   },
   {
     "name": "ink",
-    "size": 97948,
+    "size": 98302,
     "file_count": 13
   },
   {
@@ -396,7 +396,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 70331,
+    "size": 70469,
     "file_count": 47
   },
   {
@@ -441,7 +441,7 @@
   },
   {
     "name": "liblouis",
-    "size": 11219076,
+    "size": 11219423,
     "file_count": 20
   },
   {
@@ -491,12 +491,12 @@
   },
   {
     "name": "litert",
-    "size": 115836,
+    "size": 116275,
     "file_count": 35
   },
   {
     "name": "llvm-build",
-    "size": 409516266,
+    "size": 409513706,
     "file_count": 379
   },
   {
@@ -516,7 +516,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 302588,
+    "size": 302723,
     "file_count": 46
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19167723,
+    "size": 19165163,
     "file_count": 19
   },
   {
@@ -576,7 +576,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 78605,
+    "size": 78706,
     "file_count": 37
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4786140,
+    "size": 4788417,
     "file_count": 641
   },
   {
@@ -706,7 +706,7 @@
   },
   {
     "name": "skia",
-    "size": 3498866,
+    "size": 3498279,
     "file_count": 1209
   },
   {
@@ -751,8 +751,8 @@
   },
   {
     "name": "tflite",
-    "size": 1963840,
-    "file_count": 556
+    "size": 1961135,
+    "file_count": 551
   },
   {
     "name": "tflite_support",
@@ -776,8 +776,8 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 1709837,
-    "file_count": 32
+    "size": 1716635,
+    "file_count": 30
   },
   {
     "name": "usb_ids",
@@ -806,7 +806,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7812408,
+    "size": 7813860,
     "file_count": 206
   },
   {
