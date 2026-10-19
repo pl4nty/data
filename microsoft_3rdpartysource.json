@@ -146041,6 +146041,20 @@
     "platform": "Windows x86"
   },
   {
+    "name": "Microsoft Edge/158.0.4348.0-canary/Android arm/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4348.0-canary",
+    "dependency": "chromium",
+    "platform": "Android arm"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4348.0-canary/Android arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4348.0-canary",
+    "dependency": "chromium",
+    "platform": "Android arm64"
+  },
+  {
     "name": "Microsoft Edge/74.1.96.24/Windows x64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "74.1.96.24",
@@ -149086,13 +149100,6 @@
     "platform": "Mac OS x64"
   },
   {
-    "name": "Microsoft Edge/79.0.298.0/Windows x64/chromium.zip",
-    "product": "Microsoft Edge",
-    "release": "79.0.298.0",
-    "dependency": "chromium",
-    "platform": "Windows x64"
-  },
-  {
     "name": "Microsoft Edge/79.0.298.0/Windows x86/chromium.zip",
     "product": "Microsoft Edge",
     "release": "79.0.298.0",
@@ -150493,6 +150500,13 @@
     "platform": "Mac OS x64"
   },
   {
+    "name": "Microsoft Edge/80.0.361.0/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "80.0.361.0",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
     "name": "Microsoft Edge/80.0.361.0/Windows arm64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "80.0.361.0",
@@ -151184,13 +151198,6 @@
     "release": "81.0.368.0",
     "dependency": "chromium",
     "platform": "Mac OS x64"
-  },
-  {
-    "name": "Microsoft Edge/81.0.368.0/Windows arm64/chromium.zip",
-    "product": "Microsoft Edge",
-    "release": "81.0.368.0",
-    "dependency": "chromium",
-    "platform": "Windows arm64"
   },
   {
     "name": "Microsoft Edge/81.0.368.0/Windows x64/chromium.zip",
@@ -151893,6 +151900,13 @@
     "platform": "Windows x64"
   },
   {
+    "name": "Microsoft Edge/81.0.408.0/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "81.0.408.0",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
     "name": "Microsoft Edge/81.0.408.0/Windows x86/chromium.zip",
     "product": "Microsoft Edge",
     "release": "81.0.408.0",
@@ -152586,13 +152600,6 @@
     "platform": "Mac OS x64"
   },
   {
-    "name": "Microsoft Edge/81.0.416.68/Windows arm64/chromium.zip",
-    "product": "Microsoft Edge",
-    "release": "81.0.416.68",
-    "dependency": "chromium",
-    "platform": "Windows arm64"
-  },
-  {
     "name": "Microsoft Edge/81.0.416.68/Windows x64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "81.0.416.68",
@@ -153284,6 +153291,13 @@
     "release": "82.0.446.0",
     "dependency": "chromium",
     "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/82.0.449.0/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "82.0.449.0",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
   },
   {
     "name": "Microsoft Edge/82.0.449.0/Mac OS x64/chromium.tar",
@@ -155386,13 +155400,6 @@
     "platform": "Windows arm64"
   },
   {
-    "name": "Microsoft Edge/84.0.522.49/Windows x64/chromium.zip",
-    "product": "Microsoft Edge",
-    "release": "84.0.522.49",
-    "dependency": "chromium",
-    "platform": "Windows x64"
-  },
-  {
     "name": "Microsoft Edge/84.0.522.49/Windows x86/chromium.zip",
     "product": "Microsoft Edge",
     "release": "84.0.522.49",
@@ -156084,6 +156091,13 @@
     "release": "85.0.542.0",
     "dependency": "chromium",
     "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/85.0.542.0/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "85.0.542.0",
+    "dependency": "chromium",
+    "platform": "Windows x64"
   },
   {
     "name": "Microsoft Edge/85.0.542.0/Windows x64/chromium.zip",
@@ -156786,13 +156800,6 @@
     "platform": "Windows x64"
   },
   {
-    "name": "Microsoft Edge/85.0.564.40/Windows x86/chromium.zip",
-    "product": "Microsoft Edge",
-    "release": "85.0.564.40",
-    "dependency": "chromium",
-    "platform": "Windows x86"
-  },
-  {
     "name": "Microsoft Edge/85.0.564.41/Mac OS x64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "85.0.564.41",
@@ -157484,6 +157491,13 @@
     "release": "86.0.592.0",
     "dependency": "chromium",
     "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/86.0.592.0/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "86.0.592.0",
+    "dependency": "chromium",
+    "platform": "Windows x64"
   },
   {
     "name": "Microsoft Edge/86.0.592.0/Windows x64/chromium.zip",
@@ -158886,13 +158900,6 @@
     "platform": "Windows x86"
   },
   {
-    "name": "Microsoft Edge/87.0.634.0/Mac OS x64/chromium.tar",
-    "product": "Microsoft Edge",
-    "release": "87.0.634.0",
-    "dependency": "chromium",
-    "platform": "Mac OS x64"
-  },
-  {
     "name": "Microsoft Edge/87.0.634.0/Windows arm64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "87.0.634.0",
@@ -160293,6 +160300,13 @@
     "platform": "Linux x64"
   },
   {
+    "name": "Microsoft Edge/88.0.680.1/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "88.0.680.1",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
     "name": "Microsoft Edge/88.0.680.1/Mac OS x64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "88.0.680.1",
@@ -160984,13 +160998,6 @@
     "release": "88.0.705.29",
     "dependency": "chromium",
     "platform": "Windows x86"
-  },
-  {
-    "name": "Microsoft Edge/88.0.705.41/Mac OS x64/chromium.tar",
-    "product": "Microsoft Edge",
-    "release": "88.0.705.41",
-    "dependency": "chromium",
-    "platform": "Mac OS x64"
   },
   {
     "name": "Microsoft Edge/88.0.705.41/Windows arm64/chromium.zip",
@@ -162393,6 +162400,13 @@
     "platform": "Windows x64"
   },
   {
+    "name": "Microsoft Edge/89.0.760.0/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "89.0.760.0",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
     "name": "Microsoft Edge/89.0.760.0/Windows x86/chromium.zip",
     "product": "Microsoft Edge",
     "release": "89.0.760.0",
@@ -163084,13 +163098,6 @@
     "release": "89.0.774.54",
     "dependency": "chromium",
     "platform": "Windows x64"
-  },
-  {
-    "name": "Microsoft Edge/89.0.774.54/Windows x86/chromium.zip",
-    "product": "Microsoft Edge",
-    "release": "89.0.774.54",
-    "dependency": "chromium",
-    "platform": "Windows x86"
   },
   {
     "name": "Microsoft Edge/89.0.774.57/Mac OS arm64/chromium.tar",
@@ -164493,6 +164500,13 @@
     "platform": "Mac OS arm64"
   },
   {
+    "name": "Microsoft Edge/90.0.818.27/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "90.0.818.27",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
     "name": "Microsoft Edge/90.0.818.27/Mac OS x64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "90.0.818.27",
@@ -165184,13 +165198,6 @@
     "release": "91.0.828.0",
     "dependency": "chromium",
     "platform": "Windows x64"
-  },
-  {
-    "name": "Microsoft Edge/91.0.828.0/Windows x86/chromium.zip",
-    "product": "Microsoft Edge",
-    "release": "91.0.828.0",
-    "dependency": "chromium",
-    "platform": "Windows x86"
   },
   {
     "name": "Microsoft Edge/91.0.829.0/Mac OS arm64/chromium.tar",
@@ -166593,6 +166600,13 @@
     "platform": "Windows arm64"
   },
   {
+    "name": "Microsoft Edge/91.0.864.37/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "91.0.864.37",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
     "name": "Microsoft Edge/91.0.864.37/Windows x64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "91.0.864.37",
@@ -167986,13 +168000,6 @@
     "platform": "Windows x86"
   },
   {
-    "name": "Microsoft Edge/92.0.895.0/Mac OS arm64/chromium.tar",
-    "product": "Microsoft Edge",
-    "release": "92.0.895.0",
-    "dependency": "chromium",
-    "platform": "Mac OS arm64"
-  },
-  {
     "name": "Microsoft Edge/92.0.895.0/Mac OS x64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "92.0.895.0",
@@ -168684,6 +168691,13 @@
     "release": "92.0.902.45",
     "dependency": "chromium",
     "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/92.0.902.45/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "92.0.902.45",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
   },
   {
     "name": "Microsoft Edge/92.0.902.45/Mac OS x64/chromium.tar",
@@ -169386,13 +169400,6 @@
     "platform": "Windows x64"
   },
   {
-    "name": "Microsoft Edge/93.0.910.5/Windows x86/chromium.zip",
-    "product": "Microsoft Edge",
-    "release": "93.0.910.5",
-    "dependency": "chromium",
-    "platform": "Windows x86"
-  },
-  {
     "name": "Microsoft Edge/93.0.910.5/iOS arm64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "93.0.910.5",
@@ -170084,6 +170091,13 @@
     "release": "93.0.933.1",
     "dependency": "chromium",
     "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/93.0.933.1/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "93.0.933.1",
+    "dependency": "chromium",
+    "platform": "Windows x64"
   },
   {
     "name": "Microsoft Edge/93.0.933.1/Windows x64/chromium.zip",
@@ -171486,13 +171500,6 @@
     "platform": "Android arm64"
   },
   {
-    "name": "Microsoft Edge/93.0.961.38/Mac OS arm64/chromium.tar",
-    "product": "Microsoft Edge",
-    "release": "93.0.961.38",
-    "dependency": "chromium",
-    "platform": "Mac OS arm64"
-  },
-  {
     "name": "Microsoft Edge/93.0.961.38/Mac OS x64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "93.0.961.38",
@@ -172184,6 +172191,13 @@
     "release": "94.0.975.0",
     "dependency": "chromium",
     "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/94.0.975.0/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "94.0.975.0",
+    "dependency": "chromium",
+    "platform": "Windows x86"
   },
   {
     "name": "Microsoft Edge/94.0.975.0/Windows x86/chromium.zip",
@@ -173586,13 +173600,6 @@
     "platform": "Windows arm64"
   },
   {
-    "name": "Microsoft Edge/94.0.996.0/Windows x64/chromium.zip",
-    "product": "Microsoft Edge",
-    "release": "94.0.996.0",
-    "dependency": "chromium",
-    "platform": "Windows x64"
-  },
-  {
     "name": "Microsoft Edge/94.0.996.0/Windows x86/chromium.zip",
     "product": "Microsoft Edge",
     "release": "94.0.996.0",
@@ -174993,6 +175000,13 @@
     "platform": "Windows x64"
   },
   {
+    "name": "Microsoft Edge/96.0.1023.0/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "96.0.1023.0",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
     "name": "Microsoft Edge/96.0.1023.0/Windows x86/chromium.zip",
     "product": "Microsoft Edge",
     "release": "96.0.1023.0",
@@ -175684,13 +175698,6 @@
     "release": "96.0.1043.1",
     "dependency": "chromium",
     "platform": "Windows x86"
-  },
-  {
-    "name": "Microsoft Edge/96.0.1044.0-canary/Android arm/chromium.tar",
-    "product": "Microsoft Edge",
-    "release": "96.0.1044.0-canary",
-    "dependency": "chromium",
-    "platform": "Android arm"
   },
   {
     "name": "Microsoft Edge/96.0.1044.0-canary/Android arm64/chromium.tar",
@@ -176393,6 +176400,13 @@
     "platform": "Linux x64"
   },
   {
+    "name": "Microsoft Edge/96.0.1054.43/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "96.0.1054.43",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
     "name": "Microsoft Edge/96.0.1054.43/Mac OS arm64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "96.0.1054.43",
@@ -177086,13 +177100,6 @@
     "platform": "Windows arm64"
   },
   {
-    "name": "Microsoft Edge/97.0.1064.0/Windows x64/chromium.zip",
-    "product": "Microsoft Edge",
-    "release": "97.0.1064.0",
-    "dependency": "chromium",
-    "platform": "Windows x64"
-  },
-  {
     "name": "Microsoft Edge/97.0.1064.0/Windows x86/chromium.zip",
     "product": "Microsoft Edge",
     "release": "97.0.1064.0",
@@ -177784,6 +177791,13 @@
     "release": "97.0.1072.55-stable",
     "dependency": "chromium",
     "platform": "Android arm64"
+  },
+  {
+    "name": "Microsoft Edge/97.0.1072.55/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "97.0.1072.55",
+    "dependency": "chromium",
+    "platform": "Linux x64"
   },
   {
     "name": "Microsoft Edge/97.0.1072.55/Linux x64/chromium.tar",
@@ -179186,13 +179200,6 @@
     "platform": "Mac OS arm64"
   },
   {
-    "name": "Microsoft Edge/98.0.1100.3/Mac OS x64/chromium.tar",
-    "product": "Microsoft Edge",
-    "release": "98.0.1100.3",
-    "dependency": "chromium",
-    "platform": "Mac OS x64"
-  },
-  {
     "name": "Microsoft Edge/98.0.1100.3/Windows arm64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "98.0.1100.3",
@@ -179884,6 +179891,13 @@
     "release": "98.0.1108.55",
     "dependency": "chromium",
     "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/98.0.1108.55/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "98.0.1108.55",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
   },
   {
     "name": "Microsoft Edge/98.0.1108.55/Mac OS x64/chromium.tar",
@@ -181286,13 +181300,6 @@
     "platform": "Android arm"
   },
   {
-    "name": "Microsoft Edge/99.0.1149.0-canary/Android arm64/chromium.tar",
-    "product": "Microsoft Edge",
-    "release": "99.0.1149.0-canary",
-    "dependency": "chromium",
-    "platform": "Android arm64"
-  },
-  {
     "name": "Microsoft Edge/99.0.1149.0/Mac OS arm64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "99.0.1149.0",
@@ -181984,6 +181991,13 @@
     "release": "99.0.1150.55",
     "dependency": "chromium",
     "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/99.0.1150.55/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "99.0.1150.55",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
   },
   {
     "name": "Microsoft Edge/99.0.1150.55/Mac OS x64/chromium.tar",
@@ -183386,13 +183400,6 @@
     "platform": "macOS"
   },
   {
-    "name": "Microsoft Electron/23.1.2@9a29a4d3/Linux/microsoft-electron-v23.1.2-9a29a4d3a517b3311f818cc81106dd6cd5785eca-linux.zip",
-    "product": "Microsoft Electron",
-    "release": "23.1.2@9a29a4d3",
-    "dependency": "microsoft-electron-v23.1.2-9a29a4d3a517b3311f818cc81106dd6cd5785eca-linux",
-    "platform": "Linux"
-  },
-  {
     "name": "Microsoft Electron/23.1.2@9a29a4d3/Windows/microsoft-electron-v23.1.2-9a29a4d3a517b3311f818cc81106dd6cd5785eca-windows.zip",
     "product": "Microsoft Electron",
     "release": "23.1.2@9a29a4d3",
@@ -184784,6 +184791,13 @@
     "release": "26.4.1@954393b4",
     "dependency": "microsoft-electron-v26.4.1-954393b42e70476423b7a26c6842864b2c7f83a6-windows",
     "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/26.4.1@954393b4/macOS/microsoft-electron-v26.4.1-954393b42e70476423b7a26c6842864b2c7f83a6-mac.zip",
+    "product": "Microsoft Electron",
+    "release": "26.4.1@954393b4",
+    "dependency": "microsoft-electron-v26.4.1-954393b42e70476423b7a26c6842864b2c7f83a6-mac",
+    "platform": "macOS"
   },
   {
     "name": "Microsoft Electron/26.4.1@954393b4/macOS/microsoft-electron-v26.4.1-954393b42e70476423b7a26c6842864b2c7f83a6-mac.zip",
@@ -186186,13 +186200,6 @@
     "platform": "Windows"
   },
   {
-    "name": "Microsoft Electron/30.5.1@423625a5/macOS/microsoft-electron-v30.5.1-423625a5dc0f1ec33eb5e805b79c11170b21971d-mac.zip",
-    "product": "Microsoft Electron",
-    "release": "30.5.1@423625a5",
-    "dependency": "microsoft-electron-v30.5.1-423625a5dc0f1ec33eb5e805b79c11170b21971d-mac",
-    "platform": "macOS"
-  },
-  {
     "name": "Microsoft Electron/31.0.1@685795c2/Linux/microsoft-electron-v31.0.1-685795c277f1901b2b2daed314ec74b45cf07dea-linux.zip",
     "product": "Microsoft Electron",
     "release": "31.0.1@685795c2",
@@ -186884,6 +186891,13 @@
     "release": "32.2.8@3f5468f8",
     "dependency": "microsoft-electron-v32.2.8-3f5468f8359c0180353812bfb8f3e58c3b4a562e-mac",
     "platform": "macOS"
+  },
+  {
+    "name": "Microsoft Electron/32.3.0@fd8cbfda/Linux/microsoft-electron-v32.3.0-fd8cbfda85ec632999d10e3c002a142c335916ab-linux.zip",
+    "product": "Microsoft Electron",
+    "release": "32.3.0@fd8cbfda",
+    "dependency": "microsoft-electron-v32.3.0-fd8cbfda85ec632999d10e3c002a142c335916ab-linux",
+    "platform": "Linux"
   },
   {
     "name": "Microsoft Electron/32.3.0@fd8cbfda/Linux/microsoft-electron-v32.3.0-fd8cbfda85ec632999d10e3c002a142c335916ab-linux.zip",
@@ -190386,13 +190400,6 @@
     "platform": "macOS"
   },
   {
-    "name": "Microsoft Electron/40.7.0@b3be3e7c/Linux/microsoft-electron-v40.7.0-b3be3e7c16cbddaded9834e79ba9672cdf7c8902-linux.tgz",
-    "product": "Microsoft Electron",
-    "release": "40.7.0@b3be3e7c",
-    "dependency": "microsoft-electron-v40.7.0-b3be3e7c16cbddaded9834e79ba9672cdf7c8902-linux",
-    "platform": "Linux"
-  },
-  {
     "name": "Microsoft Electron/40.7.0@b3be3e7c/Windows/microsoft-electron-v40.7.0-b3be3e7c16cbddaded9834e79ba9672cdf7c8902-windows.tgz",
     "product": "Microsoft Electron",
     "release": "40.7.0@b3be3e7c",
@@ -191093,6 +191100,13 @@
     "platform": "Windows"
   },
   {
+    "name": "Microsoft Electron/41.7.0@a7b47667/Windows/microsoft-electron-v41.7.0-a7b4766759281079187f5bf25326e497de0d8f47-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "41.7.0@a7b47667",
+    "dependency": "microsoft-electron-v41.7.0-a7b4766759281079187f5bf25326e497de0d8f47-windows",
+    "platform": "Windows"
+  },
+  {
     "name": "Microsoft Electron/41.7.0@a7b47667/macOS/microsoft-electron-v41.7.0-a7b4766759281079187f5bf25326e497de0d8f47-mac.tgz",
     "product": "Microsoft Electron",
     "release": "41.7.0@a7b47667",
@@ -191784,13 +191798,6 @@
     "release": "43.0.0@c1de2ec6",
     "dependency": "microsoft-electron-v43.0.0-c1de2ec61c392e692523d0715aada9b0c0bc5933-windows",
     "platform": "Windows"
-  },
-  {
-    "name": "Microsoft Electron/43.0.0@c1de2ec6/macOS/microsoft-electron-v43.0.0-c1de2ec61c392e692523d0715aada9b0c0bc5933-mac.tgz",
-    "product": "Microsoft Electron",
-    "release": "43.0.0@c1de2ec6",
-    "dependency": "microsoft-electron-v43.0.0-c1de2ec61c392e692523d0715aada9b0c0bc5933-mac",
-    "platform": "macOS"
   },
   {
     "name": "Microsoft Electron/43.1.1@07d0ab1e/Linux/microsoft-electron-v43.1.1-07d0ab1e4f047e76dfd52ae4ca048b7b72e27e89-linux.tgz",
@@ -193893,6 +193900,13 @@
     "platform": "Any"
   },
   {
+    "name": "Monitor Chart React/1.1.0/Any/d3-3.5.36.zip",
+    "product": "Monitor Chart React",
+    "release": "1.1.0",
+    "dependency": "d3-3.5.36",
+    "platform": "Any"
+  },
+  {
     "name": "Monitor Chart React/1.1.0/Any/process-0.11.10.zip",
     "product": "Monitor Chart React",
     "release": "1.1.0",
@@ -195983,13 +195997,6 @@
     "product": "Packet Core",
     "release": "4.2308.0-4",
     "dependency": "go-memdb-1.3.2",
-    "platform": null
-  },
-  {
-    "name": "Packet Core/4.2308.0-4/go-multierror-1.1.0.zip",
-    "product": "Packet Core",
-    "release": "4.2308.0-4",
-    "dependency": "go-multierror-1.1.0",
     "platform": null
   },
   {
@@ -198793,6 +198800,13 @@
     "platform": null
   },
   {
+    "name": "Project Astoria/Preview 2015/aosp.platform.external.oauth.zip",
+    "product": "Project Astoria",
+    "release": "Preview 2015",
+    "dependency": "aosp.platform.external.oauth",
+    "platform": null
+  },
+  {
     "name": "Project Astoria/Preview 2015/aosp.platform.external.objenesis.zip",
     "product": "Project Astoria",
     "release": "Preview 2015",
@@ -200186,13 +200200,6 @@
     "platform": null
   },
   {
-    "name": "Project Astoria/Preview 2015/aosp.platform.prebuilts.clang.linux-x86.mips.3.3.zip",
-    "product": "Project Astoria",
-    "release": "Preview 2015",
-    "dependency": "aosp.platform.prebuilts.clang.linux-x86.mips.3.3",
-    "platform": null
-  },
-  {
     "name": "Project Astoria/Preview 2015/aosp.platform.prebuilts.clang.linux-x86.x86.3.3.zip",
     "product": "Project Astoria",
     "release": "Preview 2015",
@@ -200883,6 +200890,13 @@
     "product": "Redistributed OSS",
     "release": "Alpine 3.10.3 base container image",
     "dependency": "p11-kit-0.23.16.1-r0",
+    "platform": null
+  },
+  {
+    "name": "Redistributed OSS/Alpine 3.10.3 base container image/pax-utils-1.2.3.zip",
+    "product": "Redistributed OSS",
+    "release": "Alpine 3.10.3 base container image",
+    "dependency": "pax-utils-1.2.3",
     "platform": null
   },
   {
@@ -201586,13 +201600,6 @@
     "platform": null
   },
   {
-    "name": "Redistributed OSS/Git For Windows 2.10.0/perl-5.22.1-1.zip",
-    "product": "Redistributed OSS",
-    "release": "Git For Windows 2.10.0",
-    "dependency": "perl-5.22.1-1",
-    "platform": null
-  },
-  {
     "name": "Redistributed OSS/Git For Windows 2.10.0/perl-Authen-SASL-2.16-2.zip",
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.10.0",
@@ -202293,6 +202300,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/Git For Windows 2.11.0(3)/mingw-w64-x86_64-libtre-git-r122.c2f5d13-4.zip",
+    "product": "Redistributed OSS",
+    "release": "Git For Windows 2.11.0(3)",
+    "dependency": "mingw-w64-x86_64-libtre-git-r122.c2f5d13-4",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/Git For Windows 2.11.0(3)/mingw-w64-x86_64-nettle-3.3-1.zip",
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.11.0(3)",
@@ -202983,13 +202997,6 @@
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.11.0",
     "dependency": "libmetalink-0.1.2-2",
-    "platform": null
-  },
-  {
-    "name": "Redistributed OSS/Git For Windows 2.11.0/libssh2-1.7.0-1.zip",
-    "product": "Redistributed OSS",
-    "release": "Git For Windows 2.11.0",
-    "dependency": "libssh2-1.7.0-1",
     "platform": null
   },
   {
@@ -206493,6 +206500,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/Git For Windows 2.12.2(2)/mingw-w64-x86_64-bzip2-1.0.6-6.zip",
+    "product": "Redistributed OSS",
+    "release": "Git For Windows 2.12.2(2)",
+    "dependency": "mingw-w64-x86_64-bzip2-1.0.6-6",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/Git For Windows 2.12.2(2)/mingw-w64-x86_64-c-ares-1.12.0-1.zip",
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.12.2(2)",
@@ -208586,13 +208600,6 @@
     "platform": null
   },
   {
-    "name": "Redistributed OSS/Git For Windows 2.13.0/perl-Convert-BinHex-1.123-2.zip",
-    "product": "Redistributed OSS",
-    "release": "Git For Windows 2.13.0",
-    "dependency": "perl-Convert-BinHex-1.123-2",
-    "platform": null
-  },
-  {
     "name": "Redistributed OSS/Git For Windows 2.13.0/perl-Encode-Locale-1.04-1.zip",
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.13.0",
@@ -209993,6 +210000,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/Git For Windows 2.13.1/libedit-3.1-20150325.zip",
+    "product": "Redistributed OSS",
+    "release": "Git For Windows 2.13.1",
+    "dependency": "libedit-3.1-20150325",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/Git For Windows 2.13.1/libffi-3.2.1-1.zip",
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.13.1",
@@ -210683,13 +210697,6 @@
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.13.2",
     "dependency": "apr-1.5.2-1",
-    "platform": null
-  },
-  {
-    "name": "Redistributed OSS/Git For Windows 2.13.2/apr-util-1.5.4-2.zip",
-    "product": "Redistributed OSS",
-    "release": "Git For Windows 2.13.2",
-    "dependency": "apr-util-1.5.4-2",
     "platform": null
   },
   {
@@ -212093,6 +212100,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/Git For Windows 2.13.3/mingw-w64-x86_64-rtmpdump-git-r512.fa8646d-3.zip",
+    "product": "Redistributed OSS",
+    "release": "Git For Windows 2.13.3",
+    "dependency": "mingw-w64-x86_64-rtmpdump-git-r512.fa8646d-3",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/Git For Windows 2.13.3/mingw-w64-x86_64-spdylay-1.4.0-1.zip",
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.13.3",
@@ -212786,13 +212800,6 @@
     "platform": null
   },
   {
-    "name": "Redistributed OSS/Git For Windows 2.14.0(2)/mingw-w64-x86_64-c-ares-1.12.0-1.zip",
-    "product": "Redistributed OSS",
-    "release": "Git For Windows 2.14.0(2)",
-    "dependency": "mingw-w64-x86_64-c-ares-1.12.0-1",
-    "platform": null
-  },
-  {
     "name": "Redistributed OSS/Git For Windows 2.14.0(2)/mingw-w64-x86_64-ca-certificates-20170211-2.zip",
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.14.0(2)",
@@ -213483,6 +213490,13 @@
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.14.1",
     "dependency": "diffutils-3.5-1",
+    "platform": null
+  },
+  {
+    "name": "Redistributed OSS/Git For Windows 2.14.1/docx2txt-1.4-1.zip",
+    "product": "Redistributed OSS",
+    "release": "Git For Windows 2.14.1",
+    "dependency": "docx2txt-1.4-1",
     "platform": null
   },
   {
@@ -215586,13 +215600,6 @@
     "platform": null
   },
   {
-    "name": "Redistributed OSS/Git For Windows 2.14.3/mingw-w64-x86_64-odt2txt-0.5-2.zip",
-    "product": "Redistributed OSS",
-    "release": "Git For Windows 2.14.3",
-    "dependency": "mingw-w64-x86_64-odt2txt-0.5-2",
-    "platform": null
-  },
-  {
     "name": "Redistributed OSS/Git For Windows 2.14.3/mingw-w64-x86_64-openssl-1.0.2.l-1.zip",
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.14.3",
@@ -217693,6 +217700,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/Git For Windows 2.15.1(2)/perl-Net-SMTP-SSL-1.02-1.zip",
+    "product": "Redistributed OSS",
+    "release": "Git For Windows 2.15.1(2)",
+    "dependency": "perl-Net-SMTP-SSL-1.02-1",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/Git For Windows 2.15.1(2)/perl-Net-SSLeay-1.80-1.zip",
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.15.1(2)",
@@ -219083,13 +219097,6 @@
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.16.1(2)",
     "dependency": "libunistring-0.9.7-2",
-    "platform": null
-  },
-  {
-    "name": "Redistributed OSS/Git For Windows 2.16.1(2)/libxml2-2.9.7-1.zip",
-    "product": "Redistributed OSS",
-    "release": "Git For Windows 2.16.1(2)",
-    "dependency": "libxml2-2.9.7-1",
     "platform": null
   },
   {
@@ -221193,6 +221200,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/Git For Windows 2.16.1(4)/mingw-w64-x86_64-zlib-1.2.11-1.zip",
+    "product": "Redistributed OSS",
+    "release": "Git For Windows 2.16.1(4)",
+    "dependency": "mingw-w64-x86_64-zlib-1.2.11-1",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/Git For Windows 2.16.1(4)/mintty-1~2.8.3-1.zip",
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.16.1(4)",
@@ -222583,13 +222597,6 @@
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.19.0",
     "dependency": "zlib-1.2.11-1",
-    "platform": null
-  },
-  {
-    "name": "Redistributed OSS/Git For Windows 2.21.0/Third Party Notices.txt",
-    "product": "Redistributed OSS",
-    "release": "Git For Windows 2.21.0",
-    "dependency": "Third Party Notices",
     "platform": null
   },
   {
@@ -225393,6 +225400,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/Git For Windows 2.24.0(2)/perl-Authen-SASL-2.16-2.zip",
+    "product": "Redistributed OSS",
+    "release": "Git For Windows 2.24.0(2)",
+    "dependency": "perl-Authen-SASL-2.16-2",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/Git For Windows 2.24.0(2)/perl-Convert-BinHex-1.125-1.zip",
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.24.0(2)",
@@ -226783,13 +226797,6 @@
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.25.0",
     "dependency": "curl-7.68.0-1",
-    "platform": null
-  },
-  {
-    "name": "Redistributed OSS/Git For Windows 2.25.0/cyrus-sasl-2.1.27-1.zip",
-    "product": "Redistributed OSS",
-    "release": "Git For Windows 2.25.0",
-    "dependency": "cyrus-sasl-2.1.27-1",
     "platform": null
   },
   {
@@ -228193,6 +228200,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/Git For Windows 2.25.1/mingw-w64-x86_64-gnutls-3.6.11.1-1.zip",
+    "product": "Redistributed OSS",
+    "release": "Git For Windows 2.25.1",
+    "dependency": "mingw-w64-x86_64-gnutls-3.6.11.1-1",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/Git For Windows 2.25.1/mingw-w64-x86_64-jansson-2.12-1.zip",
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.25.1",
@@ -229586,13 +229600,6 @@
     "platform": null
   },
   {
-    "name": "Redistributed OSS/Git For Windows 2.9.2/mingw-w64-x86_64-gnutls-3.5.0-1.zip",
-    "product": "Redistributed OSS",
-    "release": "Git For Windows 2.9.2",
-    "dependency": "mingw-w64-x86_64-gnutls-3.5.0-1",
-    "platform": null
-  },
-  {
     "name": "Redistributed OSS/Git For Windows 2.9.2/mingw-w64-x86_64-jansson-2.7-2.zip",
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.9.2",
@@ -230283,6 +230290,13 @@
     "product": "Redistributed OSS",
     "release": "Git For Windows 2.9.3",
     "dependency": "heimdal-1.5.3-9",
+    "platform": null
+  },
+  {
+    "name": "Redistributed OSS/Git For Windows 2.9.3/icu-56.1-1.zip",
+    "product": "Redistributed OSS",
+    "release": "Git For Windows 2.9.3",
+    "dependency": "icu-56.1-1",
     "platform": null
   },
   {
@@ -231686,13 +231700,6 @@
     "platform": null
   },
   {
-    "name": "Redistributed OSS/Git for Windows 2.10.2/perl-libwww-6.13-1.zip",
-    "product": "Redistributed OSS",
-    "release": "Git for Windows 2.10.2",
-    "dependency": "perl-libwww-6.13-1",
-    "platform": null
-  },
-  {
     "name": "Redistributed OSS/Git for Windows 2.10.2/readline-6.3.008-7.zip",
     "product": "Redistributed OSS",
     "release": "Git for Windows 2.10.2",
@@ -233083,6 +233090,13 @@
     "product": "Redistributed OSS",
     "release": "Git for Windows 2.23.0",
     "dependency": "libxml2-2.9.9-4",
+    "platform": null
+  },
+  {
+    "name": "Redistributed OSS/Git for Windows 2.23.0/libxslt-1.1.33-2.zip",
+    "product": "Redistributed OSS",
+    "release": "Git for Windows 2.23.0",
+    "dependency": "libxslt-1.1.33-2",
     "platform": null
   },
   {
@@ -236586,13 +236600,6 @@
     "platform": null
   },
   {
-    "name": "Redistributed OSS/Git for Windows 2.27.0/patch-2.7.6-1.zip",
-    "product": "Redistributed OSS",
-    "release": "Git for Windows 2.27.0",
-    "dependency": "patch-2.7.6-1",
-    "platform": null
-  },
-  {
     "name": "Redistributed OSS/Git for Windows 2.27.0/pcre-8.44-1.zip",
     "product": "Redistributed OSS",
     "release": "Git for Windows 2.27.0",
@@ -237993,6 +238000,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/Git for Windows 2.29.0/Third Party Notices.txt",
+    "product": "Redistributed OSS",
+    "release": "Git for Windows 2.29.0",
+    "dependency": "Third Party Notices",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/Git for Windows 2.29.0/apr-1.7.0-1.zip",
     "product": "Redistributed OSS",
     "release": "Git for Windows 2.29.0",
@@ -238686,13 +238700,6 @@
     "platform": null
   },
   {
-    "name": "Redistributed OSS/Git for Windows 2.29.0/nettle-3.6-1.zip",
-    "product": "Redistributed OSS",
-    "release": "Git for Windows 2.29.0",
-    "dependency": "nettle-3.6-1",
-    "platform": null
-  },
-  {
     "name": "Redistributed OSS/Git for Windows 2.29.0/npth-1.6-1.zip",
     "product": "Redistributed OSS",
     "release": "Git for Windows 2.29.0",
@@ -239383,6 +239390,13 @@
     "product": "Redistributed OSS",
     "release": "Git for Windows v2.26.1",
     "dependency": "libpsl-0.21.0-1",
+    "platform": null
+  },
+  {
+    "name": "Redistributed OSS/Git for Windows v2.26.1/libssh2-1.9.0-1.zip",
+    "product": "Redistributed OSS",
+    "release": "Git for Windows v2.26.1",
+    "dependency": "libssh2-1.9.0-1",
     "platform": null
   },
   {
@@ -241486,13 +241500,6 @@
     "platform": null
   },
   {
-    "name": "Redistributed OSS/MinGit For Windows 2.10.0/mingw-w64-x86_64-zlib-1.2.8-10.zip",
-    "product": "Redistributed OSS",
-    "release": "MinGit For Windows 2.10.0",
-    "dependency": "mingw-w64-x86_64-zlib-1.2.8-10",
-    "platform": null
-  },
-  {
     "name": "Redistributed OSS/MinGit For Windows 2.10.0/mpfr-3.1.4-1.zip",
     "product": "Redistributed OSS",
     "release": "MinGit For Windows 2.10.0",
@@ -242193,6 +242200,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/MinGit For Windows 2.11.0(3)/mingw-w64-x86_64-pcre-8.38-1.zip",
+    "product": "Redistributed OSS",
+    "release": "MinGit For Windows 2.11.0(3)",
+    "dependency": "mingw-w64-x86_64-pcre-8.38-1",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/MinGit For Windows 2.11.0(3)/mingw-w64-x86_64-rtmpdump-git-r512.fa8646d-2.zip",
     "product": "Redistributed OSS",
     "release": "MinGit For Windows 2.11.0(3)",
@@ -242883,13 +242897,6 @@
     "product": "Redistributed OSS",
     "release": "MinGit For Windows 2.11.1",
     "dependency": "mingw-w64-x86_64-pcre-8.40-1",
-    "platform": null
-  },
-  {
-    "name": "Redistributed OSS/MinGit For Windows 2.11.1/mingw-w64-x86_64-rtmpdump-git-r512.fa8646d-2.zip",
-    "product": "Redistributed OSS",
-    "release": "MinGit For Windows 2.11.1",
-    "dependency": "mingw-w64-x86_64-rtmpdump-git-r512.fa8646d-2",
     "platform": null
   },
   {
@@ -244293,6 +244300,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/MinGit For Windows 2.12.2(2)/mingw-w64-x86_64-curl-winssl-bin-7.53.1-1.zip",
+    "product": "Redistributed OSS",
+    "release": "MinGit For Windows 2.12.2(2)",
+    "dependency": "mingw-w64-x86_64-curl-winssl-bin-7.53.1-1",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/MinGit For Windows 2.12.2(2)/mingw-w64-x86_64-expat-2.2.0-2.zip",
     "product": "Redistributed OSS",
     "release": "MinGit For Windows 2.12.2(2)",
@@ -244986,13 +245000,6 @@
     "platform": null
   },
   {
-    "name": "Redistributed OSS/MinGit For Windows 2.13.0/gmp-6.1.2-1.zip",
-    "product": "Redistributed OSS",
-    "release": "MinGit For Windows 2.13.0",
-    "dependency": "gmp-6.1.2-1",
-    "platform": null
-  },
-  {
     "name": "Redistributed OSS/MinGit For Windows 2.13.0/grep-3.0-1.zip",
     "product": "Redistributed OSS",
     "release": "MinGit For Windows 2.13.0",
@@ -245683,6 +245690,13 @@
     "product": "Redistributed OSS",
     "release": "MinGit For Windows 2.13.1(3)",
     "dependency": "coreutils-8.26-1",
+    "platform": null
+  },
+  {
+    "name": "Redistributed OSS/MinGit For Windows 2.13.1(3)/crypt-1.4-1.zip",
+    "product": "Redistributed OSS",
+    "release": "MinGit For Windows 2.13.1(3)",
+    "dependency": "crypt-1.4-1",
     "platform": null
   },
   {
@@ -247083,13 +247097,6 @@
     "product": "Redistributed OSS",
     "release": "MinGit For Windows 2.13.3",
     "dependency": "mingw-w64-x86_64-zlib-1.2.11-1",
-    "platform": null
-  },
-  {
-    "name": "Redistributed OSS/MinGit For Windows 2.13.3/mpfr-3.1.5.1-3.zip",
-    "product": "Redistributed OSS",
-    "release": "MinGit For Windows 2.13.3",
-    "dependency": "mpfr-3.1.5.1-3",
     "platform": null
   },
   {
@@ -251293,6 +251300,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/MinGit For Windows 2.16.1(4)/mpfr-4.0.0.1-3.zip",
+    "product": "Redistributed OSS",
+    "release": "MinGit For Windows 2.16.1(4)",
+    "dependency": "mpfr-4.0.0.1-3",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/MinGit For Windows 2.16.1(4)/msys2-runtime-2.9.0-7.zip",
     "product": "Redistributed OSS",
     "release": "MinGit For Windows 2.16.1(4)",
@@ -252686,13 +252700,6 @@
     "platform": null
   },
   {
-    "name": "Redistributed OSS/MinGit For Windows 2.22.0/mingw-w64-x86_64-winpthreads-git-7.0.0.5447.a2d94c81-1.zip",
-    "product": "Redistributed OSS",
-    "release": "MinGit For Windows 2.22.0",
-    "dependency": "mingw-w64-x86_64-winpthreads-git-7.0.0.5447.a2d94c81-1",
-    "platform": null
-  },
-  {
     "name": "Redistributed OSS/MinGit For Windows 2.22.0/mingw-w64-x86_64-zlib-1.2.11-7.zip",
     "product": "Redistributed OSS",
     "release": "MinGit For Windows 2.22.0",
@@ -253383,6 +253390,13 @@
     "product": "Redistributed OSS",
     "release": "MinGit for Windows 2.10.1.2",
     "dependency": "mingw-w64-x86_64-p11-kit-0.23.2-2",
+    "platform": null
+  },
+  {
+    "name": "Redistributed OSS/MinGit for Windows 2.10.1.2/mingw-w64-x86_64-pcre-8.38-1.zip",
+    "product": "Redistributed OSS",
+    "release": "MinGit for Windows 2.10.1.2",
+    "dependency": "mingw-w64-x86_64-pcre-8.38-1",
     "platform": null
   },
   {
@@ -254086,13 +254100,6 @@
     "platform": null
   },
   {
-    "name": "Redistributed OSS/MinGit for Windows 2.11.1(5)/mingw-w64-x86_64-openssl-1.0.2.o-1.zip",
-    "product": "Redistributed OSS",
-    "release": "MinGit for Windows 2.11.1(5)",
-    "dependency": "mingw-w64-x86_64-openssl-1.0.2.o-1",
-    "platform": null
-  },
-  {
     "name": "Redistributed OSS/MinGit for Windows 2.11.1(5)/mingw-w64-x86_64-pcre-8.42-1.zip",
     "product": "Redistributed OSS",
     "release": "MinGit for Windows 2.11.1(5)",
@@ -254783,6 +254790,13 @@
     "product": "Redistributed OSS",
     "release": "MinGit for Windows 2.14.4(4)",
     "dependency": "mingw-w64-x86_64-pcre-8.41-1",
+    "platform": null
+  },
+  {
+    "name": "Redistributed OSS/MinGit for Windows 2.14.4(4)/mingw-w64-x86_64-spdylay-1.4.0-1.zip",
+    "product": "Redistributed OSS",
+    "release": "MinGit for Windows 2.14.4(4)",
+    "dependency": "mingw-w64-x86_64-spdylay-1.4.0-1",
     "platform": null
   },
   {
@@ -255486,13 +255500,6 @@
     "platform": null
   },
   {
-    "name": "Redistributed OSS/MinGit for Windows 2.21.0(3)/mingw-w64-x86_64-nghttp2-1.36.0-1.zip",
-    "product": "Redistributed OSS",
-    "release": "MinGit for Windows 2.21.0(3)",
-    "dependency": "mingw-w64-x86_64-nghttp2-1.36.0-1",
-    "platform": null
-  },
-  {
     "name": "Redistributed OSS/MinGit for Windows 2.21.0(3)/mingw-w64-x86_64-openssl-1.1.1.a-1.zip",
     "product": "Redistributed OSS",
     "release": "MinGit for Windows 2.21.0(3)",
@@ -256193,6 +256200,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/MinGit for Windows 2.24.0(2)/mingw-w64-x86_64-mpc-1.1.0-1.zip",
+    "product": "Redistributed OSS",
+    "release": "MinGit for Windows 2.24.0(2)",
+    "dependency": "mingw-w64-x86_64-mpc-1.1.0-1",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/MinGit for Windows 2.24.0(2)/mingw-w64-x86_64-mpfr-4.0.2-2.zip",
     "product": "Redistributed OSS",
     "release": "MinGit for Windows 2.24.0(2)",
@@ -256883,13 +256897,6 @@
     "product": "Redistributed OSS",
     "release": "MinGit for Windows 2.25.0",
     "dependency": "mingw-w64-x86_64-libssh2-1.9.0-1",
-    "platform": null
-  },
-  {
-    "name": "Redistributed OSS/MinGit for Windows 2.25.0/mingw-w64-x86_64-libtasn1-4.15.0-1.zip",
-    "product": "Redistributed OSS",
-    "release": "MinGit for Windows 2.25.0",
-    "dependency": "mingw-w64-x86_64-libtasn1-4.15.0-1",
     "platform": null
   },
   {
@@ -258293,6 +258300,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/MinGit for Windows 2.29.0/mingw-w64-x86_64-gettext-0.19.8.1-9.zip",
+    "product": "Redistributed OSS",
+    "release": "MinGit for Windows 2.29.0",
+    "dependency": "mingw-w64-x86_64-gettext-0.19.8.1-9",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/MinGit for Windows 2.29.0/mingw-w64-x86_64-git-2.29.0.1.add3cebdf8-1.zip",
     "product": "Redistributed OSS",
     "release": "MinGit for Windows 2.29.0",
@@ -258983,13 +258997,6 @@
     "product": "Redistributed OSS",
     "release": "MinGit for Windows 2.9.3",
     "dependency": "heimdal-1.5.3-9",
-    "platform": null
-  },
-  {
-    "name": "Redistributed OSS/MinGit for Windows 2.9.3/libiconv-1.14-2.zip",
-    "product": "Redistributed OSS",
-    "release": "MinGit for Windows 2.9.3",
-    "dependency": "libiconv-1.14-2",
     "platform": null
   },
   {
@@ -260393,6 +260400,13 @@
     "platform": null
   },
   {
+    "name": "Redistributed OSS/MinGit for Windows v2.28.0/filesystem-2020.02-5.zip",
+    "product": "Redistributed OSS",
+    "release": "MinGit for Windows v2.28.0",
+    "dependency": "filesystem-2020.02-5",
+    "platform": null
+  },
+  {
     "name": "Redistributed OSS/MinGit for Windows v2.28.0/findutils-4.7.0-1.zip",
     "product": "Redistributed OSS",
     "release": "MinGit for Windows v2.28.0",
@@ -261083,13 +261097,6 @@
     "product": "Redistributed OSS",
     "release": "Service Fabric build container \u2013 Ubuntu 16.04",
     "dependency": "lzo2_2.08-1.2",
-    "platform": null
-  },
-  {
-    "name": "Redistributed OSS/Service Fabric build container \u2013 Ubuntu 16.04/m4_1.4.17-5.zip",
-    "product": "Redistributed OSS",
-    "release": "Service Fabric build container \u2013 Ubuntu 16.04",
-    "dependency": "m4_1.4.17-5",
     "platform": null
   },
   {
@@ -262483,6 +262490,13 @@
     "product": "SQL Server",
     "release": "SQL Server 2019",
     "dependency": "SQL Server_SQL Server_servlet-api.2.5",
+    "platform": null
+  },
+  {
+    "name": "SQL Server/SQL Server 2019/javax.mail-1.6.1.zip",
+    "product": "SQL Server",
+    "release": "SQL Server 2019",
+    "dependency": "javax.mail-1.6.1",
     "platform": null
   },
   {
@@ -266686,13 +266700,6 @@
     "platform": "linux-amd64"
   },
   {
-    "name": "azureotelcollector/0.151.0/linux-amd64/github.com_hashicorp_nomad_api_v0.0.0-20260324203407-b27b0c2e019a.zip",
-    "product": "azureotelcollector",
-    "release": "0.151.0",
-    "dependency": "github.com_hashicorp_nomad_api_v0.0.0-20260324203407-b27b0c2e019a",
-    "platform": "linux-amd64"
-  },
-  {
     "name": "azureotelcollector/0.151.0/linux-amd64/github.com_hashicorp_serf_coordinate_v0.10.1.zip",
     "product": "azureotelcollector",
     "release": "0.151.0",
@@ -267383,6 +267390,13 @@
     "product": "azureotelcollector",
     "release": "0.153.2",
     "dependency": "github.com_hashicorp_errwrap_v1.1.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "azureotelcollector/0.153.2/linux-arm64/github.com_hashicorp_go-cleanhttp_v0.5.2.zip",
+    "product": "azureotelcollector",
+    "release": "0.153.2",
+    "dependency": "github.com_hashicorp_go-cleanhttp_v0.5.2",
     "platform": "linux-arm64"
   },
   {
@@ -268786,13 +268800,6 @@
     "platform": "linux-arm64"
   },
   {
-    "name": "azureotelcollector/0.157.3/linux-arm64/github.com_hashicorp_nomad_api_v0.0.0-20260528135333-5b027732945f.zip",
-    "product": "azureotelcollector",
-    "release": "0.157.3",
-    "dependency": "github.com_hashicorp_nomad_api_v0.0.0-20260528135333-5b027732945f",
-    "platform": "linux-arm64"
-  },
-  {
     "name": "azureotelcollector/0.157.3/linux-arm64/github.com_hashicorp_serf_coordinate_v0.10.1.zip",
     "product": "azureotelcollector",
     "release": "0.157.3",
@@ -270183,6 +270190,13 @@
     "product": "azureotelcollector",
     "release": "0.161.0",
     "dependency": "github.com_hashicorp_go-retryablehttp_v0.7.8",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "azureotelcollector/0.161.0/linux-amd64/github.com_hashicorp_go-rootcerts_v1.0.2.zip",
+    "product": "azureotelcollector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_go-rootcerts_v1.0.2",
     "platform": "linux-amd64"
   },
   {
@@ -273686,13 +273700,6 @@
     "platform": "linux-arm64"
   },
   {
-    "name": "opentelemetry-collector-internal/0.157.2/linux-arm64/github.com_hashicorp_serf_coordinate_v0.10.1.zip",
-    "product": "opentelemetry-collector-internal",
-    "release": "0.157.2",
-    "dependency": "github.com_hashicorp_serf_coordinate_v0.10.1",
-    "platform": "linux-arm64"
-  },
-  {
     "name": "opentelemetry-collector-internal/0.157.3/linux-amd64/github.com_hashicorp_consul_api_v1.32.1.zip",
     "product": "opentelemetry-collector-internal",
     "release": "0.157.3",
@@ -274383,6 +274390,13 @@
     "product": "opentelemetry-collector-internal",
     "release": "0.158.4",
     "dependency": "github.com_hashicorp_go-cleanhttp_v0.5.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "opentelemetry-collector-internal/0.158.4/linux-amd64/github.com_hashicorp_go-immutable-radix_v1.3.1.zip",
+    "product": "opentelemetry-collector-internal",
+    "release": "0.158.4",
+    "dependency": "github.com_hashicorp_go-immutable-radix_v1.3.1",
     "platform": "linux-amd64"
   },
   {
@@ -275786,13 +275800,6 @@
     "platform": "linux-amd64"
   },
   {
-    "name": "opentelemetry-collector-internal/0.162.1/linux-amd64/github.com_hashicorp_serf_coordinate_v0.10.4.zip",
-    "product": "opentelemetry-collector-internal",
-    "release": "0.162.1",
-    "dependency": "github.com_hashicorp_serf_coordinate_v0.10.4",
-    "platform": "linux-amd64"
-  },
-  {
     "name": "opentelemetry-collector-internal/0.162.1/linux-arm64/github.com_hashicorp_consul_api_v1.33.7.zip",
     "product": "opentelemetry-collector-internal",
     "release": "0.162.1",
@@ -277184,6 +277191,13 @@
     "release": "0.2.25",
     "dependency": "uluru_3.1.0",
     "platform": "linux-arm64"
+  },
+  {
+    "name": "otel-arrow-internal/0.2.26/linux-amd64/option-ext_0.2.0.zip",
+    "product": "otel-arrow-internal",
+    "release": "0.2.26",
+    "dependency": "option-ext_0.2.0",
+    "platform": "linux-amd64"
   },
   {
     "name": "otel-arrow-internal/0.2.26/linux-amd64/option-ext_0.2.0.zip",
@@ -278586,13 +278600,6 @@
     "platform": "linux-arm64"
   },
   {
-    "name": "otelcol-acsa/0.153.0/linux-arm64/github.com_hashicorp_golang-lru_v1.0.2.zip",
-    "product": "otelcol-acsa",
-    "release": "0.153.0",
-    "dependency": "github.com_hashicorp_golang-lru_v1.0.2",
-    "platform": "linux-arm64"
-  },
-  {
     "name": "otelcol-acsa/0.153.0/linux-arm64/github.com_hashicorp_golang-lru_v2_v1.0.2.zip",
     "product": "otelcol-acsa",
     "release": "0.153.0",
@@ -279293,6 +279300,13 @@
     "platform": "linux-amd64"
   },
   {
+    "name": "otelcol-acsa/0.153.13/linux-amd64/github.com_hashicorp_consul_api_v1.32.1.zip",
+    "product": "otelcol-acsa",
+    "release": "0.153.13",
+    "dependency": "github.com_hashicorp_consul_api_v1.32.1",
+    "platform": "linux-amd64"
+  },
+  {
     "name": "otelcol-acsa/0.153.13/linux-amd64/github.com_hashicorp_errwrap_v1.1.0.zip",
     "product": "otelcol-acsa",
     "release": "0.153.13",
@@ -279983,13 +279997,6 @@
     "product": "otelcol-acsa",
     "release": "0.153.17",
     "dependency": "github.com_hashicorp_go-immutable-radix_v1.3.1",
-    "platform": "linux-amd64"
-  },
-  {
-    "name": "otelcol-acsa/0.153.17/linux-amd64/github.com_hashicorp_go-multierror_v1.1.1.zip",
-    "product": "otelcol-acsa",
-    "release": "0.153.17",
-    "dependency": "github.com_hashicorp_go-multierror_v1.1.1",
     "platform": "linux-amd64"
   },
   {
@@ -280693,6 +280700,13 @@
     "platform": "linux-amd64"
   },
   {
+    "name": "otelcol-acsa/0.153.5/linux-amd64/github.com_hashicorp_golang-lru_v1.0.2.zip",
+    "product": "otelcol-acsa",
+    "release": "0.153.5",
+    "dependency": "github.com_hashicorp_golang-lru_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
     "name": "otelcol-acsa/0.153.5/linux-amd64/github.com_hashicorp_golang-lru_v2_v1.0.2.zip",
     "product": "otelcol-acsa",
     "release": "0.153.5",
@@ -281386,13 +281400,6 @@
     "platform": "linux-amd64"
   },
   {
-    "name": "otelcol-acsa/0.153.9/linux-arm64/github.com_hashicorp_consul_api_v1.32.1.zip",
-    "product": "otelcol-acsa",
-    "release": "0.153.9",
-    "dependency": "github.com_hashicorp_consul_api_v1.32.1",
-    "platform": "linux-arm64"
-  },
-  {
     "name": "otelcol-acsa/0.153.9/linux-arm64/github.com_hashicorp_errwrap_v1.1.0.zip",
     "product": "otelcol-acsa",
     "release": "0.153.9",
@@ -282083,6 +282090,13 @@
     "product": "otelcol-acsa",
     "release": "0.163.0",
     "dependency": "github.com_hashicorp_go-immutable-radix_v1.3.1",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.0/linux-arm64/github.com_hashicorp_go-multierror_v1.1.1.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.0",
+    "dependency": "github.com_hashicorp_go-multierror_v1.1.1",
     "platform": "linux-arm64"
   },
   {
@@ -282786,13 +282800,6 @@
     "platform": "linux"
   },
   {
-    "name": "otelcol-internal/0.146.0-test-2/linux/github.com_hashicorp_golang-lru_simplelru_v1.0.2.tar.gz",
-    "product": "otelcol-internal",
-    "release": "0.146.0-test-2",
-    "dependency": "github.com_hashicorp_golang-lru_simplelru_v1.0.2.tar",
-    "platform": "linux"
-  },
-  {
     "name": "otelcol-internal/0.146.0-test-2/linux/github.com_hashicorp_golang-lru_v2_v1.0.2.tar.gz",
     "product": "otelcol-internal",
     "release": "0.146.0-test-2",
@@ -283484,6 +283491,13 @@
     "release": "0.147.0",
     "dependency": "github.com_hashicorp_serf_coordinate_v0.10.1",
     "platform": "linux-arm64"
+  },
+  {
+    "name": "otelcol-internal/0.148.0/linux-amd64/github.com_hashicorp_consul_api_v1.32.1.zip",
+    "product": "otelcol-internal",
+    "release": "0.148.0",
+    "dependency": "github.com_hashicorp_consul_api_v1.32.1",
+    "platform": "linux-amd64"
   },
   {
     "name": "otelcol-internal/0.148.0/linux-amd64/github.com_hashicorp_consul_api_v1.32.1.zip",
