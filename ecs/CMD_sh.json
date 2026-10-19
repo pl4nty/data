@@ -641,6 +641,7 @@
         "EnableFidalgoMultiPhaseResume": true,
         "EnableFidalgoReduceResume": true,
         "EnableFidalgoToGetRestrictionStatus": false,
+        "EnableFilePathAppScopeTagBackfill": true,
         "EnableFilterOfDeletedMembership": true,
         "EnableFixApexMultiYearSubscriptionTermTimerFunction": true,
         "EnableFixLicenseDecreaseNotNotifyRecliamedULA": true,
