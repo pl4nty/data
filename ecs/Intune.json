@@ -36,10 +36,13 @@
     },
     "CLI_IntuneEpmAgent": {
         "FlightingV2": {
+            "3a1f8c6e-b2d4-4e7a-9f05-6c8d2e1b4a73": true,
             "6b09a055-eedb-430d-b478-7f911b8701c6": true,
+            "a1c3e5f7-2b4d-6e8f-0a1c-3e5f7b9d1e3f": true,
             "b4028acf-b43c-4017-9d6c-4cd40d3c53db": true,
             "b97631b1-395c-41d5-8f3a-c3bd43f6d3b3": true,
-            "e44c4da5-f306-4c15-ba63-ef47fcd1369a": true
+            "e44c4da5-f306-4c15-ba63-ef47fcd1369a": true,
+            "fa772b8d-6d9f-4036-88c9-0be5b95b08e5": true
         }
     },
     "CLI_MHS": {
@@ -225,6 +228,7 @@
         "FlightingV2": {
             "CosmosDbAccountMoveEnableIQueryExecuteNext": true,
             "CosmosDbAccountMoveEnableReadFromSecondary": true,
+            "ImprovementsToUnclogCosmosDbMigration": true,
             "RetryOnClientSidePatchesWithNullOrStarETag": true
         }
     },
@@ -398,6 +402,7 @@
     "SVC_AndroidSync": {
         "FlightingV2": {
             "CompanyPortalBatteryOptimizationBlockEnabled": true,
+            "DeviceConfigToAppConfigOnTheFlyEnabled": true,
             "DisableExpiredCertDecryptionForLocateDevice": true,
             "EnableAERequiredLOBAppsPolicyProcessing": true,
             "EnableAndroidCpWebEnrollment": true,
@@ -734,6 +739,7 @@
             "BypassPartnerTokenBlockForETG": true,
             "EnableBlockingOpenClaw": true,
             "EnableDefenderAiAgentProtection": true,
+            "EnableEpmSystemSettingsSettings": true,
             "EnablePRSv3EmptyChangedReportFilter": true,
             "EnableW365AgentsBaseline": true,
             "Enable_ApplicationProperties_Settings": true,
@@ -816,6 +822,11 @@
             "WindowsManagedAppClipboardSharingLevelFlightId": true
         }
     },
+    "SVC_MMPCSync": {
+        "FlightingV2": {
+            "DeviceMergeBypassDeviceFE": true
+        }
+    },
     "SVC_Monolith_Enrollment": {
         "FlightingV2": {
             "DisableAIAUrlRetrieval": true,
@@ -884,6 +895,7 @@
     "SVC_Pivot": {
         "FlightingV2": {
             "EnableDeviceEnrollmentFilters": true,
+            "EnableGdapQueryIdentity": true,
             "EnableGenericQueryParser": true,
             "EnableMultiDevicePivotGACalls": true
         }
@@ -1101,6 +1113,7 @@
     "UX_EPM": {
         "FlightingV2": {
             "1474d187-578a-4054-8f4d-8e77aa8deb5a": true,
+            "15836553-f144-41e2-8a87-c2f64b8a408e": true,
             "3c5944b3-07da-4a36-8959-b24f5155fe95": true,
             "6b09a055-eedb-430d-b478-7f911b8701c6": true,
             "724b547a-9286-439a-b01f-316146b132dc": true,

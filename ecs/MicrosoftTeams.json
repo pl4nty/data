@@ -46,7 +46,7 @@
         "LightBakeIn3P": 1,
         "OcclusionBakeIn3P": 1,
         "catalogUrl": "https://catalog.mesh.cloud.microsoft/api",
-        "clientMinimumVersion": "6.2618.0",
+        "clientMinimumVersion": "6.2619.0",
         "collectorUrl": "https://us-mobile.events.data.microsoft.com/OneCollector/1.0/",
         "echoRequestsInterval": 15,
         "isEUTenant": false,
@@ -473,6 +473,7 @@
                 "fetchGuestAllowedFromAcms": true,
                 "removeIsSkypeTeamsEnabled": false,
                 "servicePlansToActivate": [],
+                "servicePlansToActivateList": "29c62f1c-8ffc-4304-9cb9-398a6aa1852b",
                 "skipCrossTenantLicenseInFreemiumTenant": true
             }
         }

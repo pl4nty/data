@@ -1412,8 +1412,9 @@
         "name": "PowerShell",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "7.6.6",
+        "version": "7.6.7",
         "versions": [
+            "7.6.7",
             "7.6.6",
             "7.5.4"
         ]
