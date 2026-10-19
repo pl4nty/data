@@ -1039,13 +1039,6 @@ NET_EXPORT BASE_DECLARE_FEATURE(kCacheCertVerification);
 // already be expired.
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int, kCacheCertVerificationTtlSecs);
 
-// If enabled, configures SSLClientSocketImpl to enable GREASE for
-// signature_algorithms. This is a killswitch for behavior that is enabled by
-// default.
-// TODO(crbug.com/526597789): Clean up this killswitch after successfully
-// deployed.
-NET_EXPORT BASE_DECLARE_FEATURE(kTlsGreaseSigalgs);
-
 // Enables the BackendCleanupTracker for HTTP cache backends (net::DISK_CACHE)
 // to prevent conflicts when multiple backends are created for the same path.
 NET_EXPORT BASE_DECLARE_FEATURE(kEnableBackendCleanupTrackerOnHttpCache);
@@ -1085,6 +1078,14 @@ NET_EXPORT BASE_DECLARE_FEATURE(kEnableWindowsTcpLoopbackFastFail);
 // If the feature is disabled, the default behavior (20 packets) is used.
 NET_EXPORT BASE_DECLARE_FEATURE(kQuicSocketSendBufferSize);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(int, kQuicSocketSendBufferSizeParam);
+
+// Controls the disk cache backend experiment for the GPU shader cache
+// (`net::SHADER_CACHE`). When enabled, each shader cache directory is wiped
+// once on first open (tracked in the cache index header) and recreated using
+// the backend specified by `kShaderDiskCacheBackendType`.
+NET_EXPORT BASE_DECLARE_FEATURE(kShaderDiskCacheBackendExperiment);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(DiskCacheBackend,
+                                      kShaderDiskCacheBackendType);
 
 }  // namespace net::features
 

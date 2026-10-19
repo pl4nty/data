@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 34268179,
-    "file_count": 4104
+    "size": 34283786,
+    "file_count": 4105
   },
   {
     "name": "boringssl",
@@ -101,7 +101,7 @@
   },
   {
     "name": "chromium-bidi",
-    "size": 37044,
+    "size": 38142,
     "file_count": 5
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 38111,
+    "size": 38709,
     "file_count": 5
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "name": "crossbench-web-tests",
-    "size": 299810,
+    "size": 301789,
     "file_count": 5
   },
   {
@@ -171,7 +171,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 4510159,
+    "size": 4510171,
     "file_count": 27
   },
   {
@@ -206,8 +206,8 @@
   },
   {
     "name": "eigen3",
-    "size": 22523331,
-    "file_count": 2351
+    "size": 22681815,
+    "file_count": 2352
   },
   {
     "name": "entity_extraction",
@@ -241,7 +241,7 @@
   },
   {
     "name": "ffmpeg",
-    "size": 101833380,
+    "size": 101833758,
     "file_count": 11914
   },
   {
@@ -271,8 +271,8 @@
   },
   {
     "name": "glib",
-    "size": 53001874,
-    "file_count": 2387
+    "size": 54464563,
+    "file_count": 2431
   },
   {
     "name": "glslang",
@@ -376,7 +376,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 31052,
+    "size": 31141,
     "file_count": 2
   },
   {
@@ -391,7 +391,7 @@
   },
   {
     "name": "kotlinc",
-    "size": 322457,
+    "size": 323030,
     "file_count": 52
   },
   {
@@ -416,7 +416,7 @@
   },
   {
     "name": "libdisplay-info",
-    "size": 126020,
+    "size": 126114,
     "file_count": 2
   },
   {
@@ -431,8 +431,8 @@
   },
   {
     "name": "libinput",
-    "size": 7509411,
-    "file_count": 533
+    "size": 7516517,
+    "file_count": 534
   },
   {
     "name": "libjpeg_turbo",
@@ -456,8 +456,8 @@
   },
   {
     "name": "libsecret",
-    "size": 107878,
-    "file_count": 20
+    "size": 108576,
+    "file_count": 21
   },
   {
     "name": "liburlpattern",
@@ -516,7 +516,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 302723,
+    "size": 302852,
     "file_count": 46
   },
   {
@@ -541,7 +541,7 @@
   },
   {
     "name": "mutter",
-    "size": 29874718,
+    "size": 29876634,
     "file_count": 2014
   },
   {
@@ -576,7 +576,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 78706,
+    "size": 78849,
     "file_count": 37
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4788417,
+    "size": 4796623,
     "file_count": 641
   },
   {
@@ -776,12 +776,12 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 1716635,
+    "size": 2889337,
     "file_count": 30
   },
   {
     "name": "usb_ids",
-    "size": 735244,
+    "size": 733716,
     "file_count": 8
   },
   {
