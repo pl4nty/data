@@ -1,5 +1,902 @@
 [
     {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>AI Interpreter for Events brings real-time, AI-powered audio interpretation to Teams Town Halls and Webinars, helping global audiences follow events in their preferred language. Organizers can configure supported languages for their event, giving attendees a more natural and engaging multilingual experience beyond translated captions.</p>",
+        "id": 576711,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: AI Interpreter for Teams Events"
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>Introducing the <strong>Enhanced Microsoft 365 Copilot Experience in Viva Engage!</strong></p>\n<p>Powered by Engage MCP, this enhanced experience takes Copilot in Engage beyond catch-ups and summaries, helping users explore conversations more deeply, synthesize discussions, and uncover meaningful insights.</p>\n<p>It's also more deeply connected across Microsoft 365. For example, you can ask Copilot to analyze feedback on a leader's post, identify key themes, and turn those insights into a reusable PowerPoint deck.</p>\n<p>With Work IQ integration, Copilot also has a better understanding of you and your work context, connecting conversations in Engage to your broader work across Microsoft 365.</p>\n<p>Engage MCP expands both the breadth and depth of Engage scenarios Copilot can support, making it more useful for understanding conversations and insights across your Engage network.</p>\n<p>This update also brings Copilot in Engage closer to the broader Microsoft 365 Copilot experience, with your Microsoft 365 agents now accessible directly within Copilot in Engage.</p>",
+        "id": 576709,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Enhanced Microsoft Copilot in Viva Engage"
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>Update Repair helps admins identify Windows devices with Microsoft 365 Apps that are out of date or experiencing update issues. In the Microsoft 365 Apps admin center, admins can review device status and recommended actions, remotely start Online Repair for eligible devices, and follow manual remediation guidance for devices that need attention. Repair reinstalls Microsoft 365 Apps using the latest available build for the device\u2019s configured update channel.</p>",
+        "id": 576286,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "Microsoft 365 app"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft 365 app: Inventory - Update Repair"
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>Zero-effort task completion enables project managers and team members to mark tasks as complete even when no effort was planned or recorded. This capability supports milestones, administrative activities, checklists, and other tasks that track completion without requiring work hours.</p>\n<p>This is for both Project Operations core and Project Operations connected with ERP deployment types.</p>",
+        "id": 576278,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Complete zero-effort tasks"
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>Enable Microsoft Copilot Studio agents to browse and interact with websites as a native capability powered by the GitHub Copilot Harness. Using natural-language instructions, agents can navigate web pages, extract information, and download files. Agents can then use that information and those files alongside other tools to complete end-to-end workflows, extending their reach beyond configured knowledge sources and API-based integrations.</p>",
+        "id": 576272,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Copilot Studio: Computer Use for web browsing on GitHub Copilot Harness"
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>Microsoft Teams is expanding Markdown support in the compose box, giving you more ways to structure and format messages using familiar Markdown syntax. Create richer, more readable messages while staying in the Markdown authoring experience.</p>",
+        "id": 576199,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Linux"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Linux"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Expanded Markdown support in Microsoft Teams"
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<h2>Business Value</h2>\n<p>Reduce repetitive tax setup when you import Shopify orders that contain multiple United States tax jurisdictions. Shopify Tax Matching suggests how free-text tax lines map to configured tax jurisdictions and keeps you in control of exceptions before you create sales documents.</p>\n<h2>Details</h2>\n<p>The Shopify Tax Matching capability is available in public preview for organizations in the United States that use the Shopify connector. When standard tax-area mapping doesn't resolve an imported order, the capability uses AI to suggest tax jurisdictions based on Shopify tax-line titles and rates, configured tax jurisdictions, and limited ship-to location information.</p>\n<p>You can review each suggestion, confidence level, explanation, and rate before approving the final mapping. Configure which matches require review and whether the capability can create missing tax jurisdictions and tax areas. Unidentified jurisdictions and rate differences always require review.</p>\n<p>Shopify Tax Matching maps imported tax descriptions to tax setup. It doesn't calculate tax, determine tax liability, file tax returns, or replace professional tax advice.</p>",
+        "id": 574128,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": "http://docs.microsoft.com/dynamics365/business-central/shopify/shopify-tax-matching",
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Ecommerce - [US] Match Shopify tax lines to tax jurisdictions"
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>Enable active Microsoft Entra users without Dataverse or Power Apps licenses as activity recipients. Created user records remain disabled and do not grant Dynamics 365 app access.</p>\n<p>Documentation: https://learn.microsoft.com/en-us/power-platform/admin/add-unlicensed-users-activities</p>",
+        "id": 574121,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/power-platform/admin/add-unlicensed-users-activities",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365 app"
+            },
+            {
+                "tagName": "Dynamics 365 Sales"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "Microsoft Dataverse"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365 app"
+                },
+                {
+                    "tagName": "Dynamics 365 Sales"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                },
+                {
+                    "tagName": "Microsoft Dataverse"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Dataverse: Add users without licenses to activity recipient fields"
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>Change slide size in PowerPoint from a modern task pane that keeps you in the flow of editing with real-time slide changes. Choose common slide sizes including new social media presets, or customize dimensions with a cleaner, more approachable experience.</p>",
+        "id": 573150,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "PowerPoint: Set slide size in a modern task pane"
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>Change slide size in PowerPoint from a modern task pane that keeps you in the flow of editing with real-time slide changes. Choose common slide sizes including new social media presets, or customize dimensions with a cleaner, more approachable experience.</p>",
+        "id": 573149,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "PowerPoint: Set slide size in a modern PowerPoint pane"
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>Unblock users from upload files with Microsoft Purview Information Protection (MPIP) sensitivity labels to Copilot Studio agents deployed on the M365 channel. With this support agents can process content based on the user's/agents account permissions, with label protections enforced end-to-end.</p>",
+        "id": 571305,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Support for sensitive documents protected with Microsoft Purview Information Protection (MPIP) "
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>Allow agents and agent flows to pause for human input or approval before continuing.</p>",
+        "id": 570672,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Work IQ"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Work IQ"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Work IQ: Human in the loop"
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>Provide administrators with policy-based controls for governing agents and their capabilities at scale.</p>",
+        "id": 570652,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Work IQ"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Work IQ"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Work IQ: Agent Policy Governance"
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>Enable applications and agents to access Microsoft Teams meeting transcripts in real time for assistance and insights.</p>",
+        "id": 570651,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Work IQ"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Work IQ"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Work IQ: Real Time Transcripts"
+    },
+    {
+        "created": "2026-10-19T23:15:15",
+        "description": "<p>Admins can enable a policy that<br>\nplays an audio announcement when recording or transcription starts. This can be<br>\napplied tenant-wide or to specific groups. The announcement helps ensure all<br>\nparticipants are informed and improves accessibility awareness.</p>",
+        "id": 559609,
+        "locale": null,
+        "modified": "2026-10-19T23:15:15",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Audio announcement for recording and transcription"
+    },
+    {
         "created": "2026-10-16T22:00:35",
         "description": "<p>This feature gives project managers greater control over where imported tasks are placed within a project plan. From the task grid, a project manager can open the context menu for an existing task and select Insert task below. The standard Import Tasks pane then opens and confirms the selected insertion point.</p>\n<p>Imported tasks are placed immediately after the selected task and at the same level in the task hierarchy. If the selected task has subtasks, the imported tasks are inserted after the entire group of subtasks, preserving the existing hierarchy. When multiple tasks are imported, they remain together in their original order, and their internal structure and dependencies are maintained.</p>\n<p>The existing Import Tasks command remains unchanged and continues to add imported tasks to the end of the project plan.</p>",
         "id": 576298,
@@ -20041,12 +20938,12 @@
         "description": "<p>We are bringing back send availability on both iOS and Android. iOS users will now also be able to access more of this feature via keyboard and voiceover.</p>",
         "id": 570665,
         "locale": null,
-        "modified": "2026-09-28T22:58:08",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21437,12 +22334,12 @@
         "description": "<p>We are adding the ability to duplicate an event. Simply go to the event details and select \"duplicate event\"</p>",
         "id": 570666,
         "locale": null,
-        "modified": "2026-09-23T22:59:12",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -24629,9 +25526,9 @@
         "description": "<p>Microsoft Teams is introducing a new way to organize and access important resources in chats and channels. Users will be able to pin key content, including links, files, and messages, directly beneath the chat or channel header for quick access. Resources can also be organized into folders, making it easier to keep important information visible and discoverable in active conversations. This update provides a more consistent experience across chats and channels, helping users stay organized, quickly find key resources, and remain aligned on important information. Existing pinned messages will continue to be available within the new experience, alongside other shared resources, on Teams desktop and web.</p>",
         "id": 570646,
         "locale": null,
-        "modified": "2026-09-11T22:10:10",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -24830,12 +25727,12 @@
         "description": "<p>Microsoft Purview Data Loss Prevention (DLP) is expanding to Microsoft Cowork, enabling data security admins to use a single policy across Microsoft 365 Copilot and Cowork. The integration helps protect sensitive AI interactions by preventing the use of labeled knowledge sources, blocking prompts that contain supported sensitive information types, and restricting sensitive prompts from being sent to Bing for web search.</p>",
         "id": 570845,
         "locale": null,
-        "modified": "2026-09-08T22:57:21",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -25074,9 +25971,9 @@
         "description": "<p>The new Meeting Shared Files feature allows users to add relevant files and links to their meeting for easy access and to automatically share that content with all meeting participants. AI in the meeting, like the Facilitator agent, uses these files for targeted grounding to answer questions and enhance skill functionality.</p>",
         "id": 570427,
         "locale": null,
-        "modified": "2026-09-17T23:00:45",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -33369,12 +34266,12 @@
         "description": "<p>External call routing will provide users the ability to redirect all external phone calls to either voicemail or their unanswered settings.</p>",
         "id": 567884,
         "locale": null,
-        "modified": "2026-09-16T22:57:03",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -33576,12 +34473,12 @@
         "description": "<p>Session and Response Sharing let Microsoft 365 Copilot users share Copilot chat content through a link. Session Sharing shares a full chat session, while Response Sharing shares a single Copilot response. The shared content opens as a read-only view, and recipients can continue from it in their own Copilot chat. This gives Copilot users an easier and more controlled way to share useful Copilot outputs with coworkers instead of copying and pasting. It helps teams reuse work, share context, and collaborate more efficiently while keeping sharing within organizational controls.</p>",
         "id": 562353,
         "locale": null,
-        "modified": "2026-09-11T22:10:10",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -37144,15 +38041,15 @@
     },
     {
         "created": "2026-06-30T22:57:58",
-        "description": "When a Teams Rooms on Android is invited as a meeting presenter, the front-of-room display defaults to the attendee view. Presenters always have full control from the console, including green room and off-stage management, and can switch the front-of-room display to presenter view without impacting attendees. Available in Teams Rooms Pro.\n",
+        "description": "<p>When a Teams Rooms on Android is invited as a meeting presenter, the front-of-room display defaults to the attendee view. Presenters always have full control from the console, including green room and off-stage management, and can switch the front-of-room display to presenter view without impacting attendees. Available in Teams Rooms Pro.</p>",
         "id": 562534,
         "locale": null,
-        "modified": "2026-08-12T22:47:48",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -37269,12 +38166,12 @@
         "description": "<p>Copilot in PowerPoint helps you create, edit, and refine presentations through natural language\u2014right inside your deck. Start a new presentation or build on an existing one by asking Copilot to generate slides, update content, improve layouts, and polish design, all while preserving your formatting, structure, and branding. Copilot can also connect to your brand kit to apply branded templates, insert brand-approved images, and check for brand compliance. Available to Microsoft 365 Copilot (Premium) users.</p>",
         "id": 566701,
         "locale": null,
-        "modified": "2026-09-18T22:00:04",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -39295,9 +40192,9 @@
         "description": "<p>Ability to apply Retention labels and policies to items on OneDrive and SharePoint based on when the items were last accessed by an user.</p>",
         "id": 565866,
         "locale": null,
-        "modified": "2026-09-10T23:01:27",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicDisclosureAvailabilityDate": "March CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -43300,7 +44197,7 @@
         "description": "<p>With the introduction of file archiving support in SharePoint Online, administrators are looking to seamlessly include archiving actions within their existing data retention policies. This means that, in addition to keeping or deleting data, admins want to now leverage Purview DLM to archive files according to organizational requirements, ensuring comprehensive governance across all stages of the content lifecycle in SPO. Retention based file archiving moves inactive content to low-cost storage, lowering costs with no compromise on Compliance, keeping data discoverable and making Copilot results highly relevant.</p>",
         "id": 562345,
         "locale": null,
-        "modified": "2026-10-12T23:01:05",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
@@ -44096,15 +44993,15 @@
     },
     {
         "created": "2026-05-14T23:15:59",
-        "description": "Unlock deeper insights into Copilot agent adoption with flexible, self-serve analytics. Insights global and partition analysts can access and combine granular agent usage metrics with agent and organizational attributes to uncover agent adoption trends, export and customize reporting, and drive more informed decisions, without relying on predefined dashboards.\n",
+        "description": "<p>Unlock deeper insights into Copilot agent adoption with flexible, self-serve analytics. Insights global and partition analysts can access and combine granular agent usage metrics with agent and organizational attributes to uncover agent adoption trends, export and customize reporting, and drive more informed decisions, without relying on predefined dashboards.</p>",
         "id": 562412,
         "locale": null,
-        "modified": "2026-05-14T23:15:59",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -44660,12 +45557,12 @@
         "description": "<p>Copilot in PowerPoint lets you create, edit, and refine presentations through natural conversation, directly in your presentation. You can start a new presentation or build on an existing one, asking Copilot to generate slides, update content, improve layouts, and polish design\u2014while preserving formatting, structure, and branding. Copilot uses your files, meetings, emails, and more to help shape content and iterate quickly, and it connects to your brand kit so you can apply branded templates, insert brand approved images, and check for brand compliance. Available to Microsoft 365 Copilot\u2013licensed users.</p>",
         "id": 561322,
         "locale": null,
-        "modified": "2026-09-18T22:00:04",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -53597,12 +54494,12 @@
         "description": "<p>Microsoft Teams automatically organizes your chats with new built in sections that help reduce clutter and keep conversations easy to find. Muted chats (on by default) are grouped together in a dedicated area, while meeting chats (off by default) can be collected into a single section for quick access. You\u2019re always in control, as each section can be turned on or off based on your preferences. The new Meeting chats section will replace the Meeting chats filter, that was previously available at the top of the chat and channel list. Updated July 20, 2026: We have temporarily rolled back this feature. We apologize for any inconvenience.</p>",
         "id": 559605,
         "locale": null,
-        "modified": "2026-10-15T22:47:30",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "In development",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -53971,15 +54868,15 @@
     },
     {
         "created": "2026-03-31T23:15:47",
-        "description": "Users will be able to see a community's pinned resources and related communities in Teams for iOS.",
+        "description": "<p>Users will be able to see a community's pinned resources and related communities in Teams for iOS.</p>",
         "id": 559107,
         "locale": null,
-        "modified": "2026-06-18T23:00:06",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -55082,15 +55979,15 @@
     },
     {
         "created": "2026-03-26T23:15:28",
-        "description": "You\u2019ll notice\u00a0media quality improvements including support for up to 16 participant videos (4\u00d74 grid)\u00a0available in May\u00a0and simulcast streaming\u00a0(June)\u00a0when using Direct Guest Join.\u00a0These updates make cross\u2011platform meetings more immersive and reliable when joining Teams meetings from Zoom, Google Meet, or Cisco devices.\u00a0Direct Guest Join is not yet available for Google Meet on Teams Rooms for Android.\u00a0",
+        "description": "<p>You\u2019ll notice&nbsp;media quality improvements including support for up to 16 participant videos (4\u00d74 grid)&nbsp;available in May&nbsp;and simulcast streaming&nbsp;(June)&nbsp;when using Direct Guest Join.&nbsp;These updates make cross\u2011platform meetings more immersive and reliable when joining Teams meetings from Zoom, Google Meet, or Cisco devices.&nbsp;Direct Guest Join is not yet available for Google Meet on Teams Rooms for Android.</p>",
         "id": 558922,
         "locale": null,
-        "modified": "2026-05-12T23:00:33",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -72933,12 +73830,12 @@
         "description": "<p>Edit with Copilot lets you build and edit workbooks side by side with Copilot. When you're updating budgets, creating financial models, or analyzing data, Copilot uses Excel's most powerful tools like tables, charts, PivotTables, and formulas to help you get the job done.</p>",
         "id": 542181,
         "locale": null,
-        "modified": "2026-09-11T22:10:10",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -75370,12 +76267,12 @@
     },
     {
         "created": "2025-12-04T00:00:38",
-        "description": "This feature in Purview Compliance Manager shall enable customers to automatically access the compliance posture of Agents created in AI Foundry. Customers can map Agents being created in AI Foundry to compliance regulations and assessments in Purview Compliance Manager and get to know the compliance status and improvement actions to be innovative and compliant.",
+        "description": "<p>This feature in Purview Compliance Manager shall enable customers to automatically access the compliance posture of Agents created in AI Foundry. Customers can map Agents being created in AI Foundry to compliance regulations and assessments in Purview Compliance Manager and get to know the compliance status and improvement actions to be innovative and compliant.</p>",
         "id": 536576,
         "locale": null,
-        "modified": "2026-08-26T22:50:58",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "December CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -76285,12 +77182,12 @@
     },
     {
         "created": "2025-11-26T00:45:03",
-        "description": "Purview SDK embedded in Agent Framework SDK enables developers to seamlessly integrate enterprise-grade security, compliance, and governance into the AI agents they build. This integration enables automatic classification and protection of sensitive data, prevents data leaks and oversharing, and provides visibility and control for regulatory compliance\u2014empowering organizations to confidently and securely adopt AI agents in complex environments. ",
+        "description": "<p>Purview SDK embedded in Agent Framework SDK enables developers to seamlessly integrate enterprise-grade security, compliance, and governance into the AI agents they build. This integration enables automatic classification and protection of sensitive data, prevents data leaks and oversharing, and provides visibility and control for regulatory compliance\u2014empowering organizations to confidently and securely adopt AI agents in complex environments.</p>",
         "id": 534609,
         "locale": null,
-        "modified": "2026-05-29T22:30:02",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2027",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -90413,15 +91310,15 @@
     },
     {
         "created": "2025-10-01T23:01:01",
-        "description": "When a Teams Rooms on Android is invited as a meeting presenter, the front-of-room display defaults to the attendee view. Presenters always have full control from the console, including green room and off-stage management, and can switch the front-of-room display to presenter view without impacting attendees. Available in Teams Rooms Pro. Note: An earlier listing incorrectly stated this feature applied to webinars as well. That experience is still in development and will be released later in 2026.",
+        "description": "<p>When a Teams Rooms on Android is invited as a meeting presenter, the front-of-room display defaults to the attendee view. Presenters always have full control from the console, including green room and off-stage management, and can switch the front-of-room display to presenter view without impacting attendees. Available in Teams Rooms Pro. Note: An earlier listing incorrectly stated this feature applied to webinars as well. That experience is still in development and will be released later in 2026.</p>",
         "id": 500378,
         "locale": null,
-        "modified": "2026-01-14T00:00:47",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -93409,15 +94306,15 @@
     },
     {
         "created": "2025-09-08T23:45:21",
-        "description": "It's easier for admins to enable the benefits of intelligent audio and video and Copilot for users in Teams Rooms through a new user interface and admin settings. These new settings, on the device and in the Pro Management portal, simplify configuration and remove the requirement to use PowerShell, offering improved visibility across rooms.",
+        "description": "<p>It's easier for admins to enable the benefits of intelligent audio and video and Copilot for users in Teams Rooms through a new user interface and admin settings. These new settings, on the device and in the Pro Management portal, simplify configuration and remove the requirement to use PowerShell, offering improved visibility across rooms.</p>",
         "id": 502525,
         "locale": null,
-        "modified": "2025-10-17T22:00:54",
+        "modified": "2026-10-19T23:15:15",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -114219,73 +115116,6 @@
         "title": "Microsoft Teams: Forward messages with app cards"
     },
     {
-        "created": "2024-02-03T00:00:26",
-        "description": "You will now be able to run instant workflows and create new file workflows via the file chiclet overflow menu (...)",
-        "id": 381643,
-        "locale": null,
-        "modified": "2024-10-29T23:15:28",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Workflows within File Chiclet"
-    },
-    {
         "created": "2024-12-20T00:00:02",
         "description": "<p>Copilot for Security in DLP can summarize DLP policies. This enhancement enables DLP admins to gain insights on coverage of policies viz. location, classifiers and notifications, and more.</p>\n<p>DLP admins can get these insights on all the policies or on few selected policies. They will be able to use prompts to gain deeper level view of how a policy is configured for their digital landscape. This helps them align their data posture on a regular basis and make corrections to policy posture as needed. #copilotcontrolsystem</p>",
         "id": 472031,
@@ -115028,274 +115858,6 @@
             ]
         },
         "title": "Microsoft Teams: Network Strength icon to understand strength of your network"
-    },
-    {
-        "created": "2024-07-25T23:45:19",
-        "description": "This feature will now allow event organizers to set sensitivity labels for town halls and webinars. These labels are visible to organizers when creating an event instance once selected, and notify organizers if the details of the event being created are not valid for the selected sensitivity.",
-        "id": 409226,
-        "locale": null,
-        "modified": "2024-10-21T23:30:37",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Sensitivity label support for town hall and webinars (Premium)"
-    },
-    {
-        "created": "2024-07-05T22:15:57",
-        "description": "The latest Teams meetings experience with performance improvements will be available for anonymous users who join Teams meetings on web in Edge browser.",
-        "id": 401117,
-        "locale": null,
-        "modified": "2024-11-16T00:00:49",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Performance improvements for anonymous users who join meetings in Edge"
-    },
-    {
-        "created": "2024-07-05T22:15:57",
-        "description": "The latest Teams meetings experience with performance improvements will be available for anonymous users who join Teams meetings on web in Chrome browser.",
-        "id": 401116,
-        "locale": null,
-        "modified": "2024-11-16T00:00:49",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Latest meeting experiences with performance improvements on web for Chrome (for anonymous join only)"
-    },
-    {
-        "created": "2024-05-07T23:30:56",
-        "description": "When you share documents (Word, Excel, PowerPoint and PDF) in chat or channel conversation, you can see a thumbnail image of the file in the thread. This lets you preview the file\u2019s content without opening it and find the file you need quickly.",
-        "id": 395936,
-        "locale": null,
-        "modified": "2024-06-11T23:30:01",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: File Image preview in chats and channels"
     },
     {
         "created": "2024-02-06T02:15:52",
@@ -119410,85 +119972,6 @@
         "title": "Outlook: Additional features on the profile card in Outlook Mobile"
     },
     {
-        "created": "2024-05-09T23:00:20",
-        "description": "Cross-Location Shifts empowers organizations by enabling their Frontline workers to access and select open shifts from multiple locations within a region. Managers benefit from a larger labor pool by opening shift availability across multiple locations: a worker from one store location may select a shift in any other store across their region. This feature is accessible both via desktop and mobile.",
-        "id": 394351,
-        "locale": null,
-        "modified": "2024-10-29T23:15:28",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Cross location Shifts"
-    },
-    {
         "created": "2024-06-04T23:15:18",
         "description": "The School Connection app in Microsoft Teams (mobile) empowers parents and guardians to engage, support, and monitor their student's learning at school. This release enables a parent/guardian to get access to their child\u2019s profile in School Connection if they login to Teams (mobile) with their phone number and the school has registered that phone number as a parent/guardian contact. Additionally, a parent/guardian will easily get access to their child\u2019s profile if the phone number or email address that is registered by the school is saved as a login information in their Microsoft account. Learn more about School Connection at the link below.",
         "id": 398447,
@@ -121911,61 +122394,6 @@
         "title": "Outlook: Import support for data files in Outlook"
     },
     {
-        "created": "2024-06-19T23:30:51",
-        "description": "Create and highlight videocentric publications, like meeting content or executive messages, with the new video templates in Viva Amplify; this presents videos that are inline, playable, and beautiful.",
-        "id": 398979,
-        "locale": null,
-        "modified": "2024-08-21T23:45:23",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Amplify - Video templates"
-    },
-    {
         "created": "2024-04-08T23:15:13",
         "description": "Organizers, co-organizers, and presenters can chat privately in a separate chat from attendees. This chat is available to access before, during, and after the event.",
         "id": 392328,
@@ -122854,79 +123282,6 @@
             ]
         },
         "title": "Universal Print: Logs and alerts"
-    },
-    {
-        "created": "2024-04-26T22:45:30",
-        "description": "The reimagined hero web part will feature a carousel layout and a selection of new styles, creating an eye-catching and engaging experience at the top of the page.",
-        "id": 395214,
-        "locale": null,
-        "modified": "2025-01-17T23:15:23",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "SharePoint: Pages - Updated Hero web part with new layout & styles"
     },
     {
         "created": "2024-03-19T23:15:49",

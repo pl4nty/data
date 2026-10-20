@@ -11,14 +11,10 @@
         "AddSuperFastLaneToWorkItemV2": true,
         "Aspen": {
             "CheckEnablement": {
-                "DnsSpoofingCheck": false,
                 "EndpointReachability": true,
                 "GraphicsCheck": true,
                 "InternetConnnectivity": true,
-                "NetworkVpnCheck": false,
-                "OsVersion": true,
-                "ShortpathCompatibilityCheck": false,
-                "TlsInspectionCheck": false
+                "OsVersion": true
             },
             "EnableHealthChecks": false,
             "LockOnDisconnect": true,
@@ -325,6 +321,7 @@
         "EnableCUASessionMetering": true,
         "EnableCUAUserAssignmentSupport": true,
         "EnableCanaryActionPaneReactviewMigrationUX": true,
+        "EnableCanaryCapacityProfileSkuOrdering": true,
         "EnableCanaryTURNCheck": true,
         "EnableCapacityCompositeIndexes": true,
         "EnableCapacityErrorCodeRefinement": true,
@@ -1194,7 +1191,6 @@
         "EnableDriverHotQueryTest": true,
         "EnableFIREAlerting": true,
         "EnableNewDeviceReadiness": true,
-        "EnableNonDssBatchAccountMove": true,
         "EnableOnByDefault": true,
         "EnableOnByDefaultReportingBanner": true,
         "EnableOnboardedTestTenants": true,

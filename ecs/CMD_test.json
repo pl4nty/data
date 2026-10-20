@@ -16,14 +16,10 @@
         "AdoptTouchlessServiceInstanceMoveInUserService": true,
         "Aspen": {
             "CheckEnablement": {
-                "DnsSpoofingCheck": true,
                 "EndpointReachability": true,
                 "GraphicsCheck": true,
                 "InternetConnnectivity": true,
-                "NetworkVpnCheck": true,
-                "OsVersion": true,
-                "ShortpathCompatibilityCheck": true,
-                "TlsInspectionCheck": true
+                "OsVersion": true
             },
             "ConnectWithPolicyTimeout": true,
             "EnableAutoReconnect": true,
@@ -55,6 +51,7 @@
         "CASUseFlexProductType": true,
         "CasColdDataConsistencyCheck": true,
         "CasEnableCdpFlexStopGraphApi": true,
+        "CasEnableConfigGroupSan": true,
         "CasHandleFlexStop": true,
         "CasImproveActiveApi": true,
         "CasReconcileWdsFlexLifecyclePolicies": true,
