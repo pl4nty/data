@@ -12,7 +12,7 @@ if l_0_1 == nil or l_0_1 == "" then
   return mp.CLEAN
 end
 l_0_1 = (string.lower)(l_0_1)
-if #l_0_1 < 50 or #l_0_1 > 450 then
+if #l_0_1 < 16 or #l_0_1 > 450 then
   return mp.CLEAN
 end
 local l_0_2 = (mp.GetParentProcInfo)()
@@ -57,13 +57,22 @@ local l_0_7 = l_0_6(l_0_1)
 if l_0_7 == nil or #l_0_7 < 2 then
   return mp.CLEAN
 end
-local l_0_8 = l_0_5(l_0_1)
 do
-  if not l_0_6(l_0_8) then
-    local l_0_9 = {}
+  if #l_0_1 < 50 then
+    local l_0_8 = (string.match)(l_0_7[1], "[^\\/]+$")
+    -- DECOMPILER ERROR at PC107: Unhandled construct in 'MakeBoolean' P3
+
+    if (l_0_8 ~= "mshta.exe" and l_0_8 ~= "mshta") or not (string.match)(l_0_7[2], "^https?://[^/\\%s?#]") then
+      return mp.CLEAN
+    end
   end
-  local l_0_10 = nil
-  local l_0_11 = function(l_3_0, l_3_1)
+  local l_0_9 = l_0_5(l_0_1)
+  do
+    if not l_0_6(l_0_9) then
+      local l_0_10 = {}
+    end
+    local l_0_11 = nil
+    local l_0_12 = function(l_3_0, l_3_1)
   -- function num : 0_2
   if l_3_0 == nil or l_3_1 == nil or #l_3_0 < 2 or #l_3_0 ~= #l_3_1 then
     return false
@@ -76,8 +85,8 @@ do
   return true
 end
 
-  for l_0_15,l_0_16 in ipairs(l_0_4) do
-    local l_0_12 = function(l_4_0)
+    for l_0_16,l_0_17 in ipairs(l_0_4) do
+      local l_0_13 = function(l_4_0)
   -- function num : 0_3
   local l_4_1, l_4_7, l_4_8, l_4_9, l_4_10 = nil
   for l_4_5 = 2, #l_4_0 do
@@ -117,33 +126,34 @@ end
   end
 end
 
-    -- DECOMPILER ERROR at PC99: Confused about usage of register: R16 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC124: Confused about usage of register: R16 in 'UnsetPending'
 
-    if type(R16_PC99) == "string" and R16_PC99 ~= "" then
-      if l_0_11(l_0_6(l_0_17), l_0_7) then
-        if GetRollingQueueKeyValue("IsClickFixCMD", R16_PC99) then
-          (mp.set_mpattribute)("MpInternal_researchdata=WCS=" .. tostring(GetRollingQueueKeyValue("IsClickFixCMD", R16_PC99)))
-        end
-        return mp.INFECTED
-      end
-      local l_0_18 = nil
-      if l_0_11(l_0_6(l_0_5(l_0_17)), l_0_10) then
-        if l_0_18 then
-          (mp.set_mpattribute)("MpInternal_researchdata=WCS=" .. tostring(l_0_18))
-        end
-        return mp.INFECTED
-      end
-      if l_0_6(l_0_5(l_0_17)) ~= nil then
-        local l_0_19 = nil
-        if l_0_12(l_0_6(l_0_5(l_0_17))) ~= nil and (string.find)(l_0_8, l_0_12(l_0_6(l_0_5(l_0_17))), 1, true) then
-          if l_0_18 then
-            (mp.set_mpattribute)("MpInternal_researchdata=WCS=" .. tostring(l_0_18))
+      if type(R16_PC124) == "string" and R16_PC124 ~= "" then
+        if l_0_12(l_0_6(l_0_18), l_0_7) then
+          if GetRollingQueueKeyValue("IsClickFixCMD", R16_PC124) then
+            (mp.set_mpattribute)("MpInternal_researchdata=WCS=" .. tostring(GetRollingQueueKeyValue("IsClickFixCMD", R16_PC124)))
           end
           return mp.INFECTED
         end
+        local l_0_19 = nil
+        if l_0_12(l_0_6(l_0_5(l_0_18)), l_0_11) then
+          if l_0_19 then
+            (mp.set_mpattribute)("MpInternal_researchdata=WCS=" .. tostring(l_0_19))
+          end
+          return mp.INFECTED
+        end
+        if l_0_6(l_0_5(l_0_18)) ~= nil then
+          local l_0_20 = nil
+          if l_0_13(l_0_6(l_0_5(l_0_18))) ~= nil and (string.find)(l_0_9, l_0_13(l_0_6(l_0_5(l_0_18))), 1, true) then
+            if l_0_19 then
+              (mp.set_mpattribute)("MpInternal_researchdata=WCS=" .. tostring(l_0_19))
+            end
+            return mp.INFECTED
+          end
+        end
       end
     end
+    return mp.CLEAN
   end
-  return mp.CLEAN
 end
 
