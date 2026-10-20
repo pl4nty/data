@@ -550,8 +550,7 @@
                 "context_window": 1050000,
                 "id": "gpt-6-astra",
                 "inferenceProviders": [
-                    "OpenAI",
-                    "microsoft"
+                    "OpenAI"
                 ],
                 "name": "GPT-6 Astra",
                 "publisher": "OpenAI",

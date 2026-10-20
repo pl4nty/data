@@ -106224,67 +106224,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Intelligent meeting recap can summarize content shared on screen"
     },
     {
-        "created": "2025-05-05T23:15:38",
-        "description": "To address the issue of unauthorized screen captures during meetings, the Prevent Screen Capture feature ensures that if a user attempts to take a screen capture, the meeting window will turn black, thereby protecting sensitive information. This feature will be available on Teams desktop applications (both Windows and Mac) and Teams mobile applications (both iOS and Android). For users joining from unsupported platforms, they will be placed in audio-only mode to maintain the integrity of the meeting's content.",
-        "id": 490561,
-        "locale": null,
-        "modified": "2025-12-19T23:00:49",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Enhanced Meeting Protection - Prevent Screen Capture"
-    },
-    {
         "created": "2025-05-02T22:00:26",
         "description": "<p>Your organization can now manually apply Information Protection sensitivity labels in Engage. Sensitivity label support in this new application will allow admins to create labels and configure label publishing policies to determine which users and groups can manually label content in Engage. End users will be able to manually apply labels to Engage communities and in turn classify and protect their sensitive data via privacy and external user access controls.</p>",
         "id": 491918,
