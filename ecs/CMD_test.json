@@ -1541,6 +1541,7 @@
         "Nh_Enable_Extended_FileTransfer": true,
         "Nh_Enable_Iframe_Support": true,
         "Nh_Enable_OcclusionManager": true,
+        "Nh_Enable_RDCore_Clipboard": true,
         "Nh_Enable_Request_Caching": true,
         "Nh_Enable_Screen_Wake_Lock": true,
         "Nh_Enable_Skip_Channel_Join": true,

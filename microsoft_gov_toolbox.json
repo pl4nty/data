@@ -370,6 +370,20 @@
         ]
     },
     {
+        "displayName": "AzFilesSmbMIClient",
+        "displayPublisher": "Microsoft",
+        "displaySummary": "Managed identity client for Azure Files SMB shares.",
+        "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABySURBVFhH7dmhDYBAEAXR7fqQWKqiBw6LQWOo4MgmVMCYJRkx/un/I6Ztjfk8ovVapSlt0foVyz1iPmuVprS92hHTXqs0pU3g1wTSBNIE0gTSBNIE0gTSBNIE0gTSBNIE0gTSBNIE0gTS/gQsPqIXvyEe0QJM33ng80wAAAAASUVORK5CYII=",
+        "keywords": [],
+        "name": "AzFilesSmbMIClient",
+        "publisher": "Microsoft",
+        "publisherType": "Microsoft",
+        "version": "1.2.3574.134",
+        "versions": [
+            "1.2.3574.134"
+        ]
+    },
+    {
         "displayName": "AzIP LogViewer",
         "displayPublisher": "Microsoft",
         "displaySummary": "AzIP Log Viewer is an application to read both MSIP and AIP logs.",

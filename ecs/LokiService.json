@@ -1384,6 +1384,7 @@
         "EnablePeopleInsights": false,
         "EnablePeopleInsightsCache": false,
         "EnablePeopleInsightsSimpleMetrics": false,
+        "EnablePeopleLookupPrefetchBatching": true,
         "EnablePeopleNotesGDPRExport": true,
         "EnablePeopleSkillsLicense": true,
         "EnablePostedAnnouncements3SProvider": true,
