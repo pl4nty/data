@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2165795,
+    "size": 2169064,
     "file_count": 188
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 1131129,
+    "size": 1135962,
     "file_count": 48
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 34284650,
-    "file_count": 4105
+    "size": 34291049,
+    "file_count": 4104
   },
   {
     "name": "boringssl",
@@ -151,8 +151,8 @@
   },
   {
     "name": "dawn",
-    "size": 163158787,
-    "file_count": 19226
+    "size": 163363033,
+    "file_count": 19293
   },
   {
     "name": "dbus",
@@ -161,7 +161,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 5512679,
+    "size": 5513712,
     "file_count": 64
   },
   {
@@ -171,7 +171,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 4510171,
+    "size": 4510496,
     "file_count": 27
   },
   {
@@ -206,8 +206,8 @@
   },
   {
     "name": "eigen3",
-    "size": 22681815,
-    "file_count": 2352
+    "size": 22862286,
+    "file_count": 2400
   },
   {
     "name": "entity_extraction",
@@ -276,8 +276,8 @@
   },
   {
     "name": "glslang",
-    "size": 46364493,
-    "file_count": 3764
+    "size": 46370417,
+    "file_count": 3768
   },
   {
     "name": "googletest",
@@ -331,7 +331,7 @@
   },
   {
     "name": "iamf_tools",
-    "size": 54612,
+    "size": 54650,
     "file_count": 5
   },
   {
@@ -356,7 +356,7 @@
   },
   {
     "name": "isimpledom",
-    "size": 51742,
+    "size": 51772,
     "file_count": 9
   },
   {
@@ -376,7 +376,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 31141,
+    "size": 32076,
     "file_count": 2
   },
   {
@@ -396,7 +396,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 70666,
+    "size": 71193,
     "file_count": 47
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19165675,
+    "size": 19171819,
     "file_count": 19
   },
   {
@@ -806,7 +806,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7813860,
+    "size": 7857886,
     "file_count": 206
   },
   {

@@ -23,9 +23,6 @@ CC_BASE_EXPORT BASE_DECLARE_FEATURE(kSizeOopifEffectSurfacesAtExternalScale);
 CC_BASE_EXPORT BASE_DECLARE_FEATURE(kDeferImplInvalidation);
 CC_BASE_EXPORT BASE_DECLARE_FEATURE_PARAM(int, kDeferImplInvalidationFrames);
 
-// Use DMSAA instead of MSAA for rastering tiles.
-CC_BASE_EXPORT BASE_DECLARE_FEATURE(kUseDMSAAForTiles);
-
 // When no frames are produced in a certain time interval, reclaim prepaint
 // tiles.
 CC_BASE_EXPORT BASE_DECLARE_FEATURE(kReclaimPrepaintTilesWhenIdle);
@@ -197,6 +194,11 @@ CC_BASE_EXPORT BASE_DECLARE_FEATURE_PARAM(
 // On devices with a high refresh rate, whether to throttle main (not impl)
 // frame production to 60Hz.
 CC_BASE_EXPORT BASE_DECLARE_FEATURE(kThrottleMainFrameTo60Hz);
+
+// When enabled alongside kThrottleMainFrameTo60Hz (or
+// kThrottleMainFrameTo60HzWebView on WebView), also throttles OffscreenCanvas
+// and Worker requestAnimationFrame() to 60Hz.
+CC_BASE_EXPORT BASE_DECLARE_FEATURE(kThrottleOffscreenCanvasTo60Hz);
 
 #if BUILDFLAG(IS_ANDROID)
 // Same as above, for WebView.
