@@ -146027,6 +146027,13 @@
     "platform": "Mac OS arm64"
   },
   {
+    "name": "Microsoft Edge/157.0.4341.10-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.10-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
     "name": "Microsoft Edge/157.0.4341.10-NA/Windows arm64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "157.0.4341.10-NA",
@@ -146261,6 +146268,83 @@
     "name": "Microsoft Edge/158.0.4351.0-NA/Windows x86/chromium.zip",
     "product": "Microsoft Edge",
     "release": "158.0.4351.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4352.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4352.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4352.0-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4352.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4352.0-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4352.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4352.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4352.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4352.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4352.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4352.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4352.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4353.0-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4353.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4353.0-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4353.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4353.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4353.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4353.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4353.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4353.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4353.0-NA",
     "dependency": "chromium",
     "platform": "Windows x86"
   },
@@ -192371,6 +192455,27 @@
     "product": "Microsoft Electron",
     "release": "43.8.0@98cdf7d9",
     "dependency": "microsoft-electron-v43.8.0-98cdf7d94574fa3a8125ae6726624471a894aaca-mac",
+    "platform": "macOS"
+  },
+  {
+    "name": "Microsoft Electron/43.8.1@e3524233/Linux/microsoft-electron-v43.8.1-e352423306c4479bd597a4bbe3a164e2eddee895-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.8.1@e3524233",
+    "dependency": "microsoft-electron-v43.8.1-e352423306c4479bd597a4bbe3a164e2eddee895-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/43.8.1@e3524233/Windows/microsoft-electron-v43.8.1-e352423306c4479bd597a4bbe3a164e2eddee895-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.8.1@e3524233",
+    "dependency": "microsoft-electron-v43.8.1-e352423306c4479bd597a4bbe3a164e2eddee895-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/43.8.1@e3524233/macOS/microsoft-electron-v43.8.1-e352423306c4479bd597a4bbe3a164e2eddee895-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.8.1@e3524233",
+    "dependency": "microsoft-electron-v43.8.1-e352423306c4479bd597a4bbe3a164e2eddee895-mac",
     "platform": "macOS"
   },
   {

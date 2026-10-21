@@ -10,6 +10,13 @@ if (current_cpu == "x64") {
 }
 
 declare_args() {
+  # Use the trained startup layout in Edge Android ARM64 CS-PGO builds.
+  edge_startup_orderfile_supported =
+      is_android && current_cpu == "arm64" && chrome_pgo_phase == 4 &&
+      !use_order_profiling
+}
+
+declare_args() {
   edge_clang_sample_profile_path = ""
 
   # Some configurations have default sample profiles. If this is true and
@@ -21,6 +28,7 @@ declare_args() {
   edge_clang_use_default_sample_profile =
       chrome_pgo_phase == 0 && build_with_chromium && is_official_build
 }
+
 declare_args() {
   # Enable --call-graph-profile-sort selectively for targets where it's
   # beneficial.
