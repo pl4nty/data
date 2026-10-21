@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\109b3bc58d5e1\1.luac 
+-- Command line: lua\!InfrastructureShared\17ab3053b1a99\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -13,8 +13,8 @@ if IsExcludedByCmdlineMacOS(l_0_1) or IsExcludedByImagePathMacOS(l_0_2) then
   return mp.CLEAN
 end
 local l_0_3 = nil
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil and (this_sigattrlog[4]).utf8p2 ~= "" then
-  l_0_3 = (string.lower)((this_sigattrlog[4]).utf8p2)
+if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 ~= nil and (this_sigattrlog[6]).utf8p2 ~= "" then
+  l_0_3 = (string.lower)((this_sigattrlog[6]).utf8p2)
 end
 if l_0_3 ~= "" and l_0_3 ~= nil and (string.find)(l_0_3, "post", 1, true) and (string.find)(l_0_3, "buildid", 1, true) and (string.find)(l_0_3, "/api/metrics/run?event=", 1, true) then
   (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
