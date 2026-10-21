@@ -25,7 +25,8 @@
             "87edd1e8-ac28-431e-ac12-d086cd44dc56": true,
             "8b36e72f-0d48-4b6d-bc46-760349ccf3f2": true,
             "b07651fe-b4f8-4882-93f9-ee12a21a833c": true,
-            "c6a64feb-0619-4207-bef6-e3ef88fb07e0": true
+            "c6a64feb-0619-4207-bef6-e3ef88fb07e0": true,
+            "ef537a4d-00e8-4cee-a312-8d0c92e948af": true
         }
     },
     "CLI_FireDrill_25": {
@@ -179,6 +180,7 @@
         "F5E0CCEB-19D5-4D9D-8442-8A882D57800E": true
     },
     "CompanyPortal_iOS": {
+        "09764499-71BE-437F-8505-787E9901DE6F": true,
         "2B87161D-55D5-49C4-AFE4-768F4FFDD2CF": true,
         "7B61C7F6-5DDE-400E-871C-E527B4C7BD9C": true
     },
@@ -497,7 +499,8 @@
     "SVC_AppleVPP": {
         "FlightingV2": {
             "AppleVPPv2": true,
-            "LicenseTargetPK": true
+            "LicenseTargetPK": true,
+            "UnlimitedAssets": true
         }
     },
     "SVC_CertificateAuthority": {
