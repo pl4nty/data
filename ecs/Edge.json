@@ -57,6 +57,11 @@
         }
     },
     "EdgeConfig": {
+        "ConstructableStylesheetCacheRollout": {
+            "disableFeatures": [
+                "ConstructableStylesheetCache"
+            ]
+        },
         "DisablingServiceExperimentation": {
             "disableFeatures": [
                 "msUXConfigService"

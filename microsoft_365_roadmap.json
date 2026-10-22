@@ -1,5 +1,836 @@
 [
     {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>Viva Glint admins can now customize the Microsoft Teams notifications sent for surveys. Admins can edit the title, message, and button label in each survey language and see their changes in a live preview. Teams and email messages stay consistent and match your organization's voice, which helps more employees see the survey and take part.</p>",
+        "id": 577175,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Glint - Teams notification customization"
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>This feature strengthens assignment governance by limiting the resources displayed in the Assigned to column to members of the current project team. Project managers can assign tasks only to resources who have already been added to the project, instead of selecting from the organization\u2019s complete resource list.<br>\nIf a resource isn\u2019t part of the project team, the resource must first be added to the team before being assigned a task. This controlled workflow keeps task assignments aligned with the project\u2019s defined staffing model and prevents resources from being assigned outside the established project team.<br>\nThis is for both Project Operations core and Project Operations connected with ERP deployment types.</p>",
+        "id": 576296,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Restrict task assignments to project team members"
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>Makers can have a generative page call a Dataverse custom API to run server-side business logic, such as approving an order, recalculating a price, or validating a transaction. From either the Maker Studio generative page designer or the generative pages AI plugin, makers select a prepared API and describe when the page should call it, which input values to provide, and how to use the response.</p>\n<h2>Availability</h2>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Not applicable</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>Gen page v307</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Admins or makers</td>\n</tr>\n</tbody>\n</table>",
+        "id": 576284,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-pages#run-server-side-business-logic-with-a-custom-api-preview ",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Power Apps: Use Dataverse custom APIs in generative pages"
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>Admins and developers can monitor published generative pages with Application Insights. When an administrator configures Application Insights data export for an environment, Power Apps automatically exports completed page loads, unhandled errors, supported Data API operations, and navigation initiated from generative pages without requiring telemetry code, the Application Insights JavaScript SDK, or a connection string on the page.</p>\n<h3>Availability</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2608.5</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Admins or makers</td>\n</tr>\n</tbody>\n</table>",
+        "id": 576282,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-pages#monitor-a-generative-page-with-application-insights-preview",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Power Apps: Monitor generative pages with out-of-the-box Application Insights telemetry "
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>We\u2019re expanding form fill assistance in model-driven applications in Power Apps to support lookup, rich text, and multi-select choice fields, helping users complete more of their forms with AI-powered suggestions and less manual entry.</p>\n<h3>Availability</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Monthly</td>\n</tr>\n</tbody>\n</table>",
+        "id": 575296,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Power Apps: Form fill assistance supports more field types"
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>We\u2019re expanding form fill assistance in model-driven applications in Power Apps to suggest updates to fields that already contain values\u2014not just empty fields. This helps users update existing information with ease using AI-powered skills in their apps.</p>",
+        "id": 575295,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Power Apps: Form fill assistance in apps can provide suggestions for existing values"
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>Approvers using the Expense Management Mobile App currently have limited options to provide context when approving or rejecting expense reports. Approval decisions may require comments to provide justification, request clarification, document additional information, or communicate feedback to employees. Without this capability in the mobile experience, approvers may need to switch to the web application to complete the approval process.</p>\n<p>This enhancement will enable approvers to add and view approval or rejection comments directly within the Expense Mobile App, providing a more consistent experience across mobile and web.</p>",
+        "id": 573708,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Support Approver Comments for Expense Reports in Expense Management Mobile app"
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>Autonomous agent that researches, qualifies, engages with leads, scaling sales capacity 24/7.</p>",
+        "id": 573700,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": "aka.ms/SDA-Public-Docs",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Sales Development Agent is now available "
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>Energy saver, formerly known as efficiency mode, will have new defaults and different setting options. Edge will now support and recommend users to use the BatterySaverModeAvailability policy to manage the energy saver feature. The energy saver feature has been simplified to become enabled under two conditions: on low battery or when unplugged. The default will be for energy saver to be enabled on low battery. Energy saver will now have one mode. Users set to Balanced savings will be mapped to have energy saver enabled on low battery. Users set to Maximum savings will be mapped to have energy saver enabled when unplugged.</p>",
+        "id": 573291,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Simplified Energy Saver"
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>The <strong>Batch Total</strong> field on the <strong>Payment Journal</strong> page enhances payment processing by enabling you to work with and review a cumulative total for a payment journal batch. By surfacing batch-level totals directly in payment journals, organizations gain better control over outgoing payments and can streamline review and approval processes.</p>",
+        "id": 573264,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Finance - Use batch totals for payment journals"
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>Organizations can use approval workflows with <strong>Fixed Asset Journals</strong>, which gives them the same level of control and oversight for fixed assets that's available for other journals in Business Central.</p>",
+        "id": 573263,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Finance - Use approvals with fixed asset journals"
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>The Expense Manager Role Center is updated to provide a more focused and efficient experience for managing vendor and expense-related activities. The enhancements align the workspace with typical expense management workflows, ensuring that key information and actions are readily accessible. Where relevant, other Role Centers are also updated to include access to expense management features.</p>",
+        "id": 573261,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - Use Expense Manager role center"
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>This feature introduces support for a simple interim approval scenario for expense reports. When someone submits an expense report, organizations can designate an interim approver to review and approve expenses before the final approver can review and approve. Interim approver must review expense reports to confirm whether they're complete and compliant before final approver.</p>",
+        "id": 573260,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - Add an interim approver when you submit an expense report"
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>Expense Agent can automatically create expense reports based on identified business trips. You just need to configure the feature on the <strong>Expense Agent Setup</strong> page. Instead of manually collecting and organizing individual expense entries, you can use the agent to group relevant expenses and generate a dedicated expense report for each trip. Key capabilities include:</p>\n<ul>\n<li>Administrators can specify whether the company wants to group expenses by trip and not only by period.</li>\n<li>Automated expense report creation without requiring you to manually start and organize reports after a travel requisition is approved.</li>\n<li>Automatic trip-based expense grouping associates eligible expenses with the correct business trip based on information in the travel requisition. The agent automatically groups not only expenses based on the location, but uses intelligence to group all expenses based on the context.</li>\n<li>Non-trip related expenses keep existing period-based grouping in expense reports.</li>\n</ul>",
+        "id": 573257,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - Create expense reports per trip automatically"
+    },
+    {
+        "created": "2026-10-21T23:02:10",
+        "description": "<p>Deliver consistent scheduling outcomes across Dynamics 365 Project Operations and Field Service, regardless of where scheduling begins. When a project task includes resource assignments and planned effort, that demand is represented on the related work order with the same role, resource, duration, and scheduling window. Users can therefore schedule the same demand from either application and receive consistent availability and booking results. When multiple assignments exist, dispatchers can select the specific requirement they want to schedule.</p>\n<p>When a project task does not provide assignment- or duration-based demand, the incident type on the work order continues to define the scheduling requirement. This flexibly supports an organization's scheduling needs, whether project-task-driven or incident-type-driven.</p>",
+        "id": 570864,
+        "locale": null,
+        "modified": "2026-10-21T23:02:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Field Service: Keep Project Staffing and Field Service Scheduling Aligned"
+    },
+    {
         "created": "2026-10-20T23:00:34",
         "description": "<p>Microsoft Purview Data Loss Prevention is introducing more granular, role-based access to the Devices page under Settings \u2192 Device Onboarding. Previously, viewing or managing device onboarding required broad administrative roles (such as Compliance Administrator, Global Administrator, or Security Administrator). With this update, organizations can grant access using least-privilege Purview role-based access control (RBAC) roles scoped specifically to device operations.</p>\n<p>A new View-Only Device Management role enables users, such as auditors or security analysts, to view device onboarding status, search for devices, review configuration details, and export device data, without granting permission to change onboarding configuration or other administrative settings. Existing administrative roles continue to have full access, so current workflows are unaffected. This change helps organizations follow the principle of least privilege and simplifies granting read-only visibility into device onboarding without over-provisioning permissions.</p>",
         "id": 577187,
@@ -517,7 +1348,7 @@
         "description": "<p>AI Interpreter for Events brings real-time, AI-powered audio interpretation to Teams Town Halls and Webinars, helping global audiences follow events in their preferred language. Organizers can configure supported languages for their event, giving attendees a more natural and engaging multilingual experience beyond translated captions.</p>",
         "id": 576711,
         "locale": null,
-        "modified": "2026-10-20T23:00:34",
+        "modified": "2026-10-21T23:02:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -538,6 +1369,9 @@
             },
             {
                 "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -567,6 +1401,9 @@
                 },
                 {
                     "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -822,7 +1659,7 @@
         "description": "<p>Microsoft Teams is expanding Markdown support in the compose box, giving you more ways to structure and format messages using familiar Markdown syntax. Create richer, more readable messages while staying in the Markdown authoring experience.</p>",
         "id": 576199,
         "locale": null,
-        "modified": "2026-10-20T23:00:34",
+        "modified": "2026-10-21T23:02:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -833,10 +1670,22 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
                 "tagName": "Desktop"
             },
             {
                 "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -852,6 +1701,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -860,6 +1718,9 @@
                 },
                 {
                     "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -1365,7 +2226,7 @@
         "description": "<p>Admins can enable a policy that<br>\nplays an audio announcement when recording or transcription starts. This can be<br>\napplied tenant-wide or to specific groups. The announcement helps ensure all<br>\nparticipants are informed and improves accessibility awareness.</p>",
         "id": 559609,
         "locale": null,
-        "modified": "2026-10-20T23:00:34",
+        "modified": "2026-10-21T23:02:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
@@ -1374,6 +2235,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Android"
@@ -1386,6 +2256,9 @@
             },
             {
                 "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -1401,6 +2274,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -1415,6 +2297,9 @@
                 },
                 {
                     "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -33544,13 +34429,13 @@
     },
     {
         "created": "2026-07-28T22:43:45",
-        "description": "Out-of-box MTTA/MTTD/MTTR SLA Alert Reporting dashboard showing past trends, Top SITs getting exposed via DLP alerts generated. Customers can define their custom SLAs for high, med and low severity alerts and get access to dashboard showing operational performance and SLA metrics.\n",
+        "description": "<p>Out-of-box MTTA/MTTD/MTTR SLA Alert Reporting dashboard showing past trends, Top SITs getting exposed via DLP alerts generated. Customers can define their custom SLAs for high, med and low severity alerts and get access to dashboard showing operational performance and SLA metrics.</p>",
         "id": 568372,
         "locale": null,
-        "modified": "2026-09-02T22:56:59",
+        "modified": "2026-10-21T23:02:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
-        "publicPreviewDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -36791,15 +37676,15 @@
     },
     {
         "created": "2026-07-08T23:10:57",
-        "description": "This feature enables IT admins to customize a portion of the user notification messages for recording and transcription during Teams calls.\n \n",
+        "description": "<p>This feature enables IT admins to customize a portion of the user notification messages for recording and transcription during Teams calls.</p>",
         "id": 567302,
         "locale": null,
-        "modified": "2026-08-03T22:55:03",
+        "modified": "2026-10-21T23:02:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -37294,10 +38179,10 @@
         "description": "<p>You\u2019ll soon be able to bring your Microsoft Planner into Microsoft Cowork. In Cowork, you can view, create, and update your plans, buckets, goals, and tasks without switching apps. Cowork goes a step further by helping you execute your Planner tasks across Microsoft 365, such as drafting and sending emails, scheduling meetings, posting updates to Teams, and working with files. It can then write progress back to Planner with your approval. You can move from planning your work to getting it done in one place.</p>",
         "id": 567315,
         "locale": null,
-        "modified": "2026-09-14T23:03:47",
+        "modified": "2026-10-21T23:02:10",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -37321,6 +38206,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -37351,6 +38239,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -38331,12 +39222,12 @@
         "description": "<p>Extend Microsoft Purview data security controls to the network layer to detect and protect sensitive data in text and prompts by integrating with Entra Internet Access. This integration enables organizations to intercept and inspect text and AI interactions at the network layer, enforce restrictive actions based on DLP policies, and detect risky user activity through Insider Risk Management. It helps prevent sensitive data from being shared with untrusted cloud applications through browsers, apps, APIs, add-ins, and more - including generative AI platforms, social media, collaborative platforms - while managing alerts and incidents through Purview and Microsoft Defender.</p>",
         "id": 566528,
         "locale": null,
-        "modified": "2026-10-05T23:03:05",
+        "modified": "2026-10-21T23:02:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -52795,15 +53686,15 @@
     },
     {
         "created": "2026-04-15T22:45:13",
-        "description": "In addition to capturing real-time notes and meeting outcomes during scheduled or hybrid meetings, the Facilitator agent assists you with notes, decisions and actions for in-person meetings in Teams Rooms on Windows. Simply invite Facilitator with one tap of the room console. Meeting notes appear on the front of room display or touch board, are available via meeting recap when shared, and deleted if no one selected. Rest assured no data remains in the room. Available with Teams Rooms Pro.\n",
+        "description": "<p>In addition to capturing real-time notes and meeting outcomes during scheduled or hybrid meetings, the Facilitator agent assists you with notes, decisions and actions for in-person meetings in Teams Rooms on Windows. Simply invite Facilitator with one tap of the room console. Meeting notes appear on the front of room display or touch board, are available via meeting recap when shared, and deleted if no one selected. Rest assured no data remains in the room. Available with Teams Rooms Pro.</p>",
         "id": 560318,
         "locale": null,
-        "modified": "2026-08-27T22:38:48",
+        "modified": "2026-10-21T23:02:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -84483,12 +85374,12 @@
         "description": "<p>Extend Microsoft Purview Data Loss Prevention (DLP) policies to filter sensitive files at the network layer by integrating with Entra Global Secure Access Internet Access. This integration enables organizations to intercept and inspect files at the network layer and enforce restrictive actions based on DLP policy conditions. It helps prevent sensitive data from being shared with untrusted cloud applications through browsers, apps, APIs, add-ins, and more - including generative AI platforms, cloud storage, and content-sharing services - while managing alerts and incidents through Purview and Microsoft Defender. Updated July 17, 2026: The GA release of this item has moved. We apologize for any inconvenience.</p>",
         "id": 522096,
         "locale": null,
-        "modified": "2026-10-05T23:03:05",
+        "modified": "2026-10-21T23:02:10",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

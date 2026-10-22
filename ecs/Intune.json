@@ -997,6 +997,7 @@
             "EnableDirectActionStatusPublishing": true,
             "EnableGWGnTIntegrityCheck": true,
             "EnableRemoteHelpCertExpiry": true,
+            "EnabledPSGnTReadSwitch": true,
             "RemoveEmsPolicyUnencryptedScript": true,
             "SetEmsPolicyEncryptedScript": true,
             "SwitchPolicyStateMessageToDefaultFlowForMac": true,
