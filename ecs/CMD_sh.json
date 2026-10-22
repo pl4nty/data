@@ -875,6 +875,7 @@
         "EnablePendingLicenseIncreaseEvent": true,
         "EnablePermissionCheckInAutopilot": true,
         "EnablePersistProvisionRecipeInCpcLevelForWorkspace": true,
+        "EnablePersistentAgentFrontierPreview": true,
         "EnablePlaceUnderReviewUXForApex": true,
         "EnablePluginConfigurationSettingInFleet": true,
         "EnablePolicyCreationMetricsUX": true,
