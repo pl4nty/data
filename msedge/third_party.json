@@ -11,8 +11,8 @@
   },
   {
     "name": "android_deps",
-    "size": 422657,
-    "file_count": 42
+    "size": 1208246,
+    "file_count": 53
   },
   {
     "name": "android_prebuilts",
@@ -71,7 +71,7 @@
   },
   {
     "name": "blink",
-    "size": 34291049,
+    "size": 34298376,
     "file_count": 4104
   },
   {
@@ -206,7 +206,7 @@
   },
   {
     "name": "eigen3",
-    "size": 22862286,
+    "size": 22872474,
     "file_count": 2400
   },
   {
@@ -271,13 +271,13 @@
   },
   {
     "name": "glib",
-    "size": 54464563,
-    "file_count": 2431
+    "size": 53600758,
+    "file_count": 2419
   },
   {
     "name": "glslang",
-    "size": 46370417,
-    "file_count": 3768
+    "size": 46375014,
+    "file_count": 3770
   },
   {
     "name": "googletest",
@@ -336,8 +336,8 @@
   },
   {
     "name": "icu",
-    "size": 162940170,
-    "file_count": 7202
+    "size": 162961147,
+    "file_count": 7203
   },
   {
     "name": "inference_engine",
@@ -396,7 +396,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 71193,
+    "size": 71530,
     "file_count": 47
   },
   {
@@ -516,7 +516,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 302852,
+    "size": 303315,
     "file_count": 46
   },
   {
@@ -541,8 +541,8 @@
   },
   {
     "name": "mutter",
-    "size": 29876634,
-    "file_count": 2014
+    "size": 31197693,
+    "file_count": 2186
   },
   {
     "name": "nasm",
@@ -576,7 +576,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 78849,
+    "size": 79129,
     "file_count": 37
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4799477,
+    "size": 4800361,
     "file_count": 641
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "rust",
-    "size": 3087387,
+    "size": 3098564,
     "file_count": 404
   },
   {
@@ -706,7 +706,7 @@
   },
   {
     "name": "skia",
-    "size": 3498279,
+    "size": 3499788,
     "file_count": 1209
   },
   {
@@ -776,7 +776,7 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 5714438,
+    "size": 5718964,
     "file_count": 30
   },
   {
@@ -806,7 +806,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7857886,
+    "size": 7866588,
     "file_count": 206
   },
   {
@@ -816,7 +816,7 @@
   },
   {
     "name": "wayland-protocols",
-    "size": 264234,
+    "size": 264977,
     "file_count": 65
   },
   {
