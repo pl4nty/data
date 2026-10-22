@@ -65,21 +65,29 @@ do
 
           -- DECOMPILER ERROR at PC137: Confused about usage of register: R9 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC141: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC139: Confused about usage of register: R9 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC141: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC141: Confused about usage of register: R9 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC141: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC145: Unhandled construct in 'MakeBoolean' P3
 
-          -- DECOMPILER ERROR at PC141: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC145: Unhandled construct in 'MakeBoolean' P3
 
-          if ((versioning.GetOrgID)() ~= nil and (versioning.GetOrgID)() ~= "" and (string.lower)((versioning.GetOrgID)()) == "1beec53c-4b52-4aec-a1b1-716d6da36984") or (string.lower)((versioning.GetOrgID)()) == "7f470839-2198-4f24-80b6-99628a21e66d" then
+          -- DECOMPILER ERROR at PC145: Unhandled construct in 'MakeBoolean' P3
+
+          -- DECOMPILER ERROR at PC145: Unhandled construct in 'MakeBoolean' P3
+
+          -- DECOMPILER ERROR at PC145: Unhandled construct in 'MakeBoolean' P3
+
+          -- DECOMPILER ERROR at PC145: Unhandled construct in 'MakeBoolean' P3
+
+          if ((versioning.GetOrgID)() ~= nil and (versioning.GetOrgID)() ~= "" and (string.lower)((versioning.GetOrgID)()) == "1beec53c-4b52-4aec-a1b1-716d6da36984") or (string.lower)((versioning.GetOrgID)()) == "2eecd5d9-bedb-453b-a94c-5159e5aa1f92" then
             return mp.INFECTED
           else
             return mp.LOWFI
           end
           do return mp.CLEAN end
-          -- DECOMPILER ERROR at PC149: freeLocal<0 in 'ReleaseLocals'
+          -- DECOMPILER ERROR at PC153: freeLocal<0 in 'ReleaseLocals'
 
         end
       end
