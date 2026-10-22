@@ -6,15 +6,5 @@
             "FullSetLogEnabled": false
         },
         "DisableConfigLog": true
-    },
-    "SkypeElectronWrapper": {
-        "app": "swx",
-        "appDisabled": false,
-        "auth": {
-            "skypetokenScopes": "identity_update,commerce,communication,contacts_update"
-        },
-        "config": "release",
-        "enableNonAdminDetection": true,
-        "name": "electron wrapper"
     }
 }
