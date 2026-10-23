@@ -15,29 +15,45 @@
     <script data-main="/webapps/inclusiveOobe/js/oobekeyboard-page.js" src="/lib/require.js"></script>
 
     <style>
-        .separator{
+        .keyboard-primary-consolidated .content-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .keyboard-primary-consolidated oobe-listview {
+            flex: 1;
+            min-height: 0;
+        }
+
+        .keyboard-primary-consolidated .separator {
             border: 1px solid rgba(0, 0, 0, 0.4);
-            margin: 12px 0;   
+            margin: 4px 0;
+        }
+
+        .keyboard-primary-consolidated .content-box .template-input {
+            margin-bottom: unset;
+            padding: 4px;
         }
     </style>
 </head>
+
 <body class="webapp-inner" data-bind="oobeHotKeys: optinHotKey">
     <script type="text/html" id="panel-template">
-        <div class="oobe-panel" data-bind="attr: { 'data-panel-index': KoHelpers.getElementIndex($element.parentElement) }, panelIndexVisible: $root.currentPanelIndex">
-            <div class="container-content">
-                <oobe-header params="title: title, subtitle: subtitle, supportClickableTitle: $root.supportClickableTitle"></oobe-header>
-                <!-- if there is no items array render the keyboard image and not the list -->
-                <!--ko if: !$data.items -->
-                <div class="icon-container">
-                    <div id="keyboardGlyph" class="icon-oobe icon-keyboard icon-large" role="img" data-bind="attr: {'aria-label': $root.resourceStrings['keyboardImageLabel']}"></div>
-                </div>
-                <!-- /ko -->
-                <!-- ko if: $data.items-->
-                <div class="content-box">
-                    <oobe-listview autofocus params="items: items, selectedItem: selectedItem, listAccessibleName: $root.resourceStrings[listAccessibleNameResourceId]" data-bind="oobePageActionGamepadA: $root.pageDefaultAction">
-                        <div class="listItemHeader" data-bind="text: name"></div>
-                    </oobe-listview>
-                </div>
+    <div class="oobe-panel" data-bind="attr: { 'data-panel-index': KoHelpers.getElementIndex($element.parentElement) }, panelIndexVisible: $root.currentPanelIndex, css: { 'keyboard-primary-consolidated': $root.isOobeKeyboardConsolidationEnabled && $data.isPrimaryKeyboardSelectionPanel }">
+        <div class="container-content">
+            <oobe-header params="title: title, subtitle: subtitle, supportClickableTitle: $root.supportClickableTitle"></oobe-header>
+            <!-- if there is no items array render the keyboard image and not the list -->
+            <!--ko if: !$data.items -->
+            <div class="icon-container">
+                <div id="keyboardGlyph" class="icon-oobe icon-keyboard icon-large" role="img" data-bind="attr: {'aria-label': $root.resourceStrings['keyboardImageLabel']}"></div>
+            </div>
+            <!-- /ko -->
+            <!-- ko if: $data.items-->
+            <div class="content-box">
+                <oobe-listview autofocus params="items: items, selectedItem: selectedItem, listAccessibleName: $root.resourceStrings[listAccessibleNameResourceId]" data-bind="oobePageActionGamepadA: $root.pageDefaultAction">
+                    <div class="listItemHeader" data-bind="text: name"></div>
+                </oobe-listview>
+
                 <!-- ko if: $root.isOobeKeyboardConsolidationEnabled && $data.isPrimaryKeyboardSelectionPanel -->
                 <div class="separator"></div>
                 <div class="template-input inputType_checkbox">
@@ -45,10 +61,11 @@
                     <label for="showExtraKeyboardSelectionViewCheckbox" data-bind="text: $root.resourceStrings.extraKeyboardCheckboxText"></label>
                 </div>
                 <!-- /ko -->
-                <!-- /ko -->
             </div>
-            <oobe-footer params="flexEndButtons: footerButtons" data-bind="event: {keydown: $root.onFooterKeyDown}"></oobe-footer>
+            <!-- /ko -->
         </div>
+        <oobe-footer params="flexEndButtons: footerButtons" data-bind="event: {keydown: $root.onFooterKeyDown}"></oobe-footer>
+    </div>
     </script>
     <div class="body-container" data-bind="oobePageDefaultAction: pageDefaultAction">
         <div data-bind="template: { name: 'panel-template', data: {
