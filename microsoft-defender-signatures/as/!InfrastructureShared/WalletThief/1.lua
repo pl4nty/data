@@ -6,20 +6,20 @@
 local l_0_0 = function(l_1_0)
   -- function num : 0_0
   local l_1_1 = "HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tree"
-  local l_1_2 = (sysio.RegOpenKey)(l_1_1)
-  if l_1_2 then
-    local l_1_3 = (sysio.RegEnumKeys)(l_1_2)
-    if l_1_3 then
-      for l_1_7,l_1_8 in ipairs(l_1_3) do
-        local l_1_9 = (sysio.RegOpenKey)(l_1_1 .. "\\" .. l_1_8)
-        if l_1_9 then
-          local l_1_10 = (sysio.GetRegValueAsString)(l_1_9, "Id")
-          local l_1_11 = l_1_0[l_1_10]
-          if l_1_11 ~= nil then
-            local l_1_12 = l_1_11.Path
-            if (string.find)(l_1_12, l_1_8, 1, true) then
-              (sysio.DeleteRegKey)(l_1_9, nil)
-            end
+  for l_1_5,l_1_6 in pairs(l_1_0) do
+    local l_1_7 = l_1_6.Id
+    local l_1_8 = l_1_6.Path
+    if l_1_7 ~= nil and l_1_8 ~= nil and #l_1_8 > 1 then
+      local l_1_9 = l_1_8
+      if (string.sub)(l_1_9, 1, 1) == "\\" then
+        l_1_9 = (string.sub)(l_1_9, 2)
+      end
+      if #l_1_9 > 0 and not (string.find)(l_1_9, "..\\", 1, true) then
+        local l_1_10 = (sysio.RegOpenKey)(l_1_1 .. "\\" .. l_1_9)
+        if l_1_10 then
+          local l_1_11 = (sysio.GetRegValueAsString)(l_1_10, "Id")
+          if l_1_11 ~= nil and l_1_11 == l_1_7 then
+            (sysio.DeleteRegKey)(l_1_10, nil)
           end
         end
       end
@@ -66,74 +66,39 @@ local l_0_2 = function(l_3_0)
             if l_3_12 ~= nil then
               l_3_12 = (string.lower)(l_3_12)
               l_3_12 = (string.gsub)(l_3_12, "%z", "")
-              if #l_3_12 < 256 then
-                do
-                  if (string.match)(l_3_12, "start%-process mshta.exe (https?://[^%s%?%)%]%\'\"}&|<>;,]+)") == nil then
-                    local l_3_13, l_3_14, l_3_15, l_3_16, l_3_17, l_3_18 = (string.match)(l_3_12, "powershell.exe.-(https?://[^%s%?%)%]%\'\"}&|<>;,]+)")
-                    l_3_14 = string
-                    l_3_14 = l_3_14.find
-                    l_3_15 = l_3_12
-                    l_3_16 = "iex"
-                    l_3_17 = 1
-                    l_3_18 = true
-                    l_3_14 = l_3_14(l_3_15, l_3_16, l_3_17, l_3_18)
-                    if not l_3_14 then
-                      l_3_14 = string
-                      l_3_14 = l_3_14.find
-                      l_3_15 = l_3_12
-                      l_3_16 = "invoke-expression"
-                      l_3_17 = 1
-                      l_3_18 = true
-                      l_3_14 = l_3_14(l_3_15, l_3_16, l_3_17, l_3_18)
-                      if not l_3_14 then
-                        l_3_14 = string
-                        l_3_14 = l_3_14.find
-                        l_3_15 = l_3_12
-                        l_3_16 = "create"
-                        l_3_17 = 1
-                        l_3_18 = true
-                        l_3_14 = l_3_14(l_3_15, l_3_16, l_3_17, l_3_18)
-                        if not l_3_14 then
-                          l_3_13 = nil
-                        end
-                      end
-                    end
-                  end
-                  -- DECOMPILER ERROR at PC97: Confused about usage of register: R13 in 'UnsetPending'
+              if #l_3_12 < 512 then
+                local l_3_13 = (string.match)(l_3_12, "mshta%.exe.-(https?://[^%s%?%)%]%}%\'\"&|<>;,]+)")
+                -- DECOMPILER ERROR at PC69: Unhandled construct in 'MakeBoolean' P1
 
-                  -- DECOMPILER ERROR at PC99: Confused about usage of register: R13 in 'UnsetPending'
-
-                  -- DECOMPILER ERROR at PC102: Confused about usage of register: R13 in 'UnsetPending'
-
-                  do
-                    if l_3_13 ~= nil and #l_3_13 > 7 and l_3_0 == l_3_13 then
-                      local l_3_19 = nil
-                      l_3_1[l_3_9] = {Id = l_3_9, Url = l_3_19, Path = l_3_11}
-                      ;
-                      (sysio.DeleteRegKey)(l_3_10, nil)
-                    end
-                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out DO_STMT
-
-                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_STMT
-
-                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_STMT
-
-                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_STMT
-
-                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_STMT
-
-                  end
+                if l_3_13 ~= nil and #l_3_13 > 7 and l_3_0 == l_3_13 then
+                  local l_3_14 = {}
+                  l_3_14.Id = l_3_9
+                  l_3_14.Url = l_3_13
+                  l_3_14.Path = l_3_11
+                  l_3_1[l_3_9] = l_3_14
+                  l_3_14 = sysio
+                  l_3_14 = l_3_14.DeleteRegKey
+                  l_3_14(l_3_10, nil)
                 end
               end
             end
+          end
+        end
+        do
+          l_3_13 = (string.match)(l_3_12, "powershell.exe.-(https?://[^%s%?%)%]%}%\'\"&|<>;,]+)")
+          do
+            if l_3_0 == l_3_13 and ((string.find)(l_3_12, "iex", 1, true) or (string.find)(l_3_12, "invoke-expression", 1, true) or (string.find)(l_3_12, "create", 1, true)) then
+              local l_3_15 = {}
+              l_3_15.Id = l_3_9
+              l_3_15.Url = l_3_13
+              l_3_15.Path = l_3_11
+              l_3_1[l_3_9] = l_3_15
+              l_3_15 = sysio
+              l_3_15 = l_3_15.DeleteRegKey
+              l_3_15(l_3_10, nil)
+            end
+            -- DECOMPILER ERROR at PC124: LeaveBlock: unexpected jumping out DO_STMT
+
           end
         end
       end
@@ -142,26 +107,22 @@ local l_0_2 = function(l_3_0)
   return l_3_1
 end
 
-if (Remediation.Threat).Name == "Behavior:Win32/WalletThief.A" then
+if (Remediation.Threat).Name == "DISABLED:Behavior:Win32/WalletThief.A" then
   local l_0_3 = nil
-  local l_0_4 = GetRollingQueue("WalletThiefQueue")
+  local l_0_4 = GetRollingQueue("WalletThief_Queue")
   if l_0_4 == nil then
     return 
   end
   for l_0_8 in pairs(l_0_4) do
-    if (l_0_4[l_0_8]).key == "Url" then
-      l_0_3 = tostring((l_0_4[l_0_8]).value)
+    l_0_3 = tostring((l_0_4[l_0_8]).key)
+    if l_0_3 ~= nil and #l_0_3 >= 8 and #l_0_3 <= 128 then
+      local l_0_9 = l_0_2(l_0_3)
+      if l_0_9 ~= nil and next(l_0_9) ~= nil then
+        l_0_0(l_0_9)
+        l_0_1(l_0_9)
+      end
     end
   end
-  pcall(MpCommon.RollingQueueErase, "WalletThiefQueue")
-  if l_0_3 == nil or #l_0_3 < 8 or #l_0_3 > 128 then
-    return 
-  end
-  local l_0_9 = l_0_2(l_0_3)
-  if l_0_9 == nil or next(l_0_9) == nil then
-    return 
-  end
-  l_0_0(l_0_9)
-  l_0_1(l_0_9)
+  pcall(MpCommon.RollingQueueErase, "WalletThief_Queue")
 end
 
