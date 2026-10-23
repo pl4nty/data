@@ -11,8 +11,8 @@
   },
   {
     "name": "android_deps",
-    "size": 1208246,
-    "file_count": 53
+    "size": 1186445,
+    "file_count": 48
   },
   {
     "name": "android_prebuilts",
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 17019796,
+    "size": 17019597,
     "file_count": 851
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 34313234,
-    "file_count": 4103
+    "size": 34317227,
+    "file_count": 4102
   },
   {
     "name": "boringssl",
@@ -206,8 +206,8 @@
   },
   {
     "name": "eigen3",
-    "size": 22943032,
-    "file_count": 2403
+    "size": 22981600,
+    "file_count": 2409
   },
   {
     "name": "entity_extraction",
@@ -276,7 +276,7 @@
   },
   {
     "name": "glslang",
-    "size": 46392158,
+    "size": 46393405,
     "file_count": 3776
   },
   {
@@ -541,8 +541,8 @@
   },
   {
     "name": "mutter",
-    "size": 28204355,
-    "file_count": 2141
+    "size": 28209400,
+    "file_count": 2142
   },
   {
     "name": "nasm",
@@ -616,8 +616,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4800476,
-    "file_count": 641
+    "size": 4824868,
+    "file_count": 643
   },
   {
     "name": "perl",
@@ -706,8 +706,8 @@
   },
   {
     "name": "skia",
-    "size": 3467469,
-    "file_count": 1208
+    "size": 3469127,
+    "file_count": 1209
   },
   {
     "name": "speech-dispatcher",
@@ -776,8 +776,8 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 17549784,
-    "file_count": 34
+    "size": 17553708,
+    "file_count": 37
   },
   {
     "name": "usb_ids",

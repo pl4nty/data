@@ -16359,6 +16359,27 @@
     "platform": "linux"
   },
   {
+    "name": "Azure Monitor Pipeline/0.101.0/linux-amd64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "Azure Monitor Pipeline",
+    "release": "0.101.0",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "Azure Monitor Pipeline/0.101.0/linux-amd64/github.com_hashicorp_golang-lru_v1.0.2.zip",
+    "product": "Azure Monitor Pipeline",
+    "release": "0.101.0",
+    "dependency": "github.com_hashicorp_golang-lru_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "Azure Monitor Pipeline/0.101.0/linux-amd64/github.com_hashicorp_golang-lru_v2_v1.0.2.zip",
+    "product": "Azure Monitor Pipeline",
+    "release": "0.101.0",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
     "name": "Azure Monitor Pipeline/0.70.0-5ba4b254-buddy/linux/github.com_hashicorp_go-version-v1.7.0.zip",
     "product": "Azure Monitor Pipeline",
     "release": "0.70.0-5ba4b254-buddy",
@@ -146160,6 +146181,48 @@
     "platform": "Android arm64"
   },
   {
+    "name": "Microsoft Edge/157.0.4341.16-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.16-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4341.16-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.16-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4341.16-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.16-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4341.16-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.16-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4341.16-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.16-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4341.16-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.16-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
     "name": "Microsoft Edge/157.0.4341.9-NA/iOS arm64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "157.0.4341.9-NA",
@@ -146632,6 +146695,34 @@
     "name": "Microsoft Edge/158.0.4357.0-NA/Windows x86/chromium.zip",
     "product": "Microsoft Edge",
     "release": "158.0.4357.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4358.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4358.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4358.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4358.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4358.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4358.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4358.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4358.0-NA",
     "dependency": "chromium",
     "platform": "Windows x86"
   },
@@ -267090,6 +267181,174 @@
     "release": "1.1.0",
     "dependency": "1.1.0",
     "platform": null
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-amd64/github.com_hashicorp_consul_api_v1.33.7.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_consul_api_v1.33.7",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-amd64/github.com_hashicorp_errwrap_v1.1.0.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_errwrap_v1.1.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-amd64/github.com_hashicorp_go-cleanhttp_v0.5.2.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_go-cleanhttp_v0.5.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-amd64/github.com_hashicorp_go-immutable-radix_v1.3.1.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_go-immutable-radix_v1.3.1",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-amd64/github.com_hashicorp_go-multierror_v1.1.1.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_go-multierror_v1.1.1",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-amd64/github.com_hashicorp_go-retryablehttp_v0.7.8.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_go-retryablehttp_v0.7.8",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-amd64/github.com_hashicorp_go-rootcerts_v1.0.2.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_go-rootcerts_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-amd64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-amd64/github.com_hashicorp_golang-lru_v1.0.2.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_golang-lru_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-amd64/github.com_hashicorp_golang-lru_v2_v2.0.7.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v2.0.7",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-amd64/github.com_hashicorp_nomad_api_v0.0.0-20260724112153-37c73b2918bd.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_nomad_api_v0.0.0-20260724112153-37c73b2918bd",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-amd64/github.com_hashicorp_serf_coordinate_v0.10.4.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_serf_coordinate_v0.10.4",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-arm64/github.com_hashicorp_consul_api_v1.33.7.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_consul_api_v1.33.7",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-arm64/github.com_hashicorp_errwrap_v1.1.0.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_errwrap_v1.1.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-arm64/github.com_hashicorp_go-cleanhttp_v0.5.2.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_go-cleanhttp_v0.5.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-arm64/github.com_hashicorp_go-immutable-radix_v1.3.1.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_go-immutable-radix_v1.3.1",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-arm64/github.com_hashicorp_go-multierror_v1.1.1.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_go-multierror_v1.1.1",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-arm64/github.com_hashicorp_go-retryablehttp_v0.7.8.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_go-retryablehttp_v0.7.8",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-arm64/github.com_hashicorp_go-rootcerts_v1.0.2.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_go-rootcerts_v1.0.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-arm64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-arm64/github.com_hashicorp_golang-lru_v1.0.2.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_golang-lru_v1.0.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-arm64/github.com_hashicorp_golang-lru_v2_v2.0.7.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v2.0.7",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-arm64/github.com_hashicorp_nomad_api_v0.0.0-20260724112153-37c73b2918bd.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_nomad_api_v0.0.0-20260724112153-37c73b2918bd",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "arb-otel-collector/0.161.0/linux-arm64/github.com_hashicorp_serf_coordinate_v0.10.4.zip",
+    "product": "arb-otel-collector",
+    "release": "0.161.0",
+    "dependency": "github.com_hashicorp_serf_coordinate_v0.10.4",
+    "platform": "linux-arm64"
   },
   {
     "name": "asyncio/0.1.69/AsyncIO-master.zip",
