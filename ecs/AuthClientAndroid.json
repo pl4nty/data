@@ -21,6 +21,7 @@
         "EnableBrowserSso": "true",
         "EnableDcfInBroker": true,
         "EnableHttpAuthOriginDisplay": true,
+        "EnableWebViewMultipleWindows": false,
         "ForceBrokerDiscoveryEnabledForIntune": true,
         "TelemetrySamplingRate": 0.25,
         "TrustAuthenticatorAsFociApp": false,
