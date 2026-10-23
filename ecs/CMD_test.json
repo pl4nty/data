@@ -422,6 +422,7 @@
         "EnableCMKApiMigration": true,
         "EnableCMKCrossRegionSnapshot": true,
         "EnableCMKForDedicated": true,
+        "EnableCMKGov": true,
         "EnableCMKWithCDPStorageResourceManager": true,
         "EnableCMKWithWDS": true,
         "EnableCOGsForRetentionSnapshot": true,

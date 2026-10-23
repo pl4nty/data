@@ -882,6 +882,7 @@
         "EnablePolicyCrossPoolMove": true,
         "EnablePolicyCrossPoolMove-PolicyService": true,
         "EnablePolicyDevReadyImageCheck": true,
+        "EnablePolicyDevReadyImageOnGpu": true,
         "EnablePolicyFlowInV2": true,
         "EnablePolicyHostPoolMappingForEnterprise": true,
         "EnablePolicyMetadataUpdateHandling": true,

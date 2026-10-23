@@ -79286,55 +79286,6 @@
     {
         "created": "2025-12-11T00:00:03",
         "description": "The Data Security Triage Agent creates an agent-managed alert queue that identifies and prioritizes the DLP and IRM alerts that pose the greatest risk to your organization. It delivers a summary and clear explanation for why each alert was prioritized, helping analysts focus on what matters most.\nFor this GA release, we\u2019re introducing expanded coverage (which also includes Endpoint DLP alerts as well as alerts that leverage Custom SITs (Sensitive Information Types)) and support for Entra Agent ID.",
-        "id": 542190,
-        "locale": null,
-        "modified": "2025-12-23T00:00:28",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview: Data Loss Prevention-Data Security Triage Agent in Data Loss Prevention"
-    },
-    {
-        "created": "2025-12-11T00:00:03",
-        "description": "The Data Security Triage Agent creates an agent-managed alert queue that identifies and prioritizes the DLP and IRM alerts that pose the greatest risk to your organization. It delivers a summary and clear explanation for why each alert was prioritized, helping analysts focus on what matters most.\nFor this GA release, we\u2019re introducing expanded coverage (which also includes Endpoint DLP alerts as well as alerts that leverage Custom SITs (Sensitive Information Types)) and support for Entra Agent ID.",
         "id": 542187,
         "locale": null,
         "modified": "2026-05-14T23:15:59",
@@ -94827,73 +94778,6 @@
         "title": "Microsoft Teams: Miracast support for Teams Rooms on Windows devices"
     },
     {
-        "created": "2025-10-07T23:00:08",
-        "description": "Find meetings\u2014and everything connected to them, in seconds.\nCopilot Search makes it effortless to locate any meeting, even if you only remember a few details. Just type what comes to mind\u2014like \u201clast week\u2019s design review\u201d, \u201cbudget sync with marketing\u201d, or \u201cnext quarterly planning session\u201d\u2014and Copilot instantly finds the right event.\nCopilot doesn\u2019t just show you the meeting invite. It brings together the full context: who attended, what was discussed, what files were shared, and what follow-ups were assigned.\nWhether you're preparing for an upcoming meeting or trying to recall what was decided in a past one, Copilot gives you a complete, connected view\u2014all from a single search bar.\n",
-        "id": 501454,
-        "locale": null,
-        "modified": "2025-12-23T00:00:28",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "October CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Calendar Search in M365 Copilot Search"
-    },
-    {
         "created": "2025-10-06T23:00:40",
         "description": "Monitor or protect file with unsaved sensitive content from being printed or being moved to USB or network share.",
         "id": 511791,
@@ -95665,67 +95549,6 @@
     },
     {
         "created": "2025-10-01T23:01:01",
-        "description": "Browse your company\u2019s approved logos, icons, and photos right inside PowerPoint\u2014no need to search elsewhere. Stay on brand and compliant with easy access to your organization\u2019s asset library and connected image sources.",
-        "id": 509111,
-        "locale": null,
-        "modified": "2025-12-23T00:00:28",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "PowerPoint"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "PowerPoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "PowerPoint: Find and add company approved images with Brand Images."
-    },
-    {
-        "created": "2025-10-01T23:01:01",
         "description": "Quickly send images to Bing Visual Search from the Edge Desktop Search Bar to identify images, people, animals, and shows; extract, copy, and translate text while keeping its format. Solve questions quickly in various subjects and get trusted information to boost your knowledge. Discover products, fashion, recipes, identify a location and more. Available on Windows devices.\u00a0 Admins can control availability to this feature using the\u00a0VisualSearchEnabled policy.\u00a0",
         "id": 508519,
         "locale": null,
@@ -96211,61 +96034,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Live subtitles on voice chat in Copilot when using the quick composer"
-    },
-    {
-        "created": "2025-09-29T23:15:03",
-        "description": "Users can share a Copilot Notebook they\u2019ve created with others. All references, instructions, and context in the shared notebook will be accessible to collaborators, while your chats remain private.",
-        "id": 506851,
-        "locale": null,
-        "modified": "2025-12-23T00:00:28",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Mobile"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Mobile"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 app: Sharing Copilot Notebooks"
     },
     {
         "created": "2025-09-26T22:15:02",

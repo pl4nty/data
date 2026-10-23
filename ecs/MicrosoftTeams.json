@@ -113,6 +113,11 @@
             "maxDelayInSec": 300,
             "maxRetries": 3
         },
+        "dmsSuppressionConfig": {
+            "dms420ScopedToDmsOnly": false,
+            "dmsOperationsSuppressed": false,
+            "unifiedEnrollmentPredicateEnabled": false
+        },
         "enrollConfig": {
             "isPmpOtpFallbackEnabled": true,
             "isPmpOtpProvisioningEnabled": true
@@ -473,7 +478,6 @@
                 "fetchGuestAllowedFromAcms": true,
                 "removeIsSkypeTeamsEnabled": false,
                 "servicePlansToActivate": [],
-                "servicePlansToActivateList": "29c62f1c-8ffc-4304-9cb9-398a6aa1852b",
                 "skipCrossTenantLicenseInFreemiumTenant": true
             }
         }
