@@ -32,23 +32,27 @@ else
         if (string.find)(l_0_1, "-Dkc.home.dir=", 1, true) and (string.find)(l_0_1, "/keycloak/", 1, true) then
           RegisterHvaDeviceRole("KeyCloakIAM")
         else
-          if (string.find)(l_0_1, "-Dsolr.solr.home", 1, true) then
-            RegisterHvaDeviceRole("ApacheSolr")
+          if (string.find)(l_0_1, "glassfish.jar", 1, true) and (string.find)(l_0_1, "-Dorg.glassfish.", 1, true) then
+            RegisterHvaDeviceRole("EclipseGlassFish")
           else
-            if (string.find)(l_0_1, "-Datlassian.", 1, true) then
-              RegisterHvaDeviceRole("AtlassianSuite")
+            if (string.find)(l_0_1, "-Dsolr.solr.home", 1, true) then
+              RegisterHvaDeviceRole("ApacheSolr")
             else
-              if (string.find)(l_0_1, "jboss-modules.jar", 1, true) or (string.find)(l_0_1, "-Djboss.home.dir", 1, true) or (string.find)(l_0_1, "org.jboss.Main", 1, true) or (string.find)(l_0_1, "org.jboss.as.standalone", 1, true) then
-                RegisterHvaDeviceRole("JbossWildfly")
+              if (string.find)(l_0_1, "-Datlassian.", 1, true) then
+                RegisterHvaDeviceRole("AtlassianSuite")
               else
-                if (string.find)(l_0_1, "weblogic.Server", 1, true) or (string.find)(l_0_1, "-Dweblogic.Name", 1, true) or (string.find)(l_0_1, "com.oracle.classloader.weblogic", 1, true) or (string.find)(l_0_1, "-Dweblogic.RootDirectory", 1, true) then
-                  RegisterHvaDeviceRole("OracleWeblogic")
+                if (string.find)(l_0_1, "jboss-modules.jar", 1, true) or (string.find)(l_0_1, "-Djboss.home.dir", 1, true) or (string.find)(l_0_1, "org.jboss.Main", 1, true) or (string.find)(l_0_1, "org.jboss.as.standalone", 1, true) then
+                  RegisterHvaDeviceRole("JbossWildfly")
                 else
-                  if (string.find)(l_0_1, "org.apache.catalina.startup.Bootstrap", 1, true) or (string.find)(l_0_1, "-Dcatalina.home", 1, true) then
-                    RegisterHvaDeviceRole("ApacheTomcat")
+                  if (string.find)(l_0_1, "weblogic.Server", 1, true) or (string.find)(l_0_1, "-Dweblogic.Name", 1, true) or (string.find)(l_0_1, "com.oracle.classloader.weblogic", 1, true) or (string.find)(l_0_1, "-Dweblogic.RootDirectory", 1, true) then
+                    RegisterHvaDeviceRole("OracleWeblogic")
                   else
-                    if (string.find)(l_0_1, "org.eclipse.jetty.start.Main", 1, true) or (string.find)(l_0_1, "-Djetty.home", 1, true) or (string.find)(l_0_1, "-Djetty.base", 1, true) then
-                      RegisterHvaDeviceRole("EclipseJetty")
+                    if (string.find)(l_0_1, "org.apache.catalina.startup.Bootstrap", 1, true) or (string.find)(l_0_1, "-Dcatalina.home", 1, true) then
+                      RegisterHvaDeviceRole("ApacheTomcat")
+                    else
+                      if (string.find)(l_0_1, "org.eclipse.jetty.start.Main", 1, true) or (string.find)(l_0_1, "-Djetty.home", 1, true) or (string.find)(l_0_1, "-Djetty.base", 1, true) then
+                        RegisterHvaDeviceRole("EclipseJetty")
+                      end
                     end
                   end
                 end
