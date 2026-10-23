@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 17019539,
+    "size": 17019796,
     "file_count": 851
   },
   {
@@ -71,17 +71,17 @@
   },
   {
     "name": "blink",
-    "size": 34298376,
+    "size": 34315829,
     "file_count": 4104
   },
   {
     "name": "boringssl",
-    "size": 80202,
+    "size": 80402,
     "file_count": 15
   },
   {
     "name": "breakpad",
-    "size": 18005868,
+    "size": 18022464,
     "file_count": 1010
   },
   {
@@ -101,7 +101,7 @@
   },
   {
     "name": "chromium-bidi",
-    "size": 38142,
+    "size": 39408,
     "file_count": 5
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 38709,
+    "size": 38748,
     "file_count": 5
   },
   {
@@ -151,8 +151,8 @@
   },
   {
     "name": "dawn",
-    "size": 163363033,
-    "file_count": 19293
+    "size": 163543565,
+    "file_count": 19339
   },
   {
     "name": "dbus",
@@ -171,7 +171,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 4510496,
+    "size": 4510598,
     "file_count": 27
   },
   {
@@ -206,8 +206,8 @@
   },
   {
     "name": "eigen3",
-    "size": 22872474,
-    "file_count": 2400
+    "size": 22929275,
+    "file_count": 2402
   },
   {
     "name": "entity_extraction",
@@ -271,13 +271,13 @@
   },
   {
     "name": "glib",
-    "size": 53600758,
-    "file_count": 2419
+    "size": 53609493,
+    "file_count": 2421
   },
   {
     "name": "glslang",
-    "size": 46375014,
-    "file_count": 3770
+    "size": 46392158,
+    "file_count": 3776
   },
   {
     "name": "googletest",
@@ -301,8 +301,8 @@
   },
   {
     "name": "gvdb",
-    "size": 142951,
-    "file_count": 28
+    "size": 116704,
+    "file_count": 27
   },
   {
     "name": "harfbuzz",
@@ -431,8 +431,8 @@
   },
   {
     "name": "libinput",
-    "size": 7516517,
-    "file_count": 534
+    "size": 536258,
+    "file_count": 16
   },
   {
     "name": "libjpeg_turbo",
@@ -516,7 +516,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 303315,
+    "size": 303445,
     "file_count": 46
   },
   {
@@ -541,8 +541,8 @@
   },
   {
     "name": "mutter",
-    "size": 31197693,
-    "file_count": 2186
+    "size": 28204355,
+    "file_count": 2141
   },
   {
     "name": "nasm",
@@ -576,7 +576,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 79129,
+    "size": 79346,
     "file_count": 37
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4800361,
+    "size": 4800476,
     "file_count": 641
   },
   {
@@ -706,7 +706,7 @@
   },
   {
     "name": "skia",
-    "size": 3499788,
+    "size": 3500045,
     "file_count": 1209
   },
   {
@@ -776,8 +776,8 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 5718964,
-    "file_count": 30
+    "size": 17546190,
+    "file_count": 34
   },
   {
     "name": "usb_ids",
@@ -806,7 +806,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7866588,
+    "size": 7868981,
     "file_count": 206
   },
   {
@@ -856,7 +856,7 @@
   },
   {
     "name": "wpt_tools",
-    "size": 195960,
+    "size": 199426,
     "file_count": 13
   },
   {
