@@ -715,6 +715,7 @@
         "FlightingV2": {
             "AutopilotTimeOutUserEsp": true,
             "DeferMMPCEnrollmentDuringAPv2Provisioning": true,
+            "DisableAppProcessingForAfwDevices": true,
             "EnableAFDeviceNameWhatIfEvaluation": true,
             "EnableAdditionalFilteringForCSPAppStoreNode": true,
             "EnableAdditionalFilteringForCSPNonStoreNode": true,
@@ -804,6 +805,7 @@
     "SVC_IWService": {
         "FlightingV2": {
             "DisableLegacyAppTargeting": true,
+            "EnableAppFetchBatching": true,
             "EnableAppleOSVersionRestrictionEnforcementDuringProfileInstall": true,
             "EnableEnhancedWPJSecurityForIOS": true,
             "EnableEnhancedWPJSecurityForMac": true,
@@ -909,6 +911,7 @@
         "FlightingV2": {
             "BatchPolicyDeviceReportFastStream": true,
             "PRSv3-BlockEmptyErrorOverwrite": true,
+            "PRSv3-ComparePolicySettingMaps": true,
             "PRSv3-DeviceReportTransforms": true,
             "PRSv3-DynamicSettingsActiveIds": true,
             "PRSv3-DynamicSettingsUnion": true,
@@ -1066,8 +1069,7 @@
             "EnableEvergreenApps": true,
             "EnableIosDdmReqApps": true,
             "EnableNewAppPicker": true,
-            "EnableWin32InstallerScriptsGA": true,
-            "ExplorerAppFailedCount": true
+            "EnableWin32InstallerScriptsGA": true
         }
     },
     "UX_CloudPki": {

@@ -473,6 +473,7 @@
                 "fetchGuestAllowedFromAcms": true,
                 "removeIsSkypeTeamsEnabled": false,
                 "servicePlansToActivate": [],
+                "servicePlansToActivateList": "29c62f1c-8ffc-4304-9cb9-398a6aa1852b",
                 "skipCrossTenantLicenseInFreemiumTenant": true
             }
         }
@@ -3136,7 +3137,7 @@
         }
     },
     "TeamsGraphService": {
-        "buildVersion": "2026092501"
+        "buildVersion": "2026101201"
     },
     "TeamsInfoProtectionAuditService": {
         "rootSettingConfig": {

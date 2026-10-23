@@ -357,8 +357,9 @@
         "name": "AzCopy",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "10.32.8",
+        "version": "10.34.1",
         "versions": [
+            "10.34.1",
             "10.32.8",
             "10.32.4",
             "10.32.3",
@@ -738,8 +739,9 @@
         "name": "Toolbox",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "3.3.3",
+        "version": "3.4.0",
         "versions": [
+            "3.4.0",
             "3.3.3",
             "3.3.2",
             "3.3.1",
