@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 34315829,
-    "file_count": 4104
+    "size": 34313234,
+    "file_count": 4103
   },
   {
     "name": "boringssl",
@@ -141,7 +141,7 @@
   },
   {
     "name": "crashpad",
-    "size": 158321,
+    "size": 158351,
     "file_count": 28
   },
   {
@@ -151,8 +151,8 @@
   },
   {
     "name": "dawn",
-    "size": 163543565,
-    "file_count": 19339
+    "size": 163544775,
+    "file_count": 19341
   },
   {
     "name": "dbus",
@@ -206,8 +206,8 @@
   },
   {
     "name": "eigen3",
-    "size": 22929275,
-    "file_count": 2402
+    "size": 22943032,
+    "file_count": 2403
   },
   {
     "name": "entity_extraction",
@@ -376,7 +376,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 32076,
+    "size": 32083,
     "file_count": 2
   },
   {
@@ -706,8 +706,8 @@
   },
   {
     "name": "skia",
-    "size": 3500045,
-    "file_count": 1209
+    "size": 3467469,
+    "file_count": 1208
   },
   {
     "name": "speech-dispatcher",
@@ -776,7 +776,7 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 17546190,
+    "size": 17549784,
     "file_count": 34
   },
   {
