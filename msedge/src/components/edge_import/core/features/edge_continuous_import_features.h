@@ -574,6 +574,20 @@ BASE_DECLARE_FEATURE(kEdgeCIPasswordsImportRecovery);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeCIPaymentsImportRecovery);
 
+// Enables CI recovery for the configured Aster usage range in addition to the
+// per-item recovery flags' >=90% gate. Participates in the Equal Refreshed
+// engagement holdout.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeCIRecoveryImportExpandedAsterUsage);
+
+// Inclusive lower and exclusive upper bounds for the expanded usage range.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+extern const base::FeatureParam<int>
+    kEdgeCIRecoveryImportLowerAsterUsageThreshold;
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+extern const base::FeatureParam<int>
+    kEdgeCIRecoveryImportUpperAsterUsageThreshold;
+
 // Feature flag for on-device fallback tabs when open tabs import fails.
 // Queries Chrome's History DB for recent frequent sites instead of
 // server-side ML (PersonalizedLaunch).

@@ -22,16 +22,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsAddressBarReadonlyFeatureAllowed();
 // Tracks the rollout of the refreshed Copilot icon.
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kEdgeCIconRefresh);
 
-// If enabled, link preview will be generated when link is copied from within
-// the page.
-COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kEdgeLinkPreviewInPage);
-COMPONENT_EXPORT(UI_BASE_FEATURES) bool IsLinkPreviewInPageEnabled();
-
-// If enabled, add an explicit entry point "Copy Link Preview" to right click
-// context menu for both omnibox and in-page links.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kEdgeLinkPreviewExplicitEntryPoint);
-
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeMarqueeSelectUseCustomCursor);
 COMPONENT_EXPORT(UI_BASE_FEATURES) BASE_DECLARE_FEATURE(kEdgeWebCapture);

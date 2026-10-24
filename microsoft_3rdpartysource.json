@@ -146727,6 +146727,27 @@
     "platform": "Windows x86"
   },
   {
+    "name": "Microsoft Edge/158.0.4359.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4359.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4359.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4359.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4359.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4359.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
     "name": "Microsoft Edge/74.1.96.24/Windows x64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "74.1.96.24",
@@ -193106,6 +193127,27 @@
     "product": "Microsoft Electron",
     "release": "44.7.2@c7565619",
     "dependency": "microsoft-electron-v44.7.2-c75656191c91a54c16e76d441372631ba2fcf7e5-mac",
+    "platform": "macOS"
+  },
+  {
+    "name": "Microsoft Electron/45.0.0@32fc8ce6/Linux/microsoft-electron-v45.0.0-32fc8ce65782fb50008cda41432fb6dc6e929f09-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "45.0.0@32fc8ce6",
+    "dependency": "microsoft-electron-v45.0.0-32fc8ce65782fb50008cda41432fb6dc6e929f09-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/45.0.0@32fc8ce6/Windows/microsoft-electron-v45.0.0-32fc8ce65782fb50008cda41432fb6dc6e929f09-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "45.0.0@32fc8ce6",
+    "dependency": "microsoft-electron-v45.0.0-32fc8ce65782fb50008cda41432fb6dc6e929f09-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/45.0.0@32fc8ce6/macOS/microsoft-electron-v45.0.0-32fc8ce65782fb50008cda41432fb6dc6e929f09-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "45.0.0@32fc8ce6",
+    "dependency": "microsoft-electron-v45.0.0-32fc8ce65782fb50008cda41432fb6dc6e929f09-mac",
     "platform": "macOS"
   },
   {
