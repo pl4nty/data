@@ -484,6 +484,7 @@
         "EnableFidalgoToGetRestrictionStatus": false,
         "EnableFilterOfDeletedMembership": true,
         "EnableFixApexMultiYearSubscriptionTermTimerFunction": true,
+        "EnableFlexHibernateFailureDeallocationFallback": false,
         "EnableFlexWindowsUpdateCOGSV2": true,
         "EnableFluUpdateAllotmentName": true,
         "EnableForcedBlockingActionCheck": true,
