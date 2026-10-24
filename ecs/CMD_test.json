@@ -713,6 +713,7 @@
         "EnableFirstPartyPartnerOffboard": true,
         "EnableFixApexMultiYearSubscriptionTermTimerFunction": true,
         "EnableFixLicenseDecreaseNotNotifyRecliamedULA": true,
+        "EnableFlexHibernateFailureDeallocationFallback": true,
         "EnableFlexMultiPhaseResume": true,
         "EnableFlexWindowsUpdateCOGSV2": true,
         "EnableFlightingBasedOnECSProd": true,

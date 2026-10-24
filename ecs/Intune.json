@@ -911,6 +911,7 @@
             "BatchPolicyDeviceReportFastStream": true,
             "PRSv3-BlockEmptyErrorOverwrite": true,
             "PRSv3-ComparePolicySettingMaps": true,
+            "PRSv3-CorrectPolicySettingMaps": true,
             "PRSv3-DeviceReportTransforms": true,
             "PRSv3-DynamicSettingsActiveIds": true,
             "PRSv3-DynamicSettingsUnion": true,
