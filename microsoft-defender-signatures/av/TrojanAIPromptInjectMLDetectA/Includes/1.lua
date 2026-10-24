@@ -12,7 +12,7 @@ if l_0_1 == nil then
   return mp.CLEAN
 end
 local l_0_2 = 999999850
-local l_0_3 = mp.CONTEXT_NAME_NET_PROMPT_AI_THRESHOLD_BLOCK
+local l_0_3 = mp.CONTEXT_DATA_NET_PROMPT_AI_THRESHOLD_BLOCK
 do
   if l_0_3 ~= nil then
     local l_0_4, l_0_5 = pcall(mp.get_contextdata, l_0_3)
