@@ -193109,6 +193109,27 @@
     "platform": "macOS"
   },
   {
+    "name": "Microsoft Electron/45.0.0@32fc8ce6/Linux/microsoft-electron-v45.0.0-32fc8ce65782fb50008cda41432fb6dc6e929f09-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "45.0.0@32fc8ce6",
+    "dependency": "microsoft-electron-v45.0.0-32fc8ce65782fb50008cda41432fb6dc6e929f09-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/45.0.0@32fc8ce6/Windows/microsoft-electron-v45.0.0-32fc8ce65782fb50008cda41432fb6dc6e929f09-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "45.0.0@32fc8ce6",
+    "dependency": "microsoft-electron-v45.0.0-32fc8ce65782fb50008cda41432fb6dc6e929f09-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/45.0.0@32fc8ce6/macOS/microsoft-electron-v45.0.0-32fc8ce65782fb50008cda41432fb6dc6e929f09-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "45.0.0@32fc8ce6",
+    "dependency": "microsoft-electron-v45.0.0-32fc8ce65782fb50008cda41432fb6dc6e929f09-mac",
+    "platform": "macOS"
+  },
+  {
     "name": "Microsoft Electron/6.0.12@7c3e578/Linux/microsoft-electron-v6.0.12-7c3e57833032a073761047610fa785efd2388f01-linux.tgz",
     "product": "Microsoft Electron",
     "release": "6.0.12@7c3e578",
