@@ -47,13 +47,6 @@ jobs:
         # push runs keep the static message
         if: github.event_name != 'push'
         uses: ./.github/actions/claude-commit-message
-        with:
-          model: ${{ vars.CLAUDE_MODEL || 'claude-opus-5-5' }}
-        env:
-          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
-          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
-          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
-          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
       - uses: EndBug/add-and-commit@v9.1.4
         with:
           default_author: github_actions
@@ -78,13 +71,6 @@ jobs:
         # push runs keep the static message
         if: github.event_name != 'push'
         uses: ./.github/actions/claude-commit-message
-        with:
-          model: ${{ vars.CLAUDE_MODEL || 'claude-opus-5-5' }}
-        env:
-          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
-          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
-          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
-          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
       - uses: EndBug/add-and-commit@v9.1.4
         with:
           default_author: github_actions
