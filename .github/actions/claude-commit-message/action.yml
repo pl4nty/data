@@ -46,6 +46,8 @@ runs:
         anthropic_organization_id: d0fde0af-21ed-4bdb-a811-98c036938f83
         anthropic_workspace_id: wrkspc_01VNkxHD3bqQAZSphSdqaYX7
         path_to_claude_code_executable: ${{ steps.install-windows.outputs.path }}
+        # Claude Code's default output budget is rejected with "Credit balance is too low"
+        settings: '{"env":{"CLAUDE_CODE_MAX_OUTPUT_TOKENS":"4096"}}'
         prompt: |
           This repository tracks changes to scraped vendor data and decompiled code. The changes are already staged.
           Inspect them with `git diff --cached --stat` and `git diff --cached`. For large diffs, look at the most significant files rather than every line.
