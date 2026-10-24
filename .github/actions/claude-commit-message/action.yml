@@ -57,3 +57,11 @@ runs:
           --allowedTools "Bash(git diff:*),Bash(git status:*),Bash(git show:*),Bash(git log:*),Read,Grep,Glob"
           --disallowedTools "Edit,Write,NotebookEdit,WebFetch,WebSearch"
           --json-schema '{"type":"object","properties":{"message":{"type":"string","description":"The full commit message"}},"required":["message"],"additionalProperties":false}'
+
+    # the action hides Claude's output; surface only the final result so failures are debuggable
+    - if: steps.claude.outcome == 'failure' && steps.claude.outputs.execution_file != ''
+      shell: bash
+      env:
+        EXECUTION_FILE: ${{ steps.claude.outputs.execution_file }}
+      run: |
+        jq -r '.[] | select(.type == "result") | "::warning::Claude Code failed: \(.result // .subtype)"' "$EXECUTION_FILE" || true
