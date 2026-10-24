@@ -89348,61 +89348,6 @@
     },
     {
         "created": "2025-11-04T00:00:10",
-        "description": "Developers: Pro-devs can use a JS SDK to call CCS APIs.",
-        "id": 501574,
-        "locale": null,
-        "modified": "2025-12-23T23:00:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "July CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Developer"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Developer"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot APIs TypeScript Client Libraries"
-    },
-    {
-        "created": "2025-11-04T00:00:10",
         "description": "Popular graph connector prompts will now be available in the Prompt Gallery for use in Copilot Chat.",
         "id": 501448,
         "locale": null,
@@ -91048,61 +90993,6 @@
             ]
         },
         "title": "Microsoft Purview: Inline data security controls (DLP) for file uploads to unmanaged GenAI apps in Edge for Business"
-    },
-    {
-        "created": "2025-10-28T23:15:02",
-        "description": "We\u2019re refreshing the Copilot Chat navigation pane to simplify the agents list and increase the visible chat history list beyond a user's five most recent chats with a more prominent chat history search UI.",
-        "id": 516570,
-        "locale": null,
-        "modified": "2025-12-23T23:00:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): [Copilot Chat] Updated UI for Microsoft Copilot Navigation Pane in Word, Excel, PowerPoint, OneNote, Outlook, and Teams "
     },
     {
         "created": "2025-10-28T23:15:02",
@@ -95856,55 +95746,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Customers can connect M365 Copilot with Dropbox to access and manage cloud files with Copilot Connector"
-    },
-    {
-        "created": "2025-10-13T23:00:30",
-        "description": "Customers can connect M365 Copilot with Fresh service to access IT service documentation with Copilot Connector.",
-        "id": 513280,
-        "locale": null,
-        "modified": "2025-12-23T23:00:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Customers can connect M365 Copilot with Freshservice to access IT service documentation with Copilot Connector"
     },
     {
         "created": "2025-10-13T23:00:30",
@@ -103362,73 +103203,6 @@
             ]
         },
         "title": "Microsoft Viva: Copilot Analytics - Copilot Employee Experience Outcomes Report with Viva Glint"
-    },
-    {
-        "created": "2025-08-12T23:00:16",
-        "description": "Copilot Studio agent builder in Microsoft 365 will support larger file uploads of up to 512 MB.",
-        "id": 500375,
-        "locale": null,
-        "modified": "2025-12-23T23:00:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "iOS"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Larger file upload support in Copilot Studio agent builder"
     },
     {
         "created": "2025-08-12T23:00:16",
@@ -125399,55 +125173,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Data Loss Prevention \u2013 Restrict access action support for sematic models and lakehouses in Fabric "
-    },
-    {
-        "created": "2024-10-16T23:15:13",
-        "description": "This ensures data storage for shared Loop workspaces is in the correct geo. M365 group-owned workspaces are created in the group's geo, while non-M365 group-owned workspaces are created in the creator's preferred data location.",
-        "id": 421616,
-        "locale": null,
-        "modified": "2025-12-23T23:00:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365 app: Microsoft Loop - Multi-geo support for shared Loop workspaces"
     },
     {
         "created": "2023-02-10T00:18:34",
