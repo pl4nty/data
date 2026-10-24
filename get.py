@@ -5,16 +5,30 @@ import xml.dom.minidom
 from azure.identity import DefaultAzureCredential
 
 
-def fetch_and_prettify_json(url, output_file, key=None, headers=None):
+def merge_json(a, b):
+    # union of keys; conflicting leaves resolve to the same value regardless of order
+    if isinstance(a, dict) and isinstance(b, dict):
+        return {k: merge_json(a[k], b[k]) if k in a and k in b else a.get(k, b.get(k)) for k in a.keys() | b.keys()}
+    return max(a, b, key=lambda v: json.dumps(v, sort_keys=True))
+
+
+def fetch_json(url, headers=None):
+    try:
+        response = requests.get(url, headers=headers)
+    except requests.exceptions.SSLError as e:
+        response = requests.get(url, verify=False, headers=headers)
+
+    response.raise_for_status()
+    return response.json()
+
+
+def fetch_and_prettify_json(url, output_file, key=None, headers=None, samples=1):
     try:
         # Fetching JSON data from the URL
-        try:
-            response = requests.get(url, headers=headers)
-        except requests.exceptions.SSLError as e:
-            response = requests.get(url, verify=False, headers=headers)
-
-        response.raise_for_status()
-        json_data = response.json()
+        # ECS assigns partial rollouts per request, so merge several samples to stop flapping
+        json_data = fetch_json(url, headers)
+        for _ in range(samples - 1):
+            json_data = merge_json(json_data, fetch_json(url, headers))
 
         if key is not None:
             json_data = json_data[key]
@@ -72,45 +86,45 @@ if __name__ == "__main__":
     if len(sys.argv) != 3:
         # Experimentation and Configuration Service
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/Edge/131.0.2903.112?osname=win&client=edge&channel=stable&osarch=x86_64&devicefamily=desktop&uma=0&sessionid=152&mngd=0&installdate=1694958418&edu=0&bphint=2&fg=1", "ecs/Edge.json")
+            "https://ecs.office.com/config/v1/Edge/131.0.2903.112?osname=win&client=edge&channel=stable&osarch=x86_64&devicefamily=desktop&uma=0&sessionid=152&mngd=0&installdate=1694958418&edu=0&bphint=2&fg=1", "ecs/Edge.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/Intune/1.0.0.0", "ecs/Intune.json")
+            "https://ecs.office.com/config/v1/Intune/1.0.0.0", "ecs/Intune.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/CMD/1.0.0.0?Environment=SH&tenantId=77274a75-f318-4f60-b319-57d7e3012825", "ecs/CMD_sh.json")
+            "https://ecs.office.com/config/v1/CMD/1.0.0.0?Environment=SH&tenantId=77274a75-f318-4f60-b319-57d7e3012825", "ecs/CMD_sh.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/CMD/1.0.0.0?Environment=TEST&tenantId=77274a75-f318-4f60-b319-57d7e3012825", "ecs/CMD_test.json")
+            "https://ecs.office.com/config/v1/CMD/1.0.0.0?Environment=TEST&tenantId=77274a75-f318-4f60-b319-57d7e3012825", "ecs/CMD_test.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/CMD/1.0.0.0?Environment=PROD&tenantId=77274a75-f318-4f60-b319-57d7e3012825", "ecs/CMD_prod.json")
+            "https://ecs.office.com/config/v1/CMD/1.0.0.0?Environment=PROD&tenantId=77274a75-f318-4f60-b319-57d7e3012825", "ecs/CMD_prod.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/OneShell/1.0.0.0?IsConsumer=false&UserId=3387110e-a323-4cf4-8925-055e2d149b43", "ecs/OneShell.json")
+            "https://ecs.office.com/config/v1/OneShell/1.0.0.0?IsConsumer=false&UserId=3387110e-a323-4cf4-8925-055e2d149b43", "ecs/OneShell.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/LokiService/1.0.0.0?ClientWorkload=M365AdminCenter&id=3387110e-a323-4cf4-8925-055e2d149b43&TenantID=77274a75-f318-4f60-b319-57d7e3012825&ring=Prod&ApEnvironment=Prod", "ecs/LokiService.json")
+            "https://ecs.office.com/config/v1/LokiService/1.0.0.0?ClientWorkload=M365AdminCenter&id=3387110e-a323-4cf4-8925-055e2d149b43&TenantID=77274a75-f318-4f60-b319-57d7e3012825&ring=Prod&ApEnvironment=Prod", "ecs/LokiService.json", samples=16)
         # fetch_and_prettify_json(
         #     "https://ecs.office.com/config/v1/Skype/1.0.0.0?AudienceGroup=ring0&Debug=false&TenantID=77274a75-f318-4f60-b319-57d7e3012825&Environment=prod", "ecs/Skype.json")
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/MicrosoftTeams/1.0.0.0?TenantID=77274a75-f318-4f60-b319-57d7e3012825", "ecs/MicrosoftTeams.json")
+            "https://ecs.office.com/config/v1/MicrosoftTeams/1.0.0.0?TenantID=77274a75-f318-4f60-b319-57d7e3012825", "ecs/MicrosoftTeams.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/MicrosoftWindowsDefenderClient/1.0.0.0", "ecs/MicrosoftWindowsDefenderClient.json")
+            "https://ecs.office.com/config/v1/MicrosoftWindowsDefenderClient/1.0.0.0", "ecs/MicrosoftWindowsDefenderClient.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/CHILL/1.0.0.0", "ecs/CHILL.json")
+            "https://ecs.office.com/config/v1/CHILL/1.0.0.0", "ecs/CHILL.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/Designer/1.0.0.0", "ecs/Designer.json")
+            "https://ecs.office.com/config/v1/Designer/1.0.0.0", "ecs/Designer.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/ODSP_Sync_Client/1.0.0.0", "ecs/ODSP_Sync_Client.json")
+            "https://ecs.office.com/config/v1/ODSP_Sync_Client/1.0.0.0", "ecs/ODSP_Sync_Client.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/PortalsMakerExperiences/1.0.0.0", "ecs/PortalsMakerExperiences.json")
+            "https://ecs.office.com/config/v1/PortalsMakerExperiences/1.0.0.0", "ecs/PortalsMakerExperiences.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/RemoteAssist/1.0", "ecs/RemoteAssist.json")
+            "https://ecs.office.com/config/v1/RemoteAssist/1.0", "ecs/RemoteAssist.json", samples=16)
         # fetch_and_prettify_json(
         #     "https://ecs.office.com/config/v1/SCOM/1.0.0.0", "ecs/SCOM.json")
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/SkypeLyncWebExperience/1.0.0.0", "ecs/SkypeLyncWebExperience.json")
+            "https://ecs.office.com/config/v1/SkypeLyncWebExperience/1.0.0.0", "ecs/SkypeLyncWebExperience.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/SkypeElectronWrapper/1.0.0.0", "ecs/SkypeElectronWrapper.json")
+            "https://ecs.office.com/config/v1/SkypeElectronWrapper/1.0.0.0", "ecs/SkypeElectronWrapper.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/AuthClientAndroid/1.0.0.0", "ecs/AuthClientAndroid.json")
+            "https://ecs.office.com/config/v1/AuthClientAndroid/1.0.0.0", "ecs/AuthClientAndroid.json", samples=16)
         fetch_and_prettify_json(
-            "https://ecs.office.com/config/v1/EdgeUpdate/1.0.0.0", "ecs/EdgeUpdate.json")
+            "https://ecs.office.com/config/v1/EdgeUpdate/1.0.0.0", "ecs/EdgeUpdate.json", samples=16)
 
         fetch_and_prettify_json(
             "https://api.steampowered.com/ISteamApps/GetSDRConfig/v1?appid=440", "network_config_tf2.json")
