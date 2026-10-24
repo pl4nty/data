@@ -1428,8 +1428,9 @@
         "name": "PowerShell",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "7.6.7",
+        "version": "7.6.8",
         "versions": [
+            "7.6.8",
             "7.6.7",
             "7.6.6",
             "7.5.4"

@@ -1,5 +1,1721 @@
 [
     {
+        "created": "2026-10-23T23:10:38",
+        "description": "<p>Row summaries are expanding to supported US Government clouds, giving users in regulated environments access to AI-generated insights that help them understand model-driven app records at a glance. This release brings the row summary experience available to commercial customers to supported government environments while meeting their applicable compliance and data-boundary requirements.</p>\n<p>Admins and makers enable and configure row summaries for users in their model-driven apps.</p>\n<h3>Availability</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2611.1</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by admins or makers)</td>\n</tr>\n</tbody>\n</table>",
+        "id": 576279,
+        "locale": null,
+        "modified": "2026-10-23T23:10:38",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Power Apps: Model-driven apps - Use row summaries in US Government clouds"
+    },
+    {
+        "created": "2026-10-23T23:10:35",
+        "description": "<p>This feature extends governance capabilities to evaluate email attachments, closing a critical gap where sensitive or non-compliant information may exist outside the email body.</p>\n<p>When a user sends an email with attachments, the system automatically scans each document and applies configured governance policies. In the initial release, analysis is focused on plain text content within supported document types, such as Word and PDF files. Non-text elements, including images or embedded content, are excluded in this phase to ensure predictable and efficient processing.</p>\n<p>Every attachment included in an email is evaluated individually, and all applicable policies are enforced across each file. If multiple attachments are present, governance policies check all of them, ensuring that no document bypasses validation. If even a single attachment violates a configured policy, such as containing restricted content or failing compliance rules, the entire email is blocked from being sent.</p>\n<p>Administrators can configure policies to explicitly include attachment checks during policy setup. This allows organizations to apply governance selectively based on business needs, such as enforcing stricter controls for sensitive communications while maintaining flexibility for general scenarios. Existing policies can be updated to enable attachment analysis, while new policies can be configured to include attachments by default where required.</p>\n<p>To ensure transparency and accountability, all attachment evaluations are logged, including details such as which attachment triggered a violation and the reason for failure. Users are provided with clear feedback when an email is blocked, helping them quickly identify and correct issues before resending. This improves user experience while maintaining strong governance controls.</p>\n<p>Business Value:</p>\n<p>You can now apply governance controls to email attachments, not just the message body. This helps you stop sensitive or non-compliant content from being sent externally. By scanning attachment text, you catch policy issues early and block risky emails before they go out. That means stronger compliance, less data leakage, and consistent protection across every outbound channel.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 577796,
+        "locale": null,
+        "modified": "2026-10-23T23:10:35",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Service: Workforce engagement management - Enforce governance policies on email attachments"
+    },
+    {
+        "created": "2026-10-23T23:10:36",
+        "description": "<p>Overflow for direct inward dialing leverages conversation orchestration to detect key direct inward dialing-related events\u2014such as the representative being busy, offline, rejecting the call, or failing to answer\u2014and apply administrator-defined fallback actions.</p>\n<p>Administrators configure natural language playbooks using conversation orchestration at the global or inbound profile level to specify the action to run when a direct inward dialed call can't be attended to or completed. The actions include offering a direct callback to the caller, sending them to voicemail, transferring the call to another queue or external number, or ending the call.</p>",
+        "id": 576607,
+        "locale": null,
+        "modified": "2026-10-23T23:10:36",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "June CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: Unified routing - Use overflow actions to protect customer experience for direct inward calls"
+    },
+    {
+        "created": "2026-10-23T23:10:34",
+        "description": "<p>This feature introduces policy strictness control, enabling organizations to define how rigorously each governance policy evaluates and flags potential violations in outgoing emails. Governance policies serve as real-time guardrails, ensuring communications adhere to business, legal, and compliance standards before they are sent to customers.</p>\n<p>With this enhancement, supervisors can configure the strictness level for each policy. Lower strictness settings apply more lenient enforcement, reducing false positives and allowing borderline scenarios to pass, while higher settings perform more rigorous checks to identify subtle or potentially risky violations. This flexibility allows organizations to align policy enforcement with their compliance requirements and risk tolerance.</p>\n<p>All policies are set to medium strictness by default, providing a balanced level of enforcement. Organizations can then adjust strictness levels per policy depending on the nature of the rule. For example, highly sensitive policies, such as those related to data protection or regulatory compliance, can be configured with stricter enforcement, while policies focused on tone or content guidance can be set to be more lenient to avoid unnecessary disruptions.</p>\n<p>At runtime, the governance policies use the configured strictness level to determine how policy violations are flagged when outgoing emails are evaluated. This ensures that enforcement is consistent and adaptable across different policy types and business scenarios.</p>\n<p>By enabling strictness control at the policy level, organizations can fine-tune governance enforcement without modifying the underlying policy definitions, helping balance compliance protection, agent productivity, and a seamless customer communication experience.</p>\n<p>Business Value:</p>\n<p>Take control of how your governance policies handle outbound email violations. With adjustable strictness levels, you can cut down on false positives when flexibility matters or apply tighter controls for sensitive situations. This balance helps you build confidence in AI-driven enforcement while keeping your policies aligned with your risk tolerance, compliance requirements, and business goals.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 577798,
+        "locale": null,
+        "modified": "2026-10-23T23:10:34",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Service: Workforce engagement management - Manage policy strictness to enforce governance policies"
+    },
+    {
+        "created": "2026-10-23T22:46:12",
+        "description": "<ul>\n<li>Define outreach scenario/goal in natural language.</li>\n<li>Choose desired call-to-action to drive next steps.</li>\n<li>Provide subject line guidance: fixed suggestion or style recommendation.</li>\n<li>Set message length and brevity targets.</li>\n<li>Specify tone rules, including name-usage limits and preferred terminology.</li>\n<li>Configure brand language and voice guardrails: approved phrases and banned words.</li>\n<li>Set formatting preferences: bullets, paragraph length, and maximum bullet count.</li>\n</ul>\n<p>Business Value:</p>\n<p>This feature expands the Sales Qualification Agent outreach by letting teams define the outreach purpose, brand-aligned tone (matching both company voice and seller style), the call-to-action, and key messaging preferences proven to resonate with prospects. The result is more relevant, consistent communication that drives higher response rates and, in turn, improves lead qualification rates.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 578077,
+        "locale": null,
+        "modified": "2026-10-23T22:46:12",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Dynamics 365 Sales"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Dynamics 365 Sales"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Sales: Lead management - Personalize outreach emails generated by Sales Qualification Agent"
+    },
+    {
+        "created": "2026-10-23T22:46:11",
+        "description": "<ul>\n<li><strong>Segment-specific qualification</strong>: Each agent operates with its own ideal customer profile, knowledge sources, templates, and consent settings, ensuring qualification conversations reflect the nuances of each product, region, or team.</li>\n<li><strong>Intelligent lead routing</strong>: The system evaluates incoming leads against agent selection criteria and assigns ownership based on configured priority, ensuring predictable and conflict-free lead management. A fallback agent handles leads that don't match any specialized criteria, ensuring no lead goes unprocessed.</li>\n<li><strong>Exclusive engagement with coordinated handoff</strong>: Only one agent engages a lead at any time. When a lead's interest shifts to another product or segment, the system hands off with full context to the appropriate agent.</li>\n<li><strong>Shared knowledge foundation</strong>: Agents can leverage common company-level knowledge while maintaining their own specialized sources, ensuring consistent answers across the organization.</li>\n<li><strong>Supervisor oversight and governance</strong>: A centralized dashboard enables supervisors to monitor agent activity, reassign leads, and track the full qualification journey across all agents.</li>\n</ul>\n<p>Business Value:</p>\n<p>Multi-agent configuration in Sales Qualification Agents enables sales organizations to deploy agents aligned to distinct product lines, regions, or sales teams, each with its own qualification criteria, knowledge sources, and engagement approach. Multi-agent configuration ensures exclusive lead ownership, coordinates handoffs when context shifts, and provides sales managers with visibility across agents. This targeted approach mirrors real-world sales structures, eliminates duplicate outreach, accelerates qualification, and scales coverage without additional seller headcount.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 578076,
+        "locale": null,
+        "modified": "2026-10-23T22:46:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "August CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Dynamics 365 Sales"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Dynamics 365 Sales"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Sales: Lead management - Deploy multiple Sales Qualification Agents in a single environment"
+    },
+    {
+        "created": "2026-10-23T22:46:11",
+        "description": "<p>The enhanced screen recording capability offers greater flexibility and control, enabling organizations to manage recording behavior with more precision. Key enhancements include:</p>\n<ul>\n<li>Access all recording settings and configurations from <strong>Customer Service admin center</strong> &gt; <strong>Quality Management</strong>.</li>\n<li>Enable or disable screen recording using a dedicated toggle.</li>\n<li>Capture call audio alongside screen recordings.</li>\n<li>Turn off the red border displayed around representative screens during active window recording.</li>\n<li>Allow users with the screen recording supervisor role to play recordings within the Customer Service workspace.</li>\n</ul>\n<p>Business Value:</p>\n<p>You get more control over how your team captures and reviews screen activity. Role-based access makes it easy to decide who can view or download recordings, helping you stay compliant and maintain oversight. You can also play recordings directly in the Customer Service workspace, so investigations move faster. These updates cut rework, save time, and make coaching and performance reviews more effective.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 578075,
+        "locale": null,
+        "modified": "2026-10-23T22:46:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Service: Workforce engagement management - Enable enhanced screen recording controls for admins"
+    },
+    {
+        "created": "2026-10-23T22:46:10",
+        "description": "<p>The enhanced screen recording capability offers greater flexibility and control, enabling organizations to manage recording behavior with more precision. Key enhancements include:</p>\n<ul>\n<li>Access all recording settings and configurations from <strong>Customer Service admin center</strong> &gt; <strong>Quality Management</strong>.</li>\n<li>Enable or disable screen recording using a dedicated toggle.</li>\n<li>Capture call audio alongside screen recordings.</li>\n<li>Turn off the red border displayed around representative screens during active window recording.</li>\n<li>Allow users with the screen recording supervisor role to play recordings within the Customer Service workspace.</li>\n</ul>\n<p>Business Value:</p>\n<p>You get more control over how your team captures and reviews screen activity. Role-based access makes it easy to decide who can view or download recordings, helping you stay compliant and maintain oversight. You can also play recordings directly in the Customer Service workspace, so investigations move faster. These updates cut rework, save time, and make coaching and performance reviews more effective.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 578074,
+        "locale": null,
+        "modified": "2026-10-23T22:46:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Service: Workforce engagement management - Enable enhanced screen recording controls for admins"
+    },
+    {
+        "created": "2026-10-23T22:46:09",
+        "description": "<p>Supervisors can now create and manage overnight shifts that span across midnight while maintaining a single continuous shift experience. Shift plans support start and end times that extend into the next day, allowing organizations to accurately model overnight operations such as contact centers, support teams, healthcare services, and other 24x7 environments.<br>\nActivities, breaks, meals, and ad-hoc work can be scheduled anywhere within the overnight shift and remain part of a single continuous itinerary. Supervisors can view and manage the entire shift without manually splitting schedules across calendar days. Activities that cross midnight are preserved as a single record and are not divided into separate activities.<br>\nThe system maintains a consistent ownership model where the shift belongs to the day on which it starts. Paid hours, schedule ownership, adherence calculations, and related scheduling behaviors continue to follow the shift-start day, providing predictable scheduling outcomes regardless of how the shift is displayed.<br>\nWhen viewing schedules across multiple shift plans, overnight shifts are displayed within the standard daily schedule view. When viewing an individual shift plan, supervisors can see the full overnight shift as a single continuous work session, making it easier to manage overnight operations and understand employee schedules.</p>\n<p>Business Value:</p>\n<p>Support 24\u00d77 operations.<br>\nEliminate workarounds that require splitting shifts across days.<br>\nImprove migration readiness from Verint, Genesys, NICE, UKG, and Calabrio.<br>\nProvide predictable overnight scheduling behavior.</p>\n<p>Enabled for:</p>\n<p>Enabled for end users automatically</p>",
+        "id": 578073,
+        "locale": null,
+        "modified": "2026-10-23T22:46:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: Workforce engagement management - Manage overnight shifts as a single continuous schedule"
+    },
+    {
+        "created": "2026-10-23T22:46:09",
+        "description": "<ul>\n<li>Customize your view: choose a Contact or Lead view from the new view picker to define which columns appear in the segment members table.</li>\n<li>Align export with your view: exported member data automatically reflects your selected columns, ensuring consistency and eliminating post-export cleanup.</li>\n<li>Quickly find specific members: use the built-in search to locate individuals within the segment membership list instantly.</li>\n</ul>\n<p>Business Value:</p>\n<p>Understanding and acting on your audience starts with having the right data at your fingertips. Until now, getting the full context for segment members often meant switching between views, exporting data, or manually piecing information together.<br>\nWith flexible views and in-list search, you can quickly surface the information that matters most directly within the segment. Customize the fields you want to see, find specific members faster, and work more efficiently without extra steps. The result is a more streamlined experience that helps you stay focused and act with confidence.</p>\n<p>Enabled for:</p>\n<p>Enabled for end users automatically</p>",
+        "id": 578072,
+        "locale": null,
+        "modified": "2026-10-23T22:46:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Insights - Journeys"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Customer Insights - Journeys"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Insights - Journeys: Elevate customer experiences - Boost productivity with flexible views and search in segments"
+    },
+    {
+        "created": "2026-10-23T22:46:07",
+        "description": "<p>Gain insights into your Power Pages site with integrated telemetry and analytics. Use Application Insights to monitor page views, form interactions, session details, and client-side analytics. Detect server-side errors, performance issues, and access logs to resolve problems and optimize your site.</p>\n<p>To configure site analytics, makers must open the setup workspace and add the analytics provider script to enable traffic analytics.</p>\n<p>Business Value:</p>\n<p>You can monitor your Power Pages site traffic and user interactions with ease. Track page views, form interactions, and session details using client-side analytics. Gain insights into server-side errors and access detailed logs to quickly resolve issues and enhance site performance.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 578071,
+        "locale": null,
+        "modified": "2026-10-23T22:46:07",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Pages"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Pages"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Power Pages: Administration and governance - Configure site analytics and server logging"
+    },
+    {
+        "created": "2026-10-23T22:46:06",
+        "description": "<p>This feature enables Quality Managers to edit and override evaluation results even after they are marked as completed or expired. While completed evaluations remain read-only by default to preserve integrity, supervisors can initiate an <strong>Edit</strong> action when discrepancies are identified, such as incorrect AI predictions or errors in manual assessments.</p>\n<p>In edit mode, supervisors can update evaluation responses, adjust scores, and refine comments to reflect an accurate assessment. This ensures that evaluation records represent the final, validated view of agent performance and interaction quality. The capability is available across AI-assisted, AI agent-generated, and manual evaluations, providing a consistent correction experience.</p>\n<p>To maintain control and governance, only authorized users with supervisory permissions can perform overrides. All changes are tracked through audit signals, including who made the edit and when, and overridden evaluations are clearly flagged. This ensures full transparency for reporting, compliance, and downstream reviews.</p>\n<p>Business Value:</p>\n<p>Enables Quality Managers or users with privileges to correct completed evaluations when inaccuracies arise from AI predictions or human review errors. This ensures evaluation outcomes accurately reflect real-world context and business standards. By introducing controlled human-in-the-loop oversight with full auditability, organizations can confidently scale automated and manual evaluations while maintaining trust, transparency, and governance.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 578070,
+        "locale": null,
+        "modified": "2026-10-23T22:46:06",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Service: Workforce engagement management - Modify and override submitted evaluations"
+    },
+    {
+        "created": "2026-10-23T22:46:04",
+        "description": "<p>Secure a voice talent that will represent the voice of your brand. After <a href=\"https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-ai/speech-service/text-to-speech/disclosure-voice-talent\">obtaining explicit consent</a>, gaining <a href=\"https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-ai/speech-service/text-to-speech/limited-access\">Limited Access</a> approval through Microsoft's Responsible AI practices, and <a href=\"https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-neural-voice\">building a custom voice model</a>, it's time to integrate with Dynamics 365 Contact Center.</p>\n<p>In the Copilot Service admin center, create a connection between Dynamics 365 and Azure. Navigate to <strong>Channels</strong> &gt; <strong>Custom AI Voices</strong> &gt; <strong>Connect custom voice</strong>. You'll be prompted through a series of cascading dropdown boxes to select the speech resource and custom voice model to connect with. After the connection is established, you can create a voice channel for self-service and use the custom voice, like any portfolio voice.</p>\n<p>Business Value:</p>\n<p>Brand identity extends beyond visuals like logo, color, and typography, into voice. Custom neural voice enables enterprises to create a distinctive, natural sounding synthetic voice for contact centers. By training on approved human speech samples, organizations can deliver a natural sounding, one\u2011of\u2011a\u2011kind brand voice that preserves brand continuity, strengthens customer recognition, and elevates voice\u2011based experiences across AI\u2011powered agents and telephony interactions.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 578069,
+        "locale": null,
+        "modified": "2026-10-23T22:46:04",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: IVR capabilities - Equip voice agents with custom voice"
+    },
+    {
+        "created": "2026-10-23T22:46:03",
+        "description": "<h3>AI agents in Business Central</h3>\n<p>Business Central introduces AI agents to help users automate repetitive tasks and make business processes more intelligent and efficient. These agents act as specialized assistants that understand context, handle structured data, and collaborate with users to complete end-to-end workflows. For example, the Sales Order Agent simplifies order creation by transforming natural language or email instructions into complete sales documents, while the Payables Agent streamlines vendor invoice processing by extracting key details from incoming invoices and matching them to purchase orders\u2014all reducing manual effort and freeing users to focus on higher-value work.</p>\n<p>The agent runtime that powers these built-in agents provides core capabilities that enable the use of agentic AI within Business Central. AI agents are defined, configured, activated, and run directly inside the familiar Business Central environment\u2014leveraging the same security model, administration tools, and user experience as the rest of the product. Results are displayed in-context, with intuitive navigation to related data and entities, allowing users to control the agents through the interface they already know. This consistency dramatically reduces the learning curve, builds trust, and ensures efficiency when working with AI agents.</p>\n<p>The agent runtime ensures that every step taken by an agent is traceable and operates strictly within the access boundaries (permissions) assigned during configuration. It provides a timeline view of all agent activities, allowing users to review what happened and why\u2014enabling a true human-in-the-loop experience. The runtime can also memorize relevant data during execution, use it in subsequent steps, and request additional instructions in natural language when user input is needed. It helps ensure that sensitive operations always require explicit user review and consent, supporting full transparency and control.</p>\n<p>Business Central business processes are inherently multistep, stateful, and financially consequential. The agent layer must be able to interact with a broad set of ERP capabilities and data, sequence operations with a high degree of accuracy across dependent steps, handle the data respecting permissions, company, environment, and tenant boundaries, provide a contextual audit trail, and keep humans in the loop.</p>\n<p>Business Central agentic strategy intentionally separates deep, well controlled, in-context and transparent execution within the product from cross-system orchestration. Business Central agents form the foundational layer inside the product, exposing well-defined agent capabilities that in the future will be possible to surface as MCP tools and consume by Declarative Agents in Microsoft Copilot Studio and Microsoft 365. This layered approach enables Business Central-tuned, transparent, managed execution at the ERP core processes, while allowing higher-level Declarative Agents to orchestrate end-to-end business processes across products.</p>\n<h3>Designing agents</h3>\n<p>The new in-product experience for designing agents that automate Business Central processes is made available with AI Development Toolkit for Business Central. The experience offers a low-risk environment for envisioning and prototyping new AI agents tailored to your own business scenarios\u2014extending the same agent runtime capabilities used by built-in Business Central agents.</p>\n<p>Built for rapid iteration, the designing experience lets you create and refine custom agents using natural language instructions, define their behavior, test agent profiles and permissions, and safely experiment with Business Central data in a sandbox environment. This approach empowers partner personas like consultants, product owners, and domain experts, as well as developers and even power users, to explore new scenarios, validate ideas, and build confidence in their agents before moving to production. Whether you aim to automate repetitive business processes, streamline data processing, or deliver proactive insights, the agent design experience gives you the tools to bring your vision to life.</p>\n<h3>Agent instructions</h3>\n<p>At the core of every agent are its goals and instructions, defined in natural language. Writing agent instructions is similar to writing prompts for large language models, so you can apply general prompt-writing best practices\u2014and even use tools like Copilot to optimize them. The agent design experience includes a simple editor to help you define, refine, and test these instructions efficiently.</p>\n<h3>Invoking your agent</h3>\n<p>You can invoke your agent by manually creating a task for it. When doing so, you can include an additional message that provides specific details or context to complement the agent\u2019s core instructions. Although the ability to design your own agents is in public preview, there aren't yet any built-in integrations to automatically trigger these custom agents based on incoming emails, events, or scheduled recurrences (this can be done by professional developers using the APIs available in the AI Development Toolkit). However, you can simulate these scenarios by including the email header and body in the task message to mimic incoming emails, or by manually triggering the agent to emulate event, UI action, or time-based runs.</p>\n<h3>Troubleshooting</h3>\n<p>When running the agent tasks in the designing experience, you can access detailed diagnostic views to help you understand and tune the agent execution. Since an agent\u2019s decisions depend on its instructions, available data, and language model reasoning, you can review execution logs to see its inputs, reasoning process, and outputs. This helps you identify where uncertainty occurred and why specific decisions were made to adjust your agent instructions.</p>\n<h3>Importing and exporting agents</h3>\n<p>To make it easy to back up or move custom agents across sandbox environments, the in-product experience allows you to import and export agent definitions. These definitions are stored as simple JSON files containing properties such as agent identity, instructions, assigned profiles, and permissions. We recommend storing these files in a source control system like GitHub to track changes and maintain version history.</p>\n<h3>Responsible AI</h3>\n<p>Agents built using the agent design experience adhere to Microsoft\u2019s Responsible AI principles, helping you ensure agent compliance, fairness, and safety.</p>\n<h3>Billing</h3>\n<p>As with the built-in Sales Order and Payables agents, custom agents consume Copilot credits as they perform their steps. Credits can be provisioned through prepaid or pay-as-you-go models, providing flexible cost management as your AI usage scales.</p>\n<p>Business Value:</p>\n<p>Agents in Business Central are AI-powered team assistants that go beyond traditional automation. Unlike static workflows or hard-coded AL logic, agents can interpret high-level business goals expressed in natural language and translate them into actionable steps. They reason over Business Central data, make informed decisions within defined boundaries, and collaborate with users through human-in-the-loop approvals for critical operations.</p>\n<p>The benefits are substantial: agents reduce manual effort by automating repetitive or complex tasks, allowing users to focus on higher-value activities. They adapt to dynamic business scenarios that can't always be anticipated during development, offering flexibility that traditional automation lacks. Most importantly, agents operate transparently: every action is logged, permissions are rigorously enforced, and users remain in control at all times.</p>\n<p>This combination of intelligence, adaptability, and accountability makes agents a cornerstone of the next generation of ERP experiences. With the agent design experience, we're taking the first steps toward enabling you to build your own custom Business Central agents.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 578068,
+        "locale": null,
+        "modified": "2026-10-23T22:46:03",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/ai/ai-development-toolkit-overview",
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "February CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Copilot and agents - Envision and design AI agents in Business Central"
+    },
+    {
+        "created": "2026-10-23T22:46:02",
+        "description": "<p>Create and enforce policies that prevent risky or noncompliant customer communications.</p>\n<p>Governance policy checks serve as configurable safeguards that review AI\u2011generated and autonomous email responses before they are sent to customers. These checks enforce business, legal, and regulatory requirements by validating responses for relevance, prohibited content, and sensitive topics. If a response fails a policy check, delivery is blocked and the violation is clearly identified, enabling supervisors to review issues and take actions to improve outcomes.</p>\n<p>Governance policies are applied consistently across email engagement channels and seamlessly embedded within agent workflows, ensuring uniform enforcement of quality and compliance standards without requiring manual intervention. This approach empowers organizations to scale AI-assisted and autonomous customer engagement with confidence while upholding trust, safety, and governance.</p>\n<p>Business Value:</p>\n<p>Governance policies give you control over AI-driven customer interactions. By setting clear, configurable rules, you make sure every response meets your business, legal, and regulatory standards before it reaches customers. This reduces risk, protects your brand, and keeps communication consistent and trustworthy.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 578067,
+        "locale": null,
+        "modified": "2026-10-23T22:46:02",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-governance-policies",
+        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Service: Workforce engagement management - Enforce governance policy"
+    },
+    {
+        "created": "2026-10-23T22:46:01",
+        "description": "<p>The multioutlet B2B web storefront introduces a unified sign-in system that allows buyers to access all their associated organizations and outlets using a single account. The storefront UI is updated to display an organization selector during sign-in and provides outlet-specific navigation and catalog views. Buyers can place, track, and manage orders for multiple outlets within a single session, with real-time visibility into order status, inventory, and account information.</p>\n<p>This feature supports role-based access, ensuring that users only see the organizations and outlets they are authorized to transact with. This experience is behind a feature flag that's available for administrators to update from Commerce headquarters. Administrators must configure organization and outlet relationships, assign users to their respective organizations, and activate the unified sign-in option in the storefront settings.</p>\n<p>The following features are available after enabling this feature:</p>\n<ul>\n<li><strong>Unified sign-in with organization selector</strong>: Enables buyers to select their organization during sign-in for multioutlet ordering and tracking.</li>\n<li><strong>On-account payments and credit limits</strong>: Provides real-time credit validation for organization accounts during checkout to ensure compliance and reduce payment friction.</li>\n<li><strong>Seller inventory visibility and Commerce Scale Unit (CSU) tools.</strong></li>\n<li><strong>Account header updates</strong>: Displays the organization name and linked accounts for clarity.</li>\n<li><strong>User management</strong>: Allows B2B organization administrators to use contacts to directly manage users from Commerce headquarters.</li>\n<li><strong>Multicart shopping</strong>: Enables individual contacts to manage separate carts for different outlets under one organization account.</li>\n<li><strong>CSU tools</strong>: Assist contact-based B2B sellers in the business partner employee role to implement real-time inventory data and efficiently accept or reject multioutlet orders.</li>\n</ul>\n<p>Business Value:</p>\n<p>This feature empowers business-to-business (B2B) buyers with a seamless, unified experience across multiple outlets. This feature simplifies account management by enabling a single sign-in for all organizations, reducing friction and improving efficiency. Buyers can place and track orders for multiple outlets from one storefront, thereby reducing errors. Buyers can use a single sign-in to access all their organizations, view outlet-specific catalogs, and manage orders for all their organizations in one place.</p>\n<p>By consolidating workflows and account management, businesses can increase productivity, reduce errors, and deliver a seamless experience that drives customer satisfaction and loyalty. The unified approach also supports faster onboarding for new outlets. For your business, this means stronger customer loyalty, higher order volumes, and streamlined operations, while delivering a modern, intuitive experience that differentiates your brand in a competitive market.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 578066,
+        "locale": null,
+        "modified": "2026-10-23T22:46:01",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/commerce/b2b/b2b-multi-outlet",
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Digital commerce - Streamline multioutlet access for B2B web storefronts"
+    },
+    {
+        "created": "2026-10-23T22:45:59",
+        "description": "<p>You can now configure and run multiple Sales Order Agent instances in a single company. Each instance operates independently with its own mailbox, folder settings, email signature, and processing rules.</p>\n<p>Each agent instance tracks its own KPI metrics, such as emails received, quotes created, orders created, and time saved. The setup page is restructured to support per-instance configuration, and an upgrade path migrates existing single-instance setups to the new architecture. This change allows organizations to set up separate agents for different sales teams, product lines, or customer segments, each monitoring their own personal or shared mailbox.</p>\n<h3>Improved items search:</h3>\n<p>When a customer requests items, the agent now uses a multi-layer matching strategy:</p>\n<ul>\n<li>Exact identifier match: direct lookup by item number, vendor item number, GTIN, or cross-reference.</li>\n<li>Semantic attribute matching: extracts attributes from the customer's message (color, material, size) and ranks candidates by relevance using AI.</li>\n<li>Broader fuzzy search: falls back to a global item search when direct and attribute-based searches produce no results.</li>\n</ul>\n<h3>Message and attachment relevance:</h3>\n<p>The agent now validates incoming messages and attachments against a detailed relevance model before processing. Messages that fall outside the agent's responsibilities (such as offers to sell, requests for discounts, or attempts to extract internal information) are identified and filtered.</p>\n<p>A separate relevance check runs on attachments, ensuring that non-sales-related documents don't trigger unnecessary processing. The validation considers the full conversation history and the agent's defined scope to make accurate relevance decisions.</p>\n<h3>Larger attachment files with diagnostics.</h3>\n<p>The maximum number of pages per PDF attachment has been raised from 10 to 50, addressing customer feedback about the agent not reading larger purchase orders. A new cumulative content length limit of 150,000 characters is also enforced across all attachments in a single email (approximately 50K tokens).</p>\n<p>When an attachment is skipped, Business Central now stores the specific reason directly on the attachment record (page count exceeded, cumulative content length exceeded, attachment count exceeded, unsupported format, or analyze-attachments not enabled). This information is visible on the <strong>Attachments</strong> page and logged in telemetry, making it straightforward to diagnose why a particular document wasn't processed.</p>\n<h3>Try it out.</h3>\n<p>You can now create tasks for the Sales Order Agent without sending an email. From the agent's setup page, a new <strong>Try it out</strong> section lets you compose a message by selecting a sender (from your contact or customer list), entering message text, and attaching files. The agent acts like it received a real email.</p>\n<p>To help you get started quickly, two sample messages are included. One is a text-only message that references items from your catalog, and the other is a message with a sample purchase order attachment. The sample order is generated based on your actual item data, so the agent has realistic content to work with.</p>\n<p>These samples are particularly useful for first-time setup, demos, and testing agent behavior with specific scenarios without needing to send an actual email.</p>\n<h3>Handling of unknown senders</h3>\n<p>When the agent receives an email from an unregistered email address, you now have three options instead of just one:</p>\n<ul>\n<li>Create a new contact: register the sender as a new contact (existing behavior)</li>\n<li>Use another contact once: pick an existing contact from the contact list and link them to this specific task only, without modifying any master data. The override is stored per task message and does not affect future emails.</li>\n<li>Update an existing contact's email: select an existing contact and update their email address to the sender's address</li>\n</ul>\n<h3>More control over email</h3>\n<p>New configuration options give administrators more control over how the agent interacts with the monitored mailbox:</p>\n<ul>\n<li>Mark email as read: a new toggle to mark processed emails as read in the mailbox. This works in addition to the custom <em>Processed by Sales Order Agent</em> category, giving users a visual signal in their inbox.</li>\n<li>Mandatory folder selection: the agent now requires you to select a specific mailbox folder before activation. Previously this was optional and could lead to the agent monitoring an unexpected folder. If in doubt, choose <em>Inbox</em>.</li>\n<li>Stricter activation validation: trying to activate the agent without a mailbox folder now shows a clear error message instead of allowing activation in an ambiguous state.</li>\n</ul>\n<h3>Prompts as embedded resources.</h3>\n<p>The agent's AI prompts (instructions, item search logic, mail template checks, irrelevance validation) are now shipped as embedded resource files within the app extension package. This change reduces latency on first task processing and makes the prompt structure more transparent for engineering iteration.</p>\n<p>Business Value:</p>\n<p>The Sales Order Agent now handles more complex organizational structures and higher volumes with less manual intervention. You can run multiple agent instances in one company, each dedicated to a different team or shared mailbox with independent settings and performance tracking. The agent finds the right items more reliably by understanding product attributes, informal descriptions, and identifiers across multiple matching layers.<br>\nThe agent now processes PDFs up to 50 pages (previously, the limit was 10) and clearly shows why any attachment was skipped. It also filters irrelevant messages before processing, so credits aren't consumed by marketing emails or out-of-scope inquiries. If a customer writes from an unregistered email address, you can link an existing contact to that single task without creating duplicates. You can test the agent directly from the setup page without sending a real email, reducing the time to validate your configuration.</p>\n<p>Enabled for:</p>\n<p>Enabled for end users automatically</p>",
+        "id": 578065,
+        "locale": null,
+        "modified": "2026-10-23T22:45:59",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Copilot and agents - Run multiple Sales Order Agents per company with smarter item matching, relevance filtering, and streamlined setup"
+    },
+    {
+        "created": "2026-10-23T22:45:57",
+        "description": "<p>Autonomous email resolution delivers end-to-end handling of customer emails without manual intervention or default case creation. When an email arrives, the system analyzes the request, identifies the underlying intent, and determines whether the information and actions needed to resolve it are available.</p>\n<p>Using enterprise knowledge, configured business instructions, connectors, and custom agents, the system constructs a resolution dynamically. It generates a response that's context-aware, compliant with business rules, and tailored to the request, then delivers it directly by email\u2014completing the interaction autonomously.</p>\n<p>If the customer isn't satisfied or the issue can't be resolved automatically, the system creates a case that carries the full conversation context, including customer intent, actions taken, and generated responses. A service representative can then step in without losing context or duplicating work.</p>\n<p>The capability is delivered through the Case Management Agent. An administrator enables the setting and sets the automation level for each line of business, from fully autonomous resolution to drafting a response for a service representative to review and send.</p>\n<p>This shifts email handling from a case-first workflow to an intent-driven resolution model, reducing manual effort, improving consistency, and accelerating time to resolution for high-volume customer interactions.</p>\n<p>Business Value:</p>\n<p>Autonomous email resolution drives faster, consistent responses and frees service representatives to focus on complex, high-impact issues. It improves customer satisfaction and operational efficiency and scales support without increasing response times and costs by automatically resolving high-volume email inquiries.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 578064,
+        "locale": null,
+        "modified": "2026-10-23T22:45:57",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-email-resolution",
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "June CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Service: Copilot and AI innovation - Resolve customer emails autonomously with AI"
+    },
+    {
+        "created": "2026-10-23T22:45:56",
+        "description": "<p>Planning Optimization is the new high-performance planning engine for Dynamics 365 Supply Chain Management. With this feature, Planning Optimization now protects material and capacity allocated to sales order lines with delivery dates confirmed through capable to promise (CTP). You prevent reallocation of resources to newer orders, so your confirmed delivery dates stay reliable, and customer commitments are honored.</p>\n<p>Business Value:</p>\n<p>Protect your confirmed delivery dates with confidence. When you use capable to promise (CTP) for delivery date control with Planning Optimization, this feature ensures your commitments stay reliable, thereby preventing last-minute changes or manual fixes. You keep customer trust high and reduce the time spent adjusting orders or reallocating resources.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 578063,
+        "locale": null,
+        "modified": "2026-10-23T22:45:56",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/keep-supply-for-confirmed-demand",
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "June CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Supply Chain Management"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Supply Chain Management"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Supply Chain Management: Planning - Protect confirmed CTP dates with Planning Optimization"
+    },
+    {
+        "created": "2026-10-23T22:45:54",
+        "description": "<p>Power Pages now lets you manage external authentication providers with environment-level governance controls and optional site-level exceptions. You can centrally enforce which identity providers (IDPs) are allowed across all sites in an environment, while still enabling site-specific flexibility when needed. Makers will only see and select from the approved IDPs when setting up authentication, ensuring consistent governance and alignment with enterprise security policies.</p>\n<p>To enable this feature, go to the Power Platform admin center. Navigate to <strong>Manage</strong> &gt; <strong>Power Pages</strong> &gt; <strong>Governance settings</strong> &gt; <strong>Authentication providers</strong>. Here, you can configure allowed or restricted external IDPs, enable the control for environments, and manage exceptions for specific sites.</p>\n<p>Business Value:</p>\n<p>This feature gives you precise control over which external identity providers can be used on your Power Pages sites. It helps you enforce security, compliance, and privacy standards while maintaining flexibility for your team.</p>\n<p>Enabled for:</p>\n<p>Enabled for end users automatically</p>",
+        "id": 578062,
+        "locale": null,
+        "modified": "2026-10-23T22:45:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Pages"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Pages"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Power Pages: Administration and governance - Manage external authentication providers with granular controls"
+    },
+    {
+        "created": "2026-10-23T22:45:52",
+        "description": "<p>Available for B2B scenarios in Dynamics 365 Commerce (including headless Commerce), this feature enables retailers to configure unified sign-in in Commerce headquarters and integrate third\u2011party storefronts using CSU APIs. The organization selector and related capabilities are exposed via CSU endpoints so that third-party sites can consume identities, organizational context, and ordering workflows without relying on native UI components.</p>\n<p>Functional enhancements</p>\n<ul>\n<li><strong>Contact model transition</strong>: Replaces the customer account type \"Person\" with type \"Contact\" to better manage B2B partners.</li>\n<li><strong>Single contact linking</strong>: Links one customer contact to multiple organizations within the hierarchy.</li>\n<li><strong>Customer hierarchy improvements</strong>: Links B2B buyer and seller contacts to organization accounts directly from the customer hierarchy.</li>\n<li><strong>Unified ordering</strong>: Enables buyers to purchase for multiple outlets using a single account.</li>\n<li><strong>Organization credit limits</strong>: Allows all authorized buyers to order against the credit limit for their organization.</li>\n<li><strong>Sales order invoices</strong>: Generates sales orders and invoices tied directly to the organization account.</li>\n<li><strong>Organization account-based experiences</strong>: Automatically populates buyer address and credit limits from the organization account.</li>\n<li><strong>Order taker identification</strong>: Captures the buyer's name as the order taker in the sales order.</li>\n<li><strong>Auditing</strong>: Enables easy auditing of user activity orders across multiple outlets.</li>\n</ul>\n<p>Business Value:</p>\n<p>This feature simplifies purchasing for business-to-business (B2B) buyers by enabling a single sign-in to manage multiple outlet orders. It reduces friction, improves operational efficiency, and ensures accurate credit and address data for every transaction, even when using third-party storefronts powered by a headless Commerce engine. By using Commerce Scale Unit (CSU) for contact identity and organizational context, businesses can unify sign-in, streamline workflows, and reduce operational complexity for B2B buyers who are managing multiple outlets. This flexibility enables retailers to extend multioutlet capabilities beyond native Dynamics 365 Commerce storefronts, accelerating innovation and improving buyer confidence across diverse channels.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "id": 578061,
+        "locale": null,
+        "modified": "2026-10-23T22:45:52",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/commerce/b2b/b2b-multi-outlet",
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "April CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Omnichannel commerce - Add support for multiple outlet B2B ordering via CSU"
+    },
+    {
+        "created": "2026-10-23T21:59:27",
+        "description": "<p>The Power Pages plugin for GitHub Copilot CLI and Claude Code now supports creating and editing traditional (non-SPA) Power Pages sites. Developers can use natural-language prompts in their AI coding agent to create a new traditional site or download, inspect, and update existing site metadata such as web pages, web templates, content snippets, basic and multistep forms, lists, table permissions, web roles, and site settings, then upload changes back to their environment using the Power Platform CLI.</p>",
+        "id": 577900,
+        "locale": null,
+        "modified": "2026-10-23T21:59:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Developer"
+            },
+            {
+                "tagName": "Power Pages"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Developer"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Pages"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Power Pages: Plugin support for GitHub Copilot CLI and Claude Code to create and edit traditional sites"
+    },
+    {
+        "created": "2026-10-23T21:59:27",
+        "description": "<p>Payables Agent can recognize a vendor credit note and produce a purchase credit memo and applies to the original invoice, using the same draft and task experience as invoices. Note: It does not have Return Order matching functionality.</p>",
+        "id": 577878,
+        "locale": null,
+        "modified": "2026-10-23T21:59:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Payables Agent - Agent can process vendor credit notes"
+    },
+    {
+        "created": "2026-10-23T21:59:27",
+        "description": "<p>Organizations managing macOS devices will be able to select the Microsoft Edge Extended Stable channel, providing a slower 8-week major release cycle, compared to the two-week major release cycle for Stable.</p>",
+        "id": 577861,
+        "locale": null,
+        "modified": "2026-10-23T21:59:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Extended Stable channel support for macOS"
+    },
+    {
+        "created": "2026-10-23T21:59:27",
+        "description": "<p>Microsoft Teams will support explicit consent for participants connected through the public switched telephone network (PSTN) in one-to-one calls. When explicit consent is required, PSTN participants will hear an audio prompt when recording or transcription is started. They can use their phone keypad to consent or decline. Participants who decline can remain in the call but stay muted. This capability extends the existing Teams calling policy for explicit consent to one-to-one PSTN calls.</p>",
+        "id": 577543,
+        "locale": null,
+        "modified": "2026-10-23T21:59:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mobile"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mobile"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Explicit consent for recording & transcription in one-to-one PSTN calls"
+    },
+    {
+        "created": "2026-10-23T21:59:27",
+        "description": "<p>Facilitator is coming to Microsoft Teams meetings in GCC. The Facilitator agent can help capture notes in real time, answers questions about the meeting, and help keep the agenda and discussion on track. A Microsoft 365 Copilot license is required to use Facilitator.</p>",
+        "id": 577401,
+        "locale": null,
+        "modified": "2026-10-23T21:59:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Facilitator in GCC"
+    },
+    {
+        "created": "2026-10-23T21:59:27",
+        "description": "<p>Connect your GitHub account to access additional model options for the built-in gen page coding agent directly in the generative page designer in Maker Studio. Makers can use the agent to create and refine generative pages without leaving the Power Apps authoring experience.</p>\n<p>This integration also brings Maker Studio generative page authoring to regions without dedicated Power Apps GPU capacity.</p>\n<p>Model availability through GitHub may evolve over time, and requests made through this connection consume the maker\u2019s GitHub credits.</p>\n<h3>Availability</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2611.1</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Admins or makers</td>\n</tr>\n</tbody>\n</table>",
+        "id": 576285,
+        "locale": null,
+        "modified": "2026-10-23T21:59:27",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-pages",
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Power Apps: Expand model access and Maker Studio availability for generative pages via GitHub"
+    },
+    {
+        "created": "2026-10-23T21:59:27",
+        "description": "<p>Makers can bring data from Power Platform connectors into generative pages. After creating and authenticating a connection and adding a connection reference to the environment, you select the connector data and describe how the generated page should use it. Connector data can be incorporated while working in the Maker Studio generative page designer or through the generative pages AI plugin.</p>\n<h2>Availability</h2>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Not applicable</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>Gen page v302</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Admins or makers</td>\n</tr>\n</tbody>\n</table>",
+        "id": 576283,
+        "locale": null,
+        "modified": "2026-10-23T21:59:27",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-pages",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Power Apps: Use Power Platform connectors in generative pages"
+    },
+    {
+        "created": "2026-10-23T21:59:27",
+        "description": "<p>We\u2019re expanding form fill assistance in Power Apps to use speech as a source, providing users a more natural way to fill forms. Users select the microphone icon, record their content, and the transcript is used as a source for the form entry. Recordings are transient and not saved.</p>\n<p>Availability</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Monthly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2612.1</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by default)</td>\n</tr>\n</tbody>\n</table>",
+        "id": 576281,
+        "locale": null,
+        "modified": "2026-10-23T21:59:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Power Apps: Form fill assistance using speech as input in model-driven apps"
+    },
+    {
+        "created": "2026-10-23T21:59:27",
+        "description": "<p>Custom views lets users save a custom view of a plan and return to it later without re-applying filters, sorting, grouping, and other view customizations. A team can reuse saved views for triage, prioritization, work tracking, and more.</p>",
+        "id": 576275,
+        "locale": null,
+        "modified": "2026-10-23T21:59:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Planner"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Planner"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Planner: Custom Views for plans"
+    },
+    {
         "created": "2026-10-22T23:45:51",
         "description": "<p>Most systems of record have data stored in data structures that allow you to easily extract information about the analyzed entity (case-level data) and historical changes on those entities (event-level data). The attributes are also stored in a normalized form. The single-table approach to event log creation requires you to do inefficient transformations. With this feature, Power Automate Process Mining supports the case-event entity-based data structure plus a normalized form of attributes. This speeds up the ingestion process in both the transformation and import to process model phases and reduces the storage capacity needed.</p>\n<p>Business Value:</p>\n<p>Customers with existing data pipelines or data products in data mesh mostly want to stick to normalized, efficient forms such as star schema. Power Automate Process Mining currently requires you to transform the event log into a single-table form, where attributes with small cardinality are duplicated. Support for star schema reduces storage volumes and speeds up ingestion performance.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
         "id": 577827,
@@ -2534,7 +4250,7 @@
         "description": "<p>Teams Meetings offer enhanced AI controls for Copilot and AI experiences. Organizers manage who can enable and access AI, while IT admins get a simpler policy model for governing AI across meetings and post-meeting experiences. These updates provide more predictable administration and greater flexibility for compliance and governance scenarios.</p>",
         "id": 577399,
         "locale": null,
-        "modified": "2026-10-22T22:58:40",
+        "modified": "2026-10-23T21:59:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -2545,10 +4261,19 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
+                "tagName": "Android"
+            },
+            {
                 "tagName": "Desktop"
             },
             {
+                "tagName": "iOS"
+            },
+            {
                 "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -2565,10 +4290,19 @@
             ],
             "platforms": [
                 {
+                    "tagName": "Android"
+                },
+                {
                     "tagName": "Desktop"
                 },
                 {
+                    "tagName": "iOS"
+                },
+                {
                     "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -4549,7 +6283,7 @@
         "description": "<p>Default meeting templates enable IT admins to automatically apply their organization\u2019s preferred meeting settings whenever users schedule a Teams meeting through Outlook or Teams calendar. This helps organizations apply meeting settings (including protection settings) at scale, and reduce the need for organizers to manually configure meeting options. Only organizers with a Teams Premium (T-Pre) license assigned can use Default Meeting Templates.</p>",
         "id": 576609,
         "locale": null,
-        "modified": "2026-10-20T23:00:34",
+        "modified": "2026-10-23T21:59:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -4558,6 +6292,9 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
             },
             {
                 "tagName": "Desktop"
@@ -4582,6 +6319,9 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
                 }
             ],
             "platforms": [
@@ -34844,15 +36584,15 @@
     },
     {
         "created": "2026-08-11T22:53:53",
-        "description": "Copilot Notebooks now supports JPG and PNG files as knowledge sources, allowing users to bring images directly into their projects alongside traditional documents. Copilot can use the content within these images, including text, charts, diagrams, and other visuals, as grounding context to help generate more relevant presentations, reports, and briefs.\n\n",
+        "description": "<p>Copilot Notebooks now supports JPG and PNG files as knowledge sources, allowing users to bring images directly into their projects alongside traditional documents. Copilot can use the content within these images, including text, charts, diagrams, and other visuals, as grounding context to help generate more relevant presentations, reports, and briefs.</p>",
         "id": 569211,
         "locale": null,
-        "modified": "2026-08-11T22:53:53",
+        "modified": "2026-10-23T21:59:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -34917,15 +36657,15 @@
     },
     {
         "created": "2026-08-11T22:53:53",
-        "description": "Copilot Notebooks now supports CSV and TSV files as knowledge sources, allowing users to bring structured lists and tables directly into their projects alongside traditional documents. This additional context helps Copilot generate more relevant presentations, reports, and briefs. ",
+        "description": "<p>Copilot Notebooks now supports CSV and TSV files as knowledge sources, allowing users to bring structured lists and tables directly into their projects alongside traditional documents. This additional context helps Copilot generate more relevant presentations, reports, and briefs.</p>",
         "id": 569210,
         "locale": null,
-        "modified": "2026-08-11T22:53:53",
+        "modified": "2026-10-23T21:59:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -37911,15 +39651,15 @@
     },
     {
         "created": "2026-07-28T22:43:45",
-        "description": "Copilot Chat remains accessible within an Outlook app window but now can also be popped out to float over the main Outlook app window. Popping out Copilot Chat allows people to switch contexts or have more space for what they are working on in Outlook and control the space and form that Copilot Chat takes on screen. When you open Copilot chat and click the pop-out button, Copilot will open separately over the main Outlook window.",
+        "description": "<p>Copilot Chat remains accessible within an Outlook app window but now can also be popped out to float over the main Outlook app window. Popping out Copilot Chat allows people to switch contexts or have more space for what they are working on in Outlook and control the space and form that Copilot Chat takes on screen. When you open Copilot chat and click the pop-out button, Copilot will open separately over the main Outlook window.</p>",
         "id": 568368,
         "locale": null,
-        "modified": "2026-07-28T22:43:45",
+        "modified": "2026-10-23T21:59:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -44235,12 +45975,12 @@
         "description": "<pre><code>OneDrive is making it easier to find and work with files across Microsoft 365. We're refreshing the filtering experience across OneDrive Web, updating existing filters in views like Home, Shared, People, Meetings, and Favorites to support multiple filters at once, and bringing those same filtering capabilities to folder-based experiences such as My files and shared folders. Users can also filter content by file type using both filter pills and the filter pane.\n</code></pre>\n<p>We're also bringing the modern SharePoint document library experience to OneDrive Web, with an updated layout, improved navigation, and familiar file management capabilities. Together, these updates make it easier to browse, filter, and manage content, while providing a more seamless experience across OneDrive and SharePoint.</p>",
         "id": 566316,
         "locale": null,
-        "modified": "2026-09-04T22:03:41",
+        "modified": "2026-10-23T21:59:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -49317,15 +51057,15 @@
     },
     {
         "created": "2026-05-15T22:00:42",
-        "description": "Request feedback from Copilot on your Page by selecting \"Suggested edits\" in the Copilot Shortcuts menu. Copilot will analyze the content on your page and provide actionable suggestions about what you can change to improve clarity and quality of your written content. You can then apply suggestions directly to the page.",
+        "description": "<p>Request feedback from Copilot on your Page by selecting \"Suggested edits\" in the Copilot Shortcuts menu. Copilot will analyze the content on your page and provide actionable suggestions about what you can change to improve clarity and quality of your written content. You can then apply suggestions directly to the page. Updated October 23, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience.</p>",
         "id": 562351,
         "locale": null,
-        "modified": "2026-08-11T22:53:53",
+        "modified": "2026-10-23T21:59:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -59382,15 +61122,15 @@
     },
     {
         "created": "2026-04-01T23:15:50",
-        "description": "Introducing a new \u201cRecent\u201d feed in Home to give users a more predictable view of followed and priority communications, while preserving the existing personalized \u201cFor you\u201d experience.",
+        "description": "<p>Introducing a new \u201cRecent\u201d feed in Home to give users a more predictable view of followed and priority communications, while preserving the existing personalized \u201cFor you\u201d experience.</p>",
         "id": 559482,
         "locale": null,
-        "modified": "2026-08-20T22:38:45",
+        "modified": "2026-10-23T21:59:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -113136,15 +114876,15 @@
     },
     {
         "created": "2025-04-08T23:00:23",
-        "description": "New PowerShell setting (SpeakerAttributionBYOD in csTeamsAIPolicy), enabled by default, gives IT admins more control over speaker attribution in BYOD (bring your own device) meeting rooms. This enhances the experience for users by enabling clear speaker labels and richer in-meeting and post-meeting insights with Microsoft 365 Copilot. Users just enroll profiles via Teams Settings to be recognized.",
+        "description": "<p>New PowerShell setting (SpeakerAttributionBYOD in csTeamsAIPolicy), enabled by default, gives IT admins more control over speaker attribution in BYOD (bring your own device) meeting rooms. This enhances the experience for users by enabling clear speaker labels and richer in-meeting and post-meeting insights with Microsoft 365 Copilot. Users just enroll profiles via Teams Settings to be recognized.</p>",
         "id": 488301,
         "locale": null,
-        "modified": "2025-07-07T23:15:05",
+        "modified": "2026-10-23T21:59:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -125834,15 +127574,15 @@
     },
     {
         "created": "2024-05-14T23:30:08",
-        "description": "As of today, whenever the user wants to enable email notifications the policy tips also need to be enabled and vice versa, but with this decoupling the admin can configure the following: 1) None of policy tips or email notification 2) Only policy tips 3) Only Email Notifications 4) Both Email Notifications and Policy tips",
+        "description": "<p>As of today, whenever the user wants to enable email notifications the policy tips also need to be enabled and vice versa, but with this decoupling the admin can configure the following: 1) None of policy tips or email notification 2) Only policy tips 3) Only Email Notifications 4) Both Email Notifications and Policy tips</p>",
         "id": 396575,
         "locale": null,
-        "modified": "2026-06-18T23:00:06",
+        "modified": "2026-10-23T21:59:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
