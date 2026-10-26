@@ -292,6 +292,13 @@
                 "id": "FrankaRobotics.ride"
             }
         },
+        "Frost-rA9.everforest-gogh": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Everforest Remastered",
+                "id": "Frost-rA9.everforest-remastered"
+            }
+        },
         "Fudge.auto-using": true,
         "GARAIOAG.garaio-vscode-unwanted-recommendations": {
             "disallowInstall": true,
@@ -377,6 +384,20 @@
                 "id": "JMH-Design.lumen-explainer"
             }
         },
+        "JohanselSantos.sql-script-compare": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "SQL Script Toolkit",
+                "id": "JohanselSantos.sql-script-toolkit"
+            }
+        },
+        "JohanselSantos.sql-script-generator": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "SQL Script Toolkit",
+                "id": "JohanselSantos.sql-script-toolkit"
+            }
+        },
         "JuliaComputing.juliasim-studio": {
             "disallowInstall": true,
             "extension": {
@@ -420,6 +441,7 @@
                 "id": "LeaForest.integrated-conversational-environment"
             }
         },
+        "LiferayInc.poshi-language-support": true,
         "LitiaEeloo.zls": {
             "disallowInstall": true,
             "extension": {
@@ -842,6 +864,13 @@
             }
         },
         "WhenSunset.chatgpt-china": true,
+        "X4CodeComplete.x4codecomplete": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "X4CodeSense",
+                "id": "X4DevTools.x4codesense"
+            }
+        },
         "XGM.warcode": {
             "disallowInstall": true,
             "extension": {
@@ -2153,6 +2182,13 @@
                 "id": "noir-lang.vscode-noir"
             }
         },
+        "nolindnaidoo.jevlint-le": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "DecisionLint",
+                "id": "nolindnaidoo.decisionlint"
+            }
+        },
         "numaru.vscode-ceedling-test-adapter": {
             "disallowInstall": true,
             "extension": {
@@ -2176,6 +2212,13 @@
         },
         "olback.es6-css-minify": true,
         "open-component-model.vscode-ocm-tools": true,
+        "oskarabrahamsson.hol4-mode": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "HOL4 + LSP mode",
+                "id": "HOL4Developers.hol4-vscode"
+            }
+        },
         "otis11.smiledb": true,
         "outrageouslyfrench.composer-boop": true,
         "pallandos.quarkdown": {
@@ -2232,6 +2275,13 @@
         },
         "pthorsson.vscode-jsp": true,
         "qinjia.view-in-browser": true,
+        "quantum.qsharp-lang-vscode-dev": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Microsoft Quantum Development Kit (QDK)",
+                "id": "quantum.qsharp-lang-vscode"
+            }
+        },
         "quantum.quantum-devkit-vscode": {
             "disallowInstall": true,
             "extension": {
@@ -2653,6 +2703,13 @@
             "extension": {
                 "displayName": "Cucumber feature JSON formatter",
                 "id": "XavierLeTohic.cucumber-feature-json-formatter"
+            }
+        },
+        "xulbux.theme-xulbux-neon-pro": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Isolux Theme",
+                "id": "xulbux.theme-isolux"
             }
         },
         "ykhrito.vscode-idobata": true,
