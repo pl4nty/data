@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      id-token: write # Azure auth
+      id-token: write
     environment: dev
     strategy:
       fail-fast: false
@@ -44,16 +44,10 @@ jobs:
           AZURE_STORAGE_IN: ${{ secrets.AZURE_STORAGE_IN }}
           AZURE_STORAGE_OUT: ${{ secrets.AZURE_STORAGE_OUT }}
 
-      - id: summary
-        # push runs keep the static message
-        if: github.event_name != 'push'
-        uses: ./.github/actions/claude-commit-message
-        with:
-          oauth-token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
       - uses: EndBug/add-and-commit@v9.1.4
         with:
           default_author: github_actions
-          message: "data(${{ matrix.cmd }}): ${{ steps.summary.outputs.message || 'change detected' }}"
+          message: "data(${{ matrix.cmd }}): change detected"
           pull: "--rebase --autostash"
 
   windows:
@@ -69,14 +63,8 @@ jobs:
       - uses: actions/checkout@v4
       - run: .\${{ matrix.cmd }}
 
-      - id: summary
-        # push runs keep the static message
-        if: github.event_name != 'push'
-        uses: ./.github/actions/claude-commit-message
-        with:
-          oauth-token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
       - uses: EndBug/add-and-commit@v9.1.4
         with:
           default_author: github_actions
-          message: "data(${{ matrix.cmd }}): ${{ steps.summary.outputs.message || 'change detected' }}"
+          message: "data(${{ matrix.cmd }}): change detected"
           pull: "--rebase --autostash"
