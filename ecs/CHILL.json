@@ -450,6 +450,150 @@
                 }
             }
         },
+        "Floodgate_Campaign_MicrosoftTeamsAdminCenter.a038a62b-c16b-418f-a5a4-f1a110d224c5": {
+            "CampaignId": "a038a62b-c16b-418f-a5a4-f1a110d224c5",
+            "EndTimeUtc": "2026-11-14T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 15,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-10-15T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "UsedTeamsAdminCenter_TriggerCraftFastAndResponsive",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "5 - Strongly Agree",
+                                        "4",
+                                        "3",
+                                        "2",
+                                        "1 - Strongly Disagree"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "Microsoft Teams Admin Center is fast and responsive.",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Tell us more about your rating.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/a038a62b-c16b-418f-a5a4-f1a110d224c5/cf5736a3-b5a8-4754-ac11-9d4a6c2b543b/Web-MicrosoftTeamsAdminCenter/",
+                    "variables": {}
+                }
+            }
+        },
+        "Floodgate_Campaign_MicrosoftTeamsAdminCenter.a8210f72-d276-4125-9714-6094a7f8f097": {
+            "CampaignId": "a8210f72-d276-4125-9714-6094a7f8f097",
+            "EndTimeUtc": "2027-04-13T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 15,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-10-13T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "UsedTeamsAdminCenter_TriggerCraftEaseOfUse",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "5 - Strongly agree",
+                                        "4",
+                                        "3",
+                                        "2",
+                                        "1 - Strongly disagree"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "Microsoft Teams Admin Center is easy to use.",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Tell us more about your rating.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/a8210f72-d276-4125-9714-6094a7f8f097/316fd291-4996-4e6f-8ed3-f432015b8f40/Web-MicrosoftTeamsAdminCenter/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_MicrosoftTeamsAdminCenter.e5301e5e-8f5b-46f1-8cdd-a81ec0b5b3c8": {
             "CampaignId": "e5301e5e-8f5b-46f1-8cdd-a81ec0b5b3c8",
             "EndTimeUtc": "2028-07-02T18:30:00Z",
@@ -1074,94 +1218,6 @@
         }
     },
     "ChillHarmony": {
-        "Floodgate_Campaign_Harmony.09032fe4-85e7-4331-ae13-3df61f06d8e3": {
-            "CampaignId": "09032fe4-85e7-4331-ae13-3df61f06d8e3",
-            "EndTimeUtc": "2026-11-06T08:00:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 1296000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 25,
-                "Type": 0
-            },
-            "PrimaryPriority": 1,
-            "StartTimeUtc": "2026-03-25T04:00:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "AppUsageTimeNPS",
-                            "Count": 300,
-                            "IsAggregate": true,
-                            "Type": 0
-                        },
-                        {
-                            "Activity": "AppUsageTimeNPSSatisfied",
-                            "Count": 1,
-                            "IsAggregate": false,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 4,
-                "UxSchema": {
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Horizontal Rating",
-                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "rating1",
-                                    "leftLegendValue": "Very unlikely",
-                                    "questionLabel": "How likely are you to recommend the M365 Copilot App to others, if asked?",
-                                    "ratingValues": [
-                                        "1",
-                                        "2",
-                                        "3",
-                                        "4",
-                                        "5"
-                                    ],
-                                    "required": true,
-                                    "rightLegendValue": "Very likely",
-                                    "type": "Rating",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        },
-                        {
-                            "displayName": "Verbatim",
-                            "id": "b8d2ac03-6669-40c7-8829-27114df162cf",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "verbatim1",
-                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/09032fe4-85e7-4331-ae13-3df61f06d8e3/6e350995-a4bc-4e14-be4d-2ad96d9c44f6/Web-Harmony/",
-                    "variables": {}
-                }
-            }
-        },
         "Floodgate_Campaign_Harmony.19e97f6c-a020-4f5a-a189-1618a52d2b00": {
             "CampaignId": "19e97f6c-a020-4f5a-a189-1618a52d2b00",
             "EndTimeUtc": "2026-11-06T08:00:00Z",
