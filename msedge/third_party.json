@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2169064,
+    "size": 2174687,
     "file_count": 188
   },
   {
@@ -36,8 +36,8 @@
   },
   {
     "name": "angle",
-    "size": 17019597,
-    "file_count": 851
+    "size": 17083643,
+    "file_count": 852
   },
   {
     "name": "anonymous_tokens",
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 34324362,
-    "file_count": 4104
+    "size": 34332711,
+    "file_count": 4105
   },
   {
     "name": "boringssl",
@@ -146,7 +146,7 @@
   },
   {
     "name": "crossbench-web-tests",
-    "size": 301789,
+    "size": 301809,
     "file_count": 5
   },
   {
@@ -206,8 +206,8 @@
   },
   {
     "name": "eigen3",
-    "size": 22981600,
-    "file_count": 2409
+    "size": 23102389,
+    "file_count": 2422
   },
   {
     "name": "entity_extraction",
@@ -276,8 +276,8 @@
   },
   {
     "name": "glslang",
-    "size": 46393405,
-    "file_count": 3776
+    "size": 46394604,
+    "file_count": 3778
   },
   {
     "name": "googletest",
@@ -321,8 +321,8 @@
   },
   {
     "name": "hunspell_dictionaries",
-    "size": 165749239,
-    "file_count": 192
+    "size": 164493745,
+    "file_count": 188
   },
   {
     "name": "hyphenation-patterns",
@@ -361,8 +361,8 @@
   },
   {
     "name": "jdk",
-    "size": 6833,
-    "file_count": 10
+    "size": 9109,
+    "file_count": 12
   },
   {
     "name": "jdk11",
@@ -376,7 +376,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 32083,
+    "size": 32111,
     "file_count": 2
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19177963,
+    "size": 19223019,
     "file_count": 19
   },
   {
@@ -571,7 +571,7 @@
   },
   {
     "name": "oak",
-    "size": 294304,
+    "size": 295219,
     "file_count": 151
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4824868,
+    "size": 4825728,
     "file_count": 643
   },
   {
@@ -706,13 +706,13 @@
   },
   {
     "name": "skia",
-    "size": 3469127,
-    "file_count": 1209
+    "size": 3471042,
+    "file_count": 1210
   },
   {
     "name": "speech-dispatcher",
-    "size": 41857,
-    "file_count": 8
+    "size": 41886,
+    "file_count": 13
   },
   {
     "name": "speedometer",
@@ -731,7 +731,7 @@
   },
   {
     "name": "sqlite",
-    "size": 569953,
+    "size": 573450,
     "file_count": 12
   },
   {
@@ -785,11 +785,6 @@
     "file_count": 8
   },
   {
-    "name": "v4l-utils",
-    "size": 116370,
-    "file_count": 9
-  },
-  {
     "name": "vulkan-headers",
     "size": 1532423,
     "file_count": 23
@@ -806,7 +801,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7868981,
+    "size": 7875774,
     "file_count": 206
   },
   {
@@ -821,7 +816,7 @@
   },
   {
     "name": "webdriver",
-    "size": 409521,
+    "size": 412591,
     "file_count": 19
   },
   {
@@ -846,7 +841,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29103004,
+    "size": 29104729,
     "file_count": 608
   },
   {
