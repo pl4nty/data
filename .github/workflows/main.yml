@@ -14,7 +14,6 @@ jobs:
     permissions:
       contents: write
       id-token: write
-      models: read
     environment: dev
     strategy:
       fail-fast: false
@@ -45,45 +44,16 @@ jobs:
           AZURE_STORAGE_IN: ${{ secrets.AZURE_STORAGE_IN }}
           AZURE_STORAGE_OUT: ${{ secrets.AZURE_STORAGE_OUT }}
 
-      - name: Generate prompt
-        id: prompt
-        shell: /usr/bin/bash {0}
-        run: |
-          cat << EOF > $RUNNER_TEMP/prompt
-          Generate a commit message summarising the changes in the following git diff.
-          The message should contain a one-line summary of the changes, and a newline-separated list of the changes.
-          The one-line summary should be specific. Do not use generic phrases like "Updated configuration files with multiple improvements and enhancements" 
-          Respond with only the commit message and no other text. Do not use markdown formatting.
-
-          Here is the diff:
-          EOF
-
-          git add .
-          git diff --cached --exit-code >> $RUNNER_TEMP/prompt
-          echo "changed=$?" >> $GITHUB_OUTPUT
-      - id: inference
-        if: steps.prompt.outputs.changed == '1'
-        continue-on-error: true
-        uses: actions/ai-inference@v2.1.1
-        with:
-          prompt-file: ${{ runner.temp }}/prompt
-          model: ${{ vars.MODEL }}
-      - if: steps.inference.outcome == 'failure'
-        uses: actions/upload-artifact@v7
-        with:
-          name: prompt-file
-          path: ${{ runner.temp }}/prompt
       - uses: EndBug/add-and-commit@v9.1.4
         with:
           default_author: github_actions
-          message: "data(${{ matrix.cmd }}): ${{ steps.inference.outputs.response || 'change detected' }}"
+          message: "data(${{ matrix.cmd }}): change detected"
           pull: "--rebase --autostash"
 
   windows:
     runs-on: windows-latest
     permissions:
       contents: write
-      models: read
     environment: dev
     strategy:
       matrix:
@@ -93,32 +63,8 @@ jobs:
       - uses: actions/checkout@v4
       - run: .\${{ matrix.cmd }}
 
-      - name: Generate prompt
-        id: prompt
-        run: |
-          @"
-          Generate a commit message summarising the changes in the following git diff.
-          The message should contain a one-line summary of the changes, and a newline-separated list of the changes.
-          The one-line summary should be specific. Do not use generic phrases like "Updated configuration files with multiple improvements and enhancements" 
-          Respond with only the commit message and no other text. Do not use markdown formatting.
-          
-          Here is the diff:
-          "@ | Out-File -FilePath "$env:RUNNER_TEMP/prompt" -Encoding utf8
-          
-          git add .
-          git diff --cached --exit-code | Out-File -FilePath "$env:RUNNER_TEMP/prompt" -Append -Encoding utf8
-          echo "changed=$LASTEXITCODE" >> $env:GITHUB_OUTPUT
-          Write-Host $env:GITHUB_OUTPUT
-          exit 0
-      - id: inference
-        if: steps.prompt.outputs.changed == '1'
-        continue-on-error: true
-        uses: actions/ai-inference@v2.1.1
-        with:
-          prompt-file: ${{ runner.temp }}/prompt
-          model: ${{ vars.MODEL }}
       - uses: EndBug/add-and-commit@v9.1.4
         with:
           default_author: github_actions
-          message: "data(${{ matrix.cmd }}): ${{ steps.inference.outputs.response || 'change detected' }}"
+          message: "data(${{ matrix.cmd }}): change detected"
           pull: "--rebase --autostash"
