@@ -1256,6 +1256,7 @@
         "EnableSyncAllForReady": true,
         "EnableSyncInterestedGroup": true,
         "EnableSyncInterestedUserFilter": true,
+        "EnableSyncSessionHostName": true,
         "EnableSystemLocaleSettingInCDP": true,
         "EnableSystemLocaleSettingInFleet": true,
         "EnableTargetAssignmentMigration": true,

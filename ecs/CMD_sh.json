@@ -1146,6 +1146,7 @@
         "EnableSyncAgentUser": true,
         "EnableSyncAllForReady": true,
         "EnableSyncInterestedUserFilter": true,
+        "EnableSyncSessionHostName": true,
         "EnableSystemLocaleSettingInFleet": true,
         "EnableTargetAssignmentMigration": true,
         "EnableTargetAssignmentUpdate": true,
