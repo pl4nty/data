@@ -1,5 +1,829 @@
 [
     {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>Native connectors support through Power Pages will allow organizations to securely connect their websites/portals directly to enterprise systems such as SQL, SAP, and Oracle, without building or maintaining custom integration layers.</p>\n<p>This capability is especially valuable for regulated and enterprise customers such as banking and financial services, who need to surface data from systems hosted behind corporate firewalls. By leveraging the Power Platform on-premises data gateway and connector framework, customers can reduce integration complexity, lower operational costs, and accelerate delivery of secure digital experiences.</p>\n<p>Customers benefit from consistent security, governance, and compliance with existing Power Platform policies, while gaining the flexibility to build server-side logic that can interact with on-premises data sources.</p>",
+        "id": 577897,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2027",
+        "publicPreviewDate": "March CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Pages"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Pages"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Power Pages: First Class Support for Connector APIs in Power Pages"
+    },
+    {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>With the release of Argentina, we are finalizing the LATAM expansion. Out-of-the-box localization is now available for 14 countries in the region through the cross-LATAM localization framework, in addition to Brazil and Mexico.</p>\n<p>The country localization indicated below is provisional and may change prior to general availability. Additionally, not all of the following capabilities might be available for preview.</p>\n<p>The Argentina-specific scope for this release includes:</p>\n<ul>\n<li><p><strong>Sales tax (VAT and provincial taxes):</strong> tax determination and calculation, import of taxpayer registers (padrones), and certificate of tax situation for customers.</p>\n</li>\n<li><p><strong>Withholding tax (vendor payments):</strong> withholding tax determination and calculation.</p>\n</li>\n<li><p><strong>Regulatory reporting:</strong> Argentina tax reports moved to Electronic Reporting (ER).</p>\n<ul>\n<li><strong>ARCA VAT</strong> reports required by IVA Simple, covering sales, purchases, imports, other fiscal debit and credit items, withholdings, and perceptions, to register VAT operations monthly and submit the VAT return through Portal IVA</li>\n<li><strong>SICORE</strong>: National Withholding and Perception Tax Transactions TXT/excel file</li>\n<li><strong>SIRE (SUSS)</strong>: SUSS Withholdings (Retenciones de Seguridad Social) TXT/excel file.</li>\n<li><strong>SIFERE</strong>: Withholding tax (Retenciones) TXT/excel - Perceptions (Percepciones) TXT/excel - Bank Collections  Recaudaciones Bancarias) TXT/excel - Customs Perceptions (Percepciones Aduaneras) TXT/excel</li>\n<li><strong>SIRCAR</strong>: Gross Income Tax Withholdings TXT /excel file. Gross Income Tax Perceptions TXT /excel file.</li>\n<li><strong>E-ARCIBA</strong>: Gross Income Tax Withholdings/Tax Collections (Perceptions) file.</li>\n<li><strong>ARBA Tax Collection Agents</strong>: IIBB Perceptions (Percepciones) TXT/excel file. IIBB Withholdings (Retenciones) TXT/excel file.</li>\n</ul>\n</li>\n<li><p><strong>Electronic invoicing:</strong> Out of scope for the preview release</p>\n</li>\n</ul>",
+        "id": 577891,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Expand localization in LATAM countries for Argentina"
+    },
+    {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>Organizations can recalculate previously calculated emissions using a new restatement capability in Dynamics 365 Sustainability. Users can create a new calculation result while preserving the original result, helping maintain traceability between the original and restated emissions.</p>\n<p>Users can identify the calculation being restated, capture the reason for the restatement, and retain the calculation history. This supports scenarios such as correcting errors, incorporating improved activity data or emission factors, changing methodologies, and reflecting organizational or structural changes.</p>",
+        "id": 577890,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Sustainability"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Sustainability"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Sustainability: Restate previously calculated emissions"
+    },
+    {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>This feature extends Task Grid View Templates so administrators can configure both task columns and the visibility of supported task-grid actions in one place. Administrators can show or hide individual actions across task-grid views, the toolbar, row-level controls, and the task context menu.</p>\n<p>Configurable actions include views such as Board, Timeline, Charts, Assignments, People, and Goals; toolbar commands such as Baseline, Conditional Formatting, and export; and task-management actions such as Indent, Outdent, Cut, Copy, Paste, Delete, and dependency management. Essential capabilities, including the Grid view and access to task details, remain available.</p>",
+        "id": 577866,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2027",
+        "publicPreviewDate": "March CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Configure actions on task grid"
+    },
+    {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>Dynamics 365 Finance introduces a set of optimized customer data entities that provide more focused options for integrating customer information. Instead of relying on a single broad customer entity, organizations can work with purpose-specific entities for core customer information, extended customer attributes, postal addresses, electronic contact information, and customer associations.</p>\n<p>The optimized entities support both Data management import/export and OData integration scenarios, enabling organizations to build customer integrations around the specific data required for each business process.</p>",
+        "id": 577865,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "Dynamics 365 Finance and Operations cross-app"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                },
+                {
+                    "tagName": "Dynamics 365 Finance and Operations cross-app"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Optimized Customer data entities"
+    },
+    {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>Get your data ready, just by asking. Describe the data you need and how you want it prepared, and the new get data skill handles the rest. It can connect and transform your data, then load the results into your workbook using Power Query, giving you a query you can inspect, edit, and refresh without having to build it yourself. Depending on the data source, authentication may be required.</p>",
+        "id": 577745,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Rolling out",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Excel"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Excel"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Excel: Get and transform data with Copilot in Excel"
+    },
+    {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>App Blocks enables M365 Copilot Chat users to turn their requests and data into rich, interactive experiences directly within the conversation, including calculators, dashboards, forms, planners, visualizations, simulations, comparison tools, and other interactive apps. It helps users move beyond static responses to explore data, adjust inputs, visualize outcomes, and simulate workflows in place, while supporting grounded scenarios where current information can be retrieved and then rendered into an interactive experience.</p>",
+        "id": 577743,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): App Blocks"
+    },
+    {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>Trade Counter POS is a collection of capabilities for Dynamics 365 Commerce Point of Sale. Businesses can adopt the capabilities individually to support their trade counter operations rather than enable a single, all-or-nothing experience.</p>\n<p>Counter associates can find customers, organizations, and products quickly. They can review customer history, credit terms, and contract pricing, and use product attributes to identify items that meet the customer's requirements.</p>\n<p>Associates can build and manage large carts efficiently. Bulk add lets them enter multiple items and quantities, while quick add with partial search helps them add products without leaving the transaction. They can search transaction lines to locate items, select multiple lines to apply supported actions together, and filter lines with errors to focus on items that need attention. Keyboard shortcuts and an always-visible action panel help associates complete common tasks and update frequently used transaction fields with fewer navigation steps.</p>\n<p>Associates can create orders for B2B organization accounts, capture the named buyer for auditing and accountability, and record order notes to communicate customer requirements. They can view margins and override prices within allowed discount authority and margin limits.</p>\n<p>Associates can check inventory across the counter, attached warehouse, other branches, and central distribution center. They can use available-to-promise information to communicate fulfillment dates and create transfers to support fulfillment. Orders can be released from POS to the Warehouse Management app in Dynamics 365 Supply Chain Management, including priority release for rush orders. Warehouse workers use directed picking, scanning, and will-call staging to prepare items for pickup.</p>\n<p>At the counter, associates can complete will-call pickup and partial fulfillment, charge purchases to the customer's account with a purchase order reference, and support B2B invoicing and credit management. They can also print A4 invoices from POS and use configurable A4 receipt layouts for business documents.</p>\n<p>A typical workflow starts when an associate selects the business account and buyer, builds the order, and reviews pricing and availability. The associate then releases items for warehouse fulfillment. At pickup, the associate confirms the items being collected and completes the account purchase, while remaining items continue through fulfillment.</p>\n<p>A Commerce administrator enables or disables the individual capabilities and performs the configuration required for the selected capabilities. Warehouse fulfillment uses the connected Dynamics 365 Supply Chain Management warehouse processes.</p>",
+        "id": 577404,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Support trade counter sales in POS"
+    },
+    {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>Edit with Copilot makes it easier to edit and transform your Excel workbooks on your phone using natural language. Copilot can continue working on your task even when you move away from the app, so you can come back when the work is ready. Chat mode also remains available when you want to ask questions and get insights without making changes to your workbook.</p>",
+        "id": 577177,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Excel"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Excel"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Excel: Edit with Copilot in Excel on iPhone"
+    },
+    {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>Associate channels with a tag so members are automatically added to those channels when they join the tag. This helps teams keep channel membership in sync with evolving groups, reduces manual management, and ensures members have access to the conversations and content most relevant to their role.</p>",
+        "id": 577174,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Mobile"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Mobile"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Workflow to automatically add tag members to relevant channels"
+    },
+    {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>This feature enables users to easily create new SharePoint sites with Copilot. Users can review and confirm a clear site plan before Copilot builds the site.</p>",
+        "id": 576708,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): SharePoint Site Builder"
+    },
+    {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>Real-time streaming analytics is built into the new supervisor application. An advanced streaming engine keeps metrics up to date with near-instant updates, allowing supervisors to view the latest data without refreshing the dashboard.</p>\n<p>Key capabilities include:</p>\n<ul>\n<li><strong>Continuous, streaming dashboards</strong>: Monitor mission-critical KPIs such as queue backlog, service level, abandon rate, and representative presence in near real time. Visual alerts highlight anomalies as they occur.</li>\n<li><strong>Full-screen wallboards</strong>: Display live metrics on high-resolution monitors across the contact center floor, providing teams with a shared, at-a-glance view of performance.</li>\n<li><strong>Drill-down analytics</strong>: Navigate from high-level summaries to detailed queue-level and representative-level views to analyze performance and identify issues.</li>\n<li><strong>Queue &amp; Representative-level insight</strong>: Evaluate live indicators such as Queue backlog, Longest wait time, representative presence status and their available capacity, along with performance metrics like average speed to answer and conversations handled over time.**: Evaluate live indicators such as presence status, available capacity, and conversations handled over time.</li>\n<li><strong>Immediate corrective actions</strong>: Respond to performance changes in real time by moving representatives across queues, updating presence, skills and capacity profiles.</li>\n<li><strong>In-context conversation management</strong>: View conversation details and take action directly from the dashboard, including assigning or transferring conversations.</li>\n<li><strong>Self-service metrics</strong>: Monitor self-service effectiveness in real time with visibility into containment, escalation, and customer interaction trends.</li>\n<li><strong>Configurable metric thresholds</strong>: Configure custom thresholds for key metrics and automatically highlight At Risk and Critical conditions through color-coded indicators.</li>\n</ul>",
+        "id": 576605,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: Boost contact center efficiency with real-time streaming analytics "
+    },
+    {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>Multiple MAM (Mobile Application Management) Intune Accounts will now be supported in Outlook for Android. Only one MDM (Mobile Device Management) account will be supported at a time per device.</p>",
+        "id": 576270,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Multiple Intune Accounts in Outlook for Android"
+    },
+    {
+        "created": "2026-10-26T23:15:50",
+        "description": "<p>When you open a presentation you don't have permission to edit, PowerPoint now shows a clear \"Viewing Only\" message bar. It explains that the file is view-only, shows who created it, and tells you to contact the owner if you need more access.</p>",
+        "id": 571198,
+        "locale": null,
+        "modified": "2026-10-26T23:15:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "PowerPoint: Clear view-only messaging"
+    },
+    {
         "created": "2026-10-23T23:10:38",
         "description": "<p>Row summaries are expanding to supported US Government clouds, giving users in regulated environments access to AI-generated insights that help them understand model-driven app records at a glance. This release brings the row summary experience available to commercial customers to supported government environments while meeting their applicable compliance and data-boundary requirements.</p>\n<p>Admins and makers enable and configure row summaries for users in their model-driven apps.</p>\n<h3>Availability</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2611.1</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by admins or makers)</td>\n</tr>\n</tbody>\n</table>",
         "id": 576279,
@@ -6771,9 +7595,9 @@
         "description": "<p>Microsoft Teams is expanding Markdown support in the compose box, giving you more ways to structure and format messages using familiar Markdown syntax. Create richer, more readable messages while staying in the Markdown authoring experience.</p>",
         "id": 576199,
         "locale": null,
-        "modified": "2026-10-21T23:02:10",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -32633,12 +33457,12 @@
         "description": "<p>Task History helps keep teams up to date on changes made to a task. View recent activity to see what changed, when it changed, and track progress over time.</p>",
         "id": 569933,
         "locale": null,
-        "modified": "2026-09-08T22:57:21",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -34125,15 +34949,15 @@
     },
     {
         "created": "2026-08-27T22:38:48",
-        "description": "Conditional Coloring highlight tasks based on selected criteria, making priorities, status, and important task details easier to spot.",
+        "description": "<p>Conditional Coloring highlight tasks based on selected criteria, making priorities, status, and important task details easier to spot.</p>",
         "id": 569476,
         "locale": null,
-        "modified": "2026-08-27T22:38:48",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -34464,12 +35288,12 @@
         "description": "<p>Admins can now choose whether the organizer name will show up in the Calendar View on Teams panels. Admins can toggle the \"Show organizer name\" setting ON or OFF in the Pro Management portal or on the panel device. Based on the selection, the organizer name will or will not be shown in the calendar view on the panel device. Available with Teams Rooms Pro and Teams Shared Space licenses.</p>",
         "id": 569423,
         "locale": null,
-        "modified": "2026-09-14T23:03:47",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -34949,15 +35773,15 @@
     },
     {
         "created": "2026-08-21T22:00:23",
-        "description": "Capacity view shows a timeline of who's working on what, so you can see how work is distributed across your team and spot overload or open capacity at a glance.",
+        "description": "<p>Capacity view shows a timeline of who's working on what, so you can see how work is distributed across your team and spot overload or open capacity at a glance.</p>",
         "id": 569733,
         "locale": null,
-        "modified": "2026-08-21T22:00:23",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -41007,7 +41831,7 @@
         "description": "<p>Session and Response Sharing let Microsoft 365 Copilot users share Copilot chat content through a link. Session Sharing shares a full chat session, while Response Sharing shares a single Copilot response. The shared content opens as a read-only view, and recipients can continue from it in their own Copilot chat. This gives Copilot users an easier and more controlled way to share useful Copilot outputs with coworkers instead of copying and pasting. It helps teams reuse work, share context, and collaborate more efficiently while keeping sharing within organizational controls.</p>",
         "id": 562353,
         "locale": null,
-        "modified": "2026-10-19T23:15:15",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
@@ -43239,15 +44063,15 @@
     },
     {
         "created": "2026-07-07T23:01:01",
-        "description": "You can now create a rule that automatically replies to incoming messages with a template you've set up. Set the conditions you care about and pick the template, and Outlook handles the response for you. It's a simple way to send consistent replies without typing the same thing over and over. #newoutlookforwindows",
+        "description": "<p>You can now create a rule that automatically replies to incoming messages with a template you've set up. Set the conditions you care about and pick the template, and Outlook handles the response for you. It's a simple way to send consistent replies without typing the same thing over and over. #newoutlookforwindows</p>",
         "id": 567318,
         "locale": null,
-        "modified": "2026-07-07T23:01:01",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -43260,6 +44084,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -43281,6 +44108,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -43807,15 +44637,15 @@
     },
     {
         "created": "2026-07-01T23:03:18",
-        "description": "The agent node lets you embed reasoning directly into your workflow. This means fewer manual handoffs, faster processing times, and workflows that can handle nuanced decisions without additional development effort, helping teams automate more of their end-to-end processes and reduce operational overhead.",
+        "description": "<p>The agent node lets you embed reasoning directly into your workflow. This means fewer manual handoffs, faster processing times, and workflows that can handle nuanced decisions without additional development effort, helping teams automate more of their end-to-end processes and reduce operational overhead.</p>",
         "id": 566998,
         "locale": null,
-        "modified": "2026-07-01T23:03:18",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -45584,12 +46414,12 @@
         "description": "<p>We are introducing a new feature for leaders and analysts of Viva Insights, where they can view a Power BI report, and edit time range, filters, attributes and change visuals as per their organizations' needs. They can then save the report for viewing later.</p>",
         "id": 566317,
         "locale": null,
-        "modified": "2026-09-04T22:03:41",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -46967,12 +47797,12 @@
     },
     {
         "created": "2026-06-15T23:00:45",
-        "description": "This enables users to export Identifiable row-level Copilot metrics from the Copilot Dashboard for reporting and deeper analysis. This capability can be tuned On by Admins in a tenant.",
+        "description": "<p>This enables users to export Identifiable row-level Copilot metrics from the Copilot Dashboard for reporting and deeper analysis. This capability can be tuned On by Admins in a tenant.</p>",
         "id": 562648,
         "locale": null,
-        "modified": "2026-06-15T23:00:45",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -51472,15 +52302,15 @@
     },
     {
         "created": "2026-05-15T18:00:35",
-        "description": "Add resilient, AI-powered UI automation directly into your workflows with computer use tools. Makers can build reusable, goal-oriented automations that adapt dynamically to website or app changes, while admins maintain governance through access controls, hosted browser management, and environment-level permissions.",
+        "description": "<p>Add resilient, AI-powered UI automation directly into your workflows with computer use tools. Makers can build reusable, goal-oriented automations that adapt dynamically to website or app changes, while admins maintain governance through access controls, hosted browser management, and environment-level permissions. Update: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
         "id": 562220,
         "locale": null,
-        "modified": "2026-05-15T18:00:35",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -61762,15 +62592,15 @@
     },
     {
         "created": "2026-03-30T23:00:38",
-        "description": "The Files companion app, part of the Microsoft 365 companion apps suite on the Windows taskbar, now surfaces AI-powered Copilot file prompts for Copilot Chat users. Previously available only to Microsoft 365 Copilot licensees, this update extends contextual file prompts to Microsoft 365 Copilot Chat users, enabling them to discover and interact with relevant files through intelligent suggestions. Users can find their most relevant files faster and take action on them directly from the Files app. ",
+        "description": "<p>The Files companion app, part of the Microsoft 365 companion apps suite on the Windows taskbar, now surfaces AI-powered Copilot file prompts for Copilot Chat users. Previously available only to Microsoft 365 Copilot licensees, this update extends contextual file prompts to Microsoft 365 Copilot Chat users, enabling them to discover and interact with relevant files through intelligent suggestions. Users can find their most relevant files faster and take action on them directly from the Files app. Update: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
         "id": 558595,
         "locale": null,
-        "modified": "2026-03-31T23:15:47",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -65917,12 +66747,12 @@
     },
     {
         "created": "2026-03-09T23:15:17",
-        "description": "Data Lifecycle Management allows compliance admins to retain, review and delete content in M365 workloads.\u202fDeletion\u202fof content to adhere to compliance requirements, admins can set up Retention policies or labels.\u202fTo\u202fhelp\u202fprevent inadvertent data loss, M365 retention labels policies and M365 retention policies\u202fdo\u202fnot\u202fhard\u202fdelete content\u202fimmediately and keeps the data in Recycle Bins for\u202f93 days\u202ffor ODSP.\u202fHard delete\u202fitself is a very costly process as it\u202fopens\u202fMicrosoft to heavy legal implications in case of any data loss incident that may occur due to a misconfigured policy or regression.\u202fPriority Cleanup feature allows users to bypass retention,\u202fand eDiscovery holds to help customers comply to changing legal/compliance requirements\u202for manage data spillage\u202fscenarios.\u202fThis feature requires the ability\u202fto hard\u202fdelete specific files from the scoped locations.\u202f Ability to select hard delete configuration for a Priority cleanup policy for OneDrive and SharePoint content and skip recycle bins.",
+        "description": "<p>Data Lifecycle Management allows compliance admins to retain, review and delete content in M365 workloads.\u202fDeletion\u202fof content to adhere to compliance requirements, admins can set up Retention policies or labels.\u202fTo\u202fhelp\u202fprevent inadvertent data loss, M365 retention labels policies and M365 retention policies\u202fdo\u202fnot\u202fhard\u202fdelete content\u202fimmediately and keeps the data in Recycle Bins for\u202f93 days\u202ffor ODSP.\u202fHard delete\u202fitself is a very costly process as it\u202fopens\u202fMicrosoft to heavy legal implications in case of any data loss incident that may occur due to a misconfigured policy or regression.\u202fPriority Cleanup feature allows users to bypass retention,\u202fand eDiscovery holds to help customers comply to changing legal/compliance requirements\u202for manage data spillage\u202fscenarios.\u202fThis feature requires the ability\u202fto hard\u202fdelete specific files from the scoped locations.\u202f Ability to select hard delete configuration for a Priority cleanup policy for OneDrive and SharePoint content and skip recycle bins.</p>",
         "id": 558343,
         "locale": null,
-        "modified": "2026-08-19T22:58:06",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "August CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -78156,12 +78986,12 @@
         "description": "<p>Structured Document Generation with Forms enables organizations to create, manage, and generate standardized documents at scale with built-in governance and compliance in SharePoint. Business process owners can centrally build and maintain form-driven templates -- such as contracts, agreements, proposals, and HR documents -- ensuring content stays accurate and up to date. Users can then generate the right document every time by just filling out the form, without manual formatting, versioning issues, or compliance risk, simplifying high-volume, structured document workflows across the organization.</p>",
         "id": 545896,
         "locale": null,
-        "modified": "2026-10-06T22:56:31",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -126250,12 +127080,12 @@
     },
     {
         "created": "2024-08-06T00:00:26",
-        "description": "Customers will be able to use various connectors to HRIS tools to import HRIS data into Viva Glint from Microsoft Admin Center.",
+        "description": "<p>Customers will be able to use various connectors to HRIS tools to import HRIS data into Viva Glint from Microsoft Admin Center.</p>",
         "id": 410396,
         "locale": null,
-        "modified": "2025-01-31T23:15:55",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -126842,12 +127672,12 @@
     },
     {
         "created": "2024-10-03T23:30:37",
-        "description": "Rewrite by Copilot in Edge, which lets users edit typed text for tone, format, and length within an open page in Microsoft Edge, is being updated to include enterprise data protection for commercial customers. Once Rewrite is available, users signed in with a Microsoft Entra ID will have enterprise data protection when using the feature in Microsoft Edge. Updated March 20, 2026: We have paused release of this feature temporarily and will announce new release timelines soon. We apologize for any inconvenience. ",
+        "description": "<p>Rewrite by Copilot in Edge, which lets users edit typed text for tone, format, and length within an open page in Microsoft Edge, is being updated to include enterprise data protection for commercial customers. Once Rewrite is available, users signed in with a Microsoft Entra ID will have enterprise data protection when using the feature in Microsoft Edge. Updated March 20, 2026: We have paused release of this feature temporarily and will announce new release timelines soon. We apologize for any inconvenience.</p>",
         "id": 420335,
         "locale": null,
-        "modified": "2026-06-25T23:15:45",
+        "modified": "2026-10-26T23:15:50",
         "moreInfoLink": "https://learn.microsoft.com/en-us/copilot/edge",
-        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
