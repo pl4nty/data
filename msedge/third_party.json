@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 1186445,
+    "size": 1186193,
     "file_count": 48
   },
   {
@@ -71,8 +71,8 @@
   },
   {
     "name": "blink",
-    "size": 34332711,
-    "file_count": 4105
+    "size": 34339934,
+    "file_count": 4107
   },
   {
     "name": "boringssl",
@@ -171,7 +171,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 4510598,
+    "size": 4535525,
     "file_count": 27
   },
   {
@@ -361,8 +361,8 @@
   },
   {
     "name": "jdk",
-    "size": 9109,
-    "file_count": 12
+    "size": 6833,
+    "file_count": 10
   },
   {
     "name": "jdk11",
@@ -376,7 +376,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 32111,
+    "size": 32082,
     "file_count": 2
   },
   {
@@ -731,8 +731,8 @@
   },
   {
     "name": "sqlite",
-    "size": 573450,
-    "file_count": 12
+    "size": 562620,
+    "file_count": 11
   },
   {
     "name": "subresource-filter-ruleset",
@@ -751,8 +751,8 @@
   },
   {
     "name": "tflite",
-    "size": 1961135,
-    "file_count": 551
+    "size": 1970704,
+    "file_count": 558
   },
   {
     "name": "tflite_support",

@@ -404,10 +404,6 @@ BASE_DECLARE_FEATURE(kPersonalizedLaunchExactMatchQuery);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kEnableNextSiteSuggestionInCodeForIndia);
 
-// Feature flag to enable sending subdomains for personalized launch
-COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE(kPersonalizedLaunchSendSubdomains);
-
 // Feature flag for disabling Autolaunch Activation across all devices for a
 // specific profile.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
