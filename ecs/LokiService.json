@@ -2796,6 +2796,22 @@
         "privacyUrl": "https://www.microsoft.com/en-us/privacy/privacystatement"
     },
     "PLGSDK": {
+        "CostHostAppMappings": [
+            {
+                "appId": "4765445b-32c6-49b0-83e6-1d93765276ca",
+                "hostApp": "CopilotCode"
+            },
+            {
+                "appId": "c0ab8ce9-e9a0-42e7-b064-33d422df41f1",
+                "hostApp": "CopilotCode"
+            },
+            {
+                "appId": "0ec893e0-5785-4de6-99da-4ed124e5296c",
+                "hostApp": "CopilotCode"
+            }
+        ],
+        "EnableConsumptiveBillingCostCommand": true,
+        "EnableConsumptiveBillingCostCommandTaskRead": true,
         "EnableConsumptiveBillingCreditRequestScenarios": true,
         "EnableConsumptiveBillingIrisContent": false,
         "PLGSDKConsumptiveBilling": true,

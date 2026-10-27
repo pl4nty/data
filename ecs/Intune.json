@@ -452,7 +452,8 @@
             "ModifyDeviceUserParallelBatchSize": 100,
             "NewPolicyAuditingForDoDevicesEnabled": true,
             "PatchGooglePolicyParallelBatchSize": 25,
-            "PublishPdv2ForFailedWpParityCheckFailure": true
+            "PublishPdv2ForFailedWpParityCheckFailure": true,
+            "UsePerAppReportCacheForReporting": true
         }
     },
     "SVC_AppLifecycle": {
