@@ -16,7 +16,7 @@ local l_0_3 = mp.CONTEXT_DATA_NET_PROMPT_AI_THRESHOLD_BLOCK
 do
   if l_0_3 ~= nil then
     local l_0_4, l_0_5 = pcall(mp.get_contextdata, l_0_3)
-    if l_0_4 and l_0_5 ~= nil then
+    if l_0_4 and l_0_5 ~= nil and l_0_5 >= 980000000 then
       l_0_2 = l_0_5
     end
   end
@@ -55,8 +55,6 @@ do
       do
         do
           local l_0_14 = nil
-          -- DECOMPILER ERROR at PC129: Confused about usage of register: R9 in 'UnsetPending'
-
           -- DECOMPILER ERROR at PC131: Confused about usage of register: R9 in 'UnsetPending'
 
           -- DECOMPILER ERROR at PC133: Confused about usage of register: R9 in 'UnsetPending'
@@ -69,17 +67,19 @@ do
 
           -- DECOMPILER ERROR at PC141: Confused about usage of register: R9 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC145: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC143: Confused about usage of register: R9 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC145: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
 
-          -- DECOMPILER ERROR at PC145: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
 
-          -- DECOMPILER ERROR at PC145: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
 
-          -- DECOMPILER ERROR at PC145: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
 
-          -- DECOMPILER ERROR at PC145: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
+
+          -- DECOMPILER ERROR at PC147: Unhandled construct in 'MakeBoolean' P3
 
           if ((versioning.GetOrgID)() ~= nil and (versioning.GetOrgID)() ~= "" and (string.lower)((versioning.GetOrgID)()) == "1beec53c-4b52-4aec-a1b1-716d6da36984") or (string.lower)((versioning.GetOrgID)()) == "2eecd5d9-bedb-453b-a94c-5159e5aa1f92" then
             return mp.INFECTED
@@ -87,7 +87,7 @@ do
             return mp.LOWFI
           end
           do return mp.CLEAN end
-          -- DECOMPILER ERROR at PC153: freeLocal<0 in 'ReleaseLocals'
+          -- DECOMPILER ERROR at PC155: freeLocal<0 in 'ReleaseLocals'
 
         end
       end

@@ -118,58 +118,116 @@ end
   if not l_0_11 then
     return ("irm").CLEAN
   end
-  local l_0_16 = nil
-  -- DECOMPILER ERROR at PC213: Overwrote pending register: R15 in 'AssignReg'
+  local l_0_16 = function(l_2_0)
+  -- function num : 0_1
+  local l_2_1, l_2_2 = (string.match)(l_2_0, "^%s*(.-)%s*|%s*([%a%-]+)%s*;?%s*$")
+  if l_2_2 ~= "iex" and l_2_2 ~= "invoke-expression" and not (string.match)(l_2_0, "^%s*iex%s*%((.-)%)%s*;?%s*$") then
+    l_2_1 = (string.match)(l_2_0, "^%s*invoke%-expression%s*%((.-)%)%s*;?%s*$")
+  end
+  if l_2_1 == nil then
+    return false
+  end
+  do
+    if (string.match)(l_2_1, "^%s*%((.-)%)%s*$") or not (string.match)(l_2_1, "^%s*irm%s+(.+)$") then
+      local l_2_3 = (string.match)(l_2_1, "^%s*invoke%-restmethod%s+(.+)$")
+    end
+    -- DECOMPILER ERROR at PC45: Confused about usage of register: R3 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC214: Overwrote pending register: R16 in 'AssignReg'
+    if l_2_3 == nil then
+      return false
+    end
+    -- DECOMPILER ERROR at PC51: Confused about usage of register: R3 in 'UnsetPending'
 
-  -- DECOMPILER ERROR at PC216: Overwrote pending register: R17 in 'AssignReg'
-
-  local l_0_17, l_0_18 = ("invoke-restmethod")(("downloadstring").get_contextdata, ("downloadfile").CONTEXT_DATA_AMSI_APPNAME)
-  -- DECOMPILER ERROR at PC222: Overwrote pending register: R18 in 'AssignReg'
-
-  if l_0_17 and type("downloaddata") == "string" then
-    local l_0_19 = tostring(l_0_15)
-    local l_0_20 = "||"
-    -- DECOMPILER ERROR at PC231: Overwrote pending register: R19 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC232: Overwrote pending register: R20 in 'AssignReg'
-
-    local l_0_21 = ("openread")("webclient")
-    local l_0_22 = "||"
-    -- DECOMPILER ERROR at PC235: Overwrote pending register: R21 in 'AssignReg'
-
-    local l_0_23 = ("new-object net.").sub
-    -- DECOMPILER ERROR at PC237: Overwrote pending register: R22 in 'AssignReg'
-
-    local l_0_24 = "new-object system.net"
-    -- DECOMPILER ERROR at PC243: Overwrote pending register: R24 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC245: Overwrote pending register: R22 in 'AssignReg'
-
-    local l_0_26 = string.sub
+    local l_2_4 = (string.match)(l_2_3, "^%s*(.-)%s*$")
     do
-      -- DECOMPILER ERROR at PC254: Overwrote pending register: R26 in 'AssignReg'
+      local l_2_5, l_2_6, l_2_7 = (string.match)(l_2_4, "^([\'\"]?)(https?://[^%s\'\"`$;|(){}<>#%^]+)([\'\"]?)$")
+      do return l_2_6 ~= nil and l_2_5 == l_2_7 end
+      -- DECOMPILER ERROR: 1 unprocessed JMP targets
+    end
+  end
+end
 
-      -- DECOMPILER ERROR at PC260: Overwrote pending register: R27 in 'AssignReg'
+  -- DECOMPILER ERROR at PC217: Overwrote pending register: R15 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC263: Overwrote pending register: R28 in 'AssignReg'
+  -- DECOMPILER ERROR at PC219: Overwrote pending register: R16 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC269: Overwrote pending register: R29 in 'AssignReg'
+  -- DECOMPILER ERROR at PC221: Overwrote pending register: R17 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC272: Overwrote pending register: R30 in 'AssignReg'
+  if l_0_15 == "a_clip_in_buf" or l_0_15 == "b_buf_in_clip" then
+    local l_0_17 = (("invoke-restmethod").match)((("downloadstring").lower)("downloadfile"), "^%s*(.-)%s*$")
+    -- DECOMPILER ERROR at PC229: Overwrote pending register: R18 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC278: Overwrote pending register: R21 in 'AssignReg'
+    local l_0_18 = (string.match)((string.lower)("downloaddata"), "^%s*(.-)%s*$")
+    -- DECOMPILER ERROR at PC236: Overwrote pending register: R19 in 'AssignReg'
 
-      l_0_20(l_0_21, l_0_22, l_0_23)
-      -- DECOMPILER ERROR at PC280: Overwrote pending register: R18 in 'AssignReg'
+    -- DECOMPILER ERROR at PC237: Overwrote pending register: R20 in 'AssignReg'
 
-      -- DECOMPILER ERROR at PC281: Overwrote pending register: R18 in 'AssignReg'
+    if #l_0_18 < 150 or not (string.find)(l_0_17, l_0_18, 1, true) then
+      if #l_0_17 >= 100 then
+        local l_0_19 = (string.find)(l_0_18, l_0_17, 1, true)
+      else
+        do
+          do
+            local l_0_20 = false
+            -- DECOMPILER ERROR at PC272: Confused about usage of register: R17 in 'UnsetPending'
 
-      do return l_0_20 end
-      -- DECOMPILER ERROR at PC283: freeLocal<0 in 'ReleaseLocals'
+            do
+              if l_0_20 and l_0_16((string.lower)(l_0_4)) then
+                local l_0_21 = nil
+                if type(GetRollingQueueKeyValue("IsClickFixCMD_ConfirmedMalicious", l_0_13)) == "string" and GetRollingQueueKeyValue("IsClickFixCMD_ConfirmedMalicious", l_0_13) == l_0_14 then
+                  (mp.set_mpattribute)("Lua:WebClipPasteC:ConfirmedRemoteExec")
+                end
+              end
+              -- DECOMPILER ERROR at PC297: Overwrote pending register: R15 in 'AssignReg'
 
-      -- WARNING: undefined locals caused missing assignments!
+              local l_0_22 = l_0_17
+              -- DECOMPILER ERROR at PC298: Overwrote pending register: R16 in 'AssignReg'
+
+              local l_0_23, l_0_24 = l_0_18(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_APPNAME)
+              if l_0_23 and type(l_0_24) == "string" then
+                local l_0_25 = tostring(l_0_15)
+                local l_0_26 = "||"
+                local l_0_27 = tostring(l_0_12)
+                local l_0_28 = "||"
+                -- DECOMPILER ERROR at PC320: Overwrote pending register: R22 in 'AssignReg'
+
+                local l_0_29 = ("new-object system.net").sub
+                -- DECOMPILER ERROR at PC322: Overwrote pending register: R23 in 'AssignReg'
+
+                local l_0_30 = "start-bitstransfer"
+                -- DECOMPILER ERROR at PC328: Overwrote pending register: R25 in 'AssignReg'
+
+                -- DECOMPILER ERROR at PC330: Overwrote pending register: R23 in 'AssignReg'
+
+                local l_0_32 = string.sub
+                do
+                  -- DECOMPILER ERROR at PC339: Overwrote pending register: R27 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC345: Overwrote pending register: R28 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC348: Overwrote pending register: R29 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC354: Overwrote pending register: R30 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC357: Overwrote pending register: R31 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC363: Overwrote pending register: R22 in 'AssignReg'
+
+                  l_0_26(l_0_27, l_0_28, l_0_29)
+                  -- DECOMPILER ERROR at PC365: Overwrote pending register: R19 in 'AssignReg'
+
+                  -- DECOMPILER ERROR at PC366: Overwrote pending register: R19 in 'AssignReg'
+
+                  do return l_0_26 end
+                  -- DECOMPILER ERROR at PC368: freeLocal<0 in 'ReleaseLocals'
+
+                  -- WARNING: undefined locals caused missing assignments!
+                end
+              end
+            end
+          end
+        end
+      end
     end
   end
 end

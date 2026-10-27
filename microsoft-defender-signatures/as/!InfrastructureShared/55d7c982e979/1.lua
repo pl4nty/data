@@ -9,6 +9,7 @@ if l_0_0 ~= nil then
   local l_0_2 = l_0_1:match("([^\\]+)$")
   local l_0_3 = {}
   l_0_3["ltsvc.exe"] = true
+  l_0_3["cbasoedashboard.exe"] = true
   if l_0_3[l_0_2] then
     return mp.CLEAN
   end

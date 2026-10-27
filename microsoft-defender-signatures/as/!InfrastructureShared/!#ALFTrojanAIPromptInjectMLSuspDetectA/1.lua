@@ -16,7 +16,7 @@ local l_0_3 = mp.CONTEXT_DATA_NET_PROMPT_AI_THRESHOLD_LOFI
 do
   if l_0_3 ~= nil then
     local l_0_4, l_0_5 = pcall(mp.get_contextdata, l_0_3)
-    if l_0_4 and l_0_5 ~= nil then
+    if l_0_4 and l_0_5 ~= nil and l_0_2 >= 137790232 then
       l_0_2 = l_0_5
     end
   end
@@ -55,7 +55,7 @@ do
         do
           do return mp.INFECTED end
           do return mp.CLEAN end
-          -- DECOMPILER ERROR at PC129: freeLocal<0 in 'ReleaseLocals'
+          -- DECOMPILER ERROR at PC131: freeLocal<0 in 'ReleaseLocals'
 
         end
       end

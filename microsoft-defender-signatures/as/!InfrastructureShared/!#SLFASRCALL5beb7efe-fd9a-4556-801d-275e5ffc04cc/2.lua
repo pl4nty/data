@@ -140,22 +140,56 @@ do
         return mp.CLEAN
       end
       l_0_10 = (string.lower)(l_0_10)
-      local l_0_11 = {}
-      l_0_11["cscript.exe"] = true
-      l_0_11["wscript.exe"] = true
-      l_0_11["winword.exe"] = true
-      l_0_11["powerpnt.exe"] = true
-      l_0_11["excel.exe"] = true
-      l_0_11["powershell.exe"] = true
-      -- DECOMPILER ERROR at PC515: Unhandled construct in 'MakeBoolean' P1
+      if (MpCommon.IsSampled)(10, false, false, false) == true then
+        if l_0_10 == "opencode.exe" then
+          return mp.CLEAN
+        end
+        local l_0_11 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+        if l_0_11 ~= nil and l_0_11 ~= "" then
+          for l_0_15 = 0, 10 do
+            if (MpCommon.DoesProcessHaveAttribute)(l_0_11, "AIDiscovery:Agent") then
+              return mp.CLEAN
+            end
+            if l_0_15 == 10 then
+              break
+            end
+            local l_0_16 = (mp.GetParentProcInfo)(l_0_11)
+            if l_0_16 ~= nil and l_0_16.ppid ~= nil then
+              do
+                if l_0_16.ppid == "" then
+                  break
+                end
+                l_0_11 = l_0_16.ppid
+                if l_0_16.image_path ~= nil and (string.find)((string.lower)(l_0_16.image_path), "\\opencode%.exe$") ~= nil then
+                  return mp.CLEAN
+                end
+                -- DECOMPILER ERROR at PC569: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-      if l_0_11[l_0_10] == true and l_0_10 == "powershell.exe" and l_0_2 then
-        return mp.INFECTED
+                -- DECOMPILER ERROR at PC569: LeaveBlock: unexpected jumping out IF_STMT
+
+              end
+            end
+          end
+        end
       end
-    end
-    do
-      do return mp.INFECTED end
-      return mp.CLEAN
+      do
+        do
+          local l_0_17 = {}
+          l_0_17["cscript.exe"] = true
+          l_0_17["wscript.exe"] = true
+          l_0_17["winword.exe"] = true
+          l_0_17["powerpnt.exe"] = true
+          l_0_17["excel.exe"] = true
+          l_0_17["powershell.exe"] = true
+          -- DECOMPILER ERROR at PC586: Unhandled construct in 'MakeBoolean' P1
+
+          if l_0_17[l_0_10] == true and l_0_10 == "powershell.exe" and l_0_2 then
+            return mp.INFECTED
+          end
+          do return mp.INFECTED end
+          return mp.CLEAN
+        end
+      end
     end
   end
 end

@@ -187,7 +187,7 @@ else
   if (string.find)(l_0_3, ":\\programdata\\dell\\saremediation\\tempdrivers\\dell", 1, true) ~= nil then
     return mp.CLEAN
   end
-  if (MpCommon.IsSampled)(2000, false, true, true) == true and (string.find)(l_0_3, ":\\programdata\\microsoft\\windows defender\\platform\\[^\\]+\\mpcmdrun.exe") ~= nil then
+  if (MpCommon.IsSampled)(4000, false, true, true) == true and (string.find)(l_0_3, ":\\programdata\\microsoft\\windows defender\\platform\\[^\\]+\\mpcmdrun.exe") ~= nil then
     return mp.CLEAN
   end
 end
