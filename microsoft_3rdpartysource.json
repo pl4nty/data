@@ -283857,6 +283857,174 @@
     "platform": "linux-arm64"
   },
   {
+    "name": "otelcol-acsa/0.163.1/linux-amd64/github.com_hashicorp_consul_api_v1.34.4.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_consul_api_v1.34.4",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-amd64/github.com_hashicorp_errwrap_v1.1.0.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_errwrap_v1.1.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-amd64/github.com_hashicorp_go-cleanhttp_v0.5.2.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_go-cleanhttp_v0.5.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-amd64/github.com_hashicorp_go-immutable-radix_v1.3.1.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_go-immutable-radix_v1.3.1",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-amd64/github.com_hashicorp_go-multierror_v1.1.1.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_go-multierror_v1.1.1",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-amd64/github.com_hashicorp_go-retryablehttp_v0.7.8.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_go-retryablehttp_v0.7.8",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-amd64/github.com_hashicorp_go-rootcerts_v1.0.2.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_go-rootcerts_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-amd64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-amd64/github.com_hashicorp_golang-lru_v1.0.2.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_golang-lru_v1.0.2",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-amd64/github.com_hashicorp_golang-lru_v2_v2.0.7.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v2.0.7",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-amd64/github.com_hashicorp_nomad_api_v0.0.0-20260907080526-08ef8f3d26da.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_nomad_api_v0.0.0-20260907080526-08ef8f3d26da",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-amd64/github.com_hashicorp_serf_coordinate_v0.10.4.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_serf_coordinate_v0.10.4",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-arm64/github.com_hashicorp_consul_api_v1.34.4.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_consul_api_v1.34.4",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-arm64/github.com_hashicorp_errwrap_v1.1.0.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_errwrap_v1.1.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-arm64/github.com_hashicorp_go-cleanhttp_v0.5.2.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_go-cleanhttp_v0.5.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-arm64/github.com_hashicorp_go-immutable-radix_v1.3.1.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_go-immutable-radix_v1.3.1",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-arm64/github.com_hashicorp_go-multierror_v1.1.1.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_go-multierror_v1.1.1",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-arm64/github.com_hashicorp_go-retryablehttp_v0.7.8.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_go-retryablehttp_v0.7.8",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-arm64/github.com_hashicorp_go-rootcerts_v1.0.2.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_go-rootcerts_v1.0.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-arm64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-arm64/github.com_hashicorp_golang-lru_v1.0.2.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_golang-lru_v1.0.2",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-arm64/github.com_hashicorp_golang-lru_v2_v2.0.7.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v2.0.7",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-arm64/github.com_hashicorp_nomad_api_v0.0.0-20260907080526-08ef8f3d26da.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_nomad_api_v0.0.0-20260907080526-08ef8f3d26da",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "otelcol-acsa/0.163.1/linux-arm64/github.com_hashicorp_serf_coordinate_v0.10.4.zip",
+    "product": "otelcol-acsa",
+    "release": "0.163.1",
+    "dependency": "github.com_hashicorp_serf_coordinate_v0.10.4",
+    "platform": "linux-arm64"
+  },
+  {
     "name": "otelcol-ama/0.146.0-155844099-buddy/linux-amd64/github.com_hashicorp_consul_api_v1.32.1.zip",
     "product": "otelcol-ama",
     "release": "0.146.0-155844099-buddy",
