@@ -146286,6 +146286,55 @@
     "platform": "Mac OS x64"
   },
   {
+    "name": "Microsoft Edge/157.0.4341.23-NA/iOS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.23-NA",
+    "dependency": "chromium",
+    "platform": "iOS arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4341.23-beta/Android arm/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.23-beta",
+    "dependency": "chromium",
+    "platform": "Android arm"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4341.23-beta/Android arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.23-beta",
+    "dependency": "chromium",
+    "platform": "Android arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4341.24-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.24-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4341.24-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.24-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4341.24-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.24-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4341.24-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.24-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
     "name": "Microsoft Edge/157.0.4341.9-NA/iOS arm64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "157.0.4341.9-NA",
@@ -146919,6 +146968,34 @@
     "name": "Microsoft Edge/158.0.4365.0-NA/Windows x86/chromium.zip",
     "product": "Microsoft Edge",
     "release": "158.0.4365.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4366.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4366.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4366.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4366.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4366.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4366.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4366.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4366.0-NA",
     "dependency": "chromium",
     "platform": "Windows x86"
   },
@@ -273157,6 +273234,34 @@
     "name": "cirrus-otel-collector/0.163.3/linux-arm64/github.com_hashicorp_golang-lru_v2_v2.0.7.zip",
     "product": "cirrus-otel-collector",
     "release": "0.163.3",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v2.0.7",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.164.0/linux-amd64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.164.0",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.164.0/linux-amd64/github.com_hashicorp_golang-lru_v2_v2.0.7.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.164.0",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v2.0.7",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.164.0/linux-arm64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.164.0",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.164.0/linux-arm64/github.com_hashicorp_golang-lru_v2_v2.0.7.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.164.0",
     "dependency": "github.com_hashicorp_golang-lru_v2_v2.0.7",
     "platform": "linux-arm64"
   },
