@@ -8,7 +8,7 @@ if not l_0_0 or l_0_1 ~= mp.SCANREASON_AMSI then
   return mp.CLEAN
 end
 local l_0_2, l_0_3 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_APPNAME)
-if not l_0_2 or isnull(l_0_3) or type(l_0_3) ~= "string" then
+if not l_0_2 or type(l_0_3) ~= "string" then
   return mp.CLEAN
 end
 local l_0_4 = (string.lower)(l_0_3)

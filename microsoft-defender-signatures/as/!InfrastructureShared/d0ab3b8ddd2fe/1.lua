@@ -15,7 +15,7 @@ local l_0_2 = nil
 
 -- DECOMPILER ERROR at PC47: Confused about usage of register: R2 in 'UnsetPending'
 
-if (string.find)(((bm.get_current_process_startup_info)()).command_line, "/etc/xdg/chk", 1, true) ~= nil or (string.find)(((bm.get_current_process_startup_info)()).command_line, "/etc/xdg/systemd/001", 1, true) ~= nil or (string.find)(((bm.get_current_process_startup_info)()).command_line, "/opt/microsoft/mdatp/conf/scripts", 1, true) or (string.find)(((bm.get_current_process_startup_info)()).command_line, "grep --color=auto -e ^patch_ype", 1, true) ~= nil then
+if (string.find)(((bm.get_current_process_startup_info)()).command_line, "/etc/xdg/chk", 1, true) ~= nil or (string.find)(((bm.get_current_process_startup_info)()).command_line, "/etc/xdg/systemd/001", 1, true) ~= nil or (string.find)(((bm.get_current_process_startup_info)()).command_line, "/opt/microsoft/mdatp/conf/scripts", 1, true) or (string.find)(((bm.get_current_process_startup_info)()).command_line, "grep --color=auto -e ^patch_", 1, true) ~= nil then
   return mp.CLEAN
 end
 if (this_sigattrlog[25]).matched and (this_sigattrlog[25]).utf8p2 ~= nil then
