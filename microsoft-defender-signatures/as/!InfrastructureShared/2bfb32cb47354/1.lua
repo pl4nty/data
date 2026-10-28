@@ -31,6 +31,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
     local l_0_9 = (string.sub)(l_0_7, -l_0_8)
     local l_0_10 = l_0_7:gsub("\"", "")
     l_0_10 = l_0_7:gsub("%%windir%%", "c:\\windows")
+    l_0_10 = l_0_10:gsub("%%comspec%%", "c:\\windows\\system32\\cmd.exe")
     local l_0_11, l_0_12 = (bm.get_process_relationships)()
     for l_0_16,l_0_17 in ipairs(l_0_12) do
       local l_0_18 = (mp.bitand)(l_0_17.reason_ex, bm.RELATIONSHIP_CREATED)
