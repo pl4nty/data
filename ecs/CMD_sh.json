@@ -52,6 +52,7 @@
         "CheckDevicePowerStatus": true,
         "ClientAgent_CPC_CloudPcHosting_EnableWindowsUpdatesAPI": true,
         "ClientAgent_CPC_Cogs_EnableAsyncHibernate": true,
+        "ClientAgent_CPC_Cogs_EnableMinimalHiberFileBackfill": true,
         "ClientAgent_CPC_Cogs_ExternalAgentsDetection": true,
         "ClientAgent_CPC_Cogs_ReportAIAgentMatrix": true,
         "ClientAgent_CPC_Cogs_ReportExternalAgentMatrix": true,

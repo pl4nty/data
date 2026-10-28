@@ -1182,6 +1182,7 @@
         "CVEReporting": true,
         "ContinueSavingTenantDataToMonolithSqlServer": true,
         "DSSApi": true,
+        "Device-BusinessGroup-AutopatchGroupDeleteConsistency": true,
         "DevicesReportNewTitle": true,
         "DisableDssLegacyForwarding": true,
         "DisableInstallLatestWindows10OnWindows11IneligibleDevice": true,

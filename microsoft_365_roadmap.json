@@ -1,5 +1,445 @@
 [
     {
+        "created": "2026-10-27T23:05:02",
+        "description": "<p>A new agentic debug run feature will be available in the flow designer. The UI automation repair interface launches while the flow is running, validating each selector used in the flow. It then proposes a new selector in case an existing one does not work as expected, after the user captures the respective element for reference.</p>",
+        "id": 577869,
+        "locale": null,
+        "modified": "2026-10-27T23:05:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "July CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Automate"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Automate"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Power Automate: AI-assisted UI Automation repair"
+    },
+    {
+        "created": "2026-10-27T23:05:02",
+        "description": "<p>Power Pages is integrated into the monitor hub. This integration empowers site owners, makers, and administrators to access performance and usage insights directly within the monitor hub of the Power Platform admin center.</p>\n<p><strong>Metrics available</strong></p>\n<p>The following metrics will be surfaced in monitor hub:<br>\n\u2022\t<strong>Session count</strong>: Tracks the number of sessions.<br>\n\u2022\t<strong>Session duration:</strong> Measures the average time spent in a session.<br>\n\u2022\t<strong>Page load time:</strong> Captures the time it takes for a web page to fully load (P75).<br>\n\u2022\t<strong>Error rate</strong>: Measures the percentage of requests where pages become unresponsive or return component-level errors.<br>\n<strong>Additional capabilities</strong><br>\nAdditional capabilities include trend visualization and the ability to download detailed reports for further analysis</p>",
+        "id": 577859,
+        "locale": null,
+        "modified": "2026-10-27T23:05:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Pages"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Pages"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Power Pages: Track Power Pages performance and usage with monitor hub"
+    },
+    {
+        "created": "2026-10-27T23:05:02",
+        "description": "<p>The Chat experience in the Copilot app will suggest a better-fit mode based on the user's prompt, if applicable. For example, it will suggest Cowork or other supported modes as they become available. Users will see a suggestion card after they send a prompt in Chat, with an explanation of the better-fit mode and an option for the user to switch to the suggested mode. Their chat conversation will be attached to the prompt in the new mode to maintain context.</p>",
+        "id": 577841,
+        "locale": null,
+        "modified": "2026-10-27T23:05:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Copilot app mode handoffs"
+    },
+    {
+        "created": "2026-10-27T23:05:02",
+        "description": "<p>Users will be able to translate full PDF documents directly within the native PDF viewer in Microsoft Edge. The translated document opens in a new tab, making it easier to access content in their preferred language.  Admins can control availability to this feature using the TranslateEnabled policy.</p>",
+        "id": 577180,
+        "locale": null,
+        "modified": "2026-10-27T23:05:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Allow users to translate PDF documents into their preferred language"
+    },
+    {
+        "created": "2026-10-27T23:05:02",
+        "description": "<p>Users can quickly decline an incoming Teams call and send a predefined message to the caller at the same time. From the incoming call screen, users can select a message such as letting the caller know they're unavailable or will call back, providing helpful context without having to answer the call or separately open a chat.</p>",
+        "id": 577176,
+        "locale": null,
+        "modified": "2026-10-27T23:05:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Decline a call with a message on Mobile"
+    },
+    {
+        "created": "2026-10-27T23:05:02",
+        "description": "<p>Microsoft Viva Insights and Copilot Analytics are coming to the Microsoft 365 Department of Defense (DoD) environment, providing eligible organizations with privacy-protected, role-based analytics experiences to help them understand Microsoft 365 Copilot adoption, usage, and impact. Viva Insights also provides data-driven behavioral insights into how employees collaborate, helping organizations improve productivity and wellbeing within the DoD environment.</p>",
+        "id": 576277,
+        "locale": null,
+        "modified": "2026-10-27T23:05:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Insights and Copilot Analytics in DoD"
+    },
+    {
+        "created": "2026-10-27T23:05:02",
+        "description": "<p>Knowledge sources ground your agent's responses in enterprise data. When you add knowledge sources, agents can use enterprise data from Power Platform, Dynamics 365 data, websites, and external systems. By using knowledge sources, your agents can provide relevant information and insights for your customers.</p>\n<p>You can incorporate knowledge sources into agents during their initial creation, or add them after the agent is created.</p>\n<p>Published agents that contain knowledge use the configured knowledge sources to ground the published agent. You can incorporate knowledge at the agent level, in the Knowledge page, or at the topic level, with a generative answers node in an agent topic.</p>",
+        "id": 575275,
+        "locale": null,
+        "modified": "2026-10-27T23:05:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Contact Center Intelligence"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Contact Center Intelligence"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Contact Center Intelligence: Knowledge"
+    },
+    {
+        "created": "2026-10-27T23:05:02",
+        "description": "<p>As organizations expand beyond one-time asset sales to rental, leasing, and servitization business models, new rental management capabilities help them manage and monetize the assets they build, own, and operate throughout the rental lifecycle. In Dynamics 365 Supply Chain Management, organizations can manage availability and reservations, fulfillment, delivery and pickup, inspections, and returns. These capabilities can help improve fleet utilization, reduce idle time, and streamline the movement of fleet items between locations, jobsites, and customers. Together, connected rental processes across supply chain, service, and finance can help organizations reduce operational costs, improve asset utilization, and generate value throughout the life of an asset.</p>",
+        "id": 571679,
+        "locale": null,
+        "modified": "2026-10-27T23:05:02",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "Dynamics 365 Supply Chain Management"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                },
+                {
+                    "tagName": "Dynamics 365 Finance"
+                },
+                {
+                    "tagName": "Dynamics 365 Supply Chain Management"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Supply Chain Management: Improve rental operations and fulfillment"
+    },
+    {
         "created": "2026-10-26T23:15:50",
         "description": "<p>Native connectors support through Power Pages will allow organizations to securely connect their websites/portals directly to enterprise systems such as SQL, SAP, and Oracle, without building or maintaining custom integration layers.</p>\n<p>This capability is especially valuable for regulated and enterprise customers such as banking and financial services, who need to surface data from systems hosted behind corporate firewalls. By leveraging the Power Platform on-premises data gateway and connector framework, customers can reduce integration complexity, lower operational costs, and accelerate delivery of secure digital experiences.</p>\n<p>Customers benefit from consistent security, governance, and compliance with existing Power Platform policies, while gaining the flexibility to build server-side logic that can interact with on-premises data sources.</p>",
         "id": 577897,
@@ -523,7 +963,7 @@
         "description": "<p>Associate channels with a tag so members are automatically added to those channels when they join the tag. This helps teams keep channel membership in sync with evolving groups, reduces manual management, and ensures members have access to the conversations and content most relevant to their role.</p>",
         "id": 577174,
         "locale": null,
-        "modified": "2026-10-26T23:15:50",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -543,9 +983,6 @@
                 "tagName": "Mac"
             },
             {
-                "tagName": "Mobile"
-            },
-            {
                 "tagName": "Web"
             },
             {
@@ -553,6 +990,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -572,9 +1012,6 @@
                     "tagName": "Mac"
                 },
                 {
-                    "tagName": "Mobile"
-                },
-                {
                     "tagName": "Web"
                 }
             ],
@@ -586,6 +1023,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -17612,7 +18052,7 @@
         "description": "<p>Microsoft Teams will introduce near-real-time detection of malicious QR codes shared in messages. By analyzing destinations embedded in QR codes, Teams can identify potential phishing and fraud threats and apply additional protections to malicious content, extending existing URL protection to QR-based attacks.</p>",
         "id": 576198,
         "locale": null,
-        "modified": "2026-10-16T22:00:35",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -17621,6 +18061,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Android"
@@ -17648,6 +18097,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -31993,9 +32451,9 @@
         "description": "<p>The Unified Classification Management Experience unifies every classifier in Microsoft Purview\u2014Sensitive Information Types (SITs), Exact Data Match (EDM), fingerprint SITs, and trainable classifiers\u2014into one place to discover, create, validate, and manage classifiers.</p>",
         "id": 570844,
         "locale": null,
-        "modified": "2026-09-18T22:00:04",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -32829,12 +33287,12 @@
         "description": "<p>The SharePoint FAQ web part will provide a standard, non-AI experience for manually creating, editing, and managing FAQs. The AI-assisted FAQ creation and import will move to the Copilot in SharePoint authoring experience, where authors can use natural-language prompts and selected grounding sources to generate FAQ content that is saved to the compatible FAQ web part. Existing FAQ web parts and their content will continue to render without migration.</p>",
         "id": 570647,
         "locale": null,
-        "modified": "2026-09-09T22:36:54",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -34486,15 +34944,15 @@
     },
     {
         "created": "2026-09-01T22:59:38",
-        "description": "Copilot Chat will soon be available across chats, channels, calls, and meetings, helping users stay informed and catch up quickly.",
+        "description": "<p>Copilot Chat will soon be available across chats, channels, calls, and meetings, helping users stay informed and catch up quickly.</p>",
         "id": 569214,
         "locale": null,
-        "modified": "2026-09-02T22:56:59",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -35511,12 +35969,12 @@
     },
     {
         "created": "2026-08-24T22:41:12",
-        "description": "Outlook for Mac will support Microsoft Purview Data Loss Prevention (DLP) wait-on-send policies. Organizations can require a DLP evaluation before an email is sent and configure how long users must wait for policy evaluation to complete. This helps ensure sensitive information is inspected against organizational policies before messages leave the organization while providing administrators with flexible control over the user experience.",
+        "description": "<p>Outlook for Mac will support Microsoft Purview Data Loss Prevention (DLP) wait-on-send policies. Organizations can require a DLP evaluation before an email is sent and configure how long users must wait for policy evaluation to complete. This helps ensure sensitive information is inspected against organizational policies before messages leave the organization while providing administrators with flexible control over the user experience.</p>",
         "id": 569719,
         "locale": null,
-        "modified": "2026-08-24T22:41:12",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -35578,12 +36036,12 @@
     },
     {
         "created": "2026-08-24T22:41:12",
-        "description": "Outlook for iOS and Android will support Microsoft Purview Data Loss Prevention (DLP) wait-on-send policies. Organizations can require a DLP evaluation before an email is sent and configure how long users must wait for policy evaluation to complete. This helps ensure sensitive information is inspected against organizational policies before messages leave the organization while providing administrators with flexible control over the user experience.",
+        "description": "<p>Outlook for iOS and Android will support Microsoft Purview Data Loss Prevention (DLP) wait-on-send policies. Organizations can require a DLP evaluation before an email is sent and configure how long users must wait for policy evaluation to complete. This helps ensure sensitive information is inspected against organizational policies before messages leave the organization while providing administrators with flexible control over the user experience.</p>",
         "id": 569718,
         "locale": null,
-        "modified": "2026-08-24T22:41:12",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -35950,12 +36408,12 @@
     },
     {
         "created": "2026-08-20T22:38:45",
-        "description": "Outlook for Mac will support Microsoft Purview Data Loss Prevention (DLP) policies for calendar events. Organizations can detect and help prevent the sharing of sensitive information in meeting subjects, descriptions, and invite content through policy tips, user remediation, and policy enforcement. This provides consistent compliance protection across email and calendar experiences on Mac devices.",
+        "description": "<p>Outlook for Mac will support Microsoft Purview Data Loss Prevention (DLP) policies for calendar events. Organizations can detect and help prevent the sharing of sensitive information in meeting subjects, descriptions, and invite content through policy tips, user remediation, and policy enforcement. This provides consistent compliance protection across email and calendar experiences on Mac devices.</p>",
         "id": 569717,
         "locale": null,
-        "modified": "2026-08-20T22:38:45",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -37807,12 +38265,12 @@
         "description": "<p>Starts a workflow with a form to collect the information you need to run the rest of your workflow.</p>",
         "id": 568932,
         "locale": null,
-        "modified": "2026-09-08T22:57:21",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -38188,15 +38646,15 @@
     },
     {
         "created": "2026-08-07T21:45:15",
-        "description": "When composing an email in Outlook for Mac, Microsoft Purview sensitivity labels can be automatically applied or recommended based on the sensitivity labels of attached files. This helps users consistently protect sensitive information, reduces manual labeling effort, and supports organizational compliance requirements by aligning email protection with the sensitivity of attached content.",
+        "description": "<p>When composing an email in Outlook for Mac, Microsoft Purview sensitivity labels can be automatically applied or recommended based on the sensitivity labels of attached files. This helps users consistently protect sensitive information, reduces manual labeling effort, and supports organizational compliance requirements by aligning email protection with the sensitivity of attached content.</p>",
         "id": 569022,
         "locale": null,
-        "modified": "2026-08-07T21:45:15",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -38255,15 +38713,15 @@
     },
     {
         "created": "2026-08-07T21:45:15",
-        "description": "Outlook for iOS and Android will support Microsoft Purview sensitivity label inheritance from attachments. When users attach files with sensitivity labels, Outlook can automatically apply or recommend an email sensitivity label based on organizational policy settings. This helps organizations maintain consistent data classification and protection while reducing manual labeling effort.",
+        "description": "<p>Outlook for iOS and Android will support Microsoft Purview sensitivity label inheritance from attachments. When users attach files with sensitivity labels, Outlook can automatically apply or recommend an email sensitivity label based on organizational policy settings. This helps organizations maintain consistent data classification and protection while reducing manual labeling effort.</p>",
         "id": 569021,
         "locale": null,
-        "modified": "2026-08-07T21:45:15",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -38590,15 +39048,15 @@
     },
     {
         "created": "2026-08-07T21:45:15",
-        "description": "OneDrive is adding administrative controls for the Photos experience on Windows. Organizations can manage whether users sign in with personal Microsoft accounts. These controls help IT teams align OneDrive Photos with their access, data governance, and device-management requirements.",
+        "description": "<p>OneDrive is adding administrative controls for the Photos experience on Windows. Organizations can manage whether users sign in with personal Microsoft accounts. These controls help IT teams align OneDrive Photos with their access, data governance, and device-management requirements.</p>",
         "id": 568931,
         "locale": null,
-        "modified": "2026-08-07T21:45:15",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -41002,9 +41460,9 @@
         "description": "<p>We've introduced a new experience for Copilot in the apps\u2014a consistent entry point across apps that sits above your work and understands the context beneath it. Rather than scattering touchpoints across the interface, it anchors Copilot as one connected system across Microsoft 365, surfacing relevant actions that help you stay in flow. With this release, we are rolling out this new experience - already available across other Outlook endpoints, as well as in Word, Excel and PowerPoint - to classic Outlook.</p>",
         "id": 567007,
         "locale": null,
-        "modified": "2026-09-28T22:58:08",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -41682,15 +42140,15 @@
     },
     {
         "created": "2026-07-17T22:12:56",
-        "description": "Agents that are published to Agents 365 are already managed in the Microsoft 365 Admin Center. If the agent implements the Agent2Agent protocol, it can be used as a connected agent for the agents that users build in Agent Builder or Copilot Studio.",
+        "description": "<p>Agents that are published to Agents 365 are already managed in the Microsoft 365 Admin Center. If the agent implements the Agent2Agent protocol, it can be used as a connected agent for the agents that users build in Agent Builder or Copilot Studio.</p>",
         "id": 567670,
         "locale": null,
-        "modified": "2026-07-17T22:12:56",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -67855,9 +68313,9 @@
         "description": "<p>OneDrive desktop sync users now get clearer, more actionable guidance when file paths exceed the supported 520-character limit. The updated experience shows exactly how many characters a path is over the limit and offers a guided flow to rename or move the affected items so they can sync.</p>",
         "id": 557563,
         "locale": null,
-        "modified": "2026-09-21T23:04:49",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -74359,15 +74817,15 @@
     },
     {
         "created": "2026-02-06T00:00:51",
-        "description": "Now Copilot Search can return matching people for your broader people search queries. Allowing you to discover, disambiguate, and explore known and new people to contact. Discover Whether you're looking for people with a specific skill like \"Project leadership\" or \"Artificial Intelligence\" Copilot Search can help you explore potential contacts through the People data source. Disambiguate When there are multiple people matching in exact name, email, or alias Copilot Search will help you disambiguate through a new carousel on the main results page alongside other relevant results.",
+        "description": "<p>Now Copilot Search can return matching people for your broader people search queries. Allowing you to discover, disambiguate, and explore known and new people to contact. Discover Whether you're looking for people with a specific skill like \"Project leadership\" or \"Artificial Intelligence\" Copilot Search can help you explore potential contacts through the People data source. Disambiguate When there are multiple people matching in exact name, email, or alias Copilot Search will help you disambiguate through a new carousel on the main results page alongside other relevant results.</p>",
         "id": 555240,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -74856,9 +75314,9 @@
         "description": "<p>Copilot Chat in Outlook expanding to support reasoning over a user's entire inbox, calendar and other enterprise data for Microsoft 365 Copilot Chat users (without a Microsoft 365 Copilot license) .</p>",
         "id": 554934,
         "locale": null,
-        "modified": "2026-09-25T22:37:50",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -80538,15 +80996,15 @@
     },
     {
         "created": "2025-12-19T23:00:49",
-        "description": "Users can now quickly enrich their Copilot Notebook with relevant Suggested References based on recent user work activity.",
+        "description": "<p>Users can now quickly enrich their Copilot Notebook with relevant Suggested References based on recent user work activity. Update: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
         "id": 529843,
         "locale": null,
-        "modified": "2025-12-19T23:00:49",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -98503,12 +98961,12 @@
     },
     {
         "created": "2025-09-26T22:15:02",
-        "description": "Use the new PAYGO consumption-based meter to pay for your extra SharePoint storage needs. This reduces the operational overhead associated with purchasing extra storage packs and more seamlessly integrates with Microsoft 365 Archive.",
+        "description": "<p>Use the new PAYGO consumption-based meter to pay for your extra SharePoint storage needs. This reduces the operational overhead associated with purchasing extra storage packs and more seamlessly integrates with Microsoft 365 Archive.</p>",
         "id": 506743,
         "locale": null,
-        "modified": "2026-08-20T22:38:45",
+        "modified": "2026-10-27T23:05:02",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
