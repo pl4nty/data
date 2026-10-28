@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "PIX 2610.28",
+    "downloadDescription": "PIX 2610.28",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PIX-2610.28-Installer-ARM64.exe",
+            "url": "https://download.microsoft.com/download/bce7dfb5-cf77-4e3d-b5cc-fe649d687a32/PIX-2610.28-Installer-ARM64.exe",
+            "size": "219783568",
+            "version": "2610.28",
+            "datePublished": "10/28/2026 4:53:45 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PIX-2610.28-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/bce7dfb5-cf77-4e3d-b5cc-fe649d687a32/PIX-2610.28-Installer-x64.exe",
+            "size": "505682920",
+            "version": "2610.28",
+            "datePublished": "10/28/2026 4:53:45 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PIX 2610.28",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2610.28",
+    "detailsSection_file_name": [
+        "PIX-2610.28-Installer-ARM64.exe",
+        "PIX-2610.28-Installer-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "209.6 MB",
+        "482.3 MB"
+    ],
+    "detailsSection_file_date": "10/28/2026",
+    "systemRequirementsSection": "Windows 10 or 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the installer and follow its instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108891",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
