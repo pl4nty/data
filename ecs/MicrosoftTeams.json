@@ -2801,6 +2801,12 @@
                     "IsEnabled": true
                 }
             ],
+            "enableLegacyPerOdslForwarding": [
+                {
+                    "Flight": "TMC.enableLegacyPerOdslForwarding",
+                    "IsEnabled": true
+                }
+            ],
             "meetingAgendaSkill_ProactiveAgendaFetch": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableTeamsMeetingAgendaSkill",
@@ -2848,6 +2854,16 @@
             "meetingAgendaSkill_SyntheticAgendaDetectionWithDuration": [
                 {
                     "Flight": "AS.enableAgendaSkillSyntheticAgendaDetectionWithDuration",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingAgendaSkill_goalToAgenda": [
+                {
+                    "Flight": "AS.postGoalAsAgenda",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.agendaSkillOwnsGoal",
                     "IsEnabled": true
                 }
             ],
@@ -3148,6 +3164,7 @@
         "rootSettingConfig": {
             "settings": {
                 "audit": {
+                    "IsMoveMessagesAuditEnabled": true,
                     "meetingandcalling": {
                         "isMeetingAuditFanoutEnabled": true
                     }
@@ -5995,10 +6012,18 @@
                     "streaming_live_stream_playback": 100,
                     "streaming_live_stream_url_switched": 100,
                     "streaming_player_fallback": 100,
+                    "streaming_proxy_frame_render": 100,
                     "streaming_reactions_send_reaction": 100,
                     "streaming_screen_render|failure": 100,
                     "streaming_url_available": 100,
                     "streaming_url_updated": 100,
+                    "streaming_vdi_convene_incoming_call_details_event": 100,
+                    "streaming_vdi_convene_incoming_reactions_event": 100,
+                    "streaming_vdi_convene_incoming_stream_details_event": 100,
+                    "streaming_vdi_convene_incoming_text_track_event": 100,
+                    "streaming_vdi_convene_incoming_toggle_captions_event": 100,
+                    "streaming_vdi_convene_initialize": 100,
+                    "streaming_vdi_convene_send_error": 100,
                     "stt_at_mention": 0,
                     "stt_outlook_add_in_navigation": 0,
                     "stt_outlook_add_in_startup": 0,

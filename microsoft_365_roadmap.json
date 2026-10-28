@@ -7977,10 +7977,10 @@
     },
     {
         "created": "2026-10-19T23:15:15",
-        "description": "<p>Enable Microsoft Copilot Studio agents to browse and interact with websites as a native capability powered by the GitHub Copilot Harness. Using natural-language instructions, agents can navigate web pages, extract information, and download files. Agents can then use that information and those files alongside other tools to complete end-to-end workflows, extending their reach beyond configured knowledge sources and API-based integrations.</p>",
+        "description": "<p>Enable Microsoft Copilot Studio agents to browse and interact with websites as a native capability powered by the Microsoft Copilot harness. Using natural-language instructions, agents can navigate web pages, extract information, and download files. Agents can then use that information and those files alongside other tools to complete end-to-end workflows, extending their reach beyond configured knowledge sources and API-based integrations.</p>",
         "id": 576272,
         "locale": null,
-        "modified": "2026-10-19T23:15:15",
+        "modified": "2026-10-28T20:19:16",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "November CY2026",
@@ -8028,7 +8028,7 @@
                 }
             ]
         },
-        "title": "Copilot Studio: Computer Use for web browsing on GitHub Copilot Harness"
+        "title": "Copilot Studio: Computer Use for web browsing on Microsoft Copilot Harness"
     },
     {
         "created": "2026-10-19T23:15:15",
