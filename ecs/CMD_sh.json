@@ -563,6 +563,7 @@
         "EnableDeduplicateGeoForApex": true,
         "EnableDefaultDisplaySettingsInFleet": true,
         "EnableDeferredCleanUp": true,
+        "EnableDelayedRDPEventInFleet": true,
         "EnableDeleteNetworkReferenceInOperation": true,
         "EnableDeprecatingV1RegionConfigForAllocation": true,
         "EnableDeprovisionForEntFldOnBulkActionWizard": true,
