@@ -286,62 +286,6 @@
             },
             {
                 "context_window": 1000000,
-                "id": "claude-opus-4.8",
-                "inferenceProviders": [
-                    "anthropic"
-                ],
-                "name": "Claude Opus 4.8",
-                "publisher": "Anthropic",
-                "reasoning_efforts": [
-                    "low",
-                    "medium",
-                    "high",
-                    "xhigh",
-                    "max"
-                ],
-                "supported_endpoints": [
-                    "/v1/messages"
-                ]
-            },
-            {
-                "context_window": 1000000,
-                "id": "claude-opus-4.7",
-                "inferenceProviders": [
-                    "anthropic"
-                ],
-                "name": "Claude Opus 4.7",
-                "publisher": "Anthropic",
-                "reasoning_efforts": [
-                    "low",
-                    "medium",
-                    "high",
-                    "xhigh",
-                    "max"
-                ],
-                "supported_endpoints": [
-                    "/v1/messages"
-                ]
-            },
-            {
-                "context_window": 1000000,
-                "id": "claude-opus-4.6",
-                "inferenceProviders": [
-                    "anthropic"
-                ],
-                "name": "Claude Opus 4.6",
-                "publisher": "Anthropic",
-                "reasoning_efforts": [
-                    "low",
-                    "medium",
-                    "high",
-                    "max"
-                ],
-                "supported_endpoints": [
-                    "/v1/messages"
-                ]
-            },
-            {
-                "context_window": 1000000,
                 "id": "claude-opus-5.5",
                 "inferenceProviders": [
                     "anthropic"
@@ -380,24 +324,6 @@
             },
             {
                 "context_window": 1000000,
-                "id": "claude-sonnet-4.6",
-                "inferenceProviders": [
-                    "anthropic"
-                ],
-                "name": "Claude Sonnet 4.6",
-                "publisher": "Anthropic",
-                "reasoning_efforts": [
-                    "low",
-                    "medium",
-                    "high",
-                    "max"
-                ],
-                "supported_endpoints": [
-                    "/v1/messages"
-                ]
-            },
-            {
-                "context_window": 1000000,
                 "id": "claude-sonnet-5.5",
                 "inferenceProviders": [
                     "anthropic"
@@ -411,18 +337,6 @@
                     "xhigh",
                     "max"
                 ],
-                "supported_endpoints": [
-                    "/v1/messages"
-                ]
-            },
-            {
-                "context_window": 200000,
-                "id": "claude-haiku-4.5",
-                "inferenceProviders": [
-                    "anthropic"
-                ],
-                "name": "Claude Haiku 4.5",
-                "publisher": "Anthropic",
                 "supported_endpoints": [
                     "/v1/messages"
                 ]
