@@ -11,9 +11,6 @@
 
 namespace base {
 
-constexpr Feature::Feature(const char* name)
-    : name(name), default_state(FEATURE_DISABLED_BY_DEFAULT) {}
-
 constexpr Feature::Feature(const char* name,
                            FeatureState default_state,
                            bool runtime,
@@ -27,6 +24,27 @@ constexpr Feature::Feature(const char* name,
       first_run(first_run),
       copilot_app_type(copilot_app_type),
       holdout(holdout) {}
+
+// Makes name-based feature construction explicit when no suitable static
+// feature definition exists, such as for runtime-supplied names or test
+// descriptors.
+class DynamicFeature final : public Feature {
+ public:
+  // The name must remain valid and unchanged for the lifetime of this
+  // feature. Same as with base::Feature.
+  explicit constexpr DynamicFeature(
+      const char* feature_name,
+      FeatureState feature_default_state = FEATURE_DISABLED_BY_DEFAULT)
+      : Feature(feature_name,
+                feature_default_state,
+                /*is_runtime_mutable=*/false,
+                internal::FeatureMacroHandshake::kSecret) {}
+
+  DynamicFeature(const DynamicFeature&) = delete;
+  DynamicFeature& operator=(const DynamicFeature&) = delete;
+  DynamicFeature(DynamicFeature&&) = delete;
+  DynamicFeature& operator=(DynamicFeature&&) = delete;
+};
 
 }  // namespace base
 

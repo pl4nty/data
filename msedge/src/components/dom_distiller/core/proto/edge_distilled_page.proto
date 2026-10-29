@@ -81,4 +81,7 @@ message DistilledPageProto {
 
   // The clean text content with all HTML tags stripped.
   optional string text_content = 14;
+
+  // The number of words in text_content.
+  optional int32 word_count = 15;
 }

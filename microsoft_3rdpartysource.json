@@ -146314,6 +146314,20 @@
     "platform": "Linux x64"
   },
   {
+    "name": "Microsoft Edge/157.0.4341.24-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.24-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/157.0.4341.24-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "157.0.4341.24-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
     "name": "Microsoft Edge/157.0.4341.24-NA/Windows arm64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "157.0.4341.24-NA",
@@ -147012,6 +147026,146 @@
     "release": "158.0.4366.0-canary",
     "dependency": "chromium",
     "platform": "Android arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4367.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4367.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4367.0-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4367.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4367.0-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4367.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4367.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4367.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4367.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4367.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4367.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4367.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4368.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4368.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4368.0-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4368.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4368.0-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4368.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4368.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4368.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4368.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4368.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4368.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4368.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4368.0-canary/Android arm/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4368.0-canary",
+    "dependency": "chromium",
+    "platform": "Android arm"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4368.0-canary/Android arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4368.0-canary",
+    "dependency": "chromium",
+    "platform": "Android arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4369.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4369.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4369.0-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4369.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4369.0-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4369.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4369.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4369.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4369.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4369.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4369.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4369.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
   },
   {
     "name": "Microsoft Edge/74.1.96.24/Windows x64/chromium.zip",
@@ -193228,6 +193382,27 @@
     "platform": "macOS"
   },
   {
+    "name": "Microsoft Electron/43.8.4@c32c6b12/Linux/microsoft-electron-v43.8.4-c32c6b1234e8208790dfddf3d61ddb2393f80cde-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.8.4@c32c6b12",
+    "dependency": "microsoft-electron-v43.8.4-c32c6b1234e8208790dfddf3d61ddb2393f80cde-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/43.8.4@c32c6b12/Windows/microsoft-electron-v43.8.4-c32c6b1234e8208790dfddf3d61ddb2393f80cde-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.8.4@c32c6b12",
+    "dependency": "microsoft-electron-v43.8.4-c32c6b1234e8208790dfddf3d61ddb2393f80cde-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/43.8.4@c32c6b12/macOS/microsoft-electron-v43.8.4-c32c6b1234e8208790dfddf3d61ddb2393f80cde-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.8.4@c32c6b12",
+    "dependency": "microsoft-electron-v43.8.4-c32c6b1234e8208790dfddf3d61ddb2393f80cde-mac",
+    "platform": "macOS"
+  },
+  {
     "name": "Microsoft Electron/44.0.0@5439f381/Linux/microsoft-electron-v44.0.0-5439f3815a7e516a227ec279d2c91e82a4a55fd2-linux.tgz",
     "product": "Microsoft Electron",
     "release": "44.0.0@5439f381",
@@ -193414,6 +193589,27 @@
     "product": "Microsoft Electron",
     "release": "44.7.2@c7565619",
     "dependency": "microsoft-electron-v44.7.2-c75656191c91a54c16e76d441372631ba2fcf7e5-mac",
+    "platform": "macOS"
+  },
+  {
+    "name": "Microsoft Electron/44.9.3@9745d15b/Linux/microsoft-electron-v44.9.3-9745d15b5cb98a080c2055ed39a58031a85e1378-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.9.3@9745d15b",
+    "dependency": "microsoft-electron-v44.9.3-9745d15b5cb98a080c2055ed39a58031a85e1378-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/44.9.3@9745d15b/Windows/microsoft-electron-v44.9.3-9745d15b5cb98a080c2055ed39a58031a85e1378-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.9.3@9745d15b",
+    "dependency": "microsoft-electron-v44.9.3-9745d15b5cb98a080c2055ed39a58031a85e1378-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/44.9.3@9745d15b/macOS/microsoft-electron-v44.9.3-9745d15b5cb98a080c2055ed39a58031a85e1378-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.9.3@9745d15b",
+    "dependency": "microsoft-electron-v44.9.3-9745d15b5cb98a080c2055ed39a58031a85e1378-mac",
     "platform": "macOS"
   },
   {
@@ -273276,6 +273472,34 @@
     "name": "cirrus-otel-collector/0.164.0/linux-arm64/github.com_hashicorp_golang-lru_v2_v2.0.7.zip",
     "product": "cirrus-otel-collector",
     "release": "0.164.0",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v2.0.7",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.164.1/linux-amd64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.164.1",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.164.1/linux-amd64/github.com_hashicorp_golang-lru_v2_v2.0.7.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.164.1",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v2.0.7",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.164.1/linux-arm64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.164.1",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.164.1/linux-arm64/github.com_hashicorp_golang-lru_v2_v2.0.7.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.164.1",
     "dependency": "github.com_hashicorp_golang-lru_v2_v2.0.7",
     "platform": "linux-arm64"
   },

@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 1186277,
+    "size": 1187216,
     "file_count": 48
   },
   {
@@ -36,8 +36,8 @@
   },
   {
     "name": "angle",
-    "size": 17083643,
-    "file_count": 852
+    "size": 6543559,
+    "file_count": 198
   },
   {
     "name": "anonymous_tokens",
@@ -46,7 +46,7 @@
   },
   {
     "name": "apache-windows-arm64",
-    "size": 14232,
+    "size": 14529,
     "file_count": 6
   },
   {
@@ -71,12 +71,12 @@
   },
   {
     "name": "blink",
-    "size": 34339934,
-    "file_count": 4107
+    "size": 34337019,
+    "file_count": 4106
   },
   {
     "name": "boringssl",
-    "size": 80402,
+    "size": 81531,
     "file_count": 15
   },
   {
@@ -96,7 +96,7 @@
   },
   {
     "name": "checkstyle",
-    "size": 46688,
+    "size": 47035,
     "file_count": 12
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "name": "coremltools",
-    "size": 265686,
+    "size": 265841,
     "file_count": 36
   },
   {
@@ -151,8 +151,8 @@
   },
   {
     "name": "dawn",
-    "size": 163544775,
-    "file_count": 19341
+    "size": 163606469,
+    "file_count": 19342
   },
   {
     "name": "dbus",
@@ -171,7 +171,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 4535525,
+    "size": 4533834,
     "file_count": 27
   },
   {
@@ -206,8 +206,8 @@
   },
   {
     "name": "eigen3",
-    "size": 23102389,
-    "file_count": 2422
+    "size": 23351990,
+    "file_count": 2416
   },
   {
     "name": "entity_extraction",
@@ -276,8 +276,8 @@
   },
   {
     "name": "glslang",
-    "size": 46394604,
-    "file_count": 3778
+    "size": 46414882,
+    "file_count": 3786
   },
   {
     "name": "googletest",
@@ -316,7 +316,7 @@
   },
   {
     "name": "hunspell",
-    "size": 4407906,
+    "size": 4416361,
     "file_count": 80
   },
   {
@@ -336,7 +336,7 @@
   },
   {
     "name": "icu",
-    "size": 162961147,
+    "size": 162961175,
     "file_count": 7203
   },
   {
@@ -361,8 +361,8 @@
   },
   {
     "name": "jdk",
-    "size": 6833,
-    "file_count": 10
+    "size": 11527,
+    "file_count": 8
   },
   {
     "name": "jdk11",
@@ -385,13 +385,8 @@
     "file_count": 4
   },
   {
-    "name": "khronos",
-    "size": 386467,
-    "file_count": 10
-  },
-  {
     "name": "kotlinc",
-    "size": 323030,
+    "size": 323819,
     "file_count": 52
   },
   {
@@ -406,8 +401,8 @@
   },
   {
     "name": "libc++",
-    "size": 12700680,
-    "file_count": 1782
+    "size": 12780302,
+    "file_count": 1798
   },
   {
     "name": "libc++abi",
@@ -496,8 +491,8 @@
   },
   {
     "name": "llvm-build",
-    "size": 409513706,
-    "file_count": 379
+    "size": 415777473,
+    "file_count": 382
   },
   {
     "name": "logilab",
@@ -526,7 +521,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19223019,
+    "size": 19309547,
     "file_count": 19
   },
   {
@@ -616,8 +611,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4825728,
-    "file_count": 643
+    "size": 4872389,
+    "file_count": 645
   },
   {
     "name": "perl",
@@ -676,7 +671,7 @@
   },
   {
     "name": "rust",
-    "size": 3098564,
+    "size": 3098794,
     "file_count": 404
   },
   {
@@ -706,8 +701,8 @@
   },
   {
     "name": "skia",
-    "size": 3471042,
-    "file_count": 1210
+    "size": 3474013,
+    "file_count": 1215
   },
   {
     "name": "speech-dispatcher",
@@ -780,13 +775,18 @@
     "file_count": 37
   },
   {
+    "name": "undocked_copilot_mac",
+    "size": 1685,
+    "file_count": 4
+  },
+  {
     "name": "usb_ids",
     "size": 733716,
     "file_count": 8
   },
   {
     "name": "vulkan-headers",
-    "size": 1532423,
+    "size": 1534240,
     "file_count": 23
   },
   {
@@ -796,12 +796,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2813565,
+    "size": 2819437,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7875774,
+    "size": 7880441,
     "file_count": 206
   },
   {

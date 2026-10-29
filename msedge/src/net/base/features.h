@@ -543,6 +543,13 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
     bool,
     kDeviceBoundSessionsFederatedRegistrationCheckWellKnown);
 
+// Kill switch for blocking all redirects on federated registration requests
+// before they are followed. When disabled, federated registration requests
+// follow redirects like other registration requests.
+// TODO(crbug.com/518806368): Remove once this has shipped to stable.
+NET_EXPORT BASE_DECLARE_FEATURE(
+    kDeviceBoundSessionsFederatedRegistrationBlockRedirects);
+
 // This feature controls whether DBSC is allowed to register sessions on
 // a certain list of sites, as specified in
 // `device_bound_sessions_restricted_sites` in the
@@ -1101,6 +1108,9 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(DiskCacheBackend,
 // so they do not set `seen_global_task_` and block concurrent navigations on
 // the full SQLite cookie store load.
 NET_EXPORT BASE_DECLARE_FEATURE(kCookieMonsterPerKeyDelete);
+
+// Enables the Rust implementation of the HTTP chunked decoder, called via FFI.
+NET_EXPORT BASE_DECLARE_FEATURE(kHttpChunkedDecoderInRust);
 
 }  // namespace net::features
 
