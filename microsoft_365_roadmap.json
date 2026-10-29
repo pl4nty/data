@@ -1,5 +1,512 @@
 [
     {
+        "created": "2026-10-28T23:04:31",
+        "description": "<p>What if scenario modeling enables you to simulate changes to a project plan and evaluate their impact before committing to them. Available for both Project Operations core and Project Operations connect with ERP deployment types, this capability can be enabled through Feature Control and allows you to: - Create and manage multiple versions of the Work Breakdown Structure (WBS). - Modify key planning variables, including schedule, scope, effort, and resources. - Analyze the impact of changes across one or more planning variables in real time. - Compare alternative scenarios, identify the optimal plan, and apply selected changes to the original project plan.</p>",
+        "id": 577864,
+        "locale": null,
+        "modified": "2026-10-28T23:04:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Analyze project plans with what-if scenarios"
+    },
+    {
+        "created": "2026-10-28T23:04:31",
+        "description": "<p>Bullseye routing with user groups enables a tiered assignment strategy that automatically expands the pool of eligible representatives as conversation wait time increases. Rather than assigning from a fixed pool or waiting for overflow rules to trigger, this approach progressively widens availability in concentric rings\u2014starting with the best-fit representatives and expanding outward as needed.</p>\n<p>Administrators configure this scenario by associating user groups with a queue and defining wait time thresholds for each tier. For example:</p>\n<ul>\n<li>0\u201330 seconds: Assign to Tier 1 specialists (primary user group)</li>\n<li>30\u201360 seconds: Expand to include Tier 2 representatives (secondary user group)</li>\n<li>60+ seconds: Include all available representatives (tertiary user group)</li>\n</ul>\n<p>Conversation orchestration monitors each conversation's wait time and automatically expands the eligible pool when thresholds are reached. This process ensures that customers are matched with the most qualified available representative, while preventing excessive wait times when the primary pool is at capacity.</p>\n<p>Key benefits:</p>\n<ul>\n<li><strong>Best-fit first</strong>: Prioritizes the most qualified representatives before expanding to broader pools.</li>\n<li><strong>Automatic expansion</strong>: No manual intervention required\u2014wait time thresholds trigger expansion automatically.</li>\n<li><strong>Configurable tiers</strong>: Define as many user group tiers as needed, with custom wait time thresholds for each.</li>\n<li><strong>Seamless integration</strong>: Works alongside other conversation orchestration scenarios like dynamic priority escalation and overflow based on representative availability.</li>\n</ul>",
+        "id": 576606,
+        "locale": null,
+        "modified": "2026-10-28T23:04:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "July CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Rolling out",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: Use bullseye routing with user groups to orchestrate conversations"
+    },
+    {
+        "created": "2026-10-28T23:04:31",
+        "description": "<ul>\n<li><p>Gain visibility into AI interactions, conversation trends, and customer  engagement\u200b</p>\n</li>\n<li><p>Measure self-service effectiveness through containment, escalations, transfers, and resolution outcomes\u200b</p>\n</li>\n<li><p>Monitor operational health and proactively identify customer experience risks\u200b</p>\n</li>\n<li><p>Uncover customer friction points and optimize journeys using conversation insights\u200b</p>\n</li>\n<li><p>Improve AI quality and compliance with configurable QA coverage and automated evaluations\u200b</p>\n</li>\n<li><p>Detect hallucinations, failed verifications, policy violations, and escalation drivers\u200b</p>\n</li>\n</ul>",
+        "id": 575290,
+        "locale": null,
+        "modified": "2026-10-28T23:04:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Contact Center Intelligence"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Contact Center Intelligence"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Contact Center AI: Insights and quality "
+    },
+    {
+        "created": "2026-10-28T23:04:31",
+        "description": "<p>Bring Microsoft AI to the contact center platform of your choice with the Universal Connector. Organizations can now integrate Microsoft self-service voice and chat agents with virtually any contact center using a simple API-based approach. The Universal Connector enables seamless handoff from AI agents to human representatives while preserving the full conversation context, ensuring a connected and personalized customer experience across every interaction.<br>\nThis flexibility allows organizations to modernize at their own pace by bringing AI-powered experiences to their existing contact center investments without requiring a costly migration or platform replacement. Whether supporting voice or chat experiences, customers can quickly extend intelligent self-service capabilities while maintaining continuity across AI and human-assisted engagements.</p>",
+        "id": 575278,
+        "locale": null,
+        "modified": "2026-10-28T23:04:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Rolling out",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Contact Center Intelligence"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Contact Center Intelligence"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Contact Center Intelligence: Universal connector for self-service omnichannel agents"
+    },
+    {
+        "created": "2026-10-28T23:04:31",
+        "description": "<p>Tools are building blocks that let your agent interact with external systems. Tools expand what your agent can do, and your agent can perform various actions in response to user requests or autonomous triggers. Each tool represents a specific capability that your agent can perform. For example, you can equip your agent with tools that perform tasks like:</p>\n<p>Send emails by using the Office 365 Outlook connector<br>\nCheck the current weather conditions and forecasts<br>\nRead and write data from Dataverse<br>\nRead and post messages to Teams</p>",
+        "id": 575274,
+        "locale": null,
+        "modified": "2026-10-28T23:04:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Contact Center Intelligence"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Contact Center Intelligence"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Contact Center Intelligence: Tools"
+    },
+    {
+        "created": "2026-10-28T23:04:31",
+        "description": "<p>Service representatives can reroute a live voice or messaging conversation when they realize they aren't the right person to help. The representative updates the conversation details, or the details of a linked case, contact, or account, and then selects Reroute. The conversation goes back through classification and route-to-queue rules and is assigned to the right queue automatically, so representatives don't need to know routing rules or choose a queue themselves. The customer stays connected throughout, and the next representative receives the conversation with its full history and updated context. Admins choose whether to turn on Reroute for their contact center.</p>",
+        "id": 575272,
+        "locale": null,
+        "modified": "2026-10-28T23:04:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: Reroute conversations to the right queue automatically"
+    },
+    {
+        "created": "2026-10-28T23:04:31",
+        "description": "<p>Contact Center historical analytics provides out-of-box historical reporting for Dynamics 365 Contact Center, built on a shared analytics foundation. It moves reporting from heavier workload-specific Power BI models toward a shared analytics foundation with conformed facts, shared dimensions, pre-built aggregations, and common definitions across conversations, sessions, agents, queues, channels, CSAT, handle time, and operational KPIs. Customers can continue using out-of-box Power BI reports while gaining extensibility through Fabric, Direct Lake, SQL, Spark, and custom lakehouse models.</p>",
+        "id": 574113,
+        "locale": null,
+        "modified": "2026-10-28T23:04:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Rolling out",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: Historical analytics"
+    },
+    {
+        "created": "2026-10-28T23:04:31",
+        "description": "<p>Dynamics 365 Customer Service provides out-of-the-box historical reporting built on a shared analytics foundation: a scalable, open, and AI-ready data foundation for Customer Experience and AI analytics scenarios across Dynamics 365. It uses a lakehouse-based architecture that can scale with data volume, supports curated analytics datasets for direct querying, and enables consistent reporting and semantic definitions across reports, agents, and copilots.</p>",
+        "id": 574112,
+        "locale": null,
+        "modified": "2026-10-28T23:04:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Rolling out",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Service: Shared analytics for historical reporting"
+    },
+    {
+        "created": "2026-10-28T23:04:31",
+        "description": "<p>The Expense Agent mobile app for Dynamics 365 Business Central extends expense capture to iOS and Android mobile devices by enabling employees to submit receipts directly from their phone or using native share functionality.</p>\n<p>Employees can take a photo of a receipt with their phone camera or select an existing image or document, and share it with Expense Agent mobile app. They can also capture multiple receipts directly from the mobile app and process them automatically. The Expense Agent mobile app processes the input, extracts relevant information, and automatically creates expense entries without requiring additional manual steps.</p>\n<p>The mobile experience provides a full-featured interface aligned with the web app, allowing employees to review, modify, and complete expense details before submission, but also full approval experience. Employees can manage individual expenses and entire expense reports directly from their mobile device, ensuring flexibility and control regardless of location. The key Dynamics 365 Business Central expense management capabilities, such as capture, validation, review, and submission are available on the Expense Agent mobile app supporting end-to-end workflows in a consistent and user-friendly way.</p>\n<p>The Expense Agent mobile app also works in offline mode where you can capture your receipts even if you are not connected to your environment, and once when you have an internet connection, agent will process all of them.<br>\nThe Expense Agent mobile app was in testing mode, but now it is in public preview and you can download it from app stores.</p>\n<p>This mobile app was in testing mode, but now you can download it from stores.</p>",
+        "id": 573265,
+        "locale": null,
+        "modified": "2026-10-28T23:04:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent mobile app"
+    },
+    {
         "created": "2026-10-27T23:05:02",
         "description": "<p>A new agentic debug run feature will be available in the flow designer. The UI automation repair interface launches while the flow is running, validating each selector used in the flow. It then proposes a new selector in case an existing one does not work as expected, after the user captures the respective element for reference.</p>",
         "id": 577869,
@@ -23189,9 +23696,9 @@
         "description": "<p>Keep collaboration moving without disrupting the main discussion. Start and continue one-to-one or small-group conversations directly from a meeting to ask questions, coordinate next steps, share information, and collaborate in parallel while staying engaged in the conversation, reducing context switching and helping teams stay focused and productive.</p>",
         "id": 573156,
         "locale": null,
-        "modified": "2026-10-02T22:01:21",
+        "modified": "2026-10-28T23:04:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -27765,10 +28272,10 @@
         "description": "<p><strong>Business value</strong></p>\n<p>Technicians do not always record booking completion at the moment work ends. They may update the booking later because of connectivity, customer-facing responsibilities, or end-of-day administration. When the later administrative action replaces the booking End Time, the recorded duration can extend beyond the work that was actually performed and affect downstream journals, time entries, labor costs, actuals, and work-order completion reporting.</p>\n<p>Field Service administrators can choose whether completion by the booked resource automatically changes the booking End Time. Organizations whose technicians complete bookings later can preserve the existing or explicitly supplied work end, helping booking duration and downstream time and cost records remain aligned with when the work occurred.</p>\n<p><strong>Feature detail</strong></p>\n<p>Use the organization-level <strong>Set End Time on booked resource completion</strong> setting in Field Service settings to control the automatic End Time update.</p>\n<ul>\n<li>With the setting set to <strong>Yes</strong>, which is the default, current behavior is preserved. When the booked resource completes a booking without supplying End Time, Field Service sets End Time to the completion time and recalculates Duration.</li>\n<li>With the setting set to <strong>No</strong>, Field Service preserves End Time and Duration when the booked resource completes the booking unless the completion request explicitly supplies a different End Time.</li>\n<li>Completion by another user or an integration continues to preserve End Time for either setting value.</li>\n</ul>\n<p>When the setting is No and the booked resource completes the booking, Field Service uses the retained or supplied End Time as the effective Completed booking timestamp. This keeps timestamp-derived booking journals and automatic time entries aligned with the recorded work end. Dataverse audit fields continue to show when the completion was submitted.</p>\n<p>The setting applies to future completion transitions and does not rewrite historical bookings. It does not change the booking-status lifecycle, invoice generation, or the existing Work Order Completed On calculation, which continues to use the latest eligible booking End Time.</p>",
         "id": 573239,
         "locale": null,
-        "modified": "2026-09-30T23:31:03",
+        "modified": "2026-10-28T23:04:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2027",
-        "publicPreviewDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -27792,6 +28299,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -27822,6 +28332,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -27832,12 +28345,12 @@
         "description": "<p>OneDrive for the web is updating the placement of the Create or upload button to provide a more consistent file experience across OneDrive and SharePoint. The button will move from the left navigation pane to the right side of the page, bringing familiar navigation from SharePoint document libraries to OneDrive.</p>\n<p>The available options for creating files and folders or uploading content will remain unchanged.</p>",
         "id": 572683,
         "locale": null,
-        "modified": "2026-09-30T23:31:03",
+        "modified": "2026-10-28T23:04:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -31248,9 +31761,9 @@
         "description": "<p>Some existing retention policies scoped to Microsoft Teams may currently also apply to Microsoft 365 Copilot interactions. As part of an upcoming change, these legacy Teams retention policies will be converted to\u2014and treated as\u2014Teams-only policies. They will no longer implicitly govern Copilot workloads.</p>",
         "id": 571306,
         "locale": null,
-        "modified": "2026-09-18T22:00:04",
+        "modified": "2026-10-28T23:04:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -33238,9 +33751,9 @@
         "description": "<p>Teams admins can access utilization analytics for Teams bookable desks on Teams Pro Management portal, similar to analytics provided for meeting rooms on the portal today. For utilization analytics to be enabled, a desk needs to have one or more peripheral device associated, and the desk needs to be licensed with Teams Shared Space license or Teams Shared Space - Single Space license.</p>",
         "id": 570648,
         "locale": null,
-        "modified": "2026-09-22T22:57:16",
+        "modified": "2026-10-28T23:04:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -35462,15 +35975,15 @@
     },
     {
         "created": "2026-08-27T22:38:48",
-        "description": "Enables sharing of agents with other makers in the new GHCP harness. Makers can grant other makers Agent Viewer (view analytics/evaluations only) or Editor (view, edit, configure, share, publish) access to an agent, with auto-assigned security roles.",
+        "description": "<p>Enables sharing of agents with other makers in the new Microsoft Copilot harness. Makers can grant other makers Agent Viewer (view analytics/evaluations only) or Editor (view, edit, configure, share, publish) access to an agent, with auto-assigned security roles.</p>",
         "id": 569475,
         "locale": null,
-        "modified": "2026-08-28T17:54:55",
+        "modified": "2026-10-28T23:04:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -45488,9 +46001,9 @@
         "description": "<p>Ask Copilot about an image in Edge enables users to instantly analyze images from the web by sending them directly to Copilot from the Edge context menu, making it easy to ask questions, gain insights, and understand visual content without leaving their browsing experience. Admins can control availability to this feature using the EdgeEntraCopilotPageContext and Microsoft365CopilotChatIconEnabled policies.</p>",
         "id": 566864,
         "locale": null,
-        "modified": "2026-09-17T23:00:45",
+        "modified": "2026-10-28T23:04:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -51440,9 +51953,9 @@
         "description": "<p>Endpoint DLP now extends protection to files stored in commonly excluded Windows folders, including Temp and AppData. This helps improve coverage by detecting and protecting sensitive data in these locations.</p>",
         "id": 562992,
         "locale": null,
-        "modified": "2026-09-14T23:03:47",
+        "modified": "2026-10-28T23:04:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -114266,12 +114779,12 @@
     },
     {
         "created": "2025-04-23T16:15:28",
-        "description": "A new report to help IT admins manage costs for billed messages that are Pay-as-you-go enabled for Copilot Chat. Reporting includes drill down of billed messages per user, per billing policy, per agent-level and agent-user level pair. #copilotcontrolsystem",
+        "description": "<p>A new report to help IT admins manage costs for billed messages that are Pay-as-you-go enabled for Copilot Chat. Reporting includes drill down of billed messages per user, per billing policy, per agent-level and agent-user level pair. #copilotcontrolsystem</p>",
         "id": 490738,
         "locale": null,
-        "modified": "2026-03-23T23:15:39",
+        "modified": "2026-10-28T23:04:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2027",
         "publicPreviewDate": "May CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -127959,12 +128472,12 @@
     },
     {
         "created": "2023-12-14T23:30:55",
-        "description": "Three updates are coming to enhance policy conditions. First, our updated policy conditions enable the detection of messages sent and received both to and from external email addresses, allowing you to identify specific instances of information being shared with external contacts. Secondly, with the new OR condition capability, you can combine multiple conditions within the same policy, creating custom logic to suit your unique compliance requirements. Lastly, to make policy creation and updates a seamless process, we've introduced the ability to test conditions before implementing them. By using sample messages, you can evaluate how your conditions will perform and fine-tune them to align with your compliance goals.",
+        "description": "<p>Three updates are coming to enhance policy conditions. First, our updated policy conditions enable the detection of messages sent and received both to and from external email addresses, allowing you to identify specific instances of information being shared with external contacts. Secondly, with the new OR condition capability, you can combine multiple conditions within the same policy, creating custom logic to suit your unique compliance requirements. Lastly, to make policy creation and updates a seamless process, we've introduced the ability to test conditions before implementing them. By using sample messages, you can evaluate how your conditions will perform and fine-tune them to align with your compliance goals.</p>",
         "id": 336046,
         "locale": null,
-        "modified": "2025-09-23T23:15:02",
+        "modified": "2026-10-28T23:04:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
