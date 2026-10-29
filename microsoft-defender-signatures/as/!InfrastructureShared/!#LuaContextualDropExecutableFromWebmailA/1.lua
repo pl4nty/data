@@ -12,7 +12,7 @@ if l_0_1 ~= mp.SCANSOURCE_IOAV_WEB then
   return mp.CLEAN
 end
 local l_0_2 = (versioning.GetOrgID)()
-if ((MpCommon.IsSampled)(1000, false, false, false) == true or l_0_2 == nil or (string.lower)(l_0_2) ~= "9014d404-b785-445d-80c9-24a55879a64c" or (MpCommon.IsSampled)(5000, false, false, false) == true) and not IsWebmailDownloadUrlIoavAndMotwV1() then
+if ((MpCommon.IsSampled)(2000, false, false, false) == true or l_0_2 == nil or (string.lower)(l_0_2) ~= "9014d404-b785-445d-80c9-24a55879a64c" or (MpCommon.IsSampled)(10000, false, false, false) == true) and not IsWebmailDownloadUrlIoavAndMotwV1() then
   return mp.CLEAN
 end
 if not IsWebmailDownloadUrlIoavAndMotwV0() then

@@ -15,6 +15,7 @@ l_0_2.revision = 2
 l_0_2.package_pattern = "^(.*)\\claude_agent_sdk\\_internal\\transport\\"
 l_0_1.AIDiscoveryCustom_ClaudeAgentSDKPy = l_0_2
 l_0_1.AIDiscoveryCustom_MicrosoftAgentFrameworkPy, l_0_2 = l_0_2, {sdk = "agent-framework-core", module = "_telemetry", revision = 1, package_pattern = "^(.*)\\agent_framework\\"}
+l_0_1.AIDiscoveryCustom_LangChainPy, l_0_2 = l_0_2, {sdk = "langchain", module = "agents.__init__", revision = 1, package_pattern = "^(.*)\\langchain\\agents\\"}
 l_0_2 = l_0_0.utf8p1
 l_0_2 = l_0_1[l_0_2]
 if not l_0_2 then
