@@ -791,6 +791,7 @@
         "EnableGrepCseLogWhenDownloadScriptFailed": true,
         "EnableGroupAssignmentEtagCheck": true,
         "EnableGroupAssignmentMigration": true,
+        "EnableGroupEntityAssignmentRead": true,
         "EnableGroupMemberCountConsistencyCheck": true,
         "EnableGroupRegister": true,
         "EnableGuideLineTextForFLDCrossRegionDR": true,
@@ -906,6 +907,7 @@
         "EnableMoveActionErrorDetail": true,
         "EnableMoveAction_ReactBulk": true,
         "EnableMoveAction_ReactSingle": true,
+        "EnableMoveGpuSkuFamilyPolicy": true,
         "EnableMoveSourceGpuSkuValidation": true,
         "EnableMultiNATGatewayForSubnetInDiffStatus": true,
         "EnableMultiPhaseResume": true,
@@ -919,6 +921,7 @@
         "EnableNewCommonReportingStorageAccount": true,
         "EnableNewConnectionHealth": true,
         "EnableNewDrFilter": true,
+        "EnableNewGroupMembershipDbRead": true,
         "EnableNewIntuneDeviceDetailsPageUX": true,
         "EnableNewPermissionGrantedFlow": true,
         "EnableNewReactViewPolicyUX": true,
@@ -1096,6 +1099,7 @@
         "EnableRelocate": true,
         "EnableRelocateAzureConnectionPartnerValidation": true,
         "EnableRelocateGpuServicePlanRestriction": true,
+        "EnableRelocateGpuSkuFamilyPolicy": true,
         "EnableRemediationActionTypeFromConfig": true,
         "EnableRemoteSignInReport": true,
         "EnableRemoteStartMenuAppBackfillTimer": true,
@@ -1109,6 +1113,7 @@
         "EnableReplicaFailureNonBlocking": true,
         "EnableReplicaTargetRegionFiltering": true,
         "EnableReportInitializingState": true,
+        "EnableReprovisionRestoreGpuSkuFamilyPolicy": true,
         "EnableRescheduleOnWindowsUpdate": true,
         "EnableResendFLDManagedByRas": false,
         "EnableReserveBypassBlockProvision": true,
@@ -1855,7 +1860,8 @@
                 "httpRequestTimeoutSec": 10
             },
             "Aspen": {
-                "enableHealthCheckAvdDiagnostics": true
+                "enableHealthCheckAvdDiagnostics": true,
+                "enableNativeClientUserBrandingSettings": true
             },
             "GUI": {
                 "EnablePinToDesktopShortcuts": true,

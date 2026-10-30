@@ -1,5 +1,488 @@
 [
     {
+        "created": "2026-10-29T23:01:00",
+        "description": "<p>Distributed order management (DOM) can now optimize fulfillment for standard sales orders in Dynamics 365 Supply Chain Management. Previously, DOM was available only for Dynamics 365 Commerce orders. Now you can use the same rules-based fulfillment engine to automatically choose the best site and warehouse for each sales order line, without depending on Commerce or retail configuration.</p>\n<p>This feature includes:</p>\n<ul>\n<li><strong>DOM for standard sales orders:</strong> Eligible Supply Chain Management sales orders are picked up by the DOM batch job, evaluated against your fulfillment profile, and assigned the optimal site and warehouse. The sales order line is updated automatically.</li>\n<li><strong>Setup in Supply Chain Management:</strong> Configure DOM parameters, fulfillment groups, rules, and fulfillment profiles without the Retail and Commerce module.</li>\n<li><strong>Fulfillment groups and rules:</strong> Group warehouses and apply rules such as location priority, minimum inventory, maximum distance, maximum orders, offline locations, and partial orders.</li>\n<li><strong>Distance-based sourcing:</strong> Use Azure Maps to calculate distances between warehouses and delivery addresses.</li>\n<li><strong>Fulfillment plans, status, and logs:</strong> Review fulfillment plans, DOM run logs, and fulfillment status directly from the sales order.</li>\n<li><strong>Soft run (simulation):</strong> Test fulfillment profiles and see the recommended locations without changing any orders.</li>\n<li><strong>Warehouse management compatibility:</strong> Works with items enabled for advanced warehouse management. DOM selects the warehouse, and warehouse management handles picking within that warehouse.</li>\n<li><strong>Rejection and rerouting:</strong> When a fulfillment location rejects an order line, the next DOM run can reassign it to another location.</li>\n</ul>",
+        "id": 577894,
+        "locale": null,
+        "modified": "2026-10-29T23:01:00",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Supply Chain Management"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Supply Chain Management"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Supply Chain Management: Enable fulfillment optimization in Dynamics 365 Supply Chain Management"
+    },
+    {
+        "created": "2026-10-29T23:01:00",
+        "description": "<p>Price override allows sales representatives to adjust the preset price of a product during a transaction\u2014typically for business purposes such as customer negotiations and retention. Previously, price override validation only enforced amount-based thresholds, without evaluating how the override would impact profit margins. Unified pricing management now provides margin check capabilities for price overrides across all order entry channels available in Dynamics 365 Supply Chain Management.</p>\n<h3>Orders entered through Commerce Scale Unit or Point of Sale</h3>\n<p>For organizations that use Dynamics 365 Commerce to process sales transactions through Commerce Scale Unit (CSU) or Point of Sale (POS), margin visibility is integrated directly into the price override workflow. When a retail associate or sales representative initiates a price override, the system performs a real-time margin check alongside the existing threshold validation, ensuring that every override decision is informed by its impact on profitability before the transaction is completed.</p>\n<h3>Orders entered at headquarters</h3>\n<p>Sales orders created directly in Dynamics 365 Supply Chain Management at headquarters also support margin checks for price overrides. When a user enters a price override that breaches a defined margin threshold, the system automatically triggers an approval workflow that requires a sales manager or designated approver to review and authorize the override before the order is allowed to proceed.</p>",
+        "id": 577867,
+        "locale": null,
+        "modified": "2026-10-29T23:01:00",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Supply Chain Management"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Supply Chain Management"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Supply Chain Management: Check margins when overriding prices in Unified pricing management"
+    },
+    {
+        "created": "2026-10-29T23:01:00",
+        "description": "<p>This feature improves the scalability and performance of positive pay file generation by enabling the process to run as a background batch job. Organizations that generate large positive pay files can now offload processing from the interactive user session, reducing the risk of timeouts and improving the overall user experience. The enhancement is designed to support high-volume check payment scenarios while maintaining the existing positive pay functionality and output formats.</p>",
+        "id": 577858,
+        "locale": null,
+        "modified": "2026-10-29T23:01:00",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Enhance positive pay file generation through batch processing"
+    },
+    {
+        "created": "2026-10-29T23:01:00",
+        "description": "<p>We\u2019re expanding cost management for Microsoft Copilot Studio into the Microsoft 365 admin center. This gives administrators a more centralized way to manage Copilot Credit spend across usage-based AI workloads while retaining Copilot Studio cost management capabilities in the Power Platform admin center.<br>\nWith this update, administrators can bring supported Copilot Studio environments and agents under Cost Management spending policies. Resource-based policies for environments and agents are the first planned scopes, with broader user and group policy support planned for a later phase.<br>\nFurthermore, this update will introduce cost data into cost management and agent registry for AI services and agents built on Microsoft platforms (e.g., Cowork, Microsoft Copilot Studio agents).</p>",
+        "id": 577834,
+        "locale": null,
+        "modified": "2026-10-29T23:01:00",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "Microsoft 365 admin center"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "Microsoft Power Platform governance and administration"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "Microsoft 365 admin center"
+                },
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                },
+                {
+                    "tagName": "Microsoft Power Platform governance and administration"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Copilot studio cost controls in MAC"
+    },
+    {
+        "created": "2026-10-29T23:01:00",
+        "description": "<p>This feature delivers enhancements to the external reporting experience with an improved standards and assessments structure and enhanced search capabilities. Users can navigate standards, assessments, and concepts more efficiently, reducing time spent locating and managing reporting content across complex disclosures. New dimension visualizations provide clearer insight into the context of reported data, helping users better understand dimensional attributes and validate disclosures more accurately.</p>\n<p>The enhancements are automatically enabled within the external reporting experience and require no additional setup. The experience introduces clearer, more guided workflows for adding new concepts, reusing existing concepts, and managing deletions and help ensure consistency across reports while improving transparency.</p>",
+        "id": 577744,
+        "locale": null,
+        "modified": "2026-10-29T23:01:00",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Sustainability"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Sustainability"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Sustainability: Enhance external sustainability reporting"
+    },
+    {
+        "created": "2026-10-29T23:01:00",
+        "description": "<p>Network analytics updates are rolling out in Microsoft Viva Engage, giving corporate communicators and network admins more flexibility to analyze activity and engagement across their organization.</p>\n<p>With this update, network analytics includes custom date ranges, faster activity data refreshes, updated dashboard and metric table designs, expanded organizational filters with search, and new people-manager filters for viewing direct reports or full reporting hierarchies. These enhancements make it easier to explore trends, understand audience engagement, and measure communications impact across the network.</p>",
+        "id": 576274,
+        "locale": null,
+        "modified": "2026-10-29T23:01:00",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/viva/engage/analytics-organizational-data-filtering",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Network analytics enhancements"
+    },
+    {
+        "created": "2026-10-29T23:01:00",
+        "description": "<p>Voice biometric authentication delivers business value by reducing fraud and agent operating costs in contact centers. Voice-based verification improves identity assurance shortens call durations reduces customer service rep effort and enable secure self-service transactions. At the same time, it improves customer experience and scalability by authenticating callers naturally as they speak. This enables consistent, risk-based security across high call volumes without adding authentication friction or process complexity.</p>",
+        "id": 575280,
+        "locale": null,
+        "modified": "2026-10-29T23:01:00",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Rolling out",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Contact Center Intelligence"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Contact Center Intelligence"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Contact Center Intelligence:  Biometric authentication"
+    },
+    {
+        "created": "2026-10-29T23:01:00",
+        "description": "<p>Dynamics 365 Customer Service provides out-of-the-box historical reporting built on a shared analytics foundation: a scalable, open, and AI-ready data foundation for Customer Experience and AI analytics scenarios across Dynamics 365. It uses a lakehouse-based architecture that can scale with data volume, supports curated analytics datasets for direct querying, and enables consistent reporting and semantic definitions across reports, agents, and copilots.</p>",
+        "id": 574114,
+        "locale": null,
+        "modified": "2026-10-29T23:01:00",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Service: Shared analytics foundation for historical reporting"
+    },
+    {
+        "created": "2026-10-29T23:01:00",
+        "description": "<p>Expense Agent now supports creating expenses from imported credit card transaction feeds or automatically reconcile with them if the expense was created earlier. Key capabilities include:</p>\n<ul>\n<li>Import credit card transaction data and review it in the web and mobile apps.</li>\n<li>Automatically create expenses from imported card transactions.</li>\n<li>Match imported transactions to existing expenses, where applicable.</li>\n<li>Reduce duplicate data entry by leveraging transaction details already captured from credit card feeds.</li>\n</ul>\n<p>Credit card transactions are manually imported into the <strong>Credit Cards Feeds</strong> from the file. The system processes the imported transactions and identifies transactions eligible for expense creation. Expense Agent creates draft expenses using transaction information such as merchant, date, and amount. You can review the suggested expenses, and complete any required information before you submit. Matching capabilities help associate imported transactions with existing expenses, which helps avoid duplicates and improves reconciliation.</p>",
+        "id": 573256,
+        "locale": null,
+        "modified": "2026-10-29T23:01:00",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - Create expenses from credit card feeds"
+    },
+    {
         "created": "2026-10-28T23:04:31",
         "description": "<p>What if scenario modeling enables you to simulate changes to a project plan and evaluate their impact before committing to them. Available for both Project Operations core and Project Operations connect with ERP deployment types, this capability can be enabled through Feature Control and allows you to: - Create and manage multiple versions of the Work Breakdown Structure (WBS). - Modify key planning variables, including schedule, scope, effort, and resources. - Analyze the impact of changes across one or more planning variables in real time. - Compare alternative scenarios, identify the optimal plan, and apply selected changes to the original project plan.</p>",
         "id": 577864,
@@ -725,7 +1208,7 @@
         "description": "<p>Users can quickly decline an incoming Teams call and send a predefined message to the caller at the same time. From the incoming call screen, users can select a message such as letting the caller know they're unavailable or will call back, providing helpful context without having to answer the call or separately open a chat.</p>",
         "id": 577176,
         "locale": null,
-        "modified": "2026-10-27T23:05:02",
+        "modified": "2026-10-29T23:01:00",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
@@ -734,6 +1217,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Android"
@@ -752,6 +1244,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -21537,9 +22038,9 @@
         "description": "<p>Event group chat, the private chat for organizers, co-organizers, and presenters in an event or structured meeting, will support external presenters.</p>",
         "id": 573706,
         "locale": null,
-        "modified": "2026-10-09T22:04:35",
+        "modified": "2026-10-29T23:01:00",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -23696,9 +24197,9 @@
         "description": "<p>Keep collaboration moving without disrupting the main discussion. Start and continue one-to-one or small-group conversations directly from a meeting to ask questions, coordinate next steps, share information, and collaborate in parallel while staying engaged in the conversation, reducing context switching and helping teams stay focused and productive.</p>",
         "id": 573156,
         "locale": null,
-        "modified": "2026-10-28T23:04:31",
+        "modified": "2026-10-29T23:01:00",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -33117,9 +33618,9 @@
         "description": "<p>Two presenters can share a screen or window at the same time in a Teams meeting. Participants can see both shared content streams simultaneously, making it easier to compare and discuss content from different presenters.</p>",
         "id": 80239,
         "locale": null,
-        "modified": "2026-09-15T23:00:36",
+        "modified": "2026-10-29T23:01:00",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -42531,15 +43032,15 @@
     },
     {
         "created": "2026-07-17T22:12:56",
-        "description": "We're making it easier to tell when receiving meeting invites that conflict with scheduled Out of Office time or Busy All Day events, on Outlook Web and Outlook for Windows.",
+        "description": "<p>We're making it easier to tell when receiving meeting invites that conflict with scheduled Out of Office time or Busy All Day events, on Outlook Web and Outlook for Windows.</p>",
         "id": 567888,
         "locale": null,
-        "modified": "2026-07-17T22:12:56",
+        "modified": "2026-10-29T23:01:00",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -50981,15 +51482,15 @@
     },
     {
         "created": "2026-05-29T22:30:02",
-        "description": "When sorting on Outlook for Web or Outlook for Windows, if the Sort By field is not one of From, Subject, or Date Received, we will now show an additional column for the Sort By value (e.g., Size). We will also support sorting by Flag Due Date.",
+        "description": "<p>When sorting on Outlook for Web or Outlook for Windows, if the Sort By field is not one of From, Subject, or Date Received, we will now show an additional column for the Sort By value (e.g., Size). We will also support sorting by Flag Due Date.</p>",
         "id": 564803,
         "locale": null,
-        "modified": "2026-05-29T22:30:02",
+        "modified": "2026-10-29T23:01:00",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -51267,15 +51768,15 @@
     },
     {
         "created": "2026-05-27T23:15:50",
-        "description": "Outlook for Windows and Outlook for Web will now allow users to modify how the preview text for emails show in the message list. The preview text can now take up 2 lines, 1 whole line, or 0 additional lines.",
+        "description": "<p>Outlook for Windows and Outlook for Web will now allow users to modify how the preview text for emails show in the message list. The preview text can now take up 2 lines, 1 whole line, or 0 additional lines.</p>",
         "id": 564610,
         "locale": null,
-        "modified": "2026-07-06T23:00:50",
+        "modified": "2026-10-29T23:01:00",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -51340,15 +51841,15 @@
     },
     {
         "created": "2026-05-27T23:15:50",
-        "description": "The All-Accounts view, also known as Unified Inbox, lets you see emails from multiple accounts in a single inbox view in the new Outlook for Windows, without merging your mailboxes.   Each account's inbox stays separate; the view brings them together so you can triage in one place.  Users can read, delete, move, archive, and mark messages across accounts without switching between mailboxes.   The experience integrates with Copilot for AI-assisted email workflows and supports Immersive Search for finding messages across your primary account.   Advanced scenarios such as cross-account search and shared mailbox support will follow in later releases.",
+        "description": "<p>The All-Accounts view, also known as Unified Inbox, lets you see emails from multiple accounts in a single inbox view in the new Outlook for Windows, without merging your mailboxes.   Each account's inbox stays separate; the view brings them together so you can triage in one place.  Users can read, delete, move, archive, and mark messages across accounts without switching between mailboxes.   The experience integrates with Copilot for AI-assisted email workflows and supports Immersive Search for finding messages across your primary account.   Advanced scenarios such as cross-account search and shared mailbox support will follow in later releases.</p>",
         "id": 564609,
         "locale": null,
-        "modified": "2026-05-27T23:15:50",
+        "modified": "2026-10-29T23:01:00",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -75827,12 +76328,12 @@
         "description": "<p>Copilot Chat in Outlook expanding to support reasoning over a user's entire inbox, calendar and other enterprise data for Microsoft 365 Copilot Chat users (without a Microsoft 365 Copilot license) .</p>",
         "id": 554934,
         "locale": null,
-        "modified": "2026-10-27T23:05:02",
+        "modified": "2026-10-29T23:01:00",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -92501,9 +93002,9 @@
         "description": "<p>The sharing panel in today\u2019s meetings is the default place for content discoverability and sharing.  New sharing panel UI is crafted with intent of modernising and simplifying default tasks such as window sharing, but also for easier discovery of sharing options and more discoverable file sharing.</p>",
         "id": 502520,
         "locale": null,
-        "modified": "2026-09-25T22:37:50",
+        "modified": "2026-10-29T23:01:00",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -112091,13 +112592,13 @@
     },
     {
         "created": "2025-05-22T23:15:53",
-        "description": "Learn about the state of your scanned repositories and create custom reports with the information protection scanner. Labeling, classification and protection actions on scanned files are stored in SQL tables that form a foundation to feed into custom reports.",
+        "description": "<p>Learn about the state of your scanned repositories and create custom reports with the information protection scanner. Labeling, classification and protection actions on scanned files are stored in SQL tables that form a foundation to feed into custom reports.</p>",
         "id": 494839,
         "locale": null,
-        "modified": "2026-09-02T22:56:59",
+        "modified": "2026-10-29T23:01:00",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "May CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [

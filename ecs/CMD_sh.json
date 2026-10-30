@@ -1514,7 +1514,6 @@
         "RouteFidalgoActionsThroughKronox": true,
         "RouteFlexActionsThroughKronox": true,
         "RoutePowerAutomateActionsThroughKronox": true,
-        "RpValidateSourceImageTenant": true,
         "SARMAutoTriggerPendingOperation": true,
         "SARMEnforceRunningQuota": true,
         "SARMEnsureContainerExists": true,
@@ -1651,7 +1650,8 @@
         "user": true,
         "windows365client": {
             "Aspen": {
-                "enableHealthCheckAvdDiagnostics": true
+                "enableHealthCheckAvdDiagnostics": true,
+                "enableNativeClientUserBrandingSettings": true
             },
             "GUI": {
                 "EnableBootKillMsrdcOnResumeFromSleepLock": true,

@@ -1213,6 +1213,7 @@
             "EnableWindowsRestore": true,
             "EnrollmentFailureReportUserNotLicensedFilter": true,
             "EnrollmentUserAbandonmentBladeDeprecation": true,
+            "IncreaseADEPolicyLimit": true,
             "NewSkipKeysFlight": true,
             "TandCSyncButtonEnableFlight": true
         }
