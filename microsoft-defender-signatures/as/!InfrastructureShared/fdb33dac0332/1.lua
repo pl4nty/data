@@ -30,6 +30,15 @@ end
 if (string.find)(l_0_1, "\\programdata\\cyvera\\localsystem\\python\\", 1, true) then
   return mp.CLEAN
 end
+if (string.find)(l_0_1, "\\programdata\\microsoft\\windows defender\\platform\\", 1, true) and (StringEndsWith(l_0_1, "\\mipdlp.exe") or StringEndsWith(l_0_1, "\\dlpuseragent.exe") or StringEndsWith(l_0_1, "\\mpdlpservice.exe") or StringEndsWith(l_0_1, "\\configsecuritypolicy.exe")) then
+  return mp.CLEAN
+end
+if (string.find)(l_0_1, "\\appdata\\local\\anthropicclaude\\", 1, true) and StringEndsWith(l_0_1, "\\claude.exe") then
+  return mp.CLEAN
+end
+if (string.find)(l_0_1, "\\appdata\\local\\microsoft\\edgeupdate\\", 1, true) and StringEndsWith(l_0_1, "\\microsoftedgeupdatecomregistershell64.exe") then
+  return mp.CLEAN
+end
 local l_0_2 = nil
 if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p1 ~= nil then
   l_0_2 = (this_sigattrlog[4]).utf8p1
