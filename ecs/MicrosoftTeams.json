@@ -1292,6 +1292,7 @@
     },
     "TeamsAdminCenter_Prod": {
         "Feature": {
+            "UI.Mgmt.AA.ReviewAndSubmit": true,
             "UI.Mgmt.DirectRouting.SIPLadderUIActionGuardWhenOutsideSLA": true,
             "UI.Mgmt.Perf.GraphGroupsCaching": true
         }

@@ -129,13 +129,11 @@
         "urls": [
             "*.auth.microsoft.com",
             "*.msftidentity.com",
-            "*.msidentity.com",
             "account.activedirectory.windowsazure.com",
             "accounts.accesscontrol.windows.net",
             "adminwebservice.microsoftonline.com",
             "api.passwordreset.microsoftonline.com",
             "autologon.microsoftazuread-sso.com",
-            "becws.microsoftonline.com",
             "ccs.login.microsoftonline.com",
             "clientconfig.microsoftonline-p.net",
             "companymanager.microsoftonline.com",
@@ -150,8 +148,7 @@
             "logincert.microsoftonline.com",
             "loginex.microsoftonline.com",
             "nexus.microsoftonline-p.com",
-            "passwordreset.microsoftonline.com",
-            "provisioningapi.microsoftonline.com"
+            "passwordreset.microsoftonline.com"
         ]
     },
     {
@@ -236,16 +233,13 @@
             "*.o365weve.com",
             "amp.azure.net",
             "appsforoffice.microsoft.com",
-            "assets.onestore.ms",
             "auth.gfx.ms",
             "c1.microsoft.com",
             "dgps.support.microsoft.com",
             "docs.microsoft.com",
             "msdn.microsoft.com",
             "platform.linkedin.com",
-            "prod.msocdn.com",
             "shellprod.msocdn.com",
-            "support.microsoft.com",
             "technet.microsoft.com"
         ]
     },
@@ -582,11 +576,9 @@
             "crl.identrust.com",
             "crl3.digicert.com",
             "crl4.digicert.com",
-            "isrg.trustid.ocsp.identrust.com",
             "mscrl.microsoft.com",
             "ocsp.digicert.com",
             "ocsp.globalsign.com",
-            "ocsp.msocsp.com",
             "ocsp2.globalsign.com",
             "ocspx.digicert.com",
             "oneocsp.microsoft.com",

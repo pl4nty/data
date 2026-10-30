@@ -584,13 +584,8 @@
                     "consumer": [
                         "claude-opus-5.5",
                         "claude-opus-5",
-                        "claude-opus-4.8",
-                        "claude-opus-4.7",
-                        "claude-opus-4.6",
                         "claude-sonnet-5",
-                        "claude-sonnet-4.6",
                         "claude-haiku-5.5",
-                        "claude-haiku-4.5",
                         "gpt-5.6-sol",
                         "gpt-5.6-luna",
                         "gpt-5.5",
@@ -602,14 +597,9 @@
                     "enterprise": [
                         "claude-opus-5.5",
                         "claude-opus-5",
-                        "claude-opus-4.8",
-                        "claude-opus-4.7",
-                        "claude-opus-4.6",
                         "claude-sonnet-5.5",
                         "claude-sonnet-5",
-                        "claude-sonnet-4.6",
                         "claude-haiku-5.5",
-                        "claude-haiku-4.5",
                         "gpt-5.6-sol",
                         "gpt-5.6-luna",
                         "gpt-5.5",
@@ -625,14 +615,9 @@
                     "consumer": [
                         "claude-opus-5.5",
                         "claude-opus-5",
-                        "claude-opus-4.8",
-                        "claude-opus-4.7",
-                        "claude-opus-4.6",
                         "claude-sonnet-5.5",
                         "claude-sonnet-5",
-                        "claude-sonnet-4.6",
                         "claude-haiku-5.5",
-                        "claude-haiku-4.5",
                         "gpt-5.6-sol",
                         "gpt-5.6-luna",
                         "gpt-5.5",
@@ -644,14 +629,9 @@
                     "enterprise": [
                         "claude-opus-5.5",
                         "claude-opus-5",
-                        "claude-opus-4.8",
-                        "claude-opus-4.7",
-                        "claude-opus-4.6",
                         "claude-sonnet-5.5",
                         "claude-sonnet-5",
-                        "claude-sonnet-4.6",
                         "claude-haiku-5.5",
-                        "claude-haiku-4.5",
                         "gpt-5.6-sol",
                         "gpt-5.6-luna",
                         "gpt-5.5",
@@ -669,18 +649,6 @@
                 "runtime_id": "anthropic-claude-opus-5"
             },
             {
-                "id": "claude-opus-4.8",
-                "runtime_id": "anthropic-claude-opus-4-8"
-            },
-            {
-                "id": "claude-opus-4.7",
-                "runtime_id": "anthropic-claude-opus-4-7"
-            },
-            {
-                "id": "claude-opus-4.6",
-                "runtime_id": "anthropic-claude-opus-4-6"
-            },
-            {
                 "id": "claude-opus-5.5",
                 "runtime_id": "anthropic-claude-opus-5-5"
             },
@@ -689,16 +657,8 @@
                 "runtime_id": "anthropic-claude-sonnet-5"
             },
             {
-                "id": "claude-sonnet-4.6",
-                "runtime_id": "anthropic-claude-sonnet-4-6"
-            },
-            {
                 "id": "claude-sonnet-5.5",
                 "runtime_id": "anthropic-claude-sonnet-5-5"
-            },
-            {
-                "id": "claude-haiku-4.5",
-                "runtime_id": "anthropic-claude-haiku-4-5"
             },
             {
                 "id": "claude-haiku-5.5",
