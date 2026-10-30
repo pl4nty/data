@@ -1,11 +1,11 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1fcb3b8d48e1e\1.luac 
+-- Command line: lua\!InfrastructureShared\3e8b3318e291e\1.luac 
 
 -- params : ...
 -- function num : 0
 do
-  if ((((this_sigattrlog[1]).matched and (this_sigattrlog[6]).matched) or ((this_sigattrlog[2]).matched and not (this_sigattrlog[7]).matched and (this_sigattrlog[8]).matched) or ((this_sigattrlog[3]).matched and (this_sigattrlog[9]).matched) or (this_sigattrlog[4]).matched)) then
-    local l_0_0 = (this_sigattrlog[10]).matched
+  if ((((this_sigattrlog[1]).matched and (this_sigattrlog[12]).matched) or ((this_sigattrlog[2]).matched and not (this_sigattrlog[13]).matched and (this_sigattrlog[14]).matched) or ((this_sigattrlog[3]).matched and (this_sigattrlog[15]).matched) or (this_sigattrlog[4]).matched)) then
+    local l_0_0 = (this_sigattrlog[16]).matched
   end
   -- DECOMPILER ERROR at PC43: Confused about usage of register: R0 in 'UnsetPending'
 
