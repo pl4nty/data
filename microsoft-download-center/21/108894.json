@@ -1,0 +1,118 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Identity Manager 2016 (KB5134305)",
+    "downloadDescription": "Update for Microsoft Identity Manager 2016 (KB5134305)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MIMSyncService_x64_KB5134305.msp",
+            "url": "https://download.microsoft.com/download/ae015109-57fb-407d-8a36-e28681dbbb0e/MIMSyncService_x64_KB5134305.msp",
+            "size": "50450432",
+            "version": "4.7.13.0",
+            "datePublished": "10/30/2026 5:16:09 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMServiceLP_x64_KB5134305.msp",
+            "url": "https://download.microsoft.com/download/ae015109-57fb-407d-8a36-e28681dbbb0e/MIMServiceLP_x64_KB5134305.msp",
+            "size": "18563072",
+            "version": "4.7.13.0",
+            "datePublished": "10/30/2026 5:16:09 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMService_x64_KB5134305.msp",
+            "url": "https://download.microsoft.com/download/ae015109-57fb-407d-8a36-e28681dbbb0e/MIMService_x64_KB5134305.msp",
+            "size": "183013376",
+            "version": "4.7.13.0",
+            "datePublished": "10/30/2026 5:16:09 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensionsLP_x86_KB5134305.msp",
+            "url": "https://download.microsoft.com/download/ae015109-57fb-407d-8a36-e28681dbbb0e/MIMAddinsExtensionsLP_x86_KB5134305.msp",
+            "size": "3309568",
+            "version": "4.7.13.0",
+            "datePublished": "10/30/2026 5:16:09 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensionsLP_x64_KB5134305.msp",
+            "url": "https://download.microsoft.com/download/ae015109-57fb-407d-8a36-e28681dbbb0e/MIMAddinsExtensionsLP_x64_KB5134305.msp",
+            "size": "9334784",
+            "version": "4.7.13.0",
+            "datePublished": "10/30/2026 5:16:09 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensions_x86_KB5134305.msp",
+            "url": "https://download.microsoft.com/download/ae015109-57fb-407d-8a36-e28681dbbb0e/MIMAddinsExtensions_x86_KB5134305.msp",
+            "size": "8634368",
+            "version": "4.7.13.0",
+            "datePublished": "10/30/2026 5:16:09 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MIMAddinsExtensions_x64_KB5134305.msp",
+            "url": "https://download.microsoft.com/download/ae015109-57fb-407d-8a36-e28681dbbb0e/MIMAddinsExtensions_x64_KB5134305.msp",
+            "size": "16023552",
+            "version": "4.7.13.0",
+            "datePublished": "10/30/2026 5:16:09 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft has released a hotfix for Microsoft Identity Manager 2016 Service Pack 3. This update provides the latest fixes and enhancements to Microsoft Identity Manager 2016. Additionally, this update contains improvements outlined in <a href=\"TBD link for KB 5134305\">Knowledge Base Article 5134305</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5134305",
+        "name": "KB5134305"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.7.13.0",
+    "detailsSection_file_name": [
+        "MIMSyncService_x64_KB5134305.msp",
+        "MIMServiceLP_x64_KB5134305.msp",
+        "MIMService_x64_KB5134305.msp",
+        "MIMAddinsExtensionsLP_x86_KB5134305.msp",
+        "MIMAddinsExtensionsLP_x64_KB5134305.msp",
+        "MIMAddinsExtensions_x86_KB5134305.msp",
+        "MIMAddinsExtensions_x64_KB5134305.msp"
+    ],
+    "detailsSection_file_size": [
+        "48.1 MB",
+        "17.7 MB",
+        "174.5 MB",
+        "3.2 MB",
+        "8.9 MB",
+        "8.2 MB",
+        "15.3 MB"
+    ],
+    "detailsSection_file_date": "10/30/2026",
+    "systemRequirementsSection": "Microsoft Identity Manager 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Perform a backup of your data and install the msp from an administrative command prompt. Visit the documentation site for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Identity Manager Documentation",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager"
+        },
+        {
+            "title": "microsoft Identity Manager Version Release",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-history"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108894",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
