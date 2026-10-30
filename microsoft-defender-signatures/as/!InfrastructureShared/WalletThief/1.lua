@@ -14,7 +14,7 @@ local l_0_0 = function(l_1_0)
   end
 end
 
-if (Remediation.Threat).Name == "DISABLED:Behavior:Win32/WalletThief.A" then
+if (Remediation.Threat).Name == "Behavior:Win32/WalletThief.A" then
   local l_0_1 = GetRollingQueue("WalletThief_Queue")
   if l_0_1 == nil then
     return 
