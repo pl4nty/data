@@ -120,7 +120,10 @@ template("edge_overlay_source_set_unit_tests") {
     configs += invoker.configs
 
     # Edge overlays:
-    sources += [ "edge_external_process_importer_client_unittest.cc" ]
+    sources += [
+      "edge_external_process_importer_client_unittest.cc",
+      "edge_profile_writer_unittest.cc",
+    ]
 
     deps += [
       "//chrome/browser:browser_process",
@@ -131,6 +134,7 @@ template("edge_overlay_source_set_unit_tests") {
       "//chrome/browser/importer/extensions:extenions_migrator",
       "//chrome/browser/prefs:util",
       "//chrome/browser/webdata_services",
+      "//chrome/common",
       "//chrome/test/base:testing_browser_process",
       "//components/browsing_data/core",
       "//components/os_crypt/sync:test_support",

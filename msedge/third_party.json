@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 1187216,
+    "size": 1187099,
     "file_count": 48
   },
   {
@@ -36,13 +36,18 @@
   },
   {
     "name": "angle",
-    "size": 6543559,
+    "size": 6552744,
     "file_count": 198
   },
   {
     "name": "anonymous_tokens",
     "size": 20993,
     "file_count": 5
+  },
+  {
+    "name": "apache-win32",
+    "size": 14529,
+    "file_count": 6
   },
   {
     "name": "apache-windows-arm64",
@@ -71,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 34337019,
-    "file_count": 4106
+    "size": 34327471,
+    "file_count": 4103
   },
   {
     "name": "boringssl",
@@ -151,8 +156,8 @@
   },
   {
     "name": "dawn",
-    "size": 163606469,
-    "file_count": 19342
+    "size": 163641982,
+    "file_count": 19349
   },
   {
     "name": "dbus",
@@ -276,8 +281,8 @@
   },
   {
     "name": "glslang",
-    "size": 46414882,
-    "file_count": 3786
+    "size": 46428920,
+    "file_count": 3790
   },
   {
     "name": "googletest",
@@ -316,8 +321,8 @@
   },
   {
     "name": "hunspell",
-    "size": 4416361,
-    "file_count": 80
+    "size": 3929587,
+    "file_count": 87
   },
   {
     "name": "hunspell_dictionaries",
@@ -361,7 +366,7 @@
   },
   {
     "name": "jdk",
-    "size": 11527,
+    "size": 11798,
     "file_count": 8
   },
   {
@@ -376,7 +381,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 32082,
+    "size": 32115,
     "file_count": 2
   },
   {
@@ -391,7 +396,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 71530,
+    "size": 71677,
     "file_count": 47
   },
   {
@@ -521,7 +526,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19309547,
+    "size": 19439595,
     "file_count": 19
   },
   {
@@ -611,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4872389,
+    "size": 4872909,
     "file_count": 645
   },
   {
@@ -681,7 +686,7 @@
   },
   {
     "name": "screen-ai",
-    "size": 5220136,
+    "size": 5376717,
     "file_count": 83
   },
   {
@@ -771,8 +776,8 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 17552406,
-    "file_count": 37
+    "size": 17558918,
+    "file_count": 41
   },
   {
     "name": "undocked_copilot_mac",
@@ -801,8 +806,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7880441,
-    "file_count": 206
+    "size": 7887024,
+    "file_count": 207
   },
   {
     "name": "vulkan_memory_allocator",

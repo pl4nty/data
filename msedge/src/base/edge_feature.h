@@ -8,20 +8,74 @@
 #include <string_view>
 
 #include "base/feature.h"
+#include "base/notreached.h"
 
 namespace base {
 
+namespace internal {
+
+struct EdgeFeatureKindFlags {
+  bool runtime;
+  bool first_run;
+};
+
+constexpr EdgeFeatureKindFlags EdgeFeatureFlagsFromKind(EdgeFeatureKind kind) {
+  switch (kind) {
+    case EdgeFeatureKind::kNormal:
+      return {.runtime = false, .first_run = false};
+    case EdgeFeatureKind::kRuntime:
+      return {.runtime = true, .first_run = false};
+    case EdgeFeatureKind::kFirstRun:
+      return {.runtime = false, .first_run = true};
+  }
+  NOTREACHED();
+}
+
+}  // namespace internal
+
+// Describes Edge behaviors, not whether a feature is currently enabled.
+struct EdgeFeatureTraits {
+  EdgeFeatureKind kind = EdgeFeatureKind::kNormal;
+  CopilotAppType copilot_app_type = CopilotAppType::kNone;
+  bool has_holdout = false;
+
+  friend constexpr bool operator==(const EdgeFeatureTraits&,
+                                   const EdgeFeatureTraits&) = default;
+};
+
+static_assert(sizeof(EdgeFeatureTraits) == 3);
+
+inline EdgeFeatureTraits GetEdgeFeatureTraits(const Feature& feature) {
+  return {.kind = feature.runtime     ? EdgeFeatureKind::kRuntime
+                  : feature.first_run ? EdgeFeatureKind::kFirstRun
+                                      : EdgeFeatureKind::kNormal,
+          .copilot_app_type = feature.copilot_app_type,
+          .has_holdout = feature.holdout != nullptr};
+}
+
+inline bool IsEdgeFeatureOfKind(const Feature& feature, EdgeFeatureKind kind) {
+  return GetEdgeFeatureTraits(feature).kind == kind;
+}
+
+inline bool IsCopilotFeature(const Feature& feature) {
+  return GetEdgeFeatureTraits(feature).copilot_app_type !=
+         CopilotAppType::kNone;
+}
+
+inline const Feature* GetEdgeFeatureHoldout(const Feature& feature) {
+  return feature.holdout;
+}
+
 constexpr Feature::Feature(const char* name,
                            FeatureState default_state,
-                           bool runtime,
-                           bool first_run,
+                           EdgeFeatureKind kind,
                            CopilotAppType copilot_app_type,
                            const Feature* holdout,
                            internal::FeatureMacroHandshake)
     : name(name),
       default_state(default_state),
-      runtime(runtime),
-      first_run(first_run),
+      runtime(internal::EdgeFeatureFlagsFromKind(kind).runtime),
+      first_run(internal::EdgeFeatureFlagsFromKind(kind).first_run),
       copilot_app_type(copilot_app_type),
       holdout(holdout) {}
 
@@ -54,10 +108,10 @@ class DynamicFeature final : public Feature {
     return std::string_view(#feature).substr(1).data(); \
   }()
 
-#define BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                   \
-    feature, name, default_state, runtime, first_run, copilot_type, holdout) \
-  constinit const base::Feature feature(                                     \
-      name, default_state, runtime, first_run, copilot_type, holdout,        \
+#define BASE_EDGE_FEATURE_INTERNAL_DEFINE(feature, name, default_state, kind, \
+                                          copilot_type, holdout)              \
+  constinit const base::Feature feature(                                      \
+      name, default_state, kind, copilot_type, holdout,                       \
       base::internal::FeatureMacroHandshake::kSecret)
 
 // The same as `BASE_DECLARE_FEATURE()` but such feature is also declared to be
@@ -99,7 +153,7 @@ class DynamicFeature final : public Feature {
 #define BASE_FEATURE_WITH_HOLDOUT(feature, default_state, holdout)      \
   BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                    \
       feature, BASE_EDGE_FEATURE_INTERNAL_NAME(feature), default_state, \
-      /*runtime=*/false, /*first_run=*/false,                           \
+      base::EdgeFeatureKind::kNormal,                                   \
       /*copilot_type=*/base::CopilotAppType::kNone, holdout)
 
 // The same as `BASE_DECLARE_FEATURE()` but such feature is only applicable to
@@ -154,8 +208,7 @@ class DynamicFeature final : public Feature {
                                              copilot_app_type)          \
   BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                    \
       feature, BASE_EDGE_FEATURE_INTERNAL_NAME(feature), default_state, \
-      /*runtime=*/false, /*first_run=*/false, copilot_app_type,         \
-      /*holdout=*/nullptr)
+      base::EdgeFeatureKind::kNormal, copilot_app_type, /*holdout=*/nullptr)
 
 // The only difference in behavior of runtime features vs features is that
 // runtime features will not cache the state of the feature on the first
@@ -194,13 +247,13 @@ class DynamicFeature final : public Feature {
 // header files.
 #define BASE_RUNTIME_FEATURE_INTERNAL_3_ARGS(feature, name, default_state) \
   BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                       \
-      feature, name, default_state, /*runtime=*/true, /*first_run=*/false, \
+      feature, name, default_state, base::EdgeFeatureKind::kRuntime,       \
       /*copilot_type=*/base::CopilotAppType::kNone, /*holdout=*/nullptr)
 
 #define BASE_RUNTIME_FEATURE_INTERNAL_2_ARGS(feature, default_state)    \
   BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                    \
       feature, BASE_EDGE_FEATURE_INTERNAL_NAME(feature), default_state, \
-      /*runtime=*/true, /*first_run=*/false,                            \
+      base::EdgeFeatureKind::kRuntime,                                  \
       /*copilot_type=*/base::CopilotAppType::kNone, /*holdout=*/nullptr)
 
 #define BASE_RUNTIME_FEATURE(...)                        \
@@ -267,13 +320,13 @@ class DynamicFeature final : public Feature {
 // header files.
 #define BASE_FIRST_RUN_FEATURE_INTERNAL_3_ARGS(feature, name, default_state) \
   BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                         \
-      feature, name, default_state, /*runtime=*/false, /*first_run=*/true,   \
+      feature, name, default_state, base::EdgeFeatureKind::kFirstRun,        \
       /*copilot_type=*/base::CopilotAppType::kNone, /*holdout=*/nullptr)
 
 #define BASE_FIRST_RUN_FEATURE_INTERNAL_2_ARGS(feature, default_state)  \
   BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                    \
       feature, BASE_EDGE_FEATURE_INTERNAL_NAME(feature), default_state, \
-      /*runtime=*/false, /*first_run=*/true,                            \
+      base::EdgeFeatureKind::kFirstRun,                                 \
       /*copilot_type=*/base::CopilotAppType::kNone, /*holdout=*/nullptr)
 
 #define BASE_FIRST_RUN_FEATURE(...)                        \
@@ -321,7 +374,7 @@ class DynamicFeature final : public Feature {
 #define BASE_FIRST_RUN_FEATURE_WITH_HOLDOUT(feature, default_state, holdout) \
   BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                         \
       feature, BASE_EDGE_FEATURE_INTERNAL_NAME(feature), default_state,      \
-      /*runtime=*/false, /*first_run=*/true,                                 \
+      base::EdgeFeatureKind::kFirstRun,                                      \
       /*copilot_type=*/base::CopilotAppType::kNone, holdout)
 
 // Recommended macros for declaring and defining features triggers.
