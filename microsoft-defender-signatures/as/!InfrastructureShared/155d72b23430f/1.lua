@@ -20,6 +20,7 @@ if l_0_0 ~= nil then
   l_0_3["ltsvc.exe"] = true
   l_0_3["jumpcloud-agent.exe"] = true
   l_0_3["vmtoolsd.exe"] = true
+  l_0_3["podman desktop.exe"] = true
   if l_0_3[l_0_2] then
     return mp.CLEAN
   end
