@@ -1,5 +1,316 @@
 [
     {
+        "created": "2026-10-30T22:08:34",
+        "description": "<p>Frontier is expanding to bring eligible public preview features across Microsoft 365 into one program. Users enrolled in Frontier can get eligible previews for new Outlook for Windows, OneDrive, SharePoint, Microsoft Teams, and Copilot, managed through a single admin-controlled enrollment experience. Frontier enrollment is optional and separate from Standard and Deferred release preferences for generally available features. Existing Frontier users do not need to re-enroll.</p>",
+        "id": 578225,
+        "locale": null,
+        "modified": "2026-10-30T22:08:34",
+        "moreInfoLink": "https://learn.microsoft.com/microsoft-365/admin/manage/get-started-frontier",
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft 365: Frontier expands to public previews in Teams, Outlook, OneDrive, and SharePoint"
+    },
+    {
+        "created": "2026-10-30T22:08:34",
+        "description": "<p>Stay up-to-date with what's happening in your other accounts and organizations with the 'Activity in Other Accounts and Orgs' panel. Preview and open chats, channels, and other activity in other accounts and orgs from your main Teams window, without switching tenants.</p>",
+        "id": 577901,
+        "locale": null,
+        "modified": "2026-10-30T22:08:34",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/microsoftteams/activity-in-other-accounts-orgs",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Activity in other accounts and orgs improvements"
+    },
+    {
+        "created": "2026-10-30T22:08:34",
+        "description": "<p>Educators can use Teach in Microsoft 365 Copilot to create structured unit plans that span multiple lessons or weeks. They can customize the plan components to organize connected lesson plans and quizzes across a unit.</p>\n<p>#education</p>",
+        "id": 577392,
+        "locale": null,
+        "modified": "2026-10-30T22:08:34",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Rolling out",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): [Education] Create multi-week unit plans with Teach"
+    },
+    {
+        "created": "2026-10-30T22:08:34",
+        "description": "<p>Record EUDR certification information for items under the EU Deforestation Regulation. Different lots of the same item can carry different certificates, origins and validity, it is stored on Lot No. Information, not on the item. An item is opted in with a single EUDR Relevant flag on the Item Card, which enforces lot tracking with lot information. Certificate data can be printed on a new EUDR Sales Invoice.</p>\n<p>Certificate fields: EUDR Certificate No.; Certification Scheme; Valid From; Valid To; Country of Production; DDS Reference Number; DDS Verification No.</p>",
+        "id": 573251,
+        "locale": null,
+        "modified": "2026-10-30T22:08:34",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Sustainability Management - Add EUDR certification information"
+    },
+    {
+        "created": "2026-10-30T22:08:34",
+        "description": "<p>Users can now manually access saved credentials when password suggestions don't appear automatically. When a user right-clicks a recognized username or password field, a new Select Password option appears in the context menu. This provides a reliable fallback path for sign-in scenarios where autofill suggestions are not surfaced, reducing the need for users to copy credentials manually. No configuration is required, and existing password management policies continue to apply.</p>",
+        "id": 570662,
+        "locale": null,
+        "modified": "2026-10-30T22:08:34",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Select Password from the context menu"
+    },
+    {
         "created": "2026-10-29T23:01:00",
         "description": "<p>Distributed order management (DOM) can now optimize fulfillment for standard sales orders in Dynamics 365 Supply Chain Management. Previously, DOM was available only for Dynamics 365 Commerce orders. Now you can use the same rules-based fulfillment engine to automatically choose the best site and warehouse for each sales order line, without depending on Commerce or retail configuration.</p>\n<p>This feature includes:</p>\n<ul>\n<li><strong>DOM for standard sales orders:</strong> Eligible Supply Chain Management sales orders are picked up by the DOM batch job, evaluated against your fulfillment profile, and assigned the optimal site and warehouse. The sales order line is updated automatically.</li>\n<li><strong>Setup in Supply Chain Management:</strong> Configure DOM parameters, fulfillment groups, rules, and fulfillment profiles without the Retail and Commerce module.</li>\n<li><strong>Fulfillment groups and rules:</strong> Group warehouses and apply rules such as location priority, minimum inventory, maximum distance, maximum orders, offline locations, and partial orders.</li>\n<li><strong>Distance-based sourcing:</strong> Use Azure Maps to calculate distances between warehouses and delivery addresses.</li>\n<li><strong>Fulfillment plans, status, and logs:</strong> Review fulfillment plans, DOM run logs, and fulfillment status directly from the sales order.</li>\n<li><strong>Soft run (simulation):</strong> Test fulfillment profiles and see the recommended locations without changing any orders.</li>\n<li><strong>Warehouse management compatibility:</strong> Works with items enabled for advanced warehouse management. DOM selects the warehouse, and warehouse management handles picking within that warehouse.</li>\n<li><strong>Rejection and rerouting:</strong> When a fulfillment location rejects an order line, the next DOM run can reassign it to another location.</li>\n</ul>",
         "id": 577894,
@@ -8732,9 +9043,9 @@
         "description": "<p>AI Interpreter for Events brings real-time, AI-powered audio interpretation to Teams Town Halls and Webinars, helping global audiences follow events in their preferred language. Organizers can configure supported languages for their event, giving attendees a more natural and engaging multilingual experience beyond translated captions.</p>",
         "id": 576711,
         "locale": null,
-        "modified": "2026-10-21T23:02:10",
+        "modified": "2026-10-30T22:08:34",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -22111,9 +22422,9 @@
         "description": "<p>All users in Events larger than 1,000 users or in any Event optimized for a large audience can now chat with one another in a public event chat in GCC, GCC High and DoD.</p>",
         "id": 573625,
         "locale": null,
-        "modified": "2026-10-13T23:01:05",
+        "modified": "2026-10-30T22:08:34",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -31341,12 +31652,12 @@
         "description": "<p>Federated Copilot connectors (MCP type) currently let Microsoft 365 Copilot read data from third-party services in real time. With this update, the connector tools that create, update, and delete content in those services are unblocked in Copilot Chat, so users can complete work without leaving Copilot. Copilot acts with the user's own account and permissions at the third-party service, and every create, update, or delete action requires the user's explicit confirmation before it runs. Admins can view each connector's read and write/delete tools in the Microsoft 365 admin center and disable connectors that don't meet their organization's policies.</p>",
         "id": 570964,
         "locale": null,
-        "modified": "2026-09-22T22:57:16",
+        "modified": "2026-10-30T22:08:34",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -32213,7 +32524,7 @@
         "description": "<p>Microsoft Edge will introduce an opt-in experience that allows users on managed devices to choose whether Edge launches automatically when Windows starts. Administrators can also manage this behavior through the LaunchEdgeOnWindowsStartupEnabled policy with opt-in, opt-out, and user-choice configurations.</p>",
         "id": 571307,
         "locale": null,
-        "modified": "2026-09-18T22:00:04",
+        "modified": "2026-10-30T22:08:34",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -33465,9 +33776,9 @@
         "description": "<p>The Unified Classification Management Experience unifies every classifier in Microsoft Purview\u2014Sensitive Information Types (SITs), Exact Data Match (EDM), fingerprint SITs, and trainable classifiers\u2014into one place to discover, create, validate, and manage classifiers.</p>",
         "id": 570844,
         "locale": null,
-        "modified": "2026-10-27T23:05:02",
+        "modified": "2026-10-30T22:08:34",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicDisclosureAvailabilityDate": "March CY2027",
         "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -73172,12 +73483,12 @@
         "description": "<p>To better align with user expectations, site permissions are changing to look and work both in context on a website that is requesting permissions and when navigating to permissions from Settings. On a website that is requesting permissions, there are changes to the Omnibox and the Page Info dialog and permissions will be easier to see and modify in Settings.</p>",
         "id": 552598,
         "locale": null,
-        "modified": "2026-10-02T22:01:21",
+        "modified": "2026-10-30T22:08:34",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -73214,7 +73525,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Improvements to site permissions user interfaces"
+        "title": "Microsoft Edge: v.156 - Improvements to site permissions user interfaces"
     },
     {
         "created": "2026-02-12T00:15:53",
@@ -75023,12 +75334,12 @@
         "description": "<p>For desktop users, Microsoft Edge can now autofill additional document types\u2014including passports, driver\u2019s licenses, and other specialized forms\u2014on top of your saved addresses.</p>",
         "id": 554938,
         "locale": null,
-        "modified": "2026-09-17T23:00:45",
+        "modified": "2026-10-30T22:08:34",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -75065,7 +75376,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Enhanced Autofill"
+        "title": "Microsoft Edge: v.156 - Enhanced Autofill"
     },
     {
         "created": "2026-02-11T00:15:04",
@@ -88509,7 +88820,7 @@
         "description": "<p>We will support creating Planner tasks and plans querying Planner information in M365 Copilot chat, allowing users to manage their tasks and plans between Copilot and Planner seamlessly.</p>",
         "id": 516577,
         "locale": null,
-        "modified": "2026-09-25T22:37:50",
+        "modified": "2026-10-30T22:08:34",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "August CY2026",
@@ -97754,9 +98065,9 @@
         "description": "<p>Align the community feeds default experience with expected user behaviors; support triage and content review for users who want to read every message in a community.</p>",
         "id": 513275,
         "locale": null,
-        "modified": "2026-10-16T22:00:35",
+        "modified": "2026-10-30T22:08:34",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -106306,15 +106617,15 @@
     },
     {
         "created": "2025-08-01T23:45:08",
-        "description": "<p>Get relevant answers and insights about your open cloud documents in Copilot Chat in Edge.</p>",
+        "description": "<p>Get relevant answers and insights about your open browser tabs and YouTube videos directly from the Edge side pane</p>",
         "id": 499423,
         "locale": null,
-        "modified": "2026-09-25T22:37:50",
+        "modified": "2026-10-30T22:08:34",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -106357,7 +106668,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Ground Microsoft 365 Copilot Chat in Edge for Business in your open OneDrive and SharePoint documents"
+        "title": "Microsoft Edge: Ground Microsoft 365 Copilot Chat in Edge for Business"
     },
     {
         "created": "2025-08-01T22:00:15",

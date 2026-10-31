@@ -277,16 +277,22 @@
         "azureml://registries/azureml-anthropic/models/claude-sonnet-4-5",
         "azureml://registries/azureml-anthropic/models/claude-sonnet-4-6",
         "azureml://registries/azureml-anthropic/models/claude-sonnet-5",
+        "azureml://registries/azureml-anthropic/models/claude-sonnet-5-5",
         "azureml://registries/azureml-anthropic/models/claude-haiku-4-5",
+        "azureml://registries/azureml-anthropic/models/claude-haiku-5-5",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-1",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-5",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-6",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-7",
         "azureml://registries/azureml-anthropic/models/claude-opus-4-8",
         "azureml://registries/azureml-anthropic/models/claude-opus-5",
+        "azureml://registries/azureml-anthropic/models/claude-opus-5-5",
+        "azureml://registries/azureml-anthropic/models/claude-opus-5-5-fast",
         "azureml://registries/azureml-anthropic/models/claude-mythos-preview",
         "azureml://registries/azureml-anthropic/models/claude-mythos-5",
+        "azureml://registries/azureml-anthropic/models/claude-mythos-5-1",
         "azureml://registries/azureml-anthropic/models/claude-fable-5",
+        "azureml://registries/azureml-anthropic/models/claude-fable-5-1",
         "azureml://registries/azureml-mistral/models/mistral-large-3",
         "azureml://registries/azureml-fireworks/models/fw-kimi-k2-thinking",
         "azureml://registries/azureml-fireworks/models/fw-gpt-oss-120b",
@@ -668,7 +674,12 @@
             "sora"
         ],
         "supportedVideoV2Models": [
-            "sora-2"
+            "sora-2",
+            "kling-v3-pro",
+            "ltx-2.5-fast",
+            "ltx-2.5-pro",
+            "minimax-h3-max-turbo",
+            "minimax-h3-max"
         ]
     },
     "unauthHFLinkAssetIds": [],
@@ -716,6 +727,11 @@
         "azureml://registries/azureml-staging/models/sora",
         "azureml://registries/azure-openai/models/sora",
         "azureml://registries/azure-openai/models/sora-2",
+        "azureml://registries/falai/models/kling-v3-pro",
+        "azureml://registries/falai/models/ltx-2.5-fast",
+        "azureml://registries/falai/models/ltx-2.5-pro",
+        "azureml://registries/falai/models/minimax-h3-max-turbo",
+        "azureml://registries/falai/models/minimax-h3-max",
         "azureml://registries/azureml-stabilityai/models/stable-image-ultra",
         "azureml://registries/azureml-stabilityai/models/stable-image-core",
         "azureml://registries/azureml-stabilityai/models/stable-diffusion-3.5-large"

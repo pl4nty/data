@@ -1796,6 +1796,20 @@
                     "IsEnabled": true
                 }
             ],
+            "EnableTMNotifications": [
+                {
+                    "Flight": "TM.halfTimeNotifications",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "TM.wrapUpNotifications",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "TM.overtimeNotifications",
+                    "IsEnabled": false
+                }
+            ],
             "EnableTlcLoopTaskFetching": [
                 {
                     "Flight": "EnableTlcLoopTaskFetching",
