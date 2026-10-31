@@ -87164,79 +87164,6 @@
     },
     {
         "created": "2025-11-21T23:15:16",
-        "description": "The Model Selector in Microsoft 365 Copilot gives users more control over reasoning depth, enabling automatic reasoning for simple tasks and explicit control when desired. The three modes that are supported as part of GPT-5 are: Auto (default) - system decides how long to think, Quick response - answers right away, Think deeper - Thinks longer for better answers.",
-        "id": 532736,
-        "locale": null,
-        "modified": "2025-12-31T00:15:43",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Model Selector in Microsoft 365 Copilot"
-    },
-    {
-        "created": "2025-11-21T23:15:16",
         "description": "Scheduling with Copilot: Users can now schedule meetings directly from chat. Simply ask Copilot to schedule a meeting with colleagues, and it will find available times, book rooms, draft agendas, and send invites\u2014all within the chat experience. This feature will roll out in phases and is expected to be generally available in Copilot chat across all endpoints for users with a Microsoft 365 Copilot license in the coming months.",
         "id": 532735,
         "locale": null,
@@ -103938,55 +103865,6 @@
             ]
         },
         "title": "SharePoint: Content Management Assessment (CMA)"
-    },
-    {
-        "created": "2025-08-28T23:00:27",
-        "description": "Microsoft Teams Rooms on Android can now join Town Halls in Teams as attendees. You can attend directly from the invited Teams Room, with the same features that attendees have for Town Halls on the Teams desktop app. Available in Teams Rooms Pro.",
-        "id": 500702,
-        "locale": null,
-        "modified": "2025-12-31T00:15:43",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Join town halls and webinars as an attendee from Microsoft Teams Rooms on Android"
     },
     {
         "created": "2025-08-28T23:00:27",
