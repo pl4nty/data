@@ -1532,6 +1532,12 @@
                     "IsEnabled": true
                 }
             ],
+            "DocGenSkipVoiceMode": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.SkipDocGenerationIntentCollectionForLift",
+                    "IsEnabled": true
+                }
+            ],
             "DynamicSkillOptimization": [
                 {
                     "Flight": "ChannelAgent.enableRelaxedSkillParsing",

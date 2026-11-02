@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><o:OfficeConfig xmlns:o="urn:schemas-microsoft-com:office:office">
   <o:services>
-    <!--Build: 16.0.20522.40132-->
+    <!--Build: 16.0.20621.40129-->
     <o:default>
       <o:ticket o:headerName="Authorization" o:headerValue="{}"/>
     </o:default>
@@ -2053,6 +2053,11 @@
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="onenote.com" o:headerValue="WLID1.0 {}&amp;p="/>
       <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
     </o:service>
+    <o:service o:name="OneNoteImmersiveReaderApi" o:authentication="2">
+      <o:url>https://immersivereader.edu.svc.cloud.microsoft/relay/v1.0/GetContentModelForReader</o:url>
+      <o:ticket o:policy="DELEGATION" o:idprovider="1" o:target="https://immersivereader.cloud.microsoft/.default" o:headerValue="Bearer {}"/>
+      <o:ticket o:idprovider="3" o:headerValue="Bearer {}" o:resourceId="https://officeapps.live.com" o:authorityUrl="https://login.windows.net/common/oauth2/authorize"/>
+    </o:service>
     <o:service o:name="OneNoteClassNotebooksApi" o:authentication="2">
       <o:url>https://www.onenote.com/api/v1.0/me/notes/classnotebooks</o:url>
       <o:ticket o:policy="MBI_SSL_SHORT" o:idprovider="1" o:target="onenote.com" o:headerValue="WLID1.0 {}&amp;p="/>
@@ -2677,6 +2682,7 @@
     <o:token o:name="OneNote.AuthHost">onenote.com</o:token>
     <o:token o:name="OneNote.BaseHost">www.onenote.com</o:token>
     <o:token o:name="OneNote.BaseHostRootDomain">onenote.com</o:token>
+    <o:token o:name="ImmersiveReader.BaseHost">immersivereader.edu.svc.cloud.microsoft</o:token>
     <o:token o:name="OneNoteADALResourceURL">https://outlook.office365.com</o:token>
     <o:token o:name="OneNoteEnableFeed">true</o:token>
     <o:token o:name="OneNoteEnableGetNotebooksAPI">true</o:token>

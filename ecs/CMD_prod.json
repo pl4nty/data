@@ -34,7 +34,6 @@
         "BackfillMexicoGeoLocation": true,
         "BlockGccCommercialTenant": true,
         "Branding_And_Licensing": true,
-        "CASEnableGetCloudPCsByPlatformSdk": true,
         "CasColdDataConsistencyCheck": true,
         "CasHandleFlexStop": true,
         "CasSkipFldWdsCpcDeallocation": false,
