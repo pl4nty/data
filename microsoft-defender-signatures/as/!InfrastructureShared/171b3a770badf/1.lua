@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\105b379f90ffc\1.luac 
+-- Command line: lua\!InfrastructureShared\171b3a770badf\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -14,7 +14,7 @@ local l_0_1 = (mp.GetParentProcInfo)()
 if (l_0_1 ~= nil or l_0_1.ppid ~= nil) and isParentPackageManager(l_0_1.ppid, true) then
   return mp.CLEAN
 end
-if analyzeRansomwarePattern4(1) == mp.INFECTED then
+if analyzeRansomwarePattern2(1) == mp.INFECTED then
   local l_0_2, l_0_3 = (bm.get_process_relationships)()
   for l_0_7,l_0_8 in ipairs(l_0_3) do
     (bm.trigger_sig)("BmTraverseTreeBlock", "Detected", l_0_8.ppid)

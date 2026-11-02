@@ -35,7 +35,7 @@ do
   end
   local l_0_6 = nil
   local l_0_7 = tostring(l_0_4.utf8p1)
-  if l_0_7 ~= nil and contains(l_0_7, {"://chatgpt.com", ".microsoft.com/", "://m365.cloud.microsoft/", ".visualstudio.com/", ".sharepoint.com/", "://github.com/", "://localhost", "://127.0.", ".reddit.com/", ".google.com/", "/wiki/", "://opencode.ai/", "://web.whatsapp.com/", "://www.bing.com/search", "://www.youtube.com/watch", "://outlook.cloud.microsoft/", "://antigravity.google/", "://grok.com/", "/wikis/", "://learn.", "://docs.", "/chat/", "://chat.", "://wiki.", "://forum.", "://search.naver.com/", "://bun.com/", "://discord.com/"}) then
+  if l_0_7 ~= nil and contains(l_0_7, {"://chatgpt.com", ".microsoft.com/", "://m365.cloud.microsoft/", ".visualstudio.com/", ".sharepoint.com/", "://github.com/", "://localhost", "://127.0.", ".reddit.com/", ".google.com/", "/wiki/", "://opencode.ai/", "://web.whatsapp.com/", "://www.bing.com/search", "://www.youtube.com/watch", "://outlook.cloud.microsoft/", "://antigravity.google/", "://grok.com/", "/wikis/", "://learn.", "://docs.", "/chat/", "://chat.", "://wiki.", "://forum.", "://search.naver.com/", "://bun.com/", "://discord.com/", "://muse.ai/", "://use.ai/", "://ask-chat.ai/", "://herdr.dev/"}) then
     return mp.CLEAN
   end
   AppendToRollingQueue("IsFromWebClipWrite", l_0_5, l_0_7, 300)
