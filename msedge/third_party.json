@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 1187099,
+    "size": 1188071,
     "file_count": 48
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 6552744,
+    "size": 6552802,
     "file_count": 198
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 34327471,
+    "size": 34359530,
     "file_count": 4103
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 38748,
+    "size": 38782,
     "file_count": 5
   },
   {
@@ -156,8 +156,8 @@
   },
   {
     "name": "dawn",
-    "size": 163641982,
-    "file_count": 19349
+    "size": 163650366,
+    "file_count": 19351
   },
   {
     "name": "dbus",
@@ -176,13 +176,13 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 4533834,
+    "size": 4531152,
     "file_count": 27
   },
   {
     "name": "dom_distiller_js",
-    "size": 4098,
-    "file_count": 5
+    "size": 3177,
+    "file_count": 4
   },
   {
     "name": "domato",
@@ -211,8 +211,8 @@
   },
   {
     "name": "eigen3",
-    "size": 23351990,
-    "file_count": 2416
+    "size": 23413870,
+    "file_count": 2423
   },
   {
     "name": "entity_extraction",
@@ -281,8 +281,8 @@
   },
   {
     "name": "glslang",
-    "size": 46428920,
-    "file_count": 3790
+    "size": 46436332,
+    "file_count": 3792
   },
   {
     "name": "googletest",
@@ -296,8 +296,8 @@
   },
   {
     "name": "grpc",
-    "size": 31328331,
-    "file_count": 3478
+    "size": 31316566,
+    "file_count": 3479
   },
   {
     "name": "gsettings-desktop-schemas",
@@ -341,8 +341,8 @@
   },
   {
     "name": "icu",
-    "size": 162961175,
-    "file_count": 7203
+    "size": 163045451,
+    "file_count": 7216
   },
   {
     "name": "inference_engine",
@@ -377,7 +377,7 @@
   {
     "name": "jetstream",
     "size": 412859476,
-    "file_count": 125
+    "file_count": 126
   },
   {
     "name": "jni_zero",
@@ -526,7 +526,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19439595,
+    "size": 19265003,
     "file_count": 19
   },
   {
@@ -576,8 +576,8 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 79346,
-    "file_count": 37
+    "size": 82326,
+    "file_count": 38
   },
   {
     "name": "oneds_sdk",
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4872909,
+    "size": 4896698,
     "file_count": 645
   },
   {
@@ -706,12 +706,12 @@
   },
   {
     "name": "skia",
-    "size": 3474013,
-    "file_count": 1215
+    "size": 3482172,
+    "file_count": 1218
   },
   {
     "name": "speech-dispatcher",
-    "size": 41886,
+    "size": 41937,
     "file_count": 13
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 556138,
+    "size": 556413,
     "file_count": 15
   },
   {
@@ -776,8 +776,8 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 17558918,
-    "file_count": 41
+    "size": 20872546,
+    "file_count": 45
   },
   {
     "name": "undocked_copilot_mac",
@@ -806,7 +806,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7887024,
+    "size": 7891138,
     "file_count": 207
   },
   {
@@ -816,8 +816,8 @@
   },
   {
     "name": "wayland-protocols",
-    "size": 264977,
-    "file_count": 65
+    "size": 667,
+    "file_count": 3
   },
   {
     "name": "webdriver",

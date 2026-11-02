@@ -490,13 +490,6 @@ extern void TriggerUsageFeatureGroupEdgeENPDynHoldout(
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kAppLayerForCentralContainer);
 
-// If enabled, forces the browser window to have no rounded corners and margins.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kForceNoRoundedCornerAndMargin);
-
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsForceNoRoundedCornerAndMarginEnabled();
-
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern int GetRoundedCornerRadius();
 

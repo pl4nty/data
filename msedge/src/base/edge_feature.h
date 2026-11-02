@@ -73,11 +73,99 @@ constexpr Feature::Feature(const char* name,
                            const Feature* holdout,
                            internal::FeatureMacroHandshake)
     : name(name),
-      default_state(default_state),
+      default_state_(default_state),
       runtime(internal::EdgeFeatureFlagsFromKind(kind).runtime),
       first_run(internal::EdgeFeatureFlagsFromKind(kind).first_run),
       copilot_app_type(copilot_app_type),
       holdout(holdout) {}
+
+// Feature subclasses encode Edge variants so mismatches between declarations
+// and definitions are caught at compile time. They reuse Feature's existing
+// fields and defaults. All categories remain usable through const Feature& or
+// const Feature*. Declare and define category-specific features with the
+// matching macros below.
+//
+// - EdgeRuntimeFeature: runtime trials without caching feature state.
+// - EdgeFirstRunFeature: first-run session trial handling.
+// - EdgeCopilotFeature: features restricted to selected Copilot app processes.
+// - EdgeFeatureWithHoldout: ordinary features gated by a group holdout.
+// - EdgeFirstRunFeatureWithHoldout: first-run features with a group holdout.
+// - EdgeTriggerFeature: experiment trigger recording; disabled by default.
+//
+// Prefer Feature for general use; reserve these types for category-specific
+// feature declarations and definitions.
+struct LOGICALLY_CONST EdgeRuntimeFeature final : Feature {
+  constexpr EdgeRuntimeFeature(const char* feature_name,
+                               FeatureState feature_default_state,
+                               internal::FeatureMacroHandshake handshake)
+      : Feature(feature_name,
+                feature_default_state,
+                EdgeFeatureKind::kRuntime,
+                CopilotAppType::kNone,
+                /*holdout=*/nullptr,
+                handshake) {}
+};
+
+struct LOGICALLY_CONST EdgeFirstRunFeature final : Feature {
+  constexpr EdgeFirstRunFeature(const char* feature_name,
+                                FeatureState feature_default_state,
+                                internal::FeatureMacroHandshake handshake)
+      : Feature(feature_name,
+                feature_default_state,
+                EdgeFeatureKind::kFirstRun,
+                CopilotAppType::kNone,
+                /*holdout=*/nullptr,
+                handshake) {}
+};
+
+struct LOGICALLY_CONST EdgeCopilotFeature final : Feature {
+  constexpr EdgeCopilotFeature(const char* feature_name,
+                               FeatureState feature_default_state,
+                               CopilotAppType feature_copilot_app_type,
+                               internal::FeatureMacroHandshake handshake)
+      : Feature(feature_name,
+                feature_default_state,
+                EdgeFeatureKind::kNormal,
+                feature_copilot_app_type,
+                /*holdout=*/nullptr,
+                handshake) {}
+};
+
+struct LOGICALLY_CONST EdgeFeatureWithHoldout final : Feature {
+  constexpr EdgeFeatureWithHoldout(const char* feature_name,
+                                   FeatureState feature_default_state,
+                                   const Feature* holdout_feature,
+                                   internal::FeatureMacroHandshake handshake)
+      : Feature(feature_name,
+                feature_default_state,
+                EdgeFeatureKind::kNormal,
+                CopilotAppType::kNone,
+                holdout_feature,
+                handshake) {}
+};
+
+struct LOGICALLY_CONST EdgeFirstRunFeatureWithHoldout final : Feature {
+  constexpr EdgeFirstRunFeatureWithHoldout(
+      const char* feature_name,
+      FeatureState feature_default_state,
+      const Feature* holdout_feature,
+      internal::FeatureMacroHandshake handshake)
+      : Feature(feature_name,
+                feature_default_state,
+                EdgeFeatureKind::kFirstRun,
+                CopilotAppType::kNone,
+                holdout_feature,
+                handshake) {}
+};
+
+struct LOGICALLY_CONST EdgeTriggerFeature final : Feature {
+  constexpr EdgeTriggerFeature(const char* feature_name,
+                               internal::FeatureMacroHandshake handshake)
+      : Feature(feature_name,
+                FEATURE_DISABLED_BY_DEFAULT,
+                /*is_runtime_mutable=*/false,
+                handshake) {}
+};
 
 // Makes name-based feature construction explicit when no suitable static
 // feature definition exists, such as for runtime-supplied names or test
@@ -108,11 +196,9 @@ class DynamicFeature final : public Feature {
     return std::string_view(#feature).substr(1).data(); \
   }()
 
-#define BASE_EDGE_FEATURE_INTERNAL_DEFINE(feature, name, default_state, kind, \
-                                          copilot_type, holdout)              \
-  constinit const base::Feature feature(                                      \
-      name, default_state, kind, copilot_type, holdout,                       \
-      base::internal::FeatureMacroHandshake::kSecret)
+#define BASE_EDGE_FEATURE_INTERNAL_DEFINE(Type, feature, ...) \
+  constinit const base::Type feature(                         \
+      __VA_ARGS__, base::internal::FeatureMacroHandshake::kSecret)
 
 // The same as `BASE_DECLARE_FEATURE()` but such feature is also declared to be
 // part of a feature group holdout.
@@ -135,7 +221,7 @@ class DynamicFeature final : public Feature {
 //   COMPONENT_EXPORT(MY_COMPONENT)
 //   BASE_DECLARE_FEATURE_WITH_HOLDOUT(kMyFeature);
 #define BASE_DECLARE_FEATURE_WITH_HOLDOUT(feature) \
-  extern constinit const base::Feature feature
+  extern constinit const base::EdgeFeatureWithHoldout feature
 
 // Provides a definition for a feature whose name is derived from the C++
 // identifier.
@@ -150,11 +236,10 @@ class DynamicFeature final : public Feature {
 //
 // Features should *not* be defined in header files; do not use this macro in
 // header files.
-#define BASE_FEATURE_WITH_HOLDOUT(feature, default_state, holdout)      \
-  BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                    \
-      feature, BASE_EDGE_FEATURE_INTERNAL_NAME(feature), default_state, \
-      base::EdgeFeatureKind::kNormal,                                   \
-      /*copilot_type=*/base::CopilotAppType::kNone, holdout)
+#define BASE_FEATURE_WITH_HOLDOUT(feature, default_state, holdout)            \
+  BASE_EDGE_FEATURE_INTERNAL_DEFINE(EdgeFeatureWithHoldout, feature,          \
+                                    BASE_EDGE_FEATURE_INTERNAL_NAME(feature), \
+                                    default_state, holdout)
 
 // The same as `BASE_DECLARE_FEATURE()` but such feature is only applicable to
 // copilot app and can only be enabled or triggered on copilot app.
@@ -168,7 +253,7 @@ class DynamicFeature final : public Feature {
 //
 //   COMPONENT_EXPORT(MY_COMPONENT) BASE_DECLARE_COPILOT_FEATURE(kMyFeature);
 #define BASE_DECLARE_COPILOT_FEATURE(feature) \
-  extern constinit const base::Feature feature
+  extern constinit const base::EdgeCopilotFeature feature
 
 // Provides a definition for a copilot feature whose name is derived from the
 // C++ identifier.
@@ -204,11 +289,11 @@ class DynamicFeature final : public Feature {
   BASE_COPILOT_FEATURE_INTERNAL_3_ARGS(feature, default_state,       \
                                        base::CopilotAppType::kAll)
 
-#define BASE_COPILOT_FEATURE_INTERNAL_3_ARGS(feature, default_state,    \
-                                             copilot_app_type)          \
-  BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                    \
-      feature, BASE_EDGE_FEATURE_INTERNAL_NAME(feature), default_state, \
-      base::EdgeFeatureKind::kNormal, copilot_app_type, /*holdout=*/nullptr)
+#define BASE_COPILOT_FEATURE_INTERNAL_3_ARGS(feature, default_state,          \
+                                             copilot_app_type)                \
+  BASE_EDGE_FEATURE_INTERNAL_DEFINE(EdgeCopilotFeature, feature,              \
+                                    BASE_EDGE_FEATURE_INTERNAL_NAME(feature), \
+                                    default_state, copilot_app_type)
 
 // The only difference in behavior of runtime features vs features is that
 // runtime features will not cache the state of the feature on the first
@@ -226,7 +311,7 @@ class DynamicFeature final : public Feature {
 //
 //   COMPONENT_EXPORT(MY_COMPONENT) BASE_DECLARE_RUNTIME_FEATURE(kMyFeature);
 #define BASE_DECLARE_RUNTIME_FEATURE(feature) \
-  extern constinit const base::Feature feature
+  extern constinit const base::EdgeRuntimeFeature feature
 
 // Provides a definition for `kFeature` with `name` and `default_state`, e.g.
 //
@@ -246,15 +331,12 @@ class DynamicFeature final : public Feature {
 // Features should *not* be defined in header files; do not use this macro in
 // header files.
 #define BASE_RUNTIME_FEATURE_INTERNAL_3_ARGS(feature, name, default_state) \
-  BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                       \
-      feature, name, default_state, base::EdgeFeatureKind::kRuntime,       \
-      /*copilot_type=*/base::CopilotAppType::kNone, /*holdout=*/nullptr)
+  BASE_EDGE_FEATURE_INTERNAL_DEFINE(EdgeRuntimeFeature, feature, name,     \
+                                    default_state)
 
-#define BASE_RUNTIME_FEATURE_INTERNAL_2_ARGS(feature, default_state)    \
-  BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                    \
-      feature, BASE_EDGE_FEATURE_INTERNAL_NAME(feature), default_state, \
-      base::EdgeFeatureKind::kRuntime,                                  \
-      /*copilot_type=*/base::CopilotAppType::kNone, /*holdout=*/nullptr)
+#define BASE_RUNTIME_FEATURE_INTERNAL_2_ARGS(feature, default_state) \
+  BASE_RUNTIME_FEATURE_INTERNAL_3_ARGS(                              \
+      feature, BASE_EDGE_FEATURE_INTERNAL_NAME(feature), default_state)
 
 #define BASE_RUNTIME_FEATURE(...)                        \
   BASE_FEATURE_INTERNAL_GET_FEATURE_MACRO(               \
@@ -291,7 +373,7 @@ class DynamicFeature final : public Feature {
 //
 //   COMPONENT_EXPORT(MY_COMPONENT) BASE_DECLARE_FIRST_RUN_FEATURE(kMyFeature);
 #define BASE_DECLARE_FIRST_RUN_FEATURE(feature) \
-  extern constinit const base::Feature feature
+  extern constinit const base::EdgeFirstRunFeature feature
 
 // Provides a definition for `kFeature` with `name` and `default_state`, e.g.
 //
@@ -319,15 +401,12 @@ class DynamicFeature final : public Feature {
 // Features should *not* be defined in header files; do not use this macro in
 // header files.
 #define BASE_FIRST_RUN_FEATURE_INTERNAL_3_ARGS(feature, name, default_state) \
-  BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                         \
-      feature, name, default_state, base::EdgeFeatureKind::kFirstRun,        \
-      /*copilot_type=*/base::CopilotAppType::kNone, /*holdout=*/nullptr)
+  BASE_EDGE_FEATURE_INTERNAL_DEFINE(EdgeFirstRunFeature, feature, name,      \
+                                    default_state)
 
-#define BASE_FIRST_RUN_FEATURE_INTERNAL_2_ARGS(feature, default_state)  \
-  BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                    \
-      feature, BASE_EDGE_FEATURE_INTERNAL_NAME(feature), default_state, \
-      base::EdgeFeatureKind::kFirstRun,                                 \
-      /*copilot_type=*/base::CopilotAppType::kNone, /*holdout=*/nullptr)
+#define BASE_FIRST_RUN_FEATURE_INTERNAL_2_ARGS(feature, default_state) \
+  BASE_FIRST_RUN_FEATURE_INTERNAL_3_ARGS(                              \
+      feature, BASE_EDGE_FEATURE_INTERNAL_NAME(feature), default_state)
 
 #define BASE_FIRST_RUN_FEATURE(...)                        \
   BASE_FEATURE_INTERNAL_GET_FEATURE_MACRO(                 \
@@ -355,7 +434,7 @@ class DynamicFeature final : public Feature {
 //   COMPONENT_EXPORT(MY_COMPONENT)
 //   BASE_DECLARE_FIRST_RUN_FEATURE_WITH_HOLDOUT(kMyFeature);
 #define BASE_DECLARE_FIRST_RUN_FEATURE_WITH_HOLDOUT(feature) \
-  extern constinit const base::Feature feature
+  extern constinit const base::EdgeFirstRunFeatureWithHoldout feature
 
 // Provides a definition for a feature whose name is derived from the C++
 // identifier.
@@ -371,11 +450,10 @@ class DynamicFeature final : public Feature {
 //
 // Features should *not* be defined in header files; do not use this macro in
 // header files.
-#define BASE_FIRST_RUN_FEATURE_WITH_HOLDOUT(feature, default_state, holdout) \
-  BASE_EDGE_FEATURE_INTERNAL_DEFINE(                                         \
-      feature, BASE_EDGE_FEATURE_INTERNAL_NAME(feature), default_state,      \
-      base::EdgeFeatureKind::kFirstRun,                                      \
-      /*copilot_type=*/base::CopilotAppType::kNone, holdout)
+#define BASE_FIRST_RUN_FEATURE_WITH_HOLDOUT(feature, default_state, holdout)  \
+  BASE_EDGE_FEATURE_INTERNAL_DEFINE(EdgeFirstRunFeatureWithHoldout, feature,  \
+                                    BASE_EDGE_FEATURE_INTERNAL_NAME(feature), \
+                                    default_state, holdout)
 
 // Recommended macros for declaring and defining features triggers.
 //
@@ -397,7 +475,7 @@ class DynamicFeature final : public Feature {
 //
 //   COMPONENT_EXPORT(MY_COMPONENT) BASE_DECLARE_FEATURE_TRIGGER(kMyFeature);
 #define BASE_DECLARE_FEATURE_TRIGGER(feature) \
-  extern constinit const base::Feature feature
+  extern constinit const base::EdgeTriggerFeature feature
 
 // Provides a definition for `kFeature` feature trigger with `name`, e.g.
 //
@@ -422,11 +500,13 @@ class DynamicFeature final : public Feature {
 //
 // Features triggers should *not* be defined in header files; do not use this
 // macro in header files.
-#define BASE_FEATURE_TRIGGER_INTERNAL_2_ARGS(feature, name) \
-  BASE_FEATURE(feature, name, base::FEATURE_DISABLED_BY_DEFAULT)
+#define BASE_FEATURE_TRIGGER_INTERNAL_2_ARGS(feature, name)                  \
+  BASE_FEATURE_SECTION BASE_EDGE_FEATURE_INTERNAL_DEFINE(EdgeTriggerFeature, \
+                                                         feature, name)
 
 #define BASE_FEATURE_TRIGGER_INTERNAL_1_ARGS(feature) \
-  BASE_FEATURE(feature, base::FEATURE_DISABLED_BY_DEFAULT)
+  BASE_FEATURE_TRIGGER_INTERNAL_2_ARGS(               \
+      feature, BASE_EDGE_FEATURE_INTERNAL_NAME(feature))
 
 #define GET_BASE_FEATURE_TRIGGER_MACRO(_1, _2, NAME, ...) NAME
 #define BASE_FEATURE_TRIGGER(...)                        \

@@ -364,7 +364,7 @@ BASE_DECLARE_FEATURE_TRIGGER(
 
 // Feature to insert keyword search terms from Imported history urls
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
-BASE_DECLARE_FEATURE_TRIGGER(kContinuousImportInsertKeywordSearchTerms);
+BASE_DECLARE_FEATURE(kContinuousImportInsertKeywordSearchTerms);
 
 // Feature to generate keyword search terms from Imported history urls
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)

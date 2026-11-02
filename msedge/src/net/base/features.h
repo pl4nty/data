@@ -34,6 +34,13 @@ NET_EXPORT BASE_DECLARE_FEATURE(kAlpsForHttp2);
 // asynchronous (yielding to the message loop) after many attempts.
 NET_EXPORT BASE_DECLARE_FEATURE(kAsyncRetryOnTooManyConnectionErrors);
 
+// If enabled, when an HttpNetworkTransaction retries a request and the new
+// attempt uses a different proxy chain, the proxy auth controller is discarded,
+// as is server auth state for non-cryptographic schemes. Requests fail if this
+// discards auth state too many times. Also, 407 responses are rejected when not
+// talking to a proxy using GET.
+NET_EXPORT BASE_DECLARE_FEATURE(kClearAuthControllersOnProxyChange);
+
 // Derives Android connection type from NetworkCapabilities inside
 // NetworkCallbacks instead of calling synchronous ConnectivityManager methods.
 NET_EXPORT BASE_DECLARE_FEATURE(kDeriveConnectionTypeFromCapabilities);
@@ -1108,6 +1115,13 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(DiskCacheBackend,
 // so they do not set `seen_global_task_` and block concurrent navigations on
 // the full SQLite cookie store load.
 NET_EXPORT BASE_DECLARE_FEATURE(kCookieMonsterPerKeyDelete);
+
+// When enabled, CanonicalCookie only encrypts cookie values in memory (via
+// crypto::ProcessBoundString) for important cookies. Cookies marked Secure are
+// always important. Cookies marked HttpOnly are considered important if the
+// kCookieProcessBoundEncryptHttpOnly param is true.
+NET_EXPORT BASE_DECLARE_FEATURE(kCookieProcessBoundEncryptOnlyImportant);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kCookieProcessBoundEncryptHttpOnly);
 
 // Enables the Rust implementation of the HTTP chunked decoder, called via FFI.
 NET_EXPORT BASE_DECLARE_FEATURE(kHttpChunkedDecoderInRust);

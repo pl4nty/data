@@ -56,7 +56,7 @@ class EdgeDiskFeatureTest : public testing::Test {
     ASSERT_EQ(ERROR_SUCCESS,
               key.DeleteKey(L"", base::win::RegKey::RecursiveDelete(false)));
     EXPECT_EQ(edge_disk_features::IsDiskFeatureEnabled(feature),
-              feature.feature.default_state);
+              feature.feature.GetDefaultState());
   }
 
  private:

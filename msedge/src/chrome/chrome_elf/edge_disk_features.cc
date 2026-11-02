@@ -26,7 +26,7 @@ bool IsDiskFeatureEnabled(
                              nullptr, &is_enabled)) {
     return is_enabled != 0;
   }
-  return early_feature.feature.default_state;
+  return early_feature.feature.GetDefaultState();
 }
 
 bool IsThirdPartyHookFeatureEnabled() {

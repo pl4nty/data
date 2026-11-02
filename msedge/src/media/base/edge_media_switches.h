@@ -12,7 +12,7 @@ namespace media {
 
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kEdgeLiveCaption);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kEdgeLiveCaptionMultiLanguage);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kEdgeLiveCaptionSettingsTrigger);
+MEDIA_EXPORT BASE_DECLARE_FEATURE_TRIGGER(kEdgeLiveCaptionSettingsTrigger);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaFoundationCdm);
 
 }  // namespace media

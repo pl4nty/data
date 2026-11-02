@@ -1,0 +1,15 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "org.chromium.components.sync.protocol";
+option optimize_for = LITE_RUNTIME;
+
+package sync_pb;
+
+message EdgeContinuitySpecifics {
+  optional string task_id = 1;
+  optional int32 task_type = 2;
+  optional string payload = 3;
+}
