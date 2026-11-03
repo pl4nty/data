@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\235b3e6c20bd2\1.luac 
+-- Command line: lua\!InfrastructureShared\235b39a16b837\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -12,6 +12,8 @@ local l_0_2 = (bm.get_imagepath)()
 if IsExcludedByCmdlineMacOS(l_0_1) or IsExcludedByImagePathMacOS(l_0_2) then
   return mp.CLEAN
 else
+  ;
+  (bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
   return mp.INFECTED
 end
 return mp.CLEAN

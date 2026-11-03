@@ -17,19 +17,19 @@ l_0_1 = l_0_1:gsub("%^", "")
 l_0_1 = l_0_1:gsub("\'", "")
 l_0_1 = l_0_1:gsub(",", "")
 l_0_1 = l_0_1:gsub("%s+", " ")
-local l_0_2 = GetRollingQueueKeys("IsClickFixCMD_Malicious")
+local l_0_2 = GetRollingQueueKeys("IsClickFixCMD")
 if l_0_2 == nil then
   return mp.CLEAN
 end
 do
   local l_0_3 = {}
-  -- DECOMPILER ERROR at PC66: No list found for R3 , SetList fails
+  -- DECOMPILER ERROR at PC65: No list found for R3 , SetList fails
 
-  -- DECOMPILER ERROR at PC67: Overwrote pending register: R4 in 'AssignReg'
+  -- DECOMPILER ERROR at PC66: Overwrote pending register: R4 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC68: Overwrote pending register: R5 in 'AssignReg'
+  -- DECOMPILER ERROR at PC67: Overwrote pending register: R5 in 'AssignReg'
 
-  -- DECOMPILER ERROR at PC69: Overwrote pending register: R6 in 'AssignReg'
+  -- DECOMPILER ERROR at PC68: Overwrote pending register: R6 in 'AssignReg'
 
   if not (" iex")("invoke-expression", "iwr") then
     return mp.CLEAN
