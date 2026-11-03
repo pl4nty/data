@@ -2186,6 +2186,7 @@
             "GenerateAiAboutMeProvider"
         ],
         "TrimDsApiSecurityContext": true,
+        "TrimUserLicenseCache": true,
         "UpcomingMeetingDataProviderConfig": {
             "DaysToLoad": 30,
             "RunSequentially": true
@@ -2667,6 +2668,7 @@
         "EnableConsumptiveBillingIrisContent": false,
         "PLGSDKConsumptiveBilling": true,
         "PLGSDKConsumptiveBillingOlsLive": true,
+        "PLGSDKCreditRequestCustomPolicy": true,
         "enableCreateHandlerForMechanicalImprovements": true
     },
     "PeopleInTaskbar": {

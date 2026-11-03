@@ -419,6 +419,7 @@
             "DeviceConfigToAppConfigOnTheFlyEnabled": true,
             "DisableExpiredCertDecryptionForLocateDevice": true,
             "EnableAERequiredLOBAppsPolicyProcessing": true,
+            "EnableAndroidAospReferencedAppAssignmentMessageProcessor": true,
             "EnableAndroidCpWebEnrollment": true,
             "EnableAndroidDeviceGatewayService": true,
             "EnableAndroidDeviceGatewayServiceForByodWp": true,
@@ -426,6 +427,7 @@
             "EnableAndroidWPDeviceMigrationPolicyPreprocessing": true,
             "EnableAndroidWpDeviceMigrationFinalization": true,
             "EnableAndroidWpDevicePremigration": true,
+            "EnableAospAppConfigSvc": true,
             "EnableAppPermissionsForEtg": true,
             "EnableAppRemovalAsExplicitUninstall": true,
             "EnableAppsPostFilterConflictResolution": true,
@@ -478,6 +480,7 @@
             "DropUnchangedMdmPolicyHashEGAT": true,
             "EgatEgpaConsolidationBGTask": true,
             "EnableAERequiredLOBAppMetadataCreationAndProcessing": true,
+            "EnableAndroidAospReferencedApp": true,
             "EnableEamEvergreenGraph": true,
             "EnableFnlCacheService": true,
             "EnableRHAppDeactivation": true,
@@ -1076,6 +1079,7 @@
     "UX_AndroidEnterprise": {
         "FlightingV2": {
             "EnableAELOBAppConfigUX": true,
+            "EnableAOSPAppConfigUX": true,
             "EnableAndroidWpAdminOptIn": true,
             "EnableAndroidWpMigrationPolicy": true,
             "EnableAndroidWpMigrationReport": true,
@@ -1088,6 +1092,7 @@
     "UX_AppLifecycle": {
         "FlightingV2": {
             "EnableAELOBAppCreation": true,
+            "EnableAOSPReferencedAppUX": true,
             "EnableDdmVppAppsUX": true,
             "EnableEvergreenApps": true,
             "EnableIosDdmReqApps": true,
@@ -1115,6 +1120,7 @@
             "AndroidEsimManagementUX": true,
             "AutoEnableSingleDeviceReactView": true,
             "DeviceLifecycleAgentUI": true,
+            "EnableAutopilotDeploymentsListReportExplorer": true,
             "EnableGetSyncStatusUI": true,
             "EnableGetSyncStatusUI_iOS": true,
             "HideCartToClass": true,
