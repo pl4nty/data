@@ -8,6 +8,12 @@
 #include "base/feature_list.h"
 #include "media/base/media_export.h"
 
+namespace switches {
+
+MEDIA_EXPORT extern const char kEdgeOverrideSoftwareSecureCodecsForTesting[];
+
+}  // namespace switches
+
 namespace media {
 
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kEdgeLiveCaption);
