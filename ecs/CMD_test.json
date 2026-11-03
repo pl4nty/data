@@ -539,7 +539,6 @@
         "EnableCommonProxySSRFAndDisposeFixes": true,
         "EnableCompassAgent": true,
         "EnableCompassAgentOnlineEvaluation": true,
-        "EnableCompassJitProvision": false,
         "EnableConfigTenantProvisioningPace": true,
         "EnableConfigTenantProvisioningPaceV2": true,
         "EnableConfigurationAffectedPoolsInEnvironmentHealthUX": false,

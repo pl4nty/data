@@ -113434,67 +113434,6 @@
     },
     {
         "created": "2025-05-21T23:15:06",
-        "description": "Experience enhancements to IRM alert investigation workflow including updates to the alert's \"All risk factors\" page and activity explorer. These enhancements will give customers the ability to maximize the visual space for their investigation. We are adding to each component a minimize/ maximize button and hiding the horizontal banner on the Alerts pages by default. We are also enhancing the All Risk Factors page for better UX.\n",
-        "id": 493755,
-        "locale": null,
-        "modified": "2026-01-02T23:15:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview compliance portal: Insider Risk Management - Experience enhancements to IRM alert investigation workflow"
-    },
-    {
-        "created": "2025-05-21T23:15:06",
         "description": "This feature allows admins to configure line keys for various scenarios on Teams phone devices, including personal and common area phones (CAP). Scenarios supported include speed dial, shared line, collaborative call delegation, and call transfers. This item's rollout was paused and will begin in 2026. We apologize for any inconvenience.",
         "id": 493320,
         "locale": null,
