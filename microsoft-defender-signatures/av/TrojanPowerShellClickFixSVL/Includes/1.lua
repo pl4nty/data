@@ -380,18 +380,24 @@ end
     l_0_53 = "https://cloubflare.net/"
     local l_0_56 = nil
     l_0_52 = "https://gfisoda.biz/"
-    l_0_51, l_0_50, l_0_49, l_0_48, l_0_47, l_0_46, l_0_45, l_0_44, l_0_43, l_0_42, l_0_41, l_0_40, l_0_39, l_0_38, l_0_37, l_0_36, l_0_35, l_0_34, l_0_33, l_0_32, l_0_31, l_0_30, l_0_29, l_0_23, l_0_22, l_0_21, l_0_20, l_0_19, l_0_18, l_0_17, l_0_16 = {l_0_52}, {l_0_51, l_0_52, l_0_53}, {l_0_50, l_0_51, l_0_52}, {l_0_49, l_0_50, l_0_51, l_0_52, l_0_53}, {l_0_48, l_0_49, l_0_50, l_0_51, l_0_52}, {l_0_47, l_0_48, l_0_49, l_0_50, l_0_51}, {l_0_46, l_0_47, l_0_48, l_0_49, l_0_50}, {l_0_45, l_0_46, l_0_47}, {l_0_44, l_0_45, l_0_46, l_0_47, l_0_48, 48, "wscript", 48, ".vbs"}, {l_0_43, l_0_44, l_0_45}, {l_0_42}, {l_0_41}, {l_0_40}, {l_0_39}, {l_0_38}, {l_0_37}, {l_0_36}, {l_0_35}, {l_0_34}, {l_0_33, l_0_34, l_0_35, l_0_36, l_0_37}, {l_0_32, l_0_33, l_0_34, l_0_35, l_0_36}, {l_0_31, l_0_32, l_0_33, l_0_34, l_0_35}, {l_0_30}, {l_0_24(l_0_25)}, {l_0_23}, {l_0_22, l_0_23, l_0_24}, {l_0_21, l_0_22, l_0_23}, {l_0_20, l_0_21, l_0_22}, {l_0_19, l_0_20, l_0_21}, {l_0_18, l_0_19, l_0_20}, {l_0_17, l_0_18, l_0_19, l_0_20, l_0_21}
-    -- DECOMPILER ERROR at PC438: Overwrote pending register: R10 in 'AssignReg'
+    local l_0_57 = nil
+    l_0_53 = "curl.exe -fsL --ssl-no-revoke --retry 8 --retry-connrefused --retry-delay 1 --connect-timeout"
+    l_0_54 = 255
+    l_0_55 = "-o \"%temp%"
+    l_0_56 = 255
+    l_0_57 = "&& powershell -w h"
+    l_0_52, l_0_51, l_0_50, l_0_49, l_0_48, l_0_47, l_0_46, l_0_45, l_0_44, l_0_43, l_0_42, l_0_41, l_0_40, l_0_39, l_0_38, l_0_37, l_0_36, l_0_35, l_0_34, l_0_33, l_0_32, l_0_31, l_0_30, l_0_29, l_0_23, l_0_22, l_0_21, l_0_20, l_0_19, l_0_18, l_0_17, l_0_16 = {l_0_53, l_0_54, l_0_55, l_0_56, l_0_57}, {l_0_52}, {l_0_51, l_0_52, l_0_53}, {l_0_50, l_0_51, l_0_52}, {l_0_49, l_0_50, l_0_51, l_0_52, l_0_53}, {l_0_48, l_0_49, l_0_50, l_0_51, l_0_52}, {l_0_47, l_0_48, l_0_49, l_0_50, l_0_51}, {l_0_46, l_0_47, l_0_48, l_0_49, l_0_50}, {l_0_45, l_0_46, l_0_47}, {l_0_44, l_0_45, l_0_46, l_0_47, l_0_48, 48, "wscript", 48, ".vbs"}, {l_0_43, l_0_44, l_0_45}, {l_0_42}, {l_0_41}, {l_0_40}, {l_0_39}, {l_0_38}, {l_0_37}, {l_0_36}, {l_0_35}, {l_0_34}, {l_0_33, l_0_34, l_0_35, l_0_36, l_0_37}, {l_0_32, l_0_33, l_0_34, l_0_35, l_0_36}, {l_0_31, l_0_32, l_0_33, l_0_34, l_0_35}, {l_0_30}, {l_0_24(l_0_25)}, {l_0_23}, {l_0_22, l_0_23, l_0_24}, {l_0_21, l_0_22, l_0_23}, {l_0_20, l_0_21, l_0_22}, {l_0_19, l_0_20, l_0_21}, {l_0_18, l_0_19, l_0_20}, {l_0_17, l_0_18, l_0_19, l_0_20, l_0_21}
+    -- DECOMPILER ERROR at PC445: Overwrote pending register: R10 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC456: Overwrote pending register: R14 in 'AssignReg'
+    -- DECOMPILER ERROR at PC463: Overwrote pending register: R14 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC457: Overwrote pending register: R15 in 'AssignReg'
+    -- DECOMPILER ERROR at PC464: Overwrote pending register: R15 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC465: Overwrote pending register: R14 in 'AssignReg'
+    -- DECOMPILER ERROR at PC472: Overwrote pending register: R14 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC466: Overwrote pending register: R15 in 'AssignReg'
+    -- DECOMPILER ERROR at PC473: Overwrote pending register: R15 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC470: Overwrote pending register: R10 in 'AssignReg'
+    -- DECOMPILER ERROR at PC477: Overwrote pending register: R10 in 'AssignReg'
 
     if (l_0_10 == nil or l_0_8(l_0_6, {l_0_16, l_0_17, l_0_18, l_0_19, l_0_20})) and (string.find)(l_0_6, "|powershell -w h", l_0_16, l_0_17) and (string.find)(l_0_6, "gg.ps1", l_0_16, l_0_17) then
       do
@@ -413,14 +419,14 @@ end
 {"mshta", l_0_29, l_0_30}
 , 
 {l_0_29, l_0_30, l_0_31, l_0_32, l_0_33}
-, l_0_29, l_0_30, l_0_31, l_0_32, l_0_33, l_0_34, l_0_35, l_0_36, l_0_37, l_0_38, l_0_39, l_0_40, l_0_41, l_0_42, l_0_43, l_0_44, l_0_45, l_0_46, l_0_47, l_0_48, l_0_49, l_0_50, l_0_51}) do
-          -- DECOMPILER ERROR at PC476: Overwrote pending register: R16 in 'AssignReg'
+, l_0_29, l_0_30, l_0_31, l_0_32, l_0_33, l_0_34, l_0_35, l_0_36, l_0_37, l_0_38, l_0_39, l_0_40, l_0_41, l_0_42, l_0_43, l_0_44, l_0_45, l_0_46, l_0_47, l_0_48, l_0_49, l_0_50, l_0_51, l_0_52}) do
+          -- DECOMPILER ERROR at PC483: Overwrote pending register: R16 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC477: Overwrote pending register: R17 in 'AssignReg'
+          -- DECOMPILER ERROR at PC484: Overwrote pending register: R17 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC478: Overwrote pending register: R18 in 'AssignReg'
+          -- DECOMPILER ERROR at PC485: Overwrote pending register: R18 in 'AssignReg'
 
-          -- DECOMPILER ERROR at PC482: Overwrote pending register: R10 in 'AssignReg'
+          -- DECOMPILER ERROR at PC489: Overwrote pending register: R10 in 'AssignReg'
 
           if l_0_18 then
             break
@@ -429,68 +435,68 @@ end
         if l_0_10 == nil and nil == nil then
           return mp.CLEAN
         end
-        -- DECOMPILER ERROR at PC496: Overwrote pending register: R14 in 'AssignReg'
+        -- DECOMPILER ERROR at PC503: Overwrote pending register: R14 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC500: Overwrote pending register: R16 in 'AssignReg'
+        -- DECOMPILER ERROR at PC507: Overwrote pending register: R16 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC501: Overwrote pending register: R17 in 'AssignReg'
+        -- DECOMPILER ERROR at PC508: Overwrote pending register: R17 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC503: Overwrote pending register: R16 in 'AssignReg'
+        -- DECOMPILER ERROR at PC510: Overwrote pending register: R16 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC504: Overwrote pending register: R17 in 'AssignReg'
+        -- DECOMPILER ERROR at PC511: Overwrote pending register: R17 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC505: Overwrote pending register: R18 in 'AssignReg'
+        -- DECOMPILER ERROR at PC512: Overwrote pending register: R18 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC508: Overwrote pending register: R14 in 'AssignReg'
+        -- DECOMPILER ERROR at PC515: Overwrote pending register: R14 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC509: Overwrote pending register: R13 in 'AssignReg'
+        -- DECOMPILER ERROR at PC516: Overwrote pending register: R13 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC510: Overwrote pending register: R12 in 'AssignReg'
+        -- DECOMPILER ERROR at PC517: Overwrote pending register: R12 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC511: Overwrote pending register: R11 in 'AssignReg'
+        -- DECOMPILER ERROR at PC518: Overwrote pending register: R11 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC512: Overwrote pending register: R16 in 'AssignReg'
+        -- DECOMPILER ERROR at PC519: Overwrote pending register: R16 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC515: Overwrote pending register: R17 in 'AssignReg'
+        -- DECOMPILER ERROR at PC522: Overwrote pending register: R17 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC516: Overwrote pending register: R17 in 'AssignReg'
+        -- DECOMPILER ERROR at PC523: Overwrote pending register: R17 in 'AssignReg'
 
         if l_0_10 == nil and not l_0_18 then
           return l_0_19
         end
-        -- DECOMPILER ERROR at PC519: Confused about usage of register: R10 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC526: Confused about usage of register: R10 in 'UnsetPending'
 
-        -- DECOMPILER ERROR at PC519: Overwrote pending register: R16 in 'AssignReg'
+        -- DECOMPILER ERROR at PC526: Overwrote pending register: R16 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC521: Overwrote pending register: R16 in 'AssignReg'
+        -- DECOMPILER ERROR at PC528: Overwrote pending register: R16 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC522: Overwrote pending register: R17 in 'AssignReg'
+        -- DECOMPILER ERROR at PC529: Overwrote pending register: R17 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC523: Overwrote pending register: R18 in 'AssignReg'
+        -- DECOMPILER ERROR at PC530: Overwrote pending register: R18 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC525: Overwrote pending register: R18 in 'AssignReg'
+        -- DECOMPILER ERROR at PC532: Overwrote pending register: R18 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC526: Overwrote pending register: R19 in 'AssignReg'
+        -- DECOMPILER ERROR at PC533: Overwrote pending register: R19 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC529: Overwrote pending register: R20 in 'AssignReg'
+        -- DECOMPILER ERROR at PC536: Overwrote pending register: R20 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC531: Overwrote pending register: R21 in 'AssignReg'
+        -- DECOMPILER ERROR at PC538: Overwrote pending register: R21 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC557: Overwrote pending register: R16 in 'AssignReg'
+        -- DECOMPILER ERROR at PC564: Overwrote pending register: R16 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC558: Overwrote pending register: R17 in 'AssignReg'
+        -- DECOMPILER ERROR at PC565: Overwrote pending register: R17 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC559: Overwrote pending register: R18 in 'AssignReg'
+        -- DECOMPILER ERROR at PC566: Overwrote pending register: R18 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC560: Overwrote pending register: R19 in 'AssignReg'
+        -- DECOMPILER ERROR at PC567: Overwrote pending register: R19 in 'AssignReg'
 
         l_0_18(l_0_19, l_0_20, l_0_21)
-        -- DECOMPILER ERROR at PC562: Overwrote pending register: R16 in 'AssignReg'
+        -- DECOMPILER ERROR at PC569: Overwrote pending register: R16 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC563: Overwrote pending register: R16 in 'AssignReg'
+        -- DECOMPILER ERROR at PC570: Overwrote pending register: R16 in 'AssignReg'
 
         do return l_0_18 end
-        -- DECOMPILER ERROR at PC565: Confused about usage of register R26 for local variables in 'ReleaseLocals'
+        -- DECOMPILER ERROR at PC572: Confused about usage of register R26 for local variables in 'ReleaseLocals'
 
       end
     end
