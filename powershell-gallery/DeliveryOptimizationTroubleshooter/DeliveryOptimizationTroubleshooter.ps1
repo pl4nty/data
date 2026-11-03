@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 1.3.1
+.VERSION 1.3.2
 
 .GUID 9516d007-5e02-4bfd-84a4-436ea6778687
 
@@ -25,6 +25,10 @@
 .EXTERNALSCRIPTDEPENDENCIES
 
 .RELEASENOTES
+2026-10-28 v1.3.2
+    Remove the BurntToast dependency and its associated module installation/removal steps.
+    Update elevation validation in Check-AdminPrivileges.
+
 2026-09-16 v1.3.1
     Add device registration status capture (dsregcmd /status) as a new diagnostic step in the support bundle process.
     Update the disk check and titles and determine peer eligibility using total disk capacity instead of available free space.
@@ -698,40 +702,50 @@ function Format-ResultObject([pscustomobject] $Object, [int] $Width = 10)
 #----------------------------------------------------------------------------------#
 # Device Check
 
-function Check-AdminPrivileges([string] $InvocationLine)
+function Check-AdminPrivileges(
+    [string] $ScriptPath,
+    [System.Collections.IDictionary] $ScriptParameters)
 {
     if (IsElevated)
     {
         return $true;
     }
 
-    $ScriptPath = $MyInvocation.PSCommandPath
-
-    # The new process can't resolve working dir when script is launched like .\dolog.ps1, so we have to parse
-    # and rebuild the full script path and param list.
-    $scriptParams = ""
-    $firstParam = $InvocationLine.IndexOf('-')
-
-    if ($firstParam -gt 0)
+    # Prepare the arguments for restarting the script with elevated privileges
+    $arguments = @("-NoExit", "-File", "`"$ScriptPath`"")
+    foreach ($parameter in $ScriptParameters.GetEnumerator())
     {
-        $scriptParams = $InvocationLine.Substring($firstParam - 1)
+        Write-Verbose "Processing parameter: $($parameter.Key) = $($parameter.Value) - $($parameter.Value.IsPresent)"
+        if ($parameter.Value -is [System.Management.Automation.SwitchParameter])
+        {
+            # If the switch parameter is present (true), add it to the arguments list.
+            # E.g -MCC:$false -P2P (Will ignore -MCC because is not present/false)
+            if ($parameter.Value.IsPresent)
+            {
+                $arguments += "-$($parameter.Key)"
+            }
+        }
+        else
+        {
+            # For non-switch parameters, convert the value to a string and add it to the arguments list.
+            # E.g -OutVariable "result" -HealthCheck -ErrorAction "Stop"
+            $value = [string] $parameter.Value
+            $value = [regex]::Replace($value, '(\\*)"', '$1$1\"')
+            $value = [regex]::Replace($value, '(\\+)$', '$1$1')
+            $arguments += "-$($parameter.Key)", "`"$value`""
+        }
     }
 
-    $scriptCmd = "$ScriptPath $scriptParams"
+    # Keep elevation pinned to the running PowerShell installation.
+    $executableName = if ($PSVersionTable.PSVersion.Major -lt 7) { "powershell.exe" } else { "pwsh.exe" }
+    $executablePath = Join-Path $PSHOME $executableName
 
-    $arg = "-NoExit -Command `"$scriptCmd`""
-
-    #Check Powershell version to use the right path
-    if ($PSVersionTable.PSVersion.Major -lt 7)
+    if (-not (Test-Path -LiteralPath $executablePath -PathType Leaf))
     {
-        $PSPath = "powershell.exe"
-    }
-    else
-    {
-        $PSPath = "pwsh.exe"
+        throw "Cannot elevate the troubleshooter because the PowerShell executable was not found: $executablePath"
     }
 
-    $proc = Start-Process $PSPath -ArgumentList $arg -Verb Runas -ErrorAction Stop
+    Start-Process -FilePath $executablePath -ArgumentList ($arguments -join ' ') -Verb Runas -ErrorAction Stop
 
     return $false
 }
@@ -1331,79 +1345,6 @@ function Check-ByteRange()
 
 #----------------------------------------------------------------------------------#
 # P2P Check
-function Import-Winrt()
-{
-    $Module = "BurntToast"
-    Write-Progress -Activity "Importing WinRT" -Status "Checking Powershell Version" -PercentComplete 0
-
-    # Adding this Start-Sleep to Write-Progress works in Powershell 7
-    if ($PSVersionTable.PSVersion.Major -gt 6)
-    {
-        Start-Sleep -Seconds 1
-    }
-
-    Write-Progress -Activity "Importing WinRT" -Status "Load WinRT" -PercentComplete 50
-    try
-    {
-        if ($PSVersionTable.PSVersion.Major -lt 6)
-        {
-            $null = [Windows.Management.Policies.NamedPolicy, Windows.Management.Policies, ContentType = WindowsRuntime]
-        }
-        else
-        {
-            $burntToastIsInstalled = Check-ModuleIsInstalled $Module
-            if (-not $burntToastIsInstalled)
-            {
-                throw "Unable to find $Module installation!"
-            }
-
-            $path = (Get-Item (Get-Module -ListAvailable $Module).Path).DirectoryName
-            $path = $path + "\lib\Microsoft.Windows.SDK.NET\"
-            if (-not (Test-Path -Path $path))
-            {
-                throw "BurntToast path doesn't exists: $path"
-            }
-
-            $dllsPath = Get-ChildItem -Path $path -Filter *.dll -Recurse | % { $_.FullName }
-            if (-not $dllsPath)
-            {
-                throw [System.IO.FileNotFoundException] "Dlls not found in $path"
-            }
-
-            Add-Type -AssemblyName $dllsPath
-        }
-    }
-    catch
-    {
-        Write-Error $_.Exception
-    }
-
-    Write-Progress -Activity "Importing WinRT" -Status "Finish WinRT Check" -Completed
-}
-
-function Load-Module ([string] $Module)
-{
-    try
-    {
-        $oldProgressPreference = $Global:ProgressPreference
-        $Global:ProgressPreference = "SilentlyContinue"
-
-        $null = Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
-        Install-Module -Name $Module -WarningAction SilentlyContinue -Scope CurrentUser
-    }
-    catch
-    {
-        Write-Error $_.Exception
-    }
-    finally
-    {
-        if ($oldProgressPreference)
-        {
-            $Global:ProgressPreference = $oldProgressPreference
-        }
-    }
-}
-
 function Get-PolicyData([string] $PolicyCode)
 {
     $return = [string]::Empty
@@ -1412,21 +1353,40 @@ function Get-PolicyData([string] $PolicyCode)
 
     try
     {
-        $policy = [Windows.Management.Policies.NamedPolicy]::GetPolicyFromPath("DeliveryOptimization", $PolicyCode)
-
-        if ($policy.IsManaged)
+        if ($PSVersionTable.PSVersion.Major -lt 7)
         {
-            $description = "Policy set."
-            switch ($policy.Kind.ToString())
+            $null = [Windows.Management.Policies.NamedPolicy, Windows.Management.Policies, ContentType = WindowsRuntime]
+            $policy = [Windows.Management.Policies.NamedPolicy]::GetPolicyFromPath("DeliveryOptimization", $PolicyCode)
+
+            if ($policy.IsManaged)
             {
-                "Int32" { $return = $policy.GetInt32().ToString() }
-                "Int64" { $return = $policy.GetInt64().ToString() }
-                default { $return = $policy.GetString() }
+                $description = "Policy set."
+                switch ($policy.Kind.ToString())
+                {
+                    "Int32" { $return = $policy.GetInt32().ToString() }
+                    "Int64" { $return = $policy.GetInt64().ToString() }
+                    default { $return = $policy.GetString() }
+                }
+            }
+            else
+            {
+                $description = "Policy not set."
             }
         }
         else
         {
-            $description = "Policy not set."
+            Add-PInvokeTypes
+            $policy = [Microsoft.DO.PInvoke.NamedPolicyInterop]::GetPolicyFromPath("DeliveryOptimization", $PolicyCode)
+
+            if ($policy.IsManaged)
+            {
+                $description = "Policy set."
+                $return = $policy.Value
+            }
+            else
+            {
+                $description = "Policy not set."
+            }
         }
     }
     catch
@@ -2045,6 +2005,12 @@ function Get-ProtocolNumber
 
 function Add-PInvokeTypes()
 {
+    if ('Microsoft.DO.PInvoke.NamedPolicyInterop' -as [type])
+    {
+        Write-Verbose "NamedPolicyInterop type already exists."
+        return
+    }
+
     $csharpCode = @'
     namespace Microsoft.DO.PInvoke
     {
@@ -2054,6 +2020,198 @@ function Add-PInvokeTypes()
         using System.Net.Sockets;
         using System.Runtime.InteropServices;
         using System.Text;
+
+        public enum NamedPolicyKind : int
+        {
+            Invalid = 0,
+            Binary  = 1,
+            Boolean = 2,
+            Int32   = 3,
+            Int64   = 4,
+            String  = 5
+        }
+
+        public sealed class NamedPolicyResult
+        {
+            public bool IsManaged { get; private set; }
+            public string Value { get; private set; }
+
+            public NamedPolicyResult(bool isManaged, string value)
+            {
+                IsManaged = isManaged;
+                Value = value;
+            }
+        }
+
+        public static class NamedPolicyInterop
+        {
+            private const int RO_INIT_MULTITHREADED = 1;
+            private const int RPC_E_CHANGED_MODE = unchecked((int)0x80010106);
+
+            // Flatten IInspectable into IUnknown-based declarations for .NET's COM interop support.
+            [ComImport]
+            [Guid("7f793be7-76c4-4058-8cad-67662cd05f0d")]
+            [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+            private interface INamedPolicyStatics
+            {
+                void GetIids(out uint iidCount, out IntPtr iids);
+                void GetRuntimeClassName(out IntPtr className);
+                void GetTrustLevel(out int trustLevel);
+
+                void GetPolicyFromPath(IntPtr area, IntPtr name, out IntPtr result);
+            }
+
+            [ComImport]
+            [Guid("38dcb198-95ac-4077-a643-8078cae26400")]
+            [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+            private interface INamedPolicyData
+            {
+                void GetIids(out uint iidCount, out IntPtr iids);
+                void GetRuntimeClassName(out IntPtr className);
+                void GetTrustLevel(out int trustLevel);
+
+                void GetArea(out IntPtr area);
+                void GetName(out IntPtr name);
+                void GetKind(out NamedPolicyKind kind);
+                void GetIsManaged([MarshalAs(UnmanagedType.U1)] out bool isManaged);
+                void GetIsUserPolicy([MarshalAs(UnmanagedType.U1)] out bool isUserPolicy);
+                void GetUser(out IntPtr user);
+                void GetBoolean([MarshalAs(UnmanagedType.U1)] out bool value);
+                void GetBinary(out IntPtr value);
+                void GetInt32(out int value);
+                void GetInt64(out long value);
+                void GetString(out IntPtr value);
+            }
+
+            // Initializes the Windows Runtime on the current thread
+            [DllImport("combase.dll", PreserveSig = true)]
+            private static extern int RoInitialize(int initType);
+
+            [DllImport("combase.dll")]
+            private static extern void RoUninitialize();
+
+            // Gets the activation factory for the specified Windows Runtime class.
+            [DllImport("combase.dll", PreserveSig = true)]
+            private static extern int RoGetActivationFactory(IntPtr activatableClassId, ref Guid iid, out IntPtr factory);
+
+            // Creates a Windows Runtime HSTRING
+            [DllImport("combase.dll", PreserveSig = true, CharSet = CharSet.Unicode)]
+            private static extern int WindowsCreateString(string sourceString, uint length, out IntPtr hstring);
+
+            // It frees the memory associated with an HSTRING
+            [DllImport("combase.dll", PreserveSig = true)]
+            private static extern int WindowsDeleteString(IntPtr hstring);
+
+            // Retrieves a pointer to the raw buffer of an HSTRING and its length.
+            [DllImport("combase.dll", PreserveSig = true)]
+            private static extern IntPtr WindowsGetStringRawBuffer(IntPtr hstring, out uint length);
+
+            private static IntPtr CreateHString(string s)
+            {
+                if (s == null) return IntPtr.Zero;
+                IntPtr hstr = IntPtr.Zero;
+                int hr = WindowsCreateString(s, (uint)s.Length, out hstr);
+                Marshal.ThrowExceptionForHR(hr);
+                return hstr;
+            }
+
+            private static string HStringToString(IntPtr hstr)
+            {
+                if (hstr == IntPtr.Zero) return string.Empty;
+                uint len;
+                IntPtr buf = WindowsGetStringRawBuffer(hstr, out len);
+                if (buf == IntPtr.Zero || len == 0) return string.Empty;
+                return Marshal.PtrToStringUni(buf, (int)len);
+            }
+
+            public static NamedPolicyResult GetPolicyFromPath(string area, string name)
+            {
+                int initHr = RoInitialize(RO_INIT_MULTITHREADED);
+                // An existing STA can be used without changing its apartment model.
+                if (initHr != RPC_E_CHANGED_MODE)
+                {
+                    Marshal.ThrowExceptionForHR(initHr);
+                }
+
+                IntPtr hClassId = IntPtr.Zero;
+                IntPtr hArea = IntPtr.Zero;
+                IntPtr hName = IntPtr.Zero;
+                IntPtr pFactory = IntPtr.Zero;
+                IntPtr pPolicyData = IntPtr.Zero;
+                IntPtr hStrVal = IntPtr.Zero;
+                INamedPolicyStatics factory = null;
+                INamedPolicyData policyData = null;
+
+                try
+                {
+                    // Get the activation factory for the NamedPolicy class.
+                    hClassId = CreateHString("Windows.Management.Policies.NamedPolicy");
+                    Guid iid = typeof(INamedPolicyStatics).GUID;
+                    int hr = RoGetActivationFactory(hClassId, ref iid, out pFactory);
+                    Marshal.ThrowExceptionForHR(hr);
+
+                    // Private RCWs keep cleanup from invalidating wrappers owned by other callers.
+                    factory = (INamedPolicyStatics)Marshal.GetUniqueObjectForIUnknown(pFactory);
+
+                    // Create HSTRINGs for the area and name parameters.
+                    hArea = CreateHString(area);
+                    hName = CreateHString(name);
+
+                    factory.GetPolicyFromPath(hArea, hName, out pPolicyData);
+                    policyData = (INamedPolicyData)Marshal.GetUniqueObjectForIUnknown(pPolicyData);
+
+                    NamedPolicyKind kind;
+                    policyData.GetKind(out kind);
+
+                    bool isManaged;
+                    policyData.GetIsManaged(out isManaged);
+
+                    string strVal = string.Empty;
+                    if (isManaged)
+                    {
+                        // Get the policy value based on its kind.
+                        switch (kind)
+                        {
+                            case NamedPolicyKind.Int32:
+                            {
+                                int int32Value;
+                                policyData.GetInt32(out int32Value);
+                                strVal = int32Value.ToString();
+                                break;
+                            }
+                            case NamedPolicyKind.Int64:
+                            {
+                                long int64Value;
+                                policyData.GetInt64(out int64Value);
+                                strVal = int64Value.ToString();
+                                break;
+                            }
+                            case NamedPolicyKind.String:
+                            default:
+                            {
+                                policyData.GetString(out hStrVal);
+                                strVal = HStringToString(hStrVal);
+                                break;
+                            }
+                        }
+                    }
+
+                    return new NamedPolicyResult(isManaged, strVal);
+                }
+                finally
+                {
+                    if (hStrVal != IntPtr.Zero) WindowsDeleteString(hStrVal);
+                    if (policyData != null) Marshal.ReleaseComObject(policyData);
+                    if (factory != null) Marshal.ReleaseComObject(factory);
+                    if (pPolicyData != IntPtr.Zero) Marshal.Release(pPolicyData);
+                    if (pFactory != IntPtr.Zero) Marshal.Release(pFactory);
+                    if (hName != IntPtr.Zero) WindowsDeleteString(hName);
+                    if (hArea != IntPtr.Zero) WindowsDeleteString(hArea);
+                    if (hClassId != IntPtr.Zero) WindowsDeleteString(hClassId);
+                    if (initHr >= 0) RoUninitialize();
+                }
+            }
+        }
 
         public static class Dhcp
         {
@@ -3093,7 +3251,7 @@ function New-SupportBundle
 #----------------------------------------------------------------------------------#
 # MAIN SCRIPT:
 
-$admin = Check-AdminPrivileges($MyInvocation.Line)
+$admin = Check-AdminPrivileges -ScriptPath $PSCommandPath -ScriptParameters $PSBoundParameters
 if (!$admin) { return }
 
 #----------------------------------------------------------------------------------#
@@ -3121,30 +3279,9 @@ if ($GenerateSupportBundle)
 
 $doConfig = Get-DOConfig -Verbose
 
-#***** WinRT API (PS5 and PS7) *****#
-$burntToastPreInstalled = $null
-$moduleName = "BurntToast"
-$onlyHealthCheck = ($HealthCheck -and !$P2P -and !$MCC)
-
-if (-not $onlyHealthCheck)
-{
-    if ($PSVersionTable.PSVersion.Major -gt 6)
-    {
-        $burntToastPreInstalled = Check-ModuleIsInstalled $moduleName
-
-        if ($burntToastPreInstalled -eq $false)
-        {
-            Load-Module -Module $moduleName
-        }
-    }
-
-    Import-Winrt
-}
-# ------------------------------- #
-
 Print-OSInfo
 
-if (!$HealthCheck -and !$P2P -and !$MCC)
+if ((-not $HealthCheck) -and (-not $P2P) -and (-not $MCC))
 {
     Invoke-HealthChecker
     Invoke-P2PHealthChecker
@@ -3152,14 +3289,19 @@ if (!$HealthCheck -and !$P2P -and !$MCC)
 }
 else
 {
-    if ($HealthCheck) { Invoke-HealthChecker }
-    if ($P2P) { Invoke-P2PHealthChecker }
-    if ($MCC) { Invoke-MCCHealthChecker }
-}
+    if ($HealthCheck)
+    {
+        Invoke-HealthChecker
+    }
 
-#***** Remove Burnt Toast if it wasn't installed before in PS7 *****#
-if ($burntToastPreInstalled -eq $false)
-{
-    Uninstall-Module -Name $moduleName -Force -WarningAction SilentlyContinue
+    if ($P2P)
+    {
+        Invoke-P2PHealthChecker
+    }
+
+    if ($MCC)
+    {
+        Invoke-MCCHealthChecker
+    }
 }
 # SIG # Begin signature block
