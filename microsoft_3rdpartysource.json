@@ -147560,6 +147560,34 @@
     "platform": "Windows x86"
   },
   {
+    "name": "Microsoft Edge/159.0.4380.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "159.0.4380.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/159.0.4380.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "159.0.4380.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/159.0.4380.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "159.0.4380.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/159.0.4380.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "159.0.4380.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
     "name": "Microsoft Edge/74.1.96.24/Windows x64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "74.1.96.24",
@@ -194107,6 +194135,27 @@
     "product": "Microsoft Electron",
     "release": "45.2.0@71a8c952",
     "dependency": "microsoft-electron-v45.2.0-71a8c95204b53aff530e48745fa58e4da4560c65-mac",
+    "platform": "macOS"
+  },
+  {
+    "name": "Microsoft Electron/45.2.1@272c852a/Linux/microsoft-electron-v45.2.1-272c852a25988867f3b70521716d52fe2327c942-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "45.2.1@272c852a",
+    "dependency": "microsoft-electron-v45.2.1-272c852a25988867f3b70521716d52fe2327c942-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/45.2.1@272c852a/Windows/microsoft-electron-v45.2.1-272c852a25988867f3b70521716d52fe2327c942-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "45.2.1@272c852a",
+    "dependency": "microsoft-electron-v45.2.1-272c852a25988867f3b70521716d52fe2327c942-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/45.2.1@272c852a/macOS/microsoft-electron-v45.2.1-272c852a25988867f3b70521716d52fe2327c942-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "45.2.1@272c852a",
+    "dependency": "microsoft-electron-v45.2.1-272c852a25988867f3b70521716d52fe2327c942-mac",
     "platform": "macOS"
   },
   {

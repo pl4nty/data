@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2174687,
+    "size": 2175863,
     "file_count": 188
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 1188071,
+    "size": 1188451,
     "file_count": 48
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 6552802,
+    "size": 6551412,
     "file_count": 198
   },
   {
@@ -76,12 +76,12 @@
   },
   {
     "name": "blink",
-    "size": 34359530,
-    "file_count": 4103
+    "size": 34350294,
+    "file_count": 4102
   },
   {
     "name": "boringssl",
-    "size": 81531,
+    "size": 81966,
     "file_count": 15
   },
   {
@@ -211,8 +211,8 @@
   },
   {
     "name": "eigen3",
-    "size": 23413870,
-    "file_count": 2423
+    "size": 23388977,
+    "file_count": 2429
   },
   {
     "name": "entity_extraction",
@@ -246,8 +246,8 @@
   },
   {
     "name": "ffmpeg",
-    "size": 101833758,
-    "file_count": 11914
+    "size": 101838752,
+    "file_count": 11916
   },
   {
     "name": "flac",
@@ -276,13 +276,13 @@
   },
   {
     "name": "glib",
-    "size": 53609493,
+    "size": 53609510,
     "file_count": 2421
   },
   {
     "name": "glslang",
-    "size": 46436332,
-    "file_count": 3792
+    "size": 46453259,
+    "file_count": 3800
   },
   {
     "name": "googletest",
@@ -366,8 +366,8 @@
   },
   {
     "name": "jdk",
-    "size": 11798,
-    "file_count": 8
+    "size": 15404,
+    "file_count": 9
   },
   {
     "name": "jdk11",
@@ -511,8 +511,8 @@
   },
   {
     "name": "mediapipe",
-    "size": 634836,
-    "file_count": 323
+    "size": 661056,
+    "file_count": 332
   },
   {
     "name": "metrics_proto",
@@ -526,7 +526,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19265003,
+    "size": 19459563,
     "file_count": 19
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4896698,
+    "size": 4896445,
     "file_count": 645
   },
   {
@@ -676,7 +676,7 @@
   },
   {
     "name": "rust",
-    "size": 3098794,
+    "size": 3098698,
     "file_count": 404
   },
   {
@@ -701,12 +701,12 @@
   },
   {
     "name": "shell-encryption",
-    "size": 2983,
+    "size": 4464,
     "file_count": 5
   },
   {
     "name": "skia",
-    "size": 3482172,
+    "size": 3482247,
     "file_count": 1218
   },
   {
@@ -791,7 +791,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1534240,
+    "size": 1535106,
     "file_count": 23
   },
   {
@@ -801,12 +801,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2819437,
+    "size": 2822951,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7891138,
+    "size": 7891173,
     "file_count": 207
   },
   {
@@ -846,7 +846,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29104729,
+    "size": 29104726,
     "file_count": 608
   },
   {
@@ -856,7 +856,7 @@
   },
   {
     "name": "wpt_tools",
-    "size": 199426,
+    "size": 203413,
     "file_count": 13
   },
   {
