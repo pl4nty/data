@@ -516,6 +516,11 @@
             "UnlimitedAssets": true
         }
     },
+    "SVC_AuthZ": {
+        "FlightingV2": {
+            "EnableEntraDirectGroupResolution": true
+        }
+    },
     "SVC_CertificateAuthority": {
         "FlightingV2": {
             "DisableEntraRegistrationHPAFallback": true,
@@ -989,6 +994,7 @@
             "NCSSqlAggParallelCount": 3,
             "PatchIMEAgentVersionInWindowsSidecarInfo": true,
             "PopulateSearch": true,
+            "ProcessExternalNotificationsInStatelessPns": true,
             "SqlAggEGCache": true,
             "SuppressTamperProtectionRefreshNotifications": true,
             "UseSearchCache": true
@@ -1052,7 +1058,6 @@
         "app_policy_reporting_retry": true,
         "customer_script_timeout": 3600,
         "enable_afd_connectivity_ip_range": false,
-        "enable_app_decryption_integrity_check": false,
         "enable_pipelined_enrollment_cadence": true,
         "internal_script_timeout": 3600,
         "log_golden_client_signal": true,
