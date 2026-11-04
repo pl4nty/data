@@ -398,7 +398,6 @@
         "EnableConsumeServiceAbuseEvent": true,
         "EnableConsumeVolumeLicensingTenantEvent": true,
         "EnableCopilotCreditsBillingEventRetry": false,
-        "EnableCopilotPromptsRibbon": true,
         "EnableCpcMonitoringConfigReport": true,
         "EnableCpcMonitoringDeviceReport": true,
         "EnableCpcMonitoringTenantReport": true,

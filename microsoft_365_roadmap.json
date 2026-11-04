@@ -1,5 +1,1930 @@
 [
     {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Improving the shared conversation experience in Viva Engage to so it's easier for users to discover, read, and participate.</p>",
+        "id": 578870,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Engage - Improved shared messages end-user experience"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Agents and supervisors can use Copilot in the Queues app on Mobile to quickly understand and follow up on customer conversations. From shared call history, users can ask questions about a past call and use Copilot to surface relevant information and insights from the conversation, helping them get up to speed and take the next step without having to review the entire call</p>",
+        "id": 578859,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Copilot in the Queues app on Mobile"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Calling reps and Supervisor leads can view shared call history for their call queues in the Queues app on Mobile, helping them track call activity, review call details, and coordinate customer follow-ups while on the go.</p>",
+        "id": 578858,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Shared call history in the Queues app on Mobile"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Create and preview POS screen layouts in headquarters with a modern web designer that simplifies configuration and reduces design iterations.</p>\n<p>The Screen layout designer is modernized as a React-based web experience embedded in Commerce headquarters, with a JSON-based layout backbone replacing the legacy XML representation. The feature applies to Store Commerce point of sale (POS).</p>\n<p>The modernization includes these core capabilities:</p>\n<ul>\n<li><strong>Visual layout and button-grid authoring:</strong> Arrange and resize supported POS components on a drag-and-drop canvas, configure properties, and edit associated button grids and POS operation mappings in a unified experience.</li>\n<li><strong>Live preview:</strong> Inspect layouts and their associated button-grid operations while designing, and preview supported device sizes and orientations without distributing every design iteration to stores.</li>\n<li><strong>Existing layout migration:</strong> Bring existing screen layouts and button-grid configurations into the modern designer rather than recreate them from scratch.</li>\n<li><strong>Reusable configuration:</strong> Reuse layout templates with store-specific overrides to reduce the need to maintain duplicate layouts.</li>\n<li><strong>Modern usability:</strong> Work with contextual properties, familiar Fluent UI controls, and inline validation.</li>\n</ul>\n<p>Administrators enable or disable the modern designer through feature management in headquarters. Authorized users open <strong>Retail and Commerce &gt; Channel setup &gt; POS setup &gt; POS &gt; Screen layouts</strong>, select a layout, and open the designer. They configure the layout and button grids, inspect the preview, and save changes to headquarters. Administrators distribute the saved configuration to stores through the existing Commerce data distribution process. Previewing changes does not replace the distribution needed to update Store Commerce.</p>\n<p>Setup is performed by a Commerce administrator, who enables the feature, grants appropriate headquarters permissions, and manages layout assignments and distribution. No separate ClickOnce designer installation or Copilot license is required for manual design.</p>",
+        "id": 577893,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Design POS screen layouts in a modern browser designer"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>The dual-write asynchronous integration feature in Project Operations enhances the customer invoicing process by enabling scalable and reliable data synchronization between Dataverse and Dynamics 365 Finance. This feature addresses the limitations of real-time dual-write sync, which is restricted to processing a maximum of 1,000 invoice lines per invoice.</p>\n<p>With the introduction of asynchronous integration, this constraint is eliminated. The async model allows invoice data\u2014including actuals, transaction connections, and invoice proposals\u2014to be processed in the asynchronous mode. This enables the generation and synchronization of invoices with thousands of lines, ensuring that billing operations are not disrupted by system limitations.</p>",
+        "id": 577855,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/project-operations/environment/project-invoice-dual-write-asynchronous",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "September CY2025",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Support larger invoices in Project Operations"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Store associates can select multiple eligible transaction lines and apply common updates in one action, including voiding items, changing the delivery mode, and changing the fulfillment location. This capability reduces repetitive work and errors on large orders while preserving line-level validation and providing clear feedback when an update can't be applied.</p>\n<p>Multiselect supports touch, keyboard, and mouse interactions, and partners can extend it with additional bulk actions for their workflows. Administrators can enable the capability for selected Store Commerce layouts in Commerce headquarters.</p>",
+        "id": 577752,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "July CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Apply bulk actions to multiple transaction lines"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p><strong>Applies to</strong>: Point of Sale (Store Commerce app, Store Commerce for web), headquarters (Commerce headquarters receipt format designer), Hardware Station, Commerce Scale Unit.</p>\n<ul>\n<li><strong>Modern designer in headquarters</strong>: A new React-based receipt designer is embedded in headquarters under <strong>Retail and Commerce</strong> &gt; <strong>Channel setup</strong> &gt; <strong>POS setup</strong> &gt; <strong>POS</strong> &gt; <strong>Receipt formats</strong> &gt; <strong>Designer</strong>. You can author in the browser with a live preview pane that doesn't need any separate desktop designer host installation. The legacy designer remains available for existing formats.</li>\n<li><strong>New receipt schema, end-to-end</strong>: The new schema is added to <strong>RetailFormLayout</strong> and synchronized to the channel database. Commerce Runtime (<strong>ReceiptService v2</strong>) returns structured receipt data that is platform-agnostic. Store Commerce, Hardware Station, and the print stack consume the same structured payload. A4 layouts route through the structured-to-platform conversion layer. Thermal layouts continue to route through OPOS (OLE for Retail POS), network printer, and Windows printer paths with backward-compatible public print APIs.</li>\n<li><strong>A4 and thermal routing</strong>: A single receipt format can target both paper sizes. The Hardware Station selects the appropriate path based on the configured printer. This unblocks B2B and trade-counter scenarios where invoices and receipts must print on A4 paper from the point of sale.</li>\n<li><strong>Additional authoring capabilities</strong>: The feature supports strikethrough font for promotional and original pricing and an automatic duplication indicator with reprint date and time on reprinted receipts. You can directly edit EFT/card information within the main receipt format flow without needing any separate card tender details layout. The feature also supports custom fields in the designer.</li>\n</ul>\n<p><strong>Enablement</strong>: A feature flag controls (a) whether new receipt formats are saved in the new schema, and (b) whether the new designer experience is shown in headquarters. Existing receipt formats, Hardware Station extensions, and print integrations continue working when the flag is off. Demo data is updated to include sample formats for the new designer, and public documentation covers how to enable the new experience and migrate any Hardware Station extension codes that depend on legacy fields.</p>\n<p><strong>Configuration</strong>: A headquarters administrator (or partner) enables the feature flag, authors or migrates receipt formats in the modern designer, and runs the standard Commerce data distribution job. Receipts then print on the configured A4 or thermal printers.</p>",
+        "id": 577751,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "July CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Design and print A4 and thermal receipts in a modern designer"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p><strong>Applies to</strong>: Point of Sale (Store Commerce); configured in Commerce headquarters.</p>\n<p>Assign keyboard shortcuts to buttons in the Commerce headquarters button grid designer. Shortcuts are defined on buttons, not directly on operations, and can be applied to any button.</p>\n<ul>\n<li>Use shortcuts for common operations, such as void line, price override, discount, change quantity, and change delivery mode.</li>\n<li>Apply shortcuts to the currently selected line or lines. Users can discover shortcuts through tooltips and a help screen.</li>\n<li>Configure shortcuts based on store requirements or user preferences.</li>\n</ul>",
+        "id": 577750,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "July CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Map keyboard shortcuts to common POS operations"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>The Customer Insights plugin brings Dynamics 365 Customer Insights context, actions, and guided workflows to Copilot Cowork. Marketers and other customer-facing teams can understand customer profiles, author brand-compliant content, and prepare consent-aware outreach using existing segments directly in the flow of work, reducing the need to switch to Dynamics 365 Customer Insights.</p>\n<p>The native Customer Insights skills (Customer Brief &amp; Value Metrics, Email Content Advisor, and Customer Outreach) invoke tools published through the Dynamics 365 MCP server to retrieve unified customer profile and journey context and to perform supported actions in Customer Insights \u2013 Journeys. These tools respect Dynamics 365 business logic and the user's existing permissions on each call. The skills are included in the Customer Insights plugin, providing administrators with a governed way to deploy and manage the capabilities.</p>",
+        "id": 577746,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/customer-insights/journeys/use-customer-insights-copilot-cowork-skills",
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Insights - Data"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Insights - Journeys"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Customer Insights - Data"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Insights - Journeys"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Insights - Journeys: Marketing tools, skills and plugin are now available in Copilot Cowork"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Guide shoppers with clearer self-checkout flows, configurable assistance, and register-specific settings across supported Store Commerce devices.</p>\n<p>Store Commerce guides shoppers from item entry through payment and completion on Windows, web, iOS, and Android. The experience includes:</p>\n<ul>\n<li>Customer and loyalty prompts that can attach an active linked loyalty card.</li>\n<li>Back and Home navigation from category and search views.</li>\n<li>A persistent call-for-assistance panel and authorized inline actions after manager sign-in.</li>\n<li>An optional self-checkout app bar with Call for help, Language, visual styling, and extensible custom actions.</li>\n<li>Inactivity warnings that safely end unpaid transactions, retain an audit record, and request assistance instead of voiding after payment is captured.</li>\n</ul>\n<p>Administrators enable Retail self-checkout in Feature management. In headquarters, they configure any new experience through a visual profile that can be assigned to the Self checkout registers.</p>",
+        "id": 577414,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": "https://learn.microsoft.com/dynamics365/commerce/store-commerce-self-check-out",
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Guide shoppers through an intuitive self-checkout flow"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>This feature lets organizations assign a functionality profile directly to a self-checkout register in Commerce headquarters. The register-specific profile can control device settings, transaction reason codes, receipt numbering, and fiscal defaults for each kiosk.</p>\n<p>If no profile is selected on the self-checkout register, the register inherits the store's functionality profile. Staffed registers continue to use the store-level profile and ignore self-checkout overrides. If the selected profile isn't available in the channel database, Store Commerce reports a configuration error so administrators can correct the setup.</p>\n<p>Customer-order capture, deferred payment, credit checks, and expedite settings remain store-scoped. Enable the Retail self-checkout feature in Feature management, configure the profile on the register, and run the relevant Commerce distribution jobs.</p>",
+        "id": 577411,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": "https://learn.microsoft.com/dynamics365/commerce/store-commerce-self-check-out",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Assign functionality profiles to self-checkout registers"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Add phone Cart commands and configurable sales-line details so Store Commerce extensions work consistently across device sizes.</p>\n<p>This feature applies to Store Commerce point of sale (POS) and the Commerce headquarters Screen layout designer.</p>\n<p>Extensions can register Cart commands by using CartExtensionCommandBase at components.extend.views.CartView.appBarCommands. On phone layouts, commands appear in the existing bottom app bar and its overflow menu in legacy and React-backed Cart content. Commands participate in Cart initialization, updates, selection changes, processing state, reuse, and disposal. Desktop and tablet Cart views are unchanged because wide layouts don't use this app bar.</p>\n<p>Commerce administrators can also configure additional sales-line subfields under Receipt &gt; Lines &gt; Additional information in the screen layout designer. The same selection pattern is available for compact and desktop layouts. Selected built-in or extension fields appear beneath each sales line in the configured order, preserving primary grid width. Desktop rendering is supported in classic Knockout, modern Knockout, and React transaction grids. No fields are selected automatically.</p>\n<p>The phone Cart app-bar extension point is available by default; it does not require enablement in headquarters. Administrators save the screen layout and run the 1090 (Registers) distribution schedule job to deploy additional-field configuration.</p>",
+        "id": 577409,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Extend the phone Cart with custom app-bar commands"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Store Commerce inventory screens are being modernized with a new, responsive experience built on Fluent UI and React. The modern inventory views give store associates a consistent look and feel and fewer clicks across everyday inventory tasks, and they extend the modern inventory lookup experience to all inventory operations in the store.</p>\n<p>This feature includes:</p>\n<ul>\n<li><strong>Inbound inventory (receiving):</strong> A modern order list and grid with combined filters for ship and receive dates, source and destination store, and status, plus updated detail pages for receiving workflows.</li>\n<li><strong>Outbound inventory (picking):</strong> The same modern grid pattern for picking, with variant details kept in the order lines and quicker access to line-level product information.</li>\n<li><strong>Transfer orders:</strong> View source and destination, dates, and status history in a layout that matches the transfer order flow started from inventory lookup.</li>\n<li><strong>Stock counting:</strong> A modern stock count experience with a consistent command bar and responsive input.</li>\n<li><strong>Consistent detail pages:</strong> Shared detail pages for inbound and outbound operations with consistent navigation and actions.</li>\n<li><strong>Responsive design:</strong> Optimized for desktop, tablet, and mobile devices, including bottom sheets on smaller screens.</li>\n</ul>\n<p>Experiences that depend on Inventory Visibility are hidden when Inventory Visibility isn't set up.</p>",
+        "id": 577408,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Inventory view modernization on the Store Commerce app"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>When store and trade-counter associates add items to a sale, they need to know right away whether the item can be fulfilled, and if not, what the options are. This feature brings real-time inventory validation and fulfillment options directly into the Store Commerce transaction grid, so associates don't need to leave the transaction to check stock.</p>\n<p>This feature includes:</p>\n<ul>\n<li><strong>Stock status on each line:</strong> As items are scanned or added, each transaction line shows a stock indicator (in stock, low stock, or out of stock) based on real-time inventory from Inventory Visibility.</li>\n<li><strong>Inline availability details:</strong> For each line, view current-store available-to-promise (ATP) quantity and date, plus availability at nearby stores and warehouses.</li>\n<li><strong>Fulfillment options for short lines:</strong> When the requested quantity isn't available locally, open a fulfillment options panel that lists alternative locations with available quantity, ATP date, and estimated arrival date at the current store based on transfer lead time. All options stay visible so the associate can choose.</li>\n<li><strong>Act from the grid:</strong> Go to the cross-location inventory view in one select, or create a transfer order from the selected location and set the line's delivery date from the estimated arrival date.</li>\n</ul>\n<p>Inventory Visibility is required, so real-time checks on every scan stay fast. If Inventory Visibility isn't configured, the transaction grid keeps its current behavior.</p>",
+        "id": 577407,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Inventory validation and fulfillment options on the Store Commerce transaction grid"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>We\u2019re expanding form fill assistance in Power Apps to use Microsoft 365 files as a source, helping users turn existing content into form entries with less manual effort.</p>\n<p>Availability</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Monthly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2701.1</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Admins or makers | Users (enabled by admins or makers) | Users (enabled by default) | Users (always enabled)</td>\n</tr>\n</tbody>\n</table>",
+        "id": 576280,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Power Apps: Form fill assistance using Microsoft 365 files in model-driven apps"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>The localized version for Norway is now available as a set of extensions on the W1 base app. This version includes a data upgrade feature to simplify the transition from the previous localization. This release moves the product closer to full delocalization, so ISVs can reach a wider market. Some features move to the base app or become global apps, while others stay specific to the Norwegian market. In the same time some of local features will ber migrated to global ones, such as non-deductible VAT.</p>",
+        "id": 573623,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Norway - Install Norwegian localization as an extension to the base app"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>The localized version for France is now available as a set of extensions on the W1 base app. This version includes a data upgrade feature to simplify the transition from the previous localization. This release moves the product closer to full delocalization, so ISVs can reach a wider market. Some features move to the base app or become global apps, while others stay specific to the French market.</p>",
+        "id": 573621,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: France - Install French localization as an extension to the base app"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>This feature extends support for the Standard Audit File for Tax (SAF-T) format to Iceland, allowing customers in this counmtry to generate audit files using the established SAF-T framework. Key capabilities include:</p>\n<ul>\n<li>Enable SAF-T audit file generation for companies operating in Iceland.</li>\n<li>Reuse the existing SAF-T W1 implementation to support additional country-specific compliance scenarios.</li>\n<li>Provide a standardized electronic audit file format that can be shared with tax authorities and auditors when required.</li>\n<li>Simplify multinational compliance processes by using a consistent audit reporting approach across supported countries.</li>\n</ul>\n<p>By extending an existing SAF-T capability to additional markets, organizations benefit from a more unified compliance experience while reducing the need for separate audit file solutions for each country.</p>",
+        "id": 573620,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Iceland - Enable SAF-T audit file format"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>This feature extends support for the Standard Audit File for Tax (SAF-T) format to Austria, allowing customers in this coumtry to generate audit files using the established SAF-T framework. Key capabilities include:</p>\n<ul>\n<li>Enable SAF-T audit file generation for companies operating in Austria.</li>\n<li>Reuse the existing SAF-T W1 implementation to support additional country-specific compliance scenarios.</li>\n<li>Provide a standardized electronic audit file format that can be shared with tax authorities and auditors when required.</li>\n<li>Simplify multinational compliance processes by using a consistent audit reporting approach across supported countries.</li>\n</ul>\n<p>By extending an existing SAF-T capability to additional markets, organizations benefit from a more unified compliance experience while reducing the need for separate audit file solutions for each country.</p>",
+        "id": 573619,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Austria - Enable SAF-T audit file format"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Organizations in the United States can simplify employee expense reimbursements by paying approved claims directly to employees\u2019 bank accounts through ACH. When used with the Expense Agent, approved reimbursements can be processed automatically, reducing manual payment handling and helping employees get reimbursed faster and more accurately.</p>",
+        "id": 573618,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: USA - Automate employee payments with ACH bank integration"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Create more complete audit export packages with less manual preparation by exporting European Business Profile (euBP) information together with transactional audit data. Organizations using the German localization can include both in a single Audit Files Export process.</p>\n<p>Benefits:<br>\n\u2022\tExport euBP and transactional audit data together in a single process.<br>\n\u2022\tInclude relevant business profile information in exported audit documentation.<br>\n\u2022\tReduce manual data collection and reconciliation during audit preparation.<br>\n\u2022\tProvide auditors and regulatory authorities with relevant audit and business profile information in a standardized format.</p>",
+        "id": 573617,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Germany - Export euBP with audit files export"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Handle VAT correctly for vendors that operate across multiple European Union countries by recording multiple VAT numbers and applying the appropriate VAT Business Posting Group and General Business Posting Group for each transaction.</p>\n<p>Benefits<br>\n\u2022\tSupport multiple VAT numbers for a single vendor, including vendors with warehouses in different EU countries.<br>\n\u2022\tApply the appropriate VAT treatment for each transaction.<br>\n\u2022\tImprove accuracy for EC Sales List and VAT statement reporting.<br>\n\u2022\tMake it easier to validate VAT numbers against VIES.</p>",
+        "id": 573616,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2027",
+        "publicPreviewDate": "April CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Finance - Multiple VAT numbers for a vendor"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Reduce manual work and support accurate excise duty handling by applying bonded-location rules to inventory. Designate warehouses or storage locations as bonded so excise duties can be deferred while goods remain in bonded storage and assessed when goods move to non-bonded locations or enter taxable circulation, according to configured tax rules.</p>\n<p>Benefits<br>\n\u2022\tConfigure specific warehouses or storage locations for bonded inventory and deferred excise duty treatment.<br>\n\u2022\tAccount for bonded location status when calculating excise duties on inventory transactions.<br>\n\u2022\tAutomatically assess duties when goods leave bonded storage or enter taxable circulation.</p>",
+        "id": 573615,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Finance - Configure and use bonded locations for excise duty calculations"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Simplify excise duty calculations with flexible methods that better reflect your organization\u2019s tax scenarios. Configure excise duties using specific, ad valorem, or hybrid calculation methods, including calculations based on different tax bases, thresholds, quantities, percentages, or combinations of these factors.</p>\n<p>Benefits<br>\n\u2022\tSupport specific, ad valorem, and hybrid excise duty calculation methods.<br>\n\u2022\tHandle multi-factor and industry-specific excise tax scenarios with greater flexibility and accuracy.<br>\n\u2022\tReduce the need for manual tax adjustments and external calculations.</p>",
+        "id": 573614,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Finance - Use complex calculation methods for excise duties"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Keep critical business data consistent across environments with cross-environment master data management. Centrally manage and govern master data\u2014including customers, vendors, products, and reference data\u2014and keep it synchronized wherever it is used, reducing duplicate maintenance and simplifying administration.</p>\n<p>Benefits<br>\n\u2022\tMaintain a single source of truth for master data across development, test, and production environments.<br>\n\u2022\tReduce manual effort and inconsistent records by synchronizing master data across environments.<br>\n\u2022\tImprove data accuracy and reliability with standardized data definitions and governance policies, while supporting faster environment setup and smoother application lifecycle management.</p>",
+        "id": 573613,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Finance - Cross-environment Master Data Management"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Quickly see which expense-related emails have already been processed by Expense Agent, helping you distinguish processed from unprocessed messages with confidence. Expense Agent adds a **Processed by Expense Agent **tag in Outlook after a relevant email has been successfully processed.</p>\n<p>Benefits<br>\n\u2022\tAutomatically marks successfully processed expense-related emails.<br>\n\u2022\tProvides a clear processing-status indicator in Outlook, reducing the need to verify status manually.<br>\n\u2022\tMakes it easier to distinguish processed from unprocessed expense-related emails.</p>",
+        "id": 573610,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "February CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - Use tags to mark processed emails"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Spend less time manually adding attendees to meal-related business expenses. Expense Agent can match the expense to the relevant Outlook calendar event and add invited guests as expense participants, helping keep participant information aligned with the meeting invitation.</p>\n<p>Benefits<br>\n\u2022\tAutomatically identifies relevant Outlook calendar meetings when expense participants are required.<br>\n\u2022\tRetrieves invited attendees from the matching calendar invitation.<br>\n\u2022\tAdds invited guests as expense participants without manual entry.</p>",
+        "id": 573609,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - Adding invited guests from calendar as participants to your expense"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Manage expenses across multiple Business Central companies and environments more efficiently with the Expense Agent web app. Switch between the companies and environments you\u2019re authorized to access within a single session, without restarting the app or signing in again.</p>\n<p>Benefits<br>\n\u2022\tAccess multiple authorized Business Central environments from the Expense Agent web app.<br>\n\u2022\tSwitch directly between companies while managing expenses.<br>\n\u2022\tReduce context switching when working across multiple organizations, business units, or legal entities.</p>",
+        "id": 573608,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - Change companies and environments in the web app"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Take control of employee spending earlier in the expense process with configurable spend limits. Define thresholds that reflect your organization\u2019s expense policies and apply them by time period for individual employees, teams, or the whole company. Expenses that exceed predefined limits can be prevented or flagged, with immediate feedback during expense creation.</p>\n<p>Benefits<br>\n\u2022\tProactively manage expenses before reimbursement and accounting processes begin.<br>\n\u2022\tReduce approval rework by giving employees immediate feedback when expenses exceed defined thresholds.<br>\n\u2022\tSupport budget adherence across employees, teams, and the organization with configurable spending limits.</p>",
+        "id": 573607,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - Set expense spend limits in Expense Management"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Make expenses easier to organize and categorize by adding relevant tags when you create or edit expenses in the web application. Add one or more custom tags to capture business, project, event, or other dimensional context beyond standard expense fields.</p>\n<p>Benefits<br>\n\u2022\tAdd one or more custom tags while creating or editing an expense.<br>\n\u2022\tCapture relevant business, project, event, or other dimensional context with expense records.<br>\n\u2022\tOrganize and categorize expenses beyond standard expense fields.</p>",
+        "id": 573606,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "February CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - Add tags for expenses as submitter"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Keep expense approvals moving when primary approvers are unavailable or when requests exceed their approval limits. Organizations can set a maximum approval amount\u2014or unlimited approval authority\u2014for each approver, designate a next approver for requests above that limit, and assign alternate approvers as temporary or scheduled backups. Approval requests can route to an alternate approver during periods of unavailability while following the same approval processes and controls.</p>\n<p>Benefits<br>\n\u2022\tSet approval limits for each approver and route requests that exceed those limits to a designated next approver.<br>\n\u2022\tAssign alternate approvers for ad hoc needs or planned periods of absence to help maintain approval continuity.<br>\n\u2022\tReduce delays for employees submitting expenses by keeping approval requests moving when the primary approver is unavailable.</p>",
+        "id": 573605,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - Enable approving limits and alternate approvers when primary is not available"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Save time when recording lower-value expenses by creating them in Expense Agent without an attachment when the amount is below the limit you set on the Expense Agent Setup page. This gives you the flexibility to record qualifying expenses even when a receipt or supporting document isn\u2019t available.</p>\n<p>Benefits<br>\n\u2022\tCreate qualifying expenses without requiring an attachment at the time of submission.<br>\n\u2022\tSet the amount limit that determines when an attachment isn\u2019t required.<br>\n\u2022\tRecord expenses below the configured limit even when a receipt or supporting document isn\u2019t available.</p>",
+        "id": 573604,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - Create expense with no attachment"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Expense Agent helps employees keep expense submissions moving when an original receipt is unavailable. It guides employees through providing the information needed to support the expense, generates supporting documentation from those details, and enables them to continue the reimbursement process without manually creating replacement documentation.</p>\n<p>Benefits<br>\n\u2022\tProvides a guided process for documenting expenses when receipts are lost or unavailable.<br>\n\u2022\tReduces manual effort by automatically generating supporting documentation from employee-provided information.<br>\n\u2022\tCreates a more consistent lost-receipt process for employees and finance teams.</p>",
+        "id": 573603,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - Log the expense in a case of lost receipt"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>Split a single expense across multiple allocations so costs are accurately assigned to the appropriate expense user, project, department, customer, or expense category. Expense Agent helps you define the split and ensures the allocations add up to the original expense amount. Each allocation is recorded separately for reporting and accounting while remaining linked to the original expense.</p>\n<p>Benefits<br>\n\u2022\tAccurately distribute expenses across multiple users, projects, departments, customers, or expense categories.<br>\n\u2022\tDefine expense splits with help from Expense Agent while keeping allocations aligned with the original expense total.<br>\n\u2022\tMaintain separate allocation records for reporting and accounting while preserving the connection to the original expense.</p>",
+        "id": 573602,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - Split your expenses"
+    },
+    {
+        "created": "2026-11-04T00:02:09",
+        "description": "<p>When it's time to present what your team decided, you can ask Facilitator to create a PowerPoint presentation from what was said, chats, and shared files in the meeting. It turns the conversation into the slides, whether that's a project update, a proposal, or a readout for leadership. Facilitator can already draft documents in Word, so now your team can also go straight from discussion to a deck.</p>",
+        "id": 571296,
+        "locale": null,
+        "modified": "2026-11-04T00:02:09",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Turn meeting discussions into PowerPoint presentations with Facilitator"
+    },
+    {
         "created": "2026-11-03T00:14:11",
         "description": "<p>Sales Development Agent (SDA) can take leads from qualified opportunities to closed deals.<br>\nKey capabilities include:</p>\n<ol>\n<li>Generating quotes through D365S as well as 1P/3P systems and sharing them with customers to company branded templates.</li>\n<li>Connectivity to quoting and transaction systems managed through Agent 365 MCP registry.</li>\n<li>Answer questions about the quote and adjust details based on customer feedback.</li>\n<li>Facilitate customers completing self-service transactions.</li>\n<li>Escalating to human sellers when customers are blocked and need human intervention.</li>\n<li>Configuration through interactive chat experience with each agent instance.</li>\n</ol>",
         "id": 578898,
@@ -7401,9 +9326,9 @@
         "description": "<p>Teams Meetings offer enhanced AI controls for Copilot and AI experiences. Organizers manage who can enable and access AI, while IT admins get a simpler policy model for governing AI across meetings and post-meeting experiences. These updates provide more predictable administration and greater flexibility for compliance and governance scenarios.</p>",
         "id": 577399,
         "locale": null,
-        "modified": "2026-10-23T21:59:27",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7431,6 +9356,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -7464,6 +9392,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -23283,7 +25214,7 @@
         "description": "<p>For an event that needs registration, send email invites to the selected people and groups who will be invited to register to the event</p>",
         "id": 573250,
         "locale": null,
-        "modified": "2026-10-09T22:04:35",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -23297,12 +25228,6 @@
                 "tagName": "GCC"
             },
             {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
                 "tagName": "Web"
             },
             {
@@ -23310,9 +25235,6 @@
             },
             {
                 "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -23322,12 +25244,6 @@
                 },
                 {
                     "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -23343,9 +25259,6 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -34087,12 +36000,12 @@
         "description": "<p>Get answers without leaving search. As you type in the Teams search bar, you'll see an option to ask Copilot alongside search results. You can also select Ask Copilot from the search results page to turn your query into a Copilot conversation, helping you quickly find information, get answers, and ask follow-up questions in context.</p>",
         "id": 571299,
         "locale": null,
-        "modified": "2026-09-16T22:57:03",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -35912,9 +37825,9 @@
         "description": "<p>Microsoft Purview is improving auto-labeling capabilities to help organizations manage and validate labeling policies at enterprise scale. These enhancements expand support for larger SharePoint scopes, improve policy management flexibility, and provide richer visibility into auto-labeling activity.</p>",
         "id": 570445,
         "locale": null,
-        "modified": "2026-09-03T22:50:06",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -38505,9 +40418,9 @@
         "description": "<p>With breakout room support, Teams Rooms on Android can be added to a breakout room and moved in and out of the main room making it easy for breakout session coordination.</p>",
         "id": 569447,
         "locale": null,
-        "modified": "2026-09-09T22:36:54",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -38963,12 +40876,12 @@
         "description": "<p>Microsoft Teams will enable meeting organizers and attendees to report suspicious, malicious, or potentially fraudulent activity directly from meetings. Users can submit reports during or after a meeting, helping organizations identify potential threats such as impersonation, phishing, scams, and other suspicious behavior. Reports are integrated with Microsoft security and administrative workflows to support investigation, remediation, and ongoing improvements to security protections.</p>",
         "id": 569207,
         "locale": null,
-        "modified": "2026-09-21T23:04:49",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -39106,12 +41019,12 @@
     },
     {
         "created": "2026-08-17T22:52:47",
-        "description": "Private tasks created in Planner and Planner-powered experiences are stored in the user\u2019s private plan, providing a single place for tasks visible only to that user. Private tasks cannot be shared or assigned to others, and existing tasks continue to work and appear alongside them.",
+        "description": "<p>Private tasks created in Planner and Planner-powered experiences are stored in the user\u2019s private plan, providing a single place for tasks visible only to that user. Private tasks cannot be shared or assigned to others, and existing tasks continue to work and appear alongside them.</p>",
         "id": 569426,
         "locale": null,
-        "modified": "2026-08-17T22:52:47",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -41719,12 +43632,12 @@
         "description": "<p>Attendees can take advantage of proximity join with Teams Rooms on Windows and/or Android for fast, effortless connection to nearby room systems during Teams events, such as town halls, webinars, and structured meetings.</p>",
         "id": 568781,
         "locale": null,
-        "modified": "2026-09-25T22:37:50",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -44724,9 +46637,9 @@
         "description": "<p>Teams events will soon have a separate attendance and engagement report policy from the \"CsTeamsMeetingPolicy\" attendance and engagement report policy. This will permit admins to allow Teams events organizers to access attendance and engagement reports, while restricting access to Teams meeting attendance and engagement reports.</p>",
         "id": 567466,
         "locale": null,
-        "modified": "2026-09-11T22:10:10",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -46225,15 +48138,15 @@
     },
     {
         "created": "2026-07-07T23:10:08",
-        "description": "Call delegation in Teams now includes new controls that give delegators greater privacy and control during active calls. Delegators can lock an ongoing call to prevent delegates from joining or resuming the call and can optionally enable warning tones that notify participants when a delegate joins or resumes a call.\n",
+        "description": "<p>Call delegation in Teams now includes new controls that give delegators greater privacy and control during active calls. Delegators can lock an ongoing call to prevent delegates from joining or resuming the call and can optionally enable warning tones that notify participants when a delegate joins or resumes a call.</p>",
         "id": 567306,
         "locale": null,
-        "modified": "2026-08-03T22:55:03",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -49370,12 +51283,12 @@
         "description": "<p>Users can now choose their preferred meeting language in Teams Rooms on Android. Select from up to 69 languages using the language button on the console. The room system must restart after a language is selected.</p>",
         "id": 565425,
         "locale": null,
-        "modified": "2026-09-28T22:58:08",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -53168,9 +55081,9 @@
         "description": "<p>A redesigned My Tasks experience that brings your tasks into one place, making it easier to capture work, prioritize what matters, and stay focused.</p>",
         "id": 561204,
         "locale": null,
-        "modified": "2026-09-09T22:36:54",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -53860,15 +55773,15 @@
     },
     {
         "created": "2026-05-19T22:45:25",
-        "description": "Auto Assign Open Shifts is a Microsoft Teams Shifts feature that automatically fills unassigned (open) shifts for you. It lets managers automatically assign open shifts to available employees instead of doing it manually. The system considers factors like employee availability, approved time off, past scheduling patterns, and scheduling rules (e.g., max hours, rest time); and generates a draft schedule that you can review and adjust before publishing.",
+        "description": "<p>Auto Assign Open Shifts is a Microsoft Teams Shifts feature that automatically fills unassigned (open) shifts for you. It lets managers automatically assign open shifts to available employees instead of doing it manually. The system considers factors like employee availability, approved time off, past scheduling patterns, and scheduling rules (e.g., max hours, rest time); and generates a draft schedule that you can review and adjust before publishing.</p>",
         "id": 562535,
         "locale": null,
-        "modified": "2026-06-22T23:00:47",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -58153,15 +60066,15 @@
     },
     {
         "created": "2026-04-30T23:30:16",
-        "description": "We are introducing a new Power Automate action that enables automated document generation using document generation (DocGen) forms in SharePoint. \nGenerate document from form (Preview) allows customers to create documents from a template by mapping data inputs to predefined template fields.\nDocuments are generated as part of an automated flow and stored in SharePoint.\nThis capability supports scenarios such as creating contracts, invoices, letters, or reports using structured templates and form-driven inputs.\nThe action works by mapping input data to template fields and returns the generated document along with file metadata such as location and status.",
+        "description": "<p>We are introducing a new Power Automate action that enables automated document generation using document generation (DocGen) forms in SharePoint.<br>\nGenerate document from form (Preview) allows customers to create documents from a template by mapping data inputs to predefined template fields.<br>\nDocuments are generated as part of an automated flow and stored in SharePoint.<br>\nThis capability supports scenarios such as creating contracts, invoices, letters, or reports using structured templates and form-driven inputs.<br>\nThe action works by mapping input data to template fields and returns the generated document along with file metadata such as location and status.</p>",
         "id": 561026,
         "locale": null,
-        "modified": "2026-09-01T23:00:02",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -65801,12 +67714,12 @@
         "description": "<p>Intelligent recap can now be generated without retaining a transcript after the meeting. Meeting organizers can choose this setting from the meeting options before the meeting, or organizers and eligible participants can enable it during the meeting. After the meeting, the AI Summary will be available, but other elements of the recap may not be available (Chapters, Topics, Mentions, Audio recap).</p>",
         "id": 558286,
         "locale": null,
-        "modified": "2026-10-13T23:01:05",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -72052,15 +73965,15 @@
     },
     {
         "created": "2026-02-24T00:15:57",
-        "description": "IT gets new building level insights on the recommended actions page in the Teams Rooms Pro Management portal.  This feature intelligently identifies buildings with high Teams Rooms utilization to help IT prioritize upgrades of bring your own device (BYOD) meeting spaces and ensure consistent, high-quality user experiences throughout their office buildings.  Available with a Teams Rooms Pro or Shared Space license.",
+        "description": "<p>IT gets new building level insights on the recommended actions page in the Teams Rooms Pro Management portal.  This feature intelligently identifies buildings with high Teams Rooms utilization to help IT prioritize upgrades of bring your own device (BYOD) meeting spaces and ensure consistent, high-quality user experiences throughout their office buildings.  Available with a Teams Rooms Pro or Shared Space license.</p>",
         "id": 553591,
         "locale": null,
-        "modified": "2026-06-23T23:15:39",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -81633,15 +83546,15 @@
     },
     {
         "created": "2026-01-06T23:45:19",
-        "description": "As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities. \n\nTo govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities. \n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
+        "description": "<p>As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities.</p>\n<p>To govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities.</p>\n<p>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.</p>",
         "id": 545063,
         "locale": null,
-        "modified": "2026-07-13T23:07:14",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -84603,15 +86516,15 @@
     },
     {
         "created": "2025-12-11T00:00:03",
-        "description": "This feature enhances and standardizes query filtering across both Confluence Cloud and Confluence On-premises connectors.\n\nFor Confluence Cloud connector, it introduces simplified options to filter pages by page id, creation date/time and last update date/time, helping improve productivity and reduce human errors.\n\nFor Confluence On-premises connector, it adds support for advanced CQL-based filtering, enabling more complex and flexible filtering scenarios.",
+        "description": "<p>This feature enhances and standardizes query filtering across both Confluence Cloud and Confluence On-premises connectors.</p>\n<p>For Confluence Cloud connector, it introduces simplified options to filter pages by page id, creation date/time and last update date/time, helping improve productivity and reduce human errors.</p>\n<p>For Confluence On-premises connector, it adds support for advanced CQL-based filtering, enabling more complex and flexible filtering scenarios.</p>",
         "id": 503571,
         "locale": null,
-        "modified": "2026-01-22T00:00:09",
+        "modified": "2026-11-04T00:02:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
