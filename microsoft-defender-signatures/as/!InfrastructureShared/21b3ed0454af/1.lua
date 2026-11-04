@@ -80,30 +80,31 @@ do
   local l_0_14 = (string.sub)(l_0_13, 1, 1)
   local l_0_15 = "ssh_in_fail_users_v2_" .. l_0_14
   local l_0_16 = "ssh_in_reported_" .. l_0_8
-  local l_0_17 = "ssh_in_success_reported_" .. l_0_8
+  local l_0_17 = "ssh_in_success_reported_" .. l_0_8 .. "_" .. l_0_10
+  local l_0_18 = 5
   if not isTainted(l_0_16, "ssh-bruteforce-reported") then
     return mp.CLEAN
   end
-  local l_0_18, l_0_19 = pcall(MpCommon.RollingQueueQueryMultiKey, l_0_15, l_0_8)
-  if not l_0_18 or type(l_0_19) ~= "table" then
+  local l_0_19, l_0_20 = pcall(MpCommon.RollingQueueQueryMultiKey, l_0_15, l_0_8)
+  if not l_0_19 or type(l_0_20) ~= "table" then
     return mp.CLEAN
   end
-  local l_0_20 = 0
-  for l_0_24,l_0_25 in ipairs(l_0_19) do
-    if l_0_25 and l_0_25.value == l_0_10 then
-      l_0_20 = l_0_20 + 1
+  local l_0_21 = 0
+  for l_0_25,l_0_26 in ipairs(l_0_20) do
+    if l_0_26 and l_0_26.value == l_0_10 then
+      l_0_21 = l_0_21 + 1
     end
   end
-  if l_0_20 == 0 then
+  if l_0_21 < l_0_18 then
     return mp.CLEAN
   end
   if isTainted(l_0_17, "ssh-bruteforce-success-reported") then
     return mp.CLEAN
   end
   taint(l_0_17, "ssh-bruteforce-success-reported", l_0_12)
-  local l_0_26 = "username_" .. scrubData(l_0_10)
-  local l_0_27 = "source_type:" .. l_0_4 .. ";source:" .. l_0_5 .. ";username:" .. l_0_26 .. ";recent_user_failures:" .. tostring(l_0_20) .. ";window:" .. tostring(l_0_11)
-  set_research_data("SshBruteForceIncomingSuccess", l_0_27, true)
+  local l_0_27 = "username_" .. scrubData(l_0_10)
+  local l_0_28 = "source_type:" .. l_0_4 .. ";source:" .. l_0_5 .. ";username:" .. l_0_27 .. ";recent_user_failures:" .. tostring(l_0_21) .. ";window:" .. tostring(l_0_11)
+  set_research_data("SshBruteForceIncomingSuccess", l_0_28, true)
   TrackPidAndTechniqueBM("BM", "T1078", "InitialAccess_SshBruteForceSuccess")
   return mp.INFECTED
 end

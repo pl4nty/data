@@ -94,10 +94,10 @@ do
   local l_0_11 = l_0_7(l_0_10, 64)
   local l_0_12 = 60
   local l_0_13 = 120
-  local l_0_14 = 8
+  local l_0_14 = 10
   local l_0_15 = 5
-  local l_0_16 = 6
-  local l_0_17 = 3
+  local l_0_16 = 8
+  local l_0_17 = 4
   local l_0_18 = 900
   local l_0_19 = 512
   local l_0_20 = scrubData(l_0_9)
