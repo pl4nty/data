@@ -1290,6 +1290,7 @@
         "Enable_CosmosDB_QueryHedging": true,
         "Enable_GCB_IWS": true,
         "Enable_GetCloudPCEntityFromDB": true,
+        "Enable_GetReserveCloudPCEntityFromDB": true,
         "Enable_IWSDailyFullSyncAlwaysOn": true,
         "Enable_IWSReturnGpuCategory": true,
         "Enable_IWS_PushModeSync": true,

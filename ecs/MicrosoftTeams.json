@@ -6351,6 +6351,9 @@
             }
         },
         "EnableCertificateValidationLibrary": false,
+        "EnableDropChannelMeetingPostWithoutICalUid": {
+            "Enabled": true
+        },
         "EnableFollowMuteConversation": 1,
         "EnableSEALValidationforAppToken": true,
         "Encryption": {
