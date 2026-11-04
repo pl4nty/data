@@ -830,6 +830,7 @@
             "DisableLegacyAppTargeting": true,
             "EnableAppFetchBatching": true,
             "EnableAppleOSVersionRestrictionEnforcementDuringProfileInstall": true,
+            "EnableApplicationIntentScopeIWS": true,
             "EnableEnhancedWPJSecurityForIOS": true,
             "EnableEnhancedWPJSecurityForMac": true,
             "EnableRecastAppFilterByDefault": true,
@@ -1098,7 +1099,11 @@
             "EnableIosDdmReqApps": true,
             "EnableNewAppPicker": true,
             "EnableRemoteHelpAppDeactivation": true,
-            "EnableWin32InstallerScriptsGA": true
+            "EnableWin32InstallerScriptsGA": true,
+            "ExplorerAppDeploymentOverview": true,
+            "ExplorerAppFailedCount": true,
+            "ExplorerMobileAppStatusDetails": true,
+            "ExplorerVppLicensesStatus": true
         }
     },
     "UX_CloudPki": {
@@ -1237,6 +1242,7 @@
             "EnableWindowsRestore": true,
             "EnrollmentFailureReportUserNotLicensedFilter": true,
             "EnrollmentUserAbandonmentBladeDeprecation": true,
+            "ExplorerProactiveRemediations": true,
             "IncreaseADEPolicyLimit": true,
             "NewSkipKeysFlight": true,
             "TandCSyncButtonEnableFlight": true

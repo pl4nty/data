@@ -1176,6 +1176,7 @@
             },
             "GUI": {
                 "EnableBootToCloudSignInToPhysicalDevice": true,
+                "EnablePinToDesktopShortcuts": true,
                 "enableTheme": true
             }
         }
