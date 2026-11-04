@@ -5,56 +5,6 @@
   NatVis type upstream instead.
 -->
 <AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
-  <!-- Collections Team Visualizers mailto:edgepexdev -->
-  <Type Name="collections::CollectionItemProxy">
-    <DisplayString>{item_,na}</DisplayString>
-    <Expand>
-      <Item Name="[Proxy Item]">item_,na</Item>
-    </Expand>
-  </Type>
-
-  <Type Name="collections::SourceEntry">
-    <DisplayString>{url,na}</DisplayString>
-    <Expand>
-      <Item Name="[url]">url,na</Item>
-      <Item Name="[website_name]">website_name,na</Item>
-    </Expand>
-  </Type>
-
-  <Type Name="collections::CollectionItem">
-    <DisplayString>{title_} {source_.url,na}</DisplayString>
-    <Expand>
-      <Item Name="[Title]">title_,na</Item>
-      <Item Name="[Type]">type_</Item>
-      <Item Name="[Source]">source_</Item>
-    </Expand>
-  </Type>
-
-  <Type Name="edge_collections::mojom::CollectionItem">
-    <DisplayString>title={title} id={id}</DisplayString>
-    <Expand>
-      <Item Name="[title]">title,na</Item>
-      <Item Name="[id]">id,na</Item>
-    </Expand>
-  </Type>
-
-  <Type Name="collections::Item">
-    <DisplayString>Item {title_,na}</DisplayString>
-    <Expand>
-      <Item Name="[Title]">title_,na</Item>
-      <Item Name="[Date Created]">date_created_.us_,X</Item>
-      <Item Name="[Date Last Modified]">date_last_modified_.us_,X</Item>
-    </Expand>
-  </Type>
-
-  <Type Name="edge_collections::mojom::Collection">
-    <DisplayString>title={title} id={id}</DisplayString>
-    <Expand>
-      <Item Name="[title]">title,na</Item>
-      <Item Name="[id]">id,na</Item>
-    </Expand>
-  </Type>
-
   <!-- Video Capture Visualizers. mailto:edgecapabilitiesdev -->
   <Type Name="media::VideoCaptureDeviceDescriptor">
     <DisplayString>{device_id,na}</DisplayString>
