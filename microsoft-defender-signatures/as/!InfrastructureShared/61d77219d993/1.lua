@@ -11,7 +11,7 @@ do
       return mp.CLEAN
     end
   end
-  if IsProcNameInParentProcessTree("cmdhstr", "senseir.exe") then
+  if IsProcNameInParentProcessTree("cmdhstr", "senseir.exe") or IsProcNameInParentProcessTree("cmdhstr", "syncro.service.runner.exe") then
     return mp.CLEAN
   end
   return mp.INFECTED
