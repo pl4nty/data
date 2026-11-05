@@ -121,6 +121,7 @@
             "dmsOperationsSuppressed": false,
             "unifiedEnrollmentPredicateEnabled": false
         },
+        "emmcWriteConservation/suppressCriticalHealthMetrics": false,
         "enrollConfig": {
             "isPmpOtpFallbackEnabled": true,
             "isPmpOtpProvisioningEnabled": true
@@ -3182,7 +3183,7 @@
         }
     },
     "TeamsGraphService": {
-        "buildVersion": "2026102201"
+        "buildVersion": "2026102302"
     },
     "TeamsInfoProtectionAuditService": {
         "rootSettingConfig": {

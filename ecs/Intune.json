@@ -785,6 +785,11 @@
             "EnableWindowsRegistryKeyForExternalTableCreation": true
         }
     },
+    "SVC_DeviceDirectory": {
+        "FlightingV2": {
+            "ProcessDeviceCategoryChangeInDDS": true
+        }
+    },
     "SVC_DeviceFE": {
         "FlightingV2": {
             "AndroidEsimRemoteActions": true,

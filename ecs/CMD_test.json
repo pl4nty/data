@@ -51,6 +51,7 @@
         "CasColdDataConsistencyCheck": true,
         "CasEnableCdpFlexStopGraphApi": true,
         "CasEnableConfigGroupSan": true,
+        "CasEnableFlsMigration": true,
         "CasHandleFlexStop": true,
         "CasImproveActiveApi": true,
         "CasReconcileWdsFlexLifecyclePolicies": true,

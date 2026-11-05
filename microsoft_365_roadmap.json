@@ -1,5 +1,444 @@
 [
     {
+        "created": "2026-11-04T23:59:50",
+        "description": "<p>You can now view up to two shared screens side by side during meetings, reducing interruptions from screen hand-offs. Participants can switch between side-by-side and expanded views, identify presenters for each screen, and benefit from layouts optimized for single or dual displays. Available with Teams Rooms Pro.</p>",
+        "id": 579184,
+        "locale": null,
+        "modified": "2026-11-04T23:59:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Multiple screen shares\nin Teams Rooms on Windows"
+    },
+    {
+        "created": "2026-11-04T23:59:50",
+        "description": "<p>Microsoft Purview server-side auto-labeling will support legacy Microsoft Office file formats, including Word (.doc), Excel (.xls), and PowerPoint (.ppt). Organizations can automatically evaluate and apply sensitivity labels to these files in SharePoint and OneDrive.</p>",
+        "id": 578872,
+        "locale": null,
+        "modified": "2026-11-04T23:59:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Information Protection-Auto-labeling for legacy Office files"
+    },
+    {
+        "created": "2026-11-04T23:59:50",
+        "description": "<p>Reimagine creation Phase In/Out rules.</p>\n<ul>\n<li>Allow users to pre-select Tables and Fields at Group level that will be populated on every rules.</li>\n<li>If a Table key field like Product ID is included in the rules, then auto fill related fields with values like Product Name, Product Group etc.</li>\n<li>Support for Phase In a new Product with out pointing to and old Product.</li>\n<li>Support Delete of a Dimension or Dimension combination so it no longer appear in timeseries</li>\n<li>Investigate if rules can be created via Copilot - Cowork</li>\n</ul>",
+        "id": 577884,
+        "locale": null,
+        "modified": "2026-11-04T23:59:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Supply Chain Management"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Supply Chain Management"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Supply Chain Management: Reimagine creation Phase In/Out rules to make it easier for users to enter in large volumes "
+    },
+    {
+        "created": "2026-11-04T23:59:50",
+        "description": "<p>Enable project managers to view and track Committed Costs directly within Project Operations budgets, providing a complete picture of budget consumption beyond actual costs. This enhancement allows project managers to make more informed budgeting, forecasting, and project control decisions by incorporating costs that are contractually or operationally committed but not yet realized. This is for Project Operations core and Project Operations connected with ERP deployment types</p>",
+        "id": 577874,
+        "locale": null,
+        "modified": "2026-11-04T23:59:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2027",
+        "publicPreviewDate": "March CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Optimize Project Operations: Support cost commitments in project budgets"
+    },
+    {
+        "created": "2026-11-04T23:59:50",
+        "description": "<p>This release expands the contract management experience in Dynamics 365 Project Operations with:</p>\n<ul>\n<li>Enhanced analytics and insights on the contract form to improve visibility into contract performance.</li>\n<li>Context-based pricing information that provides additional business context for pricing-related decisions.</li>\n<li>Improved presentation and discoverability of critical contract information.</li>\n<li>Streamlined user experience that reduces friction and makes contract information easier to access and analyze.</li>\n</ul>",
+        "id": 577425,
+        "locale": null,
+        "modified": "2026-11-04T23:59:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2027",
+        "publicPreviewDate": "March CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Enhance contract management insights and usability"
+    },
+    {
+        "created": "2026-11-04T23:59:50",
+        "description": "<p>Makers can now choose to display their data as a calendar or a stack of cards instead of the default grid layout. Makers can configure these layouts directly in the model driven app designer, giving users more intuitive ways to visualize and work with their data.</p>\n<p>Availability</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>12.2</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by admins or makers)</td>\n</tr>\n</tbody>\n</table>",
+        "id": 575294,
+        "locale": null,
+        "modified": "2026-11-04T23:59:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Power Apps: New view layout in model-driven apps"
+    },
+    {
+        "created": "2026-11-04T23:59:50",
+        "description": "<p>People can set expiration dates for \u201cAnyone\u201d and \u201cPeople in your organization\u201d access on the main link to files and folders in OneDrive and SharePoint. New administrator policies can Administrators can set policies to require expiration and enforce a maximum access duration, with separate settings for OneDrive and SharePoint. These controls help organizations align content sharing with their data governance requirements. When access expires, the main link remains, and permissions granted directly to individuals are preserved.</p>",
+        "id": 571399,
+        "locale": null,
+        "modified": "2026-11-04T23:59:50",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Mobile"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Mobile"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneDrive"
+                },
+                {
+                    "tagName": "SharePoint"
+                },
+                {
+                    "tagName": "Microsoft 365"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft 365: Expiration for access on sharing main links"
+    },
+    {
         "created": "2026-11-04T00:02:09",
         "description": "<p>Improving the shared conversation experience in Viva Engage to so it's easier for users to discover, read, and participate.</p>",
         "id": 578870,
@@ -25726,9 +26165,9 @@
         "description": "<p><strong>Business value</strong></p>\n<p>Field service work often happens in environments where network quality changes throughout the day. Technicians may move between connected, low-connectivity, intermittent, and offline conditions while still needing the mobile app to remain dependable.</p>\n<p>Mobile offline is being improved to better detect and respond to changing network conditions. More adaptive sync behavior can help reduce disruptions, avoid unnecessary retries, and improve reliability when users move across different connectivity states.</p>\n<p><strong>Feature detail</strong></p>\n<p>This update improves how mobile offline detects and responds to weak, intermittent, or limited connectivity. Sync behavior will become more adaptive so the app can better determine when to sync, when to pause, and when to reduce unnecessary work.</p>\n<p>The capability is intended to help Field Service Mobile provide a more dependable offline experience in real-world field environments. It focuses on sync behavior and connectivity response, while administrators and makers remain responsible for designing offline profiles that match field usage, data volume, and business requirements.</p>",
         "id": 573242,
         "locale": null,
-        "modified": "2026-10-06T22:56:31",
+        "modified": "2026-11-04T23:59:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicDisclosureAvailabilityDate": "February CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -25787,9 +26226,9 @@
         "description": "<p><strong>Business value</strong></p>\n<p>Technicians often complete work in the field while connectivity is limited or intermittent. When offline changes still need to sync, users and back-office teams can be uncertain whether work details, status updates, and other field changes have reached business systems.</p>\n<p>Mobile offline up-sync is being enhanced so changes captured in the field can continue syncing more reliably. This helps frontline users gain confidence that completed work will be submitted without repeatedly checking the app or following up manually.</p>\n<p><strong>Feature detail</strong></p>\n<p>This update improves mobile offline up-sync for changes created while technicians work in Field Service Mobile. It includes support for background up-sync and user notifications when pending changes still need to sync.</p>\n<p>When changes remain pending, the mobile experience can help users understand that additional sync work is still required. The capability is intended to reduce uncertainty around offline changes and help field updates reach Dataverse more reliably as connectivity becomes available.</p>",
         "id": 573241,
         "locale": null,
-        "modified": "2026-10-06T22:56:31",
+        "modified": "2026-11-04T23:59:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -25848,9 +26287,9 @@
         "description": "<p><strong>Business value</strong></p>\n<p>Field service organizations often depend on mobile offline so technicians can keep working when connectivity is limited or unavailable. As offline profiles grow larger and apps include more related data, first sync, resource loading, and repeated sync work can affect technician productivity and confidence in the mobile experience.</p>\n<p>Power Apps mobile offline is being updated with a more native foundation for data access and sync orchestration. This foundation is intended to improve responsiveness, reduce repeated sync work, and better support complex Field Service Mobile apps that use larger offline profiles and richer related data.</p>\n<p><strong>Feature detail</strong></p>\n<p>This update modernizes the mobile offline foundation used by Power Apps mobile and Field Service Mobile. It includes native sync processing, improved handling of related rows during first sync, and optimizations for app resource and custom file loading.</p>\n<p>The updated foundation is designed to strengthen offline data access and sync orchestration while preserving the mobile offline app experience customers already use. Administrators and makers should continue to review offline profile design, table relationships, data volume, and file usage to align mobile offline configuration with field usage patterns.</p>",
         "id": 573240,
         "locale": null,
-        "modified": "2026-10-06T22:56:31",
+        "modified": "2026-11-04T23:59:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -26727,10 +27166,10 @@
         "description": "<p>Users will be able to access models that require usage-based billing (UBB) from the model selector in Chat. Tenant admins will need to allocate credits so that users can interact with these models. If users consume their allotted credits, they will be able to request credits from their tenant admins.</p>",
         "id": 571400,
         "locale": null,
-        "modified": "2026-10-02T22:01:21",
+        "modified": "2026-11-04T23:59:50",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "November CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -26748,6 +27187,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -26772,6 +27214,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -38081,12 +38526,12 @@
         "description": "<p>Teams administrators will be able to use a meeting policy to control whether profane words are masked in live transcription and saved meeting transcripts. Filtering remains on by default. When an organizer is assigned a policy that turns filtering off, profane words can appear without masking in both the live and saved transcript, while live captions continue to follow each participant's existing profanity setting.</p>",
         "id": 570467,
         "locale": null,
-        "modified": "2026-10-09T22:04:35",
+        "modified": "2026-11-04T23:59:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -51656,12 +52101,12 @@
         "description": "<p>Teams now lets you set and manage reminders directly on chat and channel messages, helping you keep track of important items. Create, update, complete, and delete reminders, track them in a dedicated Reminders view, and receive timely notifications when they become due. Reminders are private to each user and include message context, making them easy to revisit and act on when needed.</p>",
         "id": 565869,
         "locale": null,
-        "modified": "2026-09-29T23:05:21",
+        "modified": "2026-11-04T23:59:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -53082,10 +53527,10 @@
         "description": "<p>Self-service diagnostics help identify common issues with case permissions, security filters, and policy status. The experience highlights potential misconfigurations and provides simple guidance to help customers understand and resolve them. This brings basic troubleshooting into the product and helps eDiscovery admins overcome common challenges.</p>",
         "id": 565222,
         "locale": null,
-        "modified": "2026-09-21T23:04:49",
+        "modified": "2026-11-04T23:59:50",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2026",
-        "publicPreviewDate": "October CY2026",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -74075,12 +74520,12 @@
     },
     {
         "created": "2026-02-20T23:15:06",
-        "description": "When working in an open Word, Excel, or PowerPoint file, users will now be able to send a copy of the locally stored file by email through the new Outlook for Windows.  #newoutlookforwindows",
+        "description": "<p>When working in an open Word, Excel, or PowerPoint file, users will now be able to send a copy of the locally stored file by email through the new Outlook for Windows.  #newoutlookforwindows</p>",
         "id": 557675,
         "locale": null,
-        "modified": "2026-09-01T23:00:02",
+        "modified": "2026-11-05T00:00:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -96020,12 +96465,12 @@
         "description": "<p>A new usage report will be available in the Microsoft 365 admin center for Copilot Connectors in Microsoft 365 Copilot, designed to give organizations a detailed view of how connectors are being used within Microsoft 365 Copilot. This report provides insights into overall connector activity, and connector powered response patterns over time, along with detailed user-level connectors adoption data. With these analytics, admins can monitor adoption, identify usage patterns, and optimize Copilot experiences to drive greater value across their organization. #copilotcontrolsystem</p>",
         "id": 519571,
         "locale": null,
-        "modified": "2026-10-16T22:00:35",
+        "modified": "2026-11-05T00:00:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -127775,15 +128220,15 @@
     },
     {
         "created": "2024-10-17T23:15:03",
-        "description": "Users can manually insert a signature into a calendar event like they can in the classic outlook. #newoutlookforwindows",
+        "description": "<p>Users can manually insert a signature into a calendar event like they can in the classic outlook. #newoutlookforwindows</p>",
         "id": 422817,
         "locale": null,
-        "modified": "2026-02-20T00:00:24",
+        "modified": "2026-11-05T00:00:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
