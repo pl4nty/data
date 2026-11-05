@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 1189105,
+    "size": 1190059,
     "file_count": 48
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 6551412,
+    "size": 6551636,
     "file_count": 198
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 34349905,
+    "size": 34345740,
     "file_count": 4102
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 38782,
+    "size": 39521,
     "file_count": 5
   },
   {
@@ -156,8 +156,8 @@
   },
   {
     "name": "dawn",
-    "size": 163650366,
-    "file_count": 19351
+    "size": 163655120,
+    "file_count": 19353
   },
   {
     "name": "dbus",
@@ -176,7 +176,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 4531152,
+    "size": 4531177,
     "file_count": 27
   },
   {
@@ -211,8 +211,8 @@
   },
   {
     "name": "eigen3",
-    "size": 23388977,
-    "file_count": 2429
+    "size": 23558867,
+    "file_count": 2433
   },
   {
     "name": "entity_extraction",
@@ -241,8 +241,8 @@
   },
   {
     "name": "federated_compute",
-    "size": 437816,
-    "file_count": 126
+    "size": 439617,
+    "file_count": 129
   },
   {
     "name": "ffmpeg",
@@ -396,7 +396,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 71677,
+    "size": 72075,
     "file_count": 47
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19514347,
+    "size": 19520491,
     "file_count": 19
   },
   {
@@ -576,7 +576,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 82326,
+    "size": 86882,
     "file_count": 38
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4896445,
+    "size": 4902505,
     "file_count": 645
   },
   {
@@ -706,8 +706,8 @@
   },
   {
     "name": "skia",
-    "size": 3482247,
-    "file_count": 1218
+    "size": 3484020,
+    "file_count": 1220
   },
   {
     "name": "speech-dispatcher",
@@ -776,7 +776,7 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 20872556,
+    "size": 20815498,
     "file_count": 45
   },
   {
@@ -806,7 +806,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7891173,
+    "size": 7891812,
     "file_count": 207
   },
   {

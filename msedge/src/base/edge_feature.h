@@ -5,9 +5,11 @@
 #ifndef BASE_EDGE_FEATURE_H_
 #define BASE_EDGE_FEATURE_H_
 
+#include <atomic>
 #include <string_view>
 
 #include "base/feature.h"
+#include "base/logging.h"
 #include "base/notreached.h"
 
 namespace base {
@@ -67,13 +69,13 @@ inline const Feature* GetEdgeFeatureHoldout(const Feature& feature) {
 }
 
 constexpr Feature::Feature(const char* name,
-                           FeatureState default_state,
+                           std::atomic<FeatureStateCache>* edge_state,
                            EdgeFeatureKind kind,
                            CopilotAppType copilot_app_type,
                            const Feature* holdout,
                            internal::FeatureMacroHandshake)
     : name(name),
-      default_state_(default_state),
+      state(edge_state),
       runtime(internal::EdgeFeatureFlagsFromKind(kind).runtime),
       first_run(internal::EdgeFeatureFlagsFromKind(kind).first_run),
       copilot_app_type(copilot_app_type),
@@ -96,10 +98,10 @@ constexpr Feature::Feature(const char* name,
 // feature declarations and definitions.
 struct LOGICALLY_CONST EdgeRuntimeFeature final : Feature {
   constexpr EdgeRuntimeFeature(const char* feature_name,
-                               FeatureState feature_default_state,
+                               std::atomic<FeatureStateCache>* feature_state,
                                internal::FeatureMacroHandshake handshake)
       : Feature(feature_name,
-                feature_default_state,
+                feature_state,
                 EdgeFeatureKind::kRuntime,
                 CopilotAppType::kNone,
                 /*holdout=*/nullptr,
@@ -108,10 +110,10 @@ struct LOGICALLY_CONST EdgeRuntimeFeature final : Feature {
 
 struct LOGICALLY_CONST EdgeFirstRunFeature final : Feature {
   constexpr EdgeFirstRunFeature(const char* feature_name,
-                                FeatureState feature_default_state,
+                                std::atomic<FeatureStateCache>* feature_state,
                                 internal::FeatureMacroHandshake handshake)
       : Feature(feature_name,
-                feature_default_state,
+                feature_state,
                 EdgeFeatureKind::kFirstRun,
                 CopilotAppType::kNone,
                 /*holdout=*/nullptr,
@@ -120,11 +122,11 @@ struct LOGICALLY_CONST EdgeFirstRunFeature final : Feature {
 
 struct LOGICALLY_CONST EdgeCopilotFeature final : Feature {
   constexpr EdgeCopilotFeature(const char* feature_name,
-                               FeatureState feature_default_state,
+                               std::atomic<FeatureStateCache>* feature_state,
                                CopilotAppType feature_copilot_app_type,
                                internal::FeatureMacroHandshake handshake)
       : Feature(feature_name,
-                feature_default_state,
+                feature_state,
                 EdgeFeatureKind::kNormal,
                 feature_copilot_app_type,
                 /*holdout=*/nullptr,
@@ -132,12 +134,13 @@ struct LOGICALLY_CONST EdgeCopilotFeature final : Feature {
 };
 
 struct LOGICALLY_CONST EdgeFeatureWithHoldout final : Feature {
-  constexpr EdgeFeatureWithHoldout(const char* feature_name,
-                                   FeatureState feature_default_state,
-                                   const Feature* holdout_feature,
-                                   internal::FeatureMacroHandshake handshake)
+  constexpr EdgeFeatureWithHoldout(
+      const char* feature_name,
+      std::atomic<FeatureStateCache>* feature_state,
+      const Feature* holdout_feature,
+      internal::FeatureMacroHandshake handshake)
       : Feature(feature_name,
-                feature_default_state,
+                feature_state,
                 EdgeFeatureKind::kNormal,
                 CopilotAppType::kNone,
                 holdout_feature,
@@ -147,11 +150,11 @@ struct LOGICALLY_CONST EdgeFeatureWithHoldout final : Feature {
 struct LOGICALLY_CONST EdgeFirstRunFeatureWithHoldout final : Feature {
   constexpr EdgeFirstRunFeatureWithHoldout(
       const char* feature_name,
-      FeatureState feature_default_state,
+      std::atomic<FeatureStateCache>* feature_state,
       const Feature* holdout_feature,
       internal::FeatureMacroHandshake handshake)
       : Feature(feature_name,
-                feature_default_state,
+                feature_state,
                 EdgeFeatureKind::kFirstRun,
                 CopilotAppType::kNone,
                 holdout_feature,
@@ -160,11 +163,9 @@ struct LOGICALLY_CONST EdgeFirstRunFeatureWithHoldout final : Feature {
 
 struct LOGICALLY_CONST EdgeTriggerFeature final : Feature {
   constexpr EdgeTriggerFeature(const char* feature_name,
+                               std::atomic<FeatureStateCache>* feature_state,
                                internal::FeatureMacroHandshake handshake)
-      : Feature(feature_name,
-                FEATURE_DISABLED_BY_DEFAULT,
-                /*is_runtime_mutable=*/false,
-                handshake) {}
+      : Feature(feature_name, feature_state, handshake) {}
 };
 
 // Makes name-based feature construction explicit when no suitable static
@@ -178,14 +179,24 @@ class DynamicFeature final : public Feature {
       const char* feature_name,
       FeatureState feature_default_state = FEATURE_DISABLED_BY_DEFAULT)
       : Feature(feature_name,
-                feature_default_state,
-                /*is_runtime_mutable=*/false,
-                internal::FeatureMacroHandshake::kSecret) {}
+                &edge_state_,
+                internal::FeatureMacroHandshake::kSecret),
+        edge_state_(internal::MakeFeatureStateCacheInitialValue(
+            false,
+            static_cast<uint32_t>(feature_default_state))) {
+    if (IsCountrySpecificFeatureState(feature_default_state)) {
+      LOG(FATAL) << "Pass a country-specific default state if and only if you "
+                    "are using FeatureWithCountryRestriction.";
+    }
+  }
 
   DynamicFeature(const DynamicFeature&) = delete;
   DynamicFeature& operator=(const DynamicFeature&) = delete;
   DynamicFeature(DynamicFeature&&) = delete;
   DynamicFeature& operator=(DynamicFeature&&) = delete;
+
+ private:
+  mutable std::atomic<FeatureStateCache> edge_state_;
 };
 
 }  // namespace base
@@ -196,9 +207,14 @@ class DynamicFeature final : public Feature {
     return std::string_view(#feature).substr(1).data(); \
   }()
 
-#define BASE_EDGE_FEATURE_INTERNAL_DEFINE(Type, feature, ...) \
-  constinit const base::Type feature(                         \
-      __VA_ARGS__, base::internal::FeatureMacroHandshake::kSecret)
+#define BASE_EDGE_FEATURE_INTERNAL_DEFINE(Type, feature, name, default_state, \
+                                          ...)                                \
+  constinit const base::Type feature(                                         \
+      name,                                                                   \
+      BASE_FEATURE_INTERNAL_STATE(false, default_state,                       \
+                                  !base::IsCountrySpecificFeatureState)       \
+          __VA_OPT__(, ) __VA_ARGS__,                                         \
+      base::internal::FeatureMacroHandshake::kSecret)
 
 // The same as `BASE_DECLARE_FEATURE()` but such feature is also declared to be
 // part of a feature group holdout.
@@ -500,9 +516,9 @@ class DynamicFeature final : public Feature {
 //
 // Features triggers should *not* be defined in header files; do not use this
 // macro in header files.
-#define BASE_FEATURE_TRIGGER_INTERNAL_2_ARGS(feature, name)                  \
-  BASE_FEATURE_SECTION BASE_EDGE_FEATURE_INTERNAL_DEFINE(EdgeTriggerFeature, \
-                                                         feature, name)
+#define BASE_FEATURE_TRIGGER_INTERNAL_2_ARGS(feature, name) \
+  BASE_FEATURE_SECTION BASE_EDGE_FEATURE_INTERNAL_DEFINE(   \
+      EdgeTriggerFeature, feature, name, base::FEATURE_DISABLED_BY_DEFAULT)
 
 #define BASE_FEATURE_TRIGGER_INTERNAL_1_ARGS(feature) \
   BASE_FEATURE_TRIGGER_INTERNAL_2_ARGS(               \
