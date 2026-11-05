@@ -105,16 +105,18 @@ do
 
         -- DECOMPILER ERROR at PC286: Overwrote pending register: R15 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC287: No list found for R9 , SetList fails
+        -- DECOMPILER ERROR at PC287: Overwrote pending register: R16 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC289: Overwrote pending register: R6 in 'AssignReg'
+        -- DECOMPILER ERROR at PC288: No list found for R9 , SetList fails
 
         -- DECOMPILER ERROR at PC290: Overwrote pending register: R6 in 'AssignReg'
+
+        -- DECOMPILER ERROR at PC291: Overwrote pending register: R6 in 'AssignReg'
 
       end
       do
         do
-          -- DECOMPILER ERROR at PC293: Overwrote pending register: R7 in 'AssignReg'
+          -- DECOMPILER ERROR at PC294: Overwrote pending register: R7 in 'AssignReg'
 
           if l_0_6 >= 3 then
             return l_0_16.INFECTED

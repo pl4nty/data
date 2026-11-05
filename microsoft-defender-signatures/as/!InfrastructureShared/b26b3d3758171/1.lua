@@ -210,7 +210,7 @@ end
   local l_0_23 = nil
   local l_0_24 = (string.gsub)(l_0_5, "%`", "")
   local l_0_25 = nil
-  local l_0_26 = {"invoke-expression", "iex(", "iex ", "|iex", "| iex", ";iex", "invoke-webrequest", "iwr ", "invoke-restmethod", "irm ", "downloadstring", "downloadfile", "downloaddata", "net.webclient", "webclient).download", "system.net", "httpclient", "getstringasync", "frombase64string", "-encodedcommand", "-enc ", "-nop", "-noprofile", "-noninteractive", "-w hidden", "-windowstyle hidden", "-windowstyle h", "-executionpolicy bypass", "-ep bypass", "start-bitstransfer", "bitsadmin /transfer", "-urlcache", "certutil -", "certutil.exe", "regsvr32 /i:http", "regsvr32 /s /n /u /i:", "scrobj", "mshta http", "mshta javascript", "mshta vbscript", "rundll32", "curl http", "curl -o", "wget http", "finger ", "tar -x", "curl -sk", "wget -", "msiexec /i http", "msiexec /q ", "-usebasicparsing", "-wi ", "-w h", "-noexit", " %temp%\\", "cmd /c for", "%~zf==2", "for /r", "do start"}
+  local l_0_26 = {"invoke-expression", "iex(", "iex ", "|iex", "| iex", ";iex", "invoke-webrequest", "iwr ", "invoke-restmethod", "irm ", "downloadstring", "downloadfile", "downloaddata", "net.webclient", "webclient).download", "system.net", "httpclient", "getstringasync", "frombase64string", "-encodedcommand", "-enc ", "-nop", "-noprofile", "-noninteractive", "-w hidden", "-windowstyle hidden", "-windowstyle h", "-executionpolicy bypass", "-ep bypass", "start-bitstransfer", "bitsadmin /transfer", "-urlcache", "certutil -", "certutil.exe", "regsvr32 /i:http", "regsvr32 /s /n /u /i:", "scrobj", "mshta http", "mshta javascript", "mshta vbscript", "rundll32", "curl http", "curl -o", "wget http", "powershell -win mi -e", "gcm ", "finger ", "tar -x", "curl -sk", "wget -", "%comspec%", "msiexec /i http", "msiexec /q ", "&echo copy", "-usebasicparsing", "-wi ", "-w h", "-noexit", " %temp%\\", "cmd /", "%~zf==2", "for /r", "do start", "cmd /c", "pcalua"}
   if not contains(l_0_21, l_0_26) and not (function(l_7_0)
   -- function num : 0_6
   if contains(l_7_0, "msiexec.exe") then
@@ -311,7 +311,7 @@ end
   local l_0_29 = nil
   for l_0_33,l_0_34 in ipairs({"chatgpt.com", "openai.com", "claude.ai", "claude.com", "anthropic.com", "grok.com", "deepseek.com", "google.com", "antigravity.google", "qwen.ai", "chat.z.ai", "kimi.com", "doubao.com", "perplexity.ai", "huggingface.co", "openrouter.ai", "mistral.ai", "arena.ai", "meta.ai", "nousresearch.com", "opencode.ai", "openclaw.ai", "kiro.dev", "lovable.dev", "cursor.com", "manus.im", "unsloth.ai", "venice.ai", "notion.com", "notion.so", "microsoft.com", "visualstudio.com", "azure.com", "azure.net", "azurewebsites.net", "windows.net", "office.com", "office.net", "office365.com", "sharepoint.com", "sharepoint-df.com", "cloud.microsoft", "dynamics.com", "powerbi.com", "powerautomate.com", "microsofticm.com", "microsoftgeneva.com", "microsoftonline.com", "bing.com", "live.com", "msn.com", "skype.com", "eng.ms", "jwt.ms", "owiki.ms", "osgwiki.com", "microsoft.ghe.com", "githubusercontent.com", "youtube.com", "googleusercontent.com", "withgoogle.com", "aws.amazon.com", "amazon.com", "amazonworkspaces.com", "workshops.aws", "github.com", "gitlab.com", "stackoverflow.com", "npmjs.com", "pypi.org", "python.org", "nodejs.org", "docker.com", "kubernetes.io", "jetbrains.com", "astral.sh", "brew.sh", "bun.sh", "bun.com", "ollama.com", "pi.dev", "figma.com", "overleaf.com", "supabase.com", "devolutions.net", "rust-lang.org", "virustotal.com", "digitalocean.com", "medium.com", "csdn.net", "zhihu.com", "cnblogs.com", "qiita.com", "anaconda.com", "hashicorp.com", "linuxmint.com", "askubuntu.com", "tryhackme.com", "vocareum.com", "ohmyposh.dev", "skills.google", "tailscale.com", "cloudflare.com", "salesforce.com", "lightning.force.com", "service-now.com", "atlassian.net", "adobe.com", "sap.com", "oracle.com", "ibm.com", "dropbox.com", "nvidia.com", "databricks.com", "azuredatabricks.net", "clerk.com", "pureauth.io", "canva.com", "kaggle.com", ".db.de", "deutschebahn.com", "tatacapital.com", "bajajfinserv.in", "xiaomi.com", "tencent.com", "whatsapp.com", "facebook.com", "instagram.com", "linkedin.com", "reddit.com", "discord.com", "telegram.org", "slack.com", "bilibili.com", "baidu.com", "walmart.com", "yahoo.com", "apple.com", "icloud.com", "duckduckgo.com", "perchance.org", "localhost", "127.0.0.1", "www.runoob.com", "www.jenkins.io", "www.filestash.app", "get.activated.win", "ublockdns.com", "localhost:", "api.justwoker.icu", "docs.immich.app", "herdr.dev", "massgrave.dev", "paste.jmend.cc", "seekai.cc", "gapgpt.app", "gorouter.app", "v0.app", "apinex.bond", "timeweb.cloud", "di.internal.bosch.cloud", "tinyinstaller.top", "paimon.moe", "lovable.app", "pnpm.io", "xstarry.dev", "lua.tools", "christitus.com", "x.ai", "omp.sh", "chocolatey.org", "scoop.sh", "llama.app", "wuwatracker.com", "massgrave-dev.translate.goog", "starrailstation.com", "teamworkgraph.com", "docs.digital.bpglobal.com", "tools.mariusheier.com", "portal.balboadigital.com", "www.kimi.ai", "docs.deno.com", "docs.manim.community", "www.qianwen.com", "www.haskell.org", "app.snowflake.com", "stardb.gg", "packages.trilogycare.com.au", "app.factory.ai", "noggin.epic.com", "fly.io", "modelcontextprotocol.io", "floci.io", "spicetify.app", "cs50.harvard.edu", "www.zabbix.com", "zzz.rng.moe", "lumo.proton.me", "app.clockify.me", "se-bot.mx.siemens-energy.cloud", "app.testcontainers.cloud", "vercel.com", "app.dataannotation.tech", "orchard.iamneo.in", "www.aapanel.com", "www.bt.cn", "academy.hackthebox.com", "labs.cognitiveclass.ai", "edu.huaweicloud.com", "console.volcengine.com", "laravel.com", "labclient.labondemand.com", "copilot.com", "www.coursera.org", "lmstudio.ai", "portal.offsec.com", "www.splunk.com", "qoder.com", "devcloud.ubs.net", "learn.kodekloud.com", "secure.weda.fr", "exam.nowcoder.com", "ai-docs.portal.hyperspace.tools.sap", "collab.nse.co.in", "superuser.com", "hpanel.hostinger.com", "winhance.net", "rmm.datto.com", "crowdstrike.com", "vnc.htb-cloud.com", "deno.com", "physionet.org", "app.glean.com", "docs.devin.ai", "open.higgsfield.ai", "qgenie-docs.qualcomm.com", "atlassian.com", "fabricmc.net", "universe.roboflow.com", "grafana.com", "schneegans.de", "www.natfrp.com", "ckey.run", "www.postman.com", "character.ai", "janitorai.com", "duck.ai", "jimeng.jianying.com", "dreamina.capcut.com", "www.mcp-for-blender.com", "moonrepo.dev", "checkmk.com", "www.codechef.com", "guide.openlua.cloud", "os3.rabbit.tech", "app.devin.ai", "rive.app", "v2.tauri.app", "app.netdata.cloud", "openvpn.net", "qgenie-chat.qualcomm.com", "aihub.qualcomm.com", "wiki.one.int.sap", "iitg.ac.in", "kurzy.kpi.fei.tuke.sk", "ai-desktop.aig.de101.cgm.ag", "cortex.lloydsbanking.cloud", "cloudbrothers.info", "delinea.app", "elastic.cloud", "yandex.cloud", "veeam.com", "bernard.swisscom.com", "setup.claude.de101.cgm.ag", "openwebui.int.lucanet.cloud", "ai-platform-frontend.dev.cdp-int.defra.cloud", "docs.stripe.com", "python-poetry.org", "aider.chat", "kotlinlang.org", "pixi.prefix.dev", "viteplus.dev", "duckdb.org", "fish.audio", "docs.goauthentik.io", "docs.neoforged.net", "starship.rs", "www.swift.org", "docs.pi-hole.net"}) do
     local l_0_30, l_0_31, l_0_32 = , (string.gsub)((string.lower)(tostring((ExtractPartsFromUri(l_0_6)).host)), "%.$", "")
-    -- DECOMPILER ERROR at PC950: Confused about usage of register: R32 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC956: Confused about usage of register: R32 in 'UnsetPending'
 
     if l_0_10(l_0_32, "rive.app") then
       return mp.CLEAN
@@ -319,7 +319,7 @@ end
   end
   local l_0_35 = nil
   local l_0_36 = nil
-  -- DECOMPILER ERROR at PC966: Confused about usage of register: R27 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC972: Confused about usage of register: R27 in 'UnsetPending'
 
   local l_0_37 = nil
   if (((string.match)(l_0_32, "%.([%a][%a%d%-]*)$")) ~= nil and isSuspTLD(((string.match)(l_0_32, "%.([%a][%a%d%-]*)$")))) or l_0_16(l_0_7) then
@@ -340,12 +340,12 @@ end
       end
     end
     do
-      -- DECOMPILER ERROR at PC1072: Confused about usage of register: R28 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC1078: Confused about usage of register: R28 in 'UnsetPending'
 
       if not l_0_43 then
         local l_0_45 = nil
         local l_0_46 = nil
-        -- DECOMPILER ERROR at PC1076: Confused about usage of register: R29 in 'UnsetPending'
+        -- DECOMPILER ERROR at PC1082: Confused about usage of register: R29 in 'UnsetPending'
 
         local l_0_47 = nil
         AppendToRollingQueue("IsClickFixCMD", l_0_44, l_0_6 or "1", 600, 200, 1)
@@ -354,12 +354,12 @@ end
         do
           ;
           (bm.add_related_string)("ETW_ClipWrite_CMD", tostring(l_0_5), bm.RelatedStringBMReport)
-          -- DECOMPILER ERROR at PC1100: Confused about usage of register: R28 in 'UnsetPending'
+          -- DECOMPILER ERROR at PC1106: Confused about usage of register: R28 in 'UnsetPending'
 
           ;
           (bm.add_related_string)("ETW_ClipWrite_isSuspTld", tostring(l_0_46), bm.RelatedStringBMReport)
           do return mp.INFECTED end
-          -- DECOMPILER ERROR at PC1110: freeLocal<0 in 'ReleaseLocals'
+          -- DECOMPILER ERROR at PC1116: freeLocal<0 in 'ReleaseLocals'
 
         end
       end
