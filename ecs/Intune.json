@@ -863,6 +863,11 @@
             "DeviceMergeBypassDeviceFE": true
         }
     },
+    "SVC_Monolith_Compliance": {
+        "FlightingV2": {
+            "EnableMTDPartnerFromEntities": true
+        }
+    },
     "SVC_Monolith_Enrollment": {
         "FlightingV2": {
             "DisableAIAUrlRetrieval": true,
@@ -1105,6 +1110,7 @@
             "EnableNewAppPicker": true,
             "EnableRemoteHelpAppDeactivation": true,
             "EnableWin32InstallerScriptsGA": true,
+            "ExplorerAppConfigPolicyOverview": true,
             "ExplorerAppDeploymentOverview": true,
             "ExplorerAppFailedCount": true,
             "ExplorerMobileAppStatusDetails": true,
@@ -1147,6 +1153,7 @@
             "EnableDeviceExecutionStatusReportExportV2": true,
             "EnableJamfDeleteButton": true,
             "EnableWpa3PersonalForIosFlight": true,
+            "ExplorerDcv2DeviceSummary": true,
             "HidePCAAndCRAFromAgentsL1": true,
             "TunnelVpnStrictModeV2": true,
             "UX_DisableAssociationMACRandomization": true,
@@ -1250,6 +1257,7 @@
             "ExplorerProactiveRemediations": true,
             "IncreaseADEPolicyLimit": true,
             "NewSkipKeysFlight": true,
+            "RedirectSettingComplianceToDeviceConfiguration": true,
             "TandCSyncButtonEnableFlight": true
         }
     },

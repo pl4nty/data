@@ -256,6 +256,7 @@
         "azureml://registries/azureml-moonshotai/models/kimi-k2-thinking",
         "azureml://registries/azureml-moonshotai/models/kimi-k2.5",
         "azureml://registries/azureml-moonshotai/models/kimi-k2.6",
+        "azureml://registries/azureml-moonshotai/models/kimi-k3.1-pro",
         "azureml://registries/azureml-moonshotai/models/kimi-k2.7-code",
         "azureml://registries/azure-mai/models/mai-thinking-1",
         "azureml://registries/azure-mai/models/mai-code-1.1-flash",
@@ -438,6 +439,7 @@
         "kimi-k2-thinking",
         "kimi-k2.5",
         "kimi-k2.6",
+        "kimi-k3.1-pro",
         "kimi-k2.7-code",
         "mai-thinking-1",
         "mai-code-1.1-flash"
@@ -578,6 +580,7 @@
             "kimi-k2-thinking",
             "kimi-k2.5",
             "kimi-k2.6",
+            "kimi-k3.1-pro",
             "kimi-k2.7-code",
             "mai-thinking-1",
             "mai-code-1.1-flash"

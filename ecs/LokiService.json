@@ -2195,6 +2195,7 @@
             "GenerateAiAboutMeProvider"
         ],
         "TrimDsApiSecurityContext": true,
+        "TrimPlaceAvailabilityCalendarCache": true,
         "TrimUserLicenseCache": true,
         "UpcomingMeetingDataProviderConfig": {
             "DaysToLoad": 30,
