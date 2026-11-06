@@ -11,5 +11,7 @@ local l_0_1 = l_0_0.command_line
 if l_0_1 == nil or l_0_1 == "" or IsExcludedByCmdlineMacOS(l_0_1) then
   return mp.CLEAN
 end
+;
+(bm.trigger_sig)("BmTraverseTreeBlockMac", "Detected")
 return mp.INFECTED
 
