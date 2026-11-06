@@ -105629,55 +105629,6 @@
     },
     {
         "created": "2025-09-17T23:00:20",
-        "description": "This feature enables Viva Glint admins to delete custom user attributes directly in the platform. This empowers admins to easily update and maintain the structure of user data without requiring support.",
-        "id": 503148,
-        "locale": null,
-        "modified": "2026-01-06T00:15:27",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: User Schema Enhancements - Delete Attributes"
-    },
-    {
-        "created": "2025-09-17T23:00:20",
         "description": "When in a meeting with another Teams Rooms on Windows that has multiple cameras, you can switch camera views in that room via the participant panel on the console, or video tile on a touch board, to optimize your views.",
         "id": 503104,
         "locale": null,
@@ -110755,61 +110706,6 @@
             ]
         },
         "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention -- Always-on diagnostics for Windows Endpoints (Phase 2)"
-    },
-    {
-        "created": "2025-07-30T23:15:18",
-        "description": "Generating PPT grounded on a Copilot Page",
-        "id": 499425,
-        "locale": null,
-        "modified": "2026-01-06T00:15:27",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Generating PPT grounded on a Copilot Page"
     },
     {
         "created": "2025-07-30T23:15:18",
@@ -128806,67 +128702,6 @@
         "title": "Outlook: Replace quick compose pop-up with inline appointment creation in new Outlook for Windows and web"
     },
     {
-        "created": "2024-06-12T23:15:10",
-        "description": "When you open a document, Copilot will generate a summary in the Word window. You can hide the summary or open the Copilot chat pane to ask specific questions about the document.",
-        "id": 399921,
-        "locale": null,
-        "modified": "2026-01-06T00:15:27",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2024",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Word"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Word"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Automatic summary of documents on file-open in Word"
-    },
-    {
         "created": "2024-05-22T23:30:29",
         "description": "<p>The first release of Priority cleanup enables admins to create a recurring exception to delete items under a broader retention policy and/or legal hold on Exchange workload. Creating a Priority cleanup will require a separate security role, multiple approvers, and will have a complete audit trail.</p>",
         "id": 392838,
@@ -130786,61 +130621,6 @@
             ]
         },
         "title": "Microsoft 365 admin center: Google to Entra Identity Sync service"
-    },
-    {
-        "created": "2024-09-19T23:15:45",
-        "description": "Enterprise Application Insights is a powerful report which helps SharePoint Administrators to discover all the SharePoint sites that are allowed access by third-party applications registered in your tenant. The report also provides details on the application's permission and requests count to help admins take further action to strengthen the security of the site.  It is part of SharePoint Advanced Management capabilities. #copilotcontrolsystem",
-        "id": 417481,
-        "locale": null,
-        "modified": "2026-01-06T00:15:27",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "January CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "SharePoint: Enterprise Application Insights for SharePoint sites"
     },
     {
         "created": "2024-07-26T22:30:19",

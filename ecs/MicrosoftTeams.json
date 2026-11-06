@@ -1378,7 +1378,6 @@
             "EnableAuthzCheckForConversationData": true,
             "EnableBatchTranscriptRequests": true,
             "EnableBotRosterCheckForLiftPropertiesCache": true,
-            "EnableCalendarFetchService": true,
             "EnableCalendarIngestionFromSessionMetadata": true,
             "EnableCallSessionEndNotification": false,
             "EnableCallSessionEndNotificationV2": false,
@@ -2346,6 +2345,12 @@
             "MeetingTimerSkill_enableTimerSmartActions": [
                 {
                     "Flight": "enableTimerSmartActions",
+                    "IsEnabled": true
+                }
+            ],
+            "NotesAgendaTopicFilter": [
+                {
+                    "Flight": "AS.enableNotesAgendaTopicFilter",
                     "IsEnabled": true
                 }
             ],

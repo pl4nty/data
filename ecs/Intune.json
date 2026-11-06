@@ -1105,6 +1105,7 @@
         "FlightingV2": {
             "EnableAELOBAppCreation": true,
             "EnableAOSPReferencedAppUX": true,
+            "EnableAppsInstallStatusReportExplorer": true,
             "EnableDdmVppAppsUX": true,
             "EnableEvergreenApps": true,
             "EnableIosDdmReqApps": true,
@@ -1152,6 +1153,7 @@
             "CanAccessSupportCentralWidget": true,
             "EnableCompliancePolicySettingsOrgReport": true,
             "EnableDeviceExecutionStatusReportExportV2": true,
+            "EnableDeviceStatusByCompliancePolicySettingReportExplorer": true,
             "EnableJamfDeleteButton": true,
             "EnableWpa3PersonalForIosFlight": true,
             "ExplorerDcv2DeviceSummary": true,
@@ -1258,6 +1260,7 @@
             "ExplorerProactiveRemediations": true,
             "IncreaseADEPolicyLimit": true,
             "NewSkipKeysFlight": true,
+            "RedirectPlatformComplianceToDeviceConfiguration": true,
             "RedirectSettingComplianceToDeviceConfiguration": true,
             "TandCSyncButtonEnableFlight": true
         }

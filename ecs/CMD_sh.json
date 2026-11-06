@@ -1300,6 +1300,7 @@
         "Enable_PolicyStatusInEssential": true,
         "Enable_PoolReprovision": true,
         "Enable_ReturnCloudPCEntityFromDB": true,
+        "Enable_ReturnReserveCloudPCEntityFromDB": true,
         "Enable_Windows_App_Cookie_Redirection": true,
         "Enable_Windows_App_Redirection": true,
         "Enable_Windows_App_Redirection_Auto_Open": true,

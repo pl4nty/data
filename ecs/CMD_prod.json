@@ -1098,6 +1098,8 @@
         "RouteFidalgoActionsThroughKronox": true,
         "RouteFlexActionsThroughKronox": true,
         "RoutePowerAutomateActionsThroughKronox": true,
+        "SARMAutoTriggerPendingOperation": true,
+        "SARMEnforceRunningQuota": true,
         "SARMEnsureContainerExists": true,
         "SESSION_STORAGE_IWP": true,
         "SPA_AUTH_IWP": true,
