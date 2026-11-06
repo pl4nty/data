@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2175863,
+    "size": 2176011,
     "file_count": 188
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 6551636,
+    "size": 6574698,
     "file_count": 198
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 34345740,
+    "size": 34346931,
     "file_count": 4102
   },
   {
@@ -211,8 +211,8 @@
   },
   {
     "name": "eigen3",
-    "size": 23558867,
-    "file_count": 2433
+    "size": 23603452,
+    "file_count": 2435
   },
   {
     "name": "entity_extraction",
@@ -241,7 +241,7 @@
   },
   {
     "name": "federated_compute",
-    "size": 439617,
+    "size": 439502,
     "file_count": 129
   },
   {
@@ -326,8 +326,8 @@
   },
   {
     "name": "hunspell_dictionaries",
-    "size": 164493745,
-    "file_count": 188
+    "size": 178222675,
+    "file_count": 193
   },
   {
     "name": "hyphenation-patterns",
@@ -366,8 +366,8 @@
   },
   {
     "name": "jdk",
-    "size": 15404,
-    "file_count": 9
+    "size": 3022,
+    "file_count": 3
   },
   {
     "name": "jdk11",
@@ -571,8 +571,8 @@
   },
   {
     "name": "oak",
-    "size": 295219,
-    "file_count": 151
+    "size": 276261,
+    "file_count": 150
   },
   {
     "name": "omnibox_proto",
@@ -636,7 +636,7 @@
   },
   {
     "name": "protobuf",
-    "size": 2604299,
+    "size": 2604559,
     "file_count": 639
   },
   {
@@ -776,7 +776,7 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 20815498,
+    "size": 36069114,
     "file_count": 45
   },
   {
@@ -806,7 +806,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7891812,
+    "size": 7894877,
     "file_count": 207
   },
   {
