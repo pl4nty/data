@@ -59,6 +59,10 @@ do
   l_0_6.coupons = true
   l_0_6.date = true
   l_0_6.pics = true
+  l_0_6.help = true
+  l_0_6.rocks = true
+  l_0_6.wtf = true
+  l_0_6.zw = true
   local l_0_8 = function(l_1_0, l_1_1)
   -- function num : 0_0 , upvalues : l_0_6
   if type(l_1_1) ~= "string" then
@@ -77,32 +81,32 @@ end
   end
   local l_0_14 = nil
   local l_0_15, l_0_16 = nil, pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_APPNAME)
-  if l_0_16 and type(R16_PC163) == "string" then
+  if l_0_16 and type(R16_PC167) == "string" then
     l_0_15 = 
   end
   local l_0_17 = nil
-  -- DECOMPILER ERROR at PC170: Overwrote pending register: R16 in 'AssignReg'
+  -- DECOMPILER ERROR at PC174: Overwrote pending register: R16 in 'AssignReg'
 
-  local l_0_18 = tostring(R16_PC163)
-  local l_0_19 = R16_PC163
+  local l_0_18 = tostring(R16_PC167)
+  local l_0_19 = R16_PC167
   local l_0_20 = tostring(l_0_11)
   local l_0_21 = "||"
   local l_0_22 = string.sub
   do
     l_0_22 = l_0_22(tostring(l_0_15 or "-"), 1, 128)
     l_0_18 = l_0_18 .. l_0_19 .. l_0_20 .. l_0_21 .. l_0_22 .. "||" .. (string.sub)(tostring(l_0_13), 1, 128) .. "||" .. (string.sub)(tostring(l_0_12), 1, 320) .. "||" .. (string.sub)(l_0_3, 1, 320)
-    -- DECOMPILER ERROR at PC211: Overwrote pending register: R16 in 'AssignReg'
+    -- DECOMPILER ERROR at PC215: Overwrote pending register: R16 in 'AssignReg'
 
     l_0_20 = "WebClipPaste_D"
     l_0_21 = l_0_18
     l_0_22 = false
     l_0_19(l_0_20, l_0_21, l_0_22)
-    -- DECOMPILER ERROR at PC216: Overwrote pending register: R16 in 'AssignReg'
+    -- DECOMPILER ERROR at PC220: Overwrote pending register: R16 in 'AssignReg'
 
-    -- DECOMPILER ERROR at PC217: Overwrote pending register: R16 in 'AssignReg'
+    -- DECOMPILER ERROR at PC221: Overwrote pending register: R16 in 'AssignReg'
 
     do return l_0_19 end
-    -- DECOMPILER ERROR at PC219: freeLocal<0 in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC223: freeLocal<0 in 'ReleaseLocals'
 
   end
 end

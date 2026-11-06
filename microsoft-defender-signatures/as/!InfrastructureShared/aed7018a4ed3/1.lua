@@ -11,5 +11,5 @@ local l_0_1 = ((mp.GetProcessCommandLine)(l_0_0)):lower()
 if isIEXfound(l_0_1) then
   return mp.INFECTED
 end
-return mp.LOWFI
+return mp.CLEAN
 

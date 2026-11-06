@@ -22,6 +22,23 @@ else
   end
 end
 do
+  if not (mp.get_mpattribute)("MpPowershellAmsiViaCmdLine") then
+    return mp.CLEAN
+  end
+  local l_0_2 = (mp.getfilesize)()
+  if l_0_2 > 2048 then
+    return mp.CLEAN
+  end
+  ;
+  (mp.readprotection)(false)
+  local l_0_3 = (mp.readfile)(0, l_0_2)
+  if l_0_3 == nil then
+    return mp.CLEAN
+  end
+  l_0_3 = (string.lower)(tostring(l_0_3))
+  if IsKeyInRollingQueue("IsTerminalFixCMD", l_0_3, true) then
+    (mp.set_mpattribute)("Lua:AmsiSuspClickfixTerminalFixCMD")
+  end
   return mp.CLEAN
 end
 

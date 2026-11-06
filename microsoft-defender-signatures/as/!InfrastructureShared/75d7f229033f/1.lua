@@ -106,7 +106,7 @@ end
 end
 
   do
-    local l_0_12 = {monster = true, cfd = true, top = true, club = true, online = true, boats = true, cc = true, hair = true, lol = true, sbs = true, shop = true, buzz = true, xyz = true, stream = true, courses = true, charity = true, bet = true, homes = true, uno = true, garden = true, beauty = true, zip = true, skin = true, bar = true, fit = true, coupons = true, date = true, pics = true}
+    local l_0_12 = {monster = true, cfd = true, top = true, club = true, online = true, boats = true, cc = true, hair = true, lol = true, sbs = true, shop = true, buzz = true, xyz = true, stream = true, courses = true, charity = true, bet = true, homes = true, uno = true, garden = true, beauty = true, zip = true, skin = true, bar = true, fit = true, coupons = true, date = true, pics = true, help = true, rocks = true, wtf = true, zw = true}
     for l_0_16,l_0_17 in ipairs(l_0_2) do
       local l_0_13, l_0_14 = function(l_5_0)
   -- function num : 0_4 , upvalues : l_0_11
@@ -120,37 +120,37 @@ end
   end
 end
 , nil
-      -- DECOMPILER ERROR at PC95: Confused about usage of register: R17 in 'UnsetPending'
+      -- DECOMPILER ERROR at PC99: Confused about usage of register: R17 in 'UnsetPending'
 
-      if type(R17_PC95) == "string" and R17_PC95 ~= "" and l_0_13(GetRollingQueueKeyValue("IsClickFixCMD_Malicious", R17_PC95)) then
-        if l_0_9(l_0_4(R17_PC95), l_0_5) then
-          l_0_14 = GetRollingQueueKeyValue("IsClickFixCMD_Malicious", R17_PC95)
+      if type(R17_PC99) == "string" and R17_PC99 ~= "" and l_0_13(GetRollingQueueKeyValue("IsClickFixCMD_Malicious", R17_PC99)) then
+        if l_0_9(l_0_4(R17_PC99), l_0_5) then
+          l_0_14 = GetRollingQueueKeyValue("IsClickFixCMD_Malicious", R17_PC99)
           break
         end
-        if l_0_9(l_0_4(l_0_3(R17_PC95)), l_0_8) then
-          l_0_14 = GetRollingQueueKeyValue("IsClickFixCMD_Malicious", R17_PC95)
+        if l_0_9(l_0_4(l_0_3(R17_PC99)), l_0_8) then
+          l_0_14 = GetRollingQueueKeyValue("IsClickFixCMD_Malicious", R17_PC99)
           break
         end
-        if l_0_4(l_0_3(R17_PC95)) ~= nil then
+        if l_0_4(l_0_3(R17_PC99)) ~= nil then
           local l_0_20 = nil
-          if l_0_10(l_0_4(l_0_3(R17_PC95))) ~= nil and (string.find)(l_0_6, l_0_10(l_0_4(l_0_3(R17_PC95))), 1, true) then
+          if l_0_10(l_0_4(l_0_3(R17_PC99))) ~= nil and (string.find)(l_0_6, l_0_10(l_0_4(l_0_3(R17_PC99))), 1, true) then
             do
               do
                 l_0_14 = l_0_20
                 do break end
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out DO_STMT
+                -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out DO_STMT
 
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_STMT
 
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC151: LeaveBlock: unexpected jumping out IF_STMT
+                -- DECOMPILER ERROR at PC155: LeaveBlock: unexpected jumping out IF_STMT
 
               end
             end
@@ -158,17 +158,17 @@ end
         end
       end
     end
-    -- DECOMPILER ERROR at PC153: Confused about usage of register: R12 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC157: Confused about usage of register: R12 in 'UnsetPending'
 
     if l_0_14 == nil then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC161: Confused about usage of register: R12 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC165: Confused about usage of register: R12 in 'UnsetPending'
 
     ;
     (mp.set_mpattribute)("MpInternal_researchdata=WCS=" .. l_0_14)
     do return mp.INFECTED end
-    -- DECOMPILER ERROR at PC167: freeLocal<0 in 'ReleaseLocals'
+    -- DECOMPILER ERROR at PC171: freeLocal<0 in 'ReleaseLocals'
 
   end
 end

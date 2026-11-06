@@ -36,7 +36,7 @@ do
         return mp.INFECTED
       end
     end
-    do return mp.LOWFI end
+    do return mp.CLEAN end
     -- WARNING: undefined locals caused missing assignments!
   end
 end
