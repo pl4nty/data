@@ -647,6 +647,166 @@
                         "gpt-6-astra"
                     ]
                 }
+            },
+            "GithubCopilotApp": {
+                "audiences": {
+                    "consumer": [
+                        "claude-opus-5.5",
+                        "claude-opus-5",
+                        "claude-sonnet-5.5",
+                        "claude-sonnet-5",
+                        "claude-haiku-5.5",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-6-luna",
+                        "gpt-6-sol",
+                        "gpt-61-sol",
+                        "gpt-6-astra"
+                    ],
+                    "enterprise": [
+                        "claude-opus-5.5",
+                        "claude-opus-5",
+                        "claude-sonnet-5.5",
+                        "claude-sonnet-5",
+                        "claude-haiku-5.5",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-6-luna",
+                        "gpt-6-sol",
+                        "gpt-61-sol",
+                        "gpt-6-astra"
+                    ]
+                }
+            },
+            "GithubCopilotCLI": {
+                "audiences": {
+                    "consumer": [
+                        "claude-opus-5.5",
+                        "claude-opus-5",
+                        "claude-sonnet-5.5",
+                        "claude-sonnet-5",
+                        "claude-haiku-5.5",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-6-luna",
+                        "gpt-6-sol",
+                        "gpt-61-sol",
+                        "gpt-6-astra"
+                    ],
+                    "enterprise": [
+                        "claude-opus-5.5",
+                        "claude-opus-5",
+                        "claude-sonnet-5.5",
+                        "claude-sonnet-5",
+                        "claude-haiku-5.5",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-6-luna",
+                        "gpt-6-sol",
+                        "gpt-61-sol",
+                        "gpt-6-astra"
+                    ]
+                }
+            },
+            "SuperApp": {
+                "audiences": {
+                    "consumer": [
+                        "claude-opus-5.5",
+                        "claude-opus-5",
+                        "claude-sonnet-5.5",
+                        "claude-sonnet-5",
+                        "claude-haiku-5.5",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-6-luna",
+                        "gpt-6-sol",
+                        "gpt-61-sol",
+                        "gpt-6-astra"
+                    ],
+                    "enterprise": [
+                        "claude-opus-5.5",
+                        "claude-opus-5",
+                        "claude-sonnet-5.5",
+                        "claude-sonnet-5",
+                        "claude-haiku-5.5",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-6-luna",
+                        "gpt-6-sol",
+                        "gpt-61-sol",
+                        "gpt-6-astra"
+                    ]
+                }
+            },
+            "VisualStudio": {
+                "audiences": {
+                    "consumer": [
+                        "claude-opus-5.5",
+                        "claude-opus-5",
+                        "claude-sonnet-5.5",
+                        "claude-sonnet-5",
+                        "claude-haiku-5.5",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-6-luna",
+                        "gpt-6-sol",
+                        "gpt-61-sol",
+                        "gpt-6-astra"
+                    ],
+                    "enterprise": [
+                        "claude-opus-5.5",
+                        "claude-opus-5",
+                        "claude-sonnet-5.5",
+                        "claude-sonnet-5",
+                        "claude-haiku-5.5",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-6-luna",
+                        "gpt-6-sol",
+                        "gpt-61-sol",
+                        "gpt-6-astra"
+                    ]
+                }
+            },
+            "VisualStudioCode": {
+                "audiences": {
+                    "consumer": [
+                        "claude-opus-5.5",
+                        "claude-opus-5",
+                        "claude-sonnet-5.5",
+                        "claude-sonnet-5",
+                        "claude-haiku-5.5",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-6-luna",
+                        "gpt-6-sol",
+                        "gpt-61-sol",
+                        "gpt-6-astra"
+                    ],
+                    "enterprise": [
+                        "claude-opus-5.5",
+                        "claude-opus-5",
+                        "claude-sonnet-5.5",
+                        "claude-sonnet-5",
+                        "claude-haiku-5.5",
+                        "gpt-5.6-sol",
+                        "gpt-5.6-luna",
+                        "gpt-5.5",
+                        "gpt-6-luna",
+                        "gpt-6-sol",
+                        "gpt-61-sol",
+                        "gpt-6-astra"
+                    ]
+                }
             }
         },
         "ModelMappings": [
@@ -752,19 +912,19 @@
             },
             {
                 "appId": "aebc6443-996d-45c2-90f0-388ff96faa56",
-                "workflow": "CodeTab"
+                "workflow": "VisualStudioCode"
             },
             {
                 "appId": "5ecc71bb-0fa6-4d6b-a31b-de12184c4b1a",
-                "workflow": "CodeTab"
+                "workflow": "GithubCopilotCLI"
             },
             {
                 "appId": "ea31b3ac-3225-4c75-b81e-34e3091871d5",
-                "workflow": "GitHubCopilot"
+                "workflow": "GithubCopilotApp"
             },
             {
                 "appId": "04f0c124-f2bc-4f59-8241-bf6df9866bbd",
-                "workflow": "GitHubCopilot"
+                "workflow": "VisualStudio"
             }
         ],
         "chat_default": [

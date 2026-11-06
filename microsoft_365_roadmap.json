@@ -1,5 +1,1007 @@
 [
     {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>A new command-line tool, odcli, lets OneDrive users, IT admins and support engineers check and manage the OneDrive sync app from the command line. Commands cover sync status, accounts, configuration, policies, and managing the sync app. JSON output lets scripts, management tools and AI agents automate these tasks.</p>",
+        "id": 578910,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "OneDrive"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "OneDrive"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "OneDrive: Command-line tool for the OneDrive sync app"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>When billing teams review an invoice, they need to see where it stands, which transactions it includes, and what's still waiting to be billed. When that information is spread across tabs and long lists, reviews take longer and it's easier to miss a transaction.</p>\n<p>This update makes invoices easier to review:</p>\n<p>Timeline on the summary. The invoice summary includes a timeline [Confirm what it shows, such as status history from draft to posted], so you can see where the invoice stands without leaving the page.<br>\nCurrent and future pending transactions. Each pending transaction shows whether it's current or dated in the future [Confirm: relative to the invoice's transaction cutoff date], with current transactions listed first.<br>\nTime and material grouped by transaction class. The time and material tab organizes transactions into sections by transaction class, such as time, expense, and material, so you can review each type on its own.<br>\nKey information first. Address details move to the end of the invoice, keeping amounts and transactions at the top.</p>",
+        "id": 578905,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2027",
+        "publicPreviewDate": "March CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Invoice usability enhancements"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>The table edit visual now responds to filters and slicers applied within the Microsoft Power BI report. When users filter the report using a slicer or other supported report filtering experience, the table edit visual reflects that filter context and displays the relevant dimension records.</p>",
+        "id": 578876,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-planning/table-edit",
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Table edit with Microsoft Power BI filters and slicers"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>Business performance planning introduces an optimized dataflow capability designed to improve the performance of loading data into planning cubes.<br>\nThe optimized dataflow improves how data is processed and loaded into the cube, reducing the time required to populate planning models, particularly when working with larger datasets.</p>",
+        "id": 578874,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Faster cube data loading with optimized dataflows"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>The Matrix visual now provides clearer control over how zero and blank values are handled during planning.<br>\nUsers can explicitly save 0 as a planning value, preserving the underlying record with a value of zero. Users can also delete an existing planning record by clearing the cell and saving the blank value.<br>\nThis behavior is supported when editing both leaf-level and parent-level cells, providing a consistent experience when users enter values directly or make adjustments at an aggregated level</p>",
+        "id": 578873,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-planning/bpp-matrix-plan-visual",
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Faster cube data loading with optimized dataflows"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>A new Work IQ MCP path, /memory/me/coreMemories, gives authorized agents access to a user\u2019s memory profile. This profile enables agents to provide more personalized and relevant assistance. At launch, it includes Custom Instructions, Saved Memories, relevant work account data, and memories derived from chat history. The memory profile will continue to evolve and improve over time.</p>",
+        "id": 578869,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Work IQ"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Work IQ"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Work IQ: Memory capabilities expand to agents"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>We are expanding the availability of Viva Insights and Copilot Analytics capabilities in Microsoft 365 Government Community Cloud (GCC, or GCC-M) and GCC High (GCC-H). Availability differs for a small number of capabilities by cloud, as noted below.</p>\n<p>\u2022\tEligible users will see updated Insights app features and supported Insights Admin Center experiences.<br>\n\u2022\tAdoption and Impact experiences will include supported Copilot usage and impact measures, group and app views, trends, and filters.<br>\n\u2022\tAnalysts will gain access to additional Advanced Analysis reports and queries. Supported users will also have sharing, delegation, and report-publishing capabilities.<br>\nCloud-specific differences<br>\n\u2022\tGCC only: Adoption by app for Edge and the Microsoft 365 Copilot app.<br>\n\u2022\tGCC High:  Impact supports scope, organization, and time-period filters, but not license, job-function, or usage-level filters.  Creating an analysis excludes Copilot.</p>",
+        "id": 578868,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Insights and Copilot Analytics in GCC and GCC High"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p><strong>Streamline corporate accounting work</strong></p>\n<p>New accounting capabilities in Excel and Cowork help accountants spend less time on repetitive, manual tasks in the places they already work, including:</p>\n<p>\u2022\t<strong>Reconcile accounts with confidence:</strong> Compare balances and transactions, identify discrepancies, and prepare reconciling items for review.</p>\n<p>\u2022\t<strong>Prepare journal entries faster:</strong> Draft accruals, reclassifications, allocations, reversals, and recurring entries, with checks for required inputs and balanced entries.</p>\n<p>\u2022\t<strong>Turn results into clear reporting:</strong> Analyze financial performance against plan, identify key drivers, and prepare reporting that explains what changed and why.</p>\n<p>Additional capabilities span audit, tax, FP&amp;A, compliance, and training. Learn more about the full set of accounting capabilities here.</p>\n<p>Accountants are already putting these capabilities to work. In seven days of limited Insiders availability, more than 8,000 unique users invoked accounting skills over 44,000 times across more than 18,000 Copilot conversations.<br>\nAcross Excel and Cowork, finance professionals will also have the option to start an audit trail whenever they invoke an accounting capability. If selected, this will create a record in their chat history of what Copilot changed and why. This is available today in Excel and coming soon to Cowork.</p>",
+        "id": 578864,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Excel"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Excel"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft 365 Copilot (Microsoft 365): Accounting skills"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>In B2B commerce, the company is the customer of record, but the individuals who place orders, make deposits, and collect goods can vary from transaction to transaction. Without a way to identify these individuals, retailers have limited visibility into who performed specific actions. This can create accountability gaps and make it more difficult to resolve disputes or meet compliance requirements.</p>\n<p>This feature addresses that challenge by making contacts a first-class part of the Store Commerce transaction experience. Associates can record the specific person from a customer's organization who acts on the organization's behalf across orders, quotations, and pickups. The result is a more accountable and auditable trade counter operation that better supports B2B business processes.</p>\n<h2>Supported features</h2>\n<ul>\n<li><p><strong>Contacts on the customer details page</strong>: A new <strong>Contacts</strong> section on the customer details page in Store Commerce displays all contacts associated with a customer account. Associates with the appropriate permissions can add new contacts, edit existing contacts, and deactivate contacts that are no longer valid. Changes are synchronized with Dynamics 365 Finance and Operations in real time.</p>\n</li>\n<li><p><strong>Stamping a contact on a transaction</strong>: After a customer is added to the cart, the associate can select a contact from that customer's contact list and associate the contact with the transaction. The selected contact identifies the individual acting on behalf of the customer's organization. This capability is supported for:</p>\n<ul>\n<li>Cash-and-carry transactions</li>\n<li>Customer orders</li>\n<li>Quotations</li>\n<li>Return orders</li>\n</ul>\n</li>\n<li><p><strong>Receipts and printed documents</strong>: The contact's name is printed on receipts and other order documents, providing a clear reference for both the retailer and the business customer.</p>\n</li>\n</ul>\n<h2>Configuration</h2>\n<p>This feature is permission-controlled. Administrators assign the appropriate permissions to roles that require the ability to manage contacts.</p>",
+        "id": 577748,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Specify contacts on orders and quotations in POS"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>See where your class is struggling and which students need support, with lesson-level results for every student. Aggregated responses show the mistakes many students made in a lesson. You can then open each student's answers to plan targeted follow-up.</p>\n<p>#education</p>",
+        "id": 577544,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft 365"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft 365: [Education] Microsoft Learning Zone - Improve Lesson Insights"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>Pricing managers can set margin controls that match how the business actually sells, instead of one threshold for everything. Each product, channel and customer gets the right margin guardrail.</p>\n<p>With this feature, pricing managers can define margin thresholds based on price attributes such as product category, product attributes, channel and customer group. Each threshold can include three margin tiers: floor, target and ceiling. The tiers drive approvals for price overrides and manual discounts that fall below the allowed margin. They also support margin reporting, so teams can see where prices sit against target.</p>",
+        "id": 577415,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Unified Pricing Management - Attribute-based margin thresholds and tiers for approvals and reporting"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>Businesses that sell small, low-value items, such as fasteners, electronic components or packaging, can maintain prices more easily and accurately, without rounding problems from tiny per-unit prices.</p>\n<p>With this feature, Unified Pricing Management supports price units, so you can set a price per batch of units instead of per single unit. For example, you can price an item per 100 or 1,000 units. Unified Pricing Management then calculates the correct line amount from the order quantity.</p>",
+        "id": 577413,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Unified Pricing Management - Set prices per price unit for low-value items"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>Retailers can protect their profitability without slowing down store operations. Sales associates can still adjust prices to close a sale. Any change that would push an item below the allowed margin goes to a manager for review, so discounting decisions stay controlled and consistent.</p>\n<p>With this feature, Unified Pricing Management checks every price override and manual discount against margin thresholds set in the pricing parameters. If a change would exceed the allowed limit, Store Commerce (POS) asks a manager to approve it before the transaction can continue. The same margin checks are available through pricing APIs, so external channels can apply the same guardrails.</p>",
+        "id": 577412,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Unified Pricing Management - Require manager approval for price overrides and manual discounts that exceed margin limits"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>Store associates and other selling channels can now see margins while they sell. This helps them make better pricing decisions and avoid unprofitable discounts or price overrides, so pricing stays consistent across channels.</p>",
+        "id": 577410,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Unified Pricing Management - View item margins on carts and orders in POS and APIs"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>Store and trade-counter associates often need to source items from another store or warehouse and tell the customer when the item will arrive. This feature brings available-to-promise (ATP) data from Inventory Visibility together with transfer lead times in Store Commerce, so associates can choose the best location and set accurate delivery dates. This feature includes:</p>\n<ul>\n<li><strong>ATP and estimated arrival in inventory lookup:</strong> View ATP quantities and dates across locations, plus the estimated arrival date at the current store if a transfer order is created. Sort and filter results to find the best option.</li>\n<li><strong>ATP-by-date view:</strong> Drill into ATP by date for a selected location. Check forward (when the requested quantity can arrive) or backward (which locations can meet the requested quantity by a target date).</li>\n<li><strong>Transfer order estimated arrival:</strong> When you create a transfer order from POS, the estimated arrival date is calculated from transfer lead times (per mode of delivery, or the warehouse-pair default) and is recalculated when the ship date or mode of delivery changes.</li>\n<li><strong>Lead-time data in the channel:</strong> Transfer lead-time master data is synchronized from Dynamics 365 Supply Chain Management to the channel database through Commerce Data Exchange (CDX).</li>\n<li><strong>Headless ATP and transfer lead-time API on Commerce Scale Unit:</strong> A new channel-agnostic API returns ATP together with transfer-order estimated arrival dates in a single call, so Store Commerce, e-commerce storefronts, and first- or third-party headless channels can all use the same source of truth.</li>\n</ul>",
+        "id": 577406,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Show ATP and transfer lead time in Dynamics 365 Commerce inventory lookup"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p><strong>Business Value</strong></p>\n<p>Tap to Pay on Android empowers sales associates with mobility, enabling them to accept payments directly on over-the-counter Android devices without relying on fixed terminals. This reduces the need for costly payment hardware, streamlines checkout experiences, and enhances customer engagement by allowing transactions anywhere in the store.</p>\n<p><strong>Feature Details</strong></p>\n<p>This feature enables <strong>Tap to Pay</strong> on Android devices running the <strong>Store Commerce App</strong> via the <strong>Adyen</strong> payment connector. As a prerequisite, the <strong>Adyen payment app</strong> must be installed on each device. When a sales associate initiates Tap to Pay, Store Commerce seamlessly launches Adyen\u2019s payment app to start the NFC payment experience, allowing customers to tap <strong>NFC-enabled cards or mobile wallets</strong> directly on the Android device. Upon completion, the authorized payment details are securely passed back to Store Commerce, which updates the transaction accordingly. This <strong>context handoff</strong> between Store Commerce and the Adyen app establishes an extensible pattern that can be leveraged for additional scenarios e.g., loading custom apps built on PowerApps.</p>",
+        "id": 577402,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Tap to Pay on Android using Adyen connector"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>Let tenants trim file-version bloat created by retention, without breaking compliance promises. SharePoint/compliance admins at large, regulated enterprises must cap and reclaim storage consumed by retained file versions, while keeping legal-hold and records promises intact. Admins with appropriate Purview RBAC can enable version cleanup for ODB/SPO content even when retention policies are in effect. This would be a policy scoped setting that essentially overrides the default behavior where all versions are retained. When turned on, SharePoint\u2019s version management will be permitted to trim file versions per the defined limits except for specific protected cases.</p>",
+        "id": 575284,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Data Lifecycle Management-Enable version trimming for data covered by retention policies in OneDrive and SharePoint"
+    },
+    {
+        "created": "2026-11-05T23:59:28",
+        "description": "<p>Help ensure expense receipts include required company VAT information by applying your organization\u2019s receipt validation rules. Expense Agent can check submitted receipts for a valid company VAT number (Tax ID) when your configured rules require one, and flag receipts for review or prevent them from moving forward based on your policies.</p>\n<p>Benefits<br>\n\u2022\tConfigure when a company VAT number is required on submitted expense receipts.<br>\n\u2022\tAutomatically validate required VAT information during expense processing.<br>\n\u2022\tIdentify receipts that do not meet configured tax identification requirements and handle them according to your policies.</p>",
+        "id": 573611,
+        "locale": null,
+        "modified": "2026-11-05T23:59:28",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2027",
+        "publicPreviewDate": "April CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Expense Agent - specify when receipts must contain a VAT number"
+    },
+    {
         "created": "2026-11-04T23:59:50",
         "description": "<p>You can now view up to two shared screens side by side during meetings, reducing interruptions from screen hand-offs. Participants can switch between side-by-side and expanded views, identify presenters for each screen, and benefit from layouts optimized for single or dual displays. Available with Teams Rooms Pro.</p>",
         "id": 579184,
@@ -3094,12 +4096,12 @@
         "description": "<p>Educators can use Teach in Microsoft 365 Copilot to create structured unit plans that span multiple lessons or weeks. They can customize the plan components to organize connected lesson plans and quizzes across a unit.</p>\n<p>#education</p>",
         "id": 577392,
         "locale": null,
-        "modified": "2026-10-30T22:08:34",
+        "modified": "2026-11-05T23:59:28",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -21913,12 +22915,12 @@
         "description": "<p>Get a closer look at shared content in Teams calls and meetings with <strong>pinch-to-zoom using your touchpad</strong>. Quickly zoom in to make small text and detailed visuals easier to see, then zoom back out for the full view. Existing zoom controls remain available.</p>",
         "id": 576193,
         "locale": null,
-        "modified": "2026-10-16T22:00:35",
+        "modified": "2026-11-05T23:59:28",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -37690,9 +38692,9 @@
         "description": "<p>Instead of opening Copilot Chat every time you want to use Copilot to draft a message, this change introduces an inline chat component that streamlines the process and lets you interact with Copilot without opening the sidebar.</p>",
         "id": 570440,
         "locale": null,
-        "modified": "2026-09-09T22:36:54",
+        "modified": "2026-11-05T23:59:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -39768,15 +40770,15 @@
     },
     {
         "created": "2026-08-27T22:38:48",
-        "description": "Microsoft 365 Organizational Data Services is introducing a new data quality report that helps administrators assess the coverage and health of people data used across Microsoft 365 experiences. High-quality people data enables users to more effectively discover and learn about colleagues through experiences such as the People Card, Org Explorer, Microsoft 365 Copilot, and Microsoft 365 Cowork. The new report provides organizational data administrators, People Administrators, and AI Administrators with visibility into the completeness and quality of people attributes available in Microsoft 365. Administrators can use these insights to identify data gaps, improve attribute coverage, and help ensure users and AI-powered experiences have access to accurate organizational information. Key benefits: - Monitor the health and completeness of people profile attributes across the organization. - Identify missing or incomplete organizational data that may impact user and AI experiences. - Improve discoverability and organizational understanding in People Card and Org Explorer. - Help increase the effectiveness of Microsoft 365 Copilot and Microsoft 365 Cowork by improving the quality of underlying people data. This feature is available to Organizational Data Administrators, People Administrators, and AI Administrators through Microsoft 365 Organizational Data Services.\n",
+        "description": "<p>Microsoft 365 Organizational Data Services is introducing a new data quality report that helps administrators assess the coverage and health of people data used across Microsoft 365 experiences. High-quality people data enables users to more effectively discover and learn about colleagues through experiences such as the People Card, Org Explorer, Microsoft 365 Copilot, and Microsoft 365 Cowork. The new report provides organizational data administrators, People Administrators, and AI Administrators with visibility into the completeness and quality of people attributes available in Microsoft 365. Administrators can use these insights to identify data gaps, improve attribute coverage, and help ensure users and AI-powered experiences have access to accurate organizational information. Key benefits: - Monitor the health and completeness of people profile attributes across the organization. - Identify missing or incomplete organizational data that may impact user and AI experiences. - Improve discoverability and organizational understanding in People Card and Org Explorer. - Help increase the effectiveness of Microsoft 365 Copilot and Microsoft 365 Cowork by improving the quality of underlying people data. This feature is available to Organizational Data Administrators, People Administrators, and AI Administrators through Microsoft 365 Organizational Data Services.</p>",
         "id": 568937,
         "locale": null,
-        "modified": "2026-08-27T22:38:48",
+        "modified": "2026-11-05T23:59:28",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -48900,15 +49902,15 @@
     },
     {
         "created": "2026-07-07T23:01:01",
-        "description": "Access to Archive mailboxes (Main + Auxiliary) through Microsoft Graph. The goal is to give users a single, seamless Archive view, even though Archive data may physically reside across multiple auxiliary mailboxes with EWS Graph APIs getting deprecated by OCT 2026. ",
+        "description": "<p>Access to Archive mailboxes (Main + Auxiliary) through Microsoft Graph. The goal is to give users a single, seamless Archive view, even though Archive data may physically reside across multiple auxiliary mailboxes with EWS Graph APIs getting deprecated by OCT 2026.</p>",
         "id": 567313,
         "locale": null,
-        "modified": "2026-07-28T22:43:45",
+        "modified": "2026-11-05T23:59:28",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -56950,15 +57952,15 @@
     },
     {
         "created": "2026-05-15T18:00:35",
-        "description": "Integrate proprietary systems, dynamic knowledge sources, and custom actions into your agentic workflows with MCP support, accelerating extensibility while preserving workflow reliability. This integration improves reuse across agents and workflows, reduces duplication of integrations, and embraces an emerging open and extensible agent ecosystem.",
+        "description": "<p>Integrate proprietary systems, dynamic knowledge sources, and custom actions into your agentic workflows with MCP support, accelerating extensibility while preserving workflow reliability. This integration improves reuse across agents and workflows, reduces duplication of integrations, and embraces an emerging open and extensible agent ecosystem.</p>",
         "id": 562221,
         "locale": null,
-        "modified": "2026-05-15T18:00:35",
+        "modified": "2026-11-05T23:59:28",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "May CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -61151,18 +62153,27 @@
     },
     {
         "created": "2026-04-27T23:15:13",
-        "description": "A single group with broad membership or a special group for vendors etc. - can expose sensitive content to unintended recipients. With this new report, SharePoint admins can now see every site a group can access and the extent of that access.",
+        "description": "<p>A single group with broad membership or a special group for vendors etc. - can expose sensitive content to unintended recipients. With this new report, SharePoint admins can now see every site a group can access and the extent of that access.</p>",
         "id": 561039,
         "locale": null,
-        "modified": "2026-04-27T23:15:13",
+        "modified": "2026-11-05T23:59:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "June CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Web"
@@ -61178,6 +62189,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -66573,9 +67593,9 @@
         "description": "<p>Microsoft Teams automatically organizes your chats with new built in sections that help reduce clutter and keep conversations easy to find. Muted chats (on by default) are grouped together in a dedicated area, while meeting chats (off by default) can be collected into a single section for quick access. You\u2019re always in control, as each section can be turned on or off based on your preferences. The new Meeting chats section will replace the Meeting chats filter, that was previously available at the top of the chat and channel list. Updated July 20, 2026: We have temporarily rolled back this feature. We apologize for any inconvenience.</p>",
         "id": 559605,
         "locale": null,
-        "modified": "2026-10-19T23:15:15",
+        "modified": "2026-11-05T23:59:28",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -94710,15 +95730,15 @@
     },
     {
         "created": "2025-11-04T00:00:10",
-        "description": "1. Makers can now scope their data in their agent created on custom connector data at a particular container.\n2. These containers will be defined during creation/updating of the custom connector.\n",
+        "description": "<ol>\n<li>Makers can now scope their data in their agent created on custom connector data at a particular container.</li>\n<li>These containers will be defined during creation/updating of the custom connector.</li>\n</ol>\n<p>Note: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
         "id": 502546,
         "locale": null,
-        "modified": "2025-11-04T00:00:10",
+        "modified": "2026-11-05T23:59:28",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -96602,15 +97622,15 @@
     },
     {
         "created": "2025-10-27T23:15:26",
-        "description": "1. Maker can create agents by providing 3p URL.\n2. Maker can provide either an item URL or a container level, for e.g. ADO ticket/ ADO area path. \n",
+        "description": "<ol>\n<li>Maker can create agents by providing 3p URL.</li>\n<li>Maker can provide either an item URL or a container level, for e.g. ADO ticket/ ADO area path.</li>\n</ol>\n<p>Note: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
         "id": 502547,
         "locale": null,
-        "modified": "2025-10-27T23:15:26",
+        "modified": "2026-11-05T23:59:28",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2025",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -101930,15 +102950,15 @@
     },
     {
         "created": "2025-10-06T23:00:40",
-        "description": "Organizational Messages now includes Email as a delivery channel, expanding beyond existing surfaces such as the Windows Taskbar, Windows Notifications, Windows Spotlight, and Teams Popovers.",
+        "description": "<p>Organizational Messages now includes Email as a delivery channel, expanding beyond existing surfaces such as the Windows Taskbar, Windows Notifications, Windows Spotlight, and Teams Popovers.</p>",
         "id": 503562,
         "locale": null,
-        "modified": "2026-05-11T23:15:11",
+        "modified": "2026-11-05T23:59:28",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "November CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

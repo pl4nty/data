@@ -944,6 +944,7 @@
     "SVC_PolicyReportStorage": {
         "FlightingV2": {
             "BatchPolicyDeviceReportFastStream": true,
+            "PRSv1-FastStreamPublishingEnabled": true,
             "PRSv3-BlockEmptyErrorOverwrite": true,
             "PRSv3-ComparePolicySettingMaps": true,
             "PRSv3-CorrectPolicySettingMaps": true,
