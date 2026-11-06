@@ -55,6 +55,9 @@ $../../
 -tools/
 -testing/
 
+# --- Edge-authored paths without an "edge" component ---
++chrome/installer/copilot_app/
+
 # --- Default deny (substring layer) ---
 # Every path contains '/' once stripped to source root; this serves as the
 # catch-all deny for upstream Chromium files that lack an "edge" component.

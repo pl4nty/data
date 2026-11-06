@@ -21,7 +21,7 @@
   },
   {
     "name": "android_sdk",
-    "size": 3256,
+    "size": 3435,
     "file_count": 2
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 34346931,
-    "file_count": 4102
+    "size": 34345689,
+    "file_count": 4101
   },
   {
     "name": "boringssl",
@@ -166,7 +166,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 5513712,
+    "size": 5513886,
     "file_count": 64
   },
   {
@@ -211,7 +211,7 @@
   },
   {
     "name": "eigen3",
-    "size": 23603452,
+    "size": 23603645,
     "file_count": 2435
   },
   {
@@ -351,7 +351,7 @@
   },
   {
     "name": "ink",
-    "size": 98302,
+    "size": 98424,
     "file_count": 13
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19520491,
+    "size": 19525099,
     "file_count": 19
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "openscreen",
-    "size": 1278674,
+    "size": 1278681,
     "file_count": 299
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4902505,
+    "size": 4899273,
     "file_count": 645
   },
   {
@@ -676,8 +676,8 @@
   },
   {
     "name": "rust",
-    "size": 3098698,
-    "file_count": 404
+    "size": 3577110,
+    "file_count": 409
   },
   {
     "name": "rust-toolchain",
@@ -706,7 +706,7 @@
   },
   {
     "name": "skia",
-    "size": 3484020,
+    "size": 3484636,
     "file_count": 1220
   },
   {
@@ -776,7 +776,7 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 36069114,
+    "size": 36491212,
     "file_count": 45
   },
   {
@@ -846,7 +846,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29104726,
+    "size": 29105392,
     "file_count": 608
   },
   {
