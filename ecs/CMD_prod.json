@@ -1204,6 +1204,7 @@
         "AppOnlyAuth": true,
         "ApprovalMappingSeparateContainer": true,
         "CVEReporting": true,
+        "ChangeTaskBlobPrefixDiscovery": true,
         "ContinueSavingTenantDataToMonolithSqlServer": true,
         "DSSApi": true,
         "Device-BusinessGroup-AutopatchGroupDeleteConsistency": true,
