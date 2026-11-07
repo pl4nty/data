@@ -176,7 +176,7 @@ namespace EdgeProcessViewer {
     }
 
     public AuxiliaryType AuxiliaryType {
-      get { 
+      get {
         if (ChildItem != null) {
           return ChildItem.AuxiliaryType;
         } else if (AuxiliaryTypes.Count > 0) {
@@ -227,7 +227,11 @@ namespace EdgeProcessViewer {
       ChildItem = task.ChildItem;
       BaseTaskType = task.BaseTaskType;
       TaskType = task.TaskType;
-      AuxiliaryTypes.UnionWith(task.AuxiliaryTypes);
+      foreach (AuxiliaryType auxiliaryType in task.AuxiliaryTypes) {
+        if (!AuxiliaryTypes.Contains(auxiliaryType)) {
+          AuxiliaryTypes.Add(auxiliaryType);
+        }
+      }
       UpdateParentTaskProperties();
     }
 

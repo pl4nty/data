@@ -98,19 +98,10 @@ namespace EdgeProcessViewer {
     }
 
     public void OnEnablePostmortemDebugger(bool enable) {
-      string debugger = null;
-      if (enable) {
-        debugger = DebugSettings.GetDebuggerPath(Properties.Settings.Default.DebuggerPath);
-        if (!IsValidDebuggerPath(debugger)) {
-          return;
-        }
-      }
-
-      if (Utility.IsElevated) {
-        DebugSettings.SetPostmortemDebugger(enable ? debugger : null);
-      } else {
-        LaunchElevated($"/postmortem:{enable}");
-      }
+      PostmortemDebuggerCommands.EnableFromUI(
+          enable, Utility.IsElevated,
+          () => DebugSettings.GetDebuggerPath(Properties.Settings.Default.DebuggerPath),
+          DebugSettings.SetPostmortemDebugger, LaunchElevated, ShowErrorMessage);
     }
 
     public void OnEnableOnLaunchDebugger(bool enable) {
@@ -135,7 +126,7 @@ namespace EdgeProcessViewer {
                 using (var debugProcess = System.Diagnostics.Process.Start(Properties.Settings.Default.OnLaunchDebuggerPath, debuggerArgs)) {
                 }
               } catch {
-                // Silently fail since this could fail multiple times in quick succession during startup 
+                // Silently fail since this could fail multiple times in quick succession during startup
                 // if something is wrong with the set and we wouldn't want to spam the user
               }
             }

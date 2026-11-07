@@ -37,6 +37,32 @@ The Edge Process Viewer prioritizes the results from
 edge_process_watcher.exe and if that does not have any results, will make it's
 own ExternalTaskManagerClient to communicate with Edge.
 
+### Postmortem debugger registration
+
+Interactive debugging accepts the configured debugger and per-user debugger
+discovery. Machine-wide postmortem registration requires a local `.exe` whose
+resolved file and every parent directory are owned and protected by Windows or
+the Administrators group. User-owned files, writable ancestors, unsupported ACLs,
+and unresolved or remote targets fail with an error before registry access.
+Use an administrator-installed debugger for postmortem debugging; UAC approval
+does not authorize a user-writable installation. Registration quotes a resolved
+volume-GUID path to avoid ambiguous executable parsing and per-user drive aliases.
+Disabling does not require a debugger installation.
+
+Run isolated native .NET Framework 4.8 regressions from PowerShell:
+
+```powershell
+& .\tools\win\process_viewer\EdgeProcessViewer\Tests\Run-Tests.ps1
+```
+
+The runner requires a .NET SDK and the .NET Framework 4.8 targeting pack. Its
+positive control reads an existing protected executable with a space in its path
+(`-ProtectedExecutable` overrides the default .NET host). The runner requires
+explicit `Compile` items in the project and reports an error if none are found.
+Tests compile all project C# sources, exercise the registration handlers and
+task-copy ordered union, and use an in-memory registry. They never launch a
+debugger, write HKLM, elevate, or install components.
+
 ## Command Line Version
 A command line version of the tool is edge_process_list.exe which will list the
 currently running Edge processes. This is built off of the internals of Edge

@@ -27,23 +27,14 @@ namespace EdgeProcessViewer {
 
     // Handles any command line arguments and returns whether to continue execution of the program.
     static bool ProcessCommandLine() {
-      string[] commandLineArgs = Environment.GetCommandLineArgs();
-      if (commandLineArgs.Length > 1) {
-        foreach (string arg in commandLineArgs) {
-          if (arg == "/postmortem:True") {
-            string debugger =
-                DebugSettings.GetDebuggerPath(Properties.Settings.Default.DebuggerPath);
-            if (!String.IsNullOrEmpty(debugger)) {
-              DebugSettings.SetPostmortemDebugger(debugger);
-            }
-            return false;
-          } else if (arg == "/postmortem:False") {
-            DebugSettings.SetPostmortemDebugger(null);
-            return false;
-          }
-        }
-      }
-      return true;
+      return PostmortemDebuggerCommands.ProcessCommandLine(
+          Environment.GetCommandLineArgs(),
+          () => DebugSettings.GetDebuggerPath(Properties.Settings.Default.DebuggerPath),
+          DebugSettings.SetPostmortemDebugger,
+          message => {
+            Environment.ExitCode = 1;
+            MessageBox.Show(message, "Postmortem debugger", MessageBoxButtons.OK, MessageBoxIcon.Error);
+          });
     }
   }
 }

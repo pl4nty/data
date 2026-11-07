@@ -114,6 +114,8 @@
     </Compile>
     <Compile Include="Controls\CommandLineArg.cs" />
     <Compile Include="Model\DebugSettings.cs" />
+    <Compile Include="Model\PostmortemDebuggerCommands.cs" />
+    <Compile Include="Model\PostmortemDebuggerTarget.cs" />
     <Compile Include="Model\ChildItem.cs" />
     <Compile Include="Model\EdgeWatcherClient.cs" />
     <Compile Include="Model\IEChildItemProvider.cs" />
