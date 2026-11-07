@@ -194306,6 +194306,27 @@
     "platform": "macOS"
   },
   {
+    "name": "Microsoft Electron/43.8.7@9dc3192f/Linux/microsoft-electron-v43.8.7-9dc3192f030aea153c2af3fdf31aef741fcb5a8e-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.8.7@9dc3192f",
+    "dependency": "microsoft-electron-v43.8.7-9dc3192f030aea153c2af3fdf31aef741fcb5a8e-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/43.8.7@9dc3192f/Windows/microsoft-electron-v43.8.7-9dc3192f030aea153c2af3fdf31aef741fcb5a8e-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.8.7@9dc3192f",
+    "dependency": "microsoft-electron-v43.8.7-9dc3192f030aea153c2af3fdf31aef741fcb5a8e-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/43.8.7@9dc3192f/macOS/microsoft-electron-v43.8.7-9dc3192f030aea153c2af3fdf31aef741fcb5a8e-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.8.7@9dc3192f",
+    "dependency": "microsoft-electron-v43.8.7-9dc3192f030aea153c2af3fdf31aef741fcb5a8e-mac",
+    "platform": "macOS"
+  },
+  {
     "name": "Microsoft Electron/44.0.0@5439f381/Linux/microsoft-electron-v44.0.0-5439f3815a7e516a227ec279d2c91e82a4a55fd2-linux.tgz",
     "product": "Microsoft Electron",
     "release": "44.0.0@5439f381",
@@ -274704,6 +274725,34 @@
     "name": "cirrus-otel-collector/0.164.2/linux-arm64/github.com_hashicorp_golang-lru_v2_v2.0.7.zip",
     "product": "cirrus-otel-collector",
     "release": "0.164.2",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v2.0.7",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.165.0/linux-amd64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.165.0",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.165.0/linux-amd64/github.com_hashicorp_golang-lru_v2_v2.0.7.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.165.0",
+    "dependency": "github.com_hashicorp_golang-lru_v2_v2.0.7",
+    "platform": "linux-amd64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.165.0/linux-arm64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.165.0",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-arm64"
+  },
+  {
+    "name": "cirrus-otel-collector/0.165.0/linux-arm64/github.com_hashicorp_golang-lru_v2_v2.0.7.zip",
+    "product": "cirrus-otel-collector",
+    "release": "0.165.0",
     "dependency": "github.com_hashicorp_golang-lru_v2_v2.0.7",
     "platform": "linux-arm64"
   },
