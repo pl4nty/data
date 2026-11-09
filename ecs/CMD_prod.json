@@ -1145,6 +1145,7 @@
         "UFP_ENABLE_B2B": true,
         "UFP_NEW_ASSETS": true,
         "UFP_UNIFIED_TELEMETRY": true,
+        "UXEnablefailoverInprogress": true,
         "UseCmdAgentPluginForMoveOnVmAgentUnavailable": true,
         "UseCmdAgentPluginForResizeOnVmAgentUnavailable": true,
         "UseCopilotPlusWallpaper": true,

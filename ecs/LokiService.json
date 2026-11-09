@@ -859,6 +859,10 @@
             "processContentIntegratedApplicationName": "Loki",
             "protectionScopeIntegratedApplicationName": "Loki"
         },
+        "PurviewContentFilteringTimeoutMilliseconds": 1500,
+        "PurviewInheritanceTimeoutMilliseconds": 2000,
+        "PurviewProcessContentTimeoutMilliseconds": 1500,
+        "PurviewProtectionScopesTimeoutMilliseconds": 2000,
         "PurviewWebGroundingApplication": {
             "applicationLocation": "Copilot.M365.CodeTab",
             "processContentIntegratedApplicationName": "Loki",
