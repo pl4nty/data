@@ -1859,6 +1859,12 @@
                     "IsEnabled": true
                 }
             ],
+            "EnableUseV9MergedNotesPrompt": [
+                {
+                    "Flight": "UseV9MergedNotesPrompt",
+                    "IsEnabled": true
+                }
+            ],
             "Engager": [
                 {
                     "Flight": "IntentPlus.EnableEngager",
