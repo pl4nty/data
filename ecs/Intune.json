@@ -824,6 +824,11 @@
             "DisableCartToClassAssociations": true
         }
     },
+    "SVC_GPAnalytics": {
+        "FlightingV2": {
+            "EpmTenantStatePagingEnabled": true
+        }
+    },
     "SVC_ICS": {
         "FlightingV2": {
             "DisableWatchdogApplicationUpgradePolling": true,

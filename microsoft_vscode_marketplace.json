@@ -151,6 +151,13 @@
                 "id": "ContrastSecurityIDE.com-contrastsecurity-vscode"
             }
         },
+        "CopadoLabs.copadoextension": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Agentia IDE",
+                "id": "Copado.agentia-idex"
+            }
+        },
         "DamienAicheh.azure-devops-snippets": true,
         "DamienAicheh.azure-pipeline-yaml-generator": true,
         "DecentralandFoundation.decentraland": true,
@@ -275,6 +282,13 @@
             "extension": {
                 "displayName": "Yocto Project BitBake",
                 "id": "yocto-project.yocto-bitbake"
+            }
+        },
+        "Fering.qsp": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "QSPeak: QSP Language Support",
+                "id": "QSPFoundation.qsp-lsp"
             }
         },
         "FlorianAlexanderMoser.vscode-proverif-language-service": {
@@ -572,6 +586,13 @@
             "extension": {
                 "displayName": "4PACE 3PQ Extension",
                 "id": "4PACE.4pace-3pq-extension"
+            }
+        },
+        "QSPFoundation.qsp-official": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "QSPeak: QSP Language Support",
+                "id": "QSPFoundation.qsp-lsp"
             }
         },
         "Qualyyy.folder-template-generator": {
@@ -1174,6 +1195,8 @@
                 "id": "buehlerag.buehler-gcpro-macro-language"
             }
         },
+        "buildwithlayer.mcp-integration-expert-ELIGR": true,
+        "buildwithlayer.mongodb-integration-expert-qS6DB": true,
         "bungcip.better-toml": {
             "disallowInstall": true,
             "extension": {
@@ -1211,6 +1234,7 @@
             }
         },
         "coderfee.open-html-in-browser": true,
+        "conscious-robot.claude-vscode-assistant": true,
         "contrast-security.contrast-integration": {
             "disallowInstall": true,
             "extension": {
@@ -1460,6 +1484,7 @@
                 "id": "focusquest.focusquest"
             }
         },
+        "formulahendry.azure-storage-explorer": true,
         "formulahendry.terminal": true,
         "foxstudiosscratch.fox-theme-changer": {
             "disallowInstall": true,
@@ -1580,6 +1605,7 @@
             }
         },
         "hoonoh.vscode-slonik-live-server": true,
+        "hoovercj.vscode-power-mode": true,
         "huacnlee.auto-correct": {
             "disallowInstall": true,
             "extension": {
@@ -1715,6 +1741,13 @@
             "extension": {
                 "displayName": "UNLP",
                 "id": "juanm04.unlp"
+            }
+        },
+        "junyou1998.i18n-ally-community": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "i18n Ally Next",
+                "id": "lydanne.i18n-ally-next"
             }
         },
         "justjavac.vscode-deno": {
@@ -1908,6 +1941,13 @@
             "extension": {
                 "displayName": "MTRGen Templates Support - Syntax Highlighting, File Creation and more...",
                 "id": "matronator.mtrgen-syntax"
+            }
+        },
+        "matteopolak.jai-toolchain": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Jacket",
+                "id": "matteopolak.jacket"
             }
         },
         "maximedenes.vscoq": {
@@ -2274,6 +2314,7 @@
             }
         },
         "pthorsson.vscode-jsp": true,
+        "qinjia.seti-icons": true,
         "qinjia.view-in-browser": true,
         "quantum.qsharp-lang-vscode-dev": {
             "disallowInstall": true,
@@ -2349,6 +2390,20 @@
         "robole.markdown-shortcuts": true,
         "robole.marky-dynamic": true,
         "robole.marky-markdown": true,
+        "rstack.rslint": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Rstack",
+                "id": "rstack.rstack"
+            }
+        },
+        "rstack.rstest": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Rstack",
+                "id": "rstack.rstack"
+            }
+        },
         "rust-lang.rust": {
             "disallowInstall": true,
             "extension": {
@@ -2419,6 +2474,7 @@
             }
         },
         "sfdc-eng.bazel-java": true,
+        "shyykoserhiy.vscode-spotify": true,
         "sickag.appengine-emulator": {
             "disallowInstall": true,
             "extension": {
@@ -2533,6 +2589,13 @@
                 "id": "stateful.stable"
             }
         },
+        "steciuk.launchpad-merge-proposals-preview": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Launchpad Merge Proposals",
+                "id": "Canonical.launchpad-merge-proposals"
+            }
+        },
         "stefafafan.hatena-syntax": true,
         "stefafafan.mackerel-expression-graph-syntax": true,
         "synopsys-codexm.coverity-codexm": {
@@ -2580,6 +2643,7 @@
                 "id": "ms-vscode-remote.remote-containers"
             }
         },
+        "toba.vsfire": true,
         "tokoph.ghosttext": {
             "disallowInstall": true,
             "extension": {
@@ -2668,6 +2732,13 @@
             "extension": {
                 "displayName": "cargo-appraiser",
                 "id": "washan.cargo-appraiser"
+            }
+        },
+        "ways-agency.shopify-liquid-snippets": {
+            "disallowInstall": true,
+            "extension": {
+                "displayName": "Shopify Liquid",
+                "id": "Shopify.theme-check-vscode"
             }
         },
         "webOSOSESDK.webosose": {
