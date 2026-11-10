@@ -490,6 +490,7 @@
     "MicrosoftTeamsMiddleTier": {
         "ringSettings": {
             "settings": {
+                "disableAppRequestDetailsSummaryGraphS2S": true,
                 "disableCreatedAtPropertyRemoval": true,
                 "enableCfrAnalyticsService": false,
                 "enableCreateDefaultOneNoteTabOnTeamOrChannelCreation": true,
@@ -2624,7 +2625,7 @@
             "TaskManagement_GPT5Migration": [
                 {
                     "Flight": "Teams.GCP.TaskManagementGPTModel",
-                    "Value": "gpt-56-reasoning-nano-luna"
+                    "Value": "gpt-6-luna"
                 }
             ],
             "TaskManagement_OverInvokeFix": [
@@ -2656,6 +2657,12 @@
             "TeamsMeetingAgendaSkill_ReactiveActiveMeeting": [
                 {
                     "Flight": "isReactiveAgendaForNonActiveCallBlocked",
+                    "IsEnabled": true
+                }
+            ],
+            "TeamsTaskManagementQualityFixes": [
+                {
+                    "Flight": "Teams.GCP.EnableTaskPeopleInPrompt",
                     "IsEnabled": true
                 }
             ],

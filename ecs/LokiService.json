@@ -1161,6 +1161,9 @@
         "AllowEmptyFlightsArray": true,
         "AllowInputOverrides": false,
         "AllowRawInsightsEndpoint": false,
+        "AllowedExperimentalFieldsInProduction": [
+            "Mutation.copilotRenameConversation"
+        ],
         "AlternateRouting_Endpoint": null,
         "AlternateRouting_Geographies": null,
         "BlockedGqlFieldsList": [],
@@ -1461,6 +1464,7 @@
         "EnableVivaSkillsDataExportProvider": true,
         "EnableVivaSkillsInLPE": true,
         "EnableVivaTopicsUserResolution": true,
+        "EnableWeveTokenAudienceForKnowYourTeam": true,
         "ExcludedPropertyBagKeys": [],
         "ExperimentalFieldsForSetOfUsersInMsitEnabled": false,
         "ExportPgsMeProfileExtensions": true,

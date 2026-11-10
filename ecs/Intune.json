@@ -106,6 +106,10 @@
             "FlightExpiry": "2025-10-18T00:00:00.000Z",
             "FlightValue": true
         },
+        "EnableIC3Probe": {
+            "FlightExpiry": "2027-06-01T00:00:00.000Z",
+            "FlightValue": true
+        },
         "EnableIsAADUserTelemetry": {
             "FlightExpiry": "2026-06-01T00:00:00.000Z",
             "FlightValue": true
@@ -595,7 +599,8 @@
     "SVC_ContentService": {
         "FlightingV2": {
             "EnableV12AzureStorageWrapper": true,
-            "MDSAddToCacheFromSecondaryStorage": true
+            "MDSAddToCacheFromSecondaryStorage": true,
+            "MDSLimitBackgroundCachePopulation": true
         }
     },
     "SVC_CorpDeviceEnrollment": {
@@ -1199,7 +1204,8 @@
     },
     "UX_MAM": {
         "FlightingV2": {
-            "EnableNewWindowsClipboardSharingStates": true
+            "EnableNewWindowsClipboardSharingStates": true,
+            "ExplorerMamAppConfigStatus": true
         }
     },
     "UX_MultiAdminApproval": {
