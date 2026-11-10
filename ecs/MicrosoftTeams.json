@@ -503,6 +503,7 @@
                 "enableTenantAppsCensusFromAggregatedEntitlementsRedisDedup": true,
                 "enableTenantAppsCensusFromMosUserAppEntitlements": true,
                 "enableTenantAppsCensusFromMosUserAppEntitlementsRedisDedup": true,
+                "meetingsFluidWbServiceApiDisabled": false,
                 "meetingsOptions": {
                     "CopilotMode": {
                         "IgnoreValueFilter": false,
