@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\65b3da159853\1.luac 
+-- Command line: lua\!InfrastructureShared\65b3e53b9579\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -67,73 +67,72 @@ do
         local l_0_22 = (sysio.GetRegValueAsBinary)(l_0_20, "Actions")
         if type(l_0_21) == "string" and #l_0_21 > 1 and #l_0_21 <= 256 and (string.sub)(l_0_21, 1, 1) == "\\" and not (string.find)(l_0_21, "..\\", 1, true) and not (string.find)(l_0_21, "\\..", 1, true) and not (string.find)(l_0_21, "/", 1, true) and not (string.find)(l_0_21, ":", 1, true) and type(l_0_22) == "string" and #l_0_22 > 0 and #l_0_22 < 2048 then
           local l_0_23 = (string.lower)((string.gsub)(l_0_22, "%z", ""))
-          local l_0_24 = (string.match)(l_0_23, "mshta%.exe.-(https?://[^%s%?%)%]%}%\'\"&|<>;,]+)")
-          if not l_0_24 == l_0_4 then
-            l_0_24 = (string.match)(l_0_23, "powershell.exe.-(https?://[^%s%?%)%]%}%\'\"&|<>;,]+)")
+          local l_0_24 = (string.gsub)(l_0_23, "%^", "")
+          local l_0_25 = (string.match)(l_0_24, "mshta%.exe.-(https?://[^%s%?%)%]%}%\'\"&|<>;,]+)")
+          if not l_0_25 == l_0_4 then
+            l_0_25 = (string.match)(l_0_23, "powershell.exe.-(https?://[^%s%?%)%]%}%\'\"&|<>;,]+)")
           end
-          -- DECOMPILER ERROR at PC269: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC275: Unhandled construct in 'MakeBoolean' P3
 
-          -- DECOMPILER ERROR at PC275: Confused about usage of register: R21 in 'UnsetPending'
-
-          if (l_0_24 ~= l_0_4 or not (string.find)(l_0_23, "iex", 1, true)) and (string.find)(l_0_23, "create", 1, true) then
-            local l_0_31 = nil
+          if (l_0_25 ~= l_0_4 or not (string.find)(l_0_23, "iex", 1, true)) and (string.find)(l_0_23, "create", 1, true) then
             local l_0_32 = nil
             local l_0_33 = nil
-            -- DECOMPILER ERROR at PC289: Overwrote pending register: R28 in 'AssignReg'
+            local l_0_34 = nil
+            -- DECOMPILER ERROR at PC295: Overwrote pending register: R29 in 'AssignReg'
 
             if not ((sysio.RegOpenKey)(l_0_8 .. l_0_21)) or nil == l_0_18 then
               l_0_12 = true
-              local l_0_34 = nil
-              -- DECOMPILER ERROR at PC304: Confused about usage of register: R26 in 'UnsetPending'
+              local l_0_35 = nil
+              -- DECOMPILER ERROR at PC310: Confused about usage of register: R27 in 'UnsetPending'
 
               if AppendToRollingQueue("WalletThief_Queue", "TreeKey", l_0_8 .. l_0_21, 300, 32, 0) then
-                local l_0_35 = nil
-                -- DECOMPILER ERROR at PC324: Confused about usage of register: R30 in 'UnsetPending'
+                local l_0_36 = nil
+                -- DECOMPILER ERROR at PC330: Confused about usage of register: R31 in 'UnsetPending'
 
-                -- DECOMPILER ERROR at PC336: Confused about usage of register: R30 in 'UnsetPending'
+                -- DECOMPILER ERROR at PC342: Confused about usage of register: R31 in 'UnsetPending'
 
-                if (sysio.IsFileExists)(l_0_11 .. "\\System32\\Tasks" .. l_0_31) and (not AppendToRollingQueue("WalletThief_Queue", "TaskFile", l_0_11 .. "\\System32\\Tasks" .. l_0_31, 300, 32, 0)) or AppendToRollingQueue("WalletThief_Queue", "TasksKey", l_0_19, 300, 32, 0) then
-                  (bm.add_related_string)("WtTaskFile", l_0_11 .. "\\System32\\Tasks" .. l_0_31, bm.RelatedStringBMReport)
+                if (sysio.IsFileExists)(l_0_11 .. "\\System32\\Tasks" .. l_0_21) and (not AppendToRollingQueue("WalletThief_Queue", "TaskFile", l_0_11 .. "\\System32\\Tasks" .. l_0_21, 300, 32, 0)) or AppendToRollingQueue("WalletThief_Queue", "TasksKey", l_0_19, 300, 32, 0) then
+                  (bm.add_related_string)("WtTaskFile", l_0_11 .. "\\System32\\Tasks" .. l_0_21, bm.RelatedStringBMReport)
                 end
                 do
-                  local l_0_36 = nil
-                  -- DECOMPILER ERROR at PC354: Confused about usage of register: R31 in 'UnsetPending'
+                  local l_0_37 = nil
+                  -- DECOMPILER ERROR at PC360: Confused about usage of register: R32 in 'UnsetPending'
 
-                  -- DECOMPILER ERROR at PC366: Confused about usage of register: R31 in 'UnsetPending'
+                  -- DECOMPILER ERROR at PC372: Confused about usage of register: R32 in 'UnsetPending'
 
-                  if (sysio.IsFileExists)(l_0_11 .. "\\Tasks" .. l_0_31 .. ".job") and (not AppendToRollingQueue("WalletThief_Queue", "TaskFile", l_0_11 .. "\\Tasks" .. l_0_31 .. ".job", 300, 32, 0)) or AppendToRollingQueue("WalletThief_Queue", "TasksKey", l_0_19, 300, 32, 0) then
-                    (bm.add_related_string)("WtTaskFile", l_0_11 .. "\\Tasks" .. l_0_31 .. ".job", bm.RelatedStringBMReport)
+                  if (sysio.IsFileExists)(l_0_11 .. "\\Tasks" .. l_0_21 .. ".job") and (not AppendToRollingQueue("WalletThief_Queue", "TaskFile", l_0_11 .. "\\Tasks" .. l_0_21 .. ".job", 300, 32, 0)) or AppendToRollingQueue("WalletThief_Queue", "TasksKey", l_0_19, 300, 32, 0) then
+                    (bm.add_related_string)("WtTaskFile", l_0_11 .. "\\Tasks" .. l_0_21 .. ".job", bm.RelatedStringBMReport)
                   end
                   if AppendToRollingQueue("WalletThief_Queue", "TasksKey", l_0_19, 300, 32, 0) then
                     l_0_13 = l_0_13 + 1
                     ;
                     (bm.add_related_string)("WtTaskId", l_0_18, bm.RelatedStringBMReport)
                     ;
-                    (bm.add_related_string)("WtTaskPath", l_0_31, bm.RelatedStringBMReport)
+                    (bm.add_related_string)("WtTaskPath", l_0_21, bm.RelatedStringBMReport)
                   end
-                  -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC393: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC393: LeaveBlock: unexpected jumping out IF_STMT
 
-                  -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC393: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC393: LeaveBlock: unexpected jumping out IF_STMT
 
-                  -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC393: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC393: LeaveBlock: unexpected jumping out IF_STMT
 
-                  -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC393: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC393: LeaveBlock: unexpected jumping out IF_STMT
 
-                  -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC393: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC393: LeaveBlock: unexpected jumping out IF_STMT
 
-                  -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_THEN_STMT
+                  -- DECOMPILER ERROR at PC393: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                  -- DECOMPILER ERROR at PC387: LeaveBlock: unexpected jumping out IF_STMT
+                  -- DECOMPILER ERROR at PC393: LeaveBlock: unexpected jumping out IF_STMT
 
                 end
               end
@@ -143,7 +142,7 @@ do
       end
     end
   end
-  -- DECOMPILER ERROR at PC389: Confused about usage of register: R12 in 'UnsetPending'
+  -- DECOMPILER ERROR at PC395: Confused about usage of register: R12 in 'UnsetPending'
 
   if not l_0_12 then
     return mp.CLEAN
@@ -153,7 +152,7 @@ do
   ;
   (bm.add_threat_process)(l_0_2)
   do return mp.INFECTED end
-  -- DECOMPILER ERROR at PC408: freeLocal<0 in 'ReleaseLocals'
+  -- DECOMPILER ERROR at PC414: freeLocal<0 in 'ReleaseLocals'
 
   -- DECOMPILER ERROR: 11 unprocessed JMP targets
 end

@@ -1,5 +1,5 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\9bb316034d2a\1.luac 
+-- Command line: lua\!InfrastructureShared\9bb309cc0c8c\1.luac 
 
 -- params : ...
 -- function num : 0
@@ -20,7 +20,7 @@ if l_0_3 == "" or l_0_3 == nil or (string.find)(l_0_3, "github.com", 1, true) th
   return mp.CLEAN
 end
 for l_0_7,l_0_8,l_0_9 in l_0_3:gmatch("https?://[%w%.%-:]+/(%w+)/(%w+)()") do
-  if #l_0_7 >= 4 and #l_0_7 <= 8 and l_0_7:match("^[%l%d]+$") and #l_0_8 >= 10 and #l_0_8 <= 16 and l_0_8:find("%d") and l_0_8:find("%a") and not (l_0_3:sub(l_0_9, l_0_9)):match("[/%.%w_%-]") then
+  if #l_0_7 >= 4 and #l_0_7 <= 8 and l_0_7:match("^[%l%d]+$") and #l_0_8 >= 10 and #l_0_8 <= 16 and l_0_8:find("%d") and l_0_8:find("%a") and not (l_0_3:sub(l_0_9, l_0_9)):match("[/%.%w_%-%?#=&]") then
     return mp.INFECTED
   end
 end
