@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 6576416,
+    "size": 6576471,
     "file_count": 198
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 34364069,
-    "file_count": 4102
+    "size": 34367077,
+    "file_count": 4101
   },
   {
     "name": "boringssl",
@@ -86,7 +86,7 @@
   },
   {
     "name": "breakpad",
-    "size": 18022464,
+    "size": 18022465,
     "file_count": 1010
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 40577,
+    "size": 45702,
     "file_count": 5
   },
   {
@@ -211,7 +211,7 @@
   },
   {
     "name": "eigen3",
-    "size": 23618263,
+    "size": 23620511,
     "file_count": 2435
   },
   {
@@ -281,8 +281,8 @@
   },
   {
     "name": "glslang",
-    "size": 46454437,
-    "file_count": 3802
+    "size": 46462230,
+    "file_count": 3806
   },
   {
     "name": "googletest",
@@ -441,7 +441,7 @@
   },
   {
     "name": "liblouis",
-    "size": 11219423,
+    "size": 11219424,
     "file_count": 20
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "libusb",
-    "size": 837000,
+    "size": 837001,
     "file_count": 64
   },
   {
@@ -576,7 +576,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 87408,
+    "size": 87542,
     "file_count": 38
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4908289,
+    "size": 4908498,
     "file_count": 646
   },
   {
@@ -666,7 +666,7 @@
   },
   {
     "name": "rapidhash",
-    "size": 13869,
+    "size": 14353,
     "file_count": 2
   },
   {
@@ -706,7 +706,7 @@
   },
   {
     "name": "skia",
-    "size": 3484608,
+    "size": 3484681,
     "file_count": 1220
   },
   {
@@ -776,7 +776,7 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 36357706,
+    "size": 36460296,
     "file_count": 47
   },
   {
@@ -806,7 +806,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7903118,
+    "size": 7902868,
     "file_count": 207
   },
   {
