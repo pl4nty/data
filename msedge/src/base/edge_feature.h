@@ -5,7 +5,6 @@
 #ifndef BASE_EDGE_FEATURE_H_
 #define BASE_EDGE_FEATURE_H_
 
-#include <atomic>
 #include <string_view>
 
 #include "base/feature.h"
@@ -69,13 +68,13 @@ inline const Feature* GetEdgeFeatureHoldout(const Feature& feature) {
 }
 
 constexpr Feature::Feature(const char* name,
-                           std::atomic<FeatureStateCache>* edge_state,
+                           void* edge_tagged_state,
                            EdgeFeatureKind kind,
                            CopilotAppType copilot_app_type,
                            const Feature* holdout,
                            internal::FeatureMacroHandshake)
     : name(name),
-      state(edge_state),
+      tagged_state(edge_tagged_state),
       runtime(internal::EdgeFeatureFlagsFromKind(kind).runtime),
       first_run(internal::EdgeFeatureFlagsFromKind(kind).first_run),
       copilot_app_type(copilot_app_type),
@@ -98,10 +97,10 @@ constexpr Feature::Feature(const char* name,
 // feature declarations and definitions.
 struct LOGICALLY_CONST EdgeRuntimeFeature final : Feature {
   constexpr EdgeRuntimeFeature(const char* feature_name,
-                               std::atomic<FeatureStateCache>* feature_state,
+                               void* feature_tagged_state,
                                internal::FeatureMacroHandshake handshake)
       : Feature(feature_name,
-                feature_state,
+                feature_tagged_state,
                 EdgeFeatureKind::kRuntime,
                 CopilotAppType::kNone,
                 /*holdout=*/nullptr,
@@ -110,10 +109,10 @@ struct LOGICALLY_CONST EdgeRuntimeFeature final : Feature {
 
 struct LOGICALLY_CONST EdgeFirstRunFeature final : Feature {
   constexpr EdgeFirstRunFeature(const char* feature_name,
-                                std::atomic<FeatureStateCache>* feature_state,
+                                void* feature_tagged_state,
                                 internal::FeatureMacroHandshake handshake)
       : Feature(feature_name,
-                feature_state,
+                feature_tagged_state,
                 EdgeFeatureKind::kFirstRun,
                 CopilotAppType::kNone,
                 /*holdout=*/nullptr,
@@ -122,11 +121,11 @@ struct LOGICALLY_CONST EdgeFirstRunFeature final : Feature {
 
 struct LOGICALLY_CONST EdgeCopilotFeature final : Feature {
   constexpr EdgeCopilotFeature(const char* feature_name,
-                               std::atomic<FeatureStateCache>* feature_state,
+                               void* feature_tagged_state,
                                CopilotAppType feature_copilot_app_type,
                                internal::FeatureMacroHandshake handshake)
       : Feature(feature_name,
-                feature_state,
+                feature_tagged_state,
                 EdgeFeatureKind::kNormal,
                 feature_copilot_app_type,
                 /*holdout=*/nullptr,
@@ -134,13 +133,12 @@ struct LOGICALLY_CONST EdgeCopilotFeature final : Feature {
 };
 
 struct LOGICALLY_CONST EdgeFeatureWithHoldout final : Feature {
-  constexpr EdgeFeatureWithHoldout(
-      const char* feature_name,
-      std::atomic<FeatureStateCache>* feature_state,
-      const Feature* holdout_feature,
-      internal::FeatureMacroHandshake handshake)
+  constexpr EdgeFeatureWithHoldout(const char* feature_name,
+                                   void* feature_tagged_state,
+                                   const Feature* holdout_feature,
+                                   internal::FeatureMacroHandshake handshake)
       : Feature(feature_name,
-                feature_state,
+                feature_tagged_state,
                 EdgeFeatureKind::kNormal,
                 CopilotAppType::kNone,
                 holdout_feature,
@@ -150,11 +148,11 @@ struct LOGICALLY_CONST EdgeFeatureWithHoldout final : Feature {
 struct LOGICALLY_CONST EdgeFirstRunFeatureWithHoldout final : Feature {
   constexpr EdgeFirstRunFeatureWithHoldout(
       const char* feature_name,
-      std::atomic<FeatureStateCache>* feature_state,
+      void* feature_tagged_state,
       const Feature* holdout_feature,
       internal::FeatureMacroHandshake handshake)
       : Feature(feature_name,
-                feature_state,
+                feature_tagged_state,
                 EdgeFeatureKind::kFirstRun,
                 CopilotAppType::kNone,
                 holdout_feature,
@@ -163,9 +161,9 @@ struct LOGICALLY_CONST EdgeFirstRunFeatureWithHoldout final : Feature {
 
 struct LOGICALLY_CONST EdgeTriggerFeature final : Feature {
   constexpr EdgeTriggerFeature(const char* feature_name,
-                               std::atomic<FeatureStateCache>* feature_state,
+                               void* feature_tagged_state,
                                internal::FeatureMacroHandshake handshake)
-      : Feature(feature_name, feature_state, handshake) {}
+      : Feature(feature_name, feature_tagged_state, handshake) {}
 };
 
 // Makes name-based feature construction explicit when no suitable static
@@ -178,12 +176,15 @@ class DynamicFeature final : public Feature {
   explicit constexpr DynamicFeature(
       const char* feature_name,
       FeatureState feature_default_state = FEATURE_DISABLED_BY_DEFAULT)
-      : Feature(feature_name,
-                &edge_state_,
-                internal::FeatureMacroHandshake::kSecret),
-        edge_state_(internal::MakeFeatureStateCacheInitialValue(
-            false,
-            static_cast<uint32_t>(feature_default_state))) {
+      : Feature(
+            feature_name,
+            feature_default_state == FEATURE_ENABLED_BY_DEFAULT
+                ? internal::TagFeatureStateStorage<FEATURE_ENABLED_BY_DEFAULT>(
+                      edge_state_)
+                : internal::TagFeatureStateStorage<FEATURE_DISABLED_BY_DEFAULT>(
+                      edge_state_),
+            internal::FeatureMacroHandshake::kSecret),
+        edge_state_{internal::MakeFeatureStateCacheInitialValue(false)} {
     if (IsCountrySpecificFeatureState(feature_default_state)) {
       LOG(FATAL) << "Pass a country-specific default state if and only if you "
                     "are using FeatureWithCountryRestriction.";
@@ -196,7 +197,7 @@ class DynamicFeature final : public Feature {
   DynamicFeature& operator=(DynamicFeature&&) = delete;
 
  private:
-  mutable std::atomic<FeatureStateCache> edge_state_;
+  mutable internal::FeatureStateStorage edge_state_;
 };
 
 }  // namespace base

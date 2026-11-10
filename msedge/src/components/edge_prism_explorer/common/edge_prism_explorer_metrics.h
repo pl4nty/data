@@ -16,8 +16,7 @@ enum class VisualSearchEntryPoint {
   kWebCapture = 3,
   kEdgeDesktop = 4,
   kEdgeLensHotkey = 5,
-  kOmnibox = 6,
-  kExternalProtocol = 7,
+  kExternalProtocol = 6,
   kMaxValue = kExternalProtocol,
 };
 // LINT.ThenChange(//tools/metrics/histograms/edge_enums.xml:VisualSearchEntryPoint)

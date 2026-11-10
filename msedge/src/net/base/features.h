@@ -77,6 +77,12 @@ NET_EXPORT BASE_DECLARE_FEATURE(kDnsPlatformFailFastAndRetry);
 NET_EXPORT extern const base::FeatureParam<bool>
     kDnsPlatformCancelPreviousAttemptOnRetry;
 
+// If enabled, HostResolverDnsTask ignores errors from an address (A/AAAA) DNS
+// transaction if the sibling address transaction succeeds with usable
+// addresses, rather than failing the entire DnsTask and falling back to the
+// system resolver.
+NET_EXPORT BASE_DECLARE_FEATURE(kDnsTaskAllowPartialAddressResults);
+
 // Enables querying HTTPS DNS records that will affect results from HostResolver
 // and may be used to affect connection behavior. Whether or not those results
 // are used (e.g. to connect via ECH) may be controlled by separate features.
@@ -369,6 +375,11 @@ NET_EXPORT BASE_DECLARE_FEATURE(kStaticKeyPinningEnforcement);
 
 // When enabled, cookies with a non-ASCII domain attribute will be rejected.
 NET_EXPORT BASE_DECLARE_FEATURE(kCookieDomainRejectNonASCII);
+
+// When enabled, HTTP/HTTPS/WS/WSS URLs with non-IP hosts must have a
+// DNS-compliant canonicalized host (via net::IsCanonicalizedHostCompliant())
+// to set or retrieve cookies.
+NET_EXPORT BASE_DECLARE_FEATURE(kCookieRequireCompliantHost);
 
 NET_EXPORT BASE_DECLARE_FEATURE(kThirdPartyStoragePartitioning);
 

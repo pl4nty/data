@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 2176011,
+    "size": 2180014,
     "file_count": 188
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 34356227,
+    "size": 34364069,
     "file_count": 4102
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 39666,
+    "size": 40577,
     "file_count": 5
   },
   {
@@ -156,8 +156,8 @@
   },
   {
     "name": "dawn",
-    "size": 163708220,
-    "file_count": 19364
+    "size": 163714417,
+    "file_count": 19366
   },
   {
     "name": "dbus",
@@ -176,8 +176,8 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 4531177,
-    "file_count": 27
+    "size": 4880135,
+    "file_count": 51
   },
   {
     "name": "dom_distiller_js",
@@ -211,7 +211,7 @@
   },
   {
     "name": "eigen3",
-    "size": 23609150,
+    "size": 23618263,
     "file_count": 2435
   },
   {
@@ -281,8 +281,8 @@
   },
   {
     "name": "glslang",
-    "size": 46451990,
-    "file_count": 3800
+    "size": 46454437,
+    "file_count": 3802
   },
   {
     "name": "googletest",
@@ -341,8 +341,8 @@
   },
   {
     "name": "icu",
-    "size": 163045451,
-    "file_count": 7216
+    "size": 163058815,
+    "file_count": 7218
   },
   {
     "name": "inference_engine",
@@ -396,7 +396,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 72645,
+    "size": 73318,
     "file_count": 47
   },
   {
@@ -511,8 +511,8 @@
   },
   {
     "name": "mediapipe",
-    "size": 661056,
-    "file_count": 332
+    "size": 662586,
+    "file_count": 331
   },
   {
     "name": "metrics_proto",
@@ -616,8 +616,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4903543,
-    "file_count": 645
+    "size": 4908289,
+    "file_count": 646
   },
   {
     "name": "perl",
@@ -776,8 +776,8 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 36491212,
-    "file_count": 45
+    "size": 36357706,
+    "file_count": 47
   },
   {
     "name": "undocked_copilot_mac",
@@ -806,7 +806,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7902462,
+    "size": 7903118,
     "file_count": 207
   },
   {
@@ -821,8 +821,8 @@
   },
   {
     "name": "webdriver",
-    "size": 412591,
-    "file_count": 19
+    "size": 449994,
+    "file_count": 21
   },
   {
     "name": "webgl",

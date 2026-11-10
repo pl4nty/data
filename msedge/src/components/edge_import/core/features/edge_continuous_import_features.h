@@ -215,22 +215,21 @@ COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 extern const base::FeatureParam<int>
     kStartCIInAutolaunchSuppressionKeepAliveDurationInSeconds;
 
-// Treatment-variant flag that opts the session into upgrading the CI
-// auto-import task priority from BEST_EFFORT to USER_BLOCKING after
-// autolaunch suppression is confirmed. The flag ships disabled so the
-// default (control) behavior is a single BEST_EFFORT post; enabling it
-// activates the post -> cancel -> re-post-at-USER_BLOCKING path.
+// Upgrades the CI auto-import task priority from BEST_EFFORT to USER_BLOCKING
+// after autolaunch suppression is confirmed (post -> cancel -> re-post at
+// USER_BLOCKING). Disabling it falls back to a single BEST_EFFORT post.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kUpgradeCIAutoImportPriorityInAutolaunchSuppression);
 
 // Pins the autolaunch-suppression keep-alive to a fixed process lifetime, so
-// every cohort holds the process equally long while the window CI may run in
-// stays cohort-specific. Without it the shorter-lived cohort exits before its
-// first metrics upload and its enrollments go unreported -- the SRM.
+// both arms of the Equal holdout experiment hold the process equally long while
+// the window CI may run in stays arm-specific. Without it the control arm
+// (umbrella off, short window) exits before its first metrics upload and its
+// enrollments go unreported -- the SRM.
 //
-// Enabled by default as a kill switch only; it is not in the experiment
-// payload. The caller scopes it to the study by checking trial membership in
-// `kStartCIInAutolaunchSuppression`.
+// Enabled by default as a kill switch only. Applies to CI-active autolaunch
+// suppressed sessions of clients in the holdout experiment; see
+// `IsContinuousMigrationRefreshedEngagementHoldoutCohort()`.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kEqualizedKeepAliveInAutolaunchSuppression);
 
