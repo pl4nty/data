@@ -1,0 +1,111 @@
+{
+  "blocks": {
+    "{05bb4e39-3b88-4c03-8468-d6bcddf73295}": {
+      "entry": {
+        "APP_ID": "{63c7f28f-1241-4915-abf1-1638d776a077}",
+        "APP_NAME": "OneDrive and Legacy filters (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "27227883",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{05bb4e39-3b88-4c03-8468-d6bcddf73295}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCH_PLUGIN": [
+            {
+              "COMMAND_LINE": "\"HKEY_USERS\\*\\Software\\Microsoft\\OneDrive\\Accounts\\Personal\" ValueSearch FirstRun eq 1 REG_DWORD",
+              "NAME": "RegistryMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "\"HKEY_USERS\\*\\Software\\Microsoft\\OneDrive\\Accounts\\Business*\" ValueSearch FirstRun eq 1 REG_DWORD",
+              "NAME": "RegistryMatchingPlugin"
+            }
+          ]
+        },
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_06_26_06_01_AMD64",
+          "last": "2020_07_09_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_06_26_06_02_ARM64",
+          "last": "2020_07_09_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_06_26_06_01_X86",
+          "last": "2020_07_09_05_02_X86"
+        }
+      },
+      "source": "2020_07_09_05_02_X86"
+    },
+    "{b9162689-2491-4d6f-bd44-43bc717bc36e}": {
+      "entry": {
+        "APP_ID": "{63c7f28f-1241-4915-abf1-1638d776a077}",
+        "APP_NAME": "OneDrive and Legacy filters (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "27227883",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{b9162689-2491-4d6f-bd44-43bc717bc36e}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCH_PLUGIN": [
+            {
+              "COMMAND_LINE": "\"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\SyncRootManager\\OneDrive*\" KeySearch NA count_gte 1 NA",
+              "NAME": "RegistryMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "\"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\SyncRootManager\\WorkFolders*\" KeySearch NA count_gte 1 NA",
+              "NAME": "RegistryMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "\"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\SyncRootManager\\iCloud*\" KeySearch NA count_gte 1 NA",
+              "NAME": "RegistryMatchingPlugin"
+            }
+          ]
+        },
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_07_09_05_01_AMD64",
+          "last": "2020_07_09_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_07_09_05_02_ARM64",
+          "last": "2020_07_09_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_07_09_05_01_X86",
+          "last": "2020_07_09_05_02_X86"
+        }
+      },
+      "source": "2020_07_09_05_02_X86"
+    }
+  },
+  "id": "27227883"
+}

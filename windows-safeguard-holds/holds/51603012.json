@@ -1,0 +1,72 @@
+{
+  "blocks": {
+    "{cb1590c3-3ef1-4c14-a110-aeda8102dc7a}": {
+      "entry": {
+        "APP_ID": "{997e2431-9504-4936-b2a1-4856198ebd54}",
+        "APP_NAME": "SS2 devices with Nvidia 27.21.14.6296 display driver (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "51603012",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{cb1590c3-3ef1-4c14-a110-aeda8102dc7a}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Microsoft Corporation",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\nvmsoa*\\nvlddmkm.sys -FromBinVersion 31.0.15.3870",
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "FileMatchingPlugin"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "Surface Studio 2",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "Surface Studio 2+",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "SOURCE_OS_LTE": 2814751477596159,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_06_20_05_01_AMD64",
+          "last": "2025_02_20_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_06_20_05_01_ARM64",
+          "last": "2025_02_20_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_06_20_05_01_X86",
+          "last": "2025_02_20_03_02_X86"
+        }
+      },
+      "source": "2025_02_20_03_05_ARM64"
+    }
+  },
+  "id": "51603012"
+}

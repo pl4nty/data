@@ -1,0 +1,173 @@
+{
+  "blocks": {
+    "{9d20bf3c-daa8-485f-a231-cde8451eeb3f}": {
+      "entry": {
+        "APP_ID": "{f7fca933-4a34-40bb-a1e7-0613b5951b14}",
+        "APP_NAME": "Microsoft Teams Room (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "31071606",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "EXE_ID": "{9d20bf3c-daa8-485f-a231-cde8451eeb3f}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "HP",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%systemdrive%\\Recovery\\OEM\\$oem$\\$1\\Rigel",
+          "NAME": "DirectoryExistsMatchingPlugin"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "HP Elite Slice",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "HP Elite Slice G2 MS SRS Audio Ready",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "HP Elite Slice G2 MS SRS Partner Ready",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "HP Elite Slice G2 with MS MTR",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_04_22_06_01_AMD64",
+          "last": "2021_07_08_03_02_AMD64"
+        },
+        "X86": {
+          "first": "2021_04_22_06_01_X86",
+          "last": "2021_07_08_03_02_X86"
+        }
+      },
+      "source": "2021_07_08_03_02_X86"
+    },
+    "{b9e371b4-ec21-4e86-9d59-af8768344897}": {
+      "entry": {
+        "APP_ID": "{f7fca933-4a34-40bb-a1e7-0613b5951b14}",
+        "APP_NAME": "Microsoft Teams Room (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "31071606",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "EXE_ID": "{b9e371b4-ec21-4e86-9d59-af8768344897}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Crestron Electronics*Inc.",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "UC-ENGINE",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "KYSKLi*",
+            "REG_VALUE_NAME": "BIOSVersion",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%systemdrive%\\Recovery\\OEM\\$oem$\\$1\\Rigel",
+          "NAME": "DirectoryExistsMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_04_22_06_01_AMD64",
+          "last": "2021_10_04_04_01_AMD64"
+        },
+        "X86": {
+          "first": "2021_04_22_06_01_X86",
+          "last": "2021_10_04_04_01_X86"
+        }
+      },
+      "source": "2021_10_04_04_01_X86"
+    },
+    "{c0f121d3-4c9e-4f82-b563-fb5f9e736653}": {
+      "entry": {
+        "APP_ID": "{f7fca933-4a34-40bb-a1e7-0613b5951b14}",
+        "APP_NAME": "Microsoft Teams Room (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "31071606",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "EXE_ID": "{c0f121d3-4c9e-4f82-b563-fb5f9e736653}",
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%systemdrive%\\Recovery\\OEM\\$oem$\\$1\\Rigel",
+          "NAME": "DirectoryExistsMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_12_17_05_01_AMD64",
+          "last": "2021_04_22_06_03_AMD64"
+        },
+        "X86": {
+          "first": "2020_12_17_05_01_X86",
+          "last": "2021_04_22_06_03_X86"
+        }
+      },
+      "source": "2021_04_22_06_03_X86"
+    }
+  },
+  "id": "31071606"
+}

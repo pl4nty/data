@@ -1,0 +1,49 @@
+{
+  "blocks": {
+    "{379f91a8-5e41-49c3-bfa7-5fb834636536}": {
+      "entry": {
+        "APP_ID": "{ad7a81d5-4a20-43ce-8365-6ec998c06a6b}",
+        "APP_NAME": "PACE tpkd.sys (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29795358",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{379f91a8-5e41-49c3-bfa7-5fb834636536}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "PACE Anti-Piracy*",
+          "NAME": "%WinDir%\\System32\\Drivers\\tpkd.sys",
+          "PRODUCT_NAME": "InterLok*"
+        },
+        "NAME": "",
+        "VENDOR": "PACE Anti-Piracy, Inc."
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    }
+  },
+  "id": "29795358"
+}

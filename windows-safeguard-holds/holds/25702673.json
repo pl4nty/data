@@ -1,0 +1,424 @@
+{
+  "blocks": {
+    "{03075486-b011-4b2e-ba67-5264f7ec803d}": {
+      "entry": {
+        "APP_ID": "{25a35870-57fa-44a7-ac80-4157f5972a1e}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - LG",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702673",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{03075486-b011-4b2e-ba67-5264f7ec803d}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.88.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "LG*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_2008&subsys_18540271&rev_1001*"
+            },
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "LG"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{23301fd7-2355-4c17-968f-3c3cc92c5b75}": {
+      "entry": {
+        "APP_ID": "{25a35870-57fa-44a7-ac80-4157f5972a1e}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - LG",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702673",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{23301fd7-2355-4c17-968f-3c3cc92c5b75}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.88.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "LG*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008&subsys_18540357&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008&subsys_18540271&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "LG"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{269269ed-bf4c-4269-bb7e-a5639e55656c}": {
+      "entry": {
+        "APP_ID": "{25a35870-57fa-44a7-ac80-4157f5972a1e}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - LG",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702673",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{269269ed-bf4c-4269-bb7e-a5639e55656c}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "LG*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008&subsys_18540357&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008&subsys_18540271&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "LG"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{496cc5a7-ec2a-41de-82a0-e590815bbed2}": {
+      "entry": {
+        "APP_ID": "{25a35870-57fa-44a7-ac80-4157f5972a1e}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - LG",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702673",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{496cc5a7-ec2a-41de-82a0-e590815bbed2}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "LG*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008&subsys_18540357&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008&subsys_18540271&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "LG"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{6a277b2e-650e-471f-8063-426085f628ec}": {
+      "entry": {
+        "APP_ID": "{25a35870-57fa-44a7-ac80-4157f5972a1e}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - LG",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702673",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{6a277b2e-650e-471f-8063-426085f628ec}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "LG*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_2008&subsys_18540271&rev_1001*"
+            },
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "LG"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{c6f7dc73-a7b9-4664-b3cd-c9352a5fd0e5}": {
+      "entry": {
+        "APP_ID": "{25a35870-57fa-44a7-ac80-4157f5972a1e}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - LG",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702673",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{c6f7dc73-a7b9-4664-b3cd-c9352a5fd0e5}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "LG*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_2008&subsys_18540271&rev_1001*"
+            },
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "LG"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    }
+  },
+  "id": "25702673"
+}

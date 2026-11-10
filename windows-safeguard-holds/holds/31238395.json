@@ -1,0 +1,175 @@
+{
+  "blocks": {
+    "{0818d845-8af0-42f9-afff-a008742fa913}": {
+      "entry": {
+        "APP_ID": "{38679526-a0f2-4d2f-80be-64de835f1bd6}",
+        "APP_NAME": "Virus Buster Cloud/Trend Micro Security v8.x (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "31238395",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{0818d845-8af0-42f9-afff-a008742fa913}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Trend Micro*",
+          "NAME": "%windir%\\system32\\drivers\\tmevtmgr.sys"
+        },
+        "MATCHING_REG": {
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "SYSTEM\\CurrentControlSet\\Services\\tmevtmgr",
+          "REG_VALUE_DATA_SZ": "6.50.0.1040",
+          "REG_VALUE_NAME": "Version",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Services\\tmevtmgr",
+              "REG_VALUE_DATA_SZ": "6.0.*",
+              "REG_VALUE_NAME": "Version",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Services\\tmevtmgr",
+              "REG_VALUE_DATA_SZ": "6.50.0.104*",
+              "REG_VALUE_NAME": "Version",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Services\\tmevtmgr",
+              "REG_VALUE_DATA_SZ": "6.50.0.105*",
+              "REG_VALUE_NAME": "Version",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Services\\tmevtmgr",
+              "REG_VALUE_DATA_SZ": "6.50.0.106*",
+              "REG_VALUE_NAME": "Version",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Services\\tmevtmgr",
+              "REG_VALUE_DATA_SZ": "6.50.0.1070",
+              "REG_VALUE_NAME": "Version",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Trend Micro"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_01_07_05_01_AMD64",
+          "last": "2021_03_04_04_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_01_07_05_02_ARM64",
+          "last": "2021_03_04_04_03_ARM64"
+        },
+        "X86": {
+          "first": "2021_01_07_05_01_X86",
+          "last": "2021_03_04_04_03_X86"
+        }
+      },
+      "source": "2021_03_04_04_03_X86"
+    },
+    "{e2a1e517-6411-4294-a3ec-5f7a7eb4dcc2}": {
+      "entry": {
+        "APP_ID": "{38679526-a0f2-4d2f-80be-64de835f1bd6}",
+        "APP_NAME": "Virus Buster Cloud/Trend Micro Security v8.x (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "31238395",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{e2a1e517-6411-4294-a3ec-5f7a7eb4dcc2}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Trend Micro*",
+          "NAME": "%windir%\\system32\\drivers\\tmcomm.sys"
+        },
+        "MATCHING_REG": {
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "SYSTEM\\CurrentControlSet\\Services\\tmcomm",
+          "REG_VALUE_DATA_SZ": "6.50.0.1040",
+          "REG_VALUE_NAME": "Version",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Services\\tmcomm",
+              "REG_VALUE_DATA_SZ": "6.0.*",
+              "REG_VALUE_NAME": "Version",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Services\\tmcomm",
+              "REG_VALUE_DATA_SZ": "6.50.0.104*",
+              "REG_VALUE_NAME": "Version",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Services\\tmcomm",
+              "REG_VALUE_DATA_SZ": "6.50.0.105*",
+              "REG_VALUE_NAME": "Version",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Services\\tmcomm",
+              "REG_VALUE_DATA_SZ": "6.50.0.106*",
+              "REG_VALUE_NAME": "Version",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Services\\tmcomm",
+              "REG_VALUE_DATA_SZ": "6.50.0.1070",
+              "REG_VALUE_NAME": "Version",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Trend Micro"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_01_07_05_01_AMD64",
+          "last": "2021_03_04_04_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_01_07_05_02_ARM64",
+          "last": "2021_03_04_04_03_ARM64"
+        },
+        "X86": {
+          "first": "2021_01_07_05_01_X86",
+          "last": "2021_03_04_04_03_X86"
+        }
+      },
+      "source": "2021_03_04_04_03_X86"
+    }
+  },
+  "id": "31238395"
+}

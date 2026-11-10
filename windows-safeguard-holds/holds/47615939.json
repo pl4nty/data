@@ -1,0 +1,209 @@
+{
+  "blocks": {
+    "{4ba09885-ec11-402e-8edc-bf733f74a3f0}": {
+      "entry": {
+        "APP_ID": "{529cffee-0c38-4e02-8db2-46eb27683108}",
+        "APP_NAME": "Multi-mon + Copilot (23H2)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "47615939",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI23H2",
+        "DEST_OS_LT": "GE24H1",
+        "EXE_ID": "{4ba09885-ec11-402e-8edc-bf733f74a3f0}",
+        "MATCHING_REG": {
+          "NAME": "SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers\\FeatureSetUsage",
+          "REG_VALUE_DATA_DWORD": 1,
+          "REG_VALUE_NAME": "DisplayMultiMon",
+          "REG_VALUE_TYPE": 4
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\NI22H2",
+                "REG_VALUE_DATA_SZ": "*47991031:1*",
+                "REG_VALUE_NAME": "GatedFeature",
+                "REG_VALUE_TYPE": 7
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\NI23H2",
+                "REG_VALUE_DATA_SZ": "*47991031:1*",
+                "REG_VALUE_NAME": "GatedFeature",
+                "REG_VALUE_TYPE": 7
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\GatedFeature",
+                "REG_VALUE_DATA_DWORD": 1,
+                "REG_VALUE_NAME": "CopilotFtrSgOptOut",
+                "REG_VALUE_TYPE": 4
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\OneSettings\\compat\\appraiser\\Settings",
+                "REG_VALUE_DATA_SZ": "TRUE",
+                "REG_VALUE_NAME": "CP_Prev_Enabled",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SYSTEM\\CurrentControlSet\\Control\\FeatureManagement\\Overrides\\4\\1142270092",
+                "REG_VALUE_DATA_DWORD": 2,
+                "REG_VALUE_NAME": "EnabledState",
+                "REG_VALUE_TYPE": 4
+              }
+            ],
+            "MATCH_LOGIC_NOT": true,
+            "MATCH_PLUGIN": [
+              {
+                "COMMAND_LINE": "-FlightingRing Internal",
+                "NAME": "FlightingMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "HKEY_USERS\\*\\Software\\Microsoft\\Windows\\Shell\\Copilot\\BingChat ValueSearch IsUserEligible eq 1 REG_DWORD",
+                "NAME": "RegistryMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "$Res = 0; $Session = New-Object -ComObject Microsoft.Update.Session; $Searcher = $Session.CreateUpdateSearcher(); $Count = $Searcher.GetTotalHistoryCount(); if ($Count -ge 1) { $Updates = $Searcher.QueryHistory(0, $Count); }; if(($Updates | Where-Object {$_.Title -match 'KB5030310'}) -ne $null) { $Res = 1; }; Write-Host 'Final result:', $Res;",
+                "NAME": "PowerShellMatchingPlugin"
+              }
+            ]
+          }
+        ],
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_01_18_06_01_AMD64",
+          "last": "2024_01_25_03_04_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_01_18_06_01_ARM64",
+          "last": "2024_01_25_03_04_ARM64"
+        },
+        "X86": {
+          "first": "2024_01_18_06_01_X86",
+          "last": "2024_01_25_03_02_X86"
+        }
+      },
+      "source": "2024_01_25_03_04_ARM64"
+    },
+    "{88961c28-6e0a-478f-ae51-c883827e0cea}": {
+      "entry": {
+        "APP_ID": "{529cffee-0c38-4e02-8db2-46eb27683108}",
+        "APP_NAME": "Multi-mon + Copilot (23H2)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "47615939",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI23H2",
+        "DEST_OS_LT": "GE24H1",
+        "EXE_ID": "{88961c28-6e0a-478f-ae51-c883827e0cea}",
+        "MATCHING_REG": [
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\NI22H2",
+            "REG_VALUE_DATA_SZ": "*47991031:1*",
+            "REG_VALUE_NAME": "GatedFeature",
+            "REG_VALUE_TYPE": 7
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TargetVersionUpgradeExperienceIndicators\\NI23H2",
+            "REG_VALUE_DATA_SZ": "*47991031:1*",
+            "REG_VALUE_NAME": "GatedFeature",
+            "REG_VALUE_TYPE": 7
+          },
+          {
+            "NAME": "SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers\\FeatureSetUsage",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "DisplayMultiMon",
+            "REG_VALUE_TYPE": 4
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\GatedFeature",
+              "REG_VALUE_DATA_DWORD": 1,
+              "REG_VALUE_NAME": "CopilotFtrSgOptOut",
+              "REG_VALUE_TYPE": 4
+            },
+            {
+              "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\OneSettings\\compat\\appraiser\\Settings",
+              "REG_VALUE_DATA_SZ": "TRUE",
+              "REG_VALUE_NAME": "CP_Prev_Enabled",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Control\\FeatureManagement\\Overrides\\4\\1142270092",
+              "REG_VALUE_DATA_DWORD": 2,
+              "REG_VALUE_NAME": "EnabledState",
+              "REG_VALUE_TYPE": 4
+            },
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Control\\FeatureManagement\\Overrides\\4\\4009707149",
+              "REG_VALUE_DATA_DWORD": 2,
+              "REG_VALUE_NAME": "EnabledState",
+              "REG_VALUE_TYPE": 4
+            }
+          ],
+          "MATCH_LOGIC_NOT": true,
+          "MATCH_PLUGIN": [
+            {
+              "COMMAND_LINE": "-FlightingRing Internal",
+              "NAME": "FlightingMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "HKEY_USERS\\*\\Software\\Microsoft\\Windows\\Shell\\Copilot\\BingChat ValueSearch IsUserEligible eq 1 REG_DWORD",
+              "NAME": "RegistryMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "$Res = 0; $Session = New-Object -ComObject Microsoft.Update.Session; $Searcher = $Session.CreateUpdateSearcher(); $Count = $Searcher.GetTotalHistoryCount(); if ($Count -ge 1) { $Updates = $Searcher.QueryHistory(0, $Count); }; if(($Updates | Where-Object {$_.Title -match 'KB5030310'}) -ne $null) { $Res = 1; }; Write-Host 'Final result:', $Res;",
+              "NAME": "PowerShellMatchingPlugin"
+            }
+          ]
+        },
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2023_11_14_04_01_AMD64",
+          "last": "2024_01_25_03_04_AMD64"
+        },
+        "ARM64": {
+          "first": "2023_11_14_04_01_ARM64",
+          "last": "2024_01_25_03_04_ARM64"
+        },
+        "X86": {
+          "first": "2023_11_14_04_01_X86",
+          "last": "2024_01_25_03_02_X86"
+        }
+      },
+      "source": "2024_01_25_03_04_ARM64"
+    }
+  },
+  "id": "47615939"
+}

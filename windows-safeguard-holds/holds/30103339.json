@@ -1,0 +1,48 @@
+{
+  "blocks": {
+    "{07d741c1-5f04-4017-a8f1-e68271dd98cd}": {
+      "entry": {
+        "APP_ID": "{5b93db36-2c80-4710-ba36-e9024af37916}",
+        "APP_NAME": "LSASS crashes + admin accounts (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "30103339",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{07d741c1-5f04-4017-a8f1-e68271dd98cd}",
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "ROOT\\CIMV2 Win32_UserAccount 0 Name wstring * eq WHERE LocalAccount = TRUE AND SID LIKE 'S-1-5%' AND SID LIKE '%-500' AND Name != 'Administrator' AND Name != 'Administrador' AND Name != 'Administrateur' AND Name != 'Administratör' AND Name != 'Järjestelmänvalvoja' AND Name != 'Rendszergazda' AND Name != 'Администратор'",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_11_05_05_01_AMD64",
+          "last": "2020_12_17_05_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_11_05_05_02_ARM64",
+          "last": "2020_12_17_05_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_11_05_05_01_X86",
+          "last": "2020_12_17_05_03_X86"
+        }
+      },
+      "source": "2020_12_17_05_03_X86"
+    }
+  },
+  "id": "30103339"
+}

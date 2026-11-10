@@ -1,0 +1,56 @@
+{
+  "blocks": {
+    "{115791cb-3956-49d4-b375-30ec430137d3}": {
+      "entry": {
+        "APP_ID": "{df3dcb4d-0a5b-4841-be5e-0c7cb226fe42}",
+        "APP_NAME": "Alladin HASP",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "24858586",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{115791cb-3956-49d4-b375-30ec430137d3}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_FILE": [
+            {
+              "NAME": "%windir%\\system32\\drivers\\aksfridge.sys",
+              "UPTO_BIN_PRODUCT_VERSION": "1.80.65535.65535"
+            },
+            {
+              "NAME": "%windir%\\system32\\drivers\\aksdf.sys",
+              "UPTO_BIN_PRODUCT_VERSION": "1.51.65535.65535"
+            }
+          ]
+        },
+        "VENDOR": "SafeNet, Inc."
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_02_20_06_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_02_20_06_05_ARM64",
+          "last": "2020_08_06_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_02_20_06_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    }
+  },
+  "id": "24858586"
+}

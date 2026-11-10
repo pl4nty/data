@@ -1,0 +1,197 @@
+{
+  "blocks": {
+    "{0c54031a-df53-4972-bfc4-5c8b8aae2562}": {
+      "entry": {
+        "APP_ID": "{bc05102d-ecad-4768-9651-796c1bacd4d8}",
+        "APP_NAME": "Devices with IE as primary browser (WU Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "37820326",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "NI22H2",
+        "EXE_ID": "{0c54031a-df53-4972-bfc4-5c8b8aae2562}",
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "\"HKEY_USERS\\*\\SOFTWARE\\Microsoft\\Windows\\Shell\\Associations\\UrlAssociations\\http\\UserChoice\" ValueSearch ProgId eq \"IE.HTTP\" REG_SZ",
+          "NAME": "RegistryMatchingPlugin"
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\EdgeUpdate\\Clients\\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}",
+                "REG_VALUE_DATA_SZ": "?.*",
+                "REG_VALUE_NAME": "pv",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\EdgeUpdate\\Clients\\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}",
+                "REG_VALUE_DATA_SZ": "??.*",
+                "REG_VALUE_NAME": "pv",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\EdgeUpdate\\Clients\\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}",
+                "REG_VALUE_DATA_SZ": "?.*",
+                "REG_VALUE_NAME": "pv",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\EdgeUpdate\\Clients\\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}",
+                "REG_VALUE_DATA_SZ": "??.*",
+                "REG_VALUE_NAME": "pv",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\EdgeUpdate\\Clients\\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}",
+                "REG_VALUE_DATA_SZ": "99.*",
+                "REG_VALUE_NAME": "pv",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\EdgeUpdate\\Clients\\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}",
+                "REG_VALUE_DATA_SZ": "99.*",
+                "REG_VALUE_NAME": "pv",
+                "REG_VALUE_TYPE": 1
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_01_21_03_01_AMD64",
+          "last": "2022_07_28_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_01_21_03_01_ARM64",
+          "last": "2022_07_28_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_01_21_03_01_X86",
+          "last": "2022_07_28_05_01_X86"
+        }
+      },
+      "source": "2022_07_28_05_02_ARM64"
+    },
+    "{5d817ad3-ab36-4e59-ba13-07adf3cd3ad2}": {
+      "entry": {
+        "APP_ID": "{bc05102d-ecad-4768-9651-796c1bacd4d8}",
+        "APP_NAME": "Devices with IE as primary browser (WU Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "37820326",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "NI22H2",
+        "EXE_ID": "{5d817ad3-ab36-4e59-ba13-07adf3cd3ad2}",
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\OneSettings\\compat\\appraiser\\Settings",
+                "REG_VALUE_DATA_SZ": "TRUE",
+                "REG_VALUE_NAME": "WUOB_37820326",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\OneSettings\\compat\\setupappraiser\\Settings",
+                "REG_VALUE_DATA_SZ": "TRUE",
+                "REG_VALUE_NAME": "WUOB_37820326",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\EdgeUpdate\\Clients\\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}",
+                "REG_VALUE_DATA_SZ": "?.*",
+                "REG_VALUE_NAME": "pv",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\EdgeUpdate\\Clients\\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}",
+                "REG_VALUE_DATA_SZ": "??.*",
+                "REG_VALUE_NAME": "pv",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\EdgeUpdate\\Clients\\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}",
+                "REG_VALUE_DATA_SZ": "?.*",
+                "REG_VALUE_NAME": "pv",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\EdgeUpdate\\Clients\\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}",
+                "REG_VALUE_DATA_SZ": "??.*",
+                "REG_VALUE_NAME": "pv",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\EdgeUpdate\\Clients\\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}",
+                "REG_VALUE_DATA_SZ": "99.*",
+                "REG_VALUE_NAME": "pv",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\EdgeUpdate\\Clients\\{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}",
+                "REG_VALUE_DATA_SZ": "99.*",
+                "REG_VALUE_NAME": "pv",
+                "REG_VALUE_TYPE": 1
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_01_21_03_01_AMD64",
+          "last": "2022_07_28_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_01_21_03_01_ARM64",
+          "last": "2022_07_28_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_01_21_03_01_X86",
+          "last": "2022_07_28_05_01_X86"
+        }
+      },
+      "source": "2022_07_28_05_02_ARM64"
+    }
+  },
+  "id": "37820326"
+}

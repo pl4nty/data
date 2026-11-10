@@ -1,0 +1,96 @@
+{
+  "blocks": {
+    "{6c5378a1-aa13-4c12-95e8-11f90f27c528}": {
+      "entry": {
+        "APP_ID": "{336520b1-8154-45a1-b900-33c40aaa906b}",
+        "APP_NAME": "Realtek camera driver glitching",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26369613",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{6c5378a1-aa13-4c12-95e8-11f90f27c528}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "usb\\vid_0b05&pid_182d*"
+            },
+            {
+              "NAME": "usb\\vid_25be&pid_0003*"
+            },
+            {
+              "NAME": "usb\\vid_05c8&pid_0700*"
+            },
+            {
+              "NAME": "usb\\vid_2df2&pid_2102*"
+            },
+            {
+              "NAME": "usb\\vid_2df2&pid_0215*"
+            },
+            {
+              "NAME": "usb\\vid_0bda&pid_56a5*"
+            },
+            {
+              "NAME": "usb\\vid_2a7e&pid_0111*"
+            },
+            {
+              "NAME": "usb\\vid_0bda&pid_5666*"
+            },
+            {
+              "NAME": "usb\\vid_04f2&pid_b674*"
+            },
+            {
+              "NAME": "usb\\vid_0bda&pid_5628*"
+            },
+            {
+              "NAME": "usb\\vid_04ca&pid_7048*"
+            },
+            {
+              "NAME": "usb\\vid_0bda&pid_562b*"
+            },
+            {
+              "NAME": "usb\\vid_0bda&pid_575c*"
+            },
+            {
+              "NAME": "usb\\vid_0bda&pid_565e*"
+            },
+            {
+              "NAME": "usb\\vid_0bda&pid_565f*"
+            },
+            {
+              "NAME": "usb\\vid_0bda&pid_5677*"
+            }
+          ]
+        },
+        "VENDOR": "Realtek"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_21_03_01_AMD64",
+          "last": "2020_08_28_01_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_21_03_02_ARM64",
+          "last": "2020_08_28_01_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_21_03_01_X86",
+          "last": "2020_08_28_01_02_X86"
+        }
+      },
+      "source": "2020_08_28_01_02_X86"
+    }
+  },
+  "id": "26369613"
+}

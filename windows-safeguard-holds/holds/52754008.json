@@ -1,0 +1,2433 @@
+{
+  "blocks": {
+    "{14a5e9b3-977d-4aee-8de7-5b8b1e2875e2}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{14a5e9b3-977d-4aee-8de7-5b8b1e2875e2}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "2.5.0.27"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*wallpaper64.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "wallpaper64.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{14efcdaa-3638-47e1-b044-c2a677328a34}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{14efcdaa-3638-47e1-b044-c2a677328a34}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "*小米画报*",
+          "UPTO_BIN_PRODUCT_VERSION": "2.1.1.315"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*MiDesktop.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "MiDesktop.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_12_03_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_12_03_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_12_03_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{1869c32b-fc70-4bac-a97d-fec34cc169e1}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{1869c32b-fc70-4bac-a97d-fec34cc169e1}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "4.4.0.16628"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*douyin_widget.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "douyin_widget.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{1969c39e-252a-42dd-87e1-abda7b5e4dcc}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{1969c39e-252a-42dd-87e1-abda7b5e4dcc}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "iTop Easy Desktop*",
+          "UPTO_BIN_FILE_VERSION": "2.7.1.11"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*iEasyDesk.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "iEasyDesk.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2025_01_16_04_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2025_01_16_04_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2025_01_16_04_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{1c582b90-21f4-4846-b75c-fd296281fbe4}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{1c582b90-21f4-4846-b75c-fd296281fbe4}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "*WPS Office*",
+          "UPTO_BIN_PRODUCT_VERSION": "12.1.0.16387"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*wps.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "wps.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_12_03_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_12_03_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_12_03_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{1cd56ff4-1e27-4ddb-9169-6cb533dc5087}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{1cd56ff4-1e27-4ddb-9169-6cb533dc5087}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "*Tencent*",
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "3.3.1490.126"
+        },
+        "NAME": "DesktopMgr64.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_12_03_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_12_03_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_12_03_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{21cd449f-b311-44a3-89e6-67eaafeef637}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{21cd449f-b311-44a3-89e6-67eaafeef637}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "3.1.6.59"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*XZDesktop.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "XZDesktop.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_12_03_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_12_03_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_12_03_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{223bbcf0-8fb0-4db9-991c-0a130e4272ab}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{223bbcf0-8fb0-4db9-991c-0a130e4272ab}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "11.0.0.1950"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*360DesktopLite.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "360DesktopLite.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_12_03_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_12_03_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_12_03_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{2e31cd60-db8e-4985-ab44-b20dda70860e}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{2e31cd60-db8e-4985-ab44-b20dda70860e}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "5.3.0.1635"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*QnwPlayer.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "QnwPlayer.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{30dcdb7d-f48a-470a-a525-07ed05c96942}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{30dcdb7d-f48a-470a-a525-07ed05c96942}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "4.0.323.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*360huabao.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "360huabao.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{32d4a698-24e9-42aa-8279-fccf8be40cf5}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{32d4a698-24e9-42aa-8279-fccf8be40cf5}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "3.1.6.59"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*XZDesktop64.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "XZDesktop64.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_12_03_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_12_03_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_12_03_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{45c79de5-b691-4f3a-b192-f590feccf39b}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{45c79de5-b691-4f3a-b192-f590feccf39b}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "*WPS Office*",
+          "UPTO_BIN_PRODUCT_VERSION": "12.1.0.16387"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*wpsdesktop.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "wpsdesktop.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_12_03_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_12_03_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_12_03_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{46d5641b-6a17-4ce4-bd76-41504032affc}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{46d5641b-6a17-4ce4-bd76-41504032affc}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "*Tencent*",
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "3.3.1490.126"
+        },
+        "NAME": "DesktopMgr.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_12_03_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_12_03_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_12_03_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{5567579b-ccef-464f-97ba-c03329aaa64e}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{5567579b-ccef-464f-97ba-c03329aaa64e}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+            "REG_VALUE_NAME": "WallpaperAppDetectorLastRun"
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+            "REG_VALUE_DATA_SZ": "?*",
+            "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SYSTEM\\CurrentControlSet\\Control\\Nls\\Language",
+                "REG_VALUE_DATA_SZ": "0409",
+                "REG_VALUE_NAME": "InstallLanguage",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SYSTEM\\CurrentControlSet\\Control\\Nls\\Language",
+                "REG_VALUE_DATA_SZ": "0809",
+                "REG_VALUE_NAME": "InstallLanguage",
+                "REG_VALUE_TYPE": 1
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*wallpaper32.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*wallpaper64.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*360huabao.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*kwallpaper.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*kdesk64.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*HaloDesktop.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*HaloDesktop64.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*QnwPlayer.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*QMDesktopAnimation.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*DesktopDynamicLyric.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*animation_desktop_webgl.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*douyin_widget.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*DesktopPlus.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*DesktopPlus64.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*Lively.PlayerCefSharp.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*Lively Wallpaper*mpv.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExePath",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*XZDesktop.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*XZDesktop64.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*DesktopMgr.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*DesktopMgr64.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*360DesktopLite.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*360DesktopLite64.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*wpsdesktop.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*wps.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*MiDesktop.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*coodesker.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*coodesker-x64.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*wmdesktop.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*wmdesktop64.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*pushwallpaper.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*LiveWallpaper2.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*upupoo*.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*ffwallpaper.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*jlwp.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*jldesk.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*jldesk64.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*DSHost.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*Aura Wallpaper Service.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*iEasyDesk.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*IEDDW.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*WallpaperEngine*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*WPEcore.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*WallpaperAlive.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*Maker.Decode.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*VpingsCore.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*AlarmClock.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*mhRCPlayer.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*Autowall*mpv.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExePath",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*LivePaper*mpv.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExePath",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*Paperwall*mpv.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExePath",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*HaloWallPaper*web_helper.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExePath",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*SuperDesktop.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*MobilityinLife*DesktopLiveWallpaper.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExePath",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*RainWallpaper.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*DesktopHut.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+                "REG_VALUE_DATA_SZ": "*BingWallpaper.exe*",
+                "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+                "REG_VALUE_TYPE": 1
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Multiple"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_08_01_05_01_AMD64",
+          "last": "2025_09_25_02_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_08_01_05_01_ARM64",
+          "last": "2025_09_25_02_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_08_01_05_01_X86",
+          "last": "2025_09_25_02_02_X86"
+        }
+      },
+      "source": "2025_09_25_02_05_ARM64"
+    },
+    "{648ee1fa-ee08-468a-8740-ef656032ef62}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{648ee1fa-ee08-468a-8740-ef656032ef62}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "1.0.0.1145"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*DesktopPlus64.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "DesktopPlus64.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{6b1694a2-4c36-41c3-b75d-d81d678d07c6}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{6b1694a2-4c36-41c3-b75d-d81d678d07c6}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "2.5.0.27"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*wallpaper32.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "wallpaper32.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{6d7925d4-91ad-4402-9a02-768589d3565a}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{6d7925d4-91ad-4402-9a02-768589d3565a}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "*Stardock Software*",
+          "NAME": "*",
+          "PRODUCT_NAME": "*DSHost*",
+          "UPTO_BIN_PRODUCT_VERSION": "11.0.1.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*DSHost.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "DSHost.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_03_02_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_03_02_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_03_02_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{738942f6-af37-4ccd-8623-115fd1677957}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{738942f6-af37-4ccd-8623-115fd1677957}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "11.0.0.1950"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*360DesktopLite64.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "360DesktopLite64.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_12_03_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_12_03_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_12_03_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{74c5bbbc-0263-4e59-8551-d69d08ad7ba8}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{74c5bbbc-0263-4e59-8551-d69d08ad7ba8}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "1.0.0.1505"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*wmdesktop64.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "wmdesktop64.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_19_02_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_19_02_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_19_02_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{7a1cbee6-7116-49d6-a255-eaaeca023333}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{7a1cbee6-7116-49d6-a255-eaaeca023333}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "iTop Easy Desktop*",
+          "UPTO_BIN_FILE_VERSION": "2.0.0.249"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*IEDDW.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "IEDDW.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2025_01_16_04_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2025_01_16_04_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2025_01_16_04_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{7c876f47-f9e7-4af7-b85f-0b0f19e61767}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{7c876f47-f9e7-4af7-b85f-0b0f19e61767}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "2.1724.1505.326"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*HaloDesktop.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "HaloDesktop.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{82ff4a64-2407-4030-b38a-c14937873ddb}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{82ff4a64-2407-4030-b38a-c14937873ddb}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "*jldesk*",
+          "UPTO_BIN_FILE_VERSION": "2024.8.30.41"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*jldesk.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "jldesk.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_03_02_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_03_02_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_03_02_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{842a17c3-9227-455a-8030-8f415fa2288c}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{842a17c3-9227-455a-8030-8f415fa2288c}",
+        "MATCHING_FILE": {
+          "FILE_DESCRIPTION": "*PUSH Video Wallpaper*",
+          "NAME": "%ProgramFiles%\\PUSH Entertainment\\Video Wallpaper\\pushwallpaper.exe",
+          "UPTO_BIN_PRODUCT_VERSION": "5.1.39.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "?:\\Program Files\\PUSH Entertainment\\Video Wallpaper\\pushwallpaper.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExePath",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "VENDOR": "Multiple"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_19_02_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_19_02_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_19_02_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{8491f55f-0fa1-44d3-bcca-f89cfea5c58c}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{8491f55f-0fa1-44d3-bcca-f89cfea5c58c}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "*Coodesker*",
+          "UPTO_BIN_PRODUCT_VERSION": "2.1.1.3"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*coodesker.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "coodesker.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_12_03_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_12_03_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_12_03_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{9cada0bb-21c7-4d27-87cc-19645ffe1665}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{9cada0bb-21c7-4d27-87cc-19645ffe1665}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "1.0.0.147"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*animation_desktop_webgl.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "animation_desktop_webgl.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{a1e6cb32-b6a3-4d50-913f-613a0f1d6401}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{a1e6cb32-b6a3-4d50-913f-613a0f1d6401}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "2.1724.1505.326"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*HaloDesktop64.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "HaloDesktop64.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{a49c2f08-c094-4195-84ed-78e489a42c5b}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{a49c2f08-c094-4195-84ed-78e489a42c5b}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "20.36.65535.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*QMDesktopAnimation.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "QMDesktopAnimation.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{a67776e0-c484-4bba-95c1-b34512aca1ab}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{a67776e0-c484-4bba-95c1-b34512aca1ab}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_LINK_DATE": "2024-03-11T03:03:18Z"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*kdesk64.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "kdesk64.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{aa53325a-0c76-4419-99bd-8d84291a67b5}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{aa53325a-0c76-4419-99bd-8d84291a67b5}",
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*\\Users\\*\\AppData\\Local\\Programs\\PUSH Entertainment\\Video Wallpaper\\pushwallpaper.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExePath",
+          "REG_VALUE_TYPE": 1
+        },
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%SystemDrive%\\Users\\*\\AppData\\Local\\Programs\\PUSH Entertainment\\Video Wallpaper\\pushwallpaper.exe -UptoBinVersion 5.1.39.*",
+          "NAME": "FileMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Multiple"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_19_02_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_19_02_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_19_02_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{abc05136-ad30-45fb-b5c8-83f2fd71bece}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{abc05136-ad30-45fb-b5c8-83f2fd71bece}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "*飞火动态壁纸*",
+          "UPTO_BIN_PRODUCT_VERSION": "2.4.0.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*ffwallpaper.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "FFWallpaper.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_03_02_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_03_02_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_03_02_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{afdf4363-5009-42ec-adcc-db8534c1ff99}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{afdf4363-5009-42ec-adcc-db8534c1ff99}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "*jldesk*",
+          "UPTO_BIN_FILE_VERSION": "2024.8.30.41"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*jldesk64.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "jldesk64.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_03_02_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_03_02_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_03_02_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{b4706092-7572-44bc-8540-e9310c02882d}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{b4706092-7572-44bc-8540-e9310c02882d}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "ASUSTeK*",
+          "NAME": "*",
+          "PRODUCT_NAME": "Aura Wallpaper Service*",
+          "UPTO_BIN_PRODUCT_VERSION": "1.7.2.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*Aura Wallpaper Service.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "Aura Wallpaper Service.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_24_04_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_24_04_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_24_04_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{b7c6d3e9-5371-4f4f-a0d2-f98968d0ecd8}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{b7c6d3e9-5371-4f4f-a0d2-f98968d0ecd8}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "1.0.0.1505"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*wmdesktop.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "wmdesktop.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_19_02_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_19_02_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_19_02_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{c2eab80b-045c-403b-bd11-6f16f3571987}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{c2eab80b-045c-403b-bd11-6f16f3571987}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_BIN_PRODUCT_VERSION": "1.0.0.1145"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*DesktopPlus.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "DesktopPlus.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{c34f2a56-a856-45a7-9fd7-8c99a8737a74}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{c34f2a56-a856-45a7-9fd7-8c99a8737a74}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "*upupoo*",
+          "UPTO_BIN_PRODUCT_VERSION": "3.2.7.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*upupoo*.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "upupoo-main.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_03_02_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_03_02_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_03_02_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{c745a52a-b338-4dc6-9d9a-729f5a6dfe15}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{c745a52a-b338-4dc6-9d9a-729f5a6dfe15}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "*Lively*",
+          "UPTO_BIN_FILE_VERSION": "2.1.0.7"
+        },
+        "NAME": "Lively.exe",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+              "REG_VALUE_DATA_SZ": "*Lively.PlayerCefSharp.exe*",
+              "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+              "REG_VALUE_DATA_SZ": "*Lively Wallpaper*mpv.exe*",
+              "REG_VALUE_NAME": "WallpaperAppProcessExePath",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_12_03_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_12_03_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_12_03_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{d26e3d60-0df6-4f6e-a549-8c1be43ccc52}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{d26e3d60-0df6-4f6e-a549-8c1be43ccc52}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_LINK_DATE": "2024-08-08T06:28:14Z"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*DesktopDynamicLyric.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "DesktopDynamicLyric.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{d7ee8592-9093-41d4-b712-545519139e76}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{d7ee8592-9093-41d4-b712-545519139e76}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "UPTO_LINK_DATE": "2024-05-09T16:51:40Z"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*kwallpaper.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "kwallpaper.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2025_04_10_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2025_04_10_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2025_04_10_03_02_X86"
+        }
+      },
+      "source": "2025_04_10_03_05_ARM64"
+    },
+    "{ea9dbe04-fdcf-45dc-9b7c-267f4dc49fa2}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{ea9dbe04-fdcf-45dc-9b7c-267f4dc49fa2}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "*Coodesker*",
+          "UPTO_BIN_PRODUCT_VERSION": "2.1.1.3"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*coodesker-x64.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "coodesker-x64.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_12_03_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_12_03_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_12_03_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{f586b461-f964-4363-86e4-fc748a879898}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{f586b461-f964-4363-86e4-fc748a879898}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "LiveWallpaper2*",
+          "UPTO_BIN_PRODUCT_VERSION": "2.6.2.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*LiveWallpaper2.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "LiveWallpaper2.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_19_02_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_19_02_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_19_02_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{fecba58c-2331-402b-a526-59a87d6ce939}": {
+      "entry": {
+        "APP_ID": "{f37a632f-cc3a-48db-9958-e48cedf16a3d}",
+        "APP_NAME": "3rd Party Wallpaper Apps (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754008",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{fecba58c-2331-402b-a526-59a87d6ce939}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "*jlwp*",
+          "UPTO_BIN_FILE_VERSION": "2024.8.30.41"
+        },
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags",
+          "REG_VALUE_DATA_SZ": "*jlwp.exe*",
+          "REG_VALUE_NAME": "WallpaperAppProcessExeName",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "jlwp.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Multiple"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_03_02_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_03_02_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_03_02_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    }
+  },
+  "id": "52754008"
+}

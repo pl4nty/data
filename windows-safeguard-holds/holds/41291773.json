@@ -1,0 +1,391 @@
+{
+  "blocks": {
+    "{88274d20-0370-4922-b23c-6c46bcc64e62}": {
+      "entry": {
+        "APP_ID": "{e316043f-28e9-43f6-a11c-bdca450a927f}",
+        "APP_NAME": "Intel IntcOED.sys (SV2)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41291773",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "GE24H2",
+        "EXE_ID": "{88274d20-0370-4922-b23c-6c46bcc64e62}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*Acer*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Spin SP314-54N",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_FILE": [
+            {
+              "BIN_FILE_VERSION": "10.24.0.2863",
+              "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+            },
+            {
+              "BIN_FILE_VERSION": "10.24.0.3316",
+              "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+            },
+            {
+              "BIN_FILE_VERSION": "10.24.0.3488",
+              "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+            },
+            {
+              "BIN_FILE_VERSION": "10.24.0.3633",
+              "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+            },
+            {
+              "BIN_FILE_VERSION": "10.24.0.3694",
+              "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+            },
+            {
+              "BIN_FILE_VERSION": "10.24.0.3851",
+              "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+            },
+            {
+              "BIN_FILE_VERSION": "10.24.0.3950",
+              "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+            }
+          ],
+          "MATCH_PLUGIN": [
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.2863 -UptoBinVersion 10.24.0.2863",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3316 -UptoBinVersion 10.24.0.3316",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3488 -UptoBinVersion 10.24.0.3488",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3633 -UptoBinVersion 10.24.0.3633",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3694 -UptoBinVersion 10.24.0.3694",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3851 -UptoBinVersion 10.24.0.3851",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3950 -UptoBinVersion 10.24.0.3950",
+              "NAME": "FileMatchingPlugin"
+            }
+          ]
+        },
+        "SOURCE_OS_LTE": 2814751208898559,
+        "VENDOR": "Intel"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_09_13_04_01_AMD64",
+          "last": "2026_03_13_07_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_09_13_04_01_ARM64",
+          "last": "2026_03_13_07_01_ARM64"
+        },
+        "X86": {
+          "first": "2022_09_13_04_01_X86",
+          "last": "2026_01_22_03_02_X86"
+        }
+      },
+      "source": "2026_03_13_07_01_ARM64"
+    },
+    "{a205c6ee-9d25-4bff-a573-c188914fb603}": {
+      "entry": {
+        "APP_ID": "{e316043f-28e9-43f6-a11c-bdca450a927f}",
+        "APP_NAME": "Intel IntcOED.sys (SV2)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41291773",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "GE24H2",
+        "EXE_ID": "{a205c6ee-9d25-4bff-a573-c188914fb603}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "*DELL*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "G3 3500",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "G5 5500",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "G7 7500",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "inspiron 5490 aio",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "inspiron 7790 aio",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          },
+          {
+            "MATCHING_FILE": [
+              {
+                "BIN_FILE_VERSION": "10.24.0.2863",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              },
+              {
+                "BIN_FILE_VERSION": "10.24.0.3316",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              },
+              {
+                "BIN_FILE_VERSION": "10.24.0.3488",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              },
+              {
+                "BIN_FILE_VERSION": "10.24.0.3633",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              },
+              {
+                "BIN_FILE_VERSION": "10.24.0.3694",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              },
+              {
+                "BIN_FILE_VERSION": "10.24.0.3851",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              },
+              {
+                "BIN_FILE_VERSION": "10.24.0.3950",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              }
+            ],
+            "MATCH_PLUGIN": [
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.2863 -UptoBinVersion 10.24.0.2863",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3316 -UptoBinVersion 10.24.0.3316",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3488 -UptoBinVersion 10.24.0.3488",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3633 -UptoBinVersion 10.24.0.3633",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3694 -UptoBinVersion 10.24.0.3694",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3851 -UptoBinVersion 10.24.0.3851",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3950 -UptoBinVersion 10.24.0.3950",
+                "NAME": "FileMatchingPlugin"
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814751208898559,
+        "VENDOR": "Intel"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_09_13_04_01_AMD64",
+          "last": "2026_03_13_07_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_09_13_04_01_ARM64",
+          "last": "2026_03_13_07_01_ARM64"
+        },
+        "X86": {
+          "first": "2022_09_13_04_01_X86",
+          "last": "2026_01_22_03_02_X86"
+        }
+      },
+      "source": "2026_03_13_07_01_ARM64"
+    },
+    "{da1e8818-b0de-4afe-8be5-c94b890f825e}": {
+      "entry": {
+        "APP_ID": "{e316043f-28e9-43f6-a11c-bdca450a927f}",
+        "APP_NAME": "Intel IntcOED.sys (SV2)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41291773",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "GE24H2",
+        "EXE_ID": "{da1e8818-b0de-4afe-8be5-c94b890f825e}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "*HP*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "hp envy laptop 13-ba0xxx",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "hp pavilion x360 convertible 14m-dw0xxx",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          },
+          {
+            "MATCHING_FILE": [
+              {
+                "BIN_FILE_VERSION": "10.24.0.2863",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              },
+              {
+                "BIN_FILE_VERSION": "10.24.0.3316",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              },
+              {
+                "BIN_FILE_VERSION": "10.24.0.3488",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              },
+              {
+                "BIN_FILE_VERSION": "10.24.0.3633",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              },
+              {
+                "BIN_FILE_VERSION": "10.24.0.3694",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              },
+              {
+                "BIN_FILE_VERSION": "10.24.0.3851",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              },
+              {
+                "BIN_FILE_VERSION": "10.24.0.3950",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcOED.sys"
+              }
+            ],
+            "MATCH_PLUGIN": [
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.2863 -UptoBinVersion 10.24.0.2863",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3316 -UptoBinVersion 10.24.0.3316",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3488 -UptoBinVersion 10.24.0.3488",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3633 -UptoBinVersion 10.24.0.3633",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3694 -UptoBinVersion 10.24.0.3694",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3851 -UptoBinVersion 10.24.0.3851",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcOED.sys -FromBinVersion 10.24.0.3950 -UptoBinVersion 10.24.0.3950",
+                "NAME": "FileMatchingPlugin"
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814751208898559,
+        "VENDOR": "Intel"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_09_13_04_01_AMD64",
+          "last": "2026_03_13_07_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_09_13_04_01_ARM64",
+          "last": "2026_03_13_07_01_ARM64"
+        },
+        "X86": {
+          "first": "2022_09_13_04_01_X86",
+          "last": "2026_01_22_03_02_X86"
+        }
+      },
+      "source": "2026_03_13_07_01_ARM64"
+    }
+  },
+  "id": "41291773"
+}

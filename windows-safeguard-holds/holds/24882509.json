@@ -1,0 +1,49 @@
+{
+  "blocks": {
+    "{6b160b08-3b01-4307-ae27-9ed1153367c1}": {
+      "entry": {
+        "APP_ID": "{f672d69f-6376-4d7b-86f3-42f68552aa9f}",
+        "APP_NAME": "Red Dead Redemption 2",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "24882509",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{6b160b08-3b01-4307-ae27-9ed1153367c1}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Rockstar Games",
+          "NAME": "*",
+          "PRODUCT_NAME": "Red Dead Redemption 2"
+        },
+        "NAME": "RDR2.exe",
+        "VENDOR": "Rockstar Games"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2020_02_20_06_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_02_20_06_05_ARM64",
+          "last": "2020_08_06_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_02_20_06_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    }
+  },
+  "id": "24882509"
+}

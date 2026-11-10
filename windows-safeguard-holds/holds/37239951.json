@@ -1,0 +1,64 @@
+{
+  "blocks": {
+    "{396eec68-4036-4984-b622-8215694c1a87}": {
+      "entry": {
+        "APP_ID": "{84276596-738c-4aa8-bb6d-2410aad462e1}",
+        "APP_NAME": "Huawei HookD",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "37239951",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "CU22H2",
+        "EXE_ID": "{396eec68-4036-4984-b622-8215694c1a87}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "HUAWEI",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "MateBook",
+            "REG_VALUE_NAME": "SystemFamily",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "HKD-WXX",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "Huawei"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_12_09_11_01_AMD64",
+          "last": "2021_12_16_03_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_12_09_11_01_ARM64",
+          "last": "2021_12_16_03_02_ARM64"
+        },
+        "X86": {
+          "first": "2021_12_09_11_01_X86",
+          "last": "2021_12_16_03_02_X86"
+        }
+      },
+      "source": "2021_12_16_03_02_X86"
+    }
+  },
+  "id": "37239951"
+}

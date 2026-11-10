@@ -1,0 +1,74 @@
+{
+  "blocks": {
+    "{42fe87bc-8de2-44e8-898c-c579ee2f819f}": {
+      "entry": {
+        "APP_ID": "{9d573ed9-d9fb-45c2-96d8-f1a09c0dbb5e}",
+        "APP_NAME": "Lenovo FCCL FJNBB68 (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "36637098",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "CU22H2",
+        "EXE_ID": "{42fe87bc-8de2-44e8-898c-c579ee2f819f}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*FUJITSU*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "FJNBB68",
+            "REG_VALUE_NAME": "BaseBoardProduct",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "Version 1.09",
+              "REG_VALUE_NAME": "BIOSVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "Version 1.11",
+              "REG_VALUE_NAME": "BIOSVersion",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "VENDOR": "Lenovo FCCL"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_10_07_04_01_AMD64",
+          "last": "2022_01_27_03_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_10_07_04_01_ARM64",
+          "last": "2022_01_27_03_01_ARM64"
+        },
+        "X86": {
+          "first": "2021_10_07_04_01_X86",
+          "last": "2022_01_27_03_01_X86"
+        }
+      },
+      "source": "2022_01_27_03_01_X86"
+    }
+  },
+  "id": "36637098"
+}

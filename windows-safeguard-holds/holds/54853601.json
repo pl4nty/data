@@ -1,0 +1,64 @@
+{
+  "blocks": {
+    "{77b4ac2c-3c6f-49b8-a80a-432dc96cb1d1}": {
+      "entry": {
+        "APP_ID": "{7a862e88-6bbe-481f-a883-7f688cdae2f6}",
+        "APP_NAME": "Corrupted desktop in HDR/ACM mode",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54853601",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{77b4ac2c-3c6f-49b8-a80a-432dc96cb1d1}",
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "\n                    function Test-DeviceRunningKnownBadDriver {\n                        param ( $intelDisplayAdapters )\n\n                        Write-Host 'Test-DeviceRunningKnownBadDriver called'\n\n                        # List of Tiger Lake hardware ids.\n                        $tigerLakeHardwareIds = [System.Collections.Generic.HashSet[string]]::new([string[]]@('pci\\ven_8086&dev_9a49','pci\\ven_8086&dev_9a68','pci\\ven_8086&dev_9a60','pci\\ven_8086&dev_9ac9','pci\\ven_8086&dev_9a59','pci\\ven_8086&dev_9af8','pci\\ven_8086&dev_9a78','pci\\ven_8086&dev_9a70','pci\\ven_8086&dev_9ac0','pci\\ven_8086&dev_9ad9','pci\\ven_8086&dev_9a40'));\n\n                        $driverVersionMatch = $false;\n                        $chipsetSeriesMatch = $false;\n\n                        # Now get the first two parts of the Instance Id and match it against the known list of TGL HWIDs.\n                        $intelDisplayAdapters | ForEach-Object {\n                            if($_.InstanceId -ne $null) {\n                                $parts = $_.InstanceId.ToLower() -split '&';\n                                if($parts.Length -ge 2) {\n                                    $combined = $parts[0] + '&' + $parts[1];\n                                    $chipsetSeriesMatch = $chipsetSeriesMatch -or $tigerLakeHardwareIds.Contains($combined);\n                                }\n                            }\n                        }\n\n                        # Proceed to driver version check if Chipset series matches.\n                        if($chipsetSeriesMatch -eq $true) { \n                            # For each Intel GPU, get the driver version installed.\n                            $driverVersionsInstalled = $intelDisplayAdapters | ForEach-Object {\n                                if ($_.InstanceId -ne $null) {\n                                    Get-PnpDeviceProperty -InstanceId $_.InstanceId -KeyName DEVPKEY_Device_DriverVersion | Select-Object Data\n                                }\n                            };\n\n                            # If we couldn't get the driver version, return false.\n                            if($driverVersionsInstalled -eq $null -or $driverVersionsInstalled.Data -eq $null) { return 0; }\n\n                            $driverVersionsInstalled | ForEach-Object {\n                                if($_.Data -eq '32.0.101.5972' -or $_.Data -eq '32.0.101.6078') {\n                                    $driverVersionMatch = $true;\n                                } \n                            }\n\n                            if($driverVersionMatch -eq $true) { return 1; } else { return 0; }\n                        }\n\n                        # Default to no match.\n                        return 0;\n                    }\n\n                    function Test-DeviceIsAtRiskOfReceivingKnownBadDriver {\n                        param ( $intelDisplayAdapters )\n\n                        Write-Host 'Test-DeviceIsAtRiskOfReceivingKnownBadDriver called'\n\n                        # Known list of impacted Intel hardware ids.\n                        $targetHardwareIds = [System.Collections.Generic.HashSet[string]]::new([string[]]@('pci\\ven_8086dev_9a49&subsys_00601414'));\n\n                        # Define the flags.\n                        $hardwareIDMatch = $false;\n\n                        # For each Intel GPU, get the associated matching device Id.\n                        $matchingDeviceIds = $intelDisplayAdapters | ForEach-Object {Get-PnpDeviceProperty -InstanceId $_.InstanceId -KeyName DEVPKEY_Device_MatchingDeviceId | Select-Object Data}; \n\n                        # Terminate if we can not obtain matching device id PnP property.\n                        if($matchingDeviceIds -eq $null -or $matchingDeviceIds.Data -eq $null) { return 0; }\n\n                        # For each matching device Id, check to see if it matches with any item in our known bad HWID list.\n                        $matchingDeviceIds.Data | ForEach-Object { $hardwareIDMatch = $hardwareIDMatch -or $targetHardwareIds.Contains($_.ToLower()) } | Out-Null; \n\n                        if ($hardwareIDMatch) { return 1; }\n\n                        # Default to no match.\n                        return 0;\n                    }\n\n                    $Match = 0\n\n                    # Get all Intel Display Adapters available on the device\n                    $intelDisplayAdapters = Get-PnpDevice | Where-Object { $_.Class -eq 'Display' -and $_.InstanceId -match 'PCI\\\\VEN_8086&*' };\n\n                    if ($intelDisplayAdapters) {\n                        $Match = Test-DeviceRunningKnownBadDriver -intelDisplayAdapters $intelDisplayAdapters\n                        if ($Match -eq 0) {\n                            $Match = Test-DeviceIsAtRiskOfReceivingKnownBadDriver -intelDisplayAdapters $intelDisplayAdapters\n                        }\n                    }\n\n                    Write-Host 'Final result:', $Match\n                ",
+          "NAME": "PowerShellMatchingPlugin"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers\\FeatureSetUsage",
+              "REG_VALUE_DATA_DWORD": 1,
+              "REG_VALUE_NAME": "DisplayHDR",
+              "REG_VALUE_TYPE": 4
+            },
+            {
+              "NAME": "SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers\\FeatureSetUsage",
+              "REG_VALUE_DATA_DWORD": 1,
+              "REG_VALUE_NAME": "DisplayWCG",
+              "REG_VALUE_TYPE": 4
+            }
+          ]
+        },
+        "VENDOR": "Intel"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_11_14_03_01_AMD64",
+          "last": "2025_07_31_12_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_11_14_03_01_ARM64",
+          "last": "2025_07_31_12_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_11_14_03_01_X86",
+          "last": "2025_07_31_12_02_X86"
+        }
+      },
+      "source": "2025_07_31_12_05_ARM64"
+    }
+  },
+  "id": "54853601"
+}

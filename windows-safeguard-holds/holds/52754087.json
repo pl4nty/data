@@ -1,0 +1,48 @@
+{
+  "blocks": {
+    "{e6deef1d-94ab-4706-b0dd-c4123dcc8018}": {
+      "entry": {
+        "APP_ID": "{755b6478-c326-40a2-ba3b-246d2bd68d77}",
+        "APP_NAME": "Uma Musume",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52754087",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{e6deef1d-94ab-4706-b0dd-c4123dcc8018}",
+        "MATCHING_FILE": {
+          "NAME": "*"
+        },
+        "NAME": "umamusume.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Cygames, Inc."
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_05_04_01_AMD64",
+          "last": "2024_10_03_02_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_05_04_01_ARM64",
+          "last": "2024_10_03_02_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_05_04_01_X86",
+          "last": "2024_10_03_02_02_X86"
+        }
+      },
+      "source": "2024_10_03_02_05_ARM64"
+    }
+  },
+  "id": "52754087"
+}

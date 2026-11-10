@@ -1,0 +1,66 @@
+{
+  "blocks": {
+    "{d6b5bc34-c434-4ff0-bb67-fada2ee37db2}": {
+      "entry": {
+        "APP_ID": "{f94bb5cf-f554-485a-abe1-22e910d61e40}",
+        "APP_NAME": "HONOR devices with Nahimic Audio",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41298788",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{d6b5bc34-c434-4ff0-bb67-fada2ee37db2}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "HONOR",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "HGF-WX6",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "HGF-WX6-V",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "VENDOR": "HONOR"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_09_22_04_01_AMD64",
+          "last": "2022_12_14_03_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_09_22_04_01_ARM64",
+          "last": "2022_12_14_03_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_09_22_04_01_X86",
+          "last": "2022_12_14_03_01_X86"
+        }
+      },
+      "source": "2022_12_14_03_02_ARM64"
+    }
+  },
+  "id": "41298788"
+}

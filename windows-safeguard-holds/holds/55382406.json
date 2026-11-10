@@ -1,0 +1,48 @@
+{
+  "blocks": {
+    "{df4bd396-5a9a-4a9d-b218-9b7008ddf170}": {
+      "entry": {
+        "APP_ID": "{c3e572d3-6e2e-436a-b378-e18b44716c56}",
+        "APP_NAME": "AutoHDR",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "55382406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{df4bd396-5a9a-4a9d-b218-9b7008ddf170}",
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "HKEY_USERS\\*\\Software\\Microsoft\\DirectX\\UserGpuPreferences ValueSearch DirectXUserGlobalSettings eq *AutoHDREnable=1* REG_SZ",
+          "NAME": "RegistryMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_12_11_03_01_AMD64",
+          "last": "2025_02_06_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_12_11_03_01_ARM64",
+          "last": "2025_02_06_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_12_11_03_01_X86",
+          "last": "2025_02_06_03_02_X86"
+        }
+      },
+      "source": "2025_02_06_03_05_ARM64"
+    }
+  },
+  "id": "55382406"
+}

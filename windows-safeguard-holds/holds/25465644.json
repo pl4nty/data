@@ -1,0 +1,847 @@
+{
+  "blocks": {
+    "{04057e0d-64aa-4ffa-bc99-3b9d11434b1c}": {
+      "entry": {
+        "APP_ID": "{0d2a2d3d-df30-48c5-9fec-2d3ce4838b36}",
+        "APP_NAME": "HP PCs with AMD CPUs (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25465644",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H2",
+        "EXE_ID": "{04057e0d-64aa-4ffa-bc99-3b9d11434b1c}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "HP",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "MATCH_PLUGIN": [
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"*/*/2020\" REG_SZ",
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"03/11/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"03/12/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"03/13/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"03/14/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"03/15/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"03/16/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"03/17/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"03/18/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"03/19/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"03/2*/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"03/3*/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"04/*/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"05/*/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"06/*/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"07/*/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"08/*/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"09/*/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"1*/*/2020\" REG_SZ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83E7",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8460",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8461",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83E8",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8462",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8463",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83E9",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8464",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8617",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8618",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8619",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8584",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8589",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8620",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83D5",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83DA",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83DD",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8401",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8730",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "876B",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Hewlett-Packard"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_12_06_01_AMD64",
+          "last": "2021_01_28_04_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_12_06_02_ARM64",
+          "last": "2021_01_28_04_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_12_06_01_X86",
+          "last": "2021_01_28_04_03_X86"
+        }
+      },
+      "source": "2021_01_28_04_03_X86"
+    },
+    "{48bd3658-411d-422a-b841-07bbfcd4ab07}": {
+      "entry": {
+        "APP_ID": "{0d2a2d3d-df30-48c5-9fec-2d3ce4838b36}",
+        "APP_NAME": "HP PCs with AMD CPUs (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25465644",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H2",
+        "EXE_ID": "{48bd3658-411d-422a-b841-07bbfcd4ab07}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "HP",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"*/*/2018\" REG_SZ",
+          "NAME": "RegistryMatchingPlugin"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83E7",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8460",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8461",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83E8",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8462",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8463",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83E9",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8464",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8617",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8618",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8619",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8584",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8589",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8620",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83D5",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83DA",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83DD",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8401",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8730",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "876B",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Hewlett-Packard"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_12_06_01_AMD64",
+          "last": "2021_01_28_04_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_12_06_02_ARM64",
+          "last": "2021_01_28_04_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_12_06_01_X86",
+          "last": "2021_01_28_04_03_X86"
+        }
+      },
+      "source": "2021_01_28_04_03_X86"
+    },
+    "{55a1db6a-4dcf-4573-8309-8fd35c934654}": {
+      "entry": {
+        "APP_ID": "{0d2a2d3d-df30-48c5-9fec-2d3ce4838b36}",
+        "APP_NAME": "HP PCs with AMD CPUs (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25465644",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H2",
+        "EXE_ID": "{55a1db6a-4dcf-4573-8309-8fd35c934654}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "HP",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"*/*/2017\" REG_SZ",
+          "NAME": "RegistryMatchingPlugin"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83E7",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8460",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8461",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83E8",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8462",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8463",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83E9",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8464",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8617",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8618",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8619",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8584",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8589",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8620",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83D5",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83DA",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83DD",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8401",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8730",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "876B",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Hewlett-Packard"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_12_06_01_AMD64",
+          "last": "2021_01_28_04_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_12_06_02_ARM64",
+          "last": "2021_01_28_04_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_12_06_01_X86",
+          "last": "2021_01_28_04_03_X86"
+        }
+      },
+      "source": "2021_01_28_04_03_X86"
+    },
+    "{b8fcb174-2c8f-4e36-a20b-0d86e626f18f}": {
+      "entry": {
+        "APP_ID": "{0d2a2d3d-df30-48c5-9fec-2d3ce4838b36}",
+        "APP_NAME": "HP PCs with AMD CPUs (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25465644",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{b8fcb174-2c8f-4e36-a20b-0d86e626f18f}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "FUJITSU",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "FJNBB38",
+            "REG_VALUE_NAME": "BaseBoardProduct",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Hewlett-Packard"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_06_11_05_01_AMD64",
+          "last": "2021_06_09_02_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_06_11_05_02_ARM64",
+          "last": "2021_06_09_02_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_06_11_05_01_X86",
+          "last": "2021_06_09_02_02_X86"
+        }
+      },
+      "source": "2021_06_09_02_02_X86"
+    },
+    "{fa218b0e-ba52-4fa0-bbb1-383e72229448}": {
+      "entry": {
+        "APP_ID": "{0d2a2d3d-df30-48c5-9fec-2d3ce4838b36}",
+        "APP_NAME": "HP PCs with AMD CPUs (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25465644",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H2",
+        "EXE_ID": "{fa218b0e-ba52-4fa0-bbb1-383e72229448}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "HP",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "HKEY_LOCAL_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS ValueSearch BIOSReleaseDate eq \"*/*/2019\" REG_SZ",
+          "NAME": "RegistryMatchingPlugin"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83E7",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8460",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8461",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83E8",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8462",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8463",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83E9",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8464",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8617",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8618",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8619",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8584",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8589",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8620",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83D5",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83DA",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "83DD",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8401",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "8730",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "876B",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Hewlett-Packard"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_12_06_01_AMD64",
+          "last": "2021_01_28_04_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_12_06_02_ARM64",
+          "last": "2021_01_28_04_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_12_06_01_X86",
+          "last": "2021_01_28_04_03_X86"
+        }
+      },
+      "source": "2021_01_28_04_03_X86"
+    }
+  },
+  "id": "25465644"
+}

@@ -1,0 +1,58 @@
+{
+  "blocks": {
+    "{a989e242-a5b2-4770-ad09-d3dcf526d5a5}": {
+      "entry": {
+        "APP_ID": "{d4c48093-bfa3-4071-8a38-e5a1a4429e93}",
+        "APP_NAME": "Samsung Lakefield - 767XCL (2)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29484172",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{a989e242-a5b2-4770-ad09-d3dcf526d5a5}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "SAMSUNG*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "767XCL",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "Samsung"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_09_25_01_01_AMD64",
+          "last": "2020_10_01_04_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_09_25_01_02_ARM64",
+          "last": "2020_10_01_04_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_09_25_01_01_X86",
+          "last": "2020_10_01_04_03_X86"
+        }
+      },
+      "source": "2020_10_01_04_03_X86"
+    }
+  },
+  "id": "29484172"
+}

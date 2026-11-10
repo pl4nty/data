@@ -1,0 +1,58 @@
+{
+  "blocks": {
+    "{16b2e723-b1b4-47b6-8cbb-55248209e125}": {
+      "entry": {
+        "APP_ID": "{fc325af5-41f8-4eb8-8831-380bb92487ba}",
+        "APP_NAME": "HP Elite Folio (Mustang)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "35892283",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "CU22H2",
+        "EXE_ID": "{16b2e723-b1b4-47b6-8cbb-55248209e125}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "HP",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "87CD",
+            "REG_VALUE_NAME": "BaseBoardProduct",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "HP"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_09_16_05_01_AMD64",
+          "last": "2022_01_13_02_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_09_16_05_01_ARM64",
+          "last": "2022_01_13_02_01_ARM64"
+        },
+        "X86": {
+          "first": "2021_09_16_05_01_X86",
+          "last": "2022_01_13_02_01_X86"
+        }
+      },
+      "source": "2022_01_13_02_01_X86"
+    }
+  },
+  "id": "35892283"
+}
