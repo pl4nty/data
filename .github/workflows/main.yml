@@ -5,6 +5,10 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      cmd:
+        description: Run only this script (default runs all)
+        required: false
   schedule:
     - cron: '0 */6 * * *'
 
@@ -28,30 +32,37 @@ jobs:
           - windows_safeguard_holds.py
     steps:
       - uses: actions/checkout@v4
+        if: ${{ !inputs.cmd || inputs.cmd == matrix.cmd }}
       - uses: actions/setup-python@v5.4.0
+        if: ${{ !inputs.cmd || inputs.cmd == matrix.cmd }}
         with:
           python-version: 3.x
           cache: pip
       # azure-identity doesn't support GitHub WIF
       - uses: azure/login@v2.2.0
+        if: ${{ !inputs.cmd || inputs.cmd == matrix.cmd }}
         with:
           tenant-id: ${{ vars.AZURE_TENANT_ID }}
           client-id: ${{ vars.AZURE_CLIENT_ID }}
           allow-no-subscriptions: true
       - run: pip install -r requirements.txt
+        if: ${{ !inputs.cmd || inputs.cmd == matrix.cmd }}
 
       - run: python -u ${{ matrix.cmd }}
+        if: ${{ !inputs.cmd || inputs.cmd == matrix.cmd }}
         env:
           AZURE_STORAGE_IN: ${{ secrets.AZURE_STORAGE_IN }}
           AZURE_STORAGE_OUT: ${{ secrets.AZURE_STORAGE_OUT }}
 
       - uses: EndBug/add-and-commit@v9.1.4
+        if: ${{ !inputs.cmd || inputs.cmd == matrix.cmd }}
         with:
           default_author: github_actions
           message: "data(${{ matrix.cmd }}): change detected"
           pull: "--rebase --autostash"
 
   windows:
+    if: ${{ !inputs.cmd || endsWith(inputs.cmd, '.ps1') }}
     runs-on: windows-latest
     permissions:
       contents: write
