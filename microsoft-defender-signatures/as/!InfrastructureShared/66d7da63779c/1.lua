@@ -13,6 +13,10 @@ if pcall(mp.GetParentProcInfo) and mp.GetParentProcInfo ~= nil then
   if (string.find)(((string.lower)(l_0_3)):match("([^\\]+)$"), "fusioninventory-agent_windows", 1, true) or (string.find)(((string.lower)(l_0_3)):match("([^\\]+)$"), "ledkeeper2.exe", 1, true) or (string.find)(((string.lower)(l_0_3)):match("([^\\]+)$"), "deviceconfiguratorsetup.exe", 1, true) or (string.find)(((string.lower)(l_0_3)):match("([^\\]+)$"), "remote access.exe", 1, true) or (string.find)(((string.lower)(l_0_3)):match("([^\\]+)$"), "tailscaled.exe", 1, true) or (string.find)(((string.lower)(l_0_3)):match("([^\\]+)$"), "dsc5x", 1, true) or (string.find)(((string.lower)(l_0_3)):match("([^\\]+)$"), "dsc-5", 1, true) or (string.find)(((string.lower)(l_0_3)):match("([^\\]+)$"), "steamapps\\\\common\\\\delta force\\\\launcher\\\\service", 1, true) or (string.find)(((string.lower)(l_0_3)):match("([^\\]+)$"), "aemagent.exe", 1, true) or (string.find)(((string.lower)(l_0_3)):match("([^\\]+)$"), "papercut-hive-ca-", 1, true) or (string.find)(((string.lower)(l_0_3)):match("([^\\]+)$"), "skype.exe", 1, true) and (string.find)((string.lower)(l_0_3), ":\\program files", 1, true) then
     return mp.CLEAN
   end
+  local l_0_6 = nil
+  if IsProcNameInParentProcessTree("cmdhstr", {"besclient.exe"}) then
+    return mp.CLEAN
+  end
   if l_0_2 ~= nil and l_0_3 ~= nil then
     TrackPidAndTechnique(l_0_2, "T1562.004", "disablefirewall")
     if IsDetectionThresholdMet(l_0_2) then
