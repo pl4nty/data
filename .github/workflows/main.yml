@@ -25,6 +25,7 @@ jobs:
           - microsoft_3rdpartysource.py
           - microsoft_download_center.py
           - uupdump.py
+          - windows_safeguard_holds.py
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5.4.0
