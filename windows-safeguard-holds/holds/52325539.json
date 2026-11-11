@@ -25,16 +25,16 @@
             "MATCHING_FILE": [
               {
                 "COMPANY_NAME": "EasyAntiCheat*",
+                "FROM_LINK_DATE": "2023-03-20T00:00:00Z",
                 "NAME": "%ProgramFiles%\\EasyAntiCheat_EOS\\EasyAntiCheat_EOS.sys",
                 "PRODUCT_NAME": "Easy Anti-Cheat*",
-                "TAG_4033": 1679270400,
                 "UPTO_LINK_DATE": "2024-04-12T23:59:59Z"
               },
               {
                 "COMPANY_NAME": "EasyAntiCheat*",
+                "FROM_LINK_DATE": "2023-03-20T00:00:00Z",
                 "NAME": "%ProgramFiles(X86)%\\EasyAntiCheat_EOS\\EasyAntiCheat_EOS.sys",
                 "PRODUCT_NAME": "Easy Anti-Cheat*",
-                "TAG_4033": 1679270400,
                 "UPTO_LINK_DATE": "2024-04-12T23:59:59Z"
               }
             ]

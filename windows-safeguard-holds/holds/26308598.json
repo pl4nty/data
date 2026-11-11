@@ -22,13 +22,13 @@
         "PICK_ONE": {
           "MATCHING_FILE": [
             {
+              "FROM_BIN_FILE_VERSION": "6.70.0.1000",
               "NAME": "%windir%\\system32\\drivers\\tmevtmgr.sys",
-              "TAG_5013": 1689150507975656,
               "UPTO_BIN_FILE_VERSION": "6.70.0.1120"
             },
             {
+              "FROM_BIN_FILE_VERSION": "7.0.0.1000",
               "NAME": "%windir%\\system32\\drivers\\tmevtmgr.sys",
-              "TAG_5013": 1970324836975592,
               "UPTO_BIN_FILE_VERSION": "7.0.0.1175"
             }
           ]

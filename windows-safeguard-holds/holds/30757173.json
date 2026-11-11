@@ -24,7 +24,7 @@
           "FILE_DESCRIPTION": "Synaptics Fingeprint Sensor Driver*",
           "NAME": "%SystemRoot%\\System32\\drivers\\UMDF\\synaWudfBioUsb110.dll",
           "PRODUCT_NAME": "Fingerprint Sensor Software Suite*",
-          "TAG_6011": "6.0.24.1110"
+          "PRODUCT_VERSION": "6.0.24.1110"
         },
         "MATCHING_REG": {
           "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
