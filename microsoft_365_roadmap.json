@@ -1,5 +1,939 @@
 [
     {
+        "created": "2026-11-11T01:20:59",
+        "description": "<p>Available for core and integrated.<br>\nCurrently, project invoices include transactions based on the invoice date, which can make it difficult to prepare invoices in advance when additional transactions are expected before the end of the billing period.</p>\n<p>With this feature, you can use the Accounting date as the transaction cutoff date for an invoice. When the Accounting date is later than the invoice date, you can include eligible future-dated transactions through the Accounting date on the invoice.</p>\n<p>This capability helps billing teams prepare invoices ahead of time while ensuring that transactions through the intended billing cutoff date can be included. The Accounting date also determines the accounting period in which the resulting billed transactions are recorded.</p>",
+        "id": 577876,
+        "locale": null,
+        "modified": "2026-11-11T01:20:59",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Optimize Project Operations - Allow to invoice future-dated transactions"
+    },
+    {
+        "created": "2026-11-11T00:56:01",
+        "description": "<p>Microsoft Edge for Business is expanding its existing Data Loss Prevention Enterprise Connector capabilities. Administrators will be able to configure more consistent enforcement across download, upload, paste, and print workflows. Additional controls include required bypass justification and administrator-defined guidance.</p>",
+        "id": 579894,
+        "locale": null,
+        "modified": "2026-11-11T00:56:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Expanded enforcement controls for Data Loss Prevention connectors"
+    },
+    {
+        "created": "2026-11-11T00:56:01",
+        "description": "<p>Teams administrators can use meeting policies to control who can start recording and transcription, helping organizations apply consistent meeting settings. Administrators can restrict these permissions to organizers and co-organizers or extend them to presenters. They can also determine whether meeting organizers can modify these settings or whether they are enforced by policy.</p>",
+        "id": 579860,
+        "locale": null,
+        "modified": "2026-11-11T00:56:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Tenant policy controls who can record and transcribe"
+    },
+    {
+        "created": "2026-11-11T00:56:01",
+        "description": "<p>Calling representative and Supervisor leads can view real-time call queue metrics directly from the Queues app on Mobile, giving them greater visibility into current queue activity and performance while on the go. Users can quickly understand the state of their queues, monitor key operational metrics, and make more informed decisions about their availability and queue participation without needing to switch to desktop.</p>",
+        "id": 579859,
+        "locale": null,
+        "modified": "2026-11-11T00:56:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Real-time queue metrics in the Queues app on Mobile"
+    },
+    {
+        "created": "2026-11-11T00:56:01",
+        "description": "<p>You'll be able to see how much storage your recoverable items are using in Outlook. This gives you a clearer picture of your storage usage before you reach a limit. You can use this information to make more informed decisions about managing your mailbox. #newoutlookforwindows</p>",
+        "id": 579190,
+        "locale": null,
+        "modified": "2026-11-11T00:56:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: More visibility into usage for recoverable items storage"
+    },
+    {
+        "created": "2026-11-11T00:56:01",
+        "description": "<p>You'll be able to expand or collapse all accounts at once in Outlook's folder pane. You won't need to expand or collapse each account individually. This makes it easier to navigate multiple accounts or keep your folder pane compact. #newoutlookforwindows</p>",
+        "id": 579189,
+        "locale": null,
+        "modified": "2026-11-11T00:56:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Expand or collapse all accounts at once"
+    },
+    {
+        "created": "2026-11-11T00:56:01",
+        "description": "<p>Outlook will remember whether your online archive is expanded or collapsed when you return. Outlook on the web and the new Outlook for Windows will each keep their own saved state. This saves you from repeatedly expanding or collapsing your archive as you navigate your mailbox. #newoutlookforwindows</p>",
+        "id": 579188,
+        "locale": null,
+        "modified": "2026-11-11T00:56:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Remember your online archive folder pane state"
+    },
+    {
+        "created": "2026-11-11T00:56:01",
+        "description": "<p>Outlook will remember which folders and shared mailboxes you have expanded or collapsed when you restart the app. You can pick up where you left off without opening the same folder branches again. This makes returning to your usual folders easier. #newoutlookforwindows</p>",
+        "id": 579187,
+        "locale": null,
+        "modified": "2026-11-11T00:56:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Keep folders expanded when you restart Outlook"
+    },
+    {
+        "created": "2026-11-11T00:56:01",
+        "description": "<p>You'll be able to sort a folder's subfolders alphabetically from the parent folder. This makes it easier to find the folder you need without rearranging subfolders one by one. It's a simple way to keep long folder lists organized. #newoutlookforwindows</p>",
+        "id": 579186,
+        "locale": null,
+        "modified": "2026-11-11T00:56:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Sort your subfolders from A to Z"
+    },
+    {
+        "created": "2026-11-11T00:56:01",
+        "description": "<p>Folder sharing in Outlook will respect your organization's restrictions for Default and Anonymous permissions. When these restrictions are enabled, you won't be able to change either setting. Permissions granted directly to individual users will remain unaffected. This helps keep folder sharing aligned with your organization's policies. #newoutlookforwindows</p>",
+        "id": 579185,
+        "locale": null,
+        "modified": "2026-11-11T00:56:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Keep folder sharing within your organization's policies"
+    },
+    {
+        "created": "2026-11-11T00:56:01",
+        "description": "<p>The quality evaluation historical dashboard provides aggregated insights from completed evaluations, helping organizations track quality trends over time. Users can view quality scores and trends across selected date ranges, with up to two years of historical data available.</p>",
+        "id": 577895,
+        "locale": null,
+        "modified": "2026-11-11T00:56:01",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/quality-evaluation-historical-analytics",
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: Quality Evaluation Agent - Review historical quality metrics in a unified dashboard"
+    },
+    {
+        "created": "2026-11-11T00:56:01",
+        "description": "<p>This enhancement introduces column-based security filtering, enabling records to be secured using attribute values rather than traditional ownership. This allows security admins to define access based on business dimensions such as region or department, making it ideal for scenarios where record ownership does not exist\u2014such as reporting and aggregated datasets. By eliminating the need for artificial ownership or complex sharing models, this approach simplifies security administration, improves scalability, and aligns Dataverse access control more closely with enterprise data governance practices.</p>",
+        "id": 577860,
+        "locale": null,
+        "modified": "2026-11-11T00:56:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Power Platform governance and administration"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Power Platform governance and administration"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Power Platform governance and administration: Secure Dataverse record with column-based filtering"
+    },
+    {
+        "created": "2026-11-11T00:56:01",
+        "description": "<p><strong>Applies to</strong>: Point of Sale (Store Commerce app and web), Commerce headquarters receipt format designer, Hardware Station, and Commerce Scale Unit.</p>\n<p>The modern receipt designer introduces a React-based designer in headquarters at <strong>Retail and Commerce &gt; Channel setup &gt; POS setup &gt; POS &gt; Receipt formats &gt; Designer</strong>. Users can author receipts in the browser with live preview, without installing the legacy desktop designer host. The legacy designer remains available for existing formats.</p>\n<p>The feature adds a new receipt schema in <strong>RetailFormLayout</strong>, syncs it to the channel database, and uses <strong>ReceiptService v2</strong> to return structured, platform-agnostic receipt data. Store Commerce, Hardware Station, and print components consume the same payload. A4 layouts use structured-to-platform conversion, while thermal layouts continue through OPOS, network printer, and Windows printer paths with compatible public print APIs.</p>\n<p>A single receipt format can target both A4 and thermal printers, enabling B2B and trade-counter invoice printing from POS. The designer also supports strikethrough pricing, reprint indicators with date/time, EFT/card details in the main receipt flow, and custom fields.</p>\n<p>Enable the feature flag to save new formats in the new schema and show the modern designer. Existing formats, Hardware Station extensions, and print integrations continue working when it is off. Admins enable the flag, author or migrate formats, and run the standard Commerce distribution job.</p>",
+        "id": 573703,
+        "locale": null,
+        "modified": "2026-11-11T00:56:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Design receipts using a modern, web-based designer in headquarters and print them on A4 paper or thermal printers from Store Commerce, supporting B2B scenarios"
+    },
+    {
+        "created": "2026-11-11T00:56:01",
+        "description": "<p>Streamline self-billing by automatically creating, managing, and exchanging electronic documents for self-billed invoices as part of the invoice lifecycle. This reduces manual document handling while helping ensure self-billed transactions include the appropriate electronic documents in standardized formats used by local regulations and trading partners.</p>\n<p>Benefits<br>\n\u2022\tAutomate electronic document generation and handling for self-billed invoices.<br>\n\u2022\tIntegrate electronic documents directly into the self-billing invoice lifecycle.<br>\n\u2022\tSupport consistent vendor communications and the use of standardized electronic document formats.</p>",
+        "id": 573612,
+        "locale": null,
+        "modified": "2026-11-11T00:56:01",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: E-Documents - Self-billing enablement"
+    },
+    {
+        "created": "2026-11-11T00:53:34",
+        "description": "<p>Users can access Business Applications through Work IQ in Copilot Cowork and use Business Skills to complete end-to-end business processes grounded in their enterprise data and apps. This helps users move from finding the right business application to taking action across key workflows with less context switching.</p>",
+        "id": 573293,
+        "locale": null,
+        "modified": "2026-11-11T00:53:34",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Microsoft Dataverse"
+            },
+            {
+                "tagName": "Work IQ"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Microsoft Dataverse"
+                },
+                {
+                    "tagName": "Work IQ"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Copilot Cowork: Access Business Applications with Work IQ"
+    },
+    {
+        "created": "2026-11-11T00:53:34",
+        "description": "<p>Business skills are natural-language instructions that capture how your organization gets work done. They represent your business processes, policies, and domain knowledge in a format that agents can understand and follow. Each skill describes how to complete a specific type of work\u2014the steps involved, the information required, and the business rules that apply.</p>\n<p>Agents discover and use the business skills they have access to as needed at runtime using Work IQ MCP to complete tasks according to your organization's processes. When multiple agents use the same skill, they follow the same process, ensuring consistent behavior across your organization.</p>",
+        "id": 573290,
+        "locale": null,
+        "modified": "2026-11-11T00:53:34",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-business-skill-overview",
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "September CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Microsoft Dataverse"
+            },
+            {
+                "tagName": "Work IQ"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Microsoft Dataverse"
+                },
+                {
+                    "tagName": "Work IQ"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Work IQ: Business Skills to manage your business processes in Work IQ MCP"
+    },
+    {
         "created": "2026-11-06T23:04:41",
         "description": "<p>Customers often issue a purchase order that sets how much they'll accept on each invoice for a time and material engagement. Until now, Dynamics 365 Project Operations had no place to record that amount, so project managers and billing teams tracked it in spreadsheets and checked invoices by hand, adding reconciliation work and the risk of disputes. You can now set an invoice amount limit for each billing period on a time and material contract line's invoice schedule: Enter the limit for each period, for example to match the customer's purchase order for that month. When an invoice is created from the schedule, that period's limit is copied to the invoice header, so reviewers can compare the invoiced amount with the customer's expectation before confirming. For contract lines billed to multiple customers, you set one limit per period, and it's split across the customer invoices by each customer's billing percentage.</p>",
         "id": 578904,
@@ -2028,10 +2962,10 @@
     },
     {
         "created": "2026-11-04T23:59:50",
-        "description": "<p>Makers can now choose to display their data as a calendar or a stack of cards instead of the default grid layout. Makers can configure these layouts directly in the model driven app designer, giving users more intuitive ways to visualize and work with their data.</p>\n<p>Availability</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>12.2</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by admins or makers)</td>\n</tr>\n</tbody>\n</table>",
+        "description": "<p>Makers can now choose to display their data as a calendar or a stack of cards instead of the default grid layout. Makers can configure these layouts directly in the model driven app designer, giving users more intuitive ways to visualize and work with their data.</p>\n<p>Availability</p>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2612.2</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by admins or makers)</td>\n</tr>\n</tbody>\n</table>",
         "id": 575294,
         "locale": null,
-        "modified": "2026-11-04T23:59:50",
+        "modified": "2026-11-11T00:51:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2027",
         "publicPreviewDate": "December CY2026",
@@ -11596,12 +12530,12 @@
         "description": "<p>New export improvements are coming to Cloud Update, making it easier for organizations to access and analyze device data. These enhancements will expand export capabilities across Inventory and Cloud Update device views, include additional device and update information, and allow admins to export filtered results so they can focus on the devices most relevant to their needs.</p>",
         "id": 577398,
         "locale": null,
-        "modified": "2026-10-22T22:58:40",
+        "modified": "2026-11-11T00:51:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -12255,9 +13189,9 @@
         "description": "<p>Semantic model helps Sales Agent understand the structure and meaning of an organization\u2019s CRM data. It creates a connected representation of CRM metadata, including tables or objects, fields, descriptions, data types, relationships, views, pick-list values, and glossary terms. Sales Agent can retrieve this context when responding to questions, improving its ability to interpret business language and answer complex questions that span related CRM records.</p>\n<p>Dynamics 365 admins can enable and turn on semantic model in Power Apps Maker Portal and configure the data coverage and signals that Sales Agent should use. Admins can configure the underlying data, views, metadata and relationships used in the model.</p>\n<p>For Salesforce customers, the semantic model will be based on existing Sales agent table and glossary configuration in Sales agent settings or Power Apps Maker Portal. In Power Apps Maker Portal, Salesforce admins will can configure additional Salesforce signals to use in semantic model such as relationships and views.</p>",
         "id": 573294,
         "locale": null,
-        "modified": "2026-10-22T22:58:40",
+        "modified": "2026-11-11T00:51:09",
         "moreInfoLink": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/semantic-model-overview",
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13214,7 +14148,7 @@
         "description": "<p>Microsoft Purview Data Loss Prevention is introducing more granular, role-based access to the Devices page under Settings \u2192 Device Onboarding. Previously, viewing or managing device onboarding required broad administrative roles (such as Compliance Administrator, Global Administrator, or Security Administrator). With this update, organizations can grant access using least-privilege Purview role-based access control (RBAC) roles scoped specifically to device operations.</p>\n<p>A new View-Only Device Management role enables users, such as auditors or security analysts, to view device onboarding status, search for devices, review configuration details, and export device data, without granting permission to change onboarding configuration or other administrative settings. Existing administrative roles continue to have full access, so current workflows are unaffected. This change helps organizations follow the principle of least privilege and simplifies granting read-only visibility into device onboarding without over-provisioning permissions.</p>",
         "id": 577187,
         "locale": null,
-        "modified": "2026-10-20T23:00:34",
+        "modified": "2026-11-11T00:51:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "December CY2026",
@@ -13223,6 +14157,15 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
             },
             {
                 "tagName": "Web"
@@ -13241,6 +14184,15 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -15145,10 +16097,10 @@
     },
     {
         "created": "2026-10-16T19:10:09",
-        "description": "<p>This feature expands the existing general journal functionality for modern projects.</p>\n<p>A new capability is added so general journal lines can have an associated <strong>project resource</strong>.</p>\n<ul>\n<li>Specifying the project resource on a journal line allows for increased tracking and auditability for where organizations want to track expense journals on a detailed per-resource basis instead of in a summary.</li>\n<li>Tracking expenses on a per-resource basis is especially helpful for scenarios around accruals where all expenses aren't approved and posted from the prior period and organizations want to track as per-resource accruals to reverse in the next month.</li>\n<li>Additional enhancements are being added for an improved user experience.</li>\n</ul>\n<p>This feature is specific to customers using the <strong>Project Operations Integrated with ERP</strong> deployment type.</p>\n<p>Business Value:</p>\n<p>Microsoft Dynamics 365 Finance offers rich functionality with journals for many scenarios. It includes advanced capabilities such as workflow and reversals. When you use this functionality, you can create general journals in Finance for Microsoft Dataverse-based projects to post expenses.</p>\n<p>Enabled for:</p>\n<p>Enabled by admins/makers/marketers for end users</p>",
+        "description": "<p>This feature expands the existing general journal functionality for modern projects.</p>\n<p>A new capability is added so general journal lines can have an associated <strong>project resource</strong>.</p>\n<ul>\n<li>Specifying the project resource on a journal line allows for increased tracking and auditability for where organizations want to track expense journals on a detailed per-resource basis instead of in a summary.</li>\n<li>Tracking expenses on a per-resource basis is especially helpful for scenarios around accruals where all expenses aren't approved and posted from the prior period and organizations want to track as per-resource accruals to reverse in the next month.</li>\n<li>Additional enhancements are being added for an improved user experience.</li>\n</ul>\n<p>This feature is specific to customers using the <strong>Project Operations Integrated with ERP</strong> deployment type.</p>\n<p>Business Value:</p>\n<p>Microsoft Dynamics 365 Finance offers rich functionality with journals for many scenarios. It includes advanced capabilities such as workflow and reversals. When you use this functionality, you can create general journals in Finance for Microsoft Dataverse-based projects to post expenses.</p>\n<h2>Availability</h2>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Version</td>\n<td>10.0.48</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by admins)</td>\n</tr>\n</tbody>\n</table>",
         "id": 576882,
         "locale": null,
-        "modified": "2026-10-16T19:10:09",
+        "modified": "2026-11-11T00:51:09",
         "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/project-operations/project-accounting/general-journals",
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -24201,12 +25153,12 @@
         "description": "<p>For non-channel Microsoft Teams meetings, collaborative meeting notes, including Loop-powered meeting notes and Facilitator notes, will be stored in the meeting organizer's OneDrive for Business instead of the OneDrive of the person who starts the notes. This update provides more consistent ownership and management of meeting content while preserving the existing note-taking and collaboration experience for meeting participants.</p>",
         "id": 576194,
         "locale": null,
-        "modified": "2026-10-16T22:00:35",
+        "modified": "2026-11-11T00:51:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -24286,12 +25238,12 @@
         "description": "<p>Microsoft Teams is introducing AI-powered phishing detection that uses conversation context to identify phishing and social engineering in higher-risk messaging scenarios, primarily external first-contact chats. Additional protection may apply in certain regions or scenarios. The capability is used only for security protection, and users may see warnings when suspicious activity is detected.</p>",
         "id": 575288,
         "locale": null,
-        "modified": "2026-10-14T23:01:02",
+        "modified": "2026-11-11T00:51:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -27252,10 +28204,10 @@
         "description": "<p>Copilot in OneNote can generate new content and directly edit when in edit mode. In this mode you can create, rename, and delete pages, sections, or notebooks as well as add or edit content in pages. Copilot can bring content from across WorkIQ as well as complete actions across other workflows such as creating Word, Excel, and PowerPoint files.</p>",
         "id": 573446,
         "locale": null,
-        "modified": "2026-10-08T23:04:12",
+        "modified": "2026-11-11T00:51:09",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -27307,12 +28259,12 @@
         "description": "<p>Microsoft Planner will be updated with a cleaner, more modern interface, improved navigation, responsive layouts, and a more consistent experience across Planner in Teams and Planner for the web.</p>",
         "id": 573274,
         "locale": null,
-        "modified": "2026-10-08T23:04:12",
+        "modified": "2026-11-11T00:51:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "DoD"
@@ -34482,12 +35434,12 @@
         "description": "<p>Microsoft Edge is updating tab hover cards to provide clearer information about tab memory usage and memory savings when inactive tabs are discarded. Users will also have separate settings for tab-preview images and memory-usage information.</p>",
         "id": 571692,
         "locale": null,
-        "modified": "2026-10-01T23:00:07",
+        "modified": "2026-11-11T00:51:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -34524,19 +35476,19 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Updated performance information in tab hover cards"
+        "title": "Microsoft Edge: v.157 - Updated performance information in tab hover cards"
     },
     {
         "created": "2026-09-28T22:58:08",
         "description": "<p>We are increasing the maximum auto-labeling capacity for SharePoint and OneDrive from 100,000 up to 500,000 files per tenant per day. This helps organizations label and protect more of their data at rest, faster, closing labeling gaps across existing content. With sensitivity labels and protection settings applied to more files sooner, organizations can better prepare their data estate for Microsoft 365 Copilot with greater confidence.</p>",
         "id": 571309,
         "locale": null,
-        "modified": "2026-09-28T22:58:08",
+        "modified": "2026-11-11T00:51:09",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -36507,12 +37459,12 @@
         "description": "<p>Granular Conditional Access for Teams meetings gives organizations greater control over access to sensitive meetings. Administrators can apply Conditional Access policies to selected meetings, helping ensure participants meet organizational security requirements before joining.</p>",
         "id": 571879,
         "locale": null,
-        "modified": "2026-09-28T22:58:08",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -38399,10 +39351,10 @@
         "description": "<p>We\u2019re introducing the new readiness for Microsoft Copilot and data explorer experiences in Microsoft Purview Data Security Posture Management (DSPM). These new capabilities provide data security teams with greater visibility into their organization\u2019s data security posture and help them assess risks, investigate findings, and prioritize remediation.</p>\n<p>The readiness for Microsoft Copilot experience in Purview DSPM helps organizations assess and improve their data readiness for Microsoft Copilot. It brings together insights into sensitive data exposure, oversharing, and protection coverage, helping security teams identify risks and assess progress toward a more secure Microsoft Copilot deployment.</p>\n<p>The new data explorer experience in Purview DSPM provides a centralized investigation experience that helps organizations understand where sensitive data exists across sites, review site-level access, and explore relevant data through preset views. It brings together sites, sensitive data, and preset views, to support more efficient investigations and reduce context switching.</p>",
         "id": 571157,
         "locale": null,
-        "modified": "2026-09-24T22:58:55",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2027",
-        "publicPreviewDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "January CY2027",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -39488,61 +40440,6 @@
     },
     {
         "created": "2026-09-08T22:57:21",
-        "description": "<p>Customers can now view value insights in the Agent 365 Dashboard in Microsoft Viva Insights (Copilot Analytics). These insights help business leaders and change and adoption specialists understand not only whether agents are being used, but also the estimated assisted hours agents provide and the types of work contributing to that value.</p>\n<p>This update builds on the existing Agent 365 Dashboard adoption experience by connecting agent activity with a clearer view of the work agents support across the organization.</p>",
-        "id": 570847,
-        "locale": null,
-        "modified": "2026-10-07T23:01:35",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
-        "publicPreviewDate": "November CY2026",
-        "publicRoadmapStatus": "Include this month",
-        "status": "In development",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Copilot Analytics - Agent value insights in Agent 365 Dashboard"
-    },
-    {
-        "created": "2026-09-08T22:57:21",
         "description": "<p>Microsoft Purview Data Loss Prevention (DLP) is expanding to Microsoft Cowork, enabling data security admins to use a single policy across Microsoft 365 Copilot and Cowork. The integration helps protect sensitive AI interactions by preventing the use of labeled knowledge sources, blocking prompts that contain supported sensitive information types, and restricting sensitive prompts from being sent to Bing for web search.</p>",
         "id": 570845,
         "locale": null,
@@ -40022,12 +40919,12 @@
         "description": "<p>Microsoft Purview is improving auto-labeling capabilities to help organizations manage and validate labeling policies at enterprise scale. These enhancements expand support for larger SharePoint scopes, improve policy management flexibility, and provide richer visibility into auto-labeling activity.</p>",
         "id": 570445,
         "locale": null,
-        "modified": "2026-11-04T00:02:09",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -42997,12 +43894,12 @@
     },
     {
         "created": "2026-08-18T23:05:00",
-        "description": "Federated Copilot connectors enable users to securely connect Microsoft Copilot to their favorite third party sources, retrieving data in real-time using the Model Context Protocol (MCP). Federated Copilot connectors do not store or index customer data in Microsoft - access happens in real time using the user\u2019s own identity, while administrators retain full governance and control through the Microsoft 365 Admin Center. With GA, federated Copilot connectors will be supported across Researcher agent and Microsoft 365 Chat, allowing users to bring data into their workflows.",
+        "description": "<p>Federated Copilot connectors enable users to securely connect Microsoft Copilot to their favorite third party sources, retrieving data in real-time using the Model Context Protocol (MCP). Federated Copilot connectors do not store or index customer data in Microsoft - access happens in real time using the user\u2019s own identity, while administrators retain full governance and control through the Microsoft 365 Admin Center. With GA, federated Copilot connectors will be supported across Researcher agent and Microsoft 365 Chat, allowing users to bring data into their workflows.</p>",
         "id": 569212,
         "locale": null,
-        "modified": "2026-08-18T23:05:00",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -43713,7 +44610,7 @@
         "description": "<p>Microsoft Teams browser app users will be able to pop out calls into a simplified call window that stays available while they navigate away from, hide, or minimize the tab or progressive web app (PWA) hosting the call. This helps users multitask and collaborate more easily during calls.</p>",
         "id": 569206,
         "locale": null,
-        "modified": "2026-10-14T23:01:02",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
@@ -44082,15 +44979,15 @@
     },
     {
         "created": "2026-08-11T22:53:53",
-        "description": "Create HTML with Copilot in SharePoint or upload your own HTML from another source. Once stored in the pages library, you can render HTML as a page in SharePoint, make additional edits, and share with your audience. HTML gives you new ways to present your content beautifully alongside our existing ASPX pages.",
+        "description": "<p>Create HTML with Copilot in SharePoint or upload your own HTML from another source. Once stored in the pages library, you can render HTML as a page in SharePoint, make additional edits, and share with your audience. HTML gives you new ways to present your content beautifully alongside our existing ASPX pages.</p>",
         "id": 569208,
         "locale": null,
-        "modified": "2026-08-11T22:53:53",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -44465,134 +45362,6 @@
         "title": "Microsoft Copilot Studio: Dataverse integration on Copilot Studio"
     },
     {
-        "created": "2026-08-10T22:43:02",
-        "description": "<p>Microsoft Edge is introducing an updated horizontal tab-strip appearance on Windows and macOS. The treatment uses rounded tabs with revised spacing and aligns related tab-strip controls with the refreshed browser-frame design. Tab behavior and enterprise data handling remain unchanged. Note: We have made the decision to cancel this planned release. We apologize for any inconvenience this may cause.</p>",
-        "id": 568793,
-        "locale": null,
-        "modified": "2026-10-07T23:01:35",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Edge"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Edge"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Edge: Updated horizontal tab appearance"
-    },
-    {
-        "created": "2026-08-10T22:43:02",
-        "description": "<p>Microsoft 365 Copilot makes PDF reviews faster and easier on mobile. Select text in any PDF in OneDrive iOS and tap Ask Copilot to explain, summarize, translate, or ask a custom question about the selection \u2014 the same in-context Copilot experience already generally available on desktop, now on OneDrive iOS. Updated October 20, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience.</p>",
-        "id": 568790,
-        "locale": null,
-        "modified": "2026-10-20T23:00:34",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "GCC"
-            },
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "OneDrive"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                },
-                {
-                    "tagName": "GCC"
-                },
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "iOS"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "OneDrive"
-                },
-                {
-                    "tagName": "SharePoint"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Review PDFs using the Copilot context menu on OneDrive iOS"
-    },
-    {
         "created": "2026-08-07T21:45:15",
         "description": "When the content language and the Outlook language do not match, you will be able to select a different language to view summarize Copilot responses.",
         "id": 569023,
@@ -44950,12 +45719,12 @@
         "description": "<p>For each enforced auto-labeling policy, admins can view how files processed during enforcement correlate to the latest simulation run. The per-policy coverage report shows volumes of files that have been labeled or are not yet labeled, and whether those files were included in the last simulation snapshot. This helps admins understand enforcement progress for a specific policy against the data state captured during simulation, while also identifying files that were not found in the simulation snapshot but were processed during enforcement.</p>",
         "id": 568935,
         "locale": null,
-        "modified": "2026-10-22T22:58:40",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -46097,12 +46866,12 @@
         "description": "<p>Expanded Pro Management Portal (PMP) health monitoring for Teams Rooms on Android by surfacing device health signals including storage health, Teams meeting app, calendar sync, secondary display health and network. When issues are detected, PMP will automatically generate actionable alerts and support ticket creation workflows, enabling IT administrators to proactively identify and triage room health issues before they impact meeting experiences.</p>",
         "id": 566856,
         "locale": null,
-        "modified": "2026-09-23T22:59:12",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -46256,9 +47025,9 @@
         "description": "<p>We are introducing a more streamlined messaging experience that displays more content on screen while improving readability when using Teams on mobile. These updates make it easier to scan conversations and follow the discussion flow, helping users stay productive and engaged wherever they work.</p>",
         "id": 568067,
         "locale": null,
-        "modified": "2026-10-13T23:01:05",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -52125,12 +52894,12 @@
         "description": "<p>Search, chat, and explore the web from one search box with Copilot-suggested actions and curated work content to help your users get things done faster on the Copilot new tab page. Users will see upgraded Copilot new tab page functionality and features.</p>",
         "id": 566703,
         "locale": null,
-        "modified": "2026-10-13T23:01:05",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -53587,15 +54356,15 @@
     },
     {
         "created": "2026-06-17T23:15:06",
-        "description": "Outlook on the web and the new Outlook for Windows now support will support new settings for loading external images. New settings will allow customers to block all external content, or to load all content by default if the customer admin allows. Existing default behavior will not be changed (load external content only for safe senders).",
+        "description": "<p>Outlook on the web and the new Outlook for Windows now support will support new settings for loading external images. New settings will allow customers to block all external content, or to load all content by default if the customer admin allows. Existing default behavior will not be changed (load external content only for safe senders).</p>",
         "id": 565862,
         "locale": null,
-        "modified": "2026-06-17T23:15:06",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -54806,74 +55575,13 @@
         "title": "Microsoft Teams: New room optimization mode user experience in Teams desktop"
     },
     {
-        "created": "2026-06-09T23:15:32",
-        "description": "<p>We have decided not to move forward with this change at this time. We apologize for any inconvenience. Admins now have a dedicated dashboard in the Teams Admin Center to view Interpreter usage across their organization. Track adoption and usage trends in one place to better understand how Interpreter is being used.</p>",
-        "id": 565217,
-        "locale": null,
-        "modified": "2026-10-08T23:04:12",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "iOS"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Tenant-level dashboard for Interpreter"
-    },
-    {
         "created": "2026-06-09T20:46:16",
-        "description": "AI-powered visibility into DLP policy deployment across devices, helping admins track sync progress and understand enforcement coverage. They proactively identify impacted devices, explain root causes of sync failures, and guide admins with recommended actions to quickly diagnose and resolve issues.\n",
+        "description": "<p>AI-powered visibility into DLP policy deployment across devices, helping admins track sync progress and understand enforcement coverage. They proactively identify impacted devices, explain root causes of sync failures, and guide admins with recommended actions to quickly diagnose and resolve issues.</p>",
         "id": 565374,
         "locale": null,
-        "modified": "2026-08-12T22:47:48",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -56946,15 +57654,15 @@
     },
     {
         "created": "2026-05-27T23:15:50",
-        "description": "We\u2019re introducing support for Model Context Protocol (MCP)-based agents in Microsoft 365 Copilot . This update enables developers to build Copilot agents using MCP servers and allows users to interact with these agents using familiar experiences. This change supports extensibility and improves agent capabilities for organizations.",
+        "description": "<p>We\u2019re introducing support for Model Context Protocol (MCP)-based agents in Microsoft 365 Copilot . This update enables developers to build Copilot agents using MCP servers and allows users to interact with these agents using familiar experiences. This change supports extensibility and improves agent capabilities for organizations.</p>",
         "id": 564607,
         "locale": null,
-        "modified": "2026-05-27T23:15:50",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -58348,67 +59056,6 @@
     },
     {
         "created": "2026-05-15T22:00:42",
-        "description": "<p>Request feedback from Copilot on your Page by selecting \"Suggested edits\" in the Copilot Shortcuts menu. Copilot will analyze the content on your page and provide actionable suggestions about what you can change to improve clarity and quality of your written content. You can then apply suggestions directly to the page. Updated October 23, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience.</p>",
-        "id": 562351,
-        "locale": null,
-        "modified": "2026-10-23T21:59:27",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
-        "publicPreviewDate": "June CY2026",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Get actionable suggestions from Copilot in your Copilot Page"
-    },
-    {
-        "created": "2026-05-15T22:00:42",
         "description": "This release introduces a new condition for Exchange Online policies: \u201cCount of labeled documents is greater than.\u201d  This condition evaluates the number of attachments in an email message that carry a matching sensitivity label. When the count exceeds a defined threshold, the DLP rule is triggered, and configured actions are applied. This capability enables detection of high-volume data exfiltration scenarios, where multiple sensitive files\u2014individually low-risk\u2014collectively represent a significant compliance or security risk. Existing conditions evaluate file content, but do not provide controls based on the volume of labeled attachments.",
         "id": 562342,
         "locale": null,
@@ -58604,12 +59251,12 @@
     },
     {
         "created": "2026-05-15T22:00:42",
-        "description": "Copilot People Connector now supports importing people data with access controls into Microsoft 365. This release enables organizations to bring people data from external systems into Microsoft 365 along with associated access control lists (ACLs), ensuring Copilot respects existing permissions defined in source systems. The imported data can be scoped to specific individuals and groups, allowing Copilot to reason over people data while honoring access restrictions.",
+        "description": "<p>Copilot People Connector now supports importing people data with access controls into Microsoft 365. This release enables organizations to bring people data from external systems into Microsoft 365 along with associated access control lists (ACLs), ensuring Copilot respects existing permissions defined in source systems. The imported data can be scoped to specific individuals and groups, allowing Copilot to reason over people data while honoring access restrictions.</p>",
         "id": 561326,
         "locale": null,
-        "modified": "2026-05-15T22:00:42",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "August CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -58762,67 +59409,6 @@
         "title": "Microsoft Copilot Studio: Use MCP-compliant tools in agent workflows"
     },
     {
-        "created": "2026-05-15T18:00:35",
-        "description": "<p>Add resilient, AI-powered UI automation directly into your workflows with computer use tools. Makers can build reusable, goal-oriented automations that adapt dynamically to website or app changes, while admins maintain governance through access controls, hosted browser management, and environment-level permissions. Update: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
-        "id": 562220,
-        "locale": null,
-        "modified": "2026-10-26T23:15:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
-        "publicPreviewDate": "April CY2026",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Microsoft Copilot Studio"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Microsoft Copilot Studio"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot Studio: Supercharge your workflows with computer use"
-    },
-    {
         "created": "2026-05-14T23:15:59",
         "description": "<p>Unlock deeper insights into Copilot agent adoption with flexible, self-serve analytics. Insights global and partition analysts can access and combine granular agent usage metrics with agent and organizational attributes to uncover agent adoption trends, export and customize reporting, and drive more informed decisions, without relying on predefined dashboards.</p>",
         "id": 562412,
@@ -58943,12 +59529,12 @@
         "description": "<p>Users can now upload videos directly into a Teams event or meeting from OneDrive from the \"Manage view\" options when an organizer has turned on Manage What Attendees See mode. This ensures a smoother high quality video playback with a more consistent experience for attendees.</p>",
         "id": 562340,
         "locale": null,
-        "modified": "2026-10-13T23:01:05",
+        "modified": "2026-11-11T00:52:46",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -59559,10 +60145,10 @@
         "description": "<p>AI agent skill to detect and alert unhealthy policy sync and device configuration.</p>",
         "id": 562016,
         "locale": null,
-        "modified": "2026-10-13T23:01:05",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "July CY2027",
+        "publicPreviewDate": "June CY2027",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -63394,12 +63980,12 @@
         "description": "<p>We\u2019re introducing a new guided diagnostics experience to help users understand why their DLP policies may not be behaving as expected. This experience provides a clear summary of why a DLP action was taken on a document, including which policies were triggered, the order of evaluation, and detailed insights into which conditions evaluated as true or false.<br>\nFor Microsoft 365 E5 customers, the experience also includes Copilot-powered insights and tailored recommendations to accelerate troubleshooting and policy optimization.</p>",
         "id": 561032,
         "locale": null,
-        "modified": "2026-10-14T23:01:02",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -63704,12 +64290,12 @@
         "description": "<p>Previously, auto expanding archive mailbox expansion was supported only up to 1.5\u202fTB, after which mailboxes would become inoperative. Archive mailboxes can now automatically expand beyond the 1.5\u202fTB limit, ensuring uninterrupted retention and enabling scalable archive growth as storage thresholds are reached. This capability to expand archive beyond 1.5 TB will be available to customers with eligible E5 licenses.</p>",
         "id": 560820,
         "locale": null,
-        "modified": "2026-10-20T23:00:34",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -64266,61 +64852,6 @@
             ]
         },
         "title": "Microsoft Viva: Viva Glint - Export Heat Map report in Viva Glint to editable PowerPoint slides"
-    },
-    {
-        "created": "2026-04-21T23:00:01",
-        "description": "AI-powered intent for classifiers: Microsoft Purview Information Protection will generate a human-readable semantic intent for custom Sensitive Information Types (SITs), helping customers better understand what their classifiers detect and refine them for higher accuracy and fewer false positives.",
-        "id": 560708,
-        "locale": null,
-        "modified": "2026-07-28T22:43:45",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "October CY2026",
-        "publicRoadmapStatus": "Include this month",
-        "status": "In development",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview: Information Protection \u2013 AI-powered intent for classifiers"
     },
     {
         "created": "2026-04-21T23:00:01",
@@ -65179,15 +65710,15 @@
     },
     {
         "created": "2026-04-17T22:15:50",
-        "description": "Viva Glint survey takers will be able to use a streamlined version of Microsoft Copilot in the Glint survey taking experience to help them rewrite their comments, helping survey takers feel more confident about the feedback they\u2019re providing. By increasing perceived security through reducing identifiable writing patterns and minimizing the effort required to refine feedback, this experience can encourage greater participation, longer responses, and more candid comments, which can drive higher engagement and richer insights from surveys.",
+        "description": "<p>Viva Glint survey takers will be able to use a streamlined version of Microsoft Copilot in the Glint survey taking experience to help them rewrite their comments, helping survey takers feel more confident about the feedback they\u2019re providing. By increasing perceived security through reducing identifiable writing patterns and minimizing the effort required to refine feedback, this experience can encourage greater participation, longer responses, and more candid comments, which can drive higher engagement and richer insights from surveys.</p>",
         "id": 560595,
         "locale": null,
-        "modified": "2026-07-14T22:41:38",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -69068,55 +69599,6 @@
             ]
         },
         "title": "Outlook: Shareable links now show as the document name in meeting descriptions"
-    },
-    {
-        "created": "2026-03-30T23:00:38",
-        "description": "<p>The Files companion app, part of the Microsoft 365 companion apps suite on the Windows taskbar, now surfaces AI-powered Copilot file prompts for Copilot Chat users. Previously available only to Microsoft 365 Copilot licensees, this update extends contextual file prompts to Microsoft 365 Copilot Chat users, enabling them to discover and interact with relevant files through intelligent suggestions. Users can find their most relevant files faster and take action on them directly from the Files app. Update: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
-        "id": 558595,
-        "locale": null,
-        "modified": "2026-10-26T23:15:50",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Microsoft 365"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365: Companion apps - Copilot prompts in the Files app now available for Copilot Chat users"
     },
     {
         "created": "2026-03-30T23:00:38",
@@ -77044,12 +77526,12 @@
         "description": "<p>When a Teams Rooms on Windows acts as an organizer, co-organizer or presenter in a structured meeting or webinar, you have access to the private chat for event management known as the Event Group.  You can also switch to a separate chat with attendees enabling smooth event experiences for all. Available in Teams Rooms Pro-licensed rooms.</p>",
         "id": 557165,
         "locale": null,
-        "modified": "2026-09-30T23:31:03",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -87014,61 +87496,6 @@
             ]
         },
         "title": "Exchange: Message Trace - Custom Retention"
-    },
-    {
-        "created": "2025-12-19T23:00:49",
-        "description": "<p>Users can now quickly enrich their Copilot Notebook with relevant Suggested References based on recent user work activity. Update: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
-        "id": 529843,
-        "locale": null,
-        "modified": "2026-10-27T23:05:02",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365 app"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365 app"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Suggested References in Copilot Notebooks"
     },
     {
         "created": "2025-12-19T23:00:49",
@@ -101302,12 +101729,12 @@
         "description": "<p>Users in GCC-H will be able to use custom engine agents.</p>",
         "id": 503771,
         "locale": null,
-        "modified": "2026-10-05T23:03:05",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC High"
@@ -101891,15 +102318,15 @@
     },
     {
         "created": "2025-10-16T23:15:52",
-        "description": "Users will now have access to their Copilot Notebooks on the web version of OneNote.",
+        "description": "<p>Users will now have access to their Copilot Notebooks on the web version of OneNote.</p>",
         "id": 511797,
         "locale": null,
-        "modified": "2026-02-12T00:15:53",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -101940,12 +102367,12 @@
     },
     {
         "created": "2025-10-16T23:15:52",
-        "description": "Users will be able to upload files stored locally or in one drive to custom engine agents.",
+        "description": "<p>Users will be able to upload files stored locally or in one drive to custom engine agents.</p>",
         "id": 503767,
         "locale": null,
-        "modified": "2025-10-16T23:15:52",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -103389,15 +103816,15 @@
     },
     {
         "created": "2025-10-03T22:00:02",
-        "description": "Users can quickly add a Search result as a reference to a Copilot Notebook within the M365 Copilot app.",
+        "description": "<p>Users can quickly add a Search result as a reference to a Copilot Notebook within the M365 Copilot app.</p>",
         "id": 510100,
         "locale": null,
-        "modified": "2026-05-27T23:15:50",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -105324,15 +105751,15 @@
     },
     {
         "created": "2025-09-19T22:00:03",
-        "description": "You can now edit and collaborate on the presentation outline generated by Copilot in a Page before the PowerPoint deck is created.",
+        "description": "<p>You can now edit and collaborate on the presentation outline generated by Copilot in a Page before the PowerPoint deck is created.  This item is no longer accurate and is being removed from the roadmap.  We apologize for any inconvenience</p>",
         "id": 501785,
         "locale": null,
-        "modified": "2025-09-19T22:00:03",
+        "modified": "2026-11-11T01:23:34",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
+        "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -105839,12 +106266,12 @@
         "description": "<p>Simplifies SharePoint content management and ensures content is Copilot-ready by automating metadata, fixing stale content, enabling fast page creation, improving compliance, and enriching content so Copilot can deliver more accurate, grounded answers. Updated April 16: We are still in development for GA and have launched to Preview only.</p>",
         "id": 501451,
         "locale": null,
-        "modified": "2026-09-25T22:37:50",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "September CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -109798,12 +110225,12 @@
         "description": "<p>Intelligent meeting recap uses AI to provide a quick summary of your meeting, highlighting key discussion points, identifying follow-up actions, and offering quick access to significant points such as name mentions, when a screen was shared, individualized speaker markers, topics, and chapters.</p>",
         "id": 500242,
         "locale": null,
-        "modified": "2026-09-18T22:00:04",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "DoD"
@@ -118862,61 +119289,6 @@
             ]
         },
         "title": "Microsoft Teams: Configurable Keyboard Shortcuts"
-    },
-    {
-        "created": "2025-04-23T23:15:57",
-        "description": "<p>Quickly find your files and leverage Copilot to get a better understanding within the search tab on the go.  This item is no longer accurate and is being removed from the roadmap.  We apologize for the inconvenience.</p>",
-        "id": 485731,
-        "locale": null,
-        "modified": "2026-10-12T23:01:05",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "May CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Microsoft 365"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                },
-                {
-                    "tagName": "iOS"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft 365: Use Copilot in your search tab in the Microsoft 365 Copilot mobile app"
     },
     {
         "created": "2025-04-23T16:15:28",
@@ -130849,15 +131221,15 @@
     },
     {
         "created": "2024-11-19T18:30:19",
-        "description": "Your organization can now control who can access your data depending on the sensitive information detected in Fabric semantic models and lakehouses. DLP restrict access action allows you to block access to guest users or all users depending on what labels or sensitive information types matches your semantic models or lakehouses. This is in addition to the ability already supported by DLP policies to audit and notify users via Policy Tips based on sensitive content within Fabric semantic models and lakehouses.",
+        "description": "<p>Your organization can now control who can access your data depending on the sensitive information detected in Fabric semantic models and lakehouses. DLP restrict access action allows you to block access to guest users or all users depending on what labels or sensitive information types matches your semantic models or lakehouses. This is in addition to the ability already supported by DLP policies to audit and notify users via Policy Tips based on sensitive content within Fabric semantic models and lakehouses.</p>",
         "id": 422501,
         "locale": null,
-        "modified": "2026-03-26T23:15:28",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "April CY2024",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -132573,9 +132945,9 @@
         "description": "<p>Rewrite by Copilot in Edge, which lets users edit typed text for tone, format, and length within an open page in Microsoft Edge, is being updated to include enterprise data protection for commercial customers. Once Rewrite is available, users signed in with a Microsoft Entra ID will have enterprise data protection when using the feature in Microsoft Edge. Updated March 20, 2026: We have paused release of this feature temporarily and will announce new release timelines soon. We apologize for any inconvenience.</p>",
         "id": 420335,
         "locale": null,
-        "modified": "2026-10-26T23:15:50",
+        "modified": "2026-11-11T00:53:22",
         "moreInfoLink": "https://learn.microsoft.com/en-us/copilot/edge",
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
