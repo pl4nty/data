@@ -697,7 +697,7 @@
         "EnableFrontlineSharedPoolAssignmentUX": true,
         "EnableFrontlineUnassignedProperties": true,
         "EnableFunctionalityValidationTimer": true,
-        "EnableGAScopeFo3TierRegion": false,
+        "EnableGAScopeFo3TierRegion": true,
         "EnableGAScopeForApexUX": false,
         "EnableGalleryImageDateAndStateUpdates": true,
         "EnableGalleryImageMajorVersionRollout": true,

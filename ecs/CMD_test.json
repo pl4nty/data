@@ -1268,6 +1268,7 @@
         "EnableSkuMigrationCloudPcForwarderDataStream": true,
         "EnableSnapshotResetModeForPlcy": true,
         "EnableSnapshotResetModeForUX": true,
+        "EnableSnapshotResetUXEnhancement": true,
         "EnableSnapshotServiceSupportInternalListRetention": true,
         "EnableSortImageByVersion": true,
         "EnableSplitApexMultiYearSubscriptionOnPersist": true,

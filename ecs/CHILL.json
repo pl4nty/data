@@ -1996,6 +1996,90 @@
                     "variables": {}
                 }
             }
+        },
+        "Floodgate_Campaign_MicrosoftDefenderXDR.e2e81f33-0184-47ff-8114-9da020a79bff": {
+            "CampaignId": "e2e81f33-0184-47ff-8114-9da020a79bff",
+            "EndTimeUtc": "2026-12-04T08:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 1,
+            "StartTimeUtc": "2026-11-04T08:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "SessionCount",
+                            "Count": 2,
+                            "IsAggregate": true,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "CoreActions",
+                            "Count": 3,
+                            "IsAggregate": true,
+                            "Type": 0
+                        },
+                        {
+                            "Activity": "AppUsage",
+                            "Count": 2,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "Very satisfied",
+                                        "Somewhat Satisfied",
+                                        "Neutral",
+                                        "Somewhat dissatisfied",
+                                        "Very dissatisfied"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How satisfied or dissatisfied are you with Exposure Management?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "How can we improve Exposure Management for you?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/e2e81f33-0184-47ff-8114-9da020a79bff/a5caebe3-a2e0-42c8-93c8-f890a56b6c37/Web-MicrosoftDefenderXDR/",
+                    "variables": {}
+                }
+            }
         }
     },
     "ChillMicrosoftFabric": {

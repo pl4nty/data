@@ -260,7 +260,6 @@
         "EnableLlmProxyForConsumerUsers": true,
         "EnableLlmProxyGeographyAuthorization": true,
         "EnableLlmProxyModelProviderFiltering": true,
-        "EnableLlmProxySensitivityLabelInheritance": true,
         "EnableLlmProxyToolCallBuckets": true,
         "EnablePassportForLlmApi": true,
         "EnableWorkflowModelAccess": true,
@@ -853,21 +852,10 @@
                 "runtime_id": "gpt-6-astra"
             }
         ],
-        "PromptDlpApplication": {
-            "applicationLocation": "Copilot.M365.CodeTab",
-            "maxTextCharacters": 2000000,
-            "processContentIntegratedApplicationName": "Loki",
-            "protectionScopeIntegratedApplicationName": "Loki"
-        },
         "PurviewContentFilteringTimeoutMilliseconds": 1500,
         "PurviewInheritanceTimeoutMilliseconds": 2000,
         "PurviewProcessContentTimeoutMilliseconds": 1500,
         "PurviewProtectionScopesTimeoutMilliseconds": 2000,
-        "PurviewWebGroundingApplication": {
-            "applicationLocation": "Copilot.M365.CodeTab",
-            "processContentIntegratedApplicationName": "Loki",
-            "protectionScopeIntegratedApplicationName": "Loki"
-        },
         "ScenarioIdMappings": [
             {
                 "appId": "c0ab8ce9-e9a0-42e7-b064-33d422df41f1",
