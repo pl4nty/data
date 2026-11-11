@@ -16,7 +16,7 @@ local l_0_3 = nil
 if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil and (this_sigattrlog[2]).utf8p2 ~= "" then
   l_0_3 = (string.lower)((this_sigattrlog[2]).utf8p2)
 end
-if l_0_3 == "" or l_0_3 == nil or (string.find)(l_0_3, "github.com", 1, true) then
+if l_0_3 == "" or l_0_3 == nil or #l_0_3 > 150 or (string.find)(l_0_3, "github.com", 1, true) then
   return mp.CLEAN
 end
 for l_0_7,l_0_8,l_0_9 in l_0_3:gmatch("https?://[%w%.%-:]+/(%w+)/(%w+)()") do
