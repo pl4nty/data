@@ -36,8 +36,8 @@
   },
   {
     "name": "angle",
-    "size": 6576471,
-    "file_count": 198
+    "size": 6493111,
+    "file_count": 192
   },
   {
     "name": "anonymous_tokens",
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 34367077,
+    "size": 34387365,
     "file_count": 4101
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 45702,
+    "size": 46360,
     "file_count": 5
   },
   {
@@ -156,8 +156,8 @@
   },
   {
     "name": "dawn",
-    "size": 163714417,
-    "file_count": 19366
+    "size": 128234442,
+    "file_count": 19356
   },
   {
     "name": "dbus",
@@ -176,7 +176,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 4880135,
+    "size": 4880373,
     "file_count": 51
   },
   {
@@ -211,8 +211,8 @@
   },
   {
     "name": "eigen3",
-    "size": 23620511,
-    "file_count": 2435
+    "size": 23686162,
+    "file_count": 2440
   },
   {
     "name": "entity_extraction",
@@ -246,7 +246,7 @@
   },
   {
     "name": "ffmpeg",
-    "size": 101838752,
+    "size": 101838814,
     "file_count": 11916
   },
   {
@@ -281,8 +281,8 @@
   },
   {
     "name": "glslang",
-    "size": 46462230,
-    "file_count": 3806
+    "size": 46950235,
+    "file_count": 3844
   },
   {
     "name": "googletest",
@@ -311,7 +311,7 @@
   },
   {
     "name": "harfbuzz",
-    "size": 325279,
+    "size": 325751,
     "file_count": 33
   },
   {
@@ -491,13 +491,13 @@
   },
   {
     "name": "litert",
-    "size": 116275,
+    "size": 116368,
     "file_count": 35
   },
   {
     "name": "llvm-build",
-    "size": 415777473,
-    "file_count": 382
+    "size": 418475684,
+    "file_count": 383
   },
   {
     "name": "logilab",
@@ -596,7 +596,7 @@
   },
   {
     "name": "openscreen",
-    "size": 1278681,
+    "size": 1278532,
     "file_count": 299
   },
   {
@@ -616,7 +616,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4908498,
+    "size": 4911628,
     "file_count": 646
   },
   {
@@ -706,8 +706,8 @@
   },
   {
     "name": "skia",
-    "size": 3484681,
-    "file_count": 1220
+    "size": 3486579,
+    "file_count": 1223
   },
   {
     "name": "speech-dispatcher",
@@ -751,8 +751,8 @@
   },
   {
     "name": "tflite",
-    "size": 1970704,
-    "file_count": 558
+    "size": 1984761,
+    "file_count": 563
   },
   {
     "name": "tflite_support",
@@ -776,12 +776,12 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 36460296,
+    "size": 36546724,
     "file_count": 47
   },
   {
     "name": "undocked_copilot_mac",
-    "size": 1685,
+    "size": 1779,
     "file_count": 4
   },
   {
@@ -791,7 +791,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1535106,
+    "size": 1537513,
     "file_count": 23
   },
   {
@@ -801,12 +801,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2822951,
+    "size": 2825071,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7902868,
+    "size": 7909044,
     "file_count": 207
   },
   {
@@ -846,8 +846,8 @@
   },
   {
     "name": "win_build_output",
-    "size": 29105392,
-    "file_count": 608
+    "size": 29217848,
+    "file_count": 623
   },
   {
     "name": "wp.client",
