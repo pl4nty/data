@@ -38,23 +38,46 @@ $global:EXO_LastExecutionStatus = $true;
             # Get the module version from the loaded module info.
             $script:ModuleVersion = $exoModule.Version.ToString()
 
-            # Look for prerelease information from the corresponding module manifest.
-            $exoModuleRoot = (Get-Item $exoModule.Path).Directory.Parent.FullName
-
-            $exoModuleManifestPath = Join-Path -Path $exoModuleRoot -ChildPath ExchangeOnlineManagement.psd1
-            $isExoModuleManifestPathValid = Test-Path -Path $exoModuleManifestPath
-            if ($isExoModuleManifestPathValid -ne $true)
+            # Published runtime folders keep the official manifest in the parent.
+            # Direct TDS imports use a test manifest beside the psm1.
+            $exoModuleDirectory = (Get-Item $exoModule.Path).Directory
+            $exoModuleManifestPaths = @()
+            if ($exoModuleDirectory.Parent -ne $null)
             {
-                # Could be a local debug build import for testing. Skip extracting prerelease info for those.
-                Write-Verbose "Module manifest path invalid, path: $exoModuleManifestPath, skipping extracting prerelease info"
+                $exoModuleManifestPaths += Join-Path -Path $exoModuleDirectory.Parent.FullName -ChildPath ExchangeOnlineManagement.psd1
+            }
+
+            $exoModuleManifestPaths += Join-Path -Path $exoModuleDirectory.FullName -ChildPath ExchangeOnlineManagement.psd1
+            $exoModuleManifestPaths += Join-Path -Path $exoModuleDirectory.FullName -ChildPath ExchangeOnlineManagementTest.psd1
+            $exoModuleManifestPath = $exoModuleManifestPaths | Where-Object { Test-Path -Path $_ } | Select-Object -First 1
+            if ([string]::IsNullOrEmpty($exoModuleManifestPath))
+            {
+                Write-Verbose "Module manifest not found, skipping manifest version information"
                 return $script:ModuleVersion
             }
 
             $exoModuleManifestContent = Get-Content -Path $exoModuleManifestPath
-            $preReleaseInfo = $exoModuleManifestContent -match "Prerelease = '(.*)'"
-            if ($preReleaseInfo -ne $null)
+            if ($script:ModuleVersion -eq '0.0')
             {
-                $script:ModuleVersion = "{0}-{1}" -f $exoModule.Version.ToString(),$preReleaseInfo[0].Split('=')[1].Trim().Trim("'")
+                $moduleVersionPattern = "^ModuleVersion\s*=\s*'([^']+)'\s*$"
+                $moduleVersionInfo = $exoModuleManifestContent | Where-Object { $_ -match $moduleVersionPattern } | Select-Object -First 1
+                if (-not [string]::IsNullOrEmpty($moduleVersionInfo))
+                {
+                    $script:ModuleVersion = [regex]::Match($moduleVersionInfo, $moduleVersionPattern).Groups[1].Value
+                }
+            }
+
+            $preReleasePattern = "^\s*Prerelease\s*=\s*'([^']*)'\s*$"
+            $preReleaseInfo = $exoModuleManifestContent | Where-Object { $_ -match $preReleasePattern } | Select-Object -First 1
+            $preRelease = ''
+            if (-not [string]::IsNullOrEmpty($preReleaseInfo))
+            {
+                $preRelease = [regex]::Match($preReleaseInfo, $preReleasePattern).Groups[1].Value
+            }
+
+            if (-not [string]::IsNullOrEmpty($preRelease) -and $script:ModuleVersion -ne '0.0')
+            {
+                $script:ModuleVersion = "{0}-{1}" -f $script:ModuleVersion,$preRelease
             }
 
             Write-Verbose "Computed version info: $script:ModuleVersion"
@@ -133,6 +156,7 @@ $global:EXO_LastExecutionStatus = $true;
 ###### Begin Main ######
 
 $EOPConnectionInProgress = $false
+$ConnectionWorkload = ''
 function Connect-ExchangeOnline 
 {
     [CmdletBinding()]
@@ -425,7 +449,14 @@ function Connect-ExchangeOnline
             $cmdletLogger.LogStartTime($connectionContextID, $startTime)
             if ($EOPConnectionInProgress -eq $true)
             {
-                $cmdletLogger.LogCmdletName($connectionContextID, "Connect-IPPSSession");
+                if ($ConnectionWorkload -eq 'MDO')
+                {
+                    $cmdletLogger.LogCmdletName($connectionContextID, "Connect-DefenderForOffice365");
+                }
+                else
+                {
+                    $cmdletLogger.LogCmdletName($connectionContextID, "Connect-IPPSSession");
+                }
             }
             else
             {
@@ -443,7 +474,7 @@ function Connect-ExchangeOnline
                 -Organization $Organization.Value -Device:$Device.Value -InlineCredential:$InlineCredential.Value -CommandName $CommandName `
                 -FormatTypeName $FormatTypeName -Prefix $Prefix -PageSize $PageSize.Value -ExoModuleVersion:$moduleVersion -Logger $cmdletLogger `
                 -ConnectionId $connectionContextID -EnableErrorReporting:$EnableErrorReporting.Value `
-                -ManagedIdentity:$ManagedIdentity.Value -ManagedIdentityAccountId $ManagedIdentityAccountId.Value -AccessToken $AccessToken -DisableWAM:$DisableWAM -LogDirectoryPath $LogDirectoryPath.Value -EnableSearchOnlySession $EnableSearchOnlySession -EXOModuleBasePath $EXOModuleBasePath
+                -ManagedIdentity:$ManagedIdentity.Value -ManagedIdentityAccountId $ManagedIdentityAccountId.Value -AccessToken $AccessToken -DisableWAM:$DisableWAM -LogDirectoryPath $LogDirectoryPath.Value -EnableSearchOnlySession $EnableSearchOnlySession -EXOModuleBasePath $EXOModuleBasePath -ConnectionWorkload $ConnectionWorkload
             }
             else
             {
@@ -451,7 +482,7 @@ function Connect-ExchangeOnline
                 -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -Credential $Credential.Value -PSSessionOption $PSSessionOption `
                 -BypassMailboxAnchoring:$BypassMailboxAnchoring -Device:$Device.Value -InlineCredential:$InlineCredential.Value `
                 -DelegatedOrg $DelegatedOrganization -CommandName $CommandName -FormatTypeName $FormatTypeName -Prefix $Prefix -ExoModuleVersion:$moduleVersion `
-                -Logger $cmdletLogger -ConnectionId $connectionContextID -EnableErrorReporting:$EnableErrorReporting.Value -AccessToken $AccessToken -DisableWAM:$DisableWAM -LogDirectoryPath $LogDirectoryPath.Value -EnableSearchOnlySession $EnableSearchOnlySession -EXOModuleBasePath $EXOModuleBasePath
+                -Logger $cmdletLogger -ConnectionId $connectionContextID -EnableErrorReporting:$EnableErrorReporting.Value -AccessToken $AccessToken -DisableWAM:$DisableWAM -LogDirectoryPath $LogDirectoryPath.Value -EnableSearchOnlySession $EnableSearchOnlySession -EXOModuleBasePath $EXOModuleBasePath -ConnectionWorkload $ConnectionWorkload
 
             }
 
@@ -799,6 +830,204 @@ function Connect-IPPSSession
         finally
         {
             $EOPConnectionInProgress = $false
+        }
+    }
+}
+
+function Connect-DefenderForOffice365
+{
+    [CmdletBinding()]
+    param(
+        # Remote PowerShell endpoint. Standalone Exchange Online Protection host (ps.protection.*); routing is driven by the X-ConnectionWorkload header.
+        [string] $ConnectionUri = 'https://ps.protection.outlook.com/PowerShell-LiveId',
+
+        # Azure AD Authorization endpoint Uri that can issue the OAuth2 access tokens
+        [string] $AzureADAuthorizationEndpointUri = 'https://login.microsoftonline.com/organizations',
+
+        # Delegated Organization Name
+        [string] $DelegatedOrganization = '',
+
+        # PowerShell session options to be used when opening the Remote PowerShell session
+        [System.Management.Automation.Remoting.PSSessionOption] $PSSessionOption = $null,
+
+        # Switch to bypass use of mailbox anchoring hint.
+        [switch] $BypassMailboxAnchoring = $false,
+
+        # Prefix
+        [string] $Prefix = '',
+
+        #Cmdlets to Import, by default it would bring all
+        [string[]] $CommandName = @("*"),
+
+        #The way the output objects would be printed on the console
+        [string[]] $FormatTypeName = @("*"),
+
+        # Show Banner of MDO cmdlets Mapping and recent updates
+        [switch] $ShowBanner = $true,
+
+        # switch to disable WAM
+        [switch] $DisableWAM = $false,
+
+        # Externally provided access token
+        [string] $AccessToken = '',
+
+        # TempBasePath
+        [string] $EXOModuleBasePath = [System.IO.Path]::GetTempPath()
+    )
+    DynamicParam
+    {
+        if (($isCloudShell = IsCloudShellEnvironment) -eq $false)
+        {
+            $attributes = New-Object System.Management.Automation.ParameterAttribute
+            $attributes.Mandatory = $false
+
+            $attributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute]
+            $attributeCollection.Add($attributes)
+
+            # User Principal Name or email address of the user
+            $UserPrincipalName = New-Object System.Management.Automation.RuntimeDefinedParameter('UserPrincipalName', [string], $attributeCollection)
+            $UserPrincipalName.Value = ''
+
+            # User Credential to Logon
+            $Credential = New-Object System.Management.Automation.RuntimeDefinedParameter('Credential', [System.Management.Automation.PSCredential], $attributeCollection)
+            $Credential.Value = $null
+
+            # Certificate
+            $Certificate = New-Object System.Management.Automation.RuntimeDefinedParameter('Certificate', [System.Security.Cryptography.X509Certificates.X509Certificate2], $attributeCollection)
+            $Certificate.Value = $null
+
+            # Certificate Path
+            $CertificateFilePath = New-Object System.Management.Automation.RuntimeDefinedParameter('CertificateFilePath', [string], $attributeCollection)
+            $CertificateFilePath.Value = ''
+
+            # Certificate Password
+            $CertificatePassword = New-Object System.Management.Automation.RuntimeDefinedParameter('CertificatePassword', [System.Security.SecureString], $attributeCollection)
+            $CertificatePassword.Value = $null
+
+            # Certificate Thumbprint
+            $CertificateThumbprint = New-Object System.Management.Automation.RuntimeDefinedParameter('CertificateThumbprint', [string], $attributeCollection)
+            $CertificateThumbprint.Value = ''
+
+            # Application Id
+            $AppId = New-Object System.Management.Automation.RuntimeDefinedParameter('AppId', [string], $attributeCollection)
+            $AppId.Value = ''
+
+            # Organization
+            $Organization = New-Object System.Management.Automation.RuntimeDefinedParameter('Organization', [string], $attributeCollection)
+            $Organization.Value = ''
+
+            # Switch to collect telemetry on command execution.
+            $EnableErrorReporting = New-Object System.Management.Automation.RuntimeDefinedParameter('EnableErrorReporting', [switch], $attributeCollection)
+            $EnableErrorReporting.Value = $false
+
+            # Where to store command telemetry data. By default telemetry is stored in the directory "%TEMP%/EXOTelemetry" in the file : EXOCmdletTelemetry-yyyymmdd-hhmmss.csv.
+            $LogDirectoryPath = New-Object System.Management.Automation.RuntimeDefinedParameter('LogDirectoryPath', [string], $attributeCollection)
+            $LogDirectoryPath.Value = [System.IO.Path]::Combine([System.IO.Path]::GetTempPath(), "EXOCmdletTelemetry")
+            # Create a new attribute and validate set against the LogLevel
+            $LogLevelAttribute = New-Object System.Management.Automation.ParameterAttribute
+            $LogLevelAttribute.Mandatory = $false
+            $LogLevelAttributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute]
+            $LogLevelAttributeCollection.Add($LogLevelAttribute)
+            $LogLevelList = @([Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel]::Default, [Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel]::All)
+            $ValidateSet = New-Object System.Management.Automation.ValidateSetAttribute($LogLevelList)
+            $LogLevel = New-Object System.Management.Automation.RuntimeDefinedParameter('LogLevel', [Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel], $LogLevelAttributeCollection)
+            $LogLevel.Attributes.Add($ValidateSet)
+
+            $paramDictionary = New-object System.Management.Automation.RuntimeDefinedParameterDictionary
+            $paramDictionary.Add('UserPrincipalName', $UserPrincipalName)
+            $paramDictionary.Add('Credential', $Credential)
+            $paramDictionary.Add('Certificate', $Certificate)
+            $paramDictionary.Add('CertificateFilePath', $CertificateFilePath)
+            $paramDictionary.Add('CertificatePassword', $CertificatePassword)
+            $paramDictionary.Add('AppId', $AppId)
+            $paramDictionary.Add('Organization', $Organization)
+            $paramDictionary.Add('EnableErrorReporting', $EnableErrorReporting)
+            $paramDictionary.Add('LogDirectoryPath', $LogDirectoryPath)
+            $paramDictionary.Add('LogLevel', $LogLevel)
+            if($PSEdition -eq 'Core')
+            {
+                # We do not want to expose certificate thumprint in Linux as it is not feasible there.
+                if($IsWindows)
+                {
+                    $paramDictionary.Add('CertificateThumbprint', $CertificateThumbprint);
+                }
+            }
+            else
+            {
+                $paramDictionary.Add('CertificateThumbprint', $CertificateThumbprint);
+            }
+
+            return $paramDictionary
+        }
+        else
+        {
+            $attributes = New-Object System.Management.Automation.ParameterAttribute
+            $attributes.Mandatory = $false
+
+            $attributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute]
+            $attributeCollection.Add($attributes)
+
+            # Switch to MSI auth
+            $Device = New-Object System.Management.Automation.RuntimeDefinedParameter('Device', [switch], $attributeCollection)
+            $Device.Value = $false
+
+            # Switch to collect telemetry on command execution.
+            $EnableErrorReporting = New-Object System.Management.Automation.RuntimeDefinedParameter('EnableErrorReporting', [switch], $attributeCollection)
+            $EnableErrorReporting.Value = $false
+
+            # Where to store EXO command telemetry data. By default telemetry is stored in the directory "%TEMP%/EXOTelemetry" in the file : EXOCmdletTelemetry-yyyymmdd-hhmmss.csv.
+            $LogDirectoryPath = New-Object System.Management.Automation.RuntimeDefinedParameter('LogDirectoryPath', [string], $attributeCollection)
+            $LogDirectoryPath.Value = [System.IO.Path]::Combine([System.IO.Path]::GetTempPath(), "EXOCmdletTelemetry")
+            # Create a new attribute and validate set against the LogLevel
+            $LogLevelAttribute = New-Object System.Management.Automation.ParameterAttribute
+            $LogLevelAttribute.Mandatory = $false
+            $LogLevelAttributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute]
+            $LogLevelAttributeCollection.Add($LogLevelAttribute)
+            $LogLevelList = @([Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel]::Default, [Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel]::All)
+            $ValidateSet = New-Object System.Management.Automation.ValidateSetAttribute($LogLevelList)
+            $LogLevel = New-Object System.Management.Automation.RuntimeDefinedParameter('LogLevel', [Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel], $LogLevelAttributeCollection)
+            $LogLevel.Attributes.Add($ValidateSet)
+            $paramDictionary = New-object System.Management.Automation.RuntimeDefinedParameterDictionary
+            $paramDictionary.Add('Device', $Device)
+            $paramDictionary.Add('EnableErrorReporting', $EnableErrorReporting)
+            $paramDictionary.Add('LogDirectoryPath', $LogDirectoryPath)
+            $paramDictionary.Add('LogLevel', $LogLevel)
+            return $paramDictionary
+        }
+    }
+    process
+    {
+        try
+        {
+            $EOPConnectionInProgress = $true
+            $ConnectionWorkload = 'MDO'
+            if ($isCloudShell -eq $false)
+            {
+                $LogLevelValue = [Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel]::All
+                if($LogLevel.Value)
+                {
+                    $LogLevelValue = $LogLevel.Value
+                }
+                $certThumbprint = $CertificateThumbprint.Value
+                # Will pass CertificateThumbprint if it is not null or not empty
+                if($certThumbprint)
+                {
+                    Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -UserPrincipalName $UserPrincipalName.Value -PSSessionOption $PSSessionOption -Credential $Credential.Value -BypassMailboxAnchoring:$BypassMailboxAnchoring -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Certificate $Certificate.Value -CertificateFilePath $CertificateFilePath.Value -CertificatePassword $CertificatePassword.Value -CertificateThumbprint $certThumbprint -AppId $AppId.Value -Organization $Organization.Value -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -DisableWAM:$DisableWAM -EnableErrorReporting:$EnableErrorReporting.Value -LogLevel $LogLevelValue -LogDirectoryPath $LogDirectoryPath.Value -EXOModuleBasePath $EXOModuleBasePath
+                }
+                else
+                {
+                    Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -UserPrincipalName $UserPrincipalName.Value -PSSessionOption $PSSessionOption -Credential $Credential.Value -BypassMailboxAnchoring:$BypassMailboxAnchoring -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Certificate $Certificate.Value -CertificateFilePath $CertificateFilePath.Value -CertificatePassword $CertificatePassword.Value -AppId $AppId.Value -Organization $Organization.Value -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -DisableWAM:$DisableWAM -AccessToken $AccessToken -EnableErrorReporting:$EnableErrorReporting.Value -LogLevel $LogLevelValue -LogDirectoryPath $LogDirectoryPath.Value -EXOModuleBasePath $EXOModuleBasePath
+                }
+            }
+            else
+            {
+                Connect-ExchangeOnline -ConnectionUri $ConnectionUri -AzureADAuthorizationEndpointUri $AzureADAuthorizationEndpointUri -PSSessionOption $PSSessionOption -BypassMailboxAnchoring:$BypassMailboxAnchoring -Device:$Device.Value -ShowBanner:$ShowBanner -DelegatedOrganization $DelegatedOrganization -Prefix $Prefix -CommandName $CommandName -FormatTypeName $FormatTypeName -DisableWAM:$DisableWAM -AccessToken $AccessToken -EnableErrorReporting:$EnableErrorReporting.Value -LogLevel $LogLevelValue -LogDirectoryPath $LogDirectoryPath.Value -EXOModuleBasePath $EXOModuleBasePath
+            }
+        }
+        finally
+        {
+            $EOPConnectionInProgress = $false
+            $ConnectionWorkload = ''
         }
     }
 }

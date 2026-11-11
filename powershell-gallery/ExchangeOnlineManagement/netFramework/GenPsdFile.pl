@@ -44,7 +44,7 @@ while(<DATA>) {
 
 print OUTPUT "\@{\n";
 print OUTPUT "RootModule = 'ExchangeOnlineManagementBeta.psm1'\n";
-print OUTPUT "FunctionsToExport = \@('Connect-ExchangeOnline', 'Connect-IPPSSession', 'Disconnect-ExchangeOnline')\n";
+print OUTPUT "FunctionsToExport = \@('Connect-ExchangeOnline', 'Connect-IPPSSession', 'Connect-DefenderForOffice365', 'Disconnect-ExchangeOnline')\n";
 print OUTPUT "ModuleVersion = '$MV'\n";
 print OUTPUT "GUID = 'B5ECED50-AFA4-455B-847A-D8FB64140A22'\n";
 print OUTPUT "Author = 'Microsoft Corporation'\n";

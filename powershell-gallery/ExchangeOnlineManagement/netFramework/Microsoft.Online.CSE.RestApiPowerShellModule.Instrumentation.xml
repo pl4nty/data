@@ -831,6 +831,30 @@
             The unique ID for this connection
             </summary>
         </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.PSCredentialTypeName">
+            <summary>
+            Safe value logged in place of a PSCredential (or a value that has already been serialized from one)
+            so that credential material is never written to the client-side log file.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.SecureStringTypeName">
+            <summary>
+            Safe value logged in place of a SecureString (or a value that has already been serialized from one)
+            so that secret material is never written to the client-side log file.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.SensitiveParameterNameFragments">
+            <summary>
+            Parameter-name fragments (matched case-insensitively) that indicate the value is secret and must
+            never be logged in the clear.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.SerializedCredentialPasswordRegex">
+            <summary>
+            Matches the password field of a serialized credential (for example the compressed JSON produced from a
+            PSCredential) so that its value can be redacted from an already-formatted parameter string.
+            </summary>
+        </member>
         <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.#ctor(System.String,System.Boolean,System.String,System.String)">
             <summary>
             constructor for logger
@@ -934,6 +958,48 @@
             </summary>
             <param name="cmdletId">cmdletID to add to</param>
             <param name="parameters">dict of cmdlet parameters</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.RedactSensitiveParameterValue(System.String,System.Object,System.String)">
+            <summary>
+            Returns a safe, non-secret representation for a cmdlet parameter value so that credential material
+            (a PSCredential, a SecureString, or a value that the generated module has already serialized into a
+            plaintext credential string) is never written to the client-side log file.
+            </summary>
+            <param name="parameterName">The bound-parameter name.</param>
+            <param name="parameterValue">The bound-parameter value.</param>
+            <param name="defaultValue">The value that would be logged if the parameter is not sensitive.</param>
+            <returns>A redacted type name for sensitive parameters; otherwise <paramref name="defaultValue"/>.</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.IsCredentialParameterName(System.String)">
+            <summary>
+            Determines whether the parameter name denotes a credential (for example 'Credential' or 'Credentials').
+            </summary>
+            <param name="parameterName">The bound-parameter name.</param>
+            <returns><c>true</c> if the name denotes a credential; otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.IsSensitiveParameterName(System.String)">
+            <summary>
+            Determines whether the parameter name denotes secret material that must never be logged in the clear.
+            </summary>
+            <param name="parameterName">The bound-parameter name.</param>
+            <returns><c>true</c> if the name denotes secret material; otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.LooksLikeSerializedCredential(System.String)">
+            <summary>
+            Determines whether a value is a serialized credential (the compressed JSON that the generated module
+            produces from a PSCredential, for example {"UserName":"...","Password":"..."}).
+            </summary>
+            <param name="value">The candidate value.</param>
+            <returns><c>true</c> if the value looks like a serialized credential; otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.RedactSerializedCredentialsInText(System.String)">
+            <summary>
+            Redacts the password value from any serialized credential embedded in an already-formatted parameter
+            string. This is a defense-in-depth guard for callers that log a pre-serialized parameter string rather
+            than a parameter dictionary; the dictionary path redacts the whole value to its safe type name.
+            </summary>
+            <param name="text">The already-formatted parameter string.</param>
+            <returns>The parameter string with any serialized-credential password value redacted.</returns>
         </member>
         <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.WriteLogRecordToFile(System.String)">
             <summary>

@@ -294,6 +294,9 @@
             Whether this connectioncontext is for an Eop connection
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ConnectionWorkload">
+            <summary>Microsoft 365 workload the connection targets (e.g., "MDO"), sent as the X-ConnectionWorkload header.</summary>
+        </member>
         <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ConnectionName">
             <summary>
             Exchange online connection Name.
@@ -723,6 +726,11 @@
             Whether this connectioncontext is for an Eop connection
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.ConnectionWorkload">
+            <summary>
+            Microsoft 365 workload the connection targets (e.g., "MDO").
+            </summary>
+        </member>
         <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.#ctor(Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext,System.Boolean)">
             <summary>
             Public Constructor
@@ -989,6 +997,9 @@
             EXOModuleBasePath parameter
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ConnectionWorkload">
+            <summary>Microsoft 365 workload the connection targets (e.g., "MDO"), sent as the X-ConnectionWorkload header.</summary>
+        </member>
         <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetSystemMailboxRoutingHint(System.String)">
             <summary>
             Returns routing hint based on SystemMailbox UPN.
@@ -1119,6 +1130,17 @@
             Returns the ConnectionUri
             </summary>
             <returns>Returns the effective ConnectionUri</returns>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.IsMicrosoftDefenderForOfficeConnection">
+            <summary>
+            Gets a value indicating whether this connection targets the Microsoft Defender for Office (MDO) workload.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetEffectiveConnectionUriForMdo">
+            <summary>
+            Returns the EOP token audience for an MDO connection. See <see cref="M:Microsoft.Exchange.Management.AdminApiProvider.AppSettings.GetAcquireTokenEndpointForMdo(System.String)"/>.
+            </summary>
+            <returns>The EOP token audience.</returns>
         </member>
         <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetEffectiveAzureADAuthenticationEndpointUri">
             <summary>
@@ -1350,6 +1372,9 @@
             IpUrlSubString param
             </summary>
         </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.EopUrlSubString">
+            <summary>Host substring that matches the EOP PowerShell host (ps.protection.*).</summary>
+        </member>
         <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HttpClient">
             <summary>
             Gets the http client for getting the new exo module.
@@ -1470,6 +1495,16 @@
         <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ROPCEnabledHeader">
             <summary>
             Indicates whether the authentication used Resource Owner Password Credentials (ROPC) flow.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ConnectionWorkloadHeader">
+            <summary>
+            ConnectionWorkload Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.MicrosoftDefenderForOfficeWorkload">
+            <summary>
+            Workload value for an MDO PowerShell session; sent as the X-ConnectionWorkload header for server-side routing.
             </summary>
         </member>
         <!-- Badly formed XML comment ignored for member "T:Microsoft.Exchange.Management.ExoPowershellSnapin.JsonTypedConverter" -->
@@ -1669,6 +1704,32 @@
             This is in addition to original request.
             </summary>
         </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.EopTdsTestForestSuffix">
+            <summary>
+            TEST-TOPOLOGY ONLY. Forest suffix of an EOP/FFO TDS test box. The test-only server-side
+            EopTdsDAuthMockModule only exists on these boxes, so the EOP TDS role headers are stamped only when the
+            local box's own forest ends with this suffix - never from a production machine.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.ExchangeLabsRegistryKeyPath">
+            <summary>
+            TEST-TOPOLOGY ONLY. HKLM registry key (and DWORD value) that the product uses to mark a box as an
+            EOP / Forefront-for-Office (FFO) deployment. Read directly (not via the datacenter-aware DatacenterRegistry
+            helper, which is banned in new code) so the EOP TDS role headers are emitted only on an EOP box, never on a
+            Substrate box that happens to share the .extest.microsoft.com test forest.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.ForefrontForOfficeModeValueName">
+            <summary>DWORD value name under <see cref="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.ExchangeLabsRegistryKeyPath"/>; 1 means this is an EOP/FFO box.</summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.eopTdsRoleHeaderGateTestHook">
+            <summary>
+            Test-only seam for the EOP-TDS role-header gate. Always null in production (the real forest + registry gate
+            is evaluated). The EOP/FFO registry marker and a .extest.microsoft.com forest cannot be set on a build/CI
+            box, so unit tests set this (via reflection) to force the gate open or closed. Private + reflection-only =&gt;
+            unreachable from production.
+            </summary>
+        </member>
         <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.cmdletId">
             <summary>
             Unique guid for this cmdlet execution
@@ -1746,6 +1807,50 @@
             </summary>
             <param name="authHeader">AuthHeader object</param>
             <returns>HttpRequestMessage for the current endpoint</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.AddEopTdsRoleHeaderFromEnvironment(System.Net.Http.HttpRequestMessage,System.String,System.String)">
+            <summary>
+            TEST-TOPOLOGY ONLY. Copies a role-selection value from the named environment variable to the named
+            request header when the variable is set and the header is not already present. Used exclusively by the
+            EOP TDS shell launcher (LaunchEopShell) to pass RBAC role-group selections through to the test-only
+            DAuth-minting AdminApi module (EopTdsDAuthMockModule) on the connect-time gating request. No-op in
+            production, where the variables are never set and any stray header would be ignored by a server without
+            the test-only mock module.
+            </summary>
+            <param name="requestMessage">The request being built.</param>
+            <param name="environmentVariableName">Name of the environment variable to read.</param>
+            <param name="headerName">Name of the request header to set from the variable's value.</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.IsEopTdsRoleHeaderAllowed">
+            <summary>
+            Defense-in-depth gate for <see cref="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.AddEopTdsRoleHeaderFromEnvironment(System.Net.Http.HttpRequestMessage,System.String,System.String)"/>: the test-only role headers may be
+            stamped only when BOTH (a) this client's own forest is a TDS test forest (<see cref="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.IsEopTdsTestForestBox"/>)
+            AND (b) the box is an EOP/FFO deployment (<see cref="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.IsForefrontForOfficeBox"/>). Honors the reflection-only
+            test seam first so unit tests can exercise the stamping logic without machine state. Never throws.
+            </summary>
+            <returns>True when the test-only EOP-TDS role headers may be emitted from this box; otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.IsEopTdsTestForestBox">
+            <summary>
+            TEST-TOPOLOGY ONLY. Returns true when this client is running on an EOP/FFO TDS test box - i.e. the local
+            machine's primary DNS domain ends with <c>.extest.microsoft.com</c>. This is the only environment where the
+            server-side test-only EopTdsDAuthMockModule exists to honour the EOP TDS role headers, and it mirrors the
+            server's own <c>IsTestTopologyBox</c> gate (which keys off the box forest FQDN, not the request Host).
+            Used as a defense-in-depth gate so test-only headers are never emitted from a non-test machine. Never throws.
+            </summary>
+            <returns>True when the local box's forest is a TDS test forest; otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.IsForefrontForOfficeBox">
+            <summary>
+            TEST-TOPOLOGY ONLY. Returns true when this box is an EOP / Forefront-for-Office (FFO) deployment, read from
+            the same <c>HKLM\SOFTWARE\Microsoft\ExchangeLabs!ForefrontForOfficeMode</c> DWORD (==1) the product uses to
+            distinguish EOP from Substrate. The value is read with a raw <see cref="T:Microsoft.Win32.Registry"/> call rather than the
+            datacenter-aware <c>DatacenterRegistry.IsForefrontForOffice()</c> helper (which is banned in new code), so it
+            stays analyzer-clean. Used together with <see cref="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.IsEopTdsTestForestBox"/> as a defense-in-depth gate so the
+            EOP TDS role headers are never emitted from a Substrate box sharing the .extest.microsoft.com test forest.
+            Never throws.
+            </summary>
+            <returns>True when the local box is an EOP/FFO deployment; otherwise false.</returns>
         </member>
         <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.BeginProcessing">
             <summary>
