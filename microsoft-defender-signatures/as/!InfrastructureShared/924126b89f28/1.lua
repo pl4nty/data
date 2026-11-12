@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if (versioning.GetTestMode)() ~= 65000 and (versioning.GetCloudBlockLevel)() < 4 and (MpCommon.IsSampled)(10000, true, true, true) == false then
+if (versioning.GetTestMode)() ~= 65000 and (versioning.GetCloudBlockLevel)() < 4 and (versioning.IsSampled)(10000, true, true, true) == false then
   return mp.CLEAN
 end
 local l_0_0 = (this_sigattrlog[5]).utf8p1

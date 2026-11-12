@@ -12,7 +12,7 @@ if l_0_1 == nil or l_0_1 == "" then
   return mp.CLEAN
 end
 l_0_1 = (string.lower)(l_0_1)
-if (MpCommon.IsSampled)(100, true, true, true) == false and (#l_0_1 < 16 or #l_0_1 > 450) then
+if (versioning.IsSampled)(100, true, true, true) == false and (#l_0_1 < 16 or #l_0_1 > 450) then
   return mp.CLEAN
 end
 local l_0_5 = nil

@@ -58,7 +58,7 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
 
               local l_0_14 = nil
               local l_0_15, l_0_16, l_0_17 = nil
-              if AnomalyTableCheck(not (MpCommon.IsSampled)(100000, true, true, true) or "Appomaly_ChildProcName_CmdLine_0", l_0_7 .. ";" .. l_0_12 .. ";" .. (table.concat)(l_0_9.CommandlineTokens, "|"), 30, "MarkerRecord_" .. l_0_7) and not not (MpCommon.IsSampled)(100000, true, true, true) or "Appomaly_ChildProcName_CmdLine_0" then
+              if AnomalyTableCheck(not (versioning.IsSampled)(100000, true, true, true) or "Appomaly_ChildProcName_CmdLine_0", l_0_7 .. ";" .. l_0_12 .. ";" .. (table.concat)(l_0_9.CommandlineTokens, "|"), 30, "MarkerRecord_" .. l_0_7) and not not (versioning.IsSampled)(100000, true, true, true) or "Appomaly_ChildProcName_CmdLine_0" then
                 add_parents()
                 local l_0_18 = nil
                 local l_0_19 = nil

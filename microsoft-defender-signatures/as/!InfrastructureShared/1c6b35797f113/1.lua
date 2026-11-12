@@ -68,7 +68,7 @@ do
         end
         local l_0_9, l_0_10 = (string.lower)((((bm.get_connection_string)()):match("Uri=(.-;)")):match("^%a+://([^:/]+)")), nil
         local l_0_11 = nil
-        if (MpCommon.IsSampled)(100000, true, true, true) then
+        if (versioning.IsSampled)(100000, true, true, true) then
           local l_0_12 = {TrackedProcess = l_0_1, SignatureName = "PFAppAnomalousOutbound.B", AnomalyTableName = "Appomaly_Network_HOST", Key = l_0_1 .. "_" .. l_0_9}
           local l_0_13 = "Appomaly_Network_HOST_0"
           local l_0_14, l_0_15, l_0_16 = , AnomalyTableCheck(l_0_13, l_0_1 .. "_" .. l_0_9, 30, "MarkerRecord_" .. l_0_1)

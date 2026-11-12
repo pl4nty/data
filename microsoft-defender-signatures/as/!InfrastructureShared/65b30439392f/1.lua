@@ -16,7 +16,7 @@ do
       if l_0_2 == "17758f83-f720-459f-a3dd-02f409178457" then
         return mp.CLEAN
       else
-        if l_0_2 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (MpCommon.IsSampled)(100, false, true, true) == true then
+        if l_0_2 == "d7c7c745-195f-4223-9c7a-99fb420fd000" and (versioning.IsSampled)(100, false, true, true) == true then
           return mp.CLEAN
         end
       end

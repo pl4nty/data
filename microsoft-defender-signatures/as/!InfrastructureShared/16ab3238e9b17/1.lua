@@ -50,7 +50,7 @@ do
         l_0_8 = "None"
       end
       local l_0_9 = nil
-      if (MpCommon.IsSampled)(100000, true, true, true) then
+      if (versioning.IsSampled)(100000, true, true, true) then
         local l_0_10 = {}
         local l_0_11 = "Appomaly_ChildProcName_Server_0"
         local l_0_12, l_0_13, l_0_14 = , AnomalyTableCheck(l_0_11, l_0_8 .. "_" .. l_0_7, 30, "MarkerRecord_" .. l_0_5)

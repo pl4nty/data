@@ -15,7 +15,7 @@ local l_0_1 = false
 if l_0_0 == "d7c7c745-195f-4223-9c7a-99fb420fd000" or l_0_0 == "c34db763-35fc-4c4a-9ca4-697338808f18" then
   l_0_1 = true
 else
-  if (MpCommon.IsSampled)(20000, false, true, true) == true then
+  if (versioning.IsSampled)(20000, false, true, true) == true then
     l_0_1 = true
   end
 end

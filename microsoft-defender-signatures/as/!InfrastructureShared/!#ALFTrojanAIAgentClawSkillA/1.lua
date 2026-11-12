@@ -11,7 +11,7 @@ local l_0_1 = (versioning.GetOrgID)()
 if l_0_1 and (string.lower)(l_0_1) == "1beec53c-4b52-4aec-a1b1-716d6da36984" then
   l_0_0 = true
 end
-if not l_0_0 and (MpCommon.IsSampled)(10000, true, true, true) == false then
+if not l_0_0 and (versioning.IsSampled)(10000, true, true, true) == false then
   return mp.CLEAN
 end
 local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))

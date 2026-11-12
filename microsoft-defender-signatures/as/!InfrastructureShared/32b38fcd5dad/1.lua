@@ -32,7 +32,7 @@ do
     return mp.CLEAN
   end
   local l_0_7 = nil
-  if (MpCommon.IsSampled)(100000, true, true, true) then
+  if (versioning.IsSampled)(100000, true, true, true) then
     for l_0_11,l_0_12 in ipairs({"Appomaly_Network_HOST", "Appomaly_Network_UserAgent"}) do
       local l_0_8 = nil
       local l_0_14, l_0_15 = {SignatureName = "Behavior:Win32/PFAppAnomalousOutbound.A", Url = l_0_3.Url, AnomalyTableName = l_0_13}, nil

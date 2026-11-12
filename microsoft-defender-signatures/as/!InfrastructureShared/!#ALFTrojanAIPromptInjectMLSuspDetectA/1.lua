@@ -44,7 +44,7 @@ do
       l_0_11.CPEId = l_0_12
       l_0_12 = safeJsonSerialize
       l_0_12 = l_0_12(l_0_11)
-      if l_0_9 and (MpCommon.IsSampled)(10000, true, true, true) then
+      if l_0_9 and (versioning.IsSampled)(10000, true, true, true) then
         (MpCommon.BmTriggerSig)(l_0_9, "AIPromptInjectML_MLSuspDetect_A", l_0_12)
       end
       ;

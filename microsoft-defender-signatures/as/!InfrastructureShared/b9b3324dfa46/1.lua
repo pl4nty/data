@@ -3,7 +3,7 @@
 
 -- params : ...
 -- function num : 0
-if not (versioning.IsSeville)() and not (versioning.IsServer)() and (MpCommon.IsSampled)(11000, true, true, true) == false then
+if not (versioning.IsSeville)() and not (versioning.IsServer)() and (versioning.IsSampled)(11000, true, true, true) == false then
   return mp.CLEAN
 end
 local l_0_0, l_0_1 = (bm.get_process_relationships)()
