@@ -1,0 +1,17 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+package edge_dlis_tokenizers.proto;
+
+message NormalizationRuleSetV2 {
+  repeated NormalizationDict norm_dict = 1;
+  repeated bytes norm_buf_utf32 = 2;
+}
+
+message NormalizationDict {
+  bytes original_utf32 = 1;
+  uint32 count = 2;
+}
