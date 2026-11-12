@@ -921,6 +921,7 @@
             "AdminsCanExcludeAppsFromMaa": true,
             "AppAsRequestor": true,
             "AutopatchMaaExclusion": true,
+            "EnableApprovalRequestStructuralSanitization": true,
             "EnableMAA": true,
             "EnableMAA_CompliancePolicy": true,
             "EnableMAA_ComplianceSettings": true,

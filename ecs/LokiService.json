@@ -1495,7 +1495,6 @@
         "ExtendedUserInfoCacheTtl": "1d",
         "ExtendedUserInfoMyselfCacheTtl": "1d",
         "FeedInsightFilterAndRankerSettings": "",
-        "FlightRefresherTeamScopedListeners": true,
         "GraphQlAllowedOperationNames": [
             "getWorkingWithAvailability",
             "getOrgExplorerAvailability",
@@ -1865,7 +1864,8 @@
             "SaveMemories",
             "GetPeopleOrgChains",
             "AllMemories",
-            "GetPeopleProfiles"
+            "GetPeopleProfiles",
+            "PLGAgenticTaskUsage"
         ],
         "GraphqlFireAndForget": true,
         "GroupUpdatedCard": true,

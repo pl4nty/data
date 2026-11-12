@@ -1213,6 +1213,7 @@
         "ChangeTaskBlobPrefixDiscovery": true,
         "ContinueSavingTenantDataToMonolithSqlServer": true,
         "DSSApi": true,
+        "DebugSinkConfiguration": "{\"schemaVersion\":1,\"enabled\":true,\"sinks\":[{\"id\":\"baseline-nonprod\",\"kind\":\"baseline\",\"environments\":[\"dbg\",\"ppe\",\"preview\"],\"scaleUnits\":[\"*\"],\"services\":[\"*\"],\"tenantIds\":[\"*\"],\"operations\":[\"*\"],\"samplePercent\":10,\"maxOperationsPerWindow\":100,\"window\":\"00:01:00\"},{\"id\":\"baseline-prod\",\"kind\":\"baseline\",\"environments\":[\"prod\"],\"scaleUnits\":[\"*\"],\"services\":[\"*\"],\"tenantIds\":[\"*\"],\"operations\":[\"*\"],\"samplePercent\":1,\"maxOperationsPerWindow\":100,\"window\":\"00:01:00\"}]}",
         "Device-BusinessGroup-AutopatchGroupDeleteConsistency": true,
         "DevicesReportNewTitle": true,
         "DisableDssLegacyForwarding": true,
