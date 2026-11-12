@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 34387365,
-    "file_count": 4101
+    "size": 34399718,
+    "file_count": 4102
   },
   {
     "name": "boringssl",
@@ -141,7 +141,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 46360,
+    "size": 50740,
     "file_count": 5
   },
   {
@@ -211,8 +211,8 @@
   },
   {
     "name": "eigen3",
-    "size": 23686162,
-    "file_count": 2440
+    "size": 23976018,
+    "file_count": 2457
   },
   {
     "name": "entity_extraction",
@@ -541,8 +541,8 @@
   },
   {
     "name": "mutter",
-    "size": 28209400,
-    "file_count": 2142
+    "size": 28281840,
+    "file_count": 2147
   },
   {
     "name": "nasm",
@@ -576,7 +576,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 87542,
+    "size": 87844,
     "file_count": 38
   },
   {
@@ -616,8 +616,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4911628,
-    "file_count": 646
+    "size": 4923261,
+    "file_count": 647
   },
   {
     "name": "perl",
@@ -706,7 +706,7 @@
   },
   {
     "name": "skia",
-    "size": 3486579,
+    "size": 3486577,
     "file_count": 1223
   },
   {
@@ -776,7 +776,7 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 36546724,
+    "size": 36547538,
     "file_count": 47
   },
   {
@@ -806,7 +806,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7909044,
+    "size": 7908975,
     "file_count": 207
   },
   {

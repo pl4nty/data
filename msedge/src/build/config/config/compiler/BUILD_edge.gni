@@ -39,7 +39,8 @@ declare_args() {
 
 declare_args() {
   # Outline ASan checks to reduce code size at the cost of runtime performance.
-  # This is intended only for oversized static Linux sanitizer builds.
+  # This is intended only for oversized static Linux and Windows sanitizer
+  # builds.
   edge_enable_asan_outline_instrumentation = false
 }
 
@@ -196,7 +197,9 @@ template("edge_overlay_config_compiler") {
     # Edge overlays:
     # ASan builds also instantiate unsanitized Rust host-tool toolchains.
     if (edge_enable_asan_outline_instrumentation && is_asan) {
-      assert(is_linux, "ASan outlining is supported only for Linux ASan builds")
+      assert(
+          is_linux || is_win,
+          "ASan outlining is supported only for Linux and Windows ASan builds")
 
       # Some build tools remove the sanitizer config. Use the backend option
       # directly so Clang does not reject the public driver flag as unused.
