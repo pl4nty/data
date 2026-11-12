@@ -1807,6 +1807,12 @@
                     "IsEnabled": true
                 }
             ],
+            "EnableTMGpt6Luna": [
+                {
+                    "Flight": "TM.gpt6Luna",
+                    "IsEnabled": true
+                }
+            ],
             "EnableTMNotifications": [
                 {
                     "Flight": "TM.halfTimeNotifications",

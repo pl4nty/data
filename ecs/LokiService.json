@@ -424,8 +424,7 @@
                 "context_window": 1050000,
                 "id": "gpt-6-sol",
                 "inferenceProviders": [
-                    "OpenAI",
-                    "microsoft"
+                    "OpenAI"
                 ],
                 "name": "GPT-6 Sol",
                 "publisher": "OpenAI",
@@ -575,6 +574,43 @@
                 "write_agent": "local"
             },
             "version": 2
+        },
+        "LlmProxyAutoExecutorProfile": {
+            "harness": "Chat",
+            "models": [
+                {
+                    "effort": "low",
+                    "publicId": "gpt-5.6-sol",
+                    "supportedEndpoints": [
+                        "/chat/completions",
+                        "/responses"
+                    ]
+                },
+                {
+                    "effort": "medium",
+                    "publicId": "gpt-5.6-sol",
+                    "supportedEndpoints": [
+                        "/chat/completions",
+                        "/responses"
+                    ]
+                },
+                {
+                    "effort": "high",
+                    "publicId": "gpt-5.6-sol",
+                    "supportedEndpoints": [
+                        "/chat/completions",
+                        "/responses"
+                    ]
+                },
+                {
+                    "effort": "low",
+                    "publicId": "gpt-5.6-luna",
+                    "supportedEndpoints": [
+                        "/chat/completions",
+                        "/responses"
+                    ]
+                }
+            ]
         },
         "LlmProxyWorkflowModelAccess_Version": 1,
         "LlmProxyWorkflowModelAccess_Workflows": {

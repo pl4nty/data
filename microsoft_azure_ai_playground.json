@@ -301,6 +301,7 @@
         "azureml://registries/azureml-anthropic/models/claude-fable-5-2",
         "azureml://registries/azureml-anthropic/models/claude-fable-5-2-fast",
         "azureml://registries/azureml-mistral/models/mistral-large-3",
+        "azureml://registries/azureml-mistral/models/mistral-large-4-latest",
         "azureml://registries/azureml-fireworks/models/fw-kimi-k2-thinking",
         "azureml://registries/azureml-fireworks/models/fw-gpt-oss-120b",
         "azureml://registries/azureml-fireworks/models/fw-glm-4.7",
@@ -450,7 +451,8 @@
         "kimi-k2.7-code",
         "mai-thinking-1",
         "mai-code-1.1-flash",
-        "mai-code-2-flash"
+        "mai-code-2-flash",
+        "mistral-large-4-latest"
     ],
     "supportedModels": {
         "assistantsNotSupportedStreamingModels": [
@@ -528,7 +530,8 @@
             "gpt-5.6-terra",
             "gpt-chat-latest",
             "deepseek-v4.1-flash",
-            "deepseek-v4.1-flash-1017"
+            "deepseek-v4.1-flash-1017",
+            "mistral-large-4-latest"
         ],
         "supportedChatModels": [
             "gpt-4",
@@ -594,7 +597,8 @@
             "kimi-k2.7-code",
             "mai-thinking-1",
             "mai-code-1.1-flash",
-            "mai-code-2-flash"
+            "mai-code-2-flash",
+            "mistral-large-4-latest"
         ],
         "supportedCompletionModels": [
             "babbage-002",

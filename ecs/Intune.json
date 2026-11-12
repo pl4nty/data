@@ -990,6 +990,7 @@
             "EnableAndroidScepV2FlightingV2": true,
             "EnableDeleteProfileInstanceEarlyReturn": true,
             "EnableIOSWiredNetwork": true,
+            "EnableScepComplianceFailedRequestReconciliation": true,
             "EnableSharedIPadChannelApplicabilityCheckForWiFi": true,
             "ImportPFXRemediation": true,
             "NewAsyncRequestOnEncryptionCertMismatch": true,
@@ -1164,6 +1165,7 @@
             "EnableCompliancePolicySettingsOrgReport": true,
             "EnableDeviceExecutionStatusReportExportV2": true,
             "EnableDeviceStatusByCompliancePolicySettingReportExplorer": true,
+            "EnableInventoryPolicySummaryReportExplorer": true,
             "EnableJamfDeleteButton": true,
             "EnableWpa3PersonalForIosFlight": true,
             "ExplorerDcv2DeviceSummary": true,
@@ -1281,6 +1283,7 @@
             "AgenticIdentityIVRA": true,
             "ApproverAgentUI": true,
             "EnableAgenticIdentityIvra": true,
+            "EnableProfilePerSettingsReportReportExplorer": true,
             "PolicyAgent": true,
             "SBUpgrade": true
         }
