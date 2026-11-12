@@ -920,6 +920,7 @@
         "EnableWdsControllerNewErrorMessage": true,
         "EnableWdsFLDParityForRemoteAction": true,
         "EnableWdsIntelligentHibernateOperation": true,
+        "EnableWebhookSubscriptionGuidHash": true,
         "EnableWindows365GuidesSectionInUX": true,
         "EnableWindowsAppCustomizationForRestoreResetDr": true,
         "EnableWvdHoboCogsExport": true,
@@ -1204,6 +1205,7 @@
     },
     "MMD": {
         "AccessControlAuth": true,
+        "AllDevicesRecentCombinedFallback": true,
         "AlternativeSubscriptionSync": false,
         "AppOnlyAuth": true,
         "ApprovalMappingSeparateContainer": true,
