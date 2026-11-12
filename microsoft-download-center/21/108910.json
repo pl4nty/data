@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "SQLDBCopy - Dynamics Version",
+    "downloadDescription": "Dynamics specific version of SQL Server Database Copy Utility",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLDBCopyV3.1.2.zip",
+            "url": "https://download.microsoft.com/download/bd0096cf-827e-42e5-908c-30ffa6728539/SQLDBCopyV3.1.2.zip",
+            "size": "77856989",
+            "version": "3.1.2",
+            "datePublished": "11/11/2026 11:03:24 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Dynamics specific version of SQL Server Database Copy Utility. General users should download the latest version of the utility.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1.2",
+    "detailsSection_file_name": [
+        "SQLDBCopyV3.1.2.zip"
+    ],
+    "detailsSection_file_size": [
+        "74.3 MB"
+    ],
+    "detailsSection_file_date": "11/11/2026",
+    "systemRequirementsSection": "Windows only version, .net 10 should be optional.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "<UL>\n<li>Download the zip file to a Windows machine and unzip it into a local folder. Edit the appsettings.json file and run the utility.</li>\n</UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108910",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

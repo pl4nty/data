@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "SQLDBCopy - Azure Migrate",
+    "downloadDescription": "SQLDBCopy - Azure Migrate Specific Version",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLDBCopyV3.1.2.zip",
+            "url": "https://download.microsoft.com/download/de97c255-7fee-4ba2-b589-118a0c4918e9/SQLDBCopyV3.1.2.zip",
+            "size": "77856989",
+            "version": "3.1.2",
+            "datePublished": "11/11/2026 11:03:28 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Migrate Specific Version of SQLDBCopy - other users should download the latest version of the tool.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1.2",
+    "detailsSection_file_name": [
+        "SQLDBCopyV3.1.2.zip"
+    ],
+    "detailsSection_file_size": [
+        "74.3 MB"
+    ],
+    "detailsSection_file_date": "11/11/2026",
+    "systemRequirementsSection": "Windows only, .net 10 should be optional",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "<UL>\n<li>Download the zip file to a Windows machine and unzip it into a local folder. Edit the appsettings.json config file and run the utility.</li>\n</UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108911",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
