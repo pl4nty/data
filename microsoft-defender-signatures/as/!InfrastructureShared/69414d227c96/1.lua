@@ -11,6 +11,8 @@ local l_0_1 = (string.lower)(l_0_0)
 l_0_1 = l_0_1:gsub("%^", "")
 l_0_1 = l_0_1:gsub("\'", "")
 l_0_1 = l_0_1:gsub("\"", "")
+l_0_1 = l_0_1:gsub("\r\n", "\n")
+l_0_1 = l_0_1:gsub("\n+", "\n")
 l_0_1 = l_0_1:gsub("%s+", " ")
 if not (string.find)(l_0_1, "never logged in", 1, true) or not (string.find)(l_0_1, "cmd", 1, true) and not (string.find)(l_0_1, "powershell", 1, true) and not (string.find)(l_0_1, "conhost", 1, true) and not (string.find)(l_0_1, "curl", 1, true) and not (string.find)(l_0_1, "python", 1, true) and not (string.find)(l_0_1, "ipwy", 1, true) and not (string.find)(l_0_1, "msiexec", 1, true) and not (string.find)(l_0_1, "mshta", 1, true) and not (string.find)(l_0_1, "pushd ", 1, true) and not (string.find)(l_0_1, "/v:on", 1, true) and not (string.find)(l_0_1, "for ", 1, true) and not (string.find)(l_0_1, "tar -", 1, true) then
   return mp.CLEAN

@@ -1,12 +1,14 @@
 -- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\14fb352a4eac1\1.luac 
+-- Command line: lua\!InfrastructureShared\185b30c3357e7\1.luac 
 
 -- params : ...
 -- function num : 0
 local l_0_0 = nil
 local l_0_1 = nil
-if (((((not this_sigattrlog[1] and this_sigattrlog[2]) or not this_sigattrlog[3]) and this_sigattrlog[4]) or not this_sigattrlog[5]) and this_sigattrlog[6]) or not this_sigattrlog[7] then
+if ((((((this_sigattrlog[1] or not this_sigattrlog[2]) and this_sigattrlog[3]) or not this_sigattrlog[4]) and this_sigattrlog[5]) or not this_sigattrlog[6]) and this_sigattrlog[7]) or not this_sigattrlog[8] then
   for l_0_5,l_0_6 in ipairs({
+{}
+, 
 {}
 , 
 {}
@@ -22,13 +24,13 @@ if (((((not this_sigattrlog[1] and this_sigattrlog[2]) or not this_sigattrlog[3]
 {}
 }) do
     local l_0_2 = nil
-    -- DECOMPILER ERROR at PC41: Confused about usage of register: R6 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC45: Confused about usage of register: R6 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC46: Confused about usage of register: R6 in 'UnsetPending'
 
     -- DECOMPILER ERROR at PC50: Confused about usage of register: R6 in 'UnsetPending'
 
-    -- DECOMPILER ERROR at PC54: Confused about usage of register: R6 in 'UnsetPending'
+    -- DECOMPILER ERROR at PC55: Confused about usage of register: R6 in 'UnsetPending'
+
+    -- DECOMPILER ERROR at PC59: Confused about usage of register: R6 in 'UnsetPending'
 
     if ({}).matched == true and type(({}).utf8p1) == "string" and type(({}).utf8p2) == "string" then
       l_0_1 = {}
