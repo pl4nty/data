@@ -19,8 +19,12 @@ end
 if l_0_3 == "" or l_0_3 == nil or #l_0_3 > 150 or (string.find)(l_0_3, "github.com", 1, true) then
   return mp.CLEAN
 end
-for l_0_7,l_0_8,l_0_9 in l_0_3:gmatch("https?://[%w%.%-:]+/(%w+)/(%w+)()") do
-  if #l_0_7 >= 4 and #l_0_7 <= 8 and l_0_7:match("^[%l%d]+$") and #l_0_8 >= 10 and #l_0_8 <= 16 and l_0_8:find("%d") and l_0_8:find("%a") and not (l_0_3:sub(l_0_9, l_0_9)):match("[/%.%w_%-%?#=&]") then
+local l_0_4 = " " .. l_0_3 .. " "
+if l_0_4:find("%s%-%a*o%s") or l_0_4:find("%s%-%-output[%s=]") or l_0_4:find("%s%-%a*w%s") or l_0_4:find("%s%-%-write%-out[%s=]") then
+  return mp.CLEAN
+end
+for l_0_8,l_0_9,l_0_10 in l_0_3:gmatch("https?://[%w%.%-:]+/(%w+)/(%w+)()") do
+  if #l_0_8 >= 4 and #l_0_8 <= 8 and l_0_8:match("^[%l%d]+$") and #l_0_9 >= 10 and #l_0_9 <= 16 and l_0_9:find("%d") and l_0_9:find("%a") and not (l_0_3:sub(l_0_10, l_0_10)):match("[/%.%w_%-%?#=&]") then
     return mp.INFECTED
   end
 end
