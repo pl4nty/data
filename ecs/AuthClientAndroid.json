@@ -7,8 +7,6 @@
         }
     },
     "com.microsoft.authenticator": {
-        "MfaRegistrationUrlAllowListEnabled": true,
-        "MfaRegistrationUrlAllowListEnforced": false,
         "MsaCityLocation": true,
         "MsaNumberMatchRedesign": true,
         "MsaNumberMatchRedesignMap": true,
@@ -24,6 +22,7 @@
         "EnableHttpAuthOriginDisplay": true,
         "EnableWebViewMultipleWindows": false,
         "ForceBrokerDiscoveryEnabledForIntune": true,
+        "RejectUpdateCredentialsWpjRequests": true,
         "TelemetrySamplingRate": 0.25,
         "TrustAuthenticatorAsFociApp": false,
         "ValidateGetAccountsFociCaller": false,

@@ -559,6 +559,7 @@
             "EnableComplianceCalculationCache": true,
             "EnableCompliancePolicyAssignmentHelperAuthority": true,
             "EnableComplianceUpdateReportingPublisher": true,
+            "EnableDataSyncDsoiPatchTimeout": true,
             "EnableDeleteStalePartners": true,
             "EnableDeviceCleanupPtiDeletion": true,
             "EnablePartnerDeviceHealthComplianceAggregator2": true,
@@ -938,6 +939,7 @@
     },
     "SVC_OAuth": {
         "FlightingV2": {
+            "DisableBulkEnrollmentCertificateTokenIssuance": false,
             "EnableCertReplacementBackgroundTask": true,
             "EnforceExpiredCertificateChainValidation": true,
             "EnforceExpiredUdaCertificateValidation": true,

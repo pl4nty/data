@@ -4198,6 +4198,78 @@
         }
     },
     "Chilliamexperiences": {
+        "Floodgate_Campaign_myaccount.microsoft.com.0e667caa-fda3-4f50-87d2-45398af53572": {
+            "CampaignId": "0e667caa-fda3-4f50-87d2-45398af53572",
+            "EndTimeUtc": "2026-11-14T07:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 1,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-10-15T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "MyApps-Site Added",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 0
+                        }
+                    },
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Not at all easy",
+                                    "questionLabel": "How easy was it to add a site?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Extremely easy",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/0e667caa-fda3-4f50-87d2-45398af53572/31c33106-3bb9-414e-b1bc-b15229f875f9/Web-myaccount.microsoft.com/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_myaccount.microsoft.com.3a609e3c-a016-472d-90e6-9e83ec1abcec": {
             "CampaignId": "3a609e3c-a016-472d-90e6-9e83ec1abcec",
             "EndTimeUtc": "2027-01-16T08:00:00Z",
