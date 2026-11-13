@@ -1,0 +1,49 @@
+{
+  "blocks": {
+    "{0a8c40e9-d35f-4454-9800-d6b5f56f5a4e}": {
+      "entry": {
+        "APP_ID": "{1de69848-de00-4b15-8397-1ac332f64ac1}",
+        "APP_NAME": "Cốc Cốc browser",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "35891494",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "CU22H2",
+        "EXE_ID": "{0a8c40e9-d35f-4454-9800-d6b5f56f5a4e}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Coc Coc Co., Ltd.",
+          "NAME": "*",
+          "PRODUCT_NAME": "CocCoc"
+        },
+        "NAME": "browser.exe",
+        "VENDOR": "Coc Coc Co., Ltd."
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2021_09_23_06_01_AMD64",
+          "last": "2021_11_04_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_09_23_06_01_ARM64",
+          "last": "2021_11_04_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2021_09_23_06_01_X86",
+          "last": "2021_11_04_04_02_X86"
+        }
+      },
+      "source": "2021_11_04_04_02_X86"
+    }
+  },
+  "id": "35891494"
+}

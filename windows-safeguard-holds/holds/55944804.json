@@ -1,0 +1,58 @@
+{
+  "blocks": {
+    "{3e1a4565-c1ec-482e-abef-15d7111b9920}": {
+      "entry": {
+        "APP_ID": "{b21c4c2e-b25d-477f-9221-a272e3501768}",
+        "APP_NAME": "ASUS Zenbook 14 UX3405CA",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "55944804",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{3e1a4565-c1ec-482e-abef-15d7111b9920}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*ASUS*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*Zenbook 14 UX3405CA*",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "ASUS"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2025_01_23_03_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2025_01_23_03_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2025_01_23_03_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    }
+  },
+  "id": "55944804"
+}

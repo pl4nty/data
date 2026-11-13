@@ -1,0 +1,120 @@
+{
+  "blocks": {
+    "{b15e9039-1e3e-47e6-b837-663d6a3882f6}": {
+      "entry": {
+        "APP_ID": "{4edefcd0-f1e4-455d-a0d5-0b5a8de6c583}",
+        "APP_NAME": "PCs with Icelake CPU and HDR enabled.",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25551525",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{b15e9039-1e3e-47e6-b837-663d6a3882f6}",
+        "MATCHING_REG": {
+          "NAME": "SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers\\FeatureSetUsage",
+          "REG_VALUE_DATA_DWORD": 1,
+          "REG_VALUE_NAME": "DisplayHDR",
+          "REG_VALUE_TYPE": 4
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+              "REG_VALUE_DATA_SZ": "*i3-1000G1*",
+              "REG_VALUE_NAME": "ProcessorNameString",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+              "REG_VALUE_DATA_SZ": "*i3-1000G4*",
+              "REG_VALUE_NAME": "ProcessorNameString",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+              "REG_VALUE_DATA_SZ": "*i3-1005G1*",
+              "REG_VALUE_NAME": "ProcessorNameString",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+              "REG_VALUE_DATA_SZ": "*i5-1030G4*",
+              "REG_VALUE_NAME": "ProcessorNameString",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+              "REG_VALUE_DATA_SZ": "*i5-1030G7*",
+              "REG_VALUE_NAME": "ProcessorNameString",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+              "REG_VALUE_DATA_SZ": "*i5-1035G1*",
+              "REG_VALUE_NAME": "ProcessorNameString",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+              "REG_VALUE_DATA_SZ": "*i5-1035G4*",
+              "REG_VALUE_NAME": "ProcessorNameString",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+              "REG_VALUE_DATA_SZ": "*i5-1035G7*",
+              "REG_VALUE_NAME": "ProcessorNameString",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+              "REG_VALUE_DATA_SZ": "*i7-1060G7*",
+              "REG_VALUE_NAME": "ProcessorNameString",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+              "REG_VALUE_DATA_SZ": "*i7-1065G7*",
+              "REG_VALUE_NAME": "ProcessorNameString",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+              "REG_VALUE_DATA_SZ": "*i7-1068G7*",
+              "REG_VALUE_NAME": "ProcessorNameString",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "VENDOR": "Intel"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_19_05_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_19_05_02_ARM64",
+          "last": "2020_08_06_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_19_05_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    }
+  },
+  "id": "25551525"
+}

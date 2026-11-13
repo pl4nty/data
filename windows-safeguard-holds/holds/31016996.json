@@ -1,0 +1,49 @@
+{
+  "blocks": {
+    "{87362b96-62c1-4a46-945d-ae0643f8ec38}": {
+      "entry": {
+        "APP_ID": "{fcc2c3e1-9b7a-454d-8a58-8acb6317d056}",
+        "APP_NAME": "IIS with applicationhost.config corruption",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "31016996",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{87362b96-62c1-4a46-945d-ae0643f8ec38}",
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "$Res = 0; if((Get-WindowsOptionalFeature -Online -FeatureName IIS-WebServerRole).State -eq 'Enabled') { $Path = $env:windir + '\\system32\\inetsrv\\config\\applicationHost.Config'; if (Test-Path -Path $Path) { try { [XML]$Xml = Get-Content $Path } catch { $Res = 1 } }; } Write-Host 'Final result:',$Res",
+          "NAME": "PowerShellMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_12_17_05_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_12_17_05_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_12_17_05_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    }
+  },
+  "id": "31016996"
+}

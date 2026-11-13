@@ -1,0 +1,242 @@
+{
+  "blocks": {
+    "{3a73d09b-bd46-42f0-8126-53b047e0548c}": {
+      "entry": {
+        "APP_ID": "{b39baf85-80d1-42aa-847f-fc2d05a01338}",
+        "APP_NAME": "Avira - File delete issue",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54580694",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{3a73d09b-bd46-42f0-8126-53b047e0548c}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_FILE": [
+            {
+              "COMPANY_NAME": "Avira*",
+              "NAME": "%WinDir%\\System32\\drivers\\avkmgr.sys"
+            },
+            {
+              "COMPANY_NAME": "Avira*",
+              "NAME": "%WinDir%\\System32\\drivers\\avipbb.sys"
+            },
+            {
+              "COMPANY_NAME": "Avira*",
+              "NAME": "%WinDir%\\System32\\drivers\\bdnet.sys"
+            },
+            {
+              "COMPANY_NAME": "Avira*",
+              "NAME": "%WinDir%\\System32\\drivers\\bdsentry.sys"
+            },
+            {
+              "COMPANY_NAME": "Avira*",
+              "NAME": "%WinDir%\\System32\\drivers\\netprotection_network_filter.sys"
+            },
+            {
+              "COMPANY_NAME": "Avira*",
+              "NAME": "%WinDir%\\System32\\drivers\\rtp1.sys"
+            },
+            {
+              "COMPANY_NAME": "Avira*",
+              "NAME": "%WinDir%\\System32\\drivers\\rtp2.sys"
+            },
+            {
+              "COMPANY_NAME": "Avira*",
+              "NAME": "%WinDir%\\System32\\drivers\\rtp_elam.sys"
+            }
+          ],
+          "MATCH_PLUGIN": {
+            "COMMAND_LINE": "ROOT\\SecurityCenter2 AntivirusProduct 0 productState int 0 gte WHERE displayName LIKE 'Avira%'",
+            "NAME": "WmiQueryMatchingPlugin"
+          }
+        },
+        "VENDOR": "Avira"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_24_04_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_24_04_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_24_04_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{4eee9c58-f7ca-4f02-b5b0-9ebb542ba1bc}": {
+      "entry": {
+        "APP_ID": "{b39baf85-80d1-42aa-847f-fc2d05a01338}",
+        "APP_NAME": "Avira - File delete issue",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54580694",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{4eee9c58-f7ca-4f02-b5b0-9ebb542ba1bc}",
+        "MATCHING_FILE": {
+          "NAME": "*"
+        },
+        "NAME": "*avira*.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Avira",
+        "WILDCARD_NAME": "*avira*.exe"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_24_04_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_24_04_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_24_04_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{9a2969a3-a5d6-4cad-8971-2150dc31c8d4}": {
+      "entry": {
+        "APP_ID": "{b39baf85-80d1-42aa-847f-fc2d05a01338}",
+        "APP_NAME": "Avira - File delete issue",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54580694",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{9a2969a3-a5d6-4cad-8971-2150dc31c8d4}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "*"
+        },
+        "NAME": "*.sys",
+        "PICK_ONE": {
+          "MATCHING_FILE": [
+            {
+              "NAME": "*",
+              "PRODUCT_NAME": "Avira*"
+            },
+            {
+              "COMPANY_NAME": "Avira*",
+              "NAME": "*"
+            }
+          ]
+        },
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Avira",
+        "WILDCARD_NAME": "*.sys"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_24_04_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_24_04_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_24_04_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    },
+    "{d9acb205-1671-4d8a-830d-7f4dac47dde4}": {
+      "entry": {
+        "APP_ID": "{b39baf85-80d1-42aa-847f-fc2d05a01338}",
+        "APP_NAME": "Avira - File delete issue",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54580694",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{d9acb205-1671-4d8a-830d-7f4dac47dde4}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "*"
+        },
+        "NAME": "*.exe",
+        "PICK_ONE": {
+          "MATCHING_FILE": [
+            {
+              "NAME": "*",
+              "PRODUCT_NAME": "Avira*"
+            },
+            {
+              "COMPANY_NAME": "Avira*",
+              "NAME": "*"
+            }
+          ]
+        },
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Avira",
+        "WILDCARD_NAME": "*.exe"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_24_04_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_24_04_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_24_04_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    }
+  },
+  "id": "54580694"
+}

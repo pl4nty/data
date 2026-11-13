@@ -1,0 +1,65 @@
+{
+  "blocks": {
+    "{a4764c0e-e053-42f4-bbf2-acd0c757a37d}": {
+      "entry": {
+        "APP_ID": "{9577ffe8-e04d-46c2-a43a-afe0750c350e}",
+        "APP_NAME": "Kaspersky Endpoint Security for Windows",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "24653046",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{a4764c0e-e053-42f4-bbf2-acd0c757a37d}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "*Kaspersky*",
+          "NAME": "*",
+          "PRODUCT_NAME": "Kaspersky Endpoint Security for Windows"
+        },
+        "NAME": "avp.exe",
+        "PICK_ONE": {
+          "MATCHING_FILE": [
+            {
+              "COMPANY_NAME": "*Kaspersky*",
+              "FROM_BIN_PRODUCT_VERSION": "17.0.112.0",
+              "NAME": "%WinDir%\\System32\\drivers\\klfle.sys",
+              "UPTO_BIN_PRODUCT_VERSION": "17.0.130.65535"
+            },
+            {
+              "COMPANY_NAME": "*Kaspersky*",
+              "FROM_BIN_PRODUCT_VERSION": "30.190.88.0",
+              "NAME": "%WinDir%\\System32\\drivers\\klfle.sys",
+              "UPTO_BIN_PRODUCT_VERSION": "30.190.154.65535"
+            }
+          ]
+        },
+        "VENDOR": "Kaspersky"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2020_02_20_06_01_AMD64",
+          "last": "2020_06_04_06_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_02_20_06_05_ARM64",
+          "last": "2020_06_04_06_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_02_20_06_01_X86",
+          "last": "2020_06_04_06_02_X86"
+        }
+      },
+      "source": "2020_06_04_06_02_X86"
+    }
+  },
+  "id": "24653046"
+}

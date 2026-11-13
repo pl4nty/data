@@ -1,0 +1,72 @@
+{
+  "blocks": {
+    "{e120e87d-12fb-4807-857d-434fb80888cb}": {
+      "entry": {
+        "APP_ID": "{553782b3-0a08-429d-8a4c-da32c7e4882f}",
+        "APP_NAME": "ASUS screen pad (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26591614",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{e120e87d-12fb-4807-857d-434fb80888cb}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "ASUSTeK COMPUTER INC.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "ZenBook Pro 15 UX550GDX",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "ZenBook Pro 15 UX550GEX*",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "ZenBook UX450FDX*",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "VENDOR": "ASUS"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_28_05_01_AMD64",
+          "last": "2020_07_30_06_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_28_05_02_ARM64",
+          "last": "2020_07_30_06_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_28_05_01_X86",
+          "last": "2020_07_30_06_02_X86"
+        }
+      },
+      "source": "2020_07_30_06_02_X86"
+    }
+  },
+  "id": "26591614"
+}

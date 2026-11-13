@@ -1,0 +1,250 @@
+{
+  "blocks": {
+    "{7bf854c0-26e1-4cee-9ccb-5ce67b0ddad5}": {
+      "entry": {
+        "APP_ID": "{ddc5d08e-d5b6-457f-a87c-d7a5d92ec219}",
+        "APP_NAME": "DX9 games + VRR panel (2)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "28821585",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{7bf854c0-26e1-4cee-9ccb-5ce67b0ddad5}",
+        "MATCHING_REG": [
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*Microsoft*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*Surface*",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "PCI\\VEN_8086&DEV_5912*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_5917*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_5916*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_591D*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_591C*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_591B*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_5926*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_5923*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_591E*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_5927*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_5A85*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_87C0*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_8A51*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_8A52*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_8A5A*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_8A56*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_8A5C*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_9B41*"
+              },
+              {
+                "NAME": "PCI\\VEN_8086&DEV_9BC4*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "MONITOR\\ACR051C"
+              },
+              {
+                "NAME": "MONITOR\\ACR0520"
+              },
+              {
+                "NAME": "MONITOR\\ACR0687"
+              },
+              {
+                "NAME": "MONITOR\\ACR075F"
+              },
+              {
+                "NAME": "MONITOR\\AUO238D"
+              },
+              {
+                "NAME": "MONITOR\\AUOE48D"
+              },
+              {
+                "NAME": "MONITOR\\BNQ7949"
+              },
+              {
+                "NAME": "MONITOR\\BNQ7950"
+              },
+              {
+                "NAME": "MONITOR\\BNQ7954"
+              },
+              {
+                "NAME": "MONITOR\\BNQ7F5E"
+              },
+              {
+                "NAME": "MONITOR\\BNQ7F76"
+              },
+              {
+                "NAME": "MONITOR\\GBT2703"
+              },
+              {
+                "NAME": "MONITOR\\GSM5B09"
+              },
+              {
+                "NAME": "MONITOR\\GSM5B10"
+              },
+              {
+                "NAME": "MONITOR\\GSM5B71"
+              },
+              {
+                "NAME": "MONITOR\\GSM5B7B"
+              },
+              {
+                "NAME": "MONITOR\\GSM5B7F"
+              },
+              {
+                "NAME": "MONITOR\\GSM7707"
+              },
+              {
+                "NAME": "MONITOR\\GSM7717"
+              },
+              {
+                "NAME": "MONITOR\\GSM7727"
+              },
+              {
+                "NAME": "MONITOR\\GSM772B"
+              },
+              {
+                "NAME": "MONITOR\\HPN3615"
+              },
+              {
+                "NAME": "MONITOR\\LEN61C2"
+              },
+              {
+                "NAME": "MONITOR\\LEN61D5"
+              },
+              {
+                "NAME": "MONITOR\\LEN65EA"
+              },
+              {
+                "NAME": "MONITOR\\LGD0554"
+              },
+              {
+                "NAME": "MONITOR\\LGD0555"
+              },
+              {
+                "NAME": "MONITOR\\LGD0572"
+              },
+              {
+                "NAME": "MONITOR\\LGD40BA"
+              },
+              {
+                "NAME": "MONITOR\\PHL0942"
+              },
+              {
+                "NAME": "MONITOR\\RZR1402"
+              },
+              {
+                "NAME": "MONITOR\\SAM0C4D"
+              },
+              {
+                "NAME": "MONITOR\\SAM0F1E"
+              },
+              {
+                "NAME": "MONITOR\\SAM0F9C"
+              },
+              {
+                "NAME": "MONITOR\\SEC5441"
+              },
+              {
+                "NAME": "MONITOR\\SHP1494"
+              },
+              {
+                "NAME": "MONITOR\\SHP14AA"
+              },
+              {
+                "NAME": "MONITOR\\SHP14B3"
+              },
+              {
+                "NAME": "MONITOR\\SHP14B4"
+              },
+              {
+                "NAME": "MONITOR\\SHP14F2"
+              },
+              {
+                "NAME": "MONITOR\\TLX1390"
+              }
+            ]
+          }
+        ],
+        "VENDOR": "Intel"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_08_28_01_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_08_28_01_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_08_28_01_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    }
+  },
+  "id": "28821585"
+}

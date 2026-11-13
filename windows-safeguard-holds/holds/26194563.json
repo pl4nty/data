@@ -1,0 +1,70 @@
+{
+  "blocks": {
+    "{96bc96f1-74ac-4ab4-819c-2a45a8835c1c}": {
+      "entry": {
+        "APP_ID": "{98023fb2-d6a1-43dc-aed7-b8ff6fc2fe74}",
+        "APP_NAME": "Realtek audio drivers on Lenovo",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26194563",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{96bc96f1-74ac-4ab4-819c-2a45a8835c1c}",
+        "MATCHING_FILE": {
+          "NAME": "%windir%\\System32\\Drivers\\rtkvhd64.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "6.0.1.8298"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Lenovo",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_10ec&dev_0662&subsys_17aa103d*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_10ec&dev_0662&subsys_17aa36c5*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_10ec&dev_0269&subsys_17aa21f9*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_10ec&dev_0292&subsys_17aa2218*"
+            }
+          ]
+        },
+        "VENDOR": "Realtek"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_01_03_01_AMD64",
+          "last": "2020_12_17_05_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_01_03_02_ARM64",
+          "last": "2020_12_17_05_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_01_03_01_X86",
+          "last": "2020_12_17_05_03_X86"
+        }
+      },
+      "source": "2020_12_17_05_03_X86"
+    }
+  },
+  "id": "26194563"
+}

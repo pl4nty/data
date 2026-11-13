@@ -1,0 +1,58 @@
+{
+  "blocks": {
+    "{16dcf2fc-2a2b-4f3d-aff9-b71c0dcddd1f}": {
+      "entry": {
+        "APP_ID": "{bfa01128-fd7d-4103-b95d-ac319dff0337}",
+        "APP_NAME": "Dell Thunderbolt on XPS 13 7390 (SV1)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "36123593",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "NI22H2",
+        "EXE_ID": "{16dcf2fc-2a2b-4f3d-aff9-b71c0dcddd1f}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Dell Inc.",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "XPS 13 7390",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "Dell Inc."
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_09_23_06_01_AMD64",
+          "last": "2022_11_03_03_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_09_23_06_01_ARM64",
+          "last": "2022_11_03_03_02_ARM64"
+        },
+        "X86": {
+          "first": "2021_09_23_06_01_X86",
+          "last": "2022_11_03_03_01_X86"
+        }
+      },
+      "source": "2022_11_03_03_02_ARM64"
+    }
+  },
+  "id": "36123593"
+}

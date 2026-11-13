@@ -1,0 +1,169 @@
+{
+  "blocks": {
+    "{995d85e3-ee31-4fc0-871f-4b83d5f0498d}": {
+      "entry": {
+        "APP_ID": "{ae72c004-abbd-48d6-b339-d8696ab6226c}",
+        "APP_NAME": "Huawei PC Manager",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "34372144",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "EXE_ID": "{995d85e3-ee31-4fc0-871f-4b83d5f0498d}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Huawei*",
+          "NAME": "%ProgramFiles%\\Huawei\\PCManager\\PCManager.exe",
+          "PRODUCT_NAME": "PC Manager"
+        },
+        "MATCHING_REG": [
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "SOFTWARE\\PCManager\\setting\\version",
+            "REG_VALUE_DATA_SZ": "11.1.1.101*",
+            "REG_VALUE_NAME": "curVersion",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "SOFTWARE\\PCManager\\setting\\version",
+            "REG_VALUE_DATA_SZ": "11.1.1.95(C233*",
+            "REG_VALUE_NAME": "curVersion",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "1.*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "2.*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "3.*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "4.*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "5.*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "6.*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "7.*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "8.*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "9.*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "10.*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "11.0.*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "11.1.0.*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "11.1.1.*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "11.1.2.0*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "11.1.2.1*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "SOFTWARE\\PCManager\\setting\\version",
+              "REG_VALUE_DATA_SZ": "11.1.2.2*",
+              "REG_VALUE_NAME": "curVersion",
+              "REG_VALUE_TYPE": 1
+            }
+          ],
+          "MATCH_PLUGIN": {
+            "COMMAND_LINE": "\"HKEY_LOCAL_MACHINE\\SOFTWARE\\PCManager\\setting\\version\" KeySearch NA count_gte 1 NA",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "RegistryMatchingPlugin"
+          }
+        },
+        "VENDOR": "Huawei"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_09_23_06_01_AMD64",
+          "last": "2022_01_06_12_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_09_23_06_01_ARM64",
+          "last": "2022_01_06_12_01_ARM64"
+        },
+        "X86": {
+          "first": "2021_09_23_06_01_X86",
+          "last": "2022_01_06_12_01_X86"
+        }
+      },
+      "source": "2022_01_06_12_01_X86"
+    }
+  },
+  "id": "34372144"
+}

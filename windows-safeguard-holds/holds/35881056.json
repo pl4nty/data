@@ -1,0 +1,49 @@
+{
+  "blocks": {
+    "{c051d7be-6c7c-4578-a256-289a67c6eb55}": {
+      "entry": {
+        "APP_ID": "{8efab0b9-2688-467e-9019-623b4461c99c}",
+        "APP_NAME": "UPS WorldShip (IE11) (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "35881056",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "CU22H2",
+        "EXE_ID": "{c051d7be-6c7c-4578-a256-289a67c6eb55}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "UPS",
+          "NAME": "*",
+          "PRODUCT_NAME": "UPS WorldShip*Shipping System"
+        },
+        "NAME": "WorldShipTD.exe",
+        "VENDOR": "UPS"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2021_09_16_05_01_AMD64",
+          "last": "2021_12_09_11_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_09_16_05_01_ARM64",
+          "last": "2021_12_09_11_02_ARM64"
+        },
+        "X86": {
+          "first": "2021_09_16_05_01_X86",
+          "last": "2021_12_09_11_02_X86"
+        }
+      },
+      "source": "2021_12_09_11_02_X86"
+    }
+  },
+  "id": "35881056"
+}

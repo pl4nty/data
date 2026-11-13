@@ -1,0 +1,66 @@
+{
+  "blocks": {
+    "{76ae0685-d684-4551-8d9d-4ef26f07c18b}": {
+      "entry": {
+        "APP_ID": "{d1be6c80-0021-445d-94b9-976d0fa2662a}",
+        "APP_NAME": "Alienware Area-51 R3 and R6",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25965643",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{76ae0685-d684-4551-8d9d-4ef26f07c18b}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Alienware",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "Alienware Area-51 R3",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "Alienware Area-51 R6",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "VENDOR": "DELL"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_04_16_06_01_AMD64",
+          "last": "2020_08_13_06_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_04_16_06_02_ARM64",
+          "last": "2020_08_13_06_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_04_16_06_01_X86",
+          "last": "2020_08_13_06_02_X86"
+        }
+      },
+      "source": "2020_08_13_06_02_X86"
+    }
+  },
+  "id": "25965643"
+}

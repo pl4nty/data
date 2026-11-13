@@ -1,0 +1,50 @@
+{
+  "blocks": {
+    "{212b65f2-672d-4076-85d0-3c24c544be5c}": {
+      "entry": {
+        "APP_ID": "{ff8bedf2-7e28-49a5-80b2-87584f792921}",
+        "APP_NAME": "ESET - eamonm.sys",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26645916",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{212b65f2-672d-4076-85d0-3c24c544be5c}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "7.2.2048.0",
+          "COMPANY_NAME": "ESET",
+          "NAME": "%windir%\\system32\\drivers\\eamonm.sys",
+          "PRODUCT_NAME": "ESET Security"
+        },
+        "NAME": "",
+        "VENDOR": "ESET"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_06_04_06_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_06_04_06_02_ARM64",
+          "last": "2020_08_06_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_06_04_06_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    }
+  },
+  "id": "26645916"
+}

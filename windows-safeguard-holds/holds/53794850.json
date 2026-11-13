@@ -1,0 +1,55 @@
+{
+  "blocks": {
+    "{59386822-c79e-4796-b275-f66fd256067d}": {
+      "entry": {
+        "APP_ID": "{5b421d04-9039-4d10-bd03-183b4a971b18}",
+        "APP_NAME": "Voicemeeter Driver (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "53794850",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{59386822-c79e-4796-b275-f66fd256067d}",
+        "MATCH_PLUGIN": [
+          {
+            "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\vbvoicemeetervaio64_win10*\\vbvoicemeetervaio64_win10.sys",
+            "NAME": "FileMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\vbvoicemeetervaio64_win10*\\vbvoicemeetervaio64_win10.sys -FromBinVersion 3.3.1.9 -UptoBinVersion 3.*",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "FileMatchingPlugin"
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "VB-Audio Software"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_19_02_01_AMD64",
+          "last": "2025_04_17_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_19_02_01_ARM64",
+          "last": "2025_04_17_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_19_02_01_X86",
+          "last": "2025_04_17_03_02_X86"
+        }
+      },
+      "source": "2025_04_17_03_05_ARM64"
+    }
+  },
+  "id": "53794850"
+}

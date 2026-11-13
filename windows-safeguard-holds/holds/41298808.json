@@ -1,0 +1,78 @@
+{
+  "blocks": {
+    "{33d58a6c-78f9-423a-b228-4694176d8923}": {
+      "entry": {
+        "APP_ID": "{45862e3f-4ce2-4da4-ad9d-a76f107d55cc}",
+        "APP_NAME": "IcePower Audio",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41298808",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{33d58a6c-78f9-423a-b228-4694176d8923}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "*ASUS*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "UX535QA",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "UX535QE",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "UX535LI",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "UX535LH",
+              "REG_VALUE_NAME": "BaseBoardProduct",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "VENDOR": "IcePower Audio"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_09_22_04_01_AMD64",
+          "last": "2022_12_14_03_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_09_22_04_01_ARM64",
+          "last": "2022_12_14_03_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_09_22_04_01_X86",
+          "last": "2022_12_14_03_01_X86"
+        }
+      },
+      "source": "2022_12_14_03_02_ARM64"
+    }
+  },
+  "id": "41298808"
+}

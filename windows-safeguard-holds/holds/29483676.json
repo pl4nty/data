@@ -1,0 +1,66 @@
+{
+  "blocks": {
+    "{18943bd1-6f7b-46f8-a32f-514988abdff8}": {
+      "entry": {
+        "APP_ID": "{cd563717-63cb-4a15-8fb5-41cab9a2d737}",
+        "APP_NAME": "Samsung Galaxy S",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29483676",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{18943bd1-6f7b-46f8-a32f-514988abdff8}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "{7fd0dfdb-82cf-5e70-8429-6edc7df8a186}"
+            },
+            {
+              "NAME": "{308feeed-ac08-5dfe-8c50-53770ffc716e}"
+            },
+            {
+              "NAME": "{ac00b17a-9cfd-5c40-9098-3fb942d967a3}"
+            },
+            {
+              "NAME": "{95cdf468-e1fa-577b-a5f6-df17943a1dd8}"
+            },
+            {
+              "NAME": "{80f79868-f89c-5a63-9eb6-fd44cf17342f}"
+            },
+            {
+              "NAME": "{a3dbd4ab-cf9c-505f-ab63-dddd2e27bab9}"
+            }
+          ]
+        },
+        "VENDOR": "Samsung"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_09_25_01_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_09_25_01_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_09_25_01_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    }
+  },
+  "id": "29483676"
+}

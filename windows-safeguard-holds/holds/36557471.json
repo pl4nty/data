@@ -1,0 +1,78 @@
+{
+  "blocks": {
+    "{c831fb20-ba58-4cc2-b5d9-b29a30c790e7}": {
+      "entry": {
+        "APP_ID": "{5bc7de34-18d0-4383-add3-cda51a559494}",
+        "APP_NAME": "Dynabook Edge/Chrome display issue",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "36557471",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "CU22H2",
+        "EXE_ID": "{c831fb20-ba58-4cc2-b5d9-b29a30c790e7}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dynabook Inc.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "PYS43*",
+              "REG_VALUE_NAME": "SystemSKU",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "PYS45*",
+              "REG_VALUE_NAME": "SystemSKU",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "PYS46*",
+              "REG_VALUE_NAME": "SystemSKU",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "PYS48*",
+              "REG_VALUE_NAME": "SystemSKU",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "VENDOR": "Dynabook"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_10_21_03_01_AMD64",
+          "last": "2022_01_13_02_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_10_21_03_01_ARM64",
+          "last": "2022_01_13_02_01_ARM64"
+        },
+        "X86": {
+          "first": "2021_10_21_03_01_X86",
+          "last": "2022_01_13_02_01_X86"
+        }
+      },
+      "source": "2022_01_13_02_01_X86"
+    }
+  },
+  "id": "36557471"
+}

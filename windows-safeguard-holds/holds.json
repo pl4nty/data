@@ -1,0 +1,3657 @@
+[
+  {
+    "active": [],
+    "app": [
+      "UPS WorldShip"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "19H1..20H1"
+    ],
+    "first_seen": "2020-01-09",
+    "id": "21599405",
+    "last_seen": "2020-02-13",
+    "vendor": [
+      "UPS"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Kaspersky Endpoint Security for Windows"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-02-20",
+    "id": "24653046",
+    "last_seen": "2020-06-04",
+    "vendor": [
+      "Kaspersky"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Zone Alarm (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-06-17",
+    "id": "24675310",
+    "last_seen": "2020-11-05",
+    "vendor": [
+      "CheckPoint"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Nvidia Tesla driver (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-02-20",
+    "id": "24803238",
+    "last_seen": "2020-08-06",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Alladin HASP"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-02-20",
+    "id": "24858586",
+    "last_seen": "2020-08-06",
+    "vendor": [
+      "SafeNet, Inc."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "RawMouse"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-02-20",
+    "id": "24868026",
+    "last_seen": "2020-06-04",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Red Dead Redemption 2"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-02-20",
+    "id": "24882509",
+    "last_seen": "2020-08-06",
+    "vendor": [
+      "Rockstar Games"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "UCI64A audio driver - Asus",
+      "UCI64A audio driver - DELL",
+      "UCI64A audio driver - Diverse OEMs",
+      "UCI64A audio driver - HP",
+      "UCI64A audio driver - LG",
+      "UCI64A audio driver - Lenovo",
+      "UCI64A audio driver - Toshiba"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 8,
+    "dest_os": [
+      "20H1..21H1",
+      "20H1..CO21H2"
+    ],
+    "first_seen": "2020-05-14",
+    "id": "25178825",
+    "last_seen": "2021-04-12",
+    "vendor": [
+      "Synaptics"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Gears 5 and Gears Tactics"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 4,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-03-12",
+    "id": "25435695",
+    "last_seen": "2020-08-06",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "HP PCs with AMD CPUs (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 5,
+    "dest_os": [
+      "20H1..21H2",
+      "20H1..CO21H2"
+    ],
+    "first_seen": "2020-03-12",
+    "id": "25465644",
+    "last_seen": "2021-06-09",
+    "vendor": [
+      "Hewlett-Packard"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "PCs with Icelake CPU and HDR enabled."
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-03-19",
+    "id": "25551525",
+    "last_seen": "2020-08-06",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Cortana on ZH-CN SKU"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-04-02",
+    "id": "25614561",
+    "last_seen": "2020-11-24",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Bluetooth Realtek (key size issue)"
+    ],
+    "arch": [
+      "AMD64",
+      "X86"
+    ],
+    "blocks": 5,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-04-02",
+    "id": "25692458",
+    "last_seen": "2020-08-06",
+    "vendor": [
+      "Realtek"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Synaptics CHDRT32.sys and CHDRT64.sys - Lenovo"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 6,
+    "dest_os": [
+      "20H1..CO21H2"
+    ],
+    "first_seen": "2020-03-27",
+    "id": "25702617",
+    "last_seen": "2021-04-12",
+    "vendor": [
+      "Lenovo"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Synaptics CHDRT32.sys and CHDRT64.sys - HP"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 6,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-03-27",
+    "id": "25702644",
+    "last_seen": "2020-07-23",
+    "vendor": [
+      "Hewlett-Packard"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Synaptics CHDRT32.sys and CHDRT64.sys - ASUS"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 6,
+    "dest_os": [
+      "20H1..CO21H2"
+    ],
+    "first_seen": "2020-03-27",
+    "id": "25702660",
+    "last_seen": "2021-04-12",
+    "vendor": [
+      "ASUS"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Synaptics CHDRT32.sys and CHDRT64.sys - Toshiba"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 12,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-03-27",
+    "id": "25702662",
+    "last_seen": "2020-11-24",
+    "vendor": [
+      "Toshiba"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Synaptics CHDRT32.sys and CHDRT64.sys - DELL"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 6,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-03-27",
+    "id": "25702664",
+    "last_seen": "2020-07-23",
+    "vendor": [
+      "DELL"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Synaptics CHDRT32.sys and CHDRT64.sys - LG"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 6,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-03-27",
+    "id": "25702673",
+    "last_seen": "2020-11-24",
+    "vendor": [
+      "LG"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Synaptics CHDRT32.sys and CHDRT64.sys - ACER"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 6,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-03-27",
+    "id": "25702682",
+    "last_seen": "2020-07-23",
+    "vendor": [
+      "ACER"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Synaptics CHDRT32.sys and CHDRT64.sys - SONY"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 6,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-03-27",
+    "id": "25702687",
+    "last_seen": "2020-06-26",
+    "vendor": [
+      "SONY"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Synaptics CHDRT32.sys and CHDRT64.sys - Diverse OEMs"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 6,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-03-27",
+    "id": "25702694",
+    "last_seen": "2020-07-23",
+    "vendor": [
+      "Multiple"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "ThinkStation P340"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-04-16",
+    "id": "25965576",
+    "last_seen": "2020-09-25",
+    "vendor": [
+      "Lenovo"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Alienware Area-51 R3 and R6"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-04-16",
+    "id": "25965643",
+    "last_seen": "2020-08-13",
+    "vendor": [
+      "DELL"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "HP Cross Intel WHL/CML device with TBT"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-05-01",
+    "id": "26062027",
+    "last_seen": "2020-07-09",
+    "vendor": [
+      "HP"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Realtek Audio - RTKVHD64.sys"
+    ],
+    "arch": [
+      "AMD64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-04-23",
+    "id": "26071206",
+    "last_seen": "2021-05-20",
+    "vendor": [
+      "Realtek"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Realtek audio drivers on Asus"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-05-01",
+    "id": "26194339",
+    "last_seen": "2020-11-24",
+    "vendor": [
+      "Realtek"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Realtek audio drivers on Lenovo"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-05-01",
+    "id": "26194563",
+    "last_seen": "2020-12-17",
+    "vendor": [
+      "Realtek"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Synaptics Fingerprint on XPS 13 9365"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-05-07",
+    "id": "26222514",
+    "last_seen": "2020-07-16",
+    "vendor": [
+      "Dell"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Toshiba Dynabook - (dynabook K50/FP) (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-05-14",
+    "id": "26251332",
+    "last_seen": "2021-01-14",
+    "vendor": [
+      "Toshiba"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "DX9 games + VRR panel"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 19,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-05-14",
+    "id": "26251417",
+    "last_seen": "2020-08-06",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Trend Micro Virus Buster Cloud - tmevtmgr.sys"
+    ],
+    "arch": [
+      "AMD64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1.."
+    ],
+    "first_seen": "2020-05-07",
+    "id": "26308598",
+    "last_seen": "2020-08-13",
+    "vendor": [
+      "Trend Micro"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Intel LACP NIC -iansw60e.sys"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..CO21H2"
+    ],
+    "first_seen": "2020-05-28",
+    "id": "26315898",
+    "last_seen": "2021-05-10",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Realtek camera driver glitching"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-05-21",
+    "id": "26369613",
+    "last_seen": "2020-08-28",
+    "vendor": [
+      "Realtek"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Samsung Lakefield - 767XCL"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-05-14",
+    "id": "26373923",
+    "last_seen": "2020-08-28",
+    "vendor": [
+      "Samsung"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Intel cellular modem"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 2,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-05-21",
+    "id": "26387843",
+    "last_seen": "2020-08-06",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Feature update download (diff baseline issue)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 3,
+    "dest_os": [
+      "19H1..20H1",
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-05-21",
+    "id": "26490208",
+    "last_seen": "2020-06-04",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Windows Searchbox"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-05-28",
+    "id": "26551552",
+    "last_seen": "2020-08-06",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Non-DMFT camera driver vs. DMFT camera driver conflict"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-06-04",
+    "id": "26583106",
+    "last_seen": "2020-09-11",
+    "vendor": [
+      "Lenovo"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Surface 3 LTE (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-05-28",
+    "id": "26589889",
+    "last_seen": "2020-08-06",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "ASUS screen pad (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-05-28",
+    "id": "26591614",
+    "last_seen": "2020-07-30",
+    "vendor": [
+      "ASUS"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "ESET - eamonm.sys"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-06-04",
+    "id": "26645916",
+    "last_seen": "2020-08-06",
+    "vendor": [
+      "ESET"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Surface Book 3 (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-06-04",
+    "id": "26716073",
+    "last_seen": "2020-06-17",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Storage Spaces corruption issue (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 2,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-06-17",
+    "id": "26995022",
+    "last_seen": "2020-08-06",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "OneDrive and Legacy filters (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 2,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-06-26",
+    "id": "27227883",
+    "last_seen": "2020-07-09",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Mobile broadband adapter (cxwmbclass.sys)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-08-28",
+    "id": "28428232",
+    "last_seen": "2020-10-01",
+    "vendor": [
+      "Multiple"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "DX9 games + VRR panel (2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-08-28",
+    "id": "28821585",
+    "last_seen": "2020-11-24",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Samsung Galaxy S"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-09-25",
+    "id": "29483676",
+    "last_seen": "2020-11-24",
+    "vendor": [
+      "Samsung"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Samsung Lakefield - 767XCL (2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-09-25",
+    "id": "29484172",
+    "last_seen": "2020-10-01",
+    "vendor": [
+      "Samsung"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "2009C Manifest Regression (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 3,
+    "dest_os": [
+      "20H1..CO21H2"
+    ],
+    "first_seen": "2020-09-25",
+    "id": "29570481",
+    "last_seen": "2021-04-12",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Dynabook EDU devices deactivated with 2004 upgrade"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H2"
+    ],
+    "first_seen": "2020-10-01",
+    "id": "29586383",
+    "last_seen": "2021-02-12",
+    "vendor": [
+      "Dynabook"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Reserve Manager enabled with Low Disk Space"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 26,
+    "dest_os": [
+      "20H1..CO21H2"
+    ],
+    "first_seen": "2020-10-15",
+    "id": "29745406",
+    "last_seen": "2021-04-12",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Realtek (11.0.6000.767)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 2,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-10-22",
+    "id": "29757960",
+    "last_seen": "2020-11-24",
+    "vendor": [
+      "Realtek"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "PACE tpkd.sys (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-10-15",
+    "id": "29795358",
+    "last_seen": "2020-11-24",
+    "vendor": [
+      "PACE Anti-Piracy, Inc."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Windows activation issue: Pro EDU key (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H2"
+    ],
+    "first_seen": "2020-10-22",
+    "id": "29817229",
+    "last_seen": "2021-02-12",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Surface Hub (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-10-26",
+    "id": "29931467",
+    "last_seen": "2021-01-07",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "TBT storage devices (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-11-05",
+    "id": "29991611",
+    "last_seen": "2020-11-24",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "SQL setup on 20H2 (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-11-19",
+    "id": "30086808",
+    "last_seen": "2021-01-07",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "LSASS crashes + admin accounts (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2020-11-05",
+    "id": "30103339",
+    "last_seen": "2020-12-17",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Huawei One-Key Recovery (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "19H1..21H2"
+    ],
+    "first_seen": "2020-11-05",
+    "id": "30104270",
+    "last_seen": "2021-01-28",
+    "vendor": [
+      "HUAWEI"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Acer SW713-51GN"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..CO21H2"
+    ],
+    "first_seen": "2020-11-19",
+    "id": "30387288",
+    "last_seen": "2021-04-12",
+    "vendor": [
+      "Acer"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "HP devices that are SecureBio capable"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H2"
+    ],
+    "first_seen": "2020-11-24",
+    "id": "30757173",
+    "last_seen": "2021-01-28",
+    "vendor": [
+      "HP"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "IIS with applicationhost.config corruption"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..CO21H2"
+    ],
+    "first_seen": "2020-12-17",
+    "id": "31016996",
+    "last_seen": "2021-04-12",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Microsoft Teams Room (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "X86"
+    ],
+    "blocks": 3,
+    "dest_os": [
+      "20H1.."
+    ],
+    "first_seen": "2020-12-17",
+    "id": "31071606",
+    "last_seen": "2021-10-04",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Virus Buster Cloud/Trend Micro Security v8.x (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 2,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2021-01-07",
+    "id": "31238395",
+    "last_seen": "2021-03-04",
+    "vendor": [
+      "Trend Micro"
+    ]
+  },
+  {
+    "active": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "app": [
+      "Troubleshooter - Engineer-Initiated Test"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "21H1..21H2"
+    ],
+    "first_seen": "2021-03-25",
+    "id": "31295299",
+    "last_seen": "2026-10-29",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "HUAWEI Fingerprint Reader issue"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2021-04-22",
+    "id": "32376893",
+    "last_seen": "2021-06-09",
+    "vendor": [
+      "HUAWEI"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Troubleshooter - System-Initiated Test Async"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2.."
+    ],
+    "first_seen": "2021-04-12",
+    "id": "32379233",
+    "last_seen": "2026-03-13",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Microsoft Teams Room (Wu Offer Block) - 21H1"
+    ],
+    "arch": [
+      "AMD64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "21H1..21H2"
+    ],
+    "first_seen": "2021-04-29",
+    "id": "32490461",
+    "last_seen": "2026-03-13",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "F5 VPN"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "20H1..21H1"
+    ],
+    "first_seen": "2021-05-20",
+    "id": "33324334",
+    "last_seen": "2021-11-04",
+    "vendor": [
+      "F5"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Huawei PC Manager"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2.."
+    ],
+    "first_seen": "2021-09-23",
+    "id": "34372144",
+    "last_seen": "2022-01-06",
+    "vendor": [
+      "Huawei"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "VirtualBox"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..NI22H2"
+    ],
+    "first_seen": "2021-09-29",
+    "id": "35004082",
+    "last_seen": "2022-06-23",
+    "vendor": [
+      "Oracle"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "UPS WorldShip (IE11) (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..CU22H2"
+    ],
+    "first_seen": "2021-09-16",
+    "id": "35881056",
+    "last_seen": "2021-12-09",
+    "vendor": [
+      "UPS"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Cốc Cốc browser"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..CU22H2"
+    ],
+    "first_seen": "2021-09-23",
+    "id": "35891494",
+    "last_seen": "2021-11-04",
+    "vendor": [
+      "Coc Coc Co., Ltd."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "HP Elite Folio (Mustang)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..CU22H2"
+    ],
+    "first_seen": "2021-09-16",
+    "id": "35892283",
+    "last_seen": "2022-01-13",
+    "vendor": [
+      "HP"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Dolphin SuperNova (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 4,
+    "dest_os": [
+      "CO21H2..CU22H2"
+    ],
+    "first_seen": "2021-09-29",
+    "id": "36122087",
+    "last_seen": "2021-11-11",
+    "vendor": [
+      "Dolphin Computer Access Ltd."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Dell Thunderbolt on XPS 13 7390 (SV1)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..NI22H2"
+    ],
+    "first_seen": "2021-09-23",
+    "id": "36123593",
+    "last_seen": "2022-11-03",
+    "vendor": [
+      "Dell Inc."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "GuideConnect"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..NI22H2"
+    ],
+    "first_seen": "2021-09-29",
+    "id": "36412568",
+    "last_seen": "2022-08-11",
+    "vendor": [
+      "Dolphin"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Dynabook Edge/Chrome display issue"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..CU22H2"
+    ],
+    "first_seen": "2021-10-21",
+    "id": "36557471",
+    "last_seen": "2022-01-13",
+    "vendor": [
+      "Dynabook"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      " Aplicação Autenticação.gov"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..CU22H2"
+    ],
+    "first_seen": "2021-10-07",
+    "id": "36632506",
+    "last_seen": "2021-11-04",
+    "vendor": [
+      "Portuguese Government"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Lenovo FCCL FJNBB68 (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..CU22H2"
+    ],
+    "first_seen": "2021-10-07",
+    "id": "36637098",
+    "last_seen": "2022-01-27",
+    "vendor": [
+      "Lenovo FCCL"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Serbian language pack"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..CU22H2"
+    ],
+    "first_seen": "2021-10-21",
+    "id": "36683456",
+    "last_seen": "2021-12-09",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Intel IntcOED.sys",
+      "Intel IntcOED.sys (SV1)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 4,
+    "dest_os": [
+      "CO21H2..NI22H2"
+    ],
+    "first_seen": "2022-04-28",
+    "id": "36899875",
+    "last_seen": "2026-03-13",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Intel IntcAudioBus.sys (SV1)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..NI22H2"
+    ],
+    "first_seen": "2021-11-04",
+    "id": "36899911",
+    "last_seen": "2026-03-13",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Huawei Kelvin"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..CU22H2"
+    ],
+    "first_seen": "2021-12-09",
+    "id": "37239948",
+    "last_seen": "2021-12-16",
+    "vendor": [
+      "Huawei"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Huawei HookD"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..CU22H2"
+    ],
+    "first_seen": "2021-12-09",
+    "id": "37239951",
+    "last_seen": "2021-12-16",
+    "vendor": [
+      "Huawei"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Trihedral VTScada"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..NI22H2"
+    ],
+    "first_seen": "2021-12-16",
+    "id": "37294194",
+    "last_seen": "2022-04-28",
+    "vendor": [
+      "Trihedral Engineering Limited"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "SQL Server unusable with Samsung drives (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..NI22H2"
+    ],
+    "first_seen": "2021-12-16",
+    "id": "37395288",
+    "last_seen": "2026-03-13",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Lenovo Rigel device"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..NI22H2"
+    ],
+    "first_seen": "2022-01-21",
+    "id": "37682047",
+    "last_seen": "2026-03-13",
+    "vendor": [
+      "Lenovo"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Devices with IE as primary browser (WU Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 2,
+    "dest_os": [
+      "CO21H2..NI22H2"
+    ],
+    "first_seen": "2022-01-21",
+    "id": "37820326",
+    "last_seen": "2022-07-28",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Dell Vostro (WU Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..NI22H2"
+    ],
+    "first_seen": "2022-02-24",
+    "id": "38284258",
+    "last_seen": "2022-08-04",
+    "vendor": [
+      "Dell Inc."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Lenovo AMD devices that bugcheck during power transition"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..NI22H2"
+    ],
+    "first_seen": "2022-03-24",
+    "id": "38573475",
+    "last_seen": "2023-03-01",
+    "vendor": [
+      "Lenovo"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "PLAYERUNKNOWNs BATTLEGROUNDS (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 2,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-06-09",
+    "id": "39422774",
+    "last_seen": "2022-09-29",
+    "vendor": [
+      "Bluehole GinnoGames, Inc"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Secure Launch data not migrated on IceLake(Client), TigerLake, AlderLake devices (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 3,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-08-24",
+    "id": "40667045",
+    "last_seen": "2022-10-06",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Dell devices with DW5820 WWAN module"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-09-13",
+    "id": "41162607",
+    "last_seen": "2022-10-06",
+    "vendor": [
+      "Dell Inc."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Dell Thunderbolt on XPS 13 7390 (SV2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-09-13",
+    "id": "41163265",
+    "last_seen": "2022-12-06",
+    "vendor": [
+      "Dell Inc."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Intel IntcOED.sys (SV2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 3,
+    "dest_os": [
+      "NI22H2..GE24H2"
+    ],
+    "first_seen": "2022-09-13",
+    "id": "41291773",
+    "last_seen": "2026-03-13",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Intel IntcAudioBus.sys (SV2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..GE24H2"
+    ],
+    "first_seen": "2022-09-13",
+    "id": "41291788",
+    "last_seen": "2026-03-13",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "HONOR devices with Nahimic Audio"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-09-22",
+    "id": "41298788",
+    "last_seen": "2022-12-14",
+    "vendor": [
+      "HONOR"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "IcePower Audio"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-09-22",
+    "id": "41298808",
+    "last_seen": "2022-12-14",
+    "vendor": [
+      "IcePower Audio"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Devices with printer using Microsoft IPP Class Driver (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 2,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-09-22",
+    "id": "41332279",
+    "last_seen": "2022-11-03",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "HP commercial devices with AMD Barcelo platform issues with MSC"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-09-22",
+    "id": "41341219",
+    "last_seen": "2022-11-03",
+    "vendor": [
+      "HP"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Lenovo X13s Gen 1"
+    ],
+    "arch": [
+      "ARM64"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-10-13",
+    "id": "41456537",
+    "last_seen": "2022-10-27",
+    "vendor": [
+      "Lenovo"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Devices with GameDVR 'HistoricalCaptureEnabled' enabled"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-10-06",
+    "id": "41584256",
+    "last_seen": "2022-11-03",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Samsung ESS enabled ADL devices with Egistec fingerprint Sensor driver (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..ZN23H2"
+    ],
+    "first_seen": "2022-10-06",
+    "id": "41585301",
+    "last_seen": "2023-07-06",
+    "vendor": [
+      "Samsung"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Devices with Mixed Reality FOD"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-10-20",
+    "id": "41766570",
+    "last_seen": "2022-12-06",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "HONOR Galileo devices"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-10-20",
+    "id": "41819595",
+    "last_seen": "2022-12-14",
+    "vendor": [
+      "HONOR"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Lenovo ThinkPad X1 Fold Gen 1"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..ZN23H2"
+    ],
+    "first_seen": "2022-10-27",
+    "id": "41846548",
+    "last_seen": "2023-05-24",
+    "vendor": [
+      "Lenovo"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Devices with Integrated 4-Channel Mic and have used Voice Recorder app"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-10-27",
+    "id": "41928397",
+    "last_seen": "2022-11-22",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Huawei GK-X5X"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..ZN23H2"
+    ],
+    "first_seen": "2022-10-27",
+    "id": "41945405",
+    "last_seen": "2023-05-24",
+    "vendor": [
+      "Huawei"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "EasyAntiCheat"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 4,
+    "dest_os": [
+      "NI22H2..CU23H2"
+    ],
+    "first_seen": "2022-11-03",
+    "id": "41990091",
+    "last_seen": "2022-12-06",
+    "vendor": [
+      "Epic Games, Inc"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "ASUS devices that hit 0xc000021a error during reboot"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..ZN23H2"
+    ],
+    "first_seen": "2022-12-01",
+    "id": "42328698",
+    "last_seen": "2023-08-17",
+    "vendor": [
+      "ASUS"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Dell XPS 15 7590 (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..ZN23H2"
+    ],
+    "first_seen": "2023-04-20",
+    "id": "44218181",
+    "last_seen": "2023-08-11",
+    "vendor": [
+      "Dell Inc."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Lenovo ThinkSmart Core touch controller (SV2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI22H2..ZN23H2"
+    ],
+    "first_seen": "2023-05-24",
+    "id": "44531095",
+    "last_seen": "2023-06-22",
+    "vendor": [
+      "Lenovo"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Lenovo ThinkSmart Core touch controller (SV1)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "CO21H2..NI22H2"
+    ],
+    "first_seen": "2023-06-15",
+    "id": "45051594",
+    "last_seen": "2023-06-22",
+    "vendor": [
+      "Lenovo"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Multi-mon + Copilot (23H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 2,
+    "dest_os": [
+      "NI23H2..GE24H1"
+    ],
+    "first_seen": "2023-11-14",
+    "id": "47615939",
+    "last_seen": "2024-01-25",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "StartAllBack (Feature_WASDKInFileExplorer) (23H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI23H2..GE24H2"
+    ],
+    "first_seen": "2023-12-07",
+    "id": "48070166",
+    "last_seen": "2024-06-13",
+    "vendor": [
+      "www.startisback.com"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "AMD GPU perf settings (23H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI23H2..GE24H2"
+    ],
+    "first_seen": "2023-12-07",
+    "id": "48070225",
+    "last_seen": "2024-05-16",
+    "vendor": [
+      "AMD"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Solidworks PDM + address bar (23H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI23H2..GE24H2"
+    ],
+    "first_seen": "2023-12-07",
+    "id": "48070271",
+    "last_seen": "2024-07-11",
+    "vendor": [
+      "Dassault Systemes SolidWorks Corp"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "iCloud files shared in Explorer via WhatsApp (23H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI23H2..GE24H2"
+    ],
+    "first_seen": "2023-12-07",
+    "id": "48070312",
+    "last_seen": "2024-05-16",
+    "vendor": [
+      "Apple Inc."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Intel IntcOED.sys (23H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 3,
+    "dest_os": [
+      "NI23H2..GE24H2"
+    ],
+    "first_seen": "2024-03-19",
+    "id": "49561435",
+    "last_seen": "2026-01-22",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Intel IntcAudioBus.sys (23H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "NI23H2..GE24H2"
+    ],
+    "first_seen": "2024-03-19",
+    "id": "49561482",
+    "last_seen": "2026-01-22",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Safe Exam Browser (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-08-01",
+    "id": "49562592",
+    "last_seen": "2025-07-17",
+    "vendor": [
+      "ETH Zürich"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "GE24H2 Test Safeguard"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-05-16",
+    "id": "50982860",
+    "last_seen": "2025-09-04",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "SS2 devices with Nvidia 27.21.14.6296 display driver (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-06-20",
+    "id": "51603012",
+    "last_seen": "2025-02-20",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Intel IntcAudioBus.sys (24H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-06-20",
+    "id": "51876952",
+    "last_seen": "2026-01-22",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Intel IntcOED.sys (24H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 3,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-06-20",
+    "id": "51876967",
+    "last_seen": "2026-01-22",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "HLAT capable devices + EAC driver (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-07-11",
+    "id": "52325539",
+    "last_seen": "2025-07-17",
+    "vendor": [
+      "Easy Anti-Cheat"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Xunyou Netfilter2.sys (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-07-11",
+    "id": "52325600",
+    "last_seen": "2025-05-01",
+    "vendor": [
+      "Xunyou"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "3rd Party Wallpaper Apps (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 41,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-08-01",
+    "id": "52754008",
+    "last_seen": "2025-09-25",
+    "vendor": [
+      "Multiple"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Uma Musume"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-09-05",
+    "id": "52754087",
+    "last_seen": "2024-10-03",
+    "vendor": [
+      "Cygames, Inc."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Asphalt 8/9"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-08-01",
+    "id": "52796746",
+    "last_seen": "2025-02-27",
+    "vendor": [
+      "Gameloft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Huawei fingerprint sensor"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-08-01",
+    "id": "52796844",
+    "last_seen": "2024-10-31",
+    "vendor": [
+      "Huawei"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Lenovo ThinkBook Plus G4 IRU (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-08-22",
+    "id": "53262666",
+    "last_seen": "2025-06-12",
+    "vendor": [
+      "Lenovo"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Lenovo/Dynabook devices with drivers that use ONNXRuntime (WU Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 2,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-10-03",
+    "id": "53340062",
+    "last_seen": "2025-09-11",
+    "vendor": [
+      "Lenovo"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Huawei MACHD-WXX9, MDZ-WXX9X and EUL-WX9"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-09-19",
+    "id": "53794452",
+    "last_seen": "2025-02-13",
+    "vendor": [
+      "HUAWEI"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Voicemeeter Driver (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-09-19",
+    "id": "53794850",
+    "last_seen": "2025-04-17",
+    "vendor": [
+      "VB-Audio Software"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Surface Pro X"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-09-19",
+    "id": "53847657",
+    "last_seen": "2025-01-23",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Huawei devices with TBT eGPUs"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-09-26",
+    "id": "54017296",
+    "last_seen": "2025-07-02",
+    "vendor": [
+      "HUAWEI"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Lenovo/FCCL devices with display issue after resume from sleep"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 2,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-10-03",
+    "id": "54113992",
+    "last_seen": "2025-03-06",
+    "vendor": [
+      "Lenovo/FCCL"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "ASUS X415KA and X515KA (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-10-03",
+    "id": "54157480",
+    "last_seen": "2025-03-06",
+    "vendor": [
+      "ASUS"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Princess Connect! Re:Dive"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-10-03",
+    "id": "54212423",
+    "last_seen": "2024-10-03",
+    "vendor": [
+      "Cygames"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Capcom Games that fails to launch in AMD Ryzen"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 3,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-10-03",
+    "id": "54212472",
+    "last_seen": "2025-01-16",
+    "vendor": [
+      "Capcom"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "CriDspApo.dll"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-10-10",
+    "id": "54283088",
+    "last_seen": "2025-09-04",
+    "vendor": [
+      "FUJITSU"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Google Workspace Sync for Microsoft Outlook (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-10-10",
+    "id": "54318776",
+    "last_seen": "2025-02-20",
+    "vendor": [
+      "Google Inc."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Incredibuild"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-10-10",
+    "id": "54318849",
+    "last_seen": "2025-03-06",
+    "vendor": [
+      "Incredibuild Software Ltd."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Western Digital NVMe Disk (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2.."
+    ],
+    "first_seen": "2024-10-17",
+    "id": "54379386",
+    "last_seen": "2025-04-17",
+    "vendor": [
+      "Western Digital"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Assassin's Creed games"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 3,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-10-17",
+    "id": "54437462",
+    "last_seen": "2024-12-11",
+    "vendor": [
+      "Ubisoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Ubisoft Snowdrop games"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 2,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-10-24",
+    "id": "54580160",
+    "last_seen": "2024-11-14",
+    "vendor": [
+      "Ubisoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Avira - File delete issue"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 4,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-10-24",
+    "id": "54580694",
+    "last_seen": "2025-03-31",
+    "vendor": [
+      "Avira"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "ahsProtector (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-10-31",
+    "id": "54653508",
+    "last_seen": "2025-05-01",
+    "vendor": [
+      "北京深思数盾科技股份有限公司"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Undiscoverable scanner apps"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-10-31",
+    "id": "54762729",
+    "last_seen": "2024-12-05",
+    "vendor": [
+      "Multiple"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "XSpltAud driver (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-11-06",
+    "id": "54762856",
+    "last_seen": "2025-05-01",
+    "vendor": [
+      "SplitmediaLabs Limited"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Corrupted desktop in HDR/ACM mode"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-11-14",
+    "id": "54853601",
+    "last_seen": "2025-07-31",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "ASUS X712EA"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-11-06",
+    "id": "54866775",
+    "last_seen": "2025-03-06",
+    "vendor": [
+      "ASUS"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Studio 5000 Logix Designer (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-11-14",
+    "id": "55011756",
+    "last_seen": "2025-03-31",
+    "vendor": [
+      "Rockwell Automation Technologies, Inc."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Dell Encryption (24H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-12-05",
+    "id": "55370844",
+    "last_seen": "2025-07-17",
+    "vendor": [
+      "Dell Inc."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "AutoHDR"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-12-11",
+    "id": "55382406",
+    "last_seen": "2025-02-06",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Samsung Galaxy Book2 Go and Galaxy Book3 Go"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-12-11",
+    "id": "55430927",
+    "last_seen": "2025-03-06",
+    "vendor": [
+      "Samsung"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Tobii Dynavox TD I-110 (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2024-12-11",
+    "id": "55433415",
+    "last_seen": "2025-09-18",
+    "vendor": [
+      "Tobii Dynavox"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Yoga update failure"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2025-01-16",
+    "id": "55556408",
+    "last_seen": "2025-03-06",
+    "vendor": [
+      "Lenovo"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "ASUS Zenbook 14 UX3405CA"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2025-01-23",
+    "id": "55944804",
+    "last_seen": "2025-03-31",
+    "vendor": [
+      "ASUS"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Devices with Digital TV Tuners"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2025-02-06",
+    "id": "55964994",
+    "last_seen": "2025-05-01",
+    "vendor": [
+      "Multiple"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Low disk space devices (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2025-02-06",
+    "id": "56031903",
+    "last_seen": "2025-05-01",
+    "vendor": [
+      "Microsoft"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Autodesk AutoCAD 2022 (Wu Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2025-02-13",
+    "id": "56211213",
+    "last_seen": "2025-05-01",
+    "vendor": [
+      "Autodesk, Inc."
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Microsoft SharePoint Designer 2013"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2025-02-13",
+    "id": "56211407",
+    "last_seen": "2025-07-02",
+    "vendor": [
+      "Microsoft Corporation"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "SProtect Driver"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 2,
+    "dest_os": [
+      "GE24H2..XY30H1"
+    ],
+    "first_seen": "2025-02-20",
+    "id": "56318982",
+    "last_seen": "2025-09-25",
+    "vendor": [
+      "北京深思数盾科技股份有限公司"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Intel IntcAudioBus.sys (25H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE25H2..NPLUSONE"
+    ],
+    "first_seen": "2025-09-11",
+    "id": "59173803",
+    "last_seen": "2026-01-22",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [],
+    "app": [
+      "Intel IntcOED.sys (25H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 3,
+    "dest_os": [
+      "GE25H2..NPLUSONE"
+    ],
+    "first_seen": "2025-09-11",
+    "id": "59173827",
+    "last_seen": "2026-01-22",
+    "vendor": [
+      "Intel"
+    ]
+  },
+  {
+    "active": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "app": [
+      "Bad UEFI Firmware (24H2) (WU Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE24H2..GE25H2"
+    ],
+    "first_seen": "2025-10-15",
+    "id": "59739237",
+    "last_seen": "2026-10-29",
+    "vendor": [
+      "Multiple"
+    ]
+  },
+  {
+    "active": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "app": [
+      "Bad UEFI Firmware (25H2) (WU Offer Block)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE25H2..XY30H1"
+    ],
+    "first_seen": "2025-10-15",
+    "id": "59770930",
+    "last_seen": "2026-10-29",
+    "vendor": [
+      "Multiple"
+    ]
+  },
+  {
+    "active": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "app": [
+      "Samsung Galaxy Book3 Go 5G (25H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE25H2..GE26H2"
+    ],
+    "first_seen": "2026-10-29",
+    "id": "64818545",
+    "last_seen": "2026-10-29",
+    "vendor": [
+      "Samsung"
+    ]
+  },
+  {
+    "active": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "app": [
+      "Samsung Galaxy Book3 Go 5G (26H2)"
+    ],
+    "arch": [
+      "AMD64",
+      "ARM64",
+      "X86"
+    ],
+    "blocks": 1,
+    "dest_os": [
+      "GE26H2..XY30H1"
+    ],
+    "first_seen": "2026-10-29",
+    "id": "64921350",
+    "last_seen": "2026-10-29",
+    "vendor": [
+      "Samsung"
+    ]
+  }
+]

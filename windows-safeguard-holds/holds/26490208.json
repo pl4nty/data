@@ -1,0 +1,155 @@
+{
+  "blocks": {
+    "{7945c2b6-cec5-4e0a-ac0a-e36cc2c93e3e}": {
+      "entry": {
+        "APP_ID": "{f8d323dc-5a56-434f-8fad-a36b4ef7bec0}",
+        "APP_NAME": "Feature update download (diff baseline issue)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26490208",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{7945c2b6-cec5-4e0a-ac0a-e36cc2c93e3e}",
+        "MATCHING_FILE": {
+          "NAME": "%WinDir%\\System32\\ntdll.dll",
+          "UPTO_BIN_FILE_VERSION": "10.0.17763.65535"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_21_03_01_AMD64",
+          "last": "2020_06_04_06_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_21_03_02_ARM64",
+          "last": "2020_06_04_06_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_21_03_01_X86",
+          "last": "2020_06_04_06_02_X86"
+        }
+      },
+      "source": "2020_06_04_06_02_X86"
+    },
+    "{c004e9ac-3713-41ae-97c0-16f0c39f5efd}": {
+      "entry": {
+        "APP_ID": "{f8d323dc-5a56-434f-8fad-a36b4ef7bec0}",
+        "APP_NAME": "Feature update download (diff baseline issue)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26490208",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "19H1",
+        "DEST_OS_LT": "20H1",
+        "EXE_ID": "{c004e9ac-3713-41ae-97c0-16f0c39f5efd}",
+        "MATCHING_FILE": {
+          "NAME": "%WinDir%\\System32\\ntdll.dll",
+          "UPTO_BIN_FILE_VERSION": "10.0.17763.65535"
+        },
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "Write-Host 'Final result: 1';",
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "PowerShellMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_21_03_01_AMD64",
+          "last": "2020_06_04_06_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_21_03_02_ARM64",
+          "last": "2020_06_04_06_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_21_03_01_X86",
+          "last": "2020_06_04_06_02_X86"
+        }
+      },
+      "source": "2020_06_04_06_02_X86"
+    },
+    "{e3375b72-f8e4-4357-b5e4-9aed4c21cf2d}": {
+      "entry": {
+        "APP_ID": "{f8d323dc-5a56-434f-8fad-a36b4ef7bec0}",
+        "APP_NAME": "Feature update download (diff baseline issue)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26490208",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "19H1",
+        "DEST_OS_LT": "20H1",
+        "EXE_ID": "{e3375b72-f8e4-4357-b5e4-9aed4c21cf2d}",
+        "MATCHING_FILE": {
+          "NAME": "%WinDir%\\System32\\ntdll.dll",
+          "UPTO_BIN_FILE_VERSION": "10.0.17763.65535"
+        },
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "Write-Host 'Final result: 1';",
+          "NAME": "PowerShellMatchingPlugin"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCH_PLUGIN": [
+            {
+              "COMMAND_LINE": "$Res = 0; $RegPath = 'HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate'; if (Test-Path $RegPath) { $Key = Get-Item $RegPath; $Days = $Key.GetValue('DeferFeatureUpdatesPeriodInDays'); if (($Days - ((Get-Date) - [DateTime]'2020-05-27').Days) -le 0) { $Res = 1; }; }; Write-Host 'Final result:',$Res;",
+              "NAME": "PowerShellMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "$Res = 0; $RegPath = 'HKLM:\\SOFTWARE\\Microsoft\\PolicyManager\\current\\update'; if (Test-Path $RegPath) { $Key = Get-Item $RegPath; $Days = $Key.GetValue('DeferFeatureUpdatesPeriodInDays'); if (($Days - ((Get-Date) - [DateTime]'2020-05-27').Days) -le 0) { $Res = 1; }; }; Write-Host 'Final result:',$Res;",
+              "NAME": "PowerShellMatchingPlugin"
+            }
+          ]
+        },
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_21_03_01_AMD64",
+          "last": "2020_06_04_06_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_21_03_02_ARM64",
+          "last": "2020_06_04_06_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_21_03_01_X86",
+          "last": "2020_06_04_06_02_X86"
+        }
+      },
+      "source": "2020_06_04_06_02_X86"
+    }
+  },
+  "id": "26490208"
+}

@@ -1,0 +1,51 @@
+{
+  "blocks": {
+    "{df110d86-a120-42b2-aa9e-3da20d316960}": {
+      "entry": {
+        "APP_ID": "{6a9a0a86-5a82-4fb7-81d1-81ce4fedd456}",
+        "APP_NAME": "Safe Exam Browser (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "49562592",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{df110d86-a120-42b2-aa9e-3da20d316960}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "ETH Zürich",
+          "NAME": "*",
+          "PRODUCT_NAME": "Safe Exam Browser",
+          "UPTO_BIN_PRODUCT_VERSION": "3.7.65535.65535"
+        },
+        "NAME": "SafeExamBrowser.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "ETH Zürich"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_08_01_05_01_AMD64",
+          "last": "2025_07_17_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_08_01_05_01_ARM64",
+          "last": "2025_07_17_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_08_01_05_01_X86",
+          "last": "2025_07_17_03_02_X86"
+        }
+      },
+      "source": "2025_07_17_03_05_ARM64"
+    }
+  },
+  "id": "49562592"
+}

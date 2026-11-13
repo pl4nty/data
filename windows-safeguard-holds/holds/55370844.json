@@ -1,0 +1,51 @@
+{
+  "blocks": {
+    "{c2e56227-5d7f-4bf5-890d-8072b4db7520}": {
+      "entry": {
+        "APP_ID": "{70042745-3a7c-476a-8e92-ee38b2af8cd0}",
+        "APP_NAME": "Dell Encryption (24H2)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "55370844",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{c2e56227-5d7f-4bf5-890d-8072b4db7520}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Dell*",
+          "NAME": "*",
+          "PRODUCT_NAME": "Dell.Client.SecurityFramework.Console",
+          "UPTO_BIN_PRODUCT_VERSION": "11.9.65535.65535"
+        },
+        "NAME": "Dell.SecurityFramework.Console.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Dell Inc."
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_12_05_04_01_AMD64",
+          "last": "2025_07_17_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_12_05_04_01_ARM64",
+          "last": "2025_07_17_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_12_05_04_01_X86",
+          "last": "2025_07_17_03_02_X86"
+        }
+      },
+      "source": "2025_07_17_03_05_ARM64"
+    }
+  },
+  "id": "55370844"
+}

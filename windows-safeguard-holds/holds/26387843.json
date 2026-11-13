@@ -1,0 +1,102 @@
+{
+  "blocks": {
+    "{3780dd2f-4aa0-4719-9869-13fca6a5cb15}": {
+      "entry": {
+        "APP_ID": "{15cb7ccd-a8d2-4a96-a947-0250ef0f4123}",
+        "APP_NAME": "Intel cellular modem",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26387843",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{3780dd2f-4aa0-4719-9869-13fca6a5cb15}",
+        "MATCHING_DEVICE": {
+          "NAME": "usb\\vid_1519&pid_f214&mi_00*"
+        },
+        "NAME": "",
+        "VENDOR": "Intel"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_21_03_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_21_03_02_ARM64",
+          "last": "2020_08_06_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_21_03_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    },
+    "{93448f18-fc80-4b25-8bd3-d367a62befd6}": {
+      "entry": {
+        "APP_ID": "{15cb7ccd-a8d2-4a96-a947-0250ef0f4123}",
+        "APP_NAME": "Intel cellular modem",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26387843",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{93448f18-fc80-4b25-8bd3-d367a62befd6}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "usb\\vid_8087&pid_0911*"
+            },
+            {
+              "NAME": "usb\\vid_0bdb&pid_1926*"
+            },
+            {
+              "NAME": "usb\\vid_0bdb&pid_1936*"
+            },
+            {
+              "NAME": "usb\\vid_0bdb&pid_193e*"
+            }
+          ]
+        },
+        "VENDOR": "Intel"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_21_03_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_21_03_02_ARM64",
+          "last": "2020_08_06_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_21_03_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    }
+  },
+  "id": "26387843"
+}

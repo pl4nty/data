@@ -1,0 +1,559 @@
+{
+  "blocks": {
+    "{2f43dab2-6663-482c-bccc-8ac7c54733f7}": {
+      "entry": {
+        "APP_ID": "{9bbabad3-b49c-4c2b-a6ab-4333a6eb94d2}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - HP",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702644",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{2f43dab2-6663-482c-bccc-8ac7c54733f7}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "HP",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_1f72*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_1fd6*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_20d0*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5098*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50a2*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50f4*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_51d7*"
+            }
+          ]
+        },
+        "VENDOR": "Hewlett-Packard"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{3edbca84-d18a-433a-86ca-7a5396bc100d}": {
+      "entry": {
+        "APP_ID": "{9bbabad3-b49c-4c2b-a6ab-4333a6eb94d2}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - HP",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702644",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{3edbca84-d18a-433a-86ca-7a5396bc100d}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "HP",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_1f72*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_1fd6*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_20d0*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5098*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50a2*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50f4*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_51d7*"
+            }
+          ]
+        },
+        "VENDOR": "Hewlett-Packard"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{4c11a34d-e705-483d-9e56-a550ecf99b66}": {
+      "entry": {
+        "APP_ID": "{9bbabad3-b49c-4c2b-a6ab-4333a6eb94d2}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - HP",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702644",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{4c11a34d-e705-483d-9e56-a550ecf99b66}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "HP",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_1f72*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_1fd6*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_20d0*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5098*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50a2*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50f4*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_51d7*"
+            }
+          ]
+        },
+        "VENDOR": "Hewlett-Packard"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{4eae9b53-f345-4b07-a75c-5e5fe3a6ec4d}": {
+      "entry": {
+        "APP_ID": "{9bbabad3-b49c-4c2b-a6ab-4333a6eb94d2}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - HP",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702644",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{4eae9b53-f345-4b07-a75c-5e5fe3a6ec4d}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.89.0"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "HP",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_1f72*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_1fd6*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_20d0*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5098*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50a2*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50f4*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_51d7*"
+            }
+          ]
+        },
+        "VENDOR": "Hewlett-Packard"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{c07a43e2-5d29-471f-a4cf-8a63bf4ec6c5}": {
+      "entry": {
+        "APP_ID": "{9bbabad3-b49c-4c2b-a6ab-4333a6eb94d2}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - HP",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702644",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{c07a43e2-5d29-471f-a4cf-8a63bf4ec6c5}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.89.0"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "HP",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_1f72*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_1fd6*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_20d0*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5098*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50a2*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50f4*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_51d7*"
+            }
+          ]
+        },
+        "VENDOR": "Hewlett-Packard"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{f3fe7961-a0c8-40cd-8805-afc259b6b64e}": {
+      "entry": {
+        "APP_ID": "{9bbabad3-b49c-4c2b-a6ab-4333a6eb94d2}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - HP",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702644",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{f3fe7961-a0c8-40cd-8805-afc259b6b64e}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "HP",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_1f72*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_1fd6*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_20d0*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5098*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50a2*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50f4*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_51d7*"
+            }
+          ]
+        },
+        "VENDOR": "Hewlett-Packard"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    }
+  },
+  "id": "25702644"
+}

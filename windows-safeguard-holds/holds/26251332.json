@@ -1,0 +1,58 @@
+{
+  "blocks": {
+    "{2d3d6a21-634c-4344-8dfd-9ffc10400f5a}": {
+      "entry": {
+        "APP_ID": "{095550bf-cd44-4072-ad30-54ba53599282}",
+        "APP_NAME": "Toshiba Dynabook - (dynabook K50/FP) (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26251332",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{2d3d6a21-634c-4344-8dfd-9ffc10400f5a}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Dynabook*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "DBIHQT00",
+            "REG_VALUE_NAME": "BaseBoardProduct",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "Toshiba"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_14_04_01_AMD64",
+          "last": "2021_01_14_02_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_14_04_02_ARM64",
+          "last": "2021_01_14_02_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_14_04_01_X86",
+          "last": "2021_01_14_02_03_X86"
+        }
+      },
+      "source": "2021_01_14_02_03_X86"
+    }
+  },
+  "id": "26251332"
+}

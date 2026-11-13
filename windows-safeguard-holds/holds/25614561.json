@@ -1,0 +1,50 @@
+{
+  "blocks": {
+    "{706599c5-dc3c-4731-a85c-d8b95eef8c30}": {
+      "entry": {
+        "APP_ID": "{c37ae420-a4ca-47d7-b40a-73f9b6582e3a}",
+        "APP_NAME": "Cortana on ZH-CN SKU",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25614561",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{706599c5-dc3c-4731-a85c-d8b95eef8c30}",
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+          "REG_VALUE_DATA_SZ": "CoreCountrySpecific",
+          "REG_VALUE_NAME": "EditionID",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_04_02_05_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_04_02_05_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_04_02_05_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    }
+  },
+  "id": "25614561"
+}
