@@ -21,7 +21,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.9.0\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.9.1\HP.CMSLHelper.dll"
 }
 
 <#
@@ -2315,18 +2315,23 @@ function Get-HPPrivatePSScriptsEntries {
   $types = '[Logon]','[Logoff]','[Startup]','[Shutdown]'
   $cmdLinesSet = @{}
   $parametersSet = @{}
+  $t = $null
 
   if ([System.IO.File]::Exists($Path)) {
-    $contents = Get-Content $Path
+    Write-Verbose "Reading PSScripts entries from $Path"
+    $contents = @(Get-Content $Path)
     if ($contents) {
-      for ($i = 0; $i -lt $contents.Length; $i++) {
+      for ($i = 0; $i -lt $contents.Count; $i++) {
         if ($types.contains($contents[$i])) {
+          Write-Verbose "Found section $($contents[$i])"
           $t = $contents[$i]
           $cmdLinesSet[$t] = [System.Collections.ArrayList]@()
           $parametersSet[$t] = [System.Collections.ArrayList]@()
           continue
         }
-        if ($contents[$i].Length -gt 0) {
+
+        if (($contents[$i].Length -gt 0) -and ($i + 1 -lt $contents.Count) -and $t) {
+          Write-Verbose "Adding content to section $t"
           $cmdLinesSet[$t].Add($contents[$i].substring(1)) | Out-Null
           $parametersSet[$t].Add($contents[$i + 1].substring(1)) | Out-Null
           $i++

@@ -23,8 +23,8 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else {
-  $privateModuleRoot = "$PSScriptRoot\..\..\HP.Private\1.9.0"
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.9.0\HP.CMSLHelper.dll"
+  $privateModuleRoot = "$PSScriptRoot\..\..\HP.Private\1.9.1"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.9.1\HP.CMSLHelper.dll"
 }
 
 Add-Type -Path "$privateModuleRoot\Microsoft.Identity.Client.dll" -IgnoreWarnings -WarningAction SilentlyContinue
@@ -639,7 +639,6 @@ function Get-HPFirmwareAuditLog {
         }
   }
 }
-
 
 <#
 .SYNOPSIS

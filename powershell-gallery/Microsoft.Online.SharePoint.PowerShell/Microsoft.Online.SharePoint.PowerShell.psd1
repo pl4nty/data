@@ -11,7 +11,7 @@
 ModuleToProcess = 'Microsoft.Online.SharePoint.PowerShell.dll'
 
 # Version number of this module.
-ModuleVersion = '16.0.27709.12000'
+ModuleVersion = '16.0.27814.12015'
 
 # ID used to uniquely identify this module
 GUID = 'adedde5f-e77b-4682-ab3d-a4cb4ff79b83'
@@ -93,5 +93,7 @@ PrivateData = @{
 }
 
 }
+
+
 
 

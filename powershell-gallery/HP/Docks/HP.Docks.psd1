@@ -15,8 +15,8 @@
 
     RootModule = 'HP.Docks.dll'
    
-    #FullModuleVersion = '1.9.0.1648'
-    ModuleVersion = '1.9.0'
+    #FullModuleVersion = '1.9.1.1687'
+    ModuleVersion = '1.9.1'
     GUID = '281fc451-4c65-4d46-a99a-86e1a46f0f76'
     Author = 'HP Development Company, L.P.'
     CompanyName = 'HP Inc'

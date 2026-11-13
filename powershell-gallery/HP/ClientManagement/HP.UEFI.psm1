@@ -19,7 +19,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.9.0\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.9.1\HP.CMSLHelper.dll"
 }
 
 [Flags()] enum UEFIVariableAttributes{
@@ -49,9 +49,6 @@ else{
     .PARAMETER AsString
     If specified, this command will return the value as a string rather than a byte array. Note that the commands in this library support UTF-8 compatible strings. Other applications may store strings that are not compatible with this translation, in which
     case the caller should retrieve the value as an array (default) and post-process it as needed.
-
-    .EXAMPLE
-    PS>  Get-HPUEFIVariable -GlobalNamespace -Name MyVariable
 
     .EXAMPLE
     PS>  Get-HPUEFIVariable -Namespace "{21969aa8-681f-46be-90f0-6019ce9b0ee7}"  -Name MyVariable

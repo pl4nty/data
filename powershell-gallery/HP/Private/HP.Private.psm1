@@ -772,13 +772,24 @@ function Test-HPWinPE
 #>
 function Get-HPPrivateCurrentOsBitness {
   if ([environment]::Is64BitOperatingSystem -eq $true) {
-    $output = systeminfo | findstr /C:"System Type"
+    try {
+      # Read machine architecture directly to avoid localized/systeminfo command output.
+      $osArch = [string](Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment' -Name PROCESSOR_ARCHITECTURE -ErrorAction Stop).PROCESSOR_ARCHITECTURE
 
-    if($output -match "ARM64-based PC") { # ARM64-based PC means ARM64
-      return "arm64"
+      if ($osArch -match '^ARM64$') {
+        return "arm64"
+      }
+
+      if ($osArch -match '^(AMD64|x64)$') {
+        return 64
+      }
+
+      Write-Verbose "Unknown PROCESSOR_ARCHITECTURE '$osArch'; defaulting to 64-bit x64 behavior."
+      return 64
     }
-    else { # x64-based PC means x64
-      return 64 
+    catch {
+      Write-Verbose "Failed to read PROCESSOR_ARCHITECTURE from registry: $($_.Exception.Message). Defaulting to 64-bit x64 behavior."
+      return 64
     }
   }
   else {
@@ -1715,7 +1726,7 @@ function validateHPWmiResultInCategory {
 #>
 function Test-HPPrivateCustomResult {
   [CmdletBinding()]
-  param([int]$result,[int64]$mi_result,[int]$category)
+  param([int64]$result,[int64]$mi_result,[int]$category)
   Write-Verbose ("Checking result={0:x8}, mi_result={1:x8}, category={2:x4}" -f $result,$mi_result,$category)
   switch ($result) {
     0 { Write-Verbose ("Operation succeeded.") }
