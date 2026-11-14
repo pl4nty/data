@@ -482,6 +482,7 @@
             "DropAvailableAppEGATOptionalInstallIntent": true,
             "DropIsDeleteEGAT": true,
             "DropUnchangedMdmPolicyHashEGAT": true,
+            "EGATCCEnabled": true,
             "EgatEgpaConsolidationBGTask": true,
             "EnableAERequiredLOBAppMetadataCreationAndProcessing": true,
             "EnableAndroidAospReferencedApp": true,
