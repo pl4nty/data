@@ -4424,6 +4424,78 @@
                 }
             }
         },
+        "Floodgate_Campaign_myaccount.microsoft.com.7c867a09-ff05-4286-97ef-3f139af8f03b": {
+            "CampaignId": "7c867a09-ff05-4286-97ef-3f139af8f03b",
+            "EndTimeUtc": "2027-04-16T07:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 5,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2026-10-15T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "MyApps-Requested App",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "additionalCapabilities": {
+                        "email": {
+                            "targetPage": 0
+                        }
+                    },
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Not at all easy",
+                                    "questionLabel": "How easy was it to request a new app?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Extremely easy",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/7c867a09-ff05-4286-97ef-3f139af8f03b/ce32cf68-0f65-4d37-83de-38e7d3f88ed4/Web-myaccount.microsoft.com/",
+                    "variables": {}
+                }
+            }
+        },
         "Floodgate_Campaign_myaccount.microsoft.com.8b8481ee-a396-4417-8ec0-a646c72e4c3d": {
             "CampaignId": "8b8481ee-a396-4417-8ec0-a646c72e4c3d",
             "EndTimeUtc": "2027-03-31T07:00:00Z",

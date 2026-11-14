@@ -605,6 +605,7 @@
         "EnableManualSnapshotExtraParameters": true,
         "EnableMarkInterestedUserInAADForwardSync": true,
         "EnableMaxNICUseAzureLimit": true,
+        "EnableMergePoolListView": true,
         "EnableMeteringServiceProxy": true,
         "EnableMexicoGeographicLocationType": true,
         "EnableMigrateBulkResizeToBulkAction": true,
@@ -628,6 +629,7 @@
         "EnableNetworkValidationForFLD": true,
         "EnableNetworkValidationForFLS": true,
         "EnableNewConnectionHealth": true,
+        "EnableNewIntuneDeviceDetailsPageUX": true,
         "EnableNewReactViewPolicyUX": true,
         "EnableNewStorageBlobForCitrixAgent": true,
         "EnableNextPickUpTime": true,
@@ -660,6 +662,7 @@
         "EnablePassingCustomerTenantIdToAvd": true,
         "EnablePermissionCheckInAutopilot": true,
         "EnablePersistProvisionRecipeInCpcLevelForWorkspace": true,
+        "EnablePersistentAgentFrontierPreview": true,
         "EnablePlaceUnderReviewUXForApex": true,
         "EnablePolicyCreationMetricsUX": true,
         "EnablePolicyCrossPoolMove": true,
@@ -1204,6 +1207,7 @@
         }
     },
     "MMD": {
+        "AADValidationEmptyGroupSafeguard": true,
         "AccessControlAuth": true,
         "AllDevicesRecentCombinedFallback": true,
         "AlternativeSubscriptionSync": false,

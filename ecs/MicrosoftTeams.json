@@ -1609,6 +1609,12 @@
                     "IsEnabled": true
                 }
             ],
+            "EnableGenerationModelGpt6Luna": [
+                {
+                    "Flight": "EnableGenerationModelGpt6Luna",
+                    "IsEnabled": true
+                }
+            ],
             "EnableGoalDetection": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableGoalDetection",

@@ -547,7 +547,10 @@
             "BypassDhaSettings404Error": true,
             "BypassDhaSettings404ErrorNewlyEnrolledOnly": true,
             "CalculationLatencyMetricV2Enabled": true,
+            "DataSyncDeviceThreatMBPublisherEnabled": true,
             "DataSyncDeviceThreatQMSDeduplicationEnabled": true,
+            "DataSyncDeviceThreatQMSPublisherDisabled": true,
+            "DataSyncDeviceThreatQMSSubscriberDisabled": true,
             "DeleteDPSBlob": true,
             "EGM_Process": true,
             "EGM_TriggerComplianceCalc": true,
@@ -773,6 +776,7 @@
         "FlightingV2": {
             "BypassPartnerTokenBlockForETG": true,
             "EnableBlockingOpenClaw": true,
+            "EnableCISWindows11V500Baseline": true,
             "EnableDefenderAiAgentProtection": true,
             "EnableEpmSystemSettingsSettings": true,
             "EnablePRSv3EmptyChangedReportFilter": true,

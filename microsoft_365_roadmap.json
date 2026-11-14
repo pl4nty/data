@@ -1,5 +1,726 @@
 [
     {
+        "created": "2026-11-14T00:06:56",
+        "description": "<p>Project Operations calculates cost and sales estimates for resource assignments, including daily, time-phased estimates. These calculations can repeatedly use the same role-pricing information across assignments and dates.</p>\n<p>With this feature enabled, Project Operations caches and reuses applicable role prices, markups, and price overrides within each estimate-pricing operation. This reduces repeated pricing lookups, helping improve responsiveness when calculating or updating estimates, particularly for larger projects.</p>\n<p>The cache is scoped to the pricing operation and is recreated for subsequent operations. The feature is intended to improve performance without changing pricing rules or calculated results.</p>",
+        "id": 579917,
+        "locale": null,
+        "modified": "2026-11-14T00:06:56",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Enable caching of role prices when pricing estimates"
+    },
+    {
+        "created": "2026-11-14T00:02:22",
+        "description": "<p>The <strong>Entry Journal Actual Cancellation</strong> feature enables users to cancel actuals created by confirming entry journals. Users select eligible actuals, review them in a system-generated correction journal, and confirm the journal to create reversing actuals. The original actuals are marked <strong>Adjusted</strong>, preserving the original transactions and their reversal history rather than deleting them.</p>",
+        "id": 579915,
+        "locale": null,
+        "modified": "2026-11-14T00:02:22",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/project-operations/actuals/cancel-actuals-from-entry-journals",
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Cancel actual from entry journals"
+    },
+    {
+        "created": "2026-11-13T23:01:18",
+        "description": "<p>Organizers, co-organizers, and presenters can chat privately in a separate chat from attendees. This chat is available to access before, during, and after the event.</p>",
+        "id": 580452,
+        "locale": null,
+        "modified": "2026-11-13T23:01:18",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Chat for organizers and presenters in structured meetings and webinars in GCC High and DoD"
+    },
+    {
+        "created": "2026-11-13T23:01:18",
+        "description": "<p>Save time entering information into Business Central with Auto paste. Building on Autofill, Auto paste uses AI to identify relevant information from text or HTML copied to your clipboard and map it to the appropriate fields on a Business Central page.</p>\n<p><strong>Benefits</strong></p>\n<p>Reduce manual data entry when bringing information from external sources into Business Central.<br>\nPopulate multiple relevant fields from copied content instead of copying and pasting individual values.<br>\nExtend AI-assisted data entry to more everyday Business Central workflows.</p>",
+        "id": 579980,
+        "locale": null,
+        "modified": "2026-11-13T23:01:18",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Business Central"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Business Central"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Business Central: Copilot and agents - Fill forms faster with Autofill - Auto paste"
+    },
+    {
+        "created": "2026-11-13T23:01:18",
+        "description": "<p>Enable multiple addresses for customer accounts and use the appropriate invoice and delivery addresses across project quotations, project contracts, and project invoices. Users can select from existing customer addresses or create new addresses when needed. Selected addresses flow through the project lifecycle and are synchronized between Dataverse and Dynamics 365 Finance</p>",
+        "id": 579973,
+        "locale": null,
+        "modified": "2026-11-13T23:01:18",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Enable multiple addresses for accounts"
+    },
+    {
+        "created": "2026-11-13T23:01:18",
+        "description": "<p>The <strong>Personal settings</strong> experience in model-driven apps has been modernized with clearer organization, updated navigation, and a more consistent design.</p>\n<p>Users can select a button to return to the classic <strong>Personal settings</strong> experience if needed.</p>\n<h3>Availability</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2611.4</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by default)</td>\n</tr>\n</tbody>\n</table>",
+        "id": 579899,
+        "locale": null,
+        "modified": "2026-11-13T23:01:18",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Power Apps"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Power Apps"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Power Apps: Use the modernized Personal settings experience"
+    },
+    {
+        "created": "2026-11-13T23:01:18",
+        "description": "<p>Confirm demand on a stocked material estimate in Dataverse to create an item requirement in finance and operations. This connects material estimates to supply chain processes for procurement and proactive planning, rather than limiting them to materials already on hand.</p>\n<p>In Dataverse, you can request packing-slip posting or cancellation, close the remaining quantity on the item requirement, and check processing results. Finance and operations processes the inventory movement and project cost, and material usage information returns to Dataverse.</p>\n<p>An administrator or maker enables or configures the capability for users. This feature applies to the Project Operations connected with ERP deployment type.</p>\n<h2>Availability</h2>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Monthly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>UR78 / 10.0.52</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by admins or makers)</td>\n</tr>\n</tbody>\n</table>",
+        "id": 578907,
+        "locale": null,
+        "modified": "2026-11-13T23:01:18",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Use item requirements from stocked material estimates"
+    },
+    {
+        "created": "2026-11-13T23:01:18",
+        "description": "<p>Project to Profit value chain mainly contains business processes:</p>\n<ul>\n<li>Govern projects</li>\n<li>Manage project contracts</li>\n<li>Manage project resources and schedule</li>\n<li>Manage project delivery</li>\n<li>Manage project financials</li>\n<li>Monitor and analyze project performance</li>\n</ul>",
+        "id": 577854,
+        "locale": null,
+        "modified": "2026-11-13T23:01:18",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-analytics/business-performance-analytics-home-page",
+        "publicDisclosureAvailabilityDate": "December CY2027",
+        "publicPreviewDate": "June CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Build reports with Project to profit data model"
+    },
+    {
+        "created": "2026-11-13T19:37:39",
+        "description": "<p>Sellers can discover and act on lead and opportunity recommendations that are already prioritized for them in Sales agent. A single prioritized list helps sellers see what needs attention without monitoring each agent separately or prioritizing the actions themselves. Sellers can review each recommended action, understand its details and business context, and take action from the same experience.</p>\n<p>The initial release focuses on lead outreach actions from Sales qualification agent and opportunity risk actions from Sales opportunity agent. Sellers can discover leads that need outreach and opportunities that need attention, review the recommended next step and its context, and act to move customer conversations and opportunities forward.</p>\n<p>Recommended actions will be turned on by default. Additional agents, including custom agents, are a future direction and are not part of this initial release commitment.</p>",
+        "id": 579977,
+        "locale": null,
+        "modified": "2026-11-13T19:37:39",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): Discover and act on recommended lead and opportunity actions in Sales agent"
+    },
+    {
+        "created": "2026-11-13T19:37:39",
+        "description": "<p>Some of the most commonly used business processes that project managers perform during subcontract management include the following tasks:</p>\n<p>Modify subcontract line<br>\nTrack subcontract usage<br>\nMonitor billing progress for subcontracts<br>\nCurrently, project managers need to use multiple forms and interfaces to access these business processes. This complexity increases when project managers manage vendors and subcontracts across various projects.</p>",
+        "id": 578908,
+        "locale": null,
+        "modified": "2026-11-13T19:37:39",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/project-operations/pro/subcontracting/improved-sub-contracting-ui-experience",
+        "publicDisclosureAvailabilityDate": "August CY2027",
+        "publicPreviewDate": "September CY2025",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Subcontracting UI Improvement"
+    },
+    {
+        "created": "2026-11-13T19:37:39",
+        "description": "<p>Project managers frequently create budgets by importing material and expense estimates. Currently, the imported budget lines default the end date to the same value as the start date, requiring users to manually update each budget line to reflect the actual project duration. This additional step increases planning effort, introduces the risk of incorrect dates, and creates a poor user experience, particularly for projects with a large number of material and expense estimates. By automatically defaulting the budget line end date to the project end date, the budgeting process becomes faster, more intuitive, and better aligned with typical project planning practices. This is for Dynamics 365 Project Operations core and connected with ERP deployment types.</p>",
+        "id": 577875,
+        "locale": null,
+        "modified": "2026-11-13T19:37:39",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "August CY2027",
+        "publicPreviewDate": "March CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Expense and material budget lines to have project end date as budget line end date during import"
+    },
+    {
+        "created": "2026-11-13T19:37:39",
+        "description": "<p><strong>Applies to</strong>: Point of Sale (Store Commerce)</p>\n<p><strong>Setup</strong>: Store admin configures the control in the Commerce headquarters screen layout designer.</p>\n<p>You can add a new <strong>Quick Operations control</strong> to the transaction screen layout in the headquarters screen layout designer.</p>\n<ul>\n<li>Display a configurable set of operations in a purpose-built experience instead of a generic button grid. For example, include manual discount amount, manual discount percentage, transaction comments, and customer purchase order numbers.</li>\n<li>Configure operations per screen layout. The control respects POS permissions and hides or disables actions based on user access. Operations use the same workflows as the button grid.</li>\n<li>Configure control attributes in the screen layout designer to include custom fields and operations. This capability lets merchants surface extension fields alongside built-in operations.</li>\n<li>Provide a graceful empty state when no operations are configured.</li>\n</ul>",
+        "id": 577749,
+        "locale": null,
+        "modified": "2026-11-13T19:37:39",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "July CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Configure quick operations on the transaction screen"
+    },
+    {
+        "created": "2026-11-13T19:37:39",
+        "description": "<p>Enable Project and Item Requirement Delivery Address Management</p>\n<p>This feature extends delivery address capabilities within integrated Project Operations by introducing delivery address support on Project, Project Task, and Material Estimate records. Delivery addresses can be selected from customer addresses, defaulted through the project hierarchy, and synchronized between Dataverse and Finance and Operations.</p>\n<p>The enhancement also ensures that delivery addresses are correctly resolved and populated on Item Requirements regardless of how they are created, whether from Item Forecasts, Project Purchase Orders, or directly from Projects. This provides a consistent and controlled address management experience across project planning, procurement, and fulfillment processes.</p>",
+        "id": 577400,
+        "locale": null,
+        "modified": "2026-11-13T19:37:39",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2028",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "Dynamics 365 Finance and Operations cross-app"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                },
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                },
+                {
+                    "tagName": "Dynamics 365 Finance and Operations cross-app"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Enable Project and Item Requirement delivery address"
+    },
+    {
         "created": "2026-11-12T01:35:00",
         "description": "<p>Align event registrations with the way your organization manages customer data. By supporting lead-based registration journeys and existing matching rules, you can avoid unnecessary Contact creation, improve data quality, and ensure event attendees follow the same lead management process used across your business.\u200b</p>\n<ul>\n<li>Configure event registration forms to create or update Contacts, Leads, or both Leads and Contacts \u200b</li>\n<li>Apply existing matching, deduplication, and update rules to event registrations for more consistent and accurate customer data.\u200b</li>\n<li>Register attendees without requiring a Contact record, enabling lead-only registration scenarios and sales-driven qualification processes.\u200b</li>\n</ul>",
         "id": 579982,
@@ -28821,7 +29542,7 @@
         "description": "<p>For Teams meetings and events, a new streaming switchboard will soon be available to easily manage and send NDI sources out to production software.</p>",
         "id": 573453,
         "locale": null,
-        "modified": "2026-10-08T23:04:12",
+        "modified": "2026-11-13T19:41:44",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
@@ -28830,6 +29551,9 @@
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
             },
             {
                 "tagName": "Desktop"
@@ -28848,6 +29572,9 @@
             "cloudInstances": [
                 {
                     "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
                 }
             ],
             "platforms": [
@@ -30353,12 +31080,12 @@
         "description": "<p>Impersonation Protection for Teams meetings helps users identify potentially deceptive participants and meeting organizers. When Teams detects a potential impersonation attempt, it surfaces warnings and risk indicators to help users recognize suspicious identities and make more informed decisions when joining or participating in a meeting.</p>",
         "id": 573157,
         "locale": null,
-        "modified": "2026-10-07T23:01:35",
+        "modified": "2026-11-13T19:41:44",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -38924,9 +39651,9 @@
         "description": "<p>Express face enrollment makes it easier for users to create a face profile in Teams by using their camera during eligible meetings, after they opt in. Once enrolled, users can be recognized in supported Teams Rooms experiences, helping identify who is in the room and improving downstream meeting experiences such as Copilot and recap. Admins can enable or disable the feature for their organization.</p>",
         "id": 570846,
         "locale": null,
-        "modified": "2026-10-14T23:01:02",
+        "modified": "2026-11-13T19:41:44",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -40231,9 +40958,9 @@
         "description": "<p>Two presenters can share a screen or window at the same time in a Teams meeting. Participants can see both shared content streams simultaneously, making it easier to compare and discuss content from different presenters.</p>",
         "id": 80239,
         "locale": null,
-        "modified": "2026-10-29T23:01:00",
+        "modified": "2026-11-13T19:41:44",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -69704,9 +70431,9 @@
         "description": "<p>Facilitator now automatically detects open questions raised during a Teams meeting and offers to help answer them using web search. When a participant asks a question (e.g., \u201cWhat is an LLM?\u201d) and no one answers, Facilitator posts a prompt offering to find an answer. Participants can select \u201cYes\u201d to have the agent retrieve and share the information.</p>",
         "id": 558341,
         "locale": null,
-        "modified": "2026-10-15T22:47:30",
+        "modified": "2026-11-13T19:41:44",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -82266,12 +82993,12 @@
     },
     {
         "created": "2026-02-06T00:00:51",
-        "description": "Discover and find people through Microsoft 365 Copilot Search based on your company's custom profile properties from SharePoint Online.",
+        "description": "<p>Discover and find people through Microsoft 365 Copilot Search based on your company's custom profile properties from SharePoint Online.</p>",
         "id": 508526,
         "locale": null,
-        "modified": "2026-02-06T00:00:51",
+        "modified": "2026-11-13T19:41:44",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "June CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -89641,10 +90368,10 @@
     },
     {
         "created": "2025-12-11T00:00:03",
-        "description": "<p>Express voice enrollment makes registering your voice in Teams fast and easy. Your profile enables features like voice isolation, speaker recognition, identification in a meeting room and transcripts, and enhanced meeting recaps and insights from Microsoft 365 Copilot. If you don\u2019t yet have a voice profile, just go to the recognition tab in Teams settings and opt-in to enroll your voice simply by speaking during a meeting.&nbsp; Admins can enable or disable this feature.</p>",
+        "description": "<p>Express voice enrollment makes registering your voice in Teams fast and easy. Your profile enables features like voice isolation, speaker recognition, identification in a meeting room and transcripts, and enhanced meeting recaps and insights from Microsoft 365 Copilot. If you don\u2019t yet have a voice profile, just go to the recognition tab in Teams settings and opt-in to enroll your voice from audio during your Teams meetings. Admins can enable or disable this feature.</p>",
         "id": 537269,
         "locale": null,
-        "modified": "2026-09-15T23:00:36",
+        "modified": "2026-11-13T19:41:44",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "June CY2026",
         "publicPreviewDate": "",
@@ -96484,61 +97211,6 @@
         "title": "Microsoft Copilot (Microsoft 365): Edit capability for selecting permission reading option for existing ServiceNow Knowledge & Catalog Connections"
     },
     {
-        "created": "2025-11-07T00:30:39",
-        "description": "Earlier ServiceNow Knowledge connector did not support ingestion of content for articles created using templates in ServiceNow. But now ServiceNow Knowledge connector supports ingestion of knowledge articles based on out-of-the-box templates like FAQ, How to, What is, etc. & even custom templates used by the customers in their organization.",
-        "id": 505436,
-        "locale": null,
-        "modified": "2026-01-14T00:00:47",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "November CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Knowledge templates support for ServiceNow Knowledge Connector"
-    },
-    {
         "created": "2025-11-06T00:00:20",
         "description": "Leverage the latest AI advancements to build prototypes, learning applications or interactive reports using your favorite tools in Edge without worrying about your data. This extension enables apps to leverage some new security improvements for safely executing AI generated code.",
         "id": 525366,
@@ -98149,104 +98821,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] [Search UX] Custom filter support for data sources on Copilot Search"
-    },
-    {
-        "created": "2025-10-30T23:15:09",
-        "description": "Now when users receive multiple automatic replies at once, they appear collapsed in the reading pane by default. Users can then expand to see all the automatic replies if desired.",
-        "id": 523208,
-        "locale": null,
-        "modified": "2026-01-14T00:00:47",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "iOS"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "iOS"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Collapsible Automatic Replies on Outlook for iOS"
-    },
-    {
-        "created": "2025-10-30T23:15:09",
-        "description": "Now when users receive multiple automatic replies at once, they appear collapsed in the reading pane by default. Users can then expand to see all the automatic replies if desired.",
-        "id": 523207,
-        "locale": null,
-        "modified": "2026-01-14T00:00:47",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Android"
-            },
-            {
-                "tagName": "Outlook"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Android"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Outlook"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Outlook: Collapsible Automatic Replies on Outlook for Android"
     },
     {
         "created": "2025-10-30T23:15:09",
@@ -111880,79 +112454,6 @@
         "title": "Microsoft Purview compliance portal: Endpoint Data Loss Prevention -- Always-on diagnostics for Windows Endpoints (Phase 2)"
     },
     {
-        "created": "2025-07-30T23:15:18",
-        "description": "Following further review, this feature continues in development. We apologize for any inconvenience. Enhancement to Copilot studio agents report (Preview) 1. Addition of Weekly active user count 2. Report aggregation changed to weekly to main consistency with other reports\n",
-        "id": 499421,
-        "locale": null,
-        "modified": "2026-01-14T00:00:47",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "August CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Enhancement to Copilot studio agents report "
-    },
-    {
         "created": "2025-07-28T23:00:23",
         "description": "Remotely access devices over the cloud without requiring end user involvement by signing in with credentials.",
         "id": 499154,
@@ -119749,67 +120250,6 @@
         "title": "Microsoft Teams: External group chat policy enforcements for max two orgs"
     },
     {
-        "created": "2025-04-28T23:15:36",
-        "description": "Silent Test enables IT administrators to proactively run synthetic Teams call simulations to specific subnets, helping assess network readiness and detect potential issues before they impact users, ensuring a seamless communication experience.",
-        "id": 490055,
-        "locale": null,
-        "modified": "2026-01-14T00:00:47",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Microsoft Teams"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Targeted Release"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Teams"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Targeted Release"
-                }
-            ]
-        },
-        "title": "Microsoft Teams: Silent test call"
-    },
-    {
         "created": "2025-04-25T22:15:45",
         "description": "Users have long been able to use personal Microsoft accounts with the OneDrive app on corporate Windows devices\u2014unless restricted by admin policy. This new feature introduces a prompt only when a personal account is already signed in on the device, encouraging users to also sign in to the OneDrive app with that account. Administrators who have already restricted personal accounts on corporate devices can continue to manage this as before. Organizations that have already disabled personal OneDrive accounts on corporate devices with the DisablePersonalSync policy will not see this prompt. Administrators can also suppress it using the DisableNewAccountDetection policy. More information on configuring policies can be found here:",
         "id": 490064,
@@ -120198,67 +120638,6 @@
             ]
         },
         "title": "Microsoft Copilot (Microsoft 365): Copilot surfaces key statistics in the top of a document"
-    },
-    {
-        "created": "2025-04-23T16:15:28",
-        "description": "This new capability further integrates SharePoint Online with Purview sensitivity labeling. SharePoint Online document library owners can set a new type of default label on the library, which automatically applies that label to all unprotected Word, Excel, PowerPoint, and PDF files within the library. This simplifies labeling in bulk across document libraries in an organization, enriches DLP and Copilot with signal to allow admins to monitor and restrict access to this content, and enables inheritance of sensitivity labels to output artifacts in Copilot. #copilotcontrolsystem",
-        "id": 485733,
-        "locale": null,
-        "modified": "2026-01-14T00:00:47",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                },
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview Information Protection: Doc library default labeling for SharePoint Online and Copilot"
     },
     {
         "created": "2025-04-22T23:15:19",
@@ -130164,79 +130543,6 @@
             ]
         },
         "title": "Microsoft Teams: Decorate your background for GCC and GCC High environments (Premium)"
-    },
-    {
-        "created": "2024-08-06T00:00:26",
-        "description": "Multi-Geo In-Region Routing (IRR) enables customers to control the routing of inbound emails. Using IRR, customers can set the geo-region that inbound mail should be routed to for specific Accepted Domains.",
-        "id": 410245,
-        "locale": null,
-        "modified": "2026-01-14T00:00:47",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2025",
-        "publicPreviewDate": "October CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Desktop"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft 365"
-            },
-            {
-                "tagName": "Exchange"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Desktop"
-                },
-                {
-                    "tagName": "Mac"
-                },
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft 365"
-                },
-                {
-                    "tagName": "Exchange"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft 365: Multi-Geo In-Region Routing"
     },
     {
         "created": "2024-08-01T23:15:01",
