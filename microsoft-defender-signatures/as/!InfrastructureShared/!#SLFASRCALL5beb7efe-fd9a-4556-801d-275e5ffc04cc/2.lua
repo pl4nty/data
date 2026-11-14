@@ -140,7 +140,7 @@ do
         return mp.CLEAN
       end
       l_0_10 = (string.lower)(l_0_10)
-      if (MpCommon.IsSampled)(15000, false, false, false) == true then
+      if (MpCommon.IsSampled)(25000, false, false, false) == true then
         if l_0_10 == "opencode.exe" then
           return mp.CLEAN
         end

@@ -159,59 +159,47 @@ ReportResource = function(l_4_0, l_4_1, l_4_2, l_4_3)
       local l_4_18 = nil
       local l_4_19 = #l_4_1 - l_4_10
       local l_4_20 = l_4_11 - 1
-      while 1 do
-        if l_4_13 <= l_4_17 and l_4_14 < l_4_11 then
-          local l_4_21 = {}
-          local l_4_22 = 0
-          local l_4_23, l_4_24 = , {SIG_CONTEXT = "Lua_Custom_Upload_Resource", CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE", TAG = "NOLOOKUP", ResourceName = l_4_0, ResourceInfo = safeJsonSerialize(l_4_2), ResourceSize = l_4_17, LastIndex = l_4_20, Source = l_4_3, Index = l_4_14}
-          local l_4_27, l_4_28 = nil
-          if pcall(l_0_0, l_4_24, l_4_1:sub(l_4_13, l_4_13 + l_4_10 - 1), l_4_14) and l_0_0 and not l_0_0.error then
-            l_4_22 = l_4_22 + 1
+      while l_4_13 <= l_4_17 and l_4_14 < l_4_11 do
+        local l_4_21 = {}
+        local l_4_22 = 0
+        local l_4_23 = nil
+        local l_4_24, l_4_25 = {SIG_CONTEXT = "Lua_Custom_Upload_Resource", CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE", TAG = "NOLOOKUP", ResourceName = l_4_0, ResourceInfo = safeJsonSerialize(l_4_2), ResourceSize = l_4_17, LastIndex = l_4_20, Source = l_4_3, Index = l_4_14}, l_4_1:sub(l_4_13, l_4_13 + l_4_10 - 1)
+        -- DECOMPILER ERROR at PC94: Overwrote pending register: R22 in 'AssignReg'
+
+        l_4_24.PreviousFailedIndexes = pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulsereportresource_failedIndexes", l_4_4, l_4_9) and MpCommon.RollingQueueQueryKeyNamespaced and (MpCommon.RollingQueueQueryKeyNamespaced).value and nil or "None"
+        local l_4_27 = nil
+        if pcall(l_0_0, l_4_24, l_4_25, l_4_14) and l_0_0 and not l_0_0.error then
+          l_4_22 = l_4_22 + 1
+        else
+          if l_4_27 then
+            l_4_27 = l_4_27 .. "," .. l_4_14
           else
-            local l_4_29 = nil
-            -- DECOMPILER ERROR at PC110: Overwrote pending register: R26 in 'AssignReg'
+            l_4_27 = l_4_14
+          end
+          AppendToRollingQueueNamespaced("hmdprecisionpulsereportresource_failedIndexes", l_4_4, l_4_9, l_4_27, l_4_5, 500, 1)
+        end
+        l_4_14 = l_4_14 + 1
+      end
+      do
+        -- DECOMPILER ERROR at PC133: Confused about usage of register: R18 in 'UnsetPending'
 
-            -- DECOMPILER ERROR at PC112: Overwrote pending register: R26 in 'AssignReg'
-
-            if l_4_29 then
+        if l_4_22 == l_4_18 then
+          if l_4_8 then
+            local l_4_28 = nil
+            AppendToRollingQueueNamespaced("hmdprecisionpulsereportresource", l_4_4, l_4_0 .. "|" .. l_4_8, 1, l_4_5, 500, 1)
+          else
+            do
               do
+                if l_4_17 < l_4_11 * l_4_10 then
+                  local l_4_29 = nil
+                end
                 do
-                  AppendToRollingQueueNamespaced("hmdprecisionpulsereportresource_failedIndexes", l_4_4, l_4_9, nil, l_4_5, 500, 1)
-                  l_4_14 = l_4_14 + 1
-                  -- DECOMPILER ERROR at PC123: LeaveBlock: unexpected jumping out DO_STMT
-
-                  -- DECOMPILER ERROR at PC123: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC123: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC123: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                  -- DECOMPILER ERROR at PC123: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC123: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC123: LeaveBlock: unexpected jumping out IF_STMT
+                  local l_4_30 = nil
+                  AppendToRollingQueueNamespaced("hmdprecisionpulsereportresource", l_4_4, l_4_0, not (string.find)(l_4_0, "MpWppTracing", 1, true) and not (string.find)(l_4_0, "MPScanSkip", 1, true) and not (string.find)(l_4_0, "MPLog", 1, true) or l_4_17, l_4_5, 500, 1)
+                  -- DECOMPILER ERROR at PC192: freeLocal<0 in 'ReleaseLocals'
 
                 end
               end
-            end
-          end
-        end
-      end
-      -- DECOMPILER ERROR at PC124: Confused about usage of register: R18 in 'UnsetPending'
-
-      if l_4_22 == l_4_18 then
-        if l_4_8 then
-          local l_4_30 = nil
-          AppendToRollingQueueNamespaced("hmdprecisionpulsereportresource", l_4_4, l_4_0 .. "|" .. l_4_8, 1, l_4_5, 500, 1)
-        else
-          do
-            do
-              if l_4_17 < l_4_11 * l_4_10 then
-                local l_4_31 = nil
-              end
-              local l_4_32 = nil
-              AppendToRollingQueueNamespaced("hmdprecisionpulsereportresource", l_4_4, l_4_0, not (string.find)(l_4_0, "MpWppTracing", 1, true) and not (string.find)(l_4_0, "MPScanSkip", 1, true) and not (string.find)(l_4_0, "MPLog", 1, true) or l_4_17, l_4_5, 500, 1)
             end
           end
         end
