@@ -551,7 +551,6 @@
             "DataSyncDeviceThreatMBPublisherEnabled": true,
             "DataSyncDeviceThreatQMSDeduplicationEnabled": true,
             "DataSyncDeviceThreatQMSPublisherDisabled": true,
-            "DataSyncDeviceThreatQMSSubscriberDisabled": true,
             "DeleteDPSBlob": true,
             "EGM_Process": true,
             "EGM_TriggerComplianceCalc": true,
