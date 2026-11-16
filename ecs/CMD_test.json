@@ -16,10 +16,14 @@
         "AdoptTouchlessServiceInstanceMoveInUserService": true,
         "Aspen": {
             "CheckEnablement": {
+                "DnsSpoofingCheck": true,
                 "EndpointReachability": true,
                 "GraphicsCheck": true,
                 "InternetConnnectivity": true,
-                "OsVersion": true
+                "NetworkVpnCheck": true,
+                "OsVersion": true,
+                "ShortpathCompatibilityCheck": true,
+                "TlsInspectionCheck": true
             },
             "ConnectWithPolicyTimeout": true,
             "EnableAutoReconnect": true,
@@ -329,6 +333,7 @@
         "EnableAdminRecoveryAncFallbackToCurrentAnc": true,
         "EnableAdvancedFilter": true,
         "EnableAfecRestrictedRegionCheck": true,
+        "EnableAgentBladeContext": true,
         "EnableAgentCloudPCPool": true,
         "EnableAgentDrivenDevicePreparationUX": true,
         "EnableAgentPoolCopilotCredit": true,
@@ -1341,6 +1346,7 @@
         "EnableUPNForFrontlineCurrentConnectQuery": true,
         "EnableUXCloudPcTroubleshootReport": true,
         "EnableUXDisplayRetentionSnapshotInList": true,
+        "EnableUnifiedApiVersionControlForImage": true,
         "EnableUnifiedGroupingTasksQueue": true,
         "EnableUnifiedNamingTemplateForFls": true,
         "EnableUninstallCseAfterIntuneEnroll": true,
