@@ -903,6 +903,7 @@
         "EnableVFLForDpp": true,
         "EnableVMBalanceDuringProvision": true,
         "EnableVSBSSOForPolicy": true,
+        "EnableValidateCitrixCseScriptOutput": true,
         "EnableValidationForRelocationInAMS": true,
         "EnableVirtualizationBasedSecurityFeaturesForFLS": true,
         "EnableVsbDisconnectOnIdleForVmExtension": true,
@@ -1125,7 +1126,6 @@
         "SW_IWP": true,
         "ScheduleWindowsUpdateStop2HoursAfterStart": true,
         "SchedulerRetireMultiLaneV1": true,
-        "SchedulerRetryGetMetadataOneByOne": true,
         "ScplTenentEventProcess": true,
         "SeahawkToWindowsAppMigrationPhase": 3,
         "SetPolicyTenantEntityNeedBackfillTag_BackfillAustralAsiaGeoLocation": false,
@@ -1200,6 +1200,8 @@
         "scplConnectToStorageAccountMgmt": true,
         "windows365client": {
             "Aspen": {
+                "ConnectionShellRdpRules": "{\"schemaVersion\":1,\"revision\":1,\"rules\":[{\"id\":\"DirectStream\",\"property\":\"directstream\",\"type\":\"i\",\"default\":0,\"operator\":\"notEquals\",\"value\":0},{\"id\":\"DisplayProtection\",\"property\":\"enablewindowscloudiodisplayprotection\",\"type\":\"i\",\"default\":0,\"operator\":\"notEquals\",\"value\":0},{\"id\":\"InputProtection\",\"property\":\"enablewindowscloudiokeyboardinputprotection\",\"type\":\"i\",\"default\":0,\"operator\":\"notEquals\",\"value\":0},{\"id\":\"Mam\",\"property\":\"client.mamEnrolledUser\",\"type\":\"i\",\"operator\":\"equals\",\"value\":1}]}",
+                "enableConnectionShellRdpHeuristics": true,
                 "enableHealthCheckAvdDiagnostics": true
             },
             "GUI": {

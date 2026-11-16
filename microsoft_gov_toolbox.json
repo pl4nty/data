@@ -51,8 +51,9 @@
         "name": "AzPowerShell",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "16.5.0",
+        "version": "17.0.0",
         "versions": [
+            "17.0.0",
             "16.5.0",
             "16.4.0",
             "16.3.0",
@@ -358,8 +359,9 @@
         "name": "AzCopy",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "10.34.1",
+        "version": "10.34.2",
         "versions": [
+            "10.34.2",
             "10.34.1",
             "10.32.8",
             "10.32.4",
@@ -981,8 +983,9 @@
         "name": "JWCCCuratedPortal",
         "publisher": "Microsoft",
         "publisherType": "Microsoft",
-        "version": "2026.10.01",
+        "version": "2026.11.01",
         "versions": [
+            "2026.11.01",
             "2026.10.01",
             "2026.09.01",
             "2026.08.01",
