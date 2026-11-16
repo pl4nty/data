@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Site Recovery 3.3",
+    "downloadDescription": "Azure Site Recovery 3.3",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ASRDeploymentPlanner-v3.3.zip",
+            "url": "https://download.microsoft.com/download/ebcda908-e07c-4b33-a58e-686bbc76ff38/ASRDeploymentPlanner-v3.3.zip",
+            "size": "18454598",
+            "version": "3.3",
+            "datePublished": "11/16/2026 9:22:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Site Recovery 3.3",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.3",
+    "detailsSection_file_name": [
+        "ASRDeploymentPlanner-v3.3.zip"
+    ],
+    "detailsSection_file_size": [
+        "17.6 MB"
+    ],
+    "detailsSection_file_date": "11/16/2026",
+    "systemRequirementsSection": "Azure Site Recovery 3.3",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Unzip the file to get Azure Site Recovery 3.3",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108916",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
