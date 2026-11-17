@@ -831,7 +831,8 @@
     },
     "SVC_GPAnalytics": {
         "FlightingV2": {
-            "EpmTenantStatePagingEnabled": true
+            "EpmTenantStatePagingEnabled": true,
+            "EpmTenantStateReconciliationRepairEnabled": true
         }
     },
     "SVC_ICS": {
@@ -1173,7 +1174,6 @@
             "CanAccessSupportCentralWidget": true,
             "EnableCompliancePolicySettingsOrgReport": true,
             "EnableDeviceExecutionStatusReportExportV2": true,
-            "EnableDeviceStatusByCompliancePolicySettingReportExplorer": true,
             "EnableDeviceStatusPolicyNoncomplianceReportExplorer": true,
             "EnableInventoryPolicySummaryReportExplorer": true,
             "EnableJamfDeleteButton": true,
