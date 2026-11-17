@@ -673,6 +673,7 @@
         "EnableDiskControllerTypeStrategy": true,
         "EnableDiskExpansionInCoreProvisioning": true,
         "EnableDiskHibernationUpdate": true,
+        "EnableDiskPerformanceReport": true,
         "EnableDismissProvisionWarnings": true,
         "EnableDistributedLockForSettingReorder": true,
         "EnableDownloadRdAgentByBroker": true,
