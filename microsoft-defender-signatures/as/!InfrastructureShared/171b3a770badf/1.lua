@@ -11,7 +11,7 @@ if isParentPackageManager(l_0_0.ppid, true) then
   return mp.CLEAN
 end
 local l_0_1 = (mp.GetParentProcInfo)()
-if (l_0_1 ~= nil or l_0_1.ppid ~= nil) and isParentPackageManager(l_0_1.ppid, true) then
+if l_0_1 ~= nil and l_0_1.ppid ~= nil and isParentPackageManager(l_0_1.ppid, true) then
   return mp.CLEAN
 end
 if analyzeRansomwarePattern2(1) == mp.INFECTED then

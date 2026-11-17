@@ -16,7 +16,7 @@ if l_0_2 == nil or l_0_2 == "" then
   return mp.CLEAN
 end
 l_0_2 = (string.lower)(l_0_2)
-if (string.find)(l_0_2, "putty", 1, true) ~= nil and (MpCommon.IsSampled)(99000, false, false, false) == true then
+if (string.find)(l_0_2, "putty", 1, true) ~= nil and (versioning.IsSampled)(99000, false, false, false) == true then
   return mp.CLEAN
 end
 if IsRmmToolFilePath(l_0_2) == true then

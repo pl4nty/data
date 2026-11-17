@@ -192,7 +192,7 @@ else
                           ;
                           (mp.SetHipsRule)("be9ba2d9-53ea-4cdc-84e5-9b1eeee46550")
                           do return mp.BLOCKACCESS end
-                          if l_0_3 == "lnk" and (MpCommon.IsSampled)(2000, false, true, true) == true and IsLnkPointingtoSuspFileExt() then
+                          if l_0_3 == "lnk" and (versioning.IsSampled)(2000, false, true, true) == true and IsLnkPointingtoSuspFileExt() then
                             (mp.set_mpattribute)("MpDisableCaching")
                             if (MpCommon.GetPersistContextCount)(l_0_1) == 0 then
                               local l_0_14 = {}

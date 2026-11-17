@@ -42,16 +42,20 @@ if ((((((this_sigattrlog[1] or not this_sigattrlog[2]) and this_sigattrlog[3]) o
       return mp.CLEAN
     end
     local l_0_7 = nil
+    if contains((string.lower)(l_0_1.utf8p1), "clickfix-awareness.vercel.app") then
+      return mp.INFECTED
+    end
+    local l_0_8 = nil
     if type(ExtractPartsFromUri((string.lower)(l_0_1.utf8p1))) ~= "table" or type((ExtractPartsFromUri((string.lower)(l_0_1.utf8p1))).host) ~= "string" or (ExtractPartsFromUri((string.lower)(l_0_1.utf8p1))).scheme ~= "http" and (ExtractPartsFromUri((string.lower)(l_0_1.utf8p1))).scheme ~= "https" then
       return mp.CLEAN
     end
-    local l_0_8 = nil
+    local l_0_9 = nil
     if not (string.match)((string.gsub)((ExtractPartsFromUri((string.lower)(l_0_1.utf8p1))).host, "%.$", ""), "^[%w%.%-]+$") then
       return mp.CLEAN
     end
-    local l_0_9 = nil
-    local l_0_10 = (string.match)((string.gsub)((ExtractPartsFromUri((string.lower)(l_0_1.utf8p1))).host, "%.$", ""), "%.([a-z]+)$")
-    if l_0_10 == nil or ({buzz = true, stream = true, courses = true, charity = true, hair = true, bet = true, homes = true, uno = true, garden = true, beauty = true, zip = true, skin = true, bar = true, fit = true, coupons = true, date = true, pics = true})[l_0_10] ~= true then
+    local l_0_10 = nil
+    local l_0_11 = (string.match)((string.gsub)((ExtractPartsFromUri((string.lower)(l_0_1.utf8p1))).host, "%.$", ""), "%.([a-z]+)$")
+    if l_0_11 == nil or ({buzz = true, stream = true, courses = true, charity = true, hair = true, bet = true, homes = true, uno = true, garden = true, beauty = true, zip = true, skin = true, bar = true, fit = true, coupons = true, date = true, pics = true})[l_0_11] ~= true then
       return mp.CLEAN
     end
     if (mp.CheckUrl)(l_0_1.utf8p1) == 1 and l_0_1.utf8p1 == 1 then

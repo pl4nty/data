@@ -73,29 +73,33 @@ do
 
           -- DECOMPILER ERROR at PC147: Confused about usage of register: R9 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC149: Confused about usage of register: R9 in 'UnsetPending'
 
-          -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC153: Unhandled construct in 'MakeBoolean' P3
 
-          -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC153: Unhandled construct in 'MakeBoolean' P3
 
-          -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC153: Unhandled construct in 'MakeBoolean' P3
 
-          -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC153: Unhandled construct in 'MakeBoolean' P3
 
-          -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC153: Unhandled construct in 'MakeBoolean' P3
 
-          -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC153: Unhandled construct in 'MakeBoolean' P3
 
-          -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
+          -- DECOMPILER ERROR at PC153: Unhandled construct in 'MakeBoolean' P3
 
-          if ((versioning.GetOrgID)() ~= nil and (versioning.GetOrgID)() ~= "" and (string.lower)((versioning.GetOrgID)()) == "1beec53c-4b52-4aec-a1b1-716d6da36984") or (string.lower)((versioning.GetOrgID)()) == "1d126571-4f73-4f6a-b0be-e90133fec49c" then
+          -- DECOMPILER ERROR at PC153: Unhandled construct in 'MakeBoolean' P3
+
+          -- DECOMPILER ERROR at PC153: Unhandled construct in 'MakeBoolean' P3
+
+          if ((versioning.GetOrgID)() ~= nil and (versioning.GetOrgID)() ~= "" and (string.lower)((versioning.GetOrgID)()) == "1beec53c-4b52-4aec-a1b1-716d6da36984") or (string.lower)((versioning.GetOrgID)()) == "59b0ab2c-2b47-48a6-92e7-e2cb693588b9" then
             return mp.INFECTED
           else
             return mp.LOWFI
           end
           do return mp.CLEAN end
-          -- DECOMPILER ERROR at PC159: freeLocal<0 in 'ReleaseLocals'
+          -- DECOMPILER ERROR at PC161: freeLocal<0 in 'ReleaseLocals'
 
         end
       end
