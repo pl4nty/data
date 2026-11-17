@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
+  "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
+  [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
+<MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
+  <VerDTD>1.2</VerDTD>
+  <MSFT:Diagnostics></MSFT:Diagnostics>
+  <Node>
+    <NodeName>RemoteRemediation</NodeName>
+    <Path>./Vendor/MSFT</Path>
+    <DFProperties>
+      <AccessType>
+        <Get />
+      </AccessType>
+      <Description>The root node for remote remediation function.</Description>
+      <DFFormat>
+        <node />
+      </DFFormat>
+      <Occurrence>
+        <One />
+      </Occurrence>
+      <Scope>
+        <Permanent />
+      </Scope>
+      <DFType>
+        <DDFName />
+      </DFType>
+      <MSFT:Applicability>
+        <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+        <MSFT:CspVersion>1.0</MSFT:CspVersion>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
+      </MSFT:Applicability>
+    </DFProperties>
+    <Node>
+      <NodeName>CloudRemediationSettings</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>Interior node containing settings related to cloud remediation. Delete on this node will reset all cloud remediation settings to their default values.</Description>
+        <DFFormat>
+          <node />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <DDFName />
+        </DFType>
+        <MSFT:AtomicRequired />
+      </DFProperties>
+      <Node>
+        <NodeName>EnableCloudRemediation</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <Description>Enable or disable quick machine recovery, a feature that will search for device recovery solutions if your device fails to start.</Description>
+          <DFFormat>
+            <bool />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>true</MSFT:Value>
+              <MSFT:ValueDescription>Cloud remediation enabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>false</MSFT:Value>
+              <MSFT:ValueDescription>Cloud remediation disabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>AutoRemediationSettings</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <Description>Interior node containing settings related to auto remediation. Delete on this node will reset all auto remediation settings to their default values.</Description>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName />
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>EnableAutoRemediation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Enable to automatically check for remediation solutions. Disable to check manually.</Description>
+            <DFFormat>
+              <bool />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:AllowedValues ValueType="ENUM">
+              <MSFT:Enum>
+                <MSFT:Value>true</MSFT:Value>
+                <MSFT:ValueDescription>Auto remediation enabled</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>false</MSFT:Value>
+                <MSFT:ValueDescription>Auto remediation disabled</MSFT:ValueDescription>
+              </MSFT:Enum>
+            </MSFT:AllowedValues>
+            <MSFT:DependencyBehavior>
+              <MSFT:DependencyGroup FriendlyId="EnableCloudRemediation">
+                <MSFT:Dependency Type="DependsOn">
+                  <MSFT:DependencyUri>Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/EnableCloudRemediation</MSFT:DependencyUri>
+                  <MSFT:DependencyAllowedValue ValueType="ENUM">
+                    <MSFT:Enum>
+                      <MSFT:Value>true</MSFT:Value>
+                      <MSFT:ValueDescription>Cloud remediation enabled</MSFT:ValueDescription>
+                    </MSFT:Enum>
+                  </MSFT:DependencyAllowedValue>
+                </MSFT:Dependency>
+              </MSFT:DependencyGroup>
+            </MSFT:DependencyBehavior>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetTimeToReboot</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Refers to the time in minutes that a device will spend in the recovery environment before attempting to reboot. The maximum time to reboot possible is 72 hours, should be greater than or equal to the retry interval, and only takes effect if auto remediation is on. Otherwise an invalid argument error will be returned and no changes will be made.</Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:AllowedValues ValueType="Range">
+              <MSFT:Value>[1-4320]</MSFT:Value>
+            </MSFT:AllowedValues>
+            <MSFT:DependencyBehavior>
+              <MSFT:DependencyGroup FriendlyId="EnableAutoRemediation">
+                <MSFT:Dependency Type="DependsOn">
+                  <MSFT:DependencyUri>Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/AutoRemediationSettings/EnableAutoRemediation</MSFT:DependencyUri>
+                  <MSFT:DependencyAllowedValue ValueType="ENUM">
+                    <MSFT:Enum>
+                      <MSFT:Value>true</MSFT:Value>
+                      <MSFT:ValueDescription>Auto remediation enabled</MSFT:ValueDescription>
+                    </MSFT:Enum>
+                  </MSFT:DependencyAllowedValue>
+                </MSFT:Dependency>
+              </MSFT:DependencyGroup>
+            </MSFT:DependencyBehavior>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetRetryInterval</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Refers to the time in minutes that a device will wait before trying to look for solutions again. The retry interval should not be higher than the time to reboot, and will only take effect if auto remediation is on. Otherwise an invalid argument error will be returned and no changes will be made. A retry interval of 0 means that the device will look for solutions once without any retries.</Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:AllowedValues ValueType="Range">
+              <MSFT:Value>[0,4320]</MSFT:Value>
+            </MSFT:AllowedValues>
+            <MSFT:DependencyBehavior>
+              <MSFT:DependencyGroup FriendlyId="EnableAutoRemediation">
+                <MSFT:Dependency Type="DependsOn">
+                  <MSFT:DependencyUri>Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/AutoRemediationSettings/EnableAutoRemediation</MSFT:DependencyUri>
+                  <MSFT:DependencyAllowedValue ValueType="ENUM">
+                    <MSFT:Enum>
+                      <MSFT:Value>true</MSFT:Value>
+                      <MSFT:ValueDescription>Auto remediation enabled</MSFT:ValueDescription>
+                    </MSFT:Enum>
+                  </MSFT:DependencyAllowedValue>
+                </MSFT:Dependency>
+              </MSFT:DependencyGroup>
+            </MSFT:DependencyBehavior>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>NetworkSettings</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <Description>Interior node containing settings related to network.</Description>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName />
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>NetworkCredentials</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Interior node containing settings related to network credentials.</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <DDFName />
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>NetworkSSID</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <Description>Refers to the wifi network SSID that the device will attempt to automatically connect to during remediation.</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
+              <MSFT:DependencyBehavior>
+                <MSFT:DependencyGroup FriendlyId="EnableAutoRemediation">
+                  <MSFT:Dependency Type="DependsOn">
+                    <MSFT:DependencyUri>Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/AutoRemediationSettings/EnableAutoRemediation</MSFT:DependencyUri>
+                    <MSFT:DependencyAllowedValue ValueType="ENUM">
+                      <MSFT:Enum>
+                        <MSFT:Value>true</MSFT:Value>
+                        <MSFT:ValueDescription>Auto remediation enabled</MSFT:ValueDescription>
+                      </MSFT:Enum>
+                    </MSFT:DependencyAllowedValue>
+                  </MSFT:Dependency>
+                </MSFT:DependencyGroup>
+              </MSFT:DependencyBehavior>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>NetworkPassword</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <Description>Refers to the password for the wifi network that the device will attempt to connect to during remediation. If a password is set without a SSID, then this will be ignored.</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
+              <MSFT:DependencyBehavior>
+                <MSFT:DependencyGroup FriendlyId="EnableAutoRemediation">
+                  <MSFT:Dependency Type="DependsOn">
+                    <MSFT:DependencyUri>Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/AutoRemediationSettings/EnableAutoRemediation</MSFT:DependencyUri>
+                    <MSFT:DependencyAllowedValue ValueType="ENUM">
+                      <MSFT:Enum>
+                        <MSFT:Value>true</MSFT:Value>
+                        <MSFT:ValueDescription>Auto remediation enabled</MSFT:ValueDescription>
+                      </MSFT:Enum>
+                    </MSFT:DependencyAllowedValue>
+                  </MSFT:Dependency>
+                </MSFT:DependencyGroup>
+              </MSFT:DependencyBehavior>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>NetworkPasswordEncryptionType</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <Description>Refers to the type of encryption that can be used for the network password. If you specify "Encrypt with custom certificate" you must also enter the encryption store.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>No encryption</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>2</MSFT:Value>
+                  <MSFT:ValueDescription>Encrypt using Mdm certificate</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>3</MSFT:Value>
+                  <MSFT:ValueDescription>Encrypt with custom certificate</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+              <MSFT:DependencyBehavior>
+                <MSFT:DependencyGroup FriendlyId="EnableAutoRemediation">
+                  <MSFT:Dependency Type="DependsOn">
+                    <MSFT:DependencyUri>Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/AutoRemediationSettings/EnableAutoRemediation</MSFT:DependencyUri>
+                    <MSFT:DependencyAllowedValue ValueType="ENUM">
+                      <MSFT:Enum>
+                        <MSFT:Value>true</MSFT:Value>
+                        <MSFT:ValueDescription>Auto remediation enabled</MSFT:ValueDescription>
+                      </MSFT:Enum>
+                    </MSFT:DependencyAllowedValue>
+                  </MSFT:Dependency>
+                </MSFT:DependencyGroup>
+              </MSFT:DependencyBehavior>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>NetworkPasswordEncryptionStore</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <Description>The encryption store that is specified if we are using a custom certificate for password encryption.</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
+              <MSFT:DependencyBehavior>
+                <MSFT:DependencyGroup FriendlyId="EnableAutoRemediation">
+                  <MSFT:Dependency Type="DependsOn">
+                    <MSFT:DependencyUri>Vendor/MSFT/RemoteRemediation/CloudRemediationSettings/AutoRemediationSettings/EnableAutoRemediation</MSFT:DependencyUri>
+                    <MSFT:DependencyAllowedValue ValueType="ENUM">
+                      <MSFT:Enum>
+                        <MSFT:Value>true</MSFT:Value>
+                        <MSFT:ValueDescription>Auto remediation enabled</MSFT:ValueDescription>
+                      </MSFT:Enum>
+                    </MSFT:DependencyAllowedValue>
+                  </MSFT:Dependency>
+                </MSFT:DependencyGroup>
+              </MSFT:DependencyBehavior>
+            </DFProperties>
+          </Node>
+        </Node>
+      </Node>
+    </Node>
+    <Node>
+      <NodeName>EnableHeadless</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>Enable or disable headless mode. Note that if true, then during remediation, there will be no opportunity for user interaction.</Description>
+        <DFFormat>
+          <bool />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>true</MSFT:Value>
+            <MSFT:ValueDescription>Headless remediation enabled</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>false</MSFT:Value>
+            <MSFT:ValueDescription>Headless remediation disabled</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
+  </Node>
+</MgmtTree>

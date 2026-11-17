@@ -1,0 +1,1250 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
+  "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
+  [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
+<MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
+  <VerDTD>1.2</VerDTD>
+  <Node>
+    <NodeName>WindowsAI</NodeName>
+    <Path>./User/Vendor/MSFT/Policy/Config</Path>
+    <DFProperties>
+      <AccessType>
+        <Get />
+      </AccessType>
+      <DFFormat>
+        <node />
+      </DFFormat>
+      <Occurrence>
+        <One />
+      </Occurrence>
+      <Scope>
+        <Permanent />
+      </Scope>
+      <DFType>
+        <MIME>com.microsoft/11/MDM/Policy</MIME>
+      </DFType>
+    </DFProperties>
+    <Node>
+      <NodeName>TurnOffWindowsCopilot</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to turn off Windows Copilot. If you enable this policy setting, users will not be able to use Copilot. The Copilot icon will not appear on the taskbar either. If you disable or do not configure this policy setting, users will be able to use Copilot when it's available to them.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>10.0.19044.3758, 10.0.19045.3758, 10.0.22621.2361, 10.0.22631</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>10.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Enable Copilot</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Disable Copilot</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="TurnOffWindowsCopilot" GpAreaPath="WindowsCopilot~AT~WindowsComponents~WindowsCopilot" />
+        <MSFT:Deprecated OsBuildDeprecated="10.0.26100.712" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>DisableAIDataAnalysis</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to determine whether snapshots of the screen can be saved for use with Recall. For managed devices, snapshots for Recall are not enabled by default. IT administrators cannot, on their own, enable saving snapshots on behalf of their users. The choice to enable saving snapshots requires individual user opt-in consent. If the policy is not configured, snapshots won't be saved for use with Recall. If you enable this policy, snapshots won't be saved for use with Recall. If snapshots were previously saved on the device, they will be deleted when this policy is enabled. If you set this policy to disabled, end users will have a choice to save snapshots of their screen and use Recall to find things they've seen on their device.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3915</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Enable Saving Snapshots for Recall.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Disable Saving Snapshots for Recall.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DisableAIDataAnalysis" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>SetCopilotHardwareKey</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting determines which app opens when the user presses the Copilot key on their keyboard. If the policy is enabled, the specified app will open when the user presses the Copilot key. Users can change the key assignment in Settings. If the policy is not configured, Copilot will open if it's available in that country or region.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>10.0.22621.4391</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:GpMapping GpEnglishName="SetCopilotHardwareKey" GpAreaPath="WindowsCopilot~AT~WindowsComponents~WindowsCopilot" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>SetDenyAppListForRecall</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy allows you to define a list of apps that won't be included in snapshots for Recall. Users will be able to add additional applications to exclude from snapshots using Recall settings. The list can include Application User Model IDs (AUMID) or the name of the executable file. Use a semicolon-separated list of apps to define the deny app list for Recall. For example:  code.exe;Microsoft.WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3915</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="None">
+          <MSFT:List Delimiter=";" />
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DenyAppListForRecall" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>SetDenyUriListForRecall</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting lets you define a list of URIs that won't be included in snapshots for Recall when a supported browser is used. People within your organization can use Recall settings to add more websites to the list. Define the list using a semicolon to separate URIs. Adding https://www.WoodgroveBank.com to the list would also filter https://Account.WoodgroveBank.com and https://www.WoodgroveBank.com/Account. For example: https://www.Contoso.com;https://www.WoodgroveBank.com;https://www.Adatum.com. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3915</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="None">
+          <MSFT:List Delimiter=";" />
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DenyUriListForRecall" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>SetMaximumStorageSpaceForRecallSnapshots</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to control the maximum amount of disk space that can be used by Windows to save snapshots for Recall. You can set the maximum amount of disk space for snapshots to be 10, 25, 50, 75, 100, or 150 GB. When this setting is not configured, the OS configures the storage allocation for snapshots based on the device storage capacity unless the current user specifies a different value. 25 GB is allocated when the device storage capacity is 256 GB. 75 GB is allocated when the device storage capacity is 512 GB. 150 GB is allocated when the device storage capacity is 1 TB or higher. If both maximum storage duration and maximum storage space are set for Recall, then snapshots are deleted when the first maximum is reached. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3915</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Let the OS define the maximum storage amount based on hard drive storage size</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>10240</MSFT:Value>
+            <MSFT:ValueDescription>10GB</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>25600</MSFT:Value>
+            <MSFT:ValueDescription>25GB</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>51200</MSFT:Value>
+            <MSFT:ValueDescription>50GB</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>76800</MSFT:Value>
+            <MSFT:ValueDescription>75GB</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>102400</MSFT:Value>
+            <MSFT:ValueDescription>100GB</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>153600</MSFT:Value>
+            <MSFT:ValueDescription>150GB</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="SetMaximumStorageSpaceForRecallSnapshots" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>SetMaximumStorageDurationForRecallSnapshots</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to control the maximum amount of time (in days) that Windows saves snapshots for Recall. When the policy is enabled, you can configure the maximum storage duration to be 30, 60, 90, or 180 days. When this policy is not configured, the maximum storage duration is 90 days unless the current user specifies a different value. If both maximum storage duration and maximum storage space are set for Recall, then snapshots are deleted when the first maximum is reached. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>90</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3915</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Let the OS define the maximum amount of time the snapshots will be saved</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>30</MSFT:Value>
+            <MSFT:ValueDescription>30 days</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>60</MSFT:Value>
+            <MSFT:ValueDescription>60 days</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>90</MSFT:Value>
+            <MSFT:ValueDescription>90 days</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>180</MSFT:Value>
+            <MSFT:ValueDescription>180 days</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="SetMaximumStorageDurationForRecallSnapshots" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>DisableClickToDo</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>Click to Do lets people take action on content on their screens. When activated, it takes a screenshot of their screen and analyzes it to present actions. Click to Do ends when they exit it, and it can't take screenshots while closed. Screenshot analysis is always performed locally on their device. By default, Click to Do is enabled for users. This policy setting allows you to determine whether Click to Do is available for users on their device. When the policy is enabled, the Click to Do component and entry points will not be available to users. When the policy is disabled, users will have Click to Do available on their device.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Click to Do is enabled</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Click to Do is disabled.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DisableClickToDo" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>DisableRecallDataProviders</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to control whether Recall displays additional activity details delivered by available providers for App Actions on Windows. Providers for App Actions on Windows are displayed under Settings &gt; Apps &gt; Actions. For example, providers may show meeting attendees for meeting Recall snapshots. By default, additional activity details from available providers are displayed in Recall. If this policy isn't configured, users will receive additional details about their snapshots from providers for App Actions on Windows. If this policy is disabled, users won't receive additional details about their snapshots from providers for App Actions on Windows. If the policy is enabled, users will receive additional details about their snapshots from providers for App Actions on Windows. Important: This setting applies to Enterprise and Education client SKUs only. When configuring this policy setting, changes will not take effect until Recall restarts.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Recall data providers enabled</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Recall data providers disabled</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DisableRecallDataProviders" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>RemoveMicrosoftCopilotApp</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to uninstall Microsoft Copilot from devices in a targeted way. It will apply to devices/users that meet the below conditions: Microsoft 365 Copilot and Microsoft Copilot are both installed; the Microsoft Copilot app was not installed by the user; the Microsoft Copilot app was not launched in the last 14 days. If this policy is enabled, the Microsoft Copilot app will be uninstalled. Users can still re-install if they choose to. This setting applies to Enterprise, Professional and Education client SKUs only.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Removal Disabled.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Removal Enabled.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="RemoveMicrosoftCopilotApp" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+  </Node>
+  <Node>
+    <NodeName>WindowsAI</NodeName>
+    <Path>./Device/Vendor/MSFT/Policy/Config</Path>
+    <DFProperties>
+      <AccessType>
+        <Get />
+      </AccessType>
+      <DFFormat>
+        <node />
+      </DFFormat>
+      <Occurrence>
+        <One />
+      </Occurrence>
+      <Scope>
+        <Permanent />
+      </Scope>
+      <DFType>
+        <MIME>com.microsoft/11/MDM/Policy</MIME>
+      </DFType>
+    </DFProperties>
+    <Node>
+      <NodeName>DisableAIDataAnalysis</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to determine whether snapshots of the screen can be saved for use with Recall. For managed devices, snapshots for Recall are not enabled by default. IT administrators cannot, on their own, enable saving snapshots on behalf of their users. The choice to enable saving snapshots requires individual user opt-in consent. If the policy is not configured, snapshots won't be saved for use with Recall. If you enable this policy, snapshots won't be saved for use with Recall. If snapshots were previously saved on the device, they will be deleted when this policy is enabled. If you set this policy to disabled, end users will have a choice to save snapshots of their screen and use Recall to find things they've seen on their device.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3915</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Enable Saving Snapshots for Recall.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Disable Saving Snapshots for Recall.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DisableAIDataAnalysis" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>DisableImageCreator</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to control whether Image Creator functionality is disabled in the Windows Paint app. If this policy is enabled, Image Creator functionality will not be accessible in the Paint app. If this policy is disabled or not configured, users will be able to access Image Creator functionality.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3360, 10.0.22621.4870</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>10.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Image Creator is enabled.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Image Creator is disabled.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DisableImageCreator" GpAreaPath="WindowsAI~AT~WindowsComponents~Paint" />
+        <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>DisableCocreator</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to control whether Cocreator functionality is disabled in the Windows Paint app. If this policy is enabled, Cocreator functionality will not be accessible in the Paint app. If this policy is disabled or not configured, users will be able to access Cocreator functionality.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3360, 10.0.22621.4870</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>10.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Cocreator is enabled.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Cocreator is disabled.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DisableCocreator" GpAreaPath="WindowsAI~AT~WindowsComponents~Paint" />
+        <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>DisableGenerativeFill</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to control whether generative fill functionality is disabled in the Windows Paint app. If this policy is enabled, generative fill functionality will not be accessible in the Paint app. If this policy is disabled or not configured, users will be able to access generative fill functionality.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3360, 10.0.22621.4870</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>10.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Generative fill is enabled.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Generative fill is disabled.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DisableGenerativeFill" GpAreaPath="WindowsAI~AT~WindowsComponents~Paint" />
+        <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>SetDataLossPreventionProvider</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy allows an admin to specify a DLP provider, which Recall will use if the provider is properly installed. You will need to get the string for this from your provider. It will look something like 'key:HKEY_LOCAL_MACHINE\Software\Contoso\DLP; value:InstallPath; binary:contosoDLP.dll' (without any quotes in the value). Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.6725</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:GpMapping GpEnglishName="SetDataLossPreventionProviderKey" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>SetDenyAppListForRecall</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy allows you to define a list of apps that won't be included in snapshots for Recall. Users will be able to add additional applications to exclude from snapshots using Recall settings. The list can include Application User Model IDs (AUMID) or the name of the executable file. Use a semicolon-separated list of apps to define the deny app list for Recall. For example:  code.exe;Microsoft.WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3915</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="None">
+          <MSFT:List Delimiter=";" />
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DenyAppListForRecall" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>SetDenyUriListForRecall</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting lets you define a list of URIs that won't be included in snapshots for Recall when a supported browser is used. People within your organization can use Recall settings to add more websites to the list. Define the list using a semicolon to separate URIs. Adding https://www.WoodgroveBank.com to the list would also filter https://Account.WoodgroveBank.com and https://www.WoodgroveBank.com/Account. For example: https://www.Contoso.com;https://www.WoodgroveBank.com;https://www.Adatum.com. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3915</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="None">
+          <MSFT:List Delimiter=";" />
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DenyUriListForRecall" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>SetMaximumStorageSpaceForRecallSnapshots</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to control the maximum amount of disk space that can be used by Windows to save snapshots for Recall. You can set the maximum amount of disk space for snapshots to be 10, 25, 50, 75, 100, or 150 GB. When this setting is not configured, the OS configures the storage allocation for snapshots based on the device storage capacity unless the current user specifies a different value. 25 GB is allocated when the device storage capacity is 256 GB. 75 GB is allocated when the device storage capacity is 512 GB. 150 GB is allocated when the device storage capacity is 1 TB or higher. If both maximum storage duration and maximum storage space are set for Recall, then snapshots are deleted when the first maximum is reached. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3915</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Let the OS define the maximum storage amount based on hard drive storage size</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>10240</MSFT:Value>
+            <MSFT:ValueDescription>10GB</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>25600</MSFT:Value>
+            <MSFT:ValueDescription>25GB</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>51200</MSFT:Value>
+            <MSFT:ValueDescription>50GB</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>76800</MSFT:Value>
+            <MSFT:ValueDescription>75GB</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>102400</MSFT:Value>
+            <MSFT:ValueDescription>100GB</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>153600</MSFT:Value>
+            <MSFT:ValueDescription>150GB</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="SetMaximumStorageSpaceForRecallSnapshots" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>SetMaximumStorageDurationForRecallSnapshots</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to control the maximum amount of time (in days) that Windows saves snapshots for Recall. When the policy is enabled, you can configure the maximum storage duration to be 30, 60, 90, or 180 days. When this policy is not configured, the maximum storage duration is 90 days unless the current user specifies a different value. If both maximum storage duration and maximum storage space are set for Recall, then snapshots are deleted when the first maximum is reached. Important: This setting applies to Enterprise and Education client SKUs only.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>90</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3915</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Let the OS define the maximum amount of time the snapshots will be saved</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>30</MSFT:Value>
+            <MSFT:ValueDescription>30 days</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>60</MSFT:Value>
+            <MSFT:ValueDescription>60 days</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>90</MSFT:Value>
+            <MSFT:ValueDescription>90 days</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>180</MSFT:Value>
+            <MSFT:ValueDescription>180 days</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="SetMaximumStorageDurationForRecallSnapshots" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>AllowRecallEnablement</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to determine whether the Recall optional component is available for end users to enable on their device. By default, Recall is disabled for managed commercial devices. Recall isn’t available on managed devices by default, and individual users can’t enable Recall on their own. If this policy is not configured, end users will have the Recall component in a disabled state. If this policy is disabled, the Recall component will be in disabled state and the bits for Recall will be removed from the device. If snapshots were previously saved on the device, they will be deleted when this policy is disabled. Removing Recall requires a device restart. If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DisableAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users will be able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>1</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999, 10.0.26100.3915</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Recall is not available</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Recall is available</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="AllowRecallEnablement" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>DisableClickToDo</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>Click to Do lets people take action on content on their screens. When activated, it takes a screenshot of their screen and analyzes it to present actions. Click to Do ends when they exit it, and it can't take screenshots while closed. Screenshot analysis is always performed locally on their device. By default, Click to Do is enabled for users. This policy setting allows you to determine whether Click to Do is available for users on their device. When the policy is enabled, the Click to Do component and entry points will not be available to users. When the policy is disabled, users will have Click to Do available on their device.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Click to Do is enabled</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Click to Do is disabled.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DisableClickToDo" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>AllowRecallExport</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy allows you to determine whether users can export their own Recall and snapshot information. Exporting allows users to share their Recall and snapshot information with trusted apps or websites. Users can export from Settings &gt; Privacy &amp; security &gt; Recall &amp; snapshots &gt; Advanced settings &gt; Export snapshots &gt; Export past snapshots &gt; Export. Users can also choose to continuously export their snapshots if they turn on the option to Export snapshots from now on from Settings &gt; Privacy &amp; security &gt; Recall &amp; snapshots &gt; Advanced settings &gt; Export snapshots &gt; Export. Before starting an export, the user must authenticate with Windows Hello and they are notified that their exported snapshots are encrypted since they might contain sensitive information. The user is also notified that they'll need to provide their Recall export code if they want to allow trusted apps or websites access to exported snapshots. The Recall export code is displayed to users during Recall setup even if this policy is set to disabled or not configured. For managed devices: When you set this policy to enabled, users will be able to export Recall and snapshot information. If the policy is set to disabled or not configured, users won't be able to export their Recall and snapshot information. Important: This setting applies to devices in the European Economic Area (EEA) only. Export of Recall and snapshot information is a user-initiated process and is per user. IT admins or other users can't initiate an export on behalf of another.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Deny export of Recall and snapshots information</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Allow export of Recall and snapshot information</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="AllowRecallExport" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>DisableSettingsAgent</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to determine whether Settings Agentic search experience is available for users on their device. When the policy is enabled, the agentic experience will not be available, limiting search results to statically indexed searches and semantic searches. When the policy is disabled, users will have Settings Agent search experience available on their device.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Settings Agentic search experience is enabled</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Settings Agentic search experience is not enabled</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DisableSettingsAgent" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>DisableAgentWorkspaces</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>Enable or Disable Agent Workspaces.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>User in control.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Force Enable.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>2</MSFT:Value>
+            <MSFT:ValueDescription>Force Disable.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DisableAgentWorkspaces" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" GpElement="DisableAgentWorkspaces_Enum" />
+        <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>DisableAgentConnectors</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>Enable or Disable Agent Connectors.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>User in control.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Force Enable.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>2</MSFT:Value>
+            <MSFT:ValueDescription>Force Disable.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DisableAgentConnectors" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" GpElement="DisableAgentConnectors_Enum" />
+        <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>DisableRemoteAgentConnectors</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>Enable or Disable Remote Agent Connectors.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>User in control.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Force Enable.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>2</MSFT:Value>
+            <MSFT:ValueDescription>Force Disable.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="DisableRemoteAgentConnectors" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" GpElement="DisableRemoteAgentConnectors_Enum" />
+        <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>AgentConnectorMinimumPolicy</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>Configure the minimum policy value which controls how agent connectors run on the machine.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>0</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>User in control.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Restricted.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>2</MSFT:Value>
+            <MSFT:ValueDescription>Bypass.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="AgentConnectorMinimumPolicy" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" GpElement="AgentConnectorMinimumPolicy_Enum" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>RemoveMicrosoftCopilotApp</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>This policy setting allows you to uninstall Microsoft Copilot from devices in a targeted way. It will apply to devices/users that meet the below conditions: Microsoft 365 Copilot and Microsoft Copilot are both installed; the Microsoft Copilot app was not installed by the user; the Microsoft Copilot app was not launched in the last 14 days. If this policy is enabled, the Microsoft Copilot app will be uninstalled. Users can still re-install if they choose to. This setting applies to Enterprise, Professional and Education client SKUs only.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Removal Disabled.</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Removal Enabled.</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="RemoveMicrosoftCopilotApp" GpAreaPath="WindowsAI~AT~WindowsComponents~WindowsAI" />
+        <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+  </Node>
+</MgmtTree>
