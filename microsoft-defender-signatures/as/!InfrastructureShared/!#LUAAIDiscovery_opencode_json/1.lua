@@ -111,35 +111,85 @@ do
     end
   end
   if not isnull(l_0_8.mcp) and type(l_0_8.mcp) == "table" then
-    l_0_9.mcpServers = {}
-    ;
-    (table.insert)(l_0_9.mcpServers, McpParseHelper(l_0_8.mcp))
-  end
-  do
-    if not isnull(l_0_8.server) and type(l_0_8.server) == "table" then
-      local l_0_33 = {}
-      l_0_33.host = (l_0_8.server).hostname
-      l_0_33.port = (l_0_8.server).port
-      l_0_9.gateway = l_0_33
+    local l_0_33 = function(l_1_0)
+  -- function num : 0_0
+  do return type(l_1_0) == "table" and l_1_0.type == "local" or l_1_0.type == "remote" or (l_1_0.type == nil and type(l_1_0.enabled) == "boolean") end
+  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+end
+
+    local l_0_34 = function(l_2_0, l_2_1)
+  -- function num : 0_1
+  local l_2_2 = l_2_0[l_2_1]
+  if type(l_2_2) == "boolean" then
+    if l_2_1 == "enabled" then
+      return not l_2_2
     end
-    local l_0_34 = safeJsonSerialize(l_0_9)
-    local l_0_35, l_0_36 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
-    if l_0_35 and l_0_36 ~= nil then
-      for l_0_40,l_0_41 in pairs(l_0_36) do
-        if l_0_40 == l_0_4 and l_0_41 == l_0_34 then
-          return mp.CLEAN
+    return l_2_2
+  end
+  if l_2_2 == nil then
+    if l_2_0.type == "remote" and type(l_2_0.url) == "string" and l_2_0.url ~= "" then
+      return false
+    end
+    if l_2_0.type == "local" and type(l_2_0.command) == "table" and type((l_2_0.command)[1]) == "string" and (l_2_0.command)[1] ~= "" then
+      return false
+    end
+  end
+end
+
+    local l_0_35 = {}
+    local l_0_36 = {}
+    for l_0_40,l_0_41 in pairs(l_0_8.mcp) do
+      if (l_0_40 ~= "servers" and l_0_40 ~= "timeout") or l_0_33(l_0_41) then
+        l_0_35[l_0_40] = l_0_41
+        l_0_36[l_0_40] = l_0_34(l_0_41, "enabled")
+      end
+    end
+    local l_0_42 = (l_0_8.mcp).servers
+    if type(l_0_42) == "table" and not l_0_33(l_0_42) then
+      for l_0_46,l_0_47 in pairs(l_0_42) do
+        if type(l_0_46) == "string" and type(l_0_47) == "table" then
+          l_0_35[l_0_46] = l_0_47
+          l_0_36[l_0_46] = l_0_34(l_0_47, "disabled")
         end
       end
     end
     do
-      AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_34, l_0_5, 100)
-      local l_0_42 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
-      if l_0_42 then
-        (MpCommon.BmTriggerSig)(l_0_42, "AIDiscovery_opencode_json", l_0_34)
+      do
+        local l_0_48 = McpParseHelper(l_0_35)
+        for l_0_52,l_0_53 in ipairs(l_0_48) do
+          l_0_53.Disabled = l_0_36[l_0_53.ServerName]
+        end
+        l_0_9.mcpServers = {}
+        ;
+        (table.insert)(l_0_9.mcpServers, l_0_48)
+        do
+          if not isnull(l_0_8.server) and type(l_0_8.server) == "table" then
+            local l_0_54 = {}
+            l_0_54.host = (l_0_8.server).hostname
+            l_0_54.port = (l_0_8.server).port
+            l_0_9.gateway = l_0_54
+          end
+          local l_0_55 = safeJsonSerialize(l_0_9)
+          local l_0_56, l_0_57 = pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
+          if l_0_56 and l_0_57 ~= nil then
+            for l_0_61,l_0_62 in pairs(l_0_57) do
+              if l_0_61 == l_0_4 and l_0_62 == l_0_55 then
+                return mp.CLEAN
+              end
+            end
+          end
+          do
+            AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_55, l_0_5, 100)
+            local l_0_63 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+            if l_0_63 then
+              (MpCommon.BmTriggerSig)(l_0_63, "AIDiscovery_opencode_json", l_0_55)
+            end
+            ;
+            (mp.set_mpattribute)("MpDisableCaching")
+            return mp.INFECTED
+          end
+        end
       end
-      ;
-      (mp.set_mpattribute)("MpDisableCaching")
-      return mp.INFECTED
     end
   end
 end

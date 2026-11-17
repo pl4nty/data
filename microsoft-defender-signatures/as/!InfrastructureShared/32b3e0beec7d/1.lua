@@ -17,6 +17,7 @@ l_0_1.AIDiscoveryCustom_ClaudeAgentSDKPy = l_0_2
 l_0_1.AIDiscoveryCustom_MicrosoftAgentFrameworkPy, l_0_2 = l_0_2, {sdk = "agent-framework-core", module = "_telemetry", revision = 1, package_pattern = "^(.*)\\agent_framework\\"}
 l_0_1.AIDiscoveryCustom_LangChainPy, l_0_2 = l_0_2, {sdk = "langchain", module = "agents.__init__", revision = 1, package_pattern = "^(.*)\\langchain\\agents\\"}
 l_0_1.AIDiscoveryCustom_OpenAIAgentsSDKPy, l_0_2 = l_0_2, {sdk = "openai-agents", module = "openai_provider", revision = 1, package_pattern = "^(.*)\\agents\\models\\"}
+l_0_1.AIDiscoveryCustom_GoogleADKPy, l_0_2 = l_0_2, {sdk = "google-adk", module = "utils._client_labels_utils", revision = 2, package_pattern = "^(.*)\\google\\adk\\utils\\"}
 l_0_2 = l_0_0.utf8p1
 l_0_2 = l_0_1[l_0_2]
 if not l_0_2 then
