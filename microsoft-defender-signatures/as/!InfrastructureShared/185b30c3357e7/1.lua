@@ -42,20 +42,21 @@ if ((((((this_sigattrlog[1] or not this_sigattrlog[2]) and this_sigattrlog[3]) o
       return mp.CLEAN
     end
     local l_0_7 = nil
-    if contains((string.lower)(l_0_1.utf8p1), "clickfix-awareness.vercel.app") then
+    local l_0_8 = (string.lower)(l_0_1.utf8p1)
+    if contains(l_0_8, "clickfix-awareness.vercel.app") or contains((string.lower)(l_0_1.utf8p2), "clickfix-awareness.vercel.app") then
       return mp.INFECTED
     end
-    local l_0_8 = nil
-    if type(ExtractPartsFromUri((string.lower)(l_0_1.utf8p1))) ~= "table" or type((ExtractPartsFromUri((string.lower)(l_0_1.utf8p1))).host) ~= "string" or (ExtractPartsFromUri((string.lower)(l_0_1.utf8p1))).scheme ~= "http" and (ExtractPartsFromUri((string.lower)(l_0_1.utf8p1))).scheme ~= "https" then
-      return mp.CLEAN
-    end
     local l_0_9 = nil
-    if not (string.match)((string.gsub)((ExtractPartsFromUri((string.lower)(l_0_1.utf8p1))).host, "%.$", ""), "^[%w%.%-]+$") then
+    if type(ExtractPartsFromUri(l_0_8)) ~= "table" or type((ExtractPartsFromUri(l_0_8)).host) ~= "string" or (ExtractPartsFromUri(l_0_8)).scheme ~= "http" and (ExtractPartsFromUri(l_0_8)).scheme ~= "https" then
       return mp.CLEAN
     end
     local l_0_10 = nil
-    local l_0_11 = (string.match)((string.gsub)((ExtractPartsFromUri((string.lower)(l_0_1.utf8p1))).host, "%.$", ""), "%.([a-z]+)$")
-    if l_0_11 == nil or ({buzz = true, stream = true, courses = true, charity = true, hair = true, bet = true, homes = true, uno = true, garden = true, beauty = true, zip = true, skin = true, bar = true, fit = true, coupons = true, date = true, pics = true})[l_0_11] ~= true then
+    if not (string.match)((string.gsub)((ExtractPartsFromUri(l_0_8)).host, "%.$", ""), "^[%w%.%-]+$") then
+      return mp.CLEAN
+    end
+    local l_0_11 = nil
+    local l_0_12 = (string.match)((string.gsub)((ExtractPartsFromUri(l_0_8)).host, "%.$", ""), "%.([a-z]+)$")
+    if l_0_12 == nil or ({buzz = true, stream = true, courses = true, charity = true, hair = true, bet = true, homes = true, uno = true, garden = true, beauty = true, zip = true, skin = true, bar = true, fit = true, coupons = true, date = true, pics = true})[l_0_12] ~= true then
       return mp.CLEAN
     end
     if (mp.CheckUrl)(l_0_1.utf8p1) == 1 and l_0_1.utf8p1 == 1 then

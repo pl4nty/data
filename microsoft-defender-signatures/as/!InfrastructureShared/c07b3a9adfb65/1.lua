@@ -19,7 +19,7 @@ local l_0_3 = l_0_2.command_line
 if l_0_3 == nil or l_0_3 == "" then
   return mp.CLEAN
 end
-if IsExcludedByCmdlineMacOS(l_0_3) or IsExcludedByImagePathMacOS(l_0_1) then
+if IsExcludedByCmdlineMacOS(l_0_3) or IsExcludedByImagePathMacOS(l_0_1) or l_0_3:find("/var/folders/[^/]+/[^/]+/T/TestCosign%w+/%d+/", 1, false) then
   return mp.CLEAN
 end
 reportRelatedBmHits()

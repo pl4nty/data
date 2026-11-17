@@ -18,7 +18,7 @@ if isKnownCleanPathContext(l_0_0) == true then
   return mp.CLEAN
 end
 local l_0_2 = l_0_0 .. "\\" .. l_0_1
-if (mp.IsKnownFriendlyFile)(l_0_2, true, false) == true then
+if (mp.IsKnownFriendlyFile)(l_0_2, false, false) == true then
   return mp.CLEAN
 end
 if (mp.IsTrustedFile)(true) then
