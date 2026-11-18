@@ -2941,6 +2941,28 @@
                     "IsEnabled": true
                 }
             ],
+            "meetingAgendaSkill_goalTracker": [
+                {
+                    "Flight": "TM.agendaSkillOwnsAgendaPost",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.agendaSkillOwnsNudge",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "AS.enableAgendaCalendarDataFix",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.agendaSkillOwnsTopicRelevance",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "GCP.enableDeferredNotificationDispatch",
+                    "IsEnabled": true
+                }
+            ],
             "meetingAgendaSkill_graphFallback": [
                 {
                     "Flight": "AS.enableGraphCalendarFallback",
@@ -2990,6 +3012,16 @@
             "meetingAgenda_GPT56_Eval": [
                 {
                     "Flight": "AS.enableGpt56ReasoningNanoLunaEvalModel",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingCustomization_GPT6Migration": [
+                {
+                    "Flight": "UPF.enableIntelligentMonitorModelGpt6Luna",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TMC.enableCustomizationModelGpt6Luna",
                     "IsEnabled": true
                 }
             ]
