@@ -61,14 +61,14 @@ if versioning.GetHostOsType() == 1 then
     l_0_5 = "1.0"
     database.AddStudyId("Lua_Np_Ring4")
     if versioning.IsSeville() then
-      l_0_2 = "0.75"
+      l_0_2 = "1"
     end
   end
   if versioning.GetPlatform() == 6 and versioning.GetPlatformVersion() == 19 and versioning.GetPlatformBuild() >= 1576796160 then
     l_0_3 = "true"
     database.AddStudyId("Lua_Np_Bugfix49119667_Enabled")
   end
-  if versioning.GetProcessorArchitecture() ~= 9 and versioning.GetPlatformRing() ~= versioning.PLATFORM_RING_0_INTERNAL or versioning.GetOsVersion() < 393220 then
+  if versioning.GetProcessorArchitecture() ~= 9 and versioning.GetPlatformRing() ~= versioning.PLATFORM_RING_0_INTERNAL and versioning.GetPlatformRing() ~= versioning.PLATFORM_RING_1_PRERELEASE or versioning.GetOsVersion() < 393220 then
     l_0_2 = "-1.0"
     database.AddStudyId("Lua_Np_ESP_Disabled")
   end
