@@ -51,18 +51,22 @@ jobs:
           message: "data(${{ matrix.cmd }}): change detected"
           pull: "--rebase --autostash"
 
-  windows:
-    runs-on: windows-latest
+  defender:
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     environment: dev
     strategy:
       matrix:
         cmd:
-          - microsoft_defender_signatures.ps1
+          - microsoft_defender_signatures.py
     steps:
       - uses: actions/checkout@v4
-      - run: .\${{ matrix.cmd }}
+      - uses: actions/setup-python@v5.4.0
+        with:
+          python-version: 3.x
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends lua5.1 p7zip-full
+      - run: python -u ${{ matrix.cmd }}
 
       - uses: EndBug/add-and-commit@v9.1.4
         with:
