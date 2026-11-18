@@ -1,10 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFRansomAESRSACryptoAlgoInUseA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:RansomAESRSACryptoAlgoInUse.A
+-- Type: 13
+-- MpAttributes: AESRSAProviderUse & RSAPublicKeyUse & HSTR:CryptoAPI
 
--- params : ...
--- function num : 0
-if (mp.get_mpattribute)("MpContentDetected") and (mp.get_mpattributesubstring)("Detection:Ransom:") then
+if mp.get_mpattribute("MpContentDetected") and mp.get_mpattributesubstring("Detection:Ransom:") then
   return mp.INFECTED
 end
 return mp.CLEAN
-

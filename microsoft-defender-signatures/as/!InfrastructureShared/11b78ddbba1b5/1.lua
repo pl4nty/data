@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: 11b78ddbba1b5
+-- Type: 21
+
+if pehdr.TimeDateStamp >= 1429568715 then
+  mp.set_mpattribute("Lowfi:HSTR:BProtect:AskGuard.B")
+  return mp.CLEAN
+end
+return mp.INFECTED

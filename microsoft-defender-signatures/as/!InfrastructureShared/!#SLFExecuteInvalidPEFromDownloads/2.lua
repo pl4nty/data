@@ -1,27 +1,26 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFExecuteInvalidPEFromDownloads\2.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:ExecuteInvalidPEFromDownloads
+-- Type: 10
+-- MpAttributes: RPF:TopLevelFile & MpTrustCheck_HasInvalidSignature & LUA:FileSizeLE32M.B
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONOPEN then
   return mp.CLEAN
 end
-if (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) ~= true then
+if mp.get_contextdata(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) ~= true then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
+local l_0_1 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_FILEPATH))
 if not l_0_1:find("\\downloads", 1, true) then
   return mp.CLEAN
 end
 if l_0_1:find("\\users\\[^\\]+\\downloads") == nil then
   return mp.CLEAN
 end
-if (string.sub)(l_0_1, -10) == "\\downloads" then
+if string.sub(l_0_1, -10) == "\\downloads" then
   return mp.INFECTED
 end
 if l_0_1:find("\\downloads\\", 1, true) ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN
-

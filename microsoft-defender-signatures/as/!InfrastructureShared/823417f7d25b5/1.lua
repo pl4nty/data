@@ -1,10 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\823417f7d25b5\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 823417f7d25b5
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
 if isAttrBadMaceRep(28688) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

@@ -1,27 +1,37 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaPowershellMimikittenzA!credpatterns\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:Powershell/Mimikittenz.A!credpatterns
+-- Type: 13
+-- MpAttributes: Nscript:Type_ps | BM_TEXT_FILE | PowerShell:New-Object
 
--- params : ...
--- function num : 0
-do
-  if ((((((mp.get_mpattribute)("SCRIPT:PowerShell/Mimikittenz.A!email") and not (mp.get_mpattribute)("SCRIPT:PowerShell/Mimikittenz.A!webservices")) or (mp.get_mpattribute)("SCRIPT:PowerShell/Mimikittenz.A!accounting")) and not (mp.get_mpattribute)("SCRIPT:PowerShell/Mimikittenz.A!social")) or (mp.get_mpattribute)("SCRIPT:PowerShell/Mimikittenz.A!antiforensics")) and not (mp.get_mpattribute)("SCRIPT:PowerShell/Mimikittenz.A!remote")) or (mp.get_mpattribute)("SCRIPT:PowerShell/Mimikittenz.A!dev") then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = 0 + 1 + 1 + 1 + 1 + 1 + 1 + 1
-  end
-  -- DECOMPILER ERROR at PC50: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 == 1 then
-    (mp.set_mpattribute)("Lua:Powershell/Mimikittenz.A!credpattern")
-  end
-  -- DECOMPILER ERROR at PC56: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 == 2 then
-    (mp.set_mpattribute)("Lua:Powershell/Mimikittenz.A!credpattern2")
-  end
-  -- DECOMPILER ERROR at PC62: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 >= 3 then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = 0
+if mp.get_mpattribute("SCRIPT:PowerShell/Mimikittenz.A!email") then
+  l_0_0 = l_0_0 + 1
 end
-
+if mp.get_mpattribute("SCRIPT:PowerShell/Mimikittenz.A!webservices") then
+  l_0_0 = l_0_0 + 1
+end
+if mp.get_mpattribute("SCRIPT:PowerShell/Mimikittenz.A!accounting") then
+  l_0_0 = l_0_0 + 1
+end
+if mp.get_mpattribute("SCRIPT:PowerShell/Mimikittenz.A!social") then
+  l_0_0 = l_0_0 + 1
+end
+if mp.get_mpattribute("SCRIPT:PowerShell/Mimikittenz.A!antiforensics") then
+  l_0_0 = l_0_0 + 1
+end
+if mp.get_mpattribute("SCRIPT:PowerShell/Mimikittenz.A!remote") then
+  l_0_0 = l_0_0 + 1
+end
+if mp.get_mpattribute("SCRIPT:PowerShell/Mimikittenz.A!dev") then
+  l_0_0 = l_0_0 + 1
+end
+if l_0_0 == 1 then
+  mp.set_mpattribute("Lua:Powershell/Mimikittenz.A!credpattern")
+end
+if l_0_0 == 2 then
+  mp.set_mpattribute("Lua:Powershell/Mimikittenz.A!credpattern2")
+end
+if 3 <= l_0_0 then
+  return mp.INFECTED
+end
+return mp.CLEAN

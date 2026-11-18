@@ -1,11 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaZIPDetectedA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:ZIPDetected.A
+-- Type: 13
+-- MpAttributes: Lua:BM_ZIP_FILE | BM_CONTAINER_FILE | BM_ARCHIVE_FILE_GROUP | BM_OLE_FILE | BM_OLE_FILE_CONTAINER | BM_CAB_FILE
 
--- params : ...
--- function num : 0
-if (mp.enum_mpattributesubstring)("MpContentDetected") or (mp.enum_mpattributesubstring)("Detection:") or (mp.enum_mpattributesubstring)("MpContainerContentDetected") then
-  (mp.set_mpattribute)("Lua:FileHasDetection")
+if mp.enum_mpattributesubstring("MpContentDetected") or mp.enum_mpattributesubstring("Detection:") or mp.enum_mpattributesubstring("MpContainerContentDetected") then
+  mp.set_mpattribute("Lua:FileHasDetection")
   return mp.INFECTED
 end
 return mp.CLEAN
-

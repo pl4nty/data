@@ -1,15 +1,15 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#AlignAttribsWithContext\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#AlignAttribsWithContext
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-local l_0_0 = nil
-local l_0_1 = nil
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN and (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_UNKNOWN then
-    if (mp.GetResmgrBasePlugin)() == "file" then
-      l_0_1 = (mp.getfilename)()
-      if not (sysio.IsFileExists)(l_0_1) then
+local l_0_0
+local l_0_1 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
+if l_0_1 ~= mp.SCANREASON_ONOPEN and l_0_1 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  if l_0_1 == mp.SCANREASON_UNKNOWN then
+    if mp.GetResmgrBasePlugin() == "file" then
+      l_0_0 = mp.getfilename()
+      if not sysio.IsFileExists(l_0_0) then
         return mp.CLEAN
       end
     else
@@ -19,14 +19,13 @@ if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN and 
     return mp.CLEAN
   end
 end
-if l_0_1 == nil then
-  l_0_1 = (mp.getfilename)()
+if l_0_0 == nil then
+  l_0_0 = mp.getfilename()
 end
-if not (mp.get_mpattribute)("BM_AgePrevLookedUpForBITS") and (MpCommon.QueryPersistContext)(l_0_1, "BM_AgePrevLookedUpForBITS") then
-  (mp.set_mpattribute)("BM_AgePrevLookedUpForBITS")
+if not mp.get_mpattribute("BM_AgePrevLookedUpForBITS") and MpCommon.QueryPersistContext(l_0_0, "BM_AgePrevLookedUpForBITS") then
+  mp.set_mpattribute("BM_AgePrevLookedUpForBITS")
 end
-if not (mp.get_mpattribute)("BM_BlockedForBITS") and (MpCommon.QueryPersistContext)(l_0_1, "BM_BlockedForBITS") then
-  (mp.set_mpattribute)("BM_BlockedForBITS")
+if not mp.get_mpattribute("BM_BlockedForBITS") and MpCommon.QueryPersistContext(l_0_0, "BM_BlockedForBITS") then
+  mp.set_mpattribute("BM_BlockedForBITS")
 end
 return mp.CLEAN
-

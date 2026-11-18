@@ -1,43 +1,39 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaStartupScriptTarget\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:StartupScriptTarget
+-- Type: 13
+-- MpAttributes: Lua:CloudBlockLevelGT3 & Lua:IsE5Machine & Lua:FileInStartupFolder & LUA:FileSizeLE400.A & !Lua:EXEExt & !Lua:DLLExt & !Lua:CPLExt & !Lua:SYSExt
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil or #l_0_0 <= 3 or (string.find)(l_0_0, ".", 1, true) == nil then
+local l_0_0 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == nil or #l_0_0 <= 3 or string.find(l_0_0, ".", 1, true) == nil then
   return mp.CLEAN
 end
-local l_0_1 = {}
-l_0_1.bat = 372652227
-l_0_1.cmd = 372652227
-l_0_1.pif = 2403297657
-l_0_1.vbe = 4164442607
-l_0_1.vbs = 4164442607
-l_0_1[".js"] = 1717357644
-l_0_1.jse = 1717357644
-l_0_1.wsh = 291241178
-l_0_1.wsf = 291241178
-l_0_1.ps1 = 2287119712
-l_0_1.hta = 4283801078
-local l_0_2 = (string.sub)(l_0_0, -3)
+local l_0_1 = {
+  bat = 372652227,
+  cmd = 372652227,
+  pif = 2403297657,
+  vbe = 4164442607,
+  vbs = 4164442607,
+  [".js"] = 1717357644,
+  jse = 1717357644,
+  wsh = 291241178,
+  wsf = 291241178,
+  ps1 = 2287119712,
+  hta = 4283801078
+}
+local l_0_2 = string.sub(l_0_0, -3)
 if l_0_2 == nil or #l_0_2 <= 2 or l_0_1[l_0_2] == nil then
   return mp.CLEAN
 end
 local l_0_3 = l_0_1[l_0_2]
-local l_0_4 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+local l_0_4 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
 if l_0_4 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  local l_0_5 = (string.lower)(tostring(headerpage))
-  local l_0_6 = (mp.GetExecutablesFromCommandLine)(l_0_5)
-  for l_0_10,l_0_11 in ipairs(l_0_6) do
-    l_0_11 = (mp.ContextualExpandEnvironmentVariables)(l_0_11)
-    if (sysio.IsFileExists)(l_0_11) then
-      (mp.ReportLowfi)(l_0_11, l_0_3)
+  local l_0_5 = string.lower(tostring(headerpage))
+  local l_0_6 = mp.GetExecutablesFromCommandLine(l_0_5)
+  for l_0_7, l_0_8 in ipairs(l_0_6) do
+    l_0_8 = mp.ContextualExpandEnvironmentVariables(l_0_8)
+    if sysio.IsFileExists(l_0_8) then
+      mp.ReportLowfi(l_0_8, l_0_3)
     end
   end
 end
-do
-  l_0_5 = mp
-  l_0_5 = l_0_5.CLEAN
-  return l_0_5
-end
-
+return mp.CLEAN

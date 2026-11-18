@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\b278e7549e9a\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: b278e7549e9a
+-- Type: 21
+-- Includes: HstrLuaLib
 
--- params : ...
--- function num : 0
 reportDetectedRegions()
 return mp.INFECTED
-

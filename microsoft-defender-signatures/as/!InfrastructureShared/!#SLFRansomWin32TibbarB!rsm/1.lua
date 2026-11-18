@@ -1,0 +1,15 @@
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:Ransom:Win32/Tibbar.B!rsm
+-- Type: 13
+
+local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  local l_0_1 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+  if l_0_1 ~= nil and l_0_1:len() > 7 and (string.sub(l_0_1, -8) == "cscc.dat" or string.sub(l_0_1, -10) == "infpub.dat") then
+    local l_0_2 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_FILEPATH))
+    if l_0_2 ~= nil and l_0_2:len() > 9 and l_0_2:find("\\windows\\", 1, true) ~= nil then
+      return mp.INFECTED
+    end
+  end
+end
+return mp.CLEAN

@@ -1,14 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaJSKoadicA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:JS/Koadic.A
+-- Type: 13
+-- MpAttributes: SCRIPT:JS/Koadic.1 & SCRIPT:JS/Koadic.2 & SCRIPT:JS/Koadic.3 & RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+local l_0_0 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME))
 if l_0_0 == "mshta.exe" or l_0_0 == "rundll32.exe" or l_0_0 == "regsvr32.exe" or l_0_0 == "wmic.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN
-

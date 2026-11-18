@@ -1,30 +1,20 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2db3fee0733c\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 2db3fee0733c
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
-
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_4 = nil
-    for l_0_8,l_0_9 in ipairs(bm_AddRelatedFileFromCommandLine((this_sigattrlog[2]).utf8p2)) do
-      local l_0_5 = nil
-      -- DECOMPILER ERROR at PC28: Confused about usage of register: R6 in 'UnsetPending'
-
-      if (mp.IsKnownFriendlyFile)(R6_PC28, false, false) == false then
-        return mp.INFECTED
-      end
+local l_0_0
+if this_sigattrlog[1].matched then
+  l_0_0 = this_sigattrlog[1].utf8p2
+elseif this_sigattrlog[2].matched then
+  l_0_0 = this_sigattrlog[2].utf8p2
+end
+if l_0_0 ~= nil then
+  local l_0_1 = bm_AddRelatedFileFromCommandLine(l_0_0)
+  for l_0_2, l_0_3 in ipairs(l_0_1) do
+    if mp.IsKnownFriendlyFile(l_0_3, false, false) == false then
+      return mp.INFECTED
     end
   end
-  do
-    return mp.CLEAN
-  end
 end
-
+return mp.CLEAN

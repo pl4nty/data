@@ -1,15 +1,15 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\d2b3ec1efcab\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: d2b3ec1efcab
+-- Type: 21
+-- Includes: TechniqueTracker, BMLuaLib, LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_0 = bm.get_current_process_startup_info()
 if l_0_0 == nil then
   return mp.CLEAN
 end
 local l_0_1 = l_0_0.command_line
 if l_0_1 then
-  local l_0_2 = (string.match)(l_0_1, "((%d+)%.(%d+)%.(%d+)%.(%d+))")
+  local l_0_2 = string.match(l_0_1, "((%d+)%.(%d+)%.(%d+)%.(%d+))")
   if l_0_2 then
     local l_0_3 = "queue_remotedir_mount"
     local l_0_4 = "dir_name"
@@ -17,10 +17,10 @@ if l_0_1 then
     if l_0_5 == nil or #l_0_5 < 4 then
       return mp.CLEAN
     end
-    for l_0_9,l_0_10 in ipairs(l_0_5) do
-      if l_0_9 > 1 and l_0_10 ~= nil and (sysio.IsFolderExists)(l_0_10) then
-        if not IsKeyValuePairInRollingQueue(l_0_3, l_0_4, l_0_10) then
-          AppendToRollingQueue(l_0_3, l_0_4, l_0_10, 3600)
+    for l_0_6, l_0_7 in ipairs(l_0_5) do
+      if 1 < l_0_6 and l_0_7 ~= nil and sysio.IsFolderExists(l_0_7) then
+        if not IsKeyValuePairInRollingQueue(l_0_3, l_0_4, l_0_7) then
+          AppendToRollingQueue(l_0_3, l_0_4, l_0_7, 3600)
         end
         addRelatedProcess()
         reportRelatedBmHits()
@@ -30,9 +30,4 @@ if l_0_1 then
     end
   end
 end
-do
-  l_0_2 = mp
-  l_0_2 = l_0_2.CLEAN
-  return l_0_2
-end
-
+return mp.CLEAN

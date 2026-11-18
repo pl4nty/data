@@ -1,14 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanWin32PikabotSB\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:Trojan:Win32/Pikabot.SB
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & RPF:AnyFileHasIOAVURL
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.IOAVGetDownloadUrl)()
+local l_0_0 = mp.IOAVGetDownloadUrl()
 if l_0_0 == nil or l_0_0 == "" then
   return mp.CLEAN
 end
-if (MpCommon.StringRegExpSearch)("^file:\\/\\/\\w+.com\\/\\w+\\/\\w+\\.zip$", (string.lower)(l_0_0)) == true then
+local l_0_1, l_0_2 = MpCommon.StringRegExpSearch("^file:\\/\\/\\w+.com\\/\\w+\\/\\w+\\.zip$", string.lower(l_0_0))
+if l_0_1 == true then
   return mp.INFECTED
 end
 return mp.CLEAN
-

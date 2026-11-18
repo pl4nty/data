@@ -1,15 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LUAUnknownExeExtInRTF\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#LUA:UnknownExeExtInRTF
+-- Type: 13
+-- MpAttributes: BM_UNKNOWN_FILE
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 400000 or l_0_0 > 1000000 then
+local l_0_0 = mp.getfilesize()
+if l_0_0 < 400000 or 1000000 < l_0_0 then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((mp.getfilename)())
-if (string.find)(l_0_1, "%-%>%(rtf[0-9]+%)%-%>[a-z]+.exe$") ~= nil then
+local l_0_1 = string.lower(mp.getfilename())
+if string.find(l_0_1, "%-%>%(rtf[0-9]+%)%-%>[a-z]+.exe$") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN
-

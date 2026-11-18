@@ -1,0 +1,31 @@
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:PersistContextSetAttributes.A
+-- Type: 12
+-- MpAttributes: BM_MZ_DLL
+
+local l_0_0 = mp.getfilename(mp.FILEPATH_QUERY_LOWERCASE)
+if l_0_0 == nil or #l_0_0 <= 4 then
+  return mp.CLEAN
+end
+
+function checkPersistContextSetAttribute(l_1_0, l_1_1, l_1_2)
+  if l_1_1 == nil or l_1_2 == nil then
+    return false
+  end
+  local l_1_3 = MpCommon.QueryPersistContext(l_1_0, l_1_1)
+  if l_1_3 then
+    mp.set_mpattribute(l_1_2)
+    return true
+  end
+  return false
+end
+
+if string.sub(l_0_0, -4) == ".dll" then
+  checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowRenameA", "Lua:PossibleDllHijackExecFlowRenameA")
+  checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowRenameB", "Lua:PossibleDllHijackExecFlowRenameB")
+  checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowAF", "Lua:PossibleDllHijackExecFlowAF")
+  checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowAU", "Lua:PossibleDllHijackExecFlowAU")
+  checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowBF", "Lua:PossibleDllHijackExecFlowBF")
+  checkPersistContextSetAttribute(l_0_0, "PossibleDllHijackExecFlowBU", "Lua:PossibleDllHijackExecFlowBU")
+end
+return mp.CLEAN

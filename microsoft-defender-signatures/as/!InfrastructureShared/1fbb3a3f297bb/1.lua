@@ -1,41 +1,35 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1fbb3a3f297bb\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 1fbb3a3f297bb
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_5, l_0_6 = nil, nil
-  else
-  end
-  if (this_sigattrlog[11]).matched and (this_sigattrlog[11]).utf8p2 ~= nil then
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC40: Confused about usage of register: R0 in 'UnsetPending'
-
-    do
-      if contains((this_sigattrlog[11]).utf8p2, "%-[eE][ncodemaNCODEMA]*%s+", false) then
-        local l_0_4, l_0_7 = , NormalizeCmdline("powershell", (this_sigattrlog[11]).utf8p2)
-        if contains(l_0_7, "{0}") then
-          l_0_4 = l_0_7
-        end
-      end
-      local l_0_8 = nil
-      if contains(l_0_8, {"[CloudMan]", "/oauth2/v2.0/token"}) then
-        return mp.CLEAN
-      end
-      l_0_8 = (string.gsub)(l_0_8, "%\'%\'%+%\'%\'", "")
-      local l_0_9 = nil
-      local l_0_10 = nil
-      -- DECOMPILER ERROR at PC78: Overwrote pending register: R4 in 'AssignReg'
-
-      if false == true then
-        (bm.add_related_string)("PShellEnc_cmdline", l_0_8, bm.RelatedStringBMReport)
-        return mp.INFECTED
-      end
-      return mp.CLEAN
-    end
+local l_0_0, l_0_1
+if this_sigattrlog[10].matched and this_sigattrlog[10].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[10].utf8p2
+elseif this_sigattrlog[11].matched and this_sigattrlog[11].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[11].utf8p2
+else
+  return mp.CLEAN
+end
+if contains(l_0_0, "%-[eE][ncodemaNCODEMA]*%s+", false) then
+  l_0_1 = NormalizeCmdline("powershell", l_0_0)
+  if contains(l_0_1, "{0}") then
+    l_0_0 = l_0_1
   end
 end
-
+local l_0_2 = {
+  "[CloudMan]",
+  "/oauth2/v2.0/token"
+}
+if contains(l_0_0, l_0_2) then
+  return mp.CLEAN
+end
+l_0_0 = string.gsub(l_0_0, "%'%'%+%'%'", "")
+local l_0_3 = "(?:\\{\\d+\\}(?:\\w+)?(?:\\{\\d+\\})?){3,10}.{1,10}-f"
+local l_0_4 = false
+l_0_4, _ = MpCommon.StringRegExpSearch(l_0_3, l_0_0)
+if l_0_4 == true then
+  bm.add_related_string("PShellEnc_cmdline", l_0_0, bm.RelatedStringBMReport)
+  return mp.INFECTED
+end
+return mp.CLEAN

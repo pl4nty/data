@@ -1,11 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\64b3d663cd48\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 64b3d663cd48
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-if (bm.GetSignatureMatchDuration)() > 50000000 then
+if bm.GetSignatureMatchDuration() > 50000000 then
   return mp.CLEAN
 end
 TrackPidAndTechniqueBM("BM", "T1486", "Impact_Encryption")
 return mp.INFECTED
-

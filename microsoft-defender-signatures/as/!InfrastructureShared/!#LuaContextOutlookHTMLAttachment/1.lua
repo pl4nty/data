@@ -1,11 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaContextOutlookHTMLAttachment\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:ContextOutlookHTMLAttachment
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & MpOnOpenOrCloseRtpScan & MpNewlyCreatedHint & SCPT:HTMLFile & SCRIPT:HasScriptTag.A & !BM_PDF_FILE
 
--- params : ...
--- function num : 0
-local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-if l_0_0:find("\\appdata\\local\\microsoft\\windows\\inetcache\\content.outlook\\", 1, true) ~= nil and (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "outlook.exe" then
-  return mp.INFECTED
+local l_0_0 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_FILEPATH))
+if l_0_0:find("\\appdata\\local\\microsoft\\windows\\inetcache\\content.outlook\\", 1, true) ~= nil then
+  local l_0_1 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME))
+  if l_0_1 == "outlook.exe" then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
-

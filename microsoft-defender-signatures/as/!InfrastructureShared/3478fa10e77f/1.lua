@@ -1,0 +1,14 @@
+-- Threat: !InfrastructureShared
+-- Name: 3478fa10e77f
+-- Type: 21
+
+if hstrlog[1].matched and mp.get_mpattribute("MpHasExpensiveLoop") then
+  local l_0_0 = pe.foffset_va(hstrlog[1].VA)
+  mp.readprotection(false)
+  local l_0_1 = mp.readfile(0, mp.getfilesize())
+  mp.writeu_u8(l_0_1, l_0_0 + 12, 132)
+  mp.writeu_u32(l_0_1, l_0_0 + 20, 696)
+  mp.writeu_u8(l_0_1, l_0_0 + 24, 0)
+  mp.vfo_add_buffer(l_0_1, "[Obfuscator.ALC]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+end
+return mp.INFECTED

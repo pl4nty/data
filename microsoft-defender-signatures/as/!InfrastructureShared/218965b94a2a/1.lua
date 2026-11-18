@@ -1,0 +1,6 @@
+-- Threat: !InfrastructureShared
+-- Name: 218965b94a2a
+-- Type: 21
+
+pe.mmap_patch_va(pevars.sigaddr + string.find(pe.mmap_va(pevars.sigaddr, 32), "t", 1, true) - 1, "\235")
+return mp.INFECTED

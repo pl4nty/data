@@ -1,75 +1,70 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\4ab3d6a415bb\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 4ab3d6a415bb
+-- Type: 21
+-- Includes: LuaFuncHelper, AppomalyHelpers
 
--- params : ...
--- function num : 0
-local l_0_0 = nil
-local l_0_1, l_0_2 = , (bm.get_process_relationships)()
-if l_0_2 then
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    local l_0_3 = nil
-    -- DECOMPILER ERROR at PC9: Confused about usage of register: R7 in 'UnsetPending'
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
 
-    if R7_PC9.ppid and R7_PC9.image_path and (string.find)((string.lower)(R7_PC9.image_path), "code.exe", 1, true) then
-      do
-        do
-          local l_0_9 = nil
-          if (sysio.GetPEVersionInfo)((string.lower)(R7_PC9.image_path)) and ((sysio.GetPEVersionInfo)((string.lower)(R7_PC9.image_path))).ProductName and not (string.find)(((sysio.GetPEVersionInfo)((string.lower)(R7_PC9.image_path))).ProductName, "Visual Studio Code", 1, true) then
-            return mp.CLEAN
-          end
-          l_0_1 = l_0_8.ppid
-          do break end
-          -- DECOMPILER ERROR at PC51: LeaveBlock: unexpected jumping out DO_STMT
-
-          -- DECOMPILER ERROR at PC51: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC51: LeaveBlock: unexpected jumping out IF_STMT
-
+local r0_0 = bm.get_process_relationships()
+local r0_1
+if r0_0 then
+  local r0_2, r0_3, r0_4 = ipairs(r0_0)
+  for r0_5, r0_6 in r0_2, r0_3, r0_4 do
+    if r0_6.ppid and r0_6.image_path then
+      local r0_7 = string.lower(r0_6.image_path)
+      local r0_8 = string.find(r0_7, "code.exe", 1, true)
+      if r0_8 then
+        local r0_9 = sysio.GetPEVersionInfo(r0_7)
+        if not r0_9
+          or not r0_9.ProductName
+          or string.find(r0_9.ProductName, "Visual Studio Code", 1, true) then
+          r0_1 = r0_6.ppid
+          break
         end
+        return mp.CLEAN
       end
     end
   end
 end
-if l_0_1 then
-  local l_0_10, l_0_11 = , startTrackingApp(l_0_1, "VSCode", "programfiles_targeted", "PFAppTracked")
-  if not l_0_11 then
-    (bm.trigger_sig)("ProcAttribError", safeJsonSerialize(R8_PC68))
+if r0_1 then
+  local r0_10, r0_11 = startTrackingApp(r0_1, "VSCode", "programfiles_targeted", "PFAppTracked")
+  if r0_10 then
+    if r0_11.IsNewApp then
+      r0_11.SignatureName = "Bm/PFApp_SuspChildVS.A"
+      bm.trigger_sig("SetProcessAttrib", safeJsonSerialize(r0_11))
+    end
   else
-    if l_0_1.IsNewApp then
-      l_0_1.SignatureName = "Bm/PFApp_SuspChildVS.A"
-      ;
-      (bm.trigger_sig)("SetProcessAttrib", safeJsonSerialize(R8_PC80))
-    end
+    bm.trigger_sig("ProcAttribError", safeJsonSerialize(r0_11))
   end
-  do
-    local l_0_12, l_0_13 = , (bm.get_imagepath)() or ""
-    -- DECOMPILER ERROR at PC88: Confused about usage of register: R5 in 'UnsetPending'
-
-    local l_0_14 = nil
-    if l_0_13:match("([^\\]+)$") then
-      local l_0_15 = nil
-      local l_0_16 = nil
-      if (bm.get_current_process_startup_info)() and ((bm.get_current_process_startup_info)()).ppid then
-        local l_0_17 = {ProcessName = l_0_13:match("([^\\]+)$"), ParentName = "code.exe", SignatureName = "Bm/PFApp_SuspChildVS.A", AttributeName = "PFAppTracked", AttributeCategory = "programfiles_targeted", TrackedProcess = "VSCode"}
-        local l_0_18 = nil
-        l_0_17.CommandlineScore = CommandLineGrader((mp.GetProcessCommandLine)(((bm.get_current_process_startup_info)()).ppid))
-      end
-      do
-        local l_0_19 = nil
-        do
-          local l_0_20, l_0_21, l_0_22 = , AnomalyTableCheck("Appomaly_ChildProcName_2", "Code.exe" .. "_" .. l_0_16, 30, "MarkerRecord_VSCode")
-          if l_0_22 and not "Appomaly_ChildProcName_2" then
-            l_0_19.AnomalyTableName = "Appomaly_ChildProcName_2"
-            l_0_19.AnomalyTableInfo = "Code.exe" .. "_" .. l_0_16
-            ;
-            (bm.trigger_sig)("PFAppChildProc_G", safeJsonSerialize(l_0_19))
-          end
-          ;
-          (bm.trigger_sig)("AnomalousChildCommandline", safeJsonSerialize(l_0_19))
-          return mp.CLEAN
-        end
-      end
+  local r0_12 = bm.get_imagepath
+  r0_12 = r0_12() or ""
+  local r0_13 = r0_12:match("([^\\]+)$")
+  if r0_13 then
+    local r0_14 = {}
+    r0_14.ProcessName = r0_13
+    r0_14.ParentName = "code.exe"
+    r0_14.SignatureName = "Bm/PFApp_SuspChildVS.A"
+    r0_14.AttributeName = "PFAppTracked"
+    r0_14.AttributeCategory = "programfiles_targeted"
+    r0_14.TrackedProcess = "VSCode"
+    local r0_15 = bm.get_current_process_startup_info()
+    if r0_15 and r0_15.ppid then
+      local r0_16 = mp.GetProcessCommandLine(r0_15.ppid)
+      local r0_17, r0_18 = CommandLineGrader(r0_16)
+      r0_14.CommandlineScoreIndicator = r0_18
+      r0_14.CommandlineScore = r0_17
     end
+    local r0_19, r0_20 = "Code.exe", r0_13
+    r0_19 = r0_19 .. "_" .. r0_20
+    local r0_21 = AnomalyTableCheck
+    r0_20 = "Appomaly_ChildProcName_2"
+    local r0_22, r0_23, r0_24 = r0_21(r0_20, r0_19, 30, "MarkerRecord_VSCode")
+    if r0_22 and not r0_23 then
+      r0_14.AnomalyTableName = "Appomaly_ChildProcName_2"
+      r0_14.AnomalyTableInfo = r0_24
+      bm.trigger_sig("PFAppChildProc_G", safeJsonSerialize(r0_14))
+    end
+    bm.trigger_sig("AnomalousChildCommandline", safeJsonSerialize(r0_14))
   end
 end
-
+return mp.CLEAN

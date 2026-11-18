@@ -1,193 +1,142 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LUAAIDiscovery_openclaw_json\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#LUA:AIDiscovery_openclaw_json
+-- Type: 24
+-- Includes: BMLuaLib, LuaFuncHelper
+-- MpAttributes: Lua:JSONExt
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
+
+local r0_0 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
+if r0_0 ~= mp.SCANREASON_ONOPEN and r0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("Lua:FnameAttr!openclaw.json") then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-local l_0_2 = "ai_discovery_scan"
-local l_0_3 = "ai_openclaw_json"
-local l_0_4 = (string.lower)("ai_openclaw_json" .. l_0_1)
-local l_0_5 = 86400
-local l_0_6 = (mp.getfilesize)()
-if l_0_6 > 1024000 then
-  return mp.CLEAN
-end
-;
-(mp.readprotection)(false)
-local l_0_7 = tostring((mp.readfile)(0, l_0_6))
-;
-(mp.readprotection)(true)
-if not l_0_7 then
-  return mp.CLEAN
-end
-local l_0_8 = safeJsonDeserialize(l_0_7)
-if not l_0_8 or not l_0_8.agents then
-  return mp.CLEAN
-end
-local l_0_9 = function(l_1_0, ...)
-  -- function num : 0_0
-  if type(l_1_0) ~= "table" then
-    return nil
+if mp.get_mpattribute("Lua:FnameAttr!openclaw.json") then
+  local r0_1 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+  local r0_2, r0_3 = "ai_discovery_scan", "ai_openclaw_json"
+  local r0_4 = string.lower("ai_openclaw_json" .. r0_1)
+  local r0_5 = 86400
+  local r0_6 = mp.getfilesize()
+  if r0_6 > 1024000 then
+    return mp.CLEAN
   end
-  for l_1_5,l_1_6 in ipairs({...}) do
-    local l_1_2 = l_1_0
-    -- DECOMPILER ERROR at PC19: Confused about usage of register: R7 in 'UnsetPending'
+  mp.readprotection(false)
+  local r0_7 = tostring(mp.readfile(0, r0_6))
+  mp.readprotection(true)
+  if r0_7 then
+    local r0_8 = safeJsonDeserialize(r0_7)
+    if r0_8 and r0_8.agents then
+      local function r0_9(p1_0, ...)
+        if type(p1_0) == "table" then
+          local r1_1 = p1_0
+          for r1_2, r1_3 in ipairs({ ... }) do
+            if type(r1_1) ~= "table" or r1_1[r1_3] == nil then
+              return nil
+            end
+            r1_1 = r1_1[r1_3]
+          end
+          return r1_1
+        end
+        return nil
+      end
 
-    if type(l_1_2) ~= "table" or l_1_2[R7_PC19] == nil then
-      return nil
-    end
-    l_1_2 = l_1_2[R7_PC19]
-  end
-  -- DECOMPILER ERROR at PC27: Confused about usage of register: R2 in 'UnsetPending'
-
-  return l_1_2
-end
-
-local l_0_10 = {}
-l_0_10.workspace = l_0_9(l_0_8, "agents", "defaults", "workspace")
-l_0_10.model_primary = l_0_9(l_0_8, "agents", "defaults", "model", "primary")
-l_0_10.model_fallbacks = l_0_9(l_0_8, "agents", "defaults", "model", "fallbacks")
-l_0_10.model_defaults = l_0_9(l_0_8, "agents", "defaults", "models")
-l_0_10.tools_allow = l_0_9(l_0_8, "tools", "allow")
-l_0_10.tools_deny = l_0_9(l_0_8, "tools", "deny")
-l_0_10.tools_elevated = l_0_9(l_0_8, "tools", "elevated")
-local l_0_11 = l_0_9(l_0_8, "gateway", "mode")
-if not isnull(l_0_11) and type(l_0_11) == "string" then
-  local l_0_12 = {}
-  l_0_12.mode = (string.lower)(l_0_11)
-  if l_0_12.mode == "remote" then
-    local l_0_13 = l_0_9(l_0_8, "gateway", "remote", "url")
-    if not isnull(l_0_13) then
-      local l_0_14 = ExtractPartsFromUri(l_0_13)
-      l_0_12.host = l_0_14.host
-      l_0_12.port = l_0_14.port
-    end
-  else
-    do
-      local l_0_15 = (l_0_9(l_0_8, "gateway", "bind"))
-      local l_0_16 = nil
-      if not isnull(l_0_15) and type(l_0_15) == "string" then
-        local l_0_17 = (string.lower)(l_0_15)
-        if l_0_17 == "loopback" then
-          l_0_16 = "127.0.0.1"
+      local r0_10 = {
+        workspace = r0_9(r0_8, "agents", "defaults", "workspace"),
+        model_primary = r0_9(r0_8, "agents", "defaults", "model", "primary"),
+        model_fallbacks = r0_9(r0_8, "agents", "defaults", "model", "fallbacks"),
+        model_defaults = r0_9(r0_8, "agents", "defaults", "models"),
+        tools_allow = r0_9(r0_8, "tools", "allow"), tools_deny = r0_9(r0_8, "tools", "deny"),
+        tools_elevated = r0_9(r0_8, "tools", "elevated")
+      }
+      local r0_11 = r0_9(r0_8, "gateway", "mode")
+      if not isnull(r0_11) and type(r0_11) == "string" then
+        local r0_12 = { mode = string.lower(r0_11) }
+        if r0_12.mode == "remote" then
+          local r0_13 = r0_9(r0_8, "gateway", "remote", "url")
+          if not isnull(r0_13) then
+            local r0_14 = ExtractPartsFromUri(r0_13)
+            r0_12.host = r0_14.host
+            r0_12.port = r0_14.port
+          end
         else
-          if l_0_17 == "custom" then
-            local l_0_18 = l_0_9(l_0_8, "gateway", "customBindHost")
-            if not isnull(l_0_18) and type(l_0_18) == "string" then
-              l_0_16 = l_0_18
-            end
-          else
-            do
-              do
-                do
-                  do
-                    l_0_16 = "0.0.0.0"
-                    l_0_12.host = l_0_16
-                    l_0_12.port = l_0_9(l_0_8, "gateway", "port")
-                    l_0_10.gateway = l_0_12
-                    local l_0_19 = l_0_9(l_0_8, "models", "providers")
-                    do
-                      if not isnull(l_0_19) and type(l_0_19) == "table" then
-                        local l_0_20 = {}
-                        for l_0_24,l_0_25 in pairs(l_0_19) do
-                          local l_0_26 = {}
-                          l_0_26.baseUrl = l_0_25.baseUrl
-                          l_0_26.models = {}
-                          if not isnull(l_0_25.models) and type(l_0_25.models) == "table" then
-                            for l_0_30,l_0_31 in pairs(l_0_25.models) do
-                              (table.insert)(l_0_26.models, l_0_31.id)
-                            end
-                          end
-                          do
-                            do
-                              l_0_20[l_0_24] = l_0_26
-                              -- DECOMPILER ERROR at PC275: LeaveBlock: unexpected jumping out DO_STMT
-
-                            end
-                          end
-                        end
-                        l_0_10.providers = l_0_20
-                      end
-                      if isnull(l_0_10) then
-                        return mp.CLEAN
-                      end
-                      do
-                        if not l_0_8.mcpServers and not l_0_8.servers and l_0_8.mcp then
-                          local l_0_32, l_0_33, l_0_34, l_0_35, l_0_36, l_0_37 = (l_0_8.mcp).servers
-                        end
-                        -- DECOMPILER ERROR at PC298: Confused about usage of register: R13 in 'UnsetPending'
-
-                        -- DECOMPILER ERROR at PC303: Confused about usage of register: R13 in 'UnsetPending'
-
-                        if not isnull(l_0_32) and type(l_0_32) == "table" then
-                          l_0_10.mcpServers = {}
-                          -- DECOMPILER ERROR at PC313: Confused about usage of register: R13 in 'UnsetPending'
-
-                          ;
-                          (table.insert)(l_0_10.mcpServers, McpParseHelper(l_0_32))
-                        end
-                        local l_0_38 = nil
-                        do
-                          if (versioning.GetHostOsType)() == 1 then
-                            local l_0_39 = ""
-                            if not isnull((mp.ContextualExpandEnvironmentVariables)("%APPDATA%")) and (mp.ContextualExpandEnvironmentVariables)("%APPDATA%") ~= "" then
-                              l_0_39 = (mp.ContextualExpandEnvironmentVariables)("%APPDATA%") .. "\\npm\\node_modules\\openclaw\\package.json"
-                            end
-                          else
-                          end
-                          -- DECOMPILER ERROR at PC342: Confused about usage of register: R14 in 'UnsetPending'
-
-                          -- DECOMPILER ERROR at PC348: Confused about usage of register: R14 in 'UnsetPending'
-
-                          if "/usr/local/lib/node_modules/openclaw/package.json" and (sysio.IsFileExists)("/usr/local/lib/node_modules/openclaw/package.json") then
-                            local l_0_40 = nil
-                            if (sysio.ReadFile)("/usr/local/lib/node_modules/openclaw/package.json", 0, 300) then
-                              local l_0_41 = nil
-                              if (tostring((sysio.ReadFile)("/usr/local/lib/node_modules/openclaw/package.json", 0, 300))):match("\"version\"%s*:%s*\"([^\"]+)\"") then
-                                l_0_10.version = (tostring((sysio.ReadFile)("/usr/local/lib/node_modules/openclaw/package.json", 0, 300))):match("\"version\"%s*:%s*\"([^\"]+)\"")
-                              end
-                            end
-                          end
-                          do
-                            local l_0_42 = nil
-                            local l_0_43, l_0_44 = safeJsonSerialize(l_0_10), pcall(MpCommon.RollingQueueQueryKVNamespaced, l_0_3, l_0_2)
-                            if l_0_44 and MpCommon.RollingQueueQueryKVNamespaced ~= nil then
-                              for l_0_48,l_0_49 in pairs(R19_PC378) do
-                                local l_0_45 = nil
-                                if l_0_49 == l_0_4 and l_0_29 == l_0_43 then
-                                  return mp.CLEAN
-                                end
-                              end
-                            end
-                            do
-                              AppendToRollingQueueNamespaced(l_0_3, l_0_2, l_0_4, l_0_43, l_0_5, 100)
-                              local l_0_50 = nil
-                              if (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID) then
-                                (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), "AIDiscovery_openclaw_json", l_0_43)
-                              end
-                              ;
-                              (mp.set_mpattribute)("MpDisableCaching")
-                              return mp.INFECTED
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
+          local r0_13 = r0_9(r0_8, "gateway", "bind")
+          local r0_15 = nil
+          if not (isnull(r0_13) or type(r0_13) ~= "string") then
+            local r0_16 = string.lower(r0_13)
+            if r0_16 == "loopback" then
+              r0_15 = "127.0.0.1"
+            elseif r0_16 == "custom" then
+              local r0_17 = r0_9(r0_8, "gateway", "customBindHost")
+              if not (isnull(r0_17) or type(r0_17) ~= "string") then
+                r0_15 = r0_17
               end
+            else
+              r0_15 = "0.0.0.0"
             end
+          end
+          r0_12.host = r0_15
+          r0_12.port = r0_9(r0_8, "gateway", "port")
+        end
+        r0_10.gateway = r0_12
+      end
+      local r0_18 = r0_9(r0_8, "models", "providers")
+      if not isnull(r0_18) and type(r0_18) == "table" then
+        local r0_19 = {}
+        for r0_20, r0_21 in pairs(r0_18) do
+          local r0_22 = { baseUrl = r0_21.baseUrl, models = {} }
+          if not isnull(r0_21.models) and type(r0_21.models) == "table" then
+            for r0_23, r0_24 in pairs(r0_21.models) do
+              table.insert(r0_22.models, r0_24.id)
+            end
+          end
+          r0_19[r0_20] = r0_22
+        end
+        r0_10.providers = r0_19
+      end
+      if isnull(r0_10) then
+        return mp.CLEAN
+      end
+      local r0_25 = r0_8.mcpServers or r0_8.servers or r0_8.mcp and r0_8.mcp.servers
+      if not isnull(r0_25) and type(r0_25) == "table" then
+        r0_10.mcpServers = {}
+        table.insert(r0_10.mcpServers, McpParseHelper(r0_25))
+      end
+      local r0_26 = ""
+      if versioning.GetHostOsType() == 1 then
+        local r0_27 = mp.ContextualExpandEnvironmentVariables("%APPDATA%")
+        if not (isnull(r0_27) or r0_27 == "") then
+          r0_26 = r0_27 .. "\\npm\\node_modules\\openclaw\\package.json"
+        end
+      else
+        r0_26 = "/usr/local/lib/node_modules/openclaw/package.json"
+      end
+      if r0_26 and sysio.IsFileExists(r0_26) then
+        local r0_28 = sysio.ReadFile(r0_26, 0, 300)
+        if r0_28 then
+          local r0_29 = tostring(r0_28):match('"version"%s*:%s*"([^"]+)"')
+          if r0_29 then
+            r0_10.version = r0_29
           end
         end
       end
+      local r0_30 = safeJsonSerialize(r0_10)
+      local r0_31, r0_32 = pcall(MpCommon.RollingQueueQueryKVNamespaced, r0_3, r0_2)
+      if r0_31 and r0_32 ~= nil then
+        for r0_33, r0_34 in pairs(r0_32) do
+          if r0_33 == r0_4 and r0_34 == r0_30 then
+            return mp.CLEAN
+          end
+        end
+      end
+      AppendToRollingQueueNamespaced(r0_3, r0_2, r0_4, r0_30, r0_5, 100)
+      local r0_35 = mp.get_contextdata(mp.CONTEXT_DATA_PROCESS_PPID)
+      if r0_35 then
+        MpCommon.BmTriggerSig(r0_35, "AIDiscovery_openclaw_json", r0_30)
+      end
+      mp.set_mpattribute("MpDisableCaching")
+      return mp.INFECTED
     end
+    return mp.CLEAN
   end
+  return mp.CLEAN
 end
-
+return mp.CLEAN

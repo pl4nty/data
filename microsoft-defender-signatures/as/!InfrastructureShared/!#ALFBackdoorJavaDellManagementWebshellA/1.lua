@@ -1,16 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFBackdoorJavaDellManagementWebshellA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Backdoor:Java/DellManagementWebshell.A
+-- Type: 24
+-- MpAttributes: RPF:TopLevelFile & Lua:JSPExt & (Lua:FileSizeLT4000 | Lua:FileSizeLT2000 | Lua:FileSizeLT800)
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.enum_mpattributesubstring)("SCPT:jspWebShell")
-do
-  if #l_0_0 > 0 then
-    local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-    if l_0_1:find("\\dell\\wms\\tomcat-9\\webapps\\root\\", 1, true) then
-      return mp.INFECTED
-    end
+local l_0_0 = mp.enum_mpattributesubstring("SCPT:jspWebShell")
+if 0 < #l_0_0 then
+  local l_0_1 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+  if l_0_1:find("\\dell\\wms\\tomcat-9\\webapps\\root\\", 1, true) then
+    return mp.INFECTED
   end
-  return mp.CLEAN
 end
-
+return mp.CLEAN

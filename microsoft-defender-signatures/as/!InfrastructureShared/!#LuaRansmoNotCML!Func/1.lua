@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaRansmoNotCML!Func\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:RansmoNotCML!Func
+-- Type: 13
+-- MpAttributes: (BM_TEXT_FILE | BM_ScriptFile) & (Lua:TXTExt | Lua:HTMExt | Lua:HTMLExt | Lua:HTAExt) & Lua:HasRansomNoteString
 
--- params : ...
--- function num : 0
-(mp.set_mpattribute)("Lua:RansomnoteCML.Throttle")
+mp.set_mpattribute("Lua:RansomnoteCML.Throttle")
 return mp.CLEAN
-

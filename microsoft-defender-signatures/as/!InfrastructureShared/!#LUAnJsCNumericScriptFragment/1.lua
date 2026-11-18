@@ -1,28 +1,40 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LUAnJsCNumericScriptFragment\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#//LUA:nJsCNumericScriptFragment
+-- Type: 13
+-- MpAttributes: //SCPT:nJsCNumericScriptFragment
 
--- params : ...
--- function num : 0
-local l_0_0 = {}
--- DECOMPILER ERROR at PC5: No list found for R0 , SetList fails
+local l_0_0 = {
+  118,
+  61,
+  119,
+  46
+}
+local l_0_1 = 12
 
--- DECOMPILER ERROR at PC6: Overwrote pending register: R1 in 'AssignReg'
-
-local l_0_1 = 118
--- DECOMPILER ERROR at PC7: Overwrote pending register: R2 in 'AssignReg'
-
-do
-  -- DECOMPILER ERROR at PC10: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC11: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC15: Confused about usage of register: R2 in 'UnsetPending'
-
-  if not (119)(46) and not (61)(footerpage) then
-    return mp.CLEAN
+local function l_0_2(l_1_0)
+  if l_1_0 == nil then
+    return false
   end
-  do return mp.INFECTED end
-  -- DECOMPILER ERROR at PC26: freeLocal<0 in 'ReleaseLocals'
-
+  local l_1_1 = string.lower(tostring(l_1_0))
+  local l_1_2 = string.gsub(l_1_1, "%s+", "")
+  for l_1_3 in string.gmatch(l_1_2, "string%.fromcharcode%(([%d,]+)%)") do
+    local l_1_4 = 0
+    local l_1_5 = true
+    for l_1_6 in string.gmatch(l_1_3, "%d+") do
+      l_1_4 = l_1_4 + 1
+      if l_1_4 <= #l_0_0 and tonumber(l_1_6) ~= l_0_0[l_1_4] then
+        l_1_5 = false
+        break
+      end
+    end
+    if l_1_5 and l_1_4 >= l_0_1 then
+      return true
+    end
+  end
+  return false
 end
 
+if not l_0_2(headerpage) and not l_0_2(footerpage) then
+  return mp.CLEAN
+end
+return mp.INFECTED

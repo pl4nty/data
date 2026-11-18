@@ -1,9 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanWin32PlaMasqA!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:Win32/PlaMasq.A!dha
+-- Type: 9
+-- MpAttributes: !PEPCODE:HasDigitalSignature
 
--- params : ...
--- function num : 0
-local l_0_0 = (pe.get_versioninfo)()
+local l_0_0 = pe.get_versioninfo()
 if l_0_0 ~= nil then
   if l_0_0.CompanyName ~= "Intel Corporation" then
     return mp.CLEAN
@@ -13,4 +13,3 @@ if l_0_0 ~= nil then
   end
 end
 return mp.CLEAN
-

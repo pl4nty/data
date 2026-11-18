@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\15b3c367e401\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 15b3c367e401
+-- Type: 21
+-- Includes: LuaFuncHelper
 
--- params : ...
--- function num : 0
 AppendToRollingQueue("uacbypass_regset", "sdclt")
 return mp.CLEAN
-

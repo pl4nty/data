@@ -1,0 +1,21 @@
+-- Threat: !InfrastructureShared
+-- Name: f952bcdcbf4
+-- Type: 21
+
+if not pe.isdynamic_va(pe.get_regval(pe.REG_EIP)) then
+  return mp.CLEAN
+end
+if pehdr.DataDirectory[pe.IMAGE_DIRECTORY_ENTRY_IMPORT].Size > 60 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < 2 then
+  return mp.CLEAN
+end
+if pesecs[2].VirtualAddress > 12288 then
+  return mp.CLEAN
+end
+local l_0_0 = pe.mmap_rva(pehdr.DataDirectory[pe.IMAGE_DIRECTORY_ENTRY_IMPORT].RVA + 16, 4)
+if mp.readu_u32(l_0_0, 1) == pesecs[2].VirtualAddress then
+  return mp.LOWFI
+end
+return mp.CLEAN

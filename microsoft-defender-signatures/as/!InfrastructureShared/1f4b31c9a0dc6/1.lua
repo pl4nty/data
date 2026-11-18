@@ -1,31 +1,52 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1f4b31c9a0dc6\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 1f4b31c9a0dc6
+-- Type: 21
+-- Includes: BMLuaLib, TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = (bm.get_imagepath)()
+local l_0_0 = bm.get_imagepath()
 if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)(l_0_0)
-do
-  local l_0_2 = {}
-  -- DECOMPILER ERROR at PC47: No list found for R2 , SetList fails
-
-  -- DECOMPILER ERROR at PC48: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC49: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC50: Overwrote pending register: R5 in 'AssignReg'
-
-  if ("\\code.exe")("\\cursor.exe", "\\windsurf.exe") then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC60: Overwrote pending register: R6 in 'AssignReg'
-
-  TrackPidAndTechniqueBM("BM", "T1565.001", "\\node.exe")
-  add_parents()
-  do return mp.INFECTED end
-  -- WARNING: undefined locals caused missing assignments!
+local l_0_1 = string.lower(l_0_0)
+local l_0_2 = {
+  "\\code.exe",
+  "\\cursor.exe",
+  "\\windsurf.exe",
+  "\\node.exe",
+  "\\python.exe",
+  "\\pythonw.exe",
+  "\\git.exe",
+  "\\notepad.exe",
+  "\\notepad++.exe",
+  "\\sublime_text.exe",
+  "\\devenv.exe",
+  "\\rider64.exe",
+  "\\idea64.exe",
+  "\\webstorm64.exe",
+  "\\pycharm64.exe",
+  "\\goland64.exe",
+  "\\clion64.exe",
+  "\\phpstorm64.exe",
+  "\\rustrover64.exe",
+  "\\studio64.exe",
+  "\\fleet.exe",
+  "\\zed.exe",
+  "\\pwsh.exe",
+  "\\explorer.exe",
+  "\\fabric.exe",
+  "\\claude.exe",
+  "\\tar.exe",
+  "\\antigravity.exe",
+  "\\codex.exe",
+  "\\onedrive.exe",
+  "\\veeamagent.exe",
+  "\\obsidian.exe",
+  "\\code - insiders.exe",
+  "\\copilot.exe"
+}
+if contains(l_0_1, l_0_2) then
+  return mp.CLEAN
 end
-
+TrackPidAndTechniqueBM("BM", "T1565.001", "Impact")
+add_parents()
+return mp.INFECTED

@@ -1,8 +1,8 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\b7b3c6c1317f\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: b7b3c6c1317f
+-- Type: 21
+-- Includes: BMLuaLib, TechniqueTracker
 
--- params : ...
--- function num : 0
 if IsProcessExcludedFromRansomwareAnalysis() == true then
   return mp.CLEAN
 end
@@ -11,4 +11,3 @@ reportRelatedBmHits()
 TrackPidAndTechniqueBM("BM", "T1486", "Impact_FileEncryption")
 RemediateProcessTreeForLinux()
 return mp.INFECTED
-

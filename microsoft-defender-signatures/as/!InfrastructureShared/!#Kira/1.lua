@@ -1,77 +1,71 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#Kira\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Kira
+-- Type: 13
+-- Includes: ConversionToBinary_fastBinaryTransform, ConversionToBinary_fastDec2Bin, ConversionToBinary_fastDec2BinWithKey
+-- MpAttributes: SCPT:KiraAsciiObfuscator | SCPT:KiraDecryptKira | SCPT:KiraDecryptXor
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
+local l_0_0
+if mp.get_mpattribute("SCPT:KiraAsciiObfuscator") then
+  l_0_0 = 1
+elseif mp.get_mpattribute("SCPT:KiraDecryptKira") then
+  l_0_0 = 2
+elseif mp.get_mpattribute("SCPT:KiraDecryptXor") then
+  l_0_0 = 3
+else
+  return mp.CLEAN
+end
+local l_0_1 = mp.getfilesize()
+if l_0_1 < 1024 then
+  return mp.CLEAN
+end
+if 2097152 < l_0_1 then
+  return mp.CLEAN
+end
+local l_0_2 = ""
+local l_0_3 = ""
 
-do
-  if (mp.get_mpattribute)("SCPT:KiraAsciiObfuscator") then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC22: Overwrote pending register: R0 in 'AssignReg'
-
-  if not (mp.get_mpattribute)("SCPT:KiraDecryptKira") or (mp.get_mpattribute)("SCPT:KiraDecryptXor") then
-    local l_0_1 = 2
-  else
-    do
-      do return mp.CLEAN end
-      local l_0_2 = nil
-      if (mp.getfilesize)() < 1024 then
-        return mp.CLEAN
-      end
-      if (mp.getfilesize)() > 2097152 then
-        return mp.CLEAN
-      end
-      local l_0_3 = nil
-      local l_0_4 = ""
-      local l_0_5 = ""
-      -- DECOMPILER ERROR at PC52: Overwrote pending register: R4 in 'AssignReg'
-
-      if (mp.get_mpattribute)("SCPT:KiraStrReverse") then
-        local l_0_6, l_0_7 = function(l_1_0)
-  -- function num : 0_0
+local function l_0_4(l_1_0)
   return l_1_0
 end
-, nil
-        -- DECOMPILER ERROR at PC65: Overwrote pending register: R5 in 'AssignReg'
 
-        -- DECOMPILER ERROR at PC81: Overwrote pending register: R6 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC83: Overwrote pending register: R5 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC84: Overwrote pending register: R5 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC98: Overwrote pending register: R5 in 'AssignReg'
-
-        if (l_0_2 == 1 and l_0_2 ~= 2) or l_0_2 == 3 then
-          do return mp.CLEAN end
-          ;
-          (mp.readprotection)(false)
-          local l_0_8 = nil
-          local l_0_9, l_0_10 = ((mp.readfile)(l_0_7, l_0_3 - l_0_7)), nil
-          -- DECOMPILER ERROR at PC131: Overwrote pending register: R9 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC141: Overwrote pending register: R8 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC158: Overwrote pending register: R9 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC172: Overwrote pending register: R8 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC173: Overwrote pending register: R8 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC187: Overwrote pending register: R9 in 'AssignReg'
-
-          if (l_0_2 == 1 and l_0_2 ~= 2) or l_0_2 == 3 then
-            do return mp.CLEAN end
-            ;
-            (mp.vfo_add_buffer)(nil, "[JXSK" .. l_0_2 .. "]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-            return mp.CLEAN
-          end
-        end
-      end
-    end
-  end
+if mp.get_mpattribute("SCPT:KiraStrReverse") then
+  l_0_2 = "[a-zA-Z_][0-9a-zA-Z_]-%("
+  l_0_3 = "%)"
+  l_0_4 = string.reverse
 end
+local l_0_5, l_0_6
+if l_0_0 == 1 then
+  l_0_5, _ = string.find(tostring(headerpage), "= ?Chr%(%d-%) ?& ?[cC][hH][rR]%(%d-%)")
+  l_0_5 = l_0_5 + 1
+elseif l_0_0 == 2 then
+  l_0_5, _, l_0_6 = string.find(tostring(headerpage), "= ?[a-zA-Z_][0-9a-zA-Z_]-%(" .. l_0_2 .. "\".....%d-\"" .. l_0_3 .. ",(%d-)%) ?&")
+  l_0_5 = l_0_5 + 1
+elseif l_0_0 == 3 then
+  _, l_0_5 = string.find(tostring(headerpage), "= ?[a-zA-Z_][0-9a-zA-Z_]-%(" .. l_0_2 .. "\"")
+else
+  return mp.CLEAN
+end
+mp.readprotection(false)
+local l_0_7 = mp.readfile(l_0_5, l_0_1 - l_0_5)
+local l_0_8, l_0_9
+if l_0_0 == 1 then
+  l_0_8, _ = string.find(l_0_7, [=[
 
+[eE][xX][eE][cC][uU][tT][eE]]=])
+  l_0_9, _ = fastDec2Bin(l_0_7:sub(1, l_0_8), "&? ?[cC][hH][rR]%((%d-)%) ?")
+elseif l_0_0 == 2 then
+  l_0_8, _ = string.find(l_0_7, [=[
+
+[eE][xX][eE][cC][uU][tT][eE]]=])
+  l_0_9, _ = fastDec2BinWithKey(l_0_7:sub(1, l_0_8), "&? ?[a-zA-Z_][0-9a-zA-Z_]-%(" .. l_0_2 .. "\".....(%d-)\"" .. l_0_3 .. ",%d-%) ?", l_0_6, function(l_2_0, l_2_1)
+    return l_0_4(l_2_0 + l_2_1)
+  end)
+elseif l_0_0 == 3 then
+  l_0_8, _, l_0_6 = string.find(l_0_7, "\",(%d-)%)" .. l_0_3 .. "%s-[eE][xX][eE][cC][uU][tT][eE]")
+  l_0_8 = l_0_8 - 1
+  l_0_9, _ = fastBinaryTransform(l_0_4(l_0_7:sub(1, l_0_8)), "(.)", l_0_6, mp.bitxor)
+else
+  return mp.CLEAN
+end
+mp.vfo_add_buffer(l_0_9, "[JXSK" .. l_0_0 .. "]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+return mp.CLEAN

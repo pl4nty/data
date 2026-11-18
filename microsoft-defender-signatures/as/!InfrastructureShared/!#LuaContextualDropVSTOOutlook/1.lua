@@ -1,16 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaContextualDropVSTOOutlook\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:ContextualDropVSTOOutlook
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & Lua:VSTOExt
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-do
-  if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-    local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-    if l_0_1 == "outlook.exe" then
-      (mp.set_mpattribute)("Lua:ContextualDropVSTOOutlook")
-    end
+local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
+if (l_0_0 == mp.SCANREASON_ONOPEN or l_0_0 == mp.SCANREASON_ONMODIFIEDHANDLECLOSE) and mp.get_contextdata(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_1 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME))
+  if l_0_1 == "outlook.exe" then
+    mp.set_mpattribute("Lua:ContextualDropVSTOOutlook")
   end
-  return mp.CLEAN
 end
-
+return mp.CLEAN

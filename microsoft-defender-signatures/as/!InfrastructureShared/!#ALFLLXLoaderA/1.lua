@@ -1,13 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFLLXLoaderA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:LLXLoader.A
+-- Type: 24
+-- MpAttributes: HSTR:LLXLoader.Emot & BM_MZ_DLL
 
--- params : ...
--- function num : 0
-local l_0_0 = {}
-l_0_0["excel.exe"] = ""
-l_0_0["windword.exe"] = ""
-if l_0_0[(string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))] then
+local l_0_0 = {
+  ["excel.exe"] = "",
+  ["windword.exe"] = ""
+}
+local l_0_1 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME))
+if l_0_0[l_0_1] then
   return mp.INFECTED
 end
 return mp.CLEAN
-

@@ -1,20 +1,20 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\40b3cab29e67\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 40b3cab29e67
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched then
-  local l_0_0, l_0_1 = nil
+local l_0_0
+if this_sigattrlog[1].matched then
+  l_0_0 = string.lower(this_sigattrlog[1].utf8p2)
 else
-  do
-    do return mp.CLEAN end
-    local l_0_2 = nil
-    if contains(l_0_2, {"sense", "windefend", "wdfilter"}) then
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
+  return mp.CLEAN
 end
-
+local l_0_1 = {
+  "sense",
+  "windefend",
+  "wdfilter"
+}
+if contains(l_0_0, l_0_1) then
+  return mp.INFECTED
+end
+return mp.CLEAN

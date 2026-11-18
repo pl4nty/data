@@ -1,15 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\d6b32100edef\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: d6b32100edef
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  (bm.trigger_sig)("BmTraverseTreeBlock", "Detected", l_0_6.ppid)
+local l_0_0, l_0_1 = bm.get_process_relationships()
+for l_0_2, l_0_3 in ipairs(l_0_1) do
+  bm.trigger_sig("BmTraverseTreeBlock", "Detected", l_0_3.ppid)
 end
-local l_0_7 = (bm.get_imagepath)()
-if l_0_7 ~= "" and l_0_7 ~= nil and check_common_process_linux(l_0_7) == false then
-  (bm.add_threat_file)(l_0_7)
+local l_0_4 = bm.get_imagepath()
+if l_0_4 ~= "" and l_0_4 ~= nil and check_common_process_linux(l_0_4) == false then
+  bm.add_threat_file(l_0_4)
 end
 return mp.INFECTED
-

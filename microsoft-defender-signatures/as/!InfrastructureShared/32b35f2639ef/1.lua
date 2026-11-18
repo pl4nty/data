@@ -1,176 +1,143 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\32b35f2639ef\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 32b35f2639ef
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper, AppomalyHelpers
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
-  local l_0_0, l_0_2, l_0_3 = nil, nil, nil
+local l_0_0, l_0_1, l_0_2
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 then
+  l_0_0 = this_sigattrlog[1].utf8p2
   l_0_0 = safeJsonDeserialize(l_0_0)
   if not l_0_0 then
     return mp.CLEAN
   end
-  l_0_2 = l_0_0.ParentName or "None"
-  l_0_3 = l_0_0.ProcessName
-  do
-    local l_0_5 = nil
-    -- DECOMPILER ERROR at PC27: freeLocal<0 in 'ReleaseLocals'
-
-    -- DECOMPILER ERROR at PC27: Confused about usage of register: R2 in 'UnsetPending'
-
-    if not l_0_3 then
+  l_0_1 = l_0_0.ParentName or "None"
+  l_0_2 = l_0_0.ProcessName
+end
+if not l_0_2 then
+  return mp.CLEAN
+end
+local l_0_3 = l_0_0.CommandlineScoreIndicator
+local l_0_4
+if not l_0_3 then
+  local l_0_5 = bm.get_current_process_startup_info()
+  if l_0_5 then
+    local l_0_6 = mp.GetProcessCommandLine(l_0_5.ppid)
+    if not l_0_6 or l_0_6 == "" then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC32: Confused about usage of register: R0 in 'UnsetPending'
-
-    local l_0_6 = nil
-    local l_0_7 = nil
-    if not l_0_0.CommandlineScoreIndicator then
-      local l_0_8 = nil
-      if (bm.get_current_process_startup_info)() then
-        local l_0_9 = nil
-        if not (mp.GetProcessCommandLine)(((bm.get_current_process_startup_info)()).ppid) or (mp.GetProcessCommandLine)(((bm.get_current_process_startup_info)()).ppid) == "" then
-          return mp.CLEAN
-        end
-        local l_0_10, l_0_11 = nil
-        if CommandLineGrader((mp.GetProcessCommandLine)(((bm.get_current_process_startup_info)()).ppid)) < 5 then
-          return mp.CLEAN
-        end
-        l_0_6.CommandlineScoreIndicator = (mp.GetProcessCommandLine)(((bm.get_current_process_startup_info)()).ppid)
-        l_0_10 = ((mp.GetProcessCommandLine)(((bm.get_current_process_startup_info)()).ppid)).CommandlineTokens
+    local l_0_7, l_0_8 = CommandLineGrader(l_0_6)
+    if l_0_7 < 5 then
+      return mp.CLEAN
+    end
+    l_0_0.CommandlineScoreIndicator = l_0_8
+    l_0_4 = l_0_8.CommandlineTokens
+  else
+    return mp.CLEAN
+  end
+else
+  if 5 > l_0_3.Score then
+    return mp.CLEAN
+  end
+  l_0_4 = l_0_3.CommandlineTokens
+end
+if versioning.IsSampled(100000, true, true, true) then
+  local l_0_9 = l_0_0.AnomalyTableName or "Appomaly_ChildProcName_CmdLine_0"
+  local l_0_10 = l_0_1 .. ";" .. l_0_2 .. ";" .. table.concat(l_0_4, "|")
+  local l_0_11, l_0_12, l_0_13 = AnomalyTableCheck(l_0_9, l_0_10, 30, "MarkerRecord_" .. l_0_1)
+  if l_0_11 and not l_0_12 then
+    add_parents()
+    local l_0_14 = {}
+    l_0_14.CmdLineInfo = l_0_0
+    l_0_14.TrackedProcess = l_0_1
+    l_0_14.AnomalyTableName = l_0_9
+    l_0_14.AnomalyTableInfo = l_0_13
+    local l_0_15 = {
+      ["cmd.exe"] = 10,
+      ["powershell.exe"] = 10,
+      ["reg.exe"] = 5,
+      pwsh = 10,
+      ["net.exe"] = 5,
+      ["wmic.exe"] = 5,
+      ["net1.exe"] = 5,
+      ["rundll32.exe"] = 5
+    }
+    local l_0_16 = l_0_15[string.lower(l_0_2)] or 0
+    l_0_14.ProcNameWeight = l_0_16
+    bm.add_related_string("AdditionalInfo", safeJsonSerialize(l_0_14), bm.RelatedStringBMReport)
+    local l_0_17 = GetPidFromParentImagePath(l_0_1)
+    if l_0_17 then
+      local l_0_18 = l_0_0.AttributeCategory or "generic"
+      local l_0_19, l_0_20 = startTrackingApp(l_0_17.ppid, l_0_1, l_0_18, l_0_0.AttributeName)
+      if not l_0_19 then
+        bm.trigger_sig("ProcAttribError", safeJsonSerialize(l_0_20))
       else
-        do
-          do
-            do return mp.CLEAN end
-            -- DECOMPILER ERROR at PC67: Confused about usage of register: R3 in 'UnsetPending'
-
-            if l_0_9.Score < 5 then
-              return mp.CLEAN
-            end
-            -- DECOMPILER ERROR at PC73: Confused about usage of register: R3 in 'UnsetPending'
-
-            do
-              if not l_0_6.AnomalyTableName then
-                local l_0_12, l_0_13 = nil
-              end
-              -- DECOMPILER ERROR at PC89: Confused about usage of register: R2 in 'UnsetPending'
-
-              local l_0_14 = nil
-              local l_0_15, l_0_16, l_0_17 = nil
-              if AnomalyTableCheck(not (versioning.IsSampled)(100000, true, true, true) or "Appomaly_ChildProcName_CmdLine_0", l_0_7 .. ";" .. l_0_12 .. ";" .. (table.concat)(l_0_9.CommandlineTokens, "|"), 30, "MarkerRecord_" .. l_0_7) and not not (versioning.IsSampled)(100000, true, true, true) or "Appomaly_ChildProcName_CmdLine_0" then
-                add_parents()
-                local l_0_18 = nil
-                local l_0_19 = nil
-                do
-                  local l_0_20, l_0_21 = nil
-                  ;
-                  (bm.add_related_string)("AdditionalInfo", safeJsonSerialize({CmdLineInfo = l_0_6, TrackedProcess = l_0_7, AnomalyTableName = l_0_17, AnomalyTableInfo = l_0_7 .. ";" .. l_0_12 .. ";" .. (table.concat)(l_0_9.CommandlineTokens, "|"), ProcNameWeight = ({["cmd.exe"] = 10, ["powershell.exe"] = 10, ["reg.exe"] = 5, pwsh = 10, ["net.exe"] = 5, ["wmic.exe"] = 5, ["net1.exe"] = 5, ["rundll32.exe"] = 5})[(string.lower)(l_0_14)] or 0}), bm.RelatedStringBMReport)
-                  local l_0_22 = nil
-                  do
-                    if not l_0_6.AttributeCategory then
-                      local l_0_23, l_0_24 = nil
-                    end
-                    local l_0_25, l_0_26 = nil
-                    if not startTrackingApp((GetPidFromParentImagePath(l_0_7)).ppid, l_0_7, not GetPidFromParentImagePath(l_0_7) or "generic", l_0_6.AttributeName) then
-                      (bm.trigger_sig)("ProcAttribError", safeJsonSerialize(R20_PC165))
-                    else
-                      local l_0_27 = nil
-                      IncreaseProcessAnomalyScore((GetPidFromParentImagePath(l_0_7)).ppid, 10, l_0_17 .. "[" .. ((GetPidFromParentImagePath(l_0_7)).ppid):match("pid:(%d+)") .. "]", l_0_6.AttributeName, l_0_26)
-                    end
-                    do
-                      do
-                        do return mp.INFECTED end
-                        do
-                          local l_0_28, l_0_29 = nil
-                          local l_0_30 = nil
-                          local l_0_31 = nil
-                          local l_0_32 = nil
-                          local l_0_33 = nil
-                          local l_0_34 = (MpCommon.AnomalyEventLookup)(l_0_6.AnomalyTableName or "Appomaly_ChildProcName_CmdLine_0", "MarkerRecord_" .. l_0_7, 1)
-                          local l_0_35, l_0_36 = , (MpCommon.GetCurrentTimeT)()
-                          if l_0_34 and l_0_34.Count then
-                            local l_0_37 = l_0_7 .. ";" .. l_0_30 .. ";" .. (table.concat)(l_0_32, "|")
-                            local l_0_38 = {CmdLineInfo = l_0_6, TrackedProcess = l_0_7, AnomalyTableName = l_0_33}
-                            if not (MpCommon.AnomalyEventLookup)(l_0_33, l_0_37, 1) then
-                              if (l_0_35 - l_0_36) / 60 > 43200 then
-                                add_parents()
-                                local l_0_39 = nil
-                                do
-                                  local l_0_40, l_0_41 = nil
-                                  l_0_38.ProcNameWeight = ({["cmd.exe"] = 10, ["powershell.exe"] = 10, ["reg.exe"] = 5, pwsh = 10, ["net.exe"] = 5, ["wmic.exe"] = 5, ["net1.exe"] = 5, ["rundll32.exe"] = 5})[(string.lower)(l_0_30)] or 0
-                                  ;
-                                  (bm.add_related_string)("AdditionalInfo", safeJsonSerialize(l_0_38), bm.RelatedStringBMReport)
-                                  local l_0_42 = nil
-                                  do
-                                    if not l_0_6.AttributeCategory then
-                                      local l_0_43, l_0_44 = nil
-                                    end
-                                    local l_0_45, l_0_46 = nil
-                                    if not startTrackingApp((GetPidFromParentImagePath(l_0_7)).ppid, l_0_7, not GetPidFromParentImagePath(l_0_7) or "generic", l_0_6.AttributeName) then
-                                      (bm.trigger_sig)("ProcAttribError", safeJsonSerialize(R24_PC287))
-                                    else
-                                      local l_0_47 = nil
-                                      IncreaseProcessAnomalyScore((GetPidFromParentImagePath(l_0_7)).ppid, 10, l_0_33 .. "[" .. ((GetPidFromParentImagePath(l_0_7)).ppid):match("pid:(%d+)") .. "]", l_0_6.AttributeName, l_0_38)
-                                    end
-                                    do
-                                      do
-                                        do
-                                          do
-                                            do return mp.INFECTED end
-                                            -- DECOMPILER ERROR at PC320: Confused about usage of register: R14 in 'UnsetPending'
-
-                                            -- DECOMPILER ERROR at PC329: Overwrote pending register: R12 in 'AssignReg'
-
-                                            -- DECOMPILER ERROR at PC330: Overwrote pending register: R11 in 'AssignReg'
-
-                                            -- DECOMPILER ERROR at PC332: Overwrote pending register: R8 in 'AssignReg'
-
-                                            -- DECOMPILER ERROR at PC343: Overwrote pending register: R12 in 'AssignReg'
-
-                                            -- DECOMPILER ERROR at PC344: Overwrote pending register: R11 in 'AssignReg'
-
-                                            -- DECOMPILER ERROR at PC351: Confused about usage of register: R10 in 'UnsetPending'
-
-                                            if pcall(MpCommon.AnomalyEventUpdate, l_0_33, l_0_37, 1, 1) then
-                                              (bm.trigger_sig)("AnomalyTableMarker_Rcr", safeJsonSerialize(l_0_38))
-                                              -- DECOMPILER ERROR at PC358: Confused about usage of register: R9 in 'UnsetPending'
-
-                                              -- DECOMPILER ERROR at PC362: Overwrote pending register: R12 in 'AssignReg'
-
-                                            end
-                                            -- DECOMPILER ERROR at PC366: Confused about usage of register: R10 in 'UnsetPending'
-
-                                            -- DECOMPILER ERROR at PC366: Confused about usage of register: R10 in 'UnsetPending'
-
-                                            if not pcall(MpCommon.AnomalyEventUpdate, l_0_33, l_0_37, 1, 1) then
-                                              l_0_38.Error = R12_PC366
-                                              -- DECOMPILER ERROR at PC371: Confused about usage of register: R10 in 'UnsetPending'
-
-                                              ;
-                                              (bm.trigger_sig)("AnomalyTable_Error", safeJsonSerialize(l_0_38))
-                                            end
-                                            return mp.CLEAN
-                                          end
-                                        end
-                                      end
-                                    end
-                                  end
-                                end
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
+        local l_0_21 = l_0_9 .. "[" .. l_0_17.ppid:match("pid:(%d+)") .. "]"
+        IncreaseProcessAnomalyScore(l_0_17.ppid, 10, l_0_21, l_0_0.AttributeName, l_0_14)
       end
     end
+    return mp.INFECTED
+  end
+else
+  local l_0_22 = l_0_0.AnomalyTableName or "Appomaly_ChildProcName_CmdLine_0"
+  local l_0_23 = MpCommon.AnomalyEventLookup(l_0_22, "MarkerRecord_" .. l_0_1, 1)
+  local l_0_24 = MpCommon.GetCurrentTimeT()
+  local l_0_25 = l_0_24
+  local l_0_26 = l_0_1 .. ";" .. l_0_2 .. ";" .. table.concat(l_0_4, "|")
+  local l_0_27 = {}
+  l_0_27.CmdLineInfo = l_0_0
+  l_0_27.TrackedProcess = l_0_1
+  l_0_27.AnomalyTableName = l_0_22
+  local l_0_28, l_0_29
+  if l_0_23 and l_0_23.Count then
+    l_0_25 = l_0_23.Count
+    local l_0_30 = (l_0_24 - l_0_25) / 60
+    local l_0_31 = MpCommon.AnomalyEventLookup(l_0_22, l_0_26, 1)
+    if not l_0_31 then
+      if 43200 < l_0_30 then
+        add_parents()
+        local l_0_32 = {
+          ["cmd.exe"] = 10,
+          ["powershell.exe"] = 10,
+          ["reg.exe"] = 5,
+          pwsh = 10,
+          ["net.exe"] = 5,
+          ["wmic.exe"] = 5,
+          ["net1.exe"] = 5,
+          ["rundll32.exe"] = 5
+        }
+        local l_0_33 = l_0_32[string.lower(l_0_2)] or 0
+        l_0_27.ProcNameWeight = l_0_33
+        bm.add_related_string("AdditionalInfo", safeJsonSerialize(l_0_27), bm.RelatedStringBMReport)
+        local l_0_34 = GetPidFromParentImagePath(l_0_1)
+        if l_0_34 then
+          local l_0_35 = l_0_0.AttributeCategory or "generic"
+          local l_0_36, l_0_37 = startTrackingApp(l_0_34.ppid, l_0_1, l_0_35, l_0_0.AttributeName)
+          if not l_0_36 then
+            bm.trigger_sig("ProcAttribError", safeJsonSerialize(l_0_37))
+          else
+            local l_0_38 = l_0_22 .. "[" .. l_0_34.ppid:match("pid:(%d+)") .. "]"
+            IncreaseProcessAnomalyScore(l_0_34.ppid, 10, l_0_38, l_0_0.AttributeName, l_0_27)
+          end
+        end
+        return mp.INFECTED
+      else
+        l_0_28, l_0_29 = pcall(MpCommon.AnomalyEventUpdate, l_0_22, l_0_26, 1, 1)
+      end
+    else
+      local l_0_39 = l_0_31.Count
+      l_0_28, l_0_29 = pcall(MpCommon.AnomalyEventUpdate, l_0_22, l_0_26, l_0_39 + 1, 1)
+    end
+  else
+    l_0_25 = l_0_24
+    l_0_28, l_0_29 = pcall(MpCommon.AnomalyEventUpdate, l_0_22, "MarkerRecord_" .. l_0_1, l_0_24, 1)
+    if l_0_28 then
+      bm.trigger_sig("AnomalyTableMarker_Rcr", safeJsonSerialize(l_0_27))
+      l_0_28, l_0_29 = pcall(MpCommon.AnomalyEventUpdate, l_0_22, l_0_26, 1, 1)
+    end
+  end
+  if not l_0_28 then
+    l_0_27.Error = l_0_29
+    bm.trigger_sig("AnomalyTable_Error", safeJsonSerialize(l_0_27))
   end
 end
-
+return mp.CLEAN

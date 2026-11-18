@@ -1,0 +1,16 @@
+-- Threat: !InfrastructureShared
+-- Name: 128785a746689
+-- Type: 21
+
+local l_0_0 = mp.GetHSTRCallerId()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if mp.HSTR_CALLER_SMS == l_0_0 then
+  return mp.INFECTED
+end
+local l_0_1 = mp.getfilesize()
+if l_0_1 <= 327680 then
+  return mp.INFECTED
+end
+return mp.CLEAN

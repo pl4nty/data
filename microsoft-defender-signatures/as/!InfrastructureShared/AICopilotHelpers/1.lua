@@ -1,200 +1,436 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\AICopilotHelpers\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: AICopilotHelpers
+-- Type: 1
+-- Includes: BMLuaLib, ResearchData
 
--- params : ...
--- function num : 0
-basename = function(l_1_0)
-  -- function num : 0_0
-  if not l_1_0 then
-    return nil
-  end
-  local l_1_1, l_1_2 = ((string.lower)(l_1_0)):match, (string.lower)(l_1_0)
-  do
-    local l_1_3 = "([^\\/:]+)$"
-    do return l_1_1(l_1_2, l_1_3) end
-    -- DECOMPILER ERROR at PC12: Confused about usage of register R2 for local variables in 'ReleaseLocals'
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
 
+function basename(p1_0)
+  if p1_0 then
+    local r1_0 = string.lower(p1_0)
+    return r1_0:match("([^\\/:]+)$")
   end
+  return nil
 end
 
-initiating_process_gate = function()
-  -- function num : 0_1
-  local l_2_0 = {}
-  l_2_0.outlook = true
-  l_2_0.olk = true
-  l_2_0.winword = true
-  l_2_0.msedge = true
-  l_2_0.msedgewebview2 = true
-  l_2_0.chrome = true
-  l_2_0["ms-teams"] = true
-  l_2_0.teams = true
-  local l_2_1 = (mp.GetParentProcInfo)()
-  if not l_2_1 or not l_2_1.image_path then
+function initiating_process_gate()
+  local r2_0 = {
+    outlook = true, olk = true, winword = true, msedge = true, msedgewebview2 = true, chrome = true,
+    ["ms-teams"] = true, teams = true
+  }
+  local r2_1 = mp.GetParentProcInfo()
+  if r2_1 and r2_1.image_path then
+    local r2_2 = basename(r2_1.image_path)
+    if r2_2 then
+      local r2_3 = r2_2:gsub("%.exe$", "")
+      r2_3 = r2_0[r2_3]
+      r2_3 = r2_3 == true
+      return r2_3
+    end
     return false
   end
-  do
-    local l_2_2 = basename(l_2_1.image_path)
-    if not l_2_2 then
-      return false
+  return false
+end
+
+local function r0_0(p3_0)
+  if p3_0 and p3_0 ~= "" then
+    local r3_0 = p3_0:gsub("^%s+", "")
+    p3_0 = r3_0
+    local r3_1 = p3_0
+    r3_0 = r3_1.match
+    r3_0 = r3_0(r3_1, '^"([^"]+)"')
+    if r3_0 then
+      return r3_0
     end
-    l_2_2 = l_2_2:gsub("%.exe$", "")
-    do return l_2_0[l_2_2] == true end
-    -- DECOMPILER ERROR: 1 unprocessed JMP targets
+    return p3_0:match("^([^%s]+)")
   end
+  return nil
 end
 
-local l_0_0 = function(l_3_0)
-  -- function num : 0_2
-  if not l_3_0 or l_3_0 == "" then
-    return nil
+local function r0_1(p4_0)
+  if p4_0 and p4_0 ~= "" then
+    local r4_0 = p4_0:gsub("^%s+", "")
+    r4_0 = r4_0:gsub("%s+$", "")
+    p4_0 = r4_0
+    local r4_1 = p4_0
+    r4_0 = r4_1.gsub
+    r4_0 = r4_0(r4_1, '^"', "")
+    r4_1 = r4_0
+    r4_0 = r4_1.gsub
+    r4_0 = r4_0(r4_1, '"$', "")
+    p4_0 = r4_0
+    r4_1 = p4_0
+    r4_0 = r4_1.match
+    r4_0 = r4_0(r4_1, "([^\\/:]+)$") or p4_0
+    return r4_0
   end
-  l_3_0 = l_3_0:gsub("^%s+", "")
-  local l_3_1 = l_3_0:match("^\"([^\"]+)\"")
-  if l_3_1 then
-    return l_3_1
-  end
-  local l_3_2, l_3_3 = l_3_0:match, l_3_0
-  do
-    local l_3_4 = "^([^%s]+)"
-    do return l_3_2(l_3_3, l_3_4) end
-    -- DECOMPILER ERROR at PC21: Confused about usage of register R3 for local variables in 'ReleaseLocals'
-
-  end
+  return nil
 end
 
-local l_0_1 = function(l_4_0)
-  -- function num : 0_3
-  if not l_4_0 or l_4_0 == "" then
-    return nil
-  end
-  l_4_0 = (l_4_0:gsub("^%s+", "")):gsub("%s+$", "")
-  l_4_0 = (l_4_0:gsub("^\"", "")):gsub("\"$", "")
-  return l_4_0:match("([^\\/:]+)$") or l_4_0
-end
-
-local l_0_3 = function(l_5_0)
-  -- function num : 0_4 , upvalues : l_0_1, l_0_0
-  if not l_5_0 or l_5_0 == "" then
-    return nil
-  end
-  local l_5_1 = l_0_1(l_0_0(l_5_0))
-  local l_5_2, l_5_3, l_5_4 = pcall(commandline_to_argv, l_5_0)
-  do
-    if l_5_2 and l_5_3 > 0 and l_5_4 ~= nil and l_5_4[1] ~= nil and l_5_4[1] ~= "" then
-      local l_5_5 = l_0_1(l_5_4[1])
-      if l_5_1 == nil or l_5_5 == l_5_1 then
-        return l_5_5
+local function r0_2(p5_0)
+  if p5_0 and p5_0 ~= "" then
+    local r5_0 = r0_1(r0_0(p5_0))
+    local r5_1, r5_2, r5_3 = pcall(commandline_to_argv, p5_0)
+    if r5_1 and r5_2 > 0 and r5_3 ~= nil and r5_3[1] ~= nil and r5_3[1] ~= "" then
+      local r5_4 = r0_1(r5_3[1])
+      if r5_0 == nil or r5_4 == r5_0 then
+        return r5_4
       end
     end
-    return l_5_1
+    return r5_0
   end
+  return nil
 end
 
-local l_0_4 = function(l_8_0)
-  -- function num : 0_7
-  if not l_8_0 or l_8_0 == "" then
-    return nil, nil
-  end
-  local l_8_1 = (string.lower)(l_8_0)
-  local l_8_2 = l_8_1:match("^https?://([^/%?\"\']+)")
-  if not l_8_2 then
-    return nil, nil
-  end
-  do
-    if not l_8_2:match("^([^:]+)") and l_8_1:match("^https?://[^/%?\"\']+([^?\"\']*)") or "/" == "" then
-      local l_8_3 = "/"
+function browser_executable_from_scanned_cmdline_gate()
+  local r6_0 = mp.GetScannedPPID()
+  if r6_0 then
+    local r6_1 = mp.GetProcessCommandLine(r6_0)
+    if r6_1 and r6_1 ~= "" then
+      local r6_2 = r0_2(r6_1)
+      if r6_2 and r6_2 ~= "" then
+        r6_2 = string.lower(r6_2):gsub("%.exe$", "")
+        local r6_3 = r6_2 == "msedge" or r6_2 == "msedgewebview2" or r6_2 == "chrome"
+        return r6_3
+      end
+      return false
     end
-    -- DECOMPILER ERROR at PC32: Confused about usage of register: R3 in 'UnsetPending'
-
-    return l_8_2, l_8_3
-  end
-end
-
-local l_0_5 = function(l_9_0)
-  -- function num : 0_8
-  if not l_9_0 or l_9_0 == "" then
     return false
   end
-  do return l_9_0 == "copilot.microsoft.com" or l_9_0 == "m365.cloud.microsoft" or l_9_0 == "chatgpt.com" or l_9_0 == "chat.openai.com" or l_9_0 == "perplexity.ai" or l_9_0 == "claude.ai" or l_9_0 == "grok.com" or l_9_0 == "chat.deepseek.com" end
-  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+  return false
 end
 
-local l_0_6 = function(l_10_0, l_10_1)
-  -- function num : 0_9
-  if not l_10_0 or not l_10_1 then
-    return false
+function urldecode(p7_0)
+  if p7_0 then
+    return (p7_0:gsub("%%(%x%x)",
+      function(p8_0)
+        return string.char(tonumber(p8_0, 16))
+      end))
   end
-  if l_10_1 ~= "/search" then
-    do return l_10_0 ~= "perplexity.ai" end
-    if l_10_1 ~= "/search" and l_10_1 ~= "/search/" then
-      do return l_10_0 ~= "m365.cloud.microsoft" end
-      if l_10_1 ~= "/" then
-        do return l_10_0 ~= "copilot.microsoft.com" and l_10_0 ~= "chatgpt.com" and l_10_0 ~= "chat.openai.com" end
-        if l_10_1 ~= "/" and l_10_1 ~= "/new" then
-          do return l_10_0 ~= "claude.ai" end
-          if l_10_1 ~= "/" then
-            do return l_10_0 ~= "grok.com" and l_10_0 ~= "chat.deepseek.com" end
-            do return false end
-            -- DECOMPILER ERROR: 12 unprocessed JMP targets
-          end
+  return nil
+end
+
+local function r0_3(p9_0)
+  if p9_0 and p9_0 ~= "" then
+    local r9_0 = string.lower(p9_0)
+    local r9_1 = r9_0:match("^https?://([^/%?\"']+)")
+    if r9_1 then
+      local r9_2 = r9_1:match("^([^:]+)")
+      r9_1 = r9_2 or r9_1
+      local r9_3 = r9_0
+      r9_2 = r9_3.match
+      r9_2 = r9_2(r9_3, "^https?://[^/%?\"']+([^?\"']*)") or "/"
+      r9_2 = r9_2 == "" and "/" or r9_2
+      r9_3 = r9_1
+      local r9_4 = r9_2
+      return r9_3, r9_4
+    end
+    return nil, nil
+  end
+  return nil, nil
+end
+
+local function r0_4(p10_0)
+  if p10_0 and p10_0 ~= "" then
+    return p10_0 == "copilot.microsoft.com"
+      or p10_0 == "m365.cloud.microsoft"
+      or p10_0 == "chatgpt.com"
+      or p10_0 == "chat.openai.com"
+      or p10_0 == "perplexity.ai"
+      or p10_0 == "claude.ai"
+      or p10_0 == "grok.com"
+      or p10_0 == "chat.deepseek.com"
+  end
+  return false
+end
+
+local function r0_5(p11_0, p11_1)
+  if p11_0 and p11_1 then
+    if p11_0 == "perplexity.ai" then
+      return p11_1 == "/search"
+    end
+    if p11_0 == "m365.cloud.microsoft" then
+      return p11_1 == "/search" or p11_1 == "/search/"
+    end
+    if p11_0 ~= "copilot.microsoft.com" and p11_0 ~= "chatgpt.com" and p11_0 ~= "chat.openai.com" then
+      if p11_0 == "claude.ai" then
+        return p11_1 == "/" or p11_1 == "/new"
+      end
+      if p11_0 == "grok.com" or p11_0 == "chat.deepseek.com" then
+        return p11_1 == "/"
+      end
+      return false
+    end
+    return p11_1 == "/"
+  end
+  return false
+end
+
+local function r0_6(p12_0)
+  if p12_0 and p12_0 ~= "" then
+    for r12_0 in p12_0:gmatch("https?://[^%s\"']+") do
+      return r12_0
+    end
+    local r12_1 = urldecode(p12_0)
+    if r12_1 and r12_1 ~= p12_0 then
+      for r12_2 in r12_1:gmatch("https?://[^%s\"']+") do
+        return r12_2
+      end
+    end
+    local r12_3 = string.lower(p12_0):match("([%w%-%._]+%[%.[%]]%w[%w%-%._]+[^%s\"']*)")
+    if r12_3 then
+      return r12_3
+    end
+    return nil
+  end
+  return nil
+end
+
+local function r0_7(p13_0)
+  if p13_0 and p13_0 ~= "" then
+    for r13_0 in p13_0:gmatch("https?://[^%s\"']+") do
+      local r13_1, r13_2 = r0_3(r13_0)
+      if r0_4(r13_1) and r0_5(r13_1, r13_2) then
+        return r13_0
+      end
+    end
+    local r13_3 = urldecode(p13_0)
+    if r13_3 and r13_3 ~= p13_0 then
+      for r13_4 in r13_3:gmatch("https?://[^%s\"']+") do
+        local r13_5, r13_6 = r0_3(r13_4)
+        if r0_4(r13_5) and r0_5(r13_5, r13_6) then
+          return r13_4
         end
       end
     end
+    return nil
   end
+  return nil
 end
 
-local l_0_8 = function(l_11_0)
-  -- function num : 0_10
-  if not l_11_0 or l_11_0 == "" then
-    return nil
-  end
-  for l_11_4 in l_11_0:gmatch("https?://[^%s\"\']+") do
-    do return l_11_4 end
-  end
-  local l_11_5 = urldecode(l_11_0)
-  if l_11_5 and l_11_5 ~= l_11_0 then
-    for l_11_9 in l_11_5:gmatch("https?://[^%s\"\']+") do
-      do return l_11_9 end
-    end
-  end
-  do
-    local l_11_10 = (string.lower)(l_11_0)
-    local l_11_11 = l_11_10:match("([%w%-%._]+%[%.[%]]%w[%w%-%._]+[^%s\"\']*)")
-    if l_11_11 then
-      return l_11_11
-    end
-    return nil
-  end
-end
-
-do
-  local l_0_12 = function(l_12_0)
-  -- function num : 0_11 , upvalues : l_0_3, l_0_4, l_0_5
-  if not l_12_0 or l_12_0 == "" then
-    return nil
-  end
-  for l_12_4 in l_12_0:gmatch("https?://[^%s\"\']+") do
-    local l_12_5, l_12_6 = l_0_3(l_12_4)
-    if l_0_4(l_12_5) and l_0_5(l_12_5, l_12_6) then
-      return l_12_4
-    end
-  end
-  local l_12_7 = urldecode(l_12_0)
-  if l_12_7 and l_12_7 ~= l_12_0 then
-    for l_12_11 in l_12_7:gmatch("https?://[^%s\"\']+") do
-      local l_12_12, l_12_13 = l_0_3(l_12_11)
-      if l_0_4(l_12_12) and l_0_5(l_12_12, l_12_13) then
-        return l_12_11
+local function r0_8(p14_0)
+  if p14_0 and p14_0 ~= "" then
+    local r14_0 = string.lower(p14_0)
+    local r14_1 = {
+      "?q=", "&q=", "?q%3d", "&q%3d", "%3fq%3d", "%26q%3d", "&amp;q=", "&amp;q%3d",
+      "&amp;amp;amp;amp;q="
+    }
+    local r14_2, r14_3 = nil, nil
+    for r14_4, r14_5 in ipairs(r14_1) do
+      local r14_6 = string.find(r14_0, r14_5, 1, true)
+      if r14_6 and (not r14_2 or r14_6 < r14_2) then
+        r14_2 = r14_6
+        r14_3 = #r14_5
       end
     end
-  end
-  do
+    if r14_2 then
+      local r14_7 = p14_0:sub(r14_2 + r14_3)
+      local r14_8 = #r14_7 + 1
+      for r14_9, r14_10 in ipairs({ "&", '"', "'", " " }) do
+        local r14_11 = string.find(r14_7, r14_10, 1, true)
+        if r14_11 and r14_11 < r14_8 then
+          r14_8 = r14_11
+        end
+      end
+      r14_7 = r14_7:sub(1, r14_8 - 1)
+      local r14_12 = urldecode(r14_7)
+      local r14_13 = r14_12 or r14_7
+      r14_12 = r14_13.gsub
+      r14_12 = r14_12(r14_13, "^%s+", "")
+      r14_13 = r14_12
+      r14_12 = r14_13.gsub
+      r14_12 = r14_12(r14_13, "%s+$", "")
+      r14_7 = r14_12
+      if r14_7 == "" then
+        return nil
+      end
+      return r14_7
+    end
     return nil
   end
+  return nil
 end
 
-  -- DECOMPILER ERROR at PC56: freeLocal<0 in 'ReleaseLocals'
-
-  -- WARNING: undefined locals caused missing assignments!
+local function r0_9(p15_0)
+  local r15_0 = r0_7(p15_0)
+  if r15_0 then
+    return r0_8(r15_0)
+  end
+  return nil
 end
 
+local function r0_10(p16_0)
+  if p16_0 and p16_0 ~= "" then
+    local r16_0 = string.lower(p16_0)
+    if string.find(r16_0, "google.com/url?", 1, true) == nil
+      and string.find(r16_0, "urldefense.com/", 1, true) == nil
+      and string.find(r16_0, "safelinks.protection.outlook.com/", 1, true) == nil then
+      local r16_1 = r0_7(p16_0)
+      if r16_1 then
+        local r16_2, r16_3 = r0_3(r16_1)
+        if r0_4(r16_2) then
+          if r0_5(r16_2, r16_3) then
+            return r0_8(r16_1) ~= nil
+          end
+          return false
+        end
+        return false
+      end
+      return false
+    end
+    return false
+  end
+  return false
+end
+
+local function r0_11(p17_0)
+  local r17_0 = r0_7(p17_0)
+  if r17_0 then
+    local r17_1 = r0_3(r17_0)
+    if r17_1 and r17_1 ~= "" then
+      return r17_1
+    end
+    return nil
+  end
+  return nil
+end
+
+local function r0_12()
+  local r18_0 = mp.GetScannedPPID()
+  if r18_0 then
+    local r18_1 = mp.GetProcessCommandLine(r18_0)
+    if r18_1 and r18_1 ~= "" then
+      return r18_0, r18_1
+    end
+    return r18_0, nil
+  end
+  return nil, nil
+end
+
+local function r0_13()
+  local r19_0, r19_1 = r0_12()
+  if r19_1 then
+    local r19_2 = string.lower(r19_1)
+    local r19_3 = string.find(r19_2, "\\msedge.exe", 1, true)
+    r19_3 = r19_3 ~= nil
+      or string.find(r19_2, "\\chrome.exe", 1, true) ~= nil
+      or string.find(r19_2, "\\brave.exe", 1, true) ~= nil
+      or string.find(r19_2, "\\opera.exe", 1, true) ~= nil
+      or string.find(r19_2, "\\vivaldi.exe", 1, true) ~= nil
+    local r19_4 = string.find(r19_2, "\\firefox.exe", 1, true)
+    r19_4 = r19_4 ~= nil
+    if not r19_3 and not r19_4 then
+      return false
+    end
+    local r19_5 = string.find(r19_2, "--single-argument", 1, true)
+    r19_5 = r19_5 ~= nil
+    local r19_6 = string.find(r19_2, "-osint", 1, true)
+    r19_6 = r19_6 ~= nil and string.find(r19_2, "-url", 1, true) ~= nil
+    return r19_3 and r19_5 or r19_4 and r19_6
+  end
+  return false
+end
+
+function current_cmdline_matches_prompt_link_runtime_checks()
+  local r20_0, r20_1 = r0_12()
+  if r20_1 then
+    if r0_13() then
+      if r0_10(r20_1) then
+        return true
+      end
+      return false
+    end
+    return false
+  end
+  return false
+end
+
+function extract_first_non_copilot_url(p21_0)
+  if p21_0 and p21_0 ~= "" then
+    for r21_0 in p21_0:gmatch("https?://[^%s\"']+") do
+      local r21_1 = string.lower(r21_0)
+      if not r21_1:find("copilot%.microsoft%.com", 1, false) then
+        return r21_0
+      end
+    end
+    local r21_2 = urldecode(p21_0)
+    if r21_2 and r21_2 ~= p21_0 then
+      for r21_3 in r21_2:gmatch("https?://[^%s\"']+") do
+        local r21_4 = string.lower(r21_3)
+        if not r21_4:find("copilot%.microsoft%.com", 1, false) then
+          return r21_3
+        end
+      end
+    end
+    local r21_5 = string.lower(p21_0)
+    local r21_6 = r21_5:match("([%w%-%._]+%[%.[%]]%w[%w%-%._]+[^%s\"']*)")
+    if r21_6 and not r21_6:find("copilot%.microsoft%.com", 1, false) then
+      return r21_6
+    end
+    return nil
+  end
+  return nil
+end
+
+function normalize_parent_process_name(p22_0)
+  if p22_0 ~= nil and p22_0.image_path ~= nil then
+    local r22_0 = basename(p22_0.image_path)
+    if r22_0 == nil then
+      return nil
+    end
+    local r22_1 = r22_0:gsub('^"', "")
+    return r22_1:gsub('"$', "")
+  end
+  return nil
+end
+
+function current_parent_info_and_name()
+  local r23_0 = mp.GetParentProcInfo()
+  return r23_0, normalize_parent_process_name(r23_0)
+end
+
+function extract_cmdline_payload(p24_0)
+  local r24_0 = mp.GetScannedPPID()
+  if not r24_0 then
+    return
+  end
+  if p24_0 == nil or p24_0 == "" then
+    local r24_1 = mp.GetParentProcInfo()
+    if r24_1 and r24_1.image_path then
+      p24_0 = string.lower(r0_1(r24_1.image_path))
+    end
+  end
+  local r24_2 = mp.GetProcessCommandLine(r24_0)
+  if not (r24_2 and r24_2 ~= "") then
+    return
+  end
+  local r24_3 = r0_2(r24_2)
+  if r24_3 and r24_3 ~= "" then
+    set_research_data("Browser", string.lower(r24_3), false)
+  end
+  if p24_0 and p24_0 ~= "" then
+    set_research_data("ParentApp", p24_0, false)
+  end
+  local r24_4 = r0_11(r24_2)
+  if r24_4 and r24_4 ~= "" then
+    set_research_data("AIService", r24_4, false)
+  end
+  local r24_5 = MpCommon.Base64Encode(r24_2)
+  if r24_5 then
+    set_research_data("CmdLineB64", r24_5, false)
+  end
+  local r24_6 = r0_9(r24_2)
+  if r24_6 and r24_6 ~= "" then
+    local r24_7 = MpCommon.Base64Encode(r24_6)
+    if r24_7 then
+      set_research_data("PromptB64", r24_7, false)
+    end
+  end
+  local r24_8 = r24_6 and r0_6(r24_6) or nil
+  if r24_8 and r24_8 ~= "" then
+    local r24_9 = MpCommon.Base64Encode(r24_8)
+    if r24_9 then
+      set_research_data("UrlB64", r24_9, false)
+    end
+  end
+end

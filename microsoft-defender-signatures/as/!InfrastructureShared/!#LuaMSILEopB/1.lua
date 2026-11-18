@@ -1,96 +1,90 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaMSILEopB\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:MSILEop.B
+-- Type: 13
+-- MpAttributes: pea_ismsil & BM_MZ_FILE & !Exclusion:EOP:MSIL
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilename)()
+local l_0_0 = mp.getfilename()
 if l_0_0 ~= nil then
-  l_0_0 = (string.lower)(l_0_0)
-  local l_0_1 = (string.sub)(l_0_0, -4)
+  l_0_0 = string.lower(l_0_0)
+  local l_0_1 = string.sub(l_0_0, -4)
   if l_0_0:match("%->.+/") or l_0_0:match("%->.+\\") or l_0_0:match("%->.+%.cab%->") then
     return mp.CLEAN
   end
   if l_0_1 == ".exe" or l_0_1 == ".scr" or l_0_1 == ".com" then
-    local l_0_2 = {}
-    -- DECOMPILER ERROR at PC60: No list found for R2 , SetList fails
-
-    -- DECOMPILER ERROR at PC61: Overwrote pending register: R3 in 'AssignReg'
-
-    local l_0_3 = "ALF:Trojan:MSIL/"
-    -- DECOMPILER ERROR at PC62: Overwrote pending register: R4 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC63: Overwrote pending register: R5 in 'AssignReg'
-
-    for l_0_7,l_0_8 in ("SLF:Trojan:MSIL/")("ALF:JASYP:Trojan:MSIL/") do
-      -- DECOMPILER ERROR at PC66: Overwrote pending register: R9 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC68: Overwrote pending register: R10 in 'AssignReg'
-
-      local l_0_9 = (("ALF:HSTR:Trojan:MSIL").enum_mpattributesubstring)("Lowfi:HSTR:Win32/AgileDotNetObfuscator")
-      -- DECOMPILER ERROR at PC73: Overwrote pending register: R11 in 'AssignReg'
-
-      if l_0_9 ~= nil and type("ALF:TrojanDownloader:MSIL") == "table" and l_0_3 >= 2 then
-        return mp.INFECTED
+    local l_0_2 = {
+      "ALF:Trojan:MSIL/",
+      "SLF:Trojan:MSIL/",
+      "ALF:JASYP:Trojan:MSIL/",
+      "SLF:JASYP:Trojan:MSIL/",
+      "ALF:HSTR:MSIL/",
+      "SLF:Trojan:Win32/",
+      "ALF:HSTR:Trojan:MSIL",
+      "Lowfi:HSTR:Win32/AgileDotNetObfuscator",
+      "ALF:TrojanDownloader:MSIL",
+      "ALF:HackTool:MSIL",
+      "SIGATTR:VirTool:MSIL",
+      "SLFPER:MSIL",
+      "ALF:VirTool:MSIL",
+      "Lowfi:HSTR:MSIL/Obfuscator",
+      "ALF:Backdoor:MSIL/",
+      "AGGR:HSTR:MSIL/PossibleKeylogger",
+      "SIGATTR:LoadAssemblyCrypt.A",
+      "SIGATTR:LoadAssembly.B",
+      "SIGATTR:MSIL:Invoke",
+      "SIGATTR:MSIL:LoadAssemblyThread"
+    }
+    local l_0_3 = 0
+    for l_0_4, l_0_5 in pairs(l_0_2) do
+      local l_0_6 = mp.enum_mpattributesubstring(l_0_5)
+      if l_0_6 ~= nil and type(l_0_6) == "table" then
+        l_0_3 = l_0_3 + #l_0_6
+        if 2 <= l_0_3 then
+          return mp.INFECTED
+        end
       end
     end
-    local l_0_10 = {}
-    -- DECOMPILER ERROR at PC94: Overwrote pending register: R12 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC95: Overwrote pending register: R13 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC96: Overwrote pending register: R14 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC97: Overwrote pending register: R15 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC98: Overwrote pending register: R16 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC99: Overwrote pending register: R17 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC100: Overwrote pending register: R18 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC101: Overwrote pending register: R19 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC102: Overwrote pending register: R20 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC103: Overwrote pending register: R21 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC104: Overwrote pending register: R22 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC115: No list found for R4 , SetList fails
-
-    -- DECOMPILER ERROR at PC116: Overwrote pending register: R5 in 'AssignReg'
-
-    local l_0_11 = "HSTR:Trojan:MSIL"
-    -- DECOMPILER ERROR at PC117: Overwrote pending register: R6 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC118: Overwrote pending register: R7 in 'AssignReg'
-
-    for l_0_15,l_0_16 in ("Packed:Confuser")("HSTR:MSIL/") do
-      -- DECOMPILER ERROR at PC121: Overwrote pending register: R11 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC123: Overwrote pending register: R12 in 'AssignReg'
-
-      local l_0_17 = (("Lowfi:HSTR:Win32").enum_mpattributesubstring)("ALF:HackTool:MSIL")
-      -- DECOMPILER ERROR at PC128: Overwrote pending register: R13 in 'AssignReg'
-
-      if l_0_17 ~= nil and type("SIGATTR:VirTool:MSIL") == "table" then
-        if l_0_3 == 0 and l_0_11 >= 3 then
+    local l_0_7 = {
+      "HSTR:Trojan:MSIL",
+      "Packed:Confuser",
+      "HSTR:MSIL/",
+      "SIGATTR:MSIL",
+      "SIGATTR:Trojan:MSIL",
+      "TEL:Backdoor:MSIL/",
+      "Lowfi:HSTR:Win32",
+      "Trojan:MSIL/AgentTesla",
+      "HSTR:DESCryptoServiceProvider.A",
+      "TEL:VirTool:MSIL/Obfuscator",
+      "AGGR:MSIL:GenPossibleCustomObfuscator.A",
+      "Lua:MSIL.AbnormalMethod.Name",
+      "Trojan:Win32/AutoitInject",
+      "HSTR:VirTool:Win32/Obfuscator",
+      "LoD:VirTool:Win32/Obfuscator",
+      "HSTR:Crypto.A",
+      "Lua:Win32/Packed",
+      "LUA:PEAnomaly_CertificateExpired",
+      "SIGATTR:LoadAssembly.A",
+      "ALF:Trojan:Win32",
+      "TEL:Trojan:MSIL/",
+      "SIGATTR:Cypto.A",
+      "SIGATTR:LoadAssemblyCrypt.A",
+      "Trojan:MSIL/NanoCore",
+      "Trojan:MSIL/FormBook",
+      "SIGATTR:DisableAMSI",
+      "Lowfi:HSTR:MSIL/Obfuscator.DotNETReactor.B",
+      "SIGATTR:MSIL/LoressoObfus.A"
+    }
+    local l_0_8 = 0
+    for l_0_9, l_0_10 in pairs(l_0_7) do
+      local l_0_11 = mp.enum_mpattributesubstring(l_0_10)
+      if l_0_11 ~= nil and type(l_0_11) == "table" then
+        l_0_8 = #l_0_11 + l_0_8
+        if l_0_3 == 0 and 3 <= l_0_8 then
           return mp.INFECTED
-        else
-          if l_0_3 == 1 and l_0_11 >= 2 then
-            return mp.INFECTED
-          end
+        elseif l_0_3 == 1 and 2 <= l_0_8 then
+          return mp.INFECTED
         end
       end
     end
   end
 end
-do
-  do
-    -- DECOMPILER ERROR at PC152: Overwrote pending register: R1 in 'AssignReg'
-
-    do return l_0_1 end
-    -- WARNING: undefined locals caused missing assignments!
-  end
-end
-
+return mp.CLEAN

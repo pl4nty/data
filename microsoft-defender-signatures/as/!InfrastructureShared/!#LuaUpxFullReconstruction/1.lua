@@ -1,7 +1,6 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaUpxFullReconstruction\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:UpxFullReconstruction
+-- Type: 35
+-- MpAttributes: (BM_ELF_EXEC_FILE | BM_ELF_DYN_FILE) & elfa_ispacked
 
--- params : ...
--- function num : 0
 return mp.INFECTED
-

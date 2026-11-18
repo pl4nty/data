@@ -1,43 +1,33 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\69b3676b12df\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 69b3676b12df
+-- Type: 21
+-- Includes: TechniqueTracker, LuaFuncHelper
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3 = nil
-  end
-  -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
-
-  if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or (string.lower)((this_sigattrlog[2]).utf8p2) ~= nil then
-    local l_0_4 = nil
-    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)((string.lower)((this_sigattrlog[2]).utf8p2))) do
-      local l_0_5 = nil
-      -- DECOMPILER ERROR at PC44: Confused about usage of register: R6 in 'UnsetPending'
-
-      if R6_PC44 ~= nil and R6_PC44 ~= "" and StringEndsWith(R6_PC44, ".js") then
-        R6_PC44 = (mp.ContextualExpandEnvironmentVariables)(R6_PC44)
-        if (sysio.IsFileExists)(R6_PC44) then
-          local l_0_11 = (mp.GetMotwReferrerUrlForFile)(R6_PC44)
-          if not l_0_11 then
-            return mp.CLEAN
-          end
-          if not R6_PC44 or StringStartsWith(R10_PC79, "http") or StringStartsWith(R10_PC79, "www") then
-            return mp.CLEAN
-          end
-          -- DECOMPILER ERROR at PC93: Overwrote pending register: R10 in 'AssignReg'
-
-          if (sysio.IsFileExists)(R10_PC79) then
-            return mp.INFECTED
-          end
+local l_0_0
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 ~= nil then
+  l_0_0 = string.lower(this_sigattrlog[1].utf8p2)
+end
+if this_sigattrlog[2].matched and this_sigattrlog[2].utf8p2 ~= nil then
+  l_0_0 = string.lower(this_sigattrlog[2].utf8p2)
+end
+if l_0_0 ~= nil then
+  local l_0_1 = mp.GetExecutablesFromCommandLine(l_0_0)
+  for l_0_2, l_0_3 in ipairs(l_0_1) do
+    if l_0_3 ~= nil and l_0_3 ~= "" and StringEndsWith(l_0_3, ".js") then
+      l_0_3 = mp.ContextualExpandEnvironmentVariables(l_0_3)
+      if sysio.IsFileExists(l_0_3) then
+        local l_0_4, l_0_5 = mp.GetMotwReferrerUrlForFile(l_0_3)
+        if not l_0_4 then
+          return mp.CLEAN
+        end
+        if not l_0_5 or StringStartsWith(l_0_5, "http") or StringStartsWith(l_0_5, "www") then
+          return mp.CLEAN
+        end
+        if sysio.IsFileExists(l_0_5) then
+          return mp.INFECTED
         end
       end
     end
   end
-  do
-    return mp.CLEAN
-  end
 end
-
+return mp.CLEAN

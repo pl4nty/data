@@ -1,17 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFHackToolWin32SDeleteAbuseB!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:HackTool:Win32/SDeleteAbuse.B!dha
+-- Type: 11
+-- MpAttributes: !RPF:TopLevelFile & BM_MZ_FILE & OFN:sdelete.exe
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_0 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
 if l_0_0 ~= nil then
-  if (string.find)(l_0_0, "->(vfs:", 1, true) then
+  if string.find(l_0_0, "->(vfs:", 1, true) then
     return mp.INFECTED
-  else
-    if (string.find)(l_0_0, "->[msilres:", 1, true) then
-      return mp.INFECTED
-    end
+  elseif string.find(l_0_0, "->[msilres:", 1, true) then
+    return mp.INFECTED
   end
 end
 return mp.CLEAN
-

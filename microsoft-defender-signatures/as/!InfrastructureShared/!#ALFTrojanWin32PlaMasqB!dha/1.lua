@@ -1,13 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanWin32PlaMasqB!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:Win32/PlaMasq.B!dha
+-- Type: 9
+-- MpAttributes: !PEPCODE:HasDigitalSignature & (LUA:FileSizeLE20000.A | LUA:FileSizeLE40000.A)
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
+local l_0_0 = mp.getfilesize()
 if l_0_0 < 10000 then
   return mp.CLEAN
 end
-local l_0_1 = (pe.get_versioninfo)()
+local l_0_1 = pe.get_versioninfo()
 if l_0_1 ~= nil then
   if l_0_1.CompanyName ~= "Adobe Systems Incorporated" then
     return mp.CLEAN
@@ -23,4 +23,3 @@ if l_0_1 ~= nil then
   end
 end
 return mp.CLEAN
-

@@ -1,11 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\18d0d21dca7d\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 18d0d21dca7d
+-- Type: 21
+-- Includes: LuaFuncHelper
 
--- params : ...
--- function num : 0
-if not (mp.get_mpattribute)("MpIsAiMcpAmsiScan") and not (mp.get_mpattribute)("MpIsAiNetPromptScan") then
+if not mp.get_mpattribute("MpIsAiMcpAmsiScan") and not mp.get_mpattribute("MpIsAiNetPromptScan") then
   return mp.CLEAN
 end
 CollectXpiaEncodingTelemetry()
 return mp.INFECTED
-

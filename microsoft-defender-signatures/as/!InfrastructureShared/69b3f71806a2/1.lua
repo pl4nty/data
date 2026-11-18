@@ -1,21 +1,21 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\69b3f71806a2\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 69b3f71806a2
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-if (bm.GetSignatureMatchDuration)() > 6000000000 then
+if bm.GetSignatureMatchDuration() > 6000000000 then
   return mp.CLEAN
 end
-local l_0_0, l_0_1, l_0_2 = nil, nil, nil
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).timestamp ~= nil and (this_sigattrlog[2]).utf8p1 ~= nil then
-  l_0_0 = (this_sigattrlog[2]).timestamp
-  l_0_1 = (string.lower)((this_sigattrlog[2]).utf8p1)
-  l_0_2 = (this_sigattrlog[2]).ppid
+local l_0_0, l_0_1, l_0_2
+if this_sigattrlog[2].matched and this_sigattrlog[2].timestamp ~= nil and this_sigattrlog[2].utf8p1 ~= nil then
+  l_0_0 = this_sigattrlog[2].timestamp
+  l_0_1 = string.lower(this_sigattrlog[2].utf8p1)
+  l_0_2 = this_sigattrlog[2].ppid
 end
-local l_0_3, l_0_4 = nil, nil
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).timestamp ~= nil and (this_sigattrlog[4]).utf8p1 ~= nil then
-  l_0_3 = (this_sigattrlog[4]).timestamp
-  l_0_4 = (string.lower)((this_sigattrlog[4]).utf8p1)
+local l_0_3, l_0_4
+if this_sigattrlog[4].matched and this_sigattrlog[4].timestamp ~= nil and this_sigattrlog[4].utf8p1 ~= nil then
+  l_0_3 = this_sigattrlog[4].timestamp
+  l_0_4 = string.lower(this_sigattrlog[4].utf8p1)
 end
 if StringStartsWith(l_0_1, "%") then
   return mp.CLEAN
@@ -30,4 +30,3 @@ if l_0_5 ~= nil and l_0_6 ~= nil and l_0_5 == l_0_6 and l_0_0 < l_0_3 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

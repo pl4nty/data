@@ -1,13 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaContextPossibleDllPreloadingB\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:Context/PossibleDllPreloading.B
+-- Type: 10
+-- Includes: Path
+-- MpAttributes: MpOnOpenOrCloseRtpScan & RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+local l_0_1 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_FILENAME))
 if l_0_1 == nil or #l_0_1 < 4 then
   return mp.CLEAN
 end
@@ -15,63 +16,62 @@ local l_0_2 = "winbio.dll|amsi.dll|wldp.dll|hid.dll|activeds.dll|credui.dll|dpx.
 if not l_0_2:find(l_0_1, 1, true) then
   return mp.CLEAN
 end
-local l_0_3 = {}
-local l_0_4 = {}
-l_0_4.AttributeName = "Lua:Bioload"
-local l_0_5 = {}
-l_0_5.BM_FaceFodUninstaller_EXE = ""
-l_0_4.ContextNameList = l_0_5
-l_0_4.CleanPathList, l_0_5 = l_0_5, {["%windir%\\system32"] = "", ["%windir%\\syswow64"] = ""}
-l_0_3["winbio.dll"] = l_0_4
-l_0_5 = {BM_POWERSHELL_EXE = ""}
-l_0_5 = {["%windir%\\system32"] = "", ["%windir%\\syswow64"] = ""}
-l_0_3["amsi.dll"], l_0_4 = l_0_4, {AttributeName = "Lua:AmsiPreload", ContextNameList = l_0_5, CleanPathList = l_0_5}
-l_0_5 = {BM_RUNDLL32_EXE = ""}
-l_0_5 = {["%windir%\\system32"] = "", ["%windir%\\syswow64"] = ""}
-l_0_3["wldp.dll"], l_0_4 = l_0_4, {AttributeName = "Lua:wldpBypass", ContextNameList = l_0_5, CleanPathList = l_0_5}
-l_0_5 = {BM_OSK_EXE = ""}
-l_0_5 = {["%programfiles%\\common files\\microsoft shared\\ink"] = ""}
-l_0_5 = {["%windir%\\system32"] = "", ["%windir%\\syswow64"] = ""}
-l_0_3["hid.dll"], l_0_4 = l_0_4, {AttributeName = "Lua:hidPreload", ContextNameList = l_0_5, SuspPathList = l_0_5, CleanPathList = l_0_5}
-l_0_4 = l_0_3[l_0_1]
-if l_0_4 == nil then
-  l_0_4 = mp
-  l_0_4 = l_0_4.CLEAN
-  return l_0_4
+local l_0_3 = {
+  ["winbio.dll"] = {
+    AttributeName = "Lua:Bioload",
+    ContextNameList = {BM_FaceFodUninstaller_EXE = ""},
+    CleanPathList = {
+      ["%windir%\\system32"] = "",
+      ["%windir%\\syswow64"] = ""
+    }
+  },
+  ["amsi.dll"] = {
+    AttributeName = "Lua:AmsiPreload",
+    ContextNameList = {BM_POWERSHELL_EXE = ""},
+    CleanPathList = {
+      ["%windir%\\system32"] = "",
+      ["%windir%\\syswow64"] = ""
+    }
+  },
+  ["wldp.dll"] = {
+    AttributeName = "Lua:wldpBypass",
+    ContextNameList = {BM_RUNDLL32_EXE = ""},
+    CleanPathList = {
+      ["%windir%\\system32"] = "",
+      ["%windir%\\syswow64"] = ""
+    }
+  },
+  ["hid.dll"] = {
+    AttributeName = "Lua:hidPreload",
+    ContextNameList = {BM_OSK_EXE = ""},
+    SuspPathList = {
+      ["%programfiles%\\common files\\microsoft shared\\ink"] = ""
+    },
+    CleanPathList = {
+      ["%windir%\\system32"] = "",
+      ["%windir%\\syswow64"] = ""
+    }
+  }
+}
+if l_0_3[l_0_1] == nil then
+  return mp.CLEAN
 end
-l_0_4 = "Lua:Preload"
-l_0_5 = l_0_3[l_0_1]
-l_0_5 = l_0_5.AttributeName
-if l_0_5 ~= nil then
-  l_0_5 = l_0_3[l_0_1]
-  l_0_4 = l_0_5.AttributeName
+local l_0_4 = "Lua:Preload"
+if l_0_3[l_0_1].AttributeName ~= nil then
+  l_0_4 = l_0_3[l_0_1].AttributeName
 end
-l_0_5 = l_0_3[l_0_1]
-l_0_5 = l_0_5.ContextNameList
-if l_0_5 == nil then
-  l_0_5 = mp
-  l_0_5 = l_0_5.CLEAN
-  return l_0_5
+if l_0_3[l_0_1].ContextNameList == nil then
+  return mp.CLEAN
 end
-l_0_5 = l_0_3[l_0_1]
-l_0_5 = l_0_5.CleanPathList
-if l_0_5 == nil then
-  l_0_5 = l_0_3[l_0_1]
-  l_0_5 = l_0_5.SuspPathList
-  if l_0_5 == nil then
-    l_0_5 = mp
-    l_0_5 = l_0_5.CLEAN
-    return l_0_5
-  end
+if l_0_3[l_0_1].CleanPathList == nil and l_0_3[l_0_1].SuspPathList == nil then
+  return mp.CLEAN
 end
-l_0_5 = mp
-l_0_5 = l_0_5.getfilename
-l_0_5 = l_0_5(mp.FILEPATH_QUERY_LOWERCASE)
+local l_0_5 = mp.getfilename(mp.FILEPATH_QUERY_LOWERCASE)
 if l_0_5 == nil or #l_0_5 < 1 then
   return mp.CLEAN
 end
 l_0_5 = normalize_path(l_0_5)
-local l_0_6 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSDEVICEPATH))
+local l_0_6 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_PROCESSDEVICEPATH))
 if l_0_6 == nil or #l_0_6 < 1 then
   return mp.CLEAN
 end
@@ -80,39 +80,36 @@ if l_0_5 ~= l_0_6 then
   return mp.CLEAN
 end
 local l_0_7 = ""
-if (l_0_3[l_0_1]).CleanPathList ~= nil then
-  for l_0_11,l_0_12 in pairs((l_0_3[l_0_1]).CleanPathList) do
-    if normalize_path((mp.ContextualExpandEnvironmentVariables)(l_0_11)) == l_0_5 then
+if l_0_3[l_0_1].CleanPathList ~= nil then
+  for l_0_8, l_0_9 in pairs(l_0_3[l_0_1].CleanPathList) do
+    local l_0_10 = normalize_path(mp.ContextualExpandEnvironmentVariables(l_0_8))
+    if l_0_10 == l_0_5 then
       return mp.CLEAN
     end
   end
   l_0_7 = "NotInCleanPathList"
 end
-if (l_0_3[l_0_1]).SuspPathList ~= nil then
-  for l_0_16,l_0_17 in pairs((l_0_3[l_0_1]).SuspPathList) do
-    if normalize_path((mp.ContextualExpandEnvironmentVariables)(l_0_16)) == l_0_5 then
+if l_0_3[l_0_1].SuspPathList ~= nil then
+  for l_0_11, l_0_12 in pairs(l_0_3[l_0_1].SuspPathList) do
+    if normalize_path(mp.ContextualExpandEnvironmentVariables(l_0_11)) == l_0_5 then
       l_0_7 = "SuspPathList"
       break
     end
   end
 end
-do
-  local l_0_18 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-  if l_0_18 == nil or #l_0_18 == 0 then
-    return mp.CLEAN
-  end
-  local l_0_19 = l_0_6 .. "\\" .. l_0_18
-  for l_0_23,l_0_24 in pairs((l_0_3[l_0_1]).ContextNameList) do
-    if (MpCommon.QueryPersistContext)(l_0_19, l_0_23) then
-      local l_0_25 = l_0_4 .. "_" .. l_0_23 .. "!" .. l_0_7
-      if #l_0_25 > 62 then
-        return mp.CLEAN
-      end
-      ;
-      (mp.set_mpattribute)(l_0_25)
-      return mp.INFECTED
-    end
-  end
+local l_0_13 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME))
+if l_0_13 == nil or #l_0_13 == 0 then
   return mp.CLEAN
 end
-
+local l_0_14 = l_0_6 .. "\\" .. l_0_13
+for l_0_15, l_0_16 in pairs(l_0_3[l_0_1].ContextNameList) do
+  if MpCommon.QueryPersistContext(l_0_14, l_0_15) then
+    local l_0_17 = l_0_4 .. "_" .. l_0_15 .. "!" .. l_0_7
+    if 62 < #l_0_17 then
+      return mp.CLEAN
+    end
+    mp.set_mpattribute(l_0_17)
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN

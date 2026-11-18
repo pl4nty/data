@@ -1,22 +1,22 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaRemoteCopyExclusions\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:RemoteCopyExclusions
+-- Type: 12
+-- MpAttributes: Lua:NewWrittenBySystemProcess | Lua:DroppedByPossibleRemotelyCreatedProc
 
--- params : ...
--- function num : 0
-local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
-local l_0_2 = (mp.getfilesize)()
+local l_0_0, l_0_1 = mp.getfilename(mp.bitor(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_2 = mp.getfilesize()
 local l_0_3 = l_0_1:sub(-3)
 local l_0_4 = "tmf|emf|wmf|ost|spl|off|bak|m4a|mp4|mp3|bmp|avi|kgx|idx|etl|log|ico|ttf|qml|bak|dat|"
 if l_0_4:find(l_0_3, 1, true) then
   return mp.INFECTED
 end
-if (mp.get_mpattribute)("Lua:PeInExcludedOsPath") then
+if mp.get_mpattribute("Lua:PeInExcludedOsPath") then
   return mp.INFECTED
 end
-if (mp.get_mpattribute)("Lua:TTExclusion") then
+if mp.get_mpattribute("Lua:TTExclusion") then
   return mp.INFECTED
 end
-if l_0_2 > 268435456 then
+if 268435456 < l_0_2 then
   return mp.INFECTED
 end
 local l_0_5 = "cachedata|moduleanalysiscache|ntbtlog.txt|remcomsvc.exe|install_fsprocsvc.exe|remoteauditservice.exe|fsprocsvc.exe|citrix workspace.lnk|user work log.lnk|oa user work log.lnk|.ses|local state|"
@@ -60,7 +60,7 @@ end
 if l_0_0:find("\\service worker\\cachestorage\\", 1, true) then
   return mp.INFECTED
 end
-if l_0_0:find("\\appdata\\", 1, true) and (l_0_2 < 54 or l_0_2 > 1048575) then
+if l_0_0:find("\\appdata\\", 1, true) and (l_0_2 < 54 or 1048575 < l_0_2) then
   return mp.INFECTED
 end
 if l_0_0:find("\\riskserver\\riskserver\\", 1, true) then
@@ -88,4 +88,3 @@ if l_0_0:find("\\technicalsolutions\\riskserver\\", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

@@ -1,18 +1,15 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\ffb3eb1ab7d7\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: ffb3eb1ab7d7
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
 local l_0_0 = mp.CLEAN
-if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 then
-  l_0_0 = reportGenericRansomware((this_sigattrlog[5]).utf8p2)
-else
-  if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p2 then
-    l_0_0 = reportGenericRansomware((this_sigattrlog[6]).utf8p2)
-  end
+if this_sigattrlog[5].matched and this_sigattrlog[5].utf8p2 then
+  l_0_0 = reportGenericRansomware(this_sigattrlog[5].utf8p2)
+elseif this_sigattrlog[6].matched and this_sigattrlog[6].utf8p2 then
+  l_0_0 = reportGenericRansomware(this_sigattrlog[6].utf8p2)
 end
 if l_0_0 == mp.INFECTED then
   return mp.INFECTED
 end
 return mp.CLEAN
-

@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: d9d79063430e
+-- Type: 21
+
+if not mp.get_mpattribute("MpCmdLineFoundB64") then
+  return mp.CLEAN
+end
+return mp.INFECTED

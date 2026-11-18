@@ -1,10 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#TELPERSuspTamperJ\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#TELPER:SuspTamper.J
+-- Type: 24
+-- MpAttributes: RPF:TopLevelFile & (Lua:PS1Ext | MpIsPowerShellAMSIScan)
 
--- params : ...
--- function num : 0
-if #(mp.enum_mpattributesubstring)("SCPT:SuspTamper.J") >= 3 then
+local l_0_0 = mp.enum_mpattributesubstring("SCPT:SuspTamper.J")
+if 3 <= #l_0_0 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

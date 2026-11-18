@@ -1,15 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\25b3ff96cbef\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 25b3ff96cbef
+-- Type: 21
+-- Includes: PrecisionPulseHelpers, BMLuaLib
 
--- params : ...
--- function num : 0
 local l_0_0, l_0_1 = pcall(MamadutReport)
 if not l_0_0 and l_0_1 then
-  (bm.add_related_string)("ErrorMamadutReport", l_0_1, bm.RelatedStringBMReport)
+  bm.add_related_string("ErrorMamadutReport", l_0_1, bm.RelatedStringBMReport)
 end
-l_0_0 = pcall(reportRelatedFilesFromBmEvents)
+l_0_0, l_0_1 = pcall(reportRelatedFilesFromBmEvents)
 if not l_0_0 and l_0_1 then
-  (bm.add_related_string)("ErrorBMreport", l_0_1, bm.RelatedStringBMReport)
+  bm.add_related_string("ErrorBMreport", l_0_1, bm.RelatedStringBMReport)
 end
 return mp.INFECTED
-

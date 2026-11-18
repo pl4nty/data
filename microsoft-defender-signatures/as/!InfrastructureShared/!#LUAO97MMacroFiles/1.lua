@@ -1,33 +1,32 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LUAO97MMacroFiles\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#LUA:O97M/MacroFiles
+-- Type: 13
+-- MpAttributes: MHSTR:MacroInside
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 10240000 then
+local l_0_0 = mp.getfilesize()
+if 10240000 <= l_0_0 then
   return mp.CLEAN
 end
 if l_0_0 < 102400 then
-  (mp.set_mpattribute)("LUA:O97M/MacroFiles_FileSizeBorder")
+  mp.set_mpattribute("LUA:O97M/MacroFiles_FileSizeBorder")
 else
-  do
-    -- DECOMPILER ERROR at PC68: Unhandled construct in 'MakeBoolean' P3
-
-    if (((((not (mp.get_mpattribute)("MHSTR:MacroJustEnviron") and not (mp.get_mpattribute)("MHSTR:MacroGetEnvironmentVariable")) or (mp.get_mpattribute)("MHSTR:MacroExecute")) and (mp.get_mpattribute)("MHSTR:MacroDownload")) or (mp.get_mpattribute)("MHSTR:MacroHTTPRequest")) and (mp.get_mpattribute)("MHSTR:MacroConcatVariations")) or (mp.get_mpattribute)("MHSTR:MacroJustConcatChrVariations") then
-      local l_0_1, l_0_2, l_0_3 = 0 + 1 + 1 + 1 + 1
-    end
-    -- DECOMPILER ERROR at PC70: Confused about usage of register: R1 in 'UnsetPending'
-
-    if l_0_0 < 1024000 and l_0_1 >= 2 then
-      (mp.set_mpattribute)("LUA:O97M/MacroFilesAttributeCheck.A")
-    else
-      -- DECOMPILER ERROR at PC77: Confused about usage of register: R1 in 'UnsetPending'
-
-      if l_0_1 >= 3 then
-        (mp.set_mpattribute)("LUA:O97M/MacroFilesAttributeCheck.B")
-      end
-    end
-    return mp.CLEAN
+  local l_0_1 = 0
+  if mp.get_mpattribute("MHSTR:MacroJustEnviron") or mp.get_mpattribute("MHSTR:MacroGetEnvironmentVariable") then
+    l_0_1 = l_0_1 + 1
+  end
+  if mp.get_mpattribute("MHSTR:MacroExecute") then
+    l_0_1 = l_0_1 + 1
+  end
+  if mp.get_mpattribute("MHSTR:MacroDownload") or mp.get_mpattribute("MHSTR:MacroHTTPRequest") then
+    l_0_1 = l_0_1 + 1
+  end
+  if mp.get_mpattribute("MHSTR:MacroConcatVariations") or mp.get_mpattribute("MHSTR:MacroJustConcatVariations") or mp.get_mpattribute("MHSTR:MacroJustConcatChrVariations") then
+    l_0_1 = l_0_1 + 1
+  end
+  if l_0_0 < 1024000 and 2 <= l_0_1 then
+    mp.set_mpattribute("LUA:O97M/MacroFilesAttributeCheck.A")
+  elseif 3 <= l_0_1 then
+    mp.set_mpattribute("LUA:O97M/MacroFilesAttributeCheck.B")
   end
 end
-
+return mp.CLEAN

@@ -1,13 +1,11 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaLegacyOrgMachine\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:LegacyOrgMachine
+-- Type: 12
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
 if IsLegacyOrgMachine() == true then
-  (mp.set_mpattribute)("Lua:TTExclusion")
+  mp.set_mpattribute("Lua:TTExclusion")
   return mp.INFECTED
 end
-;
-(mp.set_mpattribute)("Lua:IsNotLegacyOrgMachine")
+mp.set_mpattribute("Lua:IsNotLegacyOrgMachine")
 return mp.CLEAN
-

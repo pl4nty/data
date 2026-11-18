@@ -1,29 +1,38 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\47d7afda136d\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 47d7afda136d
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-local l_0_0, l_0_1 = nil, nil
-local l_0_2 = nil
-if not (mp.GetScannedPPID)() then
+local l_0_0, l_0_1
+local l_0_2 = mp.GetScannedPPID()
+if not l_0_2 then
   return mp.CLEAN
 end
-local l_0_3 = nil
-if not (mp.GetProcessCommandLine)((mp.GetScannedPPID)()) or #(mp.GetProcessCommandLine)((mp.GetScannedPPID)()) <= 10 then
+local l_0_3 = mp.GetProcessCommandLine(l_0_2)
+if not l_0_3 or #l_0_3 <= 10 then
   return mp.CLEAN
 end
-l_0_3 = (string.match)((mp.GetProcessCommandLine)((mp.GetScannedPPID)()), "echo%s+[\'\"]?([A-Za-z0-9/%+=]+)[\'\"]?")
-if l_0_3 == nil then
+l_0_1 = string.match(l_0_3, "echo%s+['\"]?([A-Za-z0-9/%+=]+)['\"]?")
+if l_0_1 == nil then
   return mp.CLEAN
 end
-l_0_2 = (MpCommon.Base64Decode)(l_0_3)
-if l_0_2 == nil then
+l_0_0 = MpCommon.Base64Decode(l_0_1)
+if l_0_0 == nil then
   return mp.CLEAN
 end
-l_0_2 = l_0_2:lower()
-local l_0_4 = nil
-if contains(l_0_2, {"invoke-webrequest", "invoke-expression", "| invoke-expression", "|iex", "| iex", "iwr ", "downloaddata", "net.webclient", "iex(["}) then
+l_0_0 = l_0_0:lower()
+local l_0_4 = {
+  "invoke-webrequest",
+  "invoke-expression",
+  "| invoke-expression",
+  "|iex",
+  "| iex",
+  "iwr ",
+  "downloaddata",
+  "net.webclient",
+  "iex(["
+}
+if contains(l_0_0, l_0_4) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

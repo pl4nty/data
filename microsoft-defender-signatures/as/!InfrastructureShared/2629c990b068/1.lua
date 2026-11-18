@@ -1,9 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2629c990b068\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 2629c990b068
+-- Type: 21
+-- Includes: ResearchData
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetBruteMatchData)()
+local l_0_0 = mp.GetBruteMatchData()
 if l_0_0.match_offset == 0 then
   return mp.CLEAN
 end
@@ -11,9 +11,9 @@ local l_0_1 = l_0_0.match_offset + 1
 local l_0_2 = 128
 local l_0_3 = ""
 if l_0_0.is_header then
-  l_0_3 = (mp.readheader)(l_0_1, l_0_1 + l_0_2)
+  l_0_3 = mp.readheader(l_0_1, l_0_1 + l_0_2)
 else
-  l_0_3 = (mp.readfooter)(l_0_1, l_0_1 + l_0_2)
+  l_0_3 = mp.readfooter(l_0_1, l_0_1 + l_0_2)
 end
 if l_0_3 ~= "" then
   local l_0_4 = l_0_3:find(">", 1, true)
@@ -25,13 +25,10 @@ if l_0_3 ~= "" then
       if l_0_7 == nil then
         return mp.CLEAN
       end
-      local l_0_8 = (MpCommon.Base64Encode)(l_0_7)
+      local l_0_8 = MpCommon.Base64Encode(l_0_7)
       set_research_data("OFFCM:", l_0_8, false)
       return mp.INFECTED
     end
   end
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

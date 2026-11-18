@@ -1,0 +1,11 @@
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:Virus:Win32/Nabucur
+-- Type: 8
+
+if peattributes.isexe and peattributes.x86_image and peattributes.epscn_writable and peattributes.suspicious_image_version and peattributes.epsec_not_executable and peattributes.no_imports_dir and peattributes.no_iat and pehdr.NumberOfSections <= 2 and pesecs[pevars.epsec].Characteristics == 3221487648 then
+  mp.set_mpattribute("LoD:Virus:Win32/Nabucur.B")
+end
+if peattributes.isexe and peattributes.x86_image and peattributes.epatstartentrysect and peattributes.epinfirstsect and peattributes.suspicious_image_version and pehdr.NumberOfSections <= 4 and not peattributes.hasstandardentry and pesecs[pevars.epsec].PointerToRawData == 1536 and pesecs[pevars.epsec].Characteristics == 1610612768 then
+  mp.set_mpattribute("LoD:Virus:Win32/Nabucur.C")
+end
+return mp.CLEAN

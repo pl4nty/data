@@ -1,10 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFPERTrojanScriptSilverCandleA!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALFPER:Trojan:Script/SilverCandle.A!dha
+-- Type: 13
+-- MpAttributes: SCPT:SilverCandle.A1 | SCPT:SilverCandle.A2 | SCPT:SilverCandle.A3 | SCPT:SilverCandle.A4
 
--- params : ...
--- function num : 0
-if #(mp.enum_mpattributesubstring)("SCPT:SilverCandle.A") >= 2 then
+if #mp.enum_mpattributesubstring("SCPT:SilverCandle.A") >= 2 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

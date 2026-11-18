@@ -1,15 +1,16 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanWin32QueryAgePrev\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:Trojan:Win32/QueryAgePrev
+-- Type: 13
+-- Includes: AgePrevalence
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-local l_0_0 = nil
-local l_0_1 = nil
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN and (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_UNKNOWN then
-    if (mp.GetResmgrBasePlugin)() == "file" then
-      l_0_1 = (mp.getfilename)()
-      if not (sysio.IsFileExists)(l_0_1) then
+local l_0_0
+local l_0_1 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
+if l_0_1 ~= mp.SCANREASON_ONOPEN and l_0_1 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  if l_0_1 == mp.SCANREASON_UNKNOWN then
+    if mp.GetResmgrBasePlugin() == "file" then
+      l_0_0 = mp.getfilename()
+      if not sysio.IsFileExists(l_0_0) then
         return mp.CLEAN
       end
     else
@@ -19,54 +20,48 @@ if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN and 
     return mp.CLEAN
   end
 end
-if l_0_1 == nil then
-  l_0_1 = (mp.getfilename)()
+if l_0_0 == nil then
+  l_0_0 = mp.getfilename()
 end
-if (mp.get_mpattribute)("agePrevQueried") then
-  if not (MpCommon.QueryPersistContext)(l_0_1, "agePrevQueried") then
-    (MpCommon.AppendPersistContext)(l_0_1, "agePrevQueried", 0)
+if mp.get_mpattribute("agePrevQueried") then
+  if not MpCommon.QueryPersistContext(l_0_0, "agePrevQueried") then
+    MpCommon.AppendPersistContext(l_0_0, "agePrevQueried", 0)
   end
   return mp.CLEAN
-else
-  if (MpCommon.QueryPersistContext)(l_0_1, "agePrevQueried") then
-    if not (mp.get_mpattribute)("agePrevQueried") then
-      (mp.set_mpattribute)("agePrevQueried")
-    end
-    return mp.CLEAN
-  end
-end
-if (mp.get_mpattributevalue)("Lua:FmsAgeInDays") ~= nil then
-  if not (mp.get_mpattribute)("agePrevQueried") then
-    (mp.set_mpattribute)("agePrevQueried")
-  end
-  if not (MpCommon.QueryPersistContext)(l_0_1, "agePrevQueried") then
-    (MpCommon.AppendPersistContext)(l_0_1, "agePrevQueried", 0)
+elseif MpCommon.QueryPersistContext(l_0_0, "agePrevQueried") then
+  if not mp.get_mpattribute("agePrevQueried") then
+    mp.set_mpattribute("agePrevQueried")
   end
   return mp.CLEAN
 end
-local l_0_2, l_0_3 = , getAgePrev(false)
-if l_0_3 > -1 and false > -1 then
-  if not (mp.get_mpattribute)("agePrevQueried") then
-    (mp.set_mpattribute)("agePrevQueried")
+if mp.get_mpattributevalue("Lua:FmsAgeInDays") ~= nil then
+  if not mp.get_mpattribute("agePrevQueried") then
+    mp.set_mpattribute("agePrevQueried")
   end
-  if not (MpCommon.QueryPersistContext)(l_0_1, "agePrevQueried") then
-    (MpCommon.AppendPersistContext)(l_0_1, "agePrevQueried", 0)
+  if not MpCommon.QueryPersistContext(l_0_0, "agePrevQueried") then
+    MpCommon.AppendPersistContext(l_0_0, "agePrevQueried", 0)
   end
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("queryAgePrev") or (MpCommon.QueryPersistContext)(l_0_1, "queryAgePrev") then
-  (mp.set_mpattribute)("agePrevQueried")
-  ;
-  (MpCommon.AppendPersistContext)(l_0_1, "agePrevQueried", 0)
+local l_0_2, l_0_3 = getAgePrev(false)
+if -1 < l_0_2 and -1 < l_0_3 then
+  if not mp.get_mpattribute("agePrevQueried") then
+    mp.set_mpattribute("agePrevQueried")
+  end
+  if not MpCommon.QueryPersistContext(l_0_0, "agePrevQueried") then
+    MpCommon.AppendPersistContext(l_0_0, "agePrevQueried", 0)
+  end
+  return mp.CLEAN
+end
+if mp.get_mpattribute("queryAgePrev") or MpCommon.QueryPersistContext(l_0_0, "queryAgePrev") then
+  mp.set_mpattribute("agePrevQueried")
+  MpCommon.AppendPersistContext(l_0_0, "agePrevQueried", 0)
   return mp.INFECTED
 end
-if (mp.get_mpattribute)("disableCachingQueryAgePrev") or (MpCommon.QueryPersistContext)(l_0_1, "disableCachingQueryAgePrev") then
-  (mp.set_mpattribute)("MpDisableCaching")
-  ;
-  (mp.set_mpattribute)("agePrevQueried")
-  ;
-  (MpCommon.AppendPersistContext)(l_0_1, "agePrevQueried", 0)
+if mp.get_mpattribute("disableCachingQueryAgePrev") or MpCommon.QueryPersistContext(l_0_0, "disableCachingQueryAgePrev") then
+  mp.set_mpattribute("MpDisableCaching")
+  mp.set_mpattribute("agePrevQueried")
+  MpCommon.AppendPersistContext(l_0_0, "agePrevQueried", 0)
   return mp.INFECTED
 end
 return mp.CLEAN
-

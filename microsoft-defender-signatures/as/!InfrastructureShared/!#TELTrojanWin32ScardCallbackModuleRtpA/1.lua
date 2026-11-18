@@ -1,15 +1,12 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#TELTrojanWin32ScardCallbackModuleRtpA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#TEL:Trojan:Win32/ScardCallbackModuleRtp.A
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & BM_MZ_DLL & HSTR:ScardCallbackContent & MpOnOpenOrCloseRtpScan
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("MpDisableCaching")
-;
-(mp.set_mpattribute)("MpInternal_researchdata=ScardCallbackRtpScanReason=" .. tostring(l_0_0))
+mp.set_mpattribute("MpDisableCaching")
+mp.set_mpattribute("MpInternal_researchdata=ScardCallbackRtpScanReason=" .. tostring(l_0_0))
 return mp.INFECTED
-

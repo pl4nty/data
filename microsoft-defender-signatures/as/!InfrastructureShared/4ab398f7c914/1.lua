@@ -1,12 +1,12 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\4ab398f7c914\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 4ab398f7c914
+-- Type: 21
+-- Includes: TechniqueTracker, BMLuaLib
 
--- params : ...
--- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0 = (this_sigattrlog[1]).utf8p1
-  local l_0_1 = (string.match)(l_0_0, "<Command>(.*)</Command>")
-  local l_0_2 = (string.match)(l_0_0, "<Arguments>(.*)</Arguments>")
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p1 ~= nil and this_sigattrlog[1].utf8p2 ~= nil then
+  local l_0_0 = this_sigattrlog[1].utf8p1
+  local l_0_1 = string.match(l_0_0, "<Command>(.*)</Command>")
+  local l_0_2 = string.match(l_0_0, "<Arguments>(.*)</Arguments>")
   if l_0_1 ~= nil then
     if l_0_2 ~= nil then
       l_0_1 = l_0_1 .. " " .. l_0_2
@@ -16,7 +16,4 @@ if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil and (this
     return mp.INFECTED
   end
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

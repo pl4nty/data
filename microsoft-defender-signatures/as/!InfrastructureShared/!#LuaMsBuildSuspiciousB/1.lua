@@ -1,18 +1,17 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaMsBuildSuspiciousB\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:MsBuildSuspicious.B
+-- Type: 13
+-- MpAttributes: Lua:DLLExt & Lua:DllWithNoExportTable & RPF:TopLevelFile & SLFPER:MSIL/B64VmAlloc.B
 
--- params : ...
--- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
+if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if not (string.find)(l_0_0, "\\temp\\", 1, true) then
+local l_0_0 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if not string.find(l_0_0, "\\temp\\", 1, true) then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+local l_0_1 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME))
 if l_0_1 ~= "msbuild.exe" and l_0_1 ~= "installutil.exe" then
   return mp.CLEAN
 end
 return mp.INFECTED
-

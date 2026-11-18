@@ -1,12 +1,11 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\81b3493fba36\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 81b3493fba36
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper
 
--- params : ...
--- function num : 0
 pcallEx("BlockC2Connection", BlockC2Connection, "cobaltstrike_j")
 pcallEx("triggerMemoryScanOnProcessTree", triggerMemoryScanOnProcessTree, false, true, "SMS_H", 5000, "Behavior:Win32/CobaltStrike.J!sms")
 pcallEx("reportRelatedBmHits", reportRelatedBmHits)
 pcallEx("addChildrenAsThreat", addChildrenAsThreat)
 reportPcallEx()
 return mp.INFECTED
-

@@ -1,23 +1,17 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaSuspiciousPdfFilename\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#LUA:SuspiciousPDFFileName
+-- Type: 13
+-- MpAttributes: BM_PDF_FILE & SCPT:Spammer:PDF/Anonmail_Tit
 
--- params : ...
--- function num : 0
-local l_0_0, l_0_1 = nil, nil
-local l_0_2 = nil
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN or (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-  l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
+local l_0_0 = mp.getfilename(mp.FILEPATH_QUERY_LOWERCASE)
+local l_0_1 = mp.getfilesize()
+if l_0_1 < 65536 and 327680 < l_0_1 then
+  return mp.CLEAN
 end
-if l_0_2 == nil then
-  if (string.lower)((mp.getfilename)()) == nil then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC33: Confused about usage of register: R1 in 'UnsetPending'
-
-  l_0_2 = ((string.lower)((mp.getfilename)())):match("([^\\]+)$")
+if l_0_0 == nil or string.len(l_0_0) <= 5 then
+  return mp.CLEAN
 end
-if l_0_2 ~= nil and ((string.match)(l_0_2, "^confidential") or (string.match)(l_0_2, "^dhl") or (string.match)(l_0_2, "^fidelity") or (string.match)(l_0_2, "^fedex") or (string.match)(l_0_2, "^freemobile") or (string.match)(l_0_2, "^invoice") or (string.match)(l_0_2, "^parcel") or (string.match)(l_0_2, "^payment") or (string.match)(l_0_2, "^po.#") or (string.match)(l_0_2, "^po.+order") or (string.match)(l_0_2, "^po%d%d%d%d") or (string.match)(l_0_2, "^purchase.order") or (string.match)(l_0_2, "^quotation") or (string.match)(l_0_2, "^%d%d%d%d%d%d%d.pdf") or (string.match)(l_0_2, "^document.%d+") or (string.match)(l_0_2, "^shipment") or (string.match)(l_0_2, "pending.+deposit") or (string.match)(l_0_2, "mailbox.maintenance") or (string.match)(l_0_2, "account.safety") or (string.match)(l_0_2, "acct.review") or (string.match)(l_0_2, "delivery.details") or (string.match)(l_0_2, "important.update") or (string.match)(l_0_2, "security.+mail") or (string.match)(l_0_2, "bank.transaction") or (string.match)(l_0_2, "account.verification") or (string.match)(l_0_2, "money.transfer") or (string.match)(l_0_2, "money.+confirmation") or (string.match)(l_0_2, "new.order") or (string.match)(l_0_2, "notification.letter") or (string.match)(l_0_2, "violation.message") or (string.match)(l_0_2, "transfer.instruction") or (string.match)(l_0_2, "doc.pdf") or (string.match)(l_0_2, "new.message") or (string.match)(l_0_2, "new.purchase")) then
+if string.find(l_0_0, "output%.%d%d%d%d%d%d%d+%.txt") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN
-

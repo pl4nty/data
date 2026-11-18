@@ -1,10 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaVBHasExpensiveLoop\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:VBHasExpensiveLoop
+-- Type: 10
+-- MpAttributes: MpHasExpensiveLoop
 
--- params : ...
--- function num : 0
 if peattributes.isvbnative == true then
-  (mp.set_mpattribute)("Lua:VBHasExpensiveLoop")
+  mp.set_mpattribute("Lua:VBHasExpensiveLoop")
 end
 return mp.CLEAN
-

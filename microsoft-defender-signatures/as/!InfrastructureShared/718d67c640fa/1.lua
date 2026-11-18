@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: 718d67c640fa
+-- Type: 21
+
+if mp.HSTR_WEIGHT >= 3 then
+  mp.set_mpattribute("PUA:Block:Shopsmart.B")
+  return mp.INFECTED
+end
+return mp.LOWFI

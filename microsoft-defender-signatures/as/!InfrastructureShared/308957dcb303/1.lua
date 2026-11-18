@@ -1,0 +1,7 @@
+-- Threat: !InfrastructureShared
+-- Name: 308957dcb303
+-- Type: 21
+
+pe.mmap_patch_va(pevars.sigaddr + 19, "3\246")
+pe.mmap_patch_va(pevars.sigaddr + 30, "\000\001\000")
+return mp.INFECTED

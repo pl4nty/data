@@ -1,10 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaSingleFileLnkInZip\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:SingleFileLnkInZip
+-- Type: 13
+-- MpAttributes: Lua:LNKExt
 
--- params : ...
--- function num : 0
-if (mp.UfsGetMetadataBool)("Lua:SingleFileInZip", true) ~= 0 or not "Lua:SingleFileInZip" then
+local l_0_0, l_0_1 = mp.UfsGetMetadataBool("Lua:SingleFileInZip", true)
+if l_0_0 ~= 0 or not l_0_1 then
   return mp.CLEAN
 end
 return mp.INFECTED
-

@@ -1,0 +1,105 @@
+-- Threat: !InfrastructureShared
+-- Name: !#LUA:FileSizes.A
+-- Type: 12
+
+local l_0_0 = mp.getfilesize()
+if l_0_0 <= 256 then
+  mp.set_mpattribute("LUA:FileSizeLE100.A")
+  return mp.CLEAN
+end
+if l_0_0 <= 512 then
+  mp.set_mpattribute("LUA:FileSizeLE200.A")
+  return mp.CLEAN
+end
+if l_0_0 <= 1024 then
+  mp.set_mpattribute("LUA:FileSizeLE400.A")
+  return mp.CLEAN
+end
+if l_0_0 <= 2048 then
+  mp.set_mpattribute("LUA:FileSizeLE800.A")
+  return mp.CLEAN
+end
+if l_0_0 <= 4096 then
+  mp.set_mpattribute("LUA:FileSizeLE1000.A")
+  return mp.CLEAN
+else
+  mp.set_mpattribute("LUA:FileSizeGE1000.A")
+end
+if l_0_0 <= 8192 then
+  mp.set_mpattribute("LUA:FileSizeLE2000.A")
+  return mp.CLEAN
+end
+if l_0_0 <= 20480 then
+  mp.set_mpattribute("LUA:FileSizeLE5000.A")
+  return mp.CLEAN
+else
+  mp.set_mpattribute("LUA:FileSizeGT5000.A")
+end
+if l_0_0 <= 65536 then
+  mp.set_mpattribute("LUA:FileSizeLE10000.A")
+  return mp.CLEAN
+end
+if 131072 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT20000.A")
+else
+  mp.set_mpattribute("LUA:FileSizeLE20000.A")
+  return mp.CLEAN
+end
+if 262144 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT40000.A")
+else
+  mp.set_mpattribute("LUA:FileSizeLE40000.A")
+  return mp.CLEAN
+end
+if 524288 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT80000.A")
+else
+  mp.set_mpattribute("LUA:FileSizeLE80000.A")
+  return mp.CLEAN
+end
+if 1048576 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT1M.A")
+else
+  mp.set_mpattribute("LUA:FileSizeLE1M.A")
+  return mp.CLEAN
+end
+if 2097152 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT2M.A")
+end
+if 4194304 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT4M.A")
+end
+if 8388608 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT8M.A")
+end
+if 10485760 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT10M.A")
+end
+if 12582912 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT12M.A")
+end
+if 33554432 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT20M.A")
+end
+if 67108864 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT40M.A")
+end
+if 268435456 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT100M.A")
+end
+if 268435456 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT256M.A")
+end
+if 300000000 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT300M.A")
+end
+if 500000000 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT500M.A")
+end
+if 1000000000 < l_0_0 then
+  mp.set_mpattribute("LUA:FileSizeGT1G.A")
+end
+if 50000 <= l_0_0 then
+  mp.set_mpattribute("Lua:FileSizeGEC350")
+end
+return mp.CLEAN

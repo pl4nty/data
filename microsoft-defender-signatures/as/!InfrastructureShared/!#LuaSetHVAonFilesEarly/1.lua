@@ -1,10 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaSetHVAonFilesEarly\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:SetHVAonFilesEarly
+-- Type: 12
+-- Includes: HvaLookupHelpers
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
 if IsDeviceHVA() then
-  (mp.set_mpattribute)("//Lua:IsDeviceHVA")
+  mp.set_mpattribute("//Lua:IsDeviceHVA")
 end
 return mp.CLEAN
-

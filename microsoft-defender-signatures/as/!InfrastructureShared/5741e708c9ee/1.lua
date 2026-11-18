@@ -1,159 +1,130 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\5741e708c9ee\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 5741e708c9ee
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper
 
--- params : ...
--- function num : 0
 local l_0_0 = {}
-local l_0_1 = (nri.GetRawRequestBlob)()
+local l_0_1 = nri.GetRawRequestBlob()
 if l_0_1 == nil then
   return mp.CLEAN
 end
-local l_0_2 = (string.lower)(l_0_1)
-do
-  local l_0_3 = {}
-  -- DECOMPILER ERROR at PC64: No list found for R3 , SetList fails
-
-  -- DECOMPILER ERROR at PC65: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC66: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC67: Overwrote pending register: R6 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC68: Overwrote pending register: R7 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC69: Overwrote pending register: R8 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC70: Overwrote pending register: R9 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC71: Overwrote pending register: R10 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC72: Overwrote pending register: R11 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC73: Overwrote pending register: R12 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC74: Overwrote pending register: R13 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC75: Overwrote pending register: R14 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC76: Overwrote pending register: R15 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC77: Overwrote pending register: R16 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC78: Overwrote pending register: R17 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC79: Overwrote pending register: R18 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC80: Overwrote pending register: R19 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC81: Overwrote pending register: R20 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC82: Overwrote pending register: R21 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC83: Overwrote pending register: R22 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC84: Overwrote pending register: R23 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC85: Overwrote pending register: R24 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC86: Overwrote pending register: R25 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC87: Overwrote pending register: R26 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC88: Overwrote pending register: R27 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC89: Overwrote pending register: R28 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC90: Overwrote pending register: R29 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC91: Overwrote pending register: R30 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC92: Overwrote pending register: R31 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC93: Overwrote pending register: R32 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC94: Overwrote pending register: R33 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC95: Overwrote pending register: R34 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC96: Overwrote pending register: R35 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC97: Overwrote pending register: R36 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC98: Overwrote pending register: R37 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC99: Overwrote pending register: R38 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC100: Overwrote pending register: R39 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC101: Overwrote pending register: R40 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC102: Overwrote pending register: R41 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC103: Overwrote pending register: R42 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC104: Overwrote pending register: R43 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC105: Overwrote pending register: R44 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC106: Overwrote pending register: R45 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC107: Overwrote pending register: R46 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC108: Overwrote pending register: R47 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC109: Overwrote pending register: R48 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC110: Overwrote pending register: R49 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC111: Overwrote pending register: R50 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC112: Overwrote pending register: R51 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC113: Overwrote pending register: R52 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC114: Overwrote pending register: R53 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC115: No list found for R3 , SetList fails
-
-  -- DECOMPILER ERROR at PC116: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC117: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC118: Overwrote pending register: R6 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC119: Overwrote pending register: R7 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC120: Overwrote pending register: R8 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC121: Overwrote pending register: R9 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC122: Overwrote pending register: R10 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC123: Overwrote pending register: R11 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC124: Overwrote pending register: R12 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC125: Overwrote pending register: R13 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC126: Overwrote pending register: R14 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC127: No list found for R3 , SetList fails
-
-  -- DECOMPILER ERROR at PC128: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC129: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC130: Overwrote pending register: R6 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC144: Overwrote pending register: R7 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC146: Overwrote pending register: R8 in 'AssignReg'
-
-  if ("\'%s*or%s*\'1\'%s*=%s*\'1")("\"%s*or%s*\"1\"%s*=%s*\"1", "\'%s*or%s*1%s*=%s*1") then
-    (nri.AddTelemetry)((mp.bitor)((mp.bitor)(("\"%s*or%s*1%s*=%s*1").Telemetry_HOSTNAME, ("%sor%s+1%s*=%s*1").Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
-    return mp.INFECTED
-  end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
+local l_0_2 = string.lower(l_0_1)
+local l_0_3 = {
+  "'%s*or%s*'1'%s*=%s*'1",
+  "\"%s*or%s*\"1\"%s*=%s*\"1",
+  "'%s*or%s*1%s*=%s*1",
+  "\"%s*or%s*1%s*=%s*1",
+  "%sor%s+1%s*=%s*1",
+  "%sand%s+1%s*=%s*1",
+  "'%s*or%s*true",
+  "'%s*and%s*true",
+  "'%s*or%s*false",
+  "'%s*and%s*false",
+  "or%s+true",
+  "and%s+true",
+  "or%s+false",
+  "and%s+false",
+  "is%s+null",
+  "is%s+not%s+null",
+  "union%s+select",
+  "union%s+all%s+select",
+  "select%s+.*%s+from",
+  ";%s*select",
+  ";%s*insert",
+  ";%s*update",
+  ";%s*delete",
+  ";%s*drop",
+  ";%s*create",
+  ";%s*alter",
+  ";%s*exec",
+  ";%s*execute",
+  ";%s*declare",
+  ";%s*with",
+  "sleep%s*%(",
+  "pg_sleep%s*%(",
+  "benchmark%s*%(",
+  "waitfor%s+delay",
+  "dbms_pipe%.receive_message%s*%(",
+  "case%s+when.-then%s+sleep%s*%(",
+  "case%s+when.-then%s+pg_sleep%s*%(",
+  "if%s*%(.+sleep%s*%(",
+  "if%s*%(.+pg_sleep%s*%(",
+  "select%s+case%s+when",
+  "information_schema",
+  "sqlite_master",
+  "pg_catalog",
+  "pg_tables",
+  "mysql%.user",
+  "sysobjects",
+  "syscolumns",
+  "sys%.databases",
+  "from%s+users",
+  "from%s+pg_",
+  "from%s+sqlite_",
+  "xp_cmdshell",
+  "xp_dirtree",
+  "sp_oacreate",
+  "openrowset%s*%(",
+  "load_file%s*%(",
+  "into%s+outfile",
+  "into%s+dumpfile",
+  "pg_read_file%s*%(",
+  "pg_ls_dir%s*%(",
+  "copy%s+.+%s+to%s+program",
+  "exec%s+xp_",
+  "'%s*or%s+",
+  "'%s*and%s+",
+  "\"%s*or%s+",
+  "\"%s*and%s+",
+  "[=%(,]%s*'",
+  "'%s*[%);]",
+  "\"%s*[%);]",
+  "select%s+",
+  "insert%s+into%s+",
+  "update%s+[%w_]+%s+set%s+",
+  "delete%s+from%s+",
+  "drop%s+table%s+",
+  "cast%s*%(",
+  "convert%s*%(",
+  "substring%s*%(",
+  "ascii%s*%(",
+  "char%s*%(",
+  "concat%s*%(",
+  "%%27%s*or%s*%%271%%27%s*%%3d%s*%%271",
+  "%%22%s*or%s*%%221%%22%s*%%3d%s*%%221",
+  "%%20union%%20select",
+  "%%3bselect",
+  "%%2d%%2d",
+  "%%23",
+  "%%20sleep%%28",
+  "%%20pg_sleep%%28",
+  "%%20benchmark%%28",
+  "%%2527",
+  "%%253b",
+  "%%252d%%252d",
+  "%%2523",
+  "union%s+all",
+  "with%s+[%w_]+%s+as",
+  "update%s+[%w_]+%s+set",
+  "set%s+[%w_]+%s*=",
+  "returning%s+",
+  "convert_from%s*%(",
+  "decode%s*%(",
+  "::[%w_]+",
+  "uid%s*=%s*1",
+  "or%s+true",
+  "and%s+true",
+  ":db_condition_placeholder",
+  "%:%w+_%w+_%w+",
+  "filter%[x%]%[condition%]%[path%]=",
+  "filter%[x%]%[condition%]%[operator%]=",
+  "filter%[x%]%[condition%]%[value%]",
+  "filter%[title%]=",
+  "filter%[%w+%]%[condition%]"
+}
+if contains(l_0_2, l_0_3) then
+  l_0_0.NRI_RequestBlob = tohex(l_0_2)
+  nri.AddTelemetry(mp.bitor(mp.bitor(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
+  return mp.INFECTED
 end
-
+return mp.CLEAN

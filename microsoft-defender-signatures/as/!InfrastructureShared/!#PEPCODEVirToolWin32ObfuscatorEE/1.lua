@@ -1,0 +1,76 @@
+-- Threat: !InfrastructureShared
+-- Name: !#PEPCODE:VirTool:Win32/Obfuscator.EE
+-- Type: 8
+
+if peattributes.epscn_writable ~= false then
+  return mp.CLEAN
+end
+if peattributes.packed ~= false then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if peattributes.isexe ~= true then
+  return mp.CLEAN
+end
+if peattributes.headerchecksum0 ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if pehdr.DataDirectory[1].RVA ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.DataDirectory[3].RVA ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.DataDirectory[6].RVA ~= 0 then
+  return mp.CLEAN
+end
+if peattributes.hasexports ~= false then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
+end
+if pevars.epsec > pehdr.NumberOfSections then
+  return mp.CLEAN
+end
+if pesecs[pevars.epsec].NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if epcode[1] ~= 233 then
+  return mp.CLEAN
+end
+if epcode[3] ~= 0 then
+  return mp.CLEAN
+end
+if epcode[4] ~= 0 then
+  return mp.CLEAN
+end
+if pesecs[pehdr.NumberOfSections].NameDW ~= 1920168494 then
+  return mp.CLEAN
+end
+if pesecs[pehdr.NumberOfSections].SizeOfRawData <= 64 then
+  return mp.CLEAN
+end
+if 64 >= pesecs[pehdr.NumberOfSections].VirtualSize then
+  return mp.CLEAN
+end
+mp.readprotection(false)
+local l_0_0 = mp.readfile(pe.foffset_rva(pesecs[pehdr.NumberOfSections].VirtualAddress), 32)
+if mp.readu_u32(l_0_0, 13) ~= 0 then
+  return mp.CLEAN
+end
+if mp.readu_u32(l_0_0, 17) ~= 0 then
+  return mp.CLEAN
+end
+if mp.readu_u32(l_0_0, 21) ~= 0 then
+  return mp.CLEAN
+end
+if mp.readu_u32(l_0_0, 25) ~= 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED

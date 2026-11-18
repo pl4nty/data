@@ -1,40 +1,46 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaVBSObfuscatorAA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:VBS/Obfuscator.AA
+-- Type: 13
+-- MpAttributes: ALFPER:VBS/Obfuscator.AA
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_parent_filehandle)()
-if (mp.is_handle_nil)(l_0_0) then
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
+
+local r0_0 = mp.get_parent_filehandle()
+if mp.is_handle_nil(r0_0) then
   return mp.CLEAN
 end
-local l_0_1 = (mp.get_filesize_by_handle)(l_0_0)
-if l_0_1 > 65536 then
+local r0_1 = mp.get_filesize_by_handle(r0_0)
+if r0_1 > 65536 then
   return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-local l_0_2 = (mp.readfile_by_handle)(l_0_0, 0, l_0_1)
-if l_0_2 == nil then
+mp.readprotection(false)
+local r0_2 = mp.readfile_by_handle(r0_0, 0, r0_1)
+if r0_2 == nil then
   return mp.CLEAN
 end
-l_0_2 = tostring(l_0_2)
-local l_0_3 = (string.match)(l_0_2, "%z\r%z\n%zS%zT%z %z=%z %z\"%z(.-)\"%z\r%z\n")
-if l_0_3 == nil then
+r0_2 = tostring(r0_2)
+local r0_3 = string.match(r0_2, '%z\r%z\n%zS%zT%z %z=%z %z"%z(.-)"%z\r%z\n')
+if r0_3 == nil then
   return mp.CLEAN
 end
-local l_0_4 = (string.match)(l_0_2, "%z\r%z\n%zN%zN%z %z=%z %z\"(.-)%z\"%z\r%z\n")
-if l_0_4 == nil then
+local r0_4 = string.match(r0_2, '%z\r%z\n%zN%zN%z %z=%z %z"(.-)%z"%z\r%z\n')
+if r0_4 == nil then
   return mp.CLEAN
 end
-local l_0_5 = 0
-for l_0_9 in l_0_4:gmatch("..") do
-  l_0_5 = l_0_5 + (string.byte)(l_0_9, 1, 2) * 256 + l_0_9
+local r0_5 = 0
+for r0_6 in r0_4:gmatch("..") do
+  local r0_7, r0_8 = string.byte(r0_6, 1, 2)
+  r0_5 = r0_5 + r0_7 * 256 + r0_8
 end
-local l_0_10 = ""
-for l_0_14 in l_0_3:gmatch("..") do
-  l_0_10 = l_0_10 .. (string.format)("%c", l_0_14 * 256 + (string.byte)(l_0_14, 1, 2) - (l_0_5) + (string.len)(l_0_4) / 2)
+local r0_9 = ""
+for r0_10 in r0_3:gmatch("..") do
+  local r0_11, r0_12 = string.byte(r0_10, 1, 2)
+  local r0_13 = r0_9
+  local r0_14 = string.format
+  local r0_15 = "%c"
+  local r0_16 = r0_12 * 256 + r0_11 - r0_5
+  r0_16 = r0_16 + string.len(r0_4) / 2
+  r0_9 = r0_13 .. r0_14(r0_15, r0_16)
 end
-;
-(mp.vfo_add_buffer)(l_0_10, "[Obfuscator.AA]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+mp.vfo_add_buffer(r0_9, "[Obfuscator.AA]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
 return mp.CLEAN
-

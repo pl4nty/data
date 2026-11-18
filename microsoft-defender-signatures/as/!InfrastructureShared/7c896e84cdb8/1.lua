@@ -1,0 +1,21 @@
+-- Threat: !InfrastructureShared
+-- Name: 7c896e84cdb8
+-- Type: 21
+
+local l_0_0 = pe.mmap_va(pevars.sigaddr, 80)
+local l_0_1 = mp.readu_u32(l_0_0, 33)
+if l_0_1 < pesecs[1].VirtualAddress or l_0_1 >= pesecs[pehdr.NumberOfSections].VirtualAddress + pesecs[pehdr.NumberOfSections].SizeOfRawData then
+  return mp.CLEAN
+end
+local l_0_2 = mp.readu_u16(l_0_0, 18)
+if l_0_2 < 32768 or 40960 < l_0_2 then
+  return mp.CLEAN
+end
+local l_0_3 = mp.readu_u16(l_0_0, 61)
+if l_0_3 < 49152 or 57344 < l_0_3 then
+  return mp.CLEAN
+end
+mp.set_mpattribute("PEBMPAT:Virus:Win32/Xpaj.gen!F")
+local l_0_4 = string.format("CURE:Virus:Win32/Xpaj.gen!F_%08X", l_0_1)
+mp.set_mpattribute(l_0_4)
+return mp.INFECTED

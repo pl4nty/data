@@ -1,9 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\19bb345912d3c\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 19bb345912d3c
+-- Type: 21
+-- Includes: TechniqueTracker, BMLuaLib
 
--- params : ...
--- function num : 0
-local l_0_0 = (bm.get_imagepath)()
+local l_0_0 = bm.get_imagepath()
 if l_0_0 ~= nil and isTainted(l_0_0, "remote_file_created_taint") then
   addRelatedProcess()
   reportRelatedBmHits()
@@ -11,4 +11,3 @@ if l_0_0 ~= nil and isTainted(l_0_0, "remote_file_created_taint") then
   return mp.INFECTED
 end
 return mp.CLEAN
-

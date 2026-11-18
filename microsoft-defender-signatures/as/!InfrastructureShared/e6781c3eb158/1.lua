@@ -1,10 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\e6781c3eb158\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: e6781c3eb158
+-- Type: 21
+-- Includes: HstrLuaLib
 
--- params : ...
--- function num : 0
-if (mp.GetHSTRCallerId)() == mp.HSTR_CALLER_SMS then
+if mp.GetHSTRCallerId() == mp.HSTR_CALLER_SMS then
   reportDetectedRegions()
 end
 return mp.INFECTED
-

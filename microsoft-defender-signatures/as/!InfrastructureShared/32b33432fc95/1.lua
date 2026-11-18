@@ -1,20 +1,17 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\32b33432fc95\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 32b33432fc95
+-- Type: 21
+-- Includes: LuaFuncHelper, BMLuaLib
 
--- params : ...
--- function num : 0
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 then
-  (bm.add_related_string)("Evidence", (this_sigattrlog[1]).utf8p2, bm.RelatedStringBMReport)
-  local l_0_0 = safeJsonDeserialize((this_sigattrlog[1]).utf8p2)
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 then
+  bm.add_related_string("Evidence", this_sigattrlog[1].utf8p2, bm.RelatedStringBMReport)
+  local l_0_0 = safeJsonDeserialize(this_sigattrlog[1].utf8p2)
   if l_0_0 and l_0_0.FilePath then
-    (bm.add_related_file)(l_0_0.FilePath)
+    bm.add_related_file(l_0_0.FilePath)
   end
 end
-do
-  local l_0_1, l_0_2 = pcall(reportBmInfo)
-  if not l_0_1 and l_0_2 then
-    (bm.add_related_string)("bmInfoFailReason", tostring(l_0_2), bm.RelatedStringBMReport)
-  end
-  return mp.INFECTED
+local l_0_1, l_0_2 = pcall(reportBmInfo)
+if not l_0_1 and l_0_2 then
+  bm.add_related_string("bmInfoFailReason", tostring(l_0_2), bm.RelatedStringBMReport)
 end
-
+return mp.INFECTED

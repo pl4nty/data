@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaNonPeMpAttributeML!Func\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:NonPeMpAttributeML!Func
+-- Type: 13
+-- MpAttributes: !MpNonPIIFileType & !MpAutoLowfiType & !TriggerCloudForFriendlyScans & !Lua:HTMLExt & !Lua:HTMExt
 
--- params : ...
--- function num : 0
-(mp.set_mpattribute)("Lua:NonPeMpAttributeML")
+mp.set_mpattribute("Lua:NonPeMpAttributeML")
 return mp.CLEAN
-

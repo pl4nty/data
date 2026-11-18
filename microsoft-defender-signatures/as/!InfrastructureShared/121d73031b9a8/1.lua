@@ -1,11 +1,11 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\121d73031b9a8\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 121d73031b9a8
+-- Type: 21
+-- Flags: 1
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0 = mp.GetParentProcInfo()
 if l_0_0 ~= nil then
   TrackPidAndTechnique(l_0_0.ppid, "T1562.001", "DefenseEvasion")
 end
 return mp.LOWFI
-

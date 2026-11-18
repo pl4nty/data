@@ -1,0 +1,34 @@
+-- Threat: !InfrastructureShared
+-- Name: 9241f726b2a5
+-- Type: 21
+
+if versioning.GetTestMode() ~= 65000 and versioning.IsSampled(1000, true, true, true) == false then
+  return mp.CLEAN
+end
+local l_0_0 = this_sigattrlog[5].utf8p1
+if not l_0_0:match("[%w%-%.]*%.[%w%-]+%.[%w]+") then
+  return mp.CLEAN
+end
+l_0_0 = string.lower(l_0_0)
+if not l_0_0 then
+  return mp.CLEAN
+end
+local l_0_1 = mp.bitand(this_sigattrlog[5].np2, 65535)
+local l_0_2 = "\001\002\003\004\005\006\a\b\t\n\v\f\r\014\015\016\017\018\019\020\021\022\023\024\025\026\027\028\029\030\031 !\"#$%&()*+,-./012345789:;<=>?cdefghijklm\249\250\251\252\253\254\255"
+local l_0_3 = l_0_2:find(string.char(l_0_1), 1, true)
+if l_0_3 then
+  return mp.CLEAN
+end
+local l_0_4, l_0_5 = mp.CheckUrl(l_0_0)
+if l_0_4 == 1 and l_0_5 == 1 then
+  return mp.CLEAN
+end
+local l_0_6 = MpCommon.QueryPersistContextNoPath("unknownDnsRecordType", l_0_0)
+if not l_0_6 then
+  MpCommon.AppendPersistContextNoPath("unknownDnsRecordType", l_0_0, 3600)
+end
+local l_0_7 = MpCommon.GetPersistContextCountNoPath("unknownDnsRecordType")
+if 10 < l_0_7 then
+  return mp.INFECTED
+end
+return mp.CLEAN

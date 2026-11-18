@@ -1,22 +1,22 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanWin64FlatSunA!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:Win64/FlatSun.A!dha
+-- Type: 10
+-- MpAttributes: BM_MZ_DLL & LUA:FileSizeLE4M.B & pea_headerchecksum0
 
--- params : ...
--- function num : 0
-if not (mp.get_mpattribute)("Lua:FnameAttr!radcui.dll") then
+if not mp.get_mpattribute("Lua:FnameAttr!radcui.dll") then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("Lua:FirstFolder1!windows") then
+if mp.get_mpattribute("Lua:FirstFolder1!windows") then
   return mp.CLEAN
 end
-if pehdr.NumberOfSections ~= 7 or (pe.foffset_rva)(4096) ~= 1024 then
+if pehdr.NumberOfSections ~= 7 or pe.foffset_rva(4096) ~= 1024 then
   return mp.CLEAN
 end
-if (mp.getfilename)(mp.FILEPATH_QUERY_FNAME) ~= "radcui.dll" then
+if mp.getfilename(mp.FILEPATH_QUERY_FNAME) ~= "radcui.dll" then
   return mp.CLEAN
 end
-if (pe.get_imports)() > 110 then
+local l_0_0, l_0_1 = pe.get_imports()
+if 110 < l_0_0 then
   return mp.CLEAN
 end
 return mp.INFECTED
-

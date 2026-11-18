@@ -1,70 +1,35 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanJSShaHuludZA!MTB\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:JS/ShaHulud.ZA!MTB
+-- Type: 13
+-- Includes: LuaFuncHelper
+-- MpAttributes: SCRIPT:NodeReqChildProc & SCRIPT:ReadFileSync & SCRIPT:WriteFileSync & BM_XPLAT_OR_WIN_SCRIPT_FILE_TYPE
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 == nil or l_0_0 > 3145728 then
-  l_0_0 = 3145728
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
+
+local r0_0 = mp.getfilesize()
+r0_0 = (r0_0 == nil or r0_0 > 3145728) and 3145728 or r0_0
+mp.readprotection(false)
+local r0_1 = tostring(mp.readfile(0, r0_0)) or ""
+if r0_1 == "" then
+  return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-do
-  local l_0_1, l_0_2 = tostring((mp.readfile)(0, l_0_0)) or ""
-  -- DECOMPILER ERROR at PC22: Confused about usage of register: R1 in 'UnsetPending'
-
-  if l_0_1 == "" then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC29: Confused about usage of register: R1 in 'UnsetPending'
-
-  local l_0_3 = nil
-  local l_0_4 = (string.lower)(l_0_1)
-  local l_0_5 = 0
-  local l_0_6 = str_count_match
-  local l_0_7 = l_0_4
-  l_0_6 = l_0_6(l_0_7, {"npm_token", "npm_config_authtoken", "npm_config_registry", "github_token", "github_actions", "aws_access_key_id", "aws_secret_access_key", "aws_session_token", "artifactory_token", "nexus_token", "node_auth_token", "npm_config__auth"})
-  l_0_5 = l_0_5 + l_0_6
-  if l_0_5 < 3 then
-    l_0_6 = mp
-    l_0_6 = l_0_6.CLEAN
-    return l_0_6
-  end
-  l_0_6 = string
-  l_0_6 = l_0_6.find
-  l_0_7 = l_0_4
-  l_0_6 = l_0_6(l_0_7, "process.env", 1, true)
-  if not l_0_6 then
-    l_0_6 = string
-    l_0_6 = l_0_6.find
-    l_0_7 = l_0_4
-    l_0_6 = l_0_6(l_0_7, "readfilesync", 1, true)
-    if not l_0_6 then
-      l_0_6 = string
-      l_0_6 = l_0_6.find
-      l_0_7 = l_0_4
-      l_0_6 = l_0_6(l_0_7, "execsync", 1, true)
-      if not l_0_6 then
-        l_0_6 = string
-        l_0_6 = l_0_6.find
-        l_0_7 = l_0_4
-        l_0_6 = l_0_6(l_0_7, "child_process", 1, true)
-        if not l_0_6 then
-          l_0_6 = string
-          l_0_6 = l_0_6.find
-          l_0_7 = l_0_4
-          l_0_6 = l_0_6(l_0_7, "httppost", 1, true)
-          if not l_0_6 then
-            l_0_6 = mp
-            l_0_6 = l_0_6.CLEAN
-            return l_0_6
-          end
-        end
-      end
-    end
-  end
-  l_0_6 = mp
-  l_0_6 = l_0_6.INFECTED
-  return l_0_6
+local r0_2 = string.lower(r0_1)
+if 0
+  + str_count_match(r0_2,
+    {
+      "npm_token", "npm_config_authtoken", "npm_config_registry", "github_token", "github_actions",
+      "aws_access_key_id", "aws_secret_access_key", "aws_session_token", "artifactory_token",
+      "nexus_token", "node_auth_token", "npm_config__auth"
+    })
+  < 3 then
+  return mp.CLEAN
 end
-
+local r0_3 = string.find(r0_2, "process.env", 1, true)
+if r0_3
+  or string.find(r0_2, "readfilesync", 1, true)
+  or string.find(r0_2, "execsync", 1, true)
+  or string.find(r0_2, "child_process", 1, true)
+  or string.find(r0_2, "httppost", 1, true) then
+  return mp.INFECTED
+end
+return mp.CLEAN

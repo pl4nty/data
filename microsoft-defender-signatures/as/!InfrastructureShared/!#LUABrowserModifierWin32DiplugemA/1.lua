@@ -1,0 +1,12 @@
+-- Threat: !InfrastructureShared
+-- Name: !#LUA:BrowserModifier:Win32/Diplugem.A
+-- Type: 10
+
+if mp.get_mpattribute("HSTR:VirTool:Win32/Obfuscator!InstalleRex") or mp.get_mpattribute("HSTR:VirTool:Win32/Obfuscator!InstalleRex.B") or mp.get_mpattribute("HSTR:VirTool:Win32/Obfuscator!InstalleRex.C") or mp.get_mpattribute("HSTR:VirTool:Win32/Obfuscator!InstalleRex.D") then
+  local l_0_0 = string.lower(mp.getfilename())
+  if string.sub(l_0_0, -4) == ".exe" and (string.find(l_0_0, "\\temp\\", 1, true) or string.find(l_0_0, "\\downloads\\", 1, true) or string.match(l_0_0, "\\all users\\application data\\{%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x}") or string.match(l_0_0, "\\programdata\\{%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x}")) then
+    mp.set_mpattribute("PUA:Block:InstalleRex")
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN

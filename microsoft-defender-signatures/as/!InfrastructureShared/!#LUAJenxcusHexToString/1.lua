@@ -1,80 +1,54 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LUAJenxcusHexToString\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#LUA:JenxcusHexToString
+-- Type: 13
+-- Includes: ConversionToBinary_fastHex2Bin
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (mp.get_mpattribute)("TARG:VBS/JenxcusHexToString") then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC22: Overwrote pending register: R0 in 'AssignReg'
-
-  if not (mp.get_mpattribute)("TARG:VBS/JenxcusHexToString2") or (mp.get_mpattribute)("SCPT:VBS/JenxcusHexToString") then
-    local l_0_1 = 2
-  else
-    do
-      do return mp.CLEAN end
-      local l_0_2 = nil
-      ;
-      (mp.readprotection)(false)
-      local l_0_3 = nil
-      if (mp.readfile)(0, (mp.getfilesize)()) == nil then
-        return mp.CLEAN
-      end
-      local l_0_4 = nil
-      local l_0_5, l_0_6, l_0_7 = (tostring((mp.readfile)(0, (mp.getfilesize)()))), nil, nil
-      -- DECOMPILER ERROR at PC66: Overwrote pending register: R6 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC67: Overwrote pending register: R5 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC68: Overwrote pending register: R4 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC78: Overwrote pending register: R6 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC79: Overwrote pending register: R5 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC80: Overwrote pending register: R4 in 'AssignReg'
-
-      if (l_0_2 == 1 and l_0_2 ~= 2) or l_0_2 == 3 then
-        do return mp.CLEAN end
-        -- DECOMPILER ERROR at PC89: Overwrote pending register: R4 in 'AssignReg'
-
-        while 1 do
-          -- DECOMPILER ERROR at PC102: Overwrote pending register: R5 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC103: Overwrote pending register: R4 in 'AssignReg'
-
-          if #l_0_7 < 5000 and (string.len)(l_0_7) < 5000 and (l_0_7 == nil) then
-            do break end
-            -- DECOMPILER ERROR at PC108: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-            -- DECOMPILER ERROR at PC108: LeaveBlock: unexpected jumping out IF_STMT
-
-          end
-        end
-        if #l_0_7 < 5000 then
-          return mp.CLEAN
-        end
-        local l_0_8, l_0_9 = nil, nil
-        -- DECOMPILER ERROR at PC122: Overwrote pending register: R8 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC136: Overwrote pending register: R5 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC148: Overwrote pending register: R5 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC155: Overwrote pending register: R8 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC156: Overwrote pending register: R7 in 'AssignReg'
-
-        if l_0_2 == 1 then
-          (mp.vfo_add_buffer)(l_0_9:sub(1, nil), "[JenxcusHexToStr]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
-          return mp.CLEAN
-        end
-      end
+local l_0_0
+if mp.get_mpattribute("TARG:VBS/JenxcusHexToString") then
+  l_0_0 = 1
+elseif mp.get_mpattribute("TARG:VBS/JenxcusHexToString2") then
+  l_0_0 = 2
+elseif mp.get_mpattribute("SCPT:VBS/JenxcusHexToString") then
+  l_0_0 = 3
+else
+  return mp.CLEAN
+end
+local l_0_1 = mp.getfilesize()
+mp.readprotection(false)
+local l_0_2 = mp.readfile(0, l_0_1)
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = tostring(l_0_2)
+local l_0_4, l_0_5, l_0_6
+if l_0_0 == 1 then
+  _, l_0_4, l_0_5 = string.find(l_0_3, "= ?\"(.-)\"")
+elseif l_0_0 == 2 then
+  _, l_0_4, l_0_5, l_0_6 = string.find(l_0_3, "= ?\"(.-)\".-\"\".-\"\".-\"(.-)\"")
+elseif l_0_0 == 3 then
+  _, l_0_4, l_0_5, l_0_6 = string.find(l_0_3, "= ?\"((.)[0-9A-Za-z][0-9A-Za-z]?.[0-9A-Za-z][0-9A-Za-z]?.[0-9A-Za-z][0-9A-Za-z]?.+)\"")
+else
+  return mp.CLEAN
+end
+if #l_0_5 < 5000 then
+  l_0_4 = 1
+  while 5000 > string.len(l_0_5) do
+    _, l_0_4, l_0_5 = string.find(l_0_3, "\"(.-)\"", l_0_4 + 2)
+    if l_0_5 == nil then
+      break
     end
   end
 end
-
+if #l_0_5 < 5000 then
+  return mp.CLEAN
+end
+local l_0_7, l_0_8
+if l_0_0 == 1 then
+  l_0_7, l_0_8 = fastHex2Bin(l_0_5, "(..)")
+else
+  l_0_5, _ = l_0_5:gsub(l_0_6 .. "(.)" .. l_0_6, l_0_6 .. "0%1" .. l_0_6)
+  l_0_5, _ = l_0_5:gsub(l_0_6 .. "(.)" .. l_0_6, l_0_6 .. "0%1" .. l_0_6)
+  l_0_7, l_0_8 = fastHex2Bin(l_0_5, l_0_6 .. "(..)")
+end
+mp.vfo_add_buffer(l_0_7:sub(1, l_0_8), "[JenxcusHexToStr]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+return mp.CLEAN

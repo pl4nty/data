@@ -1,88 +1,92 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\12d4132c19288\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 12d4132c19288
+-- Type: 21
+-- Includes: LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_0 = {}
-local l_0_1 = (nri.GetRawRequestBlob)()
-local l_0_2 = (nri.GetRawResponseBlob)()
-if not l_0_1 then
-  return mp.CLEAN
-end
-local l_0_3 = (string.lower)(l_0_1)
-do
-  local l_0_4, l_0_6 = l_0_1:match("^(%u+)%s+([^%s]+)%s+HTTP/") or ""
-  -- DECOMPILER ERROR at PC22: Confused about usage of register: R5 in 'UnsetPending'
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
 
-  do
-    local l_0_5, l_0_7 = , l_0_6 or ""
-    -- DECOMPILER ERROR at PC27: Confused about usage of register: R5 in 'UnsetPending'
-
-    local l_0_8 = nil
-    local l_0_14 = nil
-    local l_0_15 = nil
-    local l_0_16 = (string.find)((string.lower)(l_0_7), "/login/?login_only=1", 1, true) ~= nil
-    if l_0_1:match("[Aa]uthorization:%s*[Bb]asic%s+([A-Za-z0-9+/=]+)") then
-      for l_0_20,l_0_21 in ipairs({"dXNlcj1yb290", "aGFzcm9vdD0x", "dGZhX3ZlcmlmaWVkPTE", "c3VjY2Vzc2Z1bF9pbnRlcm5hbF9hdXRoX3dpdGhfdGltZXN0YW1w"}) do
-        local l_0_17, l_0_18, l_0_19, l_0_20 = (string.find)(l_0_3, "%0a", 1, true) ~= nil or (string.find)(l_0_3, "\n", 1, true) ~= nil, 0
-        -- DECOMPILER ERROR at PC79: Confused about usage of register: R16 in 'UnsetPending'
-
-        if (string.find)(l_0_18, R16_PC79, 1, true) ~= nil then
-          l_0_20 = l_0_20 + 1
-        end
-      end
-    end
-    -- DECOMPILER ERROR at PC88: Confused about usage of register: R8 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC92: Confused about usage of register: R11 in 'UnsetPending'
-
-    do
-      local l_0_23, l_0_25, l_0_28 = nil
-      local l_0_31 = nil
-      do
-        if l_0_2 then
-          local l_0_32 = nil
-          -- DECOMPILER ERROR at PC161: Overwrote pending register: R15 in 'AssignReg'
-
-        end
-        do
-          if not (((string.find)((string.lower)(l_0_2), " 200", 1, true) ~= nil or (string.find)((string.lower)(l_0_2), " 302", 1, true) ~= nil or (string.find)((string.lower)(l_0_2), " 307", 1, true) ~= nil) and (l_0_17 and l_0_16) or l_0_20 >= 2) or (string.find)(l_0_15, "/scripts2/", 1, true) ~= nil or (string.find)(l_0_15, "/json-api/", 1, true) ~= nil or (string.find)(l_0_15, "/cpsess", 1, true) ~= nil then
-            return mp.CLEAN
-          end
-          -- DECOMPILER ERROR at PC179: Confused about usage of register: R12 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC186: Confused about usage of register: R13 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC193: Confused about usage of register: R14 in 'UnsetPending'
-
-          l_0_0.resp_ok_or_30x = tostring(0)
-          l_0_0.method = l_0_8
-          l_0_0.path = l_0_14:sub(1, 120)
-          l_0_0.useragent = (nri.GetHttpRequestHeader)("User-Agent") or ""
-          l_0_0.cookie = (nri.GetHttpRequestHeader)("Cookie") or ""
-          -- DECOMPILER ERROR at PC228: Confused about usage of register: R11 in 'UnsetPending'
-
-          l_0_0.auth_hits = tostring(l_0_20)
-          -- DECOMPILER ERROR at PC231: Confused about usage of register: R9 in 'UnsetPending'
-
-          -- DECOMPILER ERROR at PC233: Confused about usage of register: R9 in 'UnsetPending'
-
-          if l_0_32 then
-            l_0_0.auth_b64_prefix = l_0_32:sub(1, 120)
-          end
-          l_0_0.NRI_RequestBlob = tohex(l_0_1)
-          if l_0_2 then
-            l_0_0.NRI_ResponseBlob = tohex(l_0_2)
-          end
-          ;
-          (nri.AddTelemetry)((mp.bitor)((mp.bitor)(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY), l_0_0)
-          do return mp.INFECTED end
-          -- DECOMPILER ERROR at PC267: freeLocal<0 in 'ReleaseLocals'
-
-          -- DECOMPILER ERROR: 25 unprocessed JMP targets
-        end
+local r0_0 = {}
+local r0_1 = nri.GetRawRequestBlob()
+local r0_2 = nri.GetRawResponseBlob()
+if r0_1 then
+  local r0_3 = string.lower(r0_1)
+  local r0_4, r0_5 = r0_1:match("^(%u+)%s+([^%s]+)%s+HTTP/")
+  r0_4 = r0_4 or ""
+  r0_5 = r0_5 or ""
+  local r0_6 = string.lower(r0_5)
+  local r0_7 = string.find(r0_6, "/login/?login_only=1", 1, true)
+  r0_7 = r0_7 ~= nil
+  local r0_8 = string.find(r0_3, "%0a", 1, true)
+  r0_8 = r0_8 ~= nil or string.find(r0_3, "\n", 1, true) ~= nil
+  local r0_9 = r0_1.match
+  r0_9 = r0_9(r0_1, "[Aa]uthorization:%s*[Bb]asic%s+([A-Za-z0-9+/=]+)")
+  local r0_10 = {
+    "dXNlcj1yb290", "aGFzcm9vdD0x", "dGZhX3ZlcmlmaWVkPTE",
+    "c3VjY2Vzc2Z1bF9pbnRlcm5hbF9hdXRoX3dpdGhfdGltZXN0YW1w"
+  }
+  local r0_11 = 0
+  if r0_9 then
+    local r0_12, r0_13, r0_14 = ipairs(r0_10)
+    for r0_15, r0_16 in r0_12, r0_13, r0_14 do
+      local r0_17 = string.find(r0_9, r0_16, 1, true)
+      if r0_17 ~= nil then
+        r0_11 = r0_11 + 1
       end
     end
   end
+  local r0_18 = r0_8 and r0_7 or r0_11 >= 2
+  local r0_19 = string.find(r0_6, "/scripts2/", 1, true)
+  r0_19 = r0_19 ~= nil
+  local r0_20 = string.find(r0_6, "/json-api/", 1, true)
+  r0_20 = r0_20 ~= nil or string.find(r0_6, "/cpsess", 1, true) ~= nil
+  local r0_21 = 0
+  if r0_2 then
+    local r0_22 = string.lower(r0_2)
+    local r0_23 = string.find(r0_22, " 200", 1, true)
+    if r0_23 ~= nil
+      or string.find(r0_22, " 302", 1, true) ~= nil
+      or string.find(r0_22, " 307", 1, true) ~= nil then
+      r0_21 = 1
+    end
+  end
+  if r0_18 or r0_19 or r0_20 then
+    r0_0.stage1_login_only = r0_7 and "1" or "0"
+    r0_0.stage2_inject = r0_18 and "1" or "0"
+    r0_0.stage3_scripts2 = r0_19 and "1" or "0"
+    r0_0.stage4_api = r0_20 and "1" or "0"
+    r0_0.bad_cookie = "1"
+    local r0_24 = tostring(r0_21)
+    r0_0.resp_ok_or_30x = r0_24
+    r0_0.method = r0_4
+    r0_24 = r0_5.sub
+    r0_24 = r0_24(r0_5, 1, 120)
+    r0_0.path = r0_24
+    r0_24 = nri
+    r0_24 = r0_24.GetHttpRequestHeader
+    r0_24 = r0_24("User-Agent") or ""
+    r0_0.useragent = r0_24
+    r0_24 = nri
+    r0_24 = r0_24.GetHttpRequestHeader
+    r0_24 = r0_24("Cookie") or ""
+    r0_0.cookie = r0_24
+    r0_24 = tostring
+    r0_24 = r0_24(r0_11)
+    r0_0.auth_hits = r0_24
+    if r0_9 then
+      local r0_25 = r0_9:sub(1, 120)
+      r0_0.auth_b64_prefix = r0_25
+    end
+    local r0_26 = tohex(r0_1)
+    r0_0.NRI_RequestBlob = r0_26
+    if r0_2 then
+      local r0_27 = tohex(r0_2)
+      r0_0.NRI_ResponseBlob = r0_27
+    end
+    local r0_28 = nri.AddTelemetry
+    local r0_29 = mp.bitor(mp.bitor(nri.Telemetry_HOSTNAME, nri.Telemetry_PATH), nri.Telemetry_QUERY)
+    r0_28(r0_29, r0_0)
+    return mp.INFECTED
+  end
+  return mp.CLEAN
 end
-
+return mp.CLEAN

@@ -1,8 +1,8 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\a6b34a4063f7\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: a6b34a4063f7
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
 local l_0_0 = this_sigattrlog[3]
 if not l_0_0 or not l_0_0.matched then
   return mp.CLEAN
@@ -15,4 +15,3 @@ if not ProcessCodeInjection(l_0_0, l_0_1) then
   return mp.CLEAN
 end
 return mp.INFECTED
-

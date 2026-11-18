@@ -1,14 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaWormWin32Rebhip!obfmz\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:Worm:Win32/Rebhip!obfmz
+-- Type: 13
+-- MpAttributes: BM_UNKNOWN_FILE
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 16192 or l_0_0 > 2097152 then
+local l_0_0 = mp.getfilesize()
+if l_0_0 < 16192 or 2097152 < l_0_0 then
   return mp.CLEAN
 end
-if (mp.crc32)(0, headerpage, 1, 16) == 870557218 then
+if 870557218 == mp.crc32(0, headerpage, 1, 16) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

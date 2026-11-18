@@ -1,9 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\5dd7023ccaab\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 5dd7023ccaab
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0 = mp.GetParentProcInfo()
 if l_0_0 == nil then
   return mp.CLEAN
 end
@@ -12,4 +12,3 @@ if IsDetectionThresholdMet(l_0_0.ppid) then
   return mp.INFECTED
 end
 return mp.LOWFI
-

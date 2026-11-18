@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\feb3ec2201e0\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: feb3ec2201e0
+-- Type: 21
+-- Includes: BasScenarioSpecificInfra
 
--- params : ...
--- function num : 0
 BasToolTrackProcess("BM", "AttackIQ")
 return mp.INFECTED
-

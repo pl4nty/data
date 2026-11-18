@@ -1,21 +1,21 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\59d7de717cb3\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 59d7de717cb3
+-- Type: 21
+-- Includes: LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
+local l_0_0 = mp.GetScannedPPID()
 if l_0_0 == "" or l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+local l_0_1 = mp.GetProcessCommandLine(l_0_0)
 if l_0_1 == "" or l_0_1 == nil then
   return mp.CLEAN
 end
-local l_0_2 = function(l_1_0)
-  -- function num : 0_0
+
+local function l_0_2(l_1_0)
   local l_1_1 = {}
-  for l_1_5 in (string.gmatch)(l_1_0, "http[s]?://[^\"%s]+") do
-    (table.insert)(l_1_1, l_1_5)
+  for l_1_2 in string.gmatch(l_1_0, "http[s]?://[^\"%s]+") do
+    table.insert(l_1_1, l_1_2)
   end
   return l_1_1
 end
@@ -28,33 +28,12 @@ l_0_4.PROCESS_CONTEXT = "schtasks.exe"
 l_0_4.FILELESS = "true"
 l_0_4.CMDLINE_URL = "true"
 l_0_4.TAG = "INTERFLOW"
-for l_0_8,l_0_9 in ipairs(l_0_3) do
-  if (string.match)(l_0_9, "^https?://") then
-    local l_0_10 = SafeGetUrlReputation
-    local l_0_11 = {}
-    -- DECOMPILER ERROR at PC46: No list found for R11 , SetList fails
-
-    -- DECOMPILER ERROR at PC47: Overwrote pending register: R12 in 'AssignReg'
-
-    l_0_10 = l_0_10(l_0_11, l_0_9, false, 3000)
-    l_0_11 = l_0_10.urls
-    l_0_11 = l_0_11[l_0_9]
-    if l_0_11 then
-      l_0_11 = l_0_10.urls
-      l_0_11 = l_0_11[l_0_9]
-      l_0_11 = l_0_11.determination
-      if l_0_11 == 2 then
-        l_0_11 = l_0_10.urls
-        l_0_11 = l_0_11[l_0_9]
-        l_0_11 = l_0_11.confidence
-        if l_0_11 >= 60 then
-          l_0_11 = mp
-          l_0_11 = l_0_11.INFECTED
-          return l_0_11
-        end
-      end
+for l_0_5, l_0_6 in ipairs(l_0_3) do
+  if string.match(l_0_6, "^https?://") then
+    local l_0_7 = SafeGetUrlReputation({l_0_6}, l_0_4, false, 3000)
+    if l_0_7.urls[l_0_6] and l_0_7.urls[l_0_6].determination == 2 and l_0_7.urls[l_0_6].confidence >= 60 then
+      return mp.INFECTED
     end
   end
 end
 return mp.CLEAN
-

@@ -1,35 +1,30 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LUAForceArchiveScanRemoteDrop\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#LUA:ForceArchiveScanRemoteDrop
+-- Type: 12
+-- MpAttributes: MpOnModifiedCloseRtpScan & (BM_BZIP2_FILE | BM_ZIP_FILE | BM_7Z_FILE | BM_GZIP_FILE | BM_XAR_ARCHIVE_FILE | BM_ZLIB_FILE | BM_TAR_FILE) & RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 1048576 then
+local l_0_0 = mp.getfilesize()
+if 1048576 < l_0_0 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+local l_0_1 = mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME)
 if l_0_1 == nil then
   return mp.CLEAN
 end
-do
-  local l_0_2 = {}
-  -- DECOMPILER ERROR at PC27: No list found for R2 , SetList fails
-
-  -- DECOMPILER ERROR at PC28: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC29: Overwrote pending register: R4 in 'AssignReg'
-
-  for l_0_6,l_0_7 in ("ftp")("sftp-server") do
-    -- DECOMPILER ERROR at PC34: Overwrote pending register: R8 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC36: Overwrote pending register: R9 in 'AssignReg'
-
-    if l_0_1 == l_0_7 then
-      (("smbclient").set_mpattribute)("wget")
-      return mp.INFECTED
-    end
+local l_0_2 = {
+  "ftp",
+  "sftp-server",
+  "vsftpd",
+  "netkit-fp",
+  "sshd",
+  "smbclient",
+  "wget",
+  "curl"
+}
+for l_0_3, l_0_4 in ipairs(l_0_2) do
+  if l_0_1 == l_0_4 then
+    mp.set_mpattribute("MpForceScanArchives")
+    return mp.INFECTED
   end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
 end
-
+return mp.CLEAN

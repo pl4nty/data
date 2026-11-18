@@ -1,10 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFBackdoorWin32NgrokOnHVAA!hva\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Backdoor:Win32/NgrokOnHVA.A!hva
+-- Type: 13
+-- Includes: HvaLookupHelpers
+-- MpAttributes: AGGR:Ngrok & Lua:NewFileContextDataPresent
 
--- params : ...
--- function num : 0
 if IsDeviceHVA() then
   return mp.INFECTED
 end
 return mp.CLEAN
-

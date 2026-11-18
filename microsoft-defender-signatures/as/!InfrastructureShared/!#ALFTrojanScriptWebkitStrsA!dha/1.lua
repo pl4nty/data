@@ -1,10 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanScriptWebkitStrsA!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:Script/WebkitStrs.A!dha
+-- Type: 24
+-- MpAttributes: !SCPT:WebkitStrs.CVE & (Lua:HTMLExt | Lua:JSExt)
 
--- params : ...
--- function num : 0
-if #(mp.enum_mpattributesubstring)("SCPT:WebkitStrs") >= 3 then
+local l_0_0 = mp.enum_mpattributesubstring("SCPT:WebkitStrs")
+if 3 <= #l_0_0 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

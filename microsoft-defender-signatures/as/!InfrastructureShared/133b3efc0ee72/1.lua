@@ -1,116 +1,111 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\133b3efc0ee72\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 133b3efc0ee72
+-- Type: 21
+-- Includes: BMLuaLib, TechniqueTracker
 
--- params : ...
--- function num : 0
-if not (this_sigattrlog[2]).matched or not (this_sigattrlog[3]).matched or not (this_sigattrlog[4]).matched then
+if not (this_sigattrlog[2].matched and this_sigattrlog[3].matched) or not this_sigattrlog[4].matched then
   return mp.CLEAN
 end
-if (this_sigattrlog[2]).utf8p1 == nil then
+if this_sigattrlog[2].utf8p1 == nil then
   return mp.CLEAN
 end
-local l_0_0 = (string.lower)((this_sigattrlog[2]).utf8p1)
-if (string.find)(l_0_0, "\\node_modules\\", 1, true) then
+local l_0_0 = string.lower(this_sigattrlog[2].utf8p1)
+if string.find(l_0_0, "\\node_modules\\", 1, true) then
   return mp.CLEAN
 end
-local l_0_1 = (bm.get_imagepath)()
+local l_0_1 = bm.get_imagepath()
 if isnull(l_0_1) then
   return mp.CLEAN
 end
-l_0_1 = (string.lower)(l_0_1)
-if (string.find)(l_0_1, "\\windows defender\\msmpeng.exe", 1, true) then
+l_0_1 = string.lower(l_0_1)
+if string.find(l_0_1, "\\windows defender\\msmpeng.exe", 1, true) then
   return mp.CLEAN
 end
-local l_0_2 = {}
--- DECOMPILER ERROR at PC104: No list found for R2 , SetList fails
-
--- DECOMPILER ERROR at PC105: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC106: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC107: Overwrote pending register: R5 in 'AssignReg'
-
-if ("\\microsoft teams\\")("\\teams\\", "\\microsoft\\teams\\", true) then
+local l_0_2 = {
+  "\\microsoft teams\\",
+  "\\teams\\",
+  "\\microsoft\\teams\\",
+  "\\visual studio code\\",
+  "\\programs\\microsoft vs code\\",
+  "\\code - insiders\\",
+  "\\cursor\\",
+  "\\windsurf\\",
+  "\\slack\\",
+  "\\discord\\",
+  "\\spotify\\",
+  "\\1password\\",
+  "\\notion\\",
+  "\\figma\\",
+  "\\postman\\",
+  "\\obsidian\\",
+  "\\signal\\",
+  "\\whatsapp\\",
+  "\\skype\\",
+  "\\github desktop\\",
+  "\\bitwarden\\",
+  "\\mattermost\\",
+  "\\wire\\",
+  "\\hyper\\",
+  "\\mongodb compass\\",
+  "\\azure data studio\\",
+  "\\logseq\\",
+  "\\joplin\\",
+  "\\standard notes\\",
+  "\\twitch\\",
+  "\\atom\\"
+}
+if contains(l_0_1, l_0_2, true) then
   return mp.CLEAN
 end
-local l_0_3 = {}
--- DECOMPILER ERROR at PC119: Overwrote pending register: R7 in 'AssignReg'
-
--- DECOMPILER ERROR at PC120: Overwrote pending register: R8 in 'AssignReg'
-
--- DECOMPILER ERROR at PC121: Overwrote pending register: R9 in 'AssignReg'
-
--- DECOMPILER ERROR at PC122: Overwrote pending register: R10 in 'AssignReg'
-
--- DECOMPILER ERROR at PC123: Overwrote pending register: R11 in 'AssignReg'
-
--- DECOMPILER ERROR at PC124: Overwrote pending register: R12 in 'AssignReg'
-
--- DECOMPILER ERROR at PC125: No list found for R3 , SetList fails
-
+local l_0_3 = {
+  "coffloader.node",
+  "scexec.node",
+  "assembly.node",
+  "inject.node",
+  "shellcode.node",
+  "payload.node",
+  "beacon.node",
+  "implant.node",
+  "loader.node"
+}
 local l_0_4 = false
--- DECOMPILER ERROR at PC127: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC128: Overwrote pending register: R6 in 'AssignReg'
-
-for l_0_8,l_0_9 in ("scexec.node")("assembly.node") do
-  -- DECOMPILER ERROR at PC131: Overwrote pending register: R10 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC133: Overwrote pending register: R11 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC134: Overwrote pending register: R12 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC135: Overwrote pending register: R13 in 'AssignReg'
-
-  if (("\\windsurf\\").find)("\\slack\\", "\\discord\\", "\\spotify\\", true) then
+for l_0_5, l_0_6 in ipairs(l_0_3) do
+  if string.find(l_0_0, l_0_6, 1, true) then
+    l_0_4 = true
     break
   end
 end
-do
-  local l_0_10 = {}
-  -- DECOMPILER ERROR at PC154: Overwrote pending register: R15 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC155: No list found for R5 , SetList fails
-
-  local l_0_11 = false
-  -- DECOMPILER ERROR at PC157: Overwrote pending register: R7 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC158: Overwrote pending register: R8 in 'AssignReg'
-
-  for l_0_15,l_0_16 in ("sharp.node")("fsevents.node") do
-    -- DECOMPILER ERROR at PC161: Overwrote pending register: R12 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC163: Overwrote pending register: R13 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC164: Overwrote pending register: R14 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC165: Overwrote pending register: R15 in 'AssignReg'
-
-    if (("sodium-native.node").find)("registry.node", "kerberos.node", "\\notion\\", true) then
-      break
-    end
-  end
-  do
-    do
-      if l_0_11 then
-        return mp.CLEAN
-      end
-      ;
-      (bm.add_related_string)("loki_c2_proc", l_0_1, bm.RelatedStringBMReport)
-      ;
-      (bm.add_related_string)("loki_c2_nodemod", l_0_0, bm.RelatedStringBMReport)
-      if l_0_4 then
-        (bm.add_related_string)("loki_c2_susp_module", "true", bm.RelatedStringBMReport)
-      end
-      if (this_sigattrlog[4]).utf8p1 then
-        (bm.add_related_string)("loki_c2_action", (this_sigattrlog[4]).utf8p1, bm.RelatedStringBMReport)
-      end
-      add_parents()
-      TrackPidAndTechniqueBM("BM", "T1059.007", "LokiC2Beacon")
-      TrackPidAndTechniqueBM("BM", "T1071.001", "LokiC2Comms")
-      do return mp.INFECTED end
-      -- WARNING: undefined locals caused missing assignments!
-    end
+local l_0_7 = {
+  "better-sqlite3.node",
+  "sharp.node",
+  "fsevents.node",
+  "keytar.node",
+  "node-pty.node",
+  "nsfw.node",
+  "sodium-native.node",
+  "registry.node",
+  "kerberos.node",
+  "onnxruntime"
+}
+local l_0_8 = false
+for l_0_9, l_0_10 in ipairs(l_0_7) do
+  if string.find(l_0_0, l_0_10, 1, true) then
+    l_0_8 = true
+    break
   end
 end
-
+if l_0_8 then
+  return mp.CLEAN
+end
+bm.add_related_string("loki_c2_proc", l_0_1, bm.RelatedStringBMReport)
+bm.add_related_string("loki_c2_nodemod", l_0_0, bm.RelatedStringBMReport)
+if l_0_4 then
+  bm.add_related_string("loki_c2_susp_module", "true", bm.RelatedStringBMReport)
+end
+if this_sigattrlog[4].utf8p1 then
+  bm.add_related_string("loki_c2_action", this_sigattrlog[4].utf8p1, bm.RelatedStringBMReport)
+end
+add_parents()
+TrackPidAndTechniqueBM("BM", "T1059.007", "LokiC2Beacon")
+TrackPidAndTechniqueBM("BM", "T1071.001", "LokiC2Comms")
+return mp.INFECTED

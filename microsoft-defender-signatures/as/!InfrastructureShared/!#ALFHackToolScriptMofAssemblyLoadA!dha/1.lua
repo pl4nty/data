@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFHackToolScriptMofAssemblyLoadA!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:HackTool:Script/MofAssemblyLoad.A!dha
+-- Type: 13
+-- MpAttributes: Lua:MOFExt & SCPT:DSCScriptResource & SCPT:AssemblyLoad.A
 
--- params : ...
--- function num : 0
-(mp.set_mpattribute)("MpNonPIIFileType")
+mp.set_mpattribute("MpNonPIIFileType")
 return mp.INFECTED
-

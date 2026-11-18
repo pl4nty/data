@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: 1bb8d5a065b8c
+-- Type: 21
+
+if mp.HSTR_WEIGHT >= 4 then
+  mp.set_mpattribute("PUA:Block:MacReviver.C")
+  return mp.INFECTED
+end
+return mp.LOWFI

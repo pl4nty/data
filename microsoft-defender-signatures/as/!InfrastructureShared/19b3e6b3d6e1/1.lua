@@ -1,39 +1,30 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\19b3e6b3d6e1\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 19b3e6b3d6e1
+-- Type: 21
+-- Includes: TechniqueTracker, LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_0 = (this_sigattrlog[1]).utf8p2
+local l_0_0 = this_sigattrlog[1].utf8p2
 local l_0_1 = split(l_0_0, " ")
-local l_0_2 = {}
--- DECOMPILER ERROR at PC14: No list found for R2 , SetList fails
-
--- DECOMPILER ERROR at PC15: Overwrote pending register: R3 in 'AssignReg'
-
-do
-  local l_0_3 = "telemetrydv1"
-  -- DECOMPILER ERROR at PC16: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC17: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC18: Overwrote pending register: R6 in 'AssignReg'
-
-  for l_0_7 = "mdatp", "wdavdaemonunprivileged", "wdavdaemonenterprise" do
-    -- DECOMPILER ERROR at PC20: Overwrote pending register: R8 in 'AssignReg'
-
-    local l_0_8 = ("tccd")(l_0_1[l_0_7])
-    local l_0_9 = l_0_8:gsub("%W", "")
-    if #l_0_9 >= 3 then
-      for l_0_13 = 1, l_0_3 do
-        local l_0_14 = l_0_2[l_0_13]
-        if (string.find)(l_0_14, l_0_9, 1, true) then
-          TrackPidAndTechniqueBM("BM", "T1562.001", "DefenseEvasion-FriendlyPkill")
-          return mp.INFECTED
-        end
+local l_0_2 = {
+  "telemetrydv1",
+  "mdatp",
+  "wdavdaemonunprivileged",
+  "wdavdaemonenterprise",
+  "dlpagent",
+  "tccd"
+}
+local l_0_3 = #l_0_2
+for l_0_4 = 1, #l_0_1 do
+  local l_0_5 = tostring(l_0_1[l_0_4])
+  local l_0_6 = l_0_5:gsub("%W", "")
+  if 3 <= #l_0_6 then
+    for l_0_7 = 1, l_0_3 do
+      local l_0_8 = l_0_2[l_0_7]
+      if string.find(l_0_8, l_0_6, 1, true) then
+        TrackPidAndTechniqueBM("BM", "T1562.001", "DefenseEvasion-FriendlyPkill")
+        return mp.INFECTED
       end
     end
   end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
 end
-
+return mp.CLEAN

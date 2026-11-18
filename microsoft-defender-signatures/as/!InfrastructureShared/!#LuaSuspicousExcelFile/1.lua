@@ -1,18 +1,16 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaSuspicousExcelFile\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:SuspicousExcelFile
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & BM_OLE_FILE
 
--- params : ...
--- function num : 0
 if mp.HEADERPAGE_SZ < 4095 then
   return mp.CLEAN
 end
-if (mp.readu_u32)(headerpage, 2561) ~= 218959105 then
+if mp.readu_u32(headerpage, 2561) ~= 218959105 then
   return mp.CLEAN
 end
 if headerpage[2565] ~= 93 then
   return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("Lua:SuspiciousOfficeHeaderS101")
+mp.set_mpattribute("Lua:SuspiciousOfficeHeaderS101")
 return mp.CLEAN
-

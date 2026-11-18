@@ -1,66 +1,70 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\5dd7573588c8\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 5dd7573588c8
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0 = mp.GetParentProcInfo()
 if l_0_0 == nil or l_0_0.image_path == nil then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)(l_0_0.image_path)
+local l_0_1 = string.lower(l_0_0.image_path)
 local l_0_2 = l_0_1:match("([^\\]+)$")
 if not l_0_2 then
   return mp.CLEAN
 end
-local l_0_3 = contains
-local l_0_4 = l_0_2
-local l_0_5 = {}
--- DECOMPILER ERROR at PC27: No list found for R5 , SetList fails
-
--- DECOMPILER ERROR at PC31: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC32: Overwrote pending register: R3 in 'AssignReg'
-
-if not l_0_3 then
-  return l_0_3
+if not contains(l_0_2, {
+  "explorer.exe"
+}) then
+  return mp.CLEAN
 end
--- DECOMPILER ERROR at PC34: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC35: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC42: Overwrote pending register: R4 in 'AssignReg'
-
+local l_0_3 = mp.GetScannedPPID()
 if l_0_3 == "" or l_0_3 == nil then
-  return l_0_4
+  return mp.CLEAN
 end
--- DECOMPILER ERROR at PC44: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC45: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC50: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC51: Overwrote pending register: R5 in 'AssignReg'
-
+local l_0_4 = mp.GetProcessCommandLine(l_0_3)
 if not l_0_4 then
-  return l_0_5
+  return mp.CLEAN
 end
--- DECOMPILER ERROR at PC53: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC54: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC55: Overwrote pending register: R6 in 'AssignReg'
-
-l_0_5 = l_0_5("explorer.exe")
--- DECOMPILER ERROR at PC57: Overwrote pending register: R4 in 'AssignReg'
-
-l_0_5 = #l_0_4
-if l_0_5 < 50 then
-  l_0_5 = mp
-  l_0_5 = l_0_5.CLEAN
-  return l_0_5
+l_0_4 = string.lower(l_0_4)
+if #l_0_4 < 50 then
+  return mp.CLEAN
 end
+local l_0_5 = {
+  " rem ",
+  "#",
+  "$$ ",
+  "verif",
+  "confirm",
+  "identity",
+  "verification",
+  "not a robot",
+  "\209\129\208\176\209\128tcha",
+  "human",
+  "authorized",
+  " ray",
+  " recaptcha",
+  " re captcha",
+  " rcaptcha",
+  "press enter",
+  " clip free",
+  " over free",
+  "robot: r",
+  "robot - r",
+  "robot - cloudflare",
+  "robot: cloudflare",
+  "robot: captcha",
+  "robot - captcha",
+  "human - r",
+  "human: r",
+  "human: captcha",
+  "human - captcha",
+  "microsoft windows: fix internet dns service reconnect",
+  "restart dns service in the microsoft windows system",
+  "id:",
+  "gatesig:",
+  "defender services secure access key"
+}
 if contains(l_0_4, l_0_5) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

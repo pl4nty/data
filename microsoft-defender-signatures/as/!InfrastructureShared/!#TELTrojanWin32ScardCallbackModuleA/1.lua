@@ -1,7 +1,6 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#TELTrojanWin32ScardCallbackModuleA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#TEL:Trojan:Win32/ScardCallbackModule.A
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & BM_MZ_DLL & HSTR:ScardCallbackContent
 
--- params : ...
--- function num : 0
 return mp.INFECTED
-

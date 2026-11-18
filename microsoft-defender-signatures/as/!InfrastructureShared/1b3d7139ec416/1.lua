@@ -1,31 +1,53 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1b3d7139ec416\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 1b3d7139ec416
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
+local l_0_0 = mp.GetScannedPPID()
 if l_0_0 == "" or l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+local l_0_1 = mp.GetProcessCommandLine(l_0_0)
 if l_0_1 == nil or #l_0_1 <= 60 then
   return mp.CLEAN
 end
-l_0_1 = (string.lower)(l_0_1)
-do
-  local l_0_2 = {}
-  -- DECOMPILER ERROR at PC61: No list found for R2 , SetList fails
-
-  -- DECOMPILER ERROR at PC62: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC63: Overwrote pending register: R4 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC64: Overwrote pending register: R5 in 'AssignReg'
-
-  if not (".cloud/")(".press/", ".pro/") then
-    return mp.CLEAN
-  end
-  do return mp.INFECTED end
-  -- WARNING: undefined locals caused missing assignments!
+l_0_1 = string.lower(l_0_1)
+local l_0_2 = {
+  ".cloud/",
+  ".press/",
+  ".pro/",
+  ".shop/",
+  ".hair/",
+  ".lat/",
+  ".bond/",
+  ".top/",
+  ".cyou/",
+  ".click/",
+  ".forest/",
+  ".world/",
+  ".today/",
+  ".life/",
+  ".digital/",
+  ".run/",
+  ".fun/",
+  ".icu/",
+  ".link/",
+  ".live/",
+  ".cfd/",
+  ".lol/",
+  ".ru/",
+  ".info/",
+  ".org/",
+  ".moe/",
+  ".com/",
+  ".exposed/",
+  ".net/",
+  ".ad/",
+  ".clloud",
+  ".veriffy",
+  "samples"
+}
+if not contains(l_0_1, l_0_2) then
+  return mp.CLEAN
 end
-
+return mp.INFECTED

@@ -1,10 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaLNK_ValidHeaderSize\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:LNK_ValidHeaderSize
+-- Type: 12
+-- MpAttributes: BM_LNK_FILE
 
--- params : ...
--- function num : 0
-if (mp.getfilesize)() > 76 then
+if mp.getfilesize() > 76 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

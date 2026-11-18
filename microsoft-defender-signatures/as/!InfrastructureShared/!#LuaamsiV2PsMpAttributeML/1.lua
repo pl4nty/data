@@ -1,28 +1,23 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaamsiV2PsMpAttributeML\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:amsiV2PsMpAttributeML
+-- Type: 24
+-- Includes: SetAttributeFromClassifierScoresEx
+-- MpAttributes: RPF:AMSI2:ML:Ps
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_mpattributevalue)("RPF:AMSI2:ML:Ps")
-do
-  do
-    if l_0_0 ~= nil then
-      local l_0_1 = {}
-      -- DECOMPILER ERROR at PC17: No list found for R1 , SetList fails
-
-      -- DECOMPILER ERROR at PC18: Overwrote pending register: R2 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC19: Overwrote pending register: R3 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC20: Overwrote pending register: R4 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC21: Overwrote pending register: R5 in 'AssignReg'
-
-      ;
-      (98)(95, 90, 80)
-    end
-    do return mp.CLEAN end
-    -- WARNING: undefined locals caused missing assignments!
-  end
+local l_0_0 = mp.get_mpattributevalue("RPF:AMSI2:ML:Ps")
+if l_0_0 ~= nil then
+  local l_0_1 = {
+    98,
+    95,
+    90,
+    80,
+    70,
+    60,
+    50,
+    40,
+    30,
+    20
+  }
+  SetAttributeFromClassifierScoresEx(l_0_0, l_0_1, "RPF:AMSI2:ML:Ps:")
 end
-
+return mp.CLEAN

@@ -1,102 +1,81 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaSuspiciousFileLocation\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:SuspiciousFileLocation
+-- Type: 9
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilename)()
-if l_0_0 == nil then
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
+
+local r0_0 = mp.getfilename()
+if r0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)(l_0_0)
-local l_0_2 = (string.sub)(l_0_1, -4)
-if l_0_2 == ".dll" then
-  if (string.len)(l_0_1) < 30 then
+local r0_1 = string.lower(r0_0)
+local r0_2 = string.sub(r0_1, -4)
+if r0_2 == ".dll" then
+  if string.len(r0_1) < 30 then
     return mp.CLEAN
   end
-  if l_0_1:find("\\appdata\\locallow", 1, true) ~= nil and ((string.match)(l_0_1, "\\appdata\\locallow\\%l%l%l%l%l%.dll") or (string.match)(l_0_1, "\\appdata\\locallow\\%l%l%l%l%l%l%.dll") or (string.match)(l_0_1, "\\appdata\\locallow\\%1%l%l%l%l%l%l%.dll")) then
-    (mp.set_mpattribute)("Lua:NotodarFilename.A")
-  end
-  if (string.sub)(l_0_1, -30) == "\\appdata\\local\\temp\\mdi064.dll" then
-    (mp.set_mpattribute)("Lua:FigyekDroppedFile.A")
-  end
-else
-  if l_0_2 == ".exe" then
-    if (string.len)(l_0_1) < 19 then
-      return mp.CLEAN
+  if r0_1:find("\\appdata\\locallow", 1, true) == nil then
+    if string.sub(r0_1, -30) == "\\appdata\\local\\temp\\mdi064.dll" then
+      mp.set_mpattribute("Lua:FigyekDroppedFile.A")
     end
-    if l_0_1:find("\\appdata\\roaming\\", 1, true) ~= nil then
-      local l_0_3, l_0_4 = l_0_1:match("(.+\\)([^\\]+)$")
-      if (string.sub)(l_0_3, -17) == "\\appdata\\roaming\\" then
-        (mp.set_mpattribute)("Lua:SuspiciousExeFileInAppdata.A")
-      else
-        if (string.sub)(l_0_3, -27) == "\\appdata\\roaming\\microsoft\\" then
-          (mp.set_mpattribute)("Lua:SuspiciousExeFileInAppdataMicrosoft.A")
-        else
-          if (string.sub)(l_0_3, -35) == "\\appdata\\roaming\\microsoft\\windows\\" then
-            (mp.set_mpattribute)("Lua:SuspiciousExeFileInAppdataMicrosoftWindows.A")
-          else
-            if (string.sub)(l_0_3, -31) == "\\appdata\\roaming\\windowsupdate\\" then
-              (mp.set_mpattribute)("Lua:SuspiciousExeFileInAppdataWindowsupdate.A")
-            else
-              if (string.match)(l_0_1, "\\appdata\\roaming\\%w%whost\\%w%whost.exe$") then
-                (mp.set_mpattribute)("Lua:SuspiciousHostExeFileInAppdata.A")
-              end
+  elseif string.match(r0_1, "\\appdata\\locallow\\%l%l%l%l%l%.dll")
+    or string.match(r0_1, "\\appdata\\locallow\\%l%l%l%l%l%l%.dll")
+    or string.match(r0_1, "\\appdata\\locallow\\%1%l%l%l%l%l%l%.dll") then
+    mp.set_mpattribute("Lua:NotodarFilename.A")
+  end
+elseif r0_2 == ".exe" then
+  if string.len(r0_1) < 19 then
+    return mp.CLEAN
+  end
+  if r0_1:find("\\appdata\\roaming\\", 1, true) == nil then
+    if r0_1:find("\\appdata\\local", 1, true) == nil then
+      if r0_1:find("\\appdata\\", 1, true) == nil then
+        if r0_1:find(":\\programdata\\", 1, true) == nil then
+          if r0_1:find("\\documents\\", 1, true) ~= nil then
+            local r0_3, r0_4 = r0_1:match("(.+\\)([^\\]+)$")
+            if string.match(r0_3, "\\users\\.+\\documents\\$") then
+              mp.set_mpattribute("Lua:SuspiciousExeFileInUserDocumentsFolder.A")
             end
           end
+        else
+          local r0_5, r0_6 = r0_1:match("(.+\\)([^\\]+)$")
+          if string.sub(r0_5, -14) == ":\\programdata\\" then
+            mp.set_mpattribute("Lua:SuspiciousExeFileInProgramData.A")
+          elseif string.match(r0_5, ":\\programdata\\%d%d%d%d%d%d\\$")
+            or string.sub(r0_5, -24) == ":\\programdata\\microsoft\\" then
+            mp.set_mpattribute("Lua:SuspiciousExeFileLocationInProgramData.A")
+          end
+        end
+      else
+        local r0_7, r0_8 = r0_1:match("(.+\\)([^\\]+)$")
+        if string.sub(r0_7, -9) == "\\appdata\\" then
+          mp.set_mpattribute("Lua:SuspiciousExeFileInAppdata.B")
         end
       end
     else
-      do
-        if l_0_1:find("\\appdata\\local", 1, true) ~= nil then
-          local l_0_5, l_0_6 = l_0_1:match("(.+\\)([^\\]+)$")
-          if (string.sub)(l_0_5, -22) == "\\local\\default folder\\" then
-            (mp.set_mpattribute)("Lua:SuspiciousExeFileLocationInLocalAppdata.A")
-          else
-            if (string.sub)(l_0_5, -15) == "\\appdata\\local\\" then
-              (mp.set_mpattribute)("Lua:SuspiciousExeFileInLocalAppdata.A")
-            else
-              if (string.sub)(l_0_5, -18) == "\\appdata\\locallow\\" then
-                (mp.set_mpattribute)("Lua:SuspiciousExeFileInLocalLowAppdata.A")
-              end
-            end
-          end
-        else
-          do
-            if l_0_1:find("\\appdata\\", 1, true) ~= nil then
-              local l_0_7, l_0_8 = l_0_1:match("(.+\\)([^\\]+)$")
-              if (string.sub)(l_0_7, -9) == "\\appdata\\" then
-                (mp.set_mpattribute)("Lua:SuspiciousExeFileInAppdata.B")
-              end
-            else
-              do
-                if l_0_1:find(":\\programdata\\", 1, true) ~= nil then
-                  local l_0_9, l_0_10 = l_0_1:match("(.+\\)([^\\]+)$")
-                  if (string.sub)(l_0_9, -14) == ":\\programdata\\" then
-                    (mp.set_mpattribute)("Lua:SuspiciousExeFileInProgramData.A")
-                  else
-                    if (string.match)(l_0_9, ":\\programdata\\%d%d%d%d%d%d\\$") or (string.sub)(l_0_9, -24) == ":\\programdata\\microsoft\\" then
-                      (mp.set_mpattribute)("Lua:SuspiciousExeFileLocationInProgramData.A")
-                    end
-                  end
-                else
-                  do
-                    do
-                      if l_0_1:find("\\documents\\", 1, true) ~= nil then
-                        local l_0_11, l_0_12 = l_0_1:match("(.+\\)([^\\]+)$")
-                        if (string.match)(l_0_11, "\\users\\.+\\documents\\$") then
-                          (mp.set_mpattribute)("Lua:SuspiciousExeFileInUserDocumentsFolder.A")
-                        end
-                      end
-                      return mp.CLEAN
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
+      local r0_9, r0_10 = r0_1:match("(.+\\)([^\\]+)$")
+      if string.sub(r0_9, -22) == "\\local\\default folder\\" then
+        mp.set_mpattribute("Lua:SuspiciousExeFileLocationInLocalAppdata.A")
+      elseif string.sub(r0_9, -15) == "\\appdata\\local\\" then
+        mp.set_mpattribute("Lua:SuspiciousExeFileInLocalAppdata.A")
+      elseif string.sub(r0_9, -18) == "\\appdata\\locallow\\" then
+        mp.set_mpattribute("Lua:SuspiciousExeFileInLocalLowAppdata.A")
       end
+    end
+  else
+    local r0_11, r0_12 = r0_1:match("(.+\\)([^\\]+)$")
+    if string.sub(r0_11, -17) == "\\appdata\\roaming\\" then
+      mp.set_mpattribute("Lua:SuspiciousExeFileInAppdata.A")
+    elseif string.sub(r0_11, -27) == "\\appdata\\roaming\\microsoft\\" then
+      mp.set_mpattribute("Lua:SuspiciousExeFileInAppdataMicrosoft.A")
+    elseif string.sub(r0_11, -35) == "\\appdata\\roaming\\microsoft\\windows\\" then
+      mp.set_mpattribute("Lua:SuspiciousExeFileInAppdataMicrosoftWindows.A")
+    elseif string.sub(r0_11, -31) == "\\appdata\\roaming\\windowsupdate\\" then
+      mp.set_mpattribute("Lua:SuspiciousExeFileInAppdataWindowsupdate.A")
+    elseif string.match(r0_1, "\\appdata\\roaming\\%w%whost\\%w%whost.exe$") then
+      mp.set_mpattribute("Lua:SuspiciousHostExeFileInAppdata.A")
     end
   end
 end
-
+return mp.CLEAN

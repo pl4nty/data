@@ -1,64 +1,56 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LUAHmdEnablePrecisionPulseRecurring\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#LUA:HmdEnablePrecisionPulseRecurring
+-- Type: 12
+-- Includes: PrecisionPulseHelpers, LuaFuncHelper
 
--- params : ...
--- function num : 0
-if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 7) then
-  local l_0_0 = "hmdprecisionpulse"
-  local l_0_1 = "scan_counter"
-  local l_0_2 = "max_scan"
-  local l_0_3 = "run_tracker"
-  local l_0_4 = 60
-  local l_0_5 = 500
-  local l_0_6 = (MpCommon.AtomicCounterValueNamespaced)(l_0_3, l_0_0)
-  if l_0_6 ~= nil then
+if MpCommon.NidSearch(mp.NID_ENABLE_EXTENDED_BAFS, 7) then
+  local r0_0, r0_1, r0_2, r0_3, r0_4, r0_5 = "hmdprecisionpulse", "scan_counter", "max_scan", "run_tracker", 60, 500
+  local r0_6 = MpCommon.AtomicCounterValueNamespaced(r0_3, r0_0)
+  if r0_6 ~= nil then
     return mp.CLEAN
   end
-  local l_0_7 = (MpCommon.AtomicCounterValueNamespaced)(l_0_1, l_0_0)
-  if l_0_7 == nil then
-    (MpCommon.AtomicCounterSetNamespaced)(l_0_1, l_0_0, 0, l_0_4)
+  local r0_7 = MpCommon.AtomicCounterValueNamespaced(r0_1, r0_0)
+  if r0_7 == nil then
+    MpCommon.AtomicCounterSetNamespaced(r0_1, r0_0, 0, r0_4)
   end
-  local l_0_8 = (MpCommon.AtomicCounterValueNamespaced)(l_0_2, l_0_0)
-  if l_0_8 == nil then
-    (MpCommon.AtomicCounterSetNamespaced)(l_0_2, l_0_0, l_0_5, l_0_4)
+  local r0_8 = MpCommon.AtomicCounterValueNamespaced(r0_2, r0_0)
+  if r0_8 == nil then
+    MpCommon.AtomicCounterSetNamespaced(r0_2, r0_0, r0_5, r0_4)
   end
-  if l_0_6 == nil then
-    pcall((MpCommon.AtomicCounterSetNamespaced)(l_0_3, l_0_0, 1, l_0_4))
+  if r0_6 == nil then
+    pcall(MpCommon.AtomicCounterSetNamespaced(r0_3, r0_0, 1, r0_4))
   end
-  local l_0_9 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.info"
-  local l_0_10 = {}
-  l_0_10[1] = l_0_9
-  local l_0_11 = {}
-  l_0_11.SIG_CONTEXT = "LUA_GENERIC"
-  l_0_11.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
-  l_0_11.TAG = "NOLOOKUP"
-  local l_0_12 = SafeGetUrlReputation(l_0_10, l_0_11, false, 4000)
-  if l_0_12 and l_0_12.error == 3 then
-    l_0_11.CRReportError = "Failed the first attempt"
-    l_0_12 = SafeGetUrlReputation(l_0_10, l_0_11, false, 4000)
-    if l_0_12 and l_0_12.error then
+  local r0_9 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.info"
+  local r0_10 = { [1] = r0_9 }
+  local r0_11 = {
+    SIG_CONTEXT = "LUA_GENERIC", CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE", TAG = "NOLOOKUP"
+  }
+  local r0_12 = SafeGetUrlReputation(r0_10, r0_11, false, 4000)
+  if r0_12 and r0_12.error == 3 then
+    r0_11.CRReportError = "Failed the first attempt"
+    r0_12 = SafeGetUrlReputation(r0_10, r0_11, false, 4000)
+    if r0_12 and r0_12.error then
       return mp.CLEAN
     end
   end
-  for l_0_16,l_0_17 in pairs(l_0_12.urls) do
-    if l_0_17.determination == 4 then
-      local l_0_18 = l_0_17.context
-      local l_0_19 = ""
-      if l_0_18 then
-        for l_0_23,l_0_24 in pairs(l_0_18) do
-          if l_0_23 == "Payload" then
-            l_0_19 = l_0_24
-            local l_0_25, l_0_26 = pcall(EnablePrecisionPulse, l_0_19, "HmdEnablePrecisionPulseRecurring", l_0_0, l_0_1, l_0_2)
-            if l_0_26 then
-              local l_0_27 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.report"
-              local l_0_28 = {}
-              l_0_28[1] = l_0_27
-              local l_0_29 = {}
-              l_0_29.SIG_CONTEXT = "LUA_GENERIC"
-              l_0_29.CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE"
-              l_0_29.TAG = "NOLOOKUP"
-              l_0_29.Report_Error = l_0_26
-              SafeGetUrlReputation(l_0_28, l_0_29, false, 4000)
+  for r0_13, r0_14 in pairs(r0_12.urls) do
+    if r0_14.determination == 4 then
+      local r0_15 = r0_14.context
+      local r0_16 = ""
+      if r0_15 then
+        for r0_17, r0_18 in pairs(r0_15) do
+          if r0_17 == "Payload" then
+            r0_16 = r0_18
+            local r0_19, r0_20 = pcall(EnablePrecisionPulse, r0_16,
+              "HmdEnablePrecisionPulseRecurring", r0_0, r0_1, r0_2)
+            if r0_20 then
+              local r0_21 = "http://962b56e5-5eb2-4ed3-8757-3f22f190d202.report"
+              local r0_22 = { [1] = r0_21 }
+              local r0_23 = {
+                SIG_CONTEXT = "LUA_GENERIC", CONTENT_SOURCE = "HEIMDALL_PRECISION_PULSE",
+                TAG = "NOLOOKUP", Report_Error = r0_20
+              }
+              SafeGetUrlReputation(r0_22, r0_23, false, 4000)
             end
             break
           end
@@ -67,9 +59,4 @@ if (MpCommon.NidSearch)(mp.NID_ENABLE_EXTENDED_BAFS, 7) then
     end
   end
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
-end
-
+return mp.CLEAN

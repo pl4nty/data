@@ -1,19 +1,18 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\61b3c212ed7f\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 61b3c212ed7f
+-- Type: 21
+-- Includes: TechniqueTracker, BMLuaLib
 
--- params : ...
--- function num : 0
 if IsSenseRelatedProc() == true then
   return mp.CLEAN
 end
 TrackPidAndTechniqueBM("BM", "T1003.002", "credentialdumping")
-local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_0 = bm.get_current_process_startup_info()
 local l_0_1 = l_0_0.command_line
-local l_0_2 = (mp.GetExecutablesFromCommandLine)(l_0_1)
-for l_0_6,l_0_7 in ipairs(l_0_2) do
-  if (sysio.IsFileExists)(l_0_7) and not (mp.IsKnownFriendlyFile)(l_0_7, true, false) then
-    (bm.add_related_file)(l_0_7)
+local l_0_2 = mp.GetExecutablesFromCommandLine(l_0_1)
+for l_0_3, l_0_4 in ipairs(l_0_2) do
+  if sysio.IsFileExists(l_0_4) and not mp.IsKnownFriendlyFile(l_0_4, true, false) then
+    bm.add_related_file(l_0_4)
   end
 end
 return mp.INFECTED
-

@@ -1,52 +1,45 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanWin32AppDomainManagerTypeA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:Win32/AppDomainManagerType.A
+-- Type: 13
+-- Includes: BMLuaLib
+-- MpAttributes: !BM_MZ_FILE & SCPT:AppDomainManagerType.A & SCPT:AppDomainManagerType.B & RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 == nil or l_0_0 == "" then
-  return mp.CLEAN
-end
-if (string.sub)(l_0_0, -11) ~= ".exe.config" or (string.find)(l_0_0, "program files", 1, true) ~= nil then
-  return mp.CLEAN
-end
-do
-  if (mp.getfilesize)() > 10000 then
-    local l_0_1, l_0_2, l_0_3 = 10000
-  end
-  ;
-  (mp.readprotection)(false)
-  -- DECOMPILER ERROR at PC50: Confused about usage of register: R1 in 'UnsetPending'
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
 
-  local l_0_4 = nil
-  ;
-  (mp.readprotection)(true)
-  local l_0_5 = nil
-  local l_0_6 = (tostring((mp.readfile)(0, l_0_1))):match("<appDomainManagerAssembly value=\"([^\"\r\n\\,]+)")
-  local l_0_7 = (l_0_5:match("<probing privatePath=\"([^\"\r\n]+)"))
-  do
-    if ((string.sub)(l_0_6, -4) ~= ".dll" and not l_0_7) or l_0_7 == "" then
-      local l_0_8 = nil
-      l_0_8 = l_0_0:match("^(.*)[/\\][^/\\]+$") .. "\\" .. l_0_6
-    else
+local r0_0 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+if r0_0 ~= nil and r0_0 ~= "" then
+  if string.sub(r0_0, -11) == ".exe.config" and string.find(r0_0, "program files", 1, true) == nil then
+    local r0_1 = mp.getfilesize()
+    r0_1 = r0_1 > 10000 and 10000 or r0_1
+    mp.readprotection(false)
+    local r0_2 = tostring(mp.readfile(0, r0_1))
+    mp.readprotection(true)
+    local r0_3 = r0_2:match('<appDomainManagerAssembly value="([^"\r\n\\,]+)')
+    local r0_4 = r0_2:match('<probing privatePath="([^"\r\n]+)')
+    local r0_5 = nil
+    if string.sub(r0_3, -4) ~= ".dll" then
+      r0_3 = r0_3 .. ".dll"
     end
-    -- DECOMPILER ERROR at PC100: Overwrote pending register: R5 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC109: Confused about usage of register: R5 in 'UnsetPending'
-
-    if (string.sub)(l_0_7, -1) ~= "\\" or (sysio.IsFileExists)(l_0_7 .. l_0_6) then
-      (mp.ReportLowfi)(l_0_7 .. l_0_6, 1924697406)
-      local l_0_9 = nil
-      ;
-      (mp.set_mpattribute)((string.format)("%s!%s", "SuspiciousAppDomainAssembly", l_0_9))
-      local l_0_10 = nil
-      if not isnull((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)) then
-        (MpCommon.BmTriggerSig)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID), l_0_10, (string.format)("Config=%s;Assembly=%s", l_0_0, l_0_9))
+    if r0_4 and r0_4 ~= "" then
+      if string.sub(r0_4, -1) == "\\" then
+        r0_5 = r0_4 .. r0_3
+      else
+        r0_5 = r0_4 .. "\\" .. r0_3
+      end
+    else
+      r0_5 = r0_0:match("^(.*)[/\\][^/\\]+$") .. "\\" .. r0_3
+    end
+    if sysio.IsFileExists(r0_5) then
+      mp.ReportLowfi(r0_5, 1924697406)
+      local r0_6 = "SuspiciousAppDomainAssembly"
+      mp.set_mpattribute(string.format("%s!%s", r0_6, r0_5))
+      local r0_7 = mp.get_contextdata(mp.CONTEXT_DATA_PROCESS_PPID)
+      if not isnull(r0_7) then
+        MpCommon.BmTriggerSig(r0_7, r0_6, string.format("Config=%s;Assembly=%s", r0_0, r0_5))
       end
     end
-    do
-      return mp.INFECTED
-    end
+    return mp.INFECTED
   end
+  return mp.CLEAN
 end
-
+return mp.CLEAN

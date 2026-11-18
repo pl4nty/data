@@ -1,233 +1,57 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1f5b34c385551\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 1f5b34c385551
+-- Type: 21
+-- Includes: BMLuaLib, TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-local l_0_1 = ((bm.get_current_process_startup_info)())
-local l_0_2 = nil
-local l_0_3 = {}
-local l_0_4 = {}
--- DECOMPILER ERROR at PC11: No list found for R4 , SetList fails
-
-local l_0_5 = {}
--- DECOMPILER ERROR at PC13: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC15: No list found for R5 , SetList fails
-
--- DECOMPILER ERROR at PC16: No list found for R3 , SetList fails
-
--- DECOMPILER ERROR at PC22: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC28: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC29: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC31: Overwrote pending register: R7 in 'AssignReg'
-
-if l_0_4 ~= nil and l_0_0 ~= nil and not l_0_4 then
-  l_0_4 = l_0_4(l_0_5, l_0_3, "")
+local l_0_0 = bm.get_imagepath()
+local l_0_1 = bm.get_current_process_startup_info()
+local l_0_2
+local l_0_3 = {
+  {
+    "/usr/bin/make",
+    ""
+  },
+  {
+    "/usr/bin/ninja",
+    ""
+  }
+}
+if l_0_1.ppid == nil or l_0_0 == nil or isParentPackageManager(l_0_1.ppid, true) or checkParentCmdline(l_0_1.ppid, l_0_3, 3) then
+  return mp.CLEAN
 end
-if l_0_4 then
-  l_0_4 = mp
-  l_0_4 = l_0_4.CLEAN
-  return l_0_4
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p1 ~= nil then
+  l_0_2 = this_sigattrlog[1].utf8p1
+elseif this_sigattrlog[2].matched and this_sigattrlog[2].utf8p1 ~= nil then
+  l_0_2 = this_sigattrlog[2].utf8p1
+elseif this_sigattrlog[3].matched and this_sigattrlog[3].utf8p1 ~= nil then
+  l_0_2 = this_sigattrlog[3].utf8p1
+elseif this_sigattrlog[4].matched and this_sigattrlog[4].utf8p1 ~= nil then
+  l_0_2 = this_sigattrlog[4].utf8p1
+elseif this_sigattrlog[5].matched and this_sigattrlog[5].utf8p1 ~= nil then
+  l_0_2 = this_sigattrlog[5].utf8p1
+elseif this_sigattrlog[6].matched and this_sigattrlog[6].utf8p1 ~= nil then
+  l_0_2 = this_sigattrlog[6].utf8p1
+elseif this_sigattrlog[7].matched and this_sigattrlog[7].utf8p1 ~= nil then
+  l_0_2 = this_sigattrlog[7].utf8p1
+elseif this_sigattrlog[8].matched and this_sigattrlog[8].utf8p1 ~= nil then
+  l_0_2 = this_sigattrlog[8].utf8p1
+elseif this_sigattrlog[9].matched and this_sigattrlog[9].utf8p1 ~= nil then
+  l_0_2 = this_sigattrlog[9].utf8p1
+elseif this_sigattrlog[10].matched and this_sigattrlog[10].utf8p1 ~= nil then
+  l_0_2 = this_sigattrlog[10].utf8p1
+elseif this_sigattrlog[11].matched and this_sigattrlog[11].utf8p1 ~= nil then
+  l_0_2 = this_sigattrlog[11].utf8p1
+elseif this_sigattrlog[12].matched and this_sigattrlog[12].utf8p1 ~= nil then
+  l_0_2 = this_sigattrlog[12].utf8p1
 end
-l_0_4 = this_sigattrlog
-l_0_4 = l_0_4[1]
-l_0_4 = l_0_4.matched
-if l_0_4 then
-  l_0_4 = this_sigattrlog
-  l_0_4 = l_0_4[1]
-  l_0_4 = l_0_4.utf8p1
-  if l_0_4 ~= nil then
-    l_0_4 = this_sigattrlog
-    l_0_4 = l_0_4[1]
-    l_0_2 = l_0_4.utf8p1
-  else
-    l_0_4 = this_sigattrlog
-    l_0_4 = l_0_4[2]
-    l_0_4 = l_0_4.matched
-    if l_0_4 then
-      l_0_4 = this_sigattrlog
-      l_0_4 = l_0_4[2]
-      l_0_4 = l_0_4.utf8p1
-      if l_0_4 ~= nil then
-        l_0_4 = this_sigattrlog
-        l_0_4 = l_0_4[2]
-        l_0_2 = l_0_4.utf8p1
-      else
-        l_0_4 = this_sigattrlog
-        l_0_4 = l_0_4[3]
-        l_0_4 = l_0_4.matched
-        if l_0_4 then
-          l_0_4 = this_sigattrlog
-          l_0_4 = l_0_4[3]
-          l_0_4 = l_0_4.utf8p1
-          if l_0_4 ~= nil then
-            l_0_4 = this_sigattrlog
-            l_0_4 = l_0_4[3]
-            l_0_2 = l_0_4.utf8p1
-          else
-            l_0_4 = this_sigattrlog
-            l_0_4 = l_0_4[4]
-            l_0_4 = l_0_4.matched
-            if l_0_4 then
-              l_0_4 = this_sigattrlog
-              l_0_4 = l_0_4[4]
-              l_0_4 = l_0_4.utf8p1
-              if l_0_4 ~= nil then
-                l_0_4 = this_sigattrlog
-                l_0_4 = l_0_4[4]
-                l_0_2 = l_0_4.utf8p1
-              else
-                l_0_4 = this_sigattrlog
-                l_0_4 = l_0_4[5]
-                l_0_4 = l_0_4.matched
-                if l_0_4 then
-                  l_0_4 = this_sigattrlog
-                  l_0_4 = l_0_4[5]
-                  l_0_4 = l_0_4.utf8p1
-                  if l_0_4 ~= nil then
-                    l_0_4 = this_sigattrlog
-                    l_0_4 = l_0_4[5]
-                    l_0_2 = l_0_4.utf8p1
-                  else
-                    l_0_4 = this_sigattrlog
-                    l_0_4 = l_0_4[6]
-                    l_0_4 = l_0_4.matched
-                    if l_0_4 then
-                      l_0_4 = this_sigattrlog
-                      l_0_4 = l_0_4[6]
-                      l_0_4 = l_0_4.utf8p1
-                      if l_0_4 ~= nil then
-                        l_0_4 = this_sigattrlog
-                        l_0_4 = l_0_4[6]
-                        l_0_2 = l_0_4.utf8p1
-                      else
-                        l_0_4 = this_sigattrlog
-                        l_0_4 = l_0_4[7]
-                        l_0_4 = l_0_4.matched
-                        if l_0_4 then
-                          l_0_4 = this_sigattrlog
-                          l_0_4 = l_0_4[7]
-                          l_0_4 = l_0_4.utf8p1
-                          if l_0_4 ~= nil then
-                            l_0_4 = this_sigattrlog
-                            l_0_4 = l_0_4[7]
-                            l_0_2 = l_0_4.utf8p1
-                          else
-                            l_0_4 = this_sigattrlog
-                            l_0_4 = l_0_4[8]
-                            l_0_4 = l_0_4.matched
-                            if l_0_4 then
-                              l_0_4 = this_sigattrlog
-                              l_0_4 = l_0_4[8]
-                              l_0_4 = l_0_4.utf8p1
-                              if l_0_4 ~= nil then
-                                l_0_4 = this_sigattrlog
-                                l_0_4 = l_0_4[8]
-                                l_0_2 = l_0_4.utf8p1
-                              else
-                                l_0_4 = this_sigattrlog
-                                l_0_4 = l_0_4[9]
-                                l_0_4 = l_0_4.matched
-                                if l_0_4 then
-                                  l_0_4 = this_sigattrlog
-                                  l_0_4 = l_0_4[9]
-                                  l_0_4 = l_0_4.utf8p1
-                                  if l_0_4 ~= nil then
-                                    l_0_4 = this_sigattrlog
-                                    l_0_4 = l_0_4[9]
-                                    l_0_2 = l_0_4.utf8p1
-                                  else
-                                    l_0_4 = this_sigattrlog
-                                    l_0_4 = l_0_4[10]
-                                    l_0_4 = l_0_4.matched
-                                    if l_0_4 then
-                                      l_0_4 = this_sigattrlog
-                                      l_0_4 = l_0_4[10]
-                                      l_0_4 = l_0_4.utf8p1
-                                      if l_0_4 ~= nil then
-                                        l_0_4 = this_sigattrlog
-                                        l_0_4 = l_0_4[10]
-                                        l_0_2 = l_0_4.utf8p1
-                                      else
-                                        l_0_4 = this_sigattrlog
-                                        l_0_4 = l_0_4[11]
-                                        l_0_4 = l_0_4.matched
-                                        if l_0_4 then
-                                          l_0_4 = this_sigattrlog
-                                          l_0_4 = l_0_4[11]
-                                          l_0_4 = l_0_4.utf8p1
-                                          if l_0_4 ~= nil then
-                                            l_0_4 = this_sigattrlog
-                                            l_0_4 = l_0_4[11]
-                                            l_0_2 = l_0_4.utf8p1
-                                          else
-                                            l_0_4 = this_sigattrlog
-                                            l_0_4 = l_0_4[12]
-                                            l_0_4 = l_0_4.matched
-                                            if l_0_4 then
-                                              l_0_4 = this_sigattrlog
-                                              l_0_4 = l_0_4[12]
-                                              l_0_4 = l_0_4.utf8p1
-                                              if l_0_4 ~= nil then
-                                                l_0_4 = this_sigattrlog
-                                                l_0_4 = l_0_4[12]
-                                                l_0_2 = l_0_4.utf8p1
-                                              end
-                                            end
-                                          end
-                                          if l_0_2 == nil then
-                                            l_0_4 = mp
-                                            l_0_4 = l_0_4.CLEAN
-                                            return l_0_4
-                                          end
-                                          l_0_4 = isTainted
-                                          -- DECOMPILER ERROR at PC211: Overwrote pending register: R5 in 'AssignReg'
-
-                                          l_0_4 = l_0_4(l_0_5, "remote_file_created_taint")
-                                          if l_0_4 then
-                                            l_0_4 = addRelatedProcess
-                                            l_0_4()
-                                            l_0_4 = reportRelatedBmHits
-                                            l_0_4()
-                                            l_0_4 = bm
-                                            l_0_4 = l_0_4.add_related_file
-                                            -- DECOMPILER ERROR at PC222: Overwrote pending register: R5 in 'AssignReg'
-
-                                            l_0_4(l_0_5)
-                                            l_0_4 = TrackPidAndTechniqueBM
-                                            -- DECOMPILER ERROR at PC225: Overwrote pending register: R5 in 'AssignReg'
-
-                                            l_0_4(l_0_5, "T1036", "DefenseEvasion_Masquerading_FileDropinBinByRemoteFile")
-                                            l_0_4 = mp
-                                            l_0_4 = l_0_4.INFECTED
-                                            return l_0_4
-                                          end
-                                          l_0_4 = mp
-                                          l_0_4 = l_0_4.CLEAN
-                                          return l_0_4
-                                        end
-                                      end
-                                    end
-                                  end
-                                end
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-  end
+if l_0_2 == nil then
+  return mp.CLEAN
 end
-
+if isTainted(l_0_0, "remote_file_created_taint") then
+  addRelatedProcess()
+  reportRelatedBmHits()
+  bm.add_related_file(l_0_2)
+  TrackPidAndTechniqueBM("BM", "T1036", "DefenseEvasion_Masquerading_FileDropinBinByRemoteFile")
+  return mp.INFECTED
+end
+return mp.CLEAN

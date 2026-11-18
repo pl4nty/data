@@ -1,16 +1,16 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaLuaAMSI_Decoded\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:Lua:AMSI_Decoded
+-- Type: 13
+-- MpAttributes: MpPowershellAmsiViaCmdLine & MpIsPowerShellAMSIScan
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_AMSI then
   return mp.CLEAN
 end
-if (mp.get_mpattributesubstring)("PACKED_WITH:") then
+if mp.get_mpattributesubstring("PACKED_WITH:") then
   return mp.CLEAN
 end
-if (mp.get_mpattribute)("ScriptObfuseScore") then
+if mp.get_mpattribute("ScriptObfuseScore") then
   return mp.CLEAN
 end
 if mp.HEADERPAGE_SZ < 1024 then
@@ -23,37 +23,27 @@ local l_0_4 = 0
 local l_0_5 = 0
 local l_0_6 = 0
 local l_0_7 = 0
-local l_0_8 = (tostring(headerpage)):lower()
-l_0_8 = (string.gsub)(l_0_8, "\'%+\'", "")
-l_0_8 = (string.gsub)(l_0_8, "\"%+\"", "")
-l_0_8 = (string.gsub)(l_0_8, "\'%)%+%(\'", "")
-l_0_8 = (string.gsub)(l_0_8, "\"%)%+%(\"", "")
-l_0_8 = (string.gsub)(l_0_8, "`", "")
-l_0_8 = (string.gsub)(l_0_8, "\"\"", "")
+local l_0_8 = tostring(headerpage):lower()
+l_0_8, l_0_2 = string.gsub(l_0_8, "'%+'", "")
+l_0_8, l_0_3 = string.gsub(l_0_8, "\"%+\"", "")
+l_0_8, l_0_4 = string.gsub(l_0_8, "'%)%+%('", "")
+l_0_8, l_0_5 = string.gsub(l_0_8, "\"%)%+%(\"", "")
+l_0_8, l_0_6 = string.gsub(l_0_8, "`", "")
+l_0_8, l_0_7 = string.gsub(l_0_8, "\"\"", "")
 l_0_1 = l_0_2 + l_0_3 + l_0_4 + l_0_5 + l_0_6 + l_0_7
-;
-(mp.set_mpattributeex)("//ScriptObfuseScore", l_0_1)
-if l_0_1 >= 500 then
-  (mp.set_mpattribute)("Lua:HighScriptObfuseScore500")
-else
-  if l_0_1 > 400 then
-    (mp.set_mpattribute)("Lua:HighScriptObfuseScore400")
-  else
-    if l_0_1 >= 300 then
-      (mp.set_mpattribute)("Lua:HighScriptObfuseScore300")
-    else
-      if l_0_1 >= 100 then
-        (mp.set_mpattribute)("Lua:HighScriptObfuseScore100")
-      else
-        if l_0_1 >= 50 then
-          (mp.set_mpattribute)("Lua:HighScriptObfuseScore50")
-        end
-      end
-    end
-  end
+mp.set_mpattributeex("//ScriptObfuseScore", l_0_1)
+if 500 <= l_0_1 then
+  mp.set_mpattribute("Lua:HighScriptObfuseScore500")
+elseif 400 < l_0_1 then
+  mp.set_mpattribute("Lua:HighScriptObfuseScore400")
+elseif 300 <= l_0_1 then
+  mp.set_mpattribute("Lua:HighScriptObfuseScore300")
+elseif 100 <= l_0_1 then
+  mp.set_mpattribute("Lua:HighScriptObfuseScore100")
+elseif 50 <= l_0_1 then
+  mp.set_mpattribute("Lua:HighScriptObfuseScore50")
 end
-if l_0_1 > 20 then
-  (mp.vfo_add_buffer)(l_0_8, "[SCRIPTAMSIDecoded]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+if 20 < l_0_1 then
+  mp.vfo_add_buffer(l_0_8, "[SCRIPTAMSIDecoded]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
 end
 return mp.INFECTED
-

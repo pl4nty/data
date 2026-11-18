@@ -1,10 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaChromChatST1\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:ChromChat.ST1
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & Lua:JSExt
 
--- params : ...
--- function num : 0
-if #(mp.enum_mpattributesubstring)("SCRT:ChromChatST.") >= 4 then
+local l_0_0 = mp.enum_mpattributesubstring("SCRT:ChromChatST.")
+if 4 <= #l_0_0 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

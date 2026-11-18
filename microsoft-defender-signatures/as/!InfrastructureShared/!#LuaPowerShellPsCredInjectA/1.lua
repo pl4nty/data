@@ -1,22 +1,31 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaPowerShellPsCredInjectA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:PowerShell/PsCredInject.A
+-- Type: 13
+-- MpAttributes: SCRIPT:PowerShell & PowerShell:New-Object
 
--- params : ...
--- function num : 0
-do
-  if ((((((mp.get_mpattribute)("SCRIPT:RefPeInject.A") and (mp.get_mpattribute)("SCRIPT:PsCredInject.A!NewWinLogonA")) or (mp.get_mpattribute)("SCRIPT:PsCredInject.A!NewWinLogonB")) and not (mp.get_mpattribute)("SCRIPT:PsCredInject.A!ExistingWinLogon")) or (mp.get_mpattribute)("SCRIPT:PsCredInject.A!Binary")) and not (mp.get_mpattribute)("SCRIPT:PsCredInject.A!BinaryDecode")) or (mp.get_mpattribute)("SCRIPT:PsCredInject.A!BinaryInject") then
-    local l_0_0, l_0_1 = 0 + 1 + 1 + 1 + 1 + 1 + 1
-  end
-  -- DECOMPILER ERROR at PC49: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 >= 2 then
-    (mp.set_mpattribute)("Lua:PowerShell/PsCredInject.A!suspicious")
-  end
-  -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 >= 4 then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0 = 0
+if mp.get_mpattribute("SCRIPT:RefPeInject.A") then
+  l_0_0 = l_0_0 + 1
 end
-
+if mp.get_mpattribute("SCRIPT:PsCredInject.A!NewWinLogonA") or mp.get_mpattribute("SCRIPT:PsCredInject.A!NewWinLogonB") then
+  l_0_0 = l_0_0 + 1
+end
+if mp.get_mpattribute("SCRIPT:PsCredInject.A!ExistingWinLogon") then
+  l_0_0 = l_0_0 + 1
+end
+if mp.get_mpattribute("SCRIPT:PsCredInject.A!Binary") then
+  l_0_0 = l_0_0 + 1
+end
+if mp.get_mpattribute("SCRIPT:PsCredInject.A!BinaryDecode") then
+  l_0_0 = l_0_0 + 1
+end
+if mp.get_mpattribute("SCRIPT:PsCredInject.A!BinaryInject") then
+  l_0_0 = l_0_0 + 1
+end
+if 2 <= l_0_0 then
+  mp.set_mpattribute("Lua:PowerShell/PsCredInject.A!suspicious")
+end
+if 4 <= l_0_0 then
+  return mp.INFECTED
+end
+return mp.CLEAN

@@ -1,56 +1,19 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\feb3004db20d\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: feb3004db20d
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC39: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (not (this_sigattrlog[4]).matched or (this_sigattrlog[4]).utf8p2 == nil or (string.lower)((this_sigattrlog[4]).utf8p2) ~= nil) and (string.len)((string.lower)((this_sigattrlog[4]).utf8p2)) > 3 then
-    local l_0_5 = nil
-    local l_0_6 = contains
-    local l_0_7 = l_0_5
-    l_0_6 = l_0_6(l_0_7, {"transfer", "addfile"})
-    if l_0_6 then
-      l_0_6 = contains
-      l_0_7 = l_0_5
-      l_0_6 = l_0_6(l_0_7, "\\share$\\")
-      if not l_0_6 then
-        l_0_6 = contains
-        l_0_7 = l_0_5
-        l_0_6 = l_0_6(l_0_7, "\\admin$\\")
-        if not l_0_6 then
-          l_0_6 = contains
-          l_0_7 = l_0_5
-          l_0_6 = l_0_6(l_0_7, " \\\\")
-          if not l_0_6 then
-            l_0_6 = contains
-            l_0_7 = l_0_5
-            l_0_6 = l_0_6(l_0_7, " \"\"\\\\")
-          end
-        end
-      end
-      if l_0_6 then
-        l_0_6 = pcall
-        l_0_7 = reportBmInfo
-        l_0_6 = l_0_6(l_0_7)
-        -- DECOMPILER ERROR at PC90: Overwrote pending register: R6 in 'AssignReg'
-
-        if not l_0_6 and l_0_7 then
-          (bm.add_related_string)("bmInfoFailReason", tostring(R6_PC88), R6_PC88)
-        end
-        return mp.INFECTED
-      end
-    end
-  end
-  do
-    return mp.CLEAN
-  end
+local l_0_0
+if this_sigattrlog[3].matched and this_sigattrlog[3].utf8p2 ~= nil then
+  l_0_0 = string.lower(this_sigattrlog[3].utf8p2)
+elseif this_sigattrlog[4].matched and this_sigattrlog[4].utf8p2 ~= nil then
+  l_0_0 = string.lower(this_sigattrlog[4].utf8p2)
 end
-
+if l_0_0 ~= nil and 3 < string.len(l_0_0) and contains(l_0_0, {"transfer", "addfile"}) and (contains(l_0_0, "\\share$\\") or contains(l_0_0, "\\admin$\\") or contains(l_0_0, " \\\\") or contains(l_0_0, " \"\"\\\\")) then
+  local l_0_1, l_0_2 = pcall(reportBmInfo)
+  if not l_0_1 and l_0_2 then
+    bm.add_related_string("bmInfoFailReason", tostring(l_0_2), bm.RelatedStringBMReport)
+  end
+  return mp.INFECTED
+end
+return mp.CLEAN

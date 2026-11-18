@@ -1,26 +1,27 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\10dd7c3ba36f6\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 10dd7c3ba36f6
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
 local l_0_0 = GetRealPidForScenario("CMDHSTR")
 if IsPidExcluded(l_0_0) then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetParentProcInfo)()
+local l_0_1 = mp.GetParentProcInfo()
 if l_0_1 == nil or l_0_1.ppid == nil or l_0_1.image_path == nil then
   return mp.CLEAN
 end
 local l_0_2 = l_0_1.image_path
-local l_0_3 = (string.lower)(l_0_2:match("([^\\]+)$"))
-local l_0_4 = {}
-l_0_4["ccmexec.exe"] = true
-l_0_4["gpscript.exe"] = true
-l_0_4["mpcmdrun.exe"] = true
-l_0_4["mssense.exe"] = true
-l_0_4["senseir.exe"] = true
-l_0_4["corsearch.exe"] = true
-l_0_4["microsoft.bdd.tasksequencepshost40.exe"] = true
+local l_0_3 = string.lower(l_0_2:match("([^\\]+)$"))
+local l_0_4 = {
+  ["ccmexec.exe"] = true,
+  ["gpscript.exe"] = true,
+  ["mpcmdrun.exe"] = true,
+  ["mssense.exe"] = true,
+  ["senseir.exe"] = true,
+  ["corsearch.exe"] = true,
+  ["microsoft.bdd.tasksequencepshost40.exe"] = true
+}
 if l_0_4[l_0_3] then
   return mp.CLEAN
 end
@@ -31,7 +32,7 @@ end
 if IsTacticObservedForParents(l_0_0, "susp_ransomware", 2) then
   return mp.INFECTED
 end
-local l_0_5 = (mp.GetParentProcInfo)()
+local l_0_5 = mp.GetParentProcInfo()
 if l_0_5 == nil or l_0_5.ppid == nil or l_0_5.image_path == nil then
   return mp.CLEAN
 end
@@ -40,4 +41,3 @@ if l_0_6.winrshost_childproc or l_0_6.wsmprovhost_childproc or l_0_6.wmi_childpr
   return mp.INFECTED
 end
 return mp.CLEAN
-

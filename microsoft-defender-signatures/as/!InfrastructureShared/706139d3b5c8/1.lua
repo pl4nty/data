@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: 706139d3b5c8
+-- Type: 21
+
+if peattributes.isdll and pehdr.NumberOfSections == 5 and mp.getfilesize() >= 65536 and mp.getfilesize() <= 1048576 then
+  return mp.INFECTED
+end
+return mp.CLEAN

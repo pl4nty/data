@@ -1,59 +1,68 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\76d70395c76f\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 76d70395c76f
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0 = mp.GetParentProcInfo()
 if l_0_0 == nil or l_0_0.image_path == nil then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)(l_0_0.image_path)
+local l_0_1 = string.lower(l_0_0.image_path)
 if l_0_1:match("([^\\]+)$") ~= "explorer.exe" then
   return mp.CLEAN
 end
-local l_0_2 = (mp.GetScannedPPID)()
+local l_0_2 = mp.GetScannedPPID()
 if l_0_2 == "" or l_0_2 == nil then
   return mp.CLEAN
 end
-local l_0_3 = (mp.GetProcessCommandLine)(l_0_2)
+local l_0_3 = mp.GetProcessCommandLine(l_0_2)
 if not l_0_3 then
   return mp.CLEAN
 end
-l_0_3 = (string.lower)(l_0_3)
+l_0_3 = string.lower(l_0_3)
 if #l_0_3 < 50 then
   return mp.CLEAN
 end
-local l_0_4 = contains
-local l_0_5 = l_0_3
-local l_0_6 = {}
--- DECOMPILER ERROR at PC57: No list found for R6 , SetList fails
-
--- DECOMPILER ERROR at PC61: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC62: Overwrote pending register: R4 in 'AssignReg'
-
-if not l_0_4 then
-  return l_0_4
+if not contains(l_0_3, {"http"}) then
+  return mp.CLEAN
 end
--- DECOMPILER ERROR at PC67: Overwrote pending register: R7 in 'AssignReg'
-
--- DECOMPILER ERROR at PC96: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC97: Overwrote pending register: R6 in 'AssignReg'
-
-l_0_5 = l_0_5(l_0_6, l_0_4)
-if l_0_5 then
-  l_0_5 = mp
-  l_0_5 = l_0_5.INFECTED
-  return l_0_5
+local l_0_4 = {
+  "iex",
+  "iwr",
+  "irm",
+  "curl",
+  "e:jscript",
+  "invoke-restmethod",
+  "invoke-webrequest",
+  "invoke-expression",
+  "start-process",
+  "verif",
+  " ray",
+  " recaptcha",
+  " re captcha",
+  " rcaptcha",
+  "press enter",
+  " clip free",
+  " over free",
+  "robot: r",
+  "robot - r",
+  "robot - cloudflare",
+  "robot: cloudflare",
+  "robot: captcha",
+  "robot - captcha",
+  "human - r",
+  "human: r",
+  "human: captcha",
+  "human - captcha",
+  "microsoft windows: fix internet dns service reconnect",
+  "restart dns service in the microsoft windows system",
+  "defender services secure access key"
+}
+if contains(l_0_3, l_0_4) then
+  return mp.INFECTED
 end
-l_0_5 = MpCommon
-l_0_5 = l_0_5.StringRegExpSearch
--- DECOMPILER ERROR at PC107: Overwrote pending register: R6 in 'AssignReg'
-
-l_0_5 = l_0_5(l_0_6, l_0_3)
+local l_0_5, l_0_6 = MpCommon.StringRegExpSearch("-w[indowstyle]*\\s+(?:h[iden]*|1)\\s+", l_0_3)
 if l_0_5 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

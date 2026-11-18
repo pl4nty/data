@@ -1,12 +1,12 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LnkLocations\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#LnkLocations
+-- Type: 12
+-- MpAttributes: BM_LNK_FILE | BM_TEXT_FILE
 
--- params : ...
--- function num : 0
-if (mp.get_mpattribute)("BM_LNK_FILE") == false and (mp.get_mpattribute)("PACKED_WITH:[CMDEmbedded]") == false then
+if mp.get_mpattribute("BM_LNK_FILE") == false and mp.get_mpattribute("PACKED_WITH:[CMDEmbedded]") == false then
   return mp.CLEAN
 end
-local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_0, l_0_1 = mp.getfilename(mp.bitor(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
 local l_0_2 = false
 local l_0_3 = l_0_1:sub(-3)
 local l_0_4 = "tmf|emf|wmf|spl|off|bak|m4a|mp4|mp3|wav|bmp|kgx|idx|etl|log|ico|sdd|dat"
@@ -17,7 +17,6 @@ if l_0_0:find("\\office\\recent", 1, true) or l_0_0:find("\\windows\\recent", 1,
   l_0_2 = true
 end
 if l_0_2 then
-  (mp.set_mpattribute)("Lua:LnkExclusions")
+  mp.set_mpattribute("Lua:LnkExclusions")
 end
 return mp.CLEAN
-

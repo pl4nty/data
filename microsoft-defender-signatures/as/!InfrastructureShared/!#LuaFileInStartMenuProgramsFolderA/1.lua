@@ -1,11 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaFileInStartMenuProgramsFolderA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:FileInStartMenuProgramsFolder.A
+-- Type: 12
+-- MpAttributes: MpOnOpenOrCloseRtpScan
 
--- params : ...
--- function num : 0
-local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH))
-if l_0_0 ~= nil and (string.len)(l_0_0) > 40 and (string.find)(l_0_0, "\\microsoft\\windows\\start menu\\programs", 1, true) ~= nil then
+local l_0_0 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_FILEPATH))
+if l_0_0 ~= nil and string.len(l_0_0) > 40 and string.find(l_0_0, "\\microsoft\\windows\\start menu\\programs", 1, true) ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN
-

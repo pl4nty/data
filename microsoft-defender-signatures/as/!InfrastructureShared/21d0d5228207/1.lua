@@ -1,50 +1,41 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\21d0d5228207\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 21d0d5228207
+-- Type: 21
+-- Includes: BMLuaLib, ResearchData
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 268435456 then
+local l_0_0 = mp.getfilesize()
+if 268435456 < l_0_0 then
   return mp.CLEAN
 end
-local l_0_1 = {}
--- DECOMPILER ERROR at PC13: No list found for R1 , SetList fails
-
--- DECOMPILER ERROR at PC14: Overwrote pending register: R2 in 'AssignReg'
-
-local l_0_2 = (("cache").getfilename)()
--- DECOMPILER ERROR at PC19: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC21: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC26: Overwrote pending register: R5 in 'AssignReg'
-
-if l_0_2 and contains(l_0_2, ".tmp") then
-  return mp.CLEAN
-end
-do
-  if l_0_0 < 16777216 then
-    local l_0_3, l_0_4 = l_0_0
-  end
-  -- DECOMPILER ERROR at PC40: Confused about usage of register: R3 in 'UnsetPending'
-
-  local l_0_5 = nil
-  if (mp.BMSearchFile)(0, l_0_3, "󠁣󠁲󠁩󠁰󠁴\144\000") < 0 then
-    return mp.INFECTED
-  end
-  do
-    if (mp.BMSearchFile)(0, l_0_3, "󠁣󠁲󠁩󠁰󠁴\144\000") - 80 < 0 then
-      local l_0_6 = nil
-    end
-    local l_0_7 = nil
-    ;
-    (mp.readprotection)(false)
-    local l_0_8 = nil
-    ;
-    (mp.readprotection)(true)
-    local l_0_9 = nil
-    set_research_data("EncodedBytes", (MpCommon.Base64Encode)((mp.readfile)(0, 512)), false)
-    return mp.INFECTED
+local l_0_1 = {
+  "cache",
+  "-wal",
+  "\\temp\\",
+  ".tmp"
+}
+local l_0_2 = mp.getfilename()
+if l_0_2 then
+  l_0_2 = string.lower(l_0_2)
+  if contains(l_0_2, l_0_1) then
+    return mp.CLEAN
   end
 end
-
+local l_0_3 = 16777216
+if l_0_0 < l_0_3 then
+  l_0_3 = l_0_0
+end
+local l_0_4 = mp.BMSearchFile(0, l_0_3, "\243\160\129\163\243\160\129\178\243\160\129\169\243\160\129\176\243\160\129\180\144\000")
+if l_0_4 < 0 then
+  return mp.INFECTED
+end
+local l_0_5 = l_0_4 - 80
+if l_0_5 < 0 then
+  l_0_5 = 0
+end
+local l_0_6 = 512
+mp.readprotection(false)
+local l_0_7 = mp.readfile(l_0_5, l_0_6)
+mp.readprotection(true)
+local l_0_8 = MpCommon.Base64Encode(l_0_7)
+set_research_data("EncodedBytes", l_0_8, false)
+return mp.INFECTED

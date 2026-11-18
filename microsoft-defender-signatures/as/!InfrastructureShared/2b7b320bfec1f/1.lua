@@ -1,69 +1,43 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2b7b320bfec1f\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 2b7b320bfec1f
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[6]).matched and (this_sigattrlog[6]).utf8p1 ~= nil then
-    local l_0_0, l_0_2 = nil
-  end
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 then
-    do
-      if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 and (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 and (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 and (this_sigattrlog[4]).matched then
-        local l_0_1, l_0_3 = , (this_sigattrlog[4]).utf8p2
+local l_0_0
+if this_sigattrlog[6].matched and this_sigattrlog[6].utf8p1 ~= nil then
+  l_0_0 = string.lower(this_sigattrlog[6].utf8p2)
+end
+if l_0_0 then
+  local l_0_1 = this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 and this_sigattrlog[2].matched and this_sigattrlog[2].utf8p2 and this_sigattrlog[3].matched and this_sigattrlog[3].utf8p2 and this_sigattrlog[4].matched and this_sigattrlog[4].utf8p2
+  if l_0_1 then
+    local l_0_2 = string.match(l_0_1, "Uri=([^;]+)")
+    if isnull(l_0_2) then
+      return mp.CLEAN
+    end
+    local l_0_3 = {}
+    l_0_3.SIG_CONTEXT = "BM"
+    l_0_3.CONTENT_SOURCE = "ALLOCVM_REMOTETHREAD"
+    if string.match(l_0_2, "^https?://") then
+      local l_0_4, l_0_5 = mp.CheckUrl(l_0_2)
+      if l_0_4 == 1 and l_0_5 == 1 then
+        return mp.CLEAN
       end
-      -- DECOMPILER ERROR at PC57: Confused about usage of register: R1 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC61: Confused about usage of register: R1 in 'UnsetPending'
-
-      if l_0_3 then
-        local l_0_4 = nil
-        if isnull((string.match)(l_0_3, "Uri=([^;]+)")) then
+      local l_0_6 = SafeGetUrlReputation({l_0_2}, l_0_3, false, 3000)
+      if l_0_6.urls[l_0_2] and l_0_6.urls[l_0_2].determination == 2 and l_0_6.urls[l_0_2].confidence >= 60 then
+        local l_0_7, l_0_8 = pcall(string.match, l_0_0, "vmbaseaddress:(%d+)")
+        if not l_0_7 or isnull(l_0_8) then
           return mp.CLEAN
         end
-        local l_0_5 = nil
-        if (string.match)((string.match)(l_0_3, "Uri=([^;]+)"), "^https?://") then
-          local l_0_6, l_0_7 = , {SIG_CONTEXT = "BM", CONTENT_SOURCE = "ALLOCVM_REMOTETHREAD"}
-          if (mp.CheckUrl)((string.match)(l_0_3, "Uri=([^;]+)")) == 1 and (string.match)(l_0_3, "Uri=([^;]+)") == 1 then
-            return mp.CLEAN
-          end
-          local l_0_8 = nil
-          local l_0_9 = nil
-          if ((SafeGetUrlReputation({l_0_6}, l_0_7, false, 3000)).urls)[l_0_6] and (((SafeGetUrlReputation({l_0_6}, l_0_7, false, 3000)).urls)[l_0_6]).determination == 2 and (((SafeGetUrlReputation({l_0_6}, l_0_7, false, 3000)).urls)[l_0_6]).confidence >= 60 then
-            local l_0_10 = nil
-            if not pcall(string.match, l_0_4, "vmbaseaddress:(%d+)") or isnull(R10_PC125) then
-              return mp.CLEAN
-            end
-            -- DECOMPILER ERROR at PC133: Overwrote pending register: R10 in 'AssignReg'
-
-            local l_0_11, l_0_12 = nil
-            if not pcall(R10_PC125, l_0_4, "vmbytescopied:(%d+)") or isnull(R12_PC141) then
-              return mp.CLEAN
-            end
-            ;
-            (bm.add_related_string)(R12_PC141, R13_PC153, bm.RelatedStringBMReport)
-            -- DECOMPILER ERROR at PC156: Overwrote pending register: R12 in 'AssignReg'
-
-            ;
-            (bm.add_related_string)(R12_PC141, R13_PC153, bm.RelatedStringBMReport)
-            -- DECOMPILER ERROR at PC163: Overwrote pending register: R12 in 'AssignReg'
-
-            -- DECOMPILER ERROR at PC164: Overwrote pending register: R13 in 'AssignReg'
-
-            ;
-            (bm.add_related_string)(R12_PC141, R13_PC153, bm.RelatedStringBMReport)
-            return mp.INFECTED
-          end
+        local l_0_9, l_0_10 = pcall(string.match, l_0_0, "vmbytescopied:(%d+)")
+        if not l_0_9 or isnull(l_0_10) then
+          return mp.CLEAN
         end
-      end
-      do
-        return mp.CLEAN
+        bm.add_related_string("SHELLCODE BYTES: ", l_0_10, bm.RelatedStringBMReport)
+        bm.add_related_string("SHELLCODE ADDRESS: ", l_0_8, bm.RelatedStringBMReport)
+        bm.add_related_string("MALICIOUS URL: ", l_0_2, bm.RelatedStringBMReport)
+        return mp.INFECTED
       end
     end
   end
 end
-
+return mp.CLEAN

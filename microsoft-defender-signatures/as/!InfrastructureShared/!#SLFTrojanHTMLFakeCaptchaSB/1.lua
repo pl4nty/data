@@ -1,10 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanHTMLFakeCaptchaSB\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:Trojan:HTML/FakeCaptcha.SB
+-- Type: 13
+-- MpAttributes: (SCPT:HTMLFile | Html_file | Nscript:Type_js)
 
--- params : ...
--- function num : 0
-if #(mp.enum_mpattributesubstring)("scpt:SCPTPhishHTMLFakeChaSB_gr_s") == 4 and #(mp.enum_mpattributesubstring)("scpt:SCPTPhishHTMLFakeChaSB_gr_v") >= 1 and #(mp.enum_mpattributesubstring)("scpt:SCPTPhishHTMLFakeChaSB_gr_ctrl") >= 1 and #(mp.enum_mpattributesubstring)("scpt:SCPTPhishHTMLFakeChaSB_gr_enter") >= 1 then
+if #mp.enum_mpattributesubstring("scpt:SCPTPhishHTMLFakeChaSB_gr_s") == 4 and #mp.enum_mpattributesubstring("scpt:SCPTPhishHTMLFakeChaSB_gr_v") >= 1 and 1 <= #mp.enum_mpattributesubstring("scpt:SCPTPhishHTMLFakeChaSB_gr_ctrl") and 1 <= #mp.enum_mpattributesubstring("scpt:SCPTPhishHTMLFakeChaSB_gr_enter") then
   return mp.INFECTED
 end
 return mp.CLEAN
-

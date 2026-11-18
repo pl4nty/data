@@ -1,13 +1,11 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#BM_LinuxRansomNoteGenE\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#BM_LinuxRansomNote:Gen.E
+-- Type: 13
+-- MpAttributes: BM_RansomNote:Gen.E
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.enum_mpattributesubstring)("SCPT:LinuxClnWordsCat1")
-if #l_0_0 > 0 then
+local l_0_0 = mp.enum_mpattributesubstring("SCPT:LinuxClnWordsCat1")
+if 0 < #l_0_0 then
   return mp.CLEAN
 end
-;
-(mp.set_mpattribute)("MpDisableCaching")
+mp.set_mpattribute("MpDisableCaching")
 return mp.INFECTED
-

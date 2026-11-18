@@ -1,23 +1,17 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\53b308442aa8\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 53b308442aa8
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).ppid ~= nil then
-  local l_0_0 = nil
+local l_0_0
+if this_sigattrlog[2].matched and this_sigattrlog[2].ppid ~= nil then
+  l_0_0 = this_sigattrlog[2].ppid
   l_0_0 = GetRealPidForScenario(l_0_0)
   if IsPidObservedGlobal(l_0_0) then
-    local l_0_1, l_0_2 = (bm.get_process_relationships)()
-    for l_0_6,l_0_7 in ipairs(l_0_2) do
-      TrackPidAndTechniqueBM(l_0_7.ppid, "iis_exch_childproc", "iis_exch_childproc", 28800)
+    local l_0_1, l_0_2 = bm.get_process_relationships()
+    for l_0_3, l_0_4 in ipairs(l_0_2) do
+      TrackPidAndTechniqueBM(l_0_4.ppid, "iis_exch_childproc", "iis_exch_childproc", 28800)
     end
   end
 end
-do
-  l_0_1 = mp
-  l_0_1 = l_0_1.CLEAN
-  return l_0_1
-end
-
+return mp.CLEAN

@@ -1,13 +1,12 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\25b3450cc777\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 25b3450cc777
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0, l_0_1 = (bm.get_process_relationships)()
-for l_0_5,l_0_6 in ipairs(l_0_1) do
-  if not IsTechniqueObservedForPid(l_0_6.ppid, "susp_spoolhack") then
-    TrackPidAndTechniqueBM(l_0_6.ppid, "susp_spoolhack", "spool_childproc", 28800)
+local l_0_0, l_0_1 = bm.get_process_relationships()
+for l_0_2, l_0_3 in ipairs(l_0_1) do
+  if not IsTechniqueObservedForPid(l_0_3.ppid, "susp_spoolhack") then
+    TrackPidAndTechniqueBM(l_0_3.ppid, "susp_spoolhack", "spool_childproc", 28800)
   end
 end
 return mp.INFECTED
-

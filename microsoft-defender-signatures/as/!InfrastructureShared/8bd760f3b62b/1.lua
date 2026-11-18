@@ -1,10 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\8bd760f3b62b\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 8bd760f3b62b
+-- Type: 21
+-- Includes: BasScenarioSpecificInfra
 
--- params : ...
--- function num : 0
 if IsBasToolProcessForPpid("CMDHSTR", "AttackIQ") or IsBasToolProcessFoundInParents("CMDHSTR", "AttackIQ", 4) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

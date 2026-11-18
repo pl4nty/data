@@ -1,52 +1,37 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\f1b33f93236b\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: f1b33f93236b
+-- Type: 21
+-- Includes: BMLuaLib, TechniqueTracker, LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_5 = nil
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0 = "genb_linux_ransom_meta"
-  else
-  end
-  -- DECOMPILER ERROR at PC19: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[2]).matched or (this_sigattrlog[3]).matched then
-      local l_0_1, l_0_2, l_0_3, l_0_4 = "gene_linux_ransom_meta", nil
-    else
-    end
-    if not (this_sigattrlog[4]).matched or "genj_linux_ransom_meta" == nil then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC33: Confused about usage of register: R0 in 'UnsetPending'
-
-    local l_0_6 = nil
-    if GetRollingQueueAsHashTable("genj_linux_ransom_meta") == nil then
-      return mp.CLEAN
-    end
-    if (GetRollingQueueAsHashTable("genj_linux_ransom_meta")).appended_ext == nil then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC47: Confused about usage of register: R1 in 'UnsetPending'
-
-    if isKnownRansomExtension((GetRollingQueueAsHashTable("genj_linux_ransom_meta")).appended_ext) then
-      addRelatedProcess()
-      TrackPidAndTechniqueBM("BM", "T1486", "Impact_FileEncryption")
-      local l_0_7, l_0_8 = nil
-      for l_0_12,l_0_13 in ipairs(R6_PC63) do
-        local l_0_9, l_0_10 = (bm.get_process_relationships)()
-        -- DECOMPILER ERROR at PC69: Confused about usage of register: R9 in 'UnsetPending'
-
-        ;
-        (bm.trigger_sig)("BmTraverseTreeBlock", "Detected", R9_PC69.ppid)
-      end
-      TerminateParentProcessForLinux()
-      return mp.INFECTED
-    end
-    do
-      return mp.CLEAN
-    end
-  end
+local l_0_0, l_0_1
+if this_sigattrlog[1].matched then
+  l_0_0 = "genb_linux_ransom_meta"
+elseif this_sigattrlog[2].matched then
+  l_0_0 = "gene_linux_ransom_meta"
+elseif this_sigattrlog[3].matched then
+  l_0_0 = "genh_linux_ransom_meta"
+elseif this_sigattrlog[4].matched then
+  l_0_0 = "genj_linux_ransom_meta"
 end
-
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = GetRollingQueueAsHashTable(l_0_0)
+if l_0_2 == nil then
+  return mp.CLEAN
+end
+l_0_1 = l_0_2.appended_ext
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if isKnownRansomExtension(l_0_1) then
+  addRelatedProcess()
+  TrackPidAndTechniqueBM("BM", "T1486", "Impact_FileEncryption")
+  local l_0_3, l_0_4 = bm.get_process_relationships()
+  for l_0_5, l_0_6 in ipairs(l_0_4) do
+    bm.trigger_sig("BmTraverseTreeBlock", "Detected", l_0_6.ppid)
+  end
+  TerminateParentProcessForLinux()
+  return mp.INFECTED
+end
+return mp.CLEAN

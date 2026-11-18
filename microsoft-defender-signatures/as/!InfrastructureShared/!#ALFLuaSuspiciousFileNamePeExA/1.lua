@@ -1,11 +1,11 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFLuaSuspiciousFileNamePeExA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:LuaSuspiciousFileNamePeEx.A
+-- Type: 10
+-- MpAttributes: pea_isexe & RPF:TopLevelFile & (!Lua:EXEExt) & (!Lua:DLLExt)
 
--- params : ...
--- function num : 0
-local l_0_0, l_0_1 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_0, l_0_1 = mp.getfilename(mp.bitor(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
 if l_0_0 ~= nil and l_0_0:len() > 10 and l_0_1 ~= nil and l_0_1:len() > 31 then
-  local l_0_2 = (string.sub)(l_0_1, -5)
+  local l_0_2 = string.sub(l_0_1, -5)
   if not l_0_2:find(".", 1, true) then
     return mp.CLEAN
   end
@@ -19,7 +19,4 @@ if l_0_0 ~= nil and l_0_0:len() > 10 and l_0_1 ~= nil and l_0_1:len() > 31 then
   end
   return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

@@ -1,0 +1,26 @@
+-- Threat: !InfrastructureShared
+-- Name: !#PEPCODE:VirTool:Win32/Obfuscator.EH
+-- Type: 8
+
+if peattributes.isexe ~= true then
+  return mp.CLEAN
+end
+if peattributes.epscn_writable ~= true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 3 then
+  return mp.CLEAN
+end
+if pesecs[1].NameDW ~= 1886613038 then
+  return mp.CLEAN
+end
+if pesecs[pehdr.NumberOfSections].NameDW ~= 1886613038 then
+  return mp.CLEAN
+end
+if pesecs[1].PointerToRawData ~= 1024 then
+  return mp.CLEAN
+end
+if pesecs[1].Characteristics ~= 4026531936 then
+  return mp.CLEAN
+end
+return mp.INFECTED

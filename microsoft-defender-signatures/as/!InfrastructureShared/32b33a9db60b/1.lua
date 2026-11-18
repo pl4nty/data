@@ -1,8 +1,8 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\32b33a9db60b\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 32b33a9db60b
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
 local l_0_0 = this_sigattrlog[1]
 if l_0_0 == nil or not l_0_0.matched then
   return mp.CLEAN
@@ -14,4 +14,3 @@ end
 extractRansomNote(l_0_1)
 sms_untrusted_process()
 return mp.INFECTED
-

@@ -1,265 +1,88 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2c3b33687b1e5\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 2c3b33687b1e5
+-- Type: 21
+-- Includes: BMLuaLib, AppomalyHelpers, LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_0 = ((bm.get_imagepath)()):lower()
-local l_0_1 = contains
-local l_0_2 = l_0_0
-local l_0_3 = {}
--- DECOMPILER ERROR at PC10: No list found for R3 , SetList fails
-
--- DECOMPILER ERROR at PC14: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC15: Overwrote pending register: R1 in 'AssignReg'
-
-if l_0_1 then
-  return l_0_1
+local l_0_0 = bm.get_imagepath():lower()
+if contains(l_0_0, {
+  "conhost.exe",
+  "werfault.exe"
+}) then
+  return mp.CLEAN
 end
--- DECOMPILER ERROR at PC17: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC20: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC21: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC24: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC25: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC26: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC27: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC27: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC28: Overwrote pending register: R5 in 'AssignReg'
-
-if l_0_3 then
-  l_0_3 = l_0_3("conhost.exe", "werfault.exe")
-  -- DECOMPILER ERROR at PC30: Overwrote pending register: R1 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC31: Overwrote pending register: R2 in 'AssignReg'
-
-else
-  l_0_3 = this_sigattrlog
-  l_0_3 = l_0_3[2]
-  l_0_3 = l_0_3.matched
-  if l_0_3 then
-    l_0_3 = this_sigattrlog
-    l_0_3 = l_0_3[2]
-    l_0_3 = l_0_3.utf8p1
-    l_0_3 = l_0_3(l_0_3, "([^\\]+)$")
-    -- DECOMPILER ERROR at PC44: Overwrote pending register: R1 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC45: Overwrote pending register: R2 in 'AssignReg'
-
-  else
-    l_0_3 = this_sigattrlog
-    l_0_3 = l_0_3[3]
-    l_0_3 = l_0_3.matched
-    if l_0_3 then
-      l_0_3 = this_sigattrlog
-      l_0_3 = l_0_3[3]
-      l_0_3 = l_0_3.utf8p1
-      l_0_3 = l_0_3(l_0_3, "([^\\]+)$")
-      -- DECOMPILER ERROR at PC58: Overwrote pending register: R1 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC59: Overwrote pending register: R2 in 'AssignReg'
-
-    else
-      l_0_3 = this_sigattrlog
-      l_0_3 = l_0_3[4]
-      l_0_3 = l_0_3.matched
-      if l_0_3 then
-        l_0_3 = this_sigattrlog
-        l_0_3 = l_0_3[4]
-        l_0_3 = l_0_3.utf8p1
-        l_0_3 = l_0_3(l_0_3, "([^\\]+)$")
-        -- DECOMPILER ERROR at PC72: Overwrote pending register: R1 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC73: Overwrote pending register: R2 in 'AssignReg'
-
-      else
-        l_0_3 = this_sigattrlog
-        l_0_3 = l_0_3[5]
-        l_0_3 = l_0_3.matched
-        if l_0_3 then
-          l_0_3 = this_sigattrlog
-          l_0_3 = l_0_3[5]
-          l_0_3 = l_0_3.utf8p1
-          l_0_3 = l_0_3(l_0_3, "([^\\]+)$")
-          -- DECOMPILER ERROR at PC86: Overwrote pending register: R1 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC87: Overwrote pending register: R2 in 'AssignReg'
-
-        else
-          l_0_3 = this_sigattrlog
-          l_0_3 = l_0_3[6]
-          l_0_3 = l_0_3.matched
-          if l_0_3 then
-            l_0_3 = this_sigattrlog
-            l_0_3 = l_0_3[6]
-            l_0_3 = l_0_3.utf8p1
-            l_0_3 = l_0_3(l_0_3, "([^\\]+)$")
-            -- DECOMPILER ERROR at PC100: Overwrote pending register: R1 in 'AssignReg'
-
-          else
-            l_0_3 = this_sigattrlog
-            l_0_3 = l_0_3[7]
-            l_0_3 = l_0_3.matched
-            if l_0_3 then
-              l_0_3 = this_sigattrlog
-              l_0_3 = l_0_3[7]
-              l_0_3 = l_0_3.utf8p1
-              l_0_3 = l_0_3(l_0_3, "([^\\]+)$")
-              -- DECOMPILER ERROR at PC113: Overwrote pending register: R1 in 'AssignReg'
-
-            else
-              l_0_3 = this_sigattrlog
-              l_0_3 = l_0_3[8]
-              l_0_3 = l_0_3.matched
-              if l_0_3 then
-                l_0_3 = this_sigattrlog
-                l_0_3 = l_0_3[8]
-                l_0_3 = l_0_3.utf8p1
-                l_0_3 = l_0_3(l_0_3, "([^\\]+)$")
-                -- DECOMPILER ERROR at PC126: Overwrote pending register: R1 in 'AssignReg'
-
-              else
-                l_0_3 = this_sigattrlog
-                l_0_3 = l_0_3[9]
-                l_0_3 = l_0_3.matched
-                if l_0_3 then
-                  l_0_3 = this_sigattrlog
-                  l_0_3 = l_0_3[9]
-                  l_0_3 = l_0_3.utf8p1
-                  l_0_3 = l_0_3(l_0_3, "([^\\]+)$")
-                  -- DECOMPILER ERROR at PC139: Overwrote pending register: R1 in 'AssignReg'
-
-                else
-                  l_0_3 = this_sigattrlog
-                  l_0_3 = l_0_3[10]
-                  l_0_3 = l_0_3.matched
-                  if l_0_3 then
-                    l_0_3 = this_sigattrlog
-                    l_0_3 = l_0_3[10]
-                    l_0_3 = l_0_3.utf8p1
-                    l_0_3 = l_0_3(l_0_3, "([^\\]+)$")
-                    -- DECOMPILER ERROR at PC152: Overwrote pending register: R1 in 'AssignReg'
-
-                  else
-                    l_0_3 = this_sigattrlog
-                    l_0_3 = l_0_3[11]
-                    l_0_3 = l_0_3.matched
-                    -- DECOMPILER ERROR at PC159: Overwrote pending register: R2 in 'AssignReg'
-
-                    if l_0_3 then
-                      l_0_3 = this_sigattrlog
-                      l_0_3 = l_0_3[11]
-                      l_0_3 = l_0_3.utf8p2
-                      l_0_3 = l_0_3(l_0_3, ".home=.* start")
-                      if l_0_3 then
-                        l_0_3 = this_sigattrlog
-                        l_0_3 = l_0_3[11]
-                        l_0_3 = l_0_3.utf8p1
-                        l_0_3 = l_0_3(l_0_3, "([^\\]+)$")
-                        -- DECOMPILER ERROR at PC174: Overwrote pending register: R1 in 'AssignReg'
-
-                      end
-                    else
-                      l_0_3 = this_sigattrlog
-                      l_0_3 = l_0_3[12]
-                      l_0_3 = l_0_3.matched
-                      if l_0_3 then
-                        l_0_3 = this_sigattrlog
-                        l_0_3 = l_0_3[12]
-                        l_0_3 = l_0_3.utf8p2
-                        l_0_3 = l_0_3(l_0_3, ".home=.* start")
-                        if l_0_3 then
-                          l_0_3 = this_sigattrlog
-                          l_0_3 = l_0_3[12]
-                          l_0_3 = l_0_3.utf8p1
-                          l_0_3 = l_0_3(l_0_3, "([^\\]+)$")
-                          -- DECOMPILER ERROR at PC195: Overwrote pending register: R1 in 'AssignReg'
-
-                        end
-                      else
-                        l_0_3 = this_sigattrlog
-                        l_0_3 = l_0_3[13]
-                        l_0_3 = l_0_3.matched
-                        -- DECOMPILER ERROR at PC202: Overwrote pending register: R2 in 'AssignReg'
-
-                        if l_0_3 then
-                          l_0_3 = this_sigattrlog
-                          l_0_3 = l_0_3[13]
-                          l_0_3 = l_0_3.utf8p1
-                          l_0_3 = l_0_3(l_0_3, "([^\\]+)$")
-                          -- DECOMPILER ERROR at PC209: Overwrote pending register: R1 in 'AssignReg'
-
-                        else
-                          l_0_3 = this_sigattrlog
-                          l_0_3 = l_0_3[14]
-                          l_0_3 = l_0_3.matched
-                          if l_0_3 then
-                            l_0_3 = this_sigattrlog
-                            l_0_3 = l_0_3[14]
-                            l_0_3 = l_0_3.utf8p1
-                            l_0_3 = l_0_3(l_0_3, "([^\\]+)$")
-                            -- DECOMPILER ERROR at PC222: Overwrote pending register: R1 in 'AssignReg'
-
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-    end
+local l_0_1
+local l_0_2 = false
+if this_sigattrlog[1].matched then
+  l_0_1 = this_sigattrlog[1].utf8p1:match("([^\\]+)$")
+  l_0_2 = true
+elseif this_sigattrlog[2].matched then
+  l_0_1 = this_sigattrlog[2].utf8p1:match("([^\\]+)$")
+  l_0_2 = true
+elseif this_sigattrlog[3].matched then
+  l_0_1 = this_sigattrlog[3].utf8p1:match("([^\\]+)$")
+  l_0_2 = true
+elseif this_sigattrlog[4].matched then
+  l_0_1 = this_sigattrlog[4].utf8p1:match("([^\\]+)$")
+  l_0_2 = true
+elseif this_sigattrlog[5].matched then
+  l_0_1 = this_sigattrlog[5].utf8p1:match("([^\\]+)$")
+  l_0_2 = true
+elseif this_sigattrlog[6].matched then
+  l_0_1 = this_sigattrlog[6].utf8p1:match("([^\\]+)$")
+elseif this_sigattrlog[7].matched then
+  l_0_1 = this_sigattrlog[7].utf8p1:match("([^\\]+)$")
+elseif this_sigattrlog[8].matched then
+  l_0_1 = this_sigattrlog[8].utf8p1:match("([^\\]+)$")
+elseif this_sigattrlog[9].matched then
+  l_0_1 = this_sigattrlog[9].utf8p1:match("([^\\]+)$")
+elseif this_sigattrlog[10].matched then
+  l_0_1 = this_sigattrlog[10].utf8p1:match("([^\\]+)$")
+elseif this_sigattrlog[11].matched then
+  l_0_2 = true
+  if this_sigattrlog[11].utf8p2:find(".home=.* start") then
+    l_0_1 = this_sigattrlog[11].utf8p1:match("([^\\]+)$")
   end
+elseif this_sigattrlog[12].matched then
+  if this_sigattrlog[12].utf8p2:find(".home=.* start") then
+    l_0_1 = this_sigattrlog[12].utf8p1:match("([^\\]+)$")
+  end
+elseif this_sigattrlog[13].matched then
+  l_0_2 = true
+  l_0_1 = this_sigattrlog[13].utf8p1:match("([^\\]+)$")
+elseif this_sigattrlog[14].matched then
+  l_0_1 = this_sigattrlog[14].utf8p1:match("([^\\]+)$")
 end
 if not l_0_1 then
-  l_0_3 = mp
-  l_0_3 = l_0_3.CLEAN
-  return l_0_3
+  return mp.CLEAN
 end
-l_0_3 = nil
+local l_0_3
 if l_0_2 then
   l_0_3 = GetPidFromParentImagePath(l_0_1)
 else
-  local l_0_4 = (bm.get_current_process_startup_info)()
+  local l_0_4 = bm.get_current_process_startup_info()
   if l_0_4 and l_0_4.ppid then
     l_0_3 = l_0_4.ppid
   end
 end
-do
-  if not l_0_3 then
-    return mp.CLEAN
-  end
-  local l_0_5 = {}
-  l_0_5.AppName = l_0_1
-  l_0_5.Pid = l_0_3
-  l_0_5.AppCategory = "PFServers"
-  l_0_5.WebAppName = getWebApplicationType(l_0_3)
-  l_0_5.Score = 0
-  if not (MpCommon.DoesProcessHaveAttribute)(l_0_3, "PFApp_Parent") then
-    local l_0_6, l_0_7 = pcall(MpCommon.AddProcessAttribute, l_0_3, "PFApp_Parent", safeJsonSerialize(l_0_5), true)
-    if not l_0_6 then
-      local l_0_8 = {}
-      l_0_8.err = l_0_7
-      l_0_8.AttributeValue = l_0_5
-      l_0_8.SignatureName = "PFA_Parent.A"
-      l_0_8.ProcessName = l_0_0
-      ;
-      (bm.trigger_sig)("ProcAttribError", safeJsonSerialize(l_0_8))
-      return mp.CLEAN
-    end
-  end
-  do
+if not l_0_3 then
+  return mp.CLEAN
+end
+local l_0_5 = {}
+l_0_5.AppName = l_0_1
+l_0_5.Pid = l_0_3
+l_0_5.AppCategory = "PFServers"
+l_0_5.WebAppName = getWebApplicationType(l_0_3)
+l_0_5.Score = 0
+if not MpCommon.DoesProcessHaveAttribute(l_0_3, "PFApp_Parent") then
+  local l_0_6, l_0_7 = pcall(MpCommon.AddProcessAttribute, l_0_3, "PFApp_Parent", safeJsonSerialize(l_0_5), true)
+  if not l_0_6 then
+    local l_0_8 = {}
+    l_0_8.err = l_0_7
+    l_0_8.AttributeValue = l_0_5
+    l_0_8.SignatureName = "PFA_Parent.A"
+    l_0_8.ProcessName = l_0_0
+    bm.trigger_sig("ProcAttribError", safeJsonSerialize(l_0_8))
     return mp.CLEAN
   end
 end
-
+return mp.CLEAN

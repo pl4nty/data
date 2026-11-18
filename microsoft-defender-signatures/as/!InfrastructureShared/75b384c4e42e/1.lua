@@ -1,32 +1,29 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\75b384c4e42e\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 75b384c4e42e
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = nil
-local l_0_1 = nil
-if (bm.get_current_process_startup_info)() ~= nil and ((bm.get_current_process_startup_info)()).ppid ~= nil then
-  l_0_1 = ((bm.get_current_process_startup_info)()).ppid
+local l_0_0
+local l_0_1 = bm.get_current_process_startup_info()
+if l_0_1 ~= nil and l_0_1.ppid ~= nil then
+  l_0_0 = l_0_1.ppid
 end
-local l_0_2 = nil
-if ((bm.get_imagepath)() ~= nil and (MpCommon.PathToWin32Path)((bm.get_imagepath)()) == nil) or l_0_1 == nil then
+local l_0_2 = bm.get_imagepath()
+if l_0_2 ~= nil then
+  l_0_2 = MpCommon.PathToWin32Path(l_0_2)
+end
+if l_0_2 == nil or l_0_0 == nil then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC28: Confused about usage of register: R2 in 'UnsetPending'
-
--- DECOMPILER ERROR at PC38: Confused about usage of register: R2 in 'UnsetPending'
-
-if ((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))):find("microsoft\\onedrive\\", 1, true) or ((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))):find("windows\\ccm", 1, true) then
+l_0_2 = string.lower(l_0_2)
+if l_0_2:find("microsoft\\onedrive\\", 1, true) or l_0_2:find("windows\\ccm", 1, true) then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC48: Confused about usage of register: R2 in 'UnsetPending'
-
-if ((string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))):find("windows\\fortiemsinstaller", 1, true) then
+if l_0_2:find("windows\\fortiemsinstaller", 1, true) then
   return mp.CLEAN
 end
-if IsDetectionThresholdMet(l_0_1) then
-  TrackPidAndTechniqueBM(l_0_1, "T1053.005", "tt_remediate_cantidate")
+if IsDetectionThresholdMet(l_0_0) then
+  TrackPidAndTechniqueBM(l_0_0, "T1053.005", "tt_remediate_cantidate")
   return mp.INFECTED
 end
 return mp.CLEAN
-

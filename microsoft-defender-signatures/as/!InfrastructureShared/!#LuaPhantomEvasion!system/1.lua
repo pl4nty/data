@@ -1,21 +1,20 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaPhantomEvasion!system\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:PhantomEvasion!system
+-- Type: 10
+-- MpAttributes: RPF:TopLevelFile & (HSTR:Win32/PhantomEvasion.A | HSTR:Win64/PhantomEvasion.A)
 
--- params : ...
--- function num : 0
 if peattributes.isdll then
   return mp.CLEAN
 end
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 1048576 then
+local l_0_0 = mp.getfilesize()
+if 1048576 <= l_0_0 then
   return mp.CLEAN
 end
 local l_0_1 = pe.query_import
-if l_0_1(pe.IMPORT_STATIC, 1962618287) == 0 then
+if 0 == l_0_1(pe.IMPORT_STATIC, 1962618287) then
   return mp.CLEAN
 end
-if l_0_1(pe.IMPORT_STATIC, 2775632208) == 0 then
+if 0 == l_0_1(pe.IMPORT_STATIC, 2775632208) then
   return mp.CLEAN
 end
 return mp.INFECTED
-

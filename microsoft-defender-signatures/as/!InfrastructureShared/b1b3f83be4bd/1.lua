@@ -1,68 +1,60 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\b1b3f83be4bd\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: b1b3f83be4bd
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_8 = nil
-if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).p2 then
-  local l_0_0, l_0_3 = nil, nil
-  local l_0_1, l_0_4 = nil, nil
-  local l_0_2, l_0_5 = 2
-  l_0_1 = 1
-  local l_0_6 = nil
+local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4
+local l_0_5 = 2
+if this_sigattrlog[7].matched and this_sigattrlog[7].p2 then
+  l_0_0 = this_sigattrlog[7].utf8p1:lower()
+  l_0_1 = this_sigattrlog[7].ppid
+  l_0_2 = this_sigattrlog[7].image_path
+  l_0_3 = 1
 else
-  do
-    do return mp.CLEAN end
-    if l_0_3 == nil or l_0_0 == nil then
-      return mp.CLEAN
-    end
-    -- DECOMPILER ERROR at PC37: Confused about usage of register: R2 in 'UnsetPending'
-
-    local l_0_7 = nil
-    if (string.match)(l_0_3, "\\([^\\]+)$") == nil then
-      return mp.CLEAN
-    end
-    local l_0_9 = nil
-    local l_0_10 = nil
-    local l_0_11 = nil
-    if (bm.get_current_process_startup_info)() == nil or ((bm.get_current_process_startup_info)()).ppid == nil or ((bm.get_current_process_startup_info)()).command_line == nil then
-      return mp.CLEAN
-    end
-    local l_0_12 = nil
-    -- DECOMPILER ERROR at PC67: Confused about usage of register: R7 in 'UnsetPending'
-
-    local l_0_13 = nil
-    local l_0_14 = nil
-    local l_0_15 = nil
-    AppendToRollingQueue("OfficeGen" .. ((bm.get_current_process_startup_info)()).ppid, l_0_8, l_0_10 .. "|" .. l_0_7 .. "|" .. l_0_9, 3600, 10, 0)
-    local l_0_16 = nil
-    -- DECOMPILER ERROR at PC83: Confused about usage of register: R10 in 'UnsetPending'
-
-    local l_0_17 = nil
-    if GetRollingQueue("OfficeGen" .. ((bm.get_current_process_startup_info)()).ppid) == nil or type(GetRollingQueue("OfficeGen" .. ((bm.get_current_process_startup_info)()).ppid)) ~= "table" then
-      return mp.CLEAN
-    end
-    local l_0_18 = nil
-    local l_0_19 = nil
-    for l_0_23,l_0_24 in ipairs(GetRollingQueue("OfficeGen" .. ((bm.get_current_process_startup_info)()).ppid)) do
-      local l_0_20, l_0_21, l_0_22, l_0_23 = , {doc = bm_AddRelatedFileFromCommandLine(l_0_15), cmd = l_0_15, 
-detectionLog = {}
-}, nil
-      -- DECOMPILER ERROR at PC107: Confused about usage of register: R21 in 'UnsetPending'
-
-      l_0_23 = explode(R21_PC107.value, "|")
-      ;
-      (table.insert)(l_0_22.detectionLog, {name = R21_PC107.key, ppid = l_0_23[2], timestamp = R21_PC107.insert_time, file = l_0_23[3]})
-      -- DECOMPILER ERROR at PC125: Overwrote pending register: R3 in 'AssignReg'
-
-    end
-    -- DECOMPILER ERROR at PC134: Confused about usage of register: R15 in 'UnsetPending'
-
-    if l_0_12 <= l_0_10 then
-      (bm.add_related_string)("officegen", safeJsonSerialize(l_0_22), bm.RelatedStringBMReport)
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
+  return mp.CLEAN
 end
-
+if l_0_2 == nil or l_0_1 == nil then
+  return mp.CLEAN
+end
+l_0_4 = string.match(l_0_2, "\\([^\\]+)$")
+if l_0_4 == nil then
+  return mp.CLEAN
+end
+local l_0_6 = bm.get_current_process_startup_info()
+local l_0_7 = l_0_6.ppid
+local l_0_8 = l_0_6.command_line
+if l_0_6 == nil or l_0_7 == nil or l_0_8 == nil then
+  return mp.CLEAN
+end
+local l_0_9 = l_0_3 .. "|" .. l_0_1 .. "|" .. l_0_2
+local l_0_10 = "OfficeGen" .. l_0_7
+local l_0_11 = 3600
+local l_0_12 = 10
+AppendToRollingQueue(l_0_10, l_0_0, l_0_9, l_0_11, l_0_12, 0)
+local l_0_13 = bm_AddRelatedFileFromCommandLine(l_0_8)
+local l_0_14 = GetRollingQueue(l_0_10)
+if l_0_14 == nil or type(l_0_14) ~= "table" then
+  return mp.CLEAN
+end
+local l_0_15 = {
+  doc = l_0_13,
+  cmd = l_0_8,
+  detectionLog = {}
+}
+local l_0_16
+l_0_3 = 0
+for l_0_17, l_0_18 in ipairs(l_0_14) do
+  l_0_16 = explode(l_0_18.value, "|")
+  table.insert(l_0_15.detectionLog, {
+    name = l_0_18.key,
+    ppid = l_0_16[2],
+    timestamp = l_0_18.insert_time,
+    file = l_0_16[3]
+  })
+  l_0_3 = l_0_3 + l_0_16[1]
+end
+if l_0_5 <= l_0_3 then
+  bm.add_related_string("officegen", safeJsonSerialize(l_0_15), bm.RelatedStringBMReport)
+  return mp.INFECTED
+end
+return mp.CLEAN

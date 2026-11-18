@@ -1,19 +1,25 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\82b37076c50b\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 82b37076c50b
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  local l_0_2 = nil
-  if contains(l_0_2, {"pastebin.com", "paste.ee", "j.mp", "github.com", "githubusercontent.com", "bit.ly", "bitly.com", "bitbucket.org", "textbin.net"}) then
-    (bm.add_related_string)("MSHTAPublicStager_cmdline", l_0_2, bm.RelatedStringBMReport)
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+local l_0_0
+if this_sigattrlog[2].matched and this_sigattrlog[2].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[2].utf8p2
 end
-
+local l_0_1 = {
+  "pastebin.com",
+  "paste.ee",
+  "j.mp",
+  "github.com",
+  "githubusercontent.com",
+  "bit.ly",
+  "bitly.com",
+  "bitbucket.org",
+  "textbin.net"
+}
+if contains(l_0_0, l_0_1) then
+  bm.add_related_string("MSHTAPublicStager_cmdline", l_0_0, bm.RelatedStringBMReport)
+  return mp.INFECTED
+end
+return mp.CLEAN

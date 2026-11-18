@@ -1,9 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaCloudCredTheftDeepStringsA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:CloudCredTheft.DeepStrings.A
+-- Type: 10
+-- Includes: ResearchData, BMLuaLib
+-- MpAttributes: (BM_UnsignedDll) & (pea_hasexports)
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
+local l_0_0 = mp.getfilesize()
 if isnull(l_0_0) or l_0_0 == 0 then
   return mp.CLEAN
 end
@@ -20,81 +21,68 @@ local l_0_4 = false
 local l_0_5 = false
 local l_0_6 = false
 local l_0_7 = false
-for l_0_11 = 1, pehdr.NumberOfSections do
+for l_0_8 = 1, pehdr.NumberOfSections do
   if l_0_2 <= 0 then
     break
   end
-  local l_0_12 = pesecs[l_0_11]
-  if not isnull(l_0_12) and not isnull(l_0_12.PointerToRawData) and not isnull(l_0_12.SizeOfRawData) and l_0_12.SizeOfRawData > 0 then
-    local l_0_13 = false
-    l_0_13 = isnull(l_0_12.Characteristics) or (mp.bitand)(l_0_12.Characteristics, l_0_1) ~= 0
-    do
-      if l_0_2 < l_0_12.SizeOfRawData then
-        local l_0_14, l_0_15, l_0_16 = l_0_2
-      end
-      -- DECOMPILER ERROR at PC89: Confused about usage of register: R14 in 'UnsetPending'
-
-      if not l_0_13 and l_0_12.PointerToRawData + l_0_14 <= l_0_0 then
-        (mp.readprotection)(false)
-        -- DECOMPILER ERROR at PC99: Confused about usage of register: R14 in 'UnsetPending'
-
-        local l_0_17 = nil
-        ;
-        (mp.readprotection)(true)
-        if not isnull((mp.readfile)(l_0_12.PointerToRawData, l_0_14)) then
-          if (string.find)(tostring((mp.readfile)(l_0_12.PointerToRawData, l_0_14)), "169.254.169.254", 1, true) then
-            l_0_3 = true
-          end
-          -- DECOMPILER ERROR at PC127: Confused about usage of register: R15 in 'UnsetPending'
-
-          if (string.find)(tostring((mp.readfile)(l_0_12.PointerToRawData, l_0_14)), "/latest/meta-data/iam/security-credentials/", 1, true) then
-            l_0_4 = true
-          end
-          -- DECOMPILER ERROR at PC137: Confused about usage of register: R15 in 'UnsetPending'
-
-          if (string.find)(tostring((mp.readfile)(l_0_12.PointerToRawData, l_0_14)), "age-encryption.org/v1", 1, true) then
-            l_0_5 = true
-          end
-          -- DECOMPILER ERROR at PC147: Confused about usage of register: R15 in 'UnsetPending'
-
-          if (string.find)(tostring((mp.readfile)(l_0_12.PointerToRawData, l_0_14)), "\\rust-s3-", 1, true) then
-            l_0_6 = true
-          end
-          -- DECOMPILER ERROR at PC157: Confused about usage of register: R15 in 'UnsetPending'
-
-          if (string.find)(tostring((mp.readfile)(l_0_12.PointerToRawData, l_0_14)), "\\aws-creds-", 1, true) then
-            l_0_7 = true
-          end
+  local l_0_9 = pesecs[l_0_8]
+  if not isnull(l_0_9) and not isnull(l_0_9.PointerToRawData) and not isnull(l_0_9.SizeOfRawData) and 0 < l_0_9.SizeOfRawData then
+    local l_0_10 = false
+    if not isnull(l_0_9.Characteristics) then
+      l_0_10 = mp.bitand(l_0_9.Characteristics, l_0_1) ~= 0
+    end
+    local l_0_11 = l_0_9.SizeOfRawData
+    if l_0_2 < l_0_11 then
+      l_0_11 = l_0_2
+    end
+    if not l_0_10 and l_0_0 >= l_0_9.PointerToRawData + l_0_11 then
+      mp.readprotection(false)
+      local l_0_12 = mp.readfile(l_0_9.PointerToRawData, l_0_11)
+      mp.readprotection(true)
+      if not isnull(l_0_12) then
+        l_0_12 = tostring(l_0_12)
+        l_0_2 = l_0_2 - l_0_11
+        if string.find(l_0_12, "169.254.169.254", 1, true) then
+          l_0_3 = true
+        end
+        if string.find(l_0_12, "/latest/meta-data/iam/security-credentials/", 1, true) then
+          l_0_4 = true
+        end
+        if string.find(l_0_12, "age-encryption.org/v1", 1, true) then
+          l_0_5 = true
+        end
+        if string.find(l_0_12, "\\rust-s3-", 1, true) then
+          l_0_6 = true
+        end
+        if string.find(l_0_12, "\\aws-creds-", 1, true) then
+          l_0_7 = true
         end
       end
-      -- DECOMPILER ERROR at PC165: LeaveBlock: unexpected jumping out DO_STMT
-
-      -- DECOMPILER ERROR at PC165: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-      -- DECOMPILER ERROR at PC165: LeaveBlock: unexpected jumping out IF_STMT
-
     end
   end
 end
-do
-  if (l_0_5 and not l_0_6) or l_0_7 then
-    local l_0_18 = 0 + 1 + 1 + 1
-  end
-  do
-    local l_0_19 = nil
-    if l_0_3 and l_0_4 then
-      (mp.set_mpattribute)("Lua:CloudCredTheft.Imds.A")
-    end
-    if l_0_19 >= 2 then
-      (mp.set_mpattribute)("Lua:CloudCredTheft.ExfilStack.A")
-    end
-    if not true then
-      return mp.CLEAN
-    end
-    set_research_data("cct_size", tostring(l_0_0), false)
-    set_research_data("cct_crates", tostring(l_0_19), false)
-    do return mp.INFECTED end
-    -- DECOMPILER ERROR: 15 unprocessed JMP targets
-  end
+local l_0_13 = 0
+if l_0_5 then
+  l_0_13 = l_0_13 + 1
 end
-
+if l_0_6 then
+  l_0_13 = l_0_13 + 1
+end
+if l_0_7 then
+  l_0_13 = l_0_13 + 1
+end
+local l_0_14 = false
+if l_0_3 and l_0_4 then
+  mp.set_mpattribute("Lua:CloudCredTheft.Imds.A")
+  l_0_14 = true
+end
+if 2 <= l_0_13 then
+  mp.set_mpattribute("Lua:CloudCredTheft.ExfilStack.A")
+  l_0_14 = true
+end
+if not l_0_14 then
+  return mp.CLEAN
+end
+set_research_data("cct_size", tostring(l_0_0), false)
+set_research_data("cct_crates", tostring(l_0_13), false)
+return mp.INFECTED

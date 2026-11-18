@@ -1,10 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#TELTrojanWin32FakeSmileA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#TEL:Trojan:Win32/FakeSmile.A
+-- Type: 13
+-- MpAttributes: HSTR:Thinstall
 
--- params : ...
--- function num : 0
-if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)) == "online interview.exe" then
+local l_0_0 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_FILENAME))
+if l_0_0 == "online interview.exe" then
   return mp.INFECTED
 end
 return mp.CLEAN
-

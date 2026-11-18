@@ -1,0 +1,20 @@
+-- Threat: !InfrastructureShared
+-- Name: 41b3e60607c9
+-- Type: 21
+
+if this_sigattrlog[3].matched then
+  local l_0_0
+  if this_sigattrlog[3].utf8p2 ~= nil then
+    l_0_0 = string.lower(this_sigattrlog[3].utf8p2)
+  end
+  if l_0_0 ~= nil then
+    local l_0_1 = mp.GetExecutablesFromCommandLine(l_0_0)
+    for l_0_2, l_0_3 in ipairs(l_0_1) do
+      l_0_3 = mp.ContextualExpandEnvironmentVariables(l_0_3)
+      if sysio.IsFileExists(l_0_3) then
+        bm.add_related_file(l_0_3)
+      end
+    end
+  end
+end
+return mp.INFECTED

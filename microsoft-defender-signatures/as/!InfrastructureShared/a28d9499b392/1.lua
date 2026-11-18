@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: a28d9499b392
+-- Type: 21
+
+if mp.HSTR_WEIGHT >= 3 then
+  mp.set_mpattribute("PUA:Block:CrossRider.C")
+  return mp.INFECTED
+end
+return mp.LOWFI

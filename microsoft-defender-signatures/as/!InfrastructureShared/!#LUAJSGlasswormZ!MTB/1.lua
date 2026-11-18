@@ -1,38 +1,38 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LUAJSGlasswormZ!MTB\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#LUA:JS/Glassworm.Z!MTB
+-- Type: 13
+-- MpAttributes: SCRIPT:StringUTF-8 & SCRIPT:EvalBuffer & BM_TEXT_FILE & RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 15360 or l_0_0 > 51200 then
+local l_0_0 = mp.getfilesize()
+if l_0_0 < 15360 or 51200 < l_0_0 then
   return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-do
-  local l_0_1 = tostring((mp.readfile)(0, l_0_0)) or ""
-  -- DECOMPILER ERROR at PC24: Confused about usage of register: R1 in 'UnsetPending'
+mp.readprotection(false)
+local l_0_1 = tostring(mp.readfile(0, l_0_0)) or ""
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = {
+  "\239\184\128",
+  "\239\184\143",
+  "\243\160\132",
+  "\243\160\133",
+  "\226\128\139",
+  "\226\128\140",
+  "\226\128\141",
+  "\226\129\160"
+}
 
-  if l_0_1 == nil then
-    return mp.CLEAN
-  end
-  local l_0_2 = nil
-  do
-    if (function(l_1_0)
-  -- function num : 0_0 , upvalues : l_0_3
-  for l_1_4,l_1_5 in ipairs(l_0_3) do
-    if l_1_0:find(l_1_5, 1, true) then
+local function l_0_3(l_1_0)
+  for l_1_1, l_1_2 in ipairs(l_0_2) do
+    if l_1_0:find(l_1_2, 1, true) then
       return true
     end
   end
   return false
 end
-)(l_0_2) then
-      return mp.INFECTED
-    end
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC52: freeLocal<0 in 'ReleaseLocals'
 
-  end
+if l_0_3(l_0_1) then
+  return mp.INFECTED
 end
-
+return mp.CLEAN

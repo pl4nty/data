@@ -1,10 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\ffb33d50cb92\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: ffb33d50cb92
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
 if not IsNoisyWebProc() then
   return mp.INFECTED
 end
 return mp.CLEAN
-

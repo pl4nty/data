@@ -1,15 +1,15 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#HTMLFileScriptPercGT90\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#HTMLFileScriptPercGT90
+-- Type: 13
+-- MpAttributes: SCRIPT:HasScriptTag.A & RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 4096 then
+local l_0_0 = mp.getfilesize()
+if 4096 < l_0_0 then
   return mp.CLEAN
 end
-local l_0_1 = ((mp.GetNormalizedScript)(true)):lower()
-if #l_0_1 * 90 / 100 < #l_0_1 - #(string.gsub)(l_0_1, "<script.-</script>", "") then
+local l_0_1 = mp.GetNormalizedScript(true):lower()
+local l_0_2 = string.gsub(l_0_1, "<script.-</script>", "")
+if #l_0_1 - #l_0_2 > #l_0_1 * 90 / 100 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

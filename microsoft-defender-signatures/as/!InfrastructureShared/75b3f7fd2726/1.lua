@@ -1,34 +1,33 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\75b3f7fd2726\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 75b3f7fd2726
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_2, l_0_3, l_0_4 = , (string.find)(l_0_0, "%.downloadfile%(%\'?\"?https?%://(%d+%.%d+%.%d+%.%d+)")
-  if not "%.downloadfile%(%\'?\"?https?%://(%d+%.%d+%.%d+%.%d+)" then
-    return mp.CLEAN
-  end
-  if not isPublicIP(R5_PC29) then
-    return mp.CLEAN
-  end
-  local l_0_5, l_0_6, l_0_7 = , (string.find)(R5_PC29, "%.downloadfile%(%\'?\"?(https?%://%d+%.%d+%.%d+%.%d+)"), R5_PC29
-  if not "%.downloadfile%(%\'?\"?(https?%://%d+%.%d+%.%d+%.%d+)" then
-    return mp.CLEAN
-  end
-  local l_0_8 = nil
-  local l_0_9 = {SIG_CONTEXT = "PSHELL", CONTENT_SOURCE = "POWERSHELL_DString", PROCESS_CONTEXT = "POWERSHELL.EXE", FILELESS = "true", CMDLINE_URL = "true", BREAK_AT_FIRST_HIT_MALWARE = "40", TAG = "INTERFLOW"}
-  local l_0_10 = SafeGetUrlReputation
-  l_0_10 = l_0_10({l_0_8}, l_0_9, false, 2000)
-  if (l_0_10.urls)[l_0_8] and ((l_0_10.urls)[l_0_8]).determination == 2 and ((l_0_10.urls)[l_0_8]).confidence >= 60 then
-    return mp.INFECTED
-  end
+local l_0_0
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 ~= nil then
+  l_0_0 = string.lower(this_sigattrlog[1].utf8p2)
+end
+local l_0_1, l_0_2, l_0_3 = string.find(l_0_0, "%.downloadfile%(%'?\"?https?%://(%d+%.%d+%.%d+%.%d+)")
+if not l_0_3 then
   return mp.CLEAN
 end
-
+if not isPublicIP(l_0_3) then
+  return mp.CLEAN
+end
+local l_0_4, l_0_5, l_0_6 = string.find(l_0_0, "%.downloadfile%(%'?\"?(https?%://%d+%.%d+%.%d+%.%d+)")
+if not l_0_6 then
+  return mp.CLEAN
+end
+local l_0_7 = {}
+l_0_7.SIG_CONTEXT = "PSHELL"
+l_0_7.CONTENT_SOURCE = "POWERSHELL_DString"
+l_0_7.PROCESS_CONTEXT = "POWERSHELL.EXE"
+l_0_7.FILELESS = "true"
+l_0_7.CMDLINE_URL = "true"
+l_0_7.BREAK_AT_FIRST_HIT_MALWARE = "40"
+l_0_7.TAG = "INTERFLOW"
+local l_0_8 = SafeGetUrlReputation({l_0_6}, l_0_7, false, 2000)
+if l_0_8.urls[l_0_6] and l_0_8.urls[l_0_6].determination == 2 and l_0_8.urls[l_0_6].confidence >= 60 then
+  return mp.INFECTED
+end
+return mp.CLEAN

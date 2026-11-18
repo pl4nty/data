@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: 2078ee8eee85
+-- Type: 21
+
+if peattributes.ismsil and peattributes.has_msilresources then
+  return mp.INFECTED
+end
+return mp.CLEAN

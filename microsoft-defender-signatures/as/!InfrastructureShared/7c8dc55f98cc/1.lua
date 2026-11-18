@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: 7c8dc55f98cc
+-- Type: 21
+
+if mp.HSTR_WEIGHT >= 6 then
+  mp.set_mpattribute("PUA:Block:CoinMiner.Q")
+  return mp.INFECTED
+end
+return mp.LOWFI

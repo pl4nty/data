@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: 527b337939bc8
+-- Type: 21
+
+if mp.get_sigattr_event_count(16384) > 4 and 4 < mp.get_sigattr_event_count(16387) then
+  return mp.INFECTED
+end
+return mp.CLEAN

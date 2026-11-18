@@ -1,854 +1,483 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2f3b397beb35f\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 2f3b397beb35f
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper
 
--- params : ...
--- function num : 0
 local l_0_0 = 7
 local l_0_1 = "massservicestop"
 local l_0_2 = "massservicestop_score"
 local l_0_3 = ""
 local l_0_4 = {}
-local l_0_5 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_5 = (this_sigattrlog[1]).utf8p2
+local l_0_5
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 ~= nil then
+  l_0_5 = this_sigattrlog[1].utf8p2
 end
-local l_0_6 = {}
--- DECOMPILER ERROR at PC27: No list found for R6 , SetList fails
-
--- DECOMPILER ERROR at PC28: Overwrote pending register: R7 in 'AssignReg'
-
--- DECOMPILER ERROR at PC29: Overwrote pending register: R8 in 'AssignReg'
-
--- DECOMPILER ERROR at PC30: Overwrote pending register: R9 in 'AssignReg'
-
-if ("sophosstopservices.bat")("\\syncro\\", "sophosremoval.ps1") then
+local l_0_6 = {
+  "sophosstopservices.bat",
+  "\\syncro\\",
+  "sophosremoval.ps1",
+  "\\programdata\\amagent\\",
+  "microsoft intune management extension",
+  "smstspowershellscripts",
+  "sophos_removal.bat"
+}
+if contains(l_0_5, l_0_6) then
   return mp.CLEAN
 end
-if (this_sigattrlog[2]).matched then
-  local l_0_7 = #l_0_4 + 1
-  -- DECOMPILER ERROR at PC48: Overwrote pending register: R10 in 'AssignReg'
-
-else
-  do
-    -- DECOMPILER ERROR at PC59: Overwrote pending register: R3 in 'AssignReg'
-
-    if (this_sigattrlog[3]).matched then
-      local l_0_8 = #l_0_4 + 1
-    else
-      do
-        -- DECOMPILER ERROR at PC74: Overwrote pending register: R3 in 'AssignReg'
-
-        if (this_sigattrlog[4]).matched then
-          local l_0_9 = #l_0_4 + 1
-        else
-          do
-            -- DECOMPILER ERROR at PC89: Overwrote pending register: R3 in 'AssignReg'
-
-            if (this_sigattrlog[5]).matched then
-              local l_0_10 = #l_0_4 + 1
-            else
-              do
-                -- DECOMPILER ERROR at PC104: Overwrote pending register: R3 in 'AssignReg'
-
-                if (this_sigattrlog[7]).matched then
-                  local l_0_11 = #l_0_4 + 1
-                else
-                  do
-                    -- DECOMPILER ERROR at PC119: Overwrote pending register: R3 in 'AssignReg'
-
-                    if (this_sigattrlog[8]).matched then
-                      local l_0_12 = #l_0_4 + 1
-                    else
-                      do
-                        -- DECOMPILER ERROR at PC134: Overwrote pending register: R3 in 'AssignReg'
-
-                        if (this_sigattrlog[6]).matched then
-                          local l_0_13 = (string.match)(l_0_3, "ame%s-([^%-%/]+)%s-[%-%/]")
-                          -- DECOMPILER ERROR at PC144: Overwrote pending register: R11 in 'AssignReg'
-
-                          if (string.find)(l_0_13, ",", "microsoft intune management extension", true) then
-                            for l_0_17,l_0_18 in ipairs(split(l_0_13, ",")) do
-                              -- DECOMPILER ERROR at PC163: Overwrote pending register: R13 in 'AssignReg'
-
-                              l_0_4["sophos_removal.bat" + 1] = l_0_18
-                            end
-                          end
-                        else
-                          do
-                            -- DECOMPILER ERROR at PC169: Overwrote pending register: R7 in 'AssignReg'
-
-                            -- DECOMPILER ERROR at PC176: Overwrote pending register: R3 in 'AssignReg'
-
-                            if (l_0_13[9]).matched then
-                              local l_0_19 = #l_0_4 + 1
-                              l_0_4[l_0_19] = l_0_3:match("uninstall ([^%s]+)")
-                            else
-                              do
-                                -- DECOMPILER ERROR at PC191: Overwrote pending register: R3 in 'AssignReg'
-
-                                if (this_sigattrlog[10]).matched then
-                                  local l_0_20 = #l_0_4 + 1
-                                  l_0_4[l_0_20] = l_0_3:match("%%(.*)%%")
-                                else
-                                  do
-                                    -- DECOMPILER ERROR at PC206: Overwrote pending register: R3 in 'AssignReg'
-
-                                    if (this_sigattrlog[11]).matched then
-                                      local l_0_21 = #l_0_4 + 1
-                                      l_0_4[l_0_21] = l_0_3:match("set-service ([^%s]+)")
-                                    else
-                                      do
-                                        -- DECOMPILER ERROR at PC221: Overwrote pending register: R3 in 'AssignReg'
-
-                                        do
-                                          if (this_sigattrlog[12]).matched then
-                                            local l_0_22 = #l_0_4 + 1
-                                            l_0_4[l_0_22] = l_0_3:match("%%(.*)%%")
-                                          end
-                                          local l_0_23 = {}
-                                          -- DECOMPILER ERROR at PC279: No list found for R7 , SetList fails
-
-                                          -- DECOMPILER ERROR at PC280: Overwrote pending register: R8 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC281: Overwrote pending register: R9 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC282: Overwrote pending register: R10 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC283: Overwrote pending register: R11 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC284: Overwrote pending register: R12 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC285: Overwrote pending register: R13 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC286: Overwrote pending register: R14 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC287: Overwrote pending register: R15 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC288: Overwrote pending register: R16 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC289: Overwrote pending register: R17 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC290: Overwrote pending register: R18 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC291: Overwrote pending register: R19 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC292: Overwrote pending register: R20 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC293: Overwrote pending register: R21 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC294: Overwrote pending register: R22 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC295: Overwrote pending register: R23 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC296: Overwrote pending register: R24 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC297: Overwrote pending register: R25 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC298: Overwrote pending register: R26 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC299: Overwrote pending register: R27 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC300: Overwrote pending register: R28 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC301: Overwrote pending register: R29 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC302: Overwrote pending register: R30 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC303: Overwrote pending register: R31 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC304: Overwrote pending register: R32 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC305: Overwrote pending register: R33 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC306: Overwrote pending register: R34 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC307: Overwrote pending register: R35 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC308: Overwrote pending register: R36 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC309: Overwrote pending register: R37 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC310: Overwrote pending register: R38 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC311: Overwrote pending register: R39 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC312: Overwrote pending register: R40 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC313: Overwrote pending register: R41 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC314: Overwrote pending register: R42 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC315: Overwrote pending register: R43 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC316: Overwrote pending register: R44 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC317: Overwrote pending register: R45 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC318: Overwrote pending register: R46 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC319: Overwrote pending register: R47 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC320: Overwrote pending register: R48 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC321: Overwrote pending register: R49 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC322: Overwrote pending register: R50 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC323: Overwrote pending register: R51 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC324: Overwrote pending register: R52 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC325: Overwrote pending register: R53 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC326: Overwrote pending register: R54 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC327: Overwrote pending register: R55 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC328: Overwrote pending register: R56 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC329: Overwrote pending register: R57 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC330: No list found for R7 , SetList fails
-
-                                          -- DECOMPILER ERROR at PC331: Overwrote pending register: R8 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC332: Overwrote pending register: R9 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC333: Overwrote pending register: R10 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC334: Overwrote pending register: R11 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC335: Overwrote pending register: R12 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC336: Overwrote pending register: R13 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC337: Overwrote pending register: R14 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC338: Overwrote pending register: R15 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC339: Overwrote pending register: R16 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC340: Overwrote pending register: R17 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC341: No list found for R7 , SetList fails
-
-                                          local l_0_24 = {}
-                                          -- DECOMPILER ERROR at PC343: Overwrote pending register: R9 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC344: Overwrote pending register: R10 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC345: Overwrote pending register: R11 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC346: Overwrote pending register: R12 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC347: Overwrote pending register: R13 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC348: Overwrote pending register: R14 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC349: Overwrote pending register: R15 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC350: Overwrote pending register: R16 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC351: Overwrote pending register: R17 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC352: Overwrote pending register: R18 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC353: Overwrote pending register: R19 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC354: Overwrote pending register: R20 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC355: Overwrote pending register: R21 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC356: Overwrote pending register: R22 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC357: Overwrote pending register: R23 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC358: Overwrote pending register: R24 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC359: Overwrote pending register: R25 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC360: Overwrote pending register: R26 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC361: Overwrote pending register: R27 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC362: Overwrote pending register: R28 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC363: Overwrote pending register: R29 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC364: Overwrote pending register: R30 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC365: Overwrote pending register: R31 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC366: Overwrote pending register: R32 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC367: Overwrote pending register: R33 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC368: Overwrote pending register: R34 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC369: Overwrote pending register: R35 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC370: Overwrote pending register: R36 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC371: Overwrote pending register: R37 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC372: Overwrote pending register: R38 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC373: Overwrote pending register: R39 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC374: Overwrote pending register: R40 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC375: Overwrote pending register: R41 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC376: Overwrote pending register: R42 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC377: Overwrote pending register: R43 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC378: Overwrote pending register: R44 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC379: Overwrote pending register: R45 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC380: Overwrote pending register: R46 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC381: Overwrote pending register: R47 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC382: Overwrote pending register: R48 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC383: Overwrote pending register: R49 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC384: Overwrote pending register: R50 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC385: Overwrote pending register: R51 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC386: Overwrote pending register: R52 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC387: Overwrote pending register: R53 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC388: Overwrote pending register: R54 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC389: Overwrote pending register: R55 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC390: Overwrote pending register: R56 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC391: Overwrote pending register: R57 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC393: No list found for R8 , SetList fails
-
-                                          -- DECOMPILER ERROR at PC394: Overwrote pending register: R9 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC395: Overwrote pending register: R10 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC396: Overwrote pending register: R11 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC397: Overwrote pending register: R12 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC398: Overwrote pending register: R13 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC399: Overwrote pending register: R14 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC400: Overwrote pending register: R15 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC401: Overwrote pending register: R16 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC402: Overwrote pending register: R17 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC403: Overwrote pending register: R18 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC404: Overwrote pending register: R19 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC405: Overwrote pending register: R20 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC406: Overwrote pending register: R21 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC407: Overwrote pending register: R22 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC408: Overwrote pending register: R23 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC409: Overwrote pending register: R24 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC410: Overwrote pending register: R25 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC411: Overwrote pending register: R26 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC412: Overwrote pending register: R27 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC413: Overwrote pending register: R28 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC414: Overwrote pending register: R29 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC415: Overwrote pending register: R30 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC416: Overwrote pending register: R31 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC417: Overwrote pending register: R32 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC418: Overwrote pending register: R33 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC419: Overwrote pending register: R34 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC420: Overwrote pending register: R35 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC421: Overwrote pending register: R36 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC422: Overwrote pending register: R37 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC423: Overwrote pending register: R38 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC424: Overwrote pending register: R39 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC425: Overwrote pending register: R40 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC426: Overwrote pending register: R41 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC427: Overwrote pending register: R42 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC428: Overwrote pending register: R43 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC429: Overwrote pending register: R44 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC430: Overwrote pending register: R45 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC431: Overwrote pending register: R46 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC432: Overwrote pending register: R47 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC433: Overwrote pending register: R48 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC434: Overwrote pending register: R49 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC435: Overwrote pending register: R50 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC436: Overwrote pending register: R51 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC437: Overwrote pending register: R52 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC438: Overwrote pending register: R53 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC439: Overwrote pending register: R54 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC440: Overwrote pending register: R55 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC441: Overwrote pending register: R56 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC442: Overwrote pending register: R57 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC443: Overwrote pending register: R58 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC444: No list found for R8 , SetList fails
-
-                                          -- DECOMPILER ERROR at PC445: Overwrote pending register: R9 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC446: Overwrote pending register: R10 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC447: Overwrote pending register: R11 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC448: Overwrote pending register: R12 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC449: Overwrote pending register: R13 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC450: Overwrote pending register: R14 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC451: Overwrote pending register: R15 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC452: Overwrote pending register: R16 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC453: Overwrote pending register: R17 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC454: Overwrote pending register: R18 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC455: Overwrote pending register: R19 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC456: Overwrote pending register: R20 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC457: Overwrote pending register: R21 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC458: Overwrote pending register: R22 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC459: Overwrote pending register: R23 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC460: Overwrote pending register: R24 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC461: Overwrote pending register: R25 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC462: Overwrote pending register: R26 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC463: Overwrote pending register: R27 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC464: Overwrote pending register: R28 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC465: Overwrote pending register: R29 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC466: Overwrote pending register: R30 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC467: Overwrote pending register: R31 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC468: Overwrote pending register: R32 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC469: Overwrote pending register: R33 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC470: Overwrote pending register: R34 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC471: Overwrote pending register: R35 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC472: Overwrote pending register: R36 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC473: Overwrote pending register: R37 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC474: Overwrote pending register: R38 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC475: Overwrote pending register: R39 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC476: Overwrote pending register: R40 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC477: Overwrote pending register: R41 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC478: Overwrote pending register: R42 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC479: Overwrote pending register: R43 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC480: No list found for R8 , SetList fails
-
-                                          local l_0_25 = {}
-                                          -- DECOMPILER ERROR at PC482: Overwrote pending register: R10 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC483: Overwrote pending register: R11 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC484: Overwrote pending register: R12 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC485: Overwrote pending register: R13 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC486: Overwrote pending register: R14 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC487: Overwrote pending register: R15 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC488: Overwrote pending register: R16 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC489: Overwrote pending register: R17 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC490: Overwrote pending register: R18 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC491: Overwrote pending register: R19 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC492: Overwrote pending register: R20 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC493: Overwrote pending register: R21 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC494: Overwrote pending register: R22 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC495: Overwrote pending register: R23 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC496: Overwrote pending register: R24 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC497: Overwrote pending register: R25 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC498: Overwrote pending register: R26 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC499: Overwrote pending register: R27 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC500: Overwrote pending register: R28 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC501: Overwrote pending register: R29 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC502: Overwrote pending register: R30 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC503: Overwrote pending register: R31 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC504: Overwrote pending register: R32 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC505: Overwrote pending register: R33 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC506: Overwrote pending register: R34 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC507: Overwrote pending register: R35 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC508: Overwrote pending register: R36 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC509: Overwrote pending register: R37 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC510: Overwrote pending register: R38 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC511: Overwrote pending register: R39 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC512: Overwrote pending register: R40 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC513: Overwrote pending register: R41 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC514: Overwrote pending register: R42 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC515: Overwrote pending register: R43 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC516: Overwrote pending register: R44 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC517: Overwrote pending register: R45 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC518: Overwrote pending register: R46 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC519: Overwrote pending register: R47 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC520: Overwrote pending register: R48 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC521: Overwrote pending register: R49 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC522: Overwrote pending register: R50 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC523: Overwrote pending register: R51 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC524: Overwrote pending register: R52 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC525: Overwrote pending register: R53 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC526: Overwrote pending register: R54 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC527: Overwrote pending register: R55 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC528: Overwrote pending register: R56 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC529: Overwrote pending register: R57 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC530: Overwrote pending register: R58 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC532: No list found for R9 , SetList fails
-
-                                          -- DECOMPILER ERROR at PC533: Overwrote pending register: R10 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC534: Overwrote pending register: R11 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC535: Overwrote pending register: R12 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC536: Overwrote pending register: R13 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC537: Overwrote pending register: R14 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC538: Overwrote pending register: R15 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC539: Overwrote pending register: R16 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC540: Overwrote pending register: R17 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC541: Overwrote pending register: R18 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC542: Overwrote pending register: R19 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC543: Overwrote pending register: R20 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC544: Overwrote pending register: R21 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC545: Overwrote pending register: R22 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC546: Overwrote pending register: R23 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC547: Overwrote pending register: R24 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC548: Overwrote pending register: R25 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC549: Overwrote pending register: R26 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC550: Overwrote pending register: R27 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC551: Overwrote pending register: R28 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC552: Overwrote pending register: R29 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC553: Overwrote pending register: R30 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC554: Overwrote pending register: R31 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC555: Overwrote pending register: R32 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC556: Overwrote pending register: R33 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC557: Overwrote pending register: R34 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC558: Overwrote pending register: R35 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC559: Overwrote pending register: R36 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC560: Overwrote pending register: R37 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC561: Overwrote pending register: R38 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC562: Overwrote pending register: R39 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC563: Overwrote pending register: R40 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC564: Overwrote pending register: R41 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC565: Overwrote pending register: R42 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC566: Overwrote pending register: R43 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC567: Overwrote pending register: R44 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC568: Overwrote pending register: R45 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC569: Overwrote pending register: R46 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC570: Overwrote pending register: R47 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC571: Overwrote pending register: R48 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC572: Overwrote pending register: R49 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC573: Overwrote pending register: R50 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC574: Overwrote pending register: R51 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC575: Overwrote pending register: R52 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC576: Overwrote pending register: R53 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC577: Overwrote pending register: R54 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC578: Overwrote pending register: R55 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC579: Overwrote pending register: R56 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC580: Overwrote pending register: R57 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC581: Overwrote pending register: R58 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC582: Overwrote pending register: R59 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC583: No list found for R9 , SetList fails
-
-                                          -- DECOMPILER ERROR at PC584: Overwrote pending register: R10 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC585: Overwrote pending register: R11 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC586: Overwrote pending register: R12 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC587: Overwrote pending register: R13 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC588: Overwrote pending register: R14 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC589: Overwrote pending register: R15 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC590: Overwrote pending register: R16 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC591: Overwrote pending register: R17 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC592: Overwrote pending register: R18 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC593: Overwrote pending register: R19 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC594: Overwrote pending register: R20 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC595: Overwrote pending register: R21 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC596: Overwrote pending register: R22 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC597: Overwrote pending register: R23 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC598: Overwrote pending register: R24 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC599: Overwrote pending register: R25 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC600: Overwrote pending register: R26 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC601: Overwrote pending register: R27 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC602: Overwrote pending register: R28 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC603: Overwrote pending register: R29 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC604: Overwrote pending register: R30 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC605: Overwrote pending register: R31 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC606: Overwrote pending register: R32 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC607: Overwrote pending register: R33 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC608: Overwrote pending register: R34 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC609: Overwrote pending register: R35 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC610: Overwrote pending register: R36 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC611: Overwrote pending register: R37 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC612: Overwrote pending register: R38 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC613: Overwrote pending register: R39 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC614: Overwrote pending register: R40 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC615: Overwrote pending register: R41 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC616: Overwrote pending register: R42 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC617: No list found for R9 , SetList fails
-
-                                          -- DECOMPILER ERROR at PC618: Overwrote pending register: R10 in 'AssignReg'
-
-                                          local l_0_26 = "sqlsafe filter service"
-                                          -- DECOMPILER ERROR at PC619: Overwrote pending register: R11 in 'AssignReg'
-
-                                          local l_0_27 = "mssql$veeamsql2008r2"
-                                          -- DECOMPILER ERROR at PC620: Overwrote pending register: R12 in 'AssignReg'
-
-                                          local l_0_28 = "sqlagent$veeamsql2008r2"
-                                          -- DECOMPILER ERROR at PC621: Overwrote pending register: R13 in 'AssignReg'
-
-                                          -- DECOMPILER ERROR at PC622: Overwrote pending register: R14 in 'AssignReg'
-
-                                          for l_0_32,l_0_33 in ("sqlwriter")("sms_site_sql_backup") do
-                                            -- DECOMPILER ERROR at PC625: Overwrote pending register: R18 in 'AssignReg'
-
-                                            -- DECOMPILER ERROR at PC626: Overwrote pending register: R19 in 'AssignReg'
-
-                                            if (((not l_0_25[l_0_33] or l_0_23[l_0_33]) and not l_0_24[l_0_33]) or l_0_27 == 0) and l_0_28 == 0 and l_0_26 == 0 then
-                                              return mp.CLEAN
-                                            end
-                                            -- DECOMPILER ERROR at PC659: Overwrote pending register: R20 in 'AssignReg'
-
-                                            local l_0_34 = (MpCommon.QueryPersistContextNoPath)(l_0_1, "msolap$sql_2008")
-                                            if not l_0_34 then
-                                              local l_0_35 = l_0_27 + l_0_28 + l_0_26
-                                              -- DECOMPILER ERROR at PC666: Overwrote pending register: R21 in 'AssignReg'
-
-                                              -- DECOMPILER ERROR at PC669: Overwrote pending register: R22 in 'AssignReg'
-
-                                              -- DECOMPILER ERROR at PC670: Overwrote pending register: R23 in 'AssignReg'
-
-                                              ;
-                                              (MpCommon["msolap$system_bgc"])(l_0_1, "msolap$tps", "msolap$tpsama")
-                                              ;
-                                              (MpCommon.AppendPersistContextNoPath)(l_0_2, l_0_35, 120)
-                                            end
-                                          end
-                                          local l_0_36 = (MpCommon.GetPersistContextCountNoPath)(l_0_1)
-                                          do
-                                            local l_0_37 = (MpCommon.GetPersistContextCountNoPath)(l_0_2)
-                                            -- DECOMPILER ERROR at PC700: Overwrote pending register: R17 in 'AssignReg'
-
-                                            if l_0_0 < l_0_36 and 10 < l_0_37 then
-                                              (bm.add_related_string)("service_stop", l_0_4, bm.RelatedStringBMReport)
-                                              ;
-                                              (MpCommon.SetPersistContextNoPath)(l_0_1, {}, 1)
-                                              return mp.INFECTED
-                                            end
-                                            do return mp.CLEAN end
-                                            -- WARNING: undefined locals caused missing assignments!
-                                          end
-                                        end
-                                      end
-                                    end
-                                  end
-                                end
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
+if this_sigattrlog[2].matched then
+  l_0_3 = this_sigattrlog[2].utf8p2
+  l_0_4[#l_0_4 + 1] = l_0_3:match("stop ([^%s]+)")
+elseif this_sigattrlog[3].matched then
+  l_0_3 = this_sigattrlog[3].utf8p2
+  l_0_4[#l_0_4 + 1] = l_0_3:match("pause ([^%s]+)")
+elseif this_sigattrlog[4].matched then
+  l_0_3 = this_sigattrlog[4].utf8p2
+  l_0_4[#l_0_4 + 1] = l_0_3:match("stop ([^%s]+)")
+elseif this_sigattrlog[5].matched then
+  l_0_3 = this_sigattrlog[5].utf8p2
+  l_0_4[#l_0_4 + 1] = l_0_3:match("delete ([^%s]+)")
+elseif this_sigattrlog[7].matched then
+  l_0_3 = this_sigattrlog[7].utf8p2
+  l_0_4[#l_0_4 + 1] = l_0_3:match("/im ([^%s]+)")
+elseif this_sigattrlog[8].matched then
+  l_0_3 = this_sigattrlog[8].utf8p2
+  l_0_4[#l_0_4 + 1] = l_0_3:match("-im ([^%s]+)")
+elseif this_sigattrlog[6].matched then
+  l_0_3 = this_sigattrlog[6].utf8p2
+  local l_0_7 = string.match(l_0_3, "ame%s-([^%-%/]+)%s-[%-%/]")
+  if string.find(l_0_7, ",", 1, true) then
+    l_0_7 = string.gsub(l_0_7, " ", "")
+    for l_0_8, l_0_9 in ipairs(split(l_0_7, ",")) do
+      l_0_4[#l_0_4 + 1] = l_0_9
     end
   end
+elseif this_sigattrlog[9].matched then
+  l_0_3 = this_sigattrlog[9].utf8p2
+  l_0_4[#l_0_4 + 1] = l_0_3:match("uninstall ([^%s]+)")
+elseif this_sigattrlog[10].matched then
+  l_0_3 = this_sigattrlog[10].utf8p2
+  l_0_4[#l_0_4 + 1] = l_0_3:match("%%(.*)%%")
+elseif this_sigattrlog[11].matched then
+  l_0_3 = this_sigattrlog[11].utf8p2
+  l_0_4[#l_0_4 + 1] = l_0_3:match("set-service ([^%s]+)")
+elseif this_sigattrlog[12].matched then
+  l_0_3 = this_sigattrlog[12].utf8p2
+  l_0_4[#l_0_4 + 1] = l_0_3:match("%%(.*)%%")
 end
-
+local l_0_10 = {
+  "sql backups",
+  "sqlsafe backup service",
+  "sqlsafe filter service",
+  "mssql$veeamsql2008r2",
+  "sqlagent$veeamsql2008r2",
+  "sqlwriter",
+  "sms_site_sql_backup",
+  "msdtsserver",
+  "msdtsserver100",
+  "msdtsserver110",
+  "msdtsserver130",
+  "msftesql$prod",
+  "msolap$sql_2008",
+  "msolap$system_bgc",
+  "msolap$tps",
+  "msolap$tpsama",
+  "mssql$bkupexec",
+  "mssql$ecwdb2",
+  "mssql$practicemgt",
+  "mssql$practticebgc",
+  "mssql$prod",
+  "mssql$profxengagement",
+  "mssql$sbsmonitoring",
+  "mssql$sharepoint",
+  "mssql$sql_2008",
+  "mssql$sqlexpress",
+  "mssql$system_bgc",
+  "mssql$tps",
+  "mssql$tpsama",
+  "mssql$veeamsql2008r2",
+  "mssql$veeamsql2012",
+  "msftesql$sqlexpress",
+  "msolap$citrix",
+  "mssql$citrix",
+  "mssql$isars",
+  "mssql$microsoft##wid",
+  "mssql$msfw",
+  "mssql$optima",
+  "mssql$progid",
+  "mssql$sqlexpress2014",
+  "mssql$veeamsql2016",
+  "mssql$wolterskluwer",
+  "mssqlfdlauncher$citrix",
+  "mssqlfdlauncher$optima",
+  "mssql",
+  "mssqlfdlauncher",
+  "mssqlfdlauncher$profxengagement",
+  "mssqlfdlauncher$sbsmonitoring",
+  "mssqlfdlauncher$sharepoint",
+  "mssqlfdlauncher$sql_2008",
+  "mssqlfdlauncher$system_bgc",
+  "mssqlfdlauncher$tps",
+  "mssqlfdlauncher$tpsama",
+  "mssqlserver",
+  "mssqlserveradhelper",
+  "mssqlserveradhelper100",
+  "mssqlserverolapservice",
+  "mysql57",
+  "mysql80",
+  "sqlagent",
+  "sqlagent$bkupexec",
+  "sqlagent$citrix_metaframe",
+  "sqlagent$cxdb",
+  "sqlagent$ecwdb2",
+  "sqlagent$isars",
+  "sqlagent$msfw",
+  "sqlagent$optima",
+  "sqlagent$practticebgc",
+  "sqlagent$practticemgt",
+  "sqlagent$prod",
+  "sqlagent$progid",
+  "sqlagent$profxengagement",
+  "sqlagent$sbsmonitoring",
+  "sqlagent$sharepoint",
+  "sqlagent$sql_2008",
+  "sqlagent$sqlexpress",
+  "sqlagent$system_bgc",
+  "sqlagent$tps",
+  "sqlagent$tpsama",
+  "sqlagent$veeamsql2008r2",
+  "sqlagent$veeamsql2012",
+  "sqlagent$wolterskluwer",
+  "sqlbrowser",
+  "sqlsafeolrservice",
+  "sqlserveragent",
+  "sqltelemetry",
+  "sqltelemetry$bvms",
+  "sqltelemetry$ecwdb2",
+  "sqltelemetry$hl",
+  "sqltelemetry$sdpro_v4_sql",
+  "sqltelemetry$veeamsql2016",
+  "mssql$vim_sqlexp",
+  "postgresql-9.5",
+  "postgresql-x64-9.4",
+  "reportserver$v4sqlexpress",
+  "sagemysql",
+  "reportserver$sql_2008",
+  "mssql$sophos",
+  "sqlagent$soph",
+  "isqlplussvc.exe",
+  "msftesql.exe",
+  "mysqld-nt.exe",
+  "mysqld-opt.exe",
+  "mysqld.exe",
+  "sqlagent.exe",
+  "sqlbrowser.exe",
+  "sqlservr.exe",
+  "sqlceip.exe",
+  "sqlwriter.exe",
+  "sql"
+}
+local l_0_11 = {
+  "avg antivirus",
+  "avgadminclient",
+  "avgadminserver",
+  "avp18.0.0",
+  "symantec system recovery",
+  "windefend",
+  "wmms",
+  "wbengine",
+  "wbengine",
+  "nanoservicemain",
+  "nvspwmi",
+  "ofcservice",
+  "online protection system",
+  "pandaaetheragent",
+  "pccntupd",
+  "psuaservice",
+  "qbcfmonitorservice",
+  "qbposdbservicev12",
+  "qbvss",
+  "swc_service",
+  "swi_filter",
+  "swi_service",
+  "swi_update",
+  "tmbmserver",
+  "tmfilter",
+  "tmicrcscanservice",
+  "tmlwcsservice",
+  "tmpfw",
+  "tmprefilter",
+  "tmproxy",
+  "tmsmartrelayservice",
+  "sophos agent",
+  "sophos autoupdate service",
+  "sophos clean service",
+  "sophos device control service",
+  "sophos endpoint defense service",
+  "sophos file scanner service",
+  "sophos health service",
+  "sophos mcs agent",
+  "sophos mcs client",
+  "sophos message router",
+  "sophos safestore service",
+  "sophos system protection service",
+  "sophos ui",
+  "sophos web control service",
+  "sophosfim",
+  "spadminv4",
+  "spsearch4",
+  "sptimerv4",
+  "sptracev4",
+  "spusercodev4",
+  "spwriterv4",
+  "acronisagent",
+  "antivirus",
+  "avp",
+  "dcagent",
+  "ehttpsrv",
+  "ekrn",
+  "ekrnepsw",
+  "epintegrationservice",
+  "epprotectedservice",
+  "epredline",
+  "epsecurityservice",
+  "epupdateservice",
+  "esgshkernel",
+  "eshasrv",
+  "fa_scheduler",
+  "firebirdguardiandefaultinstance",
+  "firebirdserverdefaultinstance",
+  "fsaus",
+  "sdevcon",
+  "fshoster",
+  "fsms",
+  "fsnethoster",
+  "fsulhoster",
+  "fsulnethoster",
+  "fsulorsp",
+  "fsulprothoster",
+  "hmpalertsvc",
+  "hvdsvc",
+  "kavfs",
+  "kavfsgt",
+  "kavfsslp",
+  "klnagent",
+  "klbackupdisk",
+  "klbackupflt",
+  "klflt",
+  "klhk",
+  "klif",
+  "klim6",
+  "klkbdflt",
+  "klmouflt",
+  "klpd",
+  "kltap",
+  "ksde1.0.0",
+  "macmnsvc",
+  "masvc",
+  "mbamservice",
+  "mbendpointagent",
+  "mcafeeengineservice",
+  "mcafeeframework",
+  "mcafeeframeworkmcafeeframework",
+  "mcshield",
+  "mctaskmanager",
+  "mfefire",
+  "mfemms",
+  "mfevtp",
+  "mr2kserv",
+  "mssql$sophos",
+  "sacsvr",
+  "savadminservice",
+  "savservice",
+  "vapiendpoint",
+  "savfmsesp.exe",
+  "cntaosmgr.exe",
+  "mbamtray.exe",
+  "ntrtsc",
+  "pccntmon.exe",
+  "tmlisten.exe",
+  "avastui.exe ",
+  "avp.exe",
+  "egui.exe",
+  "fdhost.exe",
+  "msdtssrvr.exe",
+  "msmdsrv.exe",
+  "msmpeng.exe",
+  "security client",
+  "malwarebytes",
+  "trend micro",
+  "bitdefender",
+  "sophos",
+  "symantec",
+  "malware",
+  "azure advanced threat protection",
+  "endpoint"
+}
+local l_0_12 = {
+  "veeamdeploysvc",
+  "acronis vss provider",
+  "core browsing protection",
+  "core mail protection",
+  "core scanning server",
+  "core scanning serverex",
+  "veeam backup catalog data service",
+  "zoolz 2 service",
+  "acrsch2svc",
+  "arsm",
+  "backupexecagentaccelerator",
+  "backupexecagentbrowser",
+  "backupexecdevicemediaservice",
+  "backupexecjobengine",
+  "backupexecmanagementservice",
+  "backupexecrpcservice",
+  "backupexecvssprovider",
+  "bedbg",
+  "mms",
+  "mozyprobackup",
+  "ntrtscan",
+  "pdvfsservice",
+  "sdrsvc",
+  "snac",
+  "veeamawssvc",
+  "veeamazuresvc",
+  "veeambackupcdpsvc",
+  "veeambackuprestsvc",
+  "veeambackupsvc",
+  "veeambrokersvc",
+  "veeamcatalogsvc",
+  "veeamcloudsvc",
+  "veeamdeploymentservice",
+  "veeamdeploysvc",
+  "veeamdistributionsvc",
+  "veeamenterprisemanagersvc",
+  "veeamexplorersrecoverysvc",
+  "veeamfilesysvsssvc",
+  "veeamgcpsvc",
+  "veeamguesthelper",
+  "veeamhvintegrationsvc",
+  "veeammountsvc",
+  "veeamnfssvc",
+  "veeamrestsvc",
+  "veeamtransportsvc",
+  "veeamvssprovidersvc",
+  "vmicguestinterface",
+  "vmicheartbeat",
+  "vmickvpexchange",
+  "vmicrdv",
+  "vmicshutdown",
+  "vmictimesync",
+  "vmicvss",
+  "vsapint",
+  "quick update service",
+  "quickbooksdb1",
+  "quickbooksdb2",
+  "quickbooksdb3",
+  "quickbooksdb4",
+  "quickbooksdb5",
+  "repairservice",
+  "reportserver",
+  "reportserver$isars",
+  "reportserver$optima",
+  "rpceptmapper",
+  "sagemysql",
+  "oracleclientcache80",
+  "resvc",
+  "ssistelemetry130",
+  "storflt",
+  "tmusa",
+  "unifi",
+  "iisadmin",
+  "netmsmqactivator",
+  "pop3svc",
+  "sstpsvc",
+  "ui0detect",
+  "w3svc",
+  "aphidmonitorservice",
+  "intel(r) proset monitoring service",
+  "unistoresvc_1af40a",
+  "audioendpointbuilder",
+  "msexchangees",
+  "msexchangeis",
+  "msexchangemgmt",
+  "msexchangemta",
+  "msexchangesa",
+  "msexchangesrs",
+  "msexchangeadtopology",
+  "msexchangefba",
+  "msexchangeimap4",
+  "ibm domino diagnostics",
+  "ibm domino server",
+  "ibmiasrw",
+  "imap4svc",
+  "scsecsvc",
+  "shadowprotectsvc",
+  "simply accounting database connection manager",
+  "sntpservice",
+  "sepmasterservice",
+  "shmonitor",
+  "smcinst",
+  "smcservice",
+  "svcgenerichost",
+  "tmccsf",
+  "tmlisten",
+  "truekey",
+  "truekeyscheduler",
+  "truekeyservicehel",
+  "wrsvc",
+  "sqbcoreservice.exe",
+  "zoolz.exe",
+  "firefoxconfig.exe",
+  "tbirdconfig.exe",
+  "thunderbird.exe",
+  "agntsvc.exe",
+  "dbeng50.exe",
+  "dbsnmp.exe",
+  "msaccess.exe",
+  "mydesktopqos.exe",
+  "mydesktopservice.exe",
+  "ocautoupds.exe",
+  "ocssd.exe",
+  "oracle.exe",
+  "synctime.exe",
+  "thebat.exe",
+  "microsoft",
+  "microsoft exchange",
+  "backup",
+  "mongo",
+  "core.service",
+  "veeam",
+  "networker"
+}
+local l_0_13 = 0
+local l_0_14 = 0
+local l_0_15 = 0
+for l_0_16, l_0_17 in pairs(l_0_4) do
+  l_0_17 = string.lower(l_0_17)
+  if l_0_12[l_0_17] then
+    l_0_13 = 1
+  end
+  if l_0_10[l_0_17] then
+    l_0_14 = 2
+  end
+  if l_0_11[l_0_17] then
+    l_0_15 = 3
+  end
+  if l_0_14 == 0 and l_0_15 == 0 and l_0_13 == 0 then
+    return mp.CLEAN
+  end
+  local l_0_18 = MpCommon.QueryPersistContextNoPath(l_0_1, l_0_17)
+  if not l_0_18 then
+    local l_0_19 = l_0_14 + l_0_15 + l_0_13
+    MpCommon.AppendPersistContextNoPath(l_0_1, l_0_17, 120)
+    MpCommon.AppendPersistContextNoPath(l_0_2, l_0_19, 120)
+  end
+end
+local l_0_20 = MpCommon.GetPersistContextCountNoPath(l_0_1)
+local l_0_21 = MpCommon.GetPersistContextCountNoPath(l_0_2)
+if l_0_0 < l_0_20 and l_0_21 > 10 then
+  l_0_4 = table.concat(MpCommon.GetPersistContextNoPath(l_0_1), ";")
+  bm.add_related_string("service_stop", l_0_4, bm.RelatedStringBMReport)
+  MpCommon.SetPersistContextNoPath(l_0_1, {}, 1)
+  return mp.INFECTED
+end
+return mp.CLEAN

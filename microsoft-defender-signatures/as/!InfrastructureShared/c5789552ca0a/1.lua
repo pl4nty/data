@@ -1,0 +1,10 @@
+-- Threat: !InfrastructureShared
+-- Name: c5789552ca0a
+-- Type: 21
+
+mp.set_mpattribute("HSTR:BrowserModifier:Win32/PerionSearchProtectVC32")
+mp.set_mpattribute("do_exhaustivehstr_rescan")
+if mp.HSTR_WEIGHT >= 8 and pehdr.TimeDateStamp < 1430205845 then
+  return mp.INFECTED
+end
+return mp.CLEAN

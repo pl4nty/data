@@ -1,12 +1,12 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\7d0b331bedb69\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 7d0b331bedb69
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-if (this_sigattrlog[22]).matched and (this_sigattrlog[22]).utf8p2 ~= nil and (this_sigattrlog[22]).utf8p2 ~= "" then
-  local l_0_0 = (this_sigattrlog[22]).utf8p2
-  local l_0_1 = (bm.get_imagepath)()
-  local l_0_2 = (bm.get_current_process_startup_info)()
+if this_sigattrlog[22].matched and this_sigattrlog[22].utf8p2 ~= nil and this_sigattrlog[22].utf8p2 ~= "" then
+  local l_0_0 = this_sigattrlog[22].utf8p2
+  local l_0_1 = bm.get_imagepath()
+  local l_0_2 = bm.get_current_process_startup_info()
   if l_0_2 == nil then
     return mp.CLEAN
   end
@@ -21,7 +21,4 @@ if (this_sigattrlog[22]).matched and (this_sigattrlog[22]).utf8p2 ~= nil and (th
     return mp.INFECTED
   end
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

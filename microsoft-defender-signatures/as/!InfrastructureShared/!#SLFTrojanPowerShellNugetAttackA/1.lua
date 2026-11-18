@@ -1,11 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanPowerShellNugetAttackA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:Trojan:PowerShell/NugetAttack.A
+-- Type: 13
+-- MpAttributes: MpIsPowerShellAMSIScan & (SCPT:PowerShell/Nuget.A | SCPT:PowerShell/Nuget.G) & SCPT:PowerShell/Nuget.B
 
--- params : ...
--- function num : 0
-local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
+local l_0_0 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME))
 if l_0_0:find("devenv", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

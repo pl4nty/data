@@ -1,0 +1,10 @@
+-- Threat: !InfrastructureShared
+-- Name: 1540b3a7c062
+-- Type: 21
+
+pe.set_peattribute("enable_vmm_grow", true)
+pe.set_peattribute("deep_analysis", true)
+pe.set_peattribute("disable_seh_limit", true)
+pe.set_peattribute("disable_apicall_limit", true)
+pe.set_peattribute("disable_thread_apicall_limit", true)
+return mp.CLEAN

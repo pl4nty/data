@@ -1,18 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\99b3a2c78beb\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 99b3a2c78beb
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[3]).matched then
-    local l_0_0 = nil
-    if (string.find)(l_0_0, "/format:", 1, true) ~= nil then
-      addRelatedProcess()
-      return mp.INFECTED
-    end
+local l_0_0
+if this_sigattrlog[3].matched then
+  l_0_0 = this_sigattrlog[3].utf8p2
+  if string.find(l_0_0, "/format:", 1, true) ~= nil then
+    addRelatedProcess()
+    return mp.INFECTED
   end
-  return mp.CLEAN
 end
-
+return mp.CLEAN

@@ -1,29 +1,21 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\6bb32b8b995d\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 6bb32b8b995d
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_2, l_0_3 = nil, pcall(bm.get_current_process_startup_info)
-if l_0_3 then
-  l_0_2 = (bm.get_current_process_startup_info).command_line
-  local l_0_0, l_0_1 = nil
+local l_0_0
+local l_0_1, l_0_2 = pcall(bm.get_current_process_startup_info)
+if l_0_1 then
+  l_0_0 = l_0_2.command_line
 end
-do
-  if l_0_2 ~= nil then
-    local l_0_4 = nil
-    for l_0_8,l_0_9 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_2)) do
-      local l_0_5 = nil
-      -- DECOMPILER ERROR at PC19: Confused about usage of register: R8 in 'UnsetPending'
-
-      R8_PC19 = (mp.ContextualExpandEnvironmentVariables)(R8_PC19)
-      if (sysio.IsFileExists)(R8_PC19) == true then
-        (bm.add_related_file)(R8_PC19)
-      end
+if l_0_0 ~= nil then
+  local l_0_3 = mp.GetExecutablesFromCommandLine(l_0_0)
+  for l_0_4, l_0_5 in ipairs(l_0_3) do
+    l_0_5 = mp.ContextualExpandEnvironmentVariables(l_0_5)
+    if sysio.IsFileExists(l_0_5) == true then
+      bm.add_related_file(l_0_5)
     end
   end
-  do
-    TrackPidAndTechniqueBM("BM", "T1548.002", "uac_bypass")
-    return mp.INFECTED
-  end
 end
-
+TrackPidAndTechniqueBM("BM", "T1548.002", "uac_bypass")
+return mp.INFECTED

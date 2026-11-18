@@ -1,41 +1,30 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\79b339932064\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 79b339932064
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC47: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC56: Unhandled construct in 'MakeBoolean' P3
-
-  if ((this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil and (string.find)((this_sigattrlog[3]).utf8p2, "sqlite.dll", 1, true)) or (string.find)((this_sigattrlog[3]).utf8p2, ".ocx", 1, true) then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC58: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_6 = nil
-  -- DECOMPILER ERROR at PC75: Confused about usage of register: R1 in 'UnsetPending'
-
-  if extractDllForRegproc((this_sigattrlog[3]).utf8p2) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)(extractDllForRegproc((this_sigattrlog[3]).utf8p2))) then
-    local l_0_7 = nil
-    if ((sysio.GetLastResult)()).Success and (sysio.GetFileLastWriteTime)((mp.ContextualExpandEnvironmentVariables)(extractDllForRegproc((this_sigattrlog[3]).utf8p2))) ~= 0 then
-      local l_0_8 = (sysio.GetFileLastWriteTime)((mp.ContextualExpandEnvironmentVariables)(extractDllForRegproc((this_sigattrlog[3]).utf8p2))) / 10000000 - 11644473600
-      if (MpCommon.GetCurrentTimeT)() < l_0_8 or (MpCommon.GetCurrentTimeT)() - l_0_8 > 3600 then
-        (bm.add_related_file)(l_0_7)
+local l_0_0
+if this_sigattrlog[2].matched and this_sigattrlog[2].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[2].utf8p2
+elseif this_sigattrlog[3].matched and this_sigattrlog[3].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[3].utf8p2
+end
+if string.find(l_0_0, "sqlite.dll", 1, true) or string.find(l_0_0, "axhub.dll", 1, true) or string.find(l_0_0, ".ocx", 1, true) then
+  return mp.CLEAN
+end
+local l_0_1 = extractDllForRegproc(l_0_0)
+if l_0_1 then
+  l_0_1 = mp.ContextualExpandEnvironmentVariables(l_0_1)
+  if sysio.IsFileExists(l_0_1) then
+    local l_0_2 = sysio.GetFileLastWriteTime(l_0_1)
+    if sysio.GetLastResult().Success and l_0_2 ~= 0 then
+      l_0_2 = l_0_2 / 10000000 - 11644473600
+      local l_0_3 = MpCommon.GetCurrentTimeT()
+      if l_0_2 > l_0_3 or 3600 < l_0_3 - l_0_2 then
+        bm.add_related_file(l_0_1)
         return mp.INFECTED
       end
     end
   end
-  do
-    return mp.CLEAN
-  end
 end
-
+return mp.CLEAN

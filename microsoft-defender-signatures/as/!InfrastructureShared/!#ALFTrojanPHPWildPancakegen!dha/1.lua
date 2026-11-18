@@ -1,18 +1,18 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanPHPWildPancakegen!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:PHP/WildPancake.gen!dha
+-- Type: 13
+-- MpAttributes: LUA:FileSizeLE10000.A & SCRIPT:HasPHPHeaderTag.A & Lua:PHPExt
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 51200 then
+local l_0_0 = mp.getfilesize()
+if 51200 < l_0_0 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_1 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_LOWERCASE))
 if not l_0_1:find("\\wp-content", 1, true) then
   return mp.CLEAN
 end
-if #(mp.enum_mpattributesubstring)("SCPT:WildPancake") >= 2 then
+local l_0_2 = mp.enum_mpattributesubstring("SCPT:WildPancake")
+if 2 <= #l_0_2 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1b7b3e4a096ec\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 1b7b3e4a096ec
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
 Has_NetworkLogonSuccess(true)
 return mp.INFECTED
-

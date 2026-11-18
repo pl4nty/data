@@ -1,14 +1,12 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanWin32PyArmorB\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:Win32/PyArmor.B
+-- Type: 13
+-- MpAttributes: //PyInstallerPropagated & SCRT:BRUTE:Pyarmor.S01 & SCRT:BRUTE:Pyarmor.S02
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
+local l_0_0 = mp.getfilename(mp.FILEPATH_QUERY_FULL)
 local l_0_1 = l_0_0:match("^(.-)%-%>")
 if not l_0_1 then
   return mp.CLEAN
 end
-;
-(MpCommon.SetOriginalFileName)(l_0_1, "PyArmor")
+MpCommon.SetOriginalFileName(l_0_1, "PyArmor")
 return mp.CLEAN
-

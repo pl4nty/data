@@ -1,10 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\5fd74b0b6cbf\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 5fd74b0b6cbf
+-- Type: 21
+-- Includes: HvaLookupHelpers
 
--- params : ...
--- function num : 0
 if IsDeviceHVA() then
   return mp.INFECTED
 end
 return mp.CLEAN
-

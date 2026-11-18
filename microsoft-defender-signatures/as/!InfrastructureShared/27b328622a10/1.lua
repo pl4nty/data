@@ -1,81 +1,55 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\27b328622a10\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 27b328622a10
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_2 = nil
-local l_0_3, l_0_4 = true, nil
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1 = nil
+local l_0_0
+local l_0_1 = true
+local l_0_2, l_0_3
+if this_sigattrlog[1].matched then
+  l_0_0 = this_sigattrlog[1].utf8p2
+end
+if l_0_0 then
+  l_0_2, l_0_3 = string.find(l_0_0, "/tmp/", 1, true)
+  if l_0_2 ~= nil and l_0_3 ~= nil then
+    l_0_1 = false
   end
-  if l_0_2 then
-    if l_0_4 ~= nil and R3_PC23 ~= nil then
-      l_0_3 = false
-    end
-    -- DECOMPILER ERROR at PC34: Overwrote pending register: R2 in 'AssignReg'
-
-    if l_0_4 ~= nil and R3_PC23 ~= nil then
-      l_0_3 = false
-    end
-    -- DECOMPILER ERROR at PC47: Overwrote pending register: R3 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC48: Overwrote pending register: R2 in 'AssignReg'
-
-    if l_0_4 ~= nil and R3_PC23 ~= nil then
-      l_0_3 = false
-    end
-    -- DECOMPILER ERROR at PC61: Overwrote pending register: R3 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC62: Overwrote pending register: R2 in 'AssignReg'
-
-    if l_0_4 ~= nil and R3_PC23 ~= nil then
-      l_0_3 = false
-    end
-    -- DECOMPILER ERROR at PC75: Overwrote pending register: R3 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC76: Overwrote pending register: R2 in 'AssignReg'
-
-    if l_0_4 ~= nil and R3_PC23 ~= nil then
-      l_0_3 = false
-    end
-    -- DECOMPILER ERROR at PC89: Overwrote pending register: R3 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC90: Overwrote pending register: R2 in 'AssignReg'
-
-    if l_0_4 ~= nil and R3_PC23 ~= nil then
-      l_0_3 = false
-    end
-    -- DECOMPILER ERROR at PC103: Overwrote pending register: R3 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC104: Overwrote pending register: R2 in 'AssignReg'
-
-    if l_0_4 ~= nil and R3_PC23 ~= nil then
-      l_0_3 = false
-    end
-    -- DECOMPILER ERROR at PC117: Overwrote pending register: R3 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC118: Overwrote pending register: R2 in 'AssignReg'
-
-    if l_0_4 ~= nil and R3_PC23 ~= nil then
-      l_0_3 = false
-    end
+  l_0_2, l_0_3 = string.find(l_0_0, "/var/tmp/", 1, true)
+  if l_0_2 ~= nil and l_0_3 ~= nil then
+    l_0_1 = false
   end
-  if l_0_3 == false then
-    local l_0_5 = R3_PC23
-    local l_0_6, l_0_7 = , (bm.get_process_relationships)(((bm.get_current_process_startup_info)()).ppid)
-    for l_0_11,l_0_12 in ipairs(l_0_7) do
-      local l_0_8 = nil
-      -- DECOMPILER ERROR at PC139: Confused about usage of register: R11 in 'UnsetPending'
-
-      ;
-      (bm.add_related_process)(R11_PC139.ppid)
-      TrackPidAndTechniqueBM(R11_PC139.ppid, "T1547.006", "Persistence")
-    end
-    return mp.INFECTED
+  l_0_2, l_0_3 = string.find(l_0_0, "/var/mail/", 1, true)
+  if l_0_2 ~= nil and l_0_3 ~= nil then
+    l_0_1 = false
   end
-  do
-    return mp.CLEAN
+  l_0_2, l_0_3 = string.find(l_0_0, "/var/lock/", 1, true)
+  if l_0_2 ~= nil and l_0_3 ~= nil then
+    l_0_1 = false
+  end
+  l_0_2, l_0_3 = string.find(l_0_0, "/home/", 1, true)
+  if l_0_2 ~= nil and l_0_3 ~= nil then
+    l_0_1 = false
+  end
+  l_0_2, l_0_3 = string.find(l_0_0, "/root/", 1, true)
+  if l_0_2 ~= nil and l_0_3 ~= nil then
+    l_0_1 = false
+  end
+  l_0_2, l_0_3 = string.find(l_0_0, "/dev/shm/", 1, true)
+  if l_0_2 ~= nil and l_0_3 ~= nil then
+    l_0_1 = false
+  end
+  l_0_2, l_0_3 = string.find(l_0_0, "/var/spool/mail/", 1, true)
+  if l_0_2 ~= nil and l_0_3 ~= nil then
+    l_0_1 = false
   end
 end
-
+if l_0_1 == false then
+  local l_0_4 = bm.get_current_process_startup_info()
+  local l_0_5, l_0_6 = bm.get_process_relationships(l_0_4.ppid)
+  for l_0_7, l_0_8 in ipairs(l_0_5) do
+    bm.add_related_process(l_0_8.ppid)
+    TrackPidAndTechniqueBM(l_0_8.ppid, "T1547.006", "Persistence")
+  end
+  return mp.INFECTED
+end
+return mp.CLEAN

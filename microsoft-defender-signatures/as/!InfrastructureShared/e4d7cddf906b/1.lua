@@ -1,10 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\e4d7cddf906b\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: e4d7cddf906b
+-- Type: 21
+-- Includes: HstrLuaLib
 
--- params : ...
--- function num : 0
 if verify_non_prod_rings() then
   return mp.INFECTED
 end
 return mp.CLEAN
-

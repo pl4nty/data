@@ -1,77 +1,68 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanAIAgentMCPSchemaPoisoningA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:AIAgent/MCPSchemaPoisoning.A
+-- Type: 24
+-- Includes: LuaFuncHelper, ResearchData
+-- MpAttributes: Lua:JSONExt
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONOPEN and l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-local l_0_1 = (mp.get_mpattribute)("Lua:FnameAttr!mcp.json")
-local l_0_2 = (mp.get_mpattribute)("Lua:FnameAttr!claude_desktop_config.json")
-local l_0_3 = (mp.get_mpattribute)("Lua:FnameAttr!settings.json")
-local l_0_4 = (mp.get_mpattribute)("Lua:FnameAttr!openclaw.json")
+local l_0_1 = mp.get_mpattribute("Lua:FnameAttr!mcp.json")
+local l_0_2 = mp.get_mpattribute("Lua:FnameAttr!claude_desktop_config.json")
+local l_0_3 = mp.get_mpattribute("Lua:FnameAttr!settings.json")
+local l_0_4 = mp.get_mpattribute("Lua:FnameAttr!openclaw.json")
 if not l_0_1 and not l_0_2 and not l_0_3 and not l_0_4 then
   return mp.CLEAN
 end
-local l_0_5 = (mp.getfilesize)()
-if l_0_5 < 20 or l_0_5 > 524288 then
+local l_0_5 = mp.getfilesize()
+if l_0_5 < 20 or 524288 < l_0_5 then
   return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-local l_0_6 = tostring((mp.readfile)(0, l_0_5))
-;
-(mp.readprotection)(true)
+mp.readprotection(false)
+local l_0_6 = tostring(mp.readfile(0, l_0_5))
+mp.readprotection(true)
 if not l_0_6 then
   return mp.CLEAN
 end
-local l_0_7 = (string.lower)(l_0_6)
-if not (string.find)(l_0_7, "mcpservers", 1, true) and not (string.find)(l_0_7, "mcp_servers", 1, true) and not (string.find)(l_0_7, "description", 1, true) then
+local l_0_7 = string.lower(l_0_6)
+if not string.find(l_0_7, "mcpservers", 1, true) and not string.find(l_0_7, "mcp_servers", 1, true) and not string.find(l_0_7, "description", 1, true) then
   return mp.CLEAN
 end
-local l_0_8 = {}
--- DECOMPILER ERROR at PC118: No list found for R8 , SetList fails
-
+local l_0_8 = {
+  "ignore previous instructions",
+  "ignore all previous",
+  "disregard instructions",
+  "disregard your instructions",
+  "do not reveal",
+  "you are now",
+  "new instructions:",
+  "override system prompt",
+  "forget your rules",
+  "act as if you"
+}
 local l_0_9 = {}
--- DECOMPILER ERROR at PC120: Overwrote pending register: R10 in 'AssignReg'
-
--- DECOMPILER ERROR at PC121: Overwrote pending register: R11 in 'AssignReg'
-
-for l_0_13,l_0_14 in ("ignore all previous")("disregard instructions") do
-  -- DECOMPILER ERROR at PC124: Overwrote pending register: R15 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC126: Overwrote pending register: R16 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC127: Overwrote pending register: R17 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC128: Overwrote pending register: R18 in 'AssignReg'
-
+for l_0_10, l_0_11 in ipairs(l_0_8) do
+  if string.find(l_0_7, l_0_11, 1, true) then
+    l_0_9[#l_0_9 + 1] = l_0_11
+  end
 end
-if not (("new instructions:").find)("override system prompt", "forget your rules", "act as if you", true) or #l_0_9 == 0 then
+if #l_0_9 == 0 then
   return mp.CLEAN
 end
-do
-  if not (string.find)(l_0_7, "inputschema", 1, true) and not (string.find)(l_0_7, "tool_input", 1, true) then
-    local l_0_15 = (string.find)(l_0_7, "mcpservers", 1, true)
-  end
-  -- DECOMPILER ERROR at PC169: Confused about usage of register: R10 in 'UnsetPending'
-
-  if not l_0_15 then
-    return mp.CLEAN
-  end
-  if (string.find)(l_0_7, "example of prompt injection", 1, true) or (string.find)(l_0_7, "security testing", 1, true) or (string.find)(l_0_7, "unit test", 1, true) then
-    return mp.CLEAN
-  end
-  local l_0_16 = nil
-  local l_0_17 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-  do
-    set_research_data("AIAgent_MCPSchemaPoisoning", safeJsonSerialize({file = l_0_17 or "unknown", injections = (table.concat)(l_0_9, ",")}), false)
-    ;
-    (mp.SetDetectionString)(safeJsonSerialize({file = l_0_17 or "unknown", injections = (table.concat)(l_0_9, ",")}))
-    do return mp.INFECTED end
-    -- DECOMPILER ERROR at PC240: freeLocal<0 in 'ReleaseLocals'
-
-  end
+local l_0_12 = string.find(l_0_7, "inputschema", 1, true) or string.find(l_0_7, "tool_input", 1, true) or string.find(l_0_7, "mcpservers", 1, true)
+if not l_0_12 then
+  return mp.CLEAN
 end
-
+if string.find(l_0_7, "example of prompt injection", 1, true) or string.find(l_0_7, "security testing", 1, true) or string.find(l_0_7, "unit test", 1, true) then
+  return mp.CLEAN
+end
+local l_0_13 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_14 = {
+  file = l_0_13 or "unknown",
+  injections = table.concat(l_0_9, ",")
+}
+local l_0_15 = safeJsonSerialize(l_0_14)
+set_research_data("AIAgent_MCPSchemaPoisoning", l_0_15, false)
+mp.SetDetectionString(l_0_15)
+return mp.INFECTED

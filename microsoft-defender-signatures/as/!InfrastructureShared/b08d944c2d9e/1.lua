@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: b08d944c2d9e
+-- Type: 21
+
+if mp.HSTR_WEIGHT >= 4 then
+  mp.set_mpattribute("PUA:Block:SimpleFiles.A")
+  return mp.INFECTED
+end
+return mp.LOWFI

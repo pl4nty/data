@@ -1,13 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaSuspLoaderBatFile\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:SuspLoaderBatFile
+-- Type: 13
+-- MpAttributes: Lua:BATExt
 
--- params : ...
--- function num : 0
-if (mp.getfilesize)() < 100000 then
+local l_0_0 = mp.getfilesize()
+if l_0_0 < 100000 then
   return mp.CLEAN
 end
-if (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)) == "loader.bat" then
+local l_0_1 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1 == "loader.bat" then
   return mp.INFECTED
 end
 return mp.CLEAN
-

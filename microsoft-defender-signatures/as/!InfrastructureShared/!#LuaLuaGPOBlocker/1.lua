@@ -1,12 +1,12 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaLuaGPOBlocker\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:LuaGPOBlocker
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & BM_TEXT_FILE & FILE_REMOTE_DEVICE & Lua:INIExt
 
--- params : ...
--- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
+if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
   return mp.CLEAN
 end
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME)
 if not l_0_0 then
   return mp.CLEAN
 end
@@ -14,7 +14,7 @@ local l_0_1 = l_0_0:lower()
 if not l_0_1:find("svchost", 1, true) then
   return mp.CLEAN
 end
-local l_0_2 = (mp.getfilename)()
+local l_0_2 = mp.getfilename()
 if not l_0_2 then
   return mp.CLEAN
 end
@@ -30,7 +30,7 @@ if not l_0_6 then
 end
 local l_0_7 = l_0_6:match("Version%s*=%s*(%d+)")
 if not l_0_7 then
-  (mp.set_mpattribute)("Lua:GptIniMissingVersion")
+  mp.set_mpattribute("Lua:GptIniMissingVersion")
   return mp.INFECTED
 end
 local l_0_8, l_0_9 = pcall(MpCommon.RollingQueueQueryKey, "gpo_block", l_0_5)
@@ -42,9 +42,6 @@ if l_0_10 and l_0_11 and l_0_11.value and l_0_11.value == l_0_7 then
   return mp.CLEAN
 end
 local l_0_12 = tonumber(l_0_7)
-;
-(mp.set_mpattributeex)("Lua:GPOVersion", l_0_12)
-;
-(mp.set_mpattribute)("Lua:GPOBlockerFilter")
+mp.set_mpattributeex("Lua:GPOVersion", l_0_12)
+mp.set_mpattribute("Lua:GPOBlockerFilter")
 return mp.CLEAN
-

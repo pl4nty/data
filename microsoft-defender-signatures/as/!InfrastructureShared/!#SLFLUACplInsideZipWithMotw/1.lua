@@ -1,16 +1,18 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFLUACplInsideZipWithMotw\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:LUA:CplInsideZipWithMotw
+-- Type: 13
+-- MpAttributes: BM_MZ_DLL & Lua:CPLExt
 
--- params : ...
--- function num : 0
-if (mp.UfsGetMetadataBool)("Lua:FileInZip", true) ~= 0 or not "Lua:FileInZip" then
+local l_0_0, l_0_1 = mp.UfsGetMetadataBool("Lua:FileInZip", true)
+if l_0_0 ~= 0 or not l_0_1 then
   return mp.CLEAN
 end
-if (mp.UfsGetMetadataBool)("Lua:ZipWithMotw", true) ~= 0 or not "Lua:ZipWithMotw" then
+local l_0_2, l_0_3 = mp.UfsGetMetadataBool("Lua:ZipWithMotw", true)
+if l_0_2 ~= 0 or not l_0_3 then
   return mp.CLEAN
 end
-if (mp.UfsGetMetadataBool)("Lua:SingleFileInZip", true) == 0 and "Lua:SingleFileInZip" then
+local l_0_4, l_0_5 = mp.UfsGetMetadataBool("Lua:SingleFileInZip", true)
+if l_0_4 == 0 and l_0_5 then
   return mp.CLEAN
 end
 return mp.INFECTED
-

@@ -1,44 +1,39 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2fbb3873df364\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 2fbb3873df364
+-- Type: 21
+-- Includes: BMLuaLib, Path
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC18: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[17]).matched and (this_sigattrlog[17]).utf8p1 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC20: Confused about usage of register: R0 in 'UnsetPending'
-
-  if isnull(l_0_0) then
-    return mp.CLEAN
-  end
-  local l_0_2 = nil
-  if isnull((bm.get_imagepath)()) then
-    return mp.CLEAN
-  end
-  local l_0_3 = (string.lower)(normalize_path((bm.get_imagepath)()))
-  local l_0_4 = "Posilod"
-  local l_0_5, l_0_6 = nil, pcall(MpCommon.RollingQueueQueryKeyNamespaced, l_0_3, l_0_4, "CreatedByPPID")
-  if l_0_6 == true then
-    l_0_5 = (MpCommon.RollingQueueQueryKeyNamespaced).value
-  end
-  if isnull(l_0_5) then
-    return mp.CLEAN
-  end
-  local l_0_7 = nil
-  local l_0_8, l_0_9 = nil, pcall(MpCommon.RollingQueueQueryKeyNamespaced, l_0_2, l_0_4, "CreatedByPPID")
-  if l_0_9 == true then
-    l_0_8 = (MpCommon.RollingQueueQueryKeyNamespaced).value
-  end
-  if isnull(l_0_8) then
-    return mp.CLEAN
-  end
-  if l_0_5 == l_0_8 then
-    (bm.add_related_file)(l_0_2)
-    return mp.INFECTED
-  end
+local l_0_0
+if this_sigattrlog[17].matched and this_sigattrlog[17].utf8p1 ~= nil then
+  l_0_0 = string.lower(normalize_path(this_sigattrlog[17].utf8p1))
+end
+if isnull(l_0_0) then
   return mp.CLEAN
 end
-
+local l_0_1 = bm.get_imagepath()
+if isnull(l_0_1) then
+  return mp.CLEAN
+end
+l_0_1 = string.lower(normalize_path(l_0_1))
+local l_0_2 = "Posilod"
+local l_0_3
+local l_0_4, l_0_5 = pcall(MpCommon.RollingQueueQueryKeyNamespaced, l_0_1, l_0_2, "CreatedByPPID")
+if l_0_4 == true then
+  l_0_3 = l_0_5.value
+end
+if isnull(l_0_3) then
+  return mp.CLEAN
+end
+local l_0_6
+local l_0_7, l_0_8 = pcall(MpCommon.RollingQueueQueryKeyNamespaced, l_0_0, l_0_2, "CreatedByPPID")
+if l_0_7 == true then
+  l_0_6 = l_0_8.value
+end
+if isnull(l_0_6) then
+  return mp.CLEAN
+end
+if l_0_3 == l_0_6 then
+  bm.add_related_file(l_0_0)
+  return mp.INFECTED
+end
+return mp.CLEAN

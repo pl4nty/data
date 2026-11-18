@@ -1,10 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaModvinoST1\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:Modvino.ST1
+-- Type: 13
+-- MpAttributes: AGGR:TS5467.S1
 
--- params : ...
--- function num : 0
-if #(mp.enum_mpattributesubstring)("SCRT:TS5467.") > 2 then
+local l_0_0 = mp.enum_mpattributesubstring("SCRT:TS5467.")
+if 2 < #l_0_0 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

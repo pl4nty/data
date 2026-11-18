@@ -1,11 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFPERSuspDigitalCertA!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALFPER:SuspDigitalCert.A!dha
+-- Type: 10
+-- MpAttributes: PEPCODE:HasDigitalSignature & Lua:Company_Microsoft & RPF:SuspiciousDigitalSignatureSize
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_mpattributevalue)("RPF:SuspiciousDigitalSignatureSize")
-if l_0_0 ~= nil and l_0_0 >= 65536 then
+local l_0_0 = mp.get_mpattributevalue("RPF:SuspiciousDigitalSignatureSize")
+if l_0_0 ~= nil and 65536 <= l_0_0 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

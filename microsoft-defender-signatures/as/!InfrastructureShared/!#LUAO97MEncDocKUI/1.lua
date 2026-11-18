@@ -1,14 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LUAO97MEncDocKUI\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#LUA:O97M/EncDoc.KUI
+-- Type: 13
+-- MpAttributes: BM_OLE_FILE
 
--- params : ...
--- function num : 0
-local l_0_0 = (string.lower)((mp.getfilename)())
-if l_0_0 == nil or (string.len)(l_0_0) <= 5 and (mp.getfilesize)() > 57344 then
+local l_0_0 = string.lower(mp.getfilename())
+if l_0_0 == nil or string.len(l_0_0) <= 5 and mp.getfilesize() > 57344 then
   return mp.CLEAN
 end
-if (string.find)(l_0_0, "document_%d%d%d%d%d%d%d%d%d+_12%d%d2020.xls") ~= nil or (string.find)(l_0_0, "document%-%d%d%d%d%d%d%d%d%d.xls") ~= nil or (string.find)(l_0_0, "complaint%-copy_%d%d%d%d%d%d%d%d%d+-12%d%d2020.xls") ~= nil then
+if string.find(l_0_0, "document_%d%d%d%d%d%d%d%d%d+_12%d%d2020.xls") ~= nil or string.find(l_0_0, "document%-%d%d%d%d%d%d%d%d%d.xls") ~= nil or string.find(l_0_0, "complaint%-copy_%d%d%d%d%d%d%d%d%d+-12%d%d2020.xls") ~= nil then
   return mp.INFECTED
 end
 return mp.CLEAN
-

@@ -1,11 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFLuaWZipVBSWebMailAndMotw\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:LuaWZipVBSWebMailAndMotw
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & RPF:AnyFileHasIOAVURL & Lua:SingleSuspiciousExtensionInZip & Lua:ZipEncrypted & SLF:VbsSingleFileInsideArchive.B
 
--- params : ...
--- function num : 0
-local l_0_0 = (string.lower)((mp.IOAVGetDownloadUrl)())
-if (mp.get_contextdata)(mp.CONTEXT_DATA_HAS_MOTW_ADS) == true and (mp.GetMOTWZone)() >= 3 and l_0_0 ~= nil and ((string.find)(l_0_0, "docs.googleusercontent.com/docs", 1, true) or (string.find)(l_0_0, "drive.google.com", 1, true)) and (mp.getfilesize)() <= 2097152 then
-  return mp.INFECTED
+local l_0_0 = string.lower(mp.IOAVGetDownloadUrl())
+if mp.get_contextdata(mp.CONTEXT_DATA_HAS_MOTW_ADS) == true and mp.GetMOTWZone() >= 3 and l_0_0 ~= nil and (string.find(l_0_0, "docs.googleusercontent.com/docs", 1, true) or string.find(l_0_0, "drive.google.com", 1, true)) then
+  local l_0_1 = mp.getfilesize()
+  if l_0_1 <= 2097152 then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
-

@@ -1,29 +1,17 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\adb3ef908fb0\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: adb3ef908fb0
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-do
-  local l_0_0, l_0_1 = (bm.get_process_relationships)()
-  for l_0_5,l_0_6 in ipairs(l_0_1) do
-    if l_0_6.image_path ~= nil and l_0_6.ppid ~= nil then
-      local l_0_7 = contains
-      local l_0_8 = l_0_6.image_path
-      local l_0_9 = {}
-      -- DECOMPILER ERROR at PC17: No list found for R9 , SetList fails
-
-      -- DECOMPILER ERROR at PC21: Overwrote pending register: R7 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC26: Overwrote pending register: R8 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC27: Overwrote pending register: R8 in 'AssignReg'
-
-      if l_0_7 and l_0_7 then
-        l_0_8(l_0_9)
-      end
+local l_0_0, l_0_1 = bm.get_process_relationships()
+for l_0_2, l_0_3 in ipairs(l_0_1) do
+  if l_0_3.image_path ~= nil and l_0_3.ppid ~= nil and contains(l_0_3.image_path, {
+    "rundll32, regsvr32"
+  }) then
+    local l_0_4 = extractDllForRegproc(l_0_3.cmd_line)
+    if l_0_4 then
+      bm.add_related_file(l_0_4)
     end
   end
-  do return mp.INFECTED end
-  -- WARNING: undefined locals caused missing assignments!
 end
-
+return mp.INFECTED

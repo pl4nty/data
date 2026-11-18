@@ -1,11 +1,11 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaContextNewExcelInTemplates\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:Context/NewExcelInTemplates
+-- Type: 13
+-- Includes: LuaFuncHelper
+-- MpAttributes: MpNewlyCreatedHint & Lua:MsExcelExt & MpOnOpenOrCloseRtpScan & RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_0 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_PATH, mp.FILEPATH_QUERY_LOWERCASE))
 if StringEndsWith(l_0_0, "microsoft office (x86)\\templates") or StringEndsWith(l_0_0, "microsoft office\\templates") or StringEndsWith(l_0_0, "microsoft office\\root\\templates") then
-  (mp.set_mpattribute)("Lua:Context/NewExcelInTemplates")
+  mp.set_mpattribute("Lua:Context/NewExcelInTemplates")
 end
 return mp.CLEAN
-

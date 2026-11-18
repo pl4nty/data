@@ -1,0 +1,12 @@
+-- Threat: !InfrastructureShared
+-- Name: dc7884f459bc
+-- Type: 21
+-- Flags: 1
+
+if mp.HSTR_WEIGHT >= 15 then
+  return mp.INFECTED
+end
+if mp.HSTR_WEIGHT >= 5 then
+  mp.set_mpattribute("do_exhaustivehstr_rescan")
+end
+return mp.CLEAN

@@ -1,0 +1,28 @@
+-- Threat: Rogue:Win32/Winwebsec
+-- Type: 8
+
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfImage ~= 1949696 then
+  return mp.CLEAN
+end
+if mp.readu_u32(headerpage, 585) ~= 1481659694 then
+  return mp.CLEAN
+end
+if headerpage[589] ~= 50 then
+  return mp.CLEAN
+end
+if mp.readu_u32(headerpage, 593) ~= 442368 then
+  return mp.CLEAN
+end
+if mp.readu_u32(headerpage, 621) ~= 3221225536 then
+  return mp.CLEAN
+end
+mp.readprotection(false)
+local l_0_0 = mp.readfile(pe.foffset_rva(pehdr.AddressOfEntryPoint), 49)
+local l_0_1 = mp.crc32(-1, l_0_0, 1, 49)
+if l_0_1 ~= 2333974786 then
+  return mp.CLEAN
+end
+return mp.INFECTED

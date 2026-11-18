@@ -1,0 +1,17 @@
+-- Threat: !InfrastructureShared
+-- Name: 36361032055ee
+-- Type: 21
+
+if mp.HSTR_WEIGHT >= 215 then
+  local l_0_0 = versioning.GetOrgID()
+  if l_0_0 == nil or l_0_0 == "" then
+    return mp.CLEAN
+  end
+  l_0_0 = string.lower(l_0_0)
+  if l_0_0 == "c34db763-35fc-4c4a-9ca4-697338808f18" or l_0_0 == "d7c7c745-195f-4223-9c7a-99fb420fd000" then
+    return mp.INFECTED
+  elseif versioning.IsSampled(90000, false, true, true) == true then
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN

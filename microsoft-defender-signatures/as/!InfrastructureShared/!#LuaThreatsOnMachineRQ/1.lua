@@ -1,33 +1,26 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaThreatsOnMachineRQ\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:ThreatsOnMachineRQ
+-- Type: 28
+-- Includes: LuaFuncHelper
 
--- params : ...
--- function num : 0
 local l_0_0 = 10800
 local l_0_1 = 10
-local l_0_2 = (mp.enum_mpattributesubstring)("Detection:HackTool:")
-if #l_0_2 > 0 then
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    AppendToRollingQueue("ThreatsOnMachine_Lua", l_0_7, 1, l_0_0, l_0_1)
+local l_0_2 = mp.enum_mpattributesubstring("Detection:HackTool:")
+if 0 < #l_0_2 then
+  for l_0_3, l_0_4 in ipairs(l_0_2) do
+    AppendToRollingQueue("ThreatsOnMachine_Lua", l_0_4, 1, l_0_0, l_0_1)
   end
 end
-do
-  l_0_2 = (mp.enum_mpattributesubstring)("Detection:Trojan:")
-  if #l_0_2 > 0 then
-    for l_0_11,l_0_12 in ipairs(l_0_2) do
-      AppendToRollingQueue("ThreatsOnMachine_Lua", l_0_12, 1, l_0_0, l_0_1)
-    end
-  end
-  do
-    l_0_2 = (mp.enum_mpattributesubstring)("Detection:")
-    if #l_0_2 > 0 then
-      for l_0_16,l_0_17 in ipairs(l_0_2) do
-        AppendToRollingQueue("RecentThreatsOnMachine", l_0_17, 5, 1800, 100)
-      end
-    end
-    do
-      return mp.CLEAN
-    end
+l_0_2 = mp.enum_mpattributesubstring("Detection:Trojan:")
+if 0 < #l_0_2 then
+  for l_0_5, l_0_6 in ipairs(l_0_2) do
+    AppendToRollingQueue("ThreatsOnMachine_Lua", l_0_6, 1, l_0_0, l_0_1)
   end
 end
-
+l_0_2 = mp.enum_mpattributesubstring("Detection:")
+if 0 < #l_0_2 then
+  for l_0_7, l_0_8 in ipairs(l_0_2) do
+    AppendToRollingQueue("RecentThreatsOnMachine", l_0_8, 5, 1800, 100)
+  end
+end
+return mp.CLEAN

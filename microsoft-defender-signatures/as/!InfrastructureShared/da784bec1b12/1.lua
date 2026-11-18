@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: da784bec1b12
+-- Type: 21
+
+if peattributes.isdll == true and peattributes.x86_image == true and peattributes.hasexports == true and peattributes.no_ep == true and peattributes.no_security == true and peattributes.nx_bit_set == true and peattributes.headerchecksum0 == true and peattributes.no_comruntime == true and peattributes.epoutofimage == true and peattributes.hasappendeddata == true then
+  return mp.INFECTED
+end
+return mp.CLEAN

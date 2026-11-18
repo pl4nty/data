@@ -1,0 +1,16 @@
+-- Threat: !InfrastructureShared
+-- Name: 18297b40e65c
+-- Type: 21
+
+if mp.get_mpattribute("InEmail") then
+  local l_0_0 = mp.get_parent_filehandle()
+  mp.readprotection(false)
+  local l_0_1 = mp.GetNormalizedScript(mp.readfile_by_handle(l_0_0, 0, 8192))
+  mp.readprotection(true)
+  local l_0_2, l_0_3 = string.gsub(l_0_1, "%<meta", "", 4)
+  local l_0_4, l_0_5 = string.gsub(l_0_1, "%<pclass=", "", 4)
+  if l_0_3 < 3 and l_0_5 < 3 then
+    mp.set_mpattribute("SCRIPT:JS/ObfusScript_C.guardpassed")
+  end
+end
+return mp.INFECTED

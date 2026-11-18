@@ -1,10 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFSuspEdgeTempDropA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:SuspEdgeTempDrop.A
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & MpOnOpenOrCloseRtpScan
 
--- params : ...
--- function num : 0
-if (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)) == "tmp504e.tmp" and (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) == "msedge.exe" then
-  return mp.INFECTED
+local l_0_0 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == "tmp504e.tmp" then
+  local l_0_1 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME))
+  if l_0_1 == "msedge.exe" then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
-

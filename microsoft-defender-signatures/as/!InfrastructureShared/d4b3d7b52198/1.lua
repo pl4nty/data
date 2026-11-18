@@ -1,17 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\d4b3d7b52198\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: d4b3d7b52198
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-    local l_0_0 = nil
-    if l_0_0 ~= nil and IsTacticObservedForPid(l_0_0, "TaintedIISInstance") then
-      return mp.INFECTED
-    end
+local l_0_0
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p1 ~= nil then
+  l_0_0 = this_sigattrlog[1].ppid
+  if l_0_0 ~= nil and IsTacticObservedForPid(l_0_0, "TaintedIISInstance") then
+    return mp.INFECTED
   end
-  return mp.CLEAN
 end
-
+return mp.CLEAN

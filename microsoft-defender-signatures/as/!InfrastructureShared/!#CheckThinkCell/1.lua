@@ -1,12 +1,12 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#CheckThinkCell\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#CheckThinkCell
+-- Type: 10
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-local l_0_0 = (pe.get_versioninfo)()
+local l_0_0 = pe.get_versioninfo()
 if l_0_0 == nil then
   return mp.CLEAN
 end
@@ -19,16 +19,12 @@ if l_0_2 == nil or l_0_2 == "" then
   return mp.CLEAN
 end
 if l_0_1 == "think-cell component" and l_0_2 == "think-cell" then
-  if (mp.IsTrustedFile)(false) == true then
-    (mp.set_mpattribute)("Lua:ValidSignedThinkCellComponent")
+  if mp.IsTrustedFile(false) == true then
+    mp.set_mpattribute("Lua:ValidSignedThinkCellComponent")
+  elseif mp.get_mpattribute("PEPCODE:HasDigitalSignature") then
+    mp.set_mpattribute("Lua:SignedThinkCellComponent")
   else
-    if (mp.get_mpattribute)("PEPCODE:HasDigitalSignature") then
-      (mp.set_mpattribute)("Lua:SignedThinkCellComponent")
-    else
-      ;
-      (mp.set_mpattribute)("Lua:UnSignedThinkCellComponent")
-    end
+    mp.set_mpattribute("Lua:UnSignedThinkCellComponent")
   end
 end
 return mp.CLEAN
-

@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: d88d03bd0419
+-- Type: 21
+
+if mp.HSTR_WEIGHT >= 5 then
+  mp.set_mpattribute("PUA:Block:YtdDownloader.T")
+  return mp.INFECTED
+end
+return mp.LOWFI

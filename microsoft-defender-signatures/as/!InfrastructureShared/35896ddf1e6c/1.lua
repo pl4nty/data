@@ -1,0 +1,13 @@
+-- Threat: !InfrastructureShared
+-- Name: 35896ddf1e6c
+-- Type: 21
+
+if pe.isvdllimage(pe.get_regval(pe.REG_ECX)) == false or mp.readu_u32(pe.mmap_va_nofastfail(pevars.sigaddr + 2, 4), 1) >= 4294966272 then
+  return mp.CLEAN
+end
+if pe.isvdllbase(pe.get_regval(pe.REG_EBX)) == false then
+  return mp.CLEAN
+end
+pe.mmap_patch_va(pevars.sigaddr, "\184\028\024\127N\144")
+mp.set_mpattribute("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED

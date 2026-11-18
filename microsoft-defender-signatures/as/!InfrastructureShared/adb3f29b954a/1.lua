@@ -1,10 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\adb3f29b954a\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: adb3f29b954a
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-local l_0_1 = (bm.get_current_process_startup_info)()
+local l_0_0 = bm.get_imagepath()
+local l_0_1 = bm.get_current_process_startup_info()
 if l_0_1 == nil then
   return mp.CLEAN
 end
@@ -19,4 +19,3 @@ if l_0_2:find("Frameworks/Chromium Framework.framework/Versions", 1, true) or l_
   return mp.CLEAN
 end
 return mp.INFECTED
-

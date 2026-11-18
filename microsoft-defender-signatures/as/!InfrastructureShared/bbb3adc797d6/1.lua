@@ -1,0 +1,21 @@
+-- Threat: !InfrastructureShared
+-- Name: bbb3adc797d6
+-- Type: 21
+
+local l_0_0 = mp.GetParentProcInfo()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+if string.find(l_0_0.image_path, "/python", 1, true) then
+  bm.trigger_sig("BmTraverseTreeBlockMac", "Detected", l_0_0.ppid)
+  return mp.INFECTED
+end
+local l_0_1 = mp.GetParentProcInfo(l_0_0.ppid)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if string.find(l_0_1.image_path, "/python", 1, true) then
+  bm.trigger_sig("BmTraverseTreeBlockMac", "Detected", l_0_1.ppid)
+  return mp.INFECTED
+end
+return mp.CLEAN
