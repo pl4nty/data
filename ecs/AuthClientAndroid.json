@@ -8,6 +8,7 @@
     },
     "com.microsoft.authenticator": {
         "MsaCityLocation": true,
+        "MsaConfigHostEnforce": true,
         "MsaNumberMatchRedesign": true,
         "MsaNumberMatchRedesignMap": true,
         "OTelEnabled": true,

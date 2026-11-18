@@ -1024,6 +1024,7 @@
             "EnableSideCarScriptsNotifications": true,
             "EnableSidecarFnlEgClassificationCache": true,
             "FireAndForgetNotificationQueueProcessor": false,
+            "IC3NotificationFlow": true,
             "IC3TimeoutFallbackToWNS": true,
             "NCSDelayBetweenBatches": 25,
             "NCSSqlAggParallelCount": 3,
