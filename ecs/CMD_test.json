@@ -59,6 +59,7 @@
         "CasHandleFlexStop": true,
         "CasImproveActiveApi": true,
         "CasReconcileWdsFlexLifecyclePolicies": true,
+        "CasReconcileWdsFlexLifecyclePoliciesOnConfigChange": true,
         "CasSkipDeallocationModeBit0": true,
         "CasSkipDeallocationModeBit1": false,
         "CasSkipFldWdsCpcDeallocation": false,
