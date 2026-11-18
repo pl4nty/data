@@ -7,15 +7,17 @@ mpam-fe.exe -> mp{as,av}{base,dlta}.vdm -> inflate -> apply delta -> Lua records
 Microsoft strips the scripts, and neither luadec nor unluac recovers local variables reliably
 without debug information. microsoft_defender_lua_locals rebuilds that information, unluac
 decompiles with it, and the result is kept only if stock Lua compiles it back to the original
-bytecode. Scripts that fail the check get unluac's register-level output instead, marked as a
-fallback.
+bytecode. The few scripts that fail that check go to unluac-rs, which handles stripped code
+well but restructures it, so its output is marked unless it also recompiles identically.
 
-Requires `7z`, `java` (11+) and `lua5.1` on PATH.
+Requires `7z`, `java` (11+), `lua5.1` and `unluac-cli` (unluac-rs) on PATH.
 
 References:
   https://github.com/commial/experiments/tree/master/windows-defender
   https://github.com/hongson11698/defender-database-extract
   https://github.com/hfiref0x/WDExtract
+  https://sourceforge.net/projects/unluac/
+  https://github.com/x3zvawq/unluac-rs
 """
 import hashlib
 import os
@@ -36,7 +38,9 @@ UNLUAC_URL = "https://downloads.sourceforge.net/project/unluac/Unstable/unluac_2
 UNLUAC_SHA256 = "98be0fa84ac73ca66dce2842a2e4512226f4c611b6500dc96415571fc5538fcc"
 OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "microsoft-defender-signatures")
 
-FALLBACK_NOTE = b"-- Fallback: local variables were not recovered, registers are shown instead\n\n"
+# Neither note applies to output that recompiles to the original bytecode.
+UNVERIFIED_NOTE = b"-- Fallback: decompiled by unluac-rs, not verified against the original bytecode\n\n"
+REGISTER_NOTE = b"-- Fallback: local variables were not recovered, registers are shown instead\n\n"
 
 SIG_THREAT_BEGIN = 0x5C
 SIG_THREAT_END = 0x5D
@@ -372,9 +376,28 @@ def unluac(jar, work_dir, chunks):
     run("java", "-Xss64m", "-cp", jar, driver, listing)
 
 
+def recompile(work_dir, sources):
+    """Compile each source file with stock Lua; <source>.bin appears for those that load."""
+    listing = os.path.join(work_dir, "sources.txt")
+    with open(listing, "w", encoding="utf-8") as f:
+        f.writelines(path + "\n" for path in sources if os.path.exists(path))
+    script = os.path.join(work_dir, "recompile.lua")
+    with open(script, "w", encoding="utf-8") as f:
+        f.write(RECOMPILE)
+    run("lua5.1", script, listing)
+
+
+def read(path):
+    with open(path, "rb") as f:
+        return f.read()
+
+
 def decompile(scripts, jar, work_dir):
-    """Returns the source of each script and how many needed the fallback."""
-    # Pass 1: with inferred debug information, kept only if it recompiles to the same bytecode.
+    """Returns {index: source} and the number of scripts per tier."""
+    sources = {}
+    tiers = Counter()
+
+    # Tier 1: unluac with inferred debug information.
     chunks = {}
     for i, (function, _, _) in enumerate(scripts):
         if not function["lineinfo"]:
@@ -384,39 +407,52 @@ def decompile(scripts, jar, work_dir):
                 continue
         chunks[os.path.join(work_dir, f"{i}.luac")] = stock_chunk(function, debug=True)
     unluac(jar, work_dir, chunks)
-    listing = os.path.join(work_dir, "sources.txt")
-    with open(listing, "w", encoding="utf-8") as f:
-        f.writelines(path[:-1] + "\n" for path in chunks if os.path.exists(path[:-1]))
-    recompile = os.path.join(work_dir, "recompile.lua")
-    with open(recompile, "w", encoding="utf-8") as f:
-        f.write(RECOMPILE)
-    run("lua5.1", recompile, listing)
-
-    sources = {}
+    recompile(work_dir, [path[:-1] for path in chunks])
     for i, (function, _, _) in enumerate(scripts):
         path = os.path.join(work_dir, f"{i}.lua")
         if recompiles_to(function, path + ".bin"):
-            with open(path, "rb") as f:
-                sources[i] = f.read()
+            sources[i] = read(path)
+            tiers["identical with unluac"] += 1
 
-    # Pass 2: unluac's own handling of stripped code, which names every register.
-    chunks = {
-        os.path.join(work_dir, f"{i}.raw.luac"): stock_chunk(function, debug=False)
-        for i, (function, _, _) in enumerate(scripts) if i not in sources
-    }
-    fallbacks = len(chunks)
-    if chunks:
-        unluac(jar, work_dir, chunks)
-    for i in range(len(scripts)):
-        if i not in sources:
-            path = os.path.join(work_dir, f"{i}.raw.lua")
-            try:
-                with open(path, "rb") as f:
-                    sources[i] = FALLBACK_NOTE + f.read()
-            except OSError:
-                with open(path + ".err", "rb") as f:
-                    sources[i] = b"-- unluac failed: " + f.read().splitlines()[0] + b"\n"
-    return sources, fallbacks
+    # Tier 2: unluac-rs on the stripped chunk. It is far better at stripped code than unluac,
+    # but it rearranges control flow, so most of its output cannot be proven by recompiling.
+    rest = [i for i in range(len(scripts)) if i not in sources]
+    for i in rest:
+        raw = os.path.join(work_dir, f"{i}.raw.luac")
+        with open(raw, "wb") as f:
+            f.write(stock_chunk(scripts[i][0], debug=False))
+        try:
+            subprocess.run(
+                ["unluac-cli", "-i", raw, "-o", os.path.join(work_dir, f"{i}.rs.lua"), "-D", "lua5.1",
+                 "--readable-strings", "false", "--comment", "false", "--indent-width", "2"],
+                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=120)
+        except subprocess.TimeoutExpired:
+            pass
+    recompile(work_dir, [os.path.join(work_dir, f"{i}.rs.lua") for i in rest])
+    for i in rest:
+        path = os.path.join(work_dir, f"{i}.rs.lua")
+        if recompiles_to(scripts[i][0], path + ".bin"):
+            sources[i] = read(path)
+            tiers["identical with unluac-rs"] += 1
+        elif os.path.exists(path + ".bin"):
+            sources[i] = UNVERIFIED_NOTE + read(path)
+            tiers["unverified unluac-rs"] += 1
+
+    # Tier 3: unluac's own handling of stripped code, which names every register.
+    rest = [i for i in rest if i not in sources]
+    if rest:
+        unluac(jar, work_dir, {
+            os.path.join(work_dir, f"{i}.raw.luac"): stock_chunk(scripts[i][0], debug=False) for i in rest
+        })
+    for i in rest:
+        path = os.path.join(work_dir, f"{i}.raw.lua")
+        if os.path.exists(path):
+            sources[i] = REGISTER_NOTE + read(path)
+            tiers["register-level unluac"] += 1
+        else:
+            sources[i] = b"-- unluac failed: " + read(path + ".err").splitlines()[0] + b"\n"
+            tiers["failed"] += 1
+    return sources, tiers
 
 
 def main():
@@ -429,12 +465,12 @@ def main():
     download(UNLUAC_URL, jar, UNLUAC_SHA256)
 
     scripts = extract("as", vdm_dir) + extract("av", vdm_dir)
-    sources, fallbacks = decompile(scripts, jar, work_dir)
-    print(f"{len(scripts) - fallbacks} of {len(scripts)} scripts recompile to identical bytecode, "
-          f"{fallbacks} use the fallback")
+    sources, tiers = decompile(scripts, jar, work_dir)
+    for tier, count in tiers.most_common():
+        print(f"{count:6} {tier}")
     # Do not replace good data with the output of a broken run.
-    if not scripts or fallbacks * 20 > len(scripts):
-        sys.exit("too many fallbacks, keeping the existing output")
+    if not scripts or tiers["identical with unluac"] * 20 < len(scripts) * 19:
+        sys.exit("too few scripts verified, keeping the existing output")
 
     staging = os.path.join(work_dir, "out")
     for i, (_, output, head) in enumerate(scripts):
