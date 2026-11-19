@@ -1366,6 +1366,7 @@
         "EnableBizchatLocalFilesSupport": true,
         "EnableCaeExtraLogging": false,
         "EnableCalendarSkipCache": true,
+        "EnableChatPoweredCardsV2": true,
         "EnableCollaborationInstensityInsights": true,
         "EnableCollaborationNetworksGDRPExport": true,
         "EnableCompanionLicenseCheck": true,

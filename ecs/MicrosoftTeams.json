@@ -1555,6 +1555,20 @@
                     "IsEnabled": true
                 }
             ],
+            "EOMTaskQualityEvals": [
+                {
+                    "Flight": "EnableEomTaskQualityEval",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "EnableLiveNotesMeetingEndCapture",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "EnableEomEvalV2",
+                    "IsEnabled": true
+                }
+            ],
             "EnableAINativeScenario": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableAINativeScenario",
@@ -1912,6 +1926,18 @@
                 },
                 {
                     "Flight": "LIFT.enableMarsSkill",
+                    "IsEnabled": true
+                }
+            ],
+            "GPT6_Migration_Agenda": [
+                {
+                    "Flight": "AS.enableAgendaModelGpt6Luna",
+                    "IsEnabled": true
+                }
+            ],
+            "GPT6_Migration_RetrospectiveSentiment": [
+                {
+                    "Flight": "GCP.enableRetrospectiveSentimentModel_gpt6_luna",
                     "IsEnabled": true
                 }
             ],
@@ -2843,6 +2869,12 @@
                 {
                     "Flight": "EnableWebSearchDA",
                     "IsEnabled": true
+                }
+            ],
+            "WeightedEOMScore": [
+                {
+                    "Flight": "UseWeightedEomScoring",
+                    "IsEnabled": false
                 }
             ],
             "enableImageUnderstanding": [

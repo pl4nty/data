@@ -1,5 +1,225 @@
 [
     {
+        "created": "2026-11-19T00:35:27",
+        "description": "<p>Teams meeting artifacts, including recordings, transcripts, and Loop notes, can now be configured to automatically inherit the sensitivity label from the meeting. This ensures content generated during meetings is consistently protected without requiring manual labeling, reducing risk and simplifying protection at scale.</p>",
+        "id": 581739,
+        "locale": null,
+        "modified": "2026-11-19T00:35:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Purview"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Purview"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Purview: Information Protection-Sensitivity label inheritance for Teams meeting artifacts"
+    },
+    {
+        "created": "2026-11-19T00:35:27",
+        "description": "<p>Use Facilitator in Teams mobile to turn in-person conversations into useful notes and follow-ups with speaker attribution. Start note-taking from your phone and let Facilitator capture and transcribe the ad hoc discussion, with speaker attribution helping distinguish who said what. Facilitator uses the conversation to generate notes, summaries, and follow-up actions, giving you a richer record of the discussion while letting you stay more present in the moment.</p>",
+        "id": 579864,
+        "locale": null,
+        "modified": "2026-11-19T00:35:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "iOS"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Focus on the conversation while Facilitator in Teams mobile takes the notes, now with speaker attribution"
+    },
+    {
+        "created": "2026-11-19T00:35:27",
+        "description": "<p>Bullseye routing now supports dynamic user groups and skill relaxation. Administrators can define dynamic groups using representatives\u2019 skills and proficiency levels, and use them at different expansion levels. If work remains unassigned, required skills can be progressively relaxed to broaden the eligible representative pool and improve assignment opportunities\u2014without manually maintaining group membership.</p>",
+        "id": 577885,
+        "locale": null,
+        "modified": "2026-11-19T00:35:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: Bullseye routing with dynamic user groups and skill relaxation"
+    },
+    {
+        "created": "2026-11-19T00:35:27",
+        "description": "<p>Use the customer conversation harness agent builder to create, test, and refine AI-powered customer service agents. Accelerate agent development with built-in tools for conversation design, orchestration, evaluation, and deployment across customer engagement channels.</p>",
+        "id": 575277,
+        "locale": null,
+        "modified": "2026-11-19T00:35:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "October CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Contact Center Intelligence"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Contact Center Intelligence"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Contact Center Intelligence: D365 Contact Center Admin Center users can create CCI agents"
+    },
+    {
         "created": "2026-11-18T18:32:08",
         "description": "<p>Sprints and backlogs in unified plans let users organize and prioritize work in a product backlog, plan time-boxed sprints, and focus on the current sprint. Sprint planning stays separate from buckets, so teams can continue using buckets to organize work.</p>",
         "id": 581629,
@@ -3536,9 +3756,9 @@
         "description": "<p>With new Copilot Workspaces updates, Work IQ can suggest relevant workspaces based on current workstreams to help people get started quickly. Once in a workspace, team members can work together on shared documents while Copilot connects the dots across the work, surfacing what changed, what remains unresolved, and which actions need attention so everyone can quickly catch up and keep the work moving.</p>",
         "id": 579889,
         "locale": null,
-        "modified": "2026-11-17T18:36:41",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": "https://support.microsoft.com/en-us/microsoft-365-copilot/copilot-notebooks-to-copilot-workspaces",
-        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "November CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7272,9 +7492,9 @@
         "description": "<p>Chat naturally with Facilitator without tagging it each time.</p>",
         "id": 566523,
         "locale": null,
-        "modified": "2026-11-12T01:50:56",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -13563,10 +13783,10 @@
         "description": "<p>Associate channels with a tag so members are automatically added to those channels when they join the tag. This helps teams keep channel membership in sync with evolving groups, reduces manual management, and ensures members have access to the conversations and content most relevant to their role.</p>",
         "id": 577174,
         "locale": null,
-        "modified": "2026-10-27T23:05:02",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "November CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -18132,9 +18352,9 @@
         "description": "<p>Teams Meetings offer enhanced AI controls for Copilot and AI experiences. Organizers manage who can enable and access AI, while IT admins get a simpler policy model for governing AI across meetings and post-meeting experiences. These updates provide more predictable administration and greater flexibility for compliance and governance scenarios.</p>",
         "id": 577399,
         "locale": null,
-        "modified": "2026-11-04T00:02:09",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -18364,12 +18584,12 @@
         "description": "<p>Educators can provide a Copilot starter prompt from Student AI Guidelines in Teams and LMS Assignments. Students open Copilot with the educator's prompt ready in their chat, helping them begin with instructions tailored to the assignment.</p>",
         "id": 577173,
         "locale": null,
-        "modified": "2026-10-22T22:58:40",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -18443,12 +18663,12 @@
         "description": "<p>Educators can assign Study and Learn from Student AI Guidelines in Teams and LMS Assignments. Students open guided learning support grounded in the assignment's title, instructions, and supported files and resources, helping them work through concepts and practice their understanding.</p>",
         "id": 577172,
         "locale": null,
-        "modified": "2026-10-22T22:58:40",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -18522,10 +18742,10 @@
         "description": "<p>Insider risk management will be introducing the ability to classify alerts as True positive, Benign (operational), and False positive. This will be available on all alerts where authorized analysts with the appropriate permissions can choose from a list of predefined classification reasons. Alert classification will help tenants to better classify risk within alerts to support reporting and tuning needs. This will replace existing dismissal reasons.</p>",
         "id": 576710,
         "locale": null,
-        "modified": "2026-10-22T22:58:40",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2027",
-        "publicPreviewDate": "November CY2026",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -20366,9 +20586,9 @@
         "description": "<p>AI Interpreter for Events brings real-time, AI-powered audio interpretation to Teams Town Halls and Webinars, helping global audiences follow events in their preferred language. Organizers can configure supported languages for their event, giving attendees a more natural and engaging multilingual experience beyond translated captions.</p>",
         "id": 576711,
         "locale": null,
-        "modified": "2026-10-30T22:08:34",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "February CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -25527,10 +25747,10 @@
     },
     {
         "created": "2026-10-16T19:09:18",
-        "description": "<p>Administrators can control whether the Copy Opportunity feature is available. When enabled, sellers can duplicate an existing opportunity to quickly create a new one.</p>\n<p>The new opportunity retains key customer, deal, product, stakeholder, and custom-field information from the source opportunity, including hidden custom fields. Product line items are copied with their quantities and pricing; inactive products are excluded and recorded in the audit summary.</p>\n<p>To ensure the copied opportunity starts as a new sales deal, system-generated and outcome-related fields are reset. For example, the new opportunity is created with an Open status, and starts at the first stage of the sales process.</p>\n<p>Business Value:</p>\n<p>If you manage repeat deals, you can start new opportunities by copying a proven one instead of rebuilding it every time. Dynamics 365 Sales carries forward the key details your team needs, including customer information, products, stakeholders, and ratings. You spend less time on setup, reduce data entry errors, and move deals into the pipeline faster with a more consistent sales process.</p>\n<p>Enabled for:</p>\n<p>Enabled for end users automatically</p>",
+        "description": "<p>Administrators can control whether the Copy Opportunity feature is available. When enabled, sellers can duplicate an existing opportunity to quickly create a new one.</p>\n<p>The new opportunity retains key customer, deal, product, stakeholder, and custom-field information from the source opportunity, including hidden custom fields. Product line items are copied with their quantities and pricing; inactive products are excluded and recorded in the audit summary.</p>\n<p>To ensure the copied opportunity starts as a new sales deal, system-generated and outcome-related fields are reset. For example, the new opportunity is created with an Open status, and starts at the first stage of the sales process.</p>\n<p>Business Value:</p>\n<p>If you manage repeat deals, you can start new opportunities by copying a proven one instead of rebuilding it every time. Dynamics 365 Sales carries forward the key details your team needs, including customer information, products, stakeholders, and ratings. You spend less time on setup, reduce data entry errors, and move deals into the pipeline faster with a more consistent sales process.</p>\n<p>Enabled for:</p>\n<p>Enabled for end users automatically</p>\n<h2>Availability</h2>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2608.1</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by default)</td>\n</tr>\n</tbody>\n</table>",
         "id": 576806,
         "locale": null,
-        "modified": "2026-10-16T19:09:18",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/sales/create-edit-opportunity-sales#copy-an-opportunity-preview",
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "June CY2026",
@@ -28823,10 +29043,10 @@
     },
     {
         "created": "2026-10-16T19:08:29",
-        "description": "<p>Quick Campaigns support multiple bulk activity types (email, tasks, appointments, phone calls). This release focuses on improving the end-to-end experience for bulk email creation, with foundational improvements that benefit the overall Quick Campaigns flow.</p>\n<p>Key capabilities include:</p>\n<ul>\n<li><p><strong>Streamlined quick campaign flow</strong>: The existing multistep wizard is simplified for Quick Campaigns creation, including one-time bulk email sends. Sellers can create, review, and send bulk emails with fewer steps and clicks, staying in a single creation surface and focusing on execution rather than setup.</p>\n</li>\n<li><p><strong>In-flow template creation and editing</strong>: Sellers can create or edit email templates directly within the Quick Campaigns flow. Newly created or updated templates are easy to find and reuse without leaving the experience or restarting setup.</p>\n</li>\n<li><p><strong>Enhanced template discovery with views</strong>: An improved template picker with a view selector helps sellers quickly find the right template, whether it\u2019s one they created, one shared with them, or a marketing-approved one.</p>\n</li>\n<li><p><strong>Send-specific edits and template-free bulk emails</strong>: Sellers can make send-specific edits such as adding a personalized greeting, dynamic text, or signature, without overwriting shared templates. For true one-off outreach, sellers can also compose bulk emails from scratch using rich text, dynamic text, and signatures without creating templates.</p>\n</li>\n<li><p><strong>Inline template preview and test send</strong>: Sellers can preview the final rendered email inline and send a test email to themselves or a colleague to validate formatting and personalization. This removes the need for duplicate bulk email campaigns and rework, increasing confidence before sending.</p>\n</li>\n</ul>\n<p>Business Value:</p>\n<p>Quick Campaigns are designed for fast, seller-led outreach such as post-meeting follow-ups, event or webinar recaps, policy updates, or one-time announcements to many customers at once. However, even simple bulk emails in Quick Campaigns were slow and error-prone. Sellers had to navigate a multistep wizard, rely on rigid templates, exit the flow to make changes, and use workarounds to gain confidence before sending. This breaks execution momentum and often pushes sellers to Outlook or custom solutions outside Dynamics 365.</p>\n<p>This release simplifies the Quick Campaigns experience, particularly for bulk email scenarios, by reducing unnecessary steps, keeping sellers in a single flow, supporting send-specific personalization, and improving confidence before sending, so sellers can act quickly without leaving the platform or compromising compliance.</p>\n<p>Enabled for:</p>\n<p>Enabled for end users automatically</p>",
+        "description": "<p>Quick Campaigns support multiple bulk activity types (email, tasks, appointments, phone calls). This release focuses on improving the end-to-end experience for bulk email creation, with foundational improvements that benefit the overall Quick Campaigns flow.</p>\n<p>Key capabilities include:</p>\n<ul>\n<li><p><strong>Streamlined quick campaign flow</strong>: The existing multistep wizard is simplified for Quick Campaigns creation, including one-time bulk email sends. Sellers can create, review, and send bulk emails with fewer steps and clicks, staying in a single creation surface and focusing on execution rather than setup.</p>\n</li>\n<li><p><strong>In-flow template creation and editing</strong>: Sellers can create or edit email templates directly within the Quick Campaigns flow. Newly created or updated templates are easy to find and reuse without leaving the experience or restarting setup.</p>\n</li>\n<li><p><strong>Enhanced template discovery with views</strong>: An improved template picker with a view selector helps sellers quickly find the right template, whether it\u2019s one they created, one shared with them, or a marketing-approved one.</p>\n</li>\n<li><p><strong>Send-specific edits and template-free bulk emails</strong>: Sellers can make send-specific edits such as adding a personalized greeting, dynamic text, or signature, without overwriting shared templates. For true one-off outreach, sellers can also compose bulk emails from scratch using rich text, dynamic text, and signatures without creating templates.</p>\n</li>\n<li><p><strong>Inline template preview and test send</strong>: Sellers can preview the final rendered email inline and send a test email to themselves or a colleague to validate formatting and personalization. This removes the need for duplicate bulk email campaigns and rework, increasing confidence before sending.</p>\n</li>\n</ul>\n<p>Business Value:</p>\n<p>Quick Campaigns are designed for fast, seller-led outreach such as post-meeting follow-ups, event or webinar recaps, policy updates, or one-time announcements to many customers at once. However, even simple bulk emails in Quick Campaigns were slow and error-prone. Sellers had to navigate a multistep wizard, rely on rigid templates, exit the flow to make changes, and use workarounds to gain confidence before sending. This breaks execution momentum and often pushes sellers to Outlook or custom solutions outside Dynamics 365.</p>\n<p>This release simplifies the Quick Campaigns experience, particularly for bulk email scenarios, by reducing unnecessary steps, keeping sellers in a single flow, supporting send-specific personalization, and improving confidence before sending, so sellers can act quickly without leaving the platform or compromising compliance.</p>\n<p>Enabled for:</p>\n<p>Enabled for end users automatically</p>\n<h2>Availability</h2>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Monthly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2611.4</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by default)</td>\n</tr>\n</tbody>\n</table>",
         "id": 576745,
         "locale": null,
-        "modified": "2026-10-16T19:08:29",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "September CY2026",
@@ -33672,9 +33892,9 @@
         "description": "<p>Event group chat, the private chat for organizers, co-organizers, and presenters in an event or structured meeting, will support external presenters.</p>",
         "id": 573706,
         "locale": null,
-        "modified": "2026-10-29T23:01:00",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -35118,10 +35338,10 @@
         "description": "<p>Help people get started faster by automatically connecting new team members to relevant channels when they join a team. Improve engagement, accelerate onboarding, and make it easier to discover important information from day one.</p>",
         "id": 573452,
         "locale": null,
-        "modified": "2026-10-02T22:01:21",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "November CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -35145,6 +35365,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Targeted Release"
             }
         ],
         "tagsContainer": {
@@ -35175,6 +35398,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Targeted Release"
                 }
             ]
         },
@@ -35185,12 +35411,12 @@
         "description": "<p>Organizations can enhance meeting security with synthetic audio and video detection solutions provided by certified third-party providers. Third-party detection solutions analyze meeting media for signs of synthetic or manipulated audio and video and send detection signals to Teams, enabling integrated in-meeting experiences and controls.  Important: Synthetic media detection is performed by the third-party provider. Microsoft Teams provides the platform integration and experiences for surfacing and acting on detection signals from supported providers.</p>",
         "id": 573451,
         "locale": null,
-        "modified": "2026-10-07T23:01:35",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -43774,9 +44000,9 @@
         "description": "<p>Keep communication more accessible throughout your meeting. You can now pop out a sign language interpreter into a separate, resizable window that stays visible across monitors and apps. Designed to support Deaf and Hard of Hearing users, the sign language interpreter's popout video will persist while viewers are multitasking, sharing content, or changing meeting layouts.</p>",
         "id": 571387,
         "locale": null,
-        "modified": "2026-10-20T23:00:34",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -47881,12 +48107,12 @@
         "description": "<p>The Campaigns Hub in Viva Engage provides a centralized mobile destination where employees can discover and participate in organizational campaigns. Available in the Viva Engage app and Viva Engage in Teams mobile, the hub highlights top and sponsored campaigns, enables users to browse active and completed campaigns, and makes it easy to view campaign details and follow the campaigns that matter to them.</p>",
         "id": 570157,
         "locale": null,
-        "modified": "2026-10-20T23:00:34",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -53794,15 +54020,15 @@
     },
     {
         "created": "2026-07-23T23:27:16",
-        "description": "Campaigns in SharePoint (site campaigns) is a new capability that brings Viva Amplify\u2019 s campaign management natively into SharePoint. Corporate communications teams now have a unified place to create, distribute, and measure their news without leaving the platform where their news content already lives. This feature applies only to Amplify users as of now. This is a complementary way to create lighter weight campaigns inside a SharePoint site as a way to organize your SharePoint news posts and benefit from campaign analytics directly from SharePoint. ",
+        "description": "<p>Campaigns in SharePoint (site campaigns) is a new capability that brings Viva Amplify\u2019 s campaign management natively into SharePoint. Corporate communications teams now have a unified place to create, distribute, and measure their news without leaving the platform where their news content already lives. This feature applies only to Amplify users as of now. This is a complementary way to create lighter weight campaigns inside a SharePoint site as a way to organize your SharePoint news posts and benefit from campaign analytics directly from SharePoint.</p>",
         "id": 568073,
         "locale": null,
-        "modified": "2026-07-23T23:27:16",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -54010,9 +54236,9 @@
         "description": "<p>Microsoft Purview Data Loss Prevention and Information Protection Auto-labeling capabilities now extend to non-Microsoft connected apps (e.g., Google Workspace, Box, Dropbox, Salesforce, ServiceNow, Amazon Web Services, and Cisco Webex). The conditions and actions supported for each of these applications vary.</p>",
         "id": 568075,
         "locale": null,
-        "modified": "2026-11-03T00:14:11",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2027",
         "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -61068,15 +61294,15 @@
     },
     {
         "created": "2026-06-10T23:00:02",
-        "description": "Teams brings desktop-style emoji shortcuts to mobile (iOS and Android), allowing you to insert emojis by typing colon-based commands like :smile:. Real-time autocomplete suggestions help you quickly find the right emoji as you type, while support for custom emojis enables more personalized and expressive communication on the go.",
+        "description": "<p>Teams brings desktop-style emoji shortcuts to mobile (iOS and Android), allowing you to insert emojis by typing colon-based commands like :smile:. Real-time autocomplete suggestions help you quickly find the right emoji as you type, while support for custom emojis enables more personalized and expressive communication on the go.</p>",
         "id": 565370,
         "locale": null,
-        "modified": "2026-08-19T22:58:06",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -111644,73 +111870,6 @@
     },
     {
         "created": "2025-09-18T16:15:27",
-        "description": "<p>Simplifies SharePoint content management and ensures content is Copilot-ready by automating metadata, fixing stale content, enabling fast page creation, improving compliance, and enriching content so Copilot can deliver more accurate, grounded answers. Updated April 16: We are still in development for GA and have launched to Preview only.</p>",
-        "id": 501451,
-        "locale": null,
-        "modified": "2026-11-11T00:53:22",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
-        "publicPreviewDate": "September CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "SharePoint"
-            },
-            {
-                "tagName": "SharePoint Syntex"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "SharePoint"
-                },
-                {
-                    "tagName": "SharePoint Syntex"
-                },
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot in SharePoint"
-    },
-    {
-        "created": "2025-09-18T16:15:27",
         "description": "<p>Community Agent helps members get answers to questions in Viva Engage communities using community knowledge and connected sources. Community admins can choose to require human review before answers are posted or allow automatic posting.</p>",
         "id": 499898,
         "locale": null,
@@ -126698,55 +126857,6 @@
         "title": "Microsoft Clipchamp: Windows Widget"
     },
     {
-        "created": "2025-04-02T21:15:43",
-        "description": "<p>This is being removed as a duplicate of 486820</p>",
-        "id": 486825,
-        "locale": null,
-        "modified": "2026-11-12T01:41:53",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "April CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Mac"
-            },
-            {
-                "tagName": "Word"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Mac"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Word"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Word: Email Notification Context Previews for Files Protected with Microsoft Purview"
-    },
-    {
         "created": "2025-04-01T23:15:44",
         "description": "To give admins control over whether agent makers can publish advanced agents (agents with actions) for their tenants, we are introducing a new control in the M365 admin center. This control specifically applies to advanced agents created from Teams Toolkit. #copilotcontrolsystem",
         "id": 487847,
@@ -133137,15 +133247,15 @@
     },
     {
         "created": "2024-07-03T00:00:28",
-        "description": "Admins can now select tenant type for their institution from the policy wizard. This setting can be changed anytime from the wizard.",
+        "description": "<p>Admins can now select tenant type for their institution from the policy wizard. This setting can be changed anytime from the wizard.</p>",
         "id": 402185,
         "locale": null,
-        "modified": "2024-11-19T00:15:55",
+        "modified": "2026-11-19T01:58:21",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2024",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -135047,15 +135157,15 @@
     },
     {
         "created": "2023-12-15T23:30:25",
-        "description": "The latest Teams meeting experiences will be available for Teams on the web in Safari and Firefox browsers - including performance improvements, refreshed pre-join, updated meeting stage, and the updated meeting toolbar. (for anonymous join only)",
+        "description": "<p>The latest Teams meeting experiences will be available for Teams on the web in Safari and Firefox browsers - including performance improvements, refreshed pre-join, updated meeting stage, and the updated meeting toolbar. (for anonymous join only)</p>",
         "id": 329253,
         "locale": null,
-        "modified": "2024-09-12T00:00:50",
+        "modified": "2026-11-19T01:58:21",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2024",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -135169,15 +135279,15 @@
     },
     {
         "created": "2024-02-06T02:15:52",
-        "description": "You can record a video clip with your phone camera and switch your background to any picture you want or make it blurry. With this feature, you can record yourself anywhere and share it with coworkers in your Teams chat or channel.",
+        "description": "<p>You can record a video clip with your phone camera and switch your background to any picture you want or make it blurry. With this feature, you can record yourself anywhere and share it with coworkers in your Teams chat or channel.</p>",
         "id": 380852,
         "locale": null,
-        "modified": "2024-05-02T23:15:25",
+        "modified": "2026-11-19T01:58:21",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2024",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -136652,12 +136762,12 @@
     },
     {
         "created": "2024-10-29T23:15:28",
-        "description": "Automatically backup all Exchange or OneDrive users and/or SharePoint sites in the tenant and have the tool automatically add new users/sites to the backup policy. ",
+        "description": "<p>Automatically backup all Exchange or OneDrive users and/or SharePoint sites in the tenant and have the tool automatically add new users/sites to the backup policy.</p>",
         "id": 464990,
         "locale": null,
-        "modified": "2026-07-08T23:11:07",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -136786,15 +136896,15 @@
     },
     {
         "created": "2024-06-04T23:15:18",
-        "description": "The School Connection app in Microsoft Teams (mobile) empowers parents and guardians to engage, support, and monitor their student's learning at school. This release enables a parent/guardian to get access to their child\u2019s profile in School Connection if they login to Teams (mobile) with their phone number and the school has registered that phone number as a parent/guardian contact. Additionally, a parent/guardian will easily get access to their child\u2019s profile if the phone number or email address that is registered by the school is saved as a login information in their Microsoft account. Learn more about School Connection at the link below.",
+        "description": "<p>The School Connection app in Microsoft Teams (mobile) empowers parents and guardians to engage, support, and monitor their student's learning at school. This release enables a parent/guardian to get access to their child\u2019s profile in School Connection if they login to Teams (mobile) with their phone number and the school has registered that phone number as a parent/guardian contact. Additionally, a parent/guardian will easily get access to their child\u2019s profile if the phone number or email address that is registered by the school is saved as a login information in their Microsoft account. Learn more about School Connection at the link below.</p>",
         "id": 398447,
         "locale": null,
-        "modified": "2024-07-29T23:15:01",
+        "modified": "2026-11-19T01:58:21",
         "moreInfoLink": "https://parent.microsoft.com/",
         "publicDisclosureAvailabilityDate": "July CY2024",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -137213,15 +137323,15 @@
     },
     {
         "created": "2024-04-18T23:15:11",
-        "description": "Administrators using the Microsoft 365 admin center and Teams admin center who manage Teams apps that work on Outlook and the Microsoft 365 App will be able to apply their changes across all three clients (Teams, Outlook and Microsoft 365 App). Before this update, changes made through the Integrated Apps section in the Microsoft 365 admin center would only affect these apps on Outlook and the Microsoft 365 App; similarly, changes made in the Teams admin center would exclusively affect Teams. With this change, management of these apps will be unified across Teams, Outlook and Microsoft 365 App. ",
+        "description": "<p>Administrators using the Microsoft 365 admin center and Teams admin center who manage Teams apps that work on Outlook and the Microsoft 365 App will be able to apply their changes across all three clients (Teams, Outlook and Microsoft 365 App). Before this update, changes made through the Integrated Apps section in the Microsoft 365 admin center would only affect these apps on Outlook and the Microsoft 365 App; similarly, changes made in the Teams admin center would exclusively affect Teams. With this change, management of these apps will be unified across Teams, Outlook and Microsoft 365 App.</p>",
         "id": 393931,
         "locale": null,
-        "modified": "2024-07-23T23:30:44",
+        "modified": "2026-11-19T01:58:21",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2024",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -137683,10 +137793,10 @@
     },
     {
         "created": "2024-10-03T23:30:37",
-        "description": "<p>Rewrite by Copilot in Edge, which lets users edit typed text for tone, format, and length within an open page in Microsoft Edge, is being updated to include enterprise data protection for commercial customers. Once Rewrite is available, users signed in with a Microsoft Entra ID will have enterprise data protection when using the feature in Microsoft Edge. Updated March 20, 2026: We have paused release of this feature temporarily and will announce new release timelines soon. We apologize for any inconvenience.</p>",
+        "description": "<p>Writing Assistance with Copilot in Edge, which lets users edit typed text for tone, format, and length within an open page in Microsoft Edge, is being updated to include enterprise data protection for commercial customers. Once Writing Assistance is available, users signed in with a Microsoft Entra ID will have enterprise data protection when using the feature in Microsoft Edge.</p>",
         "id": 420335,
         "locale": null,
-        "modified": "2026-11-11T00:53:22",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": "https://learn.microsoft.com/en-us/copilot/edge",
         "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
@@ -137728,7 +137838,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Rewrite by Copilot in Edge is being upgraded to include enterprise data protection compliance standards"
+        "title": "Microsoft Edge: Writing Assistance with Copilot in Edge is being upgraded to include enterprise data protection compliance standards"
     },
     {
         "created": "2024-10-04T23:15:50",
@@ -138201,15 +138311,15 @@
     },
     {
         "created": "2024-05-06T23:45:36",
-        "description": "This feature allows users to subscribe to notifications for Viva Engage topics they follow. Users will receive a Viva Engage bell notification when a new post is tagged with a topic they are subscribed to or when the topic is added to an existing post.",
+        "description": "<p>This feature allows users to subscribe to notifications for Viva Engage topics they follow. Users will receive a Viva Engage bell notification when a new post is tagged with a topic they are subscribed to or when the topic is added to an existing post.</p>",
         "id": 395940,
         "locale": null,
-        "modified": "2024-09-24T23:15:37",
+        "modified": "2026-11-19T01:58:21",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2024",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -139708,15 +139818,15 @@
     },
     {
         "created": "2023-11-10T00:18:04",
-        "description": "SecOps can now mange False positives and take move to inbox (i.e. release) quarantined messages from Threat explorer, advanced hunting, custom detection and Email entity page without the need to tab out to the Quarantine portal to take the action.",
+        "description": "<p>SecOps can now mange False positives and take move to inbox (i.e. release) quarantined messages from Threat explorer, advanced hunting, custom detection and Email entity page without the need to tab out to the Quarantine portal to take the action.</p>",
         "id": 184915,
         "locale": null,
-        "modified": "2024-07-30T23:30:34",
+        "modified": "2026-11-19T01:58:21",
         "moreInfoLink": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-quarantine-release-integration-in-microsoft-defender/ba-p/4198601",
         "publicDisclosureAvailabilityDate": "July CY2024",
         "publicPreviewDate": "November CY2023",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -140171,15 +140281,15 @@
     },
     {
         "created": "2024-02-14T00:45:01",
-        "description": "This adds a search entry point and a new tailored experience for Viva Connection users on iOS and Android tablets.",
+        "description": "<p>This adds a search entry point and a new tailored experience for Viva Connection users on iOS and Android tablets.</p>",
         "id": 382643,
         "locale": null,
-        "modified": "2024-04-19T22:15:35",
+        "modified": "2026-11-19T00:53:06",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "April CY2024",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
