@@ -1,22 +1,23 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#GGUFSUSP_STRING\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#GGUF:SUSP_STRING
+-- Type: 13
+-- MpAttributes: MpIsGGUFChatTemplateScan
 
--- params : ...
--- function num : 0
-local l_0_0 = {}
-l_0_0["GGUF_CRIT:builtins"] = 1
-l_0_0["GGUF_CRIT:Exec"] = 1
-l_0_0["GGUF_CRIT:Network"] = 1
-l_0_0["GGUF_CRIT:FileIO"] = 1
-l_0_0["GGUF_CRIT:SysUtils"] = 1
+local l_0_0 = {
+  ["GGUF_CRIT:builtins"] = 1,
+  ["GGUF_CRIT:Exec"] = 1,
+  ["GGUF_CRIT:Network"] = 1,
+  ["GGUF_CRIT:FileIO"] = 1,
+  ["GGUF_CRIT:SysUtils"] = 1
+}
 local l_0_1 = 0
-for l_0_5,l_0_6 in pairs(l_0_0) do
-  if (mp.get_mpattribute)(l_0_5) then
-    l_0_1 = l_0_1 + l_0_6
-    if l_0_1 >= 2 then
+for l_0_2, l_0_3 in pairs(l_0_0) do
+  local l_0_4 = mp.get_mpattribute(l_0_2)
+  if l_0_4 then
+    l_0_1 = l_0_1 + l_0_3
+    if 2 <= l_0_1 then
       return mp.INFECTED
     end
   end
 end
 return mp.CLEAN
-

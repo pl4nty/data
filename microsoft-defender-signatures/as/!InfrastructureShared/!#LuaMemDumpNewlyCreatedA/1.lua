@@ -1,61 +1,61 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaMemDumpNewlyCreatedA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:MemDumpNewlyCreated.A
+-- Type: 12
+-- MpAttributes: BM_MEMDUMP_FILE & MpOnCloseNewlyCreatedHintRtpScan
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.readu_u32)(headerpage, 9)
-if l_0_0 == nil or l_0_0 <= 0 or l_0_0 >= 32 then
-  return mp.CLEAN
-end
-local l_0_1 = (mp.readu_u32)(headerpage, 13)
-if l_0_1 == nil or l_0_1 == 0 then
-  return mp.CLEAN
-end
-for l_0_5 = 0, l_0_0 - 1 do
-  local l_0_6 = l_0_1 + l_0_5 * 12
-  local l_0_7 = (mp.readu_u32)(headerpage, l_0_6 + 1)
-  local l_0_8 = (mp.readu_u32)(headerpage, l_0_6 + 9)
-  if l_0_7 == 4 then
-    (mp.readprotection)(false)
-    local l_0_9 = (mp.readfile)(l_0_8 + 24, 4)
-    if l_0_9 == nil then
-      return mp.CLEAN
-    end
-    l_0_9 = (mp.readu_u32)(l_0_9, 1)
-    local l_0_10 = (mp.readfile)(l_0_9, 4)
-    if l_0_10 == nil then
-      return mp.CLEAN
-    end
-    local l_0_11 = (mp.readu_u32)(l_0_10, 1)
-    if l_0_11 == nil or l_0_11 == 0 or l_0_11 >= 256 then
-      return mp.CLEAN
-    end
-    local l_0_12 = (mp.readfile)(l_0_9 + 4, l_0_11)
-    if l_0_12 == nil then
-      return mp.CLEAN
-    end
-    local l_0_13 = (string.gsub)(l_0_12, "%z", "")
-    l_0_13 = (string.lower)(l_0_13)
-    if l_0_13:match("%.exe$") then
-      local l_0_14 = (mp.readu_u64)(headerpage, 25)
-      ;
-      (mp.set_mpattribute)("LUA:MemDumpType_" .. (string.format)("%x", l_0_14))
-      local l_0_15 = 2
-      if (mp.bitand)(l_0_14, l_0_15) == l_0_15 then
-        (mp.set_mpattribute)("LUA:MemDumpType_WithFullMem")
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
+
+local r0_0 = mp.readu_u32(headerpage, 9)
+if r0_0 ~= nil and not (r0_0 <= 0) and not (r0_0 >= 32) then
+  local r0_1 = mp.readu_u32(headerpage, 13)
+  if r0_1 ~= nil and r0_1 ~= 0 then
+    for r0_2 = 0, r0_0 - 1 do
+      local r0_3 = r0_1 + r0_2 * 12
+      local r0_4 = mp.readu_u32(headerpage, r0_3 + 1)
+      local r0_5 = mp.readu_u32(headerpage, r0_3 + 9)
+      if r0_4 == 4 then
+        mp.readprotection(false)
+        local r0_6 = mp.readfile(r0_5 + 24, 4)
+        if r0_6 == nil then
+          return mp.CLEAN
+        end
+        r0_6 = mp.readu_u32(r0_6, 1)
+        local r0_7 = mp.readfile(r0_6, 4)
+        if r0_7 == nil then
+          return mp.CLEAN
+        end
+        local r0_8 = mp.readu_u32(r0_7, 1)
+        if r0_8 == nil or r0_8 == 0 or r0_8 >= 256 then
+          return mp.CLEAN
+        end
+        local r0_9 = mp.readfile(r0_6 + 4, r0_8)
+        if r0_9 == nil then
+          return mp.CLEAN
+        end
+        local r0_10 = string.gsub(r0_9, "%z", "")
+        do
+          local r0_11 = string.lower(r0_10)
+          r0_10 = r0_11
+        end
+        if not r0_10:match("%.exe$") then
+          break
+        end
+        local r0_12 = mp.readu_u64(headerpage, 25)
+        mp.set_mpattribute("LUA:MemDumpType_" .. string.format("%x", r0_12))
+        local r0_13 = 2
+        if mp.bitand(r0_12, r0_13) == r0_13 then
+          mp.set_mpattribute("LUA:MemDumpType_WithFullMem")
+        end
+        local r0_14 = r0_10:match("([^\\]+)$")
+        mp.set_mpattribute("LUA:MemDump!" .. r0_14)
+        if string.find(r0_10, "c:\\windows\\system32\\lsass.exe", 1, true) then
+          mp.set_mpattribute("BM_MEMDUMP_FILE_LSASS")
+        end
+        return mp.INFECTED
       end
-      local l_0_16 = l_0_13:match("([^\\]+)$")
-      ;
-      (mp.set_mpattribute)("LUA:MemDump!" .. l_0_16)
-      if (string.find)(l_0_13, "c:\\windows\\system32\\lsass.exe", 1, true) then
-        (mp.set_mpattribute)("BM_MEMDUMP_FILE_LSASS")
-      end
-      return mp.INFECTED
     end
-    break
+    return mp.CLEAN
   end
-end
-do
   return mp.CLEAN
 end
-
+return mp.CLEAN

@@ -1,8 +1,8 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2e9b3f103c735\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 2e9b3f103c735
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper
 
--- params : ...
--- function num : 0
 local l_0_0 = mp.SIGATTR_LOG_SZ
 local l_0_1 = {}
 local l_0_2 = {}
@@ -13,20 +13,19 @@ local l_0_6 = {}
 local l_0_7 = {}
 local l_0_8 = 0
 local l_0_9 = {}
-local l_0_10 = (bm.get_sig_count)()
-for l_0_14 = 1, l_0_0 do
-  local l_0_15 = (sigattr_tail[l_0_14]).attribute
-  if l_0_15 == 16384 then
-    local l_0_16 = ((sigattr_tail[l_0_14]).utf8p1):lower()
-    local l_0_17 = l_0_16:match("%.[^%.]+$")
-    if l_0_17 ~= nil and ((mp.GetExtensionClass)(l_0_17) ~= 4 or isKnownRansomExtension(l_0_17)) then
-      local l_0_18 = (mp.crc32)(0, l_0_16, 1, #l_0_16)
-      if l_0_1[l_0_18] ~= nil then
-        (table.insert)(l_0_1[l_0_18], l_0_14)
+local l_0_10 = bm.get_sig_count()
+for l_0_11 = 1, l_0_0 do
+  local l_0_12 = sigattr_tail[l_0_11].attribute
+  if l_0_12 == 16384 then
+    local l_0_13 = sigattr_tail[l_0_11].utf8p1:lower()
+    local l_0_14 = l_0_13:match("%.[^%.]+$")
+    if l_0_14 ~= nil and (mp.GetExtensionClass(l_0_14) ~= 4 or isKnownRansomExtension(l_0_14)) then
+      local l_0_15 = mp.crc32(0, l_0_13, 1, #l_0_13)
+      if l_0_1[l_0_15] ~= nil then
+        table.insert(l_0_1[l_0_15], l_0_11)
       else
-        local l_0_19 = {}
-        -- DECOMPILER ERROR at PC62: No list found for R19 , SetList fails
-
+        l_0_1[l_0_15] = {l_0_11}
+        l_0_8 = l_0_8 + 1
       end
     end
   end
@@ -34,323 +33,176 @@ end
 if l_0_8 < 5 then
   return mp.CLEAN
 end
-for l_0_23 = 1, l_0_0 do
-  local l_0_24 = (sigattr_tail[l_0_23]).attribute
-  if l_0_24 == 16389 then
-    local l_0_25 = ((sigattr_tail[l_0_23]).utf8p1):lower()
-    -- DECOMPILER ERROR at PC89: Overwrote pending register: R20 in 'AssignReg'
-
-    local l_0_26 = (mp.crc32)(0, l_0_25, l_0_14, #l_0_25)
-    if l_0_3[l_0_26] ~= nil then
-      (table.insert)(l_0_3[l_0_26], l_0_23)
+for l_0_16 = 1, l_0_0 do
+  local l_0_17 = sigattr_tail[l_0_16].attribute
+  if l_0_17 == 16389 then
+    local l_0_18 = sigattr_tail[l_0_16].utf8p1:lower()
+    local l_0_19 = mp.crc32(0, l_0_18, 1, #l_0_18)
+    if l_0_3[l_0_19] ~= nil then
+      table.insert(l_0_3[l_0_19], l_0_16)
     else
-      local l_0_27 = {}
-      -- DECOMPILER ERROR at PC103: No list found for R18 , SetList fails
-
+      l_0_3[l_0_19] = {l_0_16}
     end
-    do
-      -- DECOMPILER ERROR at PC110: Overwrote pending register: R19 in 'AssignReg'
-
-      do
-        if not (string.find)(l_0_23, "\\[^\\]*$") then
-          local l_0_28, l_0_29, l_0_30 = l_0_1[l_0_26] == nil or 0
-        end
-        -- DECOMPILER ERROR at PC120: Confused about usage of register: R18 in 'UnsetPending'
-
-        local l_0_31 = nil
-        if (string.find)(l_0_25, ".", l_0_28, true) ~= nil then
-          local l_0_32 = nil
-          if (string.sub)(l_0_25, l_0_31 + 1, (string.find)(l_0_25, ".", l_0_28, true) - 1) ~= nil then
-            if l_0_4[(string.sub)(l_0_25, l_0_31 + 1, (string.find)(l_0_25, ".", l_0_28, true) - 1)] == nil then
-              local l_0_33 = nil
-              l_0_4[l_0_33] = {l_0_26, l_0_23}
-            else
-              do
-                do
-                  -- DECOMPILER ERROR at PC144: Confused about usage of register: R20 in 'UnsetPending'
-
-                  ;
-                  (table.insert)(l_0_4[l_0_33], l_0_23)
-                  -- DECOMPILER ERROR at PC147: LeaveBlock: unexpected jumping out DO_STMT
-
-                  -- DECOMPILER ERROR at PC147: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                  -- DECOMPILER ERROR at PC147: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC147: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC147: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC147: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC147: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC147: LeaveBlock: unexpected jumping out DO_STMT
-
-                  -- DECOMPILER ERROR at PC147: LeaveBlock: unexpected jumping out DO_STMT
-
-                  -- DECOMPILER ERROR at PC147: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC147: LeaveBlock: unexpected jumping out IF_STMT
-
-                end
-              end
-            end
+    if l_0_1[l_0_19] ~= nil then
+      local l_0_20 = string.find(l_0_18, "\\[^\\]*$") or 0
+      local l_0_21 = string.find(l_0_18, ".", l_0_20, true)
+      if l_0_21 ~= nil then
+        local l_0_22 = string.sub(l_0_18, l_0_20 + 1, l_0_21 - 1)
+        if l_0_22 ~= nil then
+          if l_0_4[l_0_22] == nil then
+            l_0_4[l_0_22] = {l_0_19, l_0_16}
+          else
+            table.insert(l_0_4[l_0_22], l_0_16)
           end
         end
       end
     end
   end
 end
--- DECOMPILER ERROR at PC148: Overwrote pending register: R8 in 'AssignReg'
-
-local l_0_34 = {}
-for l_0_38 = 1, l_0_0 do
-  local l_0_39 = (sigattr_tail[l_0_38]).attribute
-  if l_0_39 == 16387 then
-    local l_0_40 = ((sigattr_tail[l_0_38]).utf8p1):lower()
-    local l_0_41 = (mp.crc32)(0, l_0_40, 1, #l_0_40)
-    if l_0_1[l_0_41] == nil then
-      (table.insert)(l_0_2, l_0_38)
+l_0_8 = 0
+local l_0_23 = {}
+for l_0_24 = 1, l_0_0 do
+  local l_0_25 = sigattr_tail[l_0_24].attribute
+  if l_0_25 == 16387 then
+    local l_0_26 = sigattr_tail[l_0_24].utf8p1:lower()
+    local l_0_27 = mp.crc32(0, l_0_26, 1, #l_0_26)
+    if l_0_1[l_0_27] == nil then
+      table.insert(l_0_2, l_0_24)
     else
-      l_0_3[l_0_41] = nil
+      l_0_3[l_0_27] = nil
     end
-    -- DECOMPILER ERROR at PC184: Overwrote pending register: R8 in 'AssignReg'
-
-    if l_0_34[l_0_41] == nil then
-      l_0_34[l_0_41] = 1
+    if l_0_23[l_0_27] == nil then
+      l_0_8 = l_0_8 + 1
+      l_0_23[l_0_27] = 1
     end
   end
 end
 if l_0_8 < 5 then
   return mp.CLEAN
 end
-for l_0_45,l_0_46 in pairs(l_0_2) do
-  local l_0_47 = ((sigattr_tail[l_0_46]).utf8p1):lower()
-  do
-    local l_0_48, l_0_49, l_0_50, l_0_51 = (string.find)(l_0_47, "\\[^\\]*$") or 0
-    -- DECOMPILER ERROR at PC213: Confused about usage of register: R18 in 'UnsetPending'
-
-    local l_0_52 = nil
-    if (string.find)(l_0_47, ".", l_0_48, true) ~= nil then
-      local l_0_53 = nil
-      local l_0_54 = (string.sub)(l_0_47, l_0_52 + 1, -1)
-      local l_0_55 = ((string.sub)(l_0_47, l_0_52 + 1, l_0_53 - 1))
-      -- DECOMPILER ERROR at PC236: Overwrote pending register: R22 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC245: Confused about usage of register: R22 in 'UnsetPending'
-
-      if (l_0_54 == nil or l_0_55 ~= nil) and nil ~= nil and (mp.bitand)((mp.GetExtensionClass)(nil), 3) ~= 0 and l_0_4[l_0_55] ~= nil then
-        local l_0_56 = nil
-        -- DECOMPILER ERROR at PC260: Confused about usage of register: R23 in 'UnsetPending'
-
-        if l_0_3[(l_0_4[l_0_55])[1]] ~= nil then
-          local l_0_57 = nil
-          if (l_0_1[l_0_57] == nil or not (l_0_1[l_0_57])[1] or #l_0_47 < #((sigattr_tail[(l_0_3[(l_0_4[l_0_55])[1]])[1]]).utf8p1):lower()) and (((sigattr_tail[(l_0_3[(l_0_4[l_0_55])[1]])[1]]).utf8p1):lower()):find(l_0_47, 1, true) == 1 and (((sigattr_tail[(l_0_3[(l_0_4[l_0_55])[1]])[1]]).utf8p1):lower()):byte(#l_0_47 + 1) ~= 58 then
-            local l_0_58 = nil
-            -- DECOMPILER ERROR at PC305: Unhandled construct in 'MakeBoolean' P1
-
-            if l_0_5[(string.sub)(((sigattr_tail[(l_0_3[(l_0_4[l_0_55])[1]])[1]]).utf8p1):lower(), #l_0_47 + 1)] ~= nil and l_0_6[l_0_57] == nil then
-              l_0_6[l_0_57] = 1
-              ;
-              (table.insert)(l_0_5[(string.sub)(((sigattr_tail[(l_0_3[(l_0_4[l_0_55])[1]])[1]]).utf8p1):lower(), #l_0_47 + 1)], (l_0_3[l_0_57])[1])
-              ;
-              (table.insert)(l_0_5[(string.sub)(((sigattr_tail[(l_0_3[(l_0_4[l_0_55])[1]])[1]]).utf8p1):lower(), #l_0_47 + 1)], l_0_46)
-              if #l_0_5[(string.sub)(((sigattr_tail[(l_0_3[(l_0_4[l_0_55])[1]])[1]]).utf8p1):lower(), #l_0_47 + 1)] >= 10 then
-                local l_0_59 = nil
-                local l_0_60 = false
-                for l_0_64,l_0_65 in pairs(l_0_5[l_0_59]) do
-                  local l_0_61 = {count = 0}
-                  -- DECOMPILER ERROR at PC331: Confused about usage of register: R32 in 'UnsetPending'
-
-                  if (sysio.ReadFile)((sigattr_tail[R32_PC331]).utf8p1, 0, 4) ~= nil and l_0_61[(sysio.ReadFile)((sigattr_tail[R32_PC331]).utf8p1, 0, 4)] == nil then
-                    l_0_61[(sysio.ReadFile)((sigattr_tail[R32_PC331]).utf8p1, 0, 4)] = 1
-                    l_0_61.count = l_0_61.count + 1
+for l_0_28, l_0_29 in pairs(l_0_2) do
+  local l_0_30 = sigattr_tail[l_0_29].utf8p1:lower()
+  local l_0_31 = string.find(l_0_30, "\\[^\\]*$") or 0
+  local l_0_32 = string.find(l_0_30, ".", l_0_31, true)
+  if l_0_32 ~= nil then
+    local l_0_33 = string.sub(l_0_30, l_0_31 + 1, -1)
+    local l_0_34 = string.sub(l_0_30, l_0_31 + 1, l_0_32 - 1)
+    local l_0_35
+    if l_0_33 ~= nil then
+      l_0_35 = l_0_33:match("%.[^%.]+$")
+    end
+    if l_0_34 ~= nil and l_0_35 ~= nil and mp.bitand(mp.GetExtensionClass(l_0_35), 3) ~= 0 and l_0_4[l_0_34] ~= nil then
+      local l_0_36 = l_0_4[l_0_34][1]
+      if l_0_3[l_0_36] ~= nil then
+        local l_0_37 = sigattr_tail[l_0_3[l_0_36][1]].utf8p1:lower()
+        if l_0_1[l_0_36] ~= nil and l_0_1[l_0_36][1] then
+          l_0_7[l_0_29] = l_0_1[l_0_36][1]
+        end
+        if #l_0_37 > #l_0_30 and l_0_37:find(l_0_30, 1, true) == 1 and l_0_37:byte(#l_0_30 + 1) ~= 58 then
+          local l_0_38 = string.sub(l_0_37, #l_0_30 + 1)
+          if l_0_5[l_0_38] ~= nil then
+            if l_0_6[l_0_36] == nil then
+              l_0_6[l_0_36] = 1
+              table.insert(l_0_5[l_0_38], l_0_3[l_0_36][1])
+              table.insert(l_0_5[l_0_38], l_0_29)
+              if 10 <= #l_0_5[l_0_38] then
+                local l_0_39 = false
+                local l_0_40 = {}
+                l_0_40.count = 0
+                for l_0_41, l_0_42 in pairs(l_0_5[l_0_38]) do
+                  local l_0_43 = sysio.ReadFile(sigattr_tail[l_0_42].utf8p1, 0, 4)
+                  if l_0_43 ~= nil and l_0_40[l_0_43] == nil then
+                    l_0_40[l_0_43] = 1
+                    l_0_40.count = l_0_40.count + 1
                   end
                 end
-                -- DECOMPILER ERROR at PC347: Confused about usage of register: R27 in 'UnsetPending'
-
-                if l_0_61.count > 4 then
-                  l_0_60 = true
+                if 4 < l_0_40.count then
+                  l_0_39 = true
                 end
-                ;
-                (bm.add_related_string)("magic_mismatch", tostring(l_0_60), bm.RelatedStringBMReport)
-                ;
-                (bm.add_related_string)("ransom_extension", l_0_59, bm.RelatedStringBMReport)
-                local l_0_67 = nil
-                local l_0_68 = {}
-                local l_0_69 = {}
-                local l_0_70 = {}
-                -- DECOMPILER ERROR at PC390: Overwrote pending register: R32 in 'AssignReg'
-
-                if not isnull((bm.get_imagepath)()) or (bm.get_current_process_startup_info)() ~= nil then
-                  do
-                    local l_0_71 = ("NA"):lower()
-                    -- DECOMPILER ERROR at PC391: Confused about usage of register: R31 in 'UnsetPending'
-
-                    l_0_68.proc_info = ((bm.get_current_process_startup_info)()).ppid
-                    l_0_68.appended_ext = l_0_59
-                    l_0_68.magic_mismatch = l_0_60
-                    l_0_68.sig_count = l_0_10
-                    l_0_68.debug_data = l_0_9
-                    local l_0_72 = nil
-                    for l_0_76,l_0_77 in pairs(l_0_5[l_0_59]) do
-                      local l_0_73, l_0_74 = , "FileChain_MainSet:"
-                      -- DECOMPILER ERROR at PC403: Confused about usage of register: R38 in 'UnsetPending'
-
-                      do
-                        local l_0_80, l_0_81 = , (string.find)((sigattr_tail[R38_PC403]).utf8p1, "\\[^\\]*$") or 0
-                        -- DECOMPILER ERROR at PC415: Confused about usage of register: R39 in 'UnsetPending'
-
-                        -- DECOMPILER ERROR at PC417: Confused about usage of register: R40 in 'UnsetPending'
-
-                        local l_0_82 = nil
-                        -- DECOMPILER ERROR at PC424: Confused about usage of register: R39 in 'UnsetPending'
-
-                        -- DECOMPILER ERROR at PC425: Confused about usage of register: R40 in 'UnsetPending'
-
-                        do
-                          if (string.find)(l_0_80, ".", l_0_81, true) ~= nil then
-                            local l_0_83 = nil
-                            l_0_74 = l_0_74 .. (crypto.CRC32Buffer)(-1, (string.sub)(l_0_80, l_0_81 + 1, (string.find)(l_0_80, ".", l_0_81, true) - 1), 0, #(string.sub)(l_0_80, l_0_81 + 1, (string.find)(l_0_80, ".", l_0_81, true) - 1))
-                            l_0_74 = l_0_74 .. ";" .. (string.sub)(l_0_83, (string.find)(l_0_80, ".", l_0_81, true) + 1) .. ";"
-                          end
-                          ;
-                          (table.insert)(l_0_69, (sigattr_tail[l_0_82]).utf8p1)
-                          local l_0_84 = nil
-                          if l_0_7[l_0_82] ~= nil then
-                            if sigattr_tail[l_0_7[l_0_82]] ~= nil then
-                              local l_0_85 = nil
-                              local l_0_86 = nil
-                              -- DECOMPILER ERROR at PC479: Overwrote pending register: R42 in 'AssignReg'
-
-                              if nil == nil then
-                                do
-                                  (table.insert)(l_0_70, ((sigattr_tail[l_0_7[l_0_82]]).utf8p1):lower())
-                                  ;
-                                  (table.insert)(l_0_70, -1)
-                                  if sigattr_tail[l_0_82] ~= nil then
-                                    local l_0_87 = nil
-                                    local l_0_88 = nil
-                                    if (string.match)(((sigattr_tail[l_0_82]).utf8p2):lower(), "fsize:(%d+)") == nil then
-                                      do
-                                        (table.insert)(l_0_70, ((sigattr_tail[l_0_82]).utf8p1):lower())
-                                        ;
-                                        (table.insert)(l_0_70, -1)
-                                        -- DECOMPILER ERROR at PC526: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                        -- DECOMPILER ERROR at PC526: LeaveBlock: unexpected jumping out IF_STMT
-
-                                        -- DECOMPILER ERROR at PC526: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                        -- DECOMPILER ERROR at PC526: LeaveBlock: unexpected jumping out IF_STMT
-
-                                        -- DECOMPILER ERROR at PC526: LeaveBlock: unexpected jumping out DO_STMT
-
-                                        -- DECOMPILER ERROR at PC526: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                        -- DECOMPILER ERROR at PC526: LeaveBlock: unexpected jumping out IF_STMT
-
-                                        -- DECOMPILER ERROR at PC526: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                        -- DECOMPILER ERROR at PC526: LeaveBlock: unexpected jumping out IF_STMT
-
-                                        -- DECOMPILER ERROR at PC526: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                        -- DECOMPILER ERROR at PC526: LeaveBlock: unexpected jumping out IF_STMT
-
-                                        -- DECOMPILER ERROR at PC526: LeaveBlock: unexpected jumping out DO_STMT
-
-                                        -- DECOMPILER ERROR at PC526: LeaveBlock: unexpected jumping out DO_STMT
-
-                                      end
-                                    end
-                                  end
-                                end
-                              end
-                            end
-                          end
-                        end
+                bm.add_related_string("magic_mismatch", tostring(l_0_39), bm.RelatedStringBMReport)
+                bm.add_related_string("ransom_extension", l_0_38, bm.RelatedStringBMReport)
+                local l_0_44 = {}
+                local l_0_45 = {}
+                local l_0_46 = {}
+                local l_0_47 = bm.get_imagepath()
+                if isnull(l_0_47) then
+                  l_0_47 = "NA"
+                else
+                  l_0_47 = l_0_47:lower()
+                end
+                local l_0_48 = bm.get_current_process_startup_info()
+                if l_0_48 ~= nil then
+                  l_0_48 = l_0_48.ppid
+                else
+                  l_0_48 = -1
+                end
+                l_0_44.cur_image_path = l_0_47
+                l_0_44.proc_info = l_0_48
+                l_0_44.appended_ext = l_0_38
+                l_0_44.magic_mismatch = l_0_39
+                l_0_44.sig_count = l_0_10
+                l_0_44.debug_data = l_0_9
+                local l_0_49 = "FileChain_MainSet:"
+                for l_0_50, l_0_51 in pairs(l_0_5[l_0_38]) do
+                  local l_0_52 = sigattr_tail[l_0_51].utf8p1
+                  local l_0_53 = string.find(l_0_52, "\\[^\\]*$") or 0
+                  local l_0_54 = string.find(l_0_52, ".", l_0_53, true)
+                  if l_0_54 ~= nil then
+                    local l_0_55 = string.sub(l_0_52, l_0_53 + 1, l_0_54 - 1)
+                    l_0_49 = l_0_49 .. crypto.CRC32Buffer(-1, l_0_55, 0, #l_0_55)
+                    l_0_49 = l_0_49 .. ";" .. string.sub(l_0_52, l_0_54 + 1) .. ";"
+                  end
+                  table.insert(l_0_45, sigattr_tail[l_0_51].utf8p1)
+                  local l_0_56
+                  if l_0_7[l_0_51] ~= nil then
+                    if sigattr_tail[l_0_7[l_0_51]] ~= nil then
+                      local l_0_57 = sigattr_tail[l_0_7[l_0_51]].utf8p1:lower()
+                      local l_0_58 = sigattr_tail[l_0_7[l_0_51]].utf8p2:lower()
+                      l_0_56 = string.match(l_0_58, "fsize:(%d+)")
+                      if l_0_56 == nil then
+                        l_0_56 = -1
                       end
+                      table.insert(l_0_46, l_0_57)
+                      table.insert(l_0_46, l_0_56)
                     end
-                    l_0_68.file_list = l_0_69
-                    l_0_68.file_size = l_0_70
-                    local l_0_89, l_0_90 = nil
-                    for l_0_94,l_0_95 in ipairs((bm.get_process_relationships)()) do
-                      local l_0_91, l_0_92 = nil
-                      -- DECOMPILER ERROR at PC537: Confused about usage of register: R40 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC542: Confused about usage of register: R40 in 'UnsetPending'
-
-                      if l_0_87.image_path ~= nil then
-                        (bm.add_related_process)(l_0_87.ppid)
+                    if sigattr_tail[l_0_51] ~= nil then
+                      local l_0_59 = sigattr_tail[l_0_51].utf8p1:lower()
+                      local l_0_60 = sigattr_tail[l_0_51].utf8p2:lower()
+                      l_0_56 = string.match(l_0_60, "fsize:(%d+)")
+                      if l_0_56 == nil then
+                        l_0_56 = -1
                       end
-                    end
-                    -- DECOMPILER ERROR at PC547: Confused about usage of register: R35 in 'UnsetPending'
-
-                    for l_0_99,l_0_100 in ipairs(l_0_92) do
-                      local l_0_96, l_0_97 = nil
-                      -- DECOMPILER ERROR at PC550: Confused about usage of register: R40 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC555: Confused about usage of register: R40 in 'UnsetPending'
-
-                      if l_0_87.image_path ~= nil then
-                        (bm.add_related_process)(l_0_87.ppid)
-                      end
-                    end
-                    ;
-                    (bm.add_related_string)("ransom_files_main", l_0_90, bm.RelatedStringBMReport)
-                    do
-                      local l_0_101 = nil
-                      ;
-                      (bm.add_related_string)("gend_ransom_meta", safeJsonSerialize(l_0_68), bm.RelatedStringBMReport)
-                      ;
-                      (bm.add_related_string)("sigcount_type4", l_0_10, bm.RelatedStringBMReport)
-                      do return mp.INFECTED end
-                      do
-                        local l_0_102 = nil
-                        l_0_5[l_0_102] = {(l_0_3[l_0_57])[1], l_0_46}
-                        l_0_6[l_0_57] = 1
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out DO_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out DO_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC594: LeaveBlock: unexpected jumping out DO_STMT
-
-                      end
+                      table.insert(l_0_46, l_0_59)
+                      table.insert(l_0_46, l_0_56)
                     end
                   end
                 end
+                l_0_44.file_list = l_0_45
+                l_0_44.file_size = l_0_46
+                local l_0_61, l_0_62 = bm.get_process_relationships()
+                for l_0_63, l_0_64 in ipairs(l_0_61) do
+                  if l_0_64.image_path ~= nil then
+                    bm.add_related_process(l_0_64.ppid)
+                  end
+                end
+                for l_0_65, l_0_66 in ipairs(l_0_62) do
+                  if l_0_66.image_path ~= nil then
+                    bm.add_related_process(l_0_66.ppid)
+                  end
+                end
+                bm.add_related_string("ransom_files_main", l_0_49, bm.RelatedStringBMReport)
+                local l_0_67 = safeJsonSerialize(l_0_44)
+                bm.add_related_string("gend_ransom_meta", l_0_67, bm.RelatedStringBMReport)
+                bm.add_related_string("sigcount_type4", l_0_10, bm.RelatedStringBMReport)
+                return mp.INFECTED
               end
             end
+          else
+            l_0_5[l_0_38] = {
+              l_0_3[l_0_36][1],
+              l_0_29
+            }
+            l_0_6[l_0_36] = 1
           end
         end
       end
@@ -358,4 +210,3 @@ for l_0_45,l_0_46 in pairs(l_0_2) do
   end
 end
 return mp.CLEAN
-

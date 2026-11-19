@@ -1,15 +1,12 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaJSBackdoorS1\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:JS.Backdoor.S1
+-- Type: 13
+-- MpAttributes: AGGR:BD_JS.SA
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.enum_mpattributesubstring)("SCRT:BD_JS")
-if #l_0_0 >= 3 and #l_0_0 <= 10 then
-  (mp.set_mpattribute)("Lua:JS.BD.Bad")
-else
-  if #l_0_0 == 2 then
-    (mp.set_mpattribute)("Lua:JS.BD.Susp")
-  end
+local l_0_0 = mp.enum_mpattributesubstring("SCRT:BD_JS")
+if 3 <= #l_0_0 and #l_0_0 <= 10 then
+  mp.set_mpattribute("Lua:JS.BD.Bad")
+elseif #l_0_0 == 2 then
+  mp.set_mpattribute("Lua:JS.BD.Susp")
 end
 return mp.CLEAN
-

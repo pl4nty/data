@@ -1,26 +1,19 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\4bd708120fc9\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 4bd708120fc9
+-- Type: 21
+-- Includes: TechniqueTracker, HvaLookupHelpers
 
--- params : ...
--- function num : 0
 if IsDeviceHVA() then
   local l_0_0 = ExtractDeviceProperties()
   if l_0_0 ~= nil and l_0_0.DeviceRoles ~= nil then
-    local l_0_1 = {}
-    -- DECOMPILER ERROR at PC15: No list found for R1 , SetList fails
-
-    -- DECOMPILER ERROR at PC16: Overwrote pending register: R2 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC17: Overwrote pending register: R3 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC18: Overwrote pending register: R4 in 'AssignReg'
-
-    if ("winrshost.exe")("wsmprovhost.exe", "rundll32.exe") then
+    local l_0_1 = {
+      "winrshost.exe",
+      "wsmprovhost.exe",
+      "rundll32.exe"
+    }
+    if IsProcNameInParentProcessTree("cmdhstr", l_0_1) then
       return mp.INFECTED
     end
   end
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

@@ -1,0 +1,11 @@
+-- Threat: \xac!Tilevn.B
+-- Type: 19
+
+local l_0_0 = mp.GetUACMetadata()
+if l_0_0.Type == mp.AMSI_UAC_REQUEST_TYPE_EXE and l_0_0.AutoElevate == true and mp.TriggerScanResource("file", l_0_0.Info.ApplicationName) == mp.INFECTED then
+  return mp.TRUE
+end
+if l_0_0.Type == mp.AMSI_UAC_REQUEST_TYPE_COM and (string.upper(l_0_0.Info.Clsid) == "3AD05575-8857-4850-9277-11B85BDB8E09" or string.upper(l_0_0.Info.Clsid) == "4D111E08-CBF7-4f12-A926-2C7920AF52FC") and mp.TriggerScanResource("file", l_0_0.Info.Requestor) == mp.INFECTED then
+  return mp.TRUE
+end
+return mp.FALSE

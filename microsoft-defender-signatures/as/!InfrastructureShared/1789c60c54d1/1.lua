@@ -1,0 +1,37 @@
+-- Threat: !InfrastructureShared
+-- Name: 1789c60c54d1
+-- Type: 21
+
+local l_0_0 = pe.get_regval(pe.REG_ESP)
+local l_0_1 = pe.mmap_va(l_0_0, 16)
+local l_0_2 = mp.readu_u32(l_0_1, 5)
+local l_0_3 = mp.readu_u32(l_0_1, 9)
+if l_0_2 == 2088763392 then
+  local l_0_4 = pe.mmap_va(l_0_3, 12)
+  if l_0_4 == "MpVmp32Entry" then
+    pe.mmap_patch_va(l_0_3, "X")
+    return mp.LOWFI
+  end
+  if l_0_4 == "MpSehHandler" then
+    pe.mmap_patch_va(l_0_3, "X")
+    return mp.LOWFI
+  end
+  if l_0_4 == "MpExitThread" then
+    pe.mmap_patch_va(l_0_3, "X")
+    return mp.LOWFI
+  end
+  if l_0_4 == "MpReportEven" then
+    pe.mmap_patch_va(l_0_3, "X")
+    return mp.LOWFI
+  end
+  if l_0_4 == "MpStartProce" then
+    pe.mmap_patch_va(l_0_3, "X")
+    return mp.LOWFI
+  end
+  l_0_4 = pe.mmap_va(l_0_3, 10)
+  if l_0_4 == "MpFinalize" then
+    pe.mmap_patch_va(l_0_3, "X")
+    return mp.LOWFI
+  end
+end
+return mp.CLEAN

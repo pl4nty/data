@@ -1,38 +1,33 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\27cb3d783bcba\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 27cb3d783bcba
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-if l_0_0 == nil or (string.find)(l_0_0, "\\hummingheads\\securityplatform\\bktask.exe", -41, true) or (string.find)(l_0_0, "\\hummingheads\\securityplatform\\bkhost.exe", -41, true) then
+local l_0_0 = string.lower(MpCommon.PathToWin32Path(bm.get_imagepath()))
+if l_0_0 == nil or string.find(l_0_0, "\\hummingheads\\securityplatform\\bktask.exe", -41, true) or string.find(l_0_0, "\\hummingheads\\securityplatform\\bkhost.exe", -41, true) then
   return mp.CLEAN
 end
-local l_0_1, l_0_2 = (bm.get_process_relationships)()
+local l_0_1, l_0_2 = bm.get_process_relationships()
 if l_0_2 ~= nil then
-  for l_0_6,l_0_7 in ipairs(l_0_2) do
-    if l_0_7.image_path ~= nil and l_0_7.reason == bm.RELATIONSHIP_INJECTION then
-      local l_0_8 = (string.lower)(l_0_7.image_path)
-      if (string.find)(l_0_8, "\\powershell.exe", -15, true) then
+  for l_0_3, l_0_4 in ipairs(l_0_2) do
+    if l_0_4.image_path ~= nil and l_0_4.reason == bm.RELATIONSHIP_INJECTION then
+      local l_0_5 = string.lower(l_0_4.image_path)
+      if string.find(l_0_5, "\\powershell.exe", -15, true) then
         TrackPidAndTechniqueBM("BM", "T1055.002", "portable_executable_injection")
         return mp.INFECTED
       end
     end
   end
 end
-do
-  if l_0_1 ~= nil then
-    for l_0_12,l_0_13 in ipairs(l_0_1) do
-      if l_0_13.image_path ~= nil and l_0_13.reason == bm.RELATIONSHIP_INJECTION then
-        local l_0_14 = (string.lower)(l_0_13.image_path)
-        if (string.find)(l_0_14, "\\powershell.exe", -15, true) then
-          TrackPidAndTechniqueBM("BM", "T1055.002", "portable_executable_injection")
-          return mp.INFECTED
-        end
+if l_0_1 ~= nil then
+  for l_0_6, l_0_7 in ipairs(l_0_1) do
+    if l_0_7.image_path ~= nil and l_0_7.reason == bm.RELATIONSHIP_INJECTION then
+      local l_0_8 = string.lower(l_0_7.image_path)
+      if string.find(l_0_8, "\\powershell.exe", -15, true) then
+        TrackPidAndTechniqueBM("BM", "T1055.002", "portable_executable_injection")
+        return mp.INFECTED
       end
     end
   end
-  do
-    return mp.CLEAN
-  end
 end
-
+return mp.CLEAN

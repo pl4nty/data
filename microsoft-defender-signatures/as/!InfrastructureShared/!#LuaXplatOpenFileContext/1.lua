@@ -1,32 +1,28 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaXplatOpenFileContext\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:XplatOpenFileContext
+-- Type: 12
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN then
-  local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN then
+  local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME)
   if l_0_0 == nil then
     return mp.CLEAN
   end
-  l_0_0 = (string.lower)(l_0_0)
-  ;
-  (mp.set_mpattribute)("Lua:XplatOpenFile:ProcName!" .. l_0_0)
-  local l_0_1, l_0_2 = (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+  l_0_0 = string.lower(l_0_0)
+  mp.set_mpattribute("Lua:XplatOpenFile:ProcName!" .. l_0_0)
+  local l_0_1, l_0_2 = mp.getfilename(mp.bitor(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
   if l_0_2 ~= nil then
-    (mp.set_mpattribute)("Lua:XplatOpenFile:FileName!" .. l_0_2)
+    mp.set_mpattribute("Lua:XplatOpenFile:FileName!" .. l_0_2)
   end
-  local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_PPID)
+  local l_0_3 = mp.get_contextdata(mp.CONTEXT_DATA_PROCESS_PPID)
   if l_0_3 ~= nil then
-    local l_0_4 = (mp.GetParentProcInfo)(l_0_3)
+    local l_0_4 = mp.GetParentProcInfo(l_0_3)
     if l_0_4 ~= nil and l_0_4.image_path ~= nil then
-      local l_0_5 = (string.lower)((string.match)(l_0_4.image_path, "([^/]+)$"))
+      local l_0_5 = string.lower(string.match(l_0_4.image_path, "([^/]+)$"))
       if l_0_5 ~= nil then
-        (mp.set_mpattribute)("Lua:XplatOpenFile:Parent!" .. l_0_5)
+        mp.set_mpattribute("Lua:XplatOpenFile:Parent!" .. l_0_5)
       end
     end
   end
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

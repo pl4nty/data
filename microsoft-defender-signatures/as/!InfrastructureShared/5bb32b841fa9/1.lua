@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\5bb32b841fa9\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 5bb32b841fa9
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
 sms_untrusted_process()
 return mp.INFECTED
-

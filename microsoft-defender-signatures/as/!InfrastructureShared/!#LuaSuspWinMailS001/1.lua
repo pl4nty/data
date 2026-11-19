@@ -1,10 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaSuspWinMailS001\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:Susp.WinMail.S001
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & Lua:FileInsideAppDataLocalTempFolder & Lua:DATExt & !BM_TNEF_FILE
 
--- params : ...
--- function num : 0
-if (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)) == "winmail.dat" then
+local l_0_0 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == "winmail.dat" then
   return mp.INFECTED
 end
 return mp.CLEAN
-

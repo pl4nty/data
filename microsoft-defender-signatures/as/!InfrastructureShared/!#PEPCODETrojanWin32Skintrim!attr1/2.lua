@@ -1,0 +1,62 @@
+-- Threat: !InfrastructureShared
+-- Name: !#PEPCODE:Trojan:Win32/Skintrim!attr1
+-- Type: 8
+
+if peattributes.isexe ~= true then
+  return mp.CLEAN
+end
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
+end
+if pehdr.AddressOfEntryPoint <= 4096 then
+  return mp.CLEAN
+end
+if pehdr.AddressOfEntryPoint >= 20480 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfCode < 18432 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfCode > 36352 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfImage < 241664 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfImage > 278528 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfInitializedData < 210944 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfInitializedData > 258048 then
+  return mp.CLEAN
+end
+if pesecs[1].Characteristics ~= 1610612768 then
+  return mp.CLEAN
+end
+if pesecs[pehdr.NumberOfSections].Characteristics ~= 1073741888 then
+  return mp.CLEAN
+end
+if pesecs[pehdr.NumberOfSections].SizeOfRawData > 8192 then
+  return mp.CLEAN
+end
+if pesecs[1].SizeOfRawData < 16384 then
+  return mp.CLEAN
+end
+if 36352 < pesecs[1].SizeOfRawData then
+  return mp.CLEAN
+end
+if pesecs[1].NameDW ~= 2019914798 then
+  return mp.CLEAN
+end
+if pesecs[pehdr.NumberOfSections].NameDW ~= 1920168494 then
+  return mp.CLEAN
+end
+if mp.readu_u16(epcode, 1) ~= 35669 then
+  return mp.CLEAN
+end
+return mp.INFECTED

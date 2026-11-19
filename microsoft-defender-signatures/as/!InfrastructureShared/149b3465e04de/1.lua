@@ -1,28 +1,27 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\149b3465e04de\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 149b3465e04de
+-- Type: 21
+-- Includes: BMLuaLib, TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = (string.lower)((bm.get_imagepath)())
+local l_0_0 = string.lower(bm.get_imagepath())
 local l_0_1 = l_0_0:match("\\([^\\]+)$")
-local l_0_2 = {}
-l_0_2["svchost.exe"] = true
-l_0_2["lsass.exe"] = true
-l_0_2["services.exe"] = true
-l_0_2["connectionclient.exe"] = true
+local l_0_2 = {
+  ["svchost.exe"] = true,
+  ["lsass.exe"] = true,
+  ["services.exe"] = true,
+  ["connectionclient.exe"] = true
+}
 if l_0_2[l_0_1] then
   return mp.CLEAN
 end
-local l_0_3 = nil
-if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-  l_0_3 = (this_sigattrlog[3]).utf8p2
-else
-  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
-    l_0_3 = (this_sigattrlog[4]).utf8p2
-  end
+local l_0_3
+if this_sigattrlog[3].matched and this_sigattrlog[3].utf8p2 ~= nil then
+  l_0_3 = this_sigattrlog[3].utf8p2
+elseif this_sigattrlog[4].matched and this_sigattrlog[4].utf8p2 ~= nil then
+  l_0_3 = this_sigattrlog[4].utf8p2
 end
 if l_0_3 ~= nil then
-  local l_0_4 = (string.lower)(l_0_3)
+  local l_0_4 = string.lower(l_0_3)
   if l_0_4:find("wsauth$", 1, true) then
     return mp.CLEAN
   end
@@ -32,33 +31,18 @@ if l_0_3 ~= nil then
   if l_0_4:find("tspkg$", 1, true) then
     return mp.CLEAN
   end
-  local l_0_5 = (mp.GetExecutablesFromCommandLine)(l_0_3)
-  for l_0_9,l_0_10 in ipairs(l_0_5) do
-    l_0_10 = (mp.ContextualExpandEnvironmentVariables)(l_0_10)
-    if (sysio.IsFileExists)(l_0_10) then
-      (bm.add_related_file)(l_0_10)
+  local l_0_5 = mp.GetExecutablesFromCommandLine(l_0_3)
+  for l_0_6, l_0_7 in ipairs(l_0_5) do
+    l_0_7 = mp.ContextualExpandEnvironmentVariables(l_0_7)
+    if sysio.IsFileExists(l_0_7) then
+      bm.add_related_file(l_0_7)
     end
   end
 end
-do
-  l_0_4 = pcall
-  l_0_5 = bm
-  l_0_5 = l_0_5.get_current_process_startup_info
-  l_0_4 = l_0_4(l_0_5)
-  local l_0_11, l_0_12 = nil
-  if l_0_4 then
-    l_0_11 = bm_AddRelatedFileFromCommandLine
-    l_0_12 = l_0_5.command_line
-    l_0_11(l_0_12, nil, nil, 1)
-  end
-  l_0_11 = TrackPidAndTechniqueBM
-  l_0_12 = l_0_5.ppid
-  l_0_11(l_0_12, "T1547.005", "ssp_tamper")
-  l_0_11 = AddTacticForPid
-  l_0_12 = l_0_5.ppid
-  l_0_11(l_0_12, "tt-thresholdmet")
-  l_0_11 = mp
-  l_0_11 = l_0_11.INFECTED
-  return l_0_11
+local l_0_8, l_0_9 = pcall(bm.get_current_process_startup_info)
+if l_0_8 then
+  bm_AddRelatedFileFromCommandLine(l_0_9.command_line, nil, nil, 1)
 end
-
+TrackPidAndTechniqueBM(l_0_9.ppid, "T1547.005", "ssp_tamper")
+AddTacticForPid(l_0_9.ppid, "tt-thresholdmet")
+return mp.INFECTED

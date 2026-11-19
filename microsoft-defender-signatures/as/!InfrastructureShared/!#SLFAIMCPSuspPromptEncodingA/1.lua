@@ -1,73 +1,47 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFAIMCPSuspPromptEncodingA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:AIMCP/SuspPromptEncoding.A
+-- Type: 13
+-- Includes: LuaFuncHelper, ResearchData
+-- MpAttributes: MpIsAiNetPromptScan
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == nil or l_0_0 ~= mp.SCANREASON_NET_PROMPTSTREAM then
-  return mp.CLEAN
-end
-do
-  if (mp.getfilesize)() > 1536000 then
-    local l_0_1, l_0_2, l_0_3 = 1536000
-  end
-  ;
-  (mp.readprotection)(false)
-  -- DECOMPILER ERROR at PC28: Confused about usage of register: R1 in 'UnsetPending'
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
 
-  local l_0_4 = nil
-  ;
-  (mp.readprotection)(true)
-  if tostring((mp.readfile)(0, l_0_1)) or not (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_LAST_MESSAGE) then
-    return mp.CLEAN
-  end
-  local l_0_5 = nil
-  local l_0_6 = {"󠁴󠁨", "󠁔󠁈", "󠁔󠁨", "󠁴󠁈", "󠁨󠁥", "󠁈󠁅", "󠁈󠁥", "󠁨󠁅", "󠁩󠁮", "󠁉󠁎", "󠁉󠁮", "󠁩󠁎", "󠁥󠁲", "󠁅󠁒", "󠁅󠁲", "󠁥󠁒", "󠁡󠁮", "󠁁󠁎", "󠁁󠁮", "󠁡󠁎", "󠁲󠁥", "󠁒󠁅", "󠁒󠁥", "󠁲󠁅", "󠁡󠁴", "󠁁󠁔", "󠁁󠁴", "󠁡󠁔", "󠁯󠁮", "󠁏󠁎", "󠁏󠁮", "󠁯󠁎", "󠁮󠁤", "󠁎󠁄", "󠁎󠁤", "󠁮󠁄", "󠁥󠁮", "󠁅󠁎", "󠁅󠁮", "󠁥󠁎", "󠁥󠁳", "󠁅󠁓", "󠁅󠁳", "󠁥󠁓"}
-  local l_0_7 = 0
-  for l_0_11,l_0_12 in ipairs(l_0_6) do
-    local l_0_8 = {}
-    -- DECOMPILER ERROR at PC103: Confused about usage of register: R10 in 'UnsetPending'
-
-    local l_0_14 = (string.find)(l_0_5, "󠁈󠁥", 1, true)
-    if l_0_5 then
-      l_0_7 = l_0_7 + 1
-      local l_0_15 = nil
-      do
-        if l_0_15 - 80 < 0 then
-          local l_0_16, l_0_17, l_0_18 = 512, 0
-        end
-        -- DECOMPILER ERROR at PC118: Confused about usage of register: R14 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC119: Confused about usage of register: R14 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC119: Confused about usage of register: R13 in 'UnsetPending'
-
-        local l_0_19 = nil
-        do
-          local l_0_20 = nil
-          ;
-          (table.insert)(l_0_8, (MpCommon.Base64Encode)((string.sub)(l_0_5, l_0_17, l_0_17 + l_0_16)))
-          -- DECOMPILER ERROR at PC130: LeaveBlock: unexpected jumping out DO_STMT
-
-          -- DECOMPILER ERROR at PC130: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC130: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
+local r0_0 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
+if r0_0 ~= nil and r0_0 == mp.SCANREASON_NET_PROMPTSTREAM then
+  local r0_1 = mp.getfilesize()
+  r0_1 = r0_1 > 1536000 and 1536000 or r0_1
+  mp.readprotection(false)
+  local r0_2 = tostring(mp.readfile(0, r0_1))
+  mp.readprotection(true)
+  r0_2 = r0_2 or mp.get_contextdata(mp.CONTEXT_DATA_NET_PROMPT_LAST_MESSAGE)
+  if r0_2 then
+    local r0_3 = {
+      "󠁴󠁨", "󠁔󠁈", "󠁔󠁨", "󠁴󠁈", "󠁨󠁥", "󠁈󠁅", "󠁈󠁥", "󠁨󠁅", "󠁩󠁮", "󠁉󠁎", "󠁉󠁮", "󠁩󠁎", "󠁥󠁲", "󠁅󠁒", "󠁅󠁲", "󠁥󠁒",
+      "󠁡󠁮", "󠁁󠁎", "󠁁󠁮", "󠁡󠁎", "󠁲󠁥", "󠁒󠁅", "󠁒󠁥", "󠁲󠁅", "󠁡󠁴", "󠁁󠁔", "󠁁󠁴", "󠁡󠁔", "󠁯󠁮", "󠁏󠁎", "󠁏󠁮", "󠁯󠁎",
+      "󠁮󠁤", "󠁎󠁄", "󠁎󠁤", "󠁮󠁄", "󠁥󠁮", "󠁅󠁎", "󠁅󠁮", "󠁥󠁎", "󠁥󠁳", "󠁅󠁓", "󠁅󠁳", "󠁥󠁓"
+    }
+    local r0_4 = 0
+    local r0_5 = {}
+    for r0_6, r0_7 in ipairs(r0_3) do
+      local r0_8, r0_9 = string.find(r0_2, r0_7, 1, true)
+      if r0_9 then
+        r0_4 = r0_4 + 1
+        local r0_10 = 512
+        local r0_11 = r0_9 - 80
+        r0_11 = r0_11 < 0 and 0 or r0_11
+        local r0_12 = string.sub(r0_2, r0_11, r0_11 + r0_10)
+        local r0_13 = MpCommon.Base64Encode(r0_12)
+        table.insert(r0_5, r0_13)
       end
     end
-  end
-  if l_0_7 > 0 then
-    local l_0_21 = nil
-    local l_0_22 = safeJsonSerialize
-    l_0_22 = l_0_22({MatchedSurroundings = l_0_21})
-    ;
-    (mp.SetDetectionString)(l_0_22)
-    set_research_data("MatchedSurroundings", l_0_22, false)
-    return mp.INFECTED
-  end
-  do
+    if r0_4 > 0 then
+      local r0_14 = safeJsonSerialize({ MatchedSurroundings = r0_5 })
+      mp.SetDetectionString(r0_14)
+      set_research_data("MatchedSurroundings", r0_14, false)
+      return mp.INFECTED
+    end
     return mp.CLEAN
   end
+  return mp.CLEAN
 end
-
+return mp.CLEAN

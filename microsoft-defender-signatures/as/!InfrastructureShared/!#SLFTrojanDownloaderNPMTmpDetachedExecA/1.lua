@@ -1,16 +1,16 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanDownloaderNPMTmpDetachedExecA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:TrojanDownloader:NPM/TmpDetachedExec.A
+-- Type: 13
+-- MpAttributes: SCPT:NpmJS & SCPT:NpmY_ReqChildProc & SCPT:NpmY_Detached & (SCPT:NpmY_TmpDirCall | SCPT:NpmY_TmpPath)
 
--- params : ...
--- function num : 0
-if (mp.getfilesize)() > 10240 then
+local l_0_0 = mp.getfilesize()
+if 10240 < l_0_0 then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("SCPT:NpmY_ReqHttp") and not (mp.get_mpattribute)("SCPT:NpmY_ReqAxios") and not (mp.get_mpattribute)("SCPT:NpmY_ReqNodeFetch") then
+if not mp.get_mpattribute("SCPT:NpmY_ReqHttp") and not mp.get_mpattribute("SCPT:NpmY_ReqAxios") and not mp.get_mpattribute("SCPT:NpmY_ReqNodeFetch") then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("SCPT:NpmY_Exec_ExecSync") and not (mp.get_mpattribute)("SCPT:NpmY_Exec_ExecFile") and not (mp.get_mpattribute)("SCPT:NpmY_Exec_Spawn") and not (mp.get_mpattribute)("SCPT:NpmY_Exec_SpawnSync") then
+if not mp.get_mpattribute("SCPT:NpmY_Exec_ExecSync") and not mp.get_mpattribute("SCPT:NpmY_Exec_ExecFile") and not mp.get_mpattribute("SCPT:NpmY_Exec_Spawn") and not mp.get_mpattribute("SCPT:NpmY_Exec_SpawnSync") then
   return mp.CLEAN
 end
 return mp.INFECTED
-

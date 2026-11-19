@@ -1,38 +1,39 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanWin32SuspWinRA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:Win32/SuspWinR.A
+-- Type: 13
+-- Includes: ResearchData, LuaFuncHelper, AppomalyHelpers
+-- MpAttributes: MpIsPowerShellAMSIScan
 
--- params : ...
--- function num : 0
 local l_0_0, l_0_1 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_CONTENTNAME)
 if l_0_1 then
   return mp.CLEAN
 end
-local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)
+local l_0_2 = mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME)
 if l_0_2 then
-  l_0_2 = (string.lower)(l_0_2)
-  if not (string.find)(l_0_2, "powershell", 1, true) and not (string.find)(l_0_2, "pwsh.exe", 1, true) then
+  l_0_2 = string.lower(l_0_2)
+  if not string.find(l_0_2, "powershell", 1, true) and not string.find(l_0_2, "pwsh.exe", 1, true) then
     return mp.CLEAN
   end
 end
-local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_AMSI_OPERATION_PPID)
+local l_0_3 = mp.get_contextdata(mp.CONTEXT_DATA_AMSI_OPERATION_PPID)
 if not l_0_3 then
   return mp.CLEAN
 end
-local l_0_4 = (mp.GetProcessCommandLine)(l_0_3)
+local l_0_4 = mp.GetProcessCommandLine(l_0_3)
 if not l_0_4 or l_0_4 == "" then
   return mp.CLEAN
 end
-if (string.find)(l_0_4, ".ps1", 1, true) or (string.find)(l_0_4, " -file ", 1, true) or (string.find)(l_0_4, " -WorkingDirectory ", 1, true) then
+if string.find(l_0_4, ".ps1", 1, true) or string.find(l_0_4, " -file ", 1, true) or string.find(l_0_4, " -WorkingDirectory ", 1, true) then
   return mp.CLEAN
 end
-local l_0_5 = (mp.GetParentProcInfo)(l_0_3)
+local l_0_5 = mp.GetParentProcInfo(l_0_3)
 if not l_0_5 or not l_0_5.ppid then
   return mp.CLEAN
 end
-local l_0_6 = (MpCommon.GetImagePathFromPid)(l_0_5.ppid)
+local l_0_6 = MpCommon.GetImagePathFromPid(l_0_5.ppid)
 if l_0_6 then
-  l_0_6 = (string.lower)(l_0_6)
-  if not (string.find)(l_0_6, "\\explorer.exe", 1, false) then
+  l_0_6 = string.lower(l_0_6)
+  if not string.find(l_0_6, "\\explorer.exe", 1, false) then
     return mp.CLEAN
   end
 else
@@ -44,7 +45,7 @@ l_0_8.Parents = add_parents_AMSI()
 if #l_0_8.Parents > 2 then
   return mp.CLEAN
 end
-if (string.find)(next(l_0_8.Parents), "\\WindowsApps\\", 1, true) then
+if string.find(next(l_0_8.Parents), "\\WindowsApps\\", 1, true) then
   return mp.CLEAN
 end
 local l_0_9 = tostring(headerpage) .. tostring(footerpage)
@@ -67,23 +68,23 @@ end
 if l_0_11.CommandlineTokens and not next(l_0_11.CommandlineTokens) then
   return mp.CLEAN
 end
-if not l_0_8.Base64Content and not l_0_8.UrlEncodedContent and not next((l_0_11.Evidence_L1).Urls) then
+if not l_0_8.Base64Content and not l_0_8.UrlEncodedContent and not next(l_0_11.Evidence_L1.Urls) then
   return mp.CLEAN
 end
-if next((l_0_11.Evidence_L1).Urls) then
+if next(l_0_11.Evidence_L1.Urls) then
   l_0_7 = l_0_7 + 50
 end
-local l_0_12 = (table.concat)(l_0_11.CommandlineTokens, "|")
+local l_0_12 = table.concat(l_0_11.CommandlineTokens, "|")
 if IsPotentiallyClean("CmdLine_Basic", "", l_0_12) then
   return mp.CLEAN
 end
-if (string.find)(l_0_12, "downloadstring", 1, true) then
+if string.find(l_0_12, "downloadstring", 1, true) then
   l_0_7 = l_0_7 + 100
 end
-if (l_0_11.Evidence_L1).MultilayerEncoding or (l_0_11.Evidence_L1).Obfuscated_FailedToDecode then
+if l_0_11.Evidence_L1.MultilayerEncoding or l_0_11.Evidence_L1.Obfuscated_FailedToDecode then
   l_0_7 = l_0_7 + 200
 end
-if (l_0_11.Evidence_L1).IsRemoteSession then
+if l_0_11.Evidence_L1.IsRemoteSession then
   l_0_7 = l_0_7 + 5
 end
 if l_0_7 < 10 then
@@ -93,11 +94,9 @@ l_0_11.CommandlineTokens = {}
 l_0_8.CommandLineGradingInfo = l_0_11
 local l_0_13, l_0_14 = safeJsonSerialize(l_0_8, 150, nil, true)
 if not l_0_13 then
-  set_research_data("Error", "Error Serializing Evidence Data" .. (MpCommon.Base64Encode)(l_0_14), false)
+  set_research_data("Error", "Error Serializing Evidence Data" .. MpCommon.Base64Encode(l_0_14), false)
   return mp.INFECTED
 else
-  ;
-  (MpCommon.BmTriggerSig)(l_0_3, "LUA:SuspWinR", l_0_13)
+  MpCommon.BmTriggerSig(l_0_3, "LUA:SuspWinR", l_0_13)
 end
 return mp.CLEAN
-

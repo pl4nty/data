@@ -14,8 +14,8 @@
 @{
     RootModule = 'HP.Displays.psm1'
    
-    #FullModuleVersion = '1.9.0.1648'
-    ModuleVersion = '1.9.0'
+    #FullModuleVersion = '1.9.1.1687'
+    ModuleVersion = '1.9.1'
     GUID = '0f71e039-43d1-4a41-9729-108ab24e94ac'
     Author = 'HP Development Company, L.P.'
     CompanyName = 'HP Inc'

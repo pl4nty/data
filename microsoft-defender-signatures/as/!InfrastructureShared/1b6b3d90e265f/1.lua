@@ -1,457 +1,388 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1b6b3d90e265f\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 1b6b3d90e265f
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper, AppomalyHelpers
 
--- params : ...
--- function num : 0
-if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 then
-  local l_0_0 = (this_sigattrlog[7]).utf8p1
-  if (MpCommon.PathToWin32Path)(l_0_0) or not l_0_0 then
-    return mp.CLEAN
-  end
-  l_0_0 = (string.lower)(l_0_0)
-  local l_0_1 = l_0_0:match("^(.*)\\")
-  local l_0_2 = (bm.get_imagepath)()
-  if not l_0_2 then
-    return mp.CLEAN
-  end
-  if not (MpCommon.PathToWin32Path)(l_0_2) then
-    l_0_2 = (string.lower)(l_0_2)
-    local l_0_3 = l_0_2:match("^(.*)\\")
-    if l_0_3 ~= l_0_1 then
-      return mp.CLEAN
-    end
-    if (mp.IsKnownFriendlyFile)(l_0_0, true, false) then
-      return mp.CLEAN
-    end
-    local l_0_4 = {}
-    l_0_4.Dll_Path = l_0_0
-    local l_0_5 = 0
-    local l_0_6 = l_0_0:match("([^\\]+)$")
-    local l_0_7 = l_0_2:match("([^\\]+)$")
-    if (string.find)(l_0_3, "\\windows\\system32\\", 1, true) or (string.find)(l_0_3, "\\windows\\syswow64\\", 1, true) then
-      return mp.CLEAN
-    end
-    if (string.find)(l_0_0, "\\windows\\system32\\", 1, true) or (string.find)(l_0_0, "\\windows\\syswow64\\", 1, true) then
-      return mp.CLEAN
-    end
-    local l_0_8 = nil
-    if not l_0_1:match("\\device\\vhdharddisk.-\\(.*)") then
-      local l_0_9, l_0_10 = IsKeyValuePairInRollingQueue("ArchivesWithExec_FileName", l_0_6, l_0_1, false)
-      local l_0_11, l_0_12 = IsKeyValuePairInRollingQueue("ArchivesWithExec_FileName", l_0_7, l_0_1, false)
-      if l_0_9 and l_0_11 then
-        l_0_5 = l_0_5 + 100
-        l_0_4.DllAndExecInArchive = true
-        l_0_4.Archive_Exe = l_0_12
-        l_0_4.Archive_Dll = l_0_10
-        l_0_8 = true
-      end
-      local l_0_13 = l_0_1 .. "\\" .. l_0_6
-      l_0_13 = (string.gsub)(l_0_13, "\\", "\\\\")
-      l_0_13 = l_0_13:gsub("([%^%$%(%)%.%[%]%*%+%-%?])", "\\%1")
-      local l_0_14, l_0_15 = pcall(MpCommon.RollingQueueQueryKeyRegex, "RQ_RecentExecDropped_MultipleKey_30m", l_0_13)
-      if l_0_14 and l_0_15 then
-        do
-          if l_0_15.value then
-            local l_0_16 = {}
-            -- DECOMPILER ERROR at PC179: No list found for R16 , SetList fails
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
 
-          end
-          -- DECOMPILER ERROR at PC182: Overwrote pending register: R17 in 'AssignReg'
-
-          for l_0_20,l_0_21 in ipairs(l_0_15) do
-            if (string.find)(l_0_21.value, "UnsignedFile", 1, true) then
-              l_0_4.FileDroppedRecently = true
-              l_0_4.FileInfo = l_0_15
-              l_0_5 = l_0_5 + 50
-              l_0_8 = true
-              local l_0_22 = (string.match)(l_0_21.value, "Process_Img(.*)")
-              if l_0_22 then
-                local l_0_23 = contains
-                local l_0_24 = l_0_22
-                local l_0_25 = {}
-                -- DECOMPILER ERROR at PC212: No list found for R24 , SetList fails
-
-                -- DECOMPILER ERROR at PC217: Overwrote pending register: R22 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC220: Overwrote pending register: R25 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC221: Overwrote pending register: R26 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC222: Overwrote pending register: R27 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC227: Overwrote pending register: R5 in 'AssignReg'
-
-              end
-              do
-                -- DECOMPILER ERROR at PC228: Overwrote pending register: R22 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC230: Overwrote pending register: R23 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC231: Overwrote pending register: R24 in 'AssignReg'
-
-                if (l_0_23 and not l_0_23) or (l_0_23.find)(l_0_24, l_0_25, 1, true) then
-                  local l_0_26 = (string.match)(l_0_21.value, "%[(.*)%]")
-                  for l_0_30 in (string.gmatch)(l_0_26, "([^|]+)") do
-                    -- DECOMPILER ERROR at PC250: Overwrote pending register: R28 in 'AssignReg'
-
-                    -- DECOMPILER ERROR at PC257: Overwrote pending register: R5 in 'AssignReg'
-
-                    -- DECOMPILER ERROR at PC260: Overwrote pending register: R5 in 'AssignReg'
-
-                  end
-                end
-                if (string.find)("svchost.exe", "Aurora.A!rfn", 1, true) or l_0_30 == "SLF:HighRiskHasMotW" then
-                  do
-                    do break end
-                    -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_STMT
-
-                    -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out DO_STMT
-
-                    -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_STMT
-
-                  end
-                end
-              end
+if this_sigattrlog[7].matched and this_sigattrlog[7].utf8p1 then
+  local r0_0 = this_sigattrlog[7].utf8p1
+  r0_0 = MpCommon.PathToWin32Path(r0_0) or r0_0
+  if r0_0 then
+    local r0_1 = string.lower(r0_0)
+    r0_0 = r0_1
+    r0_1 = r0_0:match("^(.*)\\")
+    local r0_2 = bm.get_imagepath()
+    if r0_2 then
+      local r0_3 = MpCommon.PathToWin32Path(r0_2)
+      r0_2 = r0_3 or r0_2
+      r0_3 = string
+      r0_3 = r0_3.lower
+      r0_3 = r0_3(r0_2)
+      r0_2 = r0_3
+      r0_3 = r0_2.match
+      r0_3 = r0_3(r0_2, "^(.*)\\")
+      if r0_3 == r0_1 then
+        if mp.IsKnownFriendlyFile(r0_0, true, false) then
+          return mp.CLEAN
+        end
+        local r0_4 = {}
+        r0_4.Dll_Path = r0_0
+        local r0_5 = 0
+        local r0_6 = r0_0:match("([^\\]+)$")
+        local r0_7 = r0_2:match("([^\\]+)$")
+        local r0_8 = string.find(r0_3, "\\windows\\system32\\", 1, true)
+        if not r0_8 and not string.find(r0_3, "\\windows\\syswow64\\", 1, true) then
+          local r0_9 = string.find(r0_0, "\\windows\\system32\\", 1, true)
+          if not r0_9 and not string.find(r0_0, "\\windows\\syswow64\\", 1, true) then
+            local r0_10 = nil
+            local r0_11 = r0_1:match("\\device\\vhdharddisk.-\\(.*)")
+            r0_1 = r0_11 or r0_1
+            r0_11 = IsKeyValuePairInRollingQueue
+            local r0_12, r0_13 = r0_11("ArchivesWithExec_FileName", r0_6, r0_1, false)
+            local r0_14, r0_15 = IsKeyValuePairInRollingQueue("ArchivesWithExec_FileName", r0_7,
+              r0_1, false)
+            if r0_12 and r0_14 then
+              r0_5 = r0_5 + 100
+              r0_4.DllAndExecInArchive = true
+              r0_4.Archive_Exe = r0_15
+              r0_4.Archive_Dll = r0_13
+              r0_10 = true
             end
-          end
-          if not l_0_4.FileDroppedRecently then
-            return mp.CLEAN
-          end
-          if not l_0_14 then
-            (bm.add_related_string)("Error", l_0_15, bm.RelatedStringBMReport)
-          end
-          do
-            if not l_0_4.FileDroppedRecently then
-              local l_0_31, l_0_32 = pcall(MpCommon.RollingQueueQueryKeyRegex, "RQ_RecentExecDropped", l_0_13)
-              if l_0_31 and l_0_32 then
-                for l_0_36,l_0_37 in ipairs(l_0_32) do
-                  if (string.find)(l_0_37.value, "UnsignedFile", 1, true) and FiletimeToDaysElapsed(l_0_37.insert_time) < 1 then
-                    l_0_4.FileDroppedRecently_LongTermStrg = true
-                    l_0_4.FileDropperInfo = l_0_32
-                    l_0_8 = true
-                    -- DECOMPILER ERROR at PC315: Overwrote pending register: R5 in 'AssignReg'
-
-                    local l_0_38 = (string.match)(l_0_37.value, "Process_Img(.*)")
-                    if l_0_38 then
-                      local l_0_39 = contains
-                      local l_0_40 = l_0_38
-                      local l_0_41 = {}
-                      -- DECOMPILER ERROR at PC330: No list found for R26 , SetList fails
-
-                      -- DECOMPILER ERROR at PC334: Overwrote pending register: R5 in 'AssignReg'
-
-                      -- DECOMPILER ERROR at PC335: Overwrote pending register: R24 in 'AssignReg'
-
-                      -- DECOMPILER ERROR at PC338: Overwrote pending register: R27 in 'AssignReg'
-
-                      -- DECOMPILER ERROR at PC339: Overwrote pending register: R28 in 'AssignReg'
-
-                      -- DECOMPILER ERROR at PC340: Overwrote pending register: R29 in 'AssignReg'
-
-                      -- DECOMPILER ERROR at PC345: Overwrote pending register: R5 in 'AssignReg'
-
+            local r0_16, r0_17 = r0_1, r0_6
+            r0_16 = r0_16 .. "\\" .. r0_17
+            local r0_18 = string.gsub
+            r0_17 = r0_16
+            r0_18 = r0_18(r0_17, "\\", "\\\\")
+            r0_16 = r0_18
+            r0_17 = r0_16
+            r0_18 = r0_17:gsub("([%^%$%(%)%.%[%]%*%+%-%?])", "\\%1")
+            r0_16 = r0_18
+            r0_18 = pcall
+            r0_17 = MpCommon
+            local r0_19, r0_20 = r0_18(r0_17.RollingQueueQueryKeyRegex,
+              "RQ_RecentExecDropped_MultipleKey_30m", r0_16)
+            if r0_19 and r0_20 then
+              r0_17 = r0_20.value and { r0_20 } or r0_20
+              for r0_21, r0_22 in ipairs(r0_17) do
+                local r0_23 = string.find(r0_22.value, "UnsignedFile", 1, true)
+                if r0_23 then
+                  r0_4.FileDroppedRecently = true
+                  r0_4.FileInfo = r0_17
+                  r0_5 = r0_5 + 50
+                  r0_10 = true
+                  local r0_24 = string.match(r0_22.value, "Process_Img(.*)")
+                  if r0_24 then
+                    local r0_25 = contains(r0_24,
+                      { "program files", "appdata", "dllhost.exe", "svchost.exe" })
+                    if r0_25 then
+                      r0_5 = r0_5 - 40
                     end
-                    do
-                      -- DECOMPILER ERROR at PC346: Overwrote pending register: R24 in 'AssignReg'
-
-                      -- DECOMPILER ERROR at PC348: Overwrote pending register: R25 in 'AssignReg'
-
-                      -- DECOMPILER ERROR at PC349: Overwrote pending register: R26 in 'AssignReg'
-
-                      if (l_0_39 and not l_0_39) or (l_0_39.find)(l_0_40, l_0_41, 1, true) then
-                        local l_0_42 = (string.match)(l_0_37.value, "%[(.*)%]")
-                        for l_0_46 in (string.gmatch)(l_0_42, "([^|]+)") do
-                          -- DECOMPILER ERROR at PC368: Overwrote pending register: R30 in 'AssignReg'
-
-                          -- DECOMPILER ERROR at PC375: Overwrote pending register: R5 in 'AssignReg'
-
-                          -- DECOMPILER ERROR at PC378: Overwrote pending register: R5 in 'AssignReg'
-
-                        end
+                    r0_25 = contains
+                    r0_25 = r0_25(r0_24, { "explorer.exe", "WinRAR.exe", "7z.exe" })
+                    if r0_25 then
+                      r0_5 = r0_5 + 50
+                    end
+                  end
+                  local r0_26 = string.find(r0_22.value, "FileAttributes", 1, true)
+                  if r0_26 then
+                    local r0_27 = string.match(r0_22.value, "%[(.*)%]")
+                    local r0_28, r0_29, r0_30 = string.gmatch(r0_27, "([^|]+)")
+                    for r0_31 in r0_28, r0_29, r0_30 do
+                      local r0_32 = string.find(r0_31, "Aurora.A!rfn", 1, true)
+                      if not r0_32 then
+                        r0_5 = r0_5 + 1
                       end
-                      if (string.find)("svchost.exe", "Aurora.A!rfn", 1, true) or l_0_46 == "SLF:HighRiskHasMotW" then
-                        do
-                          do break end
-                          -- DECOMPILER ERROR at PC382: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                          -- DECOMPILER ERROR at PC382: LeaveBlock: unexpected jumping out IF_STMT
-
-                          -- DECOMPILER ERROR at PC382: LeaveBlock: unexpected jumping out DO_STMT
-
-                          -- DECOMPILER ERROR at PC382: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                          -- DECOMPILER ERROR at PC382: LeaveBlock: unexpected jumping out IF_STMT
-
-                        end
+                      if r0_31 == "SLF:HighRiskHasMotW" then
+                        r0_5 = r0_5 + 100
                       end
                     end
                   end
+                  break
                 end
-                if not l_0_4.FileDroppedRecently_LongTermStrg then
+              end
+              if not r0_4.FileDroppedRecently then
+                return mp.CLEAN
+              end
+            else
+              r0_17 = r0_20
+            end
+            if not r0_19 then
+              bm.add_related_string("Error", r0_17, bm.RelatedStringBMReport)
+            end
+            if not r0_4.FileDroppedRecently then
+              local r0_33, r0_34 = pcall(MpCommon.RollingQueueQueryKeyRegex, "RQ_RecentExecDropped",
+                r0_16)
+              if r0_33 and r0_34 then
+                local r0_35, r0_36, r0_37 = ipairs(r0_34)
+                for r0_38, r0_39 in r0_35, r0_36, r0_37 do
+                  local r0_40 = string.find(r0_39.value, "UnsignedFile", 1, true)
+                  if r0_40 and FiletimeToDaysElapsed(r0_39.insert_time) < 1 then
+                    r0_4.FileDroppedRecently_LongTermStrg = true
+                    r0_4.FileDropperInfo = r0_34
+                    r0_10 = true
+                    r0_5 = r0_5 + 50
+                    local r0_41 = string.match(r0_39.value, "Process_Img(.*)")
+                    if r0_41 then
+                      local r0_42 = contains(r0_41,
+                        { "program files", "appdata", "dllhost.exe", "svchost.exe" })
+                      if r0_42 then
+                        r0_5 = r0_5 - 40
+                      end
+                      r0_42 = contains
+                      r0_42 = r0_42(r0_41, { "explorer.exe", "WinRAR.exe", "7z.exe" })
+                      if r0_42 then
+                        r0_5 = r0_5 + 50
+                      end
+                    end
+                    local r0_43 = string.find(r0_39.value, "FileAttributes", 1, true)
+                    if r0_43 then
+                      local r0_44 = string.match(r0_39.value, "%[(.*)%]")
+                      local r0_45, r0_46, r0_47 = string.gmatch(r0_44, "([^|]+)")
+                      for r0_48 in r0_45, r0_46, r0_47 do
+                        local r0_49 = string.find(r0_48, "Aurora.A!rfn", 1, true)
+                        if not r0_49 then
+                          r0_5 = r0_5 + 1
+                        end
+                        if r0_48 == "SLF:HighRiskHasMotW" then
+                          r0_5 = r0_5 + 100
+                        end
+                      end
+                    end
+                    break
+                  end
+                end
+                if not r0_4.FileDroppedRecently_LongTermStrg then
                   return mp.CLEAN
                 end
               end
             end
-            local l_0_47, l_0_48 = IsKeyInRollingQueue("SYSTEM_DLLs", l_0_6)
-            -- DECOMPILER ERROR at PC398: Unhandled construct in 'MakeBoolean' P1
-
-            if l_0_48 and l_0_48 ~= "NONE" then
-              l_0_4.POTENTIAL_SIDE_LOADING = l_0_48
-              -- DECOMPILER ERROR at PC399: Overwrote pending register: R5 in 'AssignReg'
-
-            end
-            do
-              local l_0_49 = "NONE"
-              if (sysio.IsFileExists)("c:\\Windows\\System32\\" .. l_0_6) then
-                l_0_49 = "System32"
-                l_0_4.POTENTIAL_SIDE_LOADING = "System32"
-                -- DECOMPILER ERROR at PC412: Overwrote pending register: R5 in 'AssignReg'
-
+            local r0_50, r0_51 = IsKeyInRollingQueue("SYSTEM_DLLs", r0_6)
+            if r0_51 then
+              if r0_51 ~= "NONE" then
+                r0_4.POTENTIAL_SIDE_LOADING = r0_51
+                r0_5 = r0_5 + 50
+              end
+            else
+              local r0_52 = "NONE"
+              if sysio.IsFileExists("c:\\Windows\\System32\\" .. r0_6) then
+                r0_52 = "System32"
+                r0_4.POTENTIAL_SIDE_LOADING = "System32"
+                r0_5 = r0_5 + 50
               else
-                if (sysio.IsFileExists)("c:\\Windows\\SysWOW64\\" .. l_0_6) then
-                  l_0_49 = "SysWOW64"
-                  l_0_4.POTENTIAL_SIDE_LOADING = "SysWOW64"
-                  -- DECOMPILER ERROR at PC424: Overwrote pending register: R5 in 'AssignReg'
-
+                local r0_53 = sysio.IsFileExists
+                local r0_54 = r0_6
+                if r0_53("c:\\Windows\\SysWOW64\\" .. r0_54) then
+                  r0_52 = "SysWOW64"
+                  r0_4.POTENTIAL_SIDE_LOADING = "SysWOW64"
+                  r0_5 = r0_5 + 50
                 end
               end
-              AppendToRollingQueue("SYSTEM_DLLs", l_0_6, l_0_49, 31104000, 1000)
-              if not l_0_8 then
-                return mp.CLEAN
+              AppendToRollingQueue("SYSTEM_DLLs", r0_6, r0_52, 31104000, 1000)
+            end
+            if r0_10 then
+              local r0_55 = r0_2:match("([^\\]+)$")
+              local r0_56 = string.gsub(r0_0, "%d+", "0")
+              local r0_57 = string.gsub(r0_6, "%d+", "0")
+              local r0_58 = r0_55
+              local r0_59, r0_60, r0_61 = r0_57, "|", r0_56
+              r0_58 = r0_58 .. "|" .. r0_59 .. r0_60 .. r0_61
+              local r0_62 = AnomalyTableCheck
+              r0_59 = "Appomaly_LoadedDlls_Path_Normalized"
+              r0_60 = r0_58
+              r0_61 = 2
+              local r0_63 = r0_55
+              local r0_64 = "MarkerRecord_" .. r0_63
+              r0_63 = nil
+              r0_63 = nil
+              local r0_65, r0_66, r0_67 = r0_62(r0_59, r0_60, r0_61, r0_64)
+              if r0_65 then
+                local r0_68 = MpCommon.GetOriginalFileName(r0_2)
+                if not r0_68 then
+                  local r0_69 = sysio.GetPEVersionInfo(r0_2)
+                  if r0_69 and r0_69.OriginalFilename then
+                    r0_68 = r0_69.OriginalFilename
+                    MpCommon.SetOriginalFileName(r0_2, r0_68)
+                  end
+                end
+                if r0_68 then
+                  local r0_70 = r0_68
+                  local r0_71, r0_72, r0_73 = r0_57, "|", r0_56
+                  r0_58 = r0_70 .. "|" .. r0_71 .. r0_72 .. r0_73
+                  r0_70 = AnomalyTableCheck
+                  r0_71 = r0_58
+                  r0_72 = 2
+                  r0_73 = "MarkerRecord_"
+                  local r0_74 = r0_55
+                  local r0_75 = r0_73 .. r0_74
+                  r0_74 = nil
+                  local r0_76, r0_77, r0_78 = r0_70("Appomaly_LoadedDlls_Path_Normalized", r0_71,
+                    r0_72, r0_75)
+                  r0_62, r0_59, r0_60 = r0_76, r0_77, r0_78
+                else
+                  r0_62, r0_59, r0_60 = r0_65, r0_66, r0_67
+                end
+              else
+                r0_62, r0_59, r0_60 = r0_65, r0_66, r0_67
               end
-              local l_0_50 = l_0_2:match("([^\\]+)$")
-              local l_0_51 = (string.gsub)(l_0_0, "%d+", "0")
-              local l_0_52 = (string.gsub)(l_0_6, "%d+", "0")
-              local l_0_53 = l_0_50 .. "|" .. l_0_52 .. "|" .. l_0_51
-              local l_0_54, l_0_55, l_0_56 = AnomalyTableCheck("Appomaly_LoadedDlls_Path_Normalized", l_0_53, 2, "MarkerRecord_" .. l_0_50)
-              if l_0_54 then
-                local l_0_57 = (MpCommon.GetOriginalFileName)(l_0_2)
-                do
-                  do
-                    if not l_0_57 then
-                      local l_0_58 = (sysio.GetPEVersionInfo)(l_0_2)
-                      if l_0_58 and l_0_58.OriginalFilename then
-                        l_0_57 = l_0_58.OriginalFilename
-                        ;
-                        (MpCommon.SetOriginalFileName)(l_0_2, l_0_57)
-                      end
-                    end
-                    if l_0_57 then
-                      l_0_53 = l_0_57 .. "|" .. l_0_52 .. "|" .. l_0_51
-                      l_0_54 = AnomalyTableCheck("Appomaly_LoadedDlls_Path_Normalized", l_0_53, 2, "MarkerRecord_" .. l_0_50)
-                    end
-                    l_0_4.AppName = l_0_50
-                    l_0_4.Dll_FileSize = (sysio.GetFileSize)(l_0_0) or 0
-                    l_0_4.Key = l_0_53
-                    local l_0_59 = "Appomaly_LoadedDlls_Size"
-                    local l_0_60 = 31536000
-                    local l_0_61 = 1000
-                    local l_0_62 = l_0_50 .. l_0_6
-                    l_0_4.Dll_PrevFileSize = GetRollingQueueKeyValue(l_0_59, l_0_62) or -1
-                    if (l_0_4.Dll_PrevFileSize == -1 or l_0_4.Dll_PrevFileSize == 0) and l_0_4.Dll_FileSize > 0 then
-                      AppendToRollingQueue(l_0_59, l_0_62, l_0_4.Dll_FileSize, l_0_60, l_0_61)
-                    else
-                      l_0_4.Dll_PrevFileSize = tonumber(l_0_4.Dll_PrevFileSize)
-                      if l_0_4.Dll_PrevFileSize * 2 < l_0_4.Dll_FileSize or l_0_4.Dll_FileSize < l_0_4.Dll_PrevFileSize / 2 then
-                        l_0_4.DllFileSizeAnomalous = true
-                        l_0_4.FileSizeDiffRatio = l_0_4.Dll_FileSize * 100 / l_0_4.Dll_PrevFileSize
-                        l_0_4.FileSizeDiffRatio = l_0_4.Dll_FileSize * 100 / l_0_4.Dll_PrevFileSize
-                        -- DECOMPILER ERROR at PC577: Overwrote pending register: R5 in 'AssignReg'
-
-                      end
-                    end
-                    if (l_0_4.FileSizeDiffRatio >= 30 or l_0_4.Dll_PrevFileSize == -1) and not l_0_55 then
-                      l_0_4.DLLLoadAfterTraining = true
-                    end
-                    l_0_4.inTraining = l_0_55
-                    if not l_0_54 and not l_0_55 and not l_0_4.DllFileSizeAnomalous then
-                      return mp.CLEAN
-                    end
-                    if l_0_4.Dll_PrevFileSize == l_0_4.Dll_FileSize then
-                      return mp.CLEAN
-                    end
-                    if l_0_54 and not l_0_55 then
-                      l_0_4.Dll_PathNew = true
-                      -- DECOMPILER ERROR at PC607: Overwrote pending register: R5 in 'AssignReg'
-
-                      l_0_4.TableInfo = l_0_56
-                    end
-                    local l_0_63 = "Appomaly_LoadedDlls_Version"
-                    local l_0_64 = 31536000
-                    local l_0_65 = 1000
-                    local l_0_66 = l_0_50 .. l_0_6 .. l_0_4.Dll_FileSize
-                    l_0_4.Dll_VersionInfo = GetRollingQueueKeyValue(l_0_63, l_0_66) or ""
-                    if l_0_4.Dll_VersionInfo == "" then
-                      do
-                        if not (sysio.GetPEVersionInfo)(l_0_0) then
-                          local l_0_67, l_0_68, l_0_69, l_0_70 = {}
-                        end
-                        -- DECOMPILER ERROR at PC634: Confused about usage of register: R33 in 'UnsetPending'
-
-                        -- DECOMPILER ERROR at PC639: Confused about usage of register: R33 in 'UnsetPending'
-
-                        -- DECOMPILER ERROR at PC644: Confused about usage of register: R33 in 'UnsetPending'
-
-                        do
-                          local l_0_71 = nil
-                          l_0_4.Dll_VersionInfo = (l_0_67.OriginalFilename or "") .. "|" .. (l_0_67.CompanyName or "") .. "|" .. (l_0_67.FileDescription or "")
-                          -- DECOMPILER ERROR at PC653: Confused about usage of register: R34 in 'UnsetPending'
-
-                          AppendToRollingQueue(l_0_63, l_0_66, (l_0_67.OriginalFilename or "") .. "|" .. (l_0_67.CompanyName or "") .. "|" .. (l_0_67.FileDescription or ""), l_0_64, l_0_65)
-                          if (string.find)(l_0_4.Dll_VersionInfo, "Microsoft", 1, true) then
-                            return mp.CLEAN
-                          end
-                          local l_0_72 = function(l_1_0, l_1_1)
-  -- function num : 0_0
-  l_1_0 = (string.lower)(l_1_0)
-  l_1_1 = (string.lower)(l_1_1)
-  if (string.match)(l_1_0, "(.-)|(.-)|(.*)") == (string.match)(l_1_1, "(.-)|(.-)|(.*)") or l_1_0 == l_1_1 or "(.-)|(.-)|(.*)" == "(.-)|(.-)|(.*)" then
-    return true
-  end
-  return false
-end
-
-                          local l_0_73, l_0_74 = pcall(MpCommon.RollingQueueQueryKeyRegex, l_0_63, l_0_50 .. l_0_6)
-                          do
-                            if l_0_74.value then
-                              local l_0_75 = {}
-                              -- DECOMPILER ERROR at PC683: No list found for R36 , SetList fails
-
-                            end
-                            -- DECOMPILER ERROR at PC693: Overwrote pending register: R37 in 'AssignReg'
-
-                            if l_0_74 or l_0_4.Dll_VersionInfo ~= "||" then
-                              for l_0_80,i_2 in ipairs(l_0_74) do
-                                if l_0_72(i_2.value, l_0_4.Dll_VersionInfo) then
-                                  return mp.CLEAN
-                                end
-                              end
-                            end
-                            do
-                              if l_0_4.Dll_VersionInfo ~= "||" and l_0_72(l_0_4.Dll_VersionInfo, (l_0_4.Dll_PrevVersionInfo).value) then
-                                return mp.CLEAN
-                              end
-                              -- DECOMPILER ERROR at PC723: Overwrote pending register: R5 in 'AssignReg'
-
-                              if l_0_4.Dll_PrevVersionInfo ~= "||" then
-                                local l_0_81, l_0_82, l_0_83 = IsDllInExpectedPath(l_0_6, l_0_1, l_0_7)
-                                if l_0_81 and l_0_82 then
-                                  return mp.CLEAN
-                                end
-                                -- DECOMPILER ERROR at PC738: Overwrote pending register: R5 in 'AssignReg'
-
-                                -- DECOMPILER ERROR at PC741: Overwrote pending register: R5 in 'AssignReg'
-
-                                if not l_0_81 or l_0_83 then
-                                  l_0_4.Known_VulnerableDll = l_0_81
-                                  l_0_4.Vulnerable_App = l_0_83
-                                  if not l_0_4.POTENTIAL_SIDE_LOADING and not l_0_81 then
-                                    return mp.CLEAN
-                                  end
-                                  -- DECOMPILER ERROR at PC759: Overwrote pending register: R5 in 'AssignReg'
-
-                                  if (MpCommon.StringRegExpSearch)("\\\\(desktop|download|onedrive|document|picture)", l_0_0) then
-                                    local l_0_84 = contains
-                                    local l_0_85 = l_0_0
-                                    local l_0_86 = {}
-                                    -- DECOMPILER ERROR at PC765: No list found for R41 , SetList fails
-
-                                    -- DECOMPILER ERROR at PC769: Overwrote pending register: R5 in 'AssignReg'
-
-                                    -- DECOMPILER ERROR at PC771: Overwrote pending register: R39 in 'AssignReg'
-
-                                    -- DECOMPILER ERROR at PC774: Overwrote pending register: R42 in 'AssignReg'
-
-                                    if l_0_84 then
-                                      l_0_84 = l_0_84(l_0_85, l_0_86, "program files", true)
-                                      -- DECOMPILER ERROR at PC777: Overwrote pending register: R41 in 'AssignReg'
-
-                                      -- DECOMPILER ERROR at PC780: Overwrote pending register: R41 in 'AssignReg'
-
-                                      -- DECOMPILER ERROR at PC781: Overwrote pending register: R41 in 'AssignReg'
-
-                                      if l_0_86 then
-                                        l_0_86("PotentialSideLoading_C_Evaluator", l_0_84)
-                                      end
-                                      -- DECOMPILER ERROR at PC785: Overwrote pending register: R41 in 'AssignReg'
-
-                                      -- DECOMPILER ERROR at PC788: Overwrote pending register: R41 in 'AssignReg'
-
-                                      -- DECOMPILER ERROR at PC791: Overwrote pending register: R41 in 'AssignReg'
-
-                                      -- DECOMPILER ERROR at PC794: Overwrote pending register: R41 in 'AssignReg'
-
-                                      -- DECOMPILER ERROR at PC795: Overwrote pending register: R41 in 'AssignReg'
-
-                                      if (l_0_86 and l_0_86) or l_0_86 then
-                                        l_0_86("PotentialSideLoading_D2_Evaluator", l_0_84)
-                                      end
-                                      -- DECOMPILER ERROR at PC799: Overwrote pending register: R41 in 'AssignReg'
-
-                                      -- DECOMPILER ERROR at PC802: Overwrote pending register: R41 in 'AssignReg'
-
-                                      -- DECOMPILER ERROR at PC807: Overwrote pending register: R41 in 'AssignReg'
-
-                                      -- DECOMPILER ERROR at PC808: Overwrote pending register: R41 in 'AssignReg'
-
-                                      if (l_0_86 and l_0_86) or l_0_5 >= 150 then
-                                        l_0_86("PotentialSideLoading_D2_Evaluator", l_0_84)
-                                      end
-                                      -- DECOMPILER ERROR at PC812: Overwrote pending register: R41 in 'AssignReg'
-
-                                      -- DECOMPILER ERROR at PC813: Overwrote pending register: R41 in 'AssignReg'
-
-                                      local l_0_87 = "Additional_Info"
-                                      do
-                                        l_0_86(l_0_87, l_0_84 or l_0_85 or "", bm.RelatedStringBMReport)
-                                        -- DECOMPILER ERROR at PC823: Overwrote pending register: R41 in 'AssignReg'
-
-                                        -- DECOMPILER ERROR at PC824: Overwrote pending register: R41 in 'AssignReg'
-
-                                        l_0_87 = "Score"
-                                        l_0_86(l_0_87, l_0_5, bm.RelatedStringBMReport)
-                                        -- DECOMPILER ERROR at PC830: Overwrote pending register: R41 in 'AssignReg'
-
-                                        -- DECOMPILER ERROR at PC831: Overwrote pending register: R41 in 'AssignReg'
-
-                                        l_0_87 = "Anomaly_LoadedDlls_TblInfo"
-                                        l_0_86(l_0_87, safeJsonSerialize(l_0_56), bm.RelatedStringBMReport)
-                                        -- DECOMPILER ERROR at PC839: Overwrote pending register: R41 in 'AssignReg'
-
-                                        -- DECOMPILER ERROR at PC840: Overwrote pending register: R41 in 'AssignReg'
-
-                                        l_0_87 = l_0_0
-                                        l_0_86(l_0_87)
-                                        -- DECOMPILER ERROR at PC843: Overwrote pending register: R41 in 'AssignReg'
-
-                                        -- DECOMPILER ERROR at PC844: Overwrote pending register: R41 in 'AssignReg'
-
-                                        do return l_0_86 end
-                                        -- DECOMPILER ERROR at PC846: freeLocal<0 in 'ReleaseLocals'
-
-                                        return mp.CLEAN
-                                      end
-                                    end
-                                  end
-                                end
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
+              r0_4.AppName = r0_55
+              local r0_79 = sysio.GetFileSize
+              r0_4.Dll_FileSize = r0_79(r0_0) or 0
+              r0_4.Key = r0_58
+              r0_79 = "Appomaly_LoadedDlls_Size"
+              local r0_80, r0_81 = r0_55, r0_6
+              r0_80 = r0_80 .. r0_81
+              r0_81 = GetRollingQueueKeyValue
+              r0_4.Dll_PrevFileSize = r0_81(r0_79, r0_80) or -1
+              if (r0_4.Dll_PrevFileSize == -1 or r0_4.Dll_PrevFileSize == 0)
+                and r0_4.Dll_FileSize > 0 then
+                AppendToRollingQueue(r0_79, r0_80, r0_4.Dll_FileSize, 31536000, 1000)
+              else
+                local r0_82 = tonumber(r0_4.Dll_PrevFileSize)
+                r0_4.Dll_PrevFileSize = r0_82
+                r0_82 = r0_4.Dll_PrevFileSize
+                r0_82 = r0_82 * 2
+                if r0_82 < r0_4.Dll_FileSize or r0_4.Dll_FileSize < r0_4.Dll_PrevFileSize / 2 then
+                  r0_4.DllFileSizeAnomalous = true
+                  local r0_83 = r0_4.Dll_FileSize
+                  r0_4.FileSizeDiffRatio = r0_83 * 100 / r0_4.Dll_PrevFileSize
+                  r0_83 = r0_4.Dll_FileSize
+                  r0_4.FileSizeDiffRatio = r0_83 * 100 / r0_4.Dll_PrevFileSize
+                  r0_83 = r0_4.FileSizeDiffRatio
+                  if r0_83 < 30 then
+                    r0_5 = r0_5 + 10
                   end
                 end
               end
-            end
-          end
-        end
-      end
-    end
-  end
-end
+              if r0_4.Dll_PrevFileSize == -1 and not r0_59 then
+                r0_4.DLLLoadAfterTraining = true
+              end
+              r0_4.inTraining = r0_59
+              if not r0_62 and not r0_59 and not r0_4.DllFileSizeAnomalous then
+                return mp.CLEAN
+              end
+              if r0_4.Dll_PrevFileSize == r0_4.Dll_FileSize then
+                return mp.CLEAN
+              end
+              if r0_62 and not r0_59 then
+                r0_4.Dll_PathNew = true
+                r0_5 = r0_5 + 50
+                r0_4.TableInfo = r0_60
+              end
+              local r0_84 = "Appomaly_LoadedDlls_Version"
+              local r0_85, r0_86 = r0_55, r0_6
+              local r0_87 = r0_4.Dll_FileSize
+              r0_85 = r0_85 .. r0_86 .. r0_87
+              r0_86 = GetRollingQueueKeyValue
+              r0_4.Dll_VersionInfo = r0_86(r0_84, r0_85) or ""
+              if r0_4.Dll_VersionInfo == "" then
+                local r0_88 = sysio.GetPEVersionInfo
+                r0_88 = r0_88(r0_0) or {}
+                local r0_89 = r0_88.OriginalFilename or ""
+                local r0_90 = r0_88.CompanyName or ""
+                local r0_91 = r0_88.FileDescription
+                r0_89 = r0_89 .. "|" .. r0_90 .. "|" .. (r0_91 or "")
+                r0_4.Dll_VersionInfo = r0_89
+                AppendToRollingQueue(r0_84, r0_85, r0_89, 31536000, 1000)
+              end
+              local r0_92 = string.find(r0_4.Dll_VersionInfo, "Microsoft", 1, true)
+              if r0_92 then
+                return mp.CLEAN
+              end
 
+              local function r0_93(p1_0, p1_1)
+                p1_0 = string.lower(p1_0)
+                p1_1 = string.lower(p1_1)
+                local r1_0, r1_1, r1_2 = string.match(p1_0, "(.-)|(.-)|(.*)")
+                local r1_3, r1_4, r1_5 = string.match(p1_1, "(.-)|(.-)|(.*)")
+                if r1_0 == r1_3 or r1_1 == r1_4 or r1_2 == r1_5 then
+                  return true
+                end
+                return false
+              end
+
+              local r0_94 = pcall
+              local r0_95 = MpCommon.RollingQueueQueryKeyRegex
+              local r0_96, r0_97 = r0_55, r0_6
+              r0_96 = r0_96 .. r0_97
+              r0_97 = nil
+              local r0_98, r0_99 = r0_94(r0_95, r0_84, r0_96)
+              r0_99 = r0_99.value and { r0_99 } or r0_99
+              local r0_100 = r0_99 or {}
+              r0_4.Dll_PrevVersionInfo = r0_100
+              if r0_4.Dll_VersionInfo ~= "||" then
+                local r0_101, r0_102, r0_103 = ipairs(r0_99)
+                for r0_104, r0_105 in r0_101, r0_102, r0_103 do
+                  local r0_106 = r0_93
+                  r0_106 = r0_106(r0_105.value, r0_4.Dll_VersionInfo)
+                  if r0_106 then
+                    return mp.CLEAN
+                  end
+                end
+              end
+              if r0_4.Dll_VersionInfo ~= "||"
+                and r0_93(r0_4.Dll_VersionInfo, r0_4.Dll_PrevVersionInfo.value) then
+                return mp.CLEAN
+              end
+              if r0_4.Dll_PrevVersionInfo ~= "||" then
+                r0_5 = r0_5 + 10
+              end
+              local r0_107, r0_108, r0_109 = IsDllInExpectedPath(r0_6, r0_1, r0_7)
+              if r0_107 and r0_108 then
+                return mp.CLEAN
+              end
+              if r0_107 then
+                r0_5 = r0_5 + 50
+              end
+              if r0_109 then
+                r0_5 = r0_5 + 50
+              end
+              r0_4.Known_VulnerableDll = r0_107
+              r0_4.Vulnerable_App = r0_109
+              if not r0_4.POTENTIAL_SIDE_LOADING and not r0_107 then
+                return mp.CLEAN
+              end
+              local r0_110 = MpCommon.StringRegExpSearch("\\\\(desktop|download|onedrive|document|picture)",
+                r0_0)
+              if r0_110 then
+                r0_5 = r0_5 + 50
+              end
+              r0_110 = contains
+              r0_110 = r0_110(r0_0, { "program files", "appdata" })
+              if r0_110 then
+                r0_5 = r0_5 - 40
+              end
+              r0_4.Score = r0_5
+              r0_110 = safeJsonSerialize
+              local r0_111, r0_112 = r0_110(r0_4, 100, nil, true)
+              if r0_4.POTENTIAL_SIDE_LOADING then
+                bm.trigger_sig("PotentialSideLoading_C_Evaluator", r0_111)
+              end
+              if r0_4.POTENTIAL_SIDE_LOADING and r0_4.Known_VulnerableDll
+                or r0_4.DllAndExecInArchive then
+                bm.trigger_sig("PotentialSideLoading_D2_Evaluator", r0_111)
+              end
+              if r0_4.Known_VulnerableDll and r0_4.Vulnerable_App or r0_5 >= 150 then
+                bm.trigger_sig("PotentialSideLoading_D2_Evaluator", r0_111)
+              end
+              bm.add_related_string("Additional_Info", r0_111 or r0_112 or "",
+                bm.RelatedStringBMReport)
+              bm.add_related_string("Score", r0_5, bm.RelatedStringBMReport)
+              bm.add_related_string("Anomaly_LoadedDlls_TblInfo", safeJsonSerialize(r0_60),
+                bm.RelatedStringBMReport)
+              bm.add_related_file(r0_0)
+              return mp.INFECTED
+            end
+            return mp.CLEAN
+          end
+          return mp.CLEAN
+        end
+        return mp.CLEAN
+      end
+      return mp.CLEAN
+    end
+    return mp.CLEAN
+  end
+  return mp.CLEAN
+end
+return mp.CLEAN

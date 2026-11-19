@@ -1,11 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanWin32ExcelTokenDumpA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:Win32/ExcelTokenDump.A
+-- Type: 13
+-- MpAttributes: BM_MEMDUMP_FILE & (MpOnModifiedCloseRtpScan | MpOnOpenRtpScan)
 
--- params : ...
--- function num : 0
-local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
+local l_0_0 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_FILENAME))
 if l_0_0:find("excel.exe", 1, true) ~= 0 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

@@ -482,6 +482,7 @@
             "DropAvailableAppEGATOptionalInstallIntent": true,
             "DropIsDeleteEGAT": true,
             "DropUnchangedMdmPolicyHashEGAT": true,
+            "EGATCCEnabled": true,
             "EgatEgpaConsolidationBGTask": true,
             "EnableAERequiredLOBAppMetadataCreationAndProcessing": true,
             "EnableAndroidAospReferencedApp": true,
@@ -547,7 +548,9 @@
             "BypassDhaSettings404Error": true,
             "BypassDhaSettings404ErrorNewlyEnrolledOnly": true,
             "CalculationLatencyMetricV2Enabled": true,
+            "DataSyncDeviceThreatMBPublisherEnabled": true,
             "DataSyncDeviceThreatQMSDeduplicationEnabled": true,
+            "DataSyncDeviceThreatQMSPublisherDisabled": true,
             "DeleteDPSBlob": true,
             "EGM_Process": true,
             "EGM_TriggerComplianceCalc": true,
@@ -559,6 +562,7 @@
             "EnableComplianceCalculationCache": true,
             "EnableCompliancePolicyAssignmentHelperAuthority": true,
             "EnableComplianceUpdateReportingPublisher": true,
+            "EnableDataSyncDsoiPatchTimeout": true,
             "EnableDeleteStalePartners": true,
             "EnableDeviceCleanupPtiDeletion": true,
             "EnablePartnerDeviceHealthComplianceAggregator2": true,
@@ -772,8 +776,10 @@
         "FlightingV2": {
             "BypassPartnerTokenBlockForETG": true,
             "EnableBlockingOpenClaw": true,
+            "EnableCISWindows11V500Baseline": true,
             "EnableDefenderAiAgentProtection": true,
             "EnableEpmSystemSettingsSettings": true,
+            "EnableMaintenanceWindowsTemplate": true,
             "EnablePRSv3EmptyChangedReportFilter": true,
             "EnableW365AgentsBaseline": true,
             "Enable_ApplicationProperties_Settings": true,
@@ -822,6 +828,12 @@
     "SVC_Edu": {
         "FlightingV2": {
             "DisableCartToClassAssociations": true
+        }
+    },
+    "SVC_GPAnalytics": {
+        "FlightingV2": {
+            "EpmTenantStatePagingEnabled": true,
+            "EpmTenantStateReconciliationRepairEnabled": true
         }
     },
     "SVC_ICS": {
@@ -916,6 +928,7 @@
             "AdminsCanExcludeAppsFromMaa": true,
             "AppAsRequestor": true,
             "AutopatchMaaExclusion": true,
+            "EnableApprovalRequestStructuralSanitization": true,
             "EnableMAA": true,
             "EnableMAA_CompliancePolicy": true,
             "EnableMAA_ComplianceSettings": true,
@@ -932,6 +945,7 @@
     },
     "SVC_OAuth": {
         "FlightingV2": {
+            "DisableBulkEnrollmentCertificateTokenIssuance": false,
             "EnableCertReplacementBackgroundTask": true,
             "EnforceExpiredCertificateChainValidation": true,
             "EnforceExpiredUdaCertificateValidation": true,
@@ -985,6 +999,7 @@
             "EnableAndroidScepV2FlightingV2": true,
             "EnableDeleteProfileInstanceEarlyReturn": true,
             "EnableIOSWiredNetwork": true,
+            "EnableScepComplianceFailedRequestReconciliation": true,
             "EnableSharedIPadChannelApplicabilityCheckForWiFi": true,
             "ImportPFXRemediation": true,
             "NewAsyncRequestOnEncryptionCertMismatch": true,
@@ -1007,8 +1022,10 @@
             "EnableFnlEgLaneBatchPublishing": true,
             "EnableMdmFnlCacheService": true,
             "EnableMdmFnlEgClassificationCache": true,
+            "EnableSideCarScriptsNotifications": true,
             "EnableSidecarFnlEgClassificationCache": true,
             "FireAndForgetNotificationQueueProcessor": false,
+            "IC3NotificationFlow": true,
             "IC3TimeoutFallbackToWNS": true,
             "NCSDelayBetweenBatches": 25,
             "NCSSqlAggParallelCount": 3,
@@ -1079,6 +1096,7 @@
         "customer_script_timeout": 3600,
         "enable_afd_connectivity_ip_range": false,
         "enable_pipelined_enrollment_cadence": true,
+        "enable_pkg_signature_trust_validation": true,
         "internal_script_timeout": 3600,
         "log_golden_client_signal": true,
         "store_adhoc_script_result": true,
@@ -1158,8 +1176,10 @@
             "CanAccessSupportCentralWidget": true,
             "EnableCompliancePolicySettingsOrgReport": true,
             "EnableDeviceExecutionStatusReportExportV2": true,
-            "EnableDeviceStatusByCompliancePolicySettingReportExplorer": true,
+            "EnableDeviceStatusPolicyNoncomplianceReportExplorer": true,
+            "EnableInventoryPolicySummaryReportExplorer": true,
             "EnableJamfDeleteButton": true,
+            "EnableMaintenanceWindowsBlade": true,
             "EnableWpa3PersonalForIosFlight": true,
             "ExplorerDcv2DeviceSummary": true,
             "HidePCAAndCRAFromAgentsL1": true,
@@ -1276,6 +1296,7 @@
             "AgenticIdentityIVRA": true,
             "ApproverAgentUI": true,
             "EnableAgenticIdentityIvra": true,
+            "EnableProfilePerSettingsReportReportExplorer": true,
             "PolicyAgent": true,
             "SBUpgrade": true
         }

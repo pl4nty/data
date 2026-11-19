@@ -1,37 +1,26 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaCloudLowfiForE5\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:CloudLowfiForE5
+-- Type: 13
+-- MpAttributes: Lua:MpEnableCustomE5Signatures & RPF:TopLevelFile
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC52: Unhandled construct in 'MakeBoolean' P3
-
-if ((mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN and (mp.bitand)((mp.get_contextdata)(mp.CONTEXT_DATA_DEVICE_CHARACTERISTICS), 264193) == 264193) or (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-  local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME)
-  if l_0_0 == nil then
+if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN and (mp.bitand(mp.get_contextdata(mp.CONTEXT_DATA_DEVICE_CHARACTERISTICS), 264193) == 264193 or mp.bitand(mp.get_contextdata(mp.CONTEXT_DATA_DEVICE_CHARACTERISTICS), 16) == 16) or mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONMODIFIEDHANDLECLOSE and mp.get_contextdata(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
+  local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_FILENAME)
+  if nil == l_0_0 then
     return mp.CLEAN
   end
-  local l_0_1 = {}
-  l_0_1[".hta"] = true
-  l_0_1[".js"] = true
-  l_0_1[".jse"] = true
-  l_0_1[".ps1"] = true
-  l_0_1[".vbs"] = true
-  l_0_1[".vbe"] = true
-  l_0_1[".wsh"] = true
-  do
-    do
-      if (l_0_0:sub(-5)):match("(%.%w+)$") ~= nil or not "" then
-        local l_0_3, l_0_4 = ((l_0_0:sub(-5)):match("(%.%w+)$")):lower()
-      end
-      -- DECOMPILER ERROR at PC79: Confused about usage of register: R2 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC85: Confused about usage of register: R2 in 'UnsetPending'
-
-      if l_0_1[l_0_3] == true then
-        (mp.set_mpattribute)("Lua:CloudLowfiForE5!" .. l_0_3:sub(2))
-      end
-      return mp.CLEAN
-    end
+  local l_0_1 = {
+    [".hta"] = true,
+    [".js"] = true,
+    [".jse"] = true,
+    [".ps1"] = true,
+    [".vbs"] = true,
+    [".vbe"] = true,
+    [".wsh"] = true
+  }
+  local l_0_2 = l_0_0:sub(-5):match("(%.%w+)$")
+  l_0_2 = nil == l_0_2 and "" or l_0_2:lower()
+  if true == l_0_1[l_0_2] then
+    mp.set_mpattribute("Lua:CloudLowfiForE5!" .. l_0_2:sub(2))
   end
 end
-
+return mp.CLEAN

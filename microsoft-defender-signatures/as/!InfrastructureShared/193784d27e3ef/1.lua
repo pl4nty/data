@@ -1,0 +1,10 @@
+-- Threat: !InfrastructureShared
+-- Name: 193784d27e3ef
+-- Type: 21
+
+if peattributes.isvbnative == true and peattributes.isexe == true and mp.getfilesize() < 1048000 then
+  return mp.INFECTED
+elseif mp.get_mpattribute("HSTR:IsVB6") and peattributes.isexe == true and mp.getfilesize() < 1048000 then
+  return mp.INFECTED
+end
+return mp.CLEAN

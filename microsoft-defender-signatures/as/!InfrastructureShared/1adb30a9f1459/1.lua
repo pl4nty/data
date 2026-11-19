@@ -1,44 +1,54 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1adb30a9f1459\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 1adb30a9f1459
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_0 = function(l_1_0)
-  -- function num : 0_0
-  if l_1_0 ~= nil and l_1_0.matched == true and l_1_0.utf8p2 ~= nil and l_1_0.utf8p2 ~= "" then
-    return l_1_0
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
+
+local function r0_0(p1_0)
+  if p1_0 == nil or p1_0.matched ~= true or p1_0.utf8p2 == nil or p1_0.utf8p2 == "" then
+    return nil
   end
-  return nil
+  return p1_0
 end
 
-local l_0_1 = function(l_2_0)
-  -- function num : 0_1
-  do return l_2_0 end
-  -- WARNING: undefined locals caused missing assignments!
+local function r0_1(p2_0)
+  local r2_0, r2_1 = p2_0:gsub("[^\128-\191]", "")
+  return r2_1
 end
 
-do
-  if not l_0_0(this_sigattrlog[1]) and not l_0_0(this_sigattrlog[2]) and not l_0_0(this_sigattrlog[3]) and not l_0_0(this_sigattrlog[4]) and not l_0_0(this_sigattrlog[5]) and not l_0_0(this_sigattrlog[6]) and not l_0_0(this_sigattrlog[7]) and not l_0_0(this_sigattrlog[8]) and not l_0_0(this_sigattrlog[9]) and not l_0_0(this_sigattrlog[10]) and not l_0_0(this_sigattrlog[11]) then
-    local l_0_2, l_0_3 = l_0_0(this_sigattrlog[12])
-  end
-  -- DECOMPILER ERROR at PC72: Confused about usage of register: R2 in 'UnsetPending'
-
-  if l_0_2 == nil then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC80: Confused about usage of register: R2 in 'UnsetPending'
-
-  local l_0_4 = nil
-  local l_0_5 = nil
-  if l_0_1((string.lower)(tostring(l_0_2.utf8p2))) < 32 or l_0_1((string.lower)(tostring(l_0_2.utf8p2))) > 259 then
-    return mp.CLEAN
-  end
-  local l_0_6 = nil
-  local l_0_7 = tostring(l_0_4.utf8p1)
-  if l_0_7 ~= nil and contains(l_0_7, {"://chatgpt.com", ".microsoft.com/", "://m365.cloud.microsoft/", ".visualstudio.com/", ".sharepoint.com/", "://github.com/", "://localhost", "://127.0.", ".reddit.com/", ".google.com/", "/wiki/", "://opencode.ai/", "://web.whatsapp.com/", "://www.bing.com/search", "://www.youtube.com/watch", "://outlook.cloud.microsoft/", "://antigravity.google/", "://grok.com/", "/wikis/", "://learn.", "://docs.", "/chat/", "://chat.", "://wiki.", "://forum.", "://search.naver.com/", "://bun.com/", "://discord.com/", "://muse.ai/", "://use.ai/", "://ask-chat.ai/", "://herdr.dev/"}) then
-    return mp.CLEAN
-  end
-  AppendToRollingQueue("IsFromWebClipWrite", l_0_5, l_0_7, 300)
+local r0_2 = r0_0(this_sigattrlog[1])
+  or r0_0(this_sigattrlog[2])
+  or r0_0(this_sigattrlog[3])
+  or r0_0(this_sigattrlog[4])
+  or r0_0(this_sigattrlog[5])
+  or r0_0(this_sigattrlog[6])
+  or r0_0(this_sigattrlog[7])
+  or r0_0(this_sigattrlog[8])
+  or r0_0(this_sigattrlog[9])
+  or r0_0(this_sigattrlog[10])
+  or r0_0(this_sigattrlog[11])
+  or r0_0(this_sigattrlog[12])
+if r0_2 == nil then
   return mp.CLEAN
 end
-
+local r0_3 = string.lower(tostring(r0_2.utf8p2))
+local r0_4 = r0_1(r0_3)
+if not (r0_4 < 32) and not (r0_4 > 259) then
+  local r0_5 = tostring(r0_2.utf8p1)
+  local r0_6 = {
+    "://chatgpt.com", ".microsoft.com/", "://m365.cloud.microsoft/", ".visualstudio.com/",
+    ".sharepoint.com/", "://github.com/", "://localhost", "://127.0.", ".reddit.com/",
+    ".google.com/", "/wiki/", "://opencode.ai/", "://web.whatsapp.com/", "://www.bing.com/search",
+    "://www.youtube.com/watch", "://outlook.cloud.microsoft/", "://antigravity.google/",
+    "://grok.com/", "/wikis/", "://learn.", "://docs.", "/chat/", "://chat.", "://wiki.",
+    "://forum.", "://search.naver.com/", "://bun.com/", "://discord.com/", "://muse.ai/",
+    "://use.ai/", "://ask-chat.ai/", "://herdr.dev/"
+  }
+  if r0_5 ~= nil and contains(r0_5, r0_6) then
+    return mp.CLEAN
+  end
+  AppendToRollingQueue("IsFromWebClipWrite", r0_3, r0_5, 300)
+  return mp.CLEAN
+end
+return mp.CLEAN

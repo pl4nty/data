@@ -1,21 +1,18 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\175b317beb065\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 175b317beb065
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = l_0_0.command_line
-    if l_0_1 == nil or l_0_1 == "" then
-      return mp.CLEAN
-    end
-    if #l_0_1 >= 7000 then
-      (bm.trigger_sig)("SuspiciousCommandline.A", "Detected")
-      TrackPidAndTechniqueBM("BM", "T1059", "SuspiciousCommandline")
-      return mp.INFECTED
-    end
+local l_0_0 = bm.get_current_process_startup_info()
+if l_0_0 ~= nil then
+  local l_0_1 = l_0_0.command_line
+  if l_0_1 == nil or l_0_1 == "" then
+    return mp.CLEAN
   end
-  return mp.CLEAN
+  if 7000 <= #l_0_1 then
+    bm.trigger_sig("SuspiciousCommandline.A", "Detected")
+    TrackPidAndTechniqueBM("BM", "T1059", "SuspiciousCommandline")
+    return mp.INFECTED
+  end
 end
-
+return mp.CLEAN

@@ -1,12 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaIOAVFirstUnsignedPEInZipFile\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:IOAVFirstUnsignedPEInZipFile
+-- Type: 9
+-- MpAttributes: //AGGREGATOR:GIOAVTopLevelZIP & !RPF:TopLevelFile & !PEPCODE:HasDigitalSignature & !//GIOAVFirstUnsignedPEInTopLevelZipFile
 
--- params : ...
--- function num : 0
-(mp.set_mpattribute)("Lua:IOAVFirstUnsignedPEInTopLevelZipFile")
-;
-(mp.set_mpattribute)("//GIOAVFirstUnsignedPEInTopLevelZipFile")
-;
-(mp.set_mpattribute)("MpNonCachedLowfi")
+mp.set_mpattribute("Lua:IOAVFirstUnsignedPEInTopLevelZipFile")
+mp.set_mpattribute("//GIOAVFirstUnsignedPEInTopLevelZipFile")
+mp.set_mpattribute("MpNonCachedLowfi")
 return mp.CLEAN
-

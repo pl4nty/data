@@ -1,13 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFHackToolWin32SockScoutScriptgen!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:HackTool:Win32/SockScoutScript.gen!dha
+-- Type: 13
+-- MpAttributes: BM_TEXT_FILE & (LUA:FileSizeLE100.A | LUA:FileSizeLE200.A | LUA:FileSizeLE400.A | LUA:FileSizeLE800.A | LUA:FileSizeLE1000.A) & (SCPT:SockScoutScript.A | SCPT:SockScoutScript.B | SCPT:SockScoutScript.C | SCPT:SockScoutScript.D | SCPT:SockScoutScript.E)
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
+local l_0_0 = mp.getfilesize()
 if l_0_0 < 100 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.enum_mpattributesubstring)("SCPT:SockScoutScript")
+local l_0_1 = mp.enum_mpattributesubstring("SCPT:SockScoutScript")
 if #l_0_1 < 3 then
   return mp.CLEAN
 end
@@ -16,10 +16,8 @@ if l_0_2 then
   if not l_0_3:find("\\Scripts", 1, true) then
     return mp.CLEAN
   else
-    ;
-    (mp.set_mpattribute)("MpNonPIIFileType")
+    mp.set_mpattribute("MpNonPIIFileType")
     return mp.INFECTED
   end
 end
 return mp.CLEAN
-

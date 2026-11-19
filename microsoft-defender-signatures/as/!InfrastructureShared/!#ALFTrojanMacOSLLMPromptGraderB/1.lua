@@ -1,14 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanMacOSLLMPromptGraderB\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:MacOS/LLMPromptGrader.B
+-- Type: 24
+-- Includes: ResearchData, AppomalyHelpers, LuaFuncHelper
+-- MpAttributes: cnt:llm:suspicious_arg & MpIsPowerShellAMSIScan
 
--- params : ...
--- function num : 0
 local l_0_0 = tostring(headerpage) .. tostring(footerpage)
 local l_0_1, l_0_2 = LLMPromptGrader(l_0_0)
-set_research_data("GradingInfo", (table.concat)(l_0_2, "|"), false)
-local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_AMSI_OPERATION_PPID)
+set_research_data("GradingInfo", table.concat(l_0_2, "|"), false)
+local l_0_3 = mp.get_contextdata(mp.CONTEXT_DATA_AMSI_OPERATION_PPID)
 if l_0_3 then
-  (MpCommon.BmTriggerSig)(l_0_3, "xplat_LLMPromptGrader_AMSI", safeJsonSerialize(l_0_2))
+  MpCommon.BmTriggerSig(l_0_3, "xplat_LLMPromptGrader_AMSI", safeJsonSerialize(l_0_2))
 end
 return mp.INFECTED
-

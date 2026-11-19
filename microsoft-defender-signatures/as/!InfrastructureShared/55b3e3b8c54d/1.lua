@@ -1,0 +1,12 @@
+-- Threat: !InfrastructureShared
+-- Name: 55b3e3b8c54d
+-- Type: 21
+
+local l_0_0
+if this_sigattrlog[2].matched then
+  l_0_0 = string.lower(this_sigattrlog[2].utf8p2)
+end
+if l_0_0 ~= nil and string.len(l_0_0) > 3 and (string.find(l_0_0, " whoami", 1, true) or string.find(l_0_0, " quser", 1, true) or string.find(l_0_0, " type ", 1, true) or string.find(l_0_0, " nltest", 1, true) or string.find(l_0_0, " echo ", 1, true) or string.find(l_0_0, "net user", 1, true) or string.find(l_0_0, "net1 user", 1, true) or string.find(l_0_0, "systeminfo", 1, true) or string.find(l_0_0, "netlogon", 1, true) or string.find(l_0_0, "attackiq wmi", 1, true)) then
+  return mp.INFECTED
+end
+return mp.CLEAN

@@ -1,22 +1,18 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\32b3942499fc\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 32b3942499fc
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p1 ~= nil then
-  local l_0_0 = nil
-  local l_0_1 = nil
-  if l_0_0 ~= nil and (sysio.IsFileExists)(l_0_0) then
-    l_0_1 = (sysio.GetFileSize)(l_0_0)
-    if l_0_1 ~= nil and l_0_1 > 30000 and l_0_1 < 40000 then
+local l_0_0
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p1 ~= nil then
+  l_0_0 = this_sigattrlog[1].utf8p1
+  local l_0_1
+  if l_0_0 ~= nil and sysio.IsFileExists(l_0_0) then
+    l_0_1 = sysio.GetFileSize(l_0_0)
+    if l_0_1 ~= nil and 30000 < l_0_1 and l_0_1 < 40000 then
       sms_untrusted_process()
       return mp.INFECTED
     end
   end
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

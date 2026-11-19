@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <helpItems schema="maml" xmlns="http://msh">
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
@@ -65,6 +65,8 @@
             <maml:para>- Office 365 operated by 21Vianet: `O365China`</maml:para>
             <maml:para>- Microsoft 365 GCC High: `O365USGovGCCHigh`</maml:para>
             <maml:para>- Microsoft 365 DoD: `O365USGovDoD`</maml:para>
+            <maml:para>- Office 365 France: `O365Bleu`</maml:para>
+            <maml:para>- Office 365 Germany: `O365Delos`</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">ExchangeEnvironment</command:parameterValue>
           <dev:type>
@@ -617,6 +619,8 @@
           <maml:para>- Office 365 operated by 21Vianet: `O365China`</maml:para>
           <maml:para>- Microsoft 365 GCC High: `O365USGovGCCHigh`</maml:para>
           <maml:para>- Microsoft 365 DoD: `O365USGovDoD`</maml:para>
+          <maml:para>- Office 365 France: `O365Bleu`</maml:para>
+          <maml:para>- Office 365 Germany: `O365Delos`</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">ExchangeEnvironment</command:parameterValue>
         <dev:type>

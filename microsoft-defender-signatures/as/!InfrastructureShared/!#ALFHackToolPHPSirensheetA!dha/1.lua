@@ -1,10 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFHackToolPHPSirensheetA!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:HackTool:PHP/Sirensheet.A!dha
+-- Type: 24
+-- MpAttributes: TEL:Exploit:JS/WebRTCLeak & Lua:PHPExt
 
--- params : ...
--- function num : 0
-if (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE)) == "getpasswordpage.php" then
+local l_0_0 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0 == "getpasswordpage.php" then
   return mp.INFECTED
 end
 return mp.CLEAN
-

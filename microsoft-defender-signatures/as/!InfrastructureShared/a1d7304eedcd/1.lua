@@ -1,11 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\a1d7304eedcd\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: a1d7304eedcd
+-- Type: 21
+-- Includes: LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0 = mp.GetParentProcInfo()
 if l_0_0 ~= nil and l_0_0.ppid and IsKeyInRollingQueue("IsProcessChainViaRUNMRU", l_0_0.ppid, true) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

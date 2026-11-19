@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\acb3624edefe\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: acb3624edefe
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
 TrackPidAndTechniqueBM("BM", "T1555.004", "credentialaccess")
 return mp.INFECTED
-

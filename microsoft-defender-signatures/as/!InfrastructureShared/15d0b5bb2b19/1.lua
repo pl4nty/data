@@ -1,13 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\15d0b5bb2b19\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 15d0b5bb2b19
+-- Type: 21
+-- Includes: ResearchData, LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_0 = "󠁎󠁤\144\000"
-if not (mp.get_mpattribute)("Lua:FileExtensionAttr!md") and not (mp.get_mpattribute)("Lua:FileExtensionAttr!mdc") then
+local l_0_0 = "\243\160\129\142\243\160\129\164\144\000"
+if not mp.get_mpattribute("Lua:FileExtensionAttr!md") and not mp.get_mpattribute("Lua:FileExtensionAttr!mdc") then
   return mp.CLEAN
 end
-if not (mp.get_mpattribute)("LUA:FileSizeLE10M.B") then
+if not mp.get_mpattribute("LUA:FileSizeLE10M.B") then
   return mp.CLEAN
 end
 local l_0_1 = CollectXpiaBruteTelemetry(l_0_0)
@@ -16,4 +16,3 @@ if l_0_1 == nil then
 end
 set_research_data("EncodedBytes", l_0_1, false)
 return mp.INFECTED
-

@@ -1,8 +1,8 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\4178f82e327f\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 4178f82e327f
+-- Type: 21
+-- Includes: HstrLuaLib
 
--- params : ...
--- function num : 0
 if not peattributes.isexe and not peattributes.isdll then
   return mp.CLEAN
 end
@@ -10,4 +10,3 @@ if checkIfCertificateHit() then
   return mp.CLEAN
 end
 return mp.INFECTED
-

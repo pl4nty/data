@@ -1,45 +1,65 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaOutlookAndMotw\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:OutlookAndMotw
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_HAS_MOTW_ADS) == false or (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
+if mp.get_contextdata(mp.CONTEXT_DATA_HAS_MOTW_ADS) == false or mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
   return mp.CLEAN
 end
-local l_0_0 = (mp.GetMOTWZone)()
-do
-  if not (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME) then
-    local l_0_1, l_0_2 = l_0_0 == nil or l_0_0 < 3 or ""
-  end
-  -- DECOMPILER ERROR at PC34: Confused about usage of register: R1 in 'UnsetPending'
-
+local l_0_0 = mp.GetMOTWZone()
+if l_0_0 ~= nil and 3 <= l_0_0 then
+  local l_0_1 = mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME) or ""
   if l_0_1:lower() == "outlook.exe" then
-    local l_0_3 = nil
-    local l_0_4 = (mp.get_mpattribute)("Lua:SingleSuspiciousExtensionInZip")
-    local l_0_5 = (mp.get_mpattribute)("Lua:RarHasFileWithExeExtension")
-    local l_0_6 = (mp.get_mpattribute)("Lua:SingleSuspiciousExtensionIn7z")
-    local l_0_7 = (mp.get_mpattribute)("Lua:SingleSuspiciousExtensionInACE")
-    if (mp.getfilesize)() <= 4194304 and (l_0_4 or l_0_5 or l_0_6 or l_0_7) then
-      (mp.set_mpattribute)("MpForceScanArchives")
+    local l_0_2 = mp.get_mpattribute("Lua:SingleSuspiciousExtensionInZip")
+    local l_0_3 = mp.get_mpattribute("Lua:RarHasFileWithExeExtension")
+    local l_0_4 = mp.get_mpattribute("Lua:SingleSuspiciousExtensionIn7z")
+    local l_0_5 = mp.get_mpattribute("Lua:SingleSuspiciousExtensionInACE")
+    local l_0_6 = mp.getfilesize()
+    if l_0_6 <= 4194304 and (l_0_2 or l_0_3 or l_0_4 or l_0_5) then
+      mp.set_mpattribute("MpForceScanArchives")
     end
-    local l_0_8, l_0_9 = , (mp.getfilename)((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
-    local l_0_10 = nil
-    local l_0_11 = ((mp.bitor)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE)):sub(-3)
-    local l_0_12 = l_0_10:sub(-4)
-    local l_0_13 = l_0_10:sub(-5)
-    -- DECOMPILER ERROR at PC129: Confused about usage of register: R12 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC132: Confused about usage of register: R12 in 'UnsetPending'
-
-    if ({[".doc"] = true, [".xls"] = true, [".rtf"] = true, [".docm"] = true, [".xlsm"] = true, [".ppam"] = true, [".pptm"] = true, [".ppsm"] = true, [".potm"] = true, [".jse"] = true, [".vbs"] = true, [".wsf"] = true, [".vbe"] = true, [".hta"] = true, [".js"] = true, [".mht"] = true, [".lnk"] = true, [".bat"] = true, [".ps1"] = true, [".zip"] = true, [".rar"] = true, [".7z"] = true, [".iso"] = true, [".arj"] = true, [".gz"] = true, [".ace"] = true, [".exe"] = true, [".scr"] = true, [".pif"] = true, [".jar"] = true})[l_0_11] == true or ({[".doc"] = true, [".xls"] = true, [".rtf"] = true, [".docm"] = true, [".xlsm"] = true, [".ppam"] = true, [".pptm"] = true, [".ppsm"] = true, [".potm"] = true, [".jse"] = true, [".vbs"] = true, [".wsf"] = true, [".vbe"] = true, [".hta"] = true, [".js"] = true, [".mht"] = true, [".lnk"] = true, [".bat"] = true, [".ps1"] = true, [".zip"] = true, [".rar"] = true, [".7z"] = true, [".iso"] = true, [".arj"] = true, [".gz"] = true, [".ace"] = true, [".exe"] = true, [".scr"] = true, [".pif"] = true, [".jar"] = true})[l_0_12] == true or ({[".doc"] = true, [".xls"] = true, [".rtf"] = true, [".docm"] = true, [".xlsm"] = true, [".ppam"] = true, [".pptm"] = true, [".ppsm"] = true, [".potm"] = true, [".jse"] = true, [".vbs"] = true, [".wsf"] = true, [".vbe"] = true, [".hta"] = true, [".js"] = true, [".mht"] = true, [".lnk"] = true, [".bat"] = true, [".ps1"] = true, [".zip"] = true, [".rar"] = true, [".7z"] = true, [".iso"] = true, [".arj"] = true, [".gz"] = true, [".ace"] = true, [".exe"] = true, [".scr"] = true, [".pif"] = true, [".jar"] = true})[l_0_13] == true then
-      if (l_0_12 == ".doc" or l_0_12 == ".xls") and (mp.get_mpattribute)("MHSTR:MacroInside") ~= true then
+    local l_0_7, l_0_8 = mp.getfilename(mp.bitor(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+    local l_0_9 = l_0_8:sub(-3)
+    local l_0_10 = l_0_8:sub(-4)
+    local l_0_11 = l_0_8:sub(-5)
+    local l_0_12 = {
+      [".doc"] = true,
+      [".xls"] = true,
+      [".rtf"] = true,
+      [".docm"] = true,
+      [".xlsm"] = true,
+      [".ppam"] = true,
+      [".pptm"] = true,
+      [".ppsm"] = true,
+      [".potm"] = true,
+      [".jse"] = true,
+      [".vbs"] = true,
+      [".wsf"] = true,
+      [".vbe"] = true,
+      [".hta"] = true,
+      [".js"] = true,
+      [".mht"] = true,
+      [".lnk"] = true,
+      [".bat"] = true,
+      [".ps1"] = true,
+      [".zip"] = true,
+      [".rar"] = true,
+      [".7z"] = true,
+      [".iso"] = true,
+      [".arj"] = true,
+      [".gz"] = true,
+      [".ace"] = true,
+      [".exe"] = true,
+      [".scr"] = true,
+      [".pif"] = true,
+      [".jar"] = true
+    }
+    if l_0_12[l_0_9] == true or l_0_12[l_0_10] == true or l_0_12[l_0_11] == true then
+      if (l_0_10 == ".doc" or l_0_10 == ".xls") and true ~= mp.get_mpattribute("MHSTR:MacroInside") then
         return mp.CLEAN
       end
       return mp.LOWFI
     end
   end
-  do
-    return mp.CLEAN
-  end
 end
-
+return mp.CLEAN

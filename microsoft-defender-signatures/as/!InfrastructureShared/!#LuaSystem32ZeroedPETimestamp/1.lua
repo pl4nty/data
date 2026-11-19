@@ -1,13 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaSystem32ZeroedPETimestamp\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:System32ZeroedPETimestamp
+-- Type: 9
+-- MpAttributes: !PEPCODE:HasDigitalSignature & !pea_ismsil & !pea_isdriver & !Lua:MUIExt & !pea_no_code & !BM_EFI_BOOT_SERVICE_DRIVER & !BM_EFI_RUNTIME_DRIVER & !BM_EFI_APPLICATION & !BM_EFI_ROM
 
--- params : ...
--- function num : 0
 if pehdr.TimeDateStamp == 0 then
-  local l_0_0 = (mp.getfilesize)()
+  local l_0_0 = mp.getfilesize()
   if l_0_0 < 3000000 then
-    local l_0_1 = (mp.getfilename)(mp.FILEPATH_QUERY_FULL)
-    l_0_1 = (string.lower)((MpCommon.PathToWin32Path)(l_0_1))
+    local l_0_1 = mp.getfilename(mp.FILEPATH_QUERY_FULL)
+    l_0_1 = string.lower(MpCommon.PathToWin32Path(l_0_1))
     if l_0_1 ~= nil and l_0_1:find("c:\\windows\\system32\\", 1, true) then
       if l_0_1:find("\\driverstore\\filerepository\\", 1, true) then
         return mp.CLEAN
@@ -19,7 +19,4 @@ if pehdr.TimeDateStamp == 0 then
     end
   end
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

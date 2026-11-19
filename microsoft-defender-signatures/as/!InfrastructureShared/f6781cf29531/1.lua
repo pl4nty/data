@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: f6781cf29531
+-- Type: 21
+
+if mp.get_mpattribute("pea_no_security") and mp.getfilesize() < 167936 then
+  return mp.INFECTED
+end
+return mp.CLEAN

@@ -1,13 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaMsBuildSuspiciousC\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:MsBuildSuspicious.C
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & (SLF:MsBuildInlineTsk | SLF:MsBuildInlineTsk.B | SLF:MsBuildInlineTsk.C)
 
--- params : ...
--- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
+if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONOPEN then
   return mp.CLEAN
 end
-if (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) ~= "msbuild.exe" then
+local l_0_0 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME))
+if l_0_0 ~= "msbuild.exe" then
   return mp.CLEAN
 end
 return mp.INFECTED
-

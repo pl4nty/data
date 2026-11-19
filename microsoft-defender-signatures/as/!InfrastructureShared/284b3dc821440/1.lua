@@ -1,42 +1,25 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\284b3dc821440\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 284b3dc821440
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[3]).matched or (this_sigattrlog[4]).matched then
-      local l_0_1 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[3]).utf8p1)
-    else
-    end
-    -- DECOMPILER ERROR at PC63: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if not (this_sigattrlog[5]).matched or (this_sigattrlog[6]).matched then
-        local l_0_2, l_0_3, l_0_4, l_0_5, l_0_6, l_0_7, l_0_8 = (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[5]).utf8p1)
-      else
-      end
-      -- DECOMPILER ERROR at PC81: Confused about usage of register: R0 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC87: Confused about usage of register: R0 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC95: Confused about usage of register: R0 in 'UnsetPending'
-
-      if (not (this_sigattrlog[7]).matched or (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[7]).utf8p1) ~= nil) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[7]).utf8p1)) and (mp.IsKnownFriendlyFile)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[7]).utf8p1), false, false) == false then
-        (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[7]).utf8p1))
-        add_parents()
-        return mp.INFECTED
-      end
-      return mp.CLEAN
-    end
-  end
+local l_0_0
+if this_sigattrlog[2].matched then
+  l_0_0 = mp.ContextualExpandEnvironmentVariables(this_sigattrlog[2].utf8p1)
+elseif this_sigattrlog[3].matched then
+  l_0_0 = mp.ContextualExpandEnvironmentVariables(this_sigattrlog[3].utf8p1)
+elseif this_sigattrlog[4].matched then
+  l_0_0 = mp.ContextualExpandEnvironmentVariables(this_sigattrlog[4].utf8p1)
+elseif this_sigattrlog[5].matched then
+  l_0_0 = mp.ContextualExpandEnvironmentVariables(this_sigattrlog[5].utf8p1)
+elseif this_sigattrlog[6].matched then
+  l_0_0 = mp.ContextualExpandEnvironmentVariables(this_sigattrlog[6].utf8p1)
+elseif this_sigattrlog[7].matched then
+  l_0_0 = mp.ContextualExpandEnvironmentVariables(this_sigattrlog[7].utf8p1)
 end
-
+if l_0_0 ~= nil and sysio.IsFileExists(l_0_0) and mp.IsKnownFriendlyFile(l_0_0, false, false) == false then
+  bm.add_related_file(l_0_0)
+  add_parents()
+  return mp.INFECTED
+end
+return mp.CLEAN

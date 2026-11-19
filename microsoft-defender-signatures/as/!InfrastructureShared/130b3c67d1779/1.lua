@@ -1,150 +1,103 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\130b3c67d1779\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 130b3c67d1779
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-IsArrayMember = function(l_1_0, l_1_1)
-  -- function num : 0_0
+function IsArrayMember(l_1_0, l_1_1)
   if l_1_1 == nil then
     return false
   end
   if #l_1_0 <= 0 then
     return false
   end
-  for l_1_5 = 1, #l_1_0 do
-    if l_1_0[l_1_5] == l_1_1 then
+  for l_1_2 = 1, #l_1_0 do
+    if l_1_0[l_1_2] == l_1_1 then
       return true
     end
   end
   return false
 end
 
-local l_0_0 = nil
-if (this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2 ~= nil then
-  l_0_0 = (string.lower)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[5]).utf8p2))
+local l_0_0
+if this_sigattrlog[5].matched and this_sigattrlog[5].utf8p2 ~= nil then
+  l_0_0 = string.lower(mp.ContextualExpandEnvironmentVariables(this_sigattrlog[5].utf8p2))
 else
   return mp.CLEAN
 end
-local l_0_1 = {}
--- DECOMPILER ERROR at PC48: No list found for R1 , SetList fails
-
--- DECOMPILER ERROR at PC49: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC50: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC51: Overwrote pending register: R4 in 'AssignReg'
-
-if ("winword.exe")("mspub.exe", "excel.exe") then
+local l_0_1 = {
+  "winword.exe",
+  "mspub.exe",
+  "excel.exe",
+  "powerpnt.exe",
+  "powershell.exe",
+  "cscript.exe",
+  "wscript.exe",
+  "iexplore.exe",
+  "microsoftedge.exe",
+  "microsoftedgecp.exe",
+  "chrome.exe",
+  "firefox.exe",
+  "python.exe",
+  "rundll32.exe",
+  "regsvr32.exe",
+  "psexesvc.exe",
+  "psexec.exe",
+  "services.exe",
+  "wininit.exe",
+  "wmic.exe"
+}
+if IsProcNameInParentProcessTree("BM", l_0_1) then
   return mp.INFECTED
 end
 local l_0_2 = {}
 local l_0_3 = 0
 local l_0_4 = 0
--- DECOMPILER ERROR at PC61: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC63: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC64: Overwrote pending register: R7 in 'AssignReg'
-
-for l_0_8 in (("powerpnt.exe").gmatch)("powershell.exe", "cscript.exe") do
-  -- DECOMPILER ERROR at PC68: Overwrote pending register: R9 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC70: Overwrote pending register: R10 in 'AssignReg'
-
-  (("iexplore.exe").insert)("microsoftedge.exe", {})
-  for l_0_12 in (string.gmatch)(l_0_8, "%S+") do
-    -- DECOMPILER ERROR at PC80: Overwrote pending register: R4 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC81: Overwrote pending register: R13 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC82: Overwrote pending register: R14 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC84: Overwrote pending register: R15 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC86: Confused about usage of register: R13 in 'UnsetPending'
-
+for l_0_5 in string.gmatch(l_0_0, "[^&]+") do
+  l_0_3 = l_0_3 + 1
+  table.insert(l_0_2, {})
+  l_0_4 = 0
+  for l_0_6 in string.gmatch(l_0_5, "%S+") do
+    l_0_4 = l_0_4 + 1
+    l_0_2[l_0_3][l_0_4] = string.lower(l_0_6)
   end
 end
-local l_0_13 = {}
-do
-  local l_0_14 = 0
-  for l_0_18 = 1, #l_0_2 do
-    local l_0_19 = 0
-    for l_0_23 = 1, #l_0_2[l_0_18] do
-      -- DECOMPILER ERROR at PC107: Overwrote pending register: R16 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC109: Overwrote pending register: R17 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC111: Overwrote pending register: R18 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC137: Overwrote pending register: R11 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC145: Overwrote pending register: R11 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC155: Overwrote pending register: R19 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC159: Overwrote pending register: R11 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC171: Overwrote pending register: R11 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC172: Overwrote pending register: R6 in 'AssignReg'
-
-      do
-        -- DECOMPILER ERROR at PC175: Unhandled construct in 'MakeBoolean' P3
-
-        -- DECOMPILER ERROR at PC175: Unhandled construct in 'MakeBoolean' P3
-
-        -- DECOMPILER ERROR at PC175: Unhandled construct in 'MakeBoolean' P3
-
-        if l_0_14 == 0 and (l_0_19 ~= 0 or ((((((((("regsvr32.exe").sub)(("psexesvc.exe")[l_0_23], "psexec.exe") ~= "bitsadmin" and (string.sub)((l_0_2[l_0_18])[l_0_23], -13) ~= "bitsadmin.exe") or l_0_19 == 1000) and (l_0_2[l_0_18])[l_0_23] == "/transfer") or l_0_19 == 1000) and l_0_19 ~= 2000) or l_0_19 == 2000) and l_0_19 ~= 3000) or (string.match)((l_0_2[l_0_18])[l_0_23], "\\\\[^ ]\\C$[^ ]* [^ ]+") ~= nil) then
-          local l_0_24 = #l_0_13 + 1
-        end
-        -- DECOMPILER ERROR at PC188: Overwrote pending register: R11 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC242: Overwrote pending register: R11 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC243: Overwrote pending register: R6 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC264: Overwrote pending register: R11 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC285: Overwrote pending register: R11 in 'AssignReg'
-
-        do
-          do
-            -- DECOMPILER ERROR at PC288: Unhandled construct in 'MakeBoolean' P3
-
-            -- DECOMPILER ERROR at PC288: Unhandled construct in 'MakeBoolean' P3
-
-            -- DECOMPILER ERROR at PC288: Unhandled construct in 'MakeBoolean' P3
-
-            -- DECOMPILER ERROR at PC288: Unhandled construct in 'MakeBoolean' P3
-
-            -- DECOMPILER ERROR at PC288: Unhandled construct in 'MakeBoolean' P3
-
-            -- DECOMPILER ERROR at PC288: Unhandled construct in 'MakeBoolean' P3
-
-            -- DECOMPILER ERROR at PC288: Unhandled construct in 'MakeBoolean' P3
-
-            -- DECOMPILER ERROR at PC288: Unhandled construct in 'MakeBoolean' P3
-
-            -- DECOMPILER ERROR at PC288: Unhandled construct in 'MakeBoolean' P3
-
-            if (((((l_0_19 ~= 0 or l_0_23 ~= 1 or (l_0_2[l_0_18])[l_0_23] ~= "start" or l_0_19 == 1000) and (string.sub)((l_0_2[l_0_18])[l_0_23], -4) == ".exe") or l_0_19 == 0) and l_0_19 ~= 0) or l_0_19 == 2000) and l_0_23 > 1 and (string.match)((l_0_2[l_0_18])[l_0_23], "\\\\[^ ]\\C$[^ ]* [^ ]+") ~= nil and IsArrayMember(l_0_13, (l_0_2[l_0_18])[l_0_23]) == false then
-              local l_0_25 = #l_0_13 + 1
-            end
-            if l_0_14 == 9999 then
-              return mp.INFECTED
-            end
-            -- DECOMPILER ERROR at PC296: LeaveBlock: unexpected jumping out DO_STMT
-
-            -- DECOMPILER ERROR at PC296: LeaveBlock: unexpected jumping out DO_STMT
-
-          end
-        end
+local l_0_7 = {}
+local l_0_8 = 0
+for l_0_9 = 1, #l_0_2 do
+  local l_0_10 = 0
+  for l_0_11 = 1, #l_0_2[l_0_9] do
+    if l_0_8 == 0 then
+      if l_0_10 == 0 and (string.sub(l_0_2[l_0_9][l_0_11], -9) == "bitsadmin" or string.sub(l_0_2[l_0_9][l_0_11], -13) == "bitsadmin.exe") then
+        l_0_10 = 1000
+      elseif l_0_10 == 1000 and l_0_2[l_0_9][l_0_11] == "/transfer" or l_0_10 == 1000 and l_0_2[l_0_9][l_0_11] == "/addfile" then
+        l_0_10 = 2000
+      elseif l_0_10 == 2000 and l_0_2[l_0_9][l_0_11] == "/upload" then
+        l_0_10 = -1
+        l_0_8 = -1
+      elseif l_0_10 == 2000 and string.sub(l_0_2[l_0_9][l_0_11], 1, 4) == "http" then
+        l_0_10 = 3000
+      elseif l_0_10 == 3000 and string.match(l_0_2[l_0_9][l_0_11], "\\\\[^ ]\\C$[^ ]* [^ ]+") ~= nil then
+        l_0_10 = 4000
+        l_0_8 = 1
+        l_0_7[#l_0_7 + 1] = l_0_2[l_0_9][l_0_11]
       end
     end
+    if l_0_8 == 1 then
+      if l_0_10 == 0 and l_0_11 == 1 and l_0_2[l_0_9][l_0_11] == "start" then
+        l_0_10 = 1000
+      elseif l_0_10 == 1000 and string.match(l_0_2[l_0_9][l_0_11], "\\\\[^ ]\\C$[^ ]* [^ ]+") ~= nil and IsArrayMember(l_0_7, l_0_2[l_0_9][l_0_11]) == true and string.sub(l_0_2[l_0_9][l_0_11], -4) == ".exe" or l_0_10 == 0 and l_0_11 == 1 and string.match(l_0_2[l_0_9][l_0_11], "\\\\[^ ]\\C$[^ ]* [^ ]+") ~= nil and IsArrayMember(l_0_7, l_0_2[l_0_9][l_0_11]) == true and string.sub(l_0_2[l_0_9][l_0_11], -4) == ".exe" then
+        l_0_10 = 9999
+        l_0_8 = 9999
+      elseif l_0_10 == 0 and 1 < l_0_11 and string.match(l_0_2[l_0_9][l_0_11], "\\\\[^ ]\\C$[^ ]* [^ ]+") ~= nil and IsArrayMember(l_0_7, l_0_2[l_0_9][l_0_11]) == true then
+        l_0_10 = 2000
+      elseif l_0_10 == 2000 and 1 < l_0_11 and string.match(l_0_2[l_0_9][l_0_11], "\\\\[^ ]\\C$[^ ]* [^ ]+") ~= nil and IsArrayMember(l_0_7, l_0_2[l_0_9][l_0_11]) == false then
+        l_0_10 = 3000
+        l_0_7[#l_0_7 + 1] = l_0_2[l_0_9][l_0_11]
+      end
+    end
+    if l_0_8 == 9999 then
+      return mp.INFECTED
+    end
   end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
 end
-
+return mp.CLEAN

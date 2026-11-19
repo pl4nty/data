@@ -17,8 +17,8 @@
   RootModule = 'HP.Sinks.psm1'
 
   # Version number of this module.
-  #FullModuleVersion = '1.9.0.1648'
-  ModuleVersion = '1.9.0'
+  #FullModuleVersion = '1.9.1.1687'
+  ModuleVersion = '1.9.1'
 
   # ID used to uniquely identify this module
   GUID = '6c52dac6-35ee-4c4b-b0f1-a9dba3df70d8'

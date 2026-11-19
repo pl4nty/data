@@ -12,8 +12,8 @@
 @{
 
   RootModule = 'HP.Notifications.psm1'
-  #FullModuleVersion = '1.9.0.1648'
-  ModuleVersion = '1.9.0'
+  #FullModuleVersion = '1.9.1.1687'
+  ModuleVersion = '1.9.1'
   GUID = 'b066583c-1b04-40d7-86a6-196dfd22dfbb'
   Author = 'HP Development Company, L.P.'
   CompanyName = 'HP Inc'

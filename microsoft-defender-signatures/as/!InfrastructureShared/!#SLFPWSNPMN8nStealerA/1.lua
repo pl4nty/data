@@ -1,42 +1,42 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFPWSNPMN8nStealerA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:PWS:NPM/N8nStealer.A
+-- Type: 13
+-- MpAttributes: SCPT:NpmJS & (SCPT:NpmY_Imds_Aws | SCPT:NpmY_Imds_Gcp | SCPT:NpmY_Imds_Ecs) & SCPT:NpmY_DevNullSuppress
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 30720 then
+local l_0_0 = mp.getfilesize()
+if 30720 < l_0_0 then
   return mp.CLEAN
 end
 local l_0_1 = 0
-local l_0_2 = {}
--- DECOMPILER ERROR at PC14: No list found for R2 , SetList fails
-
--- DECOMPILER ERROR at PC15: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC16: Overwrote pending register: R4 in 'AssignReg'
-
-for l_0_6,l_0_7 in ("SCPT:NpmY_N8n_Db")("SCPT:NpmY_N8n_CredEntity") do
+local l_0_2 = {
+  "SCPT:NpmY_N8n_Db",
+  "SCPT:NpmY_N8n_CredEntity",
+  "SCPT:NpmY_N8n_EncKey",
+  "SCPT:NpmY_N8n_Config"
+}
+for l_0_3, l_0_4 in ipairs(l_0_2) do
+  if mp.get_mpattribute(l_0_4) then
+    l_0_1 = l_0_1 + 1
+  end
 end
-if not (mp.get_mpattribute)(l_0_7) or l_0_1 < 2 then
+if l_0_1 < 2 then
   return mp.CLEAN
 end
-local l_0_8 = 0
-do
-  local l_0_9 = {}
-  -- DECOMPILER ERROR at PC41: No list found for R4 , SetList fails
-
-  -- DECOMPILER ERROR at PC42: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC43: Overwrote pending register: R6 in 'AssignReg'
-
-  for l_0_13,l_0_14 in ("SCPT:NPMCreds_Cred_AwsCred")("SCPT:NPMCreds_Cred_SshIdrsa") do
-    -- DECOMPILER ERROR at PC46: Overwrote pending register: R10 in 'AssignReg'
-
+local l_0_5 = 0
+local l_0_6 = {
+  "SCPT:NPMCreds_Cred_AwsCred",
+  "SCPT:NPMCreds_Cred_SshIdrsa",
+  "SCPT:NpmY_CredPath_SaToken",
+  "SCPT:NPMCreds_Cred_DockerConfig",
+  "SCPT:NPMCreds_Cred_SshIdEd25519",
+  "SCPT:NpmY_Collect_Npmrc"
+}
+for l_0_7, l_0_8 in ipairs(l_0_6) do
+  if mp.get_mpattribute(l_0_8) then
+    l_0_5 = l_0_5 + 1
   end
-  if not (("SCPT:NpmY_Collect_Npmrc").get_mpattribute)(l_0_14) or l_0_8 < 2 then
-    return mp.CLEAN
-  end
-  do return mp.INFECTED end
-  -- WARNING: undefined locals caused missing assignments!
 end
-
+if l_0_5 < 2 then
+  return mp.CLEAN
+end
+return mp.INFECTED

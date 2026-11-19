@@ -1,21 +1,19 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\192b381eb5b85\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 192b381eb5b85
+-- Type: 21
+-- Includes: TechniqueTracker, BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  local l_0_2 = nil
-  if contains(l_0_2, {"program files"}) then
-    return mp.CLEAN
-  end
-  TrackPidAndTechniqueBM("BM", "T1048", "Exfiltration_Archive")
-  addOverallNetworkVolume()
-  reportSessionInformation()
-  return mp.INFECTED
+local l_0_0
+if this_sigattrlog[7].matched and this_sigattrlog[7].utf8p1 ~= nil then
+  l_0_0 = this_sigattrlog[7].utf8p1
 end
-
+local l_0_1 = {
+  "program files"
+}
+if contains(l_0_0, l_0_1) then
+  return mp.CLEAN
+end
+TrackPidAndTechniqueBM("BM", "T1048", "Exfiltration_Archive")
+addOverallNetworkVolume()
+reportSessionInformation()
+return mp.INFECTED

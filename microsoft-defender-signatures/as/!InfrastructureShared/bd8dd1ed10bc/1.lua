@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: bd8dd1ed10bc
+-- Type: 21
+
+if mp.HSTR_WEIGHT >= 4 then
+  mp.set_mpattribute("PUA:Block:TuneupMyMac.C")
+  return mp.INFECTED
+end
+return mp.LOWFI

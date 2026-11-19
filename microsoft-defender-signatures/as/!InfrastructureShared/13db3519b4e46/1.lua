@@ -1,12 +1,12 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\13db3519b4e46\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 13db3519b4e46
+-- Type: 21
+-- Includes: TechniqueTracker, BMLuaLib
 
--- params : ...
--- function num : 0
-if (mp.IsHipsRuleEnabled)("c1db55ab-c21a-4637-bb3f-a12568109d35") then
-  local l_0_0 = (bm.get_current_process_startup_info)()
+if mp.IsHipsRuleEnabled("c1db55ab-c21a-4637-bb3f-a12568109d35") then
+  local l_0_0 = bm.get_current_process_startup_info()
   if l_0_0 ~= nil and l_0_0.command_line ~= nil then
-    local l_0_1 = (string.lower)(l_0_0.command_line)
+    local l_0_1 = string.lower(l_0_0.command_line)
     if l_0_1:match("\\ltsvc.exe") then
       return mp.CLEAN
     end
@@ -20,7 +20,4 @@ if (mp.IsHipsRuleEnabled)("c1db55ab-c21a-4637-bb3f-a12568109d35") then
     TrackPidAndTechniqueBM("BM", "T1561.002", "folderguard_blk_rsm")
   end
 end
-do
-  return mp.INFECTED
-end
-
+return mp.INFECTED

@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaPDFMPAttributeML!Func\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:PDFMPAttributeML!Func
+-- Type: 13
+-- MpAttributes: BM_PDF_FILE
 
--- params : ...
--- function num : 0
-(mp.set_mpattribute)("Lua:PDFMPAttributeML")
+mp.set_mpattribute("Lua:PDFMPAttributeML")
 return mp.CLEAN
-

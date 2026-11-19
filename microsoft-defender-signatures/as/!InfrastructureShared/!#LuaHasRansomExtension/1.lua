@@ -1,0 +1,87 @@
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:HasRansomExtension
+-- Type: 12
+
+local l_0_0 = mp.getfilename()
+if not l_0_0 or l_0_0 == "" then
+  return mp.CLEAN
+end
+l_0_0 = l_0_0:lower()
+l_0_0 = l_0_0:match("([^%\\]+)$")
+if not l_0_0 or l_0_0 == "" then
+  return mp.CLEAN
+end
+local l_0_1 = l_0_0:match("%.[^%.]+(%.[^%.]+)$")
+l_0_1 = l_0_1 == nil and "" or l_0_1
+if l_0_1 ~= "" then
+  local l_0_2 = {
+    ["._locked"] = true,
+    [".akira"] = true,
+    [".basta"] = true,
+    [".blackbyte"] = true,
+    [".blacksuit"] = true,
+    [".cerber"] = true,
+    [".cerber2"] = true,
+    [".cerber3"] = true,
+    [".cryptolocker"] = true,
+    [".coaq"] = true,
+    [".cosakos"] = true,
+    [".cuba"] = true,
+    [".cymcrypt"] = true,
+    [".dark_power"] = true,
+    [".devil"] = true,
+    [".dharma"] = true,
+    [".eight"] = true,
+    [".encryptedyourfiles"] = true,
+    [".enigma"] = true,
+    [".everest"] = true,
+    [".fargo"] = true,
+    [".foty"] = true,
+    [".fs0ciety"] = true,
+    [".gatz"] = true,
+    [".gazprom"] = true,
+    [".hack0"] = true,
+    [".itlock3"] = true,
+    [".itlock4"] = true,
+    [".jyos"] = true,
+    [".karma"] = true,
+    [".kigatsu"] = true,
+    [".kitz"] = true,
+    [".l0cked"] = true,
+    [".lockbit"] = true,
+    [".locky"] = true,
+    [".mallox"] = true,
+    [".malox"] = true,
+    [".medusa"] = true,
+    [".met@n"] = true,
+    [".neqp"] = true,
+    [".niwm"] = true,
+    [".nokonoko"] = true,
+    [".nokoyawa"] = true,
+    [".pandora"] = true,
+    [".play"] = true,
+    [".proton"] = true,
+    [".qotr"] = true,
+    [".quantum"] = true,
+    [".ranzylocked"] = true,
+    [".rook"] = true,
+    [".royal"] = true,
+    [".royal_w"] = true,
+    [".rsnslocked"] = true,
+    [".shino"] = true,
+    [".thor"] = true,
+    [".tury"] = true,
+    [".venus"] = true,
+    [".v-society"] = true,
+    [".weon"] = true,
+    [".wikon"] = true,
+    [".wncry"] = true,
+    [".wncryt"] = true,
+    [".zatp"] = true,
+    [".zepto"] = true
+  }
+  if l_0_2[l_0_1] then
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN

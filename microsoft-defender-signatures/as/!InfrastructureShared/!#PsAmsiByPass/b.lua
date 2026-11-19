@@ -1,17 +1,15 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#PsAmsiByPass\b.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#PsAmsiByPass
+-- Type: 13
+-- Includes: TechniqueTracker
+-- MpAttributes: TEL:SCPT:LoadLib & MpIsPowerShellAMSIScan
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_AMSI_OPERATION_PPID)
+local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_AMSI_OPERATION_PPID)
 if l_0_0 ~= nil then
   AddTacticForPid(l_0_0, "PS_LoadLib", 3600)
   local l_0_1 = GetTacticsTableForPid(l_0_0)
   if l_0_1 ~= nil and l_0_1.PS_LoadLib and l_0_1.PS_DllImport and l_0_1.PS_GetProc and l_0_1.PS_VirtualProt and l_0_1.PS_Patch then
-    (mp.set_mpattribute)("PS_AmsiBypass")
+    mp.set_mpattribute("PS_AmsiBypass")
   end
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

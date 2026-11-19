@@ -1,14 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\35b30c9a8f8d\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 35b30c9a8f8d
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
 if IsLegacyOrgMachine() then
   return mp.CLEAN
 end
-local l_0_0 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  l_0_0 = (this_sigattrlog[1]).utf8p2
+local l_0_0
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[1].utf8p2
 end
 if l_0_0 == nil then
   return mp.CLEAN
@@ -17,4 +17,3 @@ if IsProcNameInParentProcessTree("BM", "winword.exe") then
   return mp.INFECTED
 end
 return mp.CLEAN
-

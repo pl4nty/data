@@ -1,54 +1,63 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFLinuxFileChangeInWorldWritablePath\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Linux/FileChangeInWorldWritablePath
+-- Type: 12
+-- MpAttributes: RPF:TopLevelFile & (BM_ELF_FILE | BM_PY_FILE | Lua:PYExt | Lua:PHPExt | BM_PHP_FILE | Lua:SHExt | BM_SH_FILE | Lua:SCPTExt)
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
 if l_0_0 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
   return mp.CLEAN
 end
-local l_0_1 = (mp.getfilesize)()
-if l_0_1 == nil or l_0_1 > 10485760 then
+local l_0_1 = mp.getfilesize()
+if l_0_1 == nil or 10485760 < l_0_1 then
   return mp.CLEAN
 end
-local l_0_2 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_2 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
 if l_0_2 == nil or #l_0_2 < 4 then
   return mp.CLEAN
 end
-local l_0_3 = {}
--- DECOMPILER ERROR at PC68: No list found for R3 , SetList fails
-
--- DECOMPILER ERROR at PC69: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC70: Overwrote pending register: R5 in 'AssignReg'
-
-for l_0_7,l_0_8 in ("/var/tmp/mkinitramfs")("/ansible") do
-  -- DECOMPILER ERROR at PC73: Overwrote pending register: R9 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC75: Overwrote pending register: R10 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC76: Overwrote pending register: R11 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC77: Overwrote pending register: R12 in 'AssignReg'
-
-  if (("-salt-").find)("/tmp/go-build", "/var/intel", "/var/cache", true) then
+local l_0_3 = {
+  "/var/tmp/mkinitramfs",
+  "/ansible",
+  "/snap/",
+  "/splunkd/",
+  "/oracle/",
+  "-salt-",
+  "/tmp/go-build",
+  "/var/intel",
+  "/var/cache",
+  "/var/arcticwolfnetworks",
+  "/jenkins",
+  "/filebeat",
+  ".kubectl",
+  "clamav-",
+  ".tivoli",
+  "containerd-shim",
+  "docker-",
+  "influx_",
+  "influxd",
+  "terraform-",
+  "zscaler-",
+  "/tmp/apt-key-gpg",
+  "/var/tmp/dracut",
+  "common-setup-and-utils-script.sh",
+  "mdatp-edr-mitre-setup.sh",
+  "mdatp-epp-mitre-setup.sh",
+  "amazon-ssm-agent"
+}
+for l_0_4, l_0_5 in ipairs(l_0_3) do
+  if string.find(l_0_2, l_0_5, 1, true) then
     return mp.CLEAN
   end
 end
-do
-  local l_0_9 = {}
-  -- DECOMPILER ERROR at PC92: No list found for R4 , SetList fails
-
-  -- DECOMPILER ERROR at PC93: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC94: Overwrote pending register: R6 in 'AssignReg'
-
-  for l_0_13,l_0_14 in ("/var/tmp/")("/tmp/") do
-    if l_0_2:sub(1, #l_0_14) == l_0_14 then
-      return mp.INFECTED
-    end
+local l_0_6 = {
+  "/var/tmp/",
+  "/tmp/",
+  "/dev/shm/",
+  "/root/"
+}
+for l_0_7, l_0_8 in ipairs(l_0_6) do
+  if l_0_2:sub(1, #l_0_8) == l_0_8 then
+    return mp.INFECTED
   end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
 end
-
+return mp.CLEAN

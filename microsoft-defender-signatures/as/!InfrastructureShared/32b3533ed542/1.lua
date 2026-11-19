@@ -1,76 +1,60 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\32b3533ed542\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 32b3533ed542
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = nil
-local l_0_2 = nil
-local l_0_3 = nil
-local l_0_4 = 1
-local l_0_5 = 10
-local l_0_6 = 20
-local l_0_7, l_0_8, l_0_9, l_0_10, l_0_11, l_0_12, l_0_13 = 100, "Scan_", nil, nil, nil, nil, nil
-local l_0_1 = nil
-if l_0_10 == nil or l_0_10 == "" or l_0_11 == nil or l_0_11 == "" then
+local l_0_0, l_0_1
+local l_0_2 = 1
+local l_0_3 = 10
+local l_0_4 = 20
+local l_0_5 = 100
+local l_0_6 = "Scan_"
+local l_0_7, l_0_8, l_0_9, l_0_10, l_0_11, l_0_12, l_0_13
+l_0_1 = this_sigattrlog[1].utf8p2
+l_0_8 = string.match(l_0_1, "DestIp=([^;]*);")
+l_0_9 = string.match(l_0_1, "DestPort=([^;]*);")
+if l_0_8 == nil or l_0_8 == "" or l_0_9 == nil or l_0_9 == "" then
   return mp.CLEAN
 end
-local l_0_14 = nil
-if (bm.get_current_process_startup_info)() and ((bm.get_current_process_startup_info)()).ppid then
-  l_0_2 = ((bm.get_current_process_startup_info)()).ppid
+local l_0_14 = bm.get_current_process_startup_info()
+if l_0_14 and l_0_14.ppid then
+  l_0_0 = l_0_14.ppid
 else
   return mp.CLEAN
 end
-l_0_9 = l_0_8 .. l_0_2
-l_0_12 = pcall(MpCommon.RollingQueueCreate, l_0_9, l_0_7, l_0_4)
-if not l_0_12 then
+l_0_7 = l_0_6 .. l_0_0
+l_0_10, l_0_11 = pcall(MpCommon.RollingQueueCreate, l_0_7, l_0_5, l_0_2)
+if not l_0_10 then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC68: Overwrote pending register: R11 in 'AssignReg'
-
-l_0_12 = pcall(MpCommon.RollingQueueQueryMultiKey, l_0_9, l_0_10)
-if not l_0_12 then
+l_0_10, l_0_11 = pcall(MpCommon.RollingQueueQueryMultiKey, l_0_7, l_0_8)
+if not l_0_10 then
   return mp.CLEAN
 end
-if l_0_13 and type(l_0_13) == "table" then
-  for l_0_18,l_0_19 in pairs(l_0_13) do
-    local l_0_15 = nil
-    -- DECOMPILER ERROR at PC86: Confused about usage of register: R19 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC88: Confused about usage of register: R19 in 'UnsetPending'
-
-    if l_0_4 and l_0_4.value == l_0_11 then
+if l_0_11 and type(l_0_11) == "table" then
+  for l_0_15, l_0_16 in pairs(l_0_11) do
+    if l_0_16 and l_0_16.value == l_0_9 then
       return mp.CLEAN
     end
   end
 end
-do
-  -- DECOMPILER ERROR at PC104: Overwrote pending register: R11 in 'AssignReg'
-
-  l_0_12 = pcall(MpCommon.RollingQueueAppend, l_0_9, l_0_10, l_0_11, l_0_4)
-  if not l_0_12 then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC116: Overwrote pending register: R11 in 'AssignReg'
-
-  l_0_12 = pcall(MpCommon.RollingQueueCountOfUniqueKeys, l_0_9)
-  if not l_0_12 then
-    return mp.CLEAN
-  end
-  l_0_1 = l_0_13
-  -- DECOMPILER ERROR at PC129: Overwrote pending register: R11 in 'AssignReg'
-
-  l_0_12 = pcall(MpCommon.RollingQueueCount, l_0_9)
-  if not l_0_12 then
-    return mp.CLEAN
-  end
-  l_0_14 = l_0_13 / l_0_1
-  if l_0_5 < l_0_1 or l_0_6 < l_0_14 then
-    TrackPidAndTechniqueBM(l_0_2, "T1046", "Discovery_NetworkScanning")
-    -- DECOMPILER ERROR at PC151: Overwrote pending register: R11 in 'AssignReg'
-
-    l_0_12 = pcall(MpCommon.RollingQueueErase, l_0_9)
-    return mp.INFECTED
-  end
+l_0_10, l_0_11 = pcall(MpCommon.RollingQueueAppend, l_0_7, l_0_8, l_0_9, l_0_2)
+if not l_0_10 then
   return mp.CLEAN
 end
-
+l_0_10, l_0_11 = pcall(MpCommon.RollingQueueCountOfUniqueKeys, l_0_7)
+if not l_0_10 then
+  return mp.CLEAN
+end
+l_0_12 = l_0_11
+l_0_10, l_0_11 = pcall(MpCommon.RollingQueueCount, l_0_7)
+if not l_0_10 then
+  return mp.CLEAN
+end
+l_0_13 = l_0_11 / l_0_12
+if l_0_3 < l_0_12 or l_0_4 < l_0_13 then
+  TrackPidAndTechniqueBM(l_0_0, "T1046", "Discovery_NetworkScanning")
+  l_0_10, l_0_11 = pcall(MpCommon.RollingQueueErase, l_0_7)
+  return mp.INFECTED
+end
+return mp.CLEAN

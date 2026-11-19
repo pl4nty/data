@@ -1,46 +1,53 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFAnomalyTableTelemetry\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:AnomalyTableTelemetry
+-- Type: 24
+-- Includes: LuaFuncHelper, ResearchData
+-- MpAttributes: /AnomalyTableTelemetry
 
--- params : ...
--- function num : 0
-if (mp.GetResmgrBasePlugin)() ~= "Regkeyvalue" then
+if mp.GetResmgrBasePlugin() ~= "Regkeyvalue" then
   return mp.CLEAN
 end
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_FILEPATH)
+local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_FILEPATH)
 if not l_0_0 then
   return mp.CLEAN
 end
-local l_0_1 = {}
--- DECOMPILER ERROR at PC45: No list found for R1 , SetList fails
-
--- DECOMPILER ERROR at PC46: Overwrote pending register: R2 in 'AssignReg'
-
-do
-  local l_0_2 = "Appomaly_ChildProcName"
-  -- DECOMPILER ERROR at PC47: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC48: Overwrote pending register: R4 in 'AssignReg'
-
-  for l_0_6,l_0_7 in ("Appomaly_ChildProcPriv")("Appomaly_ParentProcName") do
-    -- DECOMPILER ERROR at PC51: Overwrote pending register: R8 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC53: Overwrote pending register: R9 in 'AssignReg'
-
-    local l_0_8 = (("Appomaly_ChildProcName_CmdLine").AnomalyTableLookup)("Appomaly_Global_CmdLine")
-    -- DECOMPILER ERROR at PC62: Overwrote pending register: R10 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC63: Overwrote pending register: R11 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC65: Overwrote pending register: R12 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC66: Overwrote pending register: R13 in 'AssignReg'
-
-    if l_0_8 then
-      set_research_data("Appomaly_ChildProcName_CmdLine_Base64", (("Appomaly_File_Directory").Base64Encode)(("Appomaly_File_Name")("Appomaly_File_Extension")), false)
-    end
+local l_0_1 = {
+  "Appomaly_ChildProcName",
+  "Appomaly_ChildProcPriv",
+  "Appomaly_ParentProcName",
+  "Appomaly_ChildProcDir",
+  "Appomaly_ChildProcName_Server",
+  "Appomaly_LoadedDlls_VersionInfo",
+  "Appomaly_ChildProcName_CmdLine",
+  "Appomaly_Global_CmdLine",
+  "Appomaly_ChildProcName_CmdLine_Base64",
+  "Appomaly_File_Directory",
+  "Appomaly_File_Name",
+  "Appomaly_File_Extension",
+  "Appomaly_Network_HOST_Global",
+  "Appomaly_Network_HOST",
+  "Appomaly_Network_UserAgent",
+  "Appomaly_LoadedDlls_Path",
+  "ShellCodeFileName",
+  "Svchost_ChildProcs",
+  "powtrack",
+  "Svchost_ChildProcs",
+  "ImphashTableNew",
+  "ImphashTableNewBloom",
+  "AnomalyTencode2",
+  "AnomalyTencode7",
+  "NewAnomaly_RMM",
+  "ImphashTableHVA"
+}
+local l_0_2 = 0
+for l_0_3, l_0_4 in ipairs(l_0_1) do
+  local l_0_5 = MpCommon.AnomalyTableLookup(l_0_4)
+  if l_0_5 then
+    l_0_5.TableAgeDays = l_0_5.TableAge / 1440
+    l_0_5.TableName = l_0_4
+    set_research_data(l_0_4, MpCommon.Base64Encode(safeJsonSerialize(l_0_5)), false)
+    l_0_2 = l_0_2 + 1
   end
-  set_research_data("Tables_Count", l_0_2, false)
-  do return mp.INFECTED end
-  -- WARNING: undefined locals caused missing assignments!
 end
-
+set_research_data("Tables_Count", l_0_2, false)
+return mp.INFECTED

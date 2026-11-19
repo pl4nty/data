@@ -1,19 +1,16 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaFlashPlayerSetupFilenameA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:FlashPlayerSetupFilename.A
+-- Type: 8
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC10: Overwrote pending register: R0 in 'AssignReg'
-
-local l_0_0 = nil
-do
-  if l_0_0 ~= nil then
-    local l_0_1 = {}
-    l_0_1["flashplayer_setup.exe"] = ""
-    if l_0_1[l_0_0] ~= nil then
-      (mp.set_mpattribute)("Lua:FlashPlayerSetupFilename.A")
-    end
+local l_0_0
+l_0_0 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_LOWERCASE, mp.FILEPATH_QUERY_FNAME))
+if l_0_0 ~= nil then
+  local l_0_1 = {
+    ["flashplayer_setup.exe"] = ""
+  }
+  if l_0_1[l_0_0] ~= nil then
+    mp.set_mpattribute("Lua:FlashPlayerSetupFilename.A")
   end
-  return mp.CLEAN
 end
-
+return mp.CLEAN

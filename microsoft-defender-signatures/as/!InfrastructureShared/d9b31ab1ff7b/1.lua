@@ -1,23 +1,16 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\d9b31ab1ff7b\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: d9b31ab1ff7b
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1, l_0_2, l_0_3, l_0_4, l_0_5 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC29: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC35: Confused about usage of register: R0 in 'UnsetPending'
-
-  if (not (this_sigattrlog[2]).matched or (mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1) ~= nil) and (sysio.IsFileExists)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1)) then
-    (bm.add_related_file)((mp.ContextualExpandEnvironmentVariables)((this_sigattrlog[2]).utf8p1))
-  end
-  add_parents()
-  return mp.INFECTED
+local l_0_0
+if this_sigattrlog[1].matched then
+  l_0_0 = mp.ContextualExpandEnvironmentVariables(this_sigattrlog[1].utf8p1)
+elseif this_sigattrlog[2].matched then
+  l_0_0 = mp.ContextualExpandEnvironmentVariables(this_sigattrlog[2].utf8p1)
 end
-
+if l_0_0 ~= nil and sysio.IsFileExists(l_0_0) then
+  bm.add_related_file(l_0_0)
+end
+add_parents()
+return mp.INFECTED

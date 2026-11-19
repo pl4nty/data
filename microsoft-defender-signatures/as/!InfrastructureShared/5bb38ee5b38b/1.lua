@@ -1,105 +1,91 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\5bb38ee5b38b\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 5bb38ee5b38b
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_1 = nil
-local l_0_2 = nil
-if (MpCommon.RollingQueueCount)("genb_ransom_meta_" .. (((bm.get_current_process_startup_info)()).ppid or -1)) ~= nil and (MpCommon.RollingQueueCount)("genb_ransom_meta_" .. (((bm.get_current_process_startup_info)()).ppid or -1)) >= 25 and (MpCommon.RollingQueueCount)("genb_ransom_meta_" .. (((bm.get_current_process_startup_info)()).ppid or -1)) <= 100 then
-  local l_0_3 = nil
-  if GetRollingQueue(l_0_2) == nil or type(GetRollingQueue(l_0_2)) ~= "table" then
+local l_0_0 = bm.get_current_process_startup_info()
+l_0_0 = l_0_0.ppid or -1
+local l_0_1 = "genb_ransom_meta_" .. l_0_0
+local l_0_2 = MpCommon.RollingQueueCount(l_0_1)
+if l_0_2 ~= nil and 25 <= l_0_2 and l_0_2 <= 100 then
+  local l_0_3 = GetRollingQueue(l_0_1)
+  if l_0_3 == nil or type(l_0_3) ~= "table" then
     return mp.CLEAN
   end
-  local l_0_4 = nil
-  local l_0_5 = {}
-  local l_0_6 = nil
+  local l_0_4 = {}
+  local l_0_5
+  local l_0_6 = ""
   local l_0_7 = ""
-  local l_0_8 = ""
-  local l_0_9 = {}
-  local l_0_10 = 0
-  local l_0_11 = {}
+  local l_0_8 = {}
+  local l_0_9 = 0
+  local l_0_10 = {}
+  local l_0_11 = 0
   local l_0_12 = 0
-  local l_0_13 = 0
-  local l_0_14 = {}
+  local l_0_13 = {}
+  local l_0_14 = 0
   local l_0_15 = 0
-  local l_0_16 = 0
-  local l_0_17 = ""
-  for l_0_21,l_0_22 in ipairs(l_0_4) do
-    local l_0_18 = false
-    -- DECOMPILER ERROR at PC52: Confused about usage of register: R22 in 'UnsetPending'
-
-    l_0_6 = explode(R22_PC52.value, "|")
-    local l_0_24 = table.insert
-    local l_0_25 = l_0_5
-    l_0_24(l_0_25, {Extension = l_0_6[1], NewFileName = l_0_6[2], OldFileName = l_0_6[3], FileType = l_0_6[4], FileSize = l_0_6[5], MagicByte = l_0_6[6], Entropy = l_0_6[7]})
-    l_0_24 = l_0_6[1]
-    l_0_24 = l_0_11[l_0_24]
-    if l_0_24 ~= 1 then
+  local l_0_16 = ""
+  local l_0_17 = false
+  for l_0_18, l_0_19 in ipairs(l_0_3) do
+    l_0_5 = explode(l_0_19.value, "|")
+    table.insert(l_0_4, {
+      Extension = l_0_5[1],
+      NewFileName = l_0_5[2],
+      OldFileName = l_0_5[3],
+      FileType = l_0_5[4],
+      FileSize = l_0_5[5],
+      MagicByte = l_0_5[6],
+      Entropy = l_0_5[7]
+    })
+    if l_0_10[l_0_5[1]] ~= 1 then
+      l_0_11 = l_0_11 + 1
+      l_0_10[l_0_5[1]] = 1
+    end
+    l_0_6 = string.match(l_0_5[2], "(.*[/\\])")
+    l_0_7 = mp.crc32(0, l_0_6, 1, #l_0_6)
+    if l_0_8[l_0_7] ~= 1 then
+      l_0_9 = l_0_9 + 1
+      l_0_8[l_0_7] = 1
+    end
+    l_0_16 = string.match(l_0_5[3], "(.*[/\\])")
+    if l_0_16 ~= l_0_6 and l_0_17 == false then
+      l_0_17 = true
+    end
+    if l_0_5[4] == "Unknown" then
       l_0_12 = l_0_12 + 1
-      l_0_24 = l_0_6[1]
-      l_0_11[l_0_24] = 1
     end
-    l_0_24 = string
-    l_0_24 = l_0_24.match
-    l_0_25 = l_0_6[2]
-    l_0_24 = l_0_24(l_0_25, "(.*[/\\])")
-    l_0_7 = l_0_24
-    l_0_24 = mp
-    l_0_24 = l_0_24.crc32
-    l_0_25 = 0
-    l_0_24 = l_0_24(l_0_25, l_0_7, 1, #l_0_7)
-    l_0_8 = l_0_24
-    l_0_24 = l_0_9[l_0_8]
-    if l_0_24 ~= 1 then
-      l_0_10 = l_0_10 + 1
-      l_0_9[l_0_8] = 1
+    if l_0_13[l_0_5[6]] ~= 1 then
+      l_0_14 = l_0_14 + 1
+      l_0_13[l_0_5[6]] = 1
     end
-    l_0_24 = string
-    l_0_24 = l_0_24.match
-    l_0_25 = l_0_6[3]
-    l_0_24 = l_0_24(l_0_25, "(.*[/\\])")
-    l_0_17 = l_0_24
-    if l_0_17 ~= l_0_7 and l_0_18 == false then
-      l_0_18 = true
-    end
-    l_0_24 = l_0_6[4]
-    if l_0_24 == "Unknown" then
-      l_0_13 = l_0_13 + 1
-    end
-    l_0_24 = l_0_6[6]
-    l_0_24 = l_0_14[l_0_24]
-    if l_0_24 ~= 1 then
+    if 7 <= l_0_5[7] then
       l_0_15 = l_0_15 + 1
-      l_0_24 = l_0_6[6]
-      l_0_14[l_0_24] = 1
-    end
-    l_0_24 = l_0_6[7]
-    if l_0_24 >= 7 then
-      l_0_16 = l_0_16 + 1
     end
   end
-  ;
-  (bm.add_related_string)("GenBRollingQueueData", safeJsonSerialize(l_0_5), bm.RelatedStringBMReport)
-  -- DECOMPILER ERROR at PC145: Confused about usage of register: R17 in 'UnsetPending'
-
-  do
-    do
-      do
-        if ((((l_0_12 ~= 1 or l_0_10 > 3) and l_0_18 ~= false) or l_0_13 == l_0_3) and l_0_15 ~= 1) or l_0_16 == l_0_3 then
-          local l_0_26, l_0_27 = , 0 + 1 + 1 + 1 + 1 + 1 + 1
-        end
-        -- DECOMPILER ERROR at PC157: Confused about usage of register: R18 in 'UnsetPending'
-
-        if l_0_27 >= 4 then
-          reportSessionInformationInclusive()
-          sms_untrusted_process()
-          return mp.INFECTED
-        end
-        do return mp.CLEAN end
-        -- DECOMPILER ERROR at PC169: freeLocal<0 in 'ReleaseLocals'
-
-      end
-    end
+  bm.add_related_string("GenBRollingQueueData", safeJsonSerialize(l_0_4), bm.RelatedStringBMReport)
+  local l_0_20 = 0
+  if l_0_11 == 1 then
+    l_0_20 = l_0_20 + 1
+  end
+  if 3 < l_0_9 then
+    l_0_20 = l_0_20 + 1
+  end
+  if l_0_17 == false then
+    l_0_20 = l_0_20 + 1
+  end
+  if l_0_12 == l_0_2 then
+    l_0_20 = l_0_20 + 1
+  end
+  if l_0_14 == 1 then
+    l_0_20 = l_0_20 + 1
+  end
+  if l_0_15 == l_0_2 then
+    l_0_20 = l_0_20 + 1
+  end
+  if 4 <= l_0_20 then
+    reportSessionInformationInclusive()
+    sms_untrusted_process()
+    return mp.INFECTED
   end
 end
-
+return mp.CLEAN

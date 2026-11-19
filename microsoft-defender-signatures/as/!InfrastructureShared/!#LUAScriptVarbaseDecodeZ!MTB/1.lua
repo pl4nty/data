@@ -1,43 +1,30 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LUAScriptVarbaseDecodeZ!MTB\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#LUA:Script/VarbaseDecode.Z!MTB
+-- Type: 13
+-- MpAttributes: SCRIPT:NodeJS/require.fs & SCRIPT:PsConvertToBase64String.A & SCRIPT:NodeReqChildProc & Lua:JSExt
 
--- params : ...
--- function num : 0
-do
-  if (mp.getfilesize)() > 153600 then
-    local l_0_0, l_0_1, l_0_2, l_0_4, l_0_6, l_0_8 = 153600
-  end
-  ;
-  (mp.readprotection)(false)
-  -- DECOMPILER ERROR at PC14: Confused about usage of register: R0 in 'UnsetPending'
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
 
-  do
-    local l_0_3, l_0_5, l_0_7, l_0_9 = , tostring((mp.readfile)(0, l_0_0)) or ""
-    ;
-    (mp.readprotection)(true)
-    -- DECOMPILER ERROR at PC24: Confused about usage of register: R1 in 'UnsetPending'
-
-    if l_0_5 == "" then
+local r0_0 = mp.getfilesize()
+r0_0 = r0_0 > 153600 and 153600 or r0_0
+mp.readprotection(false)
+local r0_1 = tostring(mp.readfile(0, r0_0)) or ""
+mp.readprotection(true)
+if r0_1 == "" then
+  return mp.CLEAN
+end
+local r0_2 = string.match(r0_1, "::FromBase64String%s*%(%s*[\"']%$%{([%w_]+)%}[\"']%s*%)")
+if r0_2 then
+  local r0_3 = "const%s+" .. r0_2 .. "%s*=%s*[\"']([A-Za-z0-9+/=\r\n]+)[\"']"
+  local r0_4 = string.match(r0_1, r0_3)
+  if r0_4 ~= nil and not (#r0_4 < 256) then
+    local r0_5 = MpCommon.Base64Decode(r0_4)
+    if r0_5 == nil then
       return mp.CLEAN
     end
-    -- DECOMPILER ERROR at PC31: Confused about usage of register: R1 in 'UnsetPending'
-
-    local l_0_10 = nil
-    if not (string.match)(l_0_5, "::FromBase64String%s*%(%s*[\"\']%$%{([%w_]+)%}[\"\']%s*%)") then
-      return mp.CLEAN
-    end
-    local l_0_11 = nil
-    local l_0_12 = nil
-    if (string.match)(l_0_11, "const%s+" .. (string.match)(l_0_5, "::FromBase64String%s*%(%s*[\"\']%$%{([%w_]+)%}[\"\']%s*%)") .. "%s*=%s*[\"\']([A-Za-z0-9+/=\r\n]+)[\"\']") == nil or #(string.match)(l_0_11, "const%s+" .. (string.match)(l_0_5, "::FromBase64String%s*%(%s*[\"\']%$%{([%w_]+)%}[\"\']%s*%)") .. "%s*=%s*[\"\']([A-Za-z0-9+/=\r\n]+)[\"\']") < 256 then
-      return mp.CLEAN
-    end
-    local l_0_13 = nil
-    if (MpCommon.Base64Decode)((string.match)(l_0_11, "const%s+" .. (string.match)(l_0_5, "::FromBase64String%s*%(%s*[\"\']%$%{([%w_]+)%}[\"\']%s*%)") .. "%s*=%s*[\"\']([A-Za-z0-9+/=\r\n]+)[\"\']")) == nil then
-      return mp.CLEAN
-    end
-    ;
-    (mp.vfo_add_buffer)((MpCommon.Base64Decode)((string.match)(l_0_11, "const%s+" .. (string.match)(l_0_5, "::FromBase64String%s*%(%s*[\"\']%$%{([%w_]+)%}[\"\']%s*%)") .. "%s*=%s*[\"\']([A-Za-z0-9+/=\r\n]+)[\"\']")), "[DecodedVFO]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+    mp.vfo_add_buffer(r0_5, "[DecodedVFO]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
     return mp.CLEAN
   end
+  return mp.CLEAN
 end
-
+return mp.CLEAN

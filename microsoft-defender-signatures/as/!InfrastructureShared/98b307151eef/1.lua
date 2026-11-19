@@ -1,43 +1,26 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\98b307151eef\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 98b307151eef
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-do
-  if (MpCommon.GetPersistContextNoPath)("EmailCollection") == nil then
-    local l_0_0, l_0_1, l_0_2 = {}
-    l_0_1 = table
-    l_0_1 = l_0_1.insert
-    l_0_2 = l_0_0
-    l_0_1(l_0_2, "1")
-    l_0_1 = MpCommon
-    l_0_1 = l_0_1.SetPersistContextNoPath
-    l_0_2 = "EmailCollection"
-    l_0_1(l_0_2, l_0_0, 60)
-    l_0_1 = mp
-    l_0_1 = l_0_1.CLEAN
-    return l_0_1
-  end
-  local l_0_3 = nil
-  for l_0_7,l_0_8 in ipairs(l_0_3) do
-    local l_0_4 = nil
-    -- DECOMPILER ERROR at PC28: Confused about usage of register: R6 in 'UnsetPending'
-
-    l_0_4 = tonumber(R6_PC28)
-  end
-  -- DECOMPILER ERROR at PC33: Confused about usage of register: R1 in 'UnsetPending'
-
-  if l_0_4 + 1 == 9 then
-    add_parents()
-    return mp.INFECTED
-  else
-    -- DECOMPILER ERROR at PC42: Confused about usage of register: R1 in 'UnsetPending'
-
-    l_0_3[1] = l_0_4 + 1
-    ;
-    (MpCommon.OverwritePersistContextNoPath)("EmailCollection", l_0_3, 60)
-    return mp.CLEAN
-  end
+local l_0_0 = MpCommon.GetPersistContextNoPath("EmailCollection")
+if l_0_0 == nil then
+  l_0_0 = {}
+  table.insert(l_0_0, "1")
+  MpCommon.SetPersistContextNoPath("EmailCollection", l_0_0, 60)
   return mp.CLEAN
 end
-
+local l_0_1
+for l_0_2, l_0_3 in ipairs(l_0_0) do
+  l_0_1 = tonumber(l_0_3)
+end
+l_0_1 = l_0_1 + 1
+if l_0_1 == 9 then
+  add_parents()
+  return mp.INFECTED
+else
+  l_0_0[1] = l_0_1
+  MpCommon.OverwritePersistContextNoPath("EmailCollection", l_0_0, 60)
+  return mp.CLEAN
+end
+return mp.CLEAN

@@ -1,1497 +1,521 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaNpmInstallHookScanA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:NpmInstallHookScan.A
+-- Type: 13
+-- MpAttributes: MpOnOpenOrCloseRtpScan & AGGR:NpmJsonHookLua
 
--- params : ...
--- function num : 0
-local l_0_0 = function(l_1_0)
-  -- function num : 0_0
-  do return l_1_0 == " " or l_1_0 == "\t" or l_1_0 == "\n" or l_1_0 == "\r" or l_1_0 == "\v" or l_1_0 == "\f" end
-  -- DECOMPILER ERROR: 1 unprocessed JMP targets
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
+
+local function r0_0(p1_0)
+  return p1_0 == " "
+    or p1_0 == "\t"
+    or p1_0 == "\n"
+    or p1_0 == "\r"
+    or p1_0 == "\011"
+    or p1_0 == "\012"
 end
 
-local l_0_1 = function(l_2_0)
-  -- function num : 0_1
-  if #l_2_0 ~= 4 then
-    return false
+local function r0_1(p2_0)
+  if #p2_0 == 4 then
+    for r2_0 = 1, 4 do
+      local r2_1 = p2_0:byte(r2_0)
+      if (not (r2_1 >= 48) or not (r2_1 <= 57))
+        and (not (r2_1 >= 65) or not (r2_1 <= 70))
+        and (not (r2_1 >= 97) or not (r2_1 <= 102)) then
+        return false
+      end
+    end
+    return true
   end
-  for l_2_4 = 1, 4 do
-    local l_2_5 = l_2_0:byte(l_2_4)
-    if ((l_2_5 >= 48 and l_2_5 <= 57) or (l_2_5 >= 65 and l_2_5 <= 70) or (l_2_5 < 97 or l_2_5 > 102)) then
-      return false
+  return false
+end
+
+local function r0_2(p3_0)
+  local r3_0 = {}
+  local r3_1 = {}
+  local r3_2 = 1
+  local r3_3 = #p3_0
+  local r3_4, r3_5 = false, nil
+  while r3_2 <= r3_3 do
+    local r3_6 = p3_0:sub(r3_2, r3_2)
+    if r3_4 then
+      if r3_6 == "\\" and r3_2 < r3_3 then
+        local r3_7 = p3_0:sub(r3_2 + 1, r3_2 + 1)
+        if r3_7 == r3_5 or r3_7 == "\\" then
+          r3_1[#r3_1 + 1] = r3_7
+          r3_2 = r3_2 + 2
+        else
+          r3_1[#r3_1 + 1] = r3_6
+          r3_2 = r3_2 + 1
+        end
+      elseif r3_6 == r3_5 then
+        r3_4 = false
+        r3_5 = nil
+        r3_2 = r3_2 + 1
+      else
+        r3_1[#r3_1 + 1] = r3_6
+        r3_2 = r3_2 + 1
+      end
+    elseif r3_6 == '"' or r3_6 == "'" then
+      r3_4 = true
+      r3_5 = r3_6
+      r3_2 = r3_2 + 1
+    elseif r0_0(r3_6) then
+      if #r3_1 > 0 then
+        r3_0[#r3_0 + 1] = table.concat(r3_1)
+        r3_1 = {}
+      end
+      r3_2 = r3_2 + 1
+    else
+      r3_1[#r3_1 + 1] = r3_6
+      r3_2 = r3_2 + 1
     end
   end
-  return true
+  if #r3_1 > 0 then
+    r3_0[#r3_0 + 1] = table.concat(r3_1)
+  end
+  return r3_0
 end
 
-local l_0_3, l_0_4 = function(l_3_0)
-  -- function num : 0_2 , upvalues : l_0_0
-  local l_3_1 = {}
-  local l_3_2 = {}
-  local l_3_3 = 1
-  local l_3_4 = #l_3_0
-  local l_3_5 = false
-  local l_3_6 = nil
-  while 1 do
-    while 1 do
-      while 1 do
-        while 1 do
-          while 1 do
-            while 1 do
-              while 1 do
-                if l_3_3 <= l_3_4 then
-                  local l_3_7 = l_3_0:sub(l_3_3, l_3_3)
-                  if l_3_5 then
-                    if l_3_7 == "\\" and l_3_3 < l_3_4 then
-                      local l_3_8 = l_3_0:sub(l_3_3 + 1, l_3_3 + 1)
-                      if l_3_8 == l_3_6 or l_3_8 == "\\" then
-                        l_3_2[#l_3_2 + 1] = l_3_8
-                        l_3_3 = l_3_3 + 2
-                        -- DECOMPILER ERROR at PC30: LeaveBlock: unexpected jumping out IF_THEN_STMT
+local r0_3, r0_4 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH))
+if r0_3 ~= nil and r0_4 ~= nil then
+  local r0_5 = string.lower(r0_3)
+  local r0_6 = string.lower(r0_4)
+  local r0_7 = r0_3
+  if r0_6 == "package.json" then
+    local r0_8 = mp.get_contextdata(mp.CONTEXT_DATA_PROCESSNAME)
+    if type(r0_8) == "string" and r0_8 ~= "" then
+      r0_8 = string.lower(r0_8)
+      local r0_9 = versioning.GetHostOsType
+      local r0_10 = r0_9() == 1
+      local r0_11
+      repeat
+        if r0_10 then
+          local r0_12 = { ["node.exe"] = true }
+          if r0_12 then
+            r0_11 = r0_12
+            break
+          end
+        end
+        r0_11 = { node = true, npm = true }
+      until true
+      if r0_11[r0_8] then
+        if r0_10 then
+          r0_7 = MpCommon.PathToWin32Path(r0_3)
+          if r0_7 == nil then
+            return mp.CLEAN
+          end
+          r0_5 = string.lower(r0_7)
+        end
+        local r0_13 = r0_10 and "\\node_modules\\" or "/node_modules/"
+        if string.find(r0_5, r0_13, 1, true) == nil then
+          return mp.CLEAN
+        end
+        local r0_14 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
+        local r0_15 = mp.get_contextdata(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true
+        if r0_14 == mp.SCANREASON_ONOPEN then
+          if not r0_15 then
+            return mp.CLEAN
+          end
+        elseif r0_14 ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+          return mp.CLEAN
+        end
+        local r0_16 = mp.getfilesize()
+        if type(r0_16) == "number" and not (r0_16 <= 0) then
+          local r0_17 = r0_16
+          r0_17 = r0_17 > 51200 and 51200 or r0_17
+          mp.readprotection(false)
+          local r0_18 = mp.readfile(0, r0_17)
+          mp.readprotection(true)
+          if type(r0_18) == "string" and r0_18 ~= "" then
+            local r0_19 = {
+              preinstall = true, postinstall = true, install = true, preprepare = true,
+              prepare = true
+            }
+            local r0_20 = 0
+            for r0_21 in pairs(r0_19) do
+              r0_20 = r0_20 + 1
+            end
+            local r0_22 = {
+              node = 1504130729, python = 3232655123, python3 = 3081328517, bash = 701350438,
+              npx = 3351487242
+            }
+            local r0_23 = { [".js"] = 544968205, [".cjs"] = 1467793051, [".mjs"] = 3463835425 }
 
-                        -- DECOMPILER ERROR at PC30: LeaveBlock: unexpected jumping out IF_STMT
+            local function r0_24(p4_0, p4_1)
+              return (p4_0 - p4_0 % p4_1) / p4_1
+            end
 
-                        -- DECOMPILER ERROR at PC30: LeaveBlock: unexpected jumping out IF_THEN_STMT
+            local function r0_25(p5_0, p5_1)
+              p5_1 = (p5_1 < 0 or p5_1 > 1114111) and 65533 or p5_1
+              if p5_1 <= 127 then
+                p5_0[#p5_0 + 1] = string.char(p5_1)
+              elseif p5_1 <= 2047 then
+                local r5_0 = r0_24(p5_1, 64)
+                r5_0 = 192 + r5_0
+                local r5_1 = 128 + p5_1 % 64
+                p5_0[#p5_0 + 1] = string.char(r5_0, r5_1)
+              elseif p5_1 <= 65535 then
+                local r5_2 = r0_24(p5_1, 4096)
+                r5_2 = 224 + r5_2
+                local r5_3 = 128 + r0_24(p5_1, 64) % 64
+                local r5_4 = 128 + p5_1 % 64
+                p5_0[#p5_0 + 1] = string.char(r5_2, r5_3, r5_4)
+              else
+                local r5_5 = r0_24(p5_1, 262144)
+                r5_5 = 240 + r5_5
+                local r5_6 = 128 + r0_24(p5_1, 4096) % 64
+                local r5_7 = 128 + r0_24(p5_1, 64) % 64
+                local r5_8 = 128 + p5_1 % 64
+                p5_0[#p5_0 + 1] = string.char(r5_5, r5_6, r5_7, r5_8)
+              end
+            end
 
-                        -- DECOMPILER ERROR at PC30: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC30: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC30: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC30: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC30: LeaveBlock: unexpected jumping out IF_STMT
-
-                      end
-                    end
+            local function r0_26(p6_0, p6_1)
+              local r6_0 = p6_1
+              local r6_1 = #p6_0
+              local r6_2 = {}
+              while r6_0 <= r6_1 do
+                local r6_3 = p6_0:sub(r6_0, r6_0)
+                if r6_3 == '"' then
+                  return table.concat(r6_2), r6_0 + 1
+                end
+                if r6_3 == "\\" then
+                  if r6_0 == r6_1 then
+                    return nil, nil
                   end
+                  local r6_4 = p6_0:sub(r6_0 + 1, r6_0 + 1)
+                  if r6_4 == '"' then
+                    r6_2[#r6_2 + 1] = '"'
+                  elseif r6_4 == "\\" then
+                    r6_2[#r6_2 + 1] = "\\"
+                  elseif r6_4 == "/" then
+                    r6_2[#r6_2 + 1] = "/"
+                  elseif r6_4 == "b" then
+                    r6_2[#r6_2 + 1] = "\008"
+                  elseif r6_4 == "f" then
+                    r6_2[#r6_2 + 1] = "\012"
+                  elseif r6_4 == "n" then
+                    r6_2[#r6_2 + 1] = "\n"
+                  elseif r6_4 == "r" then
+                    r6_2[#r6_2 + 1] = "\r"
+                  elseif r6_4 == "t" then
+                    r6_2[#r6_2 + 1] = "\t"
+                  elseif r6_4 == "u" then
+                    local r6_5 = p6_0:sub(r6_0 + 2, r6_0 + 5)
+                    if r0_1(r6_5) then
+                      local r6_6 = tonumber(r6_5, 16)
+                      local r6_7 = 0
+                      if r6_6 >= 55296 and r6_6 <= 56319 then
+                        if r6_0 + 11 <= r6_1 and p6_0:sub(r6_0 + 6, r6_0 + 7) == "\\u" then
+                          local r6_8 = p6_0:sub(r6_0 + 8, r6_0 + 11)
+                          if r0_1(r6_8) then
+                            local r6_9 = tonumber(r6_8, 16)
+                            if r6_9 >= 56320 and r6_9 <= 57343 then
+                              r6_6 = 65536 + (r6_6 - 55296) * 1024 + (r6_9 - 56320)
+                              r6_7 = 6
+                            else
+                              r6_6 = 65533
+                            end
+                          else
+                            r6_6 = 65533
+                          end
+                        else
+                          r6_6 = 65533
+                        end
+                      elseif r6_6 >= 56320 and r6_6 <= 57343 then
+                        r6_6 = 65533
+                      end
+                      r0_25(r6_2, r6_6)
+                      r6_0 = r6_0 + 4 + r6_7
+                    else
+                      r6_2[#r6_2 + 1] = "u"
+                    end
+                  else
+                    r6_2[#r6_2 + 1] = r6_4
+                  end
+                  r6_0 = r6_0 + 2
+                else
+                  r6_2[#r6_2 + 1] = r6_3
+                  r6_0 = r6_0 + 1
                 end
               end
-              l_3_2[#l_3_2 + 1] = l_3_7
-              l_3_3 = l_3_3 + 1
+              return nil, nil
             end
-            do
-              if l_3_7 == l_3_6 then
-                l_3_5 = false
-                l_3_6 = nil
-                l_3_3 = l_3_3 + 1
-                -- DECOMPILER ERROR at PC41: LeaveBlock: unexpected jumping out IF_THEN_STMT
 
-                -- DECOMPILER ERROR at PC41: LeaveBlock: unexpected jumping out IF_STMT
-
-                -- DECOMPILER ERROR at PC41: LeaveBlock: unexpected jumping out DO_STMT
-
+            local function r0_27(p7_0, p7_1, p7_2)
+              local r7_0 = p7_1
+              while r7_0 <= p7_2 and r0_0(p7_0:sub(r7_0, r7_0)) do
+                r7_0 = r7_0 + 1
               end
+              return r7_0
             end
+
+            local function r0_28(p8_0, p8_1, p8_2, p8_3, p8_4)
+              local r8_0 = p8_1 + 1
+              local r8_1 = 1
+              while r8_0 <= p8_2 do
+                local r8_2 = p8_0:sub(r8_0, r8_0)
+                if r8_2 == '"' then
+                  local r8_3, r8_4 = r0_26(p8_0, r8_0 + 1)
+                  if not r8_4 then
+                    return nil
+                  end
+                  r8_0 = r8_4
+                elseif r8_2 == p8_3 then
+                  r8_1 = r8_1 + 1
+                  r8_0 = r8_0 + 1
+                elseif r8_2 == p8_4 then
+                  r8_1 = r8_1 - 1
+                  r8_0 = r8_0 + 1
+                  if r8_1 == 0 then
+                    return r8_0
+                  end
+                else
+                  r8_0 = r8_0 + 1
+                end
+              end
+              return nil
+            end
+
+            local function r0_29(p9_0, p9_1, p9_2)
+              local r9_0 = r0_27(p9_0, p9_1, p9_2)
+              if p9_2 < r9_0 then
+                return nil
+              end
+              local r9_1 = p9_0:sub(r9_0, r9_0)
+              if r9_1 == '"' then
+                local r9_2, r9_3 = r0_26(p9_0, r9_0 + 1)
+                return r9_3
+              end
+              if r9_1 == "{" then
+                return r0_28(p9_0, r9_0, p9_2, "{", "}")
+              end
+              if r9_1 == "[" then
+                return r0_28(p9_0, r9_0, p9_2, "[", "]")
+              end
+              while r9_0 <= p9_2 do
+                local r9_4 = p9_0:sub(r9_0, r9_0)
+                if r9_4 == "," or r9_4 == "}" or r9_4 == "]" then
+                  return r9_0
+                end
+                r9_0 = r9_0 + 1
+              end
+              return r9_0
+            end
+
+            local function r0_30(p10_0)
+              local r10_0 = 1
+              local r10_1 = #p10_0
+              while r10_0 <= r10_1 do
+                local r10_2 = p10_0:sub(r10_0, r10_0)
+                if r10_2 == '"' then
+                  local r10_3, r10_4 = r0_26(p10_0, r10_0 + 1)
+                  if not r10_4 then
+                    return nil, nil
+                  end
+                  local r10_5 = r0_27(p10_0, r10_4, r10_1)
+                  if r10_5 <= r10_1 and p10_0:sub(r10_5, r10_5) == ":" then
+                    r10_5 = r0_27(p10_0, r10_5 + 1, r10_1)
+                    if r10_3 == "scripts" and r10_5 <= r10_1 and p10_0:sub(r10_5, r10_5) == "{" then
+                      local r10_6 = r0_28(p10_0, r10_5, r10_1, "{", "}")
+                      if r10_6 then
+                        return r10_5 + 1, r10_6 - 2
+                      end
+                      return nil, nil
+                    end
+                    local r10_7 = r0_29(p10_0, r10_5, r10_1)
+                    if not r10_7 then
+                      return nil, nil
+                    end
+                    r10_0 = r10_7
+                  else
+                    r10_0 = r10_4
+                  end
+                else
+                  r10_0 = r10_0 + 1
+                end
+              end
+              return nil, nil
+            end
+
+            local r0_31, r0_32 = r0_30(r0_18)
+            if r0_31 and r0_32 then
+              local r0_33 = r0_31
+              while r0_33 <= r0_32 do
+                r0_33 = r0_27(r0_18, r0_33, r0_32)
+                if r0_32 < r0_33 then
+                  break
+                end
+                if r0_18:sub(r0_33, r0_33) == "," then
+                  r0_33 = r0_33 + 1
+                  r0_33 = r0_27(r0_18, r0_33, r0_32)
+                  if r0_32 < r0_33 then
+                    break
+                  end
+                end
+                if r0_18:sub(r0_33, r0_33) == '"' then
+                  local r0_34, r0_35 = r0_26(r0_18, r0_33 + 1)
+                  if not r0_35 then
+                    break
+                  end
+                  local r0_36 = r0_19[r0_34] == true
+                  if r0_36 then
+                    r0_19[r0_34] = nil
+                    r0_20 = r0_20 - 1
+                  end
+                  r0_33 = r0_27(r0_18, r0_35, r0_32)
+                  if r0_32 < r0_33 then
+                    break
+                  end
+                  if r0_18:sub(r0_33, r0_33) ~= ":" then
+                    break
+                  end
+                  local r0_37 = r0_27(r0_18, r0_33 + 1, r0_32)
+                  if r0_32 < r0_37 then
+                    break
+                  end
+                  if r0_18:sub(r0_37, r0_37) == '"' and r0_36 then
+                    local r0_38, r0_39 = r0_26(r0_18, r0_37 + 1)
+                    if not r0_39 then
+                      break
+                    end
+                    r0_37 = r0_39
+                    if r0_38 ~= nil then
+                      local r0_40, r0_41 = nil, nil
+                      local r0_42 = r0_2
+                      r0_42 = r0_42(r0_38)
+                      local r0_43 = type(r0_42)
+                      r0_42 = r0_43 ~= "table" and {} or r0_42
+                      r0_43 = r0_42[1]
+                      local r0_44 = nil
+                      if type(r0_43) == "string" and r0_43 ~= "" then
+                        local r0_45 = string.lower(r0_43)
+                        r0_40 = r0_22[r0_45]
+                        if r0_40 then
+                          local r0_46 = r0_45 == "node"
+                            and {
+                              ["-r"] = true, ["--require"] = true, ["--loader"] = true,
+                              ["--import"] = true, ["--experimental-loader"] = true,
+                              ["--eval"] = true, ["-e"] = true, ["--print"] = true, ["-p"] = true
+                            }
+                            or r0_45 == "npx"
+                              and {
+                                ["-r"] = true, ["--require"] = true, ["--loader"] = true,
+                                ["--import"] = true, ["--experimental-loader"] = true,
+                                ["--eval"] = true, ["-e"] = true, ["--print"] = true, ["-p"] = true
+                              }
+                            or r0_45 == "python"
+                              and {
+                                ["-c"] = true, ["-m"] = true, ["-W"] = true, ["-X"] = true,
+                                ["--check-hash-based-pycs"] = true
+                              }
+                            or r0_45 == "python3"
+                              and {
+                                ["-c"] = true, ["-m"] = true, ["-W"] = true, ["-X"] = true,
+                                ["--check-hash-based-pycs"] = true
+                              }
+                            or nil
+                          local r0_47 = false
+                          local r0_48 = #r0_42
+                          for r0_49 = 2, r0_48 do
+                            local r0_50 = r0_42[r0_49]
+                            if r0_47 then
+                              r0_47 = false
+                            else
+                              if r0_50 == "--" then
+                                if #r0_42 > r0_49 then
+                                  r0_40, r0_41 = r0_40, r0_42[r0_49 + 1]
+                                end
+                                break
+                              end
+                              local r0_51 = r0_50
+                              if r0_51:sub(1, 2) == "--" then
+                                local r0_52 = r0_50:match("^([^=]+)=")
+                                if (r0_52 == nil or not r0_46 or not r0_46[r0_52])
+                                  and r0_46
+                                  and r0_46[r0_50] then
+                                  r0_47 = true
+                                end
+                              else
+                                r0_51 = r0_50
+                                if r0_51:sub(1, 1) ~= "-" then
+                                  r0_41 = r0_50
+                                  break
+                                end
+                                if r0_46 and r0_46[r0_50] then
+                                  r0_47 = true
+                                end
+                              end
+                            end
+                          end
+                        end
+                      end
+                      if r0_40 then
+                        r0_41 = r0_41 or r0_38
+                        local r0_53 = type(r0_41)
+                        if not (r0_53 == "string" and r0_41 ~= "") then
+                          r0_41 = r0_38
+                        end
+                        r0_53 = type
+                        r0_53 = r0_53(r0_41)
+                        if r0_53 == "string" and r0_41 ~= "" then
+                          local r0_54 = r0_41:gsub("^%./", ""):gsub("^%.\\", "")
+                          r0_41 = r0_54
+                          r0_54 = string.lower
+                          local r0_55 = r0_41
+                          r0_54 = r0_54(r0_55)
+                          r0_54 = r0_54:match("(%.[^%.\\/]+)$")
+                          r0_55 = nil
+                          if r0_10 then
+                            local r0_56 = r0_41:gsub("/", "\\"):gsub("\\+", "\\")
+                            local r0_57 = MpCommon.PathToWin32Path
+                            local r0_58, r0_59 = r0_7, r0_56
+                            r0_58 = r0_58 .. "\\" .. r0_59
+                            r0_59 = nil
+                            r0_59 = nil
+                            r0_55 = r0_57(r0_58)
+                          else
+                            local r0_60 = r0_41:gsub("\\", "/"):gsub("/+", "/")
+                            local r0_61 = r0_7
+                            local r0_62 = r0_60
+                            r0_55 = r0_61 .. "/" .. r0_62
+                          end
+                          if r0_55 and sysio.IsFileExists(r0_55) then
+                            local r0_63 = r0_54 and r0_23[r0_54] or r0_40
+                            if type(r0_63) == "number" then
+                              MpCommon.ReportLowfi(r0_55, r0_63)
+                            end
+                          end
+                        end
+                      end
+                    end
+                    r0_33 = r0_37
+                  else
+                    r0_37 = r0_29(r0_18, r0_37, r0_32)
+                    if not r0_37 then
+                      break
+                    end
+                    r0_33 = r0_37
+                  end
+                  if r0_20 == 0 then
+                    break
+                  end
+                else
+                  r0_33 = r0_33 + 1
+                end
+              end
+              return mp.CLEAN
+            end
+            return mp.CLEAN
           end
-          l_3_2[#l_3_2 + 1] = l_3_7
-          l_3_3 = l_3_3 + 1
+          return mp.CLEAN
         end
-        if l_3_7 == "\"" or l_3_7 == "\'" then
-          l_3_5 = true
-          l_3_6 = l_3_7
-          l_3_3 = l_3_3 + 1
-          -- DECOMPILER ERROR at PC54: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC54: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
+        return mp.CLEAN
       end
-      if l_0_0(l_3_7) then
-        do
-          if #l_3_2 > 0 then
-            local l_3_9 = #l_3_1 + 1
-            l_3_1[l_3_9] = (table.concat)(l_3_2)
-            l_3_2, l_3_9 = l_3_9, {}
-          end
-          l_3_3 = l_3_3 + 1
-          -- DECOMPILER ERROR at PC73: LeaveBlock: unexpected jumping out DO_STMT
-
-          -- DECOMPILER ERROR at PC73: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC73: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
+      return mp.CLEAN
     end
-    l_3_2[#l_3_2 + 1] = l_3_7
-    l_3_3 = l_3_3 + 1
-  end
-  do
-    do
-      if #l_3_2 > 0 then
-        local l_3_10 = #l_3_1 + 1
-        l_3_1[l_3_10] = (table.concat)(l_3_2)
-      end
-      return l_3_1
-    end
-  end
-end
-, (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH))
-if l_0_4 == nil or (mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH) == nil then
-  return mp.CLEAN
-end
-local l_0_5 = nil
-local l_0_6 = (string.lower)(l_0_4)
-local l_0_7 = (string.lower)(l_0_5)
-if l_0_7 ~= "package.json" then
-  return mp.CLEAN
-end
-local l_0_8 = l_0_4
-if type((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME)) ~= "string" or (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME) == "" then
-  return mp.CLEAN
-end
-local l_0_9 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_PROCESSNAME))
-if (versioning.GetHostOsType)() == 1 then
-  local l_0_14 = nil
-end
-do
-  if not {["node.exe"] = true} then
-    local l_0_17, l_0_19, l_0_23, l_0_26 = , {}
-    l_0_19.node = true
-    l_0_19.npm = true
-  end
-  -- DECOMPILER ERROR at PC71: Confused about usage of register: R11 in 'UnsetPending'
-
-  if not l_0_19[l_0_9] then
     return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC77: Confused about usage of register: R10 in 'UnsetPending'
-
-  if l_0_17 then
-    l_0_8 = (MpCommon.PathToWin32Path)(l_0_4)
-    if l_0_8 == nil then
-      return mp.CLEAN
-    end
-    l_0_6 = (string.lower)(l_0_8)
-  end
-  -- DECOMPILER ERROR at PC94: Confused about usage of register: R10 in 'UnsetPending'
-
-  do
-    local l_0_24, l_0_27 = nil
-    if (string.find)(l_0_6, l_0_17 and "\\node_modules\\" or "/node_modules/", 1, true) == nil then
-      return mp.CLEAN
-    end
-    local l_0_28 = nil
-    if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN and not (mp.get_contextdata)(mp.CONTEXT_DATA_NEWLYCREATEDHINT) == true then
-      return mp.CLEAN
-    end
-    if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
-      return mp.CLEAN
-    end
-    local l_0_32 = nil
-    if type((mp.getfilesize)()) ~= "number" or (mp.getfilesize)() <= 0 then
-      return mp.CLEAN
-    end
-    do
-      if (mp.getfilesize)() > 51200 then
-        local l_0_33, l_0_34, l_0_35 = nil
-      end
-      ;
-      (mp.readprotection)(false)
-      local l_0_36 = nil
-      ;
-      (mp.readprotection)(true)
-      if type((mp.readfile)(0, 51200)) ~= "string" or (mp.readfile)(0, 51200) == "" then
-        return mp.CLEAN
-      end
-      local l_0_37 = nil
-      local l_0_38 = nil
-      for l_0_42 in pairs({preinstall = true, postinstall = true, install = true, preprepare = true, prepare = true}) do
-        local l_0_39, l_0_40, l_0_41, l_0_42 = nil
-      end
-      local l_0_43 = nil
-      local l_0_44 = nil
-      local l_0_45 = nil
-      local l_0_52, l_0_53 = , 0 + 1
-      if not (function(l_10_0)
-  -- function num : 0_9 , upvalues : l_0_r24, l_0_r25, l_0_r26, l_0_r27
-  local l_10_1 = 1
-  local l_10_2 = #l_10_0
-  while 1 do
-    while 1 do
-      while 1 do
-        if l_10_1 <= l_10_2 then
-          local l_10_3 = l_10_0:sub(l_10_1, l_10_1)
-          if l_10_3 == "\"" then
-            local l_10_4, l_10_5 = l_0_r24(l_10_0, l_10_1 + 1)
-            if not l_10_5 then
-              return nil, nil
-            end
-            local l_10_6 = l_0_r25(l_10_0, l_10_5, l_10_2)
-            if l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == ":" then
-              l_10_6 = l_0_r25(l_10_0, l_10_6 + 1, l_10_2)
-              do
-                if l_10_4 == "scripts" and l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == "{" then
-                  local l_10_7 = l_0_r26(l_10_0, l_10_6, l_10_2, "{", "}")
-                  if not l_10_7 then
-                    return nil, nil
-                  end
-                  return l_10_6 + 1, l_10_7 - 2
-                end
-                do
-                  local l_10_8 = l_0_r27(l_10_0, l_10_6, l_10_2)
-                  if not l_10_8 then
-                    return nil, nil
-                  end
-                  l_10_1 = l_10_8
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out DO_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                end
-              end
-            end
-          end
-        end
-      end
-      l_10_1 = l_10_5
-    end
-    do
-      do
-        l_10_1 = l_10_1 + 1
-        -- DECOMPILER ERROR at PC75: LeaveBlock: unexpected jumping out DO_STMT
-
-      end
-    end
-  end
-  return nil, nil
+  return mp.CLEAN
 end
-)(l_0_45) or not l_0_45 then
-        return mp.CLEAN
-      end
-      do
-        local l_0_54 = {node = 1504130729, python = 3232655123, python3 = 3081328517, bash = 701350438, npx = 3351487242}
-        while 1 do
-          while 1 do
-            -- DECOMPILER ERROR at PC241: Confused about usage of register: R31 in 'UnsetPending'
-
-            -- DECOMPILER ERROR at PC249: Confused about usage of register: R31 in 'UnsetPending'
-
-            -- DECOMPILER ERROR at PC250: Confused about usage of register: R31 in 'UnsetPending'
-
-            -- DECOMPILER ERROR at PC254: Confused about usage of register: R31 in 'UnsetPending'
-
-            -- DECOMPILER ERROR at PC255: Confused about usage of register: R25 in 'UnsetPending'
-
-            -- DECOMPILER ERROR at PC258: Overwrote pending register: R35 in 'AssignReg'
-
-            -- DECOMPILER ERROR at PC265: Confused about usage of register: R31 in 'UnsetPending'
-
-            -- DECOMPILER ERROR at PC266: Confused about usage of register: R31 in 'UnsetPending'
-
-            -- DECOMPILER ERROR at PC266: Overwrote pending register: R35 in 'AssignReg'
-
-            -- DECOMPILER ERROR at PC270: Confused about usage of register: R31 in 'UnsetPending'
-
-          end
-          if (function(l_10_0)
-  -- function num : 0_9 , upvalues : l_0_r24, l_0_r25, l_0_r26, l_0_r27
-  local l_10_1 = 1
-  local l_10_2 = #l_10_0
-  while 1 do
-    while 1 do
-      while 1 do
-        if l_10_1 <= l_10_2 then
-          local l_10_3 = l_10_0:sub(l_10_1, l_10_1)
-          if l_10_3 == "\"" then
-            local l_10_4, l_10_5 = l_0_r24(l_10_0, l_10_1 + 1)
-            if not l_10_5 then
-              return nil, nil
-            end
-            local l_10_6 = l_0_r25(l_10_0, l_10_5, l_10_2)
-            if l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == ":" then
-              l_10_6 = l_0_r25(l_10_0, l_10_6 + 1, l_10_2)
-              do
-                if l_10_4 == "scripts" and l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == "{" then
-                  local l_10_7 = l_0_r26(l_10_0, l_10_6, l_10_2, "{", "}")
-                  if not l_10_7 then
-                    return nil, nil
-                  end
-                  return l_10_6 + 1, l_10_7 - 2
-                end
-                do
-                  local l_10_8 = l_0_r27(l_10_0, l_10_6, l_10_2)
-                  if not l_10_8 then
-                    return nil, nil
-                  end
-                  l_10_1 = l_10_8
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out DO_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                end
-              end
-            end
-          end
-        end
-      end
-      l_10_1 = l_10_5
-    end
-    do
-      do
-        l_10_1 = l_10_1 + 1
-        -- DECOMPILER ERROR at PC75: LeaveBlock: unexpected jumping out DO_STMT
-
-      end
-    end
-  end
-  return nil, nil
-end
-)(l_0_45) <= l_0_45 then
-            -- DECOMPILER ERROR at PC276: Unhandled construct in 'MakeBoolean' P3
-
-            if (l_0_45 < (function(l_7_0, l_7_1, l_7_2)
-  -- function num : 0_6 , upvalues : l_0_0
-  local l_7_3 = l_7_1
-  while l_7_3 <= l_7_2 and l_0_0(l_7_0:sub(l_7_3, l_7_3)) do
-    l_7_3 = l_7_3 + 1
-  end
-  return l_7_3
-end
-)(l_0_45, (function(l_10_0)
-  -- function num : 0_9 , upvalues : l_0_r24, l_0_r25, l_0_r26, l_0_r27
-  local l_10_1 = 1
-  local l_10_2 = #l_10_0
-  while 1 do
-    while 1 do
-      while 1 do
-        if l_10_1 <= l_10_2 then
-          local l_10_3 = l_10_0:sub(l_10_1, l_10_1)
-          if l_10_3 == "\"" then
-            local l_10_4, l_10_5 = l_0_r24(l_10_0, l_10_1 + 1)
-            if not l_10_5 then
-              return nil, nil
-            end
-            local l_10_6 = l_0_r25(l_10_0, l_10_5, l_10_2)
-            if l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == ":" then
-              l_10_6 = l_0_r25(l_10_0, l_10_6 + 1, l_10_2)
-              do
-                if l_10_4 == "scripts" and l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == "{" then
-                  local l_10_7 = l_0_r26(l_10_0, l_10_6, l_10_2, "{", "}")
-                  if not l_10_7 then
-                    return nil, nil
-                  end
-                  return l_10_6 + 1, l_10_7 - 2
-                end
-                do
-                  local l_10_8 = l_0_r27(l_10_0, l_10_6, l_10_2)
-                  if not l_10_8 then
-                    return nil, nil
-                  end
-                  l_10_1 = l_10_8
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out DO_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                end
-              end
-            end
-          end
-        end
-      end
-      l_10_1 = l_10_5
-    end
-    do
-      do
-        l_10_1 = l_10_1 + 1
-        -- DECOMPILER ERROR at PC75: LeaveBlock: unexpected jumping out DO_STMT
-
-      end
-    end
-  end
-  return nil, nil
-end
-)(l_0_45), R35_PC243) and l_0_45:sub((function(l_7_0, l_7_1, l_7_2)
-  -- function num : 0_6 , upvalues : l_0_0
-  local l_7_3 = l_7_1
-  while l_7_3 <= l_7_2 and l_0_0(l_7_0:sub(l_7_3, l_7_3)) do
-    l_7_3 = l_7_3 + 1
-  end
-  return l_7_3
-end
-)(l_0_45, (function(l_10_0)
-  -- function num : 0_9 , upvalues : l_0_r24, l_0_r25, l_0_r26, l_0_r27
-  local l_10_1 = 1
-  local l_10_2 = #l_10_0
-  while 1 do
-    while 1 do
-      while 1 do
-        if l_10_1 <= l_10_2 then
-          local l_10_3 = l_10_0:sub(l_10_1, l_10_1)
-          if l_10_3 == "\"" then
-            local l_10_4, l_10_5 = l_0_r24(l_10_0, l_10_1 + 1)
-            if not l_10_5 then
-              return nil, nil
-            end
-            local l_10_6 = l_0_r25(l_10_0, l_10_5, l_10_2)
-            if l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == ":" then
-              l_10_6 = l_0_r25(l_10_0, l_10_6 + 1, l_10_2)
-              do
-                if l_10_4 == "scripts" and l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == "{" then
-                  local l_10_7 = l_0_r26(l_10_0, l_10_6, l_10_2, "{", "}")
-                  if not l_10_7 then
-                    return nil, nil
-                  end
-                  return l_10_6 + 1, l_10_7 - 2
-                end
-                do
-                  local l_10_8 = l_0_r27(l_10_0, l_10_6, l_10_2)
-                  if not l_10_8 then
-                    return nil, nil
-                  end
-                  l_10_1 = l_10_8
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out DO_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                end
-              end
-            end
-          end
-        end
-      end
-      l_10_1 = l_10_5
-    end
-    do
-      do
-        l_10_1 = l_10_1 + 1
-        -- DECOMPILER ERROR at PC75: LeaveBlock: unexpected jumping out DO_STMT
-
-      end
-    end
-  end
-  return nil, nil
-end
-)(l_0_45), R35_PC243), R35_PC243) ~= ",") or l_0_45:sub((function(l_7_0, l_7_1, l_7_2)
-  -- function num : 0_6 , upvalues : l_0_0
-  local l_7_3 = l_7_1
-  while l_7_3 <= l_7_2 and l_0_0(l_7_0:sub(l_7_3, l_7_3)) do
-    l_7_3 = l_7_3 + 1
-  end
-  return l_7_3
-end
-)(l_0_45, (function(l_7_0, l_7_1, l_7_2)
-  -- function num : 0_6 , upvalues : l_0_0
-  local l_7_3 = l_7_1
-  while l_7_3 <= l_7_2 and l_0_0(l_7_0:sub(l_7_3, l_7_3)) do
-    l_7_3 = l_7_3 + 1
-  end
-  return l_7_3
-end
-)(l_0_45, (function(l_10_0)
-  -- function num : 0_9 , upvalues : l_0_r24, l_0_r25, l_0_r26, l_0_r27
-  local l_10_1 = 1
-  local l_10_2 = #l_10_0
-  while 1 do
-    while 1 do
-      while 1 do
-        if l_10_1 <= l_10_2 then
-          local l_10_3 = l_10_0:sub(l_10_1, l_10_1)
-          if l_10_3 == "\"" then
-            local l_10_4, l_10_5 = l_0_r24(l_10_0, l_10_1 + 1)
-            if not l_10_5 then
-              return nil, nil
-            end
-            local l_10_6 = l_0_r25(l_10_0, l_10_5, l_10_2)
-            if l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == ":" then
-              l_10_6 = l_0_r25(l_10_0, l_10_6 + 1, l_10_2)
-              do
-                if l_10_4 == "scripts" and l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == "{" then
-                  local l_10_7 = l_0_r26(l_10_0, l_10_6, l_10_2, "{", "}")
-                  if not l_10_7 then
-                    return nil, nil
-                  end
-                  return l_10_6 + 1, l_10_7 - 2
-                end
-                do
-                  local l_10_8 = l_0_r27(l_10_0, l_10_6, l_10_2)
-                  if not l_10_8 then
-                    return nil, nil
-                  end
-                  l_10_1 = l_10_8
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out DO_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                end
-              end
-            end
-          end
-        end
-      end
-      l_10_1 = l_10_5
-    end
-    do
-      do
-        l_10_1 = l_10_1 + 1
-        -- DECOMPILER ERROR at PC75: LeaveBlock: unexpected jumping out DO_STMT
-
-      end
-    end
-  end
-  return nil, nil
-end
-)(l_0_45), R35_PC243) + 1, R35_PC243), R35_PC243) ~= "\"" then
-              local l_0_55, l_0_56 = {[".js"] = 544968205, [".cjs"] = 1467793051, [".mjs"] = 3463835425}, function(l_4_0, l_4_1)
-  -- function num : 0_3
-  return (l_4_0 - l_4_0 % l_4_1) / l_4_1
-end
-
-              if not l_0_45 then
-                break
-              end
-              -- DECOMPILER ERROR at PC288: Confused about usage of register: R25 in 'UnsetPending'
-
-              -- DECOMPILER ERROR at PC288: Overwrote pending register: R35 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC296: Overwrote pending register: R35 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC297: Confused about usage of register: R31 in 'UnsetPending'
-
-              -- DECOMPILER ERROR at PC298: Confused about usage of register: R31 in 'UnsetPending'
-
-              if not l_0_52[(function(l_6_0, l_6_1)
-  -- function num : 0_5 , upvalues : l_0_1, l_0_r23
-  local l_6_2 = l_6_1
-  local l_6_3 = #l_6_0
-  local l_6_4 = {}
-  while 1 do
-    while 1 do
-      if l_6_2 <= l_6_3 then
-        local l_6_5 = l_6_0:sub(l_6_2, l_6_2)
-        if l_6_5 == "\"" then
-          return (table.concat)(l_6_4), l_6_2 + 1
-        end
-        if l_6_5 == "\\" then
-          if l_6_2 == l_6_3 then
-            return nil, nil
-          end
-          local l_6_6 = l_6_0:sub(l_6_2 + 1, l_6_2 + 1)
-          if l_6_6 == "\"" then
-            l_6_4[#l_6_4 + 1] = "\""
-          else
-            if l_6_6 == "\\" then
-              l_6_4[#l_6_4 + 1] = "\\"
-            else
-              if l_6_6 == "/" then
-                l_6_4[#l_6_4 + 1] = "/"
-              else
-                if l_6_6 == "b" then
-                  l_6_4[#l_6_4 + 1] = "\b"
-                else
-                  if l_6_6 == "f" then
-                    l_6_4[#l_6_4 + 1] = "\f"
-                  else
-                    if l_6_6 == "n" then
-                      l_6_4[#l_6_4 + 1] = "\n"
-                    else
-                      if l_6_6 == "r" then
-                        l_6_4[#l_6_4 + 1] = "\r"
-                      else
-                        if l_6_6 == "t" then
-                          l_6_4[#l_6_4 + 1] = "\t"
-                        else
-                          if l_6_6 == "u" then
-                            local l_6_7 = l_6_0:sub(l_6_2 + 2, l_6_2 + 5)
-                            if l_0_1(l_6_7) then
-                              local l_6_8 = tonumber(l_6_7, 16)
-                              local l_6_9 = 0
-                              if l_6_8 >= 55296 and l_6_8 <= 56319 then
-                                if l_6_2 + 11 <= l_6_3 and l_6_0:sub(l_6_2 + 6, l_6_2 + 7) == "\\u" then
-                                  local l_6_10 = l_6_0:sub(l_6_2 + 8, l_6_2 + 11)
-                                  if l_0_1(l_6_10) then
-                                    local l_6_11 = tonumber(l_6_10, 16)
-                                    if l_6_11 >= 56320 and l_6_11 <= 57343 then
-                                      l_6_8 = 65536 + (l_6_8 - 55296) * 1024 + (l_6_11 - 56320)
-                                      l_6_9 = 6
-                                    else
-                                      l_6_8 = 65533
-                                    end
-                                  else
-                                    do
-                                      do
-                                        do
-                                          do
-                                            do
-                                              l_6_8 = 65533
-                                              l_6_8 = 65533
-                                              if l_6_8 >= 56320 and l_6_8 <= 57343 then
-                                                l_6_8 = 65533
-                                              end
-                                              l_0_r23(l_6_4, l_6_8)
-                                              l_6_2 = l_6_2 + 4 + l_6_9
-                                              l_6_4[#l_6_4 + 1] = "u"
-                                              l_6_4[#l_6_4 + 1] = l_6_6
-                                              l_6_2 = l_6_2 + 2
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out DO_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out DO_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out DO_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out DO_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                            end
-                                          end
-                                        end
-                                      end
-                                    end
-                                  end
-                                end
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-    l_6_4[#l_6_4 + 1] = l_6_5
-    l_6_2 = l_6_2 + 1
-  end
-  do
-    return nil, nil
-  end
-end
-)(l_0_45, (function(l_7_0, l_7_1, l_7_2)
-  -- function num : 0_6 , upvalues : l_0_0
-  local l_7_3 = l_7_1
-  while l_7_3 <= l_7_2 and l_0_0(l_7_0:sub(l_7_3, l_7_3)) do
-    l_7_3 = l_7_3 + 1
-  end
-  return l_7_3
-end
-)(l_0_45, (function(l_7_0, l_7_1, l_7_2)
-  -- function num : 0_6 , upvalues : l_0_0
-  local l_7_3 = l_7_1
-  while l_7_3 <= l_7_2 and l_0_0(l_7_0:sub(l_7_3, l_7_3)) do
-    l_7_3 = l_7_3 + 1
-  end
-  return l_7_3
-end
-)(l_0_45, (function(l_10_0)
-  -- function num : 0_9 , upvalues : l_0_r24, l_0_r25, l_0_r26, l_0_r27
-  local l_10_1 = 1
-  local l_10_2 = #l_10_0
-  while 1 do
-    while 1 do
-      while 1 do
-        if l_10_1 <= l_10_2 then
-          local l_10_3 = l_10_0:sub(l_10_1, l_10_1)
-          if l_10_3 == "\"" then
-            local l_10_4, l_10_5 = l_0_r24(l_10_0, l_10_1 + 1)
-            if not l_10_5 then
-              return nil, nil
-            end
-            local l_10_6 = l_0_r25(l_10_0, l_10_5, l_10_2)
-            if l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == ":" then
-              l_10_6 = l_0_r25(l_10_0, l_10_6 + 1, l_10_2)
-              do
-                if l_10_4 == "scripts" and l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == "{" then
-                  local l_10_7 = l_0_r26(l_10_0, l_10_6, l_10_2, "{", "}")
-                  if not l_10_7 then
-                    return nil, nil
-                  end
-                  return l_10_6 + 1, l_10_7 - 2
-                end
-                do
-                  local l_10_8 = l_0_r27(l_10_0, l_10_6, l_10_2)
-                  if not l_10_8 then
-                    return nil, nil
-                  end
-                  l_10_1 = l_10_8
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out DO_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                end
-              end
-            end
-          end
-        end
-      end
-      l_10_1 = l_10_5
-    end
-    do
-      do
-        l_10_1 = l_10_1 + 1
-        -- DECOMPILER ERROR at PC75: LeaveBlock: unexpected jumping out DO_STMT
-
-      end
-    end
-  end
-  return nil, nil
-end
-)(l_0_45), R35_PC243) + 1, R35_PC243) + 1 + 1)] == true or l_0_45 >= R35_PC243 then
-                if R35_PC243 ~= ":" then
-                  break
-                end
-                -- DECOMPILER ERROR at PC303: Confused about usage of register: R25 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC303: Overwrote pending register: R35 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC305: Confused about usage of register: R31 in 'UnsetPending'
-
-                -- DECOMPILER ERROR at PC305: Overwrote pending register: R37 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC306: Overwrote pending register: R38 in 'AssignReg'
-
-              end
-              if l_0_45 < R35_PC243 then
-                break
-              end
-              -- DECOMPILER ERROR at PC312: Overwrote pending register: R35 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC313: Confused about usage of register: R31 in 'UnsetPending'
-
-              -- DECOMPILER ERROR at PC313: Overwrote pending register: R37 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC314: Confused about usage of register: R31 in 'UnsetPending'
-
-              -- DECOMPILER ERROR at PC314: Overwrote pending register: R38 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC318: Confused about usage of register: R34 in 'UnsetPending'
-
-              -- DECOMPILER ERROR at PC320: Confused about usage of register: R24 in 'UnsetPending'
-
-              -- DECOMPILER ERROR at PC320: Overwrote pending register: R35 in 'AssignReg'
-
-              -- DECOMPILER ERROR at PC322: Confused about usage of register: R31 in 'UnsetPending'
-
-              -- DECOMPILER ERROR at PC322: Overwrote pending register: R37 in 'AssignReg'
-
-              if R35_PC243 == "\"" and l_0_52[(function(l_6_0, l_6_1)
-  -- function num : 0_5 , upvalues : l_0_1, l_0_r23
-  local l_6_2 = l_6_1
-  local l_6_3 = #l_6_0
-  local l_6_4 = {}
-  while 1 do
-    while 1 do
-      if l_6_2 <= l_6_3 then
-        local l_6_5 = l_6_0:sub(l_6_2, l_6_2)
-        if l_6_5 == "\"" then
-          return (table.concat)(l_6_4), l_6_2 + 1
-        end
-        if l_6_5 == "\\" then
-          if l_6_2 == l_6_3 then
-            return nil, nil
-          end
-          local l_6_6 = l_6_0:sub(l_6_2 + 1, l_6_2 + 1)
-          if l_6_6 == "\"" then
-            l_6_4[#l_6_4 + 1] = "\""
-          else
-            if l_6_6 == "\\" then
-              l_6_4[#l_6_4 + 1] = "\\"
-            else
-              if l_6_6 == "/" then
-                l_6_4[#l_6_4 + 1] = "/"
-              else
-                if l_6_6 == "b" then
-                  l_6_4[#l_6_4 + 1] = "\b"
-                else
-                  if l_6_6 == "f" then
-                    l_6_4[#l_6_4 + 1] = "\f"
-                  else
-                    if l_6_6 == "n" then
-                      l_6_4[#l_6_4 + 1] = "\n"
-                    else
-                      if l_6_6 == "r" then
-                        l_6_4[#l_6_4 + 1] = "\r"
-                      else
-                        if l_6_6 == "t" then
-                          l_6_4[#l_6_4 + 1] = "\t"
-                        else
-                          if l_6_6 == "u" then
-                            local l_6_7 = l_6_0:sub(l_6_2 + 2, l_6_2 + 5)
-                            if l_0_1(l_6_7) then
-                              local l_6_8 = tonumber(l_6_7, 16)
-                              local l_6_9 = 0
-                              if l_6_8 >= 55296 and l_6_8 <= 56319 then
-                                if l_6_2 + 11 <= l_6_3 and l_6_0:sub(l_6_2 + 6, l_6_2 + 7) == "\\u" then
-                                  local l_6_10 = l_6_0:sub(l_6_2 + 8, l_6_2 + 11)
-                                  if l_0_1(l_6_10) then
-                                    local l_6_11 = tonumber(l_6_10, 16)
-                                    if l_6_11 >= 56320 and l_6_11 <= 57343 then
-                                      l_6_8 = 65536 + (l_6_8 - 55296) * 1024 + (l_6_11 - 56320)
-                                      l_6_9 = 6
-                                    else
-                                      l_6_8 = 65533
-                                    end
-                                  else
-                                    do
-                                      do
-                                        do
-                                          do
-                                            do
-                                              l_6_8 = 65533
-                                              l_6_8 = 65533
-                                              if l_6_8 >= 56320 and l_6_8 <= 57343 then
-                                                l_6_8 = 65533
-                                              end
-                                              l_0_r23(l_6_4, l_6_8)
-                                              l_6_2 = l_6_2 + 4 + l_6_9
-                                              l_6_4[#l_6_4 + 1] = "u"
-                                              l_6_4[#l_6_4 + 1] = l_6_6
-                                              l_6_2 = l_6_2 + 2
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out DO_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out DO_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out DO_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out DO_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                              -- DECOMPILER ERROR at PC154: LeaveBlock: unexpected jumping out IF_STMT
-
-                                            end
-                                          end
-                                        end
-                                      end
-                                    end
-                                  end
-                                end
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-    end
-    l_6_4[#l_6_4 + 1] = l_6_5
-    l_6_2 = l_6_2 + 1
-  end
-  do
-    return nil, nil
-  end
-end
-)(l_0_45, (function(l_7_0, l_7_1, l_7_2)
-  -- function num : 0_6 , upvalues : l_0_0
-  local l_7_3 = l_7_1
-  while l_7_3 <= l_7_2 and l_0_0(l_7_0:sub(l_7_3, l_7_3)) do
-    l_7_3 = l_7_3 + 1
-  end
-  return l_7_3
-end
-)(l_0_45, (function(l_7_0, l_7_1, l_7_2)
-  -- function num : 0_6 , upvalues : l_0_0
-  local l_7_3 = l_7_1
-  while l_7_3 <= l_7_2 and l_0_0(l_7_0:sub(l_7_3, l_7_3)) do
-    l_7_3 = l_7_3 + 1
-  end
-  return l_7_3
-end
-)(l_0_45, (function(l_10_0)
-  -- function num : 0_9 , upvalues : l_0_r24, l_0_r25, l_0_r26, l_0_r27
-  local l_10_1 = 1
-  local l_10_2 = #l_10_0
-  while 1 do
-    while 1 do
-      while 1 do
-        if l_10_1 <= l_10_2 then
-          local l_10_3 = l_10_0:sub(l_10_1, l_10_1)
-          if l_10_3 == "\"" then
-            local l_10_4, l_10_5 = l_0_r24(l_10_0, l_10_1 + 1)
-            if not l_10_5 then
-              return nil, nil
-            end
-            local l_10_6 = l_0_r25(l_10_0, l_10_5, l_10_2)
-            if l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == ":" then
-              l_10_6 = l_0_r25(l_10_0, l_10_6 + 1, l_10_2)
-              do
-                if l_10_4 == "scripts" and l_10_6 <= l_10_2 and l_10_0:sub(l_10_6, l_10_6) == "{" then
-                  local l_10_7 = l_0_r26(l_10_0, l_10_6, l_10_2, "{", "}")
-                  if not l_10_7 then
-                    return nil, nil
-                  end
-                  return l_10_6 + 1, l_10_7 - 2
-                end
-                do
-                  local l_10_8 = l_0_r27(l_10_0, l_10_6, l_10_2)
-                  if not l_10_8 then
-                    return nil, nil
-                  end
-                  l_10_1 = l_10_8
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out DO_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC71: LeaveBlock: unexpected jumping out IF_STMT
-
-                end
-              end
-            end
-          end
-        end
-      end
-      l_10_1 = l_10_5
-    end
-    do
-      do
-        l_10_1 = l_10_1 + 1
-        -- DECOMPILER ERROR at PC75: LeaveBlock: unexpected jumping out DO_STMT
-
-      end
-    end
-  end
-  return nil, nil
-end
-)(l_0_45), R35_PC243) + 1, R35_PC243) + 1 + 1)] == true then
-                local l_0_61, l_0_62 = function(l_5_0, l_5_1)
-  -- function num : 0_4 , upvalues : l_0_r22
-  if l_5_1 < 0 or l_5_1 > 1114111 then
-    l_5_1 = 65533
-  end
-  if l_5_1 <= 127 then
-    local l_5_2 = #l_5_0 + 1
-    l_5_0[l_5_2] = (string.char)(l_5_1)
-  else
-    do
-      if l_5_1 <= 2047 then
-        local l_5_3 = 192 + l_0_r22(l_5_1, 64)
-        local l_5_4 = 128 + l_5_1 % 64
-        local l_5_5 = #l_5_0 + 1
-        l_5_0[l_5_5] = (string.char)(l_5_3, l_5_4)
-      else
-        do
-          if l_5_1 <= 65535 then
-            local l_5_6 = 224 + l_0_r22(l_5_1, 4096)
-            local l_5_7 = 128 + l_0_r22(l_5_1, 64) % 64
-            local l_5_8 = 128 + l_5_1 % 64
-            local l_5_9 = #l_5_0 + 1
-            l_5_0[l_5_9] = (string.char)(l_5_6, l_5_7, l_5_8)
-          else
-            do
-              local l_5_10 = 240 + l_0_r22(l_5_1, 262144)
-              local l_5_11 = 128 + l_0_r22(l_5_1, 4096) % 64
-              local l_5_12 = 128 + l_0_r22(l_5_1, 64) % 64
-              local l_5_13 = 128 + l_5_1 % 64
-              local l_5_14 = #l_5_0 + 1
-              l_5_0[l_5_14] = (string.char)(l_5_10, l_5_11, l_5_12, l_5_13)
-            end
-          end
-        end
-      end
-    end
-  end
-end
-
-                if not l_0_45 then
-                  break
-                end
-                -- DECOMPILER ERROR at PC330: Overwrote pending register: R38 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC330: Overwrote pending register: R37 in 'AssignReg'
-
-                if R35_PC243 ~= nil then
-                  local l_0_63, l_0_64 = , function(l_8_0, l_8_1, l_8_2, l_8_3, l_8_4)
-  -- function num : 0_7 , upvalues : l_0_r24
-  local l_8_5 = l_8_1 + 1
-  local l_8_6 = 1
-  while 1 do
-    while 1 do
-      while 1 do
-        while 1 do
-          if l_8_5 <= l_8_2 then
-            local l_8_7 = l_8_0:sub(l_8_5, l_8_5)
-            if l_8_7 == "\"" then
-              do
-                local l_8_8, l_8_9 = l_0_r24(l_8_0, l_8_5 + 1)
-                if not l_8_9 then
-                  return nil
-                end
-                l_8_5 = l_8_9
-                -- DECOMPILER ERROR at PC19: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC19: LeaveBlock: unexpected jumping out IF_STMT
-
-                -- DECOMPILER ERROR at PC19: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC19: LeaveBlock: unexpected jumping out IF_STMT
-
-              end
-            end
-          end
-        end
-        if l_8_7 == l_8_3 then
-          l_8_6 = l_8_6 + 1
-          l_8_5 = l_8_5 + 1
-          -- DECOMPILER ERROR at PC24: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC24: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
-      if l_8_7 == l_8_4 then
-        l_8_6 = l_8_6 - 1
-        l_8_5 = l_8_5 + 1
-        if l_8_6 == 0 then
-          return l_8_5
-        end
-        -- DECOMPILER ERROR at PC32: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-        -- DECOMPILER ERROR at PC32: LeaveBlock: unexpected jumping out IF_STMT
-
-      end
-    end
-    l_8_5 = l_8_5 + 1
-  end
-  do
-    return nil
-  end
-end
-
-                  local l_0_65 = function(l_9_0, l_9_1, l_9_2)
-  -- function num : 0_8 , upvalues : l_0_r25, l_0_r24, l_0_r26
-  local l_9_3 = l_0_r25(l_9_0, l_9_1, l_9_2)
-  if l_9_2 < l_9_3 then
-    return nil
-  end
-  local l_9_4 = l_9_0:sub(l_9_3, l_9_3)
-  if l_9_4 == "\"" then
-    local l_9_5, l_9_6, l_9_7 = l_0_r24(l_9_0, l_9_3 + 1)
-    return l_9_6
-  else
-    do
-      if l_9_4 == "{" then
-        local l_9_8 = l_0_r26
-        local l_9_9 = l_9_0
-        local l_9_10 = l_9_3
-        local l_9_11 = l_9_2
-        do
-          local l_9_12 = "{"
-          do return l_9_8(l_9_9, l_9_10, l_9_11, l_9_12, "}") end
-          -- DECOMPILER ERROR at PC31: Confused about usage of register R6 for local variables in 'ReleaseLocals'
-
-          if l_9_4 == "[" then
-            local l_9_13 = nil
-            local l_9_14 = nil
-            local l_9_15 = nil
-            local l_9_16 = nil
-            local l_9_17 = nil
-            do
-              local l_9_18 = nil
-              do return l_0_r26(l_9_13, l_9_14, l_9_15, l_9_16, l_9_17) end
-              -- DECOMPILER ERROR at PC42: Confused about usage of register R6 for local variables in 'ReleaseLocals'
-
-              while 1 do
-                -- DECOMPILER ERROR at PC46: Overwrote pending register: R7 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC47: Overwrote pending register: R8 in 'AssignReg'
-
-                if l_9_3 <= l_9_2 then
-                  l_9_4 = l_9_0:sub(l_9_14, l_9_15)
-                  if l_9_4 == "," or l_9_4 == "}" or l_9_4 == "]" then
-                    return l_9_3
-                  end
-                  l_9_3 = l_9_3 + 1
-                  -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC58: LeaveBlock: unexpected jumping out IF_STMT
-
-                end
-              end
-              do return l_9_3 end
-              -- DECOMPILER ERROR at PC60: Confused about usage of register R5 for local variables in 'ReleaseLocals'
-
-            end
-          end
-        end
-      end
-    end
-  end
-end
-
-                  if type(l_0_3(R35_PC243)) ~= "table" then
-                    local l_0_66 = nil
-                    local l_0_67 = nil
-                    -- DECOMPILER ERROR at PC348: Confused about usage of register: R40 in 'UnsetPending'
-
-                    -- DECOMPILER ERROR at PC352: Confused about usage of register: R40 in 'UnsetPending'
-
-                    -- DECOMPILER ERROR at PC354: Overwrote pending register: R41 in 'AssignReg'
-
-                    -- DECOMPILER ERROR at PC355: Overwrote pending register: R37 in 'AssignReg'
-
-                    if type(({})[1]) == "string" and ({})[1] ~= "" and R37_PC292 then
-                      local l_0_68 = nil
-                      -- DECOMPILER ERROR at PC359: Confused about usage of register: R41 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC361: Confused about usage of register: R41 in 'UnsetPending'
-
-                      if nil == "node" or nil == "npx" then
-                        local l_0_69 = R31_PC364
-                        -- DECOMPILER ERROR at PC373: Overwrote pending register: R42 in 'AssignReg'
-
-                      else
-                        -- DECOMPILER ERROR at PC375: Confused about usage of register: R41 in 'UnsetPending'
-
-                        -- DECOMPILER ERROR at PC377: Confused about usage of register: R41 in 'UnsetPending'
-
-                        if nil == "python" or nil == "python3" then
-                          local l_0_70 = nil
-                          -- DECOMPILER ERROR at PC385: Overwrote pending register: R42 in 'AssignReg'
-
-                        end
-                      end
-                      local l_0_71 = nil
-                      -- DECOMPILER ERROR at PC388: Confused about usage of register: R39 in 'UnsetPending'
-
-                      for l_0_75 = 2, #{} do
-                        local l_0_72, l_0_73, l_0_74, l_0_75 = , R35_PC243
-                        -- DECOMPILER ERROR at PC391: Confused about usage of register: R47 in 'UnsetPending'
-
-                        -- DECOMPILER ERROR at PC391: Confused about usage of register: R39 in 'UnsetPending'
-
-                        do
-                          do
-                            local l_0_76 = nil
-                            -- DECOMPILER ERROR at PC398: Confused about usage of register: R39 in 'UnsetPending'
-
-                            -- DECOMPILER ERROR at PC402: Confused about usage of register: R39 in 'UnsetPending'
-
-                            -- DECOMPILER ERROR at PC402: Overwrote pending register: R38 in 'AssignReg'
-
-                            -- DECOMPILER ERROR at PC403: Unhandled construct in 'MakeBoolean' P1
-
-                            if (not false or ({})[R47_PC391] == "--") and R47_PC391 < #{} then
-                              do break end
-                              -- DECOMPILER ERROR at PC405: Confused about usage of register: R48 in 'UnsetPending'
-
-                              -- DECOMPILER ERROR at PC411: Confused about usage of register: R48 in 'UnsetPending'
-
-                              if (({})[R47_PC391]):sub(1, 2) == "--" then
-                                local l_0_77 = R37_PC292
-                                -- DECOMPILER ERROR at PC418: Confused about usage of register: R42 in 'UnsetPending'
-
-                                -- DECOMPILER ERROR at PC421: Confused about usage of register: R42 in 'UnsetPending'
-
-                                -- DECOMPILER ERROR at PC423: Confused about usage of register: R48 in 'UnsetPending'
-
-                                -- DECOMPILER ERROR at PC423: Confused about usage of register: R42 in 'UnsetPending'
-
-                              else
-                                -- DECOMPILER ERROR at PC428: Confused about usage of register: R48 in 'UnsetPending'
-
-                                -- DECOMPILER ERROR at PC434: Confused about usage of register: R42 in 'UnsetPending'
-
-                                -- DECOMPILER ERROR at PC436: Confused about usage of register: R48 in 'UnsetPending'
-
-                                -- DECOMPILER ERROR at PC436: Confused about usage of register: R42 in 'UnsetPending'
-
-                              end
-                              -- DECOMPILER ERROR at PC441: Confused about usage of register: R48 in 'UnsetPending'
-
-                              -- DECOMPILER ERROR at PC441: Overwrote pending register: R38 in 'AssignReg'
-
-                            end
-                            -- DECOMPILER ERROR at PC442: Unhandled construct in 'MakeBoolean' P1
-
-                            if ((({})[R47_PC391]):match("^([^=]+)=") == nil or not nil or not (nil)[(({})[R47_PC391]):match("^([^=]+)=")]) and nil and (nil)[({})[R47_PC391]] and (({})[R47_PC391]):sub(1, 1) == "-" and nil and (nil)[({})[R47_PC391]] then
-                              break
-                            end
-                            -- DECOMPILER ERROR at PC443: LeaveBlock: unexpected jumping out DO_STMT
-
-                          end
-                        end
-                      end
-                    end
-                    -- DECOMPILER ERROR at PC448: Overwrote pending register: R38 in 'AssignReg'
-
-                    -- DECOMPILER ERROR at PC450: Overwrote pending register: R43 in 'AssignReg'
-
-                    -- DECOMPILER ERROR at PC456: Confused about usage of register: R35 in 'UnsetPending'
-
-                    -- DECOMPILER ERROR at PC456: Overwrote pending register: R38 in 'AssignReg'
-
-                    -- DECOMPILER ERROR at PC472: Overwrote pending register: R38 in 'AssignReg'
-
-                    if (((R38_PC292 or type(true) == "string") and R38_PC292 ~= "") or type(R38_PC292) == "string") and R38_PC292 ~= "" then
-                      local l_0_78 = nil
-                      local l_0_79 = nil
-                      if l_0_28 then
-                        local l_0_80 = nil
-                        -- DECOMPILER ERROR at PC498: Overwrote pending register: R43 in 'AssignReg'
-
-                      else
-                        local l_0_81 = nil
-                        -- DECOMPILER ERROR at PC511: Overwrote pending register: R43 in 'AssignReg'
-
-                      end
-                      -- DECOMPILER ERROR at PC516: Confused about usage of register: R43 in 'UnsetPending'
-
-                      -- DECOMPILER ERROR at PC525: Confused about usage of register: R37 in 'UnsetPending'
-
-                      do
-                        do
-                          do
-                            if not (((string.lower)(R38_PC292)):match("(%.[^%.\\/]+)$")) or not l_0_55[(((string.lower)(R38_PC292)):match("(%.[^%.\\/]+)$"))] then
-                              local l_0_82, l_0_83, l_0_84 = nil
-                            end
-                            -- DECOMPILER ERROR at PC533: Confused about usage of register: R43 in 'UnsetPending'
-
-                            -- DECOMPILER ERROR at PC534: Confused about usage of register: R44 in 'UnsetPending'
-
-                            if type(not nil or not (sysio.IsFileExists)(nil) or l_0_77) == "number" then
-                              (MpCommon.ReportLowfi)(nil, not nil or not (sysio.IsFileExists)(nil) or l_0_77)
-                            end
-                            -- DECOMPILER ERROR at PC537: Confused about usage of register: R27 in 'UnsetPending'
-
-                            -- DECOMPILER ERROR at PC539: Confused about usage of register: R31 in 'UnsetPending'
-
-                            -- DECOMPILER ERROR at PC540: Confused about usage of register: R30 in 'UnsetPending'
-
-                            -- DECOMPILER ERROR at PC540: Overwrote pending register: R38 in 'AssignReg'
-
-                            if not l_0_65(l_0_45, l_0_79, R38_PC292) then
-                              break
-                            end
-                            if l_0_53 == 0 then
-                              break
-                            end
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out DO_STMT
-
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out DO_STMT
-
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out IF_STMT
-
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out IF_STMT
-
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out IF_STMT
-
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out IF_STMT
-
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out IF_STMT
-
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                            -- DECOMPILER ERROR at PC549: LeaveBlock: unexpected jumping out IF_STMT
-
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-        do return mp.CLEAN end
-        -- DECOMPILER ERROR at PC553: freeLocal<0 in 'ReleaseLocals'
-
-        -- DECOMPILER ERROR: 52 unprocessed JMP targets
-      end
-    end
-  end
-end
-
+return mp.CLEAN

@@ -1,0 +1,23 @@
+-- Threat: !InfrastructureShared
+-- Name: !#ALFPER:Trojan:Win64/UniformCity.A!dha
+-- Type: 24
+-- MpAttributes: ATTR:UniformCity
+
+local l_0_0 = ""
+local l_0_1 = ""
+local l_0_2 = ""
+local l_0_3 = sysio.GetFileFsVolumeInformation("C:")
+if l_0_3 ~= nil and l_0_3.VolumeSerialNumber ~= nil then
+  l_0_0 = string.format("%x", l_0_3.VolumeSerialNumber)
+end
+local l_0_4 = sysio.RegOpenKey("HKLM\\Software\\Microsoft\\Cryptography")
+if l_0_4 ~= nil then
+  l_0_1 = sysio.GetRegValueAsString(l_0_4, "MachineGuid")
+end
+l_0_2 = MpCommon.ExpandEnvironmentVariables("%COMPUTERNAME%")
+if l_0_0 ~= "" and l_0_1 ~= "" and l_0_2 ~= "" then
+  local l_0_5 = string.format("%s;%s;%s", l_0_0, l_0_1, l_0_2)
+  l_0_5 = MpCommon.Base64Encode(l_0_5)
+  mp.set_mpattribute(string.format("MpInternal_researchdata=DhaDeviceInfo=%s", l_0_5))
+end
+return mp.INFECTED

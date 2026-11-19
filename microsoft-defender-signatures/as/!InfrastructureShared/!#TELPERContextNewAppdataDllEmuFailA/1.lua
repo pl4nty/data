@@ -1,0 +1,55 @@
+-- Threat: !InfrastructureShared
+-- Name: !#TELPER:ContextNewAppdataDllEmuFail.A
+-- Type: 9
+
+if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) ~= mp.SCANREASON_ONMODIFIEDHANDLECLOSE then
+  return mp.CLEAN
+end
+if mp.get_contextdata(mp.CONTEXT_DATA_NEWLYCREATEDHINT) ~= true then
+  return mp.CLEAN
+end
+if mp.getfilesize() < 4096 or mp.getfilesize() > 1048576 then
+  return mp.CLEAN
+end
+if not peattributes.isdll then
+  return mp.CLEAN
+end
+if not peattributes.executble_image then
+  return mp.CLEAN
+end
+if not peattributes.x86_image then
+  return mp.CLEAN
+end
+if not peattributes._32bitmachine then
+  return mp.CLEAN
+end
+if peattributes.packed then
+  return mp.CLEAN
+end
+if peattributes.packersigmatched then
+  return mp.CLEAN
+end
+if peattributes.dirty_wx_branch then
+  return mp.CLEAN
+end
+if not peattributes.no_security then
+  return mp.CLEAN
+end
+if not peattributes.no_decription then
+  return mp.CLEAN
+end
+if not peattributes.dt_error_heur_exit_criteria then
+  return mp.CLEAN
+end
+local l_0_0 = string.lower(mp.getfilename())
+if mp.IsKnownFriendlyFile(l_0_0, true, false) == true then
+  return mp.CLEAN
+end
+local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+if l_0_2 == nil or l_0_1 == nil then
+  return mp.CLEAN
+end
+if (l_0_1:find("\\roaming\\$") or l_0_1:find("\\low\\$") or l_0_1:find("\\ns%w+.tmp\\$")) and l_0_2:find(".dll$") then
+  return mp.INFECTED
+end
+return mp.CLEAN

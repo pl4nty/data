@@ -1,26 +1,40 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#MpNonPIIFileType\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#MpNonPIIFileType
+-- Type: 24
+-- MpAttributes: RPF:TopLevelFile & BM_UNKNOWN_FILE
 
--- params : ...
--- function num : 0
-do
-  local l_0_0 = {}
-  -- DECOMPILER ERROR at PC27: No list found for R0 , SetList fails
-
-  -- DECOMPILER ERROR at PC28: Overwrote pending register: R1 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC29: Overwrote pending register: R2 in 'AssignReg'
-
-  for l_0_4,l_0_5 in ("ALFPER:Trojan:Win32/Mscoree.mui!dha")("ALFPER:Trojan:Win64/OpenUp.B!dha") do
-    -- DECOMPILER ERROR at PC32: Overwrote pending register: R6 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC34: Overwrote pending register: R7 in 'AssignReg'
-
-    if (("ALF:Trojan:Win32/ChocoFrag.B!dha").get_mpattribute)("ALFPER:Trojan:Win32/ChocoFrag.C!dha") then
-      return mp.INFECTED
-    end
+local l_0_0 = {
+  "ALFPER:Trojan:Win32/Mscoree.mui!dha",
+  "ALFPER:Trojan:Win64/OpenUp.B!dha",
+  "ALFPER:VirTool:Win64/Mcgrubber.B!dha",
+  "ALFPER:Trojan:Win32/Renofloss.N!dha",
+  "ALFPER:Trojan:Win32/KeySnipe.A",
+  "ALF:Trojan:Win32/ChocoFrag.B!dha",
+  "ALFPER:Trojan:Win32/ChocoFrag.C!dha",
+  "ALFPER:Trojan:Win32/Cigril.C!dha",
+  "ALFPER:Trojan:Win64/CashLock.C!dha",
+  "ALFPER:Trojan:Win32/Cigril.A.enc!dha",
+  "ALF:HackTool:Win32/TripWary.E!dha",
+  "ALF:HackTool:Win32/Totkpf.B!dha",
+  "ALFPER:Trojan:Win64/BackBumper.C!dha",
+  "ALF:HackTool:Win32/DeliveryCheck.E!dha",
+  "Backdoor:Script/HustleCon.A!dha",
+  "ALF:Trojan:Win64/SlickMythTarget.A!dha",
+  "ALF:Trojan:Win64/SlickMythTarget.B!dha",
+  "ALF:Trojan:Win64/SlickMythTarget.D!dha",
+  "ALF:Trojan:Win64/ThumpSlingTarget.A!dha",
+  "ALF:Backdoor:Win64/SlickMythTarget.X!dha",
+  "ALF:Trojan:Win64/SilentRookTarget.A!dha",
+  "ALF:Trojan:Win64/SilentRookTarget.B!dha",
+  "ALF:Backdoor:Win64/EchoFitz.B!dha",
+  "ALF:Backdoor:Win32/GarbageFile.F!dha",
+  "ALF:Backdoor:Win64/NeedyMantis.F!dha",
+  "ALF:Trojan:Win64/MutedBallast.D!dha",
+  "ALF:Trojan:Win32/RavenDoor.J!dha"
+}
+for l_0_1, l_0_2 in ipairs(l_0_0) do
+  if mp.get_mpattribute(l_0_2) then
+    return mp.INFECTED
   end
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
 end
-
+return mp.CLEAN

@@ -1,0 +1,21 @@
+-- Threat: !InfrastructureShared
+-- Name: 99b3531fb4d2
+-- Type: 21
+
+local l_0_0
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[1].utf8p2
+end
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = mp.GetExecutablesFromCommandLine(l_0_0)
+for l_0_2, l_0_3 in ipairs(l_0_1) do
+  if sysio.IsFileExists(l_0_3) then
+    bm.add_related_file(l_0_3)
+    if not MpCommon.QueryPersistContext(l_0_3, "T1547.001") then
+      MpCommon.AppendPersistContext(l_0_3, "T1547.001", 0)
+    end
+  end
+end
+return mp.INFECTED

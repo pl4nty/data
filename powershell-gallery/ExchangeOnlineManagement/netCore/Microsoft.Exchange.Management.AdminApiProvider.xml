@@ -20,6 +20,32 @@
             Warnings header name.
             </summary>
         </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.EopTdsTestForestSuffix">
+            <summary>
+            TEST-TOPOLOGY ONLY. Forest suffix of an EOP/FFO TDS test box. The test-only server-side
+            EopTdsDAuthMockModule only exists on these boxes, so the EOP TDS role headers are stamped only when the
+            local box's own forest ends with this suffix - never from a production machine.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.ExchangeLabsRegistryKeyPath">
+            <summary>
+            TEST-TOPOLOGY ONLY. HKLM registry key (and DWORD value) that the product uses to mark a box as an
+            EOP / Forefront-for-Office (FFO) deployment. Read directly (not via the datacenter-aware DatacenterRegistry
+            helper, which is banned in new code) so the EOP TDS role headers are emitted only on an EOP box, never on a
+            Substrate box that happens to share the .extest.microsoft.com test forest.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.ForefrontForOfficeModeValueName">
+            <summary>DWORD value name under <see cref="F:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.ExchangeLabsRegistryKeyPath"/>; 1 means this is an EOP/FFO box.</summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.eopTdsRoleHeaderGateTestHook">
+            <summary>
+            Test-only seam for the EOP-TDS role-header gate. Always null in production (the real forest + registry gate
+            is evaluated). The EOP/FFO registry marker and a .extest.microsoft.com forest cannot be set on a build/CI
+            box, so unit tests set this (via reflection) to force the gate open or closed. Private + reflection-only =&gt;
+            unreachable from production.
+            </summary>
+        </member>
         <member name="F:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.WarningDelimiter">
             <summary>
             Warnings delimiter in warnings header value.
@@ -301,6 +327,49 @@
             </summary>
             <param name="sender">Sender param</param>
             <param name="e">Event arguments</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.AddEopTdsRoleHeaderFromEnvironment(Microsoft.OData.Client.BuildingRequestEventArgs,System.String,System.String)">
+            <summary>
+            TEST-TOPOLOGY ONLY. Copies a role-selection value from the named environment variable to the named
+            request header when the variable is set and the header is not already present. Used exclusively by the
+            EOP TDS shell launcher (LaunchEopShell) to pass RBAC role-group selections through to the test-only
+            DAuth-minting AdminApi module (EopTdsDAuthMockModule). No-op in production, where the variables are
+            never set and any stray header would be ignored by a server without the test-only mock module.
+            </summary>
+            <param name="e">The request being built.</param>
+            <param name="environmentVariableName">Name of the environment variable to read.</param>
+            <param name="headerName">Name of the request header to set from the variable's value.</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.IsEopTdsRoleHeaderAllowed">
+            <summary>
+            Defense-in-depth gate for <see cref="M:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.AddEopTdsRoleHeaderFromEnvironment(Microsoft.OData.Client.BuildingRequestEventArgs,System.String,System.String)"/>: the test-only role headers may be
+            stamped only when BOTH (a) this client's own forest is a TDS test forest (<see cref="M:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.IsEopTdsTestForestBox"/>)
+            AND (b) the box is an EOP/FFO deployment (<see cref="M:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.IsForefrontForOfficeBox"/>). Honors the reflection-only
+            test seam first so unit tests can exercise the stamping logic without machine state. Never throws.
+            </summary>
+            <returns>True when the test-only EOP-TDS role headers may be emitted from this box; otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.IsEopTdsTestForestBox">
+            <summary>
+            TEST-TOPOLOGY ONLY. Returns true when this client is running on an EOP/FFO TDS test box - i.e. the local
+            machine's primary DNS domain ends with <c>.extest.microsoft.com</c>. This is the only environment where the
+            server-side test-only EopTdsDAuthMockModule exists to honour the EOP TDS role headers, and it mirrors the
+            server's own <c>IsTestTopologyBox</c> gate (which keys off the box forest FQDN, not the request Host).
+            Used as a defense-in-depth gate so test-only headers are never emitted from a non-test machine. Never throws.
+            </summary>
+            <returns>True when the local box's forest is a TDS test forest; otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.IsForefrontForOfficeBox">
+            <summary>
+            TEST-TOPOLOGY ONLY. Returns true when this box is an EOP / Forefront-for-Office (FFO) deployment, read from
+            the same <c>HKLM\SOFTWARE\Microsoft\ExchangeLabs!ForefrontForOfficeMode</c> DWORD (==1) the product uses to
+            distinguish EOP from Substrate. The value is read with a raw <see cref="T:Microsoft.Win32.Registry"/> call rather than the
+            datacenter-aware <c>DatacenterRegistry.IsForefrontForOffice()</c> helper (which is banned in new code), so it
+            stays analyzer-clean. Used together with <see cref="M:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.IsEopTdsTestForestBox"/> as a defense-in-depth gate so the
+            EOP TDS role headers are never emitted from a Substrate box sharing the .extest.microsoft.com test forest.
+            Never throws.
+            </summary>
+            <returns>True when the local box is an EOP/FFO deployment; otherwise false.</returns>
         </member>
         <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ApiProvider`1.GetXAnchorMailbox(System.String)">
             <summary>
@@ -781,6 +850,13 @@
             </summary>
             <param name="connectionUri">Connectionuri String</param>
             <returns>Returns Acquire token endpoint with IP Audience</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.AppSettings.GetAcquireTokenEndpointForMdo(System.String)">
+            <summary>
+            Returns the EOP token audience for an MDO PowerShell connection.
+            </summary>
+            <param name="connectionUri">Connection URI.</param>
+            <returns>The EOP token audience.</returns>
         </member>
         <member name="M:Microsoft.Exchange.Management.AdminApiProvider.AppSettings.GetForcedTargetVersionHeaderValue">
             <summary>
@@ -1668,114 +1744,6 @@
             </summary>
             <returns> true if expired </returns>
         </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.DefaultMSILoginUri">
-            <summary>
-            MSI end point to acquire token in Cloud Shell
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.ApiProviderVersion">
-            <summary>
-            API provider version to extract MSI token
-            https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.tokenInfo">
-            <summary>
-            New supported audiences needs to be added in this list
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.asyncConsoleLogger">
-            <summary>
-            asyncConsoleLogger instance
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.context">
-            <summary>
-            Member variable for TokenProviderContext 
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.ObjectId">
-            <summary>
-            Object Id of this Token provider
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.#ctor(Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenProviderContext)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider" /> class.
-            </summary>
-            <param name="tokenProviderContext">Token Provider Context</param>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetAccessToken(System.String,System.String)">
-            <summary>
-            Get MSI AUTH Token by making an HTTP call
-            </summary>
-            <returns>Token Information</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.Microsoft#Exchange#Management#AdminApiProvider#Authentication#ITokenProvider#ClearAllTokens">
-            <summary>
-            It clears the cached MSI token
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetValidTokenFromCache(System.String)">
-            <summary>
-            Get a valid token from the cache
-            Gets the cached token if the expiry is still within expiry offset, else returns null.
-            </summary>
-            <returns>A matching token from the underlying token which it gets silently</returns>
-        </member>
-        <!-- Badly formed XML comment ignored for member "M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetAccessTokenSilent(System.String,System.String)" -->
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.SetConsoleLogger(Microsoft.Exchange.Management.AdminApiProvider.AsyncConsoleLogger)">
-            <summary>
-            Set Console Logger
-            </summary>
-            <param name="asyncConsoleLogger">asyncConsoleLogger instance </param>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetObjectId">
-            <summary>
-            Get Object Id
-            </summary>
-            <returns>The object Id</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.IsTokenCacheEmpty">
-            <summary>
-            Indicates whether the cache maintained by provider is empty
-            </summary>
-            <returns>boolean indicating whether cache maintained by provider  is empty</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.RemoveInvalidTokenFromCache">
-            <summary>
-            Removes invalid token from cache.
-            </summary>
-            <returns>boolean indicating whether cache maintained by provider  is empty</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetGraphToken(System.String,System.String)">
-            <summary>
-            Get access token for graph
-            </summary>
-            <param name="claims">claims param</param>
-            <param name="cmdletId">cmdletId to be used for logging</param>
-            <returns>Token for graph</returns>
-            <exception cref="T:System.NotImplementedException">Not implemented</exception>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetAccessTokenSilent(System.Collections.Generic.IEnumerable{System.String},System.String)">
-            <inheritdoc/>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.BuildTokenRequestUri(System.String)">
-            <summary>
-            Build Token Request Uri
-            </summary>
-            <param name="endPoint">End Point for which token is acquired</param>
-            <returns>Token Request Uri</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetTokenInfoFromAccessToken(System.String)">
-            <summary>
-            Get Token Information from access Token.
-            It constructs the authorization and other details such as up and tenantId
-            needed to construct tokenInformation object
-            </summary>
-            <param name="endPoint">End Point for which token is acquired</param>
-            <returns>Token Request Uri</returns>
-        </member>
         <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Authentication.MSALTokenProvider">
             <summary>
             MSALTokenProvider class
@@ -2392,6 +2360,114 @@
             </summary>
             <param name="context">Token Provider Context</param>
             <returns>Default UPN to use in case of the appOnly connection</returns>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.DefaultMSILoginUri">
+            <summary>
+            MSI end point to acquire token in Cloud Shell
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.ApiProviderVersion">
+            <summary>
+            API provider version to extract MSI token
+            https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.tokenInfo">
+            <summary>
+            New supported audiences needs to be added in this list
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.asyncConsoleLogger">
+            <summary>
+            asyncConsoleLogger instance
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.context">
+            <summary>
+            Member variable for TokenProviderContext 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.ObjectId">
+            <summary>
+            Object Id of this Token provider
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.#ctor(Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenProviderContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider" /> class.
+            </summary>
+            <param name="tokenProviderContext">Token Provider Context</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetAccessToken(System.String,System.String)">
+            <summary>
+            Get MSI AUTH Token by making an HTTP call
+            </summary>
+            <returns>Token Information</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.Microsoft#Exchange#Management#AdminApiProvider#Authentication#ITokenProvider#ClearAllTokens">
+            <summary>
+            It clears the cached MSI token
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetValidTokenFromCache(System.String)">
+            <summary>
+            Get a valid token from the cache
+            Gets the cached token if the expiry is still within expiry offset, else returns null.
+            </summary>
+            <returns>A matching token from the underlying token which it gets silently</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetAccessTokenSilent(System.String,System.String)" -->
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.SetConsoleLogger(Microsoft.Exchange.Management.AdminApiProvider.AsyncConsoleLogger)">
+            <summary>
+            Set Console Logger
+            </summary>
+            <param name="asyncConsoleLogger">asyncConsoleLogger instance </param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetObjectId">
+            <summary>
+            Get Object Id
+            </summary>
+            <returns>The object Id</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.IsTokenCacheEmpty">
+            <summary>
+            Indicates whether the cache maintained by provider is empty
+            </summary>
+            <returns>boolean indicating whether cache maintained by provider  is empty</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.RemoveInvalidTokenFromCache">
+            <summary>
+            Removes invalid token from cache.
+            </summary>
+            <returns>boolean indicating whether cache maintained by provider  is empty</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetGraphToken(System.String,System.String)">
+            <summary>
+            Get access token for graph
+            </summary>
+            <param name="claims">claims param</param>
+            <param name="cmdletId">cmdletId to be used for logging</param>
+            <returns>Token for graph</returns>
+            <exception cref="T:System.NotImplementedException">Not implemented</exception>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetAccessTokenSilent(System.Collections.Generic.IEnumerable{System.String},System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.BuildTokenRequestUri(System.String)">
+            <summary>
+            Build Token Request Uri
+            </summary>
+            <param name="endPoint">End Point for which token is acquired</param>
+            <returns>Token Request Uri</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.ManagedServiceTokenProvider.GetTokenInfoFromAccessToken(System.String)">
+            <summary>
+            Get Token Information from access Token.
+            It constructs the authorization and other details such as up and tenantId
+            needed to construct tokenInformation object
+            </summary>
+            <param name="endPoint">End Point for which token is acquired</param>
+            <returns>Token Request Uri</returns>
         </member>
         <member name="T:Microsoft.Exchange.Management.AdminApiProvider.AuthResult">
             <summary>
@@ -16803,6 +16879,141 @@
             <param name="cancellationToken">cancellation token while waiting.</param>
             <param name="logMessagePrefix">Prefix while logging messages.</param>
         </member>
+        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.ICacheable">
+            <summary>
+            Interface class to provide caching interface
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ICacheable.ShouldCache">
+            <summary>
+            Should this object be cached
+            </summary>
+            <returns> true if this object should be cached </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ICacheable.IsExpired">
+            <summary>
+            Is this object expired
+            </summary>
+            <returns> true if expired </returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle">
+            <summary>
+            Provides utility methods for handling parent window handles.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetConsoleOrTerminalWindow">
+            <summary>
+            Retrieves the handle to the console window or the root owner of the console window.
+            </summary>
+            <returns>A handle to the console or terminal window.</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags">
+            <summary>
+            Flags used with the GetAncestor function to specify which ancestor to retrieve.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags.GetParent">
+            <summary>
+            Retrieves the parent window.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags.GetRoot">
+            <summary>
+            Retrieves the root window.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags.GetRootOwner">
+            <summary>
+            Retrieves the owned root window.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestor(System.IntPtr,Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags)">
+            <summary>
+            Retrieves the handle to the ancestor window of the specified window.
+            </summary>
+            <param name="hwnd">A handle to the window whose ancestor is to be retrieved.</param>
+            <param name="flags">The ancestor to be retrieved.</param>
+            <returns>A handle to the ancestor window.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetConsoleWindow">
+            <summary>
+            Retrieves the handle to the console window associated with the calling process.
+            </summary>
+            <returns>A handle to the console window.</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Utility">
+            <summary>
+            Helper class hosting utility functions.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.StringRepresentationFormat">
+            <summary>
+            Holds the string representation formatter.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.AzureCloudShellIdentifier">
+            <summary>
+            Holds the Environment variable for AzureCloudsShell.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.AzureCloudShellIdentifierKey">
+            <summary>
+            Holds the Environment variable key for identifying AzureCloudsShell.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.EmailAddressRegexPattern">
+            <summary>
+            Regex for validating whether given string is in email format or not.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.SafeToString``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            Gets the string representation of the given collection.
+            </summary>
+            <typeparam name="T">
+            The type backing the collection.
+            </typeparam>
+            <param name="collection">
+            The collection instance.
+            </param>
+            <returns>
+            The string representation.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.AddPropertyChangedEventHandlerToAllCollectionProperties(System.Object,System.Action{System.String})">
+            <summary>
+            Add property changed event handler for all properties of type INotifyCollectionChanged properties in current class. 
+            </summary>
+            <param name="instance"> instance param</param>
+            <param name="actionForAddingChangedProperties"> actionForAddingChangedProperties param</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.IsValidEmail(System.String)">
+            <summary>
+            Checks whether given string is in email format.
+            </summary>
+            <param name="str">Input string.</param>
+            <returns>true if given string is in email format.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.IsValidGuid(System.String)">
+            <summary>
+            Returns true if given string is in valid GUID format.
+            </summary>
+            <param name="guidStr">Inout string.</param>
+            <returns>True if given string is in valid guid format. False otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.IsCloudShellEnvironment">
+            <summary>
+            Returns true in case the current PowerShell instance is running in the Azure CloudShell prod environment.
+            </summary>
+            <returns>True in case the current PowerShell instance is running in the Azure CloudShell prod environment. False otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.SecureStringToString(System.Security.SecureString)">
+            <summary>
+            Converts Secure String to String
+            </summary>
+            <param name="securePassword">Secure String</param>
+            <returns>String from secure string</returns>
+        </member>
         <member name="T:Microsoft.Exchange.Management.AdminApiProvider.ExponentialRetryAlgorithm">
             <summary>
             Class for Exponential Retry Algorithm
@@ -16977,23 +17188,6 @@
             <param name="request">Http Request Message</param>
             <returns>Copied HttpRequestMessage</returns>
         </member>
-        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.ICacheable">
-            <summary>
-            Interface class to provide caching interface
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ICacheable.ShouldCache">
-            <summary>
-            Should this object be cached
-            </summary>
-            <returns> true if this object should be cached </returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.ICacheable.IsExpired">
-            <summary>
-            Is this object expired
-            </summary>
-            <returns> true if expired </returns>
-        </member>
         <member name="T:Microsoft.Exchange.Management.AdminApiProvider.IHttpOperations">
             <summary>
             Interface for Http Operations
@@ -17032,51 +17226,6 @@
             Wait for the appropriate retry interval
             </summary>
             <returns>A Task that delays for the appropriate interval</returns>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle">
-            <summary>
-            Provides utility methods for handling parent window handles.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetConsoleOrTerminalWindow">
-            <summary>
-            Retrieves the handle to the console window or the root owner of the console window.
-            </summary>
-            <returns>A handle to the console or terminal window.</returns>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags">
-            <summary>
-            Flags used with the GetAncestor function to specify which ancestor to retrieve.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags.GetParent">
-            <summary>
-            Retrieves the parent window.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags.GetRoot">
-            <summary>
-            Retrieves the root window.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags.GetRootOwner">
-            <summary>
-            Retrieves the owned root window.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestor(System.IntPtr,Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetAncestorFlags)">
-            <summary>
-            Retrieves the handle to the ancestor window of the specified window.
-            </summary>
-            <param name="hwnd">A handle to the window whose ancestor is to be retrieved.</param>
-            <param name="flags">The ancestor to be retrieved.</param>
-            <returns>A handle to the ancestor window.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utilities.ParentWindowHandle.GetConsoleWindow">
-            <summary>
-            Retrieves the handle to the console window associated with the calling process.
-            </summary>
-            <returns>A handle to the console window.</returns>
         </member>
         <member name="T:Microsoft.Exchange.Management.AdminApiProvider.RetryAlgorithmType">
             <summary>
@@ -17131,79 +17280,6 @@
             </summary>
             <param name="type">RetryAlgorithm Type</param>
             <returns>IRetryAlgorithm instance</returns>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.AdminApiProvider.Utility">
-            <summary>
-            Helper class hosting utility functions.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.StringRepresentationFormat">
-            <summary>
-            Holds the string representation formatter.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.AzureCloudShellIdentifier">
-            <summary>
-            Holds the Environment variable for AzureCloudsShell.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.AzureCloudShellIdentifierKey">
-            <summary>
-            Holds the Environment variable key for identifying AzureCloudsShell.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Utility.EmailAddressRegexPattern">
-            <summary>
-            Regex for validating whether given string is in email format or not.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.SafeToString``1(System.Collections.Generic.IList{``0})">
-            <summary>
-            Gets the string representation of the given collection.
-            </summary>
-            <typeparam name="T">
-            The type backing the collection.
-            </typeparam>
-            <param name="collection">
-            The collection instance.
-            </param>
-            <returns>
-            The string representation.
-            </returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.AddPropertyChangedEventHandlerToAllCollectionProperties(System.Object,System.Action{System.String})">
-            <summary>
-            Add property changed event handler for all properties of type INotifyCollectionChanged properties in current class. 
-            </summary>
-            <param name="instance"> instance param</param>
-            <param name="actionForAddingChangedProperties"> actionForAddingChangedProperties param</param>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.IsValidEmail(System.String)">
-            <summary>
-            Checks whether given string is in email format.
-            </summary>
-            <param name="str">Input string.</param>
-            <returns>true if given string is in email format.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.IsValidGuid(System.String)">
-            <summary>
-            Returns true if given string is in valid GUID format.
-            </summary>
-            <param name="guidStr">Inout string.</param>
-            <returns>True if given string is in valid guid format. False otherwise.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.IsCloudShellEnvironment">
-            <summary>
-            Returns true in case the current PowerShell instance is running in the Azure CloudShell prod environment.
-            </summary>
-            <returns>True in case the current PowerShell instance is running in the Azure CloudShell prod environment. False otherwise.</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Utility.SecureStringToString(System.Security.SecureString)">
-            <summary>
-            Converts Secure String to String
-            </summary>
-            <param name="securePassword">Secure String</param>
-            <returns>String from secure string</returns>
         </member>
     </members>
 </doc>

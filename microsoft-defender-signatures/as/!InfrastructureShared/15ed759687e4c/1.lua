@@ -1,44 +1,42 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\15ed759687e4c\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 15ed759687e4c
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0, l_0_1 = nil, nil
-local l_0_2, l_0_3 = nil
-if pcall(mp.GetParentProcInfo) and mp.GetParentProcInfo ~= nil then
-  l_0_2 = (mp.GetParentProcInfo).ppid
-  l_0_3 = (mp.GetParentProcInfo).image_path
-  local l_0_4 = nil
-  local l_0_5 = nil
-  local l_0_6 = nil
-  if ({["net.exe"] = true, ["ng bailey image collector.exe"] = true, ["ltsvc.exe"] = true, ["explorer.exe"] = true})[((string.lower)(l_0_3)):match("([^\\]+)$")] then
+local l_0_0, l_0_1
+local l_0_2, l_0_3 = pcall(mp.GetParentProcInfo)
+if l_0_2 and l_0_3 ~= nil then
+  l_0_0 = l_0_3.ppid
+  l_0_1 = l_0_3.image_path
+  local l_0_4 = string.lower(l_0_1)
+  local l_0_5 = l_0_4:match("([^\\]+)$")
+  local l_0_6 = {
+    ["net.exe"] = true,
+    ["ng bailey image collector.exe"] = true,
+    ["ltsvc.exe"] = true,
+    ["explorer.exe"] = true
+  }
+  if l_0_6[l_0_5] then
     return mp.CLEAN
   end
 end
-do
-  if l_0_2 ~= nil and l_0_3 ~= nil then
-    if IsLegacyOrgMachine() then
-      return mp.CLEAN
-    end
-    if IsPidExcluded(l_0_2) then
-      return mp.CLEAN
-    end
-    TrackPidAndTechnique(l_0_2, "T1087", "account_discovery")
-    if IsDetectionThresholdMet(l_0_2) then
-      return mp.INFECTED
-    end
-    if IsTechniqueObservedForPid(l_0_2, "T1071") then
-      return mp.INFECTED
-    end
-    -- DECOMPILER ERROR at PC70: Confused about usage of register: R3 in 'UnsetPending'
-
-    local l_0_7 = nil
-    if (GetTacticsTableForPid(l_0_5.ppid)).winrshost_childproc or (GetTacticsTableForPid(l_0_5.ppid)).wsmprovhost_childproc or (GetTacticsTableForPid(l_0_5.ppid)).wmi_childproc or (GetTacticsTableForPid(l_0_5.ppid)).remotedropexe_childproc or (GetTacticsTableForPid(l_0_5.ppid)).python_childproc or (GetTacticsTableForPid(l_0_5.ppid)).mshta_childproc or (GetTacticsTableForPid(l_0_5.ppid)).webshell_childproc or (GetTacticsTableForPid(l_0_5.ppid)).exec_remotedroppedscript_a then
-      return mp.INFECTED
-    end
-  end
-  do
+if l_0_0 ~= nil and l_0_1 ~= nil then
+  if IsLegacyOrgMachine() then
     return mp.CLEAN
   end
+  if IsPidExcluded(l_0_0) then
+    return mp.CLEAN
+  end
+  TrackPidAndTechnique(l_0_0, "T1087", "account_discovery")
+  if IsDetectionThresholdMet(l_0_0) then
+    return mp.INFECTED
+  end
+  if IsTechniqueObservedForPid(l_0_0, "T1071") then
+    return mp.INFECTED
+  end
+  local l_0_7 = GetTacticsTableForPid(l_0_3.ppid)
+  if l_0_7.winrshost_childproc or l_0_7.wsmprovhost_childproc or l_0_7.wmi_childproc or l_0_7.remotedropexe_childproc or l_0_7.python_childproc or l_0_7.mshta_childproc or l_0_7.webshell_childproc or l_0_7.exec_remotedroppedscript_a then
+    return mp.INFECTED
+  end
 end
-
+return mp.CLEAN

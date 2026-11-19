@@ -1,32 +1,29 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\4141b9cfe8ed\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 4141b9cfe8ed
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-if (versioning.GetTestMode)() ~= 65000 and (MpCommon.IsSampled)(1000, true, true, true) == false then
+if versioning.GetTestMode() ~= 65000 and versioning.IsSampled(1000, true, true, true) == false then
   return mp.CLEAN
 end
-local l_0_0 = (this_sigattrlog[1]).utf8p1
-local l_0_1 = (this_sigattrlog[3]).utf8p1
+local l_0_0 = this_sigattrlog[1].utf8p1
+local l_0_1 = this_sigattrlog[3].utf8p1
 local l_0_2 = "NRI-DNS-ALT-SRV"
-local l_0_3 = (string.format)("%s_%s", l_0_2, l_0_0)
-local l_0_4 = (MpCommon.GetPersistContextCountNoPath)(l_0_3)
-if l_0_4 and l_0_4 > 0 then
+local l_0_3 = string.format("%s_%s", l_0_2, l_0_0)
+local l_0_4 = MpCommon.GetPersistContextCountNoPath(l_0_3)
+if l_0_4 and 0 < l_0_4 then
   return mp.CLEAN
 end
 if isAlternateDNSServer(l_0_0) then
   local l_0_5 = "altDNS_" .. l_0_0
-  local l_0_6 = (MpCommon.QueryPersistContextNoPath)(l_0_5, l_0_1)
+  local l_0_6 = MpCommon.QueryPersistContextNoPath(l_0_5, l_0_1)
   if not l_0_6 then
-    (MpCommon.AppendPersistContextNoPath)(l_0_5, l_0_1, 3600)
+    MpCommon.AppendPersistContextNoPath(l_0_5, l_0_1, 3600)
   end
-  local l_0_7 = (MpCommon.GetPersistContextCountNoPath)(l_0_5)
-  if l_0_7 > 5 then
-    (MpCommon.AppendPersistContextNoPath)(l_0_2, l_0_5, 60)
+  local l_0_7 = MpCommon.GetPersistContextCountNoPath(l_0_5)
+  if 5 < l_0_7 then
+    MpCommon.AppendPersistContextNoPath(l_0_2, l_0_5, 60)
     return mp.INFECTED
   end
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

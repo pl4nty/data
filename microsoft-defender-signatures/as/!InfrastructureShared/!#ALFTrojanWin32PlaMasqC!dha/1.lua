@@ -1,13 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanWin32PlaMasqC!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:Win32/PlaMasq.C!dha
+-- Type: 9
+-- MpAttributes: !PEPCODE:HasDigitalSignature
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_0 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
 if l_0_0 == "vmware-vmx.exe" then
   return mp.CLEAN
 end
-local l_0_1 = (pe.get_versioninfo)()
+local l_0_1 = pe.get_versioninfo()
 if l_0_1 ~= nil then
   if l_0_1.FileOriginalName == "VMware.SpbmApi.dll" then
     return mp.CLEAN
@@ -23,4 +23,3 @@ if l_0_1 ~= nil then
   end
 end
 return mp.CLEAN
-

@@ -1,15 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\55d7a38dad66\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 55d7a38dad66
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = {}
--- DECOMPILER ERROR at PC2: No list found for R0 , SetList fails
-
--- DECOMPILER ERROR at PC3: Overwrote pending register: R1 in 'AssignReg'
-
-if ("node.exe")("cmdhstr", l_0_0) then
+local l_0_0 = {"node.exe"}
+if IsProcNameInParentProcessTree("cmdhstr", l_0_0) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

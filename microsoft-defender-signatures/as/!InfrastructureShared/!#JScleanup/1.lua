@@ -1,18 +1,17 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#JScleanup\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#JScleanup
+-- Type: 13
+-- MpAttributes: Lua:JSExt & SCRT:JS/CodeInMalicious.S1
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 4096 or l_0_0 > 16777216 then
+local l_0_0 = mp.getfilesize()
+if l_0_0 < 4096 or 16777216 < l_0_0 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_1 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
 if l_0_1 == nil then
   return mp.CLEAN
 end
-if (string.find)(l_0_1, "notice_", 1, true) ~= nil then
-  (mp.set_mpattribute)("Lua:JS.MalwareCampaign.S1")
+if string.find(l_0_1, "notice_", 1, true) ~= nil then
+  mp.set_mpattribute("Lua:JS.MalwareCampaign.S1")
 end
 return mp.CLEAN
-

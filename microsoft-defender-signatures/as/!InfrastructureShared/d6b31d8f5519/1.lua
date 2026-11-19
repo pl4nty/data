@@ -1,28 +1,18 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\d6b31d8f5519\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: d6b31d8f5519
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC52: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if (not (this_sigattrlog[2]).matched or not (this_sigattrlog[2]).utf8p2 or (this_sigattrlog[3]).matched) and (this_sigattrlog[3]).utf8p2 then
-      local l_0_1 = reportGenericRansomware((this_sigattrlog[2]).utf8p2, true)
-    end
-    -- DECOMPILER ERROR at PC55: Confused about usage of register: R0 in 'UnsetPending'
-
-    if l_0_1 == mp.INFECTED then
-      reportSessionInformation()
-      return mp.INFECTED
-    end
-    return mp.CLEAN
-  end
+local l_0_0
+if this_sigattrlog[4].matched and this_sigattrlog[4].utf8p2 then
+  l_0_0 = reportGenericRansomware(this_sigattrlog[4].utf8p2, true)
+elseif this_sigattrlog[2].matched and this_sigattrlog[2].utf8p2 then
+  l_0_0 = reportGenericRansomware(this_sigattrlog[2].utf8p2, true)
+elseif this_sigattrlog[3].matched and this_sigattrlog[3].utf8p2 then
+  l_0_0 = reportGenericRansomware(this_sigattrlog[3].utf8p2, true)
 end
-
+if l_0_0 == mp.INFECTED then
+  reportSessionInformation()
+  return mp.INFECTED
+end
+return mp.CLEAN

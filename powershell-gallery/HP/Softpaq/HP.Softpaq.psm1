@@ -634,7 +634,7 @@ function Clear-HPSoftpaqCache {
   Specifies an OS for this command to filter based on. The value must be 'win10' or 'win11'. If not specified, the current platform OS is used.
 
 .PARAMETER OsVer
-  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', etc). If this parameter is not specified, the current operating system version is used.
+  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', '26H1', '26H2', etc). If this parameter is not specified, the current operating system version is used.
 
 .PARAMETER Category
   Specifies a category of SoftPaqs for this command to filter based on. The value must be one (or more) of the following values: 
@@ -814,7 +814,7 @@ function Get-HPSoftpaqList {
     [Parameter(ParameterSetName = "DownloadParams")]
     [Parameter(Position = 2,Mandatory = $false,ParameterSetName = "ViewParams")] [string]$Os,
 
-    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2")]
+    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2","26H1", "26H2")]
     [Parameter(ParameterSetName = "DownloadParams")]
     [Parameter(Position = 3,Mandatory = $false,ParameterSetName = "ViewParams")] [string]$OsVer,
 
@@ -917,7 +917,7 @@ function Get-HPSoftpaqList {
 
   # get build number for each OS 
   $osBuildNumbers = @{
-    "win11" = @("22000", "22621", "22631", "26100", "26200")
+    "win11" = @("22000", "22621", "22631", "26100", "26200", "28000", "26300")
     "win10" = @("17763", "18362", "18363", "19041", "19042", "19043", "19044", "19045")
   }
 
@@ -930,7 +930,7 @@ function Get-HPSoftpaqList {
     $bitnessList = @("arm 64-bit processor","64-bit","32-bit")
     
     $osList = @("win11","win10","win81","win8.1", "win8","win7")
-    $osVerList = @("25h2","24h2","23h2","22h2","21h2","21h1","2009","2004","1909","1903","1809")
+    $osVerList = @("26h1","26h2","25h2","24h2","23h2","22h2","21h2","21h1","2009","2004","1909","1903","1809")
     $bitnessList = @("arm64","64","32")
 
     # for every combination of OS Build Numbers and Bitness, check for response 
@@ -976,7 +976,7 @@ function Get-HPSoftpaqList {
         Write-Verbose "Using reference files from: $referenceFallbackUrL"
 
         $osList = @("win11","win10")
-        $osVerList = @("25h2","24h2","23h2","22h2","21h2","21h1","2009","2004","1909","1903","1809")
+        $osVerList = @("26h1","26h2","25h2","24h2","23h2","22h2","21h2","21h1","2009","2004","1909","1903","1809")
         $bitnessList = @("arm64","64","32")
         # for every combination of OS, OSVer and Bitness, test if file exists
         foreach ($os in $osList) {
@@ -1107,6 +1107,8 @@ function Get-HPSoftpaqList {
         "23H2" { $buildNumber = "22631" }
         "24H2" { $buildNumber = "26100" }
         "25H2" { $buildNumber = "26200" }
+        "26H1" { $buildNumber = "28000" }
+        "26H2" { $buildNumber = "26300" }
         default {
           throw [System.ArgumentException]"Unsupported OS version: $OsVer"
         }
@@ -1919,7 +1921,7 @@ function New-HPPrivateSoftPaqListManifest {
   Specifies an OS for this command to filter based on. The value must be 'win10' or 'win11'. If not specified, the current platform OS is used.
 
 .PARAMETER OsVer
-  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', etc). If this parameter is not specified, the current operating system version is used.
+  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', '26H1', '26H2', etc). If this parameter is not specified, the current operating system version is used.
 
 .PARAMETER Format
    Specifies the output format of the Driver Pack. The value must be one of the following values:
@@ -1963,7 +1965,7 @@ function New-HPBuildDriverPack {
     [ValidateSet('win10', 'win11')]
     [string]$Os,
 
-    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2")] # keep in sync with the Repo module
+    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2", "26H1", "26H2")] # keep in sync with the Repo module
     [Parameter(Mandatory = $false, Position = 3)]
     [string]$OSVer,
 
@@ -1998,7 +2000,7 @@ function New-HPBuildDriverPack {
   
     if (!$OsVer) {
       $revision = (GetHPCurrentOSVer).ToUpper()
-      if ($revision -notin "1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2") {
+      if ($revision -notin "1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2", "26H1", "26H2") {
         throw "OSVer $revision currently not supported"
       }
       $OsVer = $revision
@@ -2363,7 +2365,7 @@ param(
   Specifies an OS for this command to filter based on. The value must be 'win10' or 'win11'. If not specified, the current platform OS is used.
 
 .PARAMETER OsVer
-  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', etc). If this parameter is not specified, the current operating system version is used.
+  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', '26H1', '26H2', etc). If this parameter is not specified, the current operating system version is used.
 
 .PARAMETER Format
    Specifies the output format of the Driver Pack. The value must be one of the following values:
@@ -2420,7 +2422,7 @@ function New-HPDriverPack {
     [ValidateSet('win10', 'win11')]
     [string]$Os,
 
-    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2")] # keep in sync with the Repo module
+    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2","26H1", "26H2")] # keep in sync with the Repo module
     [Parameter(Mandatory = $false, Position = 3 )]
     [string]$OSVer,
 
@@ -2467,7 +2469,7 @@ function New-HPDriverPack {
 
   if (!$OsVer) {
     $revision = (GetHPCurrentOSVer).ToUpper()
-    if ($revision -notin "1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2") {
+    if ($revision -notin "1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2", "26H1", "26H2") {
       throw "OSVer $revision currently not supported"
     }
     $OsVer = $revision
@@ -2566,7 +2568,7 @@ function New-HPDriverPack {
   Specifies an OS for this command to filter based on. The value must be 'win10' or 'win11'. If not specified, the current platform OS is used.
 
 .PARAMETER OsVer
-  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '22H2', '23H2', '24H2', '25H2', etc). If this parameter is not specified, the current operating system version is used.
+  Specifies an OS version for this command to filter based on. The value must be a string value specifying the target OS Version (e.g. '22H2', '23H2', '24H2', '25H2', '26H1', '26H2', etc). If this parameter is not specified, the current operating system version is used.
 
 .PARAMETER Format
   Specifies the output format of the Driver Pack. The value must be one of the following values:
@@ -2619,7 +2621,7 @@ function New-HPUWPDriverPack {
     [ValidateSet('win10', 'win11')]
     [string]$Os,
 
-    [ValidateSet("22H2", "23H2", "24H2", "25H2")] # keep in sync with the Repo module, but only 22H2 and above are supported
+    [ValidateSet("22H2", "23H2", "24H2", "25H2", "26H1", "26H2")] # keep in sync with the Repo module, but only 22H2 and above are supported
     [Parameter(Mandatory = $false, Position = 3 )]
     [string]$OSVer,
 
@@ -2663,7 +2665,7 @@ function New-HPUWPDriverPack {
 
   if (!$OsVer) {
     $revision = (GetHPCurrentOSVer).ToUpper()
-    if ($revision -notin "22H2", "23H2", "24H2", "25H2") {
+    if ($revision -notin "22H2", "23H2", "24H2", "25H2", "26H1", "26H2") {
       throw "OSVer $revision currently not supported"
     }
     $OsVer = $revision
@@ -2741,7 +2743,7 @@ function New-HPPrivateBuildUWPDriverPack {
     [ValidateSet('win10', 'win11')]
     [string]$Os,
 
-    [ValidateSet("22H2", "23H2", "24H2", "25H2")] # keep in sync with the Repo module, but only 22H2 and above are supported
+    [ValidateSet("22H2", "23H2", "24H2", "25H2", "26H1", "26H2")] # keep in sync with the Repo module, but only 22H2 and above are supported
     [Parameter(Mandatory = $false, Position = 3)]
     [string]$OSVer,
 
@@ -2775,7 +2777,7 @@ function New-HPPrivateBuildUWPDriverPack {
   
     if (!$OsVer) {
       $revision = (GetHPCurrentOSVer).ToUpper()
-      if ($revision -notin "22H2", "23H2", "24H2", "25H2") {
+      if ($revision -notin "22H2", "23H2", "24H2", "25H2", "26H1", "26H2") {
         throw "OSVer $revision currently not supported"
       }
       $OsVer = $revision

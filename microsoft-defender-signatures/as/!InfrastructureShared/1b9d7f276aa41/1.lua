@@ -1,41 +1,41 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1b9d7f276aa41\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 1b9d7f276aa41
+-- Type: 21
+-- Includes: LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.hstr_full_log)()
+local l_0_0 = mp.hstr_full_log()
 if l_0_0 == nil then
   return mp.CLEAN
 end
 local l_0_1 = false
-if (l_0_0[3]).matched or (l_0_0[4]).matched or (l_0_0[5]).matched or (l_0_0[6]).matched or (l_0_0[7]).matched or (l_0_0[8]).matched or (l_0_0[9]).matched or l_0_0[10] then
+if l_0_0[3].matched or l_0_0[4].matched or l_0_0[5].matched or l_0_0[6].matched or l_0_0[7].matched or l_0_0[8].matched or l_0_0[9].matched or l_0_0[10] then
   l_0_1 = true
 end
 if l_0_1 == false then
   return mp.CLEAN
 end
 local l_0_2 = false
-if (l_0_0[11]).matched or (l_0_0[12]).matched or (l_0_0[13]).matched or (l_0_0[14]).matched or (l_0_0[15]).matched then
+if l_0_0[11].matched or l_0_0[12].matched or l_0_0[13].matched or l_0_0[14].matched or l_0_0[15].matched then
   l_0_2 = true
 end
 if l_0_2 == false then
   return mp.CLEAN
 end
-local l_0_3 = (mp.GetScannedPPID)()
+local l_0_3 = mp.GetScannedPPID()
 if l_0_3 == nil or l_0_3 == "" then
   return mp.CLEAN
 end
-local l_0_4 = (mp.GetProcessCommandLine)(l_0_3)
-if l_0_4 == nil or #l_0_4 < 20 or #l_0_4 > 300 then
+local l_0_4 = mp.GetProcessCommandLine(l_0_3)
+if l_0_4 == nil or #l_0_4 < 20 or 300 < #l_0_4 then
   return mp.CLEAN
 end
-if (string.find)(l_0_4, "%\n") ~= nil then
+if string.find(l_0_4, "%\n") ~= nil then
   return mp.CLEAN
 end
 l_0_4 = l_0_4:lower()
-local l_0_5 = (string.gsub)(l_0_4, "%^", "")
-l_0_5 = (string.gsub)(l_0_5, "%`", "")
-local l_0_6 = (string.match)(l_0_5, "(https?://[^%s%?%)%]%\'\"}&|<>;,]+)")
+local l_0_5 = string.gsub(l_0_4, "%^", "")
+l_0_5 = string.gsub(l_0_5, "%`", "")
+local l_0_6 = string.match(l_0_5, "(https?://[^%s%?%)%]%'\"}&|<>;,]+)")
 if l_0_6 == "" or l_0_6 == nil or #l_0_6 < 10 then
   return mp.CLEAN
 end
@@ -49,19 +49,8 @@ l_0_7.FILELESS = "true"
 l_0_7.CMDLINE_URL = "true"
 l_0_7.CMDLINE_MATCH = l_0_4
 l_0_7.SIG_REFERENCE = "TrojanDownloader:Win32/ClickFix.MS"
-local l_0_8 = CheckUrlReputationSimple
-local l_0_9 = {}
--- DECOMPILER ERROR at PC152: No list found for R9 , SetList fails
-
--- DECOMPILER ERROR at PC153: Overwrote pending register: R10 in 'AssignReg'
-
-l_0_8 = l_0_8(l_0_9, l_0_6, 60)
+local l_0_8 = CheckUrlReputationSimple({l_0_6}, l_0_7, 60)
 if l_0_8 then
-  l_0_9 = mp
-  l_0_9 = l_0_9.INFECTED
-  return l_0_9
+  return mp.INFECTED
 end
-l_0_9 = mp
-l_0_9 = l_0_9.CLEAN
-return l_0_9
-
+return mp.CLEAN

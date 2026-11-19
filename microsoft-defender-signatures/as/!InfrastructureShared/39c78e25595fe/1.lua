@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: 39c78e25595fe
+-- Type: 21
+
+if mp.get_mpattribute("pea_ismsil") and mp.get_mpattribute("pea_no_exports") and mp.get_mpattribute("pea_no_tls") and mp.getfilesize() >= 12288 and mp.getfilesize() < 94208 then
+  return mp.INFECTED
+end
+return mp.CLEAN

@@ -1,0 +1,19 @@
+-- Threat: !InfrastructureShared
+-- Name: 45b3f940d546
+-- Type: 21
+
+if this_sigattrlog[2].matched and this_sigattrlog[2].utf8p1 ~= nil and this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 ~= nil then
+  local l_0_0 = this_sigattrlog[2].utf8p1
+  if l_0_0 ~= nil then
+    local l_0_1 = string.lower(l_0_0)
+    if string.find(l_0_1, ":\\windows\\temp\\", 1, true) or string.find(l_0_1, "\\appdata\\local\\temp\\", 1, true) or string.find(l_0_1, ":\\windows\\assembly\\", 1, true) then
+      return mp.CLEAN
+    end
+    local l_0_2 = this_sigattrlog[1].utf8p2
+    l_0_2 = string.lower(l_0_2)
+    if string.find(l_0_2, "new-object", 1, true) or string.find(l_0_2, "executioncontext", 1, true) or string.find(l_0_2, "webclient", 1, true) or string.find(l_0_2, "newscriptblock", 1, true) or string.find(l_0_2, ".download", 1, true) then
+      return mp.INFECTED
+    end
+  end
+end
+return mp.CLEAN

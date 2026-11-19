@@ -1,11 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFHackToolLinuxCoinminerD13\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:HackTool:Linux/Coinminer.D13
+-- Type: 24
+-- MpAttributes: RPF:TopLevelFile & BM_TEXT_FILE
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.enum_mpattributesubstring)("SCPT:Miner_")
-if l_0_0 ~= nil and #l_0_0 > 4 then
+local l_0_0 = mp.enum_mpattributesubstring("SCPT:Miner_")
+if l_0_0 ~= nil and 4 < #l_0_0 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

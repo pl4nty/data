@@ -1,28 +1,20 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\7db319b045c6\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 7db319b045c6
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 ~= nil then
-    local l_0_1 = nil
-    if not isnull(((bm.get_current_process_startup_info)()).command_line) then
-      local l_0_2 = nil
-      if (string.find)(((bm.get_current_process_startup_info)()).command_line, "-k localService -p -s RemoteRegistry", -36, true) then
-        (bm.add_threat_file)(l_0_1)
-        return mp.INFECTED
-      end
+local l_0_0
+if this_sigattrlog[2].matched then
+  l_0_0 = this_sigattrlog[2].utf8p1
+end
+if l_0_0 ~= nil then
+  local l_0_1 = bm.get_current_process_startup_info()
+  if not isnull(l_0_1.command_line) then
+    local l_0_2 = l_0_1.command_line
+    if string.find(l_0_2, "-k localService -p -s RemoteRegistry", -36, true) then
+      bm.add_threat_file(l_0_0)
+      return mp.INFECTED
     end
   end
-  do
-    return mp.CLEAN
-  end
 end
-
+return mp.CLEAN

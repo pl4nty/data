@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: 268930fee528
+-- Type: 21
+
+pe.mmap_patch_va(pevars.sigaddr + 10, "\144\144")
+pe.mmap_patch_va(pevars.sigaddr + 22, "\235")
+mp.set_mpattribute("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED

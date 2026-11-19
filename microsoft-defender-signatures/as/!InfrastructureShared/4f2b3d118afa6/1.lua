@@ -1,32 +1,19 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\4f2b3d118afa6\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 4f2b3d118afa6
+-- Type: 21
+-- Includes: TechniqueTracker, BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC17: Overwrote pending register: R1 in 'AssignReg'
-
-do
-  if (this_sigattrlog[26]).matched and (this_sigattrlog[26]).utf8p1 ~= nil and (this_sigattrlog[26]).ppid ~= nil then
-    local l_0_1, l_0_3 = nil, nil
-    l_0_1 = (string.lower)((this_sigattrlog[26]).utf8p1)
-    local l_0_0, l_0_2 = nil
-  end
-  -- DECOMPILER ERROR at PC25: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC27: Confused about usage of register: R1 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC30: Confused about usage of register: R1 in 'UnsetPending'
-
-  do
-    if l_0_1 and l_0_3 then
-      local l_0_4 = nil
-      if (GetTacticsTableForPid(l_0_3)).winrshost_childproc or (GetTacticsTableForPid(l_0_3)).amsitampering or (GetTacticsTableForPid(l_0_3)).wsmprovhost_childproc or (GetTacticsTableForPid(l_0_3)).wmi_childproc or (GetTacticsTableForPid(l_0_3)).remotedropexe_childproc or (GetTacticsTableForPid(l_0_3)).python_childproc or (GetTacticsTableForPid(l_0_3)).rundll32_childproc or (GetTacticsTableForPid(l_0_3)).wscript_childproc or (GetTacticsTableForPid(l_0_3)).cscript_childproc or (GetTacticsTableForPid(l_0_3)).mshta_childproc or (GetTacticsTableForPid(l_0_3)).webshell_childproc or (GetTacticsTableForPid(l_0_3)).exec_remotedroppedscript_a or (GetTacticsTableForPid(l_0_3)).folderguard_blk or (GetTacticsTableForPid(l_0_3)).folderguard_folder_blk then
-        bm_AddRelatedFileFromCommandLine(l_0_4, nil, nil, 1)
-        TrackPidAndTechniqueBM((this_sigattrlog[26]).ppid, "T1546.013", "posh_profile_create")
-        return mp.INFECTED
-      end
-    end
-    return mp.CLEAN
+local l_0_0, l_0_1
+if this_sigattrlog[26].matched and this_sigattrlog[26].utf8p1 ~= nil and this_sigattrlog[26].ppid ~= nil then
+  l_0_1 = this_sigattrlog[26].ppid
+  l_0_0 = string.lower(this_sigattrlog[26].utf8p1)
+end
+if l_0_0 and l_0_1 then
+  local l_0_2 = GetTacticsTableForPid(l_0_1)
+  if l_0_2.winrshost_childproc or l_0_2.amsitampering or l_0_2.wsmprovhost_childproc or l_0_2.wmi_childproc or l_0_2.remotedropexe_childproc or l_0_2.python_childproc or l_0_2.rundll32_childproc or l_0_2.wscript_childproc or l_0_2.cscript_childproc or l_0_2.mshta_childproc or l_0_2.webshell_childproc or l_0_2.exec_remotedroppedscript_a or l_0_2.folderguard_blk or l_0_2.folderguard_folder_blk then
+    bm_AddRelatedFileFromCommandLine(l_0_0, nil, nil, 1)
+    TrackPidAndTechniqueBM(this_sigattrlog[26].ppid, "T1546.013", "posh_profile_create")
+    return mp.INFECTED
   end
 end
-
+return mp.CLEAN

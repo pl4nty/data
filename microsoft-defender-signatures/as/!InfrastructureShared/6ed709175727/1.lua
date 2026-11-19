@@ -1,9 +1,8 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\6ed709175727\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 6ed709175727
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
 local l_0_0 = GetRealPidForScenario("CMDHSTR")
 TrackPidAndTechnique(l_0_0, "T1562.001", "mptamper_avastdriver")
 return mp.INFECTED
-

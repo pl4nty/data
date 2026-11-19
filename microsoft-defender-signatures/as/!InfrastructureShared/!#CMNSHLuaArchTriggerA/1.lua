@@ -1,18 +1,18 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#CMNSHLuaArchTriggerA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#CMN:SH/LuaArchTrigger.A
+-- Type: 24
+-- MpAttributes: RPF:TopLevelFile & (BM_SH_FILE | Lua:SHExt | BM_TEXT_FILE)
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 ~= nil and l_0_0 >= 20480 then
+local l_0_0 = mp.getfilesize()
+if l_0_0 ~= nil and 20480 <= l_0_0 then
   return mp.CLEAN
 end
-local l_0_1 = (mp.enum_mpattributesubstring)("SCPT:SH/Architecture_")
-if #l_0_1 > 7 then
+local l_0_1 = mp.enum_mpattributesubstring("SCPT:SH/Architecture_")
+if 7 < #l_0_1 then
   return mp.INFECTED
 end
-if #l_0_1 + #(mp.enum_mpattributesubstring)("SCPT:SH/os_distro_") > 6 then
+local l_0_2 = mp.enum_mpattributesubstring("SCPT:SH/os_distro_")
+if 6 < #l_0_1 + #l_0_2 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

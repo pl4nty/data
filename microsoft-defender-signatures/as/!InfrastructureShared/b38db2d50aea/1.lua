@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: b38db2d50aea
+-- Type: 21
+
+if mp.HSTR_WEIGHT >= 3 then
+  mp.set_mpattribute("PUA:Block:AMCleaner.E")
+  return mp.INFECTED
+end
+return mp.LOWFI

@@ -1,109 +1,66 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\b7b338595ae6\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: b7b338595ae6
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-if (bm.GetSignatureMatchDuration)() > 30000000 then
+local l_0_0
+if bm.GetSignatureMatchDuration() > 30000000 then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC20: Overwrote pending register: R0 in 'AssignReg'
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[1].utf8p2
+end
+if #l_0_0 < 70 then
+  return mp.CLEAN
+end
+l_0_0 = l_0_0:sub(1, -2)
 
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC21: Confused about usage of register: R0 in 'UnsetPending'
-
-  if #l_0_0 < 70 then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC27: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_1 = l_0_0:sub(1, -2)
-  local l_0_2 = function(l_1_0, l_1_1)
-  -- function num : 0_0
+local function l_0_1(l_1_0, l_1_1)
   local l_1_2 = {}
-  for l_1_6 = 1, #l_1_1 do
-    l_1_2[l_1_1[l_1_6]] = true
+  for l_1_3 = 1, #l_1_1 do
+    l_1_2[l_1_1[l_1_3]] = true
   end
-  local l_1_7 = 0
-  for l_1_11 = 1, #l_1_0 do
-    if l_1_2[l_1_0[l_1_11]] then
-      l_1_7 = l_1_7 + 1
+  local l_1_4 = 0
+  for l_1_5 = 1, #l_1_0 do
+    if l_1_2[l_1_0[l_1_5]] then
+      l_1_4 = l_1_4 + 1
     end
   end
-  return l_1_7
+  return l_1_4
 end
 
-  local l_0_3, l_0_4 = (bm.get_process_relationships)()
-  for l_0_8,l_0_9 in ipairs(l_0_4) do
-    local l_0_10 = (mp.bitand)(l_0_9.reason_ex, bm.RELATIONSHIP_CREATED)
-    if l_0_10 == bm.RELATIONSHIP_CREATED then
-      local l_0_11 = l_0_9.cmd_line
-      do
-        local l_0_12 = l_0_9.ppid or ""
-        local l_0_13, l_0_14 = , pcall(MpCommon.CommandLineToArgv, l_0_11)
-        local l_0_15, l_0_16 = , pcall(MpCommon.CommandLineToArgv, l_0_1)
-        if not l_0_14 or isnull(l_0_15) or type(l_0_15) ~= "table" or isnull(#l_0_15) then
-          return mp.CLEAN
-        end
-        -- DECOMPILER ERROR at PC98: Overwrote pending register: R17 in 'AssignReg'
-
-        if not l_0_16 or isnull(R17_PC89) or type(R17_PC89) ~= "table" or isnull(R17_PC89) then
-          return mp.CLEAN
-        end
-        if #l_0_15 == 1 or l_0_15[1] == nil then
-          return mp.CLEAN
-        end
-        if #MpCommon.CommandLineToArgv == 1 or (MpCommon.CommandLineToArgv)[1] == nil then
-          return mp.CLEAN
-        end
-        -- DECOMPILER ERROR at PC124: Overwrote pending register: R17 in 'AssignReg'
-
-        if #MpCommon.CommandLineToArgv ~= R17_PC89 then
-          return mp.CLEAN
-        end
-        -- DECOMPILER ERROR at PC132: Overwrote pending register: R17 in 'AssignReg'
-
-        ;
-        (bm.add_related_string)(R17_PC89, tostring(l_0_1), bm.RelatedStringBMReport)
-        -- DECOMPILER ERROR at PC140: Overwrote pending register: R17 in 'AssignReg'
-
-        do
-          local l_0_17 = nil
-          -- DECOMPILER ERROR at PC143: Overwrote pending register: R17 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC144: Overwrote pending register: R17 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC147: Overwrote pending register: R17 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC148: Overwrote pending register: R17 in 'AssignReg'
-
-          if l_0_2(R17_PC89, l_0_15) ~= R17_PC89 then
-            return R17_PC89
-          end
-          -- DECOMPILER ERROR at PC152: Overwrote pending register: R17 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC153: Overwrote pending register: R17 in 'AssignReg'
-
-          if l_0_13 then
-            R17_PC89("ProcRunMRU", l_0_11, l_0_13)
-          end
-          -- DECOMPILER ERROR at PC158: Overwrote pending register: R17 in 'AssignReg'
-
-          -- DECOMPILER ERROR at PC159: Overwrote pending register: R17 in 'AssignReg'
-
-          do return R17_PC89 end
-          -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out DO_STMT
-
-          -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC161: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
+local l_0_2, l_0_3 = bm.get_process_relationships()
+for l_0_4, l_0_5 in ipairs(l_0_3) do
+  local l_0_6 = mp.bitand(l_0_5.reason_ex, bm.RELATIONSHIP_CREATED)
+  if l_0_6 == bm.RELATIONSHIP_CREATED then
+    local l_0_7 = l_0_5.cmd_line
+    local l_0_8 = l_0_5.ppid or ""
+    local l_0_9, l_0_10 = pcall(MpCommon.CommandLineToArgv, l_0_7)
+    local l_0_11, l_0_12 = pcall(MpCommon.CommandLineToArgv, l_0_0)
+    if not l_0_9 or isnull(l_0_10) or type(l_0_10) ~= "table" or isnull(#l_0_10) then
+      return mp.CLEAN
     end
+    if not l_0_11 or isnull(l_0_12) or type(l_0_12) ~= "table" or isnull(#l_0_12) then
+      return mp.CLEAN
+    end
+    if #l_0_10 == 1 or l_0_10[1] == nil then
+      return mp.CLEAN
+    end
+    if #l_0_12 == 1 or l_0_12[1] == nil then
+      return mp.CLEAN
+    end
+    if #l_0_12 ~= #l_0_10 then
+      return mp.CLEAN
+    end
+    bm.add_related_string("RegRunMRU", tostring(l_0_0), bm.RelatedStringBMReport)
+    local l_0_13 = l_0_1(l_0_12, l_0_10)
+    if l_0_13 ~= #l_0_10 - 1 then
+      return mp.CLEAN
+    end
+    if l_0_8 then
+      bm.trigger_sig_target_propagate("ProcRunMRU", l_0_7, l_0_8)
+    end
+    return mp.INFECTED
   end
-  return mp.CLEAN
 end
-
+return mp.CLEAN

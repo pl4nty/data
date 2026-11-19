@@ -1,0 +1,22 @@
+-- Threat: !InfrastructureShared
+-- Name: 3a78e397f998
+-- Type: 21
+
+if hstrlog[1].matched then
+  local l_0_0 = hstrlog[1].VA + 14
+  local l_0_1 = pe.mmap_va(l_0_0, 4)
+  local l_0_2 = mp.readu_u32(l_0_1, 1)
+  local l_0_3 = pe.mmap_va(l_0_2, 16)
+  if string.sub(l_0_3, 1, 3) == "cmd" then
+    return mp.INFECTED
+  end
+elseif hstrlog[2].matched then
+  local l_0_4 = hstrlog[2].VA + 9
+  local l_0_5 = pe.mmap_va(l_0_4, 4)
+  local l_0_6 = mp.readu_u32(l_0_5, 1)
+  local l_0_7 = pe.mmap_va(l_0_6, 16)
+  if string.sub(l_0_7, 1, 7) == "[Shift]" then
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN

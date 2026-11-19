@@ -1,13 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanWin64KesselA!ldr\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:Win64/Kessel.A!ldr
+-- Type: 8
+-- Includes: PeParser
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
 if not pehdr.TimeDateStamp then
   return mp.CLEAN
 end
 if pehdr.TimeDateStamp > 1640995200 and pehdr.TimeDateStamp < 1767139200 then
-  local l_0_0 = (pe.get_versioninfo)()
+  local l_0_0 = pe.get_versioninfo()
   if not l_0_0 then
     return mp.CLEAN
   end
@@ -15,7 +16,7 @@ if pehdr.TimeDateStamp > 1640995200 and pehdr.TimeDateStamp < 1767139200 then
     return mp.CLEAN
   end
   if l_0_0.CompanyName == "J.C. Kessels" then
-    local l_0_1 = (pe.get_fixedversioninfo)()
+    local l_0_1 = pe.get_fixedversioninfo()
     if not l_0_1 then
       return mp.CLEAN
     end
@@ -31,7 +32,4 @@ if pehdr.TimeDateStamp > 1640995200 and pehdr.TimeDateStamp < 1767139200 then
     end
   end
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

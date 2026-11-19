@@ -1,22 +1,23 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\39d78912f4d6\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 39d78912f4d6
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0 = mp.GetParentProcInfo()
 if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_1 = string.lower(l_0_0.image_path)
   local l_0_2 = l_0_1:match("([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["dcpatchscan.exe"] = true
-  l_0_3["dcconfig.exe"] = true
-  l_0_3["openit_apicontroller.exe"] = true
-  l_0_3["taniumclient.exe"] = true
-  l_0_3["dcreplication.exe"] = true
-  l_0_3["niniteagent.exe"] = true
-  l_0_3["qqgame.exe"] = true
-  l_0_3["xeclient.exe"] = true
-  l_0_3["xeservice.exe"] = true
+  local l_0_3 = {
+    ["dcpatchscan.exe"] = true,
+    ["dcconfig.exe"] = true,
+    ["openit_apicontroller.exe"] = true,
+    ["taniumclient.exe"] = true,
+    ["dcreplication.exe"] = true,
+    ["niniteagent.exe"] = true,
+    ["qqgame.exe"] = true,
+    ["xeclient.exe"] = true,
+    ["xeservice.exe"] = true
+  }
   if l_0_3[l_0_2] then
     return mp.CLEAN
   end
@@ -24,11 +25,8 @@ if l_0_0 ~= nil then
     return mp.CLEAN
   end
 end
-do
-  TrackPidAndTechnique("CMDHSTR", "T1560", "archive_collected_data")
-  if IsDetectionThresholdMet("CMDHSTR") then
-    return mp.LOWFI
-  end
+TrackPidAndTechnique("CMDHSTR", "T1560", "archive_collected_data")
+if IsDetectionThresholdMet("CMDHSTR") then
   return mp.LOWFI
 end
-
+return mp.LOWFI

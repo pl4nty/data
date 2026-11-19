@@ -1,10 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanLinuxGhStealerZA!MTB\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:Trojan:Linux/GhStealer.ZA!MTB
+-- Type: 13
+-- MpAttributes: SCRIPT:JS/Dasbase64.A
 
--- params : ...
--- function num : 0
-if #(mp.enum_mpattributesubstring)("NPMCreds_Cred_") >= 1 and #(mp.enum_mpattributesubstring)("SCPT:NPMCreds_Token_") >= 1 and #(mp.enum_mpattributesubstring)("SCPT:NPMCreds_Env_Printenv") >= 1 then
+if #mp.enum_mpattributesubstring("NPMCreds_Cred_") >= 1 and 1 <= #mp.enum_mpattributesubstring("SCPT:NPMCreds_Token_") and 1 <= #mp.enum_mpattributesubstring("SCPT:NPMCreds_Env_Printenv") then
   return mp.INFECTED
 end
 return mp.CLEAN
-

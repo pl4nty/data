@@ -1,21 +1,21 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\ffb3b74c05c3\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: ffb3b74c05c3
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
-if l_0_0 and MpCommon.SECURITY_MANDATORY_MEDIUM_RID < l_0_0.integrity_level then
+local l_0_0 = bm.get_current_process_startup_info()
+if l_0_0 and l_0_0.integrity_level > MpCommon.SECURITY_MANDATORY_MEDIUM_RID then
   return mp.CLEAN
 end
-local l_0_1 = (sysio.RegExpandUserKey)("HKCU\\Software\\Classes\\Ms-Settings\\Shell\\Open\\Command")
+local l_0_1 = sysio.RegExpandUserKey("HKCU\\Software\\Classes\\Ms-Settings\\Shell\\Open\\Command")
 if l_0_1 then
-  for l_0_5,l_0_6 in pairs(l_0_1) do
-    local l_0_7 = (sysio.RegOpenKey)(l_0_6)
-    if l_0_7 then
-      local l_0_8 = (sysio.GetRegValueType)(l_0_7, "DelegateExecute")
-      if l_0_8 then
-        local l_0_9 = (sysio.GetRegValueAsString)(l_0_7, "")
-        if l_0_9 and (string.len)(l_0_9) > 4 then
+  for l_0_2, l_0_3 in pairs(l_0_1) do
+    local l_0_4 = sysio.RegOpenKey(l_0_3)
+    if l_0_4 then
+      local l_0_5 = sysio.GetRegValueType(l_0_4, "DelegateExecute")
+      if l_0_5 then
+        local l_0_6 = sysio.GetRegValueAsString(l_0_4, "")
+        if l_0_6 and string.len(l_0_6) > 4 then
           TrackPidAndTechniqueBM(l_0_0.ppid, "T1548.002", "uac_bypass_src")
           return mp.INFECTED
         end
@@ -23,7 +23,4 @@ if l_0_1 then
     end
   end
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

@@ -49,7 +49,7 @@
         "LightBakeIn3P": 1,
         "OcclusionBakeIn3P": 1,
         "catalogUrl": "https://catalog.mesh.cloud.microsoft/api",
-        "clientMinimumVersion": "6.2620.0",
+        "clientMinimumVersion": "6.2621.0",
         "collectorUrl": "https://us-mobile.events.data.microsoft.com/OneCollector/1.0/",
         "echoRequestsInterval": 15,
         "isEUTenant": false,
@@ -503,7 +503,7 @@
                 "enableTenantAppsCensusFromAggregatedEntitlementsRedisDedup": true,
                 "enableTenantAppsCensusFromMosUserAppEntitlements": true,
                 "enableTenantAppsCensusFromMosUserAppEntitlementsRedisDedup": true,
-                "meetingsFluidWbServiceApiDisabled": false,
+                "meetingsFluidWbServiceApiDisabled": true,
                 "meetingsOptions": {
                     "CopilotMode": {
                         "IgnoreValueFilter": false,
@@ -1555,6 +1555,20 @@
                     "IsEnabled": true
                 }
             ],
+            "EOMTaskQualityEvals": [
+                {
+                    "Flight": "EnableEomTaskQualityEval",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "EnableLiveNotesMeetingEndCapture",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "EnableEomEvalV2",
+                    "IsEnabled": true
+                }
+            ],
             "EnableAINativeScenario": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.enableAINativeScenario",
@@ -1606,6 +1620,12 @@
             "EnableGenerationModelGpt56NanoLuna": [
                 {
                     "Flight": "EnableGenerationModelGpt56NanoLuna",
+                    "IsEnabled": true
+                }
+            ],
+            "EnableGenerationModelGpt6Luna": [
+                {
+                    "Flight": "EnableGenerationModelGpt6Luna",
                     "IsEnabled": true
                 }
             ],
@@ -1807,6 +1827,12 @@
                     "IsEnabled": true
                 }
             ],
+            "EnableTMGpt6Luna": [
+                {
+                    "Flight": "TM.gpt6Luna",
+                    "IsEnabled": true
+                }
+            ],
             "EnableTMNotifications": [
                 {
                     "Flight": "TM.halfTimeNotifications",
@@ -1900,6 +1926,18 @@
                 },
                 {
                     "Flight": "LIFT.enableMarsSkill",
+                    "IsEnabled": true
+                }
+            ],
+            "GPT6_Migration_Agenda": [
+                {
+                    "Flight": "AS.enableAgendaModelGpt6Luna",
+                    "IsEnabled": true
+                }
+            ],
+            "GPT6_Migration_RetrospectiveSentiment": [
+                {
+                    "Flight": "GCP.enableRetrospectiveSentimentModel_gpt6_luna",
                     "IsEnabled": true
                 }
             ],
@@ -2833,6 +2871,12 @@
                     "IsEnabled": true
                 }
             ],
+            "WeightedEOMScore": [
+                {
+                    "Flight": "UseWeightedEomScoring",
+                    "IsEnabled": false
+                }
+            ],
             "enableImageUnderstanding": [
                 {
                     "Flight": "enableImageUnderstanding",
@@ -2901,6 +2945,24 @@
                     "IsEnabled": true
                 }
             ],
+            "meetingAgendaSkill_TranscriptAgenda": [
+                {
+                    "Flight": "AS.enableAgendaSkillTranscriptAgendaDetection",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "AS.enableTeamsMeetingAgendaSkillTelemetryWrapper",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "AS.enableTranscriptPostProcessing",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "AS.enableInMeetingCombinedPromptV4",
+                    "IsEnabled": true
+                }
+            ],
             "meetingAgendaSkill_goalToAgenda": [
                 {
                     "Flight": "AS.postGoalAsAgenda",
@@ -2911,9 +2973,41 @@
                     "IsEnabled": true
                 }
             ],
+            "meetingAgendaSkill_goalTracker": [
+                {
+                    "Flight": "TM.agendaSkillOwnsAgendaPost",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.agendaSkillOwnsNudge",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "AS.enableAgendaCalendarDataFix",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TM.agendaSkillOwnsTopicRelevance",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "GCP.enableDeferredNotificationDispatch",
+                    "IsEnabled": true
+                }
+            ],
             "meetingAgendaSkill_graphFallback": [
                 {
                     "Flight": "AS.enableGraphCalendarFallback",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingAgendaSkill_notesNexusCheck": [
+                {
+                    "Flight": "AS.enableNexusNotesAccessCheck",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableNexusIrmViewRight",
                     "IsEnabled": true
                 }
             ],
@@ -2950,6 +3044,16 @@
             "meetingAgenda_GPT56_Eval": [
                 {
                     "Flight": "AS.enableGpt56ReasoningNanoLunaEvalModel",
+                    "IsEnabled": true
+                }
+            ],
+            "meetingCustomization_GPT6Migration": [
+                {
+                    "Flight": "UPF.enableIntelligentMonitorModelGpt6Luna",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TMC.enableCustomizationModelGpt6Luna",
                     "IsEnabled": true
                 }
             ]
@@ -3946,6 +4050,7 @@
                     "ppt_sharing_added": 100,
                     "ppt_sharing_reload_error_screen_displayed": 100,
                     "ppt_sharing_removed": 100,
+                    "ppt_sharing_take_control": 100,
                     "ppt_sharing_wrs_init": 100,
                     "profile_fetch_job": 0,
                     "profile_fetch_workflow": 0,
@@ -5970,6 +6075,7 @@
                     "ppt_sharing_added": 100,
                     "ppt_sharing_reload_error_screen_displayed": 100,
                     "ppt_sharing_removed": 100,
+                    "ppt_sharing_take_control": 100,
                     "ppt_sharing_wrs_init": 100,
                     "profile_fetch_job": 0,
                     "profile_fetch_workflow": 0,

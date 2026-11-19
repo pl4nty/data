@@ -1,15 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\44d7cdca60bc\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 44d7cdca60bc
+-- Type: 21
+-- Includes: AppomalyHelpers
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
+local l_0_0 = mp.GetScannedPPID()
 if not l_0_0 then
   return mp.CLEAN
 end
-local l_0_1 = ((mp.GetProcessCommandLine)(l_0_0)):lower()
+local l_0_1 = mp.GetProcessCommandLine(l_0_0):lower()
 if hasBase64Content(l_0_1) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

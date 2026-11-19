@@ -1,38 +1,33 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\8ad7848f0aae\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 8ad7848f0aae
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
+local l_0_0 = mp.GetScannedPPID()
 if l_0_0 == nil or l_0_0 == "" then
   return mp.CLEAN
 end
-local l_0_1 = (mp.GetProcessCommandLine)(l_0_0)
+local l_0_1 = mp.GetProcessCommandLine(l_0_0)
 if not l_0_1 then
   return mp.CLEAN
 end
-l_0_1 = (string.lower)(l_0_1)
-if (string.len)(l_0_1) > 350 then
+l_0_1 = string.lower(l_0_1)
+if string.len(l_0_1) > 350 then
   return mp.CLEAN
 end
-local l_0_2, l_0_3 = (string.gsub)(l_0_1, "powershell", "")
+local l_0_2, l_0_3 = string.gsub(l_0_1, "powershell", "")
 if l_0_3 < 2 then
   return mp.CLEAN
 end
-do
-  local l_0_4 = {}
-  -- DECOMPILER ERROR at PC51: No list found for R4 , SetList fails
-
-  -- DECOMPILER ERROR at PC52: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC53: Overwrote pending register: R6 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC54: Overwrote pending register: R7 in 'AssignReg'
-
-  if not (" iex")("invoke-expression", "iwr") then
-    return mp.CLEAN
-  end
-  do return mp.INFECTED end
-  -- WARNING: undefined locals caused missing assignments!
+local l_0_4 = {
+  " iex",
+  "invoke-expression",
+  "iwr",
+  "invoke-webrequest",
+  " irm",
+  "invoke-restmethod"
+}
+if not contains(l_0_1, l_0_4) then
+  return mp.CLEAN
 end
-
+return mp.INFECTED

@@ -1,43 +1,37 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\4bd7c631ae81\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 4bd7c631ae81
+-- Type: 21
+-- Includes: ResearchData
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0 = mp.GetParentProcInfo()
 if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)(l_0_0.image_path)
+local l_0_1 = string.lower(l_0_0.image_path)
 if l_0_1:match("([^\\]+)$") ~= "slui.exe" then
   return mp.CLEAN
 end
-local l_0_2 = (sysio.RegExpandUserKey)("HKCU\\Software\\CLASSES\\LAUNCHER.SYSTEMSETTINGS\\SHELL\\OPEN\\COMMAND")
+local l_0_2 = sysio.RegExpandUserKey("HKCU\\Software\\CLASSES\\LAUNCHER.SYSTEMSETTINGS\\SHELL\\OPEN\\COMMAND")
 if l_0_2 then
-  for l_0_6,l_0_7 in pairs(l_0_2) do
-    if (string.find)((string.lower)(l_0_7), "hkcu@s-1-5-21-", 1, true) then
-      local l_0_8 = (sysio.RegOpenKey)(l_0_7)
-      if l_0_8 then
-        local l_0_9 = (sysio.GetRegValueAsString)(l_0_8, "")
-        if l_0_9 then
-          if (string.len)(l_0_9) < 4 and (string.lower)(l_0_9) ~= "cmd" then
+  for l_0_3, l_0_4 in pairs(l_0_2) do
+    if string.find(string.lower(l_0_4), "hkcu@s-1-5-21-", 1, true) then
+      local l_0_5 = sysio.RegOpenKey(l_0_4)
+      if l_0_5 then
+        local l_0_6 = sysio.GetRegValueAsString(l_0_5, "")
+        if l_0_6 then
+          if string.len(l_0_6) < 4 and string.lower(l_0_6) ~= "cmd" then
             return mp.CLEAN
           end
-          set_research_data("DefaultValue", l_0_9, false)
-          local l_0_10 = (mp.GetScannedPPID)()
-          local l_0_11 = {}
-          ;
-          (table.insert)(l_0_11, l_0_10)
-          ;
-          (MpCommon.SetPersistContextNoPath)("UACBypassRegSet.A", l_0_11, 5)
-          ;
-          (mp.set_mpattribute)("MpDisableCaching")
+          set_research_data("DefaultValue", l_0_6, false)
+          local l_0_7 = mp.GetScannedPPID()
+          local l_0_8 = {}
+          table.insert(l_0_8, l_0_7)
+          MpCommon.SetPersistContextNoPath("UACBypassRegSet.A", l_0_8, 5)
+          mp.set_mpattribute("MpDisableCaching")
           return mp.INFECTED
         end
       end
     end
   end
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

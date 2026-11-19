@@ -1,10 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2b7b31f74006c\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 2b7b31f74006c
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-local l_0_1 = (bm.get_current_process_startup_info)()
+local l_0_0 = bm.get_imagepath()
+local l_0_1 = bm.get_current_process_startup_info()
 if l_0_1 == nil then
   return mp.CLEAN
 end
@@ -15,8 +15,7 @@ end
 if IsExcludedByCmdlineMacOS(l_0_2) or IsExcludedByImagePathMacOS(l_0_0) then
   return mp.CLEAN
 end
-if (string.find)(l_0_2, (string.rep)("\n", 11), 1, false) or (string.find)(l_0_2, (string.rep)("%s", 100), 1, false) then
+if string.find(l_0_2, string.rep("\n", 11), 1, false) or string.find(l_0_2, string.rep("%s", 100), 1, false) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

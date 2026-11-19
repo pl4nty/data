@@ -1,66 +1,57 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanJSBazarldrA!ibt\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:JS/Bazarldr.A!ibt
+-- Type: 13
+-- MpAttributes: Nscript:js_hasSelfModification & BM_ScriptFile & Nscript:Type_js & SCPT:JS/FunAttr & SCPT:JS/Var & SCPT:JS/Return
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 327680 then
+local l_0_0 = mp.getfilesize()
+if 327680 < l_0_0 then
   return mp.CLEAN
 end
 if mp.FOOTERPAGE_SZ < 1792 then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)(tostring(footerpage))
+local l_0_1 = string.lower(tostring(footerpage))
 if l_0_1 == nil then
   return mp.CLEAN
 end
 local l_0_2 = 0
-for l_0_6 in (string.gmatch)(l_0_1, "function%(") do
+for l_0_3 in string.gmatch(l_0_1, "function%(") do
   l_0_2 = l_0_2 + 1
-  if l_0_2 >= 20 then
+  if 20 <= l_0_2 then
     break
   end
 end
-do
-  if l_0_2 < 20 then
-    return mp.CLEAN
-  end
-  l_0_2 = 0
-  for l_0_10 in (string.gmatch)(l_0_1, "{var ") do
-    l_0_2 = l_0_2 + 1
-    if l_0_2 >= 10 then
-      break
-    end
-  end
-  do
-    if l_0_2 < 10 then
-      return mp.CLEAN
-    end
-    l_0_2 = 0
-    for l_0_14 in (string.gmatch)(l_0_1, "return") do
-      l_0_2 = l_0_2 + 1
-      if l_0_2 >= 20 then
-        break
-      end
-    end
-    do
-      if l_0_2 < 20 then
-        return mp.CLEAN
-      end
-      l_0_2 = 0
-      for l_0_18 in (string.gmatch)(l_0_1, "_0x") do
-        l_0_2 = l_0_2 + 1
-        if l_0_2 >= 250 then
-          break
-        end
-      end
-      do
-        if l_0_2 < 250 then
-          return mp.CLEAN
-        end
-        return mp.INFECTED
-      end
-    end
+if l_0_2 < 20 then
+  return mp.CLEAN
+end
+l_0_2 = 0
+for l_0_4 in string.gmatch(l_0_1, "{var ") do
+  l_0_2 = l_0_2 + 1
+  if 10 <= l_0_2 then
+    break
   end
 end
-
+if l_0_2 < 10 then
+  return mp.CLEAN
+end
+l_0_2 = 0
+for l_0_5 in string.gmatch(l_0_1, "return") do
+  l_0_2 = l_0_2 + 1
+  if 20 <= l_0_2 then
+    break
+  end
+end
+if l_0_2 < 20 then
+  return mp.CLEAN
+end
+l_0_2 = 0
+for l_0_6 in string.gmatch(l_0_1, "_0x") do
+  l_0_2 = l_0_2 + 1
+  if 250 <= l_0_2 then
+    break
+  end
+end
+if l_0_2 < 250 then
+  return mp.CLEAN
+end
+return mp.INFECTED

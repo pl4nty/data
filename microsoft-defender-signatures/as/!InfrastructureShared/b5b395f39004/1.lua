@@ -1,0 +1,25 @@
+-- Threat: !InfrastructureShared
+-- Name: b5b395f39004
+-- Type: 21
+
+local l_0_0 = ""
+if this_sigattrlog[1].matched then
+  l_0_0 = this_sigattrlog[1].utf8p2
+end
+if this_sigattrlog[2].matched then
+  l_0_0 = this_sigattrlog[2].utf8p2
+end
+if this_sigattrlog[3].matched then
+  l_0_0 = this_sigattrlog[3].utf8p2
+end
+if this_sigattrlog[4].matched then
+  l_0_0 = this_sigattrlog[4].utf8p2
+end
+if this_sigattrlog[5].matched then
+  l_0_0 = this_sigattrlog[5].utf8p2
+end
+local l_0_1 = "(http|https|ftp|smb|unc):[\\\\/]{2}((0x[0-9a-f]{6,8})|(((\\d{4})|(0x[0-9a-f]{2}))\\.){3}((\\d{4})|(0x[0-9a-f]{2}))|\\d{8,10})[\\\\/]{1}"
+if MpCommon.StringRegExpSearch(l_0_1, l_0_0) == true then
+  return mp.INFECTED
+end
+return mp.CLEAN

@@ -29,6 +29,7 @@ jobs:
           - microsoft_3rdpartysource.py
           - microsoft_download_center.py
           - uupdump.py
+          - windows_ddf.py
           - windows_safeguard_holds.py
     steps:
       - uses: actions/checkout@v4
@@ -61,19 +62,34 @@ jobs:
           message: "data(${{ matrix.cmd }}): change detected"
           pull: "--rebase --autostash"
 
-  windows:
-    if: ${{ !inputs.cmd || endsWith(inputs.cmd, '.ps1') }}
-    runs-on: windows-latest
+  defender:
+    if: ${{ !inputs.cmd || inputs.cmd == 'microsoft_defender_signatures.py' }}
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     environment: dev
+    env:
+      UNLUAC_RS_REV: 76d1452359b207c2a6fdec3c7c894152c7a61374 # v1.4.5
     strategy:
       matrix:
         cmd:
-          - microsoft_defender_signatures.ps1
+          - microsoft_defender_signatures.py
     steps:
       - uses: actions/checkout@v4
-      - run: .\${{ matrix.cmd }}
+      - uses: actions/setup-python@v5.4.0
+        with:
+          python-version: 3.x
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends lua5.1 p7zip-full
+      - uses: actions/cache@v4
+        id: unluac-rs
+        with:
+          path: ~/.cargo/bin/unluac-cli
+          key: unluac-rs-${{ env.UNLUAC_RS_REV }}-${{ runner.os }}-${{ runner.arch }}
+      - if: steps.unluac-rs.outputs.cache-hit != 'true'
+        run: |
+          rustup toolchain install stable --profile minimal
+          cargo +stable install --locked --git https://github.com/x3zvawq/unluac-rs --rev "$UNLUAC_RS_REV" unluac-cli
+      - run: python -u ${{ matrix.cmd }}
 
       - uses: EndBug/add-and-commit@v9.1.4
         with:

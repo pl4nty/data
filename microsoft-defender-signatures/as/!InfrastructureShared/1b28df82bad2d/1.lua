@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: 1b28df82bad2d
+-- Type: 21
+
+if mp.HSTR_WEIGHT >= 3 then
+  mp.set_mpattribute("PUA:Block:Genieo.M!xp")
+  return mp.INFECTED
+end
+return mp.LOWFI

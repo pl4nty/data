@@ -1,115 +1,70 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\4b0b35b3b6bfd\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 4b0b35b3b6bfd
+-- Type: 21
+-- Includes: BMLuaLib, TechniqueTracker, LuaFuncHelper
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[8]).matched then
-    local l_0_0 = nil
-  else
+local l_0_0
+if this_sigattrlog[8].matched then
+  l_0_0 = this_sigattrlog[8]
+elseif this_sigattrlog[9].matched then
+  l_0_0 = this_sigattrlog[9]
+elseif this_sigattrlog[10].matched then
+  l_0_0 = this_sigattrlog[10]
+elseif this_sigattrlog[11].matched then
+  l_0_0 = this_sigattrlog[11]
+elseif this_sigattrlog[12].matched then
+  l_0_0 = this_sigattrlog[12]
+elseif this_sigattrlog[13].matched then
+  l_0_0 = this_sigattrlog[13]
+elseif this_sigattrlog[14].matched then
+  l_0_0 = this_sigattrlog[14]
+elseif this_sigattrlog[15].matched then
+  l_0_0 = this_sigattrlog[15]
+elseif this_sigattrlog[16].matched then
+  l_0_0 = this_sigattrlog[16]
+elseif this_sigattrlog[17].matched then
+  l_0_0 = this_sigattrlog[17]
+elseif this_sigattrlog[18].matched then
+  l_0_0 = this_sigattrlog[18]
+end
+if not l_0_0 or not l_0_0.utf8p2 then
+  return mp.CLEAN
+end
+local l_0_1 = string.lower(l_0_0.utf8p2)
+local l_0_2 = bm.get_current_process_startup_info()
+if not l_0_2 then
+  return mp.CLEAN
+end
+local l_0_3 = l_0_2.ppid or "0"
+local l_0_4 = bm.get_imagepath() or ""
+local l_0_5 = string.lower(l_0_4:match("([^/]+)$") or "")
+local l_0_6 = "NpmCredHarvest_BM"
+local l_0_7 = 600
+local l_0_8 = 1
+local l_0_9 = 100
+local l_0_10 = "|"
+local l_0_11 = tostring(l_0_3) .. l_0_10 .. l_0_5
+local l_0_12 = GetRollingQueueKeyValues(l_0_6, l_0_11)
+if l_0_12 then
+  for l_0_13, l_0_14 in ipairs(l_0_12) do
+    if l_0_14 and l_0_14.value == l_0_1 then
+      return mp.CLEAN
+    end
   end
-  -- DECOMPILER ERROR at PC22: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[9]).matched or (this_sigattrlog[10]).matched then
-      local l_0_1 = this_sigattrlog[9]
-    else
+  if l_0_8 <= #l_0_12 then
+    local l_0_15 = {}
+    l_0_15.NpmCredHarvestRQName = GetRollingQueueKeys(l_0_6)
+    l_0_15.NpmCredHarvestCount = GetRollingQueueCount(l_0_6)
+    l_0_15 = safeJsonSerialize(l_0_15)
+    bm.add_related_string("NpmCredHarvest_BM", l_0_15, bm.RelatedStringBMReport)
+    TrackPidAndTechniqueBM("BM", "T1552.001", "npm_credharvest")
+    add_parents()
+    local l_0_16, l_0_17 = pcall(reportBmInfo)
+    if not l_0_16 and l_0_17 then
+      bm.add_related_string("bmInfoFailReason", tostring(l_0_17), bm.RelatedStringBMReport)
     end
-    -- DECOMPILER ERROR at PC38: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if not (this_sigattrlog[11]).matched or (this_sigattrlog[12]).matched then
-        local l_0_2 = this_sigattrlog[11]
-      else
-      end
-      -- DECOMPILER ERROR at PC54: Overwrote pending register: R0 in 'AssignReg'
-
-      do
-        if not (this_sigattrlog[13]).matched or (this_sigattrlog[14]).matched then
-          local l_0_3 = this_sigattrlog[13]
-        else
-        end
-        -- DECOMPILER ERROR at PC70: Overwrote pending register: R0 in 'AssignReg'
-
-        do
-          if not (this_sigattrlog[15]).matched or (this_sigattrlog[16]).matched then
-            local l_0_4 = this_sigattrlog[15]
-          else
-          end
-          -- DECOMPILER ERROR at PC86: Overwrote pending register: R0 in 'AssignReg'
-
-          do
-            if not (this_sigattrlog[17]).matched or (this_sigattrlog[18]).matched then
-              local l_0_5, l_0_6, l_0_7 = this_sigattrlog[17]
-            end
-            -- DECOMPILER ERROR at PC87: Confused about usage of register: R0 in 'UnsetPending'
-
-            -- DECOMPILER ERROR at PC89: Confused about usage of register: R0 in 'UnsetPending'
-
-            if not l_0_5 or not l_0_5.utf8p2 then
-              return mp.CLEAN
-            end
-            -- DECOMPILER ERROR at PC97: Confused about usage of register: R0 in 'UnsetPending'
-
-            local l_0_8 = nil
-            local l_0_9 = (string.lower)(l_0_5.utf8p2)
-            if not (bm.get_current_process_startup_info)() then
-              return mp.CLEAN
-            end
-            do
-              local l_0_10, l_0_12, l_0_13 = , ((bm.get_current_process_startup_info)()).ppid or "0"
-              do
-                local l_0_11, l_0_14 = nil
-                local l_0_15 = nil
-                local l_0_16 = nil
-                local l_0_17 = nil
-                local l_0_18 = (string.lower)(((bm.get_imagepath)() or ""):match("([^/]+)$") or "")
-                local l_0_19 = "NpmCredHarvest_BM"
-                local l_0_20 = 600
-                local l_0_21 = 1
-                local l_0_22 = 100
-                if GetRollingQueueKeyValues(l_0_19, tostring(l_0_16) .. "|" .. l_0_18) then
-                  for l_0_26,l_0_27 in ipairs(GetRollingQueueKeyValues(l_0_19, tostring(l_0_16) .. "|" .. l_0_18)) do
-                    local l_0_23, l_0_24, l_0_25 = nil
-                    -- DECOMPILER ERROR at PC147: Confused about usage of register: R17 in 'UnsetPending'
-
-                    if R17_PC147 and R17_PC147.value == l_0_9 then
-                      return mp.CLEAN
-                    end
-                  end
-                  -- DECOMPILER ERROR at PC157: Confused about usage of register: R12 in 'UnsetPending'
-
-                  if l_0_21 <= #l_0_25 then
-                    local l_0_28 = nil
-                    ;
-                    (bm.add_related_string)("NpmCredHarvest_BM", safeJsonSerialize({NpmCredHarvestRQName = GetRollingQueueKeys(l_0_19), NpmCredHarvestCount = GetRollingQueueCount(l_0_19)}), bm.RelatedStringBMReport)
-                    TrackPidAndTechniqueBM("BM", "T1552.001", "npm_credharvest")
-                    add_parents()
-                    local l_0_29, l_0_30 = nil
-                    -- DECOMPILER ERROR at PC201: Overwrote pending register: R19 in 'AssignReg'
-
-                    if not pcall(reportBmInfo) and reportBmInfo then
-                      (bm.add_related_string)("bmInfoFailReason", tostring(R19_PC199), R19_PC199)
-                    end
-                    return mp.INFECTED
-                  end
-                end
-                do
-                  -- DECOMPILER ERROR at PC208: Confused about usage of register: R11 in 'UnsetPending'
-
-                  -- DECOMPILER ERROR at PC212: Overwrote pending register: R19 in 'AssignReg'
-
-                  AppendToRollingQueue(l_0_19, l_0_29, l_0_9, l_0_20, l_0_22, R19_PC199)
-                  return mp.CLEAN
-                end
-              end
-            end
-          end
-        end
-      end
-    end
+    return mp.INFECTED
   end
 end
-
+AppendToRollingQueue(l_0_6, l_0_11, l_0_1, l_0_7, l_0_9, 0)
+return mp.CLEAN

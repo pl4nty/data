@@ -1,24 +1,16 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\51b3a03a40fe\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 51b3a03a40fe
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2 ~= nil then
-    local l_0_0 = nil
-  end
-  -- DECOMPILER ERROR at PC13: Confused about usage of register: R0 in 'UnsetPending'
-
-  if not l_0_0 then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC19: Confused about usage of register: R0 in 'UnsetPending'
-
-  if not contains(l_0_0, "\\bdata.msc") then
-    return mp.CLEAN
-  end
-  return mp.INFECTED
+local l_0_0
+if this_sigattrlog[3].matched and this_sigattrlog[3].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[3].utf8p2
 end
-
+if not l_0_0 then
+  return mp.CLEAN
+end
+if not contains(l_0_0, "\\bdata.msc") then
+  return mp.CLEAN
+end
+return mp.INFECTED

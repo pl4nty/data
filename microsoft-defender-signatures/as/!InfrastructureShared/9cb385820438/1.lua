@@ -1,25 +1,20 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\9cb385820438\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 9cb385820438
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[2]).matched then
-    local l_0_0, l_0_1 = nil
-  end
-  local l_0_2 = nil
-  local l_0_3 = contains
-  local l_0_4 = l_0_2
-  l_0_3 = l_0_3(l_0_4, {"rundll32.exe", "rundll32-low.exe", "connectdetector.exe", "program files", "iscurrentjobalreadyrunning.exe", "musnotification.exe"})
-  if not l_0_3 then
-    l_0_3 = mp
-    l_0_3 = l_0_3.INFECTED
-    return l_0_3
-  end
-  l_0_3 = mp
-  l_0_3 = l_0_3.CLEAN
-  return l_0_3
+local l_0_0
+if this_sigattrlog[2].matched then
+  l_0_0 = string.lower(this_sigattrlog[2].utf8p1)
 end
-
+if not contains(l_0_0, {
+  "rundll32.exe",
+  "rundll32-low.exe",
+  "connectdetector.exe",
+  "program files",
+  "iscurrentjobalreadyrunning.exe",
+  "musnotification.exe"
+}) then
+  return mp.INFECTED
+end
+return mp.CLEAN

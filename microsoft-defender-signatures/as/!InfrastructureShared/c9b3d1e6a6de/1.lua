@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: c9b3d1e6a6de
+-- Type: 21
+
+local l_0_0 = bm.get_current_process_startup_info()
+if l_0_0.integrity_level >= MpCommon.SECURITY_MANDATORY_HIGH_RID then
+  return mp.CLEAN
+end
+return mp.INFECTED

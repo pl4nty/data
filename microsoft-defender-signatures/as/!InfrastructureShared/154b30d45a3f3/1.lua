@@ -1,37 +1,36 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\154b30d45a3f3\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 154b30d45a3f3
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-local l_0_0 = (bm.get_imagepath)()
-do
-  if l_0_0 ~= nil and (string.len)(l_0_0) >= 15 then
-    local l_0_1 = {}
-    l_0_1["cmd.exe"] = true
-    l_0_1["powershell.exe"] = true
-    l_0_1["cscript.exe"] = true
-    l_0_1["wscript.exe"] = true
-    l_0_1["mshta.exe"] = true
-    l_0_1["pwsh.exe"] = true
-    l_0_1["rundll32.exe"] = true
-    l_0_1["regsvr32.exe"] = true
-    l_0_1["regasm.exe"] = true
-    l_0_1["regsvcs.exe"] = true
-    l_0_1["officesvcmgr.exe"] = true
-    l_0_1["officeclicktorun.exe"] = true
-    l_0_1["integrator.exe"] = true
-    if l_0_1[(string.lower)(l_0_0:match("\\([^\\]+)$"))] then
-      return mp.CLEAN
-    end
+local l_0_0 = bm.get_imagepath()
+if l_0_0 ~= nil and string.len(l_0_0) >= 15 then
+  local l_0_1 = {
+    ["cmd.exe"] = true,
+    ["powershell.exe"] = true,
+    ["cscript.exe"] = true,
+    ["wscript.exe"] = true,
+    ["mshta.exe"] = true,
+    ["pwsh.exe"] = true,
+    ["rundll32.exe"] = true,
+    ["regsvr32.exe"] = true,
+    ["regasm.exe"] = true,
+    ["regsvcs.exe"] = true,
+    ["officesvcmgr.exe"] = true,
+    ["officeclicktorun.exe"] = true,
+    ["integrator.exe"] = true
+  }
+  local l_0_2 = string.lower(l_0_0:match("\\([^\\]+)$"))
+  if l_0_1[l_0_2] then
+    return mp.CLEAN
   end
-  local l_0_2 = nil
-  if (this_sigattrlog[14]).matched and (this_sigattrlog[14]).utf8p2 ~= nil then
-    l_0_2 = (this_sigattrlog[14]).utf8p2
-  end
-  if l_0_2 ~= nil then
-    bm_AddRelatedFileFromCommandLine(l_0_2, nil, nil, 1)
-    return mp.INFECTED
-  end
-  return mp.CLEAN
 end
-
+local l_0_3
+if this_sigattrlog[14].matched and this_sigattrlog[14].utf8p2 ~= nil then
+  l_0_3 = this_sigattrlog[14].utf8p2
+end
+if l_0_3 ~= nil then
+  bm_AddRelatedFileFromCommandLine(l_0_3, nil, nil, 1)
+  return mp.INFECTED
+end
+return mp.CLEAN

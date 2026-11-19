@@ -1,13 +1,15 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SuspReuseOldCert_S001\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SuspReuseOldCert_S001
+-- Type: 10
+-- MpAttributes: RPF:TopLevelFile & BM_HAS_DIGITALSIGNATURE & OldCert:Win32/AnFu.A
 
--- params : ...
--- function num : 0
 if peattributes.x86_image == false then
   return mp.INFECTED
 end
-if pehdr.TimeDateStamp ~= 0 and 1577836800 < pehdr.TimeDateStamp then
-  return mp.INFECTED
+if pehdr.TimeDateStamp ~= 0 then
+  local l_0_0 = 1577836800
+  if l_0_0 < pehdr.TimeDateStamp then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
-

@@ -1,31 +1,34 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\41d7c785560c\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 41d7c785560c
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetScannedPPID)()
+local l_0_0 = mp.GetScannedPPID()
 if l_0_0 == "" or l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_1 = ((mp.GetProcessCommandLine)(l_0_0)):lower()
-do
-  do
-    if l_0_1 ~= nil then
-      local l_0_2 = {}
-      -- DECOMPILER ERROR at PC35: No list found for R2 , SetList fails
-
-      -- DECOMPILER ERROR at PC36: Overwrote pending register: R3 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC37: Overwrote pending register: R4 in 'AssignReg'
-
-      -- DECOMPILER ERROR at PC38: Overwrote pending register: R5 in 'AssignReg'
-
-      if not (".com")(".tmp", ".jpg") then
-        return mp.CLEAN
-      end
-    end
-    do return mp.INFECTED end
-    -- WARNING: undefined locals caused missing assignments!
+local l_0_1 = mp.GetProcessCommandLine(l_0_0):lower()
+if l_0_1 ~= nil then
+  local l_0_2 = {
+    ".com",
+    ".tmp",
+    ".jpg",
+    ".sldm",
+    ".aac",
+    ".eml",
+    ".html",
+    ".pptm",
+    ".cab",
+    ".eps",
+    ".aiff",
+    ".wma",
+    ".dotx",
+    ".gif",
+    ".xlam",
+    ".mpeg"
+  }
+  if not contains(l_0_1, l_0_2) then
+    return mp.CLEAN
   end
 end
-
+return mp.INFECTED

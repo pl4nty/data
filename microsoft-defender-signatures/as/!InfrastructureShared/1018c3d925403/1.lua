@@ -1,0 +1,19 @@
+-- Threat: !InfrastructureShared
+-- Name: 1018c3d925403
+-- Type: 21
+
+if not mp.get_mpattribute("RPF:TopLevelFile") then
+  return mp.CLEAN
+end
+local l_0_0, l_0_1 = mp.getfilename(mp.bitor(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_1 == nil or l_0_1 == "" or l_0_0 == nil or l_0_0 == "" then
+  return mp.CLEAN
+end
+if #l_0_1 == 64 then
+  return mp.CLEAN
+end
+local l_0_2 = "tcpdump"
+if l_0_1 ~= l_0_2 or string.find(l_0_0, "^/tmp") or string.find(l_0_0, "^/var") or string.find(l_0_0, "^/home") then
+  return mp.INFECTED
+end
+return mp.CLEAN

@@ -1,16 +1,16 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\51b35eddd4ce\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 51b35eddd4ce
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-if (bm.GetSignatureMatchDuration)() > 100000000 then
+if bm.GetSignatureMatchDuration() > 100000000 then
   return mp.CLEAN
 end
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-if (string.find)(l_0_0, "\\activetraderpro", 1, true) or (string.find)(l_0_0, "\\ftsearchservice", 1, true) then
+local l_0_0 = string.lower(MpCommon.PathToWin32Path(bm.get_imagepath()))
+if string.find(l_0_0, "\\activetraderpro", 1, true) or string.find(l_0_0, "\\ftsearchservice", 1, true) then
   return mp.CLEAN
 end
-local l_0_1 = (MpCommon.QueryPersistContext)(l_0_0, "ExecutedPENoCert")
+local l_0_1 = MpCommon.QueryPersistContext(l_0_0, "ExecutedPENoCert")
 if not l_0_1 then
   return mp.CLEAN
 end
@@ -22,4 +22,3 @@ if IsDetectionThresholdMet("BM") and (IsTacticObservedForPid("BM", "processinjec
   return mp.INFECTED
 end
 return mp.CLEAN
-

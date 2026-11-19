@@ -1,182 +1,67 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\134b360cefdb3\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 134b360cefdb3
+-- Type: 21
+-- Includes: BMLuaLib, TechniqueTracker, LuaFuncHelper
 
--- params : ...
--- function num : 0
 if is_excluded_parent_proc_auto() or IsSenseRelatedProc() == true then
   return mp.CLEAN
 end
-local l_0_0 = IsProcNameInParentProcessTree
-local l_0_1 = "BM"
-local l_0_2 = {}
--- DECOMPILER ERROR at PC25: No list found for R2 , SetList fails
-
--- DECOMPILER ERROR at PC29: Overwrote pending register: R0 in 'AssignReg'
-
--- DECOMPILER ERROR at PC30: Overwrote pending register: R0 in 'AssignReg'
-
-if l_0_0 then
-  return l_0_0
+if IsProcNameInParentProcessTree("BM", {
+  "csrss.exe",
+  "aw.protectionagent.powershellexecutor64.exe",
+  "vmware.hub.sfdagent.deploycmd.exe",
+  "agentexecutor.exe",
+  "pdzipservice.exe",
+  "santivirusic.exe",
+  "segurazoic.exe",
+  "svservice.exe",
+  "amagentassist.exe",
+  "bdantiransomware.exe",
+  "acrodist.exe"
+}) then
+  return mp.CLEAN
 end
--- DECOMPILER ERROR at PC32: Overwrote pending register: R0 in 'AssignReg'
-
--- DECOMPILER ERROR at PC33: Overwrote pending register: R0 in 'AssignReg'
-
--- DECOMPILER ERROR at PC40: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC41: Overwrote pending register: R1 in 'AssignReg'
-
-if l_0_1 then
-  return l_0_1
+local l_0_0 = bm.get_imagepath()
+if isnull(l_0_0) then
+  return mp.CLEAN
 end
--- DECOMPILER ERROR at PC43: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC44: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC45: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC47: Overwrote pending register: R0 in 'AssignReg'
-
--- DECOMPILER ERROR at PC48: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC49: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC50: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC51: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC52: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC57: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC58: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC59: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC66: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC67: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC68: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC75: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC76: Overwrote pending register: R1 in 'AssignReg'
-
-if l_0_1 or l_0_1 or l_0_1 then
-  return l_0_1
+l_0_0 = string.lower(l_0_0)
+if string.find(l_0_0, "msmpeng", 1, true) or string.find(l_0_0, "nissrv", 1, true) or string.find(l_0_0, "mssense", 1, true) then
+  return mp.CLEAN
 end
--- DECOMPILER ERROR at PC78: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC79: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC80: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC86: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC87: Overwrote pending register: R1 in 'AssignReg'
-
-if l_0_1 then
-  return l_0_1
+if mp.IsKnownFriendlyFile(l_0_0, true, false) then
+  return mp.CLEAN
 end
--- DECOMPILER ERROR at PC89: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC90: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC94: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC99: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC100: Overwrote pending register: R2 in 'AssignReg'
-
-if not l_0_1 or not l_0_2 then
-  return l_0_2
+local l_0_1 = bm.get_current_process_startup_info()
+if not l_0_1 or not next(l_0_1) then
+  return mp.CLEAN
 end
--- DECOMPILER ERROR at PC102: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC103: Overwrote pending register: R2 in 'AssignReg'
-
--- DECOMPILER ERROR at PC104: Overwrote pending register: R2 in 'AssignReg'
-
-local l_0_3 = (this_sigattrlog[4]).matched
-local l_0_4 = (this_sigattrlog[5]).matched
+local l_0_2 = this_sigattrlog[3].matched
+local l_0_3 = this_sigattrlog[4].matched
+local l_0_4 = this_sigattrlog[5].matched
 local l_0_5 = {}
--- DECOMPILER ERROR at PC113: Overwrote pending register: R6 in 'AssignReg'
-
-local l_0_6 = "agentexecutor.exe"
--- DECOMPILER ERROR at PC119: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC125: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC131: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC134: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC135: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC141: Overwrote pending register: R8 in 'AssignReg'
-
--- DECOMPILER ERROR at PC142: Overwrote pending register: R9 in 'AssignReg'
-
--- DECOMPILER ERROR at PC143: Overwrote pending register: R10 in 'AssignReg'
-
-if l_0_6 then
-  (bm.add_related_string)("santivirusic.exe", "segurazoic.exe", ("svservice.exe").RelatedStringBMReport)
-  -- DECOMPILER ERROR at PC149: Overwrote pending register: R11 in 'AssignReg'
-
-  bm_AddRelatedFileFromCommandLine(l_0_6, nil, nil, "amagentassist.exe")
+l_0_5.sig = "BruteRatel.MK!ems"
+l_0_5.mapview = tostring(l_0_2 or false)
+l_0_5.writevm = tostring(l_0_3 or false)
+l_0_5.protect = tostring(l_0_4 or false)
+if l_0_1.command_line then
+  local l_0_6 = string.lower(l_0_1.command_line)
+  l_0_5.cmd = l_0_6
+  bm.add_related_string("[->] CMD: ", l_0_6, bm.RelatedStringBMReport)
+  bm_AddRelatedFileFromCommandLine(l_0_6, nil, nil, 1)
 end
--- DECOMPILER ERROR at PC151: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC154: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC158: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC159: Overwrote pending register: R6 in 'AssignReg'
-
-if l_0_6 then
-  do
-    l_0_6(l_0_0)
-    -- DECOMPILER ERROR at PC162: Overwrote pending register: R6 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC163: Overwrote pending register: R6 in 'AssignReg'
-
-    l_0_6("DetectionContext", safeJsonSerialize(l_0_5), bm.RelatedStringBMReport)
-    -- DECOMPILER ERROR at PC171: Overwrote pending register: R6 in 'AssignReg'
-
-    l_0_6("BM", "T1055", "module_stomping")
-    -- DECOMPILER ERROR at PC176: Overwrote pending register: R6 in 'AssignReg'
-
-    l_0_6("BM", "T1106", "indirect_syscalls")
-    -- DECOMPILER ERROR at PC181: Overwrote pending register: R6 in 'AssignReg'
-
-    l_0_6("BM", "T1562.001", "ntdll_unhooking")
-    -- DECOMPILER ERROR at PC186: Overwrote pending register: R6 in 'AssignReg'
-
-    l_0_6("BM", "T1027", "xor_ssn_obfuscation")
-    -- DECOMPILER ERROR at PC191: Overwrote pending register: R6 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC194: Overwrote pending register: R6 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC195: Overwrote pending register: R6 in 'AssignReg'
-
-    if l_0_6 then
-      l_0_6(l_0_1.ppid, "h+")
-    end
-    -- DECOMPILER ERROR at PC199: Overwrote pending register: R6 in 'AssignReg'
-
-    l_0_6(true, true, "SMS_H", 5000, "Behavior:Win32/BruteRatel.MK!ems")
-    -- DECOMPILER ERROR at PC206: Overwrote pending register: R6 in 'AssignReg'
-
-    l_0_6()
-    -- DECOMPILER ERROR at PC208: Overwrote pending register: R6 in 'AssignReg'
-
-    -- DECOMPILER ERROR at PC209: Overwrote pending register: R6 in 'AssignReg'
-
-    do return l_0_6 end
-    -- DECOMPILER ERROR at PC211: freeLocal<0 in 'ReleaseLocals'
-
-    -- WARNING: undefined locals caused missing assignments!
-  end
+if l_0_1.ppid then
+  l_0_5.ppid = tostring(l_0_1.ppid)
 end
-
+bm.add_related_file(l_0_0)
+bm.add_related_string("DetectionContext", safeJsonSerialize(l_0_5), bm.RelatedStringBMReport)
+TrackPidAndTechniqueBM("BM", "T1055", "module_stomping")
+TrackPidAndTechniqueBM("BM", "T1106", "indirect_syscalls")
+TrackPidAndTechniqueBM("BM", "T1562.001", "ntdll_unhooking")
+TrackPidAndTechniqueBM("BM", "T1027", "xor_ssn_obfuscation")
+if l_0_1.ppid then
+  bm.request_SMS(l_0_1.ppid, "h+")
+end
+triggerMemoryScanOnProcessTree(true, true, "SMS_H", 5000, "Behavior:Win32/BruteRatel.MK!ems")
+add_parents()
+return mp.INFECTED

@@ -1,15 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\c2b37136cdba\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: c2b37136cdba
+-- Type: 21
+-- Includes: LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0 = mp.GetParentProcInfo()
 if l_0_0 == nil or l_0_0.image_path == nil then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)(l_0_0.image_path)
+local l_0_1 = string.lower(l_0_0.image_path)
 if not StringEndsWith(l_0_1, "\\w3wp.exe") then
   return mp.CLEAN
 end
 return mp.INFECTED
-

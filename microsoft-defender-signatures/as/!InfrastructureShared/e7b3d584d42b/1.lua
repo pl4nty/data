@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\e7b3d584d42b\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: e7b3d584d42b
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
 addRelatedProcess()
 return mp.INFECTED
-

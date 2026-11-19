@@ -1,805 +1,947 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanNPMSuspInstallLolbinA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:Trojan:NPM/SuspInstallLolbin.A
+-- Type: 24
+-- Includes: LuaFuncHelper
+-- MpAttributes: Implicit:FileNameEQpackage.json
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if l_0_0 ~= "package.json" then
-  return mp.CLEAN
+-- Fallback: local variables were not recovered, registers are shown instead
+
+local L0_1, L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1
+L0_1 = mp
+L0_1 = L0_1.getfilename
+L1_1 = mp
+L1_1 = L1_1.bitor
+L2_1 = mp
+L2_1 = L2_1.FILEPATH_QUERY_FNAME
+L3_1 = mp
+L3_1 = L3_1.FILEPATH_QUERY_LOWERCASE
+L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1 = L1_1(L2_1, L3_1)
+L0_1 = L0_1(L1_1, L2_1, L3_1, L4_1, L5_1, L6_1, L7_1, L8_1, L9_1, L10_1, L11_1, L12_1, L13_1, L14_1, L15_1, L16_1, L17_1, L18_1, L19_1, L20_1, L21_1, L22_1, L23_1, L24_1, L25_1)
+if L0_1 ~= "package.json" then
+  L1_1 = mp
+  L1_1 = L1_1.CLEAN
+  return L1_1
 end
-local l_0_1 = (mp.getfilesize)()
-if type(l_0_1) ~= "number" or l_0_1 < 2 or l_0_1 > 262144 then
-  return mp.CLEAN
+L1_1 = mp
+L1_1 = L1_1.getfilesize
+L1_1 = L1_1()
+L2_1 = type
+L3_1 = L1_1
+L2_1 = L2_1(L3_1)
+if L2_1 ~= "number" or L1_1 < 2 or 262144 < L1_1 then
+  L2_1 = mp
+  L2_1 = L2_1.CLEAN
+  return L2_1
 end
-;
-(mp.readprotection)(false)
-local l_0_2, l_0_3 = pcall(mp.readfile, 0, l_0_1)
-;
-(mp.readprotection)(true)
-if not l_0_2 or l_0_3 == nil then
-  (mp.set_mpattribute)("Lua:SuspInstallLolbinReadFailed")
-  return mp.CLEAN
+L2_1 = mp
+L2_1 = L2_1.readprotection
+L3_1 = false
+L2_1(L3_1)
+L2_1 = pcall
+L3_1 = mp
+L3_1 = L3_1.readfile
+L4_1 = 0
+L5_1 = L1_1
+L2_1, L3_1 = L2_1(L3_1, L4_1, L5_1)
+L4_1 = mp
+L4_1 = L4_1.readprotection
+L5_1 = true
+L4_1(L5_1)
+if not L2_1 or L3_1 == nil then
+  L4_1 = mp
+  L4_1 = L4_1.set_mpattribute
+  L5_1 = "Lua:SuspInstallLolbinReadFailed"
+  L4_1(L5_1)
+  L4_1 = mp
+  L4_1 = L4_1.CLEAN
+  return L4_1
 end
-local l_0_4 = tostring(l_0_3)
-if #l_0_4 ~= l_0_1 then
-  (mp.set_mpattribute)("Lua:SuspInstallLolbinPartialRead")
-  return mp.CLEAN
+L4_1 = tostring
+L5_1 = L3_1
+L4_1 = L4_1(L5_1)
+L5_1 = #L4_1
+if L5_1 ~= L1_1 then
+  L5_1 = mp
+  L5_1 = L5_1.set_mpattribute
+  L6_1 = "Lua:SuspInstallLolbinPartialRead"
+  L5_1(L6_1)
+  L5_1 = mp
+  L5_1 = L5_1.CLEAN
+  return L5_1
 end
-if (string.sub)(l_0_4, 1, 3) == "ï»\191" then
-  l_0_4 = (string.sub)(l_0_4, 4)
+L5_1 = string
+L5_1 = L5_1.sub
+L6_1 = L4_1
+L7_1 = 1
+L8_1 = 3
+L5_1 = L5_1(L6_1, L7_1, L8_1)
+if L5_1 == "\239\187\191" then
+  L5_1 = string
+  L5_1 = L5_1.sub
+  L6_1 = L4_1
+  L7_1 = 4
+  L5_1 = L5_1(L6_1, L7_1)
+  L4_1 = L5_1
 end
-local l_0_5 = safeJsonDeserialize(l_0_4)
-if type(l_0_5) ~= "table" or type(l_0_5.scripts) ~= "table" then
-  return mp.CLEAN
-end
-local l_0_6 = {}
-l_0_6.curl = true
-l_0_6.wget = true
-l_0_6.powershell = true
-l_0_6.pwsh = true
-l_0_6.certutil = true
-l_0_6.bitsadmin = true
-l_0_6.mshta = true
-l_0_6.msiexec = true
-l_0_6.rundll32 = true
-l_0_6.regsvr32 = true
-l_0_6.cscript = true
-l_0_6.wscript = true
-l_0_6.msbuild = true
-l_0_6.installutil = true
-l_0_6.regasm = true
-l_0_6.regsvcs = true
-l_0_6.wmic = true
-local l_0_7 = {}
-l_0_7[";"] = true
-l_0_7["&"] = true
-l_0_7["|"] = true
-l_0_7["("] = true
-l_0_7[")"] = true
-l_0_7["\n"] = true
-l_0_7["\r"] = true
-local l_0_8 = {}
-l_0_8.env = true
-l_0_8.nohup = true
-l_0_8.command = true
-l_0_8.exec = true
-l_0_8.call = true
-l_0_8["cross-env"] = true
-l_0_8["cross-env.cmd"] = true
-l_0_8["if"] = true
-l_0_8["then"] = true
-l_0_8["else"] = true
-l_0_8.elif = true
-l_0_8["do"] = true
-l_0_8["while"] = true
-l_0_8["until"] = true
-local l_0_9 = {}
-l_0_9.cmd = true
-l_0_9["%comspec%"] = true
-l_0_9.sh = true
-l_0_9.bash = true
-l_0_9.dash = true
-l_0_9.zsh = true
-l_0_9.ksh = true
-local l_0_10 = {}
-l_0_10.env = true
-l_0_10.nohup = true
-l_0_10.command = true
-l_0_10.exec = true
-l_0_10.call = true
-l_0_10["cross-env"] = true
-l_0_10["cross-env.cmd"] = true
-do
-  local l_0_15, l_0_16 = function(l_1_0, l_1_1, l_1_2)
-  -- function num : 0_0 , upvalues : l_0_11
-  if l_1_2 > 16 then
-    return nil
+L5_1 = safeJsonDeserialize
+L6_1 = L4_1
+L5_1 = L5_1(L6_1)
+L6_1 = type
+L7_1 = L5_1
+L6_1 = L6_1(L7_1)
+if L6_1 == "table" then
+  L6_1 = type
+  L7_1 = L5_1.scripts
+  L6_1 = L6_1(L7_1)
+  if L6_1 == "table" then
+    goto lbl_99
   end
-  local l_1_3 = (string.sub)(l_1_0, l_1_1, l_1_1)
-  local l_1_4 = {}
-  l_1_4["("] = ")"
-  l_1_4["{"] = "}"
-  l_1_4["`"] = "`"
-  l_1_4 = l_1_4[l_1_3]
-  if l_1_4 == nil then
-    return nil
+end
+L6_1 = mp
+L6_1 = L6_1.CLEAN
+do return L6_1 end
+::lbl_99::
+L6_1 = {}
+L6_1.curl = true
+L6_1.wget = true
+L6_1.powershell = true
+L6_1.pwsh = true
+L6_1.certutil = true
+L6_1.bitsadmin = true
+L6_1.mshta = true
+L6_1.msiexec = true
+L6_1.rundll32 = true
+L6_1.regsvr32 = true
+L6_1.cscript = true
+L6_1.wscript = true
+L6_1.msbuild = true
+L6_1.installutil = true
+L6_1.regasm = true
+L6_1.regsvcs = true
+L6_1.wmic = true
+L7_1 = {}
+L7_1[";"] = true
+L7_1["&"] = true
+L7_1["|"] = true
+L7_1["("] = true
+L7_1[")"] = true
+L7_1["\n"] = true
+L7_1["\r"] = true
+L8_1 = {}
+L8_1.env = true
+L8_1.nohup = true
+L8_1.command = true
+L8_1.exec = true
+L8_1.call = true
+L8_1["cross-env"] = true
+L8_1["cross-env.cmd"] = true
+L8_1["if"] = true
+L8_1["then"] = true
+L8_1["else"] = true
+L8_1.elif = true
+L8_1["do"] = true
+L8_1["while"] = true
+L8_1["until"] = true
+L9_1 = {}
+L9_1.cmd = true
+L9_1["%comspec%"] = true
+L9_1.sh = true
+L9_1.bash = true
+L9_1.dash = true
+L9_1.zsh = true
+L9_1.ksh = true
+L10_1 = {}
+L10_1.env = true
+L10_1.nohup = true
+L10_1.command = true
+L10_1.exec = true
+L10_1.call = true
+L10_1["cross-env"] = true
+L10_1["cross-env.cmd"] = true
+
+function L11_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  if 16 < A2_2 then
+    L3_2 = nil
+    return L3_2
   end
-  local l_1_5 = nil
-  l_1_1 = l_1_1 + 1
-  while 1 do
-    while 1 do
-      while 1 do
-        while 1 do
-          while 1 do
-            while 1 do
-              while 1 do
-                while 1 do
-                  while 1 do
-                    while 1 do
-                      if l_1_1 <= #l_1_0 then
-                        local l_1_6 = (string.sub)(l_1_0, l_1_1, l_1_1)
-                        local l_1_7 = (string.sub)(l_1_0, l_1_1 + 1, l_1_1 + 1)
-                        if l_1_6 == "\\" and l_1_5 ~= "\'" then
-                          l_1_1 = l_1_1 + 2
-                          -- DECOMPILER ERROR at PC41: LeaveBlock: unexpected jumping out IF_THEN_STMT
+  L3_2 = string
+  L3_2 = L3_2.sub
+  L4_2 = A0_2
+  L5_2 = A1_2
+  L6_2 = A1_2
+  L3_2 = L3_2(L4_2, L5_2, L6_2)
+  L4_2 = {}
+  L4_2["("] = ")"
+  L4_2["{"] = "}"
+  L4_2["`"] = "`"
+  L4_2 = L4_2[L3_2]
+  if L4_2 == nil then
+    L5_2 = nil
+    return L5_2
+  end
+  L5_2 = nil
+  A1_2 = A1_2 + 1
+  while true do
+    L6_2 = #A0_2
+    if not (A1_2 <= L6_2) then
+      break
+    end
+    L6_2 = string
+    L6_2 = L6_2.sub
+    L7_2 = A0_2
+    L8_2 = A1_2
+    L9_2 = A1_2
+    L6_2 = L6_2(L7_2, L8_2, L9_2)
+    L7_2 = string
+    L7_2 = L7_2.sub
+    L8_2 = A0_2
+    L9_2 = A1_2 + 1
+    L10_2 = A1_2 + 1
+    L7_2 = L7_2(L8_2, L9_2, L10_2)
+    if L6_2 == "\\" and L5_2 ~= "'" then
+      A1_2 = A1_2 + 2
+    elseif L5_2 == "'" then
+      if L6_2 == "'" then
+        L5_2 = nil
+      end
+      A1_2 = A1_2 + 1
+    elseif L6_2 == "`" and L4_2 == "`" then
+      return A1_2
+    elseif L6_2 == "`" or L6_2 == "$" and L7_2 == "(" then
+      L8_2 = A1_2 or L8_2
+      if L6_2 ~= "`" or not A1_2 then
+        L8_2 = A1_2 + 1
+      end
+      L9_2 = L11_1
+      L10_2 = A0_2
+      L11_2 = L8_2
+      L12_2 = A2_2 + 1
+      L9_2 = L9_2(L10_2, L11_2, L12_2)
+      if L9_2 == nil then
+        L10_2 = nil
+        return L10_2
+      end
+      A1_2 = L9_2 + 1
+    elseif L5_2 ~= nil then
+      if L6_2 == L5_2 then
+        L5_2 = nil
+      end
+      A1_2 = A1_2 + 1
+    elseif L6_2 == "'" or L6_2 == "\"" then
+      L5_2 = L6_2
+      A1_2 = A1_2 + 1
+    elseif L6_2 == "#" then
+      if A1_2 ~= 1 then
+        L8_2 = string
+        L8_2 = L8_2.find
+        L9_2 = string
+        L9_2 = L9_2.sub
+        L10_2 = A0_2
+        L11_2 = A1_2 - 1
+        L12_2 = A1_2 - 1
+        L9_2 = L9_2(L10_2, L11_2, L12_2)
+        L10_2 = "[%s;&|()]"
+        L8_2 = L8_2(L9_2, L10_2)
+        if not L8_2 then
+          goto lbl_119
+        end
+      end
+      L8_2 = string
+      L8_2 = L8_2.find
+      L9_2 = A0_2
+      L10_2 = "[\r\n]"
+      L11_2 = A1_2
+      L8_2 = L8_2(L9_2, L10_2, L11_2)
+      A1_2 = L8_2 or A1_2
+      if not L8_2 then
+        L8_2 = #A0_2
+        A1_2 = L8_2 + 1
+      end
+    else
+      ::lbl_119::
+      if L6_2 == L3_2 then
+        L8_2 = L11_1
+        L9_2 = A0_2
+        L10_2 = A1_2
+        L11_2 = A2_2 + 1
+        L8_2 = L8_2(L9_2, L10_2, L11_2)
+        if L8_2 == nil then
+          L9_2 = nil
+          return L9_2
+        end
+        A1_2 = L8_2 + 1
+      elseif L6_2 == L4_2 then
+        return A1_2
+      else
+        A1_2 = A1_2 + 1
+      end
+    end
+  end
+  L6_2 = nil
+  return L6_2
+end
 
-                          -- DECOMPILER ERROR at PC41: LeaveBlock: unexpected jumping out IF_STMT
+function L12_1(A0_2, A1_2)
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2
+  L2_2 = string
+  L2_2 = L2_2.sub
+  L3_2 = A0_2
+  L4_2 = A1_2
+  L5_2 = A1_2
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  L3_2 = string
+  L3_2 = L3_2.sub
+  L4_2 = A0_2
+  L5_2 = A1_2
+  L6_2 = A1_2 + 1
+  L3_2 = L3_2(L4_2, L5_2, L6_2)
+  if L3_2 == "((" then
+    L3_2 = L11_1
+    L4_2 = A0_2
+    L5_2 = A1_2
+    L6_2 = 0
+    L3_2 = L3_2(L4_2, L5_2, L6_2)
+    if L3_2 == nil then
+      L4_2 = nil
+      L5_2 = #A0_2
+      L5_2 = L5_2 + 1
+      L6_2 = false
+      return L4_2, L5_2, L6_2
+    end
+    L4_2 = string
+    L4_2 = L4_2.sub
+    L5_2 = A0_2
+    L6_2 = A1_2 + 2
+    L7_2 = L3_2 - 2
+    L4_2 = L4_2(L5_2, L6_2, L7_2)
+    L5_2 = "$"
+    L6_2 = L3_2 + 1
+    L7_2 = false
+    L8_2 = {}
+    L9_2 = {}
+    L9_2.text = L4_2
+    L9_2.expression_only = true
+    L8_2[1] = L9_2
+    return L5_2, L6_2, L7_2, L8_2
+  end
+  L3_2 = L7_1
+  L3_2 = L3_2[L2_2]
+  if not L3_2 then
+    L3_2 = string
+    L3_2 = L3_2.find
+    L4_2 = L2_2
+    L5_2 = "%s"
+    L3_2 = L3_2(L4_2, L5_2)
+    if not L3_2 then
+      goto lbl_57
+    end
+  end
+  L3_2 = L2_2
+  L4_2 = A1_2 + 1
+  L5_2 = true
+  do return L3_2, L4_2, L5_2 end
+  ::lbl_57::
+  if L2_2 == "#" then
+    L3_2 = string
+    L3_2 = L3_2.find
+    L4_2 = A0_2
+    L5_2 = "[\r\n]"
+    L6_2 = A1_2
+    L3_2 = L3_2(L4_2, L5_2, L6_2)
+    L4_2 = "\n"
+    L5_2 = L3_2 or L5_2
+    if not L3_2 then
+      L5_2 = #A0_2
+      L5_2 = L5_2 + 1
+    end
+    L6_2 = true
+    return L4_2, L5_2, L6_2
+  end
+  L3_2 = {}
+  L4_2 = {}
+  L5_2 = nil
+  while true do
+    L6_2 = #A0_2
+    if not (A1_2 <= L6_2) then
+      break
+    end
+    L6_2 = string
+    L6_2 = L6_2.sub
+    L7_2 = A0_2
+    L8_2 = A1_2
+    L9_2 = A1_2
+    L6_2 = L6_2(L7_2, L8_2, L9_2)
+    L2_2 = L6_2
+    L6_2 = string
+    L6_2 = L6_2.sub
+    L7_2 = A0_2
+    L8_2 = A1_2 + 1
+    L9_2 = A1_2 + 1
+    L6_2 = L6_2(L7_2, L8_2, L9_2)
+    if L2_2 == "\\" and L5_2 ~= "'" and L6_2 == "\n" then
+      A1_2 = A1_2 + 2
+    else
+      if L2_2 == "\\" and L5_2 ~= "'" and L6_2 == "\r" then
+        L7_2 = string
+        L7_2 = L7_2.sub
+        L8_2 = A0_2
+        L9_2 = A1_2 + 2
+        L10_2 = A1_2 + 2
+        L7_2 = L7_2(L8_2, L9_2, L10_2)
+        if L7_2 == "\n" then
+          A1_2 = A1_2 + 3
+      end
+      else
+        if L6_2 ~= "" then
+          if L2_2 == "\\" and L5_2 ~= "'" then
+            if L6_2 == L5_2 or L6_2 == "\\" or L6_2 == "$" or L6_2 == "`" then
+              goto lbl_150
+            end
+            if L5_2 == nil then
+              if L6_2 == "\"" or L6_2 == "'" then
+                goto lbl_150
+              end
+              L7_2 = L7_1
+              L7_2 = L7_2[L6_2]
+              if L7_2 then
+                goto lbl_150
+              end
+              L7_2 = string
+              L7_2 = L7_2.find
+              L8_2 = L6_2
+              L9_2 = "%s"
+              L7_2 = L7_2(L8_2, L9_2)
+            end
+          end
+          if L7_2 or L2_2 == "^" and L5_2 == nil then
+            ::lbl_150::
+            L7_2 = #L3_2
+            L7_2 = L7_2 + 1
+            L3_2[L7_2] = L6_2
+            A1_2 = A1_2 + 2
+        end
+        elseif L5_2 ~= "'" and (L2_2 == "`" or L2_2 == "$" and L6_2 == "(") then
+          L7_2 = A1_2 or L7_2
+          if L2_2 ~= "`" or not A1_2 then
+            L7_2 = A1_2 + 1
+          end
+          L8_2 = L11_1
+          L9_2 = A0_2
+          L10_2 = L7_2
+          L11_2 = 0
+          L8_2 = L8_2(L9_2, L10_2, L11_2)
+          if L8_2 == nil then
+            L9_2 = nil
+            L10_2 = #A0_2
+            L10_2 = L10_2 + 1
+            L11_2 = false
+            return L9_2, L10_2, L11_2
+          end
+          L9_2 = L2_2 == "$"
+          if L9_2 then
+            L10_2 = 1
+            if L10_2 then
+              goto lbl_198
+            end
+          end
+          L10_2 = 0
+          ::lbl_198::
+          L11_2 = #L4_2
+          L11_2 = L11_2 + 1
+          L12_2 = {}
+          L13_2 = string
+          L13_2 = L13_2.sub
+          L14_2 = A0_2
+          L15_2 = L7_2 + 1
+          L15_2 = L15_2 + L10_2
+          L16_2 = L8_2 - 1
+          L16_2 = L16_2 - L10_2
+          L13_2 = L13_2(L14_2, L15_2, L16_2)
+          L12_2.text = L13_2
+          L12_2.expression_only = L9_2
+          L4_2[L11_2] = L12_2
+          L11_2 = #L3_2
+          L11_2 = L11_2 + 1
+          L3_2[L11_2] = "$"
+          A1_2 = L8_2 + 1
+        elseif L5_2 ~= nil then
+          if L2_2 == L5_2 then
+            L5_2 = nil
+          else
+            L7_2 = #L3_2
+            L7_2 = L7_2 + 1
+            L3_2[L7_2] = L2_2
+          end
+          A1_2 = A1_2 + 1
+        elseif L2_2 == "\"" or L2_2 == "'" then
+          L5_2 = L2_2
+          A1_2 = A1_2 + 1
+        else
+          L7_2 = L7_1
+          L7_2 = L7_2[L2_2]
+          if not L7_2 then
+            L7_2 = string
+            L7_2 = L7_2.find
+            L8_2 = L2_2
+            L9_2 = "%s"
+            L7_2 = L7_2(L8_2, L9_2)
+            if not L7_2 then
+              goto lbl_255
+            end
+          end
+          L7_2 = table
+          L7_2 = L7_2.concat
+          L8_2 = L3_2
+          L7_2 = L7_2(L8_2)
+          L8_2 = A1_2
+          L9_2 = false
+          L10_2 = L4_2
+          do return L7_2, L8_2, L9_2, L10_2 end
+          goto lbl_259
+          ::lbl_255::
+          L7_2 = #L3_2
+          L7_2 = L7_2 + 1
+          L3_2[L7_2] = L2_2
+          A1_2 = A1_2 + 1
+        end
+      end
+    end
+    ::lbl_259::
+  end
+  if L5_2 ~= nil then
+    L6_2 = nil
+    L7_2 = A1_2
+    L8_2 = false
+    return L6_2, L7_2, L8_2
+  end
+  L6_2 = table
+  L6_2 = L6_2.concat
+  L7_2 = L3_2
+  L6_2 = L6_2(L7_2)
+  L7_2 = A1_2
+  L8_2 = false
+  L9_2 = L4_2
+  return L6_2, L7_2, L8_2, L9_2
+end
 
-                          -- DECOMPILER ERROR at PC41: LeaveBlock: unexpected jumping out IF_THEN_STMT
+function L13_1(A0_2, A1_2, A2_2)
+  local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L3_2 = A2_2 == "function"
+  if L3_2 then
+    L4_2 = string
+    L4_2 = L4_2.find
+    L5_2 = A0_2
+    L6_2 = "%S"
+    L7_2 = A1_2
+    L4_2 = L4_2(L5_2, L6_2, L7_2)
+    A1_2 = L4_2 or A1_2
+    if not L4_2 then
+      L4_2 = #A0_2
+      A1_2 = L4_2 + 1
+    end
+    L4_2 = nil
+    L5_2 = L12_1
+    L6_2 = A0_2
+    L7_2 = A1_2
+    L5_2, L6_2 = L5_2(L6_2, L7_2)
+    L4_2 = L6_2
+    A2_2 = L5_2
+    A1_2 = L4_2
+  end
+  if A2_2 ~= nil then
+    L4_2 = string
+    L4_2 = L4_2.find
+    L5_2 = A2_2
+    L6_2 = "^[%a_][%w_.%-]*$"
+    L4_2 = L4_2(L5_2, L6_2)
+    if L4_2 then
+      goto lbl_36
+    end
+  end
+  L4_2 = nil
+  do return L4_2 end
+  ::lbl_36::
+  L4_2 = string
+  L4_2 = L4_2.find
+  L5_2 = A0_2
+  L6_2 = "%S"
+  L7_2 = A1_2
+  L4_2 = L4_2(L5_2, L6_2, L7_2)
+  A1_2 = L4_2 or A1_2
+  if not L4_2 then
+    L4_2 = #A0_2
+    A1_2 = L4_2 + 1
+  end
+  L4_2 = string
+  L4_2 = L4_2.sub
+  L5_2 = A0_2
+  L6_2 = A1_2
+  L7_2 = A1_2
+  L4_2 = L4_2(L5_2, L6_2, L7_2)
+  if L4_2 == "(" then
+    L4_2 = string
+    L4_2 = L4_2.find
+    L5_2 = A0_2
+    L6_2 = "%S"
+    L7_2 = A1_2 + 1
+    L4_2 = L4_2(L5_2, L6_2, L7_2)
+    if not L4_2 then
+      L4_2 = #A0_2
+      L4_2 = L4_2 + 1
+    end
+    L5_2 = string
+    L5_2 = L5_2.sub
+    L6_2 = A0_2
+    L7_2 = L4_2
+    L8_2 = L4_2
+    L5_2 = L5_2(L6_2, L7_2, L8_2)
+    if L5_2 ~= ")" then
+      L5_2 = nil
+      return L5_2
+    end
+    L5_2 = string
+    L5_2 = L5_2.find
+    L6_2 = A0_2
+    L7_2 = "%S"
+    L8_2 = L4_2 + 1
+    L5_2 = L5_2(L6_2, L7_2, L8_2)
+    A1_2 = L5_2 or A1_2
+    if not L5_2 then
+      L5_2 = #A0_2
+      A1_2 = L5_2 + 1
+    end
+  elseif not L3_2 then
+    L4_2 = nil
+    return L4_2
+  end
+  L4_2 = string
+  L4_2 = L4_2.sub
+  L5_2 = A0_2
+  L6_2 = A1_2
+  L7_2 = A1_2
+  L4_2 = L4_2(L5_2, L6_2, L7_2)
+  if L4_2 ~= "{" and L4_2 ~= "(" then
+    L5_2 = nil
+    return L5_2
+  end
+  L5_2 = L11_1
+  L6_2 = A0_2
+  L7_2 = A1_2
+  L8_2 = 0
+  L5_2 = L5_2(L6_2, L7_2, L8_2)
+  if L5_2 == nil then
+    L6_2 = A2_2
+    L7_2 = nil
+    L8_2 = #A0_2
+    L8_2 = L8_2 + 1
+    return L6_2, L7_2, L8_2
+  end
+  L6_2 = A2_2
+  L7_2 = string
+  L7_2 = L7_2.sub
+  L8_2 = A0_2
+  L9_2 = A1_2 + 1
+  L10_2 = L5_2 - 1
+  L7_2 = L7_2(L8_2, L9_2, L10_2)
+  L8_2 = L5_2 + 1
+  return L6_2, L7_2, L8_2
+end
 
-                          -- DECOMPILER ERROR at PC41: LeaveBlock: unexpected jumping out IF_STMT
-
-                        end
-                      end
-                    end
-                    if l_1_5 == "\'" then
-                      if l_1_6 == "\'" then
-                        l_1_5 = nil
-                      end
-                      l_1_1 = l_1_1 + 1
-                      -- DECOMPILER ERROR at PC48: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                      -- DECOMPILER ERROR at PC48: LeaveBlock: unexpected jumping out IF_STMT
-
-                    end
+function L14_1(A0_2, A1_2, A2_2, A3_2)
+  local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2
+  if 4 < A1_2 then
+    L4_2 = nil
+    return L4_2
+  end
+  if not A2_2 then
+    L4_2 = {}
+    A2_2 = L4_2
+  end
+  L4_2 = 1
+  L5_2 = true
+  L6_2 = nil
+  L7_2 = nil
+  L8_2 = false
+  L9_2 = false
+  while true do
+    L10_2 = #A0_2
+    if not (L4_2 <= L10_2) then
+      break
+    end
+    L10_2 = L12_1
+    L11_2 = A0_2
+    L12_2 = L4_2
+    L10_2, L11_2, L12_2, L13_2 = L10_2(L11_2, L12_2)
+    L4_2 = L11_2
+    if L10_2 == nil then
+      L14_2 = nil
+      return L14_2
+    end
+    L14_2 = ipairs
+    L15_2 = L13_2 or L15_2
+    if not L13_2 then
+      L15_2 = {}
+    end
+    L14_2, L15_2, L16_2 = L14_2(L15_2)
+    for L17_2, L18_2 in L14_2, L15_2, L16_2 do
+      L19_2 = {}
+      L20_2 = pairs
+      L21_2 = A2_2
+      L20_2, L21_2, L22_2 = L20_2(L21_2)
+      for L23_2, L24_2 in L20_2, L21_2, L22_2 do
+        L19_2[L23_2] = L24_2
+      end
+      L20_2 = L14_1
+      L21_2 = L18_2.text
+      L22_2 = A1_2 + 1
+      L23_2 = L19_2
+      L24_2 = L18_2.expression_only
+      L20_2 = L20_2(L21_2, L22_2, L23_2, L24_2)
+      if L20_2 then
+        return L20_2
+      end
+    end
+    L14_2 = string
+    L14_2 = L14_2.lower
+    L15_2 = L10_2
+    L14_2 = L14_2(L15_2)
+    if L12_2 then
+      L15_2 = L7_1
+      L15_2 = L15_2[L10_2]
+      if L15_2 then
+        L5_2 = true
+        L6_2 = nil
+        L7_2 = nil
+        L8_2 = false
+        L9_2 = false
+      end
+    elseif L9_2 then
+      L9_2 = false
+    elseif L8_2 then
+      L15_2 = L14_1
+      L16_2 = L10_2
+      L17_2 = A1_2 + 1
+      L15_2 = L15_2(L16_2, L17_2)
+      if L15_2 then
+        return L15_2
+      end
+      L8_2 = false
+      L5_2 = false
+    elseif L7_2 ~= nil then
+      if L7_2 == "cmd" or L7_2 == "%comspec%" then
+        L15_2 = string
+        L15_2 = L15_2.sub
+        L16_2 = L14_2
+        L17_2 = 1
+        L18_2 = 2
+        L15_2 = L15_2(L16_2, L17_2, L18_2)
+        if L15_2 == "/c" or L15_2 == "/k" then
+          L16_2 = #L10_2
+          if 2 < L16_2 then
+            L16_2 = L14_1
+            L17_2 = string
+            L17_2 = L17_2.sub
+            L18_2 = L10_2
+            L19_2 = 3
+            L17_2 = L17_2(L18_2, L19_2)
+            L18_2 = A1_2 + 1
+            L16_2 = L16_2(L17_2, L18_2)
+            if L16_2 then
+              return L16_2
+            end
+          else
+            L8_2 = true
+          end
+          L7_2 = nil
+        end
+      else
+        L15_2 = string
+        L15_2 = L15_2.find
+        L16_2 = L10_2
+        L17_2 = "^%-%a*c%a*$"
+        L15_2 = L15_2(L16_2, L17_2)
+        if L15_2 then
+          L8_2 = true
+          L7_2 = nil
+        end
+      end
+    elseif L5_2 and not A3_2 then
+      L15_2 = string
+      L15_2 = L15_2.find
+      L16_2 = L10_2
+      L17_2 = "^[%a_][%w_]*="
+      L15_2 = L15_2(L16_2, L17_2)
+      if not L15_2 then
+        L15_2 = L13_1
+        L16_2 = A0_2
+        L17_2 = L4_2
+        L18_2 = L10_2
+        L15_2, L16_2, L17_2 = L15_2(L16_2, L17_2, L18_2)
+        if L15_2 then
+          if L16_2 == nil then
+            L18_2 = nil
+            return L18_2
+          end
+          A2_2[L15_2] = L16_2
+          L4_2 = L17_2
+          L5_2 = false
+        else
+          L18_2 = A2_2[L10_2]
+          if L18_2 then
+            L18_2 = L10_1
+            L18_2 = L18_2[L6_2]
+            if not L18_2 then
+              L18_2 = L14_1
+              L19_2 = A2_2[L10_2]
+              L20_2 = A1_2 + 1
+              L21_2 = A2_2
+              L18_2 = L18_2(L19_2, L20_2, L21_2)
+              if L18_2 then
+                return L18_2
+              end
+              L5_2 = false
+          end
+          else
+            if L6_2 ~= nil then
+              L18_2 = string
+              L18_2 = L18_2.sub
+              L19_2 = L10_2
+              L20_2 = 1
+              L21_2 = 1
+              L18_2 = L18_2(L19_2, L20_2, L21_2)
+              if L18_2 == "-" then
+                if L6_2 == "command" and (L10_2 == "-v" or L10_2 == "-V") then
+                  L5_2 = false
+                elseif L6_2 == "env" then
+                  L9_2 = L10_2 == "-u" or L10_2 == "--unset" or L10_2 == "-C" or L10_2 == "--chdir"
+                  if L10_2 == "-S" or L10_2 == "--split-string" then
+                    L8_2 = true
                   end
-                  if l_1_6 == "`" and l_1_4 == "`" then
-                    do return l_1_1 end
-                    -- DECOMPILER ERROR at PC54: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC54: LeaveBlock: unexpected jumping out IF_STMT
-
-                  end
+                elseif L6_2 == "exec" and L10_2 == "-a" then
+                  L9_2 = true
                 end
-                if l_1_6 == "`" or l_1_6 == "$" and l_1_7 == "(" then
-                  if l_1_6 ~= "`" or not l_1_1 then
-                    do
-                      local l_1_11 = nil
-                      if l_0_11(l_1_0, l_1_1 + 1, l_1_2 + 1) == nil then
-                        return nil
-                      end
-                      l_1_1 = l_0_11(l_1_0, l_1_1 + 1, l_1_2 + 1) + 1
-                      -- DECOMPILER ERROR at PC76: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                      -- DECOMPILER ERROR at PC76: LeaveBlock: unexpected jumping out IF_STMT
-
-                      -- DECOMPILER ERROR at PC76: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                      -- DECOMPILER ERROR at PC76: LeaveBlock: unexpected jumping out IF_STMT
-
-                    end
+            end
+            else
+              L18_2 = string
+              L18_2 = L18_2.find
+              L19_2 = L10_2
+              L20_2 = "://"
+              L21_2 = 1
+              L22_2 = true
+              L18_2 = L18_2(L19_2, L20_2, L21_2, L22_2)
+              if L18_2 then
+                L5_2 = false
+              else
+                L18_2 = L14_2
+                L19_2 = string
+                L19_2 = L19_2.find
+                L20_2 = string
+                L20_2 = L20_2.reverse
+                L21_2 = L18_2
+                L20_2 = L20_2(L21_2)
+                L21_2 = "[/\\]"
+                L19_2 = L19_2(L20_2, L21_2)
+                if L19_2 then
+                  L20_2 = string
+                  L20_2 = L20_2.sub
+                  L21_2 = L18_2
+                  L22_2 = #L18_2
+                  L22_2 = L22_2 - L19_2
+                  L22_2 = L22_2 + 2
+                  L20_2 = L20_2(L21_2, L22_2)
+                  L18_2 = L20_2
+                end
+                L20_2 = string
+                L20_2 = L20_2.gsub
+                L21_2 = L18_2
+                L22_2 = "^@"
+                L23_2 = ""
+                L20_2 = L20_2(L21_2, L22_2, L23_2)
+                L18_2 = L20_2
+                L20_2 = string
+                L20_2 = L20_2.gsub
+                L21_2 = L18_2
+                L22_2 = "%.exe$"
+                L23_2 = ""
+                L20_2 = L20_2(L21_2, L22_2, L23_2)
+                L18_2 = L20_2
+                L20_2 = L6_1
+                L20_2 = L20_2[L18_2]
+                if L20_2 then
+                  return L18_2
+                end
+                L20_2 = L8_1
+                L20_2 = L20_2[L18_2]
+                if L20_2 then
+                  L6_2 = L18_2
+                else
+                  L5_2 = false
+                  L20_2 = L9_1
+                  L20_2 = L20_2[L18_2]
+                  if L20_2 then
+                    L7_2 = L18_2
                   end
                 end
               end
-              if l_1_5 ~= nil then
-                if l_1_6 == l_1_5 then
-                  l_1_5 = nil
-                end
-                l_1_1 = l_1_1 + 1
-                -- DECOMPILER ERROR at PC83: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC83: LeaveBlock: unexpected jumping out IF_STMT
-
-              end
-            end
-            if l_1_6 == "\'" or l_1_6 == "\"" then
-              l_1_5 = l_1_6
-              l_1_1 = l_1_1 + 1
-              -- DECOMPILER ERROR at PC90: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-              -- DECOMPILER ERROR at PC90: LeaveBlock: unexpected jumping out IF_STMT
-
-            end
-          end
-          if l_1_6 == "#" then
-            if (l_1_1 == 1 or (string.find)((string.sub)(l_1_0, l_1_1 - 1, l_1_1 - 1), "[%s;&|()]")) and not (string.find)(l_1_0, "[\r\n]", l_1_1) then
-              l_1_1 = #l_1_0 + 1
-              -- DECOMPILER ERROR at PC117: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-              -- DECOMPILER ERROR at PC117: LeaveBlock: unexpected jumping out IF_STMT
-
-              -- DECOMPILER ERROR at PC117: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-              -- DECOMPILER ERROR at PC117: LeaveBlock: unexpected jumping out IF_STMT
-
             end
           end
         end
-        if l_1_6 == l_1_3 then
-          do
-            local l_1_12 = l_0_11(l_1_0, l_1_1, l_1_2 + 1)
-            if l_1_12 == nil then
-              return nil
-            end
-            l_1_1 = l_1_12 + 1
-            -- DECOMPILER ERROR at PC130: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-            -- DECOMPILER ERROR at PC130: LeaveBlock: unexpected jumping out IF_STMT
-
-          end
-        end
-      end
-      if l_1_6 == l_1_4 then
-        do return l_1_1 end
-        -- DECOMPILER ERROR at PC134: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-        -- DECOMPILER ERROR at PC134: LeaveBlock: unexpected jumping out IF_STMT
-
       end
     end
-    l_1_1 = l_1_1 + 1
   end
-  do
-    return nil
-  end
+  L10_2 = nil
+  return L10_2
 end
-, function(l_2_0, l_2_1)
-  -- function num : 0_1 , upvalues : l_0_11, l_0_7
-  local l_2_2 = (string.sub)(l_2_0, l_2_1, l_2_1)
-  if (string.sub)(l_2_0, l_2_1, l_2_1 + 1) == "((" then
-    local l_2_3 = l_0_11(l_2_0, l_2_1, 0)
-    if l_2_3 == nil then
-      return nil, #l_2_0 + 1, false
-    end
-    local l_2_4 = (string.sub)(l_2_0, l_2_1 + 2, l_2_3 - 2)
-    local l_2_5 = "$"
-    local l_2_6 = l_2_3 + 1
-    local l_2_7 = false
-    local l_2_8 = {}
-    local l_2_9 = {}
-    l_2_9.text = l_2_4
-    l_2_9.expression_only = true
-    -- DECOMPILER ERROR at PC39: No list found for R8 , SetList fails
 
-    return l_2_5, l_2_6, l_2_7, l_2_8
-  end
-  do
-    if l_0_7[l_2_2] or (string.find)(l_2_2, "%s") then
-      return l_2_2, l_2_1 + 1, true
-    end
-    if l_2_2 == "#" then
-      local l_2_10 = (string.find)(l_2_0, "[\r\n]", l_2_1)
-      local l_2_11 = "\n"
-      if not l_2_10 then
-        do
-          do return l_2_11, #l_2_0 + 1, true end
-          local l_2_13 = nil
-          local l_2_14 = {}
-          do
-            local l_2_15 = {}
-            while 1 do
-              while 1 do
-                while 1 do
-                  while 1 do
-                    while 1 do
-                      while 1 do
-                        while 1 do
-                          while 1 do
-                            if l_2_1 <= #l_2_0 then
-                              local l_2_16 = nil
-                              if l_2_13 == "\\" and l_2_16 ~= "\'" and (string.sub)(l_2_0, l_2_1 + 1, l_2_1 + 1) == "\n" then
-                                l_2_1 = l_2_1 + 2
-                                -- DECOMPILER ERROR at PC97: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                -- DECOMPILER ERROR at PC97: LeaveBlock: unexpected jumping out IF_STMT
-
-                                -- DECOMPILER ERROR at PC97: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                -- DECOMPILER ERROR at PC97: LeaveBlock: unexpected jumping out IF_STMT
-
-                              end
-                            end
-                          end
-                          if l_2_13 == "\\" and l_2_16 ~= "\'" and (string.sub)(l_2_0, l_2_1 + 1, l_2_1 + 1) == "\r" and (string.sub)(l_2_0, l_2_1 + 2, l_2_1 + 2) == "\n" then
-                            l_2_1 = l_2_1 + 3
-                            -- DECOMPILER ERROR at PC113: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                            -- DECOMPILER ERROR at PC113: LeaveBlock: unexpected jumping out IF_STMT
-
-                          end
-                        end
-                        -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
-
-                        -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
-
-                        -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
-
-                        -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
-
-                        -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
-
-                        -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
-
-                        -- DECOMPILER ERROR at PC151: Unhandled construct in 'MakeBoolean' P3
-
-                        if (l_2_13 == "\\" and l_2_16 ~= "\'" and (string.sub)(l_2_0, l_2_1 + 1, l_2_1 + 1) == l_2_16) or l_2_16 ~= nil or l_2_13 == "^" and l_2_16 == nil then
-                          l_2_14[#l_2_14 + 1] = (string.sub)(l_2_0, l_2_1 + 1, l_2_1 + 1)
-                          l_2_1 = l_2_1 + 2
-                          -- DECOMPILER ERROR at PC153: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                          -- DECOMPILER ERROR at PC153: LeaveBlock: unexpected jumping out IF_STMT
-
-                        end
-                      end
-                      if l_2_16 ~= "\'" and (l_2_13 == "`" or l_2_13 ~= "$" or (string.sub)(l_2_0, l_2_1 + 1, l_2_1 + 1) == "(") then
-                        if l_2_13 ~= "`" or not l_2_1 then
-                          local l_2_22 = nil
-                          if l_0_11(l_2_0, l_2_1 + 1, 0) == nil then
-                            return nil, #l_2_0 + 1, false
-                          end
-                          -- DECOMPILER ERROR at PC184: Confused about usage of register: R7 in 'UnsetPending'
-
-                          -- DECOMPILER ERROR at PC185: Confused about usage of register: R7 in 'UnsetPending'
-
-                          do
-                            local l_2_26, l_2_28 = nil
-                            local l_2_29 = nil
-                            do
-                              local l_2_30 = nil
-                              -- DECOMPILER ERROR at PC206: Confused about usage of register: R10 in 'UnsetPending'
-
-                              -- DECOMPILER ERROR at PC209: Confused about usage of register: R9 in 'UnsetPending'
-
-                              l_2_15[#l_2_15 + 1] = {text = (string.sub)(l_2_0, l_2_29 + 1 + (l_2_13 == "$" and (string.sub)(l_2_0, l_2_1 + 1 + 1, l_2_1 + 1 + 1) == "(" and 1 or 0), l_2_30 - 1 - (l_2_13 == "$" and (string.sub)(l_2_0, l_2_1 + 1 + 1, l_2_1 + 1 + 1) == "(" and 1 or 0)), expression_only = l_2_13 == "$" and (string.sub)(l_2_0, l_2_1 + 1 + 1, l_2_1 + 1 + 1) == "("}
-                              l_2_14[#l_2_14 + 1] = "$"
-                              l_2_1 = l_2_30 + 1
-                              -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out DO_STMT
-
-                              -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                              -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out IF_STMT
-
-                              -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                              -- DECOMPILER ERROR at PC215: LeaveBlock: unexpected jumping out IF_STMT
-
-                            end
-                          end
-                        end
-                      end
-                    end
-                    if l_2_16 ~= nil then
-                      if l_2_13 == l_2_16 then
-                        l_2_16 = nil
-                      else
-                        l_2_14[#l_2_14 + 1] = l_2_13
-                      end
-                      l_2_1 = l_2_1 + 1
-                      -- DECOMPILER ERROR at PC226: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                      -- DECOMPILER ERROR at PC226: LeaveBlock: unexpected jumping out IF_STMT
-
-                    end
-                  end
-                  if l_2_13 == "\"" or l_2_13 == "\'" then
-                    l_2_16 = l_2_13
-                    l_2_1 = l_2_1 + 1
-                    -- DECOMPILER ERROR at PC233: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC233: LeaveBlock: unexpected jumping out IF_STMT
-
-                  end
-                end
-                if l_0_7[l_2_13] or (string.find)(l_2_13, "%s") then
-                  do return (table.concat)(l_2_14), l_2_1, false, l_2_15 end
-                  -- DECOMPILER ERROR at PC253: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                  -- DECOMPILER ERROR at PC253: LeaveBlock: unexpected jumping out IF_STMT
-
-                end
-              end
-              l_2_14[#l_2_14 + 1] = l_2_13
-              l_2_1 = l_2_1 + 1
-            end
-            -- DECOMPILER ERROR at PC259: Confused about usage of register: R5 in 'UnsetPending'
-
-            if l_2_16 ~= nil then
-              return nil, l_2_1, false
-            end
-            do return (table.concat)(l_2_14), l_2_1, false, l_2_15 end
-            -- DECOMPILER ERROR at PC273: freeLocal<0 in 'ReleaseLocals'
-
-            -- DECOMPILER ERROR: 13 unprocessed JMP targets
-          end
+L15_1 = nil
+L16_1 = nil
+L17_1 = ipairs
+L18_1 = {}
+L19_1 = "preinstall"
+L20_1 = "install"
+L21_1 = "postinstall"
+L18_1[1] = L19_1
+L18_1[2] = L20_1
+L18_1[3] = L21_1
+L17_1, L18_1, L19_1 = L17_1(L18_1)
+for L20_1, L21_1 in L17_1, L18_1, L19_1 do
+  L22_1 = L5_1.scripts
+  L22_1 = L22_1[L21_1]
+  L23_1 = type
+  L24_1 = L22_1
+  L23_1 = L23_1(L24_1)
+  if L23_1 == "string" then
+    L23_1 = #L22_1
+    if 0 < L23_1 then
+      L23_1 = #L22_1
+      if L23_1 <= 32768 then
+        L23_1 = L14_1
+        L24_1 = L22_1
+        L25_1 = 0
+        L23_1 = L23_1(L24_1, L25_1)
+        if L23_1 then
+          L15_1 = L21_1
+          L16_1 = L23_1
+          break
         end
       end
     end
   end
 end
-
-  for l_0_20,l_0_21 in ipairs({"preinstall", "install", "postinstall"}) do
-    local l_0_17, l_0_18, l_0_19, l_0_20 = function(l_3_0, l_3_1, l_3_2)
-  -- function num : 0_2 , upvalues : l_0_12, l_0_11
-  if l_3_2 == "function" then
-    if not (string.find)(l_3_0, "%S", l_3_1) then
-      l_3_1 = #l_3_0 + 1
-    end
-    local l_3_6 = nil
-    -- DECOMPILER ERROR at PC21: Overwrote pending register: R4 in 'AssignReg'
-
-    l_3_1 = nil
-  end
-  if l_3_2 == nil or not (string.find)(l_3_2, "^[%a_][%w_.%-]*$") then
-    return nil
-  end
-  if not (string.find)(l_3_0, "%S", l_3_1) then
-    l_3_1 = #l_3_0 + 1
-  end
-  if (string.sub)(l_3_0, l_3_1, l_3_1) == "(" then
-    do
-      if not (string.find)(l_3_0, "%S", l_3_1 + 1) then
-        local l_3_8, l_3_10, l_3_12 = , #l_3_0 + 1
-      end
-      -- DECOMPILER ERROR at PC66: Confused about usage of register: R4 in 'UnsetPending'
-
-      -- DECOMPILER ERROR at PC67: Confused about usage of register: R4 in 'UnsetPending'
-
-      if (string.sub)(l_3_0, l_3_10, l_3_10) ~= ")" then
-        return nil
-      end
-      -- DECOMPILER ERROR at PC77: Confused about usage of register: R4 in 'UnsetPending'
-
-      if not (string.find)(l_3_0, "%S", l_3_10 + 1) then
-        l_3_1 = #l_3_0 + 1
-        -- DECOMPILER ERROR at PC84: Confused about usage of register: R3 in 'UnsetPending'
-
-        if not l_3_8 then
-          return nil
-        end
-        local l_3_15 = nil
-        if (string.sub)(l_3_0, l_3_1, l_3_1) ~= "{" and (string.sub)(l_3_0, l_3_1, l_3_1) ~= "(" then
-          return nil
-        end
-        do
-          local l_3_16 = nil
-          if l_0_11(l_3_0, l_3_1, 0) == nil then
-            return l_3_2, nil, #l_3_0 + 1
-          end
-          do return l_3_2, (string.sub)(l_3_0, l_3_1 + 1, l_0_11(l_3_0, l_3_1, 0) - 1), l_0_11(l_3_0, l_3_1, 0) + 1 end
-          -- DECOMPILER ERROR: 13 unprocessed JMP targets
-        end
-      end
-    end
-  end
+if L16_1 == nil then
+  L17_1 = mp
+  L17_1 = L17_1.CLEAN
+  return L17_1
 end
-, function(l_4_0, l_4_1, l_4_2, l_4_3)
-  -- function num : 0_3 , upvalues : l_0_12, l_0_14, l_0_7, l_0_13, l_0_10, l_0_6, l_0_8, l_0_9
-  if l_4_1 > 4 then
-    return nil
-  end
-  if not l_4_2 then
-    l_4_2 = {}
-  end
-  local l_4_4 = 1
-  local l_4_5 = true
-  local l_4_6, l_4_7 = nil, nil
-  local l_4_8 = false
-  local l_4_9 = false
-  while 1 do
-    while 1 do
-      while 1 do
-        while 1 do
-          while 1 do
-            while 1 do
-              while 1 do
-                while 1 do
-                  while 1 do
-                    while 1 do
-                      while 1 do
-                        while 1 do
-                          while 1 do
-                            if l_4_4 <= #l_4_0 then
-                              local l_4_10, l_4_11, l_4_12, l_4_13 = l_0_12(l_4_0, l_4_4)
-                              l_4_4 = l_4_11
-                              if l_4_10 == nil then
-                                return nil
-                              end
-                              local l_4_14 = ipairs
-                              if not l_4_13 then
-                                l_4_14 = l_4_14({})
-                                for i_1,i_2 in l_4_14 do
-                                  for l_4_23,l_4_24 in pairs(l_4_2) do
-                                    local l_4_20 = {}
-                                    -- DECOMPILER ERROR at PC36: Confused about usage of register: R24 in 'UnsetPending'
-
-                                    l_4_20[l_4_24] = R24_PC36
-                                  end
-                                  -- DECOMPILER ERROR at PC42: Confused about usage of register: R19 in 'UnsetPending'
-
-                                  local l_4_25 = nil
-                                  if l_0_14(l_4_19.text, l_4_1 + 1, l_4_20, l_4_19.expression_only) then
-                                    return l_0_14(l_4_19.text, l_4_1 + 1, l_4_20, l_4_19.expression_only)
-                                  end
-                                end
-                                local l_4_26 = nil
-                                -- DECOMPILER ERROR at PC57: Overwrote pending register: R15 in 'AssignReg'
-
-                                -- DECOMPILER ERROR at PC64: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                -- DECOMPILER ERROR at PC64: LeaveBlock: unexpected jumping out IF_STMT
-
-                                -- DECOMPILER ERROR at PC64: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                -- DECOMPILER ERROR at PC64: LeaveBlock: unexpected jumping out IF_STMT
-
-                              end
-                            end
-                          end
-                          -- DECOMPILER ERROR at PC67: Overwrote pending register: R9 in 'AssignReg'
-
-                        end
-                        -- DECOMPILER ERROR at PC71: Overwrote pending register: R15 in 'AssignReg'
-
-                        if l_4_12 and l_4_26 then
-                          if not l_4_9 or l_4_8 then
-                            do
-                              local l_4_27 = nil
-                              if l_4_26 then
-                                return l_4_26
-                              end
-                              -- DECOMPILER ERROR at PC78: Overwrote pending register: R8 in 'AssignReg'
-
-                              -- DECOMPILER ERROR at PC79: Overwrote pending register: R5 in 'AssignReg'
-
-                              -- DECOMPILER ERROR at PC80: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                              -- DECOMPILER ERROR at PC80: LeaveBlock: unexpected jumping out IF_STMT
-
-                              -- DECOMPILER ERROR at PC80: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                              -- DECOMPILER ERROR at PC80: LeaveBlock: unexpected jumping out IF_STMT
-
-                            end
-                          end
-                        end
-                      end
-                      -- DECOMPILER ERROR at PC87: Overwrote pending register: R15 in 'AssignReg'
-
-                      -- DECOMPILER ERROR at PC88: Overwrote pending register: R15 in 'AssignReg'
-
-                      if l_4_7 ~= nil then
-                        if l_4_7 == "cmd" or l_4_7 == "%comspec%" then
-                          l_4_26 = l_4_26((string.lower)(l_4_10), 1, 2)
-                          local l_4_28 = nil
-                          if l_4_26 == "/c" or l_4_26 == "/k" then
-                            l_4_28 = #l_4_10
-                            if l_4_28 > 2 then
-                              l_4_28 = l_0_14
-                              l_4_28 = l_4_28((string.sub)(l_4_10, 3), l_4_1 + 1)
-                              local l_4_29 = nil
-                              if l_4_28 then
-                                return l_4_28
-                              end
-                            else
-                              do
-                                do
-                                  -- DECOMPILER ERROR at PC112: Overwrote pending register: R8 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC113: Overwrote pending register: R7 in 'AssignReg'
-
-                                  -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out DO_STMT
-
-                                  -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-                                  -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_STMT
-
-                                  -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                  -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_STMT
-
-                                  -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                  -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_STMT
-
-                                  -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                                  -- DECOMPILER ERROR at PC114: LeaveBlock: unexpected jumping out IF_STMT
-
-                                end
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
-                    l_4_26 = string
-                    l_4_26 = l_4_26.find
-                    l_4_26 = l_4_26(l_4_10, "^%-%a*c%a*$")
-                    -- DECOMPILER ERROR at PC122: Overwrote pending register: R8 in 'AssignReg'
-
-                    -- DECOMPILER ERROR at PC123: Overwrote pending register: R7 in 'AssignReg'
-
-                  end
-                  if not l_4_26 or not l_4_5 or not l_4_3 then
-                    l_4_26 = string
-                    l_4_26 = l_4_26.find
-                    l_4_26 = l_4_26(l_4_10, "^[%a_][%w_]*=")
-                    if not l_4_26 then
-                      l_4_26 = l_0_13
-                      l_4_26 = l_4_26(l_4_0, l_4_4, l_4_10)
-                      local l_4_30, l_4_31, l_4_32 = nil
-                      if l_4_26 then
-                        if l_4_30 == nil then
-                          l_4_32 = nil
-                          return l_4_32
-                        end
-                        l_4_2[l_4_26] = l_4_30
-                        l_4_4 = l_4_31
-                        -- DECOMPILER ERROR at PC149: Overwrote pending register: R5 in 'AssignReg'
-
-                        -- DECOMPILER ERROR at PC150: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC150: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC150: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC150: LeaveBlock: unexpected jumping out IF_STMT
-
-                        -- DECOMPILER ERROR at PC150: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                        -- DECOMPILER ERROR at PC150: LeaveBlock: unexpected jumping out IF_STMT
-
-                      end
-                    end
-                  end
-                end
-                l_4_32 = l_4_2[l_4_10]
-                if l_4_32 then
-                  l_4_32 = l_0_10
-                  l_4_32 = l_4_32[l_4_6]
-                  if not l_4_32 then
-                    l_4_32 = l_0_14
-                    l_4_32 = l_4_32(l_4_2[l_4_10], l_4_1 + 1, l_4_2)
-                    do
-                      local l_4_33 = nil
-                      if l_4_32 then
-                        return l_4_32
-                      end
-                      -- DECOMPILER ERROR at PC166: Overwrote pending register: R5 in 'AssignReg'
-
-                      -- DECOMPILER ERROR at PC167: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                      -- DECOMPILER ERROR at PC167: LeaveBlock: unexpected jumping out IF_STMT
-
-                      -- DECOMPILER ERROR at PC167: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                      -- DECOMPILER ERROR at PC167: LeaveBlock: unexpected jumping out IF_STMT
-
-                    end
-                  end
-                end
-              end
-              if l_4_6 ~= nil then
-                l_4_32 = string
-                l_4_32 = l_4_32.sub
-                l_4_32 = l_4_32(l_4_10, 1, 1)
-                -- DECOMPILER ERROR at PC184: Overwrote pending register: R5 in 'AssignReg'
-
-                -- DECOMPILER ERROR at PC185: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                -- DECOMPILER ERROR at PC185: LeaveBlock: unexpected jumping out IF_STMT
-
-              end
-            end
-            -- DECOMPILER ERROR at PC196: Overwrote pending register: R9 in 'AssignReg'
-
-            -- DECOMPILER ERROR at PC202: Overwrote pending register: R8 in 'AssignReg'
-
-          end
-          -- DECOMPILER ERROR at PC208: Overwrote pending register: R9 in 'AssignReg'
-
-        end
-        if (l_4_6 == "command" and (((l_4_10 == "-v" or l_4_10 == "-V") and l_4_6 ~= "env") or l_4_10 == "-u" or l_4_10 == "--unset" or l_4_10 == "-C" or l_4_10 == "--chdir" or l_4_10 == "-S" or l_4_10 == "--split-string" and l_4_6 ~= "exec") or l_4_10 == "-a") then
-          l_4_32 = string
-          l_4_32 = l_4_32.find
-          l_4_32 = l_4_32(l_4_10, "://", 1, true)
-          -- DECOMPILER ERROR at PC219: Overwrote pending register: R5 in 'AssignReg'
-
-        end
-      end
-      if l_4_32 then
-        l_4_32 = (string.lower)(l_4_10)
-        local l_4_34 = nil
-        l_4_34 = string
-        l_4_34 = l_4_34.find
-        l_4_34 = l_4_34((string.reverse)(l_4_32), "[/\\]")
-        local l_4_35 = nil
-        if l_4_34 then
-          l_4_35 = string
-          l_4_35 = l_4_35.sub
-          l_4_35 = l_4_35(l_4_32, #l_4_32 - l_4_34 + 2)
-          l_4_32 = l_4_35
-        end
-        l_4_35 = string
-        l_4_35 = l_4_35.gsub
-        l_4_35 = l_4_35(l_4_32, "^@", "")
-        l_4_32 = l_4_35
-        l_4_35 = string
-        l_4_35 = l_4_35.gsub
-        l_4_35 = l_4_35(l_4_32, "%.exe$", "")
-        l_4_32 = l_4_35
-        l_4_35 = l_0_6
-        l_4_35 = l_4_35[l_4_32]
-        if l_4_35 then
-          return l_4_32
-        end
-        l_4_35 = l_0_8
-        l_4_35 = l_4_35[l_4_32]
-        -- DECOMPILER ERROR at PC263: Overwrote pending register: R6 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-        -- DECOMPILER ERROR at PC264: LeaveBlock: unexpected jumping out IF_STMT
-
-      end
-    end
-    -- DECOMPILER ERROR at PC265: Overwrote pending register: R5 in 'AssignReg'
-
-    if l_4_35 then
-      do
-        l_4_35 = l_0_9
-        l_4_35 = l_4_35[l_4_32]
-        -- DECOMPILER ERROR at PC270: Overwrote pending register: R7 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC271: Confused about usage of register R14 for local variables in 'ReleaseLocals'
-
-        -- DECOMPILER ERROR at PC271: LeaveBlock: unexpected jumping out DO_STMT
-
-        -- DECOMPILER ERROR at PC271: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-        -- DECOMPILER ERROR at PC271: LeaveBlock: unexpected jumping out IF_STMT
-
-      end
-    end
-  end
-  if l_4_35 then
-    do
-      l_4_10 = nil
-      do return l_4_10 end
-      -- DECOMPILER ERROR: 9 unprocessed JMP targets
-    end
-  end
-end
-, nil, nil
-    -- DECOMPILER ERROR at PC182: Confused about usage of register: R21 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC188: Confused about usage of register: R22 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC191: Confused about usage of register: R22 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC195: Confused about usage of register: R22 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC200: Confused about usage of register: R21 in 'UnsetPending'
-
-    if type((l_0_5.scripts).postinstall) == "string" and #(l_0_5.scripts).postinstall > 0 and #(l_0_5.scripts).postinstall <= 32768 and l_0_18((l_0_5.scripts).postinstall, 0) then
-      do
-        do
-          l_0_19 = "postinstall"
-          l_0_20 = l_0_18((l_0_5.scripts).postinstall, 0)
-          do break end
-          -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out DO_STMT
-
-          -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC203: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
-      end
-    end
-  end
-  -- DECOMPILER ERROR at PC205: Confused about usage of register: R16 in 'UnsetPending'
-
-  if l_0_20 == nil then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC213: Confused about usage of register: R15 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC215: Confused about usage of register: R16 in 'UnsetPending'
-
-  ;
-  (mp.SetDetectionString)("hook=" .. l_0_19 .. ";lolbin=" .. l_0_20)
-  do return mp.INFECTED end
-  -- DECOMPILER ERROR at PC221: freeLocal<0 in 'ReleaseLocals'
-
-end
-
+L17_1 = mp
+L17_1 = L17_1.SetDetectionString
+L18_1 = "hook="
+L19_1 = L15_1
+L20_1 = ";lolbin="
+L21_1 = L16_1
+L18_1 = L18_1 .. L19_1 .. L20_1 .. L21_1
+L17_1(L18_1)
+L17_1 = mp
+L17_1 = L17_1.INFECTED
+return L17_1

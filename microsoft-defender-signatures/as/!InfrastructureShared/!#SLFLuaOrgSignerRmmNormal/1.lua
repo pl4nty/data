@@ -1,88 +1,156 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFLuaOrgSignerRmmNormal\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:Lua:OrgSignerRmmNormal
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & (Lua:EXEExt | Lua:MSIExt) & (PEPCODE:HasDigitalSignature | BM_HAS_DIGITALSIGNATURE)
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if (string.sub)(l_0_0, -4) ~= ".exe" and (string.sub)(l_0_0, -4) ~= ".msi" then
+local l_0_0 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if string.sub(l_0_0, -4) ~= ".exe" and string.sub(l_0_0, -4) ~= ".msi" then
   return mp.CLEAN
 end
-local l_0_1 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
-local l_0_2 = {}
--- DECOMPILER ERROR at PC88: No list found for R2 , SetList fails
-
--- DECOMPILER ERROR at PC89: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC90: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC91: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC92: Overwrote pending register: R6 in 'AssignReg'
-
--- DECOMPILER ERROR at PC93: Overwrote pending register: R7 in 'AssignReg'
-
--- DECOMPILER ERROR at PC94: Overwrote pending register: R8 in 'AssignReg'
-
--- DECOMPILER ERROR at PC95: Overwrote pending register: R9 in 'AssignReg'
-
--- DECOMPILER ERROR at PC96: Overwrote pending register: R10 in 'AssignReg'
-
--- DECOMPILER ERROR at PC97: Overwrote pending register: R11 in 'AssignReg'
-
--- DECOMPILER ERROR at PC98: Overwrote pending register: R12 in 'AssignReg'
-
--- DECOMPILER ERROR at PC99: Overwrote pending register: R13 in 'AssignReg'
-
--- DECOMPILER ERROR at PC100: Overwrote pending register: R14 in 'AssignReg'
-
--- DECOMPILER ERROR at PC101: Overwrote pending register: R15 in 'AssignReg'
-
--- DECOMPILER ERROR at PC102: No list found for R2 , SetList fails
-
--- DECOMPILER ERROR at PC103: Overwrote pending register: R3 in 'AssignReg'
-
--- DECOMPILER ERROR at PC104: Overwrote pending register: R4 in 'AssignReg'
-
-for l_0_6,l_0_7 in ("\\avecto\\privilege guard client\\")("\\system32\\pmlauncher.exe") do
-  -- DECOMPILER ERROR at PC107: Overwrote pending register: R8 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC109: Overwrote pending register: R9 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC110: Overwrote pending register: R10 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC111: Overwrote pending register: R11 in 'AssignReg'
-
-  if (("\\desktopcentral_agent\\edr\\").find)("\\manageengine\\uems_agent\\devicecontrol\\", "\\manageengine\\uems_agent\\appctrl\\", "\\manageengine\\uems_agent\\bitlockermgmt\\", true) then
+local l_0_1 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FULL, mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_2 = {
+  "\\avecto\\privilege guard client\\",
+  "\\system32\\pmlauncher.exe",
+  "\\beyondtrust\\pbpsmon\\",
+  "\\manageengine\\uems_agent\\endpointdlp\\",
+  "\\manageengine\\uems_agent\\edr\\",
+  "\\desktopcentral_agent\\edr\\",
+  "\\manageengine\\uems_agent\\devicecontrol\\",
+  "\\manageengine\\uems_agent\\appctrl\\",
+  "\\manageengine\\uems_agent\\bitlockermgmt\\",
+  "\\manageengine\\uems_agent\\endpointintelligence\\",
+  "\\manageengine\\uems_agent\\compliance\\",
+  "\\manageengine\\uems_agent\\client-data\\vulnerable-resources\\",
+  "\\manageengine\\uems_agent\\dcconfig.exe",
+  "\\manageengine\\uems_agent\\bin\\compvulndetection.exe",
+  "\\manageengine\\uems_agent\\bin\\secaddoncrashanalyser.exe",
+  "\\manageengine\\uems_agent\\bin\\meaap.exe",
+  "\\manageengine\\uems_agent\\bin\\dcuninstallsw.exe",
+  "\\manageengine\\uems_agent\\bin\\dcusbsummary.exe",
+  "\\manageengine\\uems_agent\\bin\\dcinventory.exe",
+  "\\manageengine\\uems_agent\\bin\\dcagentupgrader.exe",
+  "\\manageengine\\uems_agent\\bin\\dcswmeter.exe",
+  "\\manageengine\\uems_agent\\bin\\dcstatusutil.exe",
+  "\\manageengine\\uems_agent\\bin\\dcpatchscan.exe",
+  "\\manageengine\\uems_agent\\bin\\dcagenttrayicon.exe",
+  "\\manageengine\\uems_agent\\bin\\dcuploadlogs.exe",
+  "\\manageengine\\uems_agent\\bin\\uemslogcollector.exe",
+  "\\manageengine\\adauditplusagent\\",
+  "\\zoho corp\\adselfservice plus client software\\",
+  "\\zoho\\zohoworkdrivets\\",
+  "\\datto backup agent\\",
+  "\\datto cloud continuity\\",
+  "\\datto rollback driver\\",
+  "\\datto\\workplace2\\",
+  "\\datto\\datto windows agent\\",
+  "\\backup manager\\",
+  "\\gotomeeting\\",
+  "\\program files\\goto\\",
+  "\\netsupport\\netsupport notify\\",
+  "\\netsupport\\netsupport school\\",
+  "\\netsupport\\classroom.cloud\\",
+  "\\realvnc\\vnc server\\printer driver\\",
+  "\\dameware remote everywhere agent\\remoteprint\\",
+  "\\packages\\plugins\\site24x7.",
+  "\\site24x7\\winagent\\",
+  "\\n-able technologies\\windows agent\\bin\\avdiu.exe",
+  "\\n-able technologies\\windows agent\\bin\\nableavdusbridge.exe",
+  "\\n-able technologies\\windows agent\\bin\\nableavdbridge.exe",
+  "\\n-able technologies\\windows agent\\bin\\shadowprotectdatareader.exe",
+  "\\n-able technologies\\windows agent\\temp\\msp-lwt-edr-module.exe",
+  "\\logmein\\x64\\logmeinavserver.exe",
+  "\\logmein\\x86\\logmeinavserver.exe",
+  "\\infocyte\\agent\\",
+  "\\lastpass\\",
+  "\\teamviewer\\crashpad_handler.exe",
+  "\\teamviewer\\writedump.exe",
+  "\\teamviewer\\uninstall.exe",
+  "\\manageengine\\uems_agent\\bin\\folder_backup.exe",
+  "\\manageengine\\uems_agent\\bin\\dpinst86.exe",
+  "\\manageengine\\uems_agent\\bin\\dpinst64.exe",
+  "\\realvnc\\vnc server\\vnclicense.exe",
+  "\\realvnc\\vnc server\\vnclicensewiz.exe",
+  "\\centrastage\\uninst.exe",
+  "\\gotoassist remote support customer\\1739\\g2ax_uninstaller_customer.exe"
+}
+for l_0_3, l_0_4 in ipairs(l_0_2) do
+  if string.find(l_0_1, l_0_4, 1, true) then
     return mp.CLEAN
   end
 end
-local l_0_8 = (versioning.GetOrgID)()
-if l_0_8 == nil or l_0_8 == "" then
+local l_0_5 = versioning.GetOrgID()
+if l_0_5 == nil or l_0_5 == "" then
   return mp.CLEAN
 end
-local l_0_9 = (mp.GetCertificateInfo)()
-if l_0_9 == nil or type(l_0_9) ~= "table" or #l_0_9 == 0 then
+l_0_5 = string.lower(l_0_5)
+local l_0_6 = mp.GetCertificateInfo()
+if l_0_6 == nil or type(l_0_6) ~= "table" or #l_0_6 == 0 then
   return mp.CLEAN
 end
-local l_0_10 = 231
-local l_0_11 = "!#OrgSignerRmmNormal"
-local l_0_12 = {}
-local l_0_14 = nil
-if (function(l_1_0)
-  -- function num : 0_0 , upvalues : l_0_12
+local l_0_7 = 231
+local l_0_8 = "!#OrgSignerRmmNormal"
+local l_0_9 = {
+  teamviewer = "teamviewer",
+  ["teamviewer gmbh"] = "teamviewer",
+  ["teamviewer germany gmbh"] = "teamviewer",
+  ["zoho corporation"] = "zoho",
+  ["zoho corporation private limited"] = "zoho",
+  ["ninjarmm llc"] = "ninjaone",
+  ["ninjarmm, llc"] = "ninjaone",
+  ["ninjaone llc"] = "ninjaone",
+  ["atera networks ltd"] = "atera",
+  ["bomgar corporation"] = "beyondtrust",
+  ["beyondtrust software inc"] = "beyondtrust",
+  ["beyondtrust software, inc"] = "beyondtrust",
+  ["beyondtrust corporation"] = "beyondtrust",
+  ["datto inc"] = "kaseya",
+  ["datto, llc"] = "kaseya",
+  ["kaseya us llc"] = "kaseya",
+  ["kaseya corporation"] = "kaseya",
+  ["kaseya holdings inc."] = "kaseya",
+  ["kaseya holdings inc"] = "kaseya",
+  ["kaseya development, llc"] = "kaseya",
+  ["remote utilities pty (cy) ltd"] = "remote utilities",
+  ["remote utilities llc"] = "remote utilities",
+  ["remote utilities pte. ltd."] = "remote utilities",
+  ["realvnc limited"] = "realvnc",
+  ["realvnc ltd"] = "realvnc",
+  ["splashtop inc."] = "splashtop",
+  ["servably, inc."] = "servably",
+  ["servably inc."] = "servably",
+  ["logmein, inc."] = "goto",
+  ["goto technologies usa, llc"] = "goto",
+  ["philandro software gmbh"] = "anydesk",
+  ["anydesk software gmbh"] = "anydesk",
+  ["nomachine s.a.r.l."] = "nomachine",
+  ["connectwise, inc."] = "screenconnect",
+  ["connectwise, llc"] = "screenconnect",
+  ["connectwise limited"] = "screenconnect",
+  screenconnect = "screenconnect",
+  ["screenconnect.leverageitc.com"] = "screenconnect",
+  ["action1 corporation"] = "action1",
+  ["simplehelp ltd"] = "simplehelp",
+  ["open source developer, huabing zhou"] = "purslane",
+  purslane = "purslane",
+  ["netsupport ltd."] = "netsupport",
+  ["netsupport ltd"] = "netsupport",
+  ["tsplus sas"] = "tsplus",
+  ["n-able technologies ltd"] = "n-able"
+}
+
+local function l_0_10(l_1_0)
   local l_1_1 = {}
-  for l_1_5,l_1_6 in ipairs(l_1_0) do
-    if type(l_1_6) == "table" then
-      local l_1_7 = l_1_6.Certificates
-      if l_1_7 ~= nil and type(l_1_7) == "table" then
-        for l_1_11,l_1_12 in ipairs(l_1_7) do
-          if type(l_1_12) == "table" then
-            local l_1_13 = l_1_12.Subject
-            if l_1_13 ~= nil and type(l_1_13) == "table" and l_1_13.Organization ~= nil then
-              local l_1_14 = (mp.utf16to8)(l_1_13.Organization)
-              if l_1_14 ~= nil and l_1_14 ~= "" then
-                local l_1_15 = #l_1_1 + 1
-                l_1_1[l_1_15] = (string.lower)(l_1_14)
+  for l_1_2, l_1_3 in ipairs(l_1_0) do
+    if type(l_1_3) == "table" then
+      local l_1_4 = l_1_3.Certificates
+      if l_1_4 ~= nil and type(l_1_4) == "table" then
+        for l_1_5, l_1_6 in ipairs(l_1_4) do
+          if type(l_1_6) == "table" then
+            local l_1_7 = l_1_6.Subject
+            if l_1_7 ~= nil and type(l_1_7) == "table" and l_1_7.Organization ~= nil then
+              local l_1_8 = mp.utf16to8(l_1_7.Organization)
+              if l_1_8 ~= nil and l_1_8 ~= "" then
+                l_1_1[#l_1_1 + 1] = string.lower(l_1_8)
               end
             end
           end
@@ -93,97 +161,32 @@ if (function(l_1_0)
   if #l_1_1 == 0 then
     return nil
   end
-  local l_1_16 = nil
-  for l_1_20,l_1_21 in l_1_16 do
-    local l_1_21 = nil
-    -- DECOMPILER ERROR at PC75: Overwrote pending register: R8 in 'AssignReg'
-
-    l_1_21 = l_1_21("|" .. (table.concat)(l_1_1, "|") .. "|", l_1_19, 1, true)
-    if l_1_21 ~= nil then
-      return l_1_20
+  local l_1_9 = "|" .. table.concat(l_1_1, "|") .. "|"
+  for l_1_10, l_1_11 in pairs(l_0_9) do
+    if string.find(l_1_9, l_1_10, 1, true) ~= nil then
+      return l_1_11
     end
   end
-  -- DECOMPILER ERROR at PC86: Overwrote pending register: R3 in 'AssignReg'
-
-  do return l_1_16 end
-  -- DECOMPILER ERROR at PC88: Confused about usage of register R3 for local variables in 'ReleaseLocals'
-
+  return nil
 end
-)(l_0_9) == nil or (function(l_1_0)
-  -- function num : 0_0 , upvalues : l_0_12
-  local l_1_1 = {}
-  for l_1_5,l_1_6 in ipairs(l_1_0) do
-    if type(l_1_6) == "table" then
-      local l_1_7 = l_1_6.Certificates
-      if l_1_7 ~= nil and type(l_1_7) == "table" then
-        for l_1_11,l_1_12 in ipairs(l_1_7) do
-          if type(l_1_12) == "table" then
-            local l_1_13 = l_1_12.Subject
-            if l_1_13 ~= nil and type(l_1_13) == "table" and l_1_13.Organization ~= nil then
-              local l_1_14 = (mp.utf16to8)(l_1_13.Organization)
-              if l_1_14 ~= nil and l_1_14 ~= "" then
-                local l_1_15 = #l_1_1 + 1
-                l_1_1[l_1_15] = (string.lower)(l_1_14)
-              end
-            end
-          end
-        end
-      end
-    end
-  end
-  if #l_1_1 == 0 then
-    return nil
-  end
-  local l_1_16 = nil
-  for l_1_20,l_1_21 in l_1_16 do
-    local l_1_21 = nil
-    -- DECOMPILER ERROR at PC75: Overwrote pending register: R8 in 'AssignReg'
 
-    l_1_21 = l_1_21("|" .. (table.concat)(l_1_1, "|") .. "|", l_1_19, 1, true)
-    if l_1_21 ~= nil then
-      return l_1_20
-    end
-  end
-  -- DECOMPILER ERROR at PC86: Overwrote pending register: R3 in 'AssignReg'
-
-  do return l_1_16 end
-  -- DECOMPILER ERROR at PC88: Confused about usage of register R3 for local variables in 'ReleaseLocals'
-
-end
-)(l_0_9) == "" then
+local l_0_11 = l_0_10(l_0_6)
+if l_0_11 == nil or l_0_11 == "" then
   return mp.CLEAN
 end
-local l_0_15 = nil
--- DECOMPILER ERROR at PC218: Overwrote pending register: R13 in 'AssignReg'
-
-local l_0_16 = l_0_8 .. "+empty"
--- DECOMPILER ERROR at PC226: Confused about usage of register: R11 in 'UnsetPending'
-
-if l_0_16 == nil or l_0_16 == "" or l_0_8 .. "+" .. "\\manageengine\\uems_agent\\compliance\\" == nil or l_0_8 .. "+" .. "\\manageengine\\uems_agent\\compliance\\" == "" then
+local l_0_12 = l_0_5 .. "+empty"
+local l_0_13 = l_0_5 .. "+" .. l_0_11
+if l_0_12 == nil or l_0_12 == "" or l_0_13 == nil or l_0_13 == "" then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC234: Overwrote pending register: R14 in 'AssignReg'
-
--- DECOMPILER ERROR at PC235: Overwrote pending register: R15 in 'AssignReg'
-
--- DECOMPILER ERROR at PC236: Overwrote pending register: R16 in 'AssignReg'
-
--- DECOMPILER ERROR at PC238: Overwrote pending register: R17 in 'AssignReg'
-
-local l_0_17 = nil
-do
-  local l_0_18 = (crypto.CRC32Buffer)(-1, "\\manageengine\\uems_agent\\client-data\\vulnerable-resources\\", "\\manageengine\\uems_agent\\dcconfig.exe", (("\\manageengine\\uems_agent\\bin\\compvulndetection.exe").len)("\\manageengine\\uems_agent\\bin\\secaddoncrashanalyser.exe"))
-  if l_0_18 == nil or (crypto.Sha1Buffer)(l_0_17, 0, (string.len)(l_0_17)) == nil or (crypto.Sha1Buffer)(l_0_17, 0, (string.len)(l_0_17)) == "" then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC267: Overwrote pending register: R18 in 'AssignReg'
-
-  if (MpCommon.NidSearch)(l_0_10, l_0_18) == true and l_0_10 == l_0_11 and ((MpCommon.SNidSearch)(l_0_10, "\\manageengine\\uems_agent\\bin\\meaap.exe") ~= true or l_0_10 ~= l_0_11) then
-    return mp.INFECTED
-  end
-  do return mp.CLEAN end
-  -- DECOMPILER ERROR at PC283: freeLocal<0 in 'ReleaseLocals'
-
-  -- WARNING: undefined locals caused missing assignments!
+local l_0_14 = crypto.CRC32Buffer(-1, l_0_12, 0, string.len(l_0_12))
+local l_0_15 = crypto.Sha1Buffer(l_0_13, 0, string.len(l_0_13))
+if l_0_14 == nil or l_0_15 == nil or l_0_15 == "" then
+  return mp.CLEAN
 end
-
+local l_0_16, l_0_17 = MpCommon.NidSearch(l_0_7, l_0_14)
+local l_0_18, l_0_19 = MpCommon.SNidSearch(l_0_7, l_0_15)
+if l_0_16 == true and l_0_17 == l_0_8 and (l_0_18 ~= true or l_0_19 ~= l_0_8) then
+  return mp.INFECTED
+end
+return mp.CLEAN

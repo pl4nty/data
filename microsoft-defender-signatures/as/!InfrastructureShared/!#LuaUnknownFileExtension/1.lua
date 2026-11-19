@@ -1,11 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaUnknownFileExtension\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:UnknownFileExtension
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-local l_0_0 = ((mp.getfilename)()):lower()
-if ((l_0_0:match("(%.[^.]+)$") == nil and "") or l_0_0:match("(%.[^.]+)$") ~= "") and (mp.GetExtensionClass)(l_0_0:match("(%.[^.]+)$")) == 0 then
+local l_0_0 = mp.getfilename():lower()
+local l_0_1 = l_0_0:match("(%.[^.]+)$")
+l_0_1 = l_0_1 == nil and "" or l_0_1
+local l_0_2 = 0
+if l_0_1 ~= "" and mp.GetExtensionClass(l_0_1) == l_0_2 then
   return mp.INFECTED
 end
 return mp.CLEAN
-

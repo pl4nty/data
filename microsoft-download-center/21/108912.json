@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Site Recovery - Capacity Planner 5.26.1001.3",
+    "downloadDescription": "Azure Site Recovery - Capacity Planner 5.26.1001.3",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CapacytPlanner.zip",
+            "url": "https://download.microsoft.com/download/7de6a0b4-3b89-4a09-b420-9714e531ee63/CapacytPlanner.zip",
+            "size": "24806782",
+            "version": "5.26.1001.3",
+            "datePublished": "11/12/2026 1:05:58 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Site Recovery - Capacity Planner 5.26.1001.3",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.26.1001.3",
+    "detailsSection_file_name": [
+        "CapacytPlanner.zip"
+    ],
+    "detailsSection_file_size": [
+        "23.7 MB"
+    ],
+    "detailsSection_file_date": "11/12/2026",
+    "systemRequirementsSection": "Azure Site Recovery - Capacity Planner 5.26.1001.3",
+    "systemRequirementsSection_supportedOS": [
+        "Microsoft Windows 2000"
+    ],
+    "installInstructionSection": "Azure Site Recovery - Capacity Planner 5.26.1001.3",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108912",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

@@ -1,112 +1,104 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\217b3c154da7e\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 217b3c154da7e
+-- Type: 21
+-- Includes: BMLuaLib, TechniqueTracker
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[7]).matched and (this_sigattrlog[7]).utf8p1 ~= nil then
-    local l_0_0 = nil
-  else
-  end
-  -- DECOMPILER ERROR at PC40: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if (not (this_sigattrlog[8]).matched or (this_sigattrlog[8]).utf8p1 == nil or (this_sigattrlog[9]).matched) and (this_sigattrlog[9]).utf8p1 ~= nil then
-      local l_0_1, l_0_2 = (this_sigattrlog[8]).utf8p1
-    else
-    end
-    if (this_sigattrlog[10]).matched and (this_sigattrlog[10]).utf8p1 ~= nil then
-      do return mp.CLEAN end
-      local l_0_3 = (string.lower)((this_sigattrlog[10]).utf8p1)
-      local l_0_4 = (string.match)(l_0_3, "\\([^\\]+)$")
-      if l_0_4 == nil then
-        return mp.CLEAN
-      end
-      local l_0_5 = {}
-      l_0_5[".dotm"] = true
-      l_0_5[".xlsm"] = true
-      l_0_5[".xltm"] = true
-      l_0_5[".pptm"] = true
-      l_0_5[".potm"] = true
-      l_0_5[".sldm"] = true
-      l_0_5[".xlam"] = true
-      l_0_5[".ppam"] = true
-      local l_0_6 = (string.match)(l_0_4, "%.[^%.]+$")
-      if l_0_6 == nil or not l_0_5[l_0_6] then
-        return mp.CLEAN
-      end
-      if (string.find)(l_0_4, "$normal.dot", 1, true) or (string.find)(l_0_4, "normal.dotm", 1, true) or (string.find)(l_0_4, "buildingblocks.dotx", 1, true) or (string.sub)(l_0_4, 1, 4) == "~wrd" or (string.sub)(l_0_4, 1, 2) == "~$" or (string.sub)(l_0_4, 1, 4) == "~tmp" or l_0_4 == "thumbs.db" or l_0_4 == "desktop.ini" or (string.sub)(l_0_4, -4) == ".tmp" then
-        return mp.CLEAN
-      end
-      local l_0_7 = (bm.get_imagepath)()
-      if isnull(l_0_7) then
-        return mp.CLEAN
-      end
-      local l_0_8 = (string.lower)(l_0_7)
-      local l_0_9 = (string.match)(l_0_8, "\\([^\\]+)$")
-      if l_0_9 == nil then
-        return mp.CLEAN
-      end
-      local l_0_10 = {}
-      l_0_10["winword.exe"] = true
-      l_0_10["excel.exe"] = true
-      l_0_10["powerpnt.exe"] = true
-      l_0_10["outlook.exe"] = true
-      l_0_10["msaccess.exe"] = true
-      l_0_10["onenote.exe"] = true
-      l_0_10["officeclicktorun.exe"] = true
-      l_0_10["officec2rclient.exe"] = true
-      l_0_10["msiexec.exe"] = true
-      l_0_10["trustedinstaller.exe"] = true
-      l_0_10["tiworker.exe"] = true
-      l_0_10["msmpeng.exe"] = true
-      if l_0_10[l_0_9] then
-        return mp.CLEAN
-      end
-      local l_0_11 = {}
-      l_0_11["ccmexec.exe"] = true
-      l_0_11["sccmclicmd.exe"] = true
-      l_0_11["ccmsetup.exe"] = true
-      l_0_11["intunemanagementextension.exe"] = true
-      l_0_11["airwatchagent.exe"] = true
-      l_0_11["svchost.exe"] = true
-      l_0_11["wusa.exe"] = true
-      l_0_11["dism.exe"] = true
-      l_0_11["robocopy.exe"] = true
-      l_0_11["gpscript.exe"] = true
-      if l_0_11[l_0_9] then
-        return mp.CLEAN
-      end
-      if l_0_9 == "setup.exe" and (string.find)(l_0_8, "microsoft office", 1, true) then
-        return mp.CLEAN
-      end
-      if (mp.IsKnownFriendlyFile)(l_0_8, true, false) then
-        return mp.CLEAN
-      end
-      local l_0_12 = (mp.ContextualExpandEnvironmentVariables)(l_0_3)
-      if not isnull(l_0_12) then
-        l_0_12 = (string.lower)(l_0_12)
-      else
-        l_0_12 = l_0_3
-      end
-      if (mp.IsKnownFriendlyFile)(l_0_12, true, false) then
-        return mp.CLEAN
-      end
-      if (sysio.IsFileExists)(l_0_12) then
-        (bm.add_related_file)(l_0_12)
-        ;
-        (bm.add_threat_file)(l_0_12)
-      end
-      ;
-      (bm.add_related_string)("DroppedTemplate", l_0_12, bm.RelatedStringBMReport)
-      ;
-      (bm.add_related_string)("DroppingProcess", l_0_8, bm.RelatedStringBMReport)
-      add_parents()
-      TrackPidAndTechniqueBM("BM", "T1137", "office_application_startup")
-      return mp.INFECTED
-    end
-  end
+local l_0_0
+if this_sigattrlog[7].matched and this_sigattrlog[7].utf8p1 ~= nil then
+  l_0_0 = this_sigattrlog[7].utf8p1
+elseif this_sigattrlog[8].matched and this_sigattrlog[8].utf8p1 ~= nil then
+  l_0_0 = this_sigattrlog[8].utf8p1
+elseif this_sigattrlog[9].matched and this_sigattrlog[9].utf8p1 ~= nil then
+  l_0_0 = this_sigattrlog[9].utf8p1
+elseif this_sigattrlog[10].matched and this_sigattrlog[10].utf8p1 ~= nil then
+  l_0_0 = this_sigattrlog[10].utf8p1
+else
+  return mp.CLEAN
 end
-
+l_0_0 = string.lower(l_0_0)
+local l_0_1 = string.match(l_0_0, "\\([^\\]+)$")
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = {
+  [".dotm"] = true,
+  [".xlsm"] = true,
+  [".xltm"] = true,
+  [".pptm"] = true,
+  [".potm"] = true,
+  [".sldm"] = true,
+  [".xlam"] = true,
+  [".ppam"] = true
+}
+local l_0_3 = string.match(l_0_1, "%.[^%.]+$")
+if l_0_3 == nil or not l_0_2[l_0_3] then
+  return mp.CLEAN
+end
+if string.find(l_0_1, "$normal.dot", 1, true) or string.find(l_0_1, "normal.dotm", 1, true) or string.find(l_0_1, "buildingblocks.dotx", 1, true) or string.sub(l_0_1, 1, 4) == "~wrd" or string.sub(l_0_1, 1, 2) == "~$" or string.sub(l_0_1, 1, 4) == "~tmp" or l_0_1 == "thumbs.db" or l_0_1 == "desktop.ini" or string.sub(l_0_1, -4) == ".tmp" then
+  return mp.CLEAN
+end
+local l_0_4 = bm.get_imagepath()
+if isnull(l_0_4) then
+  return mp.CLEAN
+end
+local l_0_5 = string.lower(l_0_4)
+local l_0_6 = string.match(l_0_5, "\\([^\\]+)$")
+if l_0_6 == nil then
+  return mp.CLEAN
+end
+local l_0_7 = {
+  ["winword.exe"] = true,
+  ["excel.exe"] = true,
+  ["powerpnt.exe"] = true,
+  ["outlook.exe"] = true,
+  ["msaccess.exe"] = true,
+  ["onenote.exe"] = true,
+  ["officeclicktorun.exe"] = true,
+  ["officec2rclient.exe"] = true,
+  ["msiexec.exe"] = true,
+  ["trustedinstaller.exe"] = true,
+  ["tiworker.exe"] = true,
+  ["msmpeng.exe"] = true
+}
+if l_0_7[l_0_6] then
+  return mp.CLEAN
+end
+local l_0_8 = {
+  ["ccmexec.exe"] = true,
+  ["sccmclicmd.exe"] = true,
+  ["ccmsetup.exe"] = true,
+  ["intunemanagementextension.exe"] = true,
+  ["airwatchagent.exe"] = true,
+  ["svchost.exe"] = true,
+  ["wusa.exe"] = true,
+  ["dism.exe"] = true,
+  ["robocopy.exe"] = true,
+  ["gpscript.exe"] = true
+}
+if l_0_8[l_0_6] then
+  return mp.CLEAN
+end
+if l_0_6 == "setup.exe" and string.find(l_0_5, "microsoft office", 1, true) then
+  return mp.CLEAN
+end
+if mp.IsKnownFriendlyFile(l_0_5, true, false) then
+  return mp.CLEAN
+end
+local l_0_9 = mp.ContextualExpandEnvironmentVariables(l_0_0)
+if not isnull(l_0_9) then
+  l_0_9 = string.lower(l_0_9)
+else
+  l_0_9 = l_0_0
+end
+if mp.IsKnownFriendlyFile(l_0_9, true, false) then
+  return mp.CLEAN
+end
+if sysio.IsFileExists(l_0_9) then
+  bm.add_related_file(l_0_9)
+  bm.add_threat_file(l_0_9)
+end
+bm.add_related_string("DroppedTemplate", l_0_9, bm.RelatedStringBMReport)
+bm.add_related_string("DroppingProcess", l_0_5, bm.RelatedStringBMReport)
+add_parents()
+TrackPidAndTechniqueBM("BM", "T1137", "office_application_startup")
+return mp.INFECTED

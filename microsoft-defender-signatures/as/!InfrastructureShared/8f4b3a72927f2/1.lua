@@ -1,60 +1,40 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\8f4b3a72927f2\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 8f4b3a72927f2
+-- Type: 21
+-- Includes: BMLuaLib, TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_4 = nil
--- DECOMPILER ERROR at PC8: Overwrote pending register: R1 in 'AssignReg'
-
-do
-  if (this_sigattrlog[42]).matched then
-    local l_0_1, l_0_3 = nil, ""
-    l_0_4 = (string.find)((this_sigattrlog[42]).utf8p1, "/bash", 1, true)
-    local l_0_0, l_0_2 = nil
-    if l_0_4 ~= nil then
-      l_0_0 = sysio
-      l_0_0 = l_0_0.IsFileExists
-      l_0_2 = "/run/yum.pid"
-      l_0_0 = l_0_0(l_0_2)
-      if l_0_0 then
-        l_0_0 = mp
-        l_0_0 = l_0_0.CLEAN
-        return l_0_0
-      end
-    end
-    l_0_0 = isParentPackageManager
-    l_0_2 = l_0_1
-    l_0_0 = l_0_0(l_0_2)
-    if l_0_0 then
-      l_0_0 = mp
-      l_0_0 = l_0_0.CLEAN
-      return l_0_0
-    end
+local l_0_0, l_0_1
+local l_0_2 = ""
+if this_sigattrlog[42].matched then
+  l_0_1 = this_sigattrlog[42].ppid
+  l_0_0, _ = string.find(this_sigattrlog[42].utf8p1, "/bash", 1, true)
+  if l_0_0 ~= nil and sysio.IsFileExists("/run/yum.pid") then
+    return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC51: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC58: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC65: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC72: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC79: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC86: Overwrote pending register: R2 in 'AssignReg'
-
-  if ((((((this_sigattrlog[43]).matched and not (this_sigattrlog[44]).matched) or (this_sigattrlog[45]).matched) and not (this_sigattrlog[46]).matched) or (this_sigattrlog[47]).matched) and not (this_sigattrlog[48]).matched) or (this_sigattrlog[49]).matched then
-    do return mp.CLEAN end
-    -- DECOMPILER ERROR at PC91: Confused about usage of register: R1 in 'UnsetPending'
-
-    -- DECOMPILER ERROR at PC94: Confused about usage of register: R1 in 'UnsetPending'
-
-    if l_0_1 ~= nil then
-      TrackPidAndTechniqueBM(l_0_1, "T1546.004", "Persistence")
-    end
-    reportRelatedBmHits()
-    addRelatedProcess()
-    return mp.INFECTED
+  if isParentPackageManager(l_0_1) then
+    return mp.CLEAN
   end
 end
-
+if this_sigattrlog[43].matched then
+  l_0_2 = "T1546.004"
+elseif this_sigattrlog[44].matched then
+  l_0_2 = "T1543.002"
+elseif this_sigattrlog[45].matched then
+  l_0_2 = "T1543"
+elseif this_sigattrlog[46].matched then
+  l_0_2 = "T1546"
+elseif this_sigattrlog[47].matched then
+  l_0_2 = "T1547.006"
+elseif this_sigattrlog[48].matched then
+  l_0_2 = "T1037.004"
+elseif this_sigattrlog[49].matched then
+  l_0_2 = "T1053.003"
+else
+  return mp.CLEAN
+end
+if l_0_1 ~= nil then
+  TrackPidAndTechniqueBM(l_0_1, l_0_2, "Persistence")
+end
+reportRelatedBmHits()
+addRelatedProcess()
+return mp.INFECTED

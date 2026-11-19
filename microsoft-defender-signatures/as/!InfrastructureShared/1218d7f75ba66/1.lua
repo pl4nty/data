@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: 1218d7f75ba66
+-- Type: 21
+
+if mp.HSTR_WEIGHT >= 4 then
+  mp.set_mpattribute("PUA:Block:AdvMacCleaner.A")
+  return mp.INFECTED
+end
+return mp.LOWFI

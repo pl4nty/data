@@ -228,7 +228,9 @@
         "azureml://registries/azure-openai/models/gpt-5.6-sol",
         "azureml://registries/azure-openai/models/gpt-6-astra",
         "azureml://registries/azure-openai/models/gpt-6.1-sol",
+        "azureml://registries/azure-openai/models/gpt-6.2-sol",
         "azureml://registries/azure-openai/models/gpt-6.1-terra",
+        "azureml://registries/azure-openai/models/gpt-6.2-astra",
         "azureml://registries/azure-openai/models/gpt-6-sol",
         "azureml://registries/azure-openai/models/gpt-6-luna",
         "azureml://registries/azure-openai/models/gpt-5.6-luna",
@@ -261,6 +263,7 @@
         "azureml://registries/azureml-moonshotai/models/kimi-k2.7-code",
         "azureml://registries/azure-mai/models/mai-thinking-1",
         "azureml://registries/azure-mai/models/mai-code-1.1-flash",
+        "azureml://registries/azure-mai/models/mai-code-2-flash",
         "azureml://registries/azureml-xai/models/grok-3",
         "azureml://registries/azureml-xai/models/grok-3-mini",
         "azureml://registries/azureml-xai/models/grok-4",
@@ -300,6 +303,7 @@
         "azureml://registries/azureml-anthropic/models/claude-fable-5-2",
         "azureml://registries/azureml-anthropic/models/claude-fable-5-2-fast",
         "azureml://registries/azureml-mistral/models/mistral-large-3",
+        "azureml://registries/azureml-mistral/models/mistral-large-4-latest",
         "azureml://registries/azureml-fireworks/models/fw-kimi-k2-thinking",
         "azureml://registries/azureml-fireworks/models/fw-gpt-oss-120b",
         "azureml://registries/azureml-fireworks/models/fw-glm-4.7",
@@ -373,7 +377,8 @@
         "azureml://registries/azureml-meta/models/llama-2-70b"
     ],
     "decisionServerless": [
-        "azureml://registries/azureml-msr/models/Microsoft-Decision-1"
+        "azureml://registries/azureml-msr/models/Microsoft-Decision-1",
+        "azureml://registries/azureml-msr/models/Microsoft-Decision-1.1"
     ],
     "earlyAccessAssetIds": [],
     "healthMaaP": [
@@ -434,7 +439,9 @@
         "gpt-5.6-sol",
         "gpt-6-astra",
         "gpt-6.1-sol",
+        "gpt-6.2-sol",
         "gpt-6.1-terra",
+        "gpt-6.2-astra",
         "gpt-6-sol",
         "gpt-6-luna",
         "gpt-5.6-luna",
@@ -448,7 +455,9 @@
         "kimi-k3.1-pro",
         "kimi-k2.7-code",
         "mai-thinking-1",
-        "mai-code-1.1-flash"
+        "mai-code-1.1-flash",
+        "mai-code-2-flash",
+        "mistral-large-4-latest"
     ],
     "supportedModels": {
         "assistantsNotSupportedStreamingModels": [
@@ -519,14 +528,17 @@
             "gpt-5.6-sol",
             "gpt-6-astra",
             "gpt-6.1-sol",
+            "gpt-6.2-sol",
             "gpt-6.1-terra",
+            "gpt-6.2-astra",
             "gpt-6-sol",
             "gpt-6-luna",
             "gpt-5.6-luna",
             "gpt-5.6-terra",
             "gpt-chat-latest",
             "deepseek-v4.1-flash",
-            "deepseek-v4.1-flash-1017"
+            "deepseek-v4.1-flash-1017",
+            "mistral-large-4-latest"
         ],
         "supportedChatModels": [
             "gpt-4",
@@ -577,7 +589,9 @@
             "gpt-5.6-sol",
             "gpt-6-astra",
             "gpt-6.1-sol",
+            "gpt-6.2-sol",
             "gpt-6.1-terra",
+            "gpt-6.2-astra",
             "gpt-6-sol",
             "gpt-6-luna",
             "gpt-5.6-luna",
@@ -591,7 +605,9 @@
             "kimi-k3.1-pro",
             "kimi-k2.7-code",
             "mai-thinking-1",
-            "mai-code-1.1-flash"
+            "mai-code-1.1-flash",
+            "mai-code-2-flash",
+            "mistral-large-4-latest"
         ],
         "supportedCompletionModels": [
             "babbage-002",
@@ -620,6 +636,8 @@
             "mai-image-2.6",
             "mai-image-2.5-flash",
             "mai-image-2.6-flash",
+            "mai-image-2.7",
+            "mai-image-2.7-flash",
             "mai-image-2.5-pro",
             "flux.1-kontext-pro",
             "flux-1.1-pro",
@@ -638,6 +656,7 @@
             "cohere-rerank-v4-fast"
         ],
         "supportedResponseModels": [
+            "mai-code-2-flash",
             "computer-use-preview",
             "codex-mini",
             "gpt-5",
@@ -659,7 +678,9 @@
             "gpt-5.6-sol",
             "gpt-6-astra",
             "gpt-6.1-sol",
+            "gpt-6.2-sol",
             "gpt-6.1-terra",
+            "gpt-6.2-astra",
             "gpt-6-sol",
             "gpt-6-luna",
             "gpt-5.6-luna",
@@ -733,6 +754,8 @@
         "azureml://registries/azure-mai/models/mai-image-2.6",
         "azureml://registries/azure-mai/models/mai-image-2.5-flash",
         "azureml://registries/azure-mai/models/mai-image-2.6-flash",
+        "azureml://registries/azure-mai/models/mai-image-2.7",
+        "azureml://registries/azure-mai/models/mai-image-2.7-flash",
         "azureml://registries/azure-mai/models/mai-image-2.5-pro",
         "azureml://registries/azureml-staging/models/aoai-sora",
         "azureml://registries/azureml-staging/models/sora",

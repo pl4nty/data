@@ -1,0 +1,12 @@
+-- Threat: !InfrastructureShared
+-- Name: 15b31af2e716
+-- Type: 21
+
+local l_0_0 = bm.get_imagepath()
+if l_0_0 ~= nil then
+  l_0_0 = string.lower(string.sub(l_0_0, -18))
+  if string.find(l_0_0, "\\msedge.exe", 1, true) or string.find(l_0_0, "\\svchost.exe", 1, true) or string.find(l_0_0, "\\sihost.exe", 1, true) or string.find(l_0_0, "\\runtimebroker.exe", 1, true) or string.find(l_0_0, "\\werfault.exe", 1, true) or string.find(l_0_0, "\\wmiprvse.exe", 1, true) or string.find(l_0_0, "\\syntpenh.exe", 1, true) then
+    return mp.CLEAN
+  end
+end
+return mp.INFECTED

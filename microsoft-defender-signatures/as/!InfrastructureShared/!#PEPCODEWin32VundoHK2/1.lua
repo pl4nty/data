@@ -1,0 +1,56 @@
+-- Threat: !InfrastructureShared
+-- Name: !#PEPCODE:Win32/Vundo.HK2
+-- Type: 8
+
+if peattributes.epscn_writable ~= true then
+  return mp.CLEAN
+end
+if epcode[1] ~= 104 then
+  return mp.CLEAN
+end
+if pehdr.AddressOfEntryPoint ~= 4096 then
+  return mp.CLEAN
+end
+if pehdr.ImageBase ~= 268435456 then
+  return mp.CLEAN
+end
+if pevars.epsec > pehdr.NumberOfSections then
+  return mp.CLEAN
+end
+if pesecs[pevars.epsec].SizeOfRawData <= 8192 then
+  return mp.CLEAN
+end
+if pesecs[pevars.epsec].SizeOfRawData >= 16384 then
+  return mp.CLEAN
+end
+if peattributes.packed ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if peattributes.isdll ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasexports == true then
+  return mp.CLEAN
+end
+if peattributes.epatstartentrysect ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasboundimports == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections < 5 then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections > 6 then
+  return mp.CLEAN
+end
+if pehdr.DataDirectory[2].Size <= 240 then
+  return mp.CLEAN
+end
+if pehdr.DataDirectory[2].Size >= 512 then
+  return mp.CLEAN
+end
+return mp.INFECTED

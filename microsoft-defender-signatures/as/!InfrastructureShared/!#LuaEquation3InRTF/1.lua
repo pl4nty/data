@@ -1,11 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaEquation3InRTF\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:Equation3InRTF
+-- Type: 13
+-- MpAttributes: SCPT:OLE.Equation3.A
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilename)()
-if (string.find)(l_0_0, "->(Rtf", 1, true) then
+local l_0_0 = mp.getfilename()
+if string.find(l_0_0, "->(Rtf", 1, true) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

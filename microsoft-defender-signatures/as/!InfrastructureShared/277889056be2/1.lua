@@ -1,0 +1,15 @@
+-- Threat: !InfrastructureShared
+-- Name: 277889056be2
+-- Type: 21
+
+local l_0_0 = hstrlog[1].VA
+if pe.isdynamic_va(l_0_0) == false and pe.isencrypted_va(l_0_0 + 7) == false and pe.isencrypted_va(l_0_0 + 8) == false then
+  local l_0_1 = pe.foffset_va(l_0_0)
+  if l_0_1 ~= 4294967295 then
+    mp.readprotection(false)
+    local l_0_2 = mp.readfile(0, mp.getfilesize())
+    mp.writeu_u16(l_0_2, l_0_1 + 8, 2027)
+    mp.vfo_add_buffer(l_0_2, "[Obfuscator]", mp.ADD_VFO_TAKE_ACTION_ON_DAD)
+  end
+end
+return mp.LOWFI

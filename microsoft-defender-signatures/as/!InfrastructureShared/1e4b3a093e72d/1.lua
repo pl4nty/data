@@ -1,559 +1,224 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\1e4b3a093e72d\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 1e4b3a093e72d
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper, TechniqueTracker
 
--- params : ...
--- function num : 0
-if not is_excluded_parent_proc_auto() and IsSenseRelatedProc() ~= true then
-  local l_0_0 = IsProcNameInParentProcessTree
-  local l_0_1 = "BM"
-  local l_0_2 = {}
-  -- DECOMPILER ERROR at PC13: No list found for R2 , SetList fails
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
 
-end
--- DECOMPILER ERROR at PC17: Overwrote pending register: R0 in 'AssignReg'
-
--- DECOMPILER ERROR at PC18: Overwrote pending register: R0 in 'AssignReg'
-
-if l_0_0 then
-  return l_0_0
-end
--- DECOMPILER ERROR at PC20: Overwrote pending register: R0 in 'AssignReg'
-
-local l_0_3, l_0_4 = "acrodist.exe", "csrss.exe"
-l_0_2 = this_sigattrlog
-l_0_2 = l_0_2[4]
-l_0_2 = l_0_2.matched
-if l_0_2 then
-  l_0_2 = this_sigattrlog
-  l_0_2 = l_0_2[4]
-  -- DECOMPILER ERROR at PC28: Overwrote pending register: R0 in 'AssignReg'
-
-end
-l_0_2 = string
-l_0_2 = l_0_2.match
-l_0_3 = l_0_0
-l_0_4 = "^([0-9]+);regionsize:([0-9]+)"
-l_0_2 = l_0_2(l_0_3, l_0_4)
-local l_0_5, l_0_6 = nil
-l_0_4 = isnull
-l_0_5 = l_0_2
-l_0_4 = l_0_4(l_0_5)
-if not l_0_4 then
-  l_0_4 = isnull
-  l_0_5 = 
-  l_0_4 = l_0_4(l_0_5)
-end
-if l_0_4 then
-  l_0_4 = mp
-  l_0_4 = l_0_4.CLEAN
-  return l_0_4
-end
-l_0_4 = tonumber
-l_0_5 = l_0_2
-l_0_4 = l_0_4(l_0_5)
-l_0_2 = l_0_4
-l_0_4 = tonumber
-l_0_5 = 
-l_0_4 = l_0_4(l_0_5)
-l_0_3 = l_0_4
-l_0_4 = bm
-l_0_4 = l_0_4.get_current_process_startup_info
-l_0_4 = l_0_4()
-local l_0_7 = nil
-l_0_5 = isnull
-l_0_6 = l_0_4
-l_0_5 = l_0_5(l_0_6)
-if l_0_5 then
-  l_0_5 = mp
-  l_0_5 = l_0_5.CLEAN
-  return l_0_5
-end
-l_0_5 = l_0_4.ppid
-local l_0_8 = nil
-do
-  local l_0_9 = nil
-  l_0_7 = "NtTraceEvent"
-  l_0_8 = "EtwEventWrite"
-  l_0_9 = "EtwEventWriteEx"
-  l_0_7 = ipairs
-  l_0_8, l_0_6 = l_0_6, {l_0_7, l_0_8, l_0_9, "EtwEventWriteTransfer", "EtwEventWriteFull", "EtwpEventWriteFull"}
-  l_0_7 = l_0_7(l_0_8)
-  for l_0_13,l_0_14 in l_0_7 do
-    local l_0_12, l_0_13, l_0_14 = nil
-    l_0_12 = bm
-    l_0_12 = l_0_12.GetProcAddress
-    l_0_13 = l_0_5
-    l_0_14 = "ntdll.dll"
-    l_0_12 = l_0_12(l_0_13, l_0_14, l_0_11)
-    local l_0_15 = nil
-    l_0_13 = isnull
-    l_0_14 = l_0_12
-    l_0_13 = l_0_13(l_0_14)
-    if l_0_13 then
-      l_0_13 = mp
-      l_0_13 = l_0_13.CLEAN
-      return l_0_13
-    end
-    l_0_13 = isnull
-    l_0_14 = l_0_12
-    l_0_13 = l_0_13(l_0_14)
-    if l_0_13 then
-      l_0_13 = mp
-      l_0_13 = l_0_13.CLEAN
-      return l_0_13
-    end
-    l_0_13 = bm
-    l_0_13 = l_0_13.VirtualQuery
-    l_0_14 = l_0_12
-    l_0_13 = l_0_13(l_0_14)
-    local l_0_16, l_0_17 = nil
-    do
-      if l_0_13 then
-        l_0_15 = isnull
-        l_0_16 = 
-        l_0_15 = l_0_15(l_0_16)
-      end
-      if l_0_15 then
-        l_0_15 = mp
-        l_0_15 = l_0_15.CLEAN
-        return l_0_15
-      end
-      l_0_15 = l_0_14.base_addr
-      if l_0_15 == l_0_2 then
-        l_0_15 = bm
-        l_0_15 = l_0_15.get_imagepath
-        l_0_15 = l_0_15()
-        local l_0_18 = nil
-        l_0_16 = isnull
-        l_0_17 = l_0_15
-        l_0_16 = l_0_16(l_0_17)
-        if l_0_16 then
-          l_0_16 = mp
-          l_0_16 = l_0_16.CLEAN
-          return l_0_16
-        end
-        l_0_16 = checkFileLastWriteTime
-        l_0_17 = l_0_15
-        l_0_18 = 300
-        l_0_16 = l_0_16(l_0_17, l_0_18)
-        if l_0_16 then
-          local l_0_19 = nil
-          local l_0_20 = nil
-          l_0_18, l_0_16 = l_0_16.INIT, {INIT = 1, CHECK_PATH = 2, GET_PROC_INFO = 3, GET_ROUTINE_ADDR = 4, READ_MEM = 5, DETECT_ARCH = 6, DISASSEMBLE = 7, ANALYZE = 8, FINISH = 9}
-          l_0_18 = function(l_1_0)
-  -- function num : 0_0 , upvalues : l_0_19
-  if isnull(l_1_0) then
-    return mp.CLEAN
-  end
-  if isnull(l_1_0.patched_process_image_path) then
-    return l_0_19.FINISH
-  end
-  return l_0_19.CHECK_PATH
-end
-
-          l_0_19 = function(l_2_0)
-  -- function num : 0_1 , upvalues : l_0_19
-  if isnull(l_2_0) then
-    return mp.CLEAN
-  end
-  l_2_0.patched_process_image_path = (MpCommon.PathToWin32Path)(l_2_0.patched_process_image_path)
-  if isnull(l_2_0.patched_process_image_path) then
-    return l_0_19.FINISH
-  end
-  l_2_0.patched_process_image_path = (string.lower)(l_2_0.patched_process_image_path)
-  if isnull(l_2_0.patched_process_image_path) then
-    return l_0_19.FINISH
-  end
-  return l_0_19.GET_PROC_INFO
-end
-
-          l_0_20 = function(l_3_0)
-  -- function num : 0_2 , upvalues : l_0_19
-  if isnull(l_3_0) then
-    return mp.CLEAN
-  end
-  if isnull(l_3_0.patched_process_stats) then
-    return l_0_19.FINISH
-  end
-  local l_3_1 = (l_3_0.patched_process_stats).command_line
-  if isnull(l_3_0.patched_process_ppid) or isnull(l_3_1) then
-    return l_0_19.FINISH
-  end
-  l_3_0.patched_process_command_line = l_3_1
-  return l_0_19.GET_ROUTINE_ADDR
-end
-
-          local l_0_29 = function(l_4_0)
-  -- function num : 0_3 , upvalues : l_0_19
-  if isnull(l_4_0) then
-    return mp.CLEAN
-  end
-  if isnull(l_4_0.patched_etw_routine_addr) then
-    return l_0_19.FINISH
-  end
-  return l_0_19.READ_MEM
-end
-
-          local l_0_30 = function(l_5_0)
-  -- function num : 0_4 , upvalues : l_0_19, l_0_4
-  if isnull(l_5_0) then
-    return mp.CLEAN
-  end
-  local l_5_1 = (bm.ReadProcMem)(l_5_0.patched_etw_routine_addr, 256, l_5_0.patched_process_ppid)
-  if isnull(l_5_1) then
-    return l_0_19.FINISH
-  end
-  l_0_4 = tohex(tostring(l_5_1))
-  l_5_0.raw_bytes = l_5_1
-  return l_0_19.DETECT_ARCH
-end
-
-          while 1 do
-            local l_0_31 = nil
-            if not ({[l_0_16.INIT] = l_0_18, [l_0_16.CHECK_PATH] = l_0_19, [l_0_16.GET_PROC_INFO] = l_0_20, [l_0_16.GET_ROUTINE_ADDR] = l_0_29, [l_0_16.READ_MEM] = l_0_30, [l_0_16.DETECT_ARCH] = function(l_6_0)
-  -- function num : 0_5 , upvalues : l_0_19
-  if isnull(l_6_0) then
-    return mp.CLEAN
-  end
-  if l_6_0.patched_etw_routine_addr > 4294967295 then
-    l_6_0.arch_information = mp.SMS_PROC_ARCH_X64
+if not is_excluded_parent_proc_auto()
+  and IsSenseRelatedProc() ~= true
+  and not IsProcNameInParentProcessTree("BM", { "acrodist.exe", "csrss.exe" }) then
+  local r0_0 = nil
+  local r0_1
+  if this_sigattrlog[4].matched then
+    r0_1 = this_sigattrlog[4].utf8p2
   else
-    l_6_0.arch_information = mp.SMS_PROC_ARCH_X32
+    r0_1 = nil
   end
-  return l_0_19.DISASSEMBLE
-end
-, [l_0_16.DISASSEMBLE] = function(l_7_0)
-  -- function num : 0_6 , upvalues : l_0_19
-  if isnull(l_7_0) then
-    return mp.CLEAN
-  end
-  local l_7_1 = (mp.x86dasm)(l_7_0.arch_information, l_7_0.patched_etw_routine_addr, l_7_0.raw_bytes, 256, 50, l_7_0.patched_etw_routine_addr, mp.DASM_LINEAR_FLOW)
-  if isnull(l_7_1) then
-    return l_0_19.FINISH
-  end
-  l_7_0.disassembled_instructions = l_7_1
-  return l_0_19.ANALYZE
-end
-, [l_0_16.ANALYZE] = function(l_8_0)
-  -- function num : 0_7 , upvalues : l_0_4, l_0_19
-  if isnull(l_8_0) then
-    return mp.CLEAN
-  end
-  for l_8_4,l_8_5 in pairs(l_8_0.disassembled_instructions) do
-    do
-      do
-        -- DECOMPILER ERROR at PC30: Unhandled construct in 'MakeBoolean' P1
-
-        if (l_8_5.opcode == 235 or l_8_5.opcode == 195 or l_8_5.opcode == 194) and l_8_4 < 8 then
-          local l_8_6 = (string.format)("[->] Function %s at 0x%02x, cpu is %d", l_8_0.chosen_etw_routine_name, l_8_0.patched_etw_routine_addr, l_8_0.arch_information)
-          ;
-          (bm.add_related_string)("[->] MEDICATED PROCESS: ", l_8_0.patched_process_image_path, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED COMMAND LINE: ", l_8_0.patched_process_command_line, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED DETAILS", l_8_6, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED BYTES", l_0_4, bm.RelatedStringBMReport)
-          return mp.INFECTED
-        end
-        do break end
-        if l_8_5.jtype ~= 0 then
-          break
-        end
-        -- DECOMPILER ERROR at PC67: LeaveBlock: unexpected jumping out DO_STMT
-
-      end
+  local r0_2, r0_3 = string.match(r0_1, "^([0-9]+);regionsize:([0-9]+)")
+  if not isnull(r0_2) and not isnull(r0_3) then
+    local r0_4 = tonumber(r0_2)
+    r0_2 = r0_4
+    r0_4 = tonumber(r0_3)
+    r0_3 = r0_4
+    r0_4 = bm.get_current_process_startup_info()
+    if isnull(r0_4) then
+      return mp.CLEAN
     end
-  end
-  return l_0_19.FINISH
-end
-, [l_0_16.FINISH] = function(l_9_0)
-  -- function num : 0_8
-  return mp.CLEAN
-end
-})[l_0_17.current_state] then
+    local r0_5 = r0_4.ppid
+    local r0_6 = {
+      "NtTraceEvent", "EtwEventWrite", "EtwEventWriteEx", "EtwEventWriteTransfer",
+      "EtwEventWriteFull", "EtwpEventWriteFull"
+    }
+    for r0_7, r0_8 in ipairs(r0_6) do
+      local r0_9 = bm.GetProcAddress(r0_5, "ntdll.dll", r0_8)
+      if isnull(r0_9) then
+        return mp.CLEAN
+      end
+      if isnull(r0_9) then
+        return mp.CLEAN
+      end
+      local r0_10, r0_11 = bm.VirtualQuery(r0_9)
+      if not r0_10 or isnull(r0_11) then
+        return mp.CLEAN
+      end
+      if r0_11.base_addr == r0_2 then
+        local r0_12 = bm.get_imagepath()
+        if isnull(r0_12) then
+          return mp.CLEAN
+        end
+        if checkFileLastWriteTime(r0_12, 300) then
+          local r0_13 = {
+            INIT = 1, CHECK_PATH = 2, GET_PROC_INFO = 3, GET_ROUTINE_ADDR = 4, READ_MEM = 5,
+            DETECT_ARCH = 6, DISASSEMBLE = 7, ANALYZE = 8, FINISH = 9
+          }
+          local r0_14 = {
+            current_state = r0_13.INIT, patched_process_image_path = r0_12,
+            patched_process_stats = r0_4, patched_process_ppid = r0_5,
+            chosen_etw_routine_name = r0_8, patched_etw_routine_addr = r0_9, raw_bytes = nil,
+            arch_information = nil, disassembled_instructions = nil
+          }
+
+          local function r0_15(p1_0)
+            if isnull(p1_0) then
               return mp.CLEAN
             end
-            -- DECOMPILER ERROR at PC201: Confused about usage of register: R28 in 'UnsetPending'
+            if isnull(p1_0.patched_process_image_path) then
+              return r0_13.FINISH
+            end
+            return r0_13.CHECK_PATH
+          end
 
-            local l_0_32 = nil
-            if (({[l_0_16.INIT] = l_0_18, [l_0_16.CHECK_PATH] = l_0_19, [l_0_16.GET_PROC_INFO] = l_0_20, [l_0_16.GET_ROUTINE_ADDR] = l_0_29, [l_0_16.READ_MEM] = l_0_30, [l_0_16.DETECT_ARCH] = function(l_6_0)
-  -- function num : 0_5 , upvalues : l_0_19
-  if isnull(l_6_0) then
-    return mp.CLEAN
-  end
-  if l_6_0.patched_etw_routine_addr > 4294967295 then
-    l_6_0.arch_information = mp.SMS_PROC_ARCH_X64
-  else
-    l_6_0.arch_information = mp.SMS_PROC_ARCH_X32
-  end
-  return l_0_19.DISASSEMBLE
-end
-, [l_0_16.DISASSEMBLE] = function(l_7_0)
-  -- function num : 0_6 , upvalues : l_0_19
-  if isnull(l_7_0) then
-    return mp.CLEAN
-  end
-  local l_7_1 = (mp.x86dasm)(l_7_0.arch_information, l_7_0.patched_etw_routine_addr, l_7_0.raw_bytes, 256, 50, l_7_0.patched_etw_routine_addr, mp.DASM_LINEAR_FLOW)
-  if isnull(l_7_1) then
-    return l_0_19.FINISH
-  end
-  l_7_0.disassembled_instructions = l_7_1
-  return l_0_19.ANALYZE
-end
-, [l_0_16.ANALYZE] = function(l_8_0)
-  -- function num : 0_7 , upvalues : l_0_4, l_0_19
-  if isnull(l_8_0) then
-    return mp.CLEAN
-  end
-  for l_8_4,l_8_5 in pairs(l_8_0.disassembled_instructions) do
-    do
-      do
-        -- DECOMPILER ERROR at PC30: Unhandled construct in 'MakeBoolean' P1
+          local function r0_16(p2_0)
+            if isnull(p2_0) then
+              return mp.CLEAN
+            end
+            p2_0.patched_process_image_path = MpCommon.PathToWin32Path(p2_0.patched_process_image_path)
+            if isnull(p2_0.patched_process_image_path) then
+              return r0_13.FINISH
+            end
+            p2_0.patched_process_image_path = string.lower(p2_0.patched_process_image_path)
+            if isnull(p2_0.patched_process_image_path) then
+              return r0_13.FINISH
+            end
+            return r0_13.GET_PROC_INFO
+          end
 
-        if (l_8_5.opcode == 235 or l_8_5.opcode == 195 or l_8_5.opcode == 194) and l_8_4 < 8 then
-          local l_8_6 = (string.format)("[->] Function %s at 0x%02x, cpu is %d", l_8_0.chosen_etw_routine_name, l_8_0.patched_etw_routine_addr, l_8_0.arch_information)
-          ;
-          (bm.add_related_string)("[->] MEDICATED PROCESS: ", l_8_0.patched_process_image_path, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED COMMAND LINE: ", l_8_0.patched_process_command_line, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED DETAILS", l_8_6, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED BYTES", l_0_4, bm.RelatedStringBMReport)
-          return mp.INFECTED
-        end
-        do break end
-        if l_8_5.jtype ~= 0 then
-          break
-        end
-        -- DECOMPILER ERROR at PC67: LeaveBlock: unexpected jumping out DO_STMT
+          local function r0_17(p3_0)
+            if isnull(p3_0) then
+              return mp.CLEAN
+            end
+            if isnull(p3_0.patched_process_stats) then
+              return r0_13.FINISH
+            end
+            local r3_0 = p3_0.patched_process_stats.command_line
+            if not isnull(p3_0.patched_process_ppid) and not isnull(r3_0) then
+              p3_0.patched_process_command_line = r3_0
+              return r0_13.GET_ROUTINE_ADDR
+            end
+            return r0_13.FINISH
+          end
 
-      end
-    end
-  end
-  return l_0_19.FINISH
-end
-, [l_0_16.FINISH] = function(l_9_0)
-  -- function num : 0_8
-  return mp.CLEAN
-end
-})[l_0_17.current_state])(l_0_17) == mp.INFECTED then
-              return mp.INFECTED
+          local function r0_18(p4_0)
+            if isnull(p4_0) then
+              return mp.CLEAN
+            end
+            if isnull(p4_0.patched_etw_routine_addr) then
+              return r0_13.FINISH
+            end
+            return r0_13.READ_MEM
+          end
+
+          local function r0_19(p5_0)
+            if isnull(p5_0) then
+              return mp.CLEAN
+            end
+            local r5_0 = bm.ReadProcMem(p5_0.patched_etw_routine_addr, 256,
+              p5_0.patched_process_ppid)
+            if isnull(r5_0) then
+              return r0_13.FINISH
+            end
+            r0_0 = tohex(tostring(r5_0))
+            p5_0.raw_bytes = r5_0
+            return r0_13.DETECT_ARCH
+          end
+
+          local function r0_20(p6_0)
+            if isnull(p6_0) then
+              return mp.CLEAN
+            end
+            if p6_0.patched_etw_routine_addr > 4294967295 then
+              p6_0.arch_information = mp.SMS_PROC_ARCH_X64
             else
-              if (({[l_0_16.INIT] = l_0_18, [l_0_16.CHECK_PATH] = l_0_19, [l_0_16.GET_PROC_INFO] = l_0_20, [l_0_16.GET_ROUTINE_ADDR] = l_0_29, [l_0_16.READ_MEM] = l_0_30, [l_0_16.DETECT_ARCH] = function(l_6_0)
-  -- function num : 0_5 , upvalues : l_0_19
-  if isnull(l_6_0) then
-    return mp.CLEAN
-  end
-  if l_6_0.patched_etw_routine_addr > 4294967295 then
-    l_6_0.arch_information = mp.SMS_PROC_ARCH_X64
-  else
-    l_6_0.arch_information = mp.SMS_PROC_ARCH_X32
-  end
-  return l_0_19.DISASSEMBLE
-end
-, [l_0_16.DISASSEMBLE] = function(l_7_0)
-  -- function num : 0_6 , upvalues : l_0_19
-  if isnull(l_7_0) then
-    return mp.CLEAN
-  end
-  local l_7_1 = (mp.x86dasm)(l_7_0.arch_information, l_7_0.patched_etw_routine_addr, l_7_0.raw_bytes, 256, 50, l_7_0.patched_etw_routine_addr, mp.DASM_LINEAR_FLOW)
-  if isnull(l_7_1) then
-    return l_0_19.FINISH
-  end
-  l_7_0.disassembled_instructions = l_7_1
-  return l_0_19.ANALYZE
-end
-, [l_0_16.ANALYZE] = function(l_8_0)
-  -- function num : 0_7 , upvalues : l_0_4, l_0_19
-  if isnull(l_8_0) then
-    return mp.CLEAN
-  end
-  for l_8_4,l_8_5 in pairs(l_8_0.disassembled_instructions) do
-    do
-      do
-        -- DECOMPILER ERROR at PC30: Unhandled construct in 'MakeBoolean' P1
+              p6_0.arch_information = mp.SMS_PROC_ARCH_X32
+            end
+            return r0_13.DISASSEMBLE
+          end
 
-        if (l_8_5.opcode == 235 or l_8_5.opcode == 195 or l_8_5.opcode == 194) and l_8_4 < 8 then
-          local l_8_6 = (string.format)("[->] Function %s at 0x%02x, cpu is %d", l_8_0.chosen_etw_routine_name, l_8_0.patched_etw_routine_addr, l_8_0.arch_information)
-          ;
-          (bm.add_related_string)("[->] MEDICATED PROCESS: ", l_8_0.patched_process_image_path, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED COMMAND LINE: ", l_8_0.patched_process_command_line, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED DETAILS", l_8_6, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED BYTES", l_0_4, bm.RelatedStringBMReport)
-          return mp.INFECTED
-        end
-        do break end
-        if l_8_5.jtype ~= 0 then
-          break
-        end
-        -- DECOMPILER ERROR at PC67: LeaveBlock: unexpected jumping out DO_STMT
+          local function r0_21(p7_0)
+            if isnull(p7_0) then
+              return mp.CLEAN
+            end
+            local r7_0 = mp.x86dasm(p7_0.arch_information, p7_0.patched_etw_routine_addr,
+              p7_0.raw_bytes, 256, 50, p7_0.patched_etw_routine_addr, mp.DASM_LINEAR_FLOW)
+            if isnull(r7_0) then
+              return r0_13.FINISH
+            end
+            p7_0.disassembled_instructions = r7_0
+            return r0_13.ANALYZE
+          end
 
-      end
-    end
-  end
-  return l_0_19.FINISH
-end
-, [l_0_16.FINISH] = function(l_9_0)
-  -- function num : 0_8
-  return mp.CLEAN
-end
-})[l_0_17.current_state])(l_0_17) == mp.CLEAN then
-                break
-              else
-                if type((({[l_0_16.INIT] = l_0_18, [l_0_16.CHECK_PATH] = l_0_19, [l_0_16.GET_PROC_INFO] = l_0_20, [l_0_16.GET_ROUTINE_ADDR] = l_0_29, [l_0_16.READ_MEM] = l_0_30, [l_0_16.DETECT_ARCH] = function(l_6_0)
-  -- function num : 0_5 , upvalues : l_0_19
-  if isnull(l_6_0) then
-    return mp.CLEAN
-  end
-  if l_6_0.patched_etw_routine_addr > 4294967295 then
-    l_6_0.arch_information = mp.SMS_PROC_ARCH_X64
-  else
-    l_6_0.arch_information = mp.SMS_PROC_ARCH_X32
-  end
-  return l_0_19.DISASSEMBLE
-end
-, [l_0_16.DISASSEMBLE] = function(l_7_0)
-  -- function num : 0_6 , upvalues : l_0_19
-  if isnull(l_7_0) then
-    return mp.CLEAN
-  end
-  local l_7_1 = (mp.x86dasm)(l_7_0.arch_information, l_7_0.patched_etw_routine_addr, l_7_0.raw_bytes, 256, 50, l_7_0.patched_etw_routine_addr, mp.DASM_LINEAR_FLOW)
-  if isnull(l_7_1) then
-    return l_0_19.FINISH
-  end
-  l_7_0.disassembled_instructions = l_7_1
-  return l_0_19.ANALYZE
-end
-, [l_0_16.ANALYZE] = function(l_8_0)
-  -- function num : 0_7 , upvalues : l_0_4, l_0_19
-  if isnull(l_8_0) then
-    return mp.CLEAN
-  end
-  for l_8_4,l_8_5 in pairs(l_8_0.disassembled_instructions) do
-    do
-      do
-        -- DECOMPILER ERROR at PC30: Unhandled construct in 'MakeBoolean' P1
-
-        if (l_8_5.opcode == 235 or l_8_5.opcode == 195 or l_8_5.opcode == 194) and l_8_4 < 8 then
-          local l_8_6 = (string.format)("[->] Function %s at 0x%02x, cpu is %d", l_8_0.chosen_etw_routine_name, l_8_0.patched_etw_routine_addr, l_8_0.arch_information)
-          ;
-          (bm.add_related_string)("[->] MEDICATED PROCESS: ", l_8_0.patched_process_image_path, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED COMMAND LINE: ", l_8_0.patched_process_command_line, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED DETAILS", l_8_6, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED BYTES", l_0_4, bm.RelatedStringBMReport)
-          return mp.INFECTED
-        end
-        do break end
-        if l_8_5.jtype ~= 0 then
-          break
-        end
-        -- DECOMPILER ERROR at PC67: LeaveBlock: unexpected jumping out DO_STMT
-
-      end
-    end
-  end
-  return l_0_19.FINISH
-end
-, [l_0_16.FINISH] = function(l_9_0)
-  -- function num : 0_8
-  return mp.CLEAN
-end
-})[l_0_17.current_state])(l_0_17)) ~= "number" then
-                  return mp.CLEAN
+          local function r0_22(p8_0)
+            if isnull(p8_0) then
+              return mp.CLEAN
+            end
+            for r8_0, r8_1 in pairs(p8_0.disassembled_instructions) do
+              if r8_1.opcode == 235 or r8_1.opcode == 195 or r8_1.opcode == 194 then
+                if not (r8_0 < 8) then
+                  break
                 end
+                local r8_2 = string.format("[->] Function %s at 0x%02x, cpu is %d",
+                  p8_0.chosen_etw_routine_name, p8_0.patched_etw_routine_addr, p8_0.arch_information)
+                bm.add_related_string("[->] MEDICATED PROCESS: ", p8_0.patched_process_image_path,
+                  bm.RelatedStringBMReport)
+                bm.add_related_string("[->] MEDICATED COMMAND LINE: ",
+                  p8_0.patched_process_command_line, bm.RelatedStringBMReport)
+                bm.add_related_string("[->] MEDICATED DETAILS", r8_2, bm.RelatedStringBMReport)
+                bm.add_related_string("[->] MEDICATED BYTES", r0_0, bm.RelatedStringBMReport)
+                return mp.INFECTED
+              end
+              if r8_1.jtype ~= 0 then
+                break
               end
             end
-            l_0_17.current_state = (({[l_0_16.INIT] = l_0_18, [l_0_16.CHECK_PATH] = l_0_19, [l_0_16.GET_PROC_INFO] = l_0_20, [l_0_16.GET_ROUTINE_ADDR] = l_0_29, [l_0_16.READ_MEM] = l_0_30, [l_0_16.DETECT_ARCH] = function(l_6_0)
-  -- function num : 0_5 , upvalues : l_0_19
-  if isnull(l_6_0) then
-    return mp.CLEAN
-  end
-  if l_6_0.patched_etw_routine_addr > 4294967295 then
-    l_6_0.arch_information = mp.SMS_PROC_ARCH_X64
-  else
-    l_6_0.arch_information = mp.SMS_PROC_ARCH_X32
-  end
-  return l_0_19.DISASSEMBLE
-end
-, [l_0_16.DISASSEMBLE] = function(l_7_0)
-  -- function num : 0_6 , upvalues : l_0_19
-  if isnull(l_7_0) then
-    return mp.CLEAN
-  end
-  local l_7_1 = (mp.x86dasm)(l_7_0.arch_information, l_7_0.patched_etw_routine_addr, l_7_0.raw_bytes, 256, 50, l_7_0.patched_etw_routine_addr, mp.DASM_LINEAR_FLOW)
-  if isnull(l_7_1) then
-    return l_0_19.FINISH
-  end
-  l_7_0.disassembled_instructions = l_7_1
-  return l_0_19.ANALYZE
-end
-, [l_0_16.ANALYZE] = function(l_8_0)
-  -- function num : 0_7 , upvalues : l_0_4, l_0_19
-  if isnull(l_8_0) then
-    return mp.CLEAN
-  end
-  for l_8_4,l_8_5 in pairs(l_8_0.disassembled_instructions) do
-    do
-      do
-        -- DECOMPILER ERROR at PC30: Unhandled construct in 'MakeBoolean' P1
+            return r0_13.FINISH
+          end
 
-        if (l_8_5.opcode == 235 or l_8_5.opcode == 195 or l_8_5.opcode == 194) and l_8_4 < 8 then
-          local l_8_6 = (string.format)("[->] Function %s at 0x%02x, cpu is %d", l_8_0.chosen_etw_routine_name, l_8_0.patched_etw_routine_addr, l_8_0.arch_information)
-          ;
-          (bm.add_related_string)("[->] MEDICATED PROCESS: ", l_8_0.patched_process_image_path, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED COMMAND LINE: ", l_8_0.patched_process_command_line, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED DETAILS", l_8_6, bm.RelatedStringBMReport)
-          ;
-          (bm.add_related_string)("[->] MEDICATED BYTES", l_0_4, bm.RelatedStringBMReport)
-          return mp.INFECTED
-        end
-        do break end
-        if l_8_5.jtype ~= 0 then
-          break
-        end
-        -- DECOMPILER ERROR at PC67: LeaveBlock: unexpected jumping out DO_STMT
+          local function r0_23(p9_0)
+            return mp.CLEAN
+          end
 
-      end
-    end
-  end
-  return l_0_19.FINISH
-end
-, [l_0_16.FINISH] = function(l_9_0)
-  -- function num : 0_8
-  return mp.CLEAN
-end
-})[l_0_17.current_state])(l_0_17)
-            if l_0_17.current_state == l_0_16.FINISH then
+          local r0_24 = {}
+          r0_24[r0_13.INIT] = r0_15
+          r0_24[r0_13.CHECK_PATH] = r0_16
+          local r0_25 = r0_13.GET_PROC_INFO
+          r0_24[r0_25] = r0_17
+          r0_25 = r0_13.GET_ROUTINE_ADDR
+          r0_24[r0_25] = r0_18
+          r0_25 = r0_13.READ_MEM
+          r0_24[r0_25] = r0_19
+          r0_25 = r0_13.DETECT_ARCH
+          r0_24[r0_25] = r0_20
+          r0_25 = r0_13.DISASSEMBLE
+          r0_24[r0_25] = r0_21
+          r0_25 = r0_13.ANALYZE
+          r0_24[r0_25] = r0_22
+          r0_25 = r0_13.FINISH
+          r0_24[r0_25] = r0_23
+          repeat
+            local r0_26 = r0_24[r0_14.current_state]
+            if not r0_26 then
+              return mp.CLEAN
+            end
+            local r0_27 = r0_26
+            r0_27 = r0_27(r0_14)
+            if r0_27 == mp.INFECTED then
+              return mp.INFECTED
+            end
+            if r0_27 == mp.CLEAN then
               break
             end
-          end
-          do
-            do return mp.CLEAN end
-            -- DECOMPILER ERROR at PC237: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-            -- DECOMPILER ERROR at PC237: LeaveBlock: unexpected jumping out IF_STMT
-
-            -- DECOMPILER ERROR at PC237: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-            -- DECOMPILER ERROR at PC237: LeaveBlock: unexpected jumping out IF_STMT
-
-          end
+            if type(r0_27) ~= "number" then
+              return mp.CLEAN
+            end
+            r0_14.current_state = r0_27
+          until r0_14.current_state == r0_13.FINISH
+          return mp.CLEAN
         end
       end
     end
+    return mp.CLEAN
   end
-  do return mp.CLEAN end
-  -- DECOMPILER ERROR at PC242: freeLocal<0 in 'ReleaseLocals'
-
+  return mp.CLEAN
 end
-
+return mp.CLEAN

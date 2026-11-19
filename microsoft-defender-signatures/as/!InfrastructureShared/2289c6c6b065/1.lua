@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: 2289c6c6b065
+-- Type: 21
+
+pe.mmap_patch_va(pevars.sigaddr + 10, "\144\144")
+pe.mmap_patch_va(pevars.sigaddr + 14, "\235")
+mp.set_mpattribute("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED

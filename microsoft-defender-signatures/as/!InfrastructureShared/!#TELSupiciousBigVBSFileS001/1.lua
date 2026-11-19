@@ -1,19 +1,15 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#TELSupiciousBigVBSFileS001\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#TEL:Supicious:BigVBSFile.S001
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & BM_UNKNOWN_FILE & LUA:FileSizeGT20M.A
 
--- params : ...
--- function num : 0
-if (mp.readu_u32)(headerpage, 1) > 536870912 and (mp.readu_u32)(headerpage, 1) < 553648128 then
-  (mp.readprotection)(false)
-  local l_0_0 = (mp.readfile)(0, 4)
-  local l_0_1 = (string.lower)(tostring(l_0_0))
-  if (string.find)(l_0_1, "rem ", 1, true) ~= nil then
+if mp.readu_u32(headerpage, 1) > 536870912 and mp.readu_u32(headerpage, 1) < 553648128 then
+  mp.readprotection(false)
+  local l_0_0 = mp.readfile(0, 4)
+  local l_0_1 = string.lower(tostring(l_0_0))
+  if string.find(l_0_1, "rem ", 1, true) ~= nil then
     return mp.INFECTED
   end
 end
-do
-  ;
-  (mp.set_mpattribute)("Lua:UnknownBigFile_GT20M")
-  return mp.CLEAN
-end
-
+mp.set_mpattribute("Lua:UnknownBigFile_GT20M")
+return mp.CLEAN

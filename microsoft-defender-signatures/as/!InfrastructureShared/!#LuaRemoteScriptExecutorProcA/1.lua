@@ -1,29 +1,24 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaRemoteScriptExecutorProcA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:RemoteScriptExecutorProc.A
+-- Type: 24
+-- Includes: TechniqueTracker
+-- MpAttributes: RPF:TopLevelFile & Lua:AmsiAppContextDataPresent
 
--- params : ...
--- function num : 0
-do
-  if GetRealPidForScenario("AMSI") == nil then
-    local l_0_0, l_0_1 = GetRealPidForScenario("RTP")
-  end
-  -- DECOMPILER ERROR at PC9: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 == nil then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC15: Confused about usage of register: R0 in 'UnsetPending'
-
-  local l_0_2 = nil
-  if GetTacticsTableForPid(l_0_0) == nil then
-    return mp.CLEAN
-  end
-  if (GetTacticsTableForPid(l_0_0)).wmi_childproc or (GetTacticsTableForPid(l_0_0)).wsmprovhost_childproc or (GetTacticsTableForPid(l_0_0)).winrshost_childproc or (GetTacticsTableForPid(l_0_0)).exec_remotedroppedscript_a or (GetTacticsTableForPid(l_0_0)).exec_remotedroppedscript_b or (GetTacticsTableForPid(l_0_0)).ExecRemoteDroppedExe or (GetTacticsTableForPid(l_0_0)).exec_from_remoteshare then
-    return mp.INFECTED
-  end
-  if (mp.get_mpattribute)("Lua:TT:DetectionThresholdMet") and (IsTacticObservedForParents(l_0_2, "exec_from_remoteshare", 2) or IsTacticObservedForParents(l_0_2, "remoteservice-target", 2)) then
-    return mp.INFECTED
-  end
+local l_0_0 = GetRealPidForScenario("AMSI")
+if l_0_0 == nil then
+  l_0_0 = GetRealPidForScenario("RTP")
+end
+if l_0_0 == nil then
   return mp.CLEAN
 end
-
+local l_0_1 = GetTacticsTableForPid(l_0_0)
+if l_0_1 == nil then
+  return mp.CLEAN
+end
+if l_0_1.wmi_childproc or l_0_1.wsmprovhost_childproc or l_0_1.winrshost_childproc or l_0_1.exec_remotedroppedscript_a or l_0_1.exec_remotedroppedscript_b or l_0_1.ExecRemoteDroppedExe or l_0_1.exec_from_remoteshare then
+  return mp.INFECTED
+end
+if mp.get_mpattribute("Lua:TT:DetectionThresholdMet") and (IsTacticObservedForParents(l_0_0, "exec_from_remoteshare", 2) or IsTacticObservedForParents(l_0_0, "remoteservice-target", 2)) then
+  return mp.INFECTED
+end
+return mp.CLEAN

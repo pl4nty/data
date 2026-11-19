@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: c978e0f18338
+-- Type: 21
+
+if peattributes.no_security == true and peattributes.isexe == true then
+  return mp.INFECTED
+end
+return mp.CLEAN

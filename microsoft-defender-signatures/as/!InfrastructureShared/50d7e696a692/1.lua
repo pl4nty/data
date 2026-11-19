@@ -1,0 +1,18 @@
+-- Threat: !InfrastructureShared
+-- Name: 50d7e696a692
+-- Type: 21
+
+local l_0_0 = mp.GetParentProcInfo()
+if l_0_0 ~= nil then
+  local l_0_1 = string.lower(l_0_0.image_path)
+  if l_0_1:find("\\w3wp.exe") then
+    local l_0_2 = mp.GetProcessCommandLine(l_0_0.ppid)
+    if l_0_2 ~= nil then
+      l_0_2 = string.lower(l_0_2)
+      if l_0_2:find("moveitdmz", 1, true) then
+        return mp.INFECTED
+      end
+    end
+  end
+end
+return mp.CLEAN

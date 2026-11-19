@@ -1,104 +1,28 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\7a7b30264cfed\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 7a7b30264cfed
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper, TechniqueTracker
 
--- params : ...
--- function num : 0
-if not is_excluded_parent_proc_auto() and IsSenseRelatedProc() ~= true then
-  local l_0_0 = IsProcNameInParentProcessTree
-  local l_0_1 = "BM"
-  local l_0_2 = {}
-  -- DECOMPILER ERROR at PC13: No list found for R2 , SetList fails
-
+if is_excluded_parent_proc_auto() or IsSenseRelatedProc() == true or IsProcNameInParentProcessTree("BM", {
+  "acrodist.exe",
+  "csrss.exe"
+}) then
+  return mp.CLEAN
 end
--- DECOMPILER ERROR at PC17: Overwrote pending register: R0 in 'AssignReg'
-
--- DECOMPILER ERROR at PC18: Overwrote pending register: R0 in 'AssignReg'
-
-if l_0_0 then
-  return l_0_0
-end
--- DECOMPILER ERROR at PC20: Overwrote pending register: R0 in 'AssignReg'
-
--- DECOMPILER ERROR at PC21: Overwrote pending register: R0 in 'AssignReg'
-
-local l_0_3 = "acrodist.exe"
--- DECOMPILER ERROR at PC30: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC33: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC34: Overwrote pending register: R1 in 'AssignReg'
-
--- DECOMPILER ERROR at PC35: Overwrote pending register: R2 in 'AssignReg'
-
-if l_0_0 and l_0_1 and l_0_1 then
-  local l_0_4 = "csrss.exe"
-  -- DECOMPILER ERROR at PC37: Overwrote pending register: R2 in 'AssignReg'
-
-  l_0_3 = MpCommon
-  l_0_3 = l_0_3.SECURITY_MANDATORY_MEDIUM_RID
-  -- DECOMPILER ERROR at PC42: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC43: Overwrote pending register: R2 in 'AssignReg'
-
-  if l_0_2 < l_0_3 then
-    l_0_3 = l_0_0.ppid
-    l_0_2 = l_0_2(l_0_3)
-    local l_0_5 = nil
-    if l_0_2 then
-      l_0_3 = next
-      l_0_4 = l_0_2
-      l_0_3 = l_0_3(l_0_4)
-      if l_0_3 then
-        l_0_3 = l_0_2.IntegrityLevel
-        if l_0_3 then
-          l_0_3 = l_0_2.IntegrityLevel
-          l_0_4 = MpCommon
-          l_0_4 = l_0_4.SECURITY_MANDATORY_MEDIUM_RID
-          if l_0_3 < l_0_4 then
-            l_0_3 = bm_AddRelatedFileFromCommandLine
-            l_0_4 = l_0_1
-            l_0_3(l_0_4, l_0_5, nil, 1)
-            l_0_3 = bm
-            l_0_3 = l_0_3.request_SMS
-            l_0_4 = l_0_0.ppid
-            -- DECOMPILER ERROR at PC69: Overwrote pending register: R5 in 'AssignReg'
-
-            l_0_3(l_0_4, l_0_5)
-            l_0_3 = bm
-            l_0_3 = l_0_3.add_action
-            l_0_4 = "SmsAsyncScanEvent"
-            -- DECOMPILER ERROR at PC74: Overwrote pending register: R5 in 'AssignReg'
-
-            l_0_3(l_0_4, l_0_5)
-            l_0_3 = bm
-            l_0_3 = l_0_3.add_related_string
-            l_0_4 = "[->] MEDICATED COMMAND LINE: "
-            -- DECOMPILER ERROR at PC79: Overwrote pending register: R5 in 'AssignReg'
-
-            l_0_3(l_0_4, l_0_5, bm.RelatedStringBMReport)
-            l_0_3 = bm
-            l_0_3 = l_0_3.add_related_file
-            l_0_4 = l_0_1
-            l_0_3(l_0_4)
-            l_0_3 = pcallEx
-            l_0_4 = "triggerMemoryScanOnProcessTree"
-            -- DECOMPILER ERROR at PC89: Overwrote pending register: R5 in 'AssignReg'
-
-            l_0_3(l_0_4, l_0_5, false, true, "SMS_H", 5000, "Behavior:Win32/AMSI.HardwareBreakPoint.G!sms")
-            l_0_3 = mp
-            l_0_3 = l_0_3.INFECTED
-            return l_0_3
-          end
-        end
-      end
+local l_0_0 = bm.get_current_process_startup_info()
+if l_0_0 and next(l_0_0) and l_0_0.command_line then
+  local l_0_1 = string.lower(l_0_0.command_line)
+  if l_0_0.integrity_level < MpCommon.SECURITY_MANDATORY_MEDIUM_RID then
+    local l_0_2 = MpCommon.GetProcessElevationAndIntegrityLevel(l_0_0.ppid)
+    if l_0_2 and next(l_0_2) and l_0_2.IntegrityLevel and l_0_2.IntegrityLevel < MpCommon.SECURITY_MANDATORY_MEDIUM_RID then
+      bm_AddRelatedFileFromCommandLine(l_0_1, nil, nil, 1)
+      bm.request_SMS(l_0_0.ppid, "h+")
+      bm.add_action("SmsAsyncScanEvent", 1)
+      bm.add_related_string("[->] MEDICATED COMMAND LINE: ", l_0_1, bm.RelatedStringBMReport)
+      bm.add_related_file(l_0_1)
+      pcallEx("triggerMemoryScanOnProcessTree", triggerMemoryScanOnProcessTree, false, true, "SMS_H", 5000, "Behavior:Win32/AMSI.HardwareBreakPoint.G!sms")
+      return mp.INFECTED
     end
   end
 end
-do
-  -- DECOMPILER ERROR at PC99: Overwrote pending register: R1 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC100: Overwrote pending register: R1 in 'AssignReg'
-
-  return l_0_1
-end
-
+return mp.CLEAN

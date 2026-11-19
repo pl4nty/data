@@ -1,23 +1,23 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\69b36a878361\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 69b36a878361
+-- Type: 21
+-- Includes: TechniqueTracker, BMLuaLib
 
--- params : ...
--- function num : 0
-if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
-  local l_0_0, l_0_1 = (bm.get_process_relationships)()
-  for l_0_5,l_0_6 in ipairs(l_0_1) do
-    if l_0_6.image_path ~= nil and l_0_6.ppid ~= nil and (string.find)((string.lower)(l_0_6.image_path), "\\rundll32.exe", 1, true) then
-      TrackPidAndTechniqueBM(l_0_6.ppid, "T1218.011", "Proxy_Exec")
-      local l_0_7 = extractDllForRegproc(l_0_6.cmd_line)
-      if l_0_7 then
-        l_0_7 = (mp.ContextualExpandEnvironmentVariables)(l_0_7)
-        if (sysio.IsFileExists)(l_0_7) then
-          local l_0_8 = (sysio.GetFileLastWriteTime)(l_0_7)
-          if ((sysio.GetLastResult)()).Success and l_0_8 ~= 0 then
-            l_0_8 = l_0_8 / 10000000 - 11644473600
-            local l_0_9 = (MpCommon.GetCurrentTimeT)()
-            if l_0_9 < l_0_8 or l_0_9 - (l_0_8) > 3600 then
-              (bm.add_related_file)(l_0_7)
+if this_sigattrlog[4].matched and this_sigattrlog[4].utf8p2 ~= nil then
+  local l_0_0, l_0_1 = bm.get_process_relationships()
+  for l_0_2, l_0_3 in ipairs(l_0_1) do
+    if l_0_3.image_path ~= nil and l_0_3.ppid ~= nil and string.find(string.lower(l_0_3.image_path), "\\rundll32.exe", 1, true) then
+      TrackPidAndTechniqueBM(l_0_3.ppid, "T1218.011", "Proxy_Exec")
+      local l_0_4 = extractDllForRegproc(l_0_3.cmd_line)
+      if l_0_4 then
+        l_0_4 = mp.ContextualExpandEnvironmentVariables(l_0_4)
+        if sysio.IsFileExists(l_0_4) then
+          local l_0_5 = sysio.GetFileLastWriteTime(l_0_4)
+          if sysio.GetLastResult().Success and l_0_5 ~= 0 then
+            l_0_5 = l_0_5 / 10000000 - 11644473600
+            local l_0_6 = MpCommon.GetCurrentTimeT()
+            if l_0_5 > l_0_6 or 3600 < l_0_6 - l_0_5 then
+              bm.add_related_file(l_0_4)
               if IsDetectionThresholdMet("BM") then
                 return mp.INFECTED
               end
@@ -28,9 +28,4 @@ if (this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2 ~= nil then
     end
   end
 end
-do
-  l_0_0 = mp
-  l_0_0 = l_0_0.CLEAN
-  return l_0_0
-end
-
+return mp.CLEAN

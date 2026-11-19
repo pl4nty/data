@@ -1,29 +1,30 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\136d7afc42af3\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 136d7afc42af3
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.GetParentProcInfo)()
+local l_0_0 = mp.GetParentProcInfo()
 if l_0_0 ~= nil then
-  local l_0_1 = (string.lower)(l_0_0.image_path)
+  local l_0_1 = string.lower(l_0_0.image_path)
   local l_0_2 = l_0_1:match("([^\\]+)$")
-  local l_0_3 = {}
-  l_0_3["supportassistagent.exe"] = true
-  l_0_3["printixservice.exe"] = true
-  l_0_3["vpnagent.exe"] = true
-  l_0_3["ossec-agent.exe"] = true
-  l_0_3["pangps.exe"] = true
-  l_0_3["cthwiprvservice.exe"] = true
-  l_0_3["ctesdursvc.exe"] = true
-  l_0_3["node.exe"] = true
-  l_0_3["heimdal.darklayerguard.exe"] = true
-  l_0_3["fortisslvpndaemon.exe"] = true
-  l_0_3["ccmexec.exe"] = true
-  l_0_3["gpscript.exe"] = true
-  l_0_3["mpcmdrun.exe"] = true
-  l_0_3["mssense.exe"] = true
-  l_0_3["senseir.exe"] = true
-  l_0_3["solsticeclient.exe"] = true
+  local l_0_3 = {
+    ["supportassistagent.exe"] = true,
+    ["printixservice.exe"] = true,
+    ["vpnagent.exe"] = true,
+    ["ossec-agent.exe"] = true,
+    ["pangps.exe"] = true,
+    ["cthwiprvservice.exe"] = true,
+    ["ctesdursvc.exe"] = true,
+    ["node.exe"] = true,
+    ["heimdal.darklayerguard.exe"] = true,
+    ["fortisslvpndaemon.exe"] = true,
+    ["ccmexec.exe"] = true,
+    ["gpscript.exe"] = true,
+    ["mpcmdrun.exe"] = true,
+    ["mssense.exe"] = true,
+    ["senseir.exe"] = true,
+    ["solsticeclient.exe"] = true
+  }
   if l_0_3[l_0_2] then
     return mp.CLEAN
   end
@@ -31,14 +32,11 @@ if l_0_0 ~= nil then
     return mp.CLEAN
   end
 end
-do
-  if IsTacticObservedForParents(l_0_0.ppid, "ttexclusion", 3) then
-    return mp.CLEAN
-  end
-  TrackPidAndTechnique("CMDHSTR", "T1016", "network_discovery")
-  if IsDetectionThresholdMet("CMDHSTR") then
-    return mp.INFECTED
-  end
+if IsTacticObservedForParents(l_0_0.ppid, "ttexclusion", 3) then
   return mp.CLEAN
 end
-
+TrackPidAndTechnique("CMDHSTR", "T1016", "network_discovery")
+if IsDetectionThresholdMet("CMDHSTR") then
+  return mp.INFECTED
+end
+return mp.CLEAN

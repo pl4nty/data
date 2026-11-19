@@ -1,16 +1,16 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\65b3cd6ab1ba\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 65b3cd6ab1ba
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-for l_0_3 = 1, mp.SIGATTR_LOG_SZ do
-  if (sigattr_tail[l_0_3]).matched and (sigattr_tail[l_0_3]).attribute == 16393 then
-    local l_0_4 = (sigattr_tail[l_0_3]).utf8p1
-    if l_0_4 then
-      l_0_4 = (string.lower)(l_0_4)
-      if l_0_4 and ((string.find)(l_0_4, "mpcmdrun.exe", 1, true) or (string.find)(l_0_4, "msseces.exe", 1, true) or (string.find)(l_0_4, "msmpeng.exe", 1, true) or (string.find)(l_0_4, "msascui.exe", 1, true) or (string.find)(l_0_4, "mpuxsrv.exe", 1, true)) then
-        local l_0_5 = (sigattr_tail[l_0_3]).utf8p2
-        if (string.len)(l_0_5) >= 1 then
+for l_0_0 = 1, mp.SIGATTR_LOG_SZ do
+  if sigattr_tail[l_0_0].matched and sigattr_tail[l_0_0].attribute == 16393 then
+    local l_0_1 = sigattr_tail[l_0_0].utf8p1
+    if l_0_1 then
+      l_0_1 = string.lower(l_0_1)
+      if l_0_1 and (string.find(l_0_1, "mpcmdrun.exe", 1, true) or string.find(l_0_1, "msseces.exe", 1, true) or string.find(l_0_1, "msmpeng.exe", 1, true) or string.find(l_0_1, "msascui.exe", 1, true) or string.find(l_0_1, "mpuxsrv.exe", 1, true)) then
+        local l_0_2 = sigattr_tail[l_0_0].utf8p2
+        if 1 <= string.len(l_0_2) then
           TrackPidAndTechniqueBM("BM", "T1562.001", "mptamper_av")
           return mp.INFECTED
         end
@@ -19,4 +19,3 @@ for l_0_3 = 1, mp.SIGATTR_LOG_SZ do
   end
 end
 return mp.CLEAN
-

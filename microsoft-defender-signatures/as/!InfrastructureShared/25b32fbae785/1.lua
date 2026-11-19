@@ -1,10 +1,10 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\25b32fbae785\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 25b32fbae785
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-local l_0_1 = (MpCommon.QueryPersistContext)(l_0_0, "ExecutedPENoCert")
+local l_0_0 = string.lower(MpCommon.PathToWin32Path(bm.get_imagepath()))
+local l_0_1 = MpCommon.QueryPersistContext(l_0_0, "ExecutedPENoCert")
 if not l_0_1 then
   return mp.CLEAN
 end
@@ -16,4 +16,3 @@ if IsDetectionThresholdMet("BM") and (IsTacticObservedForPid("BM", "processinjec
   return mp.INFECTED
 end
 return mp.CLEAN
-

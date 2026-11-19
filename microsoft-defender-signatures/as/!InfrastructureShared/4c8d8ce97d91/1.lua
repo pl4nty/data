@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: 4c8d8ce97d91
+-- Type: 21
+
+if mp.HSTR_WEIGHT >= 3 then
+  mp.set_mpattribute("PUA:Block:FkCodec.A")
+  return mp.INFECTED
+end
+return mp.LOWFI

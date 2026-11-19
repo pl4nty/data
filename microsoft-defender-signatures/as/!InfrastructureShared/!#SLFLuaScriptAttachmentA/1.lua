@@ -1,26 +1,25 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFLuaScriptAttachmentA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:Lua:ScriptAttachment.A
+-- Type: 13
+-- Includes: TechniqueTracker
+-- MpAttributes: CloudBlockLevelGT3
 
--- params : ...
--- function num : 0
-if (mp.get_mpattribute)("Lua:FileInOutlookCache.A") or (mp.get_mpattribute)("Lua:FileInWindowsMailApp.A") then
-  local l_0_0 = (string.lower)((mp.get_contextdata)(mp.CONTEXT_DATA_FILENAME))
-  local l_0_1 = {}
-  l_0_1.vbs = true
-  l_0_1.ps1 = true
-  l_0_1[".js"] = true
-  l_0_1.jse = true
-  l_0_1.vbe = true
-  local l_0_2 = (string.sub)(l_0_0, -3)
+if mp.get_mpattribute("Lua:FileInOutlookCache.A") or mp.get_mpattribute("Lua:FileInWindowsMailApp.A") then
+  local l_0_0 = string.lower(mp.get_contextdata(mp.CONTEXT_DATA_FILENAME))
+  local l_0_1 = {
+    vbs = true,
+    ps1 = true,
+    [".js"] = true,
+    jse = true,
+    vbe = true
+  }
+  local l_0_2 = string.sub(l_0_0, -3)
   if l_0_2 ~= nil and l_0_1[l_0_2] == true then
-    local l_0_3 = (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_ID)
+    local l_0_3 = mp.get_contextdata(mp.CONTEXT_DATA_PROCESS_ID)
     if l_0_3 then
       TrackPidAndTechnique(l_0_3, "T1566.001 ", "phishingattachment")
     end
     return mp.INFECTED
   end
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

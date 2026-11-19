@@ -1,15 +1,15 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2c2b36871661c\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 2c2b36871661c
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper, TechniqueTracker
 
--- params : ...
--- function num : 0
 local l_0_0 = mp.SIGATTR_LOG_SZ
-local l_0_1 = (bm.get_sig_count)()
+local l_0_1 = bm.get_sig_count()
 local l_0_2 = 0
 local l_0_3 = 0
 local l_0_4 = {}
 local l_0_5 = {}
-local l_0_6 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
+local l_0_6 = string.lower(MpCommon.PathToWin32Path(bm.get_imagepath()))
 if not l_0_6 then
   return mp.CLEAN
 end
@@ -20,35 +20,19 @@ end
 if not IsProcNameInParentProcessTree("BM", "ai_exec_server.exe") and not IsProcNameInParentProcessTree("BM", "airuncommandasuser.exe") then
   return mp.CLEAN
 end
-for l_0_11 = 1, l_0_0 do
-  if (sigattr_tail[l_0_11]).utf8p1 and ((sigattr_tail[l_0_11]).utf8p1):byte(1) ~= 37 then
-    if (sigattr_tail[l_0_11]).attribute == 16387 then
-      local l_0_12 = ((sigattr_tail[l_0_11]).utf8p1):lower()
-      if l_0_4[l_0_12] == nil then
-        l_0_4[l_0_12] = l_0_11
+for l_0_8 = 1, l_0_0 do
+  if sigattr_tail[l_0_8].utf8p1 and sigattr_tail[l_0_8].utf8p1:byte(1) ~= 37 then
+    if sigattr_tail[l_0_8].attribute == 16387 then
+      local l_0_9 = sigattr_tail[l_0_8].utf8p1:lower()
+      if l_0_4[l_0_9] == nil then
+        l_0_4[l_0_9] = l_0_8
         l_0_2 = l_0_2 + 1
       end
-    else
-      do
-        do
-          if (sigattr_tail[l_0_11]).attribute == 16385 then
-            local l_0_13 = ((sigattr_tail[l_0_11]).utf8p1):lower()
-            if l_0_5[l_0_13] == nil then
-              l_0_5[l_0_13] = l_0_11
-              l_0_3 = l_0_3 + 1
-            end
-          end
-          -- DECOMPILER ERROR at PC96: LeaveBlock: unexpected jumping out DO_STMT
-
-          -- DECOMPILER ERROR at PC96: LeaveBlock: unexpected jumping out IF_ELSE_STMT
-
-          -- DECOMPILER ERROR at PC96: LeaveBlock: unexpected jumping out IF_STMT
-
-          -- DECOMPILER ERROR at PC96: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-          -- DECOMPILER ERROR at PC96: LeaveBlock: unexpected jumping out IF_STMT
-
-        end
+    elseif sigattr_tail[l_0_8].attribute == 16385 then
+      local l_0_10 = sigattr_tail[l_0_8].utf8p1:lower()
+      if l_0_5[l_0_10] == nil then
+        l_0_5[l_0_10] = l_0_8
+        l_0_3 = l_0_3 + 1
       end
     end
   end
@@ -56,91 +40,69 @@ end
 if l_0_2 < 5 or l_0_3 < 5 then
   return mp.CLEAN
 end
-local l_0_14 = 0
-local l_0_15 = {}
-local l_0_16 = {}
-for l_0_20 = 1, l_0_0 do
-  if (sigattr_tail[l_0_20]).attribute == 16384 and (sigattr_tail[l_0_20]).utf8p1 and ((sigattr_tail[l_0_20]).utf8p1):byte(1) ~= 37 then
-    local l_0_21 = ((sigattr_tail[l_0_20]).utf8p1):lower()
-    if l_0_16[l_0_21] == nil then
-      l_0_16[l_0_21] = l_0_20
-      local l_0_22 = l_0_21:match("[^\\]+$")
-      local l_0_23, l_0_24 = l_0_22:gsub("%.", ".")
-      if l_0_24 >= 2 then
-        local l_0_25 = l_0_22:match("%.[^%.]+$")
-        if l_0_15[l_0_25] ~= nil then
-          (table.insert)(l_0_15[l_0_25], l_0_20)
+local l_0_11 = 0
+local l_0_12 = {}
+local l_0_13 = {}
+for l_0_14 = 1, l_0_0 do
+  if sigattr_tail[l_0_14].attribute == 16384 and sigattr_tail[l_0_14].utf8p1 and sigattr_tail[l_0_14].utf8p1:byte(1) ~= 37 then
+    local l_0_15 = sigattr_tail[l_0_14].utf8p1:lower()
+    if l_0_13[l_0_15] == nil then
+      l_0_13[l_0_15] = l_0_14
+      local l_0_16 = l_0_15:match("[^\\]+$")
+      local l_0_17, l_0_18 = l_0_16:gsub("%.", ".")
+      if 2 <= l_0_18 then
+        local l_0_19 = l_0_16:match("%.[^%.]+$")
+        if l_0_12[l_0_19] ~= nil then
+          table.insert(l_0_12[l_0_19], l_0_14)
         else
-          local l_0_26 = {}
-          -- DECOMPILER ERROR at PC161: No list found for R20 , SetList fails
-
+          l_0_12[l_0_19] = {l_0_14}
         end
+        l_0_11 = l_0_11 + 1
       end
     end
   end
 end
-if l_0_14 < 5 then
+if l_0_11 < 5 then
   return mp.CLEAN
 end
-local l_0_27 = {}
-for l_0_31,l_0_32 in pairs(l_0_15) do
-  if #l_0_15[l_0_31] >= 4 then
-    local l_0_33 = (string.len)(l_0_31)
-    for l_0_37,l_0_38 in pairs(l_0_32) do
-      local l_0_39 = ((sigattr_tail[l_0_38]).utf8p1):lower()
-      if l_0_4[l_0_39] ~= nil then
-        local l_0_40 = (string.len)(l_0_39)
-        if l_0_33 < l_0_40 then
-          local l_0_41 = (string.sub)(l_0_39, 1, l_0_40 - l_0_33)
-          if l_0_5[l_0_41] then
-            (table.insert)(l_0_27, l_0_41)
-            if #l_0_27 >= 4 then
-              local l_0_42 = {}
-              for l_0_46,l_0_47 in pairs(l_0_27) do
-                (table.insert)(l_0_42, l_0_47)
+local l_0_20 = {}
+for l_0_21, l_0_22 in pairs(l_0_12) do
+  if 4 <= #l_0_12[l_0_21] then
+    local l_0_23 = string.len(l_0_21)
+    for l_0_24, l_0_25 in pairs(l_0_22) do
+      local l_0_26 = sigattr_tail[l_0_25].utf8p1:lower()
+      if l_0_4[l_0_26] ~= nil then
+        local l_0_27 = string.len(l_0_26)
+        if l_0_23 < l_0_27 then
+          local l_0_28 = string.sub(l_0_26, 1, l_0_27 - l_0_23)
+          if l_0_5[l_0_28] then
+            table.insert(l_0_20, l_0_28)
+            if 4 <= #l_0_20 then
+              local l_0_29 = {}
+              for l_0_30, l_0_31 in pairs(l_0_20) do
+                table.insert(l_0_29, l_0_31)
               end
-              local l_0_48 = (bm.get_imagepath)()
-              -- DECOMPILER ERROR at PC242: Overwrote pending register: R27 in 'AssignReg'
-
-              if isnull(l_0_48) then
-                local l_0_49 = (bm.get_current_process_startup_info)()
-                -- DECOMPILER ERROR at PC253: Overwrote pending register: R28 in 'AssignReg'
-
-                if isnull(l_0_49) then
-                  local l_0_50 = {}
-                  do
-                    local l_0_51 = safeJsonSerialize(l_0_50)
-                    ;
-                    (bm.add_related_string)("genq_ransom_meta", l_0_51, bm.RelatedStringBMReport)
-                    reportGenericRansomware(l_0_51, true)
-                    do return mp.INFECTED end
-                    -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_STMT
-
-                    -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_STMT
-
-                    -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_STMT
-
-                    -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_STMT
-
-                    -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_STMT
-
-                    -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_THEN_STMT
-
-                    -- DECOMPILER ERROR at PC276: LeaveBlock: unexpected jumping out IF_STMT
-
-                  end
-                end
+              local l_0_32 = bm.get_imagepath()
+              if isnull(l_0_32) then
+                l_0_32 = "NA"
+              else
+                l_0_32 = l_0_32:lower()
               end
+              local l_0_33 = bm.get_current_process_startup_info()
+              if isnull(l_0_33) then
+                l_0_33 = "NA"
+              else
+                l_0_33 = l_0_33.ppid
+              end
+              local l_0_34 = {}
+              l_0_34.file_list = l_0_29
+              l_0_34.sig_count = l_0_1
+              l_0_34.proc_info = l_0_33
+              l_0_34.cur_image_path = l_0_32
+              local l_0_35 = safeJsonSerialize(l_0_34)
+              bm.add_related_string("genq_ransom_meta", l_0_35, bm.RelatedStringBMReport)
+              reportGenericRansomware(l_0_35, true)
+              return mp.INFECTED
             end
           end
         end
@@ -148,8 +110,4 @@ for l_0_31,l_0_32 in pairs(l_0_15) do
     end
   end
 end
-do return mp.CLEAN end
--- DECOMPILER ERROR at PC283: Confused about usage of register R12 for local variables in 'ReleaseLocals'
-
--- WARNING: undefined locals caused missing assignments!
-
+return mp.CLEAN

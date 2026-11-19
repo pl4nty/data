@@ -1,28 +1,64 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\48b34b5faf03\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 48b34b5faf03
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-  local l_0_0 = nil
-  l_0_0 = (string.lower)(l_0_0)
-  local l_0_1 = {}
-  -- DECOMPILER ERROR at PC67: No list found for R1 , SetList fails
-
-  -- DECOMPILER ERROR at PC68: Overwrote pending register: R2 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC69: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC70: Overwrote pending register: R4 in 'AssignReg'
-
-  if ("system.directoryservices.activedirectory.domain")("hidden -encodedcommand", "export-registry") then
+local l_0_0
+if this_sigattrlog[2].matched and this_sigattrlog[2].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[2].utf8p2
+  l_0_0 = string.lower(l_0_0)
+  local l_0_1 = {
+    "system.directoryservices.activedirectory.domain",
+    "hidden -encodedcommand",
+    "export-registry",
+    "compress-archive",
+    "wget -uri",
+    "curl -uri",
+    "curl -sko",
+    "ipconfig /all",
+    "& start /b",
+    "start msiexec /q /i",
+    "whoami",
+    "net user",
+    "net group",
+    "localgroup administrators",
+    "dsquery",
+    "samaccountname=",
+    "query session",
+    "adscredentials",
+    "o365accountconfiguration",
+    "-dumpmode",
+    "-ssh",
+    "usoprivate",
+    "usoshared",
+    "system.net.webclient",
+    "invoke-expression",
+    "downloadstring",
+    "downloadfile",
+    "frombase64string",
+    "system.io.compression",
+    "system.io.memorystream",
+    "iex ",
+    "iex(",
+    "|iex",
+    "invoke-webrequest",
+    "iwr -uri",
+    "set-mppreference",
+    "invoke-webRequest",
+    "add-mppreference",
+    "certutil",
+    "bitsadmin",
+    "mshta",
+    " -ssh ",
+    "putty.exe",
+    "ftp.exe",
+    "e:jscript",
+    "e:vbscript",
+    "start msiexec /q /i",
+    "nslookup"
+  }
+  if contains(l_0_0, l_0_1) then
     return mp.INFECTED
   end
 end
-do
-  do return mp.CLEAN end
-  -- WARNING: undefined locals caused missing assignments!
-end
-
+return mp.CLEAN

@@ -106,6 +106,11 @@
             Instance of the Auth provider for the running cmdlet.
             </summary>
         </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.AdminCmdlet`2.cancelKeyPressHandler">
+            <summary>
+            Stored delegate for Console.CancelKeyPress to allow unsubscription on cleanup.
+            </summary>
+        </member>
         <member name="F:Microsoft.Exchange.Management.RestApiClient.AdminCmdlet`2.authResult">
             <summary>
             The cached authentication result from which cmdlets can retrieve auth token.
@@ -231,6 +236,21 @@
         <member name="M:Microsoft.Exchange.Management.RestApiClient.AdminCmdlet`2.InternalEndProcessing">
             <summary>
             The internal end processing override for cmdlets.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.AdminCmdlet`2.StopProcessing">
+            <summary>
+            StopProcessing override. Called by PowerShell on early termination (e.g. Ctrl+C).
+            EndProcessing is not called in this path, so cleanup must happen here as well.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.AdminCmdlet`2.CleanupResources">
+            <summary>
+            Unsubscribes the CancelKeyPress handler and releases the OData Container reference.
+            The Container (an OData DataServiceContext) is not IDisposable, so nulling the
+            reference is what allows the GC to reclaim it and its DI object graph once the
+            static CancelKeyPress root is removed.
+            Called from both EndProcessing and StopProcessing to cover all exit paths.
             </summary>
         </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.AdminCmdlet`2.ConstructAndThrowExceptionWithMeaningfullMessage(System.Exception)">
@@ -1074,6 +1094,23 @@
             <param name="formatType">Parameter must be of type Quantifier</param>
             <returns>A Quantifier instance</returns>
         </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomList">
+            <summary>
+            Provides overriden functionality of ToString() of existing List class
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomList.#ctor(System.Collections.Generic.List{System.Object})">
+            <summary>
+             Constructor Definition
+            </summary>
+            <param name="list">Input list object</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomList.ToString">
+            <summary>
+             This overridden method prints the list as comma separated values
+            </summary>
+            <returns> Return a stringified list </returns>
+        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.CmdletIOPipeline">
             <summary>
             This class takes care of logging in PowerShell Console
@@ -1204,23 +1241,6 @@
             The MobileDeviceIdentity parameter set.
             </summary>
         </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomList">
-            <summary>
-            Provides overriden functionality of ToString() of existing List class
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomList.#ctor(System.Collections.Generic.List{System.Object})">
-            <summary>
-             Constructor Definition
-            </summary>
-            <param name="list">Input list object</param>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomList.ToString">
-            <summary>
-             This overridden method prints the list as comma separated values
-            </summary>
-            <returns> Return a stringified list </returns>
-        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.CustomNudgeAssignment">
             <summary>
             The custom nudge assignment data type
@@ -1285,6 +1305,30 @@
         <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.GetCustomNudgeAssignment.InternalProcessRecord">
             <inheritdoc />
         </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.RemoveCustomNudgeAssignment">
+            <summary>
+            Implements Remove-CustomNudgeAssignment cmdlet
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.RemoveCustomNudgeAssignment.AssigneeId">
+            <summary>
+            The user's identity
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.RemoveCustomNudgeAssignment.NudgeName">
+            <summary>
+            The name of the nudge
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.RemoveCustomNudgeAssignment.CmdletName">
+            <inheritdoc />
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.RemoveCustomNudgeAssignment.UrlStem">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.RemoveCustomNudgeAssignment.InternalProcessRecord">
+            <inheritdoc />
+        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.NewCustomNudgeAssignment">
             <summary>
             Implements New-CustomNudgeAssignment cmdlet
@@ -1317,30 +1361,6 @@
             <inheritdoc />
         </member>
         <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.NewCustomNudgeAssignment.InternalProcessRecord">
-            <inheritdoc />
-        </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.RemoveCustomNudgeAssignment">
-            <summary>
-            Implements Remove-CustomNudgeAssignment cmdlet
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.RemoveCustomNudgeAssignment.AssigneeId">
-            <summary>
-            The user's identity
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.RemoveCustomNudgeAssignment.NudgeName">
-            <summary>
-            The name of the nudge
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.RemoveCustomNudgeAssignment.CmdletName">
-            <inheritdoc />
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.RemoveCustomNudgeAssignment.UrlStem">
-            <inheritdoc />
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.RemoveCustomNudgeAssignment.InternalProcessRecord">
             <inheritdoc />
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeAssignments.SetCustomNudgeAssignment">
@@ -1435,6 +1455,71 @@
             <param name="assignment">The assignment</param>
             <param name="startTime">The start time</param>
             <param name="endTime">The end time</param>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.CustomNudgeSettings">
+            <summary>
+            Custom nudge settings data type
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.CustomNudgeSettings.Enabled">
+            <summary>
+            Whether or not admin has enabled custom nudges for their tenant.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.CustomNudgeSettings.Title">
+            <summary>
+            Displayed title of section.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.GetCustomNudgeSettings">
+            <summary>
+            Gets the custom nudge settings for a tenant
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.GetCustomNudgeSettings.CmdletName">
+            <inheritdoc />
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.GetCustomNudgeSettings.UrlStem">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.GetCustomNudgeSettings.InternalBeginProcessing">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.GetCustomNudgeSettings.InternalEndProcessing">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.GetCustomNudgeSettings.InternalProcessRecord">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings">
+            <summary>
+            Patches the custom nudge settings
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.Enabled">
+            <summary>
+            Whether custom nudge feature is enabled for tenant
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.Title">
+            <summary>
+            Title of custom nudge section
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.CmdletName">
+            <inheritdoc />
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.UrlStem">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.InternalBeginProcessing">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.InternalEndProcessing">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.InternalProcessRecord">
+            <inheritdoc />
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudges.CustomNudge">
             <summary>
@@ -1582,71 +1667,6 @@
         <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudges.SetCustomNudge.InternalProcessRecord">
             <inheritdoc />
         </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.CustomNudgeSettings">
-            <summary>
-            Custom nudge settings data type
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.CustomNudgeSettings.Enabled">
-            <summary>
-            Whether or not admin has enabled custom nudges for their tenant.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.CustomNudgeSettings.Title">
-            <summary>
-            Displayed title of section.
-            </summary>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.GetCustomNudgeSettings">
-            <summary>
-            Gets the custom nudge settings for a tenant
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.GetCustomNudgeSettings.CmdletName">
-            <inheritdoc />
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.GetCustomNudgeSettings.UrlStem">
-            <inheritdoc />
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.GetCustomNudgeSettings.InternalBeginProcessing">
-            <inheritdoc />
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.GetCustomNudgeSettings.InternalEndProcessing">
-            <inheritdoc />
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.GetCustomNudgeSettings.InternalProcessRecord">
-            <inheritdoc />
-        </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings">
-            <summary>
-            Patches the custom nudge settings
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.Enabled">
-            <summary>
-            Whether custom nudge feature is enabled for tenant
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.Title">
-            <summary>
-            Title of custom nudge section
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.CmdletName">
-            <inheritdoc />
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.UrlStem">
-            <inheritdoc />
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.InternalBeginProcessing">
-            <inheritdoc />
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.InternalEndProcessing">
-            <inheritdoc />
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.CustomNudgesFeature.CustomNudgeSettings.SetCustomNudgeSettings.InternalProcessRecord">
-            <inheritdoc />
-        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Delegation.AddDelegatedRoleResult">
             <summary>
             Represents the possible result from the add delegated role operation.
@@ -1752,50 +1772,6 @@
         <member name="M:Microsoft.Exchange.Management.RestApiClient.Delegation.Cmdlets.RemoveVivaOrgInsightsDelegatedRole.InternalProcessRecord">
             <inheritdoc />
         </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2">
-            <summary>
-            The base class for client side leader delegation cmdlets implemented WeveAdminCmdlet
-            </summary>
-            <typeparam name="TDomainObject">The api type.</typeparam>
-            <typeparam name="TCmdlet">The cmdlet type.</typeparam>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.GroupManagerRole">
-            <summary>
-            The string const of group manager role.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.KnownErrorCodeToMessage">
-            <summary>
-            The dictionary to map message from the http status code.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.UrlStem">
-            <summary>
-            The delegated roles url stem. 
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.RemoveDelegatedRoleEndpoint">
-            <summary>
-            The delegated roles url stem for remove delegatedd role.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.GetDelegatedRoleEndpoint">
-            <summary>
-            The delegated roles url stem for get delegatedd role.
-            </summary>
-        </member>
-        <member name="F:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.ForbiddenErrorMessage">
-            <summary>
-            The message displayed for users when there is Forbidden error occurred.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.GetDelegatedRolesListDisplay(Microsoft.Exchange.Management.RestApiClient.Delegation.DelegatedRolesList)">
-            <summary>
-            The helper function to convert delegated role list to its display model.
-            </summary>
-            <param name="delegatedRolesList">The delegated role list.</param>
-            <returns>The delegated roles list for display.</returns>
-        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Delegation.AddDelegatesResponse">
             <summary>
             Represents the response of add-delegates-role request.
@@ -1841,16 +1817,6 @@
             Gets or sets expiry time for delegated role.
             </summary>
         </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.Delegation.DelegatedRolesList">
-            <summary>
-            Represents the list of delegated roles
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Delegation.DelegatedRolesList.DelegatedRoles">
-            <summary>
-            Gets or sets the list of delegated roles.
-            </summary>
-        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Delegation.DelegatedRoleDisplay">
             <summary>
             Represents the delegated role to display.
@@ -1866,6 +1832,16 @@
             Gets or sets the delegated from user object id.
             </summary>
         </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.Delegation.DelegatedRolesList">
+            <summary>
+            Represents the list of delegated roles
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Delegation.DelegatedRolesList.DelegatedRoles">
+            <summary>
+            Gets or sets the list of delegated roles.
+            </summary>
+        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Delegation.DelegatedRolesListDisplay">
             <summary>
             Represents the list of delegated roles to display
@@ -1875,6 +1851,50 @@
             <summary>
             Gets or sets the list of delegated roles.
             </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2">
+            <summary>
+            The base class for client side leader delegation cmdlets implemented WeveAdminCmdlet
+            </summary>
+            <typeparam name="TDomainObject">The api type.</typeparam>
+            <typeparam name="TCmdlet">The cmdlet type.</typeparam>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.GroupManagerRole">
+            <summary>
+            The string const of group manager role.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.KnownErrorCodeToMessage">
+            <summary>
+            The dictionary to map message from the http status code.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.UrlStem">
+            <summary>
+            The delegated roles url stem. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.RemoveDelegatedRoleEndpoint">
+            <summary>
+            The delegated roles url stem for remove delegatedd role.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.GetDelegatedRoleEndpoint">
+            <summary>
+            The delegated roles url stem for get delegatedd role.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.ForbiddenErrorMessage">
+            <summary>
+            The message displayed for users when there is Forbidden error occurred.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Delegation.LeaderDelegationCmdlet`2.GetDelegatedRolesListDisplay(Microsoft.Exchange.Management.RestApiClient.Delegation.DelegatedRolesList)">
+            <summary>
+            The helper function to convert delegated role list to its display model.
+            </summary>
+            <param name="delegatedRolesList">The delegated role list.</param>
+            <returns>The delegated roles list for display.</returns>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Delegation.Models.RemoveDelegatedRoleRequest">
             <summary>
@@ -1911,6 +1931,8 @@
                O365USGovGCCHigh : Office 365 U.S. Government GCC High
                O365USGovDoD : Office 365 U.S. Government Department of Defense
                O365China : Office 365 operated by 21 Vianet
+               O365Bleu : Office 365 Bleu
+               O365Delos : Office 365 Delos
             </summary>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.EnvironmentUtils">
@@ -4920,6 +4942,26 @@
             Gets or sets the autodiscover uri.
             </summary>
         </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.M365Insights.WeveErrorObject">
+            <summary>
+            The weve error object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.M365Insights.WeveErrorObject.Code">
+            <summary>
+            Gets or sets the code.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.M365Insights.WeveErrorObject.Message">
+            <summary>
+            Gets or sets the message.
+            </summary> 
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.M365Insights.WeveErrorObject.Target">
+            <summary>
+            Gets or sets the target.
+            </summary>
+        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.M365Insights.WeveAdminCmdlet`2">
             <summary>
             Base class for all cmdlets that make requests to Weve
@@ -5067,25 +5109,16 @@
             <param name="customErrorCodeToMessage">The custom message for expected error code.</param>
             <exception cref="T:Microsoft.Exchange.Management.RestApiClient.RestClientException">Throws the RestClientException with the error message from response.</exception>
         </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.M365Insights.WeveErrorObject">
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.Analytics.GetMyAnalyticsFeatureConfig">
             <summary>
-            The weve error object.
+            This class implements "Get-MyAnalyticsFeatureConfig" Cmdlet
             </summary>
         </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.M365Insights.WeveErrorObject.Code">
-            <summary>
-            Gets or sets the code.
-            </summary>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Analytics.GetMyAnalyticsFeatureConfig.CmdletName">
+            <inheritdoc />
         </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.M365Insights.WeveErrorObject.Message">
-            <summary>
-            Gets or sets the message.
-            </summary> 
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.M365Insights.WeveErrorObject.Target">
-            <summary>
-            Gets or sets the target.
-            </summary>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Analytics.GetMyAnalyticsFeatureConfig.InternalProcessRecord">
+            <inheritdoc/>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Analytics.GetDefaultTenantMyAnalyticsFeatureConfig">
             <summary>
@@ -5101,17 +5134,6 @@
             <summary>
             Internal process of the cmdlet
             </summary>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.Analytics.GetMyAnalyticsFeatureConfig">
-            <summary>
-            This class implements "Get-MyAnalyticsFeatureConfig" Cmdlet
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Analytics.GetMyAnalyticsFeatureConfig.CmdletName">
-            <inheritdoc />
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Analytics.GetMyAnalyticsFeatureConfig.InternalProcessRecord">
-            <inheritdoc/>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Analytics.MyAnalyticsDisplaySettings">
             <summary>
@@ -5335,6 +5357,53 @@
             Gets or sets the user id.
             </summary>
         </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig">
+            <summary>
+            This class implements "Set-MyAnalyticsFeatureConfig" Cmdlet
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.PrivacyMode">
+            <summary>
+            Gets or sets a value indicating whether the MyAnalytics is opted-in/out.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.Feature">
+            <summary>
+            Gets or sets a value indicating the MyAnalytics platform
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.IsEnabled">
+            <summary>
+            Gets or sets a value indicating whether the MyAnalytics platform is enabled.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.CmdletName">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.IsCommandValid">
+            <summary>
+            Function to validate the command
+            Valid command types and the rest are invalid
+            Set-MyAnalyticsFeatureConfig -Identity [string] -PrivacyMode [opt-in/opt-out]
+            Set-MyAnalyticsFeatureConfig -Identity [string] -Feature [dashboard/add-in/digest-email/all] -isEnabled [$true/$false]
+            Set-MyAnalyticsFeatureConfig -Identity [string] -PrivacyMode [opt-in/opt-out] -Feature [dashboard/add-in/digest-email/all] -isEnabled [$true/$false]
+            </summary>
+            <returns>Validity of the command</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.InternalProcessRecord">
+            <summary>
+            Processes record if command is valid, else throws exception
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.UpdateValuesBasedOnParameters(System.String,System.String,System.Nullable{System.Boolean})">
+            <summary>
+            Convert the user's input parameters to a JSON
+            </summary>
+            <param name="privacyMode">PrivacyMode param</param>
+            <param name="feature">Feature param</param>
+            <param name="isEnabled">isEnabled param</param>
+            <returns>Returns MyAnalyticsSettings</returns>
+        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetDefaultTenantMyAnalyticsFeatureConfig">
             <summary>
             This class implements "Set-DefaultTenantMyAnalyticsFeatureConfig" Cmdlet
@@ -5407,53 +5476,6 @@
             </summary>
             <param name="tenantSettings">tenantSettings param</param>
             <returns>Returns TenantMyAnalyticsSettings</returns>
-        </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig">
-            <summary>
-            This class implements "Set-MyAnalyticsFeatureConfig" Cmdlet
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.PrivacyMode">
-            <summary>
-            Gets or sets a value indicating whether the MyAnalytics is opted-in/out.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.Feature">
-            <summary>
-            Gets or sets a value indicating the MyAnalytics platform
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.IsEnabled">
-            <summary>
-            Gets or sets a value indicating whether the MyAnalytics platform is enabled.
-            </summary>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.CmdletName">
-            <inheritdoc />
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.IsCommandValid">
-            <summary>
-            Function to validate the command
-            Valid command types and the rest are invalid
-            Set-MyAnalyticsFeatureConfig -Identity [string] -PrivacyMode [opt-in/opt-out]
-            Set-MyAnalyticsFeatureConfig -Identity [string] -Feature [dashboard/add-in/digest-email/all] -isEnabled [$true/$false]
-            Set-MyAnalyticsFeatureConfig -Identity [string] -PrivacyMode [opt-in/opt-out] -Feature [dashboard/add-in/digest-email/all] -isEnabled [$true/$false]
-            </summary>
-            <returns>Validity of the command</returns>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.InternalProcessRecord">
-            <summary>
-            Processes record if command is valid, else throws exception
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.SetMyAnalyticsFeatureConfig.UpdateValuesBasedOnParameters(System.String,System.String,System.Nullable{System.Boolean})">
-            <summary>
-            Convert the user's input parameters to a JSON
-            </summary>
-            <param name="privacyMode">PrivacyMode param</param>
-            <param name="feature">Feature param</param>
-            <param name="isEnabled">isEnabled param</param>
-            <returns>Returns MyAnalyticsSettings</returns>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.MyAnalytics.TenantMyAnalyticsCmdlet`2">
             <summary>
@@ -7461,22 +7483,6 @@
             </summary>
             <returns>The object in a string format</returns>
         </member>
-        <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.MatchedMembersList">
-            <summary>
-            List of matched member class.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.MatchedMembersList.#ctor(System.Collections.Generic.IEnumerable{System.String})">
-            <summary>
-            Initializes a new instance of <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.MatchedMembersList"/> with the specified members list.
-            </summary>
-            <param name="members">members to match on</param>
-        </member>
-        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.MatchedMembersList.MemberIds">
-            <summary>
-            Contains the list of matched member ids.
-            </summary>
-        </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.Policy">
             <summary>
             Policy model class.
@@ -7697,6 +7703,22 @@
         <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.PolicyFilterResponse.Policies">
             <summary>
             List of policies.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.MatchedMembersList">
+            <summary>
+            List of matched member class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.MatchedMembersList.#ctor(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Initializes a new instance of <see cref="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.MatchedMembersList"/> with the specified members list.
+            </summary>
+            <param name="members">members to match on</param>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Models.MatchedMembersList.MemberIds">
+            <summary>
+            Contains the list of matched member ids.
             </summary>
         </member>
         <member name="T:Microsoft.Exchange.Management.RestApiClient.Viva.GFAC.Service.VivaGFACHttpProvider">

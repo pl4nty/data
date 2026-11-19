@@ -36,8 +36,8 @@
   },
   {
     "name": "angle",
-    "size": 6576416,
-    "file_count": 198
+    "size": 6493111,
+    "file_count": 192
   },
   {
     "name": "anonymous_tokens",
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 34364069,
-    "file_count": 4102
+    "size": 34389814,
+    "file_count": 4100
   },
   {
     "name": "boringssl",
@@ -86,7 +86,7 @@
   },
   {
     "name": "breakpad",
-    "size": 18022464,
+    "size": 18022465,
     "file_count": 1010
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 40577,
+    "size": 50740,
     "file_count": 5
   },
   {
@@ -156,8 +156,8 @@
   },
   {
     "name": "dawn",
-    "size": 163714417,
-    "file_count": 19366
+    "size": 128234442,
+    "file_count": 19356
   },
   {
     "name": "dbus",
@@ -176,7 +176,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 4880135,
+    "size": 4880373,
     "file_count": 51
   },
   {
@@ -211,8 +211,8 @@
   },
   {
     "name": "eigen3",
-    "size": 23618263,
-    "file_count": 2435
+    "size": 23976018,
+    "file_count": 2457
   },
   {
     "name": "entity_extraction",
@@ -246,7 +246,7 @@
   },
   {
     "name": "ffmpeg",
-    "size": 101838752,
+    "size": 101838814,
     "file_count": 11916
   },
   {
@@ -281,8 +281,8 @@
   },
   {
     "name": "glslang",
-    "size": 46454437,
-    "file_count": 3802
+    "size": 46950235,
+    "file_count": 3844
   },
   {
     "name": "googletest",
@@ -311,7 +311,7 @@
   },
   {
     "name": "harfbuzz",
-    "size": 325279,
+    "size": 325751,
     "file_count": 33
   },
   {
@@ -441,7 +441,7 @@
   },
   {
     "name": "liblouis",
-    "size": 11219423,
+    "size": 11219424,
     "file_count": 20
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "libusb",
-    "size": 837000,
+    "size": 837001,
     "file_count": 64
   },
   {
@@ -491,13 +491,13 @@
   },
   {
     "name": "litert",
-    "size": 116275,
+    "size": 116368,
     "file_count": 35
   },
   {
     "name": "llvm-build",
-    "size": 415777473,
-    "file_count": 382
+    "size": 418475684,
+    "file_count": 383
   },
   {
     "name": "logilab",
@@ -516,7 +516,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 303445,
+    "size": 303568,
     "file_count": 46
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19525099,
+    "size": 19497451,
     "file_count": 19
   },
   {
@@ -541,8 +541,8 @@
   },
   {
     "name": "mutter",
-    "size": 28209400,
-    "file_count": 2142
+    "size": 28281840,
+    "file_count": 2147
   },
   {
     "name": "nasm",
@@ -576,7 +576,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 87408,
+    "size": 87844,
     "file_count": 38
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "name": "openscreen",
-    "size": 1278681,
+    "size": 1278532,
     "file_count": 299
   },
   {
@@ -616,8 +616,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4908289,
-    "file_count": 646
+    "size": 4923261,
+    "file_count": 647
   },
   {
     "name": "perl",
@@ -666,7 +666,7 @@
   },
   {
     "name": "rapidhash",
-    "size": 13869,
+    "size": 14353,
     "file_count": 2
   },
   {
@@ -706,8 +706,8 @@
   },
   {
     "name": "skia",
-    "size": 3484608,
-    "file_count": 1220
+    "size": 3486577,
+    "file_count": 1223
   },
   {
     "name": "speech-dispatcher",
@@ -751,8 +751,8 @@
   },
   {
     "name": "tflite",
-    "size": 1970704,
-    "file_count": 558
+    "size": 1984761,
+    "file_count": 563
   },
   {
     "name": "tflite_support",
@@ -776,12 +776,12 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 36357706,
+    "size": 37353952,
     "file_count": 47
   },
   {
     "name": "undocked_copilot_mac",
-    "size": 1685,
+    "size": 1779,
     "file_count": 4
   },
   {
@@ -791,7 +791,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1535106,
+    "size": 1537513,
     "file_count": 23
   },
   {
@@ -801,12 +801,12 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2822951,
+    "size": 2825071,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7903118,
+    "size": 7908975,
     "file_count": 207
   },
   {
@@ -846,8 +846,8 @@
   },
   {
     "name": "win_build_output",
-    "size": 29105392,
-    "file_count": 608
+    "size": 29217848,
+    "file_count": 623
   },
   {
     "name": "wp.client",

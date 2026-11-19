@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: 11978a4e51383
+-- Type: 21
+
+if peattributes.no_security == true then
+  return mp.INFECTED
+end
+return mp.CLEAN

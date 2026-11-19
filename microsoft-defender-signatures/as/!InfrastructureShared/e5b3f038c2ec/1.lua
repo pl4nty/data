@@ -1,8 +1,8 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\e5b3f038c2ec\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: e5b3f038c2ec
+-- Type: 21
+-- Includes: TechniqueTracker, BMLuaLib
 
--- params : ...
--- function num : 0
 if is_excluded_parent_proc_auto() then
   return mp.CLEAN
 end
@@ -18,4 +18,3 @@ if IsDetectionThresholdMet(l_0_0) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

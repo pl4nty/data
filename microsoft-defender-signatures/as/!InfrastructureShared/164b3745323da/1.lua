@@ -1,22 +1,17 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\164b3745323da\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 164b3745323da
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
 if isTamperProtectionOn() then
-  local l_0_0, l_0_1 = (bm.get_process_relationships)()
+  local l_0_0, l_0_1 = bm.get_process_relationships()
   if l_0_0 then
-    for l_0_5,l_0_6 in ipairs(l_0_0) do
-      if l_0_6.ppid then
-        (bm.add_related_process)(l_0_6.ppid)
+    for l_0_2, l_0_3 in ipairs(l_0_0) do
+      if l_0_3.ppid then
+        bm.add_related_process(l_0_3.ppid)
       end
     end
   end
-  do
-    do
-      do return mp.INFECTED end
-      return mp.CLEAN
-    end
-  end
+  return mp.INFECTED
 end
-
+return mp.CLEAN

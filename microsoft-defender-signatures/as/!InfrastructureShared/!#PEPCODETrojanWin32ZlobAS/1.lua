@@ -1,0 +1,47 @@
+-- Threat: !InfrastructureShared
+-- Name: !#PEPCODE:Trojan:Win32/Zlob.AS
+-- Type: 8
+
+if peattributes.isexe ~= true then
+  return mp.CLEAN
+end
+if peattributes.hasstandardentry == true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 4 then
+  return mp.CLEAN
+end
+if pehdr.TimeDateStamp ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfHeaders ~= 1024 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfCode < 1536 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfCode > 2048 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfInitializedData ~= 4608 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfUninitializedData ~= 0 then
+  return mp.CLEAN
+end
+if pehdr.BaseOfCode ~= 4096 then
+  return mp.CLEAN
+end
+if pehdr.FileAlignment ~= 512 then
+  return mp.CLEAN
+end
+if pehdr.SizeOfHeaders ~= 1024 then
+  return mp.CLEAN
+end
+if pehdr.Subsystem ~= 2 then
+  return mp.CLEAN
+end
+if pehdr.CheckSum ~= 94440 then
+  return mp.CLEAN
+end
+return mp.INFECTED

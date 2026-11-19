@@ -22,8 +22,8 @@
   )
 
   # Version number of this module.
-  #FullModuleVersion = '1.9.0.1648'
-  ModuleVersion = '1.9.0'
+  #FullModuleVersion = '1.9.1.1687'
+  ModuleVersion = '1.9.1'
 
   # ID used to uniquely identify this module
   GUID = '9c46d615-4396-4e75-9eea-908625f0484e'

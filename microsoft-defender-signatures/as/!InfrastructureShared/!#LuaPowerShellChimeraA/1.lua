@@ -1,14 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaPowerShellChimeraA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:PowerShell/Chimera.A
+-- Type: 13
+-- MpAttributes: (RPF:TopLevelFile | MpIsAMSIScan) & (Lua:PS1Ext | MpIsPowerShellAMSIScan) & !SCRIPT:SignedPSscript.A
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 < 4096 or l_0_0 > 7340032 then
+local l_0_0 = mp.getfilesize()
+if l_0_0 < 4096 or 7340032 < l_0_0 then
   return mp.CLEAN
 end
-local l_0_1 = (string.gsub)(tostring(headerpage), " ", "")
-local l_0_2 = (string.match)(l_0_1, "^#[A-Za-z%.]+")
+local l_0_1 = string.gsub(tostring(headerpage), " ", "")
+local l_0_2 = string.match(l_0_1, "^#[A-Za-z%.]+")
 if l_0_2 == nil then
   return mp.CLEAN
 end
@@ -20,66 +20,63 @@ local l_0_4 = 0
 local l_0_5 = 0
 local l_0_6 = 0
 local l_0_7 = 0
-local l_0_8 = nil
-for l_0_12 in l_0_1:gmatch("([^\n]*)\n?") do
-  l_0_8 = (string.match)(l_0_12, "^#[%a%d%.]+$")
+local l_0_8
+for l_0_9 in l_0_1:gmatch([[
+([^
+]*)
+?]]) do
+  l_0_8 = string.match(l_0_9, "^#[%a%d%.]+$")
   if l_0_8 then
     if l_0_8:len() > 100 then
       l_0_4 = l_0_4 + 1
-    else
-      if l_0_8:len() > 40 then
-        l_0_3 = l_0_3 + 1
-      end
+    elseif l_0_8:len() > 40 then
+      l_0_3 = l_0_3 + 1
     end
   else
-    l_0_8 = (string.match)(l_0_12, "^%$[%a%d]+=\"[%a%d`%.]+\"$")
+    l_0_8 = string.match(l_0_9, "^%$[%a%d]+=\"[%a%d`%.]+\"$")
     if l_0_8 and l_0_8:len() >= 18 then
       if l_0_8:len() > 80 then
         l_0_6 = l_0_6 + 1
       else
         l_0_5 = l_0_5 + 1
       end
-    else
-      if (string.len)(l_0_12) > 3 then
-        l_0_8 = (string.match)(l_0_12, "^%$%a+")
-        if not l_0_8 or l_0_8:len() < 20 then
-          l_0_7 = l_0_7 + 1
-          if l_0_7 >= 10 then
-            return mp.CLEAN
-          end
+    elseif string.len(l_0_9) > 3 then
+      l_0_8 = string.match(l_0_9, "^%$%a+")
+      if not l_0_8 or l_0_8:len() < 20 then
+        l_0_7 = l_0_7 + 1
+        if 10 <= l_0_7 then
+          return mp.CLEAN
         end
       end
     end
   end
 end
-local l_0_13 = false
--- DECOMPILER ERROR at PC126: Unhandled construct in 'MakeBoolean' P3
-
-if (l_0_4 >= 2 and l_0_6 >= 2) or l_0_4 < 2 or l_0_6 < 1 or l_0_3 >= 10 and l_0_5 >= 5 then
-  l_0_13 = true
+local l_0_10 = false
+if 2 <= l_0_4 and 2 <= l_0_6 or 2 <= l_0_4 and 1 <= l_0_6 and l_0_7 <= 1 or 10 <= l_0_3 and 5 <= l_0_5 then
+  l_0_10 = true
 end
-if not l_0_13 then
+if not l_0_10 then
   return mp.CLEAN
 end
-local l_0_14 = (string.gsub)(tostring(footerpage), " ", "")
-local l_0_15 = false
-local l_0_16 = nil
-for l_0_20 in l_0_14:gmatch("([^\n]*)\n?") do
-  l_0_16 = (string.match)(l_0_20, "^#[%a%d%.]+$")
-  if l_0_16 and (string.len)(l_0_16) > 40 then
-    l_0_15 = true
+local l_0_11 = string.gsub(tostring(footerpage), " ", "")
+local l_0_12 = false
+local l_0_13
+for l_0_14 in l_0_11:gmatch([[
+([^
+]*)
+?]]) do
+  l_0_13 = string.match(l_0_14, "^#[%a%d%.]+$")
+  if l_0_13 and string.len(l_0_13) > 40 then
+    l_0_12 = true
     break
   end
-  l_0_8 = (string.match)(l_0_20, "[%w%+/]+")
-  if l_0_8 and (string.len)(l_0_8) > 18 then
-    l_0_15 = true
+  l_0_8 = string.match(l_0_14, "[%w%+/]+")
+  if l_0_8 and string.len(l_0_8) > 18 then
+    l_0_12 = true
     break
   end
 end
-do
-  if l_0_15 then
-    return mp.INFECTED
-  end
-  return mp.CLEAN
+if l_0_12 then
+  return mp.INFECTED
 end
-
+return mp.CLEAN

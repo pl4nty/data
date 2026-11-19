@@ -1,27 +1,28 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFBackdoorWin32SuspSPAccess\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Backdoor:Win32/SuspSPAccess
+-- Type: 13
+-- Includes: LuaFuncHelper
+-- MpAttributes: RPF:TopLevelFile & MpIsSharePointAmsiScan & SCPT:SuspSharepointAccess.A
 
--- params : ...
--- function num : 0
-local l_0_1 = nil
-local l_0_0 = tostring(headerpage)
+local l_0_0, l_0_1
+l_0_0 = tostring(headerpage)
 if l_0_0 == nil then
   return mp.CLEAN
 end
-local l_0_2 = nil
-if not l_0_0:match("([^:]+:)") then
-  return mp.CLEAN
-end
-if #l_0_0:match("([^:]+:)") >= #l_0_0 then
-  return mp.CLEAN
-end
-l_0_2 = ((string.lower)(l_0_0:match("([^:]+:)"))):match("post(/.*.aspx)")
+local l_0_2 = l_0_0:match("([^:]+:)")
 if not l_0_2 then
   return mp.CLEAN
 end
-local l_0_3 = nil
-local l_0_4 = "SuspSPAccess"
-local l_0_5 = 3600
-AppendToRollingQueue(l_0_4, l_0_2, 1, l_0_5, 10)
+if not (#l_0_2 < #l_0_0) then
+  return mp.CLEAN
+end
+l_0_2 = string.lower(l_0_2)
+l_0_1 = l_0_2:match("post(/.*.aspx)")
+if not l_0_1 then
+  return mp.CLEAN
+end
+local l_0_3 = "SuspSPAccess"
+local l_0_4 = 3600
+local l_0_5 = 10
+AppendToRollingQueue(l_0_3, l_0_1, 1, l_0_4, l_0_5)
 return mp.INFECTED
-

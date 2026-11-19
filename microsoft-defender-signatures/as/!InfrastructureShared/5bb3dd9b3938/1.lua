@@ -1,20 +1,19 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\5bb3dd9b3938\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 5bb3dd9b3938
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_0 = (string.lower)((MpCommon.PathToWin32Path)((bm.get_imagepath)()))
-local l_0_1 = {}
--- DECOMPILER ERROR at PC12: No list found for R1 , SetList fails
-
-local l_0_2 = {}
--- DECOMPILER ERROR at PC16: Overwrote pending register: R3 in 'AssignReg'
-
-if ("SCRIPTENG")(l_0_1, l_0_2) then
+local l_0_0 = string.lower(MpCommon.PathToWin32Path(bm.get_imagepath()))
+local l_0_1 = {"OFFICE", "SCRIPTENG"}
+local l_0_2 = {min = 1, max = 5}
+if QueryProcContext(l_0_1, l_0_2) then
   return mp.INFECTED
 end
-if l_0_0 and (IsKeyInRollingQueue("SuspExeFileDroppedViaSMB", l_0_0, true) or (MpCommon.QueryPersistContext)(l_0_0, "NewPECreatedNoCert")) then
-  return mp.INFECTED
+if l_0_0 then
+  local l_0_3 = IsKeyInRollingQueue("SuspExeFileDroppedViaSMB", l_0_0, true)
+  local l_0_4 = MpCommon.QueryPersistContext(l_0_0, "NewPECreatedNoCert")
+  if l_0_3 or l_0_4 then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
-

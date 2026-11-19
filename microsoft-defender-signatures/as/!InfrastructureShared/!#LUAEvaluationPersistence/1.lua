@@ -1,0 +1,10 @@
+-- Threat: !InfrastructureShared
+-- Name: !#LUA:EvaluationPersistence
+-- Type: 28
+
+local l_0_0, l_0_1 = mp.getfilename(mp.bitor(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_PATH), mp.FILEPATH_QUERY_LOWERCASE))
+if l_0_0:sub(2, 9) ~= "window" and l_0_0:sub(2, 9) ~= "progra" then
+  local l_0_2 = "Evaluation:" .. l_0_0
+  MpCommon.AppendPersistContextNoPath(l_0_2, l_0_1, 6000)
+end
+return mp.CLEAN

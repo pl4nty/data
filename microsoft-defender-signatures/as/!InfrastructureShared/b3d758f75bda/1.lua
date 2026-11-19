@@ -1,10 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\b3d758f75bda\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: b3d758f75bda
+-- Type: 21
+-- Includes: BasScenarioSpecificInfra
 
--- params : ...
--- function num : 0
 if IsBasToolProcessForPpid("CMDHSTR", "Picus") or IsBasToolProcessFoundInParents("CMDHSTR", "Picus", 4) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

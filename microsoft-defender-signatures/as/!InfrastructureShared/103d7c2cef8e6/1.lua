@@ -1,0 +1,38 @@
+-- Threat: !InfrastructureShared
+-- Name: 103d7c2cef8e6
+-- Type: 21
+
+local l_0_0 = mp.GetScannedPPID()
+if l_0_0 == "" or l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = mp.GetProcessCommandLine(l_0_0)
+if l_0_1 == "" or l_0_1 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = string.match(string.lower(l_0_1), "^(.-%.exe)")
+if l_0_2 == "" or l_0_2 == nil then
+  return mp.CLEAN
+end
+local l_0_3 = string.match(l_0_2, "([^\\]+)$")
+if l_0_3 == "" or l_0_3 == nil then
+  return mp.CLEAN
+end
+if l_0_3 ~= "explorer.exe" then
+  return mp.CLEAN
+end
+local l_0_4 = mp.GetParentProcInfo()
+if l_0_4 == nil then
+  return mp.CLEAN
+end
+if string.lower(string.match(l_0_4.image_path, "\\([^\\]+)$")) ~= "razerinstaller.exe" then
+  return mp.CLEAN
+end
+local l_0_5 = mp.GetProcessCommandLine(l_0_4.ppid)
+if l_0_5 == "" or l_0_5 == nil then
+  return mp.CLEAN
+end
+if string.find(string.lower(l_0_5), "razerinstaller%.exe[^/]+/showdevice$") == nil then
+  return mp.CLEAN
+end
+return mp.INFECTED

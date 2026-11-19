@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Site Recovery - Capacity Planner 5.26.1001.3",
+    "downloadDescription": "Azure Site Recovery - Capacity Planner 5.26.1001.3",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CapacytPlanner.zip",
+            "url": "https://download.microsoft.com/download/c976ae11-89b0-4620-8612-3ae68fe19b75/CapacytPlanner.zip",
+            "size": "24806782",
+            "version": "5.26.1001.3",
+            "datePublished": "11/12/2026 1:18:41 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Site Recovery - Capacity Planner 5.26.1001.3",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.26.1001.3",
+    "detailsSection_file_name": [
+        "CapacytPlanner.zip"
+    ],
+    "detailsSection_file_size": [
+        "23.7 MB"
+    ],
+    "detailsSection_file_date": "11/12/2026",
+    "systemRequirementsSection": "Azure Site Recovery - Capacity Planner 5.26.1001.3",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Unzip the file to get Azure Site Recovery - Capacity Planner 5.26.1001.3",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108913",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

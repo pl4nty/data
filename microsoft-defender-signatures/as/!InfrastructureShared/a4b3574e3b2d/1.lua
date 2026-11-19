@@ -1,44 +1,28 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\a4b3574e3b2d\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: a4b3574e3b2d
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-if not (this_sigattrlog[1]).matched and not (this_sigattrlog[2]).matched then
+local l_0_0
+if not this_sigattrlog[1].matched and not this_sigattrlog[2].matched then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC25: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1, l_0_2 = nil
-  else
-  end
-  if (this_sigattrlog[2]).matched and (this_sigattrlog[2]).utf8p2 ~= nil then
-    local l_0_3 = (this_sigattrlog[2]).utf8p2
-    local l_0_4 = {min = 1, max = 5}
-    local l_0_5 = QueryProcContext
-    l_0_5 = l_0_5({"BROWSER"}, l_0_4)
-    if not l_0_5 then
-      l_0_5 = mp
-      l_0_5 = l_0_5.CLEAN
-      return l_0_5
-    end
-    if l_0_3 ~= nil then
-      l_0_5 = mp
-      l_0_5 = l_0_5.GetExecutablesFromCommandLine
-      l_0_5 = l_0_5(l_0_3)
-      for l_0_9,i_2 in ipairs(l_0_5) do
-        i_2 = (mp.ContextualExpandEnvironmentVariables)(i_2)
-        if (sysio.IsFileExists)(i_2) then
-          (bm.add_related_file)(i_2)
-        end
-      end
-    end
-    do
-      l_0_5 = mp
-      l_0_5 = l_0_5.INFECTED
-      return l_0_5
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[1].utf8p2
+elseif this_sigattrlog[2].matched and this_sigattrlog[2].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[2].utf8p2
+end
+local l_0_1 = {min = 1, max = 5}
+if not QueryProcContext({"BROWSER"}, l_0_1) then
+  return mp.CLEAN
+end
+if l_0_0 ~= nil then
+  local l_0_2 = mp.GetExecutablesFromCommandLine(l_0_0)
+  for l_0_3, l_0_4 in ipairs(l_0_2) do
+    l_0_4 = mp.ContextualExpandEnvironmentVariables(l_0_4)
+    if sysio.IsFileExists(l_0_4) then
+      bm.add_related_file(l_0_4)
     end
   end
 end
-
+return mp.INFECTED

@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: 6878ef555b2f
+-- Type: 21
+
+if mp.get_mpattribute("pea_isdll") and pehdr.NumberOfSections == 4 and peattributes.hasexports == true then
+  return mp.INFECTED
+end
+return mp.CLEAN

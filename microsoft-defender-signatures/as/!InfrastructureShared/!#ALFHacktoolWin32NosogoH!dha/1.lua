@@ -1,15 +1,12 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFHacktoolWin32NosogoH!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Hacktool:Win32/Nosogo.H!dha
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & RPF:AnyFileHasIOAVURL
 
--- params : ...
--- function num : 0
-do
-  if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN then
-    local l_0_0 = (mp.IOAVGetDownloadUrl)()
-    if l_0_0 ~= nil and (string.len)(l_0_0) > 30 and l_0_0:find(":3000/attacks/download?", 1, true) then
-      return mp.INFECTED
-    end
+if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN then
+  local l_0_0 = mp.IOAVGetDownloadUrl()
+  if l_0_0 ~= nil and string.len(l_0_0) > 30 and l_0_0:find(":3000/attacks/download?", 1, true) then
+    return mp.INFECTED
   end
-  return mp.CLEAN
 end
-
+return mp.CLEAN

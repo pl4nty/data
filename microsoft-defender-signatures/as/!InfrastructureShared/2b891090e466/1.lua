@@ -1,0 +1,11 @@
+-- Threat: !InfrastructureShared
+-- Name: 2b891090e466
+-- Type: 21
+
+if pe.mmap_va(pevars.sigaddr + 18, 1) == "\000" or pe.mmap_va(pevars.sigaddr + 18, 1) == "\001" or pe.mmap_va(pevars.sigaddr + 18, 1) == "\016" then
+  pe.mmap_patch_va(pevars.sigaddr + 10, "\144\144")
+  pe.mmap_patch_va(pevars.sigaddr + 19, "\144\144")
+  mp.set_mpattribute("FOPEX:Deep_Analysis_Disable_APILimit")
+  return mp.INFECTED
+end
+return mp.CLEAN

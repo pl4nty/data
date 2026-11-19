@@ -1,0 +1,9 @@
+-- Threat: !InfrastructureShared
+-- Name: 268952f8097c
+-- Type: 21
+
+pe.mmap_patch_va(pevars.sigaddr + 6, "\144\144")
+pe.mmap_patch_va(pevars.sigaddr + 12, "\144\144")
+pe.mmap_patch_va(pevars.sigaddr + 17, "\235")
+mp.set_mpattribute("FOPEX:Deep_Analysis_Disable_APILimit")
+return mp.INFECTED

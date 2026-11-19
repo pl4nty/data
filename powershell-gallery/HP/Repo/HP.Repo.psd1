@@ -23,8 +23,8 @@
   GUID = 'df713360-19e2-481c-8bcb-f8b4bf70c08b'
 
   # Version number of this module.
-  #FullModuleVersion = '1.9.0.1648'
-  ModuleVersion = '1.9.0'
+  #FullModuleVersion = '1.9.1.1687'
+  ModuleVersion = '1.9.1'
 
   # Company or vendor of this module
   CompanyName = 'HP Inc'

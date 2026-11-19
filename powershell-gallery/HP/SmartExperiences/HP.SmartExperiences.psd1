@@ -12,8 +12,8 @@
 @{
 
   RootModule = 'HP.SmartExperiences.psm1'
-  #FullModuleVersion = '1.9.0.1648'
-  ModuleVersion = '1.9.0'
+  #FullModuleVersion = '1.9.1.1687'
+  ModuleVersion = '1.9.1'
   GUID = '04c79fde-7cc7-49e4-b11b-d2892e11f6d1'
   Author = 'HP Development Company, L.P.'
   CompanyName = 'HP Inc'

@@ -1,14 +1,11 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaSpecificFileExtInDesktopFolder\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:SpecificFileExtInDesktopFolder
+-- Type: 13
+-- MpAttributes: Lua:FileInsideUserDesktopFolder
 
--- params : ...
--- function num : 0
-if (mp.get_mpattribute)("Lua:BATExt") then
-  (mp.set_mpattribute)("Lua:BatFileInDesktopFolder")
-else
-  if (mp.get_mpattribute)("Lua:DLLExt") then
-    (mp.set_mpattribute)("Lua:DllFileInDesktopFolder")
-  end
+if mp.get_mpattribute("Lua:BATExt") then
+  mp.set_mpattribute("Lua:BatFileInDesktopFolder")
+elseif mp.get_mpattribute("Lua:DLLExt") then
+  mp.set_mpattribute("Lua:DllFileInDesktopFolder")
 end
 return mp.CLEAN
-

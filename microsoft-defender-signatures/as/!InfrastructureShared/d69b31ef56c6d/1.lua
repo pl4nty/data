@@ -1,218 +1,124 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\d69b31ef56c6d\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: d69b31ef56c6d
+-- Type: 21
+-- Includes: BMLuaLib, TechniqueTracker, LuaFuncHelper
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[9]).matched then
-    local l_0_0 = nil
-  else
+local l_0_0
+if this_sigattrlog[9].matched then
+  l_0_0 = this_sigattrlog[9]
+elseif this_sigattrlog[10].matched then
+  l_0_0 = this_sigattrlog[10]
+elseif this_sigattrlog[11].matched then
+  l_0_0 = this_sigattrlog[11]
+elseif this_sigattrlog[12].matched then
+  l_0_0 = this_sigattrlog[12]
+elseif this_sigattrlog[13].matched then
+  l_0_0 = this_sigattrlog[13]
+elseif this_sigattrlog[14].matched then
+  l_0_0 = this_sigattrlog[14]
+elseif this_sigattrlog[15].matched then
+  l_0_0 = this_sigattrlog[15]
+elseif this_sigattrlog[16].matched then
+  l_0_0 = this_sigattrlog[16]
+elseif this_sigattrlog[17].matched then
+  l_0_0 = this_sigattrlog[17]
+elseif this_sigattrlog[18].matched then
+  l_0_0 = this_sigattrlog[18]
+elseif this_sigattrlog[19].matched then
+  l_0_0 = this_sigattrlog[19]
+elseif this_sigattrlog[20].matched then
+  l_0_0 = this_sigattrlog[20]
+elseif this_sigattrlog[21].matched then
+  l_0_0 = this_sigattrlog[21]
+elseif this_sigattrlog[22].matched then
+  l_0_0 = this_sigattrlog[22]
+elseif this_sigattrlog[23].matched then
+  l_0_0 = this_sigattrlog[23]
+elseif this_sigattrlog[24].matched then
+  l_0_0 = this_sigattrlog[24]
+elseif this_sigattrlog[25].matched then
+  l_0_0 = this_sigattrlog[25]
+elseif this_sigattrlog[26].matched then
+  l_0_0 = this_sigattrlog[26]
+elseif this_sigattrlog[27].matched then
+  l_0_0 = this_sigattrlog[27]
+elseif this_sigattrlog[28].matched then
+  l_0_0 = this_sigattrlog[28]
+elseif this_sigattrlog[29].matched then
+  l_0_0 = this_sigattrlog[29]
+elseif this_sigattrlog[30].matched then
+  l_0_0 = this_sigattrlog[30]
+elseif this_sigattrlog[31].matched then
+  l_0_0 = this_sigattrlog[31]
+elseif this_sigattrlog[32].matched then
+  l_0_0 = this_sigattrlog[32]
+elseif this_sigattrlog[33].matched then
+  l_0_0 = this_sigattrlog[33]
+elseif this_sigattrlog[34].matched then
+  l_0_0 = this_sigattrlog[34]
+elseif this_sigattrlog[35].matched then
+  l_0_0 = this_sigattrlog[35]
+elseif this_sigattrlog[36].matched then
+  l_0_0 = this_sigattrlog[36]
+elseif this_sigattrlog[37].matched then
+  l_0_0 = this_sigattrlog[37]
+elseif this_sigattrlog[38].matched then
+  l_0_0 = this_sigattrlog[38]
+elseif this_sigattrlog[39].matched then
+  l_0_0 = this_sigattrlog[39]
+elseif this_sigattrlog[40].matched then
+  l_0_0 = this_sigattrlog[40]
+elseif this_sigattrlog[41].matched then
+  l_0_0 = this_sigattrlog[41]
+elseif this_sigattrlog[42].matched then
+  l_0_0 = this_sigattrlog[42]
+elseif this_sigattrlog[43].matched then
+  l_0_0 = this_sigattrlog[43]
+elseif this_sigattrlog[44].matched then
+  l_0_0 = this_sigattrlog[44]
+elseif this_sigattrlog[45].matched then
+  l_0_0 = this_sigattrlog[45]
+elseif this_sigattrlog[46].matched then
+  l_0_0 = this_sigattrlog[46]
+elseif this_sigattrlog[47].matched then
+  l_0_0 = this_sigattrlog[47]
+elseif this_sigattrlog[48].matched then
+  l_0_0 = this_sigattrlog[48]
+end
+if not l_0_0 or not l_0_0.utf8p2 then
+  return mp.CLEAN
+end
+local l_0_1 = string.lower(l_0_0.utf8p2)
+local l_0_2 = bm.get_current_process_startup_info()
+if not l_0_2 then
+  return mp.CLEAN
+end
+local l_0_3 = l_0_2.ppid or "0"
+local l_0_4 = MpCommon.PathToWin32Path(bm.get_imagepath()) or ""
+local l_0_5 = string.lower(l_0_4:match("([^\\]+)$") or "")
+local l_0_6 = "ShaiWorm_BM_CredAccess"
+local l_0_7 = 600
+local l_0_8 = 8
+local l_0_9 = 100
+local l_0_10 = "|"
+local l_0_11 = tostring(l_0_3) .. l_0_10 .. l_0_5
+local l_0_12 = GetRollingQueueKeyValues(l_0_6, l_0_11)
+if l_0_12 then
+  for l_0_13, l_0_14 in ipairs(l_0_12) do
+    if l_0_14 and l_0_14.value == l_0_1 then
+      return mp.CLEAN
+    end
   end
-  -- DECOMPILER ERROR at PC22: Overwrote pending register: R0 in 'AssignReg'
-
-  do
-    if not (this_sigattrlog[10]).matched or (this_sigattrlog[11]).matched then
-      local l_0_1 = this_sigattrlog[10]
-    else
-    end
-    -- DECOMPILER ERROR at PC38: Overwrote pending register: R0 in 'AssignReg'
-
-    do
-      if not (this_sigattrlog[12]).matched or (this_sigattrlog[13]).matched then
-        local l_0_2 = this_sigattrlog[12]
-      else
-      end
-      -- DECOMPILER ERROR at PC54: Overwrote pending register: R0 in 'AssignReg'
-
-      do
-        if not (this_sigattrlog[14]).matched or (this_sigattrlog[15]).matched then
-          local l_0_3 = this_sigattrlog[14]
-        else
-        end
-        -- DECOMPILER ERROR at PC70: Overwrote pending register: R0 in 'AssignReg'
-
-        do
-          if not (this_sigattrlog[16]).matched or (this_sigattrlog[17]).matched then
-            local l_0_4 = this_sigattrlog[16]
-          else
-          end
-          -- DECOMPILER ERROR at PC86: Overwrote pending register: R0 in 'AssignReg'
-
-          do
-            if not (this_sigattrlog[18]).matched or (this_sigattrlog[19]).matched then
-              local l_0_5 = this_sigattrlog[18]
-            else
-            end
-            -- DECOMPILER ERROR at PC102: Overwrote pending register: R0 in 'AssignReg'
-
-            do
-              if not (this_sigattrlog[20]).matched or (this_sigattrlog[21]).matched then
-                local l_0_6 = this_sigattrlog[20]
-              else
-              end
-              -- DECOMPILER ERROR at PC118: Overwrote pending register: R0 in 'AssignReg'
-
-              do
-                if not (this_sigattrlog[22]).matched or (this_sigattrlog[23]).matched then
-                  local l_0_7 = this_sigattrlog[22]
-                else
-                end
-                -- DECOMPILER ERROR at PC134: Overwrote pending register: R0 in 'AssignReg'
-
-                do
-                  if not (this_sigattrlog[24]).matched or (this_sigattrlog[25]).matched then
-                    local l_0_8 = this_sigattrlog[24]
-                  else
-                  end
-                  -- DECOMPILER ERROR at PC150: Overwrote pending register: R0 in 'AssignReg'
-
-                  do
-                    if not (this_sigattrlog[26]).matched or (this_sigattrlog[27]).matched then
-                      local l_0_9 = this_sigattrlog[26]
-                    else
-                    end
-                    -- DECOMPILER ERROR at PC166: Overwrote pending register: R0 in 'AssignReg'
-
-                    do
-                      if not (this_sigattrlog[28]).matched or (this_sigattrlog[29]).matched then
-                        local l_0_10 = this_sigattrlog[28]
-                      else
-                      end
-                      -- DECOMPILER ERROR at PC182: Overwrote pending register: R0 in 'AssignReg'
-
-                      do
-                        if not (this_sigattrlog[30]).matched or (this_sigattrlog[31]).matched then
-                          local l_0_11 = this_sigattrlog[30]
-                        else
-                        end
-                        -- DECOMPILER ERROR at PC198: Overwrote pending register: R0 in 'AssignReg'
-
-                        do
-                          if not (this_sigattrlog[32]).matched or (this_sigattrlog[33]).matched then
-                            local l_0_12 = this_sigattrlog[32]
-                          else
-                          end
-                          -- DECOMPILER ERROR at PC214: Overwrote pending register: R0 in 'AssignReg'
-
-                          do
-                            if not (this_sigattrlog[34]).matched or (this_sigattrlog[35]).matched then
-                              local l_0_13 = this_sigattrlog[34]
-                            else
-                            end
-                            -- DECOMPILER ERROR at PC230: Overwrote pending register: R0 in 'AssignReg'
-
-                            do
-                              if not (this_sigattrlog[36]).matched or (this_sigattrlog[37]).matched then
-                                local l_0_14 = this_sigattrlog[36]
-                              else
-                              end
-                              -- DECOMPILER ERROR at PC246: Overwrote pending register: R0 in 'AssignReg'
-
-                              do
-                                if not (this_sigattrlog[38]).matched or (this_sigattrlog[39]).matched then
-                                  local l_0_15 = this_sigattrlog[38]
-                                else
-                                end
-                                -- DECOMPILER ERROR at PC262: Overwrote pending register: R0 in 'AssignReg'
-
-                                do
-                                  if not (this_sigattrlog[40]).matched or (this_sigattrlog[41]).matched then
-                                    local l_0_16 = this_sigattrlog[40]
-                                  else
-                                  end
-                                  -- DECOMPILER ERROR at PC278: Overwrote pending register: R0 in 'AssignReg'
-
-                                  do
-                                    if not (this_sigattrlog[42]).matched or (this_sigattrlog[43]).matched then
-                                      local l_0_17 = this_sigattrlog[42]
-                                    else
-                                    end
-                                    -- DECOMPILER ERROR at PC294: Overwrote pending register: R0 in 'AssignReg'
-
-                                    do
-                                      if not (this_sigattrlog[44]).matched or (this_sigattrlog[45]).matched then
-                                        local l_0_18 = this_sigattrlog[44]
-                                      else
-                                      end
-                                      -- DECOMPILER ERROR at PC310: Overwrote pending register: R0 in 'AssignReg'
-
-                                      do
-                                        if not (this_sigattrlog[46]).matched or (this_sigattrlog[47]).matched then
-                                          local l_0_19, l_0_20, l_0_21, l_0_22, l_0_23 = this_sigattrlog[46]
-                                        else
-                                        end
-                                        -- DECOMPILER ERROR at PC321: Confused about usage of register: R0 in 'UnsetPending'
-
-                                        if ((this_sigattrlog[48]).matched and not this_sigattrlog[48]) or not (this_sigattrlog[48]).utf8p2 then
-                                          return mp.CLEAN
-                                        end
-                                        -- DECOMPILER ERROR at PC329: Confused about usage of register: R0 in 'UnsetPending'
-
-                                        local l_0_24 = nil
-                                        local l_0_25 = (string.lower)((this_sigattrlog[48]).utf8p2)
-                                        if not (bm.get_current_process_startup_info)() then
-                                          return mp.CLEAN
-                                        end
-                                        do
-                                          local l_0_26, l_0_28, l_0_29 = , ((bm.get_current_process_startup_info)()).ppid or "0"
-                                          do
-                                            local l_0_27, l_0_30 = nil
-                                            local l_0_31 = nil
-                                            local l_0_32 = nil
-                                            local l_0_33 = nil
-                                            local l_0_34 = (string.lower)(((MpCommon.PathToWin32Path)((bm.get_imagepath)()) or ""):match("([^\\]+)$") or "")
-                                            local l_0_35 = "ShaiWorm_BM_CredAccess"
-                                            local l_0_36 = 600
-                                            local l_0_37 = 8
-                                            local l_0_38 = 100
-                                            if GetRollingQueueKeyValues(l_0_35, tostring(l_0_32) .. "|" .. l_0_34) then
-                                              for l_0_42,l_0_43 in ipairs(GetRollingQueueKeyValues(l_0_35, tostring(l_0_32) .. "|" .. l_0_34)) do
-                                                local l_0_39, l_0_40, l_0_41 = nil
-                                                -- DECOMPILER ERROR at PC382: Confused about usage of register: R17 in 'UnsetPending'
-
-                                                if R17_PC382 and R17_PC382.value == l_0_25 then
-                                                  return mp.CLEAN
-                                                end
-                                              end
-                                              -- DECOMPILER ERROR at PC392: Confused about usage of register: R12 in 'UnsetPending'
-
-                                              if l_0_37 <= #l_0_41 then
-                                                local l_0_44 = nil
-                                                ;
-                                                (bm.add_related_string)("ShaiWorm_BM_CredAccess", safeJsonSerialize({ShaiWormRQName = GetRollingQueueKeys(l_0_35), ShaiWormCount = GetRollingQueueCount(l_0_35)}), bm.RelatedStringBMReport)
-                                                TrackPidAndTechniqueBM("BM", "T1552.001", "shaiworm_credaccess")
-                                                add_parents()
-                                                return mp.INFECTED
-                                              end
-                                            end
-                                            do
-                                              -- DECOMPILER ERROR at PC427: Confused about usage of register: R11 in 'UnsetPending'
-
-                                              AppendToRollingQueue(l_0_35, l_0_40, l_0_25, l_0_36, l_0_38, 0)
-                                              return mp.CLEAN
-                                            end
-                                          end
-                                        end
-                                      end
-                                    end
-                                  end
-                                end
-                              end
-                            end
-                          end
-                        end
-                      end
-                    end
-                  end
-                end
-              end
-            end
-          end
-        end
-      end
-    end
+  if l_0_8 <= #l_0_12 then
+    local l_0_15 = {}
+    l_0_15.ShaiWormRQName = GetRollingQueueKeys(l_0_6)
+    l_0_15.ShaiWormCount = GetRollingQueueCount(l_0_6)
+    l_0_15 = safeJsonSerialize(l_0_15)
+    bm.add_related_string("ShaiWorm_BM_CredAccess", l_0_15, bm.RelatedStringBMReport)
+    TrackPidAndTechniqueBM("BM", "T1552.001", "shaiworm_credaccess")
+    add_parents()
+    return mp.INFECTED
   end
 end
-
+AppendToRollingQueue(l_0_6, l_0_11, l_0_1, l_0_7, l_0_9, 0)
+return mp.CLEAN

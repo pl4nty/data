@@ -1,18 +1,15 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaADSProcessLaunch\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:ADSProcessLaunch
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-do
-  if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN and (mp.get_contextdata)(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) == true then
-    local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-    if (string.find)(l_0_0, ":", 1, true) ~= nil then
-      if (mp.get_mpattribute)("BM_MZ_FILE") then
-        (mp.set_mpattribute)("Lua:ADS_MZ_FILE")
-      end
-      return mp.INFECTED
+if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN and mp.get_contextdata(mp.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) == true then
+  local l_0_0 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+  if string.find(l_0_0, ":", 1, true) ~= nil then
+    if mp.get_mpattribute("BM_MZ_FILE") then
+      mp.set_mpattribute("Lua:ADS_MZ_FILE")
     end
+    return mp.INFECTED
   end
-  return mp.CLEAN
 end
-
+return mp.CLEAN

@@ -1,38 +1,30 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\fcb318015be8\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: fcb318015be8
+-- Type: 21
+-- Includes: BMLuaLib, LuaFuncHelper
 
--- params : ...
--- function num : 0
-do
-  if ((((this_sigattrlog[3]).matched and (this_sigattrlog[3]).utf8p2) or ((this_sigattrlog[4]).matched and (this_sigattrlog[4]).utf8p2) or ((this_sigattrlog[5]).matched and (this_sigattrlog[5]).utf8p2) or (this_sigattrlog[6]).matched)) then
-    local l_0_0, l_0_1 = (this_sigattrlog[6]).utf8p2
+local r0_0 = this_sigattrlog[3].matched and this_sigattrlog[3].utf8p2
+  or this_sigattrlog[4].matched and this_sigattrlog[4].utf8p2
+  or this_sigattrlog[5].matched and this_sigattrlog[5].utf8p2
+  or this_sigattrlog[6].matched and this_sigattrlog[6].utf8p2
+if r0_0 then
+  local r0_1 = string.match(r0_0, "Uri=([^;]+)")
+  if isnull(r0_1) then
+    return mp.CLEAN
   end
-  -- DECOMPILER ERROR at PC38: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC42: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 then
-    local l_0_2 = nil
-    if isnull((string.match)(l_0_0, "Uri=([^;]+)")) then
-      return mp.CLEAN
-    end
-    local l_0_3, l_0_4 = , (mp.CheckUrl)((string.match)(l_0_0, "Uri=([^;]+)"))
-    if l_0_4 == 1 and (string.match)(l_0_0, "Uri=([^;]+)") == 1 then
-      return mp.CLEAN
-    end
-    local l_0_5 = nil
-    if (string.match)(l_0_3, "^https?://") then
-      local l_0_6 = {SIG_CONTEXT = "BM", CONTENT_SOURCE = "SUSPBITSCREATE-E"}
-      local l_0_7 = SafeGetUrlReputation
-      l_0_7 = l_0_7({l_0_3}, l_0_6, false, 3000)
-      if (l_0_7.urls)[l_0_3] and ((l_0_7.urls)[l_0_3]).determination == 2 and ((l_0_7.urls)[l_0_3]).confidence >= 60 then
-        return mp.INFECTED
-      end
-      return mp.CLEAN
-    end
+  local r0_2, r0_3 = mp.CheckUrl(r0_1)
+  if r0_2 == 1 and r0_3 == 1 then
+    return mp.CLEAN
   end
-  do
+  local r0_4 = {}
+  r0_4.SIG_CONTEXT = "BM"
+  r0_4.CONTENT_SOURCE = "SUSPBITSCREATE-E"
+  if string.match(r0_1, "^https?://") then
+    local r0_5 = SafeGetUrlReputation({ r0_1 }, r0_4, false, 3000)
+    if r0_5.urls[r0_1] and r0_5.urls[r0_1].determination == 2 and r0_5.urls[r0_1].confidence >= 60 then
+      return mp.INFECTED
+    end
     return mp.CLEAN
   end
 end
-
+return mp.CLEAN

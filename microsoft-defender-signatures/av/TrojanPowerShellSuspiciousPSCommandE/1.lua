@@ -1,0 +1,24 @@
+-- Threat: Trojan:PowerShell/SuspiciousPSCommand.E
+-- Type: 13
+-- Includes: TechniqueTracker
+-- MpAttributes: Lua:CloudBlockLevelGT3 & MpIsPowerShellAMSIScan & !BM_MZ_FILE & !SCRIPT:amsipeexclusion.A & Lua:TT:DetectionThresholdMet
+
+local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
+if l_0_0 == mp.SCANREASON_AMSI then
+  local l_0_1, l_0_2 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_APPNAME)
+  if l_0_1 and l_0_2 then
+    local l_0_3 = mp.get_contextdata(mp.CONTEXT_DATA_AMSI_OPERATION_PPID)
+    local l_0_4 = string.lower(mp.GetProcessCommandLine(l_0_3))
+    local l_0_5, l_0_6 = pcall(mp.get_contextdata, mp.CONTEXT_DATA_AMSI_CONTENTNAME)
+    if l_0_4 ~= nil and l_0_6 == nil then
+      if string.find(l_0_4, "-command", 1, true) ~= nil or string.find(l_0_4, "remotesigned", 1, true) ~= nil or string.find(l_0_4, "iwagaemaaablagmaawagagyabwbyacaaqwbqafuaiabha", 1, true) ~= nil then
+        return mp.CLEAN
+      end
+      if (string.find(l_0_4, "-encodedecommand", 1, true) ~= nil or string.find(l_0_4, "-enc", 1, true) ~= nil) and (string.find(l_0_4, "-noprofile", 1, true) ~= nil or string.find(l_0_4, "-nop", 1, true) ~= nil) and (string.find(l_0_4, "-noninteractive", 1, true) ~= nil or string.find(l_0_4, "-noni", 1, true) ~= nil) then
+        TrackPidAndTechnique("AMSI", "T1204", "UserExecution")
+        return mp.INFECTED
+      end
+    end
+  end
+end
+return mp.CLEAN

@@ -1,0 +1,24 @@
+-- Threat: !InfrastructureShared
+-- Name: 4db3f9b7896f
+-- Type: 21
+
+if not mp.get_mpattribute("WPADProcess") then
+  return mp.CLEAN
+end
+local l_0_0
+l_0_0 = this_sigattrlog[2].utf8p1
+local l_0_1 = string.lower(string.sub(l_0_0, -12))
+if l_0_1 == nil or l_0_1 == "werfault.exe" then
+  return mp.CLEAN
+end
+local l_0_2 = this_sigattrlog[3].utf8p1
+l_0_2 = mp.ContextualExpandEnvironmentVariables(l_0_2)
+if sysio.IsFileExists(l_0_2) then
+  bm.add_related_file(l_0_2)
+  mp.ReportLowfi(l_0_2, 1402450356)
+end
+if sysio.IsFileExists(l_0_0) then
+  bm.add_related_file(l_0_0)
+end
+mp.set_mpattribute("WPADExploitAttempt.detected")
+return mp.INFECTED

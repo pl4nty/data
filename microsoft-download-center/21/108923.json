@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Subscription Edition (SE) CU1 Hotfix Update 3",
+    "downloadDescription": "This download includes all available updates for Skype for Business Server Subscription Edition",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SkypeServerUpdateInstaller.exe",
+            "url": "https://download.microsoft.com/download/906cd3b5-8491-4ed2-8f6f-e878f7be5a94/SkypeServerUpdateInstaller.exe",
+            "size": "111788344",
+            "version": "7.0.2046.897",
+            "datePublished": "11/18/2026 5:30:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PersistentChatUpdateInstaller.exe",
+            "url": "https://download.microsoft.com/download/906cd3b5-8491-4ed2-8f6f-e878f7be5a94/PersistentChatUpdateInstaller.exe",
+            "size": "3984736",
+            "version": "7.0.2046.897",
+            "datePublished": "11/18/2026 5:30:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "InvokeUcsRollback.ps1",
+            "url": "https://download.microsoft.com/download/906cd3b5-8491-4ed2-8f6f-e878f7be5a94/InvokeUcsRollback.ps1",
+            "size": "30649",
+            "version": "7.0.2046.897",
+            "datePublished": "11/18/2026 5:30:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ConfigureSkypeforBusinessHybridApplication.ps1",
+            "url": "https://download.microsoft.com/download/906cd3b5-8491-4ed2-8f6f-e878f7be5a94/ConfigureSkypeforBusinessHybridApplication.ps1",
+            "size": "63351",
+            "version": "7.0.2046.897",
+            "datePublished": "11/18/2026 5:30:46 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Cumulative Update Download for Skype for Business Server Subscription Edition is described in the Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/5065372\">5065372</A>. \n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5135326",
+        "name": "KB5135326"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.2046.897",
+    "detailsSection_file_name": [
+        "SkypeServerUpdateInstaller.exe",
+        "PersistentChatUpdateInstaller.exe",
+        "InvokeUcsRollback.ps1",
+        "ConfigureSkypeforBusinessHybridApplication.ps1"
+    ],
+    "detailsSection_file_size": [
+        "106.6 MB",
+        "3.8 MB",
+        "29.9 KB",
+        "61.9 KB"
+    ],
+    "detailsSection_file_date": "11/18/2026",
+    "systemRequirementsSection": "This download works with the following program:\n<ul>\n<li>Skype for Business Server Subscription Edition</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> buttons and saving the files to your hard disk. </li>\n<li>Refer to Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/5065372\">5065372</A> for installation details.</li>\n</ol>\n<br />",
+    "additionalInformationSection": "PersistentChatUpdateInstaller.exe SHA 256 Hash = DAAC4ADFC5937D82256AB13D4AE12C0378F58DAE13487C4BB93C7A1EBB1CF834\n\nSkypeServerUpdateInstaller.exe SHA 256 Hash = 47C3B48554A97C1E948EAD7F62E230A6D52C2BE1CF6C5873D0CF17B1496294E7\n\nConfigureSkypeforBusinessHybridApplication.ps1 SHA 256 Hash = 81F98A95B8FD732A8D2383CF3C4BF2A04CC53467FDA2377C10C90FB41587FEEB\n\nInvokeUcsRollback.ps1 SHA 256 Hash = 4BBAAB4FA576E1431837A2D915071C6672ACBD1868597B7F058FB5AE273003C3",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108923",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}

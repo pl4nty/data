@@ -1,0 +1,31 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+package edge_dlis_tokenizers.proto;
+
+// Field numbers and types preserve the existing DLIS asset wire format.
+message OutArc {
+  uint64 aim_node = 1;
+  uint64 output = 2;
+  float score = 3;
+}
+
+message OutArcMap {
+  map<uint32, OutArc> nodes = 1;
+}
+
+message VocabGraph {
+  map<uint32, OutArcMap> nodes = 1;
+}
+
+message NormalizationRule {
+  repeated uint32 original = 1;
+  repeated uint32 normalized = 2;
+}
+
+message NormalizationRuleSet {
+  repeated NormalizationRule rules = 1;
+}

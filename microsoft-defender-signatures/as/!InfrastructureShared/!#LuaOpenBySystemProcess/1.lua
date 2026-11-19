@@ -1,10 +1,12 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaOpenBySystemProcess\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:OpenBySystemProcess
+-- Type: 12
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-if (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN and (mp.get_contextdata)(mp.CONTEXT_DATA_PROCESS_ID) == 4 then
-  return mp.INFECTED
+if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN then
+  local l_0_0 = mp.get_contextdata(mp.CONTEXT_DATA_PROCESS_ID)
+  if l_0_0 == 4 then
+    return mp.INFECTED
+  end
 end
 return mp.CLEAN
-

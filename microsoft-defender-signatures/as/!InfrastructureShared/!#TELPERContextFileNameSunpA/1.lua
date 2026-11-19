@@ -1,0 +1,13 @@
+-- Threat: !InfrastructureShared
+-- Name: !#TELPER:ContextFileNameSunp.A
+-- Type: 9
+
+local l_0_0 = string.lower(mp.getfilename())
+local l_0_1, l_0_2 = l_0_0:match("(.+\\)([^\\]+)$")
+if l_0_2 == nil or l_0_1 == nil then
+  return mp.CLEAN
+end
+if l_0_2 == "z.tmp" and l_0_1:len() > 10 and (string.sub(l_0_1, -10) == "\\temp\\low\\" or string.sub(l_0_1, -6) == "\\temp\\") then
+  return mp.INFECTED
+end
+return mp.CLEAN

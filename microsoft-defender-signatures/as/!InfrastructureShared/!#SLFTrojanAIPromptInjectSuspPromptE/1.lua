@@ -1,150 +1,122 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanAIPromptInjectSuspPromptE\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:Trojan:AIPromptInject/SuspPrompt.E
+-- Type: 13
+-- Includes: LuaFuncHelper
+-- MpAttributes: MpIsAiNetPromptScan & (SCPT:PromptInj:CredExfilUploadArt | SCPT:PromptInj:CredExfilSocketArt | SCPT:PromptInj:PrivEscReadArt | SCPT:PromptInj:PrivEscWriteArt | SCPT:PromptInj:AuditDisableArt | SCPT:PromptInj:LogDestructArt | SCPT:PromptInj:C2ChannelArt | SCPT:PromptInj:C2CaptureArt | SCPT:PromptInj:PersistStartupArt | SCPT:PromptInj:PersistSchedTaskArt) & (SCPT:PromptInj:CredExfilUploadBeh | SCPT:PromptInj:CredExfilSocketBeh | SCPT:PromptInj:PrivEscReadBeh | SCPT:PromptInj:PrivEscWriteBeh | SCPT:PromptInj:AuditDisableBeh | SCPT:PromptInj:LogDestructBeh | SCPT:PromptInj:C2ChannelBeh | SCPT:PromptInj:C2CaptureBeh | SCPT:PromptInj:PersistStartupBeh | SCPT:PromptInj:PersistSchedTaskBeh)
 
--- params : ...
--- function num : 0
 local l_0_0 = 1536000
 local l_0_1 = 1024
-local l_0_2 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
+local l_0_2 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
 if l_0_2 == nil or l_0_2 ~= mp.SCANREASON_NET_PROMPTSTREAM then
   return mp.CLEAN
 end
-local l_0_3 = {}
-local l_0_4 = {}
-l_0_4.id = "P0-1A"
-l_0_4.rule = "CredExfilUpload"
-l_0_4.art = "SCPT:PromptInj:CredExfilUploadArt"
-l_0_4.beh = "SCPT:PromptInj:CredExfilUploadBeh"
-local l_0_5 = {}
-l_0_5.id = "P0-1B"
-l_0_5.rule = "CredExfilSocket"
-l_0_5.art = "SCPT:PromptInj:CredExfilSocketArt"
-l_0_5.beh = "SCPT:PromptInj:CredExfilSocketBeh"
-local l_0_6 = {}
-l_0_6.id = "P0-2A"
-l_0_6.rule = "PrivEscRead"
-l_0_6.art = "SCPT:PromptInj:PrivEscReadArt"
-l_0_6.beh = "SCPT:PromptInj:PrivEscReadBeh"
-local l_0_7 = {}
-l_0_7.id = "P0-2B"
-l_0_7.rule = "PrivEscWrite"
-l_0_7.art = "SCPT:PromptInj:PrivEscWriteArt"
-l_0_7.beh = "SCPT:PromptInj:PrivEscWriteBeh"
-local l_0_8 = {}
-l_0_8.id = "P0-3A"
-l_0_8.rule = "AuditDisable"
-l_0_8.art = "SCPT:PromptInj:AuditDisableArt"
-l_0_8.beh = "SCPT:PromptInj:AuditDisableBeh"
-local l_0_9 = {}
-l_0_9.id = "P0-3B"
-l_0_9.rule = "LogDestruct"
-l_0_9.art = "SCPT:PromptInj:LogDestructArt"
-l_0_9.beh = "SCPT:PromptInj:LogDestructBeh"
-local l_0_10 = {}
-l_0_10.id = "P0-4A"
-l_0_10.rule = "C2Channel"
-l_0_10.art = "SCPT:PromptInj:C2ChannelArt"
-l_0_10.beh = "SCPT:PromptInj:C2ChannelBeh"
-local l_0_11 = {}
-l_0_11.id = "P0-4B"
-l_0_11.rule = "C2Capture"
-l_0_11.art = "SCPT:PromptInj:C2CaptureArt"
-l_0_11.beh = "SCPT:PromptInj:C2CaptureBeh"
-local l_0_12 = {}
-l_0_12.id = "P0-5A"
-l_0_12.rule = "PersistStartup"
-l_0_12.art = "SCPT:PromptInj:PersistStartupArt"
-l_0_12.beh = "SCPT:PromptInj:PersistStartupBeh"
-local l_0_13 = {}
-l_0_13.id = "P0-5B"
-l_0_13.rule = "PersistSchedTask"
-l_0_13.art = "SCPT:PromptInj:PersistSchedTaskArt"
-l_0_13.beh = "SCPT:PromptInj:PersistSchedTaskBeh"
--- DECOMPILER ERROR at PC67: No list found for R3 , SetList fails
-
-l_0_4 = nil
-l_0_5 = ipairs
-l_0_6 = l_0_3
-l_0_5 = l_0_5(l_0_6)
-for l_0_8,l_0_9 in l_0_5 do
-  l_0_10 = mp
-  l_0_10 = l_0_10.get_mpattribute
-  l_0_11 = l_0_9.art
-  l_0_10 = l_0_10(l_0_11)
-  if l_0_10 then
-    l_0_10 = mp
-    l_0_10 = l_0_10.get_mpattribute
-    l_0_11 = l_0_9.beh
-    l_0_10 = l_0_10(l_0_11)
-    if l_0_10 then
-      l_0_4 = l_0_9
-      break
-    end
+local l_0_3 = {
+  {
+    id = "P0-1A",
+    rule = "CredExfilUpload",
+    art = "SCPT:PromptInj:CredExfilUploadArt",
+    beh = "SCPT:PromptInj:CredExfilUploadBeh"
+  },
+  {
+    id = "P0-1B",
+    rule = "CredExfilSocket",
+    art = "SCPT:PromptInj:CredExfilSocketArt",
+    beh = "SCPT:PromptInj:CredExfilSocketBeh"
+  },
+  {
+    id = "P0-2A",
+    rule = "PrivEscRead",
+    art = "SCPT:PromptInj:PrivEscReadArt",
+    beh = "SCPT:PromptInj:PrivEscReadBeh"
+  },
+  {
+    id = "P0-2B",
+    rule = "PrivEscWrite",
+    art = "SCPT:PromptInj:PrivEscWriteArt",
+    beh = "SCPT:PromptInj:PrivEscWriteBeh"
+  },
+  {
+    id = "P0-3A",
+    rule = "AuditDisable",
+    art = "SCPT:PromptInj:AuditDisableArt",
+    beh = "SCPT:PromptInj:AuditDisableBeh"
+  },
+  {
+    id = "P0-3B",
+    rule = "LogDestruct",
+    art = "SCPT:PromptInj:LogDestructArt",
+    beh = "SCPT:PromptInj:LogDestructBeh"
+  },
+  {
+    id = "P0-4A",
+    rule = "C2Channel",
+    art = "SCPT:PromptInj:C2ChannelArt",
+    beh = "SCPT:PromptInj:C2ChannelBeh"
+  },
+  {
+    id = "P0-4B",
+    rule = "C2Capture",
+    art = "SCPT:PromptInj:C2CaptureArt",
+    beh = "SCPT:PromptInj:C2CaptureBeh"
+  },
+  {
+    id = "P0-5A",
+    rule = "PersistStartup",
+    art = "SCPT:PromptInj:PersistStartupArt",
+    beh = "SCPT:PromptInj:PersistStartupBeh"
+  },
+  {
+    id = "P0-5B",
+    rule = "PersistSchedTask",
+    art = "SCPT:PromptInj:PersistSchedTaskArt",
+    beh = "SCPT:PromptInj:PersistSchedTaskBeh"
+  }
+}
+local l_0_4
+for l_0_5, l_0_6 in ipairs(l_0_3) do
+  if mp.get_mpattribute(l_0_6.art) and mp.get_mpattribute(l_0_6.beh) then
+    l_0_4 = l_0_6
+    break
   end
 end
 if l_0_4 == nil then
   return mp.CLEAN
 end
--- DECOMPILER ERROR at PC105: Overwrote pending register: R5 in 'AssignReg'
-
-if (not (mp.getfilesize)() and l_0_0 >= (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_LAST_MESSAGE) ~= nil and nil ~= nil or 0) or l_0_0 > 0 then
-  (mp.readprotection)(false)
-  -- DECOMPILER ERROR at PC126: Confused about usage of register: R7 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC130: Overwrote pending register: R10 in 'AssignReg'
-
-  ;
-  (mp.readprotection)(l_0_10)
-  -- DECOMPILER ERROR at PC135: Overwrote pending register: R10 in 'AssignReg'
-
+local l_0_7
+local l_0_8 = mp.get_contextdata(mp.CONTEXT_DATA_NET_PROMPT_LAST_MESSAGE)
+if l_0_8 ~= nil then
+  l_0_7 = tostring(l_0_8)
 end
--- DECOMPILER ERROR at PC152: Overwrote pending register: R10 in 'AssignReg'
-
--- DECOMPILER ERROR at PC154: Overwrote pending register: R10 in 'AssignReg'
-
--- DECOMPILER ERROR at PC156: Overwrote pending register: R10 in 'AssignReg'
-
--- DECOMPILER ERROR at PC162: Overwrote pending register: R10 in 'AssignReg'
-
--- DECOMPILER ERROR at PC163: Overwrote pending register: R11 in 'AssignReg'
-
--- DECOMPILER ERROR at PC164: Overwrote pending register: R11 in 'AssignReg'
-
--- DECOMPILER ERROR at PC166: Overwrote pending register: R12 in 'AssignReg'
-
--- DECOMPILER ERROR at PC174: Overwrote pending register: R11 in 'AssignReg'
-
--- DECOMPILER ERROR at PC177: Overwrote pending register: R10 in 'AssignReg'
-
--- DECOMPILER ERROR at PC180: Overwrote pending register: R11 in 'AssignReg'
-
-if l_0_11 or not (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_FRAMEWORK) then
-  l_0_10 = l_0_10(l_0_11)
-  l_0_10 = tostring
-  -- DECOMPILER ERROR at PC184: Confused about usage of register: R5 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC184: Overwrote pending register: R11 in 'AssignReg'
-
-  l_0_10 = l_0_10(l_0_11)
-  l_0_10 = safeJsonSerialize
-  -- DECOMPILER ERROR at PC189: Overwrote pending register: R11 in 'AssignReg'
-
-  l_0_10 = l_0_10(l_0_11)
-  -- DECOMPILER ERROR at PC193: Overwrote pending register: R11 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC196: Overwrote pending register: R11 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC197: Overwrote pending register: R11 in 'AssignReg'
-
-  if l_0_10 ~= nil and l_0_11 > 0 then
-    l_0_11(l_0_10)
+if l_0_7 == nil then
+  local l_0_9 = mp.getfilesize() or 0
+  if l_0_0 < l_0_9 then
+    l_0_9 = l_0_0
   end
-  -- DECOMPILER ERROR at PC200: Overwrote pending register: R11 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC201: Overwrote pending register: R11 in 'AssignReg'
-
-  do return l_0_11 end
-  -- DECOMPILER ERROR at PC203: Confused about usage of register R13 for local variables in 'ReleaseLocals'
-
+  if 0 < l_0_9 then
+    mp.readprotection(false)
+    local l_0_10 = mp.readfile(0, l_0_9)
+    mp.readprotection(true)
+    if l_0_10 ~= nil then
+      l_0_7 = tostring(l_0_10)
+    end
+  end
 end
-
+if l_0_7 == nil then
+  l_0_7 = ""
+end
+local l_0_11 = mp.get_contextdata(mp.CONTEXT_NAME_PROMPT_AGENT_SESSIONID)
+local l_0_12 = mp.get_contextdata(mp.CONTEXT_DATA_NET_PROMPT_FRAMEWORK)
+local l_0_13 = {
+  Rule = l_0_4.rule,
+  Prompt = l_0_4.id,
+  AgentSessionId = tostring(l_0_11 or ""),
+  LastMessage = tostring(MpCommon.Base64Encode(string.sub(l_0_7, 1, l_0_1)) or ""),
+  Framework = tostring(l_0_12 or ""),
+  BufferLen = tostring(#l_0_7),
+  EnableInPortal = true
+}
+local l_0_14 = safeJsonSerialize(l_0_13)
+if l_0_14 ~= nil and 0 < #l_0_14 then
+  mp.SetDetectionString(l_0_14)
+end
+return mp.INFECTED

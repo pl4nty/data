@@ -1,11 +1,11 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaFilenameInSideLoadIndicatorsA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:FilenameInSideLoadIndicators.A
+-- Type: 12
+-- Includes: TechniqueTracker
+-- MpAttributes: BM_MZ_DLL
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+local l_0_0 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
 if isFilenameInSideLoadIndicators(l_0_0) then
   return mp.INFECTED
 end
 return mp.CLEAN
-

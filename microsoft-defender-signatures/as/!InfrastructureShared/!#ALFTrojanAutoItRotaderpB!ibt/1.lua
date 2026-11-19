@@ -1,43 +1,41 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanAutoItRotaderpB!ibt\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:AutoIt/Rotaderp.B!ibt
+-- Type: 13
+-- MpAttributes: !RPF:TopLevelFile & BM_TEXT_FILE & SCPT:SymbolAT
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 > 20480 then
+local l_0_0 = mp.getfilesize()
+if 20480 < l_0_0 then
   return mp.CLEAN
 end
 if mp.HEADERPAGE_SZ < 1792 then
   return mp.CLEAN
 end
-local l_0_1 = (string.lower)(tostring(headerpage))
+local l_0_1 = string.lower(tostring(headerpage))
 if l_0_1 == nil then
   return mp.CLEAN
 end
 local l_0_2 = {}
 local l_0_3 = 0
-for l_0_7 in l_0_1:gmatch("[s][e][t] [%w]+%s*=%s*[%w%.]+") do
-  local l_0_8 = l_0_7:match("([s][e][t] [%w.]+)", 1, true)
-  if l_0_8 ~= nil and #l_0_8 > 5 then
-    local l_0_9 = (string.sub)(l_0_8, 5)
-    if l_0_9 == nil then
+for l_0_4 in l_0_1:gmatch("[s][e][t] [%w]+%s*=%s*[%w%.]+") do
+  local l_0_5 = l_0_4:match("([s][e][t] [%w.]+)", 1, true)
+  if l_0_5 ~= nil and 5 < #l_0_5 then
+    local l_0_6 = string.sub(l_0_5, 5)
+    if l_0_6 == nil then
       return mp.CLEAN
     end
-    if l_0_2[l_0_9] ~= 1 then
-      local l_0_10 = "%" .. l_0_9 .. "%"
-      l_0_2[l_0_9] = 1
-      if l_0_1:find(l_0_10, 1, true) ~= nil then
+    if l_0_2[l_0_6] ~= 1 then
+      local l_0_7 = "%" .. l_0_6 .. "%"
+      l_0_2[l_0_6] = 1
+      if l_0_1:find(l_0_7, 1, true) ~= nil then
         l_0_3 = l_0_3 + 1
-        ;
-        (mp.set_mpattribute)("Lua:ScrHasEnvWithPercent")
+        mp.set_mpattribute("Lua:ScrHasEnvWithPercent")
       else
         return mp.CLEAN
       end
-      if l_0_3 > 5 then
+      if 5 < l_0_3 then
         return mp.INFECTED
       end
     end
   end
 end
 return mp.CLEAN
-

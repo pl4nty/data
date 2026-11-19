@@ -1,60 +1,54 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaContextualDropExecutableFromWebmailA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:ContextualDropExecutableFromWebmail.A
+-- Type: 13
+-- Includes: HIPSEmailInfrastructure
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-if not (mp.IsHipsRuleEnabled)("be9ba2d9-53ea-4cdc-84e5-9b1eeee46550") then
+if not mp.IsHipsRuleEnabled("be9ba2d9-53ea-4cdc-84e5-9b1eeee46550") then
   return mp.CLEAN
 end
 local l_0_0 = "enghipscpy:blockaccess:be9ba2d9-53ea-4cdc-84e5-9b1eeee46550"
-local l_0_1 = (mp.GetScanSource)()
+local l_0_1 = mp.GetScanSource()
 if l_0_1 ~= mp.SCANSOURCE_IOAV_WEB then
   return mp.CLEAN
 end
-local l_0_2 = (versioning.GetOrgID)()
-if ((MpCommon.IsSampled)(15000, false, false, false) == true or l_0_2 == nil or (string.lower)(l_0_2) ~= "9014d404-b785-445d-80c9-24a55879a64c" or (MpCommon.IsSampled)(60000, false, false, false) == true) and not IsWebmailDownloadUrlIoavAndMotwV1() then
+local l_0_2 = versioning.GetOrgID()
+if versioning.IsSampled(45000, false, false, false) == true or l_0_2 ~= nil and string.lower(l_0_2) == "9014d404-b785-445d-80c9-24a55879a64c" then
+  if not IsWebmailDownloadUrlIoavAndMotwV1() then
+    return mp.CLEAN
+  end
+elseif not IsWebmailDownloadUrlIoavAndMotwV0() then
   return mp.CLEAN
 end
-if not IsWebmailDownloadUrlIoavAndMotwV0() then
+local l_0_3 = mp.getfilename(mp.bitor(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
+if string.len(l_0_3) < 4 then
   return mp.CLEAN
 end
-local l_0_3 = (mp.getfilename)((mp.bitor)(mp.FILEPATH_QUERY_FNAME, mp.FILEPATH_QUERY_LOWERCASE))
-if (string.len)(l_0_3) < 4 then
-  return mp.CLEAN
-end
-local l_0_4 = ((string.sub)(l_0_3, -4)):match("%.(%w+)$")
+local l_0_4 = string.sub(l_0_3, -4):match("%.(%w+)$")
 if l_0_4 == nil then
   return mp.CLEAN
 end
 if IsSuspiciousFileExt(l_0_4) then
-  (mp.set_mpattribute)("MpDisableCaching")
-  if not (MpCommon.QueryPersistContext)((mp.getfilename)(), l_0_0) then
-    (MpCommon.AppendPersistContext)((mp.getfilename)(), l_0_0, 0)
+  mp.set_mpattribute("MpDisableCaching")
+  if not MpCommon.QueryPersistContext(mp.getfilename(), l_0_0) then
+    MpCommon.AppendPersistContext(mp.getfilename(), l_0_0, 0)
   end
-  ;
-  (mp.SetHipsRule)("be9ba2d9-53ea-4cdc-84e5-9b1eeee46550")
+  mp.SetHipsRule("be9ba2d9-53ea-4cdc-84e5-9b1eeee46550")
   return mp.BLOCKACCESS
-else
-  if IsArchiveFileExt(l_0_4) then
-    (mp.set_mpattribute)("MpDisableCaching")
-    if (mp.get_mpattribute)("Lua:ZipHasEncryptedFileWithExeExtension") or (mp.get_mpattribute)("Lua:RarHasEncryptedFileWithExeExtension") then
-      if not (MpCommon.QueryPersistContext)((mp.getfilename)(), l_0_0) then
-        (MpCommon.AppendPersistContext)((mp.getfilename)(), l_0_0, 0)
-      end
-      ;
-      (mp.SetHipsRule)("be9ba2d9-53ea-4cdc-84e5-9b1eeee46550")
-      return mp.BLOCKACCESS
+elseif IsArchiveFileExt(l_0_4) then
+  mp.set_mpattribute("MpDisableCaching")
+  if mp.get_mpattribute("Lua:ZipHasEncryptedFileWithExeExtension") or mp.get_mpattribute("Lua:RarHasEncryptedFileWithExeExtension") then
+    if not MpCommon.QueryPersistContext(mp.getfilename(), l_0_0) then
+      MpCommon.AppendPersistContext(mp.getfilename(), l_0_0, 0)
     end
-    ;
-    (MpCommon.AppendPersistContext)((mp.getfilename)(), "ContextualDropEncryptedArchiveByEmail", 300)
-    if (mp.getfilesize)() > 10485760 then
-      return mp.CLEAN
-    end
-    ;
-    (mp.set_mpattribute)("//Lua:ContextualDropExecutableFromWebmail.B")
-    ;
-    (mp.set_mpattribute)("MpForceScanArchives")
+    mp.SetHipsRule("be9ba2d9-53ea-4cdc-84e5-9b1eeee46550")
+    return mp.BLOCKACCESS
   end
+  MpCommon.AppendPersistContext(mp.getfilename(), "ContextualDropEncryptedArchiveByEmail", 300)
+  if mp.getfilesize() > 10485760 then
+    return mp.CLEAN
+  end
+  mp.set_mpattribute("//Lua:ContextualDropExecutableFromWebmail.B")
+  mp.set_mpattribute("MpForceScanArchives")
 end
 return mp.CLEAN
-

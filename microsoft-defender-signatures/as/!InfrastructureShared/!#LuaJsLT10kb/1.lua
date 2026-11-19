@@ -1,17 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaJsLT10kb\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#LuaJsLT10kb
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile
 
--- params : ...
--- function num : 0
-local l_0_0 = (string.lower)((string.sub)((mp.getfilename)(), -3))
-do
-  if l_0_0 == ".js" or l_0_0 == "jse" then
-    local l_0_1 = (mp.getfilesize)()
-    if l_0_1 > 1000 and l_0_1 < 10000 then
-      (mp.set_mpattribute)("//LuaJsLT10kb")
-    end
-    return mp.INFECTED
+local l_0_0 = string.lower(string.sub(mp.getfilename(), -3))
+if l_0_0 == ".js" or l_0_0 == "jse" then
+  local l_0_1 = mp.getfilesize()
+  if 1000 < l_0_1 and l_0_1 < 10000 then
+    mp.set_mpattribute("//LuaJsLT10kb")
   end
-  return mp.CLEAN
+  return mp.INFECTED
 end
-
+return mp.CLEAN

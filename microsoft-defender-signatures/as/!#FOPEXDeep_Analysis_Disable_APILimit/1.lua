@@ -1,0 +1,34 @@
+-- Threat: !#FOPEX:Deep_Analysis_Disable_APILimit
+-- Type: 8
+
+if peattributes.epinfirstsect ~= true then
+  return mp.CLEAN
+end
+if peattributes.no_decription ~= true then
+  return mp.CLEAN
+end
+if pehdr.NumberOfSections ~= 3 then
+  return mp.CLEAN
+end
+if pesecs[pevars.epsec].Characteristics ~= 1610612768 then
+  return mp.CLEAN
+end
+if pesecs[2].Characteristics ~= 3221225536 then
+  return mp.CLEAN
+end
+if pesecs[3].Characteristics ~= 1073741888 then
+  return mp.CLEAN
+end
+if pesecs[2].NameDW ~= 1952539694 then
+  return mp.CLEAN
+end
+if pesecs[2].VirtualAddress == 0 then
+  return mp.CLEAN
+end
+if pesecs[2].SizeOfRawData ~= 0 then
+  return mp.CLEAN
+end
+if pesecs[2].PointerToRawData ~= 0 then
+  return mp.CLEAN
+end
+return mp.INFECTED

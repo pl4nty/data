@@ -1,0 +1,16 @@
+-- Threat: !InfrastructureShared
+-- Name: 2db30f5caba3
+-- Type: 21
+
+local l_0_0 = bm.get_imagepath()
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_1 = l_0_0:lower()
+if l_0_1:len() >= 21 and (l_0_1:sub(-13) == "\\mpcmdrun.exe" or l_0_1:sub(-14) == "\\mpsigstub.exe") then
+  return mp.CLEAN
+end
+if string.find(l_0_1, "\\program files", 1, true) and (string.find(l_0_1, "\\emailsecurity\\gfiscanm.exe", 1, true) or string.find(l_0_1, "\\bin\\ccsvchst.exe", 1, true) or string.find(l_0_1, "\\bin64\\ccsvchst.exe", 1, true) or string.find(l_0_1, "\\vipre business agent\\sbamsvc.exe", 1, true) or string.find(l_0_1, "\\nortonsecurity.exe", 1, true) or string.find(l_0_1, "security\\sapissvc.exe", 1, true) or string.find(l_0_1, "\\seqrite\\seqrite\\", 1, true) or string.find(l_0_1, "\\amsp\\coreserviceshell.exe", 1, true)) then
+  return mp.CLEAN
+end
+return mp.INFECTED

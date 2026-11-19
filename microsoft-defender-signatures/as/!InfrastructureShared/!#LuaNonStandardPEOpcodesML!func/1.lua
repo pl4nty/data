@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaNonStandardPEOpcodesML!func\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:NonStandardPEOpcodesML!func
+-- Type: 10
+-- MpAttributes: pea_hasstandardentry
 
--- params : ...
--- function num : 0
-(mp.set_mpattribute)("Lua:NonStandardPEOpcodesML")
+mp.set_mpattribute("Lua:NonStandardPEOpcodesML")
 return mp.CLEAN
-

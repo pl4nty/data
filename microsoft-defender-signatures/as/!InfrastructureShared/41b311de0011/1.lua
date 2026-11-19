@@ -1,22 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\41b311de0011\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 41b311de0011
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC16: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC17: Confused about usage of register: R0 in 'UnsetPending'
-
-  do
-    if l_0_0 ~= nil then
-      local l_0_2 = nil
-      bm_AddRelatedFileFromCommandLine(l_0_2, "|.rar|.zip|.7z|")
-    end
-    return mp.INFECTED
-  end
+local l_0_0
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 ~= nil then
+  l_0_0 = string.lower(this_sigattrlog[1].utf8p2)
 end
-
+if l_0_0 ~= nil then
+  local l_0_1 = "|.rar|.zip|.7z|"
+  bm_AddRelatedFileFromCommandLine(l_0_0, l_0_1)
+end
+return mp.INFECTED

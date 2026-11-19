@@ -1,82 +1,100 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\2f1b36dbeb98c\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 2f1b36dbeb98c
+-- Type: 21
+-- Includes: LuaFuncHelper, TechniqueTracker
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC6: Overwrote pending register: R0 in 'AssignReg'
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
 
-do
-  if (this_sigattrlog[4]).matched then
-    local l_0_0, l_0_1, l_0_2 = nil
-  end
-  if (this_sigattrlog[5]).matched then
-    local l_0_3, l_0_4 = , (string.match)((this_sigattrlog[5]).utf8p1, "imagename:(.+);targetprocessppid:(%d+):")
-    if (this_sigattrlog[5]).utf8p1 == nil or l_0_4 == nil then
-      return mp.CLEAN
-    end
-    local l_0_5, l_0_6 = , pcall(mp.GetPPidFromPid, R5_PC30)
-    if mp.GetPPidFromPid == nil or l_0_6 == false then
-      R5_PC30 = mp
-      R5_PC30 = R5_PC30.CLEAN
-      return R5_PC30
-    end
-    local l_0_7 = nil
-    local l_0_8, l_0_9, l_0_10, l_0_11, l_0_12 = R5_PC30, nil, nil, nil, nil
-    for l_0_16,l_0_17 in pairs(l_0_8) do
-      local l_0_13 = nil
-      -- DECOMPILER ERROR at PC51: Confused about usage of register: R15 in 'UnsetPending'
+-- [unluac error] diagnostic pseudocode: recovery errors; output may not recompile or preserve behavior
 
-      l_0_9 = (bm.GetProcAddress)(l_0_7, "amsi.dll", R15_PC51)
-      if l_0_9 == nil then
-        return mp.CLEAN
-      end
-      l_0_10 = (bm.ReadProcMem)(l_0_9, 256, l_0_7)
-      if l_0_10 == nil then
-        return mp.CLEAN
-      end
-      l_0_11 = tohex(l_0_10)
-      if l_0_9 > 4294967295 then
-        l_0_12 = mp.SMS_PROC_ARCH_X64
-      else
-        l_0_12 = mp.SMS_PROC_ARCH_X32
-      end
-      l_0_13 = (mp.x86dasm)(l_0_12, l_0_9, l_0_10, 256, 50, l_0_9, mp.DASM_LINEAR_FLOW)
-      if l_0_13 == nil then
-        return mp.CLEAN
-      end
-      for l_0_21,l_0_22 in pairs(l_0_13) do
-        -- DECOMPILER ERROR at PC103: Confused about usage of register: R20 in 'UnsetPending'
-
-        -- DECOMPILER ERROR at PC106: Confused about usage of register: R20 in 'UnsetPending'
-
-        do
-          do
-            -- DECOMPILER ERROR at PC124: Unhandled construct in 'MakeBoolean' P1
-
-            if ((256).opcode == 195 or (256).opcode == 194) and l_0_22 < 10 then
-              (bm.add_related_string)("AMSI PATCH TARGET: ", l_0_4, bm.RelatedStringBMReport)
-              ;
-              (bm.add_related_string)("AMSI PATCH BYTES: ", l_0_11, bm.RelatedStringBMReport)
-              ;
-              (bm.add_related_string)("AMSI: ", (string.format)("Function %s at 0x%02x, cpu is %d", l_0_18, l_0_9, l_0_12), bm.RelatedStringBMReport)
-              TrackPidAndTechnique("BM", "T1562.006", "AMSIPatch")
-              ;
-              (bm.add_related_process)(l_0_7)
-              return mp.INFECTED
-            end
-            do break end
-            -- DECOMPILER ERROR at PC153: Confused about usage of register: R20 in 'UnsetPending'
-
-            if l_0_23.jtype ~= 0 then
-              break
-            end
-            -- DECOMPILER ERROR at PC157: LeaveBlock: unexpected jumping out DO_STMT
-
-          end
-        end
-      end
-    end
-    return mp.CLEAN
-  end
-end
-
+-- [unluac error] HIR exit diagnostics: proto#0 requires unavailable goto/label
+-- [unluac error] proto#0 failed during hir: HIR proto#0 has invalid structure region#11: loop syntax block owns a planned label
+-- last completed stage: structure
+-- structure proto#0 root=r0 regions=69 branches=10 loops=2 conditions=10 phis=5 labels=1 requirements=1
+--   region r0 Sequence { parent: None, children: [RegionId(22), RegionId(37), RegionId(1), RegionId(45)] }
+--   region r1 Branch { parent: RegionId(0), plan: BranchPlanId(1), entry: BlockRef(4), condition: RegionId(2), then_arm: RegionId(3), else_arm: None, continuation: Some(BlockRef(6)) }
+--   region r2 Sequence { parent: Some(RegionId(1)), children: [RegionId(43), RegionId(44)] }
+--   region r3 Sequence { parent: Some(RegionId(1)), children: [RegionId(4), RegionId(48)] }
+--   region r4 Branch { parent: RegionId(3), plan: BranchPlanId(2), entry: BlockRef(7), condition: RegionId(5), then_arm: RegionId(6), else_arm: None, continuation: Some(BlockRef(9)) }
+--   region r5 Sequence { parent: Some(RegionId(4)), children: [RegionId(46), RegionId(47)] }
+--   region r6 Sequence { parent: Some(RegionId(4)), children: [RegionId(7), RegionId(68)] }
+--   region r7 Loop { parent: RegionId(6), plan: LoopPlanId(1), entry: BlockRef(10), preheader: Some(RegionId(8)), control: RegionId(9), body: RegionId(10), normal_tail: None }
+--   region r8 Sequence { parent: Some(RegionId(7)), children: [RegionId(49)] }
+--   region r9 Sequence { parent: Some(RegionId(7)), children: [RegionId(67)] }
+--   region r10 Sequence { parent: Some(RegionId(7)), children: [RegionId(25), RegionId(28), RegionId(18), RegionId(31), RegionId(11)] }
+--   region r11 Loop { parent: RegionId(10), plan: LoopPlanId(0), entry: BlockRef(20), preheader: Some(RegionId(12)), control: RegionId(13), body: RegionId(14), normal_tail: None }
+--   region r12 Sequence { parent: Some(RegionId(11)), children: [RegionId(59)] }
+--   region r13 Sequence { parent: Some(RegionId(11)), children: [RegionId(66)] }
+--   region r14 Sequence { parent: Some(RegionId(11)), children: [RegionId(15), RegionId(38), RegionId(65)] }
+--   region r15 Branch { parent: RegionId(14), plan: BranchPlanId(7), entry: BlockRef(21), condition: RegionId(16), then_arm: RegionId(17), else_arm: None, continuation: Some(BlockRef(27)) }
+--   region r16 Sequence { parent: Some(RegionId(15)), children: [RegionId(60), RegionId(61)] }
+--   region r17 Sequence { parent: Some(RegionId(15)), children: [RegionId(34)] }
+--   region r18 Branch { parent: RegionId(10), plan: BranchPlanId(5), entry: BlockRef(15), condition: RegionId(19), then_arm: RegionId(20), else_arm: Some(RegionId(21)), continuation: Some(BlockRef(18)) }
+--   region r19 Sequence { parent: Some(RegionId(18)), children: [RegionId(54)] }
+--   region r20 Sequence { parent: Some(RegionId(18)), children: [RegionId(56)] }
+--   region r21 Sequence { parent: Some(RegionId(18)), children: [RegionId(55)] }
+--   region r22 Branch { parent: RegionId(0), plan: BranchPlanId(0), entry: BlockRef(0), condition: RegionId(23), then_arm: RegionId(24), else_arm: None, continuation: Some(BlockRef(2)) }
+--   region r23 Sequence { parent: Some(RegionId(22)), children: [RegionId(41)] }
+--   region r24 Sequence { parent: Some(RegionId(22)), children: [RegionId(42)] }
+--   region r25 Branch { parent: RegionId(10), plan: BranchPlanId(3), entry: BlockRef(11), condition: RegionId(26), then_arm: RegionId(27), else_arm: None, continuation: Some(BlockRef(13)) }
+--   region r26 Sequence { parent: Some(RegionId(25)), children: [RegionId(50)] }
+--   region r27 Sequence { parent: Some(RegionId(25)), children: [RegionId(51)] }
+--   region r28 Branch { parent: RegionId(10), plan: BranchPlanId(4), entry: BlockRef(13), condition: RegionId(29), then_arm: RegionId(30), else_arm: None, continuation: Some(BlockRef(15)) }
+--   region r29 Sequence { parent: Some(RegionId(28)), children: [RegionId(52)] }
+--   region r30 Sequence { parent: Some(RegionId(28)), children: [RegionId(53)] }
+--   region r31 Branch { parent: RegionId(10), plan: BranchPlanId(6), entry: BlockRef(18), condition: RegionId(32), then_arm: RegionId(33), else_arm: None, continuation: Some(BlockRef(20)) }
+--   region r32 Sequence { parent: Some(RegionId(31)), children: [RegionId(57)] }
+--   region r33 Sequence { parent: Some(RegionId(31)), children: [RegionId(58)] }
+--   region r34 Branch { parent: RegionId(17), plan: BranchPlanId(8), entry: BlockRef(23), condition: RegionId(35), then_arm: RegionId(36), else_arm: None, continuation: Some(BlockRef(30)) }
+--   region r35 Sequence { parent: Some(RegionId(34)), children: [RegionId(62)] }
+--   region r36 Sequence { parent: Some(RegionId(34)), children: [RegionId(63)] }
+--   region r37 ValueDecision { parent: RegionId(0), plan: ValueDecisionPlanId(0), entry: BlockRef(2), continuation: BlockRef(4) }
+--   region r38 Branch { parent: RegionId(14), plan: BranchPlanId(9), entry: BlockRef(27), condition: RegionId(39), then_arm: RegionId(40), else_arm: None, continuation: Some(BlockRef(28)) }
+--   region r39 Sequence { parent: Some(RegionId(38)), children: [RegionId(64)] }
+--   region r40 Sequence { parent: Some(RegionId(38)), children: [] }
+--   region r41 Block { parent: RegionId(23), block: BlockRef(0) }
+--   region r42 Block { parent: RegionId(24), block: BlockRef(1) }
+--   region r43 Block { parent: RegionId(2), block: BlockRef(4) }
+--   region r44 Block { parent: RegionId(2), block: BlockRef(5) }
+--   region r45 Block { parent: RegionId(0), block: BlockRef(6) }
+--   region r46 Block { parent: RegionId(5), block: BlockRef(7) }
+--   region r47 Block { parent: RegionId(5), block: BlockRef(8) }
+--   region r48 Block { parent: RegionId(3), block: BlockRef(9) }
+--   region r49 Block { parent: RegionId(8), block: BlockRef(10) }
+--   region r50 Block { parent: RegionId(26), block: BlockRef(11) }
+--   region r51 Block { parent: RegionId(27), block: BlockRef(12) }
+--   region r52 Block { parent: RegionId(29), block: BlockRef(13) }
+--   region r53 Block { parent: RegionId(30), block: BlockRef(14) }
+--   region r54 Block { parent: RegionId(19), block: BlockRef(15) }
+--   region r55 Block { parent: RegionId(21), block: BlockRef(16) }
+--   region r56 Block { parent: RegionId(20), block: BlockRef(17) }
+--   region r57 Block { parent: RegionId(32), block: BlockRef(18) }
+--   region r58 Block { parent: RegionId(33), block: BlockRef(19) }
+--   region r59 Block { parent: RegionId(12), block: BlockRef(20) }
+--   region r60 Block { parent: RegionId(16), block: BlockRef(21) }
+--   region r61 Block { parent: RegionId(16), block: BlockRef(22) }
+--   region r62 Block { parent: RegionId(35), block: BlockRef(23) }
+--   region r63 Block { parent: RegionId(36), block: BlockRef(24) }
+--   region r64 Block { parent: RegionId(39), block: BlockRef(27) }
+--   region r65 Block { parent: RegionId(14), block: BlockRef(28) }
+--   region r66 Block { parent: RegionId(13), block: BlockRef(29) }
+--   region r67 Block { parent: RegionId(9), block: BlockRef(30) }
+--   region r68 Block { parent: RegionId(6), block: BlockRef(31) }
+--   branch b0 BranchPlanData { header: BlockRef(0), kind: IfThen, condition: ConditionPlanId(0), condition_inverted: false, then_edge: EdgeRef(1), else_edge: EdgeRef(0), continuation: Some(BlockRef(2)), value_plan: Some(BranchValuePlan { merge: BlockRef(2), values: [BranchValueMergeValue { phi_id: PhiId(0), reg: Reg(0), then_arm: BranchValueMergeArm { preds: {BlockRef(1)}, values: {Def(DefId(4))}, entry_values: {}, update_values: {Def(DefId(4))} }, else_arm: BranchValueMergeArm { preds: {BlockRef(0)}, values: {Entry(Reg(0))}, entry_values: {Entry(Reg(0))}, update_values: {} } }] }) }
+--   branch b1 BranchPlanData { header: BlockRef(4), kind: IfThen, condition: ConditionPlanId(1), condition_inverted: true, then_edge: EdgeRef(8), else_edge: EdgeRef(6), continuation: Some(BlockRef(6)), value_plan: None }
+--   branch b2 BranchPlanData { header: BlockRef(7), kind: IfThen, condition: ConditionPlanId(2), condition_inverted: true, then_edge: EdgeRef(13), else_edge: EdgeRef(11), continuation: Some(BlockRef(9)), value_plan: None }
+--   branch b3 BranchPlanData { header: BlockRef(11), kind: Guard, condition: ConditionPlanId(3), condition_inverted: false, then_edge: EdgeRef(18), else_edge: EdgeRef(17), continuation: Some(BlockRef(13)), value_plan: None }
+--   branch b4 BranchPlanData { header: BlockRef(13), kind: Guard, condition: ConditionPlanId(4), condition_inverted: false, then_edge: EdgeRef(21), else_edge: EdgeRef(20), continuation: Some(BlockRef(15)), value_plan: None }
+--   branch b5 BranchPlanData { header: BlockRef(15), kind: IfElse, condition: ConditionPlanId(5), condition_inverted: true, then_edge: EdgeRef(23), else_edge: EdgeRef(24), continuation: Some(BlockRef(18)), value_plan: Some(BranchValuePlan { merge: BlockRef(18), values: [BranchValueMergeValue { phi_id: PhiId(2), reg: Reg(9), then_arm: BranchValueMergeArm { preds: {BlockRef(17)}, values: {Def(DefId(64))}, entry_values: {}, update_values: {Def(DefId(64))} }, else_arm: BranchValueMergeArm { preds: {BlockRef(16)}, values: {Def(DefId(62))}, entry_values: {}, update_values: {Def(DefId(62))} } }] }) }
+--   branch b6 BranchPlanData { header: BlockRef(18), kind: Guard, condition: ConditionPlanId(6), condition_inverted: false, then_edge: EdgeRef(28), else_edge: EdgeRef(27), continuation: Some(BlockRef(20)), value_plan: None }
+--   branch b7 BranchPlanData { header: BlockRef(21), kind: Guard, condition: ConditionPlanId(7), condition_inverted: false, then_edge: EdgeRef(31), else_edge: EdgeRef(33), continuation: Some(BlockRef(27)), value_plan: None }
+--   branch b8 BranchPlanData { header: BlockRef(23), kind: IfThen, condition: ConditionPlanId(8), condition_inverted: false, then_edge: EdgeRef(36), else_edge: EdgeRef(35), continuation: Some(BlockRef(30)), value_plan: None }
+--   branch b9 BranchPlanData { header: BlockRef(27), kind: IfThen, condition: ConditionPlanId(9), condition_inverted: false, then_edge: EdgeRef(40), else_edge: EdgeRef(41), continuation: Some(BlockRef(28)), value_plan: None }
+--   loop l0 LoopPlanData { kind: GenericForLike, header: BlockRef(29), preheader_block: Some(BlockRef(20)), condition_header: None, condition: None, condition_prefix_placement: None, continuation: Some(BlockRef(30)), continue_target: Some(BlockRef(29)), source_bindings: Some(Generic(RegRange { start: Reg(19), len: 2 })), control_edges: LoopControlEdges { preheader_body: Some(EdgeRef(30)), preheader_exit: None, body: [EdgeRef(43)], exit: [EdgeRef(44)], backedges: [EdgeRef(40)], continues: [] }, break_edges: [EdgeRef(35), EdgeRef(42)], normalized_exit_aliases: [], normal_tail: None, exit_tail: None, propagated_break: None, header_values: [LoopValueMerge { phi_id: PhiId(3), reg: Reg(18), inside_arm: LoopValueArm { incoming_slots: [PhiIncomingSlot(1)] }, outside_arm: LoopValueArm { incoming_slots: [PhiIncomingSlot(0)] } }], exit_values: [LoopExitValueMergeCandidate { exit: BlockRef(30), values: [LoopValueMerge { phi_id: PhiId(4), reg: Reg(13), inside_arm: LoopValueArm { incoming_slots: [PhiIncomingSlot(3)] }, outside_arm: LoopValueArm { incoming_slots: [PhiIncomingSlot(0), PhiIncomingSlot(1), PhiIncomingSlot(2)] } }] }], protocol: Some(GenericFor(GenericForProtocol { prep_instr: None, call_instr: InstrRef(143), loop_instr: InstrRef(144), body_edge: EdgeRef(43), exit_edge: EdgeRef(44), body_completes_normally: false, iterator: RegRange { start: Reg(16), len: 3 }, bindings: RegRange { start: Reg(19), len: 2 }, immediate_break: false })), value_actions: Some(LoopValueActions { batches: [], elided: [EdgeCopyOrigin { edge: EdgeRef(30), target: PhiId(3) }, EdgeCopyOrigin { edge: EdgeRef(40), target: PhiId(3) }, EdgeCopyOrigin { edge: EdgeRef(44), target: PhiId(4) }] }) }
+--   loop l1 LoopPlanData { kind: GenericForLike, header: BlockRef(30), preheader_block: Some(BlockRef(10)), condition_header: None, condition: None, condition_prefix_placement: None, continuation: Some(BlockRef(31)), continue_target: Some(BlockRef(30)), source_bindings: Some(Generic(RegRange { start: Reg(14), len: 2 })), control_edges: LoopControlEdges { preheader_body: Some(EdgeRef(16)), preheader_exit: None, body: [EdgeRef(45)], exit: [EdgeRef(46)], backedges: [EdgeRef(35), EdgeRef(42), EdgeRef(44)], continues: [] }, break_edges: [], normalized_exit_aliases: [], normal_tail: None, exit_tail: None, propagated_break: None, header_values: [LoopValueMerge { phi_id: PhiId(4), reg: Reg(13), inside_arm: LoopValueArm { incoming_slots: [PhiIncomingSlot(1), PhiIncomingSlot(2), PhiIncomingSlot(3)] }, outside_arm: LoopValueArm { incoming_slots: [PhiIncomingSlot(0)] } }], exit_values: [], protocol: Some(GenericFor(GenericForProtocol { prep_instr: None, call_instr: InstrRef(145), loop_instr: InstrRef(146), body_edge: EdgeRef(45), exit_edge: EdgeRef(46), body_completes_normally: true, iterator: RegRange { start: Reg(11), len: 3 }, bindings: RegRange { start: Reg(14), len: 2 }, immediate_break: false })), value_actions: Some(LoopValueActions { batches: [], elided: [EdgeCopyOrigin { edge: EdgeRef(16), target: PhiId(4) }, EdgeCopyOrigin { edge: EdgeRef(35), target: PhiId(4) }, EdgeCopyOrigin { edge: EdgeRef(42), target: PhiId(4) }] }) }
+--   phi PhiPlan { phi: PhiId(0), block: BlockRef(2), reg: Reg(0), incomings: [PhiIncomingPlan { edge: Some(EdgeRef(0)), value: Entry(Reg(0)), disposition: RegionResult(RegionId(22)) }, PhiIncomingPlan { edge: Some(EdgeRef(2)), value: Def(DefId(4)), disposition: RegionResult(RegionId(22)) }], loop_carried: None }
+--   phi PhiPlan { phi: PhiId(1), block: BlockRef(4), reg: Reg(0), incomings: [PhiIncomingPlan { edge: Some(EdgeRef(3)), value: Phi(PhiId(0)), disposition: RegionResult(RegionId(37)) }, PhiIncomingPlan { edge: Some(EdgeRef(5)), value: Def(DefId(9)), disposition: RegionResult(RegionId(37)) }], loop_carried: None }
+--   phi PhiPlan { phi: PhiId(2), block: BlockRef(18), reg: Reg(9), incomings: [PhiIncomingPlan { edge: Some(EdgeRef(25)), value: Def(DefId(62)), disposition: RegionResult(RegionId(18)) }, PhiIncomingPlan { edge: Some(EdgeRef(26)), value: Def(DefId(64)), disposition: RegionResult(RegionId(18)) }], loop_carried: None }
+--   phi PhiPlan { phi: PhiId(3), block: BlockRef(29), reg: Reg(18), incomings: [PhiIncomingPlan { edge: Some(EdgeRef(30)), value: Def(DefId(83)), disposition: RegionInput(RegionId(11)) }, PhiIncomingPlan { edge: Some(EdgeRef(40)), value: Def(DefId(123)), disposition: EdgeCopy }], loop_carried: None }
+--   phi PhiPlan { phi: PhiId(4), block: BlockRef(30), reg: Reg(13), incomings: [PhiIncomingPlan { edge: Some(EdgeRef(16)), value: Def(DefId(38)), disposition: RegionInput(RegionId(7)) }, PhiIncomingPlan { edge: Some(EdgeRef(35)), value: Def(DefId(126)), disposition: LoopCarried(RegionId(7)) }, PhiIncomingPlan { edge: Some(EdgeRef(42)), value: Def(DefId(126)), disposition: LoopCarried(RegionId(7)) }, PhiIncomingPlan { edge: Some(EdgeRef(44)), value: Def(DefId(126)), disposition: LoopCarried(RegionId(7)) }], loop_carried: Some(LoopCarriedPhi { owner: RegionId(7), input: Some(Def(DefId(38))) }) }
+--   requirement q0 Goto { edge: EdgeRef(40), label: LabelPlanId(0), reason: UnstructuredContinueLike }

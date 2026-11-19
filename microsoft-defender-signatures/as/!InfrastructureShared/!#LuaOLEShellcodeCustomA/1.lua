@@ -1,37 +1,39 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaOLEShellcodeCustomA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:OLE.Shellcode.Custom.A
+-- Type: 13
+-- MpAttributes: BM_OLE_FILE & !(SCRIPT:OLE.EquationCLSID | SCPT:OLE.Equation3.A)
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 >= 7000 then
+local l_0_0 = mp.getfilesize()
+if 7000 <= l_0_0 then
   return mp.CLEAN
 end
-;
-(mp.readprotection)(false)
-local l_0_1 = tostring((mp.readfile)(0, l_0_0))
-if (string.find)(l_0_1, "[Ee]\000[Qq]\000[Uu]\000[Aa]\000[Tt]\000[Ii]\000[Oo]\000[Nn]\000\020\000[Nn]\000[Aa]\000[Tt]\000[Ii]\000[Vv]\000[Ee]") ~= nil then
-  (mp.set_mpattribute)("LUA:OLE.EquationNative")
-  local l_0_2 = {}
-  l_0_2[184] = 5
-  l_0_2[187] = 5
-  l_0_2[185] = 5
-  l_0_2[186] = 5
-  l_0_2[190] = 5
-  l_0_2[191] = 5
-  l_0_2[188] = 5
-  l_0_2[189] = 5
-  local l_0_3 = {}
-  l_0_3[129] = 6
-  l_0_3[247] = 2
-  l_0_3[46] = 5
-  l_0_3[45] = 5
-  l_0_3[53] = 5
-  l_0_3[5] = 5
-  l_0_3[37] = 5
-  local l_0_4 = {}
-  l_0_4[139] = 2
-  local l_0_5, l_0_6 = (string.find)(l_0_1, "по\017Ю║\177\026\225", 1, true)
+mp.readprotection(false)
+local l_0_1 = tostring(mp.readfile(0, l_0_0))
+if string.find(l_0_1, "[Ee]\000[Qq]\000[Uu]\000[Aa]\000[Tt]\000[Ii]\000[Oo]\000[Nn]\000\020\000[Nn]\000[Aa]\000[Tt]\000[Ii]\000[Vv]\000[Ee]") ~= nil then
+  mp.set_mpattribute("LUA:OLE.EquationNative")
+  local l_0_2 = {
+    [184] = 5,
+    [187] = 5,
+    [185] = 5,
+    [186] = 5,
+    [190] = 5,
+    [191] = 5,
+    [188] = 5,
+    [189] = 5
+  }
+  local l_0_3 = {
+    [129] = 6,
+    [247] = 2,
+    [46] = 5,
+    [45] = 5,
+    [53] = 5,
+    [5] = 5,
+    [37] = 5
+  }
+  local l_0_4 = {
+    [139] = 2
+  }
+  local l_0_5, l_0_6 = string.find(l_0_1, "\208\207\017\224\161\177\026\225", 1, true)
   if l_0_5 == nil or l_0_6 == nil then
     return mp.CLEAN
   end
@@ -54,13 +56,10 @@ if (string.find)(l_0_1, "[Ee]\000[Qq]\000[Uu]\000[Aa]\000[Tt]\000[Ii]\000[Oo]\00
   if l_0_4[l_0_1:byte(l_0_5 + 2)] == nil and l_0_4[l_0_1:byte(l_0_5 + 3)] == nil then
     return mp.CLEAN
   end
-  local l_0_8 = (mp.getfilename)()
-  if (string.find)(l_0_8, "->(Rtf", 1, true) ~= nil or (string.find)(l_0_8, "->xl/embeddings/oleObject", 1, true) ~= nil then
-    (mp.set_mpattribute)("Lua:OLE.ShellcodeInSuspiciousFile")
+  local l_0_8 = mp.getfilename()
+  if string.find(l_0_8, "->(Rtf", 1, true) ~= nil or string.find(l_0_8, "->xl/embeddings/oleObject", 1, true) ~= nil then
+    mp.set_mpattribute("Lua:OLE.ShellcodeInSuspiciousFile")
   end
   return mp.INFECTED
 end
-do
-  return mp.CLEAN
-end
-
+return mp.CLEAN

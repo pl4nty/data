@@ -1,14 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\25b32456945c\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 25b32456945c
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-local l_0_0 = (MpCommon.GetPersistContextNoPath)("vssamsipid")
-for l_0_4,l_0_5 in ipairs(l_0_0) do
-  sms_untrusted_process_pid(l_0_5)
-  add_parents(l_0_5)
+local l_0_0 = MpCommon.GetPersistContextNoPath("vssamsipid")
+for l_0_1, l_0_2 in ipairs(l_0_0) do
+  sms_untrusted_process_pid(l_0_2)
+  add_parents(l_0_2)
   reportSessionInformation()
-  do return mp.INFECTED end
+  return mp.INFECTED
 end
 return mp.CLEAN
-

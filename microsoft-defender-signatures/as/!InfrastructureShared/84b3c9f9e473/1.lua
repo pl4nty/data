@@ -1,46 +1,38 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\84b3c9f9e473\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 84b3c9f9e473
+-- Type: 21
+-- Includes: LuaFuncHelper
 
--- params : ...
--- function num : 0
-local l_0_4 = nil
-if (this_sigattrlog[1]).matched and (this_sigattrlog[1]).utf8p2 ~= nil then
-  local l_0_0, l_0_1, l_0_2, l_0_3 = "|.js|jse|vbs|vbe|"
-else
-  do
-    -- DECOMPILER ERROR at PC27: Overwrote pending register: R0 in 'AssignReg'
-
-    if not (this_sigattrlog[2]).matched or (this_sigattrlog[2]).utf8p2 == nil or l_0_4 == nil then
-      return mp.CLEAN
-    end
-    local l_0_5 = nil
-    for l_0_9,l_0_10 in ipairs((mp.GetExecutablesFromCommandLine)(l_0_4)) do
-      local l_0_6 = nil
-      -- DECOMPILER ERROR at PC43: Confused about usage of register: R7 in 'UnsetPending'
-
-      if (sysio.IsFileExists)(R7_PC43) and (string.find)(l_0_5, (string.lower)((string.sub)(R7_PC43, -3)), 1, true) then
-        local l_0_12, l_0_13 = , (mp.GetMotwReferrerUrlForFile)(l_0_11)
-        if not l_0_13 then
-          return mp.CLEAN
-        end
-        if not l_0_11 or StringStartsWith(R12_PC78, "http") or StringStartsWith(R12_PC78, "www") then
-          return mp.CLEAN
-        end
-        -- DECOMPILER ERROR at PC92: Overwrote pending register: R12 in 'AssignReg'
-
-        -- DECOMPILER ERROR at PC98: Overwrote pending register: R12 in 'AssignReg'
-
-        if (sysio.IsFileExists)(R12_PC78) then
-          (bm.add_related_file)(R12_PC78)
-          -- DECOMPILER ERROR at PC102: Overwrote pending register: R12 in 'AssignReg'
-
-          if (mp.GetMotwHostUrlForFile)(R12_PC78) and R12_PC78 then
-            return mp.INFECTED
-          end
+local l_0_0
+local l_0_1 = "|.js|jse|vbs|vbe|"
+if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[1].utf8p2
+elseif this_sigattrlog[2].matched and this_sigattrlog[2].utf8p2 ~= nil then
+  l_0_0 = this_sigattrlog[2].utf8p2
+end
+if l_0_0 == nil then
+  return mp.CLEAN
+end
+local l_0_2 = mp.GetExecutablesFromCommandLine(l_0_0)
+for l_0_3, l_0_4 in ipairs(l_0_2) do
+  if sysio.IsFileExists(l_0_4) then
+    local l_0_5 = string.lower(string.sub(l_0_4, -3))
+    if string.find(l_0_1, l_0_5, 1, true) then
+      local l_0_6, l_0_7 = mp.GetMotwReferrerUrlForFile(l_0_4)
+      if not l_0_6 then
+        return mp.CLEAN
+      end
+      if not l_0_7 or StringStartsWith(l_0_7, "http") or StringStartsWith(l_0_7, "www") then
+        return mp.CLEAN
+      end
+      if sysio.IsFileExists(l_0_7) then
+        bm.add_related_file(l_0_7)
+        local l_0_8, l_0_9 = mp.GetMotwHostUrlForFile(l_0_7)
+        if l_0_8 and l_0_9 then
+          return mp.INFECTED
         end
       end
     end
-    return mp.CLEAN
   end
 end
-
+return mp.CLEAN

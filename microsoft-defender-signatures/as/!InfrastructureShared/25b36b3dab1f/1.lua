@@ -1,0 +1,39 @@
+-- Threat: !InfrastructureShared
+-- Name: 25b36b3dab1f
+-- Type: 21
+
+local l_0_0 = bm.get_connection_string()
+if l_0_0 then
+  local l_0_1 = string.match(l_0_0, "DestPort=(%d+)")
+  local l_0_2 = {
+    ["80"] = true,
+    ["8080"] = true,
+    ["443"] = true,
+    ["53"] = true,
+    ["21"] = true,
+    ["25"] = true,
+    ["22"] = true,
+    ["389"] = true,
+    ["9"] = true,
+    ["636"] = true,
+    ["1433"] = true,
+    ["1434"] = true,
+    ["1521"] = true,
+    ["9389"] = true,
+    ["8100"] = true,
+    ["23"] = true,
+    ["993"] = true,
+    ["40000"] = true,
+    ["9085"] = true,
+    ["9092"] = true,
+    ["3306"] = true,
+    ["3300"] = true,
+    ["5432"] = true
+  }
+  if l_0_2[l_0_1] then
+    return mp.CLEAN
+  else
+    return mp.INFECTED
+  end
+end
+return mp.CLEAN

@@ -1,12 +1,12 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFPERTrojanPythonCoreDriveC!dha\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALFPER:Trojan:Python/CoreDrive.C!dha
+-- Type: 13
+-- MpAttributes: LUA:FileSizeLE1M.A & BM_ScriptFile
 
--- params : ...
--- function num : 0
-if #(mp.enum_mpattributesubstring)("SCPT:CoreDriveC") > 3 then
+local l_0_0 = mp.enum_mpattributesubstring("SCPT:CoreDriveC")
+if 3 < #l_0_0 then
   return mp.INFECTED
 else
   return mp.CLEAN
 end
 return mp.CLEAN
-

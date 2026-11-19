@@ -1,10 +1,11 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#SLFTrojanWin32ClickFixRDiaSA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#SLF:Trojan:Win32/ClickFixRDia.SA
+-- Type: 13
+-- Includes: BMLuaLib, ResearchData
+-- MpAttributes: MpIsRunDialogAmsiScan
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.getfilesize)()
-if l_0_0 == nil or l_0_0 == 0 or l_0_0 > 700 then
+local l_0_0 = mp.getfilesize()
+if l_0_0 == nil or l_0_0 == 0 or 700 < l_0_0 then
   return mp.CLEAN
 end
 if mp.HEADERPAGE_SZ < 10 then
@@ -14,132 +15,118 @@ local l_0_1 = tostring(headerpage)
 if l_0_1 == nil or #l_0_1 == 0 then
   return mp.CLEAN
 end
-l_0_1 = (mp.utf16to8)(l_0_1)
-if #l_0_1 > 512 then
+l_0_1 = mp.utf16to8(l_0_1)
+if 512 < #l_0_1 then
   return mp.CLEAN
 end
-local l_0_2 = (string.lower)(l_0_1)
-local l_0_3 = {}
--- DECOMPILER ERROR at PC80: No list found for R3 , SetList fails
-
--- DECOMPILER ERROR at PC81: Overwrote pending register: R4 in 'AssignReg'
-
--- DECOMPILER ERROR at PC82: Overwrote pending register: R5 in 'AssignReg'
-
--- DECOMPILER ERROR at PC83: Overwrote pending register: R6 in 'AssignReg'
-
-if not ("powershell")("pwsh", "cmd.exe") then
+local l_0_2 = string.lower(l_0_1)
+local l_0_3 = {
+  "powershell",
+  "pwsh",
+  "cmd.exe",
+  "cmd /c",
+  "cmd /k",
+  "cmd /r",
+  "cmd.exe /",
+  "mshta",
+  "mshta.exe",
+  "wscript",
+  "cscript",
+  "rundll32",
+  "regsvr32",
+  "msiexec",
+  "curl.exe",
+  "certutil",
+  "bitsadmin",
+  "wmic",
+  "forfiles",
+  "conhost",
+  "hh.exe",
+  "ieexec",
+  "installutil",
+  "msbuild",
+  "regasm",
+  "regsvcs",
+  "psexec",
+  "cmstp",
+  "ftp.exe",
+  "tftp.exe",
+  "wsl.exe",
+  "wsl ",
+  "pcalua",
+  "scriptrunner"
+}
+if not contains(l_0_2, l_0_3) then
   return mp.CLEAN
 end
-do
-  local l_0_4 = {}
-  -- DECOMPILER ERROR at PC93: Overwrote pending register: R7 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC94: Overwrote pending register: R8 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC95: Overwrote pending register: R9 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC96: Overwrote pending register: R10 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC97: Overwrote pending register: R11 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC98: Overwrote pending register: R12 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC99: Overwrote pending register: R13 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC100: Overwrote pending register: R14 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC101: Overwrote pending register: R15 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC102: Overwrote pending register: R16 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC103: Overwrote pending register: R17 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC104: Overwrote pending register: R18 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC105: Overwrote pending register: R19 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC106: Overwrote pending register: R20 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC107: Overwrote pending register: R21 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC108: Overwrote pending register: R22 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC109: Overwrote pending register: R23 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC110: Overwrote pending register: R24 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC111: Overwrote pending register: R25 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC112: Overwrote pending register: R26 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC113: Overwrote pending register: R27 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC114: Overwrote pending register: R28 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC115: Overwrote pending register: R29 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC116: Overwrote pending register: R30 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC117: Overwrote pending register: R31 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC118: Overwrote pending register: R32 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC119: Overwrote pending register: R33 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC120: Overwrote pending register: R34 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC121: Overwrote pending register: R35 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC122: Overwrote pending register: R36 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC123: Overwrote pending register: R37 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC141: No list found for R4 , SetList fails
-
-  -- DECOMPILER ERROR at PC142: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC143: Overwrote pending register: R6 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC144: Overwrote pending register: R7 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC145: Overwrote pending register: R8 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC146: Overwrote pending register: R9 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC147: Overwrote pending register: R10 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC148: Overwrote pending register: R11 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC149: Overwrote pending register: R12 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC150: Overwrote pending register: R13 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC151: Overwrote pending register: R14 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC152: Overwrote pending register: R15 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC153: Overwrote pending register: R16 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC154: Overwrote pending register: R17 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC155: Overwrote pending register: R18 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC156: No list found for R4 , SetList fails
-
-  -- DECOMPILER ERROR at PC157: Overwrote pending register: R5 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC158: Overwrote pending register: R6 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC159: Overwrote pending register: R7 in 'AssignReg'
-
-  if not ("iex")("invoke-expression", "cmd /c") then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC169: Overwrote pending register: R8 in 'AssignReg'
-
-  set_research_data("ClickFixRDia_SA", tostring("cmd /k"), false)
-  do return mp.INFECTED end
-  -- WARNING: undefined locals caused missing assignments!
+local l_0_4 = {
+  "iex",
+  "invoke-expression",
+  "invoke-webrequest",
+  "iwr",
+  "invoke-restmethod",
+  "irm ",
+  "downloadstring",
+  "downloadfile",
+  "downloaddata",
+  "net.webclient",
+  "system.net.webclient",
+  "frombase64string",
+  "convert]::from",
+  "[convert]::from",
+  "-encodedcommand",
+  " -enc ",
+  " -e ",
+  "-executionpolicy",
+  "-exec bypass",
+  " bypass",
+  "-nop",
+  "-noprofile",
+  "-noninteractive",
+  "-noni",
+  "-windowstyle hidden",
+  "-w hidden",
+  " -w h",
+  "-wi h",
+  "-wi 1",
+  "start-process",
+  "start-bitstransfer",
+  "bitstransfer",
+  "wget ",
+  "http://",
+  "https://",
+  "ftp://",
+  "-useb",
+  "-usebasicparsing",
+  "useb ",
+  "[scriptblock]",
+  "::create(",
+  "$env:",
+  "$host.",
+  "[ref].assembly",
+  "add-mppreference",
+  "set-mppreference",
+  "set-executionpolicy",
+  "amsiutils",
+  "amsiinitfailed",
+  "amsicontext",
+  "saps ",
+  "sal ",
+  "sv ",
+  "invoke-command",
+  "-decode",
+  "/decode",
+  "echo ",
+  " | cmd",
+  " | powershell",
+  "| pwsh",
+  "hta:",
+  "javascript:",
+  "$env:temp",
+  "shinoclickfix"
+}
+if not contains(l_0_2, l_0_4) then
+  return mp.CLEAN
 end
-
+set_research_data("ClickFixRDia_SA", tostring(l_0_1), false)
+return mp.INFECTED

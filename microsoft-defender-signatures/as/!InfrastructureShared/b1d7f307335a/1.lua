@@ -1,28 +1,13 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\b1d7f307335a\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: b1d7f307335a
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = IsProcNameInParentProcessTree
-local l_0_1 = "CMDHSTR"
-do
-  local l_0_2 = {}
-  -- DECOMPILER ERROR at PC6: No list found for R2 , SetList fails
-
-  -- DECOMPILER ERROR at PC7: Overwrote pending register: R3 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC12: Overwrote pending register: R0 in 'AssignReg'
-
-  if not l_0_0 then
-    return l_0_0
-  end
-  -- DECOMPILER ERROR at PC14: Overwrote pending register: R0 in 'AssignReg'
-
-  -- DECOMPILER ERROR at PC15: Overwrote pending register: R0 in 'AssignReg'
-
-  do return l_0_0 end
-  -- WARNING: undefined locals caused missing assignments!
+if not IsProcNameInParentProcessTree("CMDHSTR", {
+  "picus.simulator.exe",
+  "picus.agent.exe",
+  "picus.simulation.agentservice.exe"
+}, 5) then
+  return mp.CLEAN
 end
-
+return mp.INFECTED

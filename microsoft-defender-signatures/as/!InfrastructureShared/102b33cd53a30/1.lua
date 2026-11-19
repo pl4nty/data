@@ -1,36 +1,24 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\102b33cd53a30\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 102b33cd53a30
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC7: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[5]).matched then
-    local l_0_0, l_0_1 = nil
-  end
-  -- DECOMPILER ERROR at PC8: Confused about usage of register: R0 in 'UnsetPending'
-
-  -- DECOMPILER ERROR at PC12: Confused about usage of register: R0 in 'UnsetPending'
-
-  if l_0_0 then
-    local l_0_2 = nil
-    if (MpCommon.GetMountedFileBackingFilePath)(l_0_0) == nil then
-      return mp.CLEAN
-    end
-    local l_0_3 = nil
-    if (string.lower)((string.sub)((MpCommon.GetMountedFileBackingFilePath)(l_0_0), -4)) ~= ".iso" or (string.lower)((string.sub)((MpCommon.GetMountedFileBackingFilePath)(l_0_0), -4)) ~= ".img" then
-      return mp.CLEAN
-    end
-    triggerMemoryScanOnProcessTree(true, true, "SMS_M", 1000, "Behavior:Win32/Qakbot.SC")
-    ;
-    (bm.add_related_file)(l_0_2)
-    ;
-    (bm.add_related_file)(l_0_3)
-    return mp.INFECTED
-  end
-  do
+local l_0_0
+if this_sigattrlog[5].matched then
+  l_0_0 = this_sigattrlog[5].utf8p1
+end
+if l_0_0 then
+  local l_0_1 = MpCommon.GetMountedFileBackingFilePath(l_0_0)
+  if l_0_1 == nil then
     return mp.CLEAN
   end
+  local l_0_2 = string.lower(string.sub(l_0_1, -4))
+  if l_0_2 ~= ".iso" or l_0_2 ~= ".img" then
+    return mp.CLEAN
+  end
+  triggerMemoryScanOnProcessTree(true, true, "SMS_M", 1000, "Behavior:Win32/Qakbot.SC")
+  bm.add_related_file(l_0_0)
+  bm.add_related_file(l_0_1)
+  return mp.INFECTED
 end
-
+return mp.CLEAN

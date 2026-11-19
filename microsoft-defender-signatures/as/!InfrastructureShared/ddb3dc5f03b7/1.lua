@@ -1,44 +1,25 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\ddb3dc5f03b7\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: ddb3dc5f03b7
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
--- DECOMPILER ERROR at PC11: Overwrote pending register: R0 in 'AssignReg'
-
-do
-  if (this_sigattrlog[1]).matched then
-    local l_0_0, l_0_1 = nil
-  end
-  local l_0_2 = nil
-  local l_0_3 = contains
-  local l_0_4 = l_0_2
-  l_0_3 = l_0_3(l_0_4, {" /i ", " /q ", " -i ", " -q "})
-  if l_0_3 then
-    l_0_3 = string
-    l_0_3 = l_0_3.match
-    l_0_4 = l_0_2
-    l_0_3 = l_0_3(l_0_4, "msiexec%.?e?x?e?\"?\'?%s+(.*)$")
-    if l_0_3 == nil then
-      l_0_4 = mp
-      l_0_4 = l_0_4.CLEAN
-      return l_0_4
-    end
-    l_0_4 = contains
-    local l_0_5 = l_0_3
-    l_0_4 = l_0_4(l_0_5, {".msi", ".exe"})
-    if l_0_4 then
-      l_0_4 = mp
-      l_0_4 = l_0_4.CLEAN
-      return l_0_4
-    end
-    l_0_4 = mp
-    l_0_4 = l_0_4.INFECTED
-    return l_0_4
-  end
-  do
-    l_0_3 = mp
-    l_0_3 = l_0_3.CLEAN
-    return l_0_3
-  end
+local l_0_0
+if this_sigattrlog[1].matched then
+  l_0_0 = string.lower(this_sigattrlog[1].utf8p2)
 end
-
+if contains(l_0_0, {
+  " /i ",
+  " /q ",
+  " -i ",
+  " -q "
+}) then
+  local l_0_1 = string.match(l_0_0, "msiexec%.?e?x?e?\"?'?%s+(.*)$")
+  if l_0_1 == nil then
+    return mp.CLEAN
+  end
+  if contains(l_0_1, {".msi", ".exe"}) then
+    return mp.CLEAN
+  end
+  return mp.INFECTED
+end
+return mp.CLEAN

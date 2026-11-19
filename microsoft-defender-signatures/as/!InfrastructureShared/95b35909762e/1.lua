@@ -1,12 +1,11 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\95b35909762e\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 95b35909762e
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0, l_0_1 = pcall((bm.GetMemQueryCount)())
-if l_0_1 ~= nil and l_0_1 > 0 then
+local l_0_0, l_0_1 = pcall(bm.GetMemQueryCount())
+if l_0_1 ~= nil and 0 < l_0_1 then
   AddResearchData("BM", true)
   return mp.INFECTED
 end
 return mp.CLEAN
-

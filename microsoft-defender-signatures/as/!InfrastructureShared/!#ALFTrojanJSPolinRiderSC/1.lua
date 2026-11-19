@@ -1,106 +1,92 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanJSPolinRiderSC\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:JS/PolinRider.SC
+-- Type: 13
+-- MpAttributes: BRUTE:PaddedGlobalScript.A
 
--- params : ...
--- function num : 0
-local l_0_0 = function(l_1_0)
-  -- function num : 0_0
-  local l_1_1 = (string.match)(l_1_0, "return%s+([%a_$][%w_$]*)%s*%.%s*join%s*%(%s*([\'\"])%2%s*%)")
-  if l_1_1 == nil then
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
+
+local function r0_0(p1_0)
+  local r1_0 = string.match(p1_0, "return%s+([%a_$][%w_$]*)%s*%.%s*join%s*%(%s*(['\"])%2%s*%)")
+  if r1_0 == nil then
     return false
   end
-  local l_1_2 = (string.lower)((string.gsub)(l_1_0, "%s+", ""))
-  local l_1_3 = (string.find)(l_1_2, ".charat(", 1, true)
-  if l_1_3 == nil then
+  local r1_1 = string.lower(string.gsub(p1_0, "%s+", ""))
+  local r1_2 = string.find(r1_1, ".charat(", 1, true)
+  if r1_2 == nil then
     return false
   end
-  l_1_2 = (string.sub)(l_1_2, l_1_3)
-  if not (string.find)(l_1_2, "^%.charat%([%a_$][%w_$]*%);?};for%(var([%a_$][%w_$]*)=0;%1<[%a_$][%w_$]*;%1%+%+%){var") then
+  r1_1 = string.sub(r1_1, r1_2)
+  if string.find(r1_1,
+    "^%.charat%([%a_$][%w_$]*%);?};for%(var([%a_$][%w_$]*)=0;%1<[%a_$][%w_$]*;%1%+%+%){var") then
+    local r1_3, r1_4, r1_5, r1_6 = string.find(r1_1,
+      "var([%a_$][%w_$]*)=([%a_$][%w_$]*)%[([%a_$][%w_$]*)%];%2%[%3%]=%2%[([%a_$][%w_$]*)%];%2%[%4%]=%1;")
+    if r1_3 ~= nil and string.lower(r1_0) == r1_6 then
+      local r1_7, r1_8 = string.find(r1_1, "};return" .. r1_6 .. ".join(", r1_4 + 1, true)
+      if r1_7 ~= nil and not (r1_7 - r1_4 > 128) then
+        local r1_9 = string.sub(r1_1, r1_4 + 1, r1_7 - 1)
+        if string.find(r1_9, "^[%a_$][%w_$]*=%([%a_$][%w_$]*%+[%a_$][%w_$]*%)%%%d+;$") then
+          local r1_10 = string.sub(r1_1, r1_8 + 1, r1_8 + 3)
+          return r1_10 == "'')" or r1_10 == '"")'
+        end
+        return false
+      end
+      return false
+    end
     return false
   end
-  local l_1_4, l_1_5, l_1_6, l_1_7 = (string.find)(l_1_2, "var([%a_$][%w_$]*)=([%a_$][%w_$]*)%[([%a_$][%w_$]*)%];%2%[%3%]=%2%[([%a_$][%w_$]*)%];%2%[%4%]=%1;")
-  if l_1_4 == nil or (string.lower)(l_1_1) ~= l_1_7 then
-    return false
-  end
-  local l_1_8, l_1_9 = (string.find)(l_1_2, "};return" .. l_1_7 .. ".join(", l_1_5 + 1, true)
-  if l_1_8 == nil or l_1_8 - l_1_5 > 128 then
-    return false
-  end
-  local l_1_10 = (string.sub)(l_1_2, l_1_5 + 1, l_1_8 - 1)
-  if not (string.find)(l_1_10, "^[%a_$][%w_$]*=%([%a_$][%w_$]*%+[%a_$][%w_$]*%)%%%d+;$") then
-    return false
-  end
-  do
-    local l_1_11 = (string.sub)(l_1_2, l_1_9 + 1, l_1_9 + 3)
-    do return l_1_11 == "\'\')" or l_1_11 == "\"\")" end
-    -- DECOMPILER ERROR: 1 unprocessed JMP targets
-  end
+  return false
 end
 
-local l_0_1 = (mp.getfilesize)()
-local l_0_2 = 512
-if l_0_1 == nil or l_0_1 <= l_0_2 or l_0_1 > 8388608 then
-  return mp.CLEAN
-end
-local l_0_3 = l_0_2
-for l_0_7 = 1, 64 do
-  if l_0_1 - 6 < l_0_3 then
-    return mp.CLEAN
-  end
-  local l_0_8 = l_0_1 - l_0_3
-  ;
-  (mp.readprotection)(false)
-  local l_0_9, l_0_10 = pcall(mp.BMSearchFile, l_0_3, l_0_8, "global\144\000")
-  ;
-  (mp.readprotection)(true)
-  if not l_0_9 then
-    (mp.set_mpattribute)("Lua:PaddedGlobalScriptSearchFailed")
-    return mp.CLEAN
-  end
-  if l_0_10 == nil or l_0_10 < 0 or l_0_8 - 6 < l_0_10 then
-    return mp.CLEAN
-  end
-  local l_0_11 = l_0_3 + l_0_10
-  local l_0_12 = l_0_11 - l_0_2
-  do
-    if l_0_2 + 2048 < l_0_1 - l_0_12 then
-      local l_0_13, l_0_14, l_0_15 = l_0_2 + 2048
-    end
-    ;
-    (mp.readprotection)(false)
-    -- DECOMPILER ERROR at PC74: Confused about usage of register: R13 in 'UnsetPending'
-
-    local l_0_16 = nil
-    ;
-    (mp.readprotection)(true)
-    if (mp.readfile)(l_0_12, l_0_13) == nil then
-      (mp.set_mpattribute)("Lua:PaddedGlobalScriptReadFailed")
+local r0_1 = mp.getfilesize()
+local r0_2 = 512
+if r0_1 ~= nil and not (r0_1 <= r0_2) and not (r0_1 > 8388608) then
+  local r0_3 = r0_2
+  for r0_4 = 1, 64 do
+    if r0_1 - 6 < r0_3 then
       return mp.CLEAN
     end
-    local l_0_17 = nil
-    if #tostring((mp.readfile)(l_0_12, l_0_13)) ~= l_0_16 then
-      (mp.set_mpattribute)("Lua:PaddedGlobalScriptReadFailed")
+    local r0_5 = r0_1 - r0_3
+    mp.readprotection(false)
+    local r0_6, r0_7 = pcall(mp.BMSearchFile, r0_3, r0_5, "global\144\000")
+    mp.readprotection(true)
+    if not r0_6 then
+      mp.set_mpattribute("Lua:PaddedGlobalScriptSearchFailed")
       return mp.CLEAN
     end
-    local l_0_18 = nil
-    if not (string.find)((string.sub)(tostring((mp.readfile)(l_0_12, l_0_13)), 1, l_0_2), "[^ \t\r\n]") then
-      local l_0_19 = nil
-      local l_0_20 = nil
-      local l_0_21 = (string.find)((string.sub)(l_0_18, l_0_2 + 1), "^global%s*[%[%.]")
-      if ((string.find)((string.sub)(l_0_20, 1, 512), "global%s*%.%s*[%a_$][%w_$]*%s*=%s*require%s*;") or l_0_21) and (string.find)((string.sub)(l_0_20, 1, 512), "global%s*%[%s*([\'\"])[%w_$]+%1%s*%]%s*=%s*require%s*;") and l_0_0(l_0_20) then
+    if r0_7 == nil or r0_7 < 0 or r0_5 - 6 < r0_7 then
+      return mp.CLEAN
+    end
+    local r0_8 = r0_3 + r0_7
+    local r0_9 = r0_8 - r0_2
+    local r0_10 = r0_1 - r0_9
+    if r0_2 + 2048 < r0_10 then
+      r0_10 = r0_2 + 2048
+    end
+    mp.readprotection(false)
+    local r0_11 = mp.readfile(r0_9, r0_10)
+    mp.readprotection(true)
+    if r0_11 == nil then
+      mp.set_mpattribute("Lua:PaddedGlobalScriptReadFailed")
+      return mp.CLEAN
+    end
+    local r0_12 = tostring(r0_11)
+    if #r0_12 ~= r0_10 then
+      mp.set_mpattribute("Lua:PaddedGlobalScriptReadFailed")
+      return mp.CLEAN
+    end
+    local r0_13 = string.sub(r0_12, 1, r0_2)
+    if not string.find(r0_13, "[^ \t\r\n]") then
+      local r0_14 = string.sub(r0_12, r0_2 + 1)
+      local r0_15 = string.find(r0_14, "^global%s*[%[%.]")
+      local r0_16 = string.sub(r0_14, 1, 512)
+      local r0_17 = string.find(r0_16, "global%s*%.%s*[%a_$][%w_$]*%s*=%s*require%s*;")
+        or string.find(r0_16, "global%s*%[%s*(['\"])[%w_$]+%1%s*%]%s*=%s*require%s*;")
+      if r0_15 and r0_17 and r0_0(r0_14) then
         return mp.INFECTED
       end
     end
-    do
-      do
-        l_0_3 = l_0_11 + 6
-        -- DECOMPILER ERROR at PC156: LeaveBlock: unexpected jumping out DO_STMT
-
-        -- DECOMPILER ERROR at PC156: LeaveBlock: unexpected jumping out DO_STMT
-
-      end
-    end
+    r0_3 = r0_8 + 6
   end
+  return mp.CLEAN
 end
 return mp.CLEAN
-

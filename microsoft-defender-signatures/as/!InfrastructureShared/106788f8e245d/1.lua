@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: 106788f8e245d
+-- Type: 21
+
+if peattributes.isdll == true and peattributes.ismsil == true then
+  return mp.INFECTED
+end
+return mp.CLEAN

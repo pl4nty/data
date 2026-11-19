@@ -1,0 +1,8 @@
+-- Threat: !InfrastructureShared
+-- Name: 7f78c8e501aa
+-- Type: 21
+
+if peattributes.isexe == true then
+  return mp.INFECTED
+end
+return mp.CLEAN

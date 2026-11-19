@@ -1,0 +1,33 @@
+-- Threat: !InfrastructureShared
+-- Name: a0b349d74811
+-- Type: 21
+
+if this_sigattrlog[1].matched then
+  if this_sigattrlog[1].utf8p1 ~= nil then
+    if string.match(this_sigattrlog[1].utf8p1, "\\\\BitTorrent$") ~= nil then
+      return mp.CLEAN
+    end
+    if string.match(this_sigattrlog[1].utf8p1, "\\\\uTorrent$") ~= nil then
+      return mp.CLEAN
+    end
+  end
+  if this_sigattrlog[1].utf8p2 ~= nil then
+    local l_0_0 = string.match(this_sigattrlog[1].utf8p2, "%a:[^:\"]+%.exe")
+    if l_0_0 then
+      bm.add_related_file(mp.ContextualExpandEnvironmentVariables(l_0_0))
+    end
+    local l_0_1 = string.match(this_sigattrlog[1].utf8p2, "%a:[^:\"]+%.ps1")
+    if l_0_1 then
+      bm.add_related_file(mp.ContextualExpandEnvironmentVariables(l_0_1))
+    end
+    local l_0_2 = string.match(this_sigattrlog[1].utf8p2, "%a:[^:\"]+%.bat")
+    if l_0_2 then
+      bm.add_related_file(mp.ContextualExpandEnvironmentVariables(l_0_2))
+    end
+    local l_0_3 = string.match(this_sigattrlog[1].utf8p2, "%a:[^:\"]+%.dll")
+    if l_0_3 then
+      bm.add_related_file(mp.ContextualExpandEnvironmentVariables(l_0_3))
+    end
+  end
+end
+return mp.INFECTED

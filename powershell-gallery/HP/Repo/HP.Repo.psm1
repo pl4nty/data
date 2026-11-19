@@ -20,7 +20,7 @@ if (Test-Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll") {
   Add-Type -Path "$PSScriptRoot\..\HP.Private\HP.CMSLHelper.dll"
 }
 else{
-  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.9.0\HP.CMSLHelper.dll"
+  Add-Type -Path "$PSScriptRoot\..\..\HP.Private\1.9.1\HP.CMSLHelper.dll"
 }
 
 enum ErrorHandling
@@ -537,7 +537,7 @@ function Initialize-HPRepository
   Specifies the operating system to be included in this repository. The value must be one of 'win10' or 'win11'. If not specified, the current operating system will be assumed, which may not be what is intended.
 
 .PARAMETER OsVer
-  Specifies the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', etc). Starting from the '21H1' release, 'xxHx' format is expected. If not specified, the current operating system version will be assumed, which may not be what is intended.
+  Specifies the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', '26H1', '26H2', etc). Starting from the '21H1' release, 'xxHx' format is expected. If not specified, the current operating system version will be assumed, which may not be what is intended.
 
 .PARAMETER Category
   Specifies the SoftPaq category to be included in this repository. The value must be one (or more) of the following values: 
@@ -635,7 +635,7 @@ function Add-HPRepositoryFilter
     [Parameter(Position = 1)] $Os = "*", # counterintuitively, "*" for this Os parameter means "current"  
     [string[]]
 
-    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2")] # keep in sync with the SoftPaq module
+    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2","26H1", "26H2")] # keep in sync with the SoftPaq module
     [Parameter(Position = 1)]
     [string]$OsVer,
 
@@ -712,7 +712,7 @@ function Add-HPRepositoryFilter
  Specifies an OS for this command to be removed from this repository. The value must be 'win10' or 'win11'. If not specified, the current operating system will be assumed, which may not be what is intended.
 
 .PARAMETER OsVer
-  Specifies the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2', etc). Starting from the '21H1' release, 'xxHx' format is expected. If the parameter is not specified, the current operating system version will be assumed, which may not be what is intended.
+  Specifies the target OS Version (e.g. '1809', '1903', '1909', '2004', '2009', '21H1', '21H2', '22H2', '23H2', '24H2', '25H2','26H1', '26H2' etc). Starting from the '21H1' release, 'xxHx' format is expected. If the parameter is not specified, the current operating system version will be assumed, which may not be what is intended.
 
 .PARAMETER Category
   Specifies the SoftPaq category to be removed from this repository. The value must be one (or more) of the following values: 
@@ -814,7 +814,7 @@ function Remove-HPRepositoryFilter
     [Parameter(Position = 1)]
     $Os = "*", # counterintuitively, "*" for this Os parameter means "current"
 
-    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2")] # keep in sync with the SoftPaq module
+    [ValidateSet("1809","1903","1909","2004","2009","21H1","21H2","22H2", "23H2", "24H2", "25H2", "26H1", "26H2")] # keep in sync with the SoftPaq module
     [Parameter(Position = 1)]
     [string]$OsVer,
 

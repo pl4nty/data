@@ -1,8 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#PUAMLVIBlockedAuslogics\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#PUA:MLVI:Blocked:Auslogics
+-- Type: 10
+-- Includes: checkProductNameVersionInfrastructure
+-- MpAttributes: PUA:ML:Blocked:Auslogics
 
--- params : ...
--- function num : 0
 if checkProductName("Components Package") then
   return mp.CLEAN
 end
@@ -22,4 +23,3 @@ if checkProductName("Disk Defrag Portable") then
   return mp.CLEAN
 end
 return mp.INFECTED
-

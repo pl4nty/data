@@ -1,57 +1,47 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#ALFTrojanAIMCPGitHubCommentPromptInjectionA!Hook\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:AIMCP/GitHubCommentPromptInjection.A!Hook
+-- Type: 13
+-- Includes: LuaFuncHelper, BMLuaLib
+-- MpAttributes: MpIsAiNetPromptScan
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.get_contextdata)(mp.CONTEXT_DATA_SCANREASON)
-if l_0_0 == nil or l_0_0 ~= mp.SCANREASON_NET_PROMPTSTREAM then
-  return mp.CLEAN
-end
-do
-  if (mp.getfilesize)() > 1536000 then
-    local l_0_1, l_0_2, l_0_3 = 1536000
+-- Fallback: decompiled by unluac-rs, not verified against the original bytecode
+
+local r0_0 = mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON)
+if r0_0 ~= nil and r0_0 == mp.SCANREASON_NET_PROMPTSTREAM then
+  local r0_1 = mp.getfilesize()
+  r0_1 = r0_1 > 1536000 and 1536000 or r0_1
+  mp.readprotection(false)
+  local r0_2 = tostring(mp.readfile(0, r0_1))
+  mp.readprotection(true)
+  if not r0_2 or r0_2 == "" then
+    r0_2 = mp.get_contextdata(mp.CONTEXT_DATA_NET_PROMPT_LAST_MESSAGE)
   end
-  ;
-  (mp.readprotection)(false)
-  -- DECOMPILER ERROR at PC28: Confused about usage of register: R1 in 'UnsetPending'
-
-  local l_0_4 = nil
-  ;
-  (mp.readprotection)(true)
-  -- DECOMPILER ERROR at PC47: Confused about usage of register: R2 in 'UnsetPending'
-
-  if ((not tostring((mp.readfile)(0, l_0_1)) or tostring((mp.readfile)(0, l_0_1)) == "") and not (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_LAST_MESSAGE)) or (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_LAST_MESSAGE) == "" then
-    return mp.CLEAN
-  end
-  -- DECOMPILER ERROR at PC52: Confused about usage of register: R2 in 'UnsetPending'
-
-  local l_0_5 = nil
-  local l_0_6 = (mp.get_contextdata)(mp.CONTEXT_DATA_NET_PROMPT_LAST_MESSAGE)
-  local l_0_7 = (string.find)(l_0_5, "github", 1, true)
-  do
-    if not (string.find)(l_0_5, "env | grep", 1, true) then
-      local l_0_8 = (string.find)(l_0_5, "printenv", 1, true)
-    end
-    local l_0_9 = nil
-    if not contains(l_0_5, {"token", "key", "secret", "url", "api"}) then
+  if r0_2 and r0_2 ~= "" then
+    local r0_3 = r0_2
+    r0_2 = r0_2:lower()
+    local r0_4 = string.find(r0_2, "github", 1, true)
+    local r0_5 = string.find(r0_2, "printenv", 1, true)
+    local r0_6 = string.find(r0_2, "env | grep", 1, true) or string.find(r0_2, "env|grep", 1, true)
+    local r0_7 = { "token", "key", "secret", "url", "api" }
+    if contains(r0_2, r0_7) then
+      if r0_4 and r0_5 and r0_6 then
+        local r0_8 = mp.get_contextdata(mp.CONTEXT_NAME_PROMPT_AGENT_SESSIONID)
+        if r0_8 == nil then
+          r0_8 = r0_2:match('"session_id"%s*:%s*"([^"]+)"')
+        end
+        local r0_9 = string.sub(r0_3, 1, 1536)
+        local r0_10 = MpCommon.Base64Encode(r0_9)
+        local r0_11 = {
+          AgentSessionId = r0_8, LastMessage = r0_10,
+          Technique = "GitHubCommentIssuePromptInjection.EnvSecretEnumeration"
+        }
+        mp.SetDetectionString(safeJsonSerialize(r0_11))
+        return mp.INFECTED
+      end
       return mp.CLEAN
     end
-    if l_0_7 and l_0_9 and (string.find)(l_0_5, "env|grep", 1, true) then
-      do
-        if (mp.get_contextdata)(mp.CONTEXT_NAME_PROMPT_AGENT_SESSIONID) == nil then
-          local l_0_10 = nil
-        end
-        local l_0_11 = nil
-        local l_0_12 = nil
-        do
-          local l_0_13 = l_0_5:match("\"session_id\"%s*:%s*\"([^\"]+)\"")
-          ;
-          (mp.SetDetectionString)(safeJsonSerialize({AgentSessionId = l_0_13, LastMessage = (MpCommon.Base64Encode)((string.sub)(l_0_6, 1, 1536)), Technique = "GitHubCommentIssuePromptInjection.EnvSecretEnumeration"}))
-          do return mp.INFECTED end
-          return mp.CLEAN
-        end
-      end
-    end
+    return mp.CLEAN
   end
+  return mp.CLEAN
 end
-
+return mp.CLEAN

@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\32b3a8aae959\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 32b3a8aae959
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
 reportAndSinkholeDNSTelemetry("NRI-DNS-TL-TXT", "DnsTunnel.A", false)
 return mp.INFECTED
-

@@ -1,17 +1,14 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\!#LuaCornFlakeSA\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: !#Lua:CornFlake.SA
+-- Type: 13
+-- MpAttributes: RPF:TopLevelFile & (BM_TEXT_FILE | BM_SCRIPT_OR_TEXT_FILE)
 
--- params : ...
--- function num : 0
-local l_0_0 = (mp.enum_mpattributesubstring)("SCRT:5351.CornFlake")
-if #l_0_0 >= 3 then
-  (mp.set_mpattribute)("Lua:CornFlake.BS1")
+local l_0_0 = mp.enum_mpattributesubstring("SCRT:5351.CornFlake")
+if 3 <= #l_0_0 then
+  mp.set_mpattribute("Lua:CornFlake.BS1")
   return mp.INFECTED
-else
-  if #l_0_0 == 2 then
-    (mp.set_mpattribute)("Lua:CornFlake.MS1")
-    return mp.CLEAN
-  end
+elseif #l_0_0 == 2 then
+  mp.set_mpattribute("Lua:CornFlake.MS1")
+  return mp.CLEAN
 end
 return mp.CLEAN
-

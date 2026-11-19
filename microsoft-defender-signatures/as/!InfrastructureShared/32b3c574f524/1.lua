@@ -1,9 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\32b3c574f524\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 32b3c574f524
+-- Type: 21
+-- Includes: BMLuaLib
 
--- params : ...
--- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_0 = bm.get_current_process_startup_info()
 if l_0_0 == nil then
   return mp.CLEAN
 end
@@ -15,4 +15,3 @@ if analyzeEsxcliProcessPattern(l_0_1) == mp.INFECTED then
   return mp.INFECTED
 end
 return mp.CLEAN
-

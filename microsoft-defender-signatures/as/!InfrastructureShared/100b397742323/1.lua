@@ -1,9 +1,9 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\100b397742323\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 100b397742323
+-- Type: 21
+-- Includes: BMLuaLib, TechniqueTracker
 
--- params : ...
--- function num : 0
-local l_0_0 = (bm.get_current_process_startup_info)()
+local l_0_0 = bm.get_current_process_startup_info()
 if l_0_0 == nil or l_0_0.ppid == nil then
   return mp.CLEAN
 end
@@ -17,4 +17,3 @@ if IsTaintedProcessinParentTreeForLinux("upx_file_created_taint") or IsTaintedPr
   return mp.INFECTED
 end
 return mp.CLEAN
-

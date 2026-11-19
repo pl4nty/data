@@ -1,8 +1,7 @@
--- Decompiled using luadec 2.2 rev: 895d923 for Lua 5.1 from https://github.com/viruscamp/luadec
--- Command line: lua\!InfrastructureShared\93b39fed906e\1.luac 
+-- Threat: !InfrastructureShared
+-- Name: 93b39fed906e
+-- Type: 21
+-- Includes: TechniqueTracker
 
--- params : ...
--- function num : 0
 TrackPidAndTechniqueBM("BM", "T1546", "mail-script")
 return mp.INFECTED
-
