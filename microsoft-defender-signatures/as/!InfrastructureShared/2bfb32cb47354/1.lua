@@ -44,12 +44,12 @@ if this_sigattrlog[1].matched and this_sigattrlog[1].utf8p2 ~= nil then
         if not MpCommon.DoesProcessHaveAttribute(l_0_11.ppid, "StartedViaRUNMRU") then
           MpCommon.AddProcessAttribute(l_0_11.ppid, "StartedViaRUNMRU", tostring(l_0_13), true)
         end
-        AppendToRollingQueue("IsProcessChainViaRUNMRU", l_0_11.ppid, 1, 30)
+        AppendToRollingQueue("IsProcessChainViaRUNMRU", l_0_11.ppid, 1, 60)
         local l_0_16, l_0_17, l_0_18 = IsKeyInRollingQueue("IsFromWebClipWrite", l_0_0, true)
         if l_0_16 and next(l_0_18) ~= nil then
           bm.trigger_sig("FromWebClipWrite", safeJsonSerialize(l_0_18), l_0_11.ppid)
           bm.trigger_sig_target_propagate("ProcessChainFromWebClipWrite", "ProcessChainFromWebClipWrite", l_0_11.ppid)
-          AppendToRollingQueue("IsProcessChainFromWebClipWrite", l_0_11.ppid, 1, 30)
+          AppendToRollingQueue("IsProcessChainFromWebClipWrite", l_0_11.ppid, 1, 60)
         end
       end
     end

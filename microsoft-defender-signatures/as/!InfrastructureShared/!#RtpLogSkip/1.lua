@@ -158,50 +158,62 @@ if l_0_20 == "rundll32.exe" or l_0_20 == "dllhost.exe" or l_0_20 == "regsvr32.ex
   return 0
 end
 local l_0_21 = string.lower(skip.get_contextdata(skip.CONTEXT_DATA_PROCESSDEVICEPATH))
-if l_0_8 == skip.SCANREASON_ONMODIFIEDHANDLECLOSE and l_0_20 == "svchost.exe" then
-  local l_0_22 = l_0_12:match("^\\device\\harddiskvolume(%d+)\\windows\\serviceprofiles\\localservice\\appdata\\local\\microsoft\\ngc\\pregenpool$")
-  if l_0_22 == nil then
-    local l_0_23, l_0_24, l_0_25, l_0_26, l_0_27, l_0_28 = l_0_12:match("^\\device\\harddiskvolume(%d+)\\windows\\serviceprofiles\\localservice\\appdata\\local\\microsoft\\ngc" .. "\\%{([0-9a-f]+)%-([0-9a-f]+)%-([0-9a-f]+)%-([0-9a-f]+)%-([0-9a-f]+)%}\\temp$")
-    if l_0_24 ~= nil and string.len(l_0_24) == 8 and string.len(l_0_25) == 4 and string.len(l_0_26) == 4 and string.len(l_0_27) == 4 and string.len(l_0_28) == 12 then
-      l_0_22 = l_0_23
+if l_0_20 == "civ7_win64_dx12_finalrelease.exe" then
+  local l_0_22 = l_0_21:match("^(\\device\\harddiskvolume%d+\\.-\\steamapps\\common\\sid meier's civilization vii)\\base\\binaries\\win64$")
+  if l_0_22 ~= nil then
+    if l_0_12 == l_0_22 or l_0_1(l_0_12, l_0_22 .. "\\") then
+      return 1
+    end
+    local l_0_23 = l_0_12:match("^\\device\\harddiskvolume%d+\\users\\[^\\]+\\appdata\\local\\firaxis games\\sid meier's civilization vii(.*)$")
+    if l_0_23 ~= nil and (l_0_23 == "" or l_0_1(l_0_23, "\\")) then
+      return 1
     end
   end
-  local l_0_29 = l_0_21:match("^\\device\\harddiskvolume(%d+)\\windows\\system32$")
-  if l_0_22 ~= nil and l_0_22 == l_0_29 then
-    local l_0_30 = skip.get_contextdata(skip.CONTEXT_DATA_FILENAME)
-    local l_0_31, l_0_32, l_0_33, l_0_34, l_0_35 = l_0_30:match("^%{([0-9A-F]+)%-([0-9A-F]+)%-([0-9A-F]+)%-([0-9A-F]+)%-([0-9A-F]+)%}$")
-    if l_0_31 ~= nil and string.len(l_0_31) == 8 and string.len(l_0_32) == 4 and string.len(l_0_33) == 4 and string.len(l_0_34) == 4 and string.len(l_0_35) == 12 then
+end
+if l_0_8 == skip.SCANREASON_ONMODIFIEDHANDLECLOSE and l_0_20 == "svchost.exe" then
+  local l_0_24 = l_0_12:match("^\\device\\harddiskvolume(%d+)\\windows\\serviceprofiles\\localservice\\appdata\\local\\microsoft\\ngc\\pregenpool$")
+  if l_0_24 == nil then
+    local l_0_25, l_0_26, l_0_27, l_0_28, l_0_29, l_0_30 = l_0_12:match("^\\device\\harddiskvolume(%d+)\\windows\\serviceprofiles\\localservice\\appdata\\local\\microsoft\\ngc\\%{([0-9a-f]+)%-([0-9a-f]+)%-([0-9a-f]+)%-([0-9a-f]+)%-([0-9a-f]+)%}\\temp$")
+    if l_0_26 ~= nil and string.len(l_0_26) == 8 and string.len(l_0_27) == 4 and string.len(l_0_28) == 4 and string.len(l_0_29) == 4 and string.len(l_0_30) == 12 then
+      l_0_24 = l_0_25
+    end
+  end
+  local l_0_31 = l_0_21:match("^\\device\\harddiskvolume(%d+)\\windows\\system32$")
+  if l_0_24 ~= nil and l_0_24 == l_0_31 then
+    local l_0_32 = skip.get_contextdata(skip.CONTEXT_DATA_FILENAME)
+    local l_0_33, l_0_34, l_0_35, l_0_36, l_0_37 = l_0_32:match("^%{([0-9A-F]+)%-([0-9A-F]+)%-([0-9A-F]+)%-([0-9A-F]+)%-([0-9A-F]+)%}$")
+    if l_0_33 ~= nil and string.len(l_0_33) == 8 and string.len(l_0_34) == 4 and string.len(l_0_35) == 4 and string.len(l_0_36) == 4 and string.len(l_0_37) == 12 then
       return 1
     end
   end
 end
 if l_0_8 == 1 then
   if l_0_20 == "wmiprvse.exe" then
-    local l_0_36 = l_0_21:match("^\\device\\harddiskvolume(.*)\\windows")
-    if l_0_36 ~= nil and l_0_17:match("^dr%d*$") then
+    local l_0_38 = l_0_21:match("^\\device\\harddiskvolume(.*)\\windows")
+    if l_0_38 ~= nil and l_0_17:match("^dr%d*$") then
       return 1
     end
   end
   return 0
 end
-local l_0_37 = false
+local l_0_39 = false
 if l_0_8 == skip.SCANREASON_ONOPEN and (l_0_20 == "python.exe" or l_0_20 == "pythonw.exe" or l_0_20 == "_conda.exe") then
   if l_0_0(l_0_17, ".pyc") then
-    local l_0_38 = l_0_4(l_0_12, l_0_17)
-    if l_0_20 == "python.exe" and l_0_38 then
+    local l_0_40 = l_0_4(l_0_12, l_0_17)
+    if l_0_20 == "python.exe" and l_0_40 then
       return 1
     end
-    l_0_37 = not l_0_38
+    l_0_39 = not l_0_40
   elseif l_0_17 == "subprocess_cli.py" then
-    l_0_37 = l_0_0(l_0_12, "\\claude_agent_sdk\\_internal\\transport")
+    l_0_39 = l_0_0(l_0_12, "\\claude_agent_sdk\\_internal\\transport")
   elseif l_0_17 == "_telemetry.py" then
-    l_0_37 = l_0_0(l_0_12, "\\agent_framework")
+    l_0_39 = l_0_0(l_0_12, "\\agent_framework")
   elseif l_0_17 == "__init__.py" then
-    l_0_37 = l_0_0(l_0_12, "\\langchain\\agents")
+    l_0_39 = l_0_0(l_0_12, "\\langchain\\agents")
   elseif l_0_17 == "openai_provider.py" then
-    l_0_37 = l_0_0(l_0_12, "\\agents\\models")
+    l_0_39 = l_0_0(l_0_12, "\\agents\\models")
   elseif l_0_17 == "_client_labels_utils.py" then
-    l_0_37 = l_0_0(l_0_12, "\\google\\adk\\utils")
+    l_0_39 = l_0_0(l_0_12, "\\google\\adk\\utils")
   end
 end
 if l_0_20 == "software_reporter_tool.exe" and l_0_21:find("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\google\\chrome\\user data\\swreporter") ~= nil then
@@ -215,11 +227,11 @@ if l_0_8 == skip.SCANREASON_ONMODIFIEDHANDLECLOSE and not skip.IsHipsRuleEnabled
     return 1
   end
   if string.find(l_0_20, "rar.exe", 1, true) ~= nil or string.sub(l_0_20, 1, 2) == "7z" then
-    local l_0_40 = string.find(l_0_21, "\\program files\\7-zip", 1, true) ~= nil or string.find(l_0_21, "\\program files (x86)\\7-zip", 1, true) ~= nil
-    local l_0_42 = l_0_40 and string.sub(l_0_20, 1, 2) == "7z" and (l_0_20 == "7z.exe" or l_0_20 == "7za.exe" or l_0_20 == "7zfm.exe" or l_0_20 == "7zg.exe" or string.find(l_0_20, "7z%d%d%d%d%-x64%.exe") ~= nil or string.find(l_0_20, "7z%d%d%d%d%.exe") ~= nil)
-    local l_0_44 = string.find(l_0_21, "\\program files\\winrar", 1, true) ~= nil or string.find(l_0_21, "\\program files (x86)\\winrar", 1, true) ~= nil
-    local l_0_46 = l_0_44 and (l_0_20 == "rar.exe" or l_0_20 == "unrar.exe" or l_0_20 == "winrar.exe")
-    if (l_0_42 or l_0_46) and not skip.IsHipsRuleEnabled("be9ba2d9-53ea-4cdc-84e5-9b1eeee46550") and not skip.IsHipsRuleEnabled("5beb7efe-fd9a-4556-801d-275e5ffc04cc") then
+    local l_0_42 = string.find(l_0_21, "\\program files\\7-zip", 1, true) ~= nil or string.find(l_0_21, "\\program files (x86)\\7-zip", 1, true) ~= nil
+    local l_0_44 = l_0_42 and string.sub(l_0_20, 1, 2) == "7z" and (l_0_20 == "7z.exe" or l_0_20 == "7za.exe" or l_0_20 == "7zfm.exe" or l_0_20 == "7zg.exe" or string.find(l_0_20, "7z%d%d%d%d%-x64%.exe") ~= nil or string.find(l_0_20, "7z%d%d%d%d%.exe") ~= nil)
+    local l_0_46 = string.find(l_0_21, "\\program files\\winrar", 1, true) ~= nil or string.find(l_0_21, "\\program files (x86)\\winrar", 1, true) ~= nil
+    local l_0_48 = l_0_46 and (l_0_20 == "rar.exe" or l_0_20 == "unrar.exe" or l_0_20 == "winrar.exe")
+    if (l_0_44 or l_0_48) and not skip.IsHipsRuleEnabled("be9ba2d9-53ea-4cdc-84e5-9b1eeee46550") and not skip.IsHipsRuleEnabled("5beb7efe-fd9a-4556-801d-275e5ffc04cc") then
       return 1
     end
   end
@@ -227,8 +239,8 @@ if l_0_8 == skip.SCANREASON_ONMODIFIEDHANDLECLOSE and not skip.IsHipsRuleEnabled
     return 1
   end
   if string.find(l_0_20, "setup", 1, true) ~= nil or string.find(l_0_20, "install", 1, true) ~= nil then
-    local l_0_47, l_0_48 = l_0_12:match("^\\device\\harddiskvolume%d*\\users\\([^\\]+)\\appdata\\local\\programs\\([^\\]+)\\")
-    if l_0_47 and l_0_48 then
+    local l_0_49, l_0_50 = l_0_12:match("^\\device\\harddiskvolume%d*\\users\\([^\\]+)\\appdata\\local\\programs\\([^\\]+)\\")
+    if l_0_49 and l_0_50 then
       return 1
     end
   end
@@ -236,12 +248,12 @@ if l_0_8 == skip.SCANREASON_ONMODIFIEDHANDLECLOSE and not skip.IsHipsRuleEnabled
     return 1
   end
   if string.find(l_0_12, "\\program files", 1, true) ~= nil then
-    local l_0_49 = l_0_12:match("^\\device\\harddiskvolume%d*\\program files\\")
-    if l_0_49 ~= nil then
+    local l_0_51 = l_0_12:match("^\\device\\harddiskvolume%d*\\program files\\")
+    if l_0_51 ~= nil then
       return 1
     end
-    l_0_49 = l_0_12:match("^\\device\\harddiskvolume%d*\\program files %(x86%)\\")
-    if l_0_49 ~= nil then
+    l_0_51 = l_0_12:match("^\\device\\harddiskvolume%d*\\program files %(x86%)\\")
+    if l_0_51 ~= nil then
       return 1
     end
   end
@@ -255,8 +267,8 @@ if l_0_8 == skip.SCANREASON_ONMODIFIEDHANDLECLOSE and not skip.IsHipsRuleEnabled
     return 1
   end
   if l_0_0(l_0_20, ".tmp") and l_0_0(l_0_17, ".tmp") then
-    local l_0_50, l_0_51, l_0_52 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp\\(is%-[a-z0-9]+%.tmp)\\[^\\]+%.tmp$")
-    if l_0_50 and l_0_51 and l_0_52 then
+    local l_0_52, l_0_53, l_0_54 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp\\(is%-[a-z0-9]+%.tmp)\\[^\\]+%.tmp$")
+    if l_0_52 and l_0_53 and l_0_54 then
       return 1
     end
   end
@@ -274,12 +286,12 @@ if l_0_8 == skip.SCANREASON_ONMODIFIEDHANDLECLOSE and not skip.IsHipsRuleEnabled
       return 1
     end
   end
-  local l_0_53, l_0_54 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp\\")
-  if l_0_53 ~= nil and l_0_54 ~= nil then
-    local l_0_55 = l_0_0(l_0_17, ".exe") or l_0_0(l_0_17, ".dll") or l_0_0(l_0_17, ".sys") or l_0_0(l_0_17, ".scr") or l_0_0(l_0_17, ".ocx") or l_0_0(l_0_17, ".cpl") or l_0_0(l_0_17, ".ps1") or l_0_0(l_0_17, ".psm1") or l_0_0(l_0_17, ".vbs") or l_0_0(l_0_17, ".vbe") or l_0_0(l_0_17, ".js") or l_0_0(l_0_17, ".jse") or l_0_0(l_0_17, ".cjs") or l_0_0(l_0_17, ".mjs") or l_0_0(l_0_17, ".node") or l_0_0(l_0_17, ".hta") or l_0_0(l_0_17, ".bat") or l_0_0(l_0_17, ".cmd") or l_0_0(l_0_17, ".jar") or l_0_0(l_0_17, ".lnk") or l_0_0(l_0_17, ".scf") or l_0_0(l_0_17, ".url") or l_0_0(l_0_17, ".chm") or l_0_0(l_0_17, ".iso") or l_0_0(l_0_17, ".img") or l_0_0(l_0_17, ".vhd") or l_0_0(l_0_17, ".vhdx") or l_0_0(l_0_17, ".msi") or l_0_0(l_0_17, ".msix") or l_0_0(l_0_17, ".appx") or l_0_0(l_0_17, ".mptest")
-    if not l_0_55 then
-      local l_0_56, l_0_57 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp\\")
-      if l_0_53 == l_0_56 and l_0_54 == l_0_57 then
+  local l_0_55, l_0_56 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp\\")
+  if l_0_55 ~= nil and l_0_56 ~= nil then
+    local l_0_57 = l_0_0(l_0_17, ".exe") or l_0_0(l_0_17, ".dll") or l_0_0(l_0_17, ".sys") or l_0_0(l_0_17, ".scr") or l_0_0(l_0_17, ".ocx") or l_0_0(l_0_17, ".cpl") or l_0_0(l_0_17, ".ps1") or l_0_0(l_0_17, ".psm1") or l_0_0(l_0_17, ".vbs") or l_0_0(l_0_17, ".vbe") or l_0_0(l_0_17, ".js") or l_0_0(l_0_17, ".jse") or l_0_0(l_0_17, ".cjs") or l_0_0(l_0_17, ".mjs") or l_0_0(l_0_17, ".node") or l_0_0(l_0_17, ".hta") or l_0_0(l_0_17, ".bat") or l_0_0(l_0_17, ".cmd") or l_0_0(l_0_17, ".jar") or l_0_0(l_0_17, ".lnk") or l_0_0(l_0_17, ".scf") or l_0_0(l_0_17, ".url") or l_0_0(l_0_17, ".chm") or l_0_0(l_0_17, ".iso") or l_0_0(l_0_17, ".img") or l_0_0(l_0_17, ".vhd") or l_0_0(l_0_17, ".vhdx") or l_0_0(l_0_17, ".msi") or l_0_0(l_0_17, ".msix") or l_0_0(l_0_17, ".appx") or l_0_0(l_0_17, ".mptest")
+    if not l_0_57 then
+      local l_0_58, l_0_59 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp\\")
+      if l_0_55 == l_0_58 and l_0_56 == l_0_59 then
         return 1
       end
     end
@@ -326,26 +338,26 @@ if l_0_20 == "chrome.exe" then
   if l_0_0(l_0_21, "\\google\\chrome\\application") and string.find(l_0_12, "microsoft\\cryptneturlcache\\", 1, true) ~= nil then
     return 1
   end
-  local l_0_58, l_0_59 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\google\\chrome\\user data")
-  if l_0_59 ~= nil and l_0_58 ~= nil then
-    local l_0_60 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files %(x86%)\\google\\chrome\\application")
-    if l_0_58 == l_0_60 then
+  local l_0_60, l_0_61 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\google\\chrome\\user data")
+  if l_0_61 ~= nil and l_0_60 ~= nil then
+    local l_0_62 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files %(x86%)\\google\\chrome\\application")
+    if l_0_60 == l_0_62 then
       return 1
     end
   end
 end
 if l_0_8 == skip.SCANREASON_ONOPEN and l_0_20 == "electron.exe" then
-  local l_0_61, l_0_62 = l_0_21:match("^\\device\\harddiskvolume(%d+)\\users\\([^\\]+)\\.+\\node_modules\\electron\\dist$")
-  local l_0_63, l_0_64, l_0_65 = l_0_12:match("^\\device\\harddiskvolume(%d+)\\users\\([^\\]+)\\appdata\\local\\temp\\(.*)$")
-  if l_0_61 ~= nil and l_0_61 == l_0_63 and l_0_62 == l_0_64 and string.find("\\" .. l_0_65 .. "\\", "\\node_modules\\", 1, true) ~= nil then
+  local l_0_63, l_0_64 = l_0_21:match("^\\device\\harddiskvolume(%d+)\\users\\([^\\]+)\\.+\\node_modules\\electron\\dist$")
+  local l_0_65, l_0_66, l_0_67 = l_0_12:match("^\\device\\harddiskvolume(%d+)\\users\\([^\\]+)\\appdata\\local\\temp\\(.*)$")
+  if l_0_63 ~= nil and l_0_63 == l_0_65 and l_0_64 == l_0_66 and string.find("\\" .. l_0_67 .. "\\", "\\node_modules\\", 1, true) ~= nil then
     return 1
   end
 end
 if l_0_20 == "doubao.exe" then
-  local l_0_66, l_0_67 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\doubao\\user data")
-  if l_0_67 ~= nil and l_0_66 ~= nil then
-    local l_0_68 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\doubao\\application")
-    if l_0_66 == l_0_68 then
+  local l_0_68, l_0_69 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\doubao\\user data")
+  if l_0_69 ~= nil and l_0_68 ~= nil then
+    local l_0_70 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\doubao\\application")
+    if l_0_68 == l_0_70 then
       return 1
     end
   end
@@ -354,88 +366,88 @@ if l_0_20 == "msedge.exe" or l_0_20 == "msedgewebview2.exe" then
   if l_0_0(l_0_21, "\\application") and string.find(l_0_12, "microsoft\\cryptneturlcache\\", 1, true) ~= nil then
     return 1
   end
-  local l_0_69, l_0_70, l_0_71 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\edge([^\\]*)\\user data")
-  local l_0_72, l_0_73, l_0_74 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\edge([^\\]*)\\application")
-  if l_0_70 ~= nil and l_0_69 ~= nil and l_0_69 == l_0_72 and l_0_70 == l_0_73 and l_0_71 == l_0_74 then
+  local l_0_71, l_0_72, l_0_73 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\edge([^\\]*)\\user data")
+  local l_0_74, l_0_75, l_0_76 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\edge([^\\]*)\\application")
+  if l_0_72 ~= nil and l_0_71 ~= nil and l_0_71 == l_0_74 and l_0_72 == l_0_75 and l_0_73 == l_0_76 then
     return 1
   end
-  l_0_69, l_0_70, l_0_71 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\edge([^\\]*)\\application")
-  if l_0_70 ~= nil and l_0_69 ~= nil and l_0_69 == l_0_72 and l_0_70 == l_0_73 and l_0_71 == l_0_74 then
+  l_0_71, l_0_72, l_0_73 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\edge([^\\]*)\\application")
+  if l_0_72 ~= nil and l_0_71 ~= nil and l_0_71 == l_0_74 and l_0_72 == l_0_75 and l_0_73 == l_0_76 then
     return 1
   end
-  l_0_69, l_0_70 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp")
-  if l_0_70 ~= nil and l_0_69 ~= nil and l_0_69 == l_0_72 and l_0_70 == l_0_73 and l_0_74 ~= nil then
+  l_0_71, l_0_72 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp")
+  if l_0_72 ~= nil and l_0_71 ~= nil and l_0_71 == l_0_74 and l_0_72 == l_0_75 and l_0_76 ~= nil then
     return 1
   end
-  l_0_69, l_0_70 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages")
-  if l_0_70 ~= nil and l_0_69 ~= nil and l_0_69 == l_0_72 and l_0_70 == l_0_73 and l_0_74 ~= nil then
+  l_0_71, l_0_72 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages")
+  if l_0_72 ~= nil and l_0_71 ~= nil and l_0_71 == l_0_74 and l_0_72 == l_0_75 and l_0_76 ~= nil then
     return 1
   end
-  l_0_69 = l_0_12:match("^\\device\\harddiskvolume(.*)\\windows\\fonts")
-  if l_0_69 ~= nil and l_0_69 == l_0_72 and l_0_73 ~= nil and l_0_74 ~= nil then
+  l_0_71 = l_0_12:match("^\\device\\harddiskvolume(.*)\\windows\\fonts")
+  if l_0_71 ~= nil and l_0_71 == l_0_74 and l_0_75 ~= nil and l_0_76 ~= nil then
     return 1
   end
 end
 if l_0_20 == "onedrive.exe" or l_0_20 == "filecoauth.exe" or l_0_20 == "onedrivesetup.exe" or l_0_20 == "onedrivefilelauncher.exe" or l_0_20 == "onedrivestandaloneupdater.exe" then
-  local l_0_75, l_0_76 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\onedrive")
-  if l_0_75 ~= nil and l_0_76 ~= nil then
-    local l_0_77, l_0_78 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\onedrive")
-    if l_0_77 == l_0_75 and l_0_78 == l_0_76 and not l_0_0(l_0_17, ".dll") then
+  local l_0_77, l_0_78 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\onedrive")
+  if l_0_77 ~= nil and l_0_78 ~= nil then
+    local l_0_79, l_0_80 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\onedrive")
+    if l_0_79 == l_0_77 and l_0_80 == l_0_78 and not l_0_0(l_0_17, ".dll") then
       return 1
     end
   end
 end
 if l_0_20 == "nuget.exe" then
-  local l_0_79, l_0_80 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\.nuget\\packages")
-  if l_0_79 ~= nil and l_0_80 ~= nil then
+  local l_0_81, l_0_82 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\.nuget\\packages")
+  if l_0_81 ~= nil and l_0_82 ~= nil then
     return 1
   end
 end
 if l_0_20 == "vlc-cache-gen.exe" then
-  local l_0_81, l_0_82 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files([^\\]*)\\videolan\\vlc")
-  local l_0_83, l_0_84 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files([^\\]*)\\videolan\\vlc")
-  if l_0_81 ~= nil and l_0_81 == l_0_83 and l_0_82 == l_0_84 and (l_0_82 == "" or l_0_82 == " (x86)" or l_0_82 == " (arm)") then
+  local l_0_83, l_0_84 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files([^\\]*)\\videolan\\vlc")
+  local l_0_85, l_0_86 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files([^\\]*)\\videolan\\vlc")
+  if l_0_83 ~= nil and l_0_83 == l_0_85 and l_0_84 == l_0_86 and (l_0_84 == "" or l_0_84 == " (x86)" or l_0_84 == " (arm)") then
     return 1
   end
 end
 if l_0_20 == "installer.exe" then
-  local l_0_85, l_0_86 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\roaming\\zoom")
-  if l_0_85 ~= nil and l_0_86 ~= nil then
-    local l_0_87, l_0_88 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp")
-    if l_0_85 == l_0_87 and l_0_86 == l_0_88 then
+  local l_0_87, l_0_88 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\roaming\\zoom")
+  if l_0_87 ~= nil and l_0_88 ~= nil then
+    local l_0_89, l_0_90 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp")
+    if l_0_87 == l_0_89 and l_0_88 == l_0_90 then
       return 1
     end
   end
 end
 if string.sub(l_0_20, 1, 5) == "gimp-" and l_0_0(l_0_20, "-setup.tmp") then
-  local l_0_89 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\gimp 2")
-  if l_0_89 ~= nil then
+  local l_0_91 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\gimp 2")
+  if l_0_91 ~= nil then
     return 1
   end
 end
 if string.sub(l_0_20, 1, 11) == "postgresql-" and l_0_0(l_0_20, "-windows-x64.exe") then
-  local l_0_90 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\postgresql\\18\\")
-  if l_0_90 ~= nil then
+  local l_0_92 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\postgresql\\18\\")
+  if l_0_92 ~= nil then
     return 1
   end
 end
 if (l_0_20 == "setup.exe" or l_0_20 == "un_a.exe") and l_0_8 == skip.SCANREASON_ONOPEN then
-  local l_0_91, l_0_92 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp")
-  if l_0_91 ~= nil and l_0_92 ~= nil then
-    local l_0_93, l_0_94 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp")
-    if l_0_91 == l_0_93 and l_0_92 == l_0_94 and (not l_0_0(l_0_17, ".dll") or l_0_12 ~= l_0_21) then
+  local l_0_93, l_0_94 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp")
+  if l_0_93 ~= nil and l_0_94 ~= nil then
+    local l_0_95, l_0_96 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp")
+    if l_0_93 == l_0_95 and l_0_94 == l_0_96 and (not l_0_0(l_0_17, ".dll") or l_0_12 ~= l_0_21) then
       return 1
     end
   else
-    if l_0_91 == nil then
-      l_0_91 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\mozilla ")
+    if l_0_93 == nil then
+      l_0_93 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\mozilla ")
     end
-    if l_0_91 == nil then
-      l_0_91 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files %(x86%)\\mozilla ")
+    if l_0_93 == nil then
+      l_0_93 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files %(x86%)\\mozilla ")
     end
-    if l_0_91 ~= nil then
-      local l_0_95, l_0_96 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp")
-      if l_0_91 == l_0_95 and l_0_96 ~= nil and (not l_0_0(l_0_17, ".dll") or l_0_12 ~= l_0_21) then
+    if l_0_93 ~= nil then
+      local l_0_97, l_0_98 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp")
+      if l_0_93 == l_0_97 and l_0_98 ~= nil and (not l_0_0(l_0_17, ".dll") or l_0_12 ~= l_0_21) then
         return 1
       end
     end
@@ -459,25 +471,25 @@ if l_0_11(l_0_20, l_0_21) == true then
   end
 end
 if l_0_20 == "officeclicktorun.exe" then
-  local l_0_97 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files\\common files\\microsoft shared\\clicktorun")
-  if l_0_97 == nil then
-    l_0_97 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files %(x86%)\\common files\\microsoft shared\\clicktorun")
+  local l_0_99 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files\\common files\\microsoft shared\\clicktorun")
+  if l_0_99 == nil then
+    l_0_99 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files %(x86%)\\common files\\microsoft shared\\clicktorun")
   end
-  if l_0_97 ~= nil then
-    local l_0_98 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\common files\\microsoft shared\\clicktorun\\updates")
-    if l_0_98 == nil then
-      l_0_98 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files %(x86%)\\common files\\microsoft shared\\clicktorun\\updates")
+  if l_0_99 ~= nil then
+    local l_0_100 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\common files\\microsoft shared\\clicktorun\\updates")
+    if l_0_100 == nil then
+      l_0_100 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files %(x86%)\\common files\\microsoft shared\\clicktorun\\updates")
     end
-    if l_0_98 == nil then
-      l_0_98 = l_0_12:match("^\\device\\harddiskvolume(.*)\\programdata\\microsoft\\clicktorun")
+    if l_0_100 == nil then
+      l_0_100 = l_0_12:match("^\\device\\harddiskvolume(.*)\\programdata\\microsoft\\clicktorun")
     end
-    if l_0_98 == nil then
-      l_0_98 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\microsoft office")
+    if l_0_100 == nil then
+      l_0_100 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\microsoft office")
     end
-    if l_0_98 == nil then
-      l_0_98 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files %(x86%)\\microsoft office")
+    if l_0_100 == nil then
+      l_0_100 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files %(x86%)\\microsoft office")
     end
-    if l_0_98 == l_0_97 then
+    if l_0_100 == l_0_99 then
       return 1
     end
   end
@@ -486,21 +498,21 @@ if l_0_0(l_0_17, ".pf") then
   if l_0_13 == 4 then
     return 1
   end
-  local l_0_99 = l_0_12:match("^\\device\\harddiskvolume(.*)\\windows\\prefetch")
-  if l_0_99 ~= nil then
+  local l_0_101 = l_0_12:match("^\\device\\harddiskvolume(.*)\\windows\\prefetch")
+  if l_0_101 ~= nil then
     if l_0_1(l_0_17, l_0_20) then
       return 1
     end
-    local l_0_100 = l_0_21:match("^\\device\\harddiskvolume(.*)\\windows")
-    if l_0_100 ~= nil then
+    local l_0_102 = l_0_21:match("^\\device\\harddiskvolume(.*)\\windows")
+    if l_0_102 ~= nil then
       return 1
     end
   end
 end
 if l_0_0(l_0_17, ".log") or l_0_0(l_0_17, ".log1") or l_0_0(l_0_17, ".log2") or l_0_0(l_0_17, ".cat") or l_0_0(l_0_17, ".sqm") or l_0_0(l_0_17, ".etl") or l_0_0(l_0_17, ".db") or l_0_0(l_0_17, ".db3") or l_0_0(l_0_17, ".db-wal") or l_0_0(l_0_17, ".db3-wal") or l_0_0(l_0_17, ".db-journal") or l_0_0(l_0_17, ".db3-journal") or l_0_0(l_0_17, ".bin") or l_0_0(l_0_17, ".dat") or l_0_0(l_0_17, ".dmp") or l_0_0(l_0_17, ".data") or l_0_0(l_0_17, ".mui") or l_0_0(l_0_17, ".edb") or l_0_0(l_0_17, ".chk") or l_0_0(l_0_17, ".ini") or l_0_0(l_0_17, ".evtx") or l_0_0(l_0_17, ".manifest") or l_0_0(l_0_17, ".hve") or l_0_0(l_0_17, ".tmp.xml") or l_0_0(l_0_17, ".tmp.werinternalmetadata.xml") or l_0_0(l_0_17, ".hdmp") or l_0_0(l_0_17, ".dmp") or l_0_0(l_0_17, ".wer") or l_0_0(l_0_17, ".sdb") or l_0_0(l_0_17, ".tmp.appcompat.txt") then
   if l_0_13 == 4 then
-    local l_0_101 = skip.get_contextdata(39)
-    if not l_0_101 or l_0_101 == "" then
+    local l_0_103 = skip.get_contextdata(39)
+    if not l_0_103 or l_0_103 == "" then
       return 1
     end
   end
@@ -510,23 +522,23 @@ if l_0_0(l_0_17, ".log") or l_0_0(l_0_17, ".log1") or l_0_0(l_0_17, ".log2") or 
   if (l_0_20 == "processhacker.exe" or l_0_20 == "powershell.exe" or l_0_20 == "powershell_ise.exe" or l_0_20 == "dllhost.exe" or l_0_20 == "rundll32.exe") and l_0_0(l_0_17, ".dmp") then
     return 0
   end
-  local l_0_102 = l_0_21:match("^\\device\\harddiskvolume(.*)\\windows\\system32")
-  if l_0_102 == nil then
-    l_0_102 = l_0_21:match("^\\\\%?\\volume{%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x}\\windows\\system32")
+  local l_0_104 = l_0_21:match("^\\device\\harddiskvolume(.*)\\windows\\system32")
+  if l_0_104 == nil then
+    l_0_104 = l_0_21:match("^\\\\%?\\volume{%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x}\\windows\\system32")
   end
-  if l_0_102 ~= nil then
+  if l_0_104 ~= nil then
     return 1
   end
 end
 if l_0_20 == "firefox.exe" then
-  local l_0_103, l_0_104, l_0_105 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\([^\\]*)\\mozilla\\firefox")
-  if l_0_103 ~= nil and l_0_104 ~= nil and l_0_105 ~= nil then
+  local l_0_105, l_0_106, l_0_107 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\([^\\]*)\\mozilla\\firefox")
+  if l_0_105 ~= nil and l_0_106 ~= nil and l_0_107 ~= nil then
     return 1
   end
-  l_0_103 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files\\mozilla firefox")
-  if l_0_103 ~= nil then
-    l_0_103 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\mozilla firefox")
-    if l_0_103 ~= nil then
+  l_0_105 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files\\mozilla firefox")
+  if l_0_105 ~= nil then
+    l_0_105 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\mozilla firefox")
+    if l_0_105 ~= nil then
       return 1
     end
     if l_0_0(l_0_17, ".mui") or l_0_0(l_0_17, ".ttf") or l_0_0(l_0_17, ".icm") or l_0_0(l_0_17, ".db") or l_0_0(l_0_17, ".bin") then
@@ -534,31 +546,31 @@ if l_0_20 == "firefox.exe" then
     end
   end
 end
-local l_0_106 = string.find(l_0_20, ".", 1, true)
-if l_0_106 == nil and (l_0_20 == "cp" or l_0_20 == "dash" or l_0_20 == "node" or l_0_20 == "npm" or l_0_20 == "grep" or l_0_20 == "cat" or l_0_20 == "dpkg" or l_0_20 == "dpkg-query" or l_0_20 == "sudo" or l_0_20 == "apt" or l_0_20 == "store" or l_0_20 == "apt-extracttemplates" or l_0_20 == "perl" or l_0_20 == "systemd-hwdb" or l_0_20 == "ldconfig" or l_0_20 == "update-alternatives") then
-  local l_0_108 = (l_0_20 == "node" or l_0_20 == "npm") and l_0_2(l_0_17)
-  if not l_0_108 then
-    local l_0_109, l_0_110, l_0_111 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages\\([^\\]*)\\localstate\\rootfs")
-    if l_0_109 ~= nil and l_0_110 ~= nil and l_0_111 ~= nil then
-      local l_0_112, l_0_113, l_0_114 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages\\([^\\]*)\\localstate\\rootfs\\usr\\bin")
-      if l_0_114 == nil then
-        l_0_112, l_0_113, l_0_114 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages\\([^\\]*)\\localstate\\rootfs\\bin")
+local l_0_108 = string.find(l_0_20, ".", 1, true)
+if l_0_108 == nil and (l_0_20 == "cp" or l_0_20 == "dash" or l_0_20 == "node" or l_0_20 == "npm" or l_0_20 == "grep" or l_0_20 == "cat" or l_0_20 == "dpkg" or l_0_20 == "dpkg-query" or l_0_20 == "sudo" or l_0_20 == "apt" or l_0_20 == "store" or l_0_20 == "apt-extracttemplates" or l_0_20 == "perl" or l_0_20 == "systemd-hwdb" or l_0_20 == "ldconfig" or l_0_20 == "update-alternatives") then
+  local l_0_110 = (l_0_20 == "node" or l_0_20 == "npm") and l_0_2(l_0_17)
+  if not l_0_110 then
+    local l_0_111, l_0_112, l_0_113 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages\\([^\\]*)\\localstate\\rootfs")
+    if l_0_111 ~= nil and l_0_112 ~= nil and l_0_113 ~= nil then
+      local l_0_114, l_0_115, l_0_116 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages\\([^\\]*)\\localstate\\rootfs\\usr\\bin")
+      if l_0_116 == nil then
+        l_0_114, l_0_115, l_0_116 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages\\([^\\]*)\\localstate\\rootfs\\bin")
       end
-      if l_0_109 == l_0_112 and l_0_110 == l_0_113 and l_0_111 == l_0_114 then
+      if l_0_111 == l_0_114 and l_0_112 == l_0_115 and l_0_113 == l_0_116 then
         return 1
       end
     end
   end
 end
 if l_0_20 == "firefox.exe" or l_0_20 == "gimp-2.8.exe" or l_0_20 == "soffice.bin" or l_0_20 == "chrome.exe" then
-  local l_0_115, l_0_116 = l_0_12:match("^\\device\\harddiskvolume(.*)\\programdata\\ul\\pcmark 10\\chops\\dlc\\([^\\]*)\\")
-  if l_0_115 ~= nil and l_0_116 ~= nil then
-    local l_0_117, l_0_118 = l_0_21:match("^\\device\\harddiskvolume(.*)\\programdata\\ul\\pcmark 10\\chops\\dlc\\([^\\]*)\\")
-    if l_0_115 == l_0_117 or l_0_116 == l_0_118 then
+  local l_0_117, l_0_118 = l_0_12:match("^\\device\\harddiskvolume(.*)\\programdata\\ul\\pcmark 10\\chops\\dlc\\([^\\]*)\\")
+  if l_0_117 ~= nil and l_0_118 ~= nil then
+    local l_0_119, l_0_120 = l_0_21:match("^\\device\\harddiskvolume(.*)\\programdata\\ul\\pcmark 10\\chops\\dlc\\([^\\]*)\\")
+    if l_0_117 == l_0_119 or l_0_118 == l_0_120 then
       return 1
     end
-    l_0_117 = l_0_21:match("^\\device\\harddiskvolume(.*)\\programdata\\ul\\pcmark 10\\tmp")
-    if l_0_117 == l_0_115 then
+    l_0_119 = l_0_21:match("^\\device\\harddiskvolume(.*)\\programdata\\ul\\pcmark 10\\tmp")
+    if l_0_119 == l_0_117 then
       return 1
     end
   end
@@ -578,76 +590,76 @@ if l_0_20 == "devenv.exe" and l_0_7(l_0_21) then
   return 1
 end
 if l_0_20 == "rustup.exe" then
-  local l_0_119, l_0_120 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\.cargo\\bin")
-  if l_0_119 ~= nil and l_0_120 ~= nil then
-    local l_0_121, l_0_122 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\.rustup\\")
-    if l_0_121 == l_0_119 and l_0_122 == l_0_120 then
+  local l_0_121, l_0_122 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\.cargo\\bin")
+  if l_0_121 ~= nil and l_0_122 ~= nil then
+    local l_0_123, l_0_124 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\.rustup\\")
+    if l_0_123 == l_0_121 and l_0_124 == l_0_122 then
       return 1
     end
   end
 end
 if l_0_20 == "teams.exe" then
-  local l_0_123, l_0_124 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\teams")
-  if l_0_123 ~= nil and l_0_124 ~= nil then
-    local l_0_125, l_0_126 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\roaming\\microsoft\\teams")
-    if l_0_125 == l_0_123 and l_0_126 == l_0_124 then
+  local l_0_125, l_0_126 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\teams")
+  if l_0_125 ~= nil and l_0_126 ~= nil then
+    local l_0_127, l_0_128 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\roaming\\microsoft\\teams")
+    if l_0_127 == l_0_125 and l_0_128 == l_0_126 then
       return 1
     end
-    local l_0_127, l_0_128 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\teams")
-    if l_0_127 == l_0_123 and l_0_128 == l_0_124 then
+    local l_0_129, l_0_130 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\microsoft\\teams")
+    if l_0_129 == l_0_125 and l_0_130 == l_0_126 then
       return 1
     end
   end
 end
 if l_0_20 == "dllhost.exe" and l_0_0(l_0_21, "\\windows\\system32") then
-  local l_0_129, l_0_130 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages\\microsoftwindows.client.cbs_cw5n1h2txyewy\\appdata\\cachestorage")
-  if l_0_129 ~= nil and l_0_130 ~= nil then
+  local l_0_131, l_0_132 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages\\microsoftwindows.client.cbs_cw5n1h2txyewy\\appdata\\cachestorage")
+  if l_0_131 ~= nil and l_0_132 ~= nil then
     return 1
   end
-  l_0_129, l_0_130 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages\\microsoftwindows.client_cw5n1h2txyewy\\appdata\\cachestorage")
-  if l_0_129 ~= nil and l_0_130 ~= nil then
+  l_0_131, l_0_132 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages\\microsoftwindows.client_cw5n1h2txyewy\\appdata\\cachestorage")
+  if l_0_131 ~= nil and l_0_132 ~= nil then
     return 1
   end
 end
 if l_0_20 == "notepad.exe" then
-  local l_0_131, l_0_132 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files\\windowsapps\\microsoft.windowsnotepad_([^\\]*)__8wekyb3d8bbwe\\notepad\\notepad.exe$")
-  if l_0_131 ~= nil then
-    local l_0_133, l_0_134 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages\\microsoft.windowsnotepad_8wekyb3d8bbwe\\localstate\\tabstate\\")
-    if l_0_133 == l_0_131 and l_0_134 ~= nil then
+  local l_0_133, l_0_134 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files\\windowsapps\\microsoft.windowsnotepad_([^\\]*)__8wekyb3d8bbwe\\notepad\\notepad.exe$")
+  if l_0_133 ~= nil then
+    local l_0_135, l_0_136 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\packages\\microsoft.windowsnotepad_8wekyb3d8bbwe\\localstate\\tabstate\\")
+    if l_0_135 == l_0_133 and l_0_136 ~= nil then
       return 1
     end
-    local l_0_135, l_0_136 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\windowsapps\\microsoft.windowsnotepad_([^\\]*)__8wekyb3d8bbwe\\notepadxamlui\\")
-    if l_0_135 == l_0_131 and l_0_136 == l_0_132 then
+    local l_0_137, l_0_138 = l_0_12:match("^\\device\\harddiskvolume(.*)\\program files\\windowsapps\\microsoft.windowsnotepad_([^\\]*)__8wekyb3d8bbwe\\notepadxamlui\\")
+    if l_0_137 == l_0_133 and l_0_138 == l_0_134 then
       return 1
     end
   end
 end
-if (l_0_20 == "_conda.exe" or l_0_20 == "python.exe" or l_0_20 == "pythonw.exe") and not l_0_3(l_0_17) and not l_0_37 then
-  local l_0_137, l_0_138 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\miniconda%d")
-  if l_0_137 ~= nil and l_0_138 ~= nil then
-    local l_0_139, l_0_140 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\miniconda%d\\")
-    if l_0_139 == l_0_137 and l_0_140 == l_0_138 then
+if (l_0_20 == "_conda.exe" or l_0_20 == "python.exe" or l_0_20 == "pythonw.exe") and not l_0_3(l_0_17) and not l_0_39 then
+  local l_0_139, l_0_140 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\miniconda%d")
+  if l_0_139 ~= nil and l_0_140 ~= nil then
+    local l_0_141, l_0_142 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\miniconda%d\\")
+    if l_0_141 == l_0_139 and l_0_142 == l_0_140 then
       return 1
     end
   end
-  l_0_137, l_0_138 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\anaconda%d")
-  if l_0_137 ~= nil and l_0_138 ~= nil then
-    local l_0_141, l_0_142 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\anaconda%d\\")
-    if l_0_141 == l_0_137 and l_0_142 == l_0_138 then
+  l_0_139, l_0_140 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\anaconda%d")
+  if l_0_139 ~= nil and l_0_140 ~= nil then
+    local l_0_143, l_0_144 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\anaconda%d\\")
+    if l_0_143 == l_0_139 and l_0_144 == l_0_140 then
       return 1
     end
   end
-  l_0_137 = l_0_21:match("^\\device\\harddiskvolume(.*)\\programdata\\miniconda%d")
-  if l_0_137 ~= nil then
-    local l_0_143 = l_0_12:match("^\\device\\harddiskvolume(.*)\\programdata\\miniconda%d")
-    if l_0_143 == l_0_137 then
+  l_0_139 = l_0_21:match("^\\device\\harddiskvolume(.*)\\programdata\\miniconda%d")
+  if l_0_139 ~= nil then
+    local l_0_145 = l_0_12:match("^\\device\\harddiskvolume(.*)\\programdata\\miniconda%d")
+    if l_0_145 == l_0_139 then
       return 1
     end
   end
-  l_0_137 = l_0_21:match("^\\device\\harddiskvolume(.*)\\programdata\\anaconda%d")
-  if l_0_137 ~= nil then
-    local l_0_144 = l_0_12:match("^\\device\\harddiskvolume(.*)\\programdata\\anaconda%d")
-    if l_0_144 == l_0_137 then
+  l_0_139 = l_0_21:match("^\\device\\harddiskvolume(.*)\\programdata\\anaconda%d")
+  if l_0_139 ~= nil then
+    local l_0_146 = l_0_12:match("^\\device\\harddiskvolume(.*)\\programdata\\anaconda%d")
+    if l_0_146 == l_0_139 then
       return 1
     end
   end
@@ -662,63 +674,63 @@ if (l_0_20 == "postgres.exe" or l_0_20 == "postgresinstanceagentrunnerhost.exe")
   return 1
 end
 if l_0_20 == "javaw.exe" or l_0_20 == "java.exe" or l_0_20 == "javac.exe" then
-  local l_0_145, l_0_146, l_0_147 = l_0_21:match("^\\device\\harddiskvolume(.*)\\(.*)\\java\\jdk([^\\]*)\\bin")
-  if l_0_145 ~= nil and l_0_146 ~= nil and l_0_147 ~= nil then
-    local l_0_148, l_0_149 = l_0_12:match("^\\device\\harddiskvolume(.*)\\(.*)\\eclipse\\%d+.%d+\\")
-    if l_0_148 == l_0_145 and l_0_149 == l_0_146 then
+  local l_0_147, l_0_148, l_0_149 = l_0_21:match("^\\device\\harddiskvolume(.*)\\(.*)\\java\\jdk([^\\]*)\\bin")
+  if l_0_147 ~= nil and l_0_148 ~= nil and l_0_149 ~= nil then
+    local l_0_150, l_0_151 = l_0_12:match("^\\device\\harddiskvolume(.*)\\(.*)\\eclipse\\%d+.%d+\\")
+    if l_0_150 == l_0_147 and l_0_151 == l_0_148 then
       return 1
     end
-    local l_0_150, l_0_151 = l_0_12:match("^\\device\\harddiskvolume(.*)\\(.*)\\java\\gwdlso\\")
-    if l_0_150 == l_0_145 and l_0_151 == l_0_146 then
+    local l_0_152, l_0_153 = l_0_12:match("^\\device\\harddiskvolume(.*)\\(.*)\\java\\gwdlso\\")
+    if l_0_152 == l_0_147 and l_0_153 == l_0_148 then
       return 1
     end
   end
 end
 if l_0_20 == "svchost.exe" or l_0_20 == "lsass.exe" or l_0_20 == "services.exe" or l_0_20 == "taskhostw.exe" then
-  local l_0_152 = l_0_21:match("^\\\\%?\\volume(.*)\\windows\\system32")
-  if l_0_152 ~= nil then
-    local l_0_153 = l_0_12:match("^\\device\\vhdharddisk(.*)\\windows")
-    if l_0_153 == l_0_152 then
+  local l_0_154 = l_0_21:match("^\\\\%?\\volume(.*)\\windows\\system32")
+  if l_0_154 ~= nil then
+    local l_0_155 = l_0_12:match("^\\device\\vhdharddisk(.*)\\windows")
+    if l_0_155 == l_0_154 then
       return 1
     end
-    local l_0_154 = l_0_12:match("^\\device\\vhdharddisk(.*)\\programdata")
-    if l_0_154 == l_0_152 then
+    local l_0_156 = l_0_12:match("^\\device\\vhdharddisk(.*)\\programdata")
+    if l_0_156 == l_0_154 then
       return 1
     end
-    local l_0_155 = l_0_12:match("^\\device\\harddiskvolume(.*)\\windows")
-    if l_0_155 ~= nil then
+    local l_0_157 = l_0_12:match("^\\device\\harddiskvolume(.*)\\windows")
+    if l_0_157 ~= nil then
       return 1
     end
-    local l_0_156 = l_0_12:match("^\\device\\harddiskvolume(.*)\\programdata")
-    if l_0_156 ~= nil then
+    local l_0_158 = l_0_12:match("^\\device\\harddiskvolume(.*)\\programdata")
+    if l_0_158 ~= nil then
       return 1
     end
   end
 end
 if l_0_20 == "fusion360.exe" then
-  local l_0_157, l_0_158 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\autodesk\\webdeploy\\production")
-  if l_0_157 ~= nil and l_0_158 ~= nil then
-    local l_0_159, l_0_160 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\autodesk\\webdeploy\\production\\")
-    if l_0_159 == l_0_157 and l_0_160 == l_0_158 then
+  local l_0_159, l_0_160 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\autodesk\\webdeploy\\production")
+  if l_0_159 ~= nil and l_0_160 ~= nil then
+    local l_0_161, l_0_162 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\autodesk\\webdeploy\\production\\")
+    if l_0_161 == l_0_159 and l_0_162 == l_0_160 then
       return 1
     end
-    l_0_159, l_0_160 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp\\fusionstreamer\\")
-    if l_0_159 == l_0_157 and l_0_160 == l_0_158 then
+    l_0_161, l_0_162 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp\\fusionstreamer\\")
+    if l_0_161 == l_0_159 and l_0_162 == l_0_160 then
       return 1
     end
   end
 end
 if l_0_20 == "node.exe" and not l_0_2(l_0_17) then
-  local l_0_161 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files\\")
-  if l_0_161 == nil then
-    l_0_161 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files(x86)\\")
+  local l_0_163 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files\\")
+  if l_0_163 == nil then
+    l_0_163 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files(x86)\\")
   end
-  if l_0_161 ~= nil then
+  if l_0_163 ~= nil then
     return 1
   end
 end
 
-local function l_0_162()
+local function l_0_164()
   if l_0_8 ~= skip.SCANREASON_ONOPEN and l_0_8 ~= skip.SCANREASON_ONMODIFIEDHANDLECLOSE or skip.get_contextdata(skip.CONTEXT_DATA_OPEN_CREATEPROCESS_HINT) or l_0_8 == skip.SCANREASON_ONMODIFIEDHANDLECLOSE and skip.IsHipsRuleEnabled("56a863a9-875e-4185-98a7-b882c64b5ce5") then
     return false
   end
@@ -847,73 +859,73 @@ local function l_0_162()
   return false
 end
 
-if versioning.IsSampled(5000, false, false, true) and l_0_162() then
+if versioning.IsSampled(5000, false, false, true) and l_0_164() then
   return 1
 end
 if l_0_20 == "irsetup.exe" and l_0_17 == "ultraedit setup log.txt" then
-  local l_0_163, l_0_164, l_0_165 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp\\([^\\]*)")
-  if l_0_163 ~= nil and l_0_164 ~= nil and l_0_165 ~= nil then
-    local l_0_166, l_0_167 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp")
-    if l_0_166 == l_0_163 and l_0_167 == l_0_164 then
+  local l_0_165, l_0_166, l_0_167 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp\\([^\\]*)")
+  if l_0_165 ~= nil and l_0_166 ~= nil and l_0_167 ~= nil then
+    local l_0_168, l_0_169 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp")
+    if l_0_168 == l_0_165 and l_0_169 == l_0_166 then
       return 1
     end
   end
 end
 if l_0_17 == "update.log" and (l_0_20 == "blackdesertlauncher.exe" or l_0_20 == "blackdesertpatcher32.pae") then
-  local l_0_168 = l_0_21:match("^\\device\\harddiskvolume(.*)\\pearlabyss\\blackdesert")
-  if l_0_168 ~= nil then
-    local l_0_169 = l_0_12:match("^\\device\\harddiskvolume(.*)\\pearlabyss\\blackdesert")
-    if l_0_169 == l_0_168 then
-      return 1
-    end
-  end
-end
-if l_0_20 == "dismhost.exe" then
-  local l_0_170 = l_0_21:match("^\\device\\harddiskvolume(.*)\\$winreagent")
+  local l_0_170 = l_0_21:match("^\\device\\harddiskvolume(.*)\\pearlabyss\\blackdesert")
   if l_0_170 ~= nil then
-    local l_0_171 = l_0_12:match("^\\device\\harddiskvolume(.*)\\$winreagent")
+    local l_0_171 = l_0_12:match("^\\device\\harddiskvolume(.*)\\pearlabyss\\blackdesert")
     if l_0_171 == l_0_170 then
       return 1
     end
   end
 end
-if l_0_20 == "resharper.backend64c.exe" or l_0_20 == "ext-services64.exe" or l_0_20 == "jetbrains.platform.stackcapturer64c.exe" or l_0_20 == "jetbrains.dpa.protocol.backend.exe" then
-  local l_0_172, l_0_173, l_0_174 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\jetbrains\\([^\\]*)")
-  if l_0_172 == nil or l_0_173 == nil or l_0_174 == nil then
-    l_0_172, l_0_173, l_0_174 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp\\jetbrains\\([^\\]*)")
+if l_0_20 == "dismhost.exe" then
+  local l_0_172 = l_0_21:match("^\\device\\harddiskvolume(.*)\\$winreagent")
+  if l_0_172 ~= nil then
+    local l_0_173 = l_0_12:match("^\\device\\harddiskvolume(.*)\\$winreagent")
+    if l_0_173 == l_0_172 then
+      return 1
+    end
   end
-  if l_0_172 ~= nil and l_0_173 ~= nil and l_0_174 ~= nil then
-    local l_0_175, l_0_176 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\jetbrains")
-    if l_0_175 == l_0_172 and l_0_176 == l_0_173 then
+end
+if l_0_20 == "resharper.backend64c.exe" or l_0_20 == "ext-services64.exe" or l_0_20 == "jetbrains.platform.stackcapturer64c.exe" or l_0_20 == "jetbrains.dpa.protocol.backend.exe" then
+  local l_0_174, l_0_175, l_0_176 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\jetbrains\\([^\\]*)")
+  if l_0_174 == nil or l_0_175 == nil or l_0_176 == nil then
+    l_0_174, l_0_175, l_0_176 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\temp\\jetbrains\\([^\\]*)")
+  end
+  if l_0_174 ~= nil and l_0_175 ~= nil and l_0_176 ~= nil then
+    local l_0_177, l_0_178 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\jetbrains")
+    if l_0_177 == l_0_174 and l_0_178 == l_0_175 then
       return 1
     end
-    l_0_175, l_0_176 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\source")
-    if l_0_175 == l_0_172 and l_0_176 == l_0_173 then
+    l_0_177, l_0_178 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\source")
+    if l_0_177 == l_0_174 and l_0_178 == l_0_175 then
       return 1
     end
-    l_0_175, l_0_176 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\.nuget")
-    if l_0_175 == l_0_172 and l_0_176 == l_0_173 then
+    l_0_177, l_0_178 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\.nuget")
+    if l_0_177 == l_0_174 and l_0_178 == l_0_175 then
       return 1
     end
   end
 end
 if l_0_20 == "pycharm64.exe" then
-  local l_0_177, l_0_178, l_0_179 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\programs\\pycharm([^\\]*)\\bin")
-  if l_0_177 ~= nil and l_0_178 ~= nil and l_0_179 ~= nil then
-    local l_0_180, l_0_181 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\jetbrains")
-    if l_0_180 == l_0_177 and l_0_181 == l_0_178 then
+  local l_0_179, l_0_180, l_0_181 = l_0_21:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\programs\\pycharm([^\\]*)\\bin")
+  if l_0_179 ~= nil and l_0_180 ~= nil and l_0_181 ~= nil then
+    local l_0_182, l_0_183 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\appdata\\local\\jetbrains")
+    if l_0_182 == l_0_179 and l_0_183 == l_0_180 then
       return 1
     end
   end
 end
 if l_0_20 == "dotnet.exe" or l_0_20 == "vbcscompiler.exe" or l_0_20 == "csc.exe" or l_0_20 == "vbc.exe" or l_0_20 == "dotnet-format.exe" then
-  local l_0_182 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files\\dotnet\\")
-  if l_0_182 == nil then
-    l_0_182 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files(x86)\\dotnet\\")
+  local l_0_184 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files\\dotnet\\")
+  if l_0_184 == nil then
+    l_0_184 = l_0_21:match("^\\device\\harddiskvolume(.*)\\program files(x86)\\dotnet\\")
   end
-  if l_0_182 ~= nil then
-    local l_0_183, l_0_184 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\.copilot")
-    if l_0_183 == l_0_182 and l_0_184 ~= nil then
+  if l_0_184 ~= nil then
+    local l_0_185, l_0_186 = l_0_12:match("^\\device\\harddiskvolume(.*)\\users\\([^\\]*)\\.copilot")
+    if l_0_185 == l_0_184 and l_0_186 ~= nil then
       return 1
     end
   end
