@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "TestEsrpRelease - dummy publishing experiment",
+    "downloadDescription": "Dummy installer for an ESRP publication experiment. Not a production application.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TestEsrpRelease.appinstaller",
+            "url": "https://download.microsoft.com/download/7903a35e-2f16-44fb-a5ca-c9be75e8fc62/TestEsrpRelease.appinstaller",
+            "size": "572",
+            "version": "1.0.1.0",
+            "datePublished": "11/19/2026 8:35:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Dummy installer for an ESRP publication experiment. Not a production application.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1.0",
+    "detailsSection_file_name": [
+        "TestEsrpRelease.appinstaller"
+    ],
+    "detailsSection_file_size": [
+        "572 bytes"
+    ],
+    "detailsSection_file_date": "11/19/2026",
+    "systemRequirementsSection": "Windows 11 on an x64 device.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the App Installer for test evaluation. This dummy application is not intended for production use.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108925",
+    "downloadPreload": true,
+    "enableMorayDropdown": false
+}
