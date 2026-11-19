@@ -12,7 +12,6 @@ import configure_siso
 
 
 class EdgeConfigureSisoTest(unittest.TestCase):
-
     @mock.patch.object(configure_siso.sys, "platform", "win32")
     def test_main_installs_config_for_edge_instance(self):
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -95,8 +94,7 @@ class EdgeConfigureSisoTest(unittest.TestCase):
             "llvm_version=" + configure_siso.edge_clang_revision(), contents
         )
         self.assertIn(
-            "cipd_version="
-            + configure_siso.edge_cipd_version("linux-amd64"),
+            "cipd_version=" + configure_siso.edge_cipd_version("linux-amd64"),
             contents,
         )
         self.assertIn("TargetOS=Windows", contents)

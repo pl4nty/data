@@ -20,6 +20,7 @@
 #include "build/build_config.h"
 #include "crypto/crypto_buildflags.h"
 #include "net/base/net_export.h"
+#include "net/base/request_priority.h"
 #include "net/disk_cache/buildflags.h"
 #include "net/net_buildflags.h"
 
@@ -83,6 +84,11 @@ NET_EXPORT extern const base::FeatureParam<bool>
 // addresses, rather than failing the entire DnsTask and falling back to the
 // system resolver.
 NET_EXPORT BASE_DECLARE_FEATURE(kDnsTaskAllowPartialAddressResults);
+
+// If enabled, DoH (`AttemptMode::kHttp`) transactions query multi-label
+// hostnames (`ndots > 0`) directly as-is without applying `DnsConfig::search`
+// suffixes or `DnsConfig::ndots > 1` ordering.
+NET_EXPORT BASE_DECLARE_FEATURE(kDnsHttpsDontAppendToMultiLabelName);
 
 // Enables querying HTTPS DNS records that will affect results from HostResolver
 // and may be used to affect connection behavior. Whether or not those results
@@ -168,6 +174,20 @@ NET_EXPORT BASE_DECLARE_FEATURE(kEnableIntermediateDnsResults);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
     bool,
     kEnableIntermediateDnsResultsSortTransactionsIndividually);
+
+// When the last request detaches from a HostResolverManager::Job while its
+// DnsTask has already received some results and is only waiting for
+// already-started transactions, keeps the Job running (up to
+// `kKeepHostResolverJobAliveForCacheTimeout`) so that the final results are
+// stored in the HostCache. Also enabled by
+// `kAsyncDnsQuicJobKeepHostResolverJobAliveForCache`, so disabling this feature
+// alone doesn't disable the keep-alive while `kAsyncDnsQuicJob` is enabled.
+// `kKeepHostResolverJobAliveForCacheTimeout` returns its default while this
+// feature is disabled, including when only `kAsyncDnsQuicJob` enables the
+// keep-alive.
+NET_EXPORT BASE_DECLARE_FEATURE(kKeepHostResolverJobAliveForCache);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(base::TimeDelta,
+                                      kKeepHostResolverJobAliveForCacheTimeout);
 
 // Feature to control the Happy Eyeballs slow timer (IPv6 fallback time).
 NET_EXPORT BASE_DECLARE_FEATURE(kAdjustIPv6FallbackTime);
@@ -336,6 +356,18 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(base::TimeDelta,
 // `std::nullopt`.
 NET_EXPORT std::optional<base::TimeDelta> GetQuicPreconnectInitialRtt();
 
+// Controls initial priority overrides for preconnect requests and priority
+// promotion when a higher-priority request attaches to an active QUIC job.
+NET_EXPORT BASE_DECLARE_FEATURE(kPreconnectPriorityBoost);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(RequestPriority,
+                                      kPreconnectInitialPriority);
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool,
+                                      kPromoteActiveQuicJobPriorityOnAttach);
+// Returns `kPreconnectInitialPriority` when `kPreconnectPriorityBoost` is
+// enabled and the configured priority is higher than `RequestPriority::IDLE`;
+// otherwise returns `std::nullopt`.
+NET_EXPORT std::optional<RequestPriority> GetPreconnectInitialPriority();
+
 // When enabled, the time threshold for Lax-allow-unsafe cookies will be lowered
 // from 2 minutes to 10 seconds. This time threshold refers to the age cutoff
 // for which cookies that default into SameSite=Lax, which are newer than the
@@ -460,6 +492,15 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kAsyncDnsQuicJobFastFail);
 NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
     bool,
     kAsyncDnsQuicJobSortTransactionsIndividually);
+// Whether to keep HostResolverManager::Jobs alive to cache DNS results, as
+// `kKeepHostResolverJobAliveForCache` does, when `kAsyncDnsQuicJob` is enabled.
+// AsyncDnsJob often cancels its request while DNS responses are in flight.
+// This is a param rather than a requirement to also enable
+// `kKeepHostResolverJobAliveForCache` so that other studies can control that
+// feature independently.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
+    bool,
+    kAsyncDnsQuicJobKeepHostResolverJobAliveForCache);
 
 // Makes the QUIC slow timer delay configurable.
 // How long to wait before starting a second connection attempt
@@ -789,11 +830,11 @@ NET_EXPORT BASE_DECLARE_FEATURE(kExcludeLargeBodyReports);
 NET_EXPORT BASE_DECLARE_FEATURE(kRelatedWebsitePartitionAPI);
 
 #if BUILDFLAG(MICROSOFT_EDGE_BRANDING)
-// If enabled, brotli decompression in //net (content-encoding and TLS cert
-// compression) is performed by the Rust `brotli` crate instead of the C
-// `//third_party/brotli` library. Streams that carry a shared dictionary
-// always fall back to the C library as they are not supported by the Rust crate
-// yet.
+// Edge's replacement for `kRustBrotliInNet`, which Edge builds ignore. If
+// enabled, //net decodes brotli with the Rust `brotli-decompressor` crate
+// instead of the C library in //third_party/brotli. Like `kRustBrotliInNet`, it
+// has no effect where //net doesn't build the Rust decoder (see
+// `use_rust_brotli_decoder` in //net/BUILD.gn).
 NET_EXPORT BASE_DECLARE_FEATURE(kRustBrotliNet);
 #endif  // BUILDFLAG(MICROSOFT_EDGE_BRANDING)
 
@@ -930,9 +971,6 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(size_t, kQuicMaxPacketSize);
 
 // If enabled, QuicChromiumPacketReader will use ReadMultiple API.
 NET_EXPORT BASE_DECLARE_FEATURE(kQuicUseReadMultiple);
-
-// If enabled, UDPSocketPosix will enable UDP Generic Receive Offload (UDP_GRO).
-NET_EXPORT BASE_DECLARE_FEATURE(kEnableUdpGro);
 
 // When enabled, races QUIC connection attempts for the specified hostnames
 // even when there is no available ALPN information.
@@ -1152,7 +1190,37 @@ NET_EXPORT BASE_DECLARE_FEATURE(kHttpChunkedDecoderInRust);
 // connection attempts complete.
 NET_EXPORT BASE_DECLARE_FEATURE(kPostHandshakeIpPoolingAllEndpoints);
 
+// Enables proactively pooling and cancelling in-flight HTTP/2 and QUIC
+// connection attempts when a concurrent session activates on one of their
+// resolved IP endpoints.
+NET_EXPORT BASE_DECLARE_FEATURE(kProactiveIpPoolingForInFlightJobs);
+
+// When enabled, UDP sockets skip calling connect() at the OS level for
+// performance reasons (especially on Android). Setting this feature breaks any
+// IPv4 or IPv6 connectivity checks that rely on the return value or errno of
+// connect(), so the functionality is only enabled by an explicit opt-in by the
+// socket creator.
+NET_EXPORT BASE_DECLARE_FEATURE(kPosixUdpEmulatedConnect);
+
+// Use connect emulation for DNS.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kPosixUdpEmulatedConnectForDns);
+
+// Use connect emulation for QUIC.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(bool, kPosixUdpEmulatedConnectForQuic);
+
+// When enabled, clears all broken and recently-broken alternative services
+// when the default network changes, even if
+// `retry_on_alternate_network_before_handshake` is not enabled.
+NET_EXPORT BASE_DECLARE_FEATURE(
+    kClearBrokenAlternativeServicesOnDefaultNetworkChange);
+
+// Decode brotli with the Rust `brotli-decompressor` crate instead of the C
+// library in //third_party/brotli. This covers the `br` content encoding (also
+// with a shared dictionary) and TLS certificate compression. It has no effect
+// where //net doesn't build the Rust decoder, as in Cronet (see
+// `use_rust_brotli_decoder` in //net/BUILD.gn).
+NET_EXPORT BASE_DECLARE_FEATURE(kRustBrotliInNet);
+
 }  // namespace net::features
 
 #endif  // NET_BASE_FEATURES_H_
-

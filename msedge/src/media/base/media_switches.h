@@ -120,7 +120,6 @@ MEDIA_EXPORT extern const char kWaveOutBuffers[];
 #endif  // BUILDFLAG(IS_WIN)
 
 #if BUILDFLAG(USE_CRAS)
-MEDIA_EXPORT extern const char kSystemAecEnabled[];
 MEDIA_EXPORT extern const char kUseCras[];
 #endif  // BUILDFLAG(USE_CRAS)
 
@@ -165,18 +164,6 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(
 // directly.
 // TODO(https://crbug.com/1453388): Guard Cast Sender flags with !IS_ANDROID.
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kCastStreamingAv1);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(
-    kCastStreamingExponentialVideoBitrateAlgorithm);
-MEDIA_EXPORT extern const base::FeatureParam<int>
-    kCastStreamingExponentialVideoBitrateAlgorithmWindowSize;
-MEDIA_EXPORT extern const base::FeatureParam<int>
-    kCastStreamingExponentialVideoBitrateAlgorithmDropThreshold;
-MEDIA_EXPORT extern const base::FeatureParam<double>
-    kCastStreamingExponentialVideoBitrateAlgorithmIncreaseFactor;
-MEDIA_EXPORT extern const base::FeatureParam<double>
-    kCastStreamingExponentialVideoBitrateAlgorithmDecreaseFactor;
-MEDIA_EXPORT extern const base::FeatureParam<double>
-    kCastStreamingExponentialVideoBitrateAlgorithmDynamicWindowMultiplier;
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kCastStreamingHardwareHevc);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kCastStreamingMaxVideoBitrate);
 MEDIA_EXPORT extern const base::FeatureParam<int>
@@ -197,7 +184,6 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kContextMenuSearchForVideoFrame);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kD3D11VideoDecoderUseSharedHandle);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kDedicatedMediaServiceThread);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kDeferAudioFocusUntilAudible);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kDirectOpusAudioDecoding);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kDisallowMixedOpaqueMediaResponses);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kDocumentPictureInPictureAnimateResize);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kDocumentPictureInPictureCapture);
@@ -336,6 +322,7 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kFileDialogsBlockPictureInPicture);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kFileDialogsTuckPictureInPicture);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaRemotingWithoutFullscreen);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kPictureInPictureOcclusionTracking);
+MEDIA_EXPORT BASE_DECLARE_FEATURE(kPictureInPictureWebVttCaptionSurface);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kVideoPipDisplaySmoothnessOptimization);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(
     kVideoPipForceTrustedForMediaPlaybackForTesting);
@@ -389,13 +376,6 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kPlatformHEVCHbdEncoderSupport);
 #endif  // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_APPLE)
 #endif  // BUILDFLAG(ENABLE_PLATFORM_HEVC)
 
-#if BUILDFLAG(ENABLE_SYMPHONIA)
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kSymphoniaAudioDecoding);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kSymphoniaMp3Decoding);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kSymphoniaPcmDecoding);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kSymphoniaVorbisDecoding);
-#endif  // BUILDFLAG(ENABLE_SYMPHONIA)
-
 #if BUILDFLAG(ENABLE_SYMPHONIA_DEMUXER)
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kSymphoniaDemuxing);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kSymphoniaAacDemuxing);
@@ -409,7 +389,6 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kSymphoniaRiffDemuxing);
 
 #if BUILDFLAG(IS_ANDROID)
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAllowAudioPlaybackCapture);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kAllowDelayedAudioFocusGainAndroid);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAllowEnhancedPipTransition);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAllowMediaCodecSoftwareDecoder);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kAndroidEnableBackgroundMediaCapturing);
@@ -443,7 +422,6 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kUseMediaFormatCodedSize);
 #endif  // BUILDFLAG(IS_ANDROID)
 
 #if BUILDFLAG(IS_APPLE)
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kVTVideoEncodeAcceleratorCalculatePSNR);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(
     kVTVideoEncodeAcceleratorOpaqueSharedImageEncode);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kVideoToolboxFullRangeOutput);
@@ -457,11 +435,6 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kBackgroundListening);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kCrOSDspBasedAecDeactivatedGroups);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kCrOSDspBasedAgcDeactivatedGroups);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kCrOSDspBasedNsDeactivatedGroups);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kCrOSEnforceSystemAec);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kCrOSEnforceSystemAecAgc);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kCrOSEnforceSystemAecNs);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kCrOSEnforceSystemAecNsAgc);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kCrOSSystemAEC);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kCrOSSystemAECDeactivatedGroups);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kCrOSSystemVoiceIsolationOption);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kIgnoreUiGains);
@@ -497,7 +470,6 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kApplicationAudioCaptureMac);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kCastMacForceBaselineProfile);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kCastStreamingMacHardwareH264);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kMacAVFoundationPlayback);
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kMacCatapLoopbackAudioForCast);
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kUseSCContentSharingPicker);
 #endif  // BUILDFLAG(IS_MAC)
 

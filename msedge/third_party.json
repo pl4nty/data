@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 1190059,
+    "size": 1190862,
     "file_count": 48
   },
   {
@@ -26,17 +26,17 @@
   },
   {
     "name": "android_system_sdk",
-    "size": 20113,
+    "size": 20111,
     "file_count": 5
   },
   {
     "name": "android_toolchain",
-    "size": 567272,
+    "size": 567270,
     "file_count": 10
   },
   {
     "name": "angle",
-    "size": 6493111,
+    "size": 6496521,
     "file_count": 192
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 34389814,
-    "file_count": 4100
+    "size": 34422919,
+    "file_count": 4096
   },
   {
     "name": "boringssl",
@@ -141,7 +141,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 50740,
+    "size": 50777,
     "file_count": 5
   },
   {
@@ -150,14 +150,9 @@
     "file_count": 28
   },
   {
-    "name": "crossbench-web-tests",
-    "size": 301809,
-    "file_count": 5
-  },
-  {
     "name": "dawn",
-    "size": 128234442,
-    "file_count": 19356
+    "size": 128291493,
+    "file_count": 19366
   },
   {
     "name": "dbus",
@@ -166,7 +161,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 5513886,
+    "size": 5514032,
     "file_count": 64
   },
   {
@@ -176,7 +171,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 4880373,
+    "size": 4880184,
     "file_count": 51
   },
   {
@@ -211,8 +206,8 @@
   },
   {
     "name": "eigen3",
-    "size": 23976018,
-    "file_count": 2457
+    "size": 24344381,
+    "file_count": 2468
   },
   {
     "name": "entity_extraction",
@@ -246,7 +241,7 @@
   },
   {
     "name": "ffmpeg",
-    "size": 101838814,
+    "size": 101837755,
     "file_count": 11916
   },
   {
@@ -281,8 +276,8 @@
   },
   {
     "name": "glslang",
-    "size": 46950235,
-    "file_count": 3844
+    "size": 47085334,
+    "file_count": 3883
   },
   {
     "name": "googletest",
@@ -341,8 +336,8 @@
   },
   {
     "name": "icu",
-    "size": 163058815,
-    "file_count": 7218
+    "size": 163096347,
+    "file_count": 7219
   },
   {
     "name": "inference_engine",
@@ -386,8 +381,8 @@
   },
   {
     "name": "jsoncpp",
-    "size": 5434,
-    "file_count": 4
+    "size": 2769,
+    "file_count": 3
   },
   {
     "name": "kotlinc",
@@ -396,7 +391,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 73318,
+    "size": 74230,
     "file_count": 47
   },
   {
@@ -406,8 +401,8 @@
   },
   {
     "name": "libc++",
-    "size": 12816161,
-    "file_count": 1811
+    "size": 12994505,
+    "file_count": 1848
   },
   {
     "name": "libc++abi",
@@ -526,7 +521,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19497451,
+    "size": 19546091,
     "file_count": 19
   },
   {
@@ -576,7 +571,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 87844,
+    "size": 88454,
     "file_count": 38
   },
   {
@@ -606,7 +601,7 @@
   },
   {
     "name": "opus",
-    "size": 139317,
+    "size": 141487,
     "file_count": 7
   },
   {
@@ -616,8 +611,8 @@
   },
   {
     "name": "perfetto",
-    "size": 4923261,
-    "file_count": 647
+    "size": 4952384,
+    "file_count": 649
   },
   {
     "name": "perl",
@@ -641,18 +636,13 @@
   },
   {
     "name": "protobuf-javascript",
-    "size": 187387,
-    "file_count": 65
+    "size": 189155,
+    "file_count": 68
   },
   {
     "name": "puffin",
     "size": 664,
     "file_count": 3
-  },
-  {
-    "name": "pycoverage",
-    "size": 82313,
-    "file_count": 6
   },
   {
     "name": "pylint",
@@ -676,7 +666,7 @@
   },
   {
     "name": "rust",
-    "size": 3577110,
+    "size": 3578698,
     "file_count": 409
   },
   {
@@ -686,7 +676,7 @@
   },
   {
     "name": "screen-ai",
-    "size": 5376717,
+    "size": 5424050,
     "file_count": 83
   },
   {
@@ -706,7 +696,7 @@
   },
   {
     "name": "skia",
-    "size": 3486577,
+    "size": 3492229,
     "file_count": 1223
   },
   {
@@ -726,7 +716,7 @@
   },
   {
     "name": "spirv-tools",
-    "size": 203544,
+    "size": 205612,
     "file_count": 11
   },
   {
@@ -746,7 +736,7 @@
   },
   {
     "name": "test_fonts",
-    "size": 74616,
+    "size": 74923,
     "file_count": 13
   },
   {
@@ -776,8 +766,8 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 37353952,
-    "file_count": 47
+    "size": 37483674,
+    "file_count": 51
   },
   {
     "name": "undocked_copilot_mac",
@@ -806,7 +796,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7908975,
+    "size": 7916888,
     "file_count": 207
   },
   {
@@ -856,7 +846,7 @@
   },
   {
     "name": "wpt_tools",
-    "size": 203413,
+    "size": 205341,
     "file_count": 13
   },
   {

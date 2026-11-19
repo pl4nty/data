@@ -6,7 +6,7 @@ syntax = "proto2";
 
 option optimize_for = LITE_RUNTIME;
 
-package dom_distiller;
+package web_distiller;
 
 message EdgeAdaBoostProto {
   required int32 num_stumps = 1;

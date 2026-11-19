@@ -8,7 +8,7 @@ syntax = "proto2";
 
 option optimize_for = LITE_RUNTIME;
 
-package dom_distiller;
+package web_distiller;
 
 message DistilledPageProto {
   // The URLs used to create this page.

@@ -29,8 +29,6 @@ using EngagementSet = uint32_t;
 //              tracker.
 // OrgEngagement: 'High' engagement with the tracking organization
 //                exists
-// TransparentAdvertiser: Organization is in the TAP and meets a high bar for
-//                        transparency and data management.
 //
 // This is used in telementry and entries should not be renumbered and numeric
 // values should never be reused. Please keep in sync with
@@ -43,8 +41,9 @@ enum class Mitigation {
   SameOrg = 1,
   ProfileMode = 2,
   OrgEngagement = 3,
-  TransparentAdvertiser = 4,
-  kMaxValue = TransparentAdvertiser,
+  // Retired TAP value, never produced.
+  DeprecatedTransparentAdvertiser = 4,
+  kMaxValue = DeprecatedTransparentAdvertiser,
 };
 
 // Enum of all the types of trackers we may block. This maps to the type of

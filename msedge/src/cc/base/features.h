@@ -270,12 +270,6 @@ CC_BASE_EXPORT BASE_DECLARE_FEATURE_PARAM(
     double,
     kScrollJankV4MetricFlingContinuityThreshold);
 
-// When enabled, the fast scroll continuity rule of the V4 scroll jank metric
-// only applies if the previous and current frames' total raw scroll deltas have
-// the same sign.
-CC_BASE_EXPORT BASE_DECLARE_FEATURE(
-    kScrollJankV4MetricFastScrollContinuityRequiresSameDirection);
-
 #if BUILDFLAG(IS_ANDROID)
 // When enabled, the V4 scroll jank metric will report statistics via
 // `View.reportAppJankStats()` on Android at the end of each damaging scroll.
@@ -359,6 +353,13 @@ CC_BASE_EXPORT BASE_DECLARE_FEATURE(
 // regular render pass.
 CC_BASE_EXPORT BASE_DECLARE_FEATURE(
     kViewTransitionsAvoidDuplicateCaptureRenderPass);
+
+// When enabled, cross-document ViewTransition snapshot `kSave` directives
+// invoke their capture callback at `POST_COMMIT` (immediately after
+// `UpdateDrawProperties()` computes element capture rects) and use
+// `ViewTransitionSnapshotState` to finish producing the `kSave` CompositorFrame
+// in parallel with the incoming navigation commit.
+CC_BASE_EXPORT BASE_DECLARE_FEATURE(kViewTransitionEarlySnapshotRelease);
 
 }  // namespace features
 

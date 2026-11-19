@@ -101,7 +101,11 @@ template("edge_overlay_source_set_browser_tests") {
     if (is_win) {
       sources +=
           [ "edge_ie_reactivation_import_service_factory_browsertest.cc" ]
-      deps += [ "//chrome/common/importer:test_support" ]
+      deps += [
+        "//chrome/browser/profiles:edge_profile_keyed_service_availability_test_base",
+        "//chrome/common/importer:test_support",
+        "//components/edge_olympia/core/common",
+      ]
     } else {
       deps += [ "//net" ]
     }

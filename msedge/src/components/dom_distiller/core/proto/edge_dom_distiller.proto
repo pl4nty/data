@@ -1,10 +1,11 @@
 // Copyright 2014 The Chromium Authors. All rights reserved.
+// Copyright (C) Microsoft Corporation. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
 syntax = "proto2";
 
-package dom_distiller.proto;
+package web_distiller.proto;
 option optimize_for = LITE_RUNTIME;
 option java_package = "org.chromium.distiller.proto";
 option java_outer_classname = "DomDistillerProtos";

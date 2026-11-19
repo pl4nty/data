@@ -8,7 +8,7 @@ syntax = "proto2";
 
 option optimize_for = LITE_RUNTIME;
 
-package dom_distiller;
+package web_distiller;
 
 import "edge_distilled_page.proto";
 
