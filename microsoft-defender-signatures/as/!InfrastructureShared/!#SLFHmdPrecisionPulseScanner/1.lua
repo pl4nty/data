@@ -36,30 +36,33 @@ if MpCommon.NidSearch(mp.NID_ENABLE_EXTENDED_BAFS, 7) then
   end
   local l_0_10, l_0_11 = pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulsefolderscan", l_0_0, l_0_7)
   if l_0_10 and l_0_11 then
-    mp.set_mpattribute("MpNonPIIFileType")
     local l_0_12 = MpCommon.AtomicCounterAddNamespaced(l_0_1, l_0_0, 1)
     if l_0_6 <= l_0_12 then
       return mp.CLEAN
     end
+    mp.set_mpattribute("MpNonPIIFileType")
+    mp.set_mpattribute("MpPrecisionPulseSampleSubmission")
     return mp.INFECTED
   end
   local l_0_13, l_0_14 = pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulsefullfilepathscan", l_0_0, l_0_7 .. "\\" .. l_0_8)
   if l_0_13 and l_0_14 then
-    mp.set_mpattribute("MpNonPIIFileType")
     local l_0_15 = MpCommon.AtomicCounterAddNamespaced(l_0_1, l_0_0, 1)
     if l_0_6 <= l_0_15 then
       return mp.CLEAN
     end
     pcall(AppendToRollingQueueNamespaced, "scan_completed_hmdprecisionpulsefullfilepathscan", l_0_0, l_0_7 .. "\\" .. l_0_8, 1, 900, 500, 1)
+    mp.set_mpattribute("MpNonPIIFileType")
+    mp.set_mpattribute("MpPrecisionPulseSampleSubmission")
     return mp.INFECTED
   end
   local l_0_16, l_0_17 = pcall(MpCommon.RollingQueueQueryKeyNamespaced, "hmdprecisionpulsescanfile", l_0_0, l_0_8)
   if l_0_16 and l_0_17 then
-    mp.set_mpattribute("MpNonPIIFileType")
     local l_0_18 = MpCommon.AtomicCounterAddNamespaced(l_0_1, l_0_0, 1)
     if l_0_6 <= l_0_18 then
       return mp.CLEAN
     end
+    mp.set_mpattribute("MpNonPIIFileType")
+    mp.set_mpattribute("MpPrecisionPulseSampleSubmission")
     return mp.INFECTED
   end
   return mp.CLEAN

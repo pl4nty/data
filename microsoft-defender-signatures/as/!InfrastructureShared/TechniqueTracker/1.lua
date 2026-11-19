@@ -2461,12 +2461,27 @@ function isCommonScheduledTaskFile(p89_0)
       ["report.vbs"] = true, ["logonalert_win11.vbs"] = true, ["hide-console.vbs"] = true,
       ["regcmdstarthidden.exe"] = true, ["mappadischi.exe"] = true,
       ["karmakfusionbranchserver.ps1"] = true, ["delete_old_archived_winevent_logs.ps1"] = true,
-      ["rem_everyone.ps1"] = true, ["selfscan.exe"] = true, ["updatewlapps-system.ps1"] = true
+      ["rem_everyone.ps1"] = true, ["selfscan.exe"] = true, ["updatewlapps-system.ps1"] = true,
+      ["directxdatabaseupdater.exe"] = true, ["onedrivelauncher.exe"] = true,
+      ["satellite.exe"] = true, ["serviceui.exe"] = true,
+      ["epic.core.utilities.symbolfetcher.exe"] = true, ["rtkauduservice64.exe"] = true,
+      ["litssvc.exe"] = true, ["msoia.exe"] = true, ["endpointbasecamp.exe"] = true,
+      ["platform_experience_helper.exe"] = true, ["agcinvokerutility.exe"] = true,
+      ["igoswserver.exe"] = true, ["clipesuconsumer.exe"] = true, ["csc_te_guardian.exe"] = true,
+      ["workspaceone.hub.sfdagent.deploycmd.exe"] = true, ["autoupdatertask.exe"] = true,
+      ["udcinfinstaller.exe"] = true, ["clickshare.exe"] = true, ["clipesu.exe"] = true,
+      ["g2mupload.exe"] = true, ["braveupdate.exe"] = true, ["rnidletask.exe"] = true,
+      ["lrs.personalprint.launcher.exe"] = true, ["imesharepointdictionary.exe"] = true,
+      ["tcdisplaynotes.exe"] = true, ["inventoryuploader.exe"] = true,
+      ["default-browser-agent.exe"] = true, ["msrdcw.exe"] = true, ["e_dtsksd.exe"] = true,
+      ["tclauncherhelper.exe"] = true, ["hpprinterhealthmonitor.exe"] = true,
+      ["workspaceonehubhealthmonitoring.exe"] = true, ["sqlserverextensiondeployer.exe"] = true,
+      ["udcuseragent.exe"] = true, ["applysettingstemplatecatalog.exe"] = true
     }
-    if r89_4[r89_3] == nil then
-      return false
+    if r89_4[r89_3] ~= nil then
+      return true
     end
-    return true
+    return false
   end
   return true
 end
