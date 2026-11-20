@@ -1,6 +1,6 @@
 {
     "CalendarCompanion": {
-        "CalendarCompanionDFVersion": "1.20261117.2.0",
+        "CalendarCompanionDFVersion": "1.20261119.12.0",
         "CalendarCompanionMsitVersion": "1.20260525.11.0",
         "CalendarCompanionProdVersion": "1.20260513.9.0",
         "CompanionRing": "Prod",
@@ -1189,6 +1189,7 @@
         "CmkTenantList": [
             "c27d9064-898a-49e6-a302-45537791c332"
         ],
+        "CompactInsightTypeViewCache": true,
         "ConsumerLinkedInFullProfileMaximumRequests": 300,
         "ConsumerLinkedInFullProfileWindowSeconds": 900,
         "DecoratedProfileLookupBatchSize": 10,
@@ -2378,6 +2379,7 @@
             "DaysToLoad": 30,
             "RunSequentially": true
         },
+        "Use12HourInsightActionCacheTtl": true,
         "UseDotNetCoreForVivaTopicsInLPC": true,
         "UseFilesCoreSharedEndpoint": true,
         "UseFilesCoreUsedEndpoint": true,
@@ -2859,7 +2861,7 @@
     },
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
-        "PeopleInTaskbarDFVersion": "1.20261117.2.0",
+        "PeopleInTaskbarDFVersion": "1.20261119.12.0",
         "PeopleInTaskbarMsitVersion": "1.20260603.10.0",
         "PeopleInTaskbarProdVersion": "1.20260520.11.0",
         "PeopleInTaskbarVersion": "1.20260526.10.0",

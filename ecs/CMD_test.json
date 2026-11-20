@@ -516,7 +516,6 @@
         "EnableCloudPCLicenseOptimizationAgentUX": true,
         "EnableCloudPCLifecycleManagementCapability": true,
         "EnableCloudPCListEmptyStateHandling": true,
-        "EnableCloudPCManagedByBackfill": true,
         "EnableCloudPCMoveAction_UX": true,
         "EnableCloudPCPowerStateChangeAction": true,
         "EnableCloudPCReassignPolicyAction_UX": true,
@@ -529,6 +528,7 @@
         "EnableCloudPcBulkShareSnapshot": true,
         "EnableCloudPcCloudProfileAlert": true,
         "EnableCloudPcConfigurationPatchApi": true,
+        "EnableCloudPcCustomizationAuthorizationScenario": true,
         "EnableCloudPcDeprovisionFailedScenario": true,
         "EnableCloudPcEncryptionTypeUX": true,
         "EnableCloudPcFrontlineConcurrencyScenario": true,
@@ -1118,7 +1118,6 @@
         "EnableReactViewForNotProvisionedWorkspaceGuidePane": true,
         "EnableReactViewForResizePane_UX": true,
         "EnableReactViewMigrationForCreateAzureConnection": true,
-        "EnableReactViewMigrationForDisplayAzureConnection": false,
         "EnableReadDeviceHostedBy": true,
         "EnableRealTimeQueryNRT": true,
         "EnableReasonCodeForFLD": true,
@@ -1943,6 +1942,7 @@
     "WCXTest": {
         "EnableAzureBlobCache": true,
         "EnableFlightGroupTest": true,
+        "EnableSettingsUXBrandingV2": true,
         "EnableWCXTestSentinel": true
     }
 }

@@ -5535,6 +5535,7 @@
             "autofillReplaceCachedWebElementsByRendererIds": true,
             "disableBackgroundTimerThrottling": false,
             "disableGPU": false,
+            "disableSmartScreenForSovereignCloudOrigins": false,
             "enableClearCustomStoragePartition": false,
             "enableCustomDownloadLocation": false,
             "enableDocumentPolicyIncludeJSCallStacksInCrashReports": false,
