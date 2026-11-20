@@ -145845,6 +145845,27 @@
     "platform": "Windows x86"
   },
   {
+    "name": "Microsoft Edge/156.0.4314.98-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.98-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.98-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.98-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/156.0.4314.98-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "156.0.4314.98-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
     "name": "Microsoft Edge/157.0.4315.0-NA/Linux x64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "157.0.4315.0-NA",
@@ -148260,6 +148281,69 @@
     "platform": "Android arm64"
   },
   {
+    "name": "Microsoft Edge/158.0.4370.33-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4370.33-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4370.33-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4370.33-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4370.33-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4370.33-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4370.33-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4370.33-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4370.33-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4370.33-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4370.33-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "158.0.4370.33-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4370.33-NA/iOS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4370.33-NA",
+    "dependency": "chromium",
+    "platform": "iOS arm64"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4370.33-Stable/Android arm/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4370.33-Stable",
+    "dependency": "chromium",
+    "platform": "Android arm"
+  },
+  {
+    "name": "Microsoft Edge/158.0.4370.33-Stable/Android arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "158.0.4370.33-Stable",
+    "dependency": "chromium",
+    "platform": "Android arm64"
+  },
+  {
     "name": "Microsoft Edge/158.0.4370.6-NA/Windows arm64/chromium.zip",
     "product": "Microsoft Edge",
     "release": "158.0.4370.6-NA",
@@ -149079,6 +149163,27 @@
     "platform": "Windows x86"
   },
   {
+    "name": "Microsoft Edge/159.0.4402.10-NA/iOS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "159.0.4402.10-NA",
+    "dependency": "chromium",
+    "platform": "iOS arm64"
+  },
+  {
+    "name": "Microsoft Edge/159.0.4402.10-beta/Android arm/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "159.0.4402.10-beta",
+    "dependency": "chromium",
+    "platform": "Android arm"
+  },
+  {
+    "name": "Microsoft Edge/159.0.4402.10-beta/Android arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "159.0.4402.10-beta",
+    "dependency": "chromium",
+    "platform": "Android arm64"
+  },
+  {
     "name": "Microsoft Edge/159.0.4402.5-NA/iOS arm64/chromium.tar",
     "product": "Microsoft Edge",
     "release": "159.0.4402.5-NA",
@@ -149327,6 +149432,48 @@
     "name": "Microsoft Edge/160.0.4413.0-NA/Windows x86/chromium.zip",
     "product": "Microsoft Edge",
     "release": "160.0.4413.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x86"
+  },
+  {
+    "name": "Microsoft Edge/160.0.4414.0-NA/Linux x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "160.0.4414.0-NA",
+    "dependency": "chromium",
+    "platform": "Linux x64"
+  },
+  {
+    "name": "Microsoft Edge/160.0.4414.0-NA/Mac OS arm64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "160.0.4414.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS arm64"
+  },
+  {
+    "name": "Microsoft Edge/160.0.4414.0-NA/Mac OS x64/chromium.tar",
+    "product": "Microsoft Edge",
+    "release": "160.0.4414.0-NA",
+    "dependency": "chromium",
+    "platform": "Mac OS x64"
+  },
+  {
+    "name": "Microsoft Edge/160.0.4414.0-NA/Windows arm64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "160.0.4414.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows arm64"
+  },
+  {
+    "name": "Microsoft Edge/160.0.4414.0-NA/Windows x64/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "160.0.4414.0-NA",
+    "dependency": "chromium",
+    "platform": "Windows x64"
+  },
+  {
+    "name": "Microsoft Edge/160.0.4414.0-NA/Windows x86/chromium.zip",
+    "product": "Microsoft Edge",
+    "release": "160.0.4414.0-NA",
     "dependency": "chromium",
     "platform": "Windows x86"
   },
@@ -195440,6 +195587,27 @@
     "platform": "macOS"
   },
   {
+    "name": "Microsoft Electron/43.8.11@2d516c61/Linux/microsoft-electron-v43.8.11-2d516c61e1e46534c6c54f5d80b1b923d5db5e24-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.8.11@2d516c61",
+    "dependency": "microsoft-electron-v43.8.11-2d516c61e1e46534c6c54f5d80b1b923d5db5e24-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/43.8.11@2d516c61/Windows/microsoft-electron-v43.8.11-2d516c61e1e46534c6c54f5d80b1b923d5db5e24-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.8.11@2d516c61",
+    "dependency": "microsoft-electron-v43.8.11-2d516c61e1e46534c6c54f5d80b1b923d5db5e24-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/43.8.11@2d516c61/macOS/microsoft-electron-v43.8.11-2d516c61e1e46534c6c54f5d80b1b923d5db5e24-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "43.8.11@2d516c61",
+    "dependency": "microsoft-electron-v43.8.11-2d516c61e1e46534c6c54f5d80b1b923d5db5e24-mac",
+    "platform": "macOS"
+  },
+  {
     "name": "Microsoft Electron/43.8.1@e3524233/Linux/microsoft-electron-v43.8.1-e352423306c4479bd597a4bbe3a164e2eddee895-linux.tgz",
     "product": "Microsoft Electron",
     "release": "43.8.1@e3524233",
@@ -195731,6 +195899,27 @@
     "product": "Microsoft Electron",
     "release": "44.11.3@fa3e57b1",
     "dependency": "microsoft-electron-v44.11.3-fa3e57b187d91fb02cb567cbd7ee6e557cf21251-mac",
+    "platform": "macOS"
+  },
+  {
+    "name": "Microsoft Electron/44.11.4@b7c3f241/Linux/microsoft-electron-v44.11.4-b7c3f241840e3e283a88b23c3464a7240ebf0ea9-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.11.4@b7c3f241",
+    "dependency": "microsoft-electron-v44.11.4-b7c3f241840e3e283a88b23c3464a7240ebf0ea9-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/44.11.4@b7c3f241/Windows/microsoft-electron-v44.11.4-b7c3f241840e3e283a88b23c3464a7240ebf0ea9-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.11.4@b7c3f241",
+    "dependency": "microsoft-electron-v44.11.4-b7c3f241840e3e283a88b23c3464a7240ebf0ea9-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/44.11.4@b7c3f241/macOS/microsoft-electron-v44.11.4-b7c3f241840e3e283a88b23c3464a7240ebf0ea9-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "44.11.4@b7c3f241",
+    "dependency": "microsoft-electron-v44.11.4-b7c3f241840e3e283a88b23c3464a7240ebf0ea9-mac",
     "platform": "macOS"
   },
   {
@@ -196067,6 +196256,27 @@
     "product": "Microsoft Electron",
     "release": "45.3.2@551b5af1",
     "dependency": "microsoft-electron-v45.3.2-551b5af1cf47b62107109de452bf9888d3adda46-mac",
+    "platform": "macOS"
+  },
+  {
+    "name": "Microsoft Electron/45.3.4@61461766/Linux/microsoft-electron-v45.3.4-61461766c50c78cb3a68da89c36b710612547fa5-linux.tgz",
+    "product": "Microsoft Electron",
+    "release": "45.3.4@61461766",
+    "dependency": "microsoft-electron-v45.3.4-61461766c50c78cb3a68da89c36b710612547fa5-linux",
+    "platform": "Linux"
+  },
+  {
+    "name": "Microsoft Electron/45.3.4@61461766/Windows/microsoft-electron-v45.3.4-61461766c50c78cb3a68da89c36b710612547fa5-windows.tgz",
+    "product": "Microsoft Electron",
+    "release": "45.3.4@61461766",
+    "dependency": "microsoft-electron-v45.3.4-61461766c50c78cb3a68da89c36b710612547fa5-windows",
+    "platform": "Windows"
+  },
+  {
+    "name": "Microsoft Electron/45.3.4@61461766/macOS/microsoft-electron-v45.3.4-61461766c50c78cb3a68da89c36b710612547fa5-mac.tgz",
+    "product": "Microsoft Electron",
+    "release": "45.3.4@61461766",
+    "dependency": "microsoft-electron-v45.3.4-61461766c50c78cb3a68da89c36b710612547fa5-mac",
     "platform": "macOS"
   },
   {

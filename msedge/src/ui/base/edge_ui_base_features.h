@@ -41,12 +41,6 @@ bool IsWebCaptureEnabled();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 bool IsCaptureSelectionInPDFEnabled();
 
-// If enabled, Edge shortcuts are given an App id that is different from that
-// used by Chrome, to prevent an Edge shortcut from being hidden in the Start
-// Menu if a Chrome shortcut for the same page already exists.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kShortcutsUseDifferentAppId);
-
 #if BUILDFLAG(IS_WIN)
 // If enabled, Edge can send badge update to secondary tiles
 // otherwise Edge can not send badge update to secondary tiles.
@@ -519,12 +513,6 @@ BASE_DECLARE_FEATURE(kFavBarContainerization);
 // Master feature flag for all phoenix features.
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kPhoenixShowContainersInEdge);
-
-
-// If activated, Rewards will automatically be pinned to toolbar
-// if user clicks Microsoft Rewards via More Menu dropdown
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kEdgeRewardsMoreMenuAutoPinToolbar);
 
 enum class PhoenixFrameConnTabsColor : int {
   kDefault = 0,
