@@ -86,6 +86,12 @@
         "SelfHost"
       ]
     },
+    "Set-CsRpBaseUriOverride": {
+      "CmdletType": "Custom",
+      "ExportsTo": [
+        "SelfHost"
+      ]
+    },
     "Register-CsOdcServiceNumber": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
@@ -4796,6 +4802,14 @@
       ]
     },
     "Test-CsTeamsTranslationRule": {
+      "CmdletType": "AutoRest",
+      "ExportsTo": [
+        "TeamsGA",
+        "TeamsPreview",
+        "SelfHost"
+      ]
+    },
+    "Test-CsTeamsCallBarringTreatment": {
       "CmdletType": "AutoRest",
       "ExportsTo": [
         "TeamsGA",

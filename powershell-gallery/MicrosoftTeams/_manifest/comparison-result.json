@@ -1,0 +1,40 @@
+{
+  "count": 0,
+  "metadata": {
+    "count": 0,
+    "propertyDifferences": []
+  },
+  "files": {
+    "count": 0,
+    "filesOnlyInSource": [],
+    "filesOnlyInTarget": []
+  },
+  "packages": {
+    "count": 0,
+    "packagesOnlyInSource": [],
+    "packagesOnlyInTarget": [],
+    "duplicateIdsInTarget": [],
+    "packagesWithPropertyDifferences": []
+  },
+  "sbomReferences": {
+    "count": 0,
+    "refsOnlyInSource": [],
+    "refsOnlyInTarget": [],
+    "duplicateNamesInTarget": [],
+    "refsWithPropertyDifferences": []
+  },
+  "sourceValidation": {
+    "count": 0,
+    "hasRootPackage": true,
+    "hasSufficientRelationships": true,
+    "expectedMinimumRelationships": 242,
+    "actualRelationshipCount": 357
+  },
+  "targetValidation": {
+    "count": 0,
+    "hasRootPackage": true,
+    "hasSufficientRelationships": true,
+    "expectedMinimumRelationships": 242,
+    "actualRelationshipCount": 506
+  }
+}

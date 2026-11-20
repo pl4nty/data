@@ -46856,7 +46856,8 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>RecordingAndTranscriptionAudioNotification</maml:name>
           <maml:description>
-            <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups.</maml:para>
+            <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups. This policy applies only to Teams client users in VoIP calls. This policy does not control audio announcements for PSTN users or for Teams client users in one-to-one calls between Teams and PSTN, where audio announcements are enabled by default in both scenarios.</maml:para>
+            <maml:para>Supported clients include Windows and macOS desktop, web, Microsoft Teams Rooms (MTR), Android, iOS, and VDI 2.0. VDI 1.0 is not supported.</maml:para>
             <maml:para>Possible values are:</maml:para>
             <maml:para>- Enabled : Audio notifications play when recording or transcription starts/stops. - Disabled : Audio notifications do not play when recording or transcription starts/stops.</maml:para>
             <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
@@ -47470,7 +47471,8 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>RecordingAndTranscriptionAudioNotification</maml:name>
         <maml:description>
-          <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups.</maml:para>
+          <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups. This policy applies only to Teams client users in VoIP calls. This policy does not control audio announcements for PSTN users or for Teams client users in one-to-one calls between Teams and PSTN, where audio announcements are enabled by default in both scenarios.</maml:para>
+          <maml:para>Supported clients include Windows and macOS desktop, web, Microsoft Teams Rooms (MTR), Android, iOS, and VDI 2.0. VDI 1.0 is not supported.</maml:para>
           <maml:para>Possible values are:</maml:para>
           <maml:para>- Enabled : Audio notifications play when recording or transcription starts/stops. - Disabled : Audio notifications do not play when recording or transcription starts/stops.</maml:para>
           <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
@@ -49642,7 +49644,7 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>CustomPromptsEnabled</maml:name>
           <maml:description>
-            <maml:para>Indicates whether compliance recording custom prompts feature is enabled for this tenant / user.</maml:para>
+            <maml:para>Indicates whether compliance recording custom prompts feature in 1:1 PSTN calls is enabled for this tenant / user. Currently only available in private preview.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -49654,7 +49656,7 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>CustomPromptsPackageId</maml:name>
           <maml:description>
-            <maml:para>Reference to custom prompts package.</maml:para>
+            <maml:para>Reference to custom prompts package. Currently only available in private preview.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -49678,7 +49680,7 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>DisableComplianceRecordingAudioNotificationForCalls</maml:name>
           <maml:description>
-            <maml:para>Setting this attribute to true disables recording audio notifications for 1:1 calls that are under compliance recording.</maml:para>
+            <maml:para>Setting this attribute to true disables recording audio notifications for 1:1 PSTN calls that are under compliance recording.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -49817,7 +49819,7 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>CustomPromptsEnabled</maml:name>
         <maml:description>
-          <maml:para>Indicates whether compliance recording custom prompts feature is enabled for this tenant / user.</maml:para>
+          <maml:para>Indicates whether compliance recording custom prompts feature in 1:1 PSTN calls is enabled for this tenant / user. Currently only available in private preview.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -49829,7 +49831,7 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>CustomPromptsPackageId</maml:name>
         <maml:description>
-          <maml:para>Reference to custom prompts package.</maml:para>
+          <maml:para>Reference to custom prompts package. Currently only available in private preview.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -49853,7 +49855,7 @@ Set-CsTeamsAppSetupPolicy -Identity (Get-Date -Format FileDateTimeUniversal) -Al
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>DisableComplianceRecordingAudioNotificationForCalls</maml:name>
         <maml:description>
-          <maml:para>Setting this attribute to true disables recording audio notifications for 1:1 calls that are under compliance recording.</maml:para>
+          <maml:para>Setting this attribute to true disables recording audio notifications for 1:1 PSTN calls that are under compliance recording.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -53683,6 +53685,18 @@ Tag:Test Enabled</dev:code>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>EnableMeetingOptionsBrandedReactionsOverride</maml:name>
+          <maml:description>
+            <maml:para>Specifies whether meeting organizers can disable branded reactions for individual meetings through Meeting Options. Set this parameter to `$true` to allow organizers to disable branded reactions, or `$false` to prevent them from disabling branded reactions through Meeting Options. The default policy value is `$false`.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>EnableMeetingOptionsThemeOverride</maml:name>
           <maml:description>
             <maml:para>Allow organizer to control meeting theme.</maml:para>
@@ -53807,6 +53821,18 @@ Tag:Test Enabled</dev:code>
         <maml:name>EnableMeetingBackgroundImages</maml:name>
         <maml:description>
           <maml:para>Enable custom meeting backgrounds.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>EnableMeetingOptionsBrandedReactionsOverride</maml:name>
+        <maml:description>
+          <maml:para>Specifies whether meeting organizers can disable branded reactions for individual meetings through Meeting Options. Set this parameter to `$true` to allow organizers to disable branded reactions, or `$false` to prevent them from disabling branded reactions through Meeting Options. The default policy value is `$false`.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -55130,11 +55156,13 @@ Tag:Test Enabled</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>DisableAudioAnnouncementsForResourceAccounts</maml:name>
           <maml:description>
-            <maml:para>Determines whether Teams plays recording announcements in CCaaS/OPS calls. This setting controls all CVA-driven (Conference Voice Announcement) recording announcements across Azure Communication Services Call Recording (https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/call-recording)and Teams convenience recording.</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; Microsoft Teams provides participant notifications when recording or transcription is active. If you choose to disable these notifications, you are responsible for ensuring that your contact center solution informs participants in real time in accordance with applicable laws. For full details, see the Microsoft Teams Terms of Service (https://www.microsoft.com/licensing/terms/productoffering/microsoftteams).</maml:para>
+            <maml:para>Determines whether Teams plays recording announcements in Contact Center as a Service (CCaaS) and Teams Phone Extensibility (TPE) calls. This setting controls all Teams-driven recording announcements across Azure Communication Services Call Recording (https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/call-recording)and Teams convenience recording.</maml:para>
+            <maml:para>To suppress announcements by default across the tenant, set this parameter to `True` in the Global meeting policy. Resource accounts that aren't assigned a custom meeting policy inherit the Global policy. To suppress announcements for a specific resource account, create or update a custom meeting policy with this parameter set to `True`, and then assign the policy to the resource account by using Grant-CsTeamsMeetingPolicy (/powershell/module/microsoftteams/grant-csteamsmeetingpolicy).</maml:para>
+            <maml:para>This setting suppresses Teams-driven recording announcements. It doesn't disable recording or announcements played by your application.</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; Microsoft Teams provides participant notifications when recording or transcription is active. If you choose to disable these notifications, you are responsible for ensuring that your contact center solution informs participants in real time in accordance with applicable laws. For full details, see the Microsoft Teams Terms of Service (https://www.microsoft.com/licensing/terms/productoffering/microsoftteams). &gt; &gt; This parameter is available in MicrosoftTeams PowerShell module version 7.8.0 and later.</maml:para>
             <maml:para>Possible values:</maml:para>
             <maml:para>- False: Teams plays all system recording announcements. This is the default value.</maml:para>
-            <maml:para>- True: Teams suppresses all announcements and the CCaaS/ISV solution is responsible for compliance notifications.</maml:para>
+            <maml:para>- True: Teams suppresses all Teams-driven recording announcements, and the CCaaS or independent software vendor (ISV) solution is responsible for compliance notifications.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -55273,6 +55301,21 @@ Tag:Test Enabled</dev:code>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>KnowledgeGenerationMeetingTypes</maml:name>
+          <maml:description>
+            <maml:para>Specifies which meetings organized by users assigned this policy can generate an AI-generated meeting knowledge file.</maml:para>
+            <maml:para>Possible values are:</maml:para>
+            <maml:para>- AllMeetings : Allow generation for all meetings, including meetings without transcription. - TranscribedMeetings : Allow generation only for meetings with transcription. - None : Do not generate meeting knowledge files.</maml:para>
+            <maml:para>This setting applies only when both `AllowIntelligentRecap` and `AllowMeetingKnowledgeGeneration` are set to `$True`. If either parameter is set to `$False`, meeting knowledge files aren't generated, regardless of the `KnowledgeGenerationMeetingTypes` value.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>LiveCaptionsEnabledType</maml:name>
           <maml:description>
             <maml:para>Determines whether real-time captions are available for the user in Teams meetings. Set this to DisabledUserOverride to allow user to turn on live captions. Set this to Disabled to prohibit.</maml:para>
@@ -55340,6 +55383,24 @@ Tag:Test Enabled</dev:code>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>MeetingAI</maml:name>
+          <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+            <maml:para>Determines whether AI (Copilot, Facilitator, or Intelligent Recap) can be used in meetings.</maml:para>
+            <maml:para>This parameter must be used together with -TranscriptionWithMeetingAI.</maml:para>
+            <maml:para>Possible values are:</maml:para>
+            <maml:para>- EnabledAllowOrganizerOverride</maml:para>
+            <maml:para>- DisabledAllowOrganizerOverride</maml:para>
+            <maml:para>- DisabledNoOverride</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>EnabledAllowOrganizerOverride</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>MeetingChatEnabledType</maml:name>
@@ -55641,6 +55702,24 @@ Tag:Test Enabled</dev:code>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>TranscriptionWithMeetingAI</maml:name>
+          <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+            <maml:para>Determines whether transcription is turned on along with Copilot. Transcription allows Copilot to continue to use meeting data for questions after the meeting ends.</maml:para>
+            <maml:para>This parameter must be used together with -MeetingAI.</maml:para>
+            <maml:para>Possible values are:</maml:para>
+            <maml:para>- EnabledAllowOrganizerOverride</maml:para>
+            <maml:para>- DisabledAllowOrganizerOverride</maml:para>
+            <maml:para>- EnabledNoOverride</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>EnabledNoOverride</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>UsersCanAdmitFromLobby</maml:name>
           <maml:description>
             <maml:para>This policy controls who can admit from the lobby.</maml:para>
@@ -55869,10 +55948,9 @@ Tag:Test Enabled</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>SyntheticMediaDetection</maml:name>
           <maml:description>
-            <maml:para>Controls whether synthetic audio/video detection is enabled for the user's meetings. When Disabled, no detection occurs regardless of other property values.</maml:para>
+            <maml:para>Controls whether synthetic audio/video detection is permitted for meetings organized by users assigned this policy.</maml:para>
             <maml:para>Possible values are:</maml:para>
-            <maml:para>- Enabled : Synthetic media detection is active for the user's meetings. - Disabled : Synthetic media detection is inactive; all other detection properties are ignored.</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+            <maml:para>- Enabled : Permits synthetic media detection when a configured detection provider is available. This is the default value. To configure a third-party provider, also set the SyntheticMediaDetectionAppId parameter. - Disabled : Disables synthetic media detection regardless of the configured provider or other detection property values.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -55884,8 +55962,9 @@ Tag:Test Enabled</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>SyntheticMediaDetectionAppId</maml:name>
           <maml:description>
-            <maml:para>The Teams App ID (GUID) of the registered detection bot to use for synthetic media analysis. The zero GUID (00000000-0000-0000-0000-000000000000) represents the platform default: resolves to no provider when 1P is not available, or Microsoft Detection when 1P is available.</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+            <maml:para>Specifies the Teams App ID (GUID) of the detection provider to use for synthetic audio/video analysis. For third-party detection, use only the Teams App ID of a supported certified detection provider and set SyntheticMediaDetection to Enabled.</maml:para>
+            <maml:para>The default value, the zero GUID (00000000-0000-0000-0000-000000000000), selects no provider when Microsoft Detection is unavailable, or Microsoft Detection when it is available. It does not select a third-party provider.</maml:para>
+            <maml:para>&gt; [!IMPORTANT] &gt; Successfully saving the policy does not guarantee that the App ID identifies a supported provider or that the detection bot can join meetings. An incorrect or unsupported App ID can prevent the detection bot from joining eligible meetings.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
           <dev:type>
@@ -55927,7 +56006,8 @@ Tag:Test Enabled</dev:code>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>RecordingAndTranscriptionAudioNotification</maml:name>
           <maml:description>
-            <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups.</maml:para>
+            <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups. This policy applies only to Teams client users in VoIP calls. This policy does not control audio announcements for PSTN users or for Teams client users in one-to-one calls between Teams and PSTN, where audio announcements are enabled by default in both scenarios.</maml:para>
+            <maml:para>Supported clients include Windows and macOS desktop, web, Microsoft Teams Rooms (MTR), Android, iOS, and VDI 2.0. VDI 1.0 is not supported.</maml:para>
             <maml:para>Possible values are:</maml:para>
             <maml:para>- Enabled : Audio notifications play when recording or transcription starts/stops. - Disabled : Audio notifications do not play when recording or transcription starts/stops.</maml:para>
             <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
@@ -56758,11 +56838,13 @@ Tag:Test Enabled</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>DisableAudioAnnouncementsForResourceAccounts</maml:name>
         <maml:description>
-          <maml:para>Determines whether Teams plays recording announcements in CCaaS/OPS calls. This setting controls all CVA-driven (Conference Voice Announcement) recording announcements across Azure Communication Services Call Recording (https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/call-recording)and Teams convenience recording.</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; Microsoft Teams provides participant notifications when recording or transcription is active. If you choose to disable these notifications, you are responsible for ensuring that your contact center solution informs participants in real time in accordance with applicable laws. For full details, see the Microsoft Teams Terms of Service (https://www.microsoft.com/licensing/terms/productoffering/microsoftteams).</maml:para>
+          <maml:para>Determines whether Teams plays recording announcements in Contact Center as a Service (CCaaS) and Teams Phone Extensibility (TPE) calls. This setting controls all Teams-driven recording announcements across Azure Communication Services Call Recording (https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/call-recording)and Teams convenience recording.</maml:para>
+          <maml:para>To suppress announcements by default across the tenant, set this parameter to `True` in the Global meeting policy. Resource accounts that aren't assigned a custom meeting policy inherit the Global policy. To suppress announcements for a specific resource account, create or update a custom meeting policy with this parameter set to `True`, and then assign the policy to the resource account by using Grant-CsTeamsMeetingPolicy (/powershell/module/microsoftteams/grant-csteamsmeetingpolicy).</maml:para>
+          <maml:para>This setting suppresses Teams-driven recording announcements. It doesn't disable recording or announcements played by your application.</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; Microsoft Teams provides participant notifications when recording or transcription is active. If you choose to disable these notifications, you are responsible for ensuring that your contact center solution informs participants in real time in accordance with applicable laws. For full details, see the Microsoft Teams Terms of Service (https://www.microsoft.com/licensing/terms/productoffering/microsoftteams). &gt; &gt; This parameter is available in MicrosoftTeams PowerShell module version 7.8.0 and later.</maml:para>
           <maml:para>Possible values:</maml:para>
           <maml:para>- False: Teams plays all system recording announcements. This is the default value.</maml:para>
-          <maml:para>- True: Teams suppresses all announcements and the CCaaS/ISV solution is responsible for compliance notifications.</maml:para>
+          <maml:para>- True: Teams suppresses all Teams-driven recording announcements, and the CCaaS or independent software vendor (ISV) solution is responsible for compliance notifications.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -56915,6 +56997,21 @@ Tag:Test Enabled</dev:code>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>KnowledgeGenerationMeetingTypes</maml:name>
+        <maml:description>
+          <maml:para>Specifies which meetings organized by users assigned this policy can generate an AI-generated meeting knowledge file.</maml:para>
+          <maml:para>Possible values are:</maml:para>
+          <maml:para>- AllMeetings : Allow generation for all meetings, including meetings without transcription. - TranscribedMeetings : Allow generation only for meetings with transcription. - None : Do not generate meeting knowledge files.</maml:para>
+          <maml:para>This setting applies only when both `AllowIntelligentRecap` and `AllowMeetingKnowledgeGeneration` are set to `$True`. If either parameter is set to `$False`, meeting knowledge files aren't generated, regardless of the `KnowledgeGenerationMeetingTypes` value.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>LiveCaptionsEnabledType</maml:name>
         <maml:description>
           <maml:para>Determines whether real-time captions are available for the user in Teams meetings. Set this to DisabledUserOverride to allow user to turn on live captions. Set this to Disabled to prohibit.</maml:para>
@@ -56982,6 +57079,24 @@ Tag:Test Enabled</dev:code>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>MeetingAI</maml:name>
+        <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+          <maml:para>Determines whether AI (Copilot, Facilitator, or Intelligent Recap) can be used in meetings.</maml:para>
+          <maml:para>This parameter must be used together with -TranscriptionWithMeetingAI.</maml:para>
+          <maml:para>Possible values are:</maml:para>
+          <maml:para>- EnabledAllowOrganizerOverride</maml:para>
+          <maml:para>- DisabledAllowOrganizerOverride</maml:para>
+          <maml:para>- DisabledNoOverride</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>EnabledAllowOrganizerOverride</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>MeetingChatEnabledType</maml:name>
@@ -57283,6 +57398,24 @@ Tag:Test Enabled</dev:code>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>TranscriptionWithMeetingAI</maml:name>
+        <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+          <maml:para>Determines whether transcription is turned on along with Copilot. Transcription allows Copilot to continue to use meeting data for questions after the meeting ends.</maml:para>
+          <maml:para>This parameter must be used together with -MeetingAI.</maml:para>
+          <maml:para>Possible values are:</maml:para>
+          <maml:para>- EnabledAllowOrganizerOverride</maml:para>
+          <maml:para>- DisabledAllowOrganizerOverride</maml:para>
+          <maml:para>- EnabledNoOverride</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>EnabledNoOverride</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>UsersCanAdmitFromLobby</maml:name>
         <maml:description>
           <maml:para>This policy controls who can admit from the lobby.</maml:para>
@@ -57512,10 +57645,9 @@ Tag:Test Enabled</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>SyntheticMediaDetection</maml:name>
         <maml:description>
-          <maml:para>Controls whether synthetic audio/video detection is enabled for the user's meetings. When Disabled, no detection occurs regardless of other property values.</maml:para>
+          <maml:para>Controls whether synthetic audio/video detection is permitted for meetings organized by users assigned this policy.</maml:para>
           <maml:para>Possible values are:</maml:para>
-          <maml:para>- Enabled : Synthetic media detection is active for the user's meetings. - Disabled : Synthetic media detection is inactive; all other detection properties are ignored.</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+          <maml:para>- Enabled : Permits synthetic media detection when a configured detection provider is available. This is the default value. To configure a third-party provider, also set the SyntheticMediaDetectionAppId parameter. - Disabled : Disables synthetic media detection regardless of the configured provider or other detection property values.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -57527,8 +57659,9 @@ Tag:Test Enabled</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>SyntheticMediaDetectionAppId</maml:name>
         <maml:description>
-          <maml:para>The Teams App ID (GUID) of the registered detection bot to use for synthetic media analysis. The zero GUID (00000000-0000-0000-0000-000000000000) represents the platform default: resolves to no provider when 1P is not available, or Microsoft Detection when 1P is available.</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+          <maml:para>Specifies the Teams App ID (GUID) of the detection provider to use for synthetic audio/video analysis. For third-party detection, use only the Teams App ID of a supported certified detection provider and set SyntheticMediaDetection to Enabled.</maml:para>
+          <maml:para>The default value, the zero GUID (00000000-0000-0000-0000-000000000000), selects no provider when Microsoft Detection is unavailable, or Microsoft Detection when it is available. It does not select a third-party provider.</maml:para>
+          <maml:para>&gt; [!IMPORTANT] &gt; Successfully saving the policy does not guarantee that the App ID identifies a supported provider or that the detection bot can join meetings. An incorrect or unsupported App ID can prevent the detection bot from joining eligible meetings.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
         <dev:type>
@@ -57570,7 +57703,8 @@ Tag:Test Enabled</dev:code>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>RecordingAndTranscriptionAudioNotification</maml:name>
         <maml:description>
-          <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups.</maml:para>
+          <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups. This policy applies only to Teams client users in VoIP calls. This policy does not control audio announcements for PSTN users or for Teams client users in one-to-one calls between Teams and PSTN, where audio announcements are enabled by default in both scenarios.</maml:para>
+          <maml:para>Supported clients include Windows and macOS desktop, web, Microsoft Teams Rooms (MTR), Android, iOS, and VDI 2.0. VDI 1.0 is not supported.</maml:para>
           <maml:para>Possible values are:</maml:para>
           <maml:para>- Enabled : Audio notifications play when recording or transcription starts/stops. - Disabled : Audio notifications do not play when recording or transcription starts/stops.</maml:para>
           <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
@@ -57621,6 +57755,13 @@ Tag:Test Enabled</dev:code>
         <dev:code>New-CsTeamsMeetingPolicy -Identity HrMeetingPolicy -AutoAdmittedUsers "Everyone" -AllowMeetNow $False</dev:code>
         <dev:remarks>
           <maml:para>In Example 2, the New-CsTeamsMeetingPolicy cmdlet is used to create a meeting policy with the Identity HrMeetingPolicy. In this example two different property values are configured: AutoAdmittedUsers is set to Everyone and AllowMeetNow is set to False. All other policy properties will use the default values.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
+        <dev:code>New-CsTeamsMeetingPolicy -Identity "SyntheticDetectionPolicy" -SyntheticMediaDetection Enabled -SyntheticMediaDetectionAppId "&lt;supported-provider-app-id&gt;"</dev:code>
+        <dev:remarks>
+          <maml:para>In Example 3, the New-CsTeamsMeetingPolicy cmdlet creates a meeting policy that permits synthetic audio/video detection using a configured third-party provider for meetings organized by users assigned this policy, when the feature and provider are available. Replace `&lt;supported-provider-app-id&gt;` with the Teams App ID of a supported certified detection provider, not an arbitrary Microsoft Entra application ID or bot ID.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -59429,7 +59570,6 @@ DefaultMeetingTemplateId  : customtemplate_9ab0014a-bba4-4ad6-b816-0b42104b5056<
       <maml:description>
         <maml:para>Limited Preview: Functionality described in this document is currently in limited preview and only authorized organizations have access.</maml:para>
         <maml:para>Use this cmdlet to create a new instance of a Teams Personal Attendant Policy.</maml:para>
-        <maml:para>When policy modifications are temporarily blocked, new policy instances can be created successfully if the following parameters are kept at their default values (`EnabledUserOverride`): `PersonalAttendant`, `CallScreening`, `CalendarBookings`, `InboundInternalCalls`, `InboundFederatedCalls`, `InboundPSTNCalls`. The AutomaticTranscription and AutomaticRecording parameters remain fully configurable during this period.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
@@ -77431,7 +77571,6 @@ At line:1 char:1
       <maml:description>
         <maml:para>Limited Preview: Functionality described in this document is currently in limited preview and only authorized organizations have access.</maml:para>
         <maml:para>Use this cmdlet to remove an existing instance of a Teams Personal Attendant Policy or reset the Global policy instance to the default values.</maml:para>
-        <maml:para>When policy modifications are temporarily blocked, this cmdlet is not available and policy removal cannot be performed during this period.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
@@ -96916,7 +97055,8 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>RecordingAndTranscriptionAudioNotification</maml:name>
           <maml:description>
-            <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups.</maml:para>
+            <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups. This policy applies only to Teams client users in VoIP calls. This policy does not control audio announcements for PSTN users or for Teams client users in one-to-one calls between Teams and PSTN, where audio announcements are enabled by default in both scenarios.</maml:para>
+            <maml:para>Supported clients include Windows and macOS desktop, web, Microsoft Teams Rooms (MTR), Android, iOS, and VDI 2.0. VDI 1.0 is not supported.</maml:para>
             <maml:para>Possible values are:</maml:para>
             <maml:para>- Enabled : Audio notifications play when recording or transcription starts/stops. - Disabled : Audio notifications do not play when recording or transcription starts/stops.</maml:para>
             <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
@@ -97526,7 +97666,8 @@ Set-CsTeamsAppSetupPolicy -Identity 'Set-Test' -AppPresetList $AppPresetList</de
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>RecordingAndTranscriptionAudioNotification</maml:name>
         <maml:description>
-          <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups.</maml:para>
+          <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups. This policy applies only to Teams client users in VoIP calls. This policy does not control audio announcements for PSTN users or for Teams client users in one-to-one calls between Teams and PSTN, where audio announcements are enabled by default in both scenarios.</maml:para>
+          <maml:para>Supported clients include Windows and macOS desktop, web, Microsoft Teams Rooms (MTR), Android, iOS, and VDI 2.0. VDI 1.0 is not supported.</maml:para>
           <maml:para>Possible values are:</maml:para>
           <maml:para>- Enabled : Audio notifications play when recording or transcription starts/stops. - Disabled : Audio notifications do not play when recording or transcription starts/stops.</maml:para>
           <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
@@ -106530,6 +106671,18 @@ Tag:Test Disabled</dev:code>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>EnableMeetingOptionsBrandedReactionsOverride</maml:name>
+          <maml:description>
+            <maml:para>Specifies whether meeting organizers can disable branded reactions for individual meetings through Meeting Options. Set this parameter to `$true` to allow organizers to disable branded reactions, or `$false` to prevent them from disabling branded reactions through Meeting Options. The default policy value is `$false`.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>EnableMeetingOptionsThemeOverride</maml:name>
           <maml:description>
             <maml:para>Allows organizers to control meeting themes.</maml:para>
@@ -106618,6 +106771,18 @@ Tag:Test Disabled</dev:code>
         <maml:name>EnableMeetingBackgroundImages</maml:name>
         <maml:description>
           <maml:para>Enables custom meeting backgrounds.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>EnableMeetingOptionsBrandedReactionsOverride</maml:name>
+        <maml:description>
+          <maml:para>Specifies whether meeting organizers can disable branded reactions for individual meetings through Meeting Options. Set this parameter to `$true` to allow organizers to disable branded reactions, or `$false` to prevent them from disabling branded reactions through Meeting Options. The default policy value is `$false`.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -107636,6 +107801,18 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>EnableWorkIQTranscriptAccess</maml:name>
+          <maml:description>
+            <maml:para>Determines whether WorkIQ can access real-time transcript data in the tenant. Set this to TRUE to allow WorkIQ to request real-time transcript data, as long as all other applicable requirements are met. Set this to FALSE to block WorkIQ from accessing real-time transcript data in the tenant.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>EnableQoS</maml:name>
           <maml:description>
             <maml:para>Determines whether Quality of Service Marking for real-time media (audio, video, screen/app sharing) is enabled in the tenant. Set this to TRUE to enable and FALSE to disable</maml:para>
@@ -107938,6 +108115,18 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <maml:name>EnableGraphTranscriptAccess</maml:name>
         <maml:description>
           <maml:para>Determines whether transcripts can be accessed via Microsoft Graph API in the tenant. Set this to TRUE to allow Microsoft Graph API access to transcripts, and FALSE to block all Microsoft Graph API access to transcripts in the tenant.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>EnableWorkIQTranscriptAccess</maml:name>
+        <maml:description>
+          <maml:para>Determines whether WorkIQ can access real-time transcript data in the tenant. Set this to TRUE to allow WorkIQ to request real-time transcript data, as long as all other applicable requirements are met. Set this to FALSE to block WorkIQ from accessing real-time transcript data in the tenant.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -109013,11 +109202,13 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>DisableAudioAnnouncementsForResourceAccounts</maml:name>
           <maml:description>
-            <maml:para>Determines whether Teams plays recording announcements in CCaaS/OPS calls. This setting controls all CVA-driven (Conference Voice Announcement) recording announcements across Azure Communication Services Call Recording (https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/call-recording)and Teams convenience recording.</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; Microsoft Teams provides participant notifications when recording or transcription is active. If you choose to disable these notifications, you are responsible for ensuring that your contact center solution informs participants in real time in accordance with applicable laws. For full details, see the Microsoft Teams Terms of Service (https://www.microsoft.com/licensing/terms/productoffering/microsoftteams).</maml:para>
+            <maml:para>Determines whether Teams plays recording announcements in Contact Center as a Service (CCaaS) and Teams Phone Extensibility (TPE) calls. This setting controls all Teams-driven recording announcements across Azure Communication Services Call Recording (https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/call-recording)and Teams convenience recording.</maml:para>
+            <maml:para>To suppress announcements by default across the tenant, set this parameter to `True` in the Global meeting policy. Resource accounts that aren't assigned a custom meeting policy inherit the Global policy. To suppress announcements for a specific resource account, create or update a custom meeting policy with this parameter set to `True`, and then assign the policy to the resource account by using Grant-CsTeamsMeetingPolicy (/powershell/module/microsoftteams/grant-csteamsmeetingpolicy).</maml:para>
+            <maml:para>This setting suppresses Teams-driven recording announcements. It doesn't disable recording or announcements played by your application.</maml:para>
+            <maml:para>&gt; [!NOTE] &gt; Microsoft Teams provides participant notifications when recording or transcription is active. If you choose to disable these notifications, you are responsible for ensuring that your contact center solution informs participants in real time in accordance with applicable laws. For full details, see the Microsoft Teams Terms of Service (https://www.microsoft.com/licensing/terms/productoffering/microsoftteams). &gt; &gt; This parameter is available in MicrosoftTeams PowerShell module version 7.8.0 and later.</maml:para>
             <maml:para>Possible values:</maml:para>
             <maml:para>- False: Teams plays all system recording announcements. This is the default value.</maml:para>
-            <maml:para>- True: Teams suppresses all announcements and the CCaaS/ISV solution is responsible for compliance notifications.</maml:para>
+            <maml:para>- True: Teams suppresses all Teams-driven recording announcements, and the CCaaS or independent software vendor (ISV) solution is responsible for compliance notifications.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
           <dev:type>
@@ -109078,6 +109269,7 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
             <maml:para>Controls how external third-party meeting bots and meeting assistants are handled when they attempt to join meetings. This policy provides admins with controls to detect and manage external bots when they attempt to join meetings hosted in the organization. Using these controls admins are able to manage or prevent unauthorized joins of external bots to the meetings hosted in their organization.</maml:para>
             <maml:para>Possible Values: - AllowAllBots : Don't detect bots; Bots will appear the same as other participants. Standard lobby policies will apply to them. They may get mistakenly admitted to meetings.</maml:para>
             <maml:para>- RequireApprovalWhenDetected : When detected, bots will be enforced to the meeting lobby, regardless of the lobby setting of the meeting. They will require approval before getting access to the meetings. This is the default value.</maml:para>
+            <maml:para>- BlockDetectedBots : When detected, external third-party meeting bots and meeting assistants are blocked from joining meetings hosted in the organization.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -109138,6 +109330,21 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <maml:name>IPVideoMode</maml:name>
           <maml:description>
             <maml:para>Determines whether video can be turned on in meetings and group calls. Set this to ENABLEDOUTGOINGINCOMING to allow outgoing and incoming video in the meeting. Set this to DISABLED to prohibit outgoing and incoming video in the meeting.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>KnowledgeGenerationMeetingTypes</maml:name>
+          <maml:description>
+            <maml:para>Specifies which meetings organized by users assigned this policy can generate an AI-generated meeting knowledge file.</maml:para>
+            <maml:para>Possible values are:</maml:para>
+            <maml:para>- AllMeetings : Allow generation for all meetings, including meetings without transcription. - TranscribedMeetings : Allow generation only for meetings with transcription. - None : Do not generate meeting knowledge files.</maml:para>
+            <maml:para>This setting applies only when both `AllowIntelligentRecap` and `AllowMeetingKnowledgeGeneration` are set to `$True`. If either parameter is set to `$False`, meeting knowledge files aren't generated, regardless of the `KnowledgeGenerationMeetingTypes` value.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -109213,6 +109420,24 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>MeetingAI</maml:name>
+          <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+            <maml:para>Determines whether AI (Copilot, Facilitator, or Intelligent Recap) can be used in meetings.</maml:para>
+            <maml:para>This parameter must be used together with -TranscriptionWithMeetingAI.</maml:para>
+            <maml:para>Possible values are:</maml:para>
+            <maml:para>- EnabledAllowOrganizerOverride</maml:para>
+            <maml:para>- DisabledAllowOrganizerOverride</maml:para>
+            <maml:para>- DisabledNoOverride</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>EnabledAllowOrganizerOverride</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>MeetingChatEnabledType</maml:name>
@@ -109538,6 +109763,24 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>TranscriptionWithMeetingAI</maml:name>
+          <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+            <maml:para>Determines whether transcription is turned on along with Copilot. Transcription allows Copilot to continue to use meeting data for questions after the meeting ends.</maml:para>
+            <maml:para>This parameter must be used together with -MeetingAI.</maml:para>
+            <maml:para>Possible values are:</maml:para>
+            <maml:para>- EnabledAllowOrganizerOverride</maml:para>
+            <maml:para>- DisabledAllowOrganizerOverride</maml:para>
+            <maml:para>- EnabledNoOverride</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>EnabledNoOverride</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>UsersCanAdmitFromLobby</maml:name>
           <maml:description>
             <maml:para>This policy controls who can admit from the lobby.</maml:para>
@@ -109699,10 +109942,9 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>SyntheticMediaDetection</maml:name>
           <maml:description>
-            <maml:para>Controls whether synthetic audio/video detection is enabled for the user's meetings. When Disabled, no detection occurs regardless of other property values.</maml:para>
+            <maml:para>Controls whether synthetic audio/video detection is permitted for meetings organized by users assigned this policy.</maml:para>
             <maml:para>Possible values are:</maml:para>
-            <maml:para>- Enabled : Synthetic media detection is active for the user's meetings. - Disabled : Synthetic media detection is inactive; all other detection properties are ignored.</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+            <maml:para>- Enabled : Permits synthetic media detection when a configured detection provider is available. This is the default value. To configure a third-party provider, also set the SyntheticMediaDetectionAppId parameter. - Disabled : Disables synthetic media detection regardless of the configured provider or other detection property values.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -109714,8 +109956,9 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>SyntheticMediaDetectionAppId</maml:name>
           <maml:description>
-            <maml:para>The Teams App ID (GUID) of the registered detection bot to use for synthetic media analysis. The zero GUID (00000000-0000-0000-0000-000000000000) represents the platform default: resolves to no provider when 1P is not available, or Microsoft Detection when 1P is available.</maml:para>
-            <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+            <maml:para>Specifies the Teams App ID (GUID) of the detection provider to use for synthetic audio/video analysis. For third-party detection, use only the Teams App ID of a supported certified detection provider and set SyntheticMediaDetection to Enabled.</maml:para>
+            <maml:para>The default value, the zero GUID (00000000-0000-0000-0000-000000000000), selects no provider when Microsoft Detection is unavailable, or Microsoft Detection when it is available. It does not select a third-party provider.</maml:para>
+            <maml:para>&gt; [!IMPORTANT] &gt; Successfully saving the policy does not guarantee that the App ID identifies a supported provider or that the detection bot can join meetings. An incorrect or unsupported App ID can prevent the detection bot from joining eligible meetings.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
           <dev:type>
@@ -109757,7 +110000,8 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>RecordingAndTranscriptionAudioNotification</maml:name>
           <maml:description>
-            <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups.</maml:para>
+            <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups. This policy applies only to Teams client users in VoIP calls. This policy does not control audio announcements for PSTN users or for Teams client users in one-to-one calls between Teams and PSTN, where audio announcements are enabled by default in both scenarios.</maml:para>
+            <maml:para>Supported clients include Windows and macOS desktop, web, Microsoft Teams Rooms (MTR), Android, iOS, and VDI 2.0. VDI 1.0 is not supported.</maml:para>
             <maml:para>Possible values are:</maml:para>
             <maml:para>- Enabled : Audio notifications play when recording or transcription starts/stops. - Disabled : Audio notifications do not play when recording or transcription starts/stops.</maml:para>
             <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
@@ -110669,11 +110913,13 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>DisableAudioAnnouncementsForResourceAccounts</maml:name>
         <maml:description>
-          <maml:para>Determines whether Teams plays recording announcements in CCaaS/OPS calls. This setting controls all CVA-driven (Conference Voice Announcement) recording announcements across Azure Communication Services Call Recording (https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/call-recording)and Teams convenience recording.</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; Microsoft Teams provides participant notifications when recording or transcription is active. If you choose to disable these notifications, you are responsible for ensuring that your contact center solution informs participants in real time in accordance with applicable laws. For full details, see the Microsoft Teams Terms of Service (https://www.microsoft.com/licensing/terms/productoffering/microsoftteams).</maml:para>
+          <maml:para>Determines whether Teams plays recording announcements in Contact Center as a Service (CCaaS) and Teams Phone Extensibility (TPE) calls. This setting controls all Teams-driven recording announcements across Azure Communication Services Call Recording (https://learn.microsoft.com/azure/communication-services/concepts/voice-video-calling/call-recording)and Teams convenience recording.</maml:para>
+          <maml:para>To suppress announcements by default across the tenant, set this parameter to `True` in the Global meeting policy. Resource accounts that aren't assigned a custom meeting policy inherit the Global policy. To suppress announcements for a specific resource account, create or update a custom meeting policy with this parameter set to `True`, and then assign the policy to the resource account by using Grant-CsTeamsMeetingPolicy (/powershell/module/microsoftteams/grant-csteamsmeetingpolicy).</maml:para>
+          <maml:para>This setting suppresses Teams-driven recording announcements. It doesn't disable recording or announcements played by your application.</maml:para>
+          <maml:para>&gt; [!NOTE] &gt; Microsoft Teams provides participant notifications when recording or transcription is active. If you choose to disable these notifications, you are responsible for ensuring that your contact center solution informs participants in real time in accordance with applicable laws. For full details, see the Microsoft Teams Terms of Service (https://www.microsoft.com/licensing/terms/productoffering/microsoftteams). &gt; &gt; This parameter is available in MicrosoftTeams PowerShell module version 7.8.0 and later.</maml:para>
           <maml:para>Possible values:</maml:para>
           <maml:para>- False: Teams plays all system recording announcements. This is the default value.</maml:para>
-          <maml:para>- True: Teams suppresses all announcements and the CCaaS/ISV solution is responsible for compliance notifications.</maml:para>
+          <maml:para>- True: Teams suppresses all Teams-driven recording announcements, and the CCaaS or independent software vendor (ISV) solution is responsible for compliance notifications.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
         <dev:type>
@@ -110734,6 +110980,7 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <maml:para>Controls how external third-party meeting bots and meeting assistants are handled when they attempt to join meetings. This policy provides admins with controls to detect and manage external bots when they attempt to join meetings hosted in the organization. Using these controls admins are able to manage or prevent unauthorized joins of external bots to the meetings hosted in their organization.</maml:para>
           <maml:para>Possible Values: - AllowAllBots : Don't detect bots; Bots will appear the same as other participants. Standard lobby policies will apply to them. They may get mistakenly admitted to meetings.</maml:para>
           <maml:para>- RequireApprovalWhenDetected : When detected, bots will be enforced to the meeting lobby, regardless of the lobby setting of the meeting. They will require approval before getting access to the meetings. This is the default value.</maml:para>
+          <maml:para>- BlockDetectedBots : When detected, external third-party meeting bots and meeting assistants are blocked from joining meetings hosted in the organization.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -110816,6 +111063,21 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>KnowledgeGenerationMeetingTypes</maml:name>
+        <maml:description>
+          <maml:para>Specifies which meetings organized by users assigned this policy can generate an AI-generated meeting knowledge file.</maml:para>
+          <maml:para>Possible values are:</maml:para>
+          <maml:para>- AllMeetings : Allow generation for all meetings, including meetings without transcription. - TranscribedMeetings : Allow generation only for meetings with transcription. - None : Do not generate meeting knowledge files.</maml:para>
+          <maml:para>This setting applies only when both `AllowIntelligentRecap` and `AllowMeetingKnowledgeGeneration` are set to `$True`. If either parameter is set to `$False`, meeting knowledge files aren't generated, regardless of the `KnowledgeGenerationMeetingTypes` value.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>LiveCaptionsEnabledType</maml:name>
         <maml:description>
           <maml:para>Determines whether real-time captions are available for the user in Teams meetings. Set this to DisabledUserOverride to allow user to turn on live captions. Set this to Disabled to prohibit.</maml:para>
@@ -110882,6 +111144,24 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>MeetingAI</maml:name>
+        <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+          <maml:para>Determines whether AI (Copilot, Facilitator, or Intelligent Recap) can be used in meetings.</maml:para>
+          <maml:para>This parameter must be used together with -TranscriptionWithMeetingAI.</maml:para>
+          <maml:para>Possible values are:</maml:para>
+          <maml:para>- EnabledAllowOrganizerOverride</maml:para>
+          <maml:para>- DisabledAllowOrganizerOverride</maml:para>
+          <maml:para>- DisabledNoOverride</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>EnabledAllowOrganizerOverride</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>MeetingChatEnabledType</maml:name>
@@ -111207,6 +111487,24 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>TranscriptionWithMeetingAI</maml:name>
+        <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+          <maml:para>Determines whether transcription is turned on along with Copilot. Transcription allows Copilot to continue to use meeting data for questions after the meeting ends.</maml:para>
+          <maml:para>This parameter must be used together with -MeetingAI.</maml:para>
+          <maml:para>Possible values are:</maml:para>
+          <maml:para>- EnabledAllowOrganizerOverride</maml:para>
+          <maml:para>- DisabledAllowOrganizerOverride</maml:para>
+          <maml:para>- EnabledNoOverride</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>EnabledNoOverride</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>UsersCanAdmitFromLobby</maml:name>
         <maml:description>
           <maml:para>This policy controls who can admit from the lobby.</maml:para>
@@ -111368,10 +111666,9 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>SyntheticMediaDetection</maml:name>
         <maml:description>
-          <maml:para>Controls whether synthetic audio/video detection is enabled for the user's meetings. When Disabled, no detection occurs regardless of other property values.</maml:para>
+          <maml:para>Controls whether synthetic audio/video detection is permitted for meetings organized by users assigned this policy.</maml:para>
           <maml:para>Possible values are:</maml:para>
-          <maml:para>- Enabled : Synthetic media detection is active for the user's meetings. - Disabled : Synthetic media detection is inactive; all other detection properties are ignored.</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+          <maml:para>- Enabled : Permits synthetic media detection when a configured detection provider is available. This is the default value. To configure a third-party provider, also set the SyntheticMediaDetectionAppId parameter. - Disabled : Disables synthetic media detection regardless of the configured provider or other detection property values.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -111383,8 +111680,9 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>SyntheticMediaDetectionAppId</maml:name>
         <maml:description>
-          <maml:para>The Teams App ID (GUID) of the registered detection bot to use for synthetic media analysis. The zero GUID (00000000-0000-0000-0000-000000000000) represents the platform default: resolves to no provider when 1P is not available, or Microsoft Detection when 1P is available.</maml:para>
-          <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
+          <maml:para>Specifies the Teams App ID (GUID) of the detection provider to use for synthetic audio/video analysis. For third-party detection, use only the Teams App ID of a supported certified detection provider and set SyntheticMediaDetection to Enabled.</maml:para>
+          <maml:para>The default value, the zero GUID (00000000-0000-0000-0000-000000000000), selects no provider when Microsoft Detection is unavailable, or Microsoft Detection when it is available. It does not select a third-party provider.</maml:para>
+          <maml:para>&gt; [!IMPORTANT] &gt; Successfully saving the policy does not guarantee that the App ID identifies a supported provider or that the detection bot can join meetings. An incorrect or unsupported App ID can prevent the detection bot from joining eligible meetings.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Guid</command:parameterValue>
         <dev:type>
@@ -111426,7 +111724,8 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>RecordingAndTranscriptionAudioNotification</maml:name>
         <maml:description>
-          <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups.</maml:para>
+          <maml:para>Policy to control whether audio notifications will be played when recording or transcription starts/stops for applied users/groups. This policy applies only to Teams client users in VoIP calls. This policy does not control audio announcements for PSTN users or for Teams client users in one-to-one calls between Teams and PSTN, where audio announcements are enabled by default in both scenarios.</maml:para>
+          <maml:para>Supported clients include Windows and macOS desktop, web, Microsoft Teams Rooms (MTR), Android, iOS, and VDI 2.0. VDI 1.0 is not supported.</maml:para>
           <maml:para>Possible values are:</maml:para>
           <maml:para>- Enabled : Audio notifications play when recording or transcription starts/stops. - Disabled : Audio notifications do not play when recording or transcription starts/stops.</maml:para>
           <maml:para>&gt; [!NOTE] &gt; This feature has not been fully released yet, so the setting will have no effect.</maml:para>
@@ -111549,6 +111848,20 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <dev:code>Set-CsTeamsMeetingPolicy -Identity NonEVNetworkRoamingPolicy -AllowNetworkConfigurationSettingsLookup $True</dev:code>
         <dev:remarks>
           <maml:para>In Example 3, the Set-CsTeamsMeetingPolicy cmdlet is used to update an existing meeting policy with the Identity NonEVNetworkRoamingPolicy. This policy will use all the existing values except one: AllowNetworkConfigurationSettingsLookup; in this example, we will fetch network roaming policy for the non-EV user with NonEVNetworkRoamingPolicy based on his current network location.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 4 --------------------------</maml:title>
+        <dev:code>Set-CsTeamsMeetingPolicy -Identity "SyntheticDetectionPolicy" -SyntheticMediaDetection Enabled -SyntheticMediaDetectionAppId "&lt;supported-provider-app-id&gt;"</dev:code>
+        <dev:remarks>
+          <maml:para>In Example 4, the Set-CsTeamsMeetingPolicy cmdlet updates an existing meeting policy to permit synthetic audio/video detection using a configured third-party provider for meetings organized by users assigned this policy, when the feature and provider are available. Replace `&lt;supported-provider-app-id&gt;` with the Teams App ID of a supported certified detection provider, not an arbitrary Microsoft Entra application ID or bot ID.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 5 --------------------------</maml:title>
+        <dev:code>Set-CsTeamsMeetingPolicy -Identity "SyntheticDetectionPolicy" -SyntheticMediaDetection Disabled</dev:code>
+        <dev:remarks>
+          <maml:para>In Example 5, the Set-CsTeamsMeetingPolicy cmdlet disables synthetic audio/video detection for meetings organized by users assigned this policy, regardless of the configured detection provider. The SyntheticMediaDetectionAppId value is unchanged.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -111827,7 +112140,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>FileTypeCheck</maml:name>
           <maml:description>
-            <maml:para>&gt; [!NOTE] &gt; This cmdlet is not available in GCC, GCCH and DOD.</maml:para>
             <maml:para>This setting enables weaponizable file detection in Teams messages in the tenant.</maml:para>
             <maml:para>Possible Values: - Enabled</maml:para>
             <maml:para>- Disabled</maml:para>
@@ -111838,6 +112150,34 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
             <maml:uri />
           </dev:type>
           <dev:defaultValue>Enabled</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>FileTypeCustomizationSetting</maml:name>
+          <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; This cmdlet is not available in GCC, GCCH and DOD. This setting applies only when FileTypeCheck is set to Enabled. Specifies which list of file types is used to detect and block weaponizable files in Teams messages. </maml:para>
+            <maml:para>When this setting is set to CustomBlockList , FileTypeBlockList must contain at least one string.</maml:para>
+            <maml:para>Possible Values: - MicrosoftRecommendedBlockList : Blocks the file types on the Microsoft-recommended list. This keeps the existing behavior. For the list of blocked file types, see Weaponizable file protection in Teams (https://learn.microsoft.com/en-us/microsoftteams/weaponizable-file-protection-teams). - CustomBlockList : Blocks the file types you specify in the FileTypeBlockList parameter instead of the Microsoft-recommended list.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>MicrosoftRecommendedBlockList</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>FileTypeBlockList</maml:name>
+          <maml:description>
+            <maml:para>&gt; [!NOTE] &gt; This cmdlet is not available in GCC, GCCH and DOD. This setting applies only when FileTypeCheck is set to Enabled. This setting applies only when FileTypeCustomizationSetting is set to CustomBlockList. This setting specifies the list of file types that weaponizable file detection uses to block files in Teams messages in the tenant.</maml:para>
+            <maml:para>This setting will clear when FileTypeCustomizationSetting is set to MicrosoftRecommendedBlockList.</maml:para>
+            <maml:para>Possible Values: - Array of String</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Array of String</command:parameterValue>
+          <dev:type>
+            <maml:name>Array of String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Force</maml:name>
@@ -111880,7 +112220,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>UrlReputationCheck</maml:name>
           <maml:description>
-            <maml:para>&gt; [!NOTE] &gt; This cmdlet is not available in GCC, GCCH and DOD.</maml:para>
             <maml:para>This setting enables malicious URL detection in Teams messages in the tenant.</maml:para>
             <maml:para>Possible Values: - Enabled</maml:para>
             <maml:para>- Disabled</maml:para>
@@ -111987,7 +112326,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>FileTypeCheck</maml:name>
         <maml:description>
-          <maml:para>&gt; [!NOTE] &gt; This cmdlet is not available in GCC, GCCH and DOD.</maml:para>
           <maml:para>This setting enables weaponizable file detection in Teams messages in the tenant.</maml:para>
           <maml:para>Possible Values: - Enabled</maml:para>
           <maml:para>- Disabled</maml:para>
@@ -111998,6 +112336,34 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
           <maml:uri />
         </dev:type>
         <dev:defaultValue>Enabled</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>FileTypeCustomizationSetting</maml:name>
+        <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; This cmdlet is not available in GCC, GCCH and DOD. This setting applies only when FileTypeCheck is set to Enabled. Specifies which list of file types is used to detect and block weaponizable files in Teams messages. </maml:para>
+          <maml:para>When this setting is set to CustomBlockList , FileTypeBlockList must contain at least one string.</maml:para>
+          <maml:para>Possible Values: - MicrosoftRecommendedBlockList : Blocks the file types on the Microsoft-recommended list. This keeps the existing behavior. For the list of blocked file types, see Weaponizable file protection in Teams (https://learn.microsoft.com/en-us/microsoftteams/weaponizable-file-protection-teams). - CustomBlockList : Blocks the file types you specify in the FileTypeBlockList parameter instead of the Microsoft-recommended list.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>MicrosoftRecommendedBlockList</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>FileTypeBlockList</maml:name>
+        <maml:description>
+          <maml:para>&gt; [!NOTE] &gt; This cmdlet is not available in GCC, GCCH and DOD. This setting applies only when FileTypeCheck is set to Enabled. This setting applies only when FileTypeCustomizationSetting is set to CustomBlockList. This setting specifies the list of file types that weaponizable file detection uses to block files in Teams messages in the tenant.</maml:para>
+          <maml:para>This setting will clear when FileTypeCustomizationSetting is set to MicrosoftRecommendedBlockList.</maml:para>
+          <maml:para>Possible Values: - Array of String</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Array of String</command:parameterValue>
+        <dev:type>
+          <maml:name>Array of String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Force</maml:name>
@@ -112053,7 +112419,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>UrlReputationCheck</maml:name>
         <maml:description>
-          <maml:para>&gt; [!NOTE] &gt; This cmdlet is not available in GCC, GCCH and DOD.</maml:para>
           <maml:para>This setting enables malicious URL detection in Teams messages in the tenant.</maml:para>
           <maml:para>Possible Values: - Enabled</maml:para>
           <maml:para>- Disabled</maml:para>
@@ -114105,7 +114470,6 @@ PS C:\&gt; Set-CsTeamsMeetingBrandingPolicy -Identity "demo branding" -MeetingBr
       <maml:description>
         <maml:para>Limited Preview: Functionality described in this document is currently in limited preview and only authorized organizations have access.</maml:para>
         <maml:para>Use this cmdlet to update values in existing Teams Personal Attendant Policies.</maml:para>
-        <maml:para>When policy modifications are temporarily blocked, only AutomaticTranscription and AutomaticRecording can be updated. The following parameters are not available for changes during this period: `PersonalAttendant`, `CallScreening`, `CalendarBookings`, `InboundInternalCalls`, `InboundFederatedCalls`, `InboundPSTNCalls`.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>

@@ -2114,6 +2114,165 @@
                </ListControl>
               </View>
 <View>
+                  <Name>TeamsDialOutPolicyView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsDialOutPolicy</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>CallBarringTreatments</Label>
+                        <PropertyName>CallBarringTreatments</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Description</Label>
+                        <PropertyName>Description</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TeamsCallBarringTreatmentView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsCallBarringTreatment</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Schedule</Label>
+                        <PropertyName>Schedule</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Name</Label>
+                        <PropertyName>Name</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>CallSource</Label>
+                        <PropertyName>CallSource</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowedDestinations</Label>
+                        <PropertyName>AllowedDestinations</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AllowedDestinationsPattern</Label>
+                        <PropertyName>AllowedDestinationsPattern</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>TimeZoneId</Label>
+                        <PropertyName>TimeZoneId</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>ScheduleView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.Schedule</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>WeeklyRecurrenceHours</Label>
+                        <PropertyName>WeeklyRecurrenceHours</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>WeeklyRecurrentScheduleView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.WeeklyRecurrentSchedule</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Monday</Label>
+                        <PropertyName>Monday</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Tuesday</Label>
+                        <PropertyName>Tuesday</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Wednesday</Label>
+                        <PropertyName>Wednesday</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Thursday</Label>
+                        <PropertyName>Thursday</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Friday</Label>
+                        <PropertyName>Friday</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Saturday</Label>
+                        <PropertyName>Saturday</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Sunday</Label>
+                        <PropertyName>Sunday</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Complement</Label>
+                        <PropertyName>Complement</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
+                  <Name>TimeRangeView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TimeRange</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Start</Label>
+                        <PropertyName>Start</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>End</Label>
+                        <PropertyName>End</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+<View>
                   <Name>TeamsEducationAssignmentsAppPolicyView</Name>
                <ViewSelectedBy>
                   <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsEducationAssignmentsAppPolicy</TypeName>
@@ -2656,6 +2815,10 @@
                         <PropertyName>EnableMeetingOptionsThemeOverride</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>EnableMeetingOptionsBrandedReactionsOverride</Label>
+                        <PropertyName>EnableMeetingOptionsBrandedReactionsOverride</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>EnableNdiAssuranceSlate</Label>
                         <PropertyName>EnableNdiAssuranceSlate</PropertyName>
                     </ListItem>
@@ -2777,6 +2940,22 @@
                         <PropertyName>BackgroundImageDarkUri</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>EnableChatBackground</Label>
+                        <PropertyName>EnableChatBackground</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ChatBackgroundImageLightUri</Label>
+                        <PropertyName>ChatBackgroundImageLightUri</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ChatBackgroundImageDarkUri</Label>
+                        <PropertyName>ChatBackgroundImageDarkUri</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ChatBackgroundImageAlignment</Label>
+                        <PropertyName>ChatBackgroundImageAlignment</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>LogoImageLightPreAuthUri</Label>
                         <PropertyName>LogoImageLightPreAuthUri</PropertyName>
                     </ListItem>
@@ -2803,6 +2982,10 @@
                     <ListItem>
                         <Label>BrandAccentColor</Label>
                         <PropertyName>BrandAccentColor</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>DisableOriginalReactions</Label>
+                        <PropertyName>DisableOriginalReactions</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>Enabled</Label>
@@ -2842,6 +3025,10 @@
                     <ListItem>
                         <Label>ReactionType</Label>
                         <PropertyName>ReactionType</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>BrandedDisplayName</Label>
+                        <PropertyName>BrandedDisplayName</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>
@@ -3048,6 +3235,10 @@
                     <ListItem>
                         <Label>AllowMeetingKnowledgeGeneration</Label>
                         <PropertyName>AllowMeetingKnowledgeGeneration</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>KnowledgeGenerationMeetingTypes</Label>
+                        <PropertyName>KnowledgeGenerationMeetingTypes</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>MeetingKnowledgeExpirationDays</Label>
@@ -3276,6 +3467,14 @@
                     <ListItem>
                         <Label>Copilot</Label>
                         <PropertyName>Copilot</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>TranscriptionWithMeetingAI</Label>
+                        <PropertyName>TranscriptionWithMeetingAI</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>MeetingAI</Label>
+                        <PropertyName>MeetingAI</PropertyName>
                     </ListItem>
                     <ListItem>
                         <Label>AutomaticallyStartCopilot</Label>
@@ -6447,6 +6646,10 @@
                         <PropertyName>EnableGraphTranscriptAccess</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>EnableWorkIQTranscriptAccess</Label>
+                        <PropertyName>EnableWorkIQTranscriptAccess</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>ClientAudioPort</Label>
                         <PropertyName>ClientAudioPort</PropertyName>
                     </ListItem>
@@ -6669,6 +6872,10 @@
                         <PropertyName>Identity</PropertyName>
                     </ListItem>
                     <ListItem>
+                        <Label>FileTypeBlockList</Label>
+                        <PropertyName>FileTypeBlockList</PropertyName>
+                    </ListItem>
+                    <ListItem>
                         <Label>EnableVideoMessageCaptions</Label>
                         <PropertyName>EnableVideoMessageCaptions</PropertyName>
                     </ListItem>
@@ -6707,6 +6914,10 @@
                     <ListItem>
                         <Label>ReportIncorrectSecurityDetections</Label>
                         <PropertyName>ReportIncorrectSecurityDetections</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>FileTypeCustomizationSetting</Label>
+                        <PropertyName>FileTypeCustomizationSetting</PropertyName>
                     </ListItem>
                       </ListItems>
                     </ListEntry>

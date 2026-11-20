@@ -6766,6 +6766,10 @@
 								<Label>IPAddressVersion</Label>
 								<PropertyName>IPAddressVersion</PropertyName>
 							</ListItem>
+							<ListItem>
+								<Label>InviteWithReplaces</Label>
+								<PropertyName>InviteWithReplaces</PropertyName>
+							</ListItem>
 						</ListItems>
 					</ListEntry>
 				</ListEntries>
@@ -6871,6 +6875,10 @@
 							<ListItem>
 								<Label>IPAddressVersion</Label>
 								<PropertyName>IPAddressVersion</PropertyName>
+							</ListItem>
+							<ListItem>
+								<Label>InviteWithReplaces</Label>
+								<PropertyName>InviteWithReplaces</PropertyName>
 							</ListItem>
 						</ListItems>
 					</ListEntry>
@@ -22552,6 +22560,10 @@
 								<Label>IPAddressVersion</Label>
 								<PropertyName>IPAddressVersion</PropertyName>
 							</ListItem>
+							<ListItem>
+								<Label>InviteWithReplaces</Label>
+								<PropertyName>InviteWithReplaces</PropertyName>
+							</ListItem>
 						</ListItems>
 					</ListEntry>
 				</ListEntries>
@@ -22661,6 +22673,10 @@
 							<ListItem>
 								<Label>IPAddressVersion</Label>
 								<PropertyName>IPAddressVersion</PropertyName>
+							</ListItem>
+							<ListItem>
+								<Label>InviteWithReplaces</Label>
+								<PropertyName>InviteWithReplaces</PropertyName>
 							</ListItem>
 						</ListItems>
 					</ListEntry>

@@ -11,7 +11,7 @@
 RootModule = './MicrosoftTeams.psm1'
 
 # Version number of this module.
-ModuleVersion = '8.0.0'
+ModuleVersion = '8.1.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -494,6 +494,7 @@ FunctionsToExport =  @(
 	,'Get-CsBatchTeamsDeploymentStatus'
 	,'Get-CsPersonalAttendantSettings'
 	,'Set-CsPersonalAttendantSettings'
+	,'New-CsPhoneNumberUsageChangeOrder'
 #OCE related functions exports start here. DO NOT MODIFY!
     ,'Set-CsOCEContext'
     ,'Clear-CsOCEContext'
@@ -859,22 +860,15 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = @'
- **8.0.0-GA** (The project - MicrosoftTeams contains changes till this release)
-- [BREAKING CHANGE] Makes the RecordingEnabled, TranscriptionEnabled and AgentViewPermission parameters mandatory on New-CsAutoRecordingTemplate.
-- Adds AppointmentBookingPlatform, BookingLink parameters to [New|Set]-CsMainlineAttendantAppointmentBookingFlow cmdlets.
-- Releases [Get|New|Set|Remove]-CsMainlineAttendantSpamDetectionTemplate cmdlets.
-- Adds TimeoutThreshold, TimeoutDisconnectPromptType, TimeoutDisconnectPromptCustomText, AiDisclaimerType, AiDisclaimerCustomText parameters to New-CsAutoAttendantCallFlow cmdlet.
-- Adds LocationId, AcquiredCapability, NetworkSiteId, ReverseNumberLookup, Tag parameters to New-CsOnlineDirectRoutingTelephoneNumberUploadOrder cmdlet.
-- Adds TeamsPersonalAttendantPolicy to the output for Get-CsOnlineUser.
-- Adds AutoRecordingAnnouncementAudioFileName property to Get-CsAutoRecordingTemplate cmdlet.
-- Updates [New|Set]-CsAutoAttendant cmdlets to allow auto-recording templates with audio file announcements.
-- Adds BusyOnBusyOption parameter to Set-CsUserCallingSettings cmdlet with PlayBusySignal, RedirectAsUnansweredCall, and RingUser values.
-- Adds the BusyOnBusyOption output attribute to the Get-CsUserCallingSettings cmdlet.
-- Adds UrgencyDetectionEnabled, CategoryDetectionEnabled, CallToActionDetectionEnabled, and VoiceToTextSummaryEnabled parameters to [Get|Set]-CsOnlineVoicemailUserSettings cmdlets. These parameters allow administrators to manage AI triage features for personal voicemail on a per-user basis.
-- Adds EnableExternalRecordingDetection, AllowIntelligentRecap, IntelligentRecapDocxFileExpirationDays parameters to [New|Set]-CsTeamsMeetingPolicy cmdlets.
-- Adds DefaultChannelTypeOnCreation parameter to [New|Set]-CsTeamsChannelsPolicy cmdlets.
-- Adds MaximumConcurrentCalls parameter to [Get|Set]-CsUserCallingSettings cmdlets.
-- Adds SpamDetectionTemplateId parameter to New-CsAutoAttendant cmdlet.
+ **8.1.0-GA** (The project - MicrosoftTeams contains changes till this release)
+- Removes the deprecated Statistics attribute from the output of Get-CsCallQueue cmdlet.
+- Improves sign-in troubleshooting with additional details in verbose output.
+- Adds FileTypeBlockList and FileTypeCustomizationSetting parameters to [Get|Set]-CsTeamsMessagingConfiguration cmdlets.
+- Adds KnowledgeGenerationMeetingTypes, TranscriptionWithMeetingAI and MeetingAI parameters to [New|Set]-CsTeamsMeetingPolicy cmdlets.
+- Adds BrandedDisplayName, EnableChatBackground, ChatBackgroundImageLightUri, ChatBackgroundImageDarkUri, ChatBackgroundImageAlignment, DisableOriginalReactions and EnableMeetingOptionsBrandedReactionsOverride parameters to [New|Set]-CsTeamsMeetingBrandingPolicy cmdlets.
+- Adds the InviteWithReplaces parameter to [New|Set]-CsOnlinePSTNGateway cmdlets. The configured value is available in Get-CsOnlinePSTNGateway output. Administrators can follow the Session Border Controller's advertised support, always enable support, or disable support for call transfer scenarios that use SIP INVITE requests containing a Replaces header.
+- Adds EnableWorkIQTranscriptAccess parameter to Set-CsTeamsMeetingConfiguration cmdlet.
+- Releases New-CsPhoneNumberUsageChangeOrder cmdlet.
 
 - The complete release notes can be found in the below link:
 https://docs.microsoft.com/MicrosoftTeams/teams-powershell-release-notes
