@@ -1,5 +1,451 @@
 [
     {
+        "created": "2026-11-20T01:24:53",
+        "description": "<p>Stay on top of channel conversations by picking up right where you left off. Choose to open Teams channels at your last read message instead of the most recent message, making it easier to catch up on conversations and follow discussions without losing your place.</p>",
+        "id": 579890,
+        "locale": null,
+        "modified": "2026-11-20T01:24:53",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Pick up where you left off in channels on desktop"
+    },
+    {
+        "created": "2026-11-19T23:37:54",
+        "description": "<p>Microsoft Edge can now apply pending updates when your browser is idle. We've updated the Relaunch Notification policy to allow you to manage idle restarts for your organization.</p>",
+        "id": 581801,
+        "locale": null,
+        "modified": "2026-11-19T23:37:54",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/relaunchnotification",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Smarter and faster update application"
+    },
+    {
+        "created": "2026-11-19T23:37:54",
+        "description": "<p>Admins will be able to configure more granular and advanced controls for managing external bots and their access to meetings hosted in their organization. Admins will be able to configure a list of external meeting bots which are allowed to join meetings hosted in their organization. Admins can also opt to block all other bots or let them be enforced into the currently available high friction lobby experience. The allowed bots will be treated like a regular external participant to the meeting and meeting policies will be enforced as appropriate.</p>",
+        "id": 580451,
+        "locale": null,
+        "modified": "2026-11-19T23:37:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Configure a list of allowed external meeting notetaker bots for your Teams meetings"
+    },
+    {
+        "created": "2026-11-19T21:30:10",
+        "description": "<p>The new Code node lets makers run Python as a step in a workflow for logic that expressions and connectors can't handle.</p>\n<ul>\n<li>Data transforms, calculations, regex, and advanced parsing.</li>\n<li>File conversion and parsing (for example PDF \u2192 text, CSV, XML).</li>\n<li>Generate the code from natural language with AI, or write and edit it by hand.</li>\n</ul>",
+        "id": 580866,
+        "locale": null,
+        "modified": "2026-11-19T21:30:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Run Python code as a step in workflows"
+    },
+    {
+        "created": "2026-11-19T21:30:10",
+        "description": "<p>The Agent node can now return files that the agent generates, such as PDF, Word, Excel, PowerPoint, and CSV, as workflow outputs.</p>\n<ul>\n<li>Works with both inline agents and existing (published) agents.</li>\n<li>Generated files appear as an ordered files output (name, content type, content) that's available to downstream steps.</li>\n<li>Pass files to connectors to email, save to SharePoint/OneDrive, or attach to records.</li>\n</ul>",
+        "id": 580865,
+        "locale": null,
+        "modified": "2026-11-19T21:30:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Generate documents from the Agent node in workflows"
+    },
+    {
+        "created": "2026-11-19T21:30:10",
+        "description": "<p>Makers can share a workflow with other users as co-owners so they can view, edit, and manage it.</p>\n<ul>\n<li>Share from the workflows page or the designer.</li>\n<li>Review the connections the workflow uses and their permissions before sharing.</li>\n<li>See who the workflow is shared with when reopening Share.</li>\n<li>Co-owners can edit and run the workflow.</li>\n</ul>",
+        "id": 580864,
+        "locale": null,
+        "modified": "2026-11-19T21:30:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Share workflows with co-owners for collaborative editing"
+    },
+    {
+        "created": "2026-11-19T21:30:10",
+        "description": "<p>Workflows can now be owned under a service principal (a Microsoft Entra app registration) instead of a named user account.</p>",
+        "id": 580863,
+        "locale": null,
+        "modified": "2026-11-19T21:30:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot Studio"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot Studio"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot Studio: Service principal owner for workflows"
+    },
+    {
+        "created": "2026-11-19T21:30:10",
+        "description": "<p>Voice phishing detection helps protect Microsoft Teams users from potential scams during one-to-one calls with people outside their organization. Using AI, Teams analyzes conversations for signs of social engineering and alerts recipients when suspicious activity is detected, helping them recognize potential threats and decide how to proceed.</p>",
+        "id": 580443,
+        "locale": null,
+        "modified": "2026-11-19T21:30:10",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "iOS"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Mobile"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                },
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "iOS"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Mobile"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Voice phishing detection for external calls"
+    },
+    {
         "created": "2026-11-19T00:35:27",
         "description": "<p>Teams meeting artifacts, including recordings, transcripts, and Loop notes, can now be configured to automatically inherit the sensitivity label from the meeting. This ensures content generated during meetings is consistently protected without requiring manual labeling, reducing risk and simplifying protection at scale.</p>",
         "id": 581739,
@@ -276,10 +722,10 @@
     },
     {
         "created": "2026-11-18T18:32:08",
-        "description": "<p>The PPAC Reporting API gives customers scalable, programmatic access to Copilot Studio usage data from our lakehouse, replacing older unsupported methods for pulling consumption data. Daily JSON data by environment, user, agent and feature powers dashboards, FinOps reporting and automated cost controls.</p>",
+        "description": "<p>Power Platform reporting API for Copilot credits provides customers with access to Copilot Credit usage from Copilot Studio through the Power Platform API, extending the existing reports available in the Power Platform Admin Center.</p>\n<p>Details of the API methods are available in the <a href=\"https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Frest%2Fapi%2Fpower-platform%2F&amp;data=05%7C02%7Cv-lydiacarle%40microsoft.com%7C334aa6b330e54eb1778008df468f4f9e%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639307253566604668%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=YtxsOi49ddxQiJuAPJtZ4rPagN%2BJynQbpQctwgwCTYI%3D&amp;reserved=0\">Microsoft Power Platform API reference - Power Platform API | Microsoft Learn</a>, providing insights into usage by resource, environment, user, and feature. New reports and capabilities will continue to be released.</p>\n<p>These reports can be used with Power Platform API credit allocations to monitor and optimize resources and environments that consume Copilot Credits.</p>",
         "id": 579968,
         "locale": null,
-        "modified": "2026-11-18T18:32:08",
+        "modified": "2026-11-20T01:24:53",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "November CY2026",
@@ -4760,10 +5206,10 @@
     },
     {
         "created": "2026-11-13T23:01:18",
-        "description": "<p>The <strong>Personal settings</strong> experience in model-driven apps has been modernized with clearer organization, updated navigation, and a more consistent design.</p>\n<p>Users can select a button to return to the classic <strong>Personal settings</strong> experience if needed.</p>\n<h3>Availability</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2611.4</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by default)</td>\n</tr>\n</tbody>\n</table>",
+        "description": "<p>The <strong>Personal settings</strong> experience in model-driven apps has been modernized with clearer organization, updated navigation, and a more consistent design.</p>\n<p>Users can select a button to return to the classic <strong>Personal settings</strong> experience if needed.</p>\n<h3>Availability</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2612.1</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by default)</td>\n</tr>\n</tbody>\n</table>",
         "id": 579899,
         "locale": null,
-        "modified": "2026-11-13T23:01:18",
+        "modified": "2026-11-19T23:44:17",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
@@ -14085,12 +14531,12 @@
     },
     {
         "created": "2026-10-23T23:10:38",
-        "description": "<p>Row summaries are expanding to supported US Government clouds, giving users in regulated environments access to AI-generated insights that help them understand model-driven app records at a glance. This release brings the row summary experience available to commercial customers to supported government environments while meeting their applicable compliance and data-boundary requirements.</p>\n<p>Admins and makers enable and configure row summaries for users in their model-driven apps.</p>\n<h3>Availability</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2611.1</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by admins or makers)</td>\n</tr>\n</tbody>\n</table>",
+        "description": "<p>Row summaries are expanding to supported US Government clouds, giving users in regulated environments access to AI-generated insights that help them understand model-driven app records at a glance. This release brings the row summary experience available to commercial customers to supported government environments while meeting their applicable compliance and data-boundary requirements.</p>\n<p>Admins and makers enable and configure row summaries for users in their model-driven apps.</p>\n<h3>Availability</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2612.2</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Users (enabled by admins or makers)</td>\n</tr>\n</tbody>\n</table>",
         "id": 576279,
         "locale": null,
-        "modified": "2026-10-23T23:10:38",
+        "modified": "2026-11-19T23:44:17",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -15575,13 +16021,13 @@
     },
     {
         "created": "2026-10-23T21:59:27",
-        "description": "<p>Connect your GitHub account to access additional model options for the built-in gen page coding agent directly in the generative page designer in Maker Studio. Makers can use the agent to create and refine generative pages without leaving the Power Apps authoring experience.</p>\n<p>This integration also brings Maker Studio generative page authoring to regions without dedicated Power Apps GPU capacity.</p>\n<p>Model availability through GitHub may evolve over time, and requests made through this connection consume the maker\u2019s GitHub credits.</p>\n<h3>Availability</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Weekly</td>\n</tr>\n<tr>\n<td>Version</td>\n<td>2611.1</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Admins or makers</td>\n</tr>\n</tbody>\n</table>",
+        "description": "<p>Connect your GitHub account to access additional model options for the built-in gen page coding agent directly in the generative page designer in Maker Studio. Makers can use the agent to create and refine generative pages without leaving the Power Apps authoring experience.</p>\n<p>This integration also brings Maker Studio generative page authoring to regions without dedicated Power Apps GPU capacity.</p>\n<p>Model availability through GitHub may evolve over time, and requests made through this connection consume the maker\u2019s GitHub credits.</p>\n<h3>Availability</h3>\n<table>\n<thead>\n<tr>\n<th>Field</th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Release Channel</td>\n<td>Not applicable</td>\n</tr>\n<tr>\n<td>Applies to</td>\n<td>Model-driven apps</td>\n</tr>\n<tr>\n<td>Feature Scope</td>\n<td>Admins or makers</td>\n</tr>\n</tbody>\n</table>",
         "id": 576285,
         "locale": null,
-        "modified": "2026-10-23T21:59:27",
+        "modified": "2026-11-19T23:44:17",
         "moreInfoLink": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-pages",
-        "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -15596,6 +16042,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -15617,6 +16066,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -19688,9 +20140,9 @@
         "description": "<p>Energy saver, formerly known as efficiency mode, will have new defaults and different setting options. Edge will now support and recommend users to use the BatterySaverModeAvailability policy to manage the energy saver feature. The energy saver feature has been simplified to become enabled under two conditions: on low battery or when unplugged. The default will be for energy saver to be enabled on low battery. Energy saver will now have one mode. Users set to Balanced savings will be mapped to have energy saver enabled on low battery. Users set to Maximum savings will be mapped to have energy saver enabled when unplugged.</p>",
         "id": 573291,
         "locale": null,
-        "modified": "2026-10-21T23:02:10",
+        "modified": "2026-11-19T21:32:07",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -32634,9 +33086,9 @@
         "description": "<p>Enables auto\u2011labeling of existing SharePoint files to match the default sensitivity label configured on their document library. This helps organizations close labeling gaps for data at rest and ensure consistent, secure\u2011by\u2011default protection across SharePoint libraries\u2014without relying on manual user labeling.</p>",
         "id": 575283,
         "locale": null,
-        "modified": "2026-10-12T23:01:05",
+        "modified": "2026-11-19T21:32:07",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -43878,12 +44330,12 @@
         "description": "<p>Planner plans created from Teams meetings (via Meeting Notes or Loop) often remain unused long after the meeting ends. These inactive plans accumulate and clutter over time. This feature automatically expires and deletes meeting-created plans that have had no task activity for 180 days. Only the Planner plan is removed whereas the tasks in Loop and meeting notes stay intact.</p>",
         "id": 571392,
         "locale": null,
-        "modified": "2026-09-18T22:00:04",
+        "modified": "2026-11-19T21:32:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -45545,12 +45997,12 @@
         "description": "<p>Microsoft Teams will enable users to report suspicious guest invitations directly from Teams. When users receive an unexpected or potentially malicious guest invitation, they can report it to their IT admin for review, helping identify and mitigate phishing and other abuse through guest invitations.</p>",
         "id": 571297,
         "locale": null,
-        "modified": "2026-09-16T22:57:03",
+        "modified": "2026-11-19T21:32:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -48046,12 +48498,12 @@
         "description": "<p>For third-party applications already being used in your organization, admins can now discover and enable the corresponding Teams agents from within the Teams Admin Center. Admins receive recommendations for high-value agents and gain visibility into any required configuration changes during the enablement workflow. These agents increase employee productivity by bringing their everyday applications into the flow of work in Teams. This helps organizations get more value from their existing software investments and unlocks more surfaces for the tools their users already rely on.</p>",
         "id": 569608,
         "locale": null,
-        "modified": "2026-09-28T22:58:08",
+        "modified": "2026-11-19T21:32:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -49593,15 +50045,15 @@
     },
     {
         "created": "2026-08-20T22:38:45",
-        "description": "Self-serve sync connectors enable users to securely connect their own external data sources, such as Jira and Confluence Cloud, to Microsoft 365 Copilot. Using their own credentials and permissions, users can synchronize content they already have access to, making it discoverable in Copilot Chat and Microsoft Search. Administrators maintain oversight through tenant-level controls, including staged rollout, visibility management, and connector disablement.",
+        "description": "<p>Self-serve sync connectors enable users to securely connect their own external data sources, such as Jira and Confluence Cloud, to Microsoft 365 Copilot. Using their own credentials and permissions, users can synchronize content they already have access to, making it discoverable in Copilot Chat and Microsoft Search. Administrators maintain oversight through tenant-level controls, including staged rollout, visibility management, and connector disablement.</p>",
         "id": 568788,
         "locale": null,
-        "modified": "2026-08-20T22:38:45",
+        "modified": "2026-11-19T21:32:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "August CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -54078,12 +54530,12 @@
         "description": "<p>This feature allows SharePoint News authors to distribute posts to an Engage community or storyline while preserving full fidelity rendering and a unified conversation experience. SharePoint News post will appear consistently in Engage across feeds, digests, Outlook, Teams, desktop, web and mobile apps. When distributed, the SharePoint News comments module is replaced with the richer Engage conversation module, ensuring a single, shared discussion thread across surfaces.</p>",
         "id": 568074,
         "locale": null,
-        "modified": "2026-10-07T23:01:35",
+        "modified": "2026-11-19T21:32:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "September CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -61178,12 +61630,12 @@
     },
     {
         "created": "2026-06-10T23:15:22",
-        "description": "The Data Security Triage Agent in Data Loss Prevention now offers a new sensitive data remediation function, which empowers organizations to proactively identify and remediate sensitive information\u2014such as Social Security Numbers, passwords, and credit card data\u2014across thousands of files stored in SharePoint or OneDrive locations, dramatically increasing the percentage of remediated files with sensitive information, resulting in reduced compliance risk. Seamlessly integrated with Microsoft Purview, this new agent function automatically detects file(s) with a Data Loss Prevention (DLP) policy match \u201cNeeds Attention\u201d alerts and pushes a remediation notification to the end user who last modified the file guiding them to remove sensitive data through targeted Microsoft Teams messages. Its\u2019 closed-loop workflow ensures that remediation progress is tracked and confirmed, giving admins real-time visibility and control via the Data Security Posture Management dashboard. By streamlining sensitive data cleanup and automating user engagement, this agent helps organizations achieve their remediation goals at scale. Let the Data Security Triage Agent handle the heavy lifting of pushing remediation requests directly to the end user, so Purview admins don't have to!\n",
+        "description": "<p>The Data Security Triage Agent in Data Loss Prevention now offers a new sensitive data remediation function, which empowers organizations to proactively identify and remediate sensitive information\u2014such as Social Security Numbers, passwords, and credit card data\u2014across thousands of files stored in SharePoint or OneDrive locations, dramatically increasing the percentage of remediated files with sensitive information, resulting in reduced compliance risk. Seamlessly integrated with Microsoft Purview, this new agent function automatically detects file(s) with a Data Loss Prevention (DLP) policy match \u201cNeeds Attention\u201d alerts and pushes a remediation notification to the end user who last modified the file guiding them to remove sensitive data through targeted Microsoft Teams messages. Its\u2019 closed-loop workflow ensures that remediation progress is tracked and confirmed, giving admins real-time visibility and control via the Data Security Posture Management dashboard. By streamlining sensitive data cleanup and automating user engagement, this agent helps organizations achieve their remediation goals at scale. Let the Data Security Triage Agent handle the heavy lifting of pushing remediation requests directly to the end user, so Purview admins don't have to!</p>",
         "id": 564615,
         "locale": null,
-        "modified": "2026-06-10T23:15:22",
+        "modified": "2026-11-20T01:24:53",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2027",
         "publicPreviewDate": "June CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -87897,15 +88349,15 @@
     },
     {
         "created": "2026-02-05T00:15:27",
-        "description": "Recently used emojis and reactions sync across Teams on desktop and mobile, making it easier to express yourself wherever you work.",
+        "description": "<p>Recently used emojis and reactions sync across Teams on desktop and mobile, making it easier to express yourself wherever you work.</p>",
         "id": 554927,
         "locale": null,
-        "modified": "2026-07-01T23:03:18",
+        "modified": "2026-11-19T21:32:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "July CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -102971,15 +103423,15 @@
     },
     {
         "created": "2025-10-31T22:00:11",
-        "description": "Copilot connectors will offer improved content freshness with more frequent sync of updates using webhook event notifications. The following connectors are in scope - Azure DevOps, Jira cloud, Confluence cloud, Trello, Asana, Bitbucket, GitHub and Gitlab.  ",
+        "description": "<p>Copilot connectors will offer improved content freshness with more frequent sync of updates using webhook event notifications. The following connectors are in scope - Azure DevOps, Jira cloud, Confluence cloud, Trello, Asana, Bitbucket, GitHub and Gitlab.</p>",
         "id": 505442,
         "locale": null,
-        "modified": "2026-07-01T23:03:18",
+        "modified": "2026-11-19T21:32:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "March CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "GCC"
@@ -103032,15 +103484,15 @@
     },
     {
         "created": "2025-10-31T22:00:11",
-        "description": "Copilot connectors will offer improved content freshness with more frequent sync of updates using webhook event notifications. The following connectors are in scope - Azure DevOps, Jira cloud, Confluence cloud, Trello, Asana, Bitbucket, GitHub and Gitlab.  ",
+        "description": "<p>Copilot connectors will offer improved content freshness with more frequent sync of updates using webhook event notifications. The following connectors are in scope - Azure DevOps, Jira cloud, Confluence cloud, Trello, Asana, Bitbucket, GitHub and Gitlab.</p>",
         "id": 505441,
         "locale": null,
-        "modified": "2026-07-09T23:00:39",
+        "modified": "2026-11-19T21:32:07",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "August CY2025",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"

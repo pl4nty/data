@@ -1394,6 +1394,7 @@
             "EnableFetchCallConversationData": true,
             "EnableGcBotTeamsSDKForProactiveFlow": true,
             "EnableGcBotTeamsSDKForReactiveFlow": true,
+            "EnableGetOrCreateMeetingNotesApi": true,
             "EnableHITLStreamingUpdate": true,
             "EnableHumanInTheLoopApprovalFlow": true,
             "EnableImageUnderstanding": false,
@@ -1614,6 +1615,12 @@
             "EnableEvalModelGpt56NanoLuna": [
                 {
                     "Flight": "EnableEvalModelGpt56NanoLuna",
+                    "IsEnabled": true
+                }
+            ],
+            "EnableEvalModelGpt6Luna": [
+                {
+                    "Flight": "EnableEvalModelGpt6Luna",
                     "IsEnabled": true
                 }
             ],
@@ -1932,6 +1939,18 @@
             "GPT6_Migration_Agenda": [
                 {
                     "Flight": "AS.enableAgendaModelGpt6Luna",
+                    "IsEnabled": true
+                }
+            ],
+            "GPT6_Migration_ProactiveCommandSkill": [
+                {
+                    "Flight": "CS.enableProactiveConsolidatedEvaluationModelGpt6Luna",
+                    "IsEnabled": true
+                }
+            ],
+            "GPT6_Migration_ProactiveRoleDetection": [
+                {
+                    "Flight": "UPF.enableRoleModelGpt6Luna",
                     "IsEnabled": true
                 }
             ],
@@ -2431,7 +2450,11 @@
             "OpenNotesTool": [
                 {
                     "Flight": "IntentPlus.SelfRespondModel",
-                    "Value": "Gpt56_Reasoning_Nano_Luna"
+                    "Value": "Gpt6_Luna"
+                },
+                {
+                    "Flight": "IntentPlus.EnableResponsesApi",
+                    "IsEnabled": true
                 }
             ],
             "Orchestrator": [
@@ -2492,6 +2515,50 @@
                 },
                 {
                     "Flight": "ChannelAgent.enableCsaChannelSharePointGraphFallback",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TeamsAgent.enableParallelCompanySearch",
+                    "IsEnabled": false
+                },
+                {
+                    "Flight": "TeamsAgent.enableAdaptiveParallelSearch",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableGroundingToolGuidance",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableRecallToolForLiveData",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.EnableCurrentRequestQueryEnvelope",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableSkillAuthoringGuidance",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableAutomationGuidance",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableMemoryAndCommitmentGuidance",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableLocationGrounding",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "ChannelAgent.enableSourceScopeGrounding",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TeamsAgent.enableResponseFormattingGuidance",
                     "IsEnabled": true
                 }
             ],

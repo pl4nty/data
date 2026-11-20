@@ -565,6 +565,7 @@
             "EnableDataSyncDsoiPatchTimeout": true,
             "EnableDeleteStalePartners": true,
             "EnableDeviceCleanupPtiDeletion": true,
+            "EnableExtendedAppleBuildVersion": true,
             "EnablePartnerDeviceHealthComplianceAggregator2": true,
             "EnablePtiApiRoleBackfill": true,
             "EnableRegisteredCompliancePartnersJson": true,
@@ -929,6 +930,7 @@
             "AdminsCanExcludeAppsFromMaa": true,
             "AppAsRequestor": true,
             "AutopatchMaaExclusion": true,
+            "EnableApprovalRequestStoredPayloadSubstitution": true,
             "EnableApprovalRequestStructuralSanitization": true,
             "EnableMAA": true,
             "EnableMAA_CompliancePolicy": true,
@@ -1002,6 +1004,7 @@
             "EnableIOSWiredNetwork": true,
             "EnableScepComplianceFailedRequestReconciliation": true,
             "EnableSharedIPadChannelApplicabilityCheckForWiFi": true,
+            "EnableWindowsPfxRollbackReferenceRecovery": true,
             "ImportPFXRemediation": true,
             "NewAsyncRequestOnEncryptionCertMismatch": true,
             "WindowsWifiWpa3ComplianceFix": true
