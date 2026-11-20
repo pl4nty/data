@@ -33,6 +33,13 @@ end
 if isCommonScheduledTaskFile(l_0_4) == true then
   return mp.CLEAN
 end
+local l_0_5 = string.lower(l_0_4)
+if StringEndsWith(l_0_5, "powershell.exe") ~= true and StringEndsWith(l_0_5, "cmd.exe") ~= true and StringEndsWith(l_0_5, "wscript.exe") ~= true and StringEndsWith(l_0_5, "cscript.exe") ~= true and StringEndsWith(l_0_5, "rundll32.exe") ~= true then
+  local l_0_6 = mp.IsKnownFriendlyFile(l_0_4, true, false)
+  if l_0_6 == true then
+    return mp.CLEAN
+  end
+end
 TrackPidAndTechniqueBM(l_0_0.ppid, "T1053.005", "schtask_target")
 TrackPidAndTechniqueBM(l_0_0.ppid, "T1053.005", "BM:ScheduledTaskProcessExecution.A")
 return mp.INFECTED
