@@ -43,11 +43,9 @@ if versioning.GetHostOsType() == 1 then
   elseif versioning.GetPlatformRing() == versioning.PLATFORM_RING_2_PREVIEW then
     l_0_5 = "1.0"
     l_0_6 = "1.0"
+    l_0_2 = "1.0"
+    database.AddStudyId("NP_EspReputationMode")
     database.AddStudyId("Lua_Np_Ring2")
-    if versioning.IsSeville() then
-      l_0_2 = "1.0"
-      database.AddStudyId("NP_EspReputationMode")
-    end
   elseif versioning.GetPlatformRing() == versioning.PLATFORM_RING_3_STAGED then
     l_0_5 = "1.0"
     l_0_6 = "1.0"
@@ -68,7 +66,7 @@ if versioning.GetHostOsType() == 1 then
     l_0_3 = "true"
     database.AddStudyId("Lua_Np_Bugfix49119667_Enabled")
   end
-  if versioning.GetProcessorArchitecture() ~= 9 and versioning.GetPlatformRing() ~= versioning.PLATFORM_RING_0_INTERNAL and versioning.GetPlatformRing() ~= versioning.PLATFORM_RING_1_PRERELEASE or versioning.GetOsVersion() < 393220 then
+  if versioning.GetProcessorArchitecture() ~= 9 and versioning.GetPlatformRing() ~= versioning.PLATFORM_RING_0_INTERNAL and versioning.GetPlatformRing() ~= versioning.PLATFORM_RING_1_PRERELEASE and versioning.GetPlatformRing() ~= versioning.PLATFORM_RING_2_PREVIEW or versioning.GetOsVersion() < 393220 then
     l_0_2 = "-1.0"
     database.AddStudyId("Lua_Np_ESP_Disabled")
   end

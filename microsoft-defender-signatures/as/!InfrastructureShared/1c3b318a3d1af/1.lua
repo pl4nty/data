@@ -54,7 +54,8 @@ local l_0_3 = {
   "desk.cpl",
   "inetcpl.cpl",
   "acproxy.dll",
-  "appwiz.cpl"
+  "appwiz.cpl",
+  "sysmain.dll"
 }
 if contains(l_0_1, l_0_3) then
   return mp.CLEAN
