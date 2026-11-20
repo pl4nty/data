@@ -1,0 +1,331 @@
+{
+  "blocks": {
+    "{8232927c-4870-4c87-aec1-2bf0378dd4a4}": {
+      "entry": {
+        "APP_ID": "{e5e5e162-6f75-4cda-9ca3-3921f50552c3}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - SONY",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702687",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{8232927c-4870-4c87-aec1-2bf0378dd4a4}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Sony Corporation",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": {
+            "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+          }
+        },
+        "VENDOR": "SONY"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_06_26_06_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_06_26_06_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_06_26_06_02_X86"
+        }
+      },
+      "source": "2020_06_26_06_02_X86"
+    },
+    "{9a3deca9-2d7a-485b-8217-223d36676653}": {
+      "entry": {
+        "APP_ID": "{e5e5e162-6f75-4cda-9ca3-3921f50552c3}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - SONY",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702687",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{9a3deca9-2d7a-485b-8217-223d36676653}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Sony Corporation",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": {
+            "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+          }
+        },
+        "VENDOR": "SONY"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_06_26_06_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_06_26_06_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_06_26_06_02_X86"
+        }
+      },
+      "source": "2020_06_26_06_02_X86"
+    },
+    "{cb932d76-8e50-46b9-88b5-fca7dbe31adc}": {
+      "entry": {
+        "APP_ID": "{e5e5e162-6f75-4cda-9ca3-3921f50552c3}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - SONY",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702687",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{cb932d76-8e50-46b9-88b5-fca7dbe31adc}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.89.0"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Sony Corporation",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": {
+            "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+          }
+        },
+        "VENDOR": "SONY"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_06_26_06_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_06_26_06_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_06_26_06_02_X86"
+        }
+      },
+      "source": "2020_06_26_06_02_X86"
+    },
+    "{ccad4db8-c819-4b07-b549-bc2594e2e567}": {
+      "entry": {
+        "APP_ID": "{e5e5e162-6f75-4cda-9ca3-3921f50552c3}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - SONY",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702687",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{ccad4db8-c819-4b07-b549-bc2594e2e567}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.89.0"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Sony Corporation",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": {
+            "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+          }
+        },
+        "VENDOR": "SONY"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_06_26_06_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_06_26_06_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_06_26_06_02_X86"
+        }
+      },
+      "source": "2020_06_26_06_02_X86"
+    },
+    "{e52bd89c-f8c2-4c07-aa7d-0d18206c97f6}": {
+      "entry": {
+        "APP_ID": "{e5e5e162-6f75-4cda-9ca3-3921f50552c3}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - SONY",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702687",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{e52bd89c-f8c2-4c07-aa7d-0d18206c97f6}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Sony Corporation",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": {
+            "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+          }
+        },
+        "VENDOR": "SONY"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_06_26_06_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_06_26_06_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_06_26_06_02_X86"
+        }
+      },
+      "source": "2020_06_26_06_02_X86"
+    },
+    "{ed569c22-accf-441c-8816-2183c2d4d84e}": {
+      "entry": {
+        "APP_ID": "{e5e5e162-6f75-4cda-9ca3-3921f50552c3}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - SONY",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702687",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{ed569c22-accf-441c-8816-2183c2d4d84e}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Sony Corporation",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": {
+            "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+          }
+        },
+        "VENDOR": "SONY"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_06_26_06_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_06_26_06_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_06_26_06_02_X86"
+        }
+      },
+      "source": "2020_06_26_06_02_X86"
+    }
+  },
+  "id": "25702687"
+}

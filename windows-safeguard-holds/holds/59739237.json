@@ -1,0 +1,66 @@
+{
+  "blocks": {
+    "{5bdda72a-ab9a-44f9-a98e-6ddcb292832f}": {
+      "entry": {
+        "APP_ID": "{e090a870-aa12-42f8-a92b-f8af227e2b5b}",
+        "APP_NAME": "Bad UEFI Firmware (24H2) (WU Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "59739237",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "GE25H2",
+        "EXE_ID": "{5bdda72a-ab9a-44f9-a98e-6ddcb292832f}",
+        "MATCHING_REG": {
+          "NAME": "SYSTEM\\CurrentControlSet\\Control\\SecureBoot\\State",
+          "REG_VALUE_DATA_DWORD": 1,
+          "REG_VALUE_NAME": "UEFISecureBootEnabled",
+          "REG_VALUE_TYPE": 4
+        },
+        "MATCH_PLUGIN": [
+          {
+            "COMMAND_LINE": "ROOT\\CIMV2\\Security\\MicrosoftVolumeEncryption Win32_EncryptableVolume 0 ProtectionStatus int 1 eq WHERE VolumeType = 0",
+            "NAME": "WmiQueryMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "\n                    $Res = 0\n                    $WinCurVerReg = Get-Item -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion'\n                    $Build = [int]$WinCurVerReg.GetValue('CurrentBuild')\n                    $UBR = [int]$WinCurVerReg.GetValue('UBR')\n                    # Check if device is in 2605B+.\n                    if ($Build -ge 19041 -and $Build -le 19045 -and $UBR -ge 7291) {\n                        # Check if device has the feature enabled through CFR as well.\n                        $FeatureRegPath = 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\FeatureManagement\\Overrides\\4\\1592899214'\n                        $FeatureReg = Get-ItemProperty -Path $FeatureRegPath -Name 'EnabledState' -ErrorAction SilentlyContinue\n                        if ($FeatureReg.EnabledState -eq 2) {\n                            $Res = 1;\n                        }\n                    }\n                    Write-Host 'Final result:', $Res\n                ",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "PowerShellMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "\n                    function Get-UEFIX509Certificates {\n                        $Certs = @()\n\n                        try {\n                            $UefiDb = Get-SecureBootUEFI -Name db\n                            $Stream = [IO.MemoryStream]::New($UefiDb.Bytes)\n                        } catch {\n                            Write-Host 'Failed to get UEFI db:',$_.Exception.Message\n                            return $Certs\n                        }\n\n                        while ($Stream.Position -lt $Stream.Length) {\n                            # Read EFI_SIGNATURE_LIST header\n                            $SignatureType = New-Object byte[] 16\n                            $Stream.Read($SignatureType, 0, 16) | Out-Null\n                            $SignatureTypeGUID = [Guid]::New($SignatureType)\n\n                            $SignatureListSize = New-Object byte[] 4\n                            $Stream.Read($SignatureListSize, 0, 4) | Out-Null\n                            $ListSize = [BitConverter]::ToUInt32($SignatureListSize, 0)\n\n                            $Stream.Position += 4 # Skip SignatureHeaderSize\n\n                            $SignatureSize = New-Object byte[] 4\n                            $Stream.Read($SignatureSize, 0, 4) | Out-Null\n                            $SignatureSize = [BitConverter]::ToUInt32($SignatureSize, 0)\n\n                            if ($SignatureTypeGUID -eq 'a5c059a1-94e4-4aa7-87b5-ab155c2bf072') { # SignatureType matches X.509 GUID\n                                $CertificateCount = ($ListSize - 28) / $SignatureSize\n                                for ($i = 0; $i -lt $CertificateCount; $i++) {\n                                    $SignatureOwner = New-Object byte[] 16\n                                    $Stream.Read($SignatureOwner, 0, 16) | Out-Null\n                                    $SignatureOwner = [Guid]::New($SignatureOwner)\n\n                                    $CertificateData = New-Object byte[] ($SignatureSize - 16)\n                                    $Stream.Read($CertificateData, 0, ($SignatureSize - 16)) | Out-Null\n                                    $Certificate = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2(,$CertificateData)\n\n                                    $Certs += [PSCustomObject]@{\n                                        SignatureOwner = $SignatureOwner\n                                        Subject = $Certificate.Subject\n                                    }\n                                }\n                            }\n                        }\n\n                        return $Certs\n                    }\n\n                    $Res = 0\n                    $Certs = Get-UEFIX509Certificates\n                    Write-Host 'Found',$Certs.Count,'certificates'\n                    foreach ($Cert in $Certs) {\n                        if ($Cert.Subject.StartsWith('CN=Windows UEFI CA 2023,') -and $Cert.SignatureOwner -ne '77fa9abd-0359-4d32-bd60-28f4e78f784b') {\n                            $Res = 1\n                            break\n                        }\n                    }\n                    Write-Host 'Final result:',$Res\n                ",
+            "NAME": "PowerShellMatchingPlugin"
+          }
+        ],
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814751149916159,
+        "VENDOR": "Multiple"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2025_10_15_04_01_AMD64",
+          "last": "2026_10_29_11_04_AMD64"
+        },
+        "ARM64": {
+          "first": "2025_10_15_04_01_ARM64",
+          "last": "2026_10_29_11_04_ARM64"
+        },
+        "X86": {
+          "first": "2025_10_15_04_01_X86",
+          "last": "2026_10_29_11_02_X86"
+        }
+      },
+      "source": "2026_10_29_11_04_ARM64"
+    }
+  },
+  "id": "59739237"
+}

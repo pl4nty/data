@@ -1,0 +1,99 @@
+{
+  "blocks": {
+    "{0a782ce7-3a72-4c81-ac8d-cc66a404106b}": {
+      "entry": {
+        "APP_ID": "{ecf8d6f8-2b4f-480a-8fc4-e50a167b7394}",
+        "APP_NAME": "SQL setup on 20H2 (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "30086808",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{0a782ce7-3a72-4c81-ac8d-cc66a404106b}",
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_FILE": [
+              {
+                "COMPANY_NAME": "Microsoft Corporation",
+                "FROM_BIN_PRODUCT_VERSION": "84.0.522.53",
+                "NAME": "%ProgramFiles%\\Microsoft\\Edge\\Application\\msedge.exe",
+                "PRODUCT_NAME": "Microsoft Edge",
+                "UPTO_BIN_PRODUCT_VERSION": "65535.65535.65535.65535"
+              },
+              {
+                "COMPANY_NAME": "Microsoft Corporation",
+                "FROM_BIN_PRODUCT_VERSION": "84.0.522.53",
+                "NAME": "%ProgramFiles(X86)%\\Microsoft\\Edge\\Application\\msedge.exe",
+                "PRODUCT_NAME": "Microsoft Edge",
+                "UPTO_BIN_PRODUCT_VERSION": "65535.65535.65535.65535"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Microsoft SQL Server\\110\\11.0"
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\Microsoft SQL Server\\110\\11.0"
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Microsoft SQL Server\\120\\12.0"
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\Microsoft SQL Server\\120\\12.0"
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Microsoft SQL Server\\130\\13.0"
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\Microsoft SQL Server\\130\\13.0"
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Microsoft SQL Server\\140\\14.0"
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\Microsoft SQL Server\\140\\14.0"
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Microsoft SQL Server\\150\\15.0"
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\Microsoft SQL Server\\150\\15.0"
+              }
+            ]
+          }
+        ],
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_11_19_05_01_AMD64",
+          "last": "2021_01_07_05_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_11_19_05_02_ARM64",
+          "last": "2021_01_07_05_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_11_19_05_01_X86",
+          "last": "2021_01_07_05_03_X86"
+        }
+      },
+      "source": "2021_01_07_05_03_X86"
+    }
+  },
+  "id": "30086808"
+}

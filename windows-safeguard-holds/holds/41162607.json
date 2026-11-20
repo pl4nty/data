@@ -1,0 +1,53 @@
+{
+  "blocks": {
+    "{63a58b36-201d-4dc9-8291-129d8ebc6383}": {
+      "entry": {
+        "APP_ID": "{100d8afc-644f-49c2-a966-f60b5b6666f3}",
+        "APP_NAME": "Dell devices with DW5820 WWAN module",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41162607",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{63a58b36-201d-4dc9-8291-129d8ebc6383}",
+        "MATCHING_DEVICE": {
+          "NAME": "USB\\VID_8087&PID_0AC9*"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dell Inc.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "VENDOR": "Dell Inc."
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_09_13_04_01_AMD64",
+          "last": "2022_10_06_01_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_09_13_04_01_ARM64",
+          "last": "2022_10_06_01_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_09_13_04_01_X86",
+          "last": "2022_10_06_01_01_X86"
+        }
+      },
+      "source": "2022_10_06_01_02_ARM64"
+    }
+  },
+  "id": "41162607"
+}

@@ -1,0 +1,95 @@
+{
+  "blocks": {
+    "{1ab4b449-289f-4b7b-8079-8dd3a4d5d09b}": {
+      "entry": {
+        "APP_ID": "{e90e6af1-fbe8-4afd-9352-9cfafc7c059f}",
+        "APP_NAME": "SProtect Driver",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "56318982",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{1ab4b449-289f-4b7b-8079-8dd3a4d5d09b}",
+        "MATCHING_FILE": {
+          "CRC_CHECKSUM": 3639908756,
+          "NAME": "*"
+        },
+        "NAME": "sprotect.sys",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "北京深思数盾科技股份有限公司"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2025_02_20_03_01_AMD64",
+          "last": "2025_09_25_02_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2025_02_20_03_01_ARM64",
+          "last": "2025_09_25_02_05_ARM64"
+        },
+        "X86": {
+          "first": "2025_02_20_03_01_X86",
+          "last": "2025_09_25_02_02_X86"
+        }
+      },
+      "source": "2025_09_25_02_05_ARM64"
+    },
+    "{87eaa44b-ed21-49b1-94ee-1442caec7c21}": {
+      "entry": {
+        "APP_ID": "{e90e6af1-fbe8-4afd-9352-9cfafc7c059f}",
+        "APP_NAME": "SProtect Driver",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "56318982",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{87eaa44b-ed21-49b1-94ee-1442caec7c21}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "北京深思数盾科技股份有限公司",
+          "NAME": "*",
+          "PRODUCT_NAME": "SProtect",
+          "UPTO_BIN_PRODUCT_VERSION": "1.0.3.48902"
+        },
+        "NAME": "sprotect.sys",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "北京深思数盾科技股份有限公司"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2025_02_20_03_01_AMD64",
+          "last": "2025_09_25_02_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2025_02_20_03_01_ARM64",
+          "last": "2025_09_25_02_05_ARM64"
+        },
+        "X86": {
+          "first": "2025_02_20_03_01_X86",
+          "last": "2025_09_25_02_02_X86"
+        }
+      },
+      "source": "2025_09_25_02_05_ARM64"
+    }
+  },
+  "id": "56318982"
+}

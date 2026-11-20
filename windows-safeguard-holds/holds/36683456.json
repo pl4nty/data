@@ -1,0 +1,47 @@
+{
+  "blocks": {
+    "{0d9a17d4-978a-4678-bf8d-df7c5b3bfdd4}": {
+      "entry": {
+        "APP_ID": "{48a4e2c0-d4ec-4b04-b6dc-efec9ba5bcc0}",
+        "APP_NAME": "Serbian language pack",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "36683456",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "CU22H2",
+        "EXE_ID": "{0d9a17d4-978a-4678-bf8d-df7c5b3bfdd4}",
+        "MATCHING_REG": {
+          "NAME": "SYSTEM\\CurrentControlSet\\Control\\MUI\\UILanguages\\sr-Latn-RS"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_10_21_03_01_AMD64",
+          "last": "2021_12_09_11_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_10_21_03_01_ARM64",
+          "last": "2021_12_09_11_02_ARM64"
+        },
+        "X86": {
+          "first": "2021_10_21_03_01_X86",
+          "last": "2021_12_09_11_02_X86"
+        }
+      },
+      "source": "2021_12_09_11_02_X86"
+    }
+  },
+  "id": "36683456"
+}

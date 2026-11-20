@@ -1,0 +1,1117 @@
+{
+  "blocks": {
+    "{17669a1f-57fd-4c2c-9228-601fb465d080}": {
+      "entry": {
+        "APP_ID": "{cbc3033f-1a87-4b26-b7f6-8b769ab0f4e0}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - ASUS",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702660",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{17669a1f-57fd-4c2c-9228-601fb465d080}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "ASUSTeK COMPUTER INC.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1f72*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1fd6*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook E14 E402WAS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X542BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook E14 E402WA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook S14 X411UF",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook S15 X510UNO",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X751BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "ASUS"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{3ef75b5b-c192-4712-9b26-a64505e92fdd}": {
+      "entry": {
+        "APP_ID": "{cbc3033f-1a87-4b26-b7f6-8b769ab0f4e0}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - ASUS",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702660",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{3ef75b5b-c192-4712-9b26-a64505e92fdd}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "ASUSTeK COMPUTER INC.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1f72*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1fd6*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook E14 E402WAS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X542BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook E14 E402WA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook S14 X411UF",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook S15 X510UNO",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X751BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "ASUS"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{5d144435-9fde-43c4-b79f-f3e47403024b}": {
+      "entry": {
+        "APP_ID": "{cbc3033f-1a87-4b26-b7f6-8b769ab0f4e0}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - ASUS",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702660",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{5d144435-9fde-43c4-b79f-f3e47403024b}",
+        "MATCHING_DEVICE": {
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "hdaudio\\func_01&ven_14f1&dev_510f&subsys_104312c0&rev_1001*"
+        },
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "ASUSTeK COMPUTER INC.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1f72*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1fd6*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook E14 E402WAS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X542BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook E14 E402WA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook S14 X411UF",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook S15 X510UNO",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X751BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "ASUS"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{9bb68aaa-96d3-406d-8570-8a7a2034b9e3}": {
+      "entry": {
+        "APP_ID": "{cbc3033f-1a87-4b26-b7f6-8b769ab0f4e0}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - ASUS",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702660",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{9bb68aaa-96d3-406d-8570-8a7a2034b9e3}",
+        "MATCHING_DEVICE": {
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "hdaudio\\func_01&ven_14f1&dev_510f&subsys_104312c0&rev_1001*"
+        },
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "ASUSTeK COMPUTER INC.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1f72*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1fd6*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook E14 E402WAS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X542BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook E14 E402WA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook S14 X411UF",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook S15 X510UNO",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X751BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "ASUS"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{c8db18d3-d5df-402e-aec8-5ae46153b146}": {
+      "entry": {
+        "APP_ID": "{cbc3033f-1a87-4b26-b7f6-8b769ab0f4e0}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - ASUS",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702660",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{c8db18d3-d5df-402e-aec8-5ae46153b146}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.88.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "ASUSTeK COMPUTER INC.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1f72*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1fd6*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook E14 E402WAS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X542BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook E14 E402WA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook S14 X411UF",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook S15 X510UNO",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X751BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "ASUS"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{c9aaa8a1-ee23-48c1-aaac-1242f926b276}": {
+      "entry": {
+        "APP_ID": "{cbc3033f-1a87-4b26-b7f6-8b769ab0f4e0}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - ASUS",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702660",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{c9aaa8a1-ee23-48c1-aaac-1242f926b276}",
+        "MATCHING_DEVICE": {
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "hdaudio\\func_01&ven_14f1&dev_510f&subsys_104312c0&rev_1001*"
+        },
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.88.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "ASUSTeK COMPUTER INC.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1f72*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1fd6*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook E14 E402WAS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X542BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook E14 E402WA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook S14 X411UF",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook S15 X510UNO",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X751BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "ASUS"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    }
+  },
+  "id": "25702660"
+}

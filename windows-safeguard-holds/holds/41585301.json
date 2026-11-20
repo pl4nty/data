@@ -1,0 +1,471 @@
+{
+  "blocks": {
+    "{975f62ad-8f07-4959-b24b-68337a57d54e}": {
+      "entry": {
+        "APP_ID": "{5c9bc50e-a2cb-40c5-97b6-dbb51b37b470}",
+        "APP_NAME": "Samsung ESS enabled ADL devices with Egistec fingerprint Sensor driver (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41585301",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "ZN23H2",
+        "EXE_ID": "{975f62ad-8f07-4959-b24b-68337a57d54e}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*Samsung*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "SYSTEM\\CurrentControlSet\\Control\\DeviceGuard\\Scenarios\\SystemGuard",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "Enabled",
+            "REG_VALUE_TYPE": 4
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_FILE": [
+              {
+                "COMPANY_NAME": "Egis Technology Inc*",
+                "NAME": "%WinDir%\\System32\\drivers\\umdf\\EgisTouchFP0582.dll",
+                "PRODUCT_NAME": "WBF Fingerprint Driver",
+                "UPTO_BIN_PRODUCT_VERSION": "1.0.22.5"
+              },
+              {
+                "COMPANY_NAME": "Egis Technology Inc*",
+                "NAME": "%WinDir%\\System32\\WinBioPlugins\\EgisTouchFPAdapter0582.dll",
+                "PRODUCT_NAME": "WBF Fingerprint Driver",
+                "UPTO_BIN_PRODUCT_VERSION": "1.0.22.5"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12900KS*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12900K*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12900KF*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12900*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12900F*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12900T*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12700K*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12700KF*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12700*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12700F*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12700T*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12600K*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12600KF*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12600*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12600T*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12500*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12500T*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12490F*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12400*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12400F*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12400T*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12300*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12300T*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12100*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12100F*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12100T*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*G7400*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*G7400T*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*G6900*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*G6900T*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12950HX*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12900HX*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12850HX*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12800HX*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12650HX*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12600HX*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12450HX*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12900HK*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12900H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12800H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12700H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12650H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12600H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12500H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*12450H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1280P*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1270P*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1260P*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1250P*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1240P*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1220P*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1265U*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1260U*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1255U*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1250U*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1245U*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1240U*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1235U*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1230U*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1215U*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1210U*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*8505*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*8500*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*7305*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*7300*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814751249596415,
+        "VENDOR": "Samsung"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_10_06_01_01_AMD64",
+          "last": "2023_07_06_01_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_10_06_01_01_ARM64",
+          "last": "2023_07_06_01_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_10_06_01_01_X86",
+          "last": "2023_07_06_01_01_X86"
+        }
+      },
+      "source": "2023_07_06_01_02_ARM64"
+    }
+  },
+  "id": "41585301"
+}

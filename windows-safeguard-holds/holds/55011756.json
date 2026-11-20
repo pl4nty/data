@@ -1,0 +1,50 @@
+{
+  "blocks": {
+    "{361f0e83-08b2-4dfe-84c5-8084751a20b8}": {
+      "entry": {
+        "APP_ID": "{7d07f630-dac9-4326-be32-2f544248ac9f}",
+        "APP_NAME": "Studio 5000 Logix Designer (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "55011756",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{361f0e83-08b2-4dfe-84c5-8084751a20b8}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Rockwell Automation*",
+          "NAME": "*",
+          "PRODUCT_NAME": "Logix Designer"
+        },
+        "NAME": "LogixDesigner.Exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Rockwell Automation Technologies, Inc."
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_11_14_03_01_AMD64",
+          "last": "2025_03_31_01_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_11_14_03_01_ARM64",
+          "last": "2025_03_31_01_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_11_14_03_01_X86",
+          "last": "2025_03_31_01_02_X86"
+        }
+      },
+      "source": "2025_03_31_01_05_ARM64"
+    }
+  },
+  "id": "55011756"
+}

@@ -1,0 +1,54 @@
+{
+  "blocks": {
+    "{2addf933-a96a-4fa2-a665-610a443a34fd}": {
+      "entry": {
+        "APP_ID": "{a86f2900-d9b1-4056-a75f-514226ae6178}",
+        "APP_NAME": "Troubleshooter - System-Initiated Test Async",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "32379233",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "EXE_ID": "{2addf933-a96a-4fa2-a665-610a443a34fd}",
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\TroubleShooter",
+          "REG_VALUE_DATA_DWORD": 1,
+          "REG_VALUE_NAME": "32379233_SystemInitiatedTest",
+          "REG_VALUE_TYPE": 4
+        },
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "{cff989e5-0cbe-4952-9496-1d245ae6bd82} -Name SafeguardMatchingTroubleshooterTest -FreshDays 7",
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "TroubleShooterMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_04_12_01_01_AMD64",
+          "last": "2026_03_13_07_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_04_12_01_01_ARM64",
+          "last": "2026_03_13_07_01_ARM64"
+        },
+        "X86": {
+          "first": "2021_04_12_01_01_X86",
+          "last": "2025_03_06_03_02_X86"
+        }
+      },
+      "source": "2026_03_13_07_01_ARM64"
+    }
+  },
+  "id": "32379233"
+}

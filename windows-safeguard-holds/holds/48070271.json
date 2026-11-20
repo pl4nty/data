@@ -1,0 +1,58 @@
+{
+  "blocks": {
+    "{9a6cb0e8-5290-4570-9373-8055da9f35c5}": {
+      "entry": {
+        "APP_ID": "{40eb48df-681c-44ee-aadf-c29c4615eee6}",
+        "APP_NAME": "Solidworks PDM + address bar (23H2)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "48070271",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI23H2",
+        "DEST_OS_LT": "GE24H2",
+        "EXE_ID": "{9a6cb0e8-5290-4570-9373-8055da9f35c5}",
+        "MATCHING_FILE": [
+          {
+            "COMPANY_NAME": "*SolidWorks Corporation",
+            "NAME": "*",
+            "PRODUCT_NAME": "SOLIDWORKS PDM*"
+          },
+          {
+            "COMPANY_NAME": "*SolidWorks Corporation*",
+            "NAME": "NameSpace.dll",
+            "PRODUCT_NAME": "SOLIDWORKS PDM*",
+            "UPTO_BIN_PRODUCT_VERSION": "32.1.0.133"
+          }
+        ],
+        "NAME": "ConisioAdmin.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Dassault Systemes SolidWorks Corp"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2023_12_07_04_01_AMD64",
+          "last": "2024_07_11_04_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2023_12_07_04_01_ARM64",
+          "last": "2024_07_11_04_05_ARM64"
+        },
+        "X86": {
+          "first": "2023_12_07_04_01_X86",
+          "last": "2024_07_11_04_02_X86"
+        }
+      },
+      "source": "2024_07_11_04_05_ARM64"
+    }
+  },
+  "id": "48070271"
+}

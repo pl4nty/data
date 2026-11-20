@@ -1,0 +1,324 @@
+{
+  "blocks": {
+    "{03d9ada4-f190-4f04-91e5-090a096954e4}": {
+      "entry": {
+        "APP_ID": "{d5022ad8-f64b-49e1-a8fa-bd5c578f3950}",
+        "APP_NAME": "HUAWEI Fingerprint Reader issue",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "32376893",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{03d9ada4-f190-4f04-91e5-090a096954e4}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "HUAWEI",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "BOH-WAX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "BOHB-WAX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "BOHBZ-WAX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "EUL-WX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "KLC-WBX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "KLCZ-WXX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "KLVC-WAX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "KLVC-WXX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "NBL-WAX9N",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "NBLB-WAX9N",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "NBLBZ-WAX9N",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "HBB-WX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "KL-WX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "KLV-WX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "MACHC-WAX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "MACHR-WX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRTB-WAX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRTB-WXX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "HBL-WX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "HUAWEI MATEBOOK 13",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "HUAWEI MATEBOOK X PRO",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "HUAWEI MATEBOOK X",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "MACH-WX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "MACH",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "MATEBOOK 13",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "VLR-WX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "VLT-W10",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "VLT-W50",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "VLT-W60",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "VLT-WX0",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "VLT-WXX",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "VTL-W10",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WATT",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRIGHT",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRT-W09A",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRT-W19A",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRT-W19B",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRT-W19C",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRT-W19D",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRT-W29A",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRT-W29B",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRT-W29C",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRT-W29D",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRT-W29E",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "WRT-WX9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "VENDOR": "HUAWEI"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_04_22_06_01_AMD64",
+          "last": "2021_06_09_02_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_04_22_06_02_ARM64",
+          "last": "2021_06_09_02_02_ARM64"
+        },
+        "X86": {
+          "first": "2021_04_22_06_01_X86",
+          "last": "2021_06_09_02_02_X86"
+        }
+      },
+      "source": "2021_06_09_02_02_X86"
+    }
+  },
+  "id": "32376893"
+}

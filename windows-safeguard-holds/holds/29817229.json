@@ -1,0 +1,51 @@
+{
+  "blocks": {
+    "{50e62bb7-955a-4d2b-995f-8f4aac1c8141}": {
+      "entry": {
+        "APP_ID": "{ff906ee5-7f17-4ec8-adec-602c730ef6cb}",
+        "APP_NAME": "Windows activation issue: Pro EDU key (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29817229",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H2",
+        "EXE_ID": "{50e62bb7-955a-4d2b-995f-8f4aac1c8141}",
+        "MATCHING_REG": {
+          "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+          "REG_VALUE_DATA_SZ": "00327-80000-00000-AAOEM",
+          "REG_VALUE_NAME": "ProductId",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_22_04_01_AMD64",
+          "last": "2021_02_12_02_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_22_04_02_ARM64",
+          "last": "2021_02_12_02_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_22_04_01_X86",
+          "last": "2021_02_12_02_03_X86"
+        }
+      },
+      "source": "2021_02_12_02_03_X86"
+    }
+  },
+  "id": "29817229"
+}

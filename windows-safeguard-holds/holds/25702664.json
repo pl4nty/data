@@ -1,0 +1,451 @@
+{
+  "blocks": {
+    "{0f717c3e-d75e-4ef2-99c2-4ec0524e1e25}": {
+      "entry": {
+        "APP_ID": "{7fb56631-3e47-4031-82ff-1151cfb7c4b0}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - DELL",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702664",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{0f717c3e-d75e-4ef2-99c2-4ec0524e1e25}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dell Inc.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50a1*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50f2*"
+            }
+          ]
+        },
+        "VENDOR": "DELL"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{8b23252b-354d-4693-b76c-0ee646c50443}": {
+      "entry": {
+        "APP_ID": "{7fb56631-3e47-4031-82ff-1151cfb7c4b0}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - DELL",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702664",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{8b23252b-354d-4693-b76c-0ee646c50443}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.89.0"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dell Inc.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50a1*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50f2*"
+            }
+          ]
+        },
+        "VENDOR": "DELL"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{b3a2ea44-c890-4898-ba4e-6aefdddef8a9}": {
+      "entry": {
+        "APP_ID": "{7fb56631-3e47-4031-82ff-1151cfb7c4b0}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - DELL",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702664",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{b3a2ea44-c890-4898-ba4e-6aefdddef8a9}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dell Inc.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50a1*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50f2*"
+            }
+          ]
+        },
+        "VENDOR": "DELL"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{cb2e7a22-bd25-4eb8-b583-999fa64ab0aa}": {
+      "entry": {
+        "APP_ID": "{7fb56631-3e47-4031-82ff-1151cfb7c4b0}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - DELL",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702664",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{cb2e7a22-bd25-4eb8-b583-999fa64ab0aa}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dell Inc.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50a1*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50f2*"
+            }
+          ]
+        },
+        "VENDOR": "DELL"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{e897c61d-266e-4b29-ae64-68d1ee15cf9b}": {
+      "entry": {
+        "APP_ID": "{7fb56631-3e47-4031-82ff-1151cfb7c4b0}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - DELL",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702664",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{e897c61d-266e-4b29-ae64-68d1ee15cf9b}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dell Inc.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50a1*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50f2*"
+            }
+          ]
+        },
+        "VENDOR": "DELL"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{f6d4f6fa-8139-42ad-9a95-1b51fd54244e}": {
+      "entry": {
+        "APP_ID": "{7fb56631-3e47-4031-82ff-1151cfb7c4b0}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - DELL",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702664",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{f6d4f6fa-8139-42ad-9a95-1b51fd54244e}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.89.0"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dell Inc.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50a1*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_50f2*"
+            }
+          ]
+        },
+        "VENDOR": "DELL"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    }
+  },
+  "id": "25702664"
+}

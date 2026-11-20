@@ -1,0 +1,48 @@
+{
+  "blocks": {
+    "{7a367b53-2901-4dc1-8a6c-954d4efe91c8}": {
+      "entry": {
+        "APP_ID": "{2c048182-1f27-4796-9837-5e6321685b1b}",
+        "APP_NAME": "Devices with GameDVR 'HistoricalCaptureEnabled' enabled",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41584256",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{7a367b53-2901-4dc1-8a6c-954d4efe91c8}",
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "HKEY_USERS\\*\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\GameDVR ValueSearch HistoricalCaptureEnabled eq 0x1 REG_DWORD",
+          "NAME": "RegistryMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_10_06_01_01_AMD64",
+          "last": "2022_11_03_03_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_10_06_01_01_ARM64",
+          "last": "2022_11_03_03_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_10_06_01_01_X86",
+          "last": "2022_11_03_03_01_X86"
+        }
+      },
+      "source": "2022_11_03_03_02_ARM64"
+    }
+  },
+  "id": "41584256"
+}

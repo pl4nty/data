@@ -1,0 +1,66 @@
+{
+  "blocks": {
+    "{593a7bcb-a727-496e-992f-271417ddc573}": {
+      "entry": {
+        "APP_ID": "{c3bd6f5d-c9cc-4ed3-8bd1-aaca3d720c00}",
+        "APP_NAME": "UPS WorldShip",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "21599405",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "19H1",
+        "DEST_OS_LT": "20H1",
+        "EXE_ID": "{593a7bcb-a727-496e-992f-271417ddc573}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "UPS",
+          "NAME": "*",
+          "PRODUCT_NAME": "UPS WorldShip*Shipping System",
+          "UPTO_BIN_PRODUCT_VERSION": "22.0.16.65535"
+        },
+        "NAME": "WorldShipTD.exe",
+        "PICK_ONE": {
+          "MATCHING_FILE": [
+            {
+              "COMPANY_NAME": "Microsoft*",
+              "FROM_BIN_PRODUCT_VERSION": "10.0.17763.0",
+              "NAME": "%windir%\\system32\\ntoskrnl.exe",
+              "UPTO_BIN_PRODUCT_VERSION": "10.0.17763.612"
+            },
+            {
+              "COMPANY_NAME": "Microsoft*",
+              "FROM_BIN_PRODUCT_VERSION": "10.0.17134.0",
+              "NAME": "%windir%\\system32\\ntoskrnl.exe",
+              "UPTO_BIN_PRODUCT_VERSION": "10.0.17134.1037"
+            }
+          ]
+        },
+        "VENDOR": "UPS"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2020_01_09_04_01_AMD64",
+          "last": "2020_02_13_06_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_01_09_04_05_ARM64",
+          "last": "2020_02_13_06_05_ARM64"
+        },
+        "X86": {
+          "first": "2020_01_09_04_01_X86",
+          "last": "2020_02_13_06_05_X86"
+        }
+      },
+      "source": "2020_02_13_06_05_X86"
+    }
+  },
+  "id": "21599405"
+}

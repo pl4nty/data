@@ -1,0 +1,59 @@
+{
+  "blocks": {
+    "{645b0192-5c6a-45d9-9023-40dae46b613a}": {
+      "entry": {
+        "APP_ID": "{c678be3a-ecd0-41b8-9ecc-44ddab637e09}",
+        "APP_NAME": "CriDspApo.dll",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54283088",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{645b0192-5c6a-45d9-9023-40dae46b613a}",
+        "MATCHING_FILE": {
+          "NAME": "%WinDir%\\System32\\CriDspApo.dll",
+          "UPTO_BIN_PRODUCT_VERSION": "24.1.0.9"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "*FUJITSU*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "\n                    $Res = 0\n\n                    $ClassRegPath = 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\Class'\n                    $SoftwareComponentClassRegPath = $ClassRegPath + '\\{5c4c3332-344d-483c-8739-259e934c9cc8}'\n                    $AudioProcessingObjectRegPath = $ClassRegPath + '\\{5989fce8-9cd0-467d-8a6a-5419e31529d4}'\n                    [Version]$MinVersion = [Version]::New('24.1.0.3')\n                    $DriverDesc = 'CriDspApo Component Device'\n\n                    # Find 'CriDspApo Component Device' Class entries\n                    $ComponentRegKey = Get-ChildItem -Path $SoftwareComponentClassRegPath,$AudioProcessingObjectRegPath -ErrorAction SilentlyContinue | Where-Object { $_.GetValue('DriverDesc') -match $DriverDesc }\n\n                    if ($ComponentRegKey) {\n                        [Version]$HighestInstalledVersion = [Version]::New('0.0.0.0')\n\n                        foreach ($Key in $ComponentRegKey) {\n                            $DriverVersionStr = $Key.GetValue('DriverVersion')\n\n                            try {\n                                [Version]$AuxDriverVersion = [Version]::New($DriverVersionStr)\n\n                                if ($AuxDriverVersion -ge $HighestInstalledVersion) {\n                                    $HighestInstalledVersion = $AuxDriverVersion\n                                }\n                            }\n                            catch {\n                                # Couldn't parse DriverVersion. Do nothing.\n                            }\n                        }\n\n                        if ($HighestInstalledVersion -ge $MinVersion) {\n                            $Res = 1\n                        } else { \n                            $Res = 0\n                        }\n\n                    } else {\n                        # Couldn't find 'CriDspApo Component Device' Class entry.\n                        $Res = 0\n                    }\n\n                    Write-Host 'Final result:', $Res\n                ",
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "PowerShellMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "FUJITSU"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_10_03_01_AMD64",
+          "last": "2025_09_04_02_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_10_03_01_ARM64",
+          "last": "2025_09_04_02_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_10_03_01_X86",
+          "last": "2025_09_04_02_02_X86"
+        }
+      },
+      "source": "2025_09_04_02_05_ARM64"
+    }
+  },
+  "id": "54283088"
+}

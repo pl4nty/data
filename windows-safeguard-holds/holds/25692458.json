@@ -1,0 +1,744 @@
+{
+  "blocks": {
+    "{493b68c7-219f-42f1-8ed1-99b290e7a926}": {
+      "entry": {
+        "APP_ID": "{8c2964c3-672c-4b24-bb89-9b51b300d088}",
+        "APP_NAME": "Bluetooth Realtek (key size issue)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25692458",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{493b68c7-219f-42f1-8ed1-99b290e7a926}",
+        "MATCHING_FILE": {
+          "NAME": "%windir%\\System32\\Drivers\\RtkUart.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "1.0.253.2"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "acpi\\ven_OBDA&dev_0242*"
+            },
+            {
+              "NAME": "acpi\\ven_OBDA&dev_0243*"
+            },
+            {
+              "NAME": "acpi\\ven_OBDA&dev_0245*"
+            },
+            {
+              "NAME": "acpi\\ven_OBDA&dev_0246*"
+            },
+            {
+              "NAME": "acpi\\ven_OBDA&dev_0623*"
+            },
+            {
+              "NAME": "acpi\\ven_OBDA&dev_0625*"
+            },
+            {
+              "NAME": "acpi\\ven_OBDA&dev_8723*"
+            }
+          ]
+        },
+        "VENDOR": "Realtek"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_04_02_05_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        }
+      },
+      "source": "2020_08_06_04_02_AMD64"
+    },
+    "{69b48e1d-fab3-432e-9d2a-6163cef7c138}": {
+      "entry": {
+        "APP_ID": "{8c2964c3-672c-4b24-bb89-9b51b300d088}",
+        "APP_NAME": "Bluetooth Realtek (key size issue)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25692458",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{69b48e1d-fab3-432e-9d2a-6163cef7c138}",
+        "MATCHING_FILE": {
+          "NAME": "%windir%\\System32\\Drivers\\RtkBtfilter.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "1.6.1015.2011"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "usb\\vid_0489&pid_E08B*"
+            },
+            {
+              "NAME": "usb\\vid_0489&pid_E09E*"
+            },
+            {
+              "NAME": "usb\\vid_0930&pid_0222*"
+            },
+            {
+              "NAME": "usb\\vid_0930&pid_0231*"
+            },
+            {
+              "NAME": "usb\\vid_0930&pid_022F*"
+            },
+            {
+              "NAME": "usb\\vid_1357&pid_C125*"
+            },
+            {
+              "NAME": "usb\\vid_3341&pid_8050*"
+            },
+            {
+              "NAME": "usb\\vid_04C5&pid_15D7*"
+            },
+            {
+              "NAME": "usb\\vid_04CA&pid_4003*"
+            },
+            {
+              "NAME": "usb\\vid_04CA&pid_4002*"
+            },
+            {
+              "NAME": "usb\\vid_04CA&pid_4004*"
+            },
+            {
+              "NAME": "usb\\vid_04F2&pid_B49A*"
+            },
+            {
+              "NAME": "usb\\vid_04F2&pid_B49B*"
+            },
+            {
+              "NAME": "usb\\vid_04F2&pid_B49C*"
+            },
+            {
+              "NAME": "usb\\vid_04F2&pid_B49F*"
+            },
+            {
+              "NAME": "usb\\vid_04F2&pid_B4A0*"
+            },
+            {
+              "NAME": "usb\\vid_0B05&pid_17DC*"
+            },
+            {
+              "NAME": "usb\\vid_0B05&pid_185C*"
+            },
+            {
+              "NAME": "usb\\vid_0B05&pid_1865*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B034*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_0821*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_3508*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_3509*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8199*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8760*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8761*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8762*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8763*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8821*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8A60*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B002*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B003*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B004*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B005*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B007*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B009*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B023*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B028*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B029*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B030*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B031*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B033*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B035*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B718*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B719*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B721*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B722*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B723*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B725*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B728*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B72A*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B72B*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B739*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B761*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B822*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_D720*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_D739*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3524*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3525*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3527*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3526*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3537*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3410*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3414*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3416*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3458*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3459*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3461*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3462*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3479*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3486*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3494*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3507*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3531*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3535*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3536*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3542*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3545*"
+            },
+            {
+              "NAME": "usb\\vid_2FF8&pid_B010*"
+            },
+            {
+              "NAME": "usb\\vid_2FF8&pid_B011*"
+            },
+            {
+              "NAME": "usb\\vid_B49A&pid_04F2*"
+            }
+          ]
+        },
+        "VENDOR": "Realtek"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "X86": {
+          "first": "2020_04_02_05_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    },
+    "{b56b4b84-6d04-4d7d-a135-ce5fed889f1d}": {
+      "entry": {
+        "APP_ID": "{8c2964c3-672c-4b24-bb89-9b51b300d088}",
+        "APP_NAME": "Bluetooth Realtek (key size issue)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25692458",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{b56b4b84-6d04-4d7d-a135-ce5fed889f1d}",
+        "MATCHING_FILE": {
+          "NAME": "%windir%\\System32\\Drivers\\RtkBtfilter.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "1.6.1015.3007"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "usb\\vid_0bda&pid_b001*"
+            },
+            {
+              "NAME": "usb\\vid_0bda&pid_b006*"
+            },
+            {
+              "NAME": "usb\\vid_0bda&pid_b008*"
+            },
+            {
+              "NAME": "usb\\vid_0bda&pid_b00b*"
+            }
+          ]
+        },
+        "VENDOR": "Realtek"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_04_02_05_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        },
+        "X86": {
+          "first": "2020_04_02_05_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    },
+    "{c7500600-537a-47f8-acc3-daa6a5eb2898}": {
+      "entry": {
+        "APP_ID": "{8c2964c3-672c-4b24-bb89-9b51b300d088}",
+        "APP_NAME": "Bluetooth Realtek (key size issue)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25692458",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{c7500600-537a-47f8-acc3-daa6a5eb2898}",
+        "MATCHING_FILE": {
+          "NAME": "%windir%\\System32\\Drivers\\RtkUart.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "1.0.253.1"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "acpi\\ven_OBDA&dev_0242*"
+            },
+            {
+              "NAME": "acpi\\ven_OBDA&dev_0243*"
+            },
+            {
+              "NAME": "acpi\\ven_OBDA&dev_0245*"
+            },
+            {
+              "NAME": "acpi\\ven_OBDA&dev_0246*"
+            },
+            {
+              "NAME": "acpi\\ven_OBDA&dev_0623*"
+            },
+            {
+              "NAME": "acpi\\ven_OBDA&dev_0625*"
+            },
+            {
+              "NAME": "acpi\\ven_OBDA&dev_8723*"
+            }
+          ]
+        },
+        "VENDOR": "Realtek"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "X86": {
+          "first": "2020_04_02_05_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    },
+    "{f55a7b84-f843-46ec-a4f8-fe5db0d082ff}": {
+      "entry": {
+        "APP_ID": "{8c2964c3-672c-4b24-bb89-9b51b300d088}",
+        "APP_NAME": "Bluetooth Realtek (key size issue)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25692458",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{f55a7b84-f843-46ec-a4f8-fe5db0d082ff}",
+        "MATCHING_FILE": {
+          "NAME": "%windir%\\System32\\Drivers\\RtkBtfilter.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "1.6.1015.3011"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "usb\\vid_0489&pid_E08B*"
+            },
+            {
+              "NAME": "usb\\vid_0489&pid_E09E*"
+            },
+            {
+              "NAME": "usb\\vid_0930&pid_0222*"
+            },
+            {
+              "NAME": "usb\\vid_0930&pid_0231*"
+            },
+            {
+              "NAME": "usb\\vid_0930&pid_022F*"
+            },
+            {
+              "NAME": "usb\\vid_1357&pid_C125*"
+            },
+            {
+              "NAME": "usb\\vid_3341&pid_8050*"
+            },
+            {
+              "NAME": "usb\\vid_04C5&pid_15D7*"
+            },
+            {
+              "NAME": "usb\\vid_04CA&pid_4003*"
+            },
+            {
+              "NAME": "usb\\vid_04CA&pid_4002*"
+            },
+            {
+              "NAME": "usb\\vid_04CA&pid_4004*"
+            },
+            {
+              "NAME": "usb\\vid_04F2&pid_B49A*"
+            },
+            {
+              "NAME": "usb\\vid_04F2&pid_B49B*"
+            },
+            {
+              "NAME": "usb\\vid_04F2&pid_B49C*"
+            },
+            {
+              "NAME": "usb\\vid_04F2&pid_B49F*"
+            },
+            {
+              "NAME": "usb\\vid_04F2&pid_B4A0*"
+            },
+            {
+              "NAME": "usb\\vid_0B05&pid_17DC*"
+            },
+            {
+              "NAME": "usb\\vid_0B05&pid_185C*"
+            },
+            {
+              "NAME": "usb\\vid_0B05&pid_1865*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B034*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_0821*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_3508*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_3509*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8199*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8760*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8761*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8762*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8763*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8821*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_8A60*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B002*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B003*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B004*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B005*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B007*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B009*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B023*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B028*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B029*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B030*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B031*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B033*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B035*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B718*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B719*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B721*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B722*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B723*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B725*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B728*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B72A*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B72B*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B739*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B761*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_B822*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_D720*"
+            },
+            {
+              "NAME": "usb\\vid_0BDA&pid_D739*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3524*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3525*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3527*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3526*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3537*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3410*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3414*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3416*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3458*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3459*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3461*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3462*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3479*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3486*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3494*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3507*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3531*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3535*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3536*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3542*"
+            },
+            {
+              "NAME": "usb\\vid_13D3&pid_3545*"
+            },
+            {
+              "NAME": "usb\\vid_2FF8&pid_B010*"
+            },
+            {
+              "NAME": "usb\\vid_2FF8&pid_B011*"
+            },
+            {
+              "NAME": "usb\\vid_B49A&pid_04F2*"
+            }
+          ]
+        },
+        "VENDOR": "Realtek"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_04_02_05_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        }
+      },
+      "source": "2020_08_06_04_02_AMD64"
+    }
+  },
+  "id": "25692458"
+}

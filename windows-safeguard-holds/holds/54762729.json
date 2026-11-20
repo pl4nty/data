@@ -1,0 +1,48 @@
+{
+  "blocks": {
+    "{87136f35-ffd8-46ee-9b4a-d8ba442c2343}": {
+      "entry": {
+        "APP_ID": "{d59cdab8-d55c-4160-b27a-bae7d36b6749}",
+        "APP_NAME": "Undiscoverable scanner apps",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54762729",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{87136f35-ffd8-46ee-9b4a-d8ba442c2343}",
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "\n                    $Res = 0\n                    $LastVidPid = ''\n                    $UsbDevices = Get-PnpDevice | Sort-Object InstanceId | Where-Object { $_.InstanceId -like '*usb\\vid_*' }\n                    Write-Host $UsbDevices.Count, 'USB devices'\n                    foreach ($d in $UsbDevices) {\n                        $InstParts = $d.InstanceId -split '&'\n                        if ($InstParts.Count -lt 2) { continue }\n                        $VidPid = $InstParts[0] + '&' + $InstParts[1]\n                        if ($VidPid -ne $LastVidPid) {\n                            # Consider all instances of this VID/PID\n                            $ThisDevice = $UsbDevices | Where-Object { $_.InstanceId -and $_.InstanceId.Contains($VidPid) }\n                            $HasPrint = $ThisDevice | Where-Object { $_.CompatibleID -and $_.CompatibleID.Contains('USB\\Class_07&SubClass_01&Prot_02') }\n                            if ($HasPrint) {\n                                # No need to block an update for device with USB print\n                                # Do nothing\n                            }\n                            else {\n                                $HasScan = $ThisDevice | Where-Object { $_.CompatibleID -and $_.CompatibleID.Contains('USB\\MS_COMP_SCAN') }\n                                if ($HasScan) {\n                                    Write-Host 'Block update for:', $thisDevice[0].InstanceID\n                                    $Res = 1\n                                    break\n                                }\n\n                                $HasWinUSB = $ThisDevice | Where-Object { $_.CompatibleID -and $_.CompatibleID.Contains('USB\\MS_COMP_WINUSB') }\n                                if ($HasWinUSB) {\n                                    Write-Host 'Block update for:', $thisDevice[0].InstanceID\n                                    $Res = 1\n                                    break\n                                }\n                            }\n                            $LastVidPid = $VidPid\n                        }\n                    }\n                    Write-Host 'Final result:', $Res\n                ",
+          "NAME": "PowerShellMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Multiple"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_31_03_01_AMD64",
+          "last": "2024_12_05_04_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_31_03_01_ARM64",
+          "last": "2024_12_05_04_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_31_03_01_X86",
+          "last": "2024_12_05_04_02_X86"
+        }
+      },
+      "source": "2024_12_05_04_05_ARM64"
+    }
+  },
+  "id": "54762729"
+}

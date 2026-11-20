@@ -1,0 +1,51 @@
+{
+  "blocks": {
+    "{5434b967-e3a6-4c53-ae0e-2dd7f8938b95}": {
+      "entry": {
+        "APP_ID": "{153e4f58-ab96-471a-8423-ca1a3f0cc1b2}",
+        "APP_NAME": "Google Workspace Sync for Microsoft Outlook (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54318776",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{5434b967-e3a6-4c53-ae0e-2dd7f8938b95}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "*Google*",
+          "NAME": "*",
+          "PRODUCT_NAME": "Google Workspace Sync for Microsoft Outlook*",
+          "UPTO_BIN_PRODUCT_VERSION": "4.3.67.65535"
+        },
+        "NAME": "profileeditor.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Google Inc."
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_10_03_01_AMD64",
+          "last": "2025_02_20_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_10_03_01_ARM64",
+          "last": "2025_02_20_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_10_03_01_X86",
+          "last": "2025_02_20_03_02_X86"
+        }
+      },
+      "source": "2025_02_20_03_05_ARM64"
+    }
+  },
+  "id": "54318776"
+}

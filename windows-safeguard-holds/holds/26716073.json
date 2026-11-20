@@ -1,0 +1,60 @@
+{
+  "blocks": {
+    "{c75ebd59-4efb-4267-b0dd-05c83a936bf0}": {
+      "entry": {
+        "APP_ID": "{ccc02d5e-75b1-451b-b69f-63c0bca0cec6}",
+        "APP_NAME": "Surface Book 3 (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26716073",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{c75ebd59-4efb-4267-b0dd-05c83a936bf0}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "{46c01823-b8a9-5b79-ab71-39d398270712}"
+            },
+            {
+              "NAME": "{a8253678-fcf8-542b-af04-f1c3c56eef62}"
+            },
+            {
+              "NAME": "{f4364d37-9bc7-5016-8ef5-dcd54bb857a0}"
+            },
+            {
+              "NAME": "{f4fb7087-4bea-5677-a2c8-d387d223403c}"
+            }
+          ]
+        },
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_06_04_06_01_AMD64",
+          "last": "2020_06_17_03_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_06_04_06_02_ARM64",
+          "last": "2020_06_17_03_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_06_04_06_01_X86",
+          "last": "2020_06_17_03_02_X86"
+        }
+      },
+      "source": "2020_06_17_03_02_X86"
+    }
+  },
+  "id": "26716073"
+}

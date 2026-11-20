@@ -1,0 +1,97 @@
+{
+  "blocks": {
+    "{b993a255-1108-4973-ba15-15333e010ef2}": {
+      "entry": {
+        "APP_ID": "{b2da23b9-bf4a-4f1b-8401-5a6c8bcd13cf}",
+        "APP_NAME": "Ubisoft Snowdrop games",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54580160",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{b993a255-1108-4973-ba15-15333e010ef2}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Ubisoft*",
+          "NAME": "*",
+          "PRODUCT_NAME": "Outlaws*"
+        },
+        "NAME": "Outlaws*.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Ubisoft",
+        "WILDCARD_NAME": "Outlaws*.exe"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_24_04_01_AMD64",
+          "last": "2024_11_14_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_24_04_01_ARM64",
+          "last": "2024_11_14_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_24_04_01_X86",
+          "last": "2024_11_14_03_02_X86"
+        }
+      },
+      "source": "2024_11_14_03_05_ARM64"
+    },
+    "{e7346b60-edb0-49af-969b-8dcc891411af}": {
+      "entry": {
+        "APP_ID": "{b2da23b9-bf4a-4f1b-8401-5a6c8bcd13cf}",
+        "APP_NAME": "Ubisoft Snowdrop games",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54580160",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{e7346b60-edb0-49af-969b-8dcc891411af}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Ubisoft*",
+          "NAME": "*",
+          "PRODUCT_NAME": "Avatar: Frontiers of Pandora*"
+        },
+        "NAME": "afop*.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Ubisoft",
+        "WILDCARD_NAME": "afop*.exe"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_24_04_01_AMD64",
+          "last": "2024_11_14_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_24_04_01_ARM64",
+          "last": "2024_11_14_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_24_04_01_X86",
+          "last": "2024_11_14_03_02_X86"
+        }
+      },
+      "source": "2024_11_14_03_05_ARM64"
+    }
+  },
+  "id": "54580160"
+}

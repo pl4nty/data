@@ -1,0 +1,179 @@
+{
+  "blocks": {
+    "{9857a1e4-20ef-4791-a82d-80b79d8efb13}": {
+      "entry": {
+        "APP_ID": "{8dc13205-ab87-4f2d-8acf-a441a1185068}",
+        "APP_NAME": "Gears 5 and Gears Tactics",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25435695",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{9857a1e4-20ef-4791-a82d-80b79d8efb13}",
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%ProgramFiles%\\WindowsApps\\Microsoft.GanderBaseGame*\\GearGame\\Binaries\\WinStore\\GearsTactics.exe",
+          "NAME": "FileMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_07_07_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_07_07_02_ARM64",
+          "last": "2020_08_06_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_07_07_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    },
+    "{e0758ac3-3702-4936-bd3b-a534492880a6}": {
+      "entry": {
+        "APP_ID": "{8dc13205-ab87-4f2d-8acf-a441a1185068}",
+        "APP_NAME": "Gears 5 and Gears Tactics",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25435695",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{e0758ac3-3702-4936-bd3b-a534492880a6}",
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%ProgramFiles%\\WindowsApps\\Microsoft.HalifaxBaseGame*\\GearGame\\Binaries\\WinStore\\Gears5.exe",
+          "NAME": "FileMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_12_06_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_12_06_02_ARM64",
+          "last": "2020_08_06_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_12_06_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    },
+    "{f2d8bef2-14d3-4edb-b5b5-fd88c3529285}": {
+      "entry": {
+        "APP_ID": "{8dc13205-ab87-4f2d-8acf-a441a1185068}",
+        "APP_NAME": "Gears 5 and Gears Tactics",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25435695",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{f2d8bef2-14d3-4edb-b5b5-fd88c3529285}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "The Coalition",
+          "NAME": "*",
+          "PRODUCT_NAME": "Gears 5"
+        },
+        "NAME": "Gears5.exe",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_12_06_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_12_06_02_ARM64",
+          "last": "2020_08_06_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_12_06_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    },
+    "{f985c2b8-a2a2-4681-a951-1dd8f1605097}": {
+      "entry": {
+        "APP_ID": "{8dc13205-ab87-4f2d-8acf-a441a1185068}",
+        "APP_NAME": "Gears 5 and Gears Tactics",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25435695",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{f985c2b8-a2a2-4681-a951-1dd8f1605097}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "The Coalition",
+          "NAME": "*",
+          "PRODUCT_NAME": "Gears Tactics"
+        },
+        "NAME": "GearsTactics.exe",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_07_07_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_07_07_02_ARM64",
+          "last": "2020_08_06_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_07_07_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    }
+  },
+  "id": "25435695"
+}

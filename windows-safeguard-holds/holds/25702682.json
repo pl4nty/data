@@ -1,0 +1,415 @@
+{
+  "blocks": {
+    "{2589a8b7-dba6-4365-8b29-fdafccd2ae1d}": {
+      "entry": {
+        "APP_ID": "{642b3a08-fb14-426b-85ba-1cac82c6836f}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - ACER",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702682",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{2589a8b7-dba6-4365-8b29-fdafccd2ae1d}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.89.0"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Acer",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5068*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_506c*"
+            }
+          ]
+        },
+        "VENDOR": "ACER"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{5f7d59ba-9b96-4caa-b781-9bcda7986cd8}": {
+      "entry": {
+        "APP_ID": "{642b3a08-fb14-426b-85ba-1cac82c6836f}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - ACER",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702682",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{5f7d59ba-9b96-4caa-b781-9bcda7986cd8}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Acer",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5068*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_506c*"
+            }
+          ]
+        },
+        "VENDOR": "ACER"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{67ac2101-d0db-4b50-a307-9eef46247646}": {
+      "entry": {
+        "APP_ID": "{642b3a08-fb14-426b-85ba-1cac82c6836f}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - ACER",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702682",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{67ac2101-d0db-4b50-a307-9eef46247646}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.89.0"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Acer",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5068*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_506c*"
+            }
+          ]
+        },
+        "VENDOR": "ACER"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{b3a9ed5f-0034-4e77-9be4-c53e688364a7}": {
+      "entry": {
+        "APP_ID": "{642b3a08-fb14-426b-85ba-1cac82c6836f}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - ACER",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702682",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{b3a9ed5f-0034-4e77-9be4-c53e688364a7}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Acer",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5068*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_506c*"
+            }
+          ]
+        },
+        "VENDOR": "ACER"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{c3b80887-b6c5-48ae-ac13-3c435cdc8945}": {
+      "entry": {
+        "APP_ID": "{642b3a08-fb14-426b-85ba-1cac82c6836f}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - ACER",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702682",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{c3b80887-b6c5-48ae-ac13-3c435cdc8945}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Acer",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5068*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_506c*"
+            }
+          ]
+        },
+        "VENDOR": "ACER"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    },
+    "{d836c5b6-be4c-4d84-9b09-dff22a9bd828}": {
+      "entry": {
+        "APP_ID": "{642b3a08-fb14-426b-85ba-1cac82c6836f}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - ACER",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702682",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{d836c5b6-be4c-4d84-9b09-dff22a9bd828}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Acer",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5068*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_506c*"
+            }
+          ]
+        },
+        "VENDOR": "ACER"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_07_23_05_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_07_23_05_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_07_23_05_02_X86"
+        }
+      },
+      "source": "2020_07_23_05_02_X86"
+    }
+  },
+  "id": "25702682"
+}

@@ -1,0 +1,74 @@
+{
+  "blocks": {
+    "{ee624b10-327b-4af0-9896-3ba5c9eed401}": {
+      "entry": {
+        "APP_ID": "{a5c97473-bec4-49b6-a60c-42269428ea54}",
+        "APP_NAME": "Lenovo Rigel device",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "37682047",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "NI22H2",
+        "EXE_ID": "{ee624b10-327b-4af0-9896-3ba5c9eed401}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "NEC",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "M2TKT33A",
+            "REG_VALUE_NAME": "BIOSVersion",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "PC-MKH29EZC7",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "PC-MKH29EZC9",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "VENDOR": "Lenovo"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_01_21_03_01_AMD64",
+          "last": "2026_03_13_07_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_01_21_03_01_ARM64",
+          "last": "2026_03_13_07_01_ARM64"
+        },
+        "X86": {
+          "first": "2022_01_21_03_01_X86",
+          "last": "2026_01_29_03_02_X86"
+        }
+      },
+      "source": "2026_03_13_07_01_ARM64"
+    }
+  },
+  "id": "37682047"
+}

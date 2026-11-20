@@ -1,0 +1,197 @@
+{
+  "blocks": {
+    "{48b2a993-b956-45bf-9be4-564220fd333c}": {
+      "entry": {
+        "APP_ID": "{e9fbc856-39f9-4438-92b8-e00a063c49ef}",
+        "APP_NAME": "EasyAntiCheat",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41990091",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{48b2a993-b956-45bf-9be4-564220fd333c}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Epic Games, Inc.",
+          "NAME": "*"
+        },
+        "NAME": "MidnightGhostHunt.exe",
+        "VENDOR": "Epic Games, Inc"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2022_11_22_03_01_AMD64",
+          "last": "2022_12_06_06_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_11_22_03_01_ARM64",
+          "last": "2022_12_01_04_02_ARM64"
+        }
+      },
+      "source": "2022_12_06_06_01_AMD64"
+    },
+    "{614655f5-12ef-4179-916b-7212ea8f7ddd}": {
+      "entry": {
+        "APP_ID": "{e9fbc856-39f9-4438-92b8-e00a063c49ef}",
+        "APP_NAME": "EasyAntiCheat",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41990091",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{614655f5-12ef-4179-916b-7212ea8f7ddd}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_FILE": [
+            {
+              "NAME": "%ProgramFiles%\\EasyAntiCheat\\EasyAntiCheat.exe"
+            },
+            {
+              "NAME": "%ProgramFiles(X86)%\\EasyAntiCheat\\EasyAntiCheat.exe"
+            }
+          ]
+        },
+        "VENDOR": "Epic Games, Inc"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_11_03_03_01_AMD64",
+          "last": "2022_11_10_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_11_03_03_01_ARM64",
+          "last": "2022_11_10_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_11_03_03_01_X86",
+          "last": "2022_11_10_04_01_X86"
+        }
+      },
+      "source": "2022_11_10_04_02_ARM64"
+    },
+    "{b0b2f0f0-e520-4cf1-a208-6e1e970774c0}": {
+      "entry": {
+        "APP_ID": "{e9fbc856-39f9-4438-92b8-e00a063c49ef}",
+        "APP_NAME": "EasyAntiCheat",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41990091",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{b0b2f0f0-e520-4cf1-a208-6e1e970774c0}",
+        "MATCHING_FILE": {
+          "NAME": "*"
+        },
+        "NAME": "DirtyBombLauncher.exe",
+        "PICK_ONE": {
+          "MATCHING_FILE": [
+            {
+              "COMPANY_NAME": "WarChest Limited",
+              "NAME": "Binaries\\Win32\\ShooterGame-Win32-Shipping.exe",
+              "PRODUCT_NAME": "Dirty Bomb"
+            },
+            {
+              "COMPANY_NAME": "WarChest Limited",
+              "NAME": "Binaries\\Win64\\ShooterGame-Win32-Shipping.exe",
+              "PRODUCT_NAME": "Dirty Bomb"
+            }
+          ]
+        },
+        "VENDOR": "Epic Games, Inc"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2022_11_22_03_01_AMD64",
+          "last": "2022_12_06_06_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_11_22_03_01_ARM64",
+          "last": "2022_12_01_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_11_22_03_01_X86",
+          "last": "2022_12_01_04_01_X86"
+        }
+      },
+      "source": "2022_12_06_06_01_AMD64"
+    },
+    "{b15f288d-9a1f-418f-b0fc-67b5ff108385}": {
+      "entry": {
+        "APP_ID": "{e9fbc856-39f9-4438-92b8-e00a063c49ef}",
+        "APP_NAME": "EasyAntiCheat",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41990091",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{b15f288d-9a1f-418f-b0fc-67b5ff108385}",
+        "MATCHING_FILE": [
+          {
+            "NAME": "*",
+            "PRODUCT_NAME": "RFLauncher"
+          },
+          {
+            "NAME": "RF_Online.bin"
+          }
+        ],
+        "NAME": "RF.exe",
+        "VENDOR": "Epic Games, Inc"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2022_11_22_03_01_AMD64",
+          "last": "2022_12_06_06_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_11_22_03_01_ARM64",
+          "last": "2022_12_01_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_11_22_03_01_X86",
+          "last": "2022_12_01_04_01_X86"
+        }
+      },
+      "source": "2022_12_06_06_01_AMD64"
+    }
+  },
+  "id": "41990091"
+}

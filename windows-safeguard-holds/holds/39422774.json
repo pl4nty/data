@@ -1,0 +1,111 @@
+{
+  "blocks": {
+    "{0d13fdbf-a80c-497f-926c-86ab8ffdea03}": {
+      "entry": {
+        "APP_ID": "{e57de71e-10f7-4416-88ad-82bdeaa7d3c2}",
+        "APP_NAME": "PLAYERUNKNOWNs BATTLEGROUNDS (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "39422774",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{0d13fdbf-a80c-497f-926c-86ab8ffdea03}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Bluehole GinnoGames, Inc.",
+          "NAME": "*",
+          "PRODUCT_NAME": "PLAYERUNKNOWN's BATTLEGROUNDS"
+        },
+        "NAME": "TslGame.exe",
+        "PICK_ONE": {
+          "MATCH_PLUGIN": [
+            {
+              "COMMAND_LINE": "\"%systemdrive%\\Program Files (x86)\\Steam\\userdata\\*\\config\\localconfig.vdf\" -MatchingText -dx12 -Encoding UTF8",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "\"%systemdrive%\\Program Files\\Steam\\userdata\\*\\config\\localconfig.vdf\" -MatchingText -dx12 -Encoding UTF8",
+              "NAME": "FileMatchingPlugin"
+            }
+          ]
+        },
+        "RUNTIME_PLATFORM": 39,
+        "VENDOR": "Bluehole GinnoGames, Inc"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2022_06_09_04_01_AMD64",
+          "last": "2022_09_29_02_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_06_09_04_01_ARM64",
+          "last": "2022_09_29_02_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_06_09_04_01_X86",
+          "last": "2022_09_29_02_01_X86"
+        }
+      },
+      "source": "2022_09_29_02_02_ARM64"
+    },
+    "{43ed1362-076e-4e79-8856-0e6727cb05aa}": {
+      "entry": {
+        "APP_ID": "{e57de71e-10f7-4416-88ad-82bdeaa7d3c2}",
+        "APP_NAME": "PLAYERUNKNOWNs BATTLEGROUNDS (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "39422774",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{43ed1362-076e-4e79-8856-0e6727cb05aa}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Bluehole GinnoGames, Inc.",
+          "NAME": "*",
+          "PRODUCT_NAME": "PLAYERUNKNOWN's BATTLEGROUNDS"
+        },
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%systemdrive%\\Users\\*\\AppData\\Local\\TslGame\\Saved\\Config\\WindowsNoEditor\\GameUserSettings.ini -MatchingText GraphicsAPI=DX12 -Encoding UTF8",
+          "NAME": "FileMatchingPlugin"
+        },
+        "NAME": "TslGame.exe",
+        "RUNTIME_PLATFORM": 39,
+        "VENDOR": "Bluehole GinnoGames, Inc"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2022_06_09_04_01_AMD64",
+          "last": "2022_09_29_02_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_06_09_04_01_ARM64",
+          "last": "2022_09_29_02_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_06_09_04_01_X86",
+          "last": "2022_09_29_02_01_X86"
+        }
+      },
+      "source": "2022_09_29_02_02_ARM64"
+    }
+  },
+  "id": "39422774"
+}

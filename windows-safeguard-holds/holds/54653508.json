@@ -1,0 +1,49 @@
+{
+  "blocks": {
+    "{9f24d944-5445-4eff-ac27-7a5481cf118d}": {
+      "entry": {
+        "APP_ID": "{d7c9fb4f-e07e-4c04-a7cb-eead28df33d5}",
+        "APP_NAME": "ahsProtector (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54653508",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{9f24d944-5445-4eff-ac27-7a5481cf118d}",
+        "MATCHING_FILE": {
+          "NAME": "%WinDir%\\System32\\drivers\\ahs_protect.sys",
+          "PRODUCT_NAME": "ahs_protect",
+          "UPTO_BIN_PRODUCT_VERSION": "1.1.5.21072"
+        },
+        "NAME": "",
+        "VENDOR": "北京深思数盾科技股份有限公司"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_31_03_01_AMD64",
+          "last": "2025_05_01_04_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_31_03_01_ARM64",
+          "last": "2025_05_01_04_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_31_03_01_X86",
+          "last": "2025_05_01_04_02_X86"
+        }
+      },
+      "source": "2025_05_01_04_05_ARM64"
+    }
+  },
+  "id": "54653508"
+}

@@ -1,0 +1,61 @@
+{
+  "blocks": {
+    "{494d7c2d-523e-4c6f-9e79-74e72f8072bb}": {
+      "entry": {
+        "APP_ID": "{db090c00-2e6c-4ad5-852e-cc082df55ce3}",
+        "APP_NAME": "RawMouse",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "24868026",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{494d7c2d-523e-4c6f-9e79-74e72f8072bb}",
+        "MATCHING_FILE": [
+          {
+            "NAME": "%WinDir%\\system32\\GameInput.dll"
+          },
+          {
+            "BIN_PRODUCT_VERSION": "10.0.18362.65535",
+            "COMPANY_NAME": "Microsoft Corporation",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "%WinDir%\\system32\\GameInput.dll"
+          },
+          {
+            "BIN_PRODUCT_VERSION": "10.0.18363.65535",
+            "COMPANY_NAME": "Microsoft Corporation",
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "%WinDir%\\system32\\GameInput.dll"
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_02_20_06_01_AMD64",
+          "last": "2020_06_04_06_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_02_20_06_05_ARM64",
+          "last": "2020_06_04_06_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_02_20_06_01_X86",
+          "last": "2020_06_04_06_02_X86"
+        }
+      },
+      "source": "2020_06_04_06_02_X86"
+    }
+  },
+  "id": "24868026"
+}

@@ -1,0 +1,98 @@
+{
+  "blocks": {
+    "{643c57d3-deee-4d0b-8015-1ecb801fd8ad}": {
+      "entry": {
+        "APP_ID": "{b0aa24aa-6573-4513-9bd6-b63ae98b4472}",
+        "APP_NAME": "ASUS devices that hit 0xc000021a error during reboot",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "42328698",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "ZN23H2",
+        "EXE_ID": "{643c57d3-deee-4d0b-8015-1ecb801fd8ad}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "ASUSTeK COMPUTER INC.*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook_ASUSLaptop TP470EA_TP470EA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook_ASUSLaptop X415EA_X415EA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook_ASUSLaptop X421EA_X421EA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook_ASUSLaptop X513EA_X513EA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook_ASUSLaptop X515EA_X515EA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          },
+          {
+            "MATCH_PLUGIN": [
+              {
+                "COMMAND_LINE": "SModeState int 1 eq",
+                "NAME": "DeviceCensusMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "SModeState int 2 eq",
+                "NAME": "DeviceCensusMatchingPlugin"
+              }
+            ]
+          }
+        ],
+        "VENDOR": "ASUS"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_12_01_04_01_AMD64",
+          "last": "2023_08_17_04_04_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_12_01_04_01_ARM64",
+          "last": "2023_08_17_04_04_ARM64"
+        },
+        "X86": {
+          "first": "2022_12_01_04_01_X86",
+          "last": "2023_08_17_04_02_X86"
+        }
+      },
+      "source": "2023_08_17_04_04_ARM64"
+    }
+  },
+  "id": "42328698"
+}

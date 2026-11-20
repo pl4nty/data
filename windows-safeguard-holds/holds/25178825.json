@@ -1,0 +1,2365 @@
+{
+  "blocks": {
+    "{2ffe2850-3452-461c-bc5e-98db33db8e42}": {
+      "entry": {
+        "APP_ID": "{264da9e6-afab-4787-8ae6-bcfd84f45133}",
+        "APP_NAME": "UCI64A audio driver - Asus",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25178825",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{2ffe2850-3452-461c-bc5e-98db33db8e42}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "ASUSTeK COMPUTER INC.",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "VivoBook S15 X510UF",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCH_PLUGIN": [
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a0?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a1?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a2?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a3?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a4?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a5?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a6?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a7?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a8?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a9?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a1??.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a20?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a21?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a22?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a230.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a231.dll -FromBinVersion 7.0.0.0 -UptoBinVersion 7.231.2.*",
+                "NAME": "FileMatchingPlugin"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "ASUSPRO P1440UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "ASUSPRO P2540UB",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "E402BA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "T103HAF",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "TP510UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "UX310UAR",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "UX410UAR",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook E14 E402WA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "VivoBook S14 X411UF",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X411UNV",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X505BA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X505BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X510UA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X510UAR",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X510UNR",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X510URR",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X542BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X555QA",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X555QG",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X751BP",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "ZenBook 13 UX310UFR",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "ZenBook 14 UX410UFR",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Synaptics"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_14_04_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_14_04_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_14_04_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{53fb042f-b2cf-4c1e-9931-929b3c7907b4}": {
+      "entry": {
+        "APP_ID": "{114ab6eb-f2bf-427c-a817-c228bf26c93f}",
+        "APP_NAME": "UCI64A audio driver - Lenovo",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25178825",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{53fb042f-b2cf-4c1e-9931-929b3c7907b4}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Lenovo",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "X1 Carbon (4th Gen)",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "81AK",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%WinDir%\\System32\\uci64a231.dll -FromBinVersion 7.231.4.0 -UptoBinVersion 7.*.*.*",
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "FileMatchingPlugin"
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCH_PLUGIN": [
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a0?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a1?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a2?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a3?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a4?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a5?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a6?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a7?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a8?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a9?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a1??.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a20?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a21?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a22?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a230.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a231.dll -FromBinVersion 7.0.0.0 -UptoBinVersion 7.231.3.*",
+                "NAME": "FileMatchingPlugin"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000UCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN001ACD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA002CD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA02XCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA04VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003SUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003WUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81A6",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AK",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B0",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B5",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81BS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CL",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CM",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81FS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HQ",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Synaptics"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_14_04_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_14_04_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_14_04_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{691d652a-ea4b-4573-8c60-661049a36185}": {
+      "entry": {
+        "APP_ID": "{fe1f946e-d97d-4adc-9450-30fe1dd5c1f1}",
+        "APP_NAME": "UCI64A audio driver - HP",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25178825",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{691d652a-ea4b-4573-8c60-661049a36185}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "HP",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "HP ProBook 650 G2 Notebook PC",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%WinDir%\\System32\\uci64a231.dll -FromBinVersion 7.231.4.0 -UptoBinVersion 7.*.*.*",
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "FileMatchingPlugin"
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCH_PLUGIN": [
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a0?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a1?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a2?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a3?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a4?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a5?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a6?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a7?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a8?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a9?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a1??.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a20?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a21?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a22?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a230.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a231.dll -FromBinVersion 7.0.0.0 -UptoBinVersion 7.231.3.*",
+                "NAME": "FileMatchingPlugin"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1BS68UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1BS69UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1DV97AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1FY43UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1FY84UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1FY85UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1GG07UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1HM23AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1KB99UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1LR32AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1LR34AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1LU56AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1MJ74AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1MJ76AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1NW43UP#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1VR53UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "1WB83AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2EE92AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FA60AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FA62AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FA64AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FA66AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FA68AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FA70AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FH32AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FH33AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FV34UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FW43UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FW44UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FZ80AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FZ81AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FZ82AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FZ83AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FZ84AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2FZ85AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2GL98AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2GN02AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2GN04AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2LA60UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2LA64UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2LN05US#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2MG23AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2MN15AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2QY20EC#ABF",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2RN24UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2ST09UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2SZ67AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2SZ73AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2UP22US#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2UP88AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2US83AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2UZ41AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2VG42AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2YH15AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2YH17AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2YZ04AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2YZ98UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2ZA82AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2ZA83AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2ZV64AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2ZV65AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2ZV68AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2ZX70AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2ZZ89AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "2ZZ91AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "3AN71UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "3FE60US#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "3LJ74PA#ACJ",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "3RF06UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "3RF07UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "3RU03EC#ABF",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "3UJ21UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "3WQ22EC#ACJ",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "3YG62UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "3YG93UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "3YH32UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "4BW89UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "4DQ09UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "4FZ42AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "4HJ75UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "4QJ87UP#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "4RU73UP#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "4XN88UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "5LZ06UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "5MA19UC#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "6VV61PA#ABJ",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "L3C64AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "L3C66AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "L4Q16AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "L4Q17AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "L4Q19AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "L4Q21AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Model 9015",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "V1H23UT#ABA",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X3T22AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X3T23AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X3U19AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X3U20AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X3U21AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y1B39AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y2Z63AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y3A16AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y3A18AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y3A52AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y3E02AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y3F34AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y3K68AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y4R85AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y5F30AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y5W43AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y7B82AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y8C75AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Y8C76AV",
+                "REG_VALUE_NAME": "SystemSKU",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Synaptics"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_14_04_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_14_04_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_14_04_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{6a902cd3-e5d7-4ca6-b2e2-bc2b73c5513a}": {
+      "entry": {
+        "APP_ID": "{33e6fbe6-636c-4fc7-8437-775e45607e77}",
+        "APP_NAME": "UCI64A audio driver - Diverse OEMs",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25178825",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{6a902cd3-e5d7-4ca6-b2e2-bc2b73c5513a}",
+        "MATCHING_REG": [
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "ASUSTeK COMPUTER INC.",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Dell Inc.",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Dynabook Inc*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "HP",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Lenovo",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "LG*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Toshiba",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%WinDir%\\System32\\uci64a231.dll -FromBinVersion 7.231.4.0 -UptoBinVersion 7.*.*.*",
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "FileMatchingPlugin"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCH_PLUGIN": [
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a0?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a1?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a2?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a3?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a4?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a5?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a6?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a7?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a8?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a9?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a1??.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a20?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a21?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a22?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a230.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a231.dll -FromBinVersion 7.0.0.0 -UptoBinVersion 7.231.3.*",
+              "NAME": "FileMatchingPlugin"
+            }
+          ]
+        },
+        "VENDOR": "Synaptics"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_14_04_01_AMD64",
+          "last": "2021_01_07_05_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_14_04_02_ARM64",
+          "last": "2021_01_07_05_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_14_04_01_X86",
+          "last": "2021_01_07_05_03_X86"
+        }
+      },
+      "source": "2021_01_07_05_03_X86"
+    },
+    "{7797c164-22ff-4c60-837e-0b92f8051920}": {
+      "entry": {
+        "APP_ID": "{b2743b1f-de9b-4584-9390-d473c8e9372b}",
+        "APP_NAME": "UCI64A audio driver - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25178825",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{7797c164-22ff-4c60-837e-0b92f8051920}",
+        "MATCHING_DEVICE": {
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+        },
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Dynabook Inc*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Satellite L50-C",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCH_PLUGIN": [
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a0?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a1?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a2?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a3?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a4?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a5?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a6?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a7?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a8?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a9?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a1??.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a20?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a21?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a22?.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a230.dll",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\uci64a231.dll -FromBinVersion 7.0.0.0 -UptoBinVersion 7.231.2.*",
+              "NAME": "FileMatchingPlugin"
+            }
+          ]
+        },
+        "VENDOR": "Synaptics"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_14_04_01_AMD64",
+          "last": "2020_09_11_04_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_14_04_02_ARM64",
+          "last": "2020_09_11_04_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_14_04_01_X86",
+          "last": "2020_09_11_04_03_X86"
+        }
+      },
+      "source": "2020_09_11_04_03_X86"
+    },
+    "{b695b9e5-60dc-4827-9a59-1ee9ec837ecd}": {
+      "entry": {
+        "APP_ID": "{b2743b1f-de9b-4584-9390-d473c8e9372b}",
+        "APP_NAME": "UCI64A audio driver - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25178825",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{b695b9e5-60dc-4827-9a59-1ee9ec837ecd}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Toshiba",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Satellite L50-C",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%WinDir%\\System32\\uci64a231.dll -FromBinVersion 7.231.4.0 -UptoBinVersion 7.*.*.*",
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "FileMatchingPlugin"
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCH_PLUGIN": [
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a0?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a1?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a2?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a3?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a4?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a5?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a6?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a7?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a8?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a9?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a1??.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a20?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a21?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a22?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a230.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a231.dll -FromBinVersion 7.0.0.0 -UptoBinVersion 7.231.3.*",
+                "NAME": "FileMatchingPlugin"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f840&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f841&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f842&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f843&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f844&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f845&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*0}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*1}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*2}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*3}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*4}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*5}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*6}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*7}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Synaptics"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_14_04_01_AMD64",
+          "last": "2021_01_28_04_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_14_04_02_ARM64",
+          "last": "2021_01_28_04_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_14_04_01_X86",
+          "last": "2021_01_28_04_03_X86"
+        }
+      },
+      "source": "2021_01_28_04_03_X86"
+    },
+    "{d7fbc618-fee7-4f1c-8122-a1dc1f5b6f4d}": {
+      "entry": {
+        "APP_ID": "{f058b345-14a5-4977-bc17-25ac2194d32c}",
+        "APP_NAME": "UCI64A audio driver - LG",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25178825",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{d7fbc618-fee7-4f1c-8122-a1dc1f5b6f4d}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "LG*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%WinDir%\\System32\\uci64a231.dll -FromBinVersion 7.231.4.0 -UptoBinVersion 7.*.*.*",
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "FileMatchingPlugin"
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCH_PLUGIN": [
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a0?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a1?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a2?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a3?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a4?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a5?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a6?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a7?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a8?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a9?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a1??.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a20?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a21?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a22?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a230.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a231.dll -FromBinVersion 7.0.0.0 -UptoBinVersion 7.231.3.*",
+                "NAME": "FileMatchingPlugin"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": {
+              "NAME": "hdaudio\\func_01&ven_14f1&dev_2008&subsys_18540271&rev_1001*"
+            },
+            "MATCHING_REG": {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "LG Gram Z980 13.3* 13Z980",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            "MATCH_LOGIC_NOT": true
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*0}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*1}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*2}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*3}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*4}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*5}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*6}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*7}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Synaptics"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_14_04_01_AMD64",
+          "last": "2021_01_28_04_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_14_04_02_ARM64",
+          "last": "2021_01_28_04_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_14_04_01_X86",
+          "last": "2021_01_28_04_03_X86"
+        }
+      },
+      "source": "2021_01_28_04_03_X86"
+    },
+    "{de87448d-8a9d-4cf2-8ceb-3035dc3fd999}": {
+      "entry": {
+        "APP_ID": "{a418f311-fcd1-44b6-8b05-58ed34842e10}",
+        "APP_NAME": "UCI64A audio driver - DELL",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25178825",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{de87448d-8a9d-4cf2-8ceb-3035dc3fd999}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dell Inc.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCH_PLUGIN": [
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a0?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a1?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a2?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a3?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a4?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a5?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a6?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a7?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a8?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a9?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a1??.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a20?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a21?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a22?.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a230.dll",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\uci64a231.dll -FromBinVersion 7.0.0.0 -UptoBinVersion 7.231.2.*",
+                "NAME": "FileMatchingPlugin"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Latitude 3400",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Latitude 5500",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "OptiPlex 3050",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "OptiPlex 3060",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Synaptics"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_14_04_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_14_04_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_14_04_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    }
+  },
+  "id": "25178825"
+}

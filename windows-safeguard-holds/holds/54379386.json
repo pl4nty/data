@@ -1,0 +1,59 @@
+{
+  "blocks": {
+    "{a8649650-4e1e-4f7f-b59a-1c04e5b577ea}": {
+      "entry": {
+        "APP_ID": "{5378f365-bd66-4681-a0f8-24115bc27b4d}",
+        "APP_NAME": "Western Digital NVMe Disk (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54379386",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "EXE_ID": "{a8649650-4e1e-4f7f-b59a-1c04e5b577ea}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCH_PLUGIN": [
+            {
+              "COMMAND_LINE": "ROOT\\CIMV2 Win32_DiskDrive 0 Model wstring * eq WHERE (Model='WD_BLACK SN770 2TB' or Model='WD_BLACK SN770M 2TB' or Model='SanDisk Extreme 2TB X3N')  and (FirmwareRevision='731030WD' or FirmwareRevision='731100WD' or FirmwareRevision='731120WD')",
+              "NAME": "WmiQueryMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "ROOT\\CIMV2 Win32_DiskDrive 0 Model wstring * eq WHERE Model='WD Blue SN5000 2TB' and (FirmwareRevision='291000WD' or FirmwareRevision='291010WD')",
+              "NAME": "WmiQueryMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "ROOT\\CIMV2 Win32_DiskDrive 0 Model wstring * eq WHERE Model='WD Blue SN580 2TB' and (FirmwareRevision='281010WD' or FirmwareRevision='281040WD')",
+              "NAME": "WmiQueryMatchingPlugin"
+            }
+          ]
+        },
+        "VENDOR": "Western Digital"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_17_04_01_AMD64",
+          "last": "2025_04_17_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_17_04_01_ARM64",
+          "last": "2025_04_17_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_17_04_01_X86",
+          "last": "2025_04_17_03_02_X86"
+        }
+      },
+      "source": "2025_04_17_03_05_ARM64"
+    }
+  },
+  "id": "54379386"
+}

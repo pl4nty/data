@@ -1,0 +1,167 @@
+{
+  "blocks": {
+    "{d5cb328d-06d2-4839-9926-3f6eacd278f3}": {
+      "entry": {
+        "APP_ID": "{a5653e78-2a71-4e16-b6d1-38f77a1b8990}",
+        "APP_NAME": "2009C Manifest Regression (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29570481",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{d5cb328d-06d2-4839-9926-3f6eacd278f3}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "18363",
+            "REG_VALUE_NAME": "CurrentBuildNumber",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_DWORD": 1110,
+            "REG_VALUE_NAME": "UBR",
+            "REG_VALUE_TYPE": 4
+          }
+        ],
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_09_25_01_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_09_25_01_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_09_25_01_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{d98b0faf-3e88-433a-ad3c-dc110a8a25ff}": {
+      "entry": {
+        "APP_ID": "{a5653e78-2a71-4e16-b6d1-38f77a1b8990}",
+        "APP_NAME": "2009C Manifest Regression (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29570481",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{d98b0faf-3e88-433a-ad3c-dc110a8a25ff}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "17763",
+            "REG_VALUE_NAME": "CurrentBuildNumber",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_DWORD": 1490,
+            "REG_VALUE_NAME": "UBR",
+            "REG_VALUE_TYPE": 4
+          }
+        ],
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_09_25_01_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_09_25_01_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_09_25_01_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{e4311243-5b15-4862-8343-8126125ac6d7}": {
+      "entry": {
+        "APP_ID": "{a5653e78-2a71-4e16-b6d1-38f77a1b8990}",
+        "APP_NAME": "2009C Manifest Regression (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29570481",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{e4311243-5b15-4862-8343-8126125ac6d7}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "18362",
+            "REG_VALUE_NAME": "CurrentBuildNumber",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_DWORD": 1110,
+            "REG_VALUE_NAME": "UBR",
+            "REG_VALUE_TYPE": 4
+          }
+        ],
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_09_25_01_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_09_25_01_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_09_25_01_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    }
+  },
+  "id": "29570481"
+}

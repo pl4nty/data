@@ -1,0 +1,459 @@
+{
+  "blocks": {
+    "{72cb816c-7275-4d68-a0c8-4a7a483b381a}": {
+      "entry": {
+        "APP_ID": "{143bb262-fdc6-4a07-96f7-7d4f2b7586f8}",
+        "APP_NAME": "Lenovo/Dynabook devices with drivers that use ONNXRuntime (WU Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "53340062",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{72cb816c-7275-4d68-a0c8-4a7a483b381a}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "*Dynabook*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*G83/LW*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*GA83/XW*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*GCX83/VLE*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*GCX83/WLE*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*GS5/VJL*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*GZ/HVL*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*GZ/HWL*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*GZ/LWL*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*P1-G6WN-BL*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*PORTEGE X40L-K*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*RCX74/WLE*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*VZ/HVL*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*0}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*1}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*2}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*3}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*4}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*5}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*6}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*7}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Lenovo"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_03_02_01_AMD64",
+          "last": "2025_09_11_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_03_02_01_ARM64",
+          "last": "2025_09_11_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_03_02_01_X86",
+          "last": "2025_09_11_03_02_X86"
+        }
+      },
+      "source": "2025_09_11_03_05_ARM64"
+    },
+    "{c6f2b9e1-d0d5-421d-a9b7-5c1eefa9910d}": {
+      "entry": {
+        "APP_ID": "{143bb262-fdc6-4a07-96f7-7d4f2b7586f8}",
+        "APP_NAME": "Lenovo/Dynabook devices with drivers that use ONNXRuntime (WU Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "53340062",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{c6f2b9e1-d0d5-421d-a9b7-5c1eefa9910d}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "*Lenovo*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*20L5A01FHH*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*20L6S29D00*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*20L6S4T80H*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*20L9CTO1WW*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*20LAS61K00*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*81X2*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*81X8*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*82HU*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*82JU*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*82K2*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*82KT*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*82KU*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*82LX*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*82MF*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*82SX*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*82U9*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*82XQ*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*82XX*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*82YL*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*82YT*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*83EQ*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*0}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*1}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*2}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*3}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*4}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*5}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*6}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*7}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Lenovo"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_03_02_01_AMD64",
+          "last": "2025_09_11_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_03_02_01_ARM64",
+          "last": "2025_09_11_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_03_02_01_X86",
+          "last": "2025_09_11_03_02_X86"
+        }
+      },
+      "source": "2025_09_11_03_05_ARM64"
+    }
+  },
+  "id": "53340062"
+}

@@ -1,0 +1,72 @@
+{
+  "blocks": {
+    "{152fa8e0-cb1c-4ad3-9e73-6843a1f22ab2}": {
+      "entry": {
+        "APP_ID": "{b7153b09-8208-4ee4-bad3-7ed80a055ae8}",
+        "APP_NAME": "Samsung Galaxy Book2 Go and Galaxy Book3 Go",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "55430927",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{152fa8e0-cb1c-4ad3-9e73-6843a1f22ab2}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "*SAMSUNG*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "Galaxy Book2 Go",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "Galaxy Book2 Go 5G",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "Galaxy Book3 Go 5G",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "VENDOR": "Samsung"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_12_11_03_01_AMD64",
+          "last": "2025_03_06_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_12_11_03_01_ARM64",
+          "last": "2025_03_06_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_12_11_03_01_X86",
+          "last": "2025_03_06_03_02_X86"
+        }
+      },
+      "source": "2025_03_06_03_05_ARM64"
+    }
+  },
+  "id": "55430927"
+}

@@ -1,0 +1,1747 @@
+{
+  "blocks": {
+    "{23096d32-3474-4c66-88ea-9c2613d67b50}": {
+      "entry": {
+        "APP_ID": "{23148a95-9c7b-4808-bfd4-a2eeb694ff5c}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Lenovo",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702617",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{23096d32-3474-4c66-88ea-9c2613d67b50}",
+        "MATCHING_DEVICE": {
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "hdaudio\\func_01&ven_14f1&dev_5069&subsys_17aac005&rev_1003*"
+        },
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Lenovo",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "81AK",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1f86*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5115*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000UCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN001ACD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA002CD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA004CD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA02XCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA04VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003SUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003WUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81A6",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81A7",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AK",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B0",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B5",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81BS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CL",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CM",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81FS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HK",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HQ",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Lenovo"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{6a68cd4f-3a7f-4b90-9ada-995d05f3da8f}": {
+      "entry": {
+        "APP_ID": "{23148a95-9c7b-4808-bfd4-a2eeb694ff5c}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Lenovo",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702617",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{6a68cd4f-3a7f-4b90-9ada-995d05f3da8f}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.88.65535"
+        },
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Lenovo",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "81AK",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1f86*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5115*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000UCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN001ACD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA002CD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA004CD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA02XCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA04VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003SUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003WUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81A6",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81A7",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AK",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B0",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B5",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81BS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CL",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CM",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81FS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HK",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HQ",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Lenovo"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{b95e2961-99f4-42bd-9414-1ef8352e5515}": {
+      "entry": {
+        "APP_ID": "{23148a95-9c7b-4808-bfd4-a2eeb694ff5c}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Lenovo",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702617",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{b95e2961-99f4-42bd-9414-1ef8352e5515}",
+        "MATCHING_DEVICE": {
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "hdaudio\\func_01&ven_14f1&dev_5069&subsys_17aac005&rev_1003*"
+        },
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Lenovo",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "81AK",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1f86*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5115*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000UCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN001ACD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA002CD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA004CD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA02XCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA04VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003SUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003WUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81A6",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81A7",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AK",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B0",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B5",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81BS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CL",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CM",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81FS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HK",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HQ",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Lenovo"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{c2a6ca75-f134-450c-be6b-ec9669691422}": {
+      "entry": {
+        "APP_ID": "{23148a95-9c7b-4808-bfd4-a2eeb694ff5c}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Lenovo",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702617",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{c2a6ca75-f134-450c-be6b-ec9669691422}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Lenovo",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "81AK",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1f86*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5115*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000UCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN001ACD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA002CD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA004CD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA02XCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA04VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003SUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003WUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81A6",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81A7",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AK",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B0",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B5",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81BS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CL",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CM",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81FS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HK",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HQ",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Lenovo"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{cffc9c68-2a9e-415c-aa8a-551c595add77}": {
+      "entry": {
+        "APP_ID": "{23148a95-9c7b-4808-bfd4-a2eeb694ff5c}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Lenovo",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702617",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{cffc9c68-2a9e-415c-aa8a-551c595add77}",
+        "MATCHING_DEVICE": {
+          "MATCH_LOGIC_NOT": true,
+          "NAME": "hdaudio\\func_01&ven_14f1&dev_5069&subsys_17aac005&rev_1003*"
+        },
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.88.65535"
+        },
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Lenovo",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "81AK",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1f86*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5115*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000UCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN001ACD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA002CD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA004CD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA02XCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA04VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003SUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003WUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81A6",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81A7",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AK",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B0",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B5",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81BS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CL",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CM",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81FS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HK",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HQ",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Lenovo"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{de2f59d4-fa7f-4111-b52e-525ce5da87b0}": {
+      "entry": {
+        "APP_ID": "{23148a95-9c7b-4808-bfd4-a2eeb694ff5c}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Lenovo",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702617",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{de2f59d4-fa7f-4111-b52e-525ce5da87b0}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Lenovo",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "81AK",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_1f86*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_2008*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5115*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000UCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN000VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KN001ACD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA002CD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA004CD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA02XCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KNA04VCD",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003SUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "20KS003WUS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81A6",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81A7",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AK",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81AX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B0",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81B5",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81BS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CL",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81CM",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81FS",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HK",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HN",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HQ",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "81HX",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Lenovo"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    }
+  },
+  "id": "25702617"
+}

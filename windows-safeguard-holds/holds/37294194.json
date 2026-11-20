@@ -1,0 +1,48 @@
+{
+  "blocks": {
+    "{a5978af3-2a00-4e72-be71-ff5d327f4209}": {
+      "entry": {
+        "APP_ID": "{2bda3c42-56fa-4362-9ff5-4cc1aac11cd5}",
+        "APP_NAME": "Trihedral VTScada",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "37294194",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "NI22H2",
+        "EXE_ID": "{a5978af3-2a00-4e72-be71-ff5d327f4209}",
+        "MATCHING_FILE": {
+          "NAME": "*",
+          "PRODUCT_NAME": "VTScada"
+        },
+        "NAME": "VTS.exe",
+        "VENDOR": "Trihedral Engineering Limited"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2021_12_16_03_01_AMD64",
+          "last": "2022_04_28_02_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_12_16_03_01_ARM64",
+          "last": "2022_04_28_02_01_ARM64"
+        },
+        "X86": {
+          "first": "2021_12_16_03_01_X86",
+          "last": "2022_04_28_02_01_X86"
+        }
+      },
+      "source": "2022_04_28_02_01_X86"
+    }
+  },
+  "id": "37294194"
+}

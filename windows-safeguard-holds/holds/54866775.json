@@ -1,0 +1,58 @@
+{
+  "blocks": {
+    "{9c0ab4b3-8c68-4d83-b5db-1de62902fb46}": {
+      "entry": {
+        "APP_ID": "{ec255503-4d21-4409-aa48-6e2656bde5bb}",
+        "APP_NAME": "ASUS X712EA",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54866775",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{9c0ab4b3-8c68-4d83-b5db-1de62902fb46}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*ASUS*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*X712EA*",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "ASUS"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_11_06_03_01_AMD64",
+          "last": "2025_03_06_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_11_06_03_01_ARM64",
+          "last": "2025_03_06_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_11_06_03_01_X86",
+          "last": "2025_03_06_03_02_X86"
+        }
+      },
+      "source": "2025_03_06_03_05_ARM64"
+    }
+  },
+  "id": "54866775"
+}

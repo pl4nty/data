@@ -1,0 +1,51 @@
+{
+  "blocks": {
+    "{f3d23aa2-bc02-4edc-8994-e0e16898fe47}": {
+      "entry": {
+        "APP_ID": "{13705231-ab5c-45bc-8b32-1627121df7a2}",
+        "APP_NAME": "Devices with Mixed Reality FOD",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41766570",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{f3d23aa2-bc02-4edc-8994-e0e16898fe47}",
+        "MATCHING_FILE": {
+          "NAME": "%WinDir%\\HoloShell\\HoloShellApp.exe"
+        },
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "HKEY_USERS\\*\\Software\\Microsoft\\Windows\\CurrentVersion\\Holographic ValueSearch OnDeviceLearningCompleted eq 0x1 REG_DWORD",
+          "NAME": "RegistryMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_10_20_12_01_AMD64",
+          "last": "2022_12_06_06_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_10_20_12_01_ARM64",
+          "last": "2022_12_01_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_10_20_12_01_X86",
+          "last": "2022_12_01_04_01_X86"
+        }
+      },
+      "source": "2022_12_06_06_01_AMD64"
+    }
+  },
+  "id": "41766570"
+}
