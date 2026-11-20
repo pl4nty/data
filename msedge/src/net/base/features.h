@@ -528,6 +528,10 @@ NET_EXPORT BASE_DECLARE_FEATURE_PARAM(size_t, kMaxReportBodySizeKB);
 // but not on WebView (until crbug.com/1430082 has been fixed).
 NET_EXPORT BASE_DECLARE_FEATURE(kMigrateSessionsOnNetworkChangeV2);
 
+// Enables falling back to the initial DNS-resolved IPv4 address when a QUIC
+// session connected over IPv6 attempts to migrate to an IPv4-only network.
+NET_EXPORT BASE_DECLARE_FEATURE(kEnableQuicV6ToV4Migration);
+
 // Enables binding of cookies to the port that originally set them by default.
 NET_EXPORT BASE_DECLARE_FEATURE(kEnablePortBoundCookies);
 
@@ -679,6 +683,10 @@ NET_EXPORT BASE_DECLARE_FEATURE(kNoVarySearchIgnoreUnrecognizedKeys);
 // Enables enforcement of One-RFC6962 policy for Certificate Transparency. When
 // disabled, Chrome does not distinguish between SCTs based on log type.
 NET_EXPORT BASE_DECLARE_FEATURE(kEnforceOneRfc6962CtPolicy);
+
+// When enabled, CRLSet stores blocked serials in a compact representation
+// instead of std::vector<std::vector<uint8_t>> per issuer.
+NET_EXPORT BASE_DECLARE_FEATURE(kCRLSetCompactSerials);
 
 // Finch experiment to select a disk cache backend.
 enum class DiskCacheBackend {
@@ -873,11 +881,9 @@ NET_EXPORT BASE_DECLARE_FEATURE(kTLSTrustAnchorIDs);
 // Controls whether TLS Trust Anchor IDs that are not for MTCs are sent.
 NET_EXPORT BASE_DECLARE_FEATURE(kNonMtcTrustAnchorIDs);
 
-#if BUILDFLAG(CHROME_ROOT_STORE_SUPPORTED)
 // Enables support for Merkle Tree Certificates. `kTLSTrustAnchorIDs` must also
 // be enabled for this to be useful.
 NET_EXPORT BASE_DECLARE_FEATURE(kVerifyMTCs);
-#endif
 
 // Indicates if the client is participating in TCP socket pool limit
 // randomization. The params below define the bounds for the probability.
@@ -1220,6 +1226,18 @@ NET_EXPORT BASE_DECLARE_FEATURE(
 // where //net doesn't build the Rust decoder, as in Cronet (see
 // `use_rust_brotli_decoder` in //net/BUILD.gn).
 NET_EXPORT BASE_DECLARE_FEATURE(kRustBrotliInNet);
+
+// If enabled, proxy server ports are checked against
+// `IsPortAllowedForScheme()`.
+// TODO(crbug.com/574902296): Remove the `base::Feature` once it has been
+// verified safe.
+NET_EXPORT BASE_DECLARE_FEATURE(kRestrictProxyPorts);
+
+// If enabled, statusless (`HTTP/0.9` / `ICY`) responses are rejected for
+// non-tunneled HTTP proxy requests.
+// TODO(crbug.com/574902296): Remove the `base::Feature` once it has been
+// verified safe.
+NET_EXPORT BASE_DECLARE_FEATURE(kRejectHttp09FromHttpProxy);
 
 }  // namespace net::features
 

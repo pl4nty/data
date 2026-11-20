@@ -1,0 +1,19 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+# Keep the supported settings in sync with raw_ptr_plugin_config.yaml.
+# Edge's bundled plugin does not yet accept excluded_pointer_types.
+check_raw_ptr_in_container:
+  enabled: true
+  override_defaults: true
+  included_types:
+    - "std::stack"
+    - "std::unordered_set"
+    - "std::deque"
+    - "std::tuple"
+    - "std::variant"
+    - "std::list"
+    - "std::queue"
+    - "std::set"
+    - "base::internal::flat_tree"

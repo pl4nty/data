@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 34422919,
-    "file_count": 4096
+    "size": 34442145,
+    "file_count": 4097
   },
   {
     "name": "boringssl",
@@ -141,7 +141,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 50777,
+    "size": 52990,
     "file_count": 5
   },
   {
@@ -236,8 +236,8 @@
   },
   {
     "name": "federated_compute",
-    "size": 439502,
-    "file_count": 129
+    "size": 441089,
+    "file_count": 130
   },
   {
     "name": "ffmpeg",
@@ -276,8 +276,8 @@
   },
   {
     "name": "glslang",
-    "size": 47085334,
-    "file_count": 3883
+    "size": 47086961,
+    "file_count": 3885
   },
   {
     "name": "googletest",
@@ -521,7 +521,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19436523,
+    "size": 19437035,
     "file_count": 19
   },
   {
@@ -571,7 +571,7 @@
   },
   {
     "name": "omnibox_proto",
-    "size": 88454,
+    "size": 88887,
     "file_count": 38
   },
   {
@@ -591,7 +591,7 @@
   },
   {
     "name": "openscreen",
-    "size": 1278532,
+    "size": 1278308,
     "file_count": 299
   },
   {
@@ -611,7 +611,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4952384,
+    "size": 4952681,
     "file_count": 649
   },
   {
@@ -671,8 +671,8 @@
   },
   {
     "name": "rust-toolchain",
-    "size": 286,
-    "file_count": 7
+    "size": 26882,
+    "file_count": 9
   },
   {
     "name": "screen-ai",
@@ -696,7 +696,7 @@
   },
   {
     "name": "skia",
-    "size": 3492229,
+    "size": 3492746,
     "file_count": 1223
   },
   {
@@ -711,7 +711,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 556413,
+    "size": 557187,
     "file_count": 15
   },
   {
@@ -796,8 +796,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 7916888,
-    "file_count": 207
+    "size": 8122569,
+    "file_count": 213
   },
   {
     "name": "vulkan_memory_allocator",
@@ -846,7 +846,7 @@
   },
   {
     "name": "wpt_tools",
-    "size": 205341,
+    "size": 207557,
     "file_count": 13
   },
   {
