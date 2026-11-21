@@ -11,7 +11,7 @@
   },
   {
     "name": "android_deps",
-    "size": 1191226,
+    "size": 1191421,
     "file_count": 48
   },
   {
@@ -36,8 +36,8 @@
   },
   {
     "name": "angle",
-    "size": 6496521,
-    "file_count": 192
+    "size": 6878740,
+    "file_count": 193
   },
   {
     "name": "anonymous_tokens",
@@ -76,7 +76,7 @@
   },
   {
     "name": "blink",
-    "size": 34442145,
+    "size": 34450535,
     "file_count": 4097
   },
   {
@@ -241,7 +241,7 @@
   },
   {
     "name": "ffmpeg",
-    "size": 101837755,
+    "size": 101838284,
     "file_count": 11916
   },
   {
@@ -301,12 +301,12 @@
   },
   {
     "name": "gvdb",
-    "size": 116704,
+    "size": 120433,
     "file_count": 27
   },
   {
     "name": "harfbuzz",
-    "size": 325751,
+    "size": 326906,
     "file_count": 33
   },
   {
@@ -391,7 +391,7 @@
   },
   {
     "name": "lens_server_proto",
-    "size": 74230,
+    "size": 74908,
     "file_count": 47
   },
   {
@@ -491,8 +491,8 @@
   },
   {
     "name": "llvm-build",
-    "size": 418475684,
-    "file_count": 383
+    "size": 418488605,
+    "file_count": 382
   },
   {
     "name": "logilab",
@@ -521,7 +521,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19437035,
+    "size": 19438059,
     "file_count": 19
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 37483674,
+    "size": 37513622,
     "file_count": 51
   },
   {
@@ -836,7 +836,7 @@
   },
   {
     "name": "win_build_output",
-    "size": 29217848,
+    "size": 29263790,
     "file_count": 623
   },
   {
