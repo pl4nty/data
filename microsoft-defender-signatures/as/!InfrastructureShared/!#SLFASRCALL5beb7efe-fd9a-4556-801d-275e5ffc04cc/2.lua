@@ -117,7 +117,7 @@ if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_ONOPEN then
     return mp.CLEAN
   end
   l_0_10 = string.lower(l_0_10)
-  if versioning.IsSampled(35000, false, false, false) == true then
+  if versioning.IsSampled(45000, false, false, false) == true then
     if l_0_10 == "opencode.exe" then
       return mp.CLEAN
     end
