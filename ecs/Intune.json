@@ -482,6 +482,7 @@
             "DropAvailableAppEGATOptionalInstallIntent": true,
             "DropIsDeleteEGAT": true,
             "DropUnchangedMdmPolicyHashEGAT": true,
+            "EGATCCEnablePolicyHashUpdate": true,
             "EGATCCEnabled": true,
             "EgatEgpaConsolidationBGTask": true,
             "EnableAERequiredLOBAppMetadataCreationAndProcessing": true,
@@ -873,6 +874,7 @@
     "SVC_MAMAdmin": {
         "FlightingV2": {
             "EnableSubstratePartnerTokenProviderV2": true,
+            "WindowsDataTransferLocationsFlightId": true,
             "WindowsManagedAppClipboardSharingLevelFlightId": true
         }
     },
@@ -1000,8 +1002,10 @@
             "DisableDeviceDailyDriftDetection": true,
             "EnableAndroidPfxCreateV2FlightingV2": true,
             "EnableAndroidScepV2FlightingV2": true,
+            "EnableAppleVpnDeviceRouting": true,
             "EnableDeleteProfileInstanceEarlyReturn": true,
             "EnableIOSWiredNetwork": true,
+            "EnableQuotedOnPremDnCertificateEvaluation": true,
             "EnableScepComplianceFailedRequestReconciliation": true,
             "EnableSharedIPadChannelApplicabilityCheckForWiFi": true,
             "EnableWindowsPfxRollbackReferenceRecovery": true,
@@ -1229,6 +1233,7 @@
     "UX_MAM": {
         "FlightingV2": {
             "EnableNewWindowsClipboardSharingStates": true,
+            "EnableWindowsDataTransferLocationsSelectedApps": true,
             "ExplorerMamAppConfigStatus": true
         }
     },
@@ -1255,6 +1260,11 @@
             "MDQAddToGroup": true,
             "MDQEnumAttributeType": true,
             "MDQFilterSearchSort": true
+        }
+    },
+    "UX_RACerts": {
+        "FlightingV2": {
+            "VPNRoutingSettingsForAppleFlight": true
         }
     },
     "UX_RemoteAssist": {

@@ -1,5 +1,701 @@
 [
     {
+        "created": "2026-11-21T02:55:45",
+        "description": "<p>Dynamics 365 Workforce Engagement Management (WEM) integrates with Microsoft 365 Copilot through Model Context Protocol (MCP) tools. These tools connect Microsoft 365 Copilot with Dynamics 365 and Dataverse so supervisors and customer service representatives can use natural language to work with workforce requests.</p>\n<p>Supervisors can list and filter the time-off, shift-swap, and shift-bid requests they are authorized to access. They can open an individual request to review its details and scheduling context. Supervisors with the required reviewer permission can also approve or reject pending time-off requests. When a supervisor rejects a request, the reason is saved as the reviewer note. The decision records the reviewer and updates the request in Dynamics 365.</p>\n<p>Customer service representatives can list their own time-off, shift-swap, and shift-bid requests, check request status, and open an individual request to review its details.</p>\n<p>The integration uses a registered WEM MCP tool set that enforces existing Dynamics 365 and Dataverse security roles and data boundaries. Supervisors can access only the workforce requests within their authorized scope, and customer service representatives can access only their own records. The integration uses the existing permission model, so organizations don't need to configure a separate permissions framework for these tools or build and maintain a standalone mobile application for these request scenarios.</p>\n<p>Request lists and request details appear as interactive app-in-chat experiences. Approval and rejection actions return a text confirmation. The current decision capability applies only to time-off requests; shift-swap and shift-bid requests can be listed and reviewed but not approved or rejected through these tools.</p>",
+        "id": 581992,
+        "locale": null,
+        "modified": "2026-11-21T02:55:45",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/customer-service/develop/workforce-mcp-tools-overview-service-agent",
+        "publicDisclosureAvailabilityDate": "July CY2026",
+        "publicPreviewDate": "June CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Manage workforce requests in Microsoft 365 Copilot"
+    },
+    {
+        "created": "2026-11-21T02:55:45",
+        "description": "<p>Quality evaluation plans can now run automatically when a support case is resolved. This helps organizations evaluate customer interactions at the right point in the service lifecycle, without relying only on scheduled or manual review processes. By triggering evaluations from the case resolution event, teams can reduce unnecessary re-evaluation, save review effort, and generate timely quality insights for resolved cases.</p>",
+        "id": 581987,
+        "locale": null,
+        "modified": "2026-11-21T02:55:45",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Trigger quality evaluations when a support case is resolved"
+    },
+    {
+        "created": "2026-11-21T02:54:56",
+        "description": "<p>Quality evaluaton allows quality managers to create bulk record samples with equal distribution across representatives. This helps ensure sampling is balanced and avoids over- or under-representing any individual representative in review sets.</p>\n<p>When generating a bulk sample via evaluation plans, the sampling process can distribute selected records evenly by representative. Instead of pulling records only from the overall eligible pool, the system groups eligible records by representative and selects a balanced number from each group.</p>\n<p>Benefits:</p>\n<ul>\n<li>Creates fairer and more representative review samples<br>\nReduces manual effort needed to balance samples across representatives.</li>\n<li>Improves consistency for QA, audit, and performance review workflows.</li>\n<li>Helps teams compare representative-level outcomes using more evenly distributed data</li>\n</ul>\n<p>User impact:</p>\n<ul>\n<li>Users who create or manage bulk samples will have a more balanced sampling output when sampling by representative.</li>\n<li>Existing sampling workflows remain available unless otherwise configured.</li>\n</ul>",
+        "id": 581993,
+        "locale": null,
+        "modified": "2026-11-21T02:54:56",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                },
+                {
+                    "tagName": "Dynamics 365 Customer Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Sampling bulk records for quality evaluation equally by representatives"
+    },
+    {
+        "created": "2026-11-21T00:14:55",
+        "description": "<p>Keep meetings on track with a shared countdown timer in Microsoft Teams Rooms on Windows. Start, pause, resume, or cancel a timer from the room\u2019s touch console, with the countdown visible on the front-of-room display and in participants\u2019 meeting views. Available with a Teams Rooms Pro license.</p>",
+        "id": 581893,
+        "locale": null,
+        "modified": "2026-11-21T00:14:55",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Teams and Surface Devices"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Teams and Surface Devices"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Set and manage meeting timers in Teams Rooms on Windows"
+    },
+    {
+        "created": "2026-11-20T23:20:27",
+        "description": "<p>Now you can add Microsoft Planner as a tab in shared and private channels in Microsoft Teams, which allows to create and manage tasks directly within the channel.</p>",
+        "id": 581866,
+        "locale": null,
+        "modified": "2026-11-20T23:20:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "Planner"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                },
+                {
+                    "tagName": "Planner"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Planner: Tab support for shared and private channels in Microsoft Teams in GCC, GCC-H and DoD"
+    },
+    {
+        "created": "2026-11-20T23:20:27",
+        "description": "<p>To support Spain's upcoming mandatory <strong>B2B electronic invoicing requirements under the Crea y Crece</strong> legislation, Microsoft Dynamics 365 Finance will introduce capabilities for domestic B2B electronic invoicing through a phased rollout.</p>\n<p>The planned rollout includes:</p>\n<ol>\n<li><p><strong>Prerequisite data and invoice formats:</strong> Support the required master, reference, and configuration data, together with Spain-specific UBL 2.5 electronic invoice formats for outbound and inbound invoices.</p>\n</li>\n<li><p><strong>Invoice lifecycle management:</strong> Introduce capabilities for handling invoice status messages, acknowledgements, rejections, and payment reporting. Delivery timeline to be confirmed.</p>\n</li>\n<li><p><strong>Electronic invoicing connectivity:</strong> Enable integration with the applicable electronic invoicing infrastructure. The integration approach and delivery timeline are being evaluated and will be confirmed later.</p>\n</li>\n</ol>\n<p>The scope and delivery timelines will be updated as implementation progresses and regulatory requirements are finalized.</p>",
+        "id": 581800,
+        "locale": null,
+        "modified": "2026-11-20T23:20:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2027",
+        "publicPreviewDate": "March CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "Dynamics 365 Supply Chain Management"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                },
+                {
+                    "tagName": "Dynamics 365 Supply Chain Management"
+                },
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: B2B electronic invoicing in Spain"
+    },
+    {
+        "created": "2026-11-20T23:20:27",
+        "description": "<p>This feature applies to Dynamics 365 Commerce e-commerce. It updates the Adyen API integration to address co-branded card processing requirements and adds support for ACH and Pay by Bank, both directly at checkout and through Pay by Link.</p>\n<p>Administrators enable the payment methods available to shoppers through configuration in Commerce and Adyen. Shoppers can then select the enabled methods during e-commerce checkout or when paying through Pay by Link.</p>\n<p>The modernization effort will evaluate the latest applicable supported Adyen API version. The target API version and any architectural changes are evaluation objectives, not confirmed implementation decisions.</p>",
+        "id": 581780,
+        "locale": null,
+        "modified": "2026-11-20T23:20:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: Update e-commerce integration with Adyen and introduce ACH and Pay by Bank payment methods"
+    },
+    {
+        "created": "2026-11-20T23:20:27",
+        "description": "<p>Start every collections day with one prioritized view of your receivables portfolio that explains each recommendation. The skill shows which customers need attention, why, and what to do next. It helps collectors, collection managers and accounts receivable (AR) leaders act consistently, close periods with fewer surprises, and step in before overdue balances become bad debt.</p>",
+        "id": 581779,
+        "locale": null,
+        "modified": "2026-11-20T23:20:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Collection Coordinator Skill"
+    },
+    {
+        "created": "2026-11-20T23:20:27",
+        "description": "<p>High Volume Email (HVE) External Sending extends HVE in Exchange Online, which today sends only to recipients inside your organization, so it can also deliver bulk email to external recipients such as customers and partners. It is designed for operational and transactional messages, like notifications, alerts, receipts and required communications, and not for marketing campaigns. Apps and devices send through SMTP using HVE account authentication. Admins turn the feature on for specific HVE accounts with a cmdlet. Built-in throttling, quotas and suppression of problem recipients help protect your sending reputation. Billing will be based on usage, per external recipient.</p>",
+        "id": 581778,
+        "locale": null,
+        "modified": "2026-11-20T23:20:27",
+        "moreInfoLink": "https://learn.microsoft.com/exchange/mail-flow-best-practices/high-volume-mails-m365",
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Exchange"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Exchange"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Exchange: Enable High Volume Email (HVE) for External Recipients"
+    },
+    {
+        "created": "2026-11-20T23:20:27",
+        "description": "<h2>Business value</h2>\n<p>Employees and managers routinely contact HR for answers their HR system already holds \u2014 how much leave they have, what their policy allows in their location, where a request has reached. The information exists, but it is spread across separate records, so a generic answer is often wrong for the individual asking. Workforce intelligence answers those questions from the person's own worker record, plan enrolment and jurisdiction, and lets them complete the related transaction in the same conversation, so routine requests are resolved directly and HR teams can focus on work that needs judgment.</p>\n<h2>Capability details</h2>\n<ul>\n<li><strong>Personal information, viewed and maintained:</strong> Employees can view their own personal details and submit updates, with the change written back through the standard governed process.</li>\n<li><strong>Grounded policy and HR answers:</strong> Questions are answered from the employee's own plan, grade and jurisdiction rather than a single generic policy response.</li>\n<li><strong>Leave entitlement and requests:</strong> Employees can ask about entitlement and balance, submit a leave request, and check the status of a request they already raised.</li>\n<li><strong>Manager approvals:</strong> Managers can review their pending queue and act on requests for their direct reports.</li>\n<li><strong>Team availability:</strong> Managers can ask about coverage across their direct reports.</li>\n<li><strong>Governed by design:</strong> Requests operate on a bounded context \u2014 the individual and their direct relationships \u2014 and the agent confirms an action with the user before any record is written.</li>\n</ul>\n<h2>Enablement</h2>\n<p>Enablement details, including administrator setup, prerequisites and rollout behavior, will be confirmed before release.</p>",
+        "id": 581776,
+        "locale": null,
+        "modified": "2026-11-20T23:20:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "February CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Human Resources"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Human Resources"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Human Resources: Ask HR - conversational HR self-service grounded in your own worker record"
+    },
+    {
+        "created": "2026-11-20T23:20:27",
+        "description": "<h2>Business value</h2>\n<p>When an employee leaves, HR, managers, IT, facilities and payroll all have work to do, but the termination hasn't been connected to the request that starts the exit or the work that follows. Manual coordination can leave access open, property unreturned and final pay incomplete. This feature connects the termination to a governed, visible exit journey, so HR runs consistent exits with less follow-up.</p>\n<h2>Capability details</h2>\n<ul>\n<li><strong>Separation requests:</strong> Employees resign and managers request separations in self service, with approval and policies per company and worker type.</li>\n<li><strong>Safer termination:</strong> Notice details, configurable checks, bulk termination and direct report moves.</li>\n<li><strong>Rule-based checklists:</strong> Templates apply automatically when conditions match, with due-date anchors and predecessors.</li>\n<li><strong>Property and access:</strong> Return tasks for loaned items such as laptops and badges; scheduled Dynamics 365 access deactivation.</li>\n<li><strong>Task evidence:</strong> Attachments, exit questionnaires, generated or signed documents, verification and task history.</li>\n<li><strong>Reminders, business events and legal hold</strong> for overdue tasks and connected systems.</li>\n<li><strong>Exit workspaces:</strong> Offboarding control tower for HR, Exiting workers for managers and My exit for leavers.</li>\n<li><strong>Final settlement worksheet:</strong> Open expenses, advances, timesheets, leave and unreturned property for payroll.</li>\n<li><strong>Rehire guard:</strong> Warns or blocks rehiring based on eligibility, with an approved override.</li>\n<li><strong>Roles and integration:</strong> Coordinator roles, a segregation-of-duties rule and public data entities.</li>\n</ul>\n<h2>Enablement</h2>\n<p>Turn on the 12 offboarding features in <strong>Feature management</strong>, then configure <strong>Human resources shared parameters</strong>, separation policies, checklist rules, coordinator roles and batch jobs. Turning a feature off keeps existing data.</p>",
+        "id": 581773,
+        "locale": null,
+        "modified": "2026-11-20T23:20:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2027",
+        "publicPreviewDate": "March CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Human Resources"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Human Resources"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Human Resources: Streamline the employee offboarding experience"
+    },
+    {
+        "created": "2026-11-20T23:20:27",
+        "description": "<p>Enable agents to listen for supported Work IQ events and respond as relevant changes occur.</p>",
+        "id": 570867,
+        "locale": null,
+        "modified": "2026-11-20T23:20:27",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Work IQ"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Work IQ"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Work IQ: Listen "
+    },
+    {
         "created": "2026-11-20T01:24:53",
         "description": "<p>Stay on top of channel conversations by picking up right where you left off. Choose to open Teams channels at your last read message instead of the most recent message, making it easier to catch up on conversations and follow discussions without losing your place.</p>",
         "id": 579890,
@@ -108,7 +804,7 @@
         "description": "<p>Admins will be able to configure more granular and advanced controls for managing external bots and their access to meetings hosted in their organization. Admins will be able to configure a list of external meeting bots which are allowed to join meetings hosted in their organization. Admins can also opt to block all other bots or let them be enforced into the currently available high friction lobby experience. The allowed bots will be treated like a regular external participant to the meeting and meeting policies will be enforced as appropriate.</p>",
         "id": 580451,
         "locale": null,
-        "modified": "2026-11-19T23:37:54",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
@@ -132,6 +828,9 @@
             },
             {
                 "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -161,6 +860,9 @@
                 },
                 {
                     "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -377,9 +1079,9 @@
         "description": "<p>Voice phishing detection helps protect Microsoft Teams users from potential scams during one-to-one calls with people outside their organization. Using AI, Teams analyzes conversations for signs of social engineering and alerts recipients when suspicious activity is detected, helping them recognize potential threats and decide how to proceed.</p>",
         "id": 580443,
         "locale": null,
-        "modified": "2026-11-19T21:30:10",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -7938,10 +8640,10 @@
         "description": "<p>Chat naturally with Facilitator without tagging it each time.</p>",
         "id": 566523,
         "locale": null,
-        "modified": "2026-11-19T00:53:06",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2027",
-        "publicPreviewDate": "",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -7971,6 +8673,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -8007,6 +8712,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -12213,9 +12921,9 @@
         "description": "<p>Users can now manually access saved credentials when password suggestions don't appear automatically. When a user right-clicks a recognized username or password field, a new Select Password option appears in the context menu. This provides a reliable fallback path for sign-in scenarios where autofill suggestions are not surfaced, reducing the need for users to copy credentials manually. No configuration is required, and existing password management policies continue to apply.</p>",
         "id": 570662,
         "locale": null,
-        "modified": "2026-10-30T22:08:34",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -19036,12 +19744,12 @@
         "description": "<p>Educators can provide a Copilot starter prompt from Student AI Guidelines in Teams and LMS Assignments. Students open Copilot with the educator's prompt ready in their chat, helping them begin with instructions tailored to the assignment.</p>",
         "id": 577173,
         "locale": null,
-        "modified": "2026-11-19T00:53:06",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -19115,12 +19823,12 @@
         "description": "<p>Educators can assign Study and Learn from Student AI Guidelines in Teams and LMS Assignments. Students open guided learning support grounded in the assignment's title, instructions, and supported files and resources, helping them work through concepts and practice their understanding.</p>",
         "id": 577172,
         "locale": null,
-        "modified": "2026-11-19T00:53:06",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -31457,12 +32165,12 @@
         "description": "<p>Participants joining webinars and structured meetings from Teams Rooms on Android can view and interact with PowerPoint Live presentations. This provides greater flexibility and accessibility while keeping room participants aligned with the active presentation.</p>",
         "id": 576195,
         "locale": null,
-        "modified": "2026-10-14T23:01:02",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -33086,9 +33794,9 @@
         "description": "<p>Enables auto\u2011labeling of existing SharePoint files to match the default sensitivity label configured on their document library. This helps organizations close labeling gaps for data at rest and ensure consistent, secure\u2011by\u2011default protection across SharePoint libraries\u2014without relying on manual user labeling.</p>",
         "id": 575283,
         "locale": null,
-        "modified": "2026-11-19T21:32:07",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -34124,12 +34832,12 @@
         "description": "<p>When a Teams Rooms on Android device acts as an organizer, co-organizer, or presenter in a structured meeting or webinar, you have access to the private chat for event management known as the Event Group. You can also switch to a separate chat with attendees, enabling smooth event experiences for all. Available in Teams Rooms Pro-licensed rooms.</p>",
         "id": 574107,
         "locale": null,
-        "modified": "2026-10-09T22:04:35",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -34716,12 +35424,12 @@
         "description": "<p>For an event that needs registration, send email invites to the selected people and groups who will be invited to register to the event</p>",
         "id": 573250,
         "locale": null,
-        "modified": "2026-11-04T00:02:09",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -44452,10 +45160,10 @@
         "description": "<p>Keep communication more accessible throughout your meeting. You can now pop out a sign language interpreter into a separate, resizable window that stays visible across monitors and apps. Designed to support Deaf and Hard of Hearing users, the sign language interpreter's popout video will persist while viewers are multitasking, sharing content, or changing meeting layouts.</p>",
         "id": 571387,
         "locale": null,
-        "modified": "2026-11-19T00:53:06",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2027",
-        "publicPreviewDate": "",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -44484,7 +45192,7 @@
                 "tagName": "General Availability"
             },
             {
-                "tagName": "Targeted Release"
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -44520,7 +45228,7 @@
                     "tagName": "General Availability"
                 },
                 {
-                    "tagName": "Targeted Release"
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -44531,9 +45239,9 @@
         "description": "<p>Microsoft Edge will introduce an opt-in experience that allows users on managed devices to choose whether Edge launches automatically when Windows starts. Administrators can also manage this behavior through the LaunchEdgeOnWindowsStartupEnabled policy with opt-in, opt-out, and user-choice configurations.</p>",
         "id": 571307,
         "locale": null,
-        "modified": "2026-10-30T22:08:34",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -49078,12 +49786,12 @@
         "description": "<p>Workspaces Inline Switching manages multiple Workspaces in a single window. Selecting a Workspace swaps in its tabs, theme, and context, with an easy return to the default space.</p>",
         "id": 568786,
         "locale": null,
-        "modified": "2026-10-07T23:01:35",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -49120,7 +49828,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Inline Switching for Workspaces"
+        "title": "Microsoft Edge: v.158 - Inline Switching for Workspaces"
     },
     {
         "created": "2026-08-25T23:13:41",
@@ -53353,12 +54061,12 @@
         "description": "<p>Microsoft Edge now helps further protect users from malicious web notifications. When a notification leads users to a site that Microsoft Defender SmartScreen blocks as a scam, phishing, or malware page, Edge automatically stops that source from sending users further notifications and lets users know. Users can review and restore any of these sites anytime under edge://settings/privacy/sitePermissions/allPermissions/notifications.</p>",
         "id": 568366,
         "locale": null,
-        "modified": "2026-09-30T23:31:03",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -53395,7 +54103,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Automatically unsubscribe users from notifications sent by scam and malicious sites"
+        "title": "Microsoft Edge: v.158 - Automatically unsubscribe users from notifications sent by scam and malicious sites"
     },
     {
         "created": "2026-08-03T22:55:03",
@@ -53746,15 +54454,15 @@
     },
     {
         "created": "2026-07-29T23:07:26",
-        "description": "Microsoft Edge now lets users import their Google account data - including passwords, bookmarks, history, and autofill data - directly from Edge Settings, at any time after setup. Previously, users had no way to import this data from a Google account outside the first-run experience. With this update, the import flow is unified into a single, streamlined entry point in Settings that combines import from Google Chrome import and Google account. ",
+        "description": "<p>Microsoft Edge now lets users import their Google account data - including passwords, bookmarks, history, and autofill data - directly from Edge Settings, at any time after setup. Previously, users had no way to import this data from a Google account outside the first-run experience. With this update, the import flow is unified into a single, streamlined entry point in Settings that combines import from Google Chrome import and Google account.</p>",
         "id": 568365,
         "locale": null,
-        "modified": "2026-08-20T22:38:45",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -53791,7 +54499,7 @@
                 }
             ]
         },
-        "title": "Microsoft Edge: Import Google account data anytime from Settings"
+        "title": "Microsoft Edge: v.158 - Import Google account data anytime from Settings"
     },
     {
         "created": "2026-07-29T23:07:26",
@@ -58881,12 +59589,12 @@
         "description": "<p>Copilot Notebooks in OneNote now suggests artifacts to create, such as Word documents, Excel workbooks, and PowerPoint presentations, based on Microsoft 365 knowledge and the content in your notebook. Select the suggestion and Copilot will generate the artifact.</p>",
         "id": 566870,
         "locale": null,
-        "modified": "2026-09-11T22:10:10",
+        "modified": "2026-11-21T00:31:46",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -70186,12 +70894,12 @@
         "description": "<p>In addition to capturing real-time notes and meeting outcomes during scheduled or hybrid meetings, the Facilitator agent assists you with notes, decisions and actions for in-person meetings in Teams Rooms on Android. Simply invite Facilitator with one tap of the room console. Meeting notes appear on the front of room display or touch board, are available via meeting recap when shared, and deleted if no one selected. Rest assured no data remains in the room. Available with Teams Rooms Pro.</p>",
         "id": 560700,
         "locale": null,
-        "modified": "2026-09-24T22:58:55",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -92446,12 +93154,12 @@
         "description": "<p>Users can now rate the quality of their calls and meetings and provide additional feedback on calling, video, and screen-sharing experiences to help organizations ensure consistent, high-quality experiences.</p>",
         "id": 543713,
         "locale": null,
-        "modified": "2026-09-09T22:36:54",
+        "modified": "2026-11-20T23:20:27",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
