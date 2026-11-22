@@ -16142,6 +16142,13 @@
     "platform": "linux-amd64"
   },
   {
+    "name": "Azure Monitor Pipeline Controller/0.1.8/linux-amd64/github.com_hashicorp_go-version_v1.9.0.zip",
+    "product": "Azure Monitor Pipeline Controller",
+    "release": "0.1.8",
+    "dependency": "github.com_hashicorp_go-version_v1.9.0",
+    "platform": "linux-amd64"
+  },
+  {
     "name": "Azure Monitor Pipeline Operator/0.143.0/linux/github.com_hashicorp_go-version-v1.7.0.zip",
     "product": "Azure Monitor Pipeline Operator",
     "release": "0.143.0",
