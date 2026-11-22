@@ -128556,55 +128556,6 @@
     },
     {
         "created": "2025-03-26T23:45:25",
-        "description": "Launch a pre-scoped Data Security Investigation (DSI) from an IRM case. When a data security admin identifies a risky user who needs deeper investigation, they can launch a pre-scoped investigation directly from an IRM case, allowing them to view content analysis related to that user and better assess post-incident data impact. ",
-        "id": 486827,
-        "locale": null,
-        "modified": "2026-01-21T19:00:14",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "July CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview: Insider Risk Management - Data Security Investigation integration"
-    },
-    {
-        "created": "2025-03-26T23:45:25",
         "description": "When Town hall was released, there were some columns/data related to each Town hall event that were missing in the TAC usage reports for IT Admins. Now all the relevant usage related data are added to the town hall usage reports available in the TAC portal for Admins.",
         "id": 486706,
         "locale": null,
@@ -129683,61 +129634,6 @@
             ]
         },
         "title": "Outlook: New Outlook for Windows - Reply To header"
-    },
-    {
-        "created": "2025-03-10T23:30:35",
-        "description": "With this update, IRM will support the discovery of sensitive files and text shared to any cloud application or website (inc. GenAI) via network layer. This capability is based on integration with 3rd party network partners (with data being captured via network layer).\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
-        "id": 484084,
-        "locale": null,
-        "modified": "2026-01-21T19:00:14",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
-        "publicPreviewDate": "July CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview: Discovery of sensitive data sharing to any cloud application or website (inc. GenAI) via network layer"
     },
     {
         "created": "2025-03-10T23:30:35",
