@@ -7208,13 +7208,15 @@ function IsUriKnownHostname(p253_0)
       ".sharepoint.com", ".msappproxy.net", ".powershellgallery.com", ".google.com", ".intel.com",
       ".godaddy.com", ".svc.cloud.microsoft", ".sharepoint-df.com", ".pushnp.svc.ms",
       ".wns.windows.com", ".msedge.net", ".msn.com", ".microsoft.ghe.com", ".msft.ghe.com",
-      "mcp.eng.ms", ".githubcopilot.com", ".anthropic.com", "chatgpt.com", ".digicert.com",
-      ".digicert.cn", ".globalsign.com", ".verisign.com", ".ssl.com", ".comodoca.com",
-      ".usertrust.com", ".sectigo.com", ".entrust.net", ".symcb.com", ".symcd.com", ".pki.goog",
-      ".geotrust.com", ".lencr.org", ".identrust.com", ".thawte.com", ".cfca.com.cn", ".adobe.com",
-      ".adobe.io", ".goskope.com", ".sentinelone.net", ".rapid7.com", ".checkpoint.com",
-      ".symantec.com", ".demonware.net", ".activision.com", ".hangame.com",
-      ".installeranalytics.com"
+      "mcp.eng.ms", "windowsupdate.com", ".githubcopilot.com", ".anthropic.com", "chatgpt.com",
+      "opencode.ai", "claude.ai", "youtube.com", ".digicert.com", ".digicert.cn", ".globalsign.com",
+      ".verisign.com", ".ssl.com", ".comodoca.com", ".usertrust.com", ".sectigo.com", ".entrust.net",
+      ".symcb.com", ".symcd.com", ".pki.goog", ".geotrust.com", ".lencr.org", ".identrust.com",
+      ".thawte.com", ".cfca.com.cn", "ocsp-certum.com", ".adobe.com", ".adobe.io", ".goskope.com",
+      ".sentinelone.net", ".rapid7.com", ".checkpoint.com", ".symantec.com", "qualys.eu",
+      "qualys.com", "n-able.com", "acronis.com", "managed-protection.com", "gonitro.com",
+      ".demonware.net", ".activision.com", ".hangame.com", ".installeranalytics.com", "://adc.com",
+      "://maven.scm.adc.com"
     }
     local r253_1 = p253_0:lower()
     for r253_2, r253_3 in ipairs(r253_0) do

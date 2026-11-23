@@ -1,8 +1,9 @@
 -- Threat: !InfrastructureShared
--- Name: 5a6199fa1235
+-- Name: 84b31fcb7358
 -- Type: 21
+-- Includes: BMLuaLib
 
-if peattributes.isexe == true then
+if not IsNoisyWebProc() then
   return mp.INFECTED
 end
 return mp.CLEAN

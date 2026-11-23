@@ -1,8 +1,8 @@
 -- Threat: !InfrastructureShared
--- Name: b278cf40dc35
+-- Name: be78077973e0
 -- Type: 21
 
-if peattributes.isdll == true then
+if peattributes.no_security then
   return mp.INFECTED
 end
 return mp.CLEAN
