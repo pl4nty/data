@@ -104370,55 +104370,6 @@
     },
     {
         "created": "2025-10-30T23:15:09",
-        "description": "Extend Microsoft Purview Data Loss Prevention (DLP) policies and Insider Risk Management indicators to the network by integrating with your existing non-Microsoft Secure Access Service Edge (SASE) solution. This integration enables organizations to intercept and inspect traffic inline at the network layer and enforce actions based on DLP policy conditions. It helps prevent sensitive data from being shared with untrusted cloud applications through browsers, apps, APIs, add-ins, and more - including generative AI platforms, cloud storage, and content-sharing services - while managing alerts and incidents through Purview and Microsoft Defender. If configured, these signals also inform user risk indicators in Insider Risk Management",
-        "id": 522095,
-        "locale": null,
-        "modified": "2026-01-22T20:00:54",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Purview: Inline protection, alerting, and incident management for sensitive data shared over the network through non-Microsoft SASE integrations"
-    },
-    {
-        "created": "2025-10-30T23:15:09",
         "description": "Enable admins to configure retention policies for various Copilots and AI Apps.",
         "id": 520388,
         "locale": null,
@@ -106151,61 +106102,6 @@
             ]
         },
         "title": "Universal Print: Scan with Universal Print"
-    },
-    {
-        "created": "2025-10-23T23:00:40",
-        "description": "Microsoft Purview Insider Risk Management variant limit is being increased from 3 to 10 per indicator and an overall limit of 100 across all indicators. Along with this, the number of items in one detection group is being increased from 200 to 500.\n\nMicrosoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  ",
-        "id": 518291,
-        "locale": null,
-        "modified": "2026-01-22T18:30:44",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
-        "publicPreviewDate": "December CY2025",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview: Insider Risk Management \u2013 Enhancements to variant limits and detection groups"
     },
     {
         "created": "2025-10-23T23:00:40",

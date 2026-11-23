@@ -1526,6 +1526,12 @@
                     "IsEnabled": false
                 }
             ],
+            "DocGenAutoContinue": [
+                {
+                    "Flight": "Microsoft.Teams.Augloop.GroupCopilot.EnableDocGenAutoContinue",
+                    "IsEnabled": true
+                }
+            ],
             "DocGenCAOnlineEval": [
                 {
                     "Flight": "Microsoft.Teams.Augloop.GroupCopilot.MeetingDocGen.OfficeAgent.CreateAgent.TeamsDocGenDataFlywheel",
