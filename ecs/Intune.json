@@ -422,6 +422,7 @@
             "CompanyPortalBatteryOptimizationBlockEnabled": true,
             "DeviceConfigToAppConfigOnTheFlyEnabled": true,
             "DisableExpiredCertDecryptionForLocateDevice": true,
+            "DisableWpAmApiParityCheckCustomUriPolicy": true,
             "EnableAERequiredLOBAppsPolicyProcessing": true,
             "EnableAndroidAospReferencedAppAssignmentMessageProcessor": true,
             "EnableAndroidCpWebEnrollment": true,

@@ -2854,6 +2854,7 @@
         "EnableConsumptiveBillingCostCommandTaskRead": true,
         "EnableConsumptiveBillingCreditRequestScenarios": true,
         "EnableConsumptiveBillingIrisContent": false,
+        "PLGSDKApprovedCreditRequestHold": true,
         "PLGSDKConsumptiveBilling": true,
         "PLGSDKConsumptiveBillingOlsLive": true,
         "PLGSDKCreditRequestCustomPolicy": true,

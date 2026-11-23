@@ -464,6 +464,7 @@
                 "enableMetaOSAuthzLicenseCheck": true,
                 "enableNestedLicenseCheckForCopilot": true,
                 "enableOCDIRedirect": true,
+                "enablePerRequestMsalClient": false,
                 "enablePftObo": true,
                 "enablePrepaidUnitsCheckForFreemiumExtension": false,
                 "enableRuntimeAPIFallback": false,
@@ -1328,6 +1329,7 @@
         "ProjectAgentAL": {
             "Augloop504RetryCount": 2,
             "Augloop504RetryDelayInMs": 1000,
+            "EnableClientMetadataInBody": true,
             "RequestMetadata": {
                 "Timeout": 1770000
             },
@@ -1618,21 +1620,9 @@
                     "IsEnabled": false
                 }
             ],
-            "EnableEvalModelGpt56NanoLuna": [
-                {
-                    "Flight": "EnableEvalModelGpt56NanoLuna",
-                    "IsEnabled": true
-                }
-            ],
             "EnableEvalModelGpt6Luna": [
                 {
                     "Flight": "EnableEvalModelGpt6Luna",
-                    "IsEnabled": true
-                }
-            ],
-            "EnableGenerationModelGpt56NanoLuna": [
-                {
-                    "Flight": "EnableGenerationModelGpt56NanoLuna",
                     "IsEnabled": true
                 }
             ],
@@ -1957,6 +1947,12 @@
             "GPT6_Migration_ProactiveRoleDetection": [
                 {
                     "Flight": "UPF.enableRoleModelGpt6Luna",
+                    "IsEnabled": true
+                }
+            ],
+            "GPT6_Migration_ResponseSentiment": [
+                {
+                    "Flight": "GCP.enableResponseSentimentModelGpt6Luna",
                     "IsEnabled": true
                 }
             ],

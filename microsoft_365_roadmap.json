@@ -116225,55 +116225,6 @@
         "title": "Microsoft Teams: Raise hands in Town Hall"
     },
     {
-        "created": "2025-08-12T23:00:16",
-        "description": "Managers will be able to export the default sections from the Executive Summary report in Viva Glint directly to editable PowerPoint slides. This enhancement allows for easier and quicker consumption of this report outside Viva Glint, compared to the previous export method which included static screenshots.",
-        "id": 499661,
-        "locale": null,
-        "modified": "2026-01-23T00:15:29",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Viva"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Viva"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Viva: Viva Glint - Export Executive Summary report in Viva Glint to editable PowerPoint slides"
-    },
-    {
         "created": "2025-08-11T23:00:11",
         "description": "<p>We are expanding the access to Diagnostics beyond Global Admin to: Compliance Administrator, Security Administrator and Organization Management</p>",
         "id": 500396,
