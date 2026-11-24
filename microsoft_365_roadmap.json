@@ -1,5 +1,744 @@
 [
     {
+        "created": "2026-11-24T00:13:11",
+        "description": "<p>Choose whether to track email opens separately from other tracking in Dynamics 365 Customer Insights - Journeys. A dedicated consent purpose lets you omit tracking pixels from new emails while link clicks, website interactions, UTM parameters, and form prefill continue to follow their existing tracking consent settings.</p>",
+        "id": 581967,
+        "locale": null,
+        "modified": "2026-11-24T00:13:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Customer Insights - Journeys"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Customer Insights - Journeys"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Customer Insights - Journeys: Stop tracking email opens without disabling other tracking"
+    },
+    {
+        "created": "2026-11-24T00:13:11",
+        "description": "<p>We\u2019re enhancing the on-device admin settings experience for Teams Rooms on Android by improving information structure, organization and navigation. These updates make it easier for admins to find, understand, and adjust device settings directly from the console, improving overall usability and efficiency in room management.</p>",
+        "id": 581965,
+        "locale": null,
+        "modified": "2026-11-24T00:13:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Improved device settings experience on Teams Rooms on Android"
+    },
+    {
+        "created": "2026-11-24T00:13:11",
+        "description": "<p>Orchestration playbooks can now re-evaluate the conditions every 5 seconds instead of every 30 seconds. With this shorter interval, you get finer control over priority escalation and Bullseye pool expansion. As a result, conversations reach the right queue or specialist sooner when wait times or queue status change.</p>",
+        "id": 581803,
+        "locale": null,
+        "modified": "2026-11-24T00:13:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "Launched",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: Set wait times as short as 5 seconds in orchestration playbooks"
+    },
+    {
+        "created": "2026-11-24T00:13:11",
+        "description": "<p>Employee referrals provide organizations with an additional talent-sourcing channel by enabling employees to participate actively in the recruitment process.</p>\n<p>This capability helps organizations:</p>\n<p><strong>Expand talent reach:</strong> Access potential candidates through employees' professional networks.<br>\n<strong>Reduce recruitment costs:</strong> Decrease reliance on external recruitment channels and agencies.<br>\n<strong>Accelerate hiring:</strong> Identify potential candidates more quickly through employee recommendations.<br>\n<strong>Improve employee engagement</strong>: Encourage employees to contribute to organizational growth through referrals.<br>\n<strong>Enhance recruitment transparency:</strong> Provide employees and recruiters with visibility into referral progress.<br>\n<strong>Streamline recruiting operations</strong>: Reduce manual effort associated with collecting and tracking employee referrals.</p>",
+        "id": 581791,
+        "locale": null,
+        "modified": "2026-11-24T00:13:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Human Resources"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Human Resources"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Human Resources: Expand talent sourcing through employee referrals"
+    },
+    {
+        "created": "2026-11-24T00:13:11",
+        "description": "<p>Administrators can customize how the Recommended Actions agent prioritizes actions by configuring natural-language instructions for individual source agents. This gives organizations greater flexibility to align AI-generated recommendations with their sales strategies while retaining the built-in intelligence of the Recommended Actions experience.</p>\n<p>With this capability, administrators can:</p>\n<ul>\n<li><p><strong>Define business-specific prioritization criteria</strong>: Use natural-language instructions to express the organization's priorities. For example, prioritize opportunities with a high revenue value that have passed their expected close date.</p>\n</li>\n<li><p>**Configure prioritization by source agent: **Define separate instructions for supported source agents, such as Sales Opportunity Agent, Sales Qualification Agent, and custom agents.</p>\n</li>\n</ul>\n<p>**- Map instructions to CRM data: **Associate custom prioritization instructions with relevant Dynamics 365 data, including both out-of-the-box and custom fields and entities.</p>\n<p>**- Combine custom business priorities with AI scoring: **Custom instructions complement the built-in prioritization criteria, which consider urgency, business impact, confidence, and effort when ranking recommended actions.</p>",
+        "id": 581790,
+        "locale": null,
+        "modified": "2026-11-24T00:13:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Sales"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Sales"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Sales: Customize how Recommended Actions are prioritized with custom instructions"
+    },
+    {
+        "created": "2026-11-24T00:13:11",
+        "description": "<p>Journey Visualization brings live conversation data onto the map of your contact center configuration, so admins can see how conversations actually flow, not just how they were designed to flow. Admins can spot patterns across many conversations, then select any single conversation and follow its path step by step, from arrival through routing and queues to resolution.</p>",
+        "id": 581759,
+        "locale": null,
+        "modified": "2026-11-24T00:13:11",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/trace-conversations-with-journey-visualization",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: Trace conversation journeys end to end across your contact center"
+    },
+    {
+        "created": "2026-11-24T00:13:11",
+        "description": "<p>Visual Designer shows your entire contact center configuration as one interactive map: channels, workstreams, classification and routing rules, queues, and overflow handling, and how they connect. Admins can see how conversations will flow, spot gaps or misconfigurations, and make common changes, such as moving representatives between queues or updating routing, directly on the canvas instead of navigating many separate settings pages.</p>",
+        "id": 581758,
+        "locale": null,
+        "modified": "2026-11-24T00:13:11",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/visualize-edit-configuration-with-visual-designer",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Contact Center"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Contact Center"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Contact Center: Visualize and manage your contact center setup with visual designer"
+    },
+    {
+        "created": "2026-11-24T00:13:11",
+        "description": "<p>Microsoft Edge is introducing a profile picker at startup, making it easier to begin each browsing session with the right profile. Users can choose among their work, personal, or other available profiles, add a new profile, or browse as a guest before opening the browser. This helps users keep their browsing data and activities in the intended profile, while the <strong>Show on startup</strong> setting lets them control whether the picker appears at launch.</p>",
+        "id": 581721,
+        "locale": null,
+        "modified": "2026-11-24T00:13:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Edge"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Edge"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Edge: Choose a Profile at Startup"
+    },
+    {
+        "created": "2026-11-24T00:13:11",
+        "description": "<p>Ask your questions live and take part in the conversation, even at events with up to 100,000 attendees. In events this size, attendees can now raise their hand in Teams when they have a question. Organizers can then let people with a raised hand turn on their mic and camera to ask their question or speak during the event.</p>",
+        "id": 581720,
+        "locale": null,
+        "modified": "2026-11-24T00:13:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Raise your hand to speak up at large events with up to 100,000 attendees"
+    },
+    {
+        "created": "2026-11-24T00:13:11",
+        "description": "<p>Stay more engaged and connected with the audience, even at events with up to 100,000 attendees. Teams now supports reactions in events at this scale. You can send reactions during the event and see the reactions others send, so everyone can share the moment together.</p>",
+        "id": 581719,
+        "locale": null,
+        "modified": "2026-11-24T00:13:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Share reactions at events with up to 100,000 attendees"
+    },
+    {
+        "created": "2026-11-24T00:13:11",
+        "description": "<p>Copilot in Word, Excel, PowerPoint, and Workspaces across Copilot App and OneNote will use memory to learn your work patterns and personalize responses. With memory, Copilot can offer more relevant suggestions, hold the pen in a way that represents you, and adapt to your preferences over time</p>",
+        "id": 580889,
+        "locale": null,
+        "modified": "2026-11-24T00:13:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "November CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Excel"
+            },
+            {
+                "tagName": "Microsoft 365"
+            },
+            {
+                "tagName": "OneNote"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "Word"
+            },
+            {
+                "tagName": "Microsoft Copilot (Microsoft 365)"
+            },
+            {
+                "tagName": "Work IQ"
+            },
+            {
+                "tagName": "Current Channel"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Excel"
+                },
+                {
+                    "tagName": "Microsoft 365"
+                },
+                {
+                    "tagName": "OneNote"
+                },
+                {
+                    "tagName": "PowerPoint"
+                },
+                {
+                    "tagName": "Word"
+                },
+                {
+                    "tagName": "Microsoft Copilot (Microsoft 365)"
+                },
+                {
+                    "tagName": "Work IQ"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "Current Channel"
+                },
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Copilot (Microsoft 365): The more you use Copilot in Office the better it gets"
+    },
+    {
+        "created": "2026-11-24T00:13:11",
+        "description": "<p>You can add custom text to an email's follow-up flag to describe what you need to do. Use your own words to capture the next step for each flagged message. This gives you a clear reminder of why you flagged the email when you return to it. #newoutlookforwindows</p>",
+        "id": 580885,
+        "locale": null,
+        "modified": "2026-11-24T00:13:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Outlook"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Outlook"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Outlook: Add Custom Flag Descriptions for Clearer Follow-Ups"
+    },
+    {
+        "created": "2026-11-24T00:13:11",
+        "description": "<p>New controls in Presenter view will let you reposition and resize the speaker notes, set speaker notes to a specific text size, and customize the position of slides and notes into a view that works for you. The existing layout will remain the default unless you change it.</p>",
+        "id": 579892,
+        "locale": null,
+        "modified": "2026-11-24T00:13:11",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "PowerPoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Mac"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "PowerPoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "PowerPoint: Customize your Presenter view layout"
+    },
+    {
         "created": "2026-11-21T02:55:45",
         "description": "<p>Dynamics 365 Workforce Engagement Management (WEM) integrates with Microsoft 365 Copilot through Model Context Protocol (MCP) tools. These tools connect Microsoft 365 Copilot with Dynamics 365 and Dataverse so supervisors and customer service representatives can use natural language to work with workforce requests.</p>\n<p>Supervisors can list and filter the time-off, shift-swap, and shift-bid requests they are authorized to access. They can open an individual request to review its details and scheduling context. Supervisors with the required reviewer permission can also approve or reject pending time-off requests. When a supervisor rejects a request, the reason is saved as the reviewer note. The decision records the reviewer and updates the request in Dynamics 365.</p>\n<p>Customer service representatives can list their own time-off, shift-swap, and shift-bid requests, check request status, and open an individual request to review its details.</p>\n<p>The integration uses a registered WEM MCP tool set that enforces existing Dynamics 365 and Dataverse security roles and data boundaries. Supervisors can access only the workforce requests within their authorized scope, and customer service representatives can access only their own records. The integration uses the existing permission model, so organizations don't need to configure a separate permissions framework for these tools or build and maintain a standalone mobile application for these request scenarios.</p>\n<p>Request lists and request details appear as interactive app-in-chat experiences. Approval and rejection actions return a text confirmation. The current decision capability applies only to time-off requests; shift-swap and shift-bid requests can be listed and reviewed but not approved or rejected through these tools.</p>",
         "id": 581992,
@@ -1079,10 +1818,10 @@
         "description": "<p>Voice phishing detection helps protect Microsoft Teams users from potential scams during one-to-one calls with people outside their organization. Using AI, Teams analyzes conversations for signs of social engineering and alerts recipients when suspicious activity is detected, helping them recognize potential threats and decide how to proceed.</p>",
         "id": 580443,
         "locale": null,
-        "modified": "2026-11-20T23:20:27",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2027",
-        "publicPreviewDate": "",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -1109,6 +1848,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -1142,6 +1884,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -9617,10 +10362,10 @@
         "description": "<p>Let tenants trim file-version bloat created by retention, without breaking compliance promises. SharePoint/compliance admins at large, regulated enterprises must cap and reclaim storage consumed by retained file versions, while keeping legal-hold and records promises intact. Admins with appropriate Purview RBAC can enable version cleanup for ODB/SPO content even when retention policies are in effect. This would be a policy scoped setting that essentially overrides the default behavior where all versions are retained. When turned on, SharePoint\u2019s version management will be permitted to trim file versions per the defined limits except for specific protected cases.</p>",
         "id": 575284,
         "locale": null,
-        "modified": "2026-11-05T23:59:28",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2027",
-        "publicPreviewDate": "November CY2026",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -10166,12 +10911,12 @@
         "description": "<p>Improving the shared conversation experience in Viva Engage to so it's easier for users to discover, read, and participate.</p>",
         "id": 578870,
         "locale": null,
-        "modified": "2026-11-17T18:36:41",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -33739,10 +34484,10 @@
         "description": "<p>With this feature, admins can scope their network data security data loss prevention policies, integrated with Entra GSA Internet Access, to apply to all websites (<em>.</em>) or all websites except specific cloud apps, allowing them to apply protection to cloud apps and websites that are not in the Defender Cloud App Catalog.</p>",
         "id": 575285,
         "locale": null,
-        "modified": "2026-10-12T23:01:05",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
-        "publicPreviewDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "January CY2027",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -34484,10 +35229,10 @@
         "description": "<p>Connect with more attendees than ever before with Teams Events, now supporting up to 20,000 registrations for organizers with valid Attendee packs.</p>",
         "id": 574110,
         "locale": null,
-        "modified": "2026-10-16T22:00:35",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -34504,7 +35249,7 @@
                 "tagName": "General Availability"
             },
             {
-                "tagName": "Targeted Release"
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -34528,7 +35273,7 @@
                     "tagName": "General Availability"
                 },
                 {
-                    "tagName": "Targeted Release"
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -37308,9 +38053,9 @@
         "description": "<p>Enables admins to delete both content and containers for departed users at scale thereby keeping your tenant compliant without any manual effort.</p>",
         "id": 569721,
         "locale": null,
-        "modified": "2026-10-01T23:00:07",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "April CY2027",
         "publicPreviewDate": "November CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -47327,12 +48072,12 @@
         "description": "<p>The SharePoint FAQ web part will provide a standard, non-AI experience for manually creating, editing, and managing FAQs. The AI-assisted FAQ creation and import will move to the Copilot in SharePoint authoring experience, where authors can use natural-language prompts and selected grounding sources to generate FAQ content that is saved to the compatible FAQ web part. Existing FAQ web parts and their content will continue to render without migration.</p>",
         "id": 570647,
         "locale": null,
-        "modified": "2026-10-27T23:05:02",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -50219,12 +50964,12 @@
         "description": "<p>Capacity view shows a timeline of who's working on what, so you can see how work is distributed across your team and spot overload or open capacity at a glance.</p>",
         "id": 569733,
         "locale": null,
-        "modified": "2026-10-26T23:15:50",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -58509,12 +59254,12 @@
         "description": "<p>Access to Archive mailboxes (Main + Auxiliary) through Microsoft Graph. The goal is to give users a single, seamless Archive view, even though Archive data may physically reside across multiple auxiliary mailboxes with EWS Graph APIs getting deprecated by OCT 2026.</p>",
         "id": 567313,
         "locale": null,
-        "modified": "2026-11-05T23:59:28",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -60278,10 +61023,10 @@
         "description": "<p>Enables admins to delete both content and containers for departed users at scale thereby keeping your tenant compliant without any manual effort.</p>",
         "id": 566527,
         "locale": null,
-        "modified": "2026-09-21T23:04:49",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
-        "publicPreviewDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "January CY2027",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -63572,10 +64317,10 @@
         "description": "<p>The Microsoft Rights Management (RMS) connector is moving from shared-secret authentication to certificate-based authentication, improving its security posture. With this update, administrators configure their own Microsoft Entra app registration and certificate, then use the new PowerShell module to configure the certificate for each workload (Connector, Exchange, SharePoint, and FCI). New PowerShell cmdlets handle certificate import, registry configuration, private-key permissions, and validation. As part of this change, the connector setup no longer provisions an Entra service principal or issues a shared secret on the customer's behalf. Customers should plan to register an Entra ID application and upload a certificate before installing or upgrading the connector.</p>",
         "id": 564617,
         "locale": null,
-        "modified": "2026-10-13T23:01:05",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2027",
-        "publicPreviewDate": "October CY2026",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -65821,9 +66566,9 @@
         "description": "<p>With the introduction of file archiving support in SharePoint Online, administrators are looking to seamlessly include archiving actions within their existing data retention policies. This means that, in addition to keeping or deleting data, admins want to now leverage Purview DLM to archive files according to organizational requirements, ensuring comprehensive governance across all stages of the content lifecycle in SPO. Retention based file archiving moves inactive content to low-cost storage, lowering costs with no compromise on Compliance, keeping data discoverable and making Copilot results highly relevant.</p>",
         "id": 562345,
         "locale": null,
-        "modified": "2026-10-19T23:15:15",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -69430,9 +70175,9 @@
         "description": "<p>We are introducing file archiving support in SharePoint Online, utilizing this feature administrators can seamlessly include archiving actions within their existing data retention policies. This means that, in addition to keeping or deleting data, admins can now leverage Purview DLM to archive files according to organizational requirements, ensuring comprehensive governance across all stages of the content lifecycle in SharePoint Online. Retention based file archiving moves inactive content to low-cost storage, lowering costs with no compromise on Compliance, keeping data discoverable and making Copilot results highly relevant.</p>",
         "id": 561208,
         "locale": null,
-        "modified": "2026-10-12T23:01:05",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -69482,12 +70227,12 @@
     },
     {
         "created": "2026-05-05T23:00:02",
-        "description": "Data Lifecycle Management allows compliance admins to retain, review and delete content in M365 workloads.\u202fDeletion\u202fof content to adhere to compliance requirements, admins can set up Retention policies or labels.\u202fTo\u202fhelp\u202fprevent inadvertent data loss, M365 retention labels policies and M365 retention policies\u202fdo\u202fnot\u202fhard\u202fdelete content\u202fimmediately and keeps the data in Recycle Bins for\u202f93 days\u202ffor ODSP.\u202fHard delete\u202fitself is a very costly process as it\u202fopens\u202fMicrosoft to heavy legal implications in case of any data loss incident that may occur due to a misconfigured policy or regression.\u202fPriority Cleanup feature allows users to bypass retention,\u202fand eDiscovery holds to help customers comply to changing legal/compliance requirements\u202for manage data spillage\u202fscenarios.\u202fThis feature requires the ability\u202fto hard\u202fdelete specific files from the scoped locations.\u202f Ability to select hard delete configuration for a Priority cleanup policy for OneDrive and SharePoint content and skip recycle bins.",
+        "description": "<p>Data Lifecycle Management allows compliance admins to retain, review and delete content in M365 workloads.\u202fDeletion\u202fof content to adhere to compliance requirements, admins can set up Retention policies or labels.\u202fTo\u202fhelp\u202fprevent inadvertent data loss, M365 retention labels policies and M365 retention policies\u202fdo\u202fnot\u202fhard\u202fdelete content\u202fimmediately and keeps the data in Recycle Bins for\u202f93 days\u202ffor ODSP.\u202fHard delete\u202fitself is a very costly process as it\u202fopens\u202fMicrosoft to heavy legal implications in case of any data loss incident that may occur due to a misconfigured policy or regression.\u202fPriority Cleanup feature allows users to bypass retention,\u202fand eDiscovery holds to help customers comply to changing legal/compliance requirements\u202for manage data spillage\u202fscenarios.\u202fThis feature requires the ability\u202fto hard\u202fdelete specific files from the scoped locations.\u202f Ability to select hard delete configuration for a Priority cleanup policy for OneDrive and SharePoint content and skip recycle bins.</p>",
         "id": 561034,
         "locale": null,
-        "modified": "2026-08-19T22:58:06",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "January CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -80796,9 +81541,9 @@
         "description": "<p>Data Lifecycle Management allows compliance admins to retain, review and delete content in M365 workloads.\u202fDeletion\u202fof content to adhere to compliance requirements, admins can set up Retention policies or labels.\u202fTo\u202fhelp\u202fprevent inadvertent data loss, M365 retention labels policies and M365 retention policies\u202fdo\u202fnot\u202fhard\u202fdelete content\u202fimmediately and keeps the data in Recycle Bins for\u202f93 days\u202ffor ODSP.\u202fHard delete\u202fitself is a very costly process as it\u202fopens\u202fMicrosoft to heavy legal implications in case of any data loss incident that may occur due to a misconfigured policy or regression.\u202fPriority Cleanup feature allows users to bypass retention,\u202fand eDiscovery holds to help customers comply to changing legal/compliance requirements\u202for manage data spillage\u202fscenarios.\u202fThis feature requires the ability\u202fto hard\u202fdelete specific files from the scoped locations.\u202f Ability to select hard delete configuration for a Priority cleanup policy for OneDrive and SharePoint content and skip recycle bins.</p>",
         "id": 558343,
         "locale": null,
-        "modified": "2026-10-26T23:15:50",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "August CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -119001,21 +119746,18 @@
     },
     {
         "created": "2025-07-15T23:00:46",
-        "description": "\"Microsoft Places is an AI-powered workplace app for flexible work. Places helps organizations reimagine flexible work with AI, enables employees to connect more easily in person so that they can make the most of in-office days.",
+        "description": "<p>\"Microsoft Places is an AI-powered workplace app for flexible work. Places helps organizations reimagine flexible work with AI, enables employees to connect more easily in person so that they can make the most of in-office days.</p>",
         "id": 497998,
         "locale": null,
-        "modified": "2026-08-06T22:57:59",
+        "modified": "2026-11-24T00:13:11",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
             {
                 "tagName": "GCC High"
-            },
-            {
-                "tagName": "DoD"
             },
             {
                 "tagName": "Desktop"
@@ -119034,9 +119776,6 @@
             "cloudInstances": [
                 {
                     "tagName": "GCC High"
-                },
-                {
-                    "tagName": "DoD"
                 }
             ],
             "platforms": [
@@ -119058,7 +119797,7 @@
                 }
             ]
         },
-        "title": "Microsoft 365 app: Microsoft Places Support to GCCH and DoD"
+        "title": "Microsoft 365 app: Microsoft Places Support to GCC High"
     },
     {
         "created": "2025-07-11T22:00:02",
@@ -125603,55 +126342,6 @@
             ]
         },
         "title": "Planner: New Microsoft Planner App for Teams for customers in GCC-H"
-    },
-    {
-        "created": "2025-04-21T23:00:33",
-        "description": "When using Copilot Pages side-by-side in Copilot Chat, you can now ask questions in chat about your open page, and Copilot will provide answers based on the contents of that page.",
-        "id": 487848,
-        "locale": null,
-        "modified": "2026-01-23T23:00:31",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "September CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Launched",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): Copilot can now answer questions about opened Copilot Pages in chat"
     },
     {
         "created": "2025-04-18T22:15:14",

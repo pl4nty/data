@@ -374,7 +374,6 @@
         "EnableAustraliaNewZealandGeographicLocationType": true,
         "EnableAutoCreateSupportTicket": true,
         "EnableAutoImageSelection": true,
-        "EnableAutoOnboardGalleryImage": true,
         "EnableAutoProcessForPendingRecoverWorkItem": true,
         "EnableAutoProcessQuotaRequest": true,
         "EnableAutoRefreshMSIXIcon": true,
@@ -479,6 +478,7 @@
         "EnableClawInPolicy": true,
         "EnableClawPolicy": false,
         "EnableClawRemoteActionInWDS": true,
+        "EnableClawUserServiceAgentLookup": true,
         "EnableCleanUpForNewHostPool": true,
         "EnableCleanUpOnceProvisionFailed": true,
         "EnableCleanUpOrphanResourceById": true,
@@ -496,7 +496,6 @@
         "EnableCloudAppAssignmentType": true,
         "EnableCloudAppBackEndPup": true,
         "EnableCloudAppBackend": true,
-        "EnableCloudAppCache": true,
         "EnableCloudAppFilePathWithoutPreview": true,
         "EnableCloudAppFromFilePath": true,
         "EnableCloudAppFrontEndPup": true,
@@ -660,6 +659,7 @@
         "EnableDiagnoseAndRepairForTroubleshoot": true,
         "EnableDictBasedDesiredQuotaRules": true,
         "EnableDifferentEventType": true,
+        "EnableDirectCollectionFanOut": true,
         "EnableDirectLaunchUrl": true,
         "EnableDirectStream": false,
         "EnableDirectStreamActions": true,
@@ -905,7 +905,6 @@
         "EnableLicenseUtilizationPageForReserve": true,
         "EnableLighthouseOptimization": true,
         "EnableLimitRegionToUSOnly": true,
-        "EnableLoadManualSnapshotFromCDP": true,
         "EnableLocalAdminDesiredState": true,
         "EnableLocalAdminMigrationToSettingsService": true,
         "EnableLocationRecommendationReport": true,
@@ -1357,6 +1356,7 @@
         "EnableUPNForFrontlineCurrentConnectQuery": true,
         "EnableUXCloudPcTroubleshootReport": true,
         "EnableUXDisplayRetentionSnapshotInList": true,
+        "EnableUXHaadjDiagnostics": true,
         "EnableUnifiedApiVersionControlForImage": true,
         "EnableUnifiedGroupingTasksQueue": true,
         "EnableUnifiedNamingTemplateForFls": true,
@@ -1549,7 +1549,6 @@
         "ImageValidationManagedRunCmd": true,
         "IncludePolicyWithNoPartnerId": true,
         "InvokeCASForFLD": true,
-        "IsCosmosDBTriggerEnabled": true,
         "IsEnableCDPManageCanaryVM": true,
         "IsEnableCapacityServiceApiV2": true,
         "IsEnableCreateNetworkReferenceBeforeInitialCanaryCheck": true,
@@ -1914,6 +1913,9 @@
             "Aspen": {
                 "enableHealthCheckAvdDiagnostics": true,
                 "enableNativeClientUserBrandingSettings": true
+            },
+            "DirectStream": {
+                "enableDirectStreamToggle": true
             },
             "GUI": {
                 "EnablePinToDesktopShortcuts": true,

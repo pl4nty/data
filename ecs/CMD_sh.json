@@ -296,6 +296,7 @@
         "EnableAdditionalRdpPropertySettings": true,
         "EnableAdjustButtonPositionInFailPane": true,
         "EnableAdminAIAgentCustomPermissions": true,
+        "EnableAdminAgentBulkActions": true,
         "EnableAdminAgentCharts": true,
         "EnableAdminAgentChatHistory": true,
         "EnableAdminAgentPromptRibbons": true,
@@ -349,7 +350,6 @@
         "EnableAtScaleShareRestorePoint": true,
         "EnableAustraliaNewZealandGeographicLocationType": true,
         "EnableAutoImageSelection": true,
-        "EnableAutoOnboardGalleryImage": true,
         "EnableAutoProcessQuotaRequest": true,
         "EnableAutoRefreshMSIXIcon": true,
         "EnableAutoResetForUX": true,
@@ -464,7 +464,6 @@
         "EnableClientRegistrationManagementFunction": true,
         "EnableCloudAppBackEndPup": true,
         "EnableCloudAppBackend": true,
-        "EnableCloudAppCache": true,
         "EnableCloudAppFilePathWithoutPreview": true,
         "EnableCloudAppFromFilePath": true,
         "EnableCloudAppFrontEndPup": true,
@@ -482,7 +481,6 @@
         "EnableCloudPCDeviceLib": true,
         "EnableCloudPCLifecycleManagementCapability": true,
         "EnableCloudPCListEmptyStateHandling": true,
-        "EnableCloudPCManagedByBackfill": true,
         "EnableCloudPCMoveAction_UX": true,
         "EnableCloudPCPowerStateChangeAction": true,
         "EnableCloudPCReportingMigration": true,
@@ -589,6 +587,7 @@
         "EnableDeprecatingV1RegionConfigForAllocation": true,
         "EnableDeprovisionForEntFldOnBulkActionWizard": true,
         "EnableDeprovisionForEntFldOnPamo": true,
+        "EnableDeprovisionUnregistrationRetry": true,
         "EnableDesiredQuotaUpsert": true,
         "EnableDesiredStateReconciliationOnOsVersion": true,
         "EnableDevBoxWorkloadTag": true,
@@ -747,7 +746,6 @@
         "EnableGitHubWebhookProcessing": true,
         "EnableGnTCosmosDbBatchRateLimit": true,
         "EnableGpuDriverInstall": true,
-        "EnableGracePeriodActionValidation": true,
         "EnableGrandfatheredStatus": true,
         "EnableGraphApiSupportRecover": true,
         "EnableGroupAssignmentEtagCheck": true,
@@ -823,7 +821,6 @@
         "EnableLicenseUtilizationPageForReserve": true,
         "EnableLighthouseOptimization": true,
         "EnableLimitRegionToUSOnly": true,
-        "EnableLoadManualSnapshotFromCDP": true,
         "EnableLocalAdminDesiredState": true,
         "EnableLocalAdminMigrationToSettingsService": true,
         "EnableLocationRecommendationReport": true,
@@ -1418,7 +1415,6 @@
         "ImageCircuitBreakerAdaption": true,
         "ImageValidationManagedRunCmd": true,
         "InvokeCASForFLD": true,
-        "IsCosmosDBTriggerEnabled": true,
         "IsEnableCacheIntunePlatformRestricition": true,
         "IsEnableCapacityServiceApiV2": true,
         "IsEnableCreateNetworkReferenceBeforeInitialCanaryCheck": false,
@@ -1706,6 +1702,9 @@
             "Aspen": {
                 "enableHealthCheckAvdDiagnostics": true,
                 "enableNativeClientUserBrandingSettings": true
+            },
+            "DirectStream": {
+                "enableDirectStreamToggle": true
             },
             "GUI": {
                 "EnableBootKillMsrdcOnResumeFromSleepLock": true,
