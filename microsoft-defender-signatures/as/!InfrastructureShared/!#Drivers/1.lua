@@ -270,7 +270,7 @@ if r0_0 ~= nil and r0_0.OriginalFilename ~= nil then
     r0_7.amdtools64 = { "amdtools64_asr_driver", 0, 281505042595839 }
     r0_7.lecomax = { "lecomax_asr_driver", 0, 0 }
     r0_7.ccekrnl = { "ccekrnl_asr_driver", 3377708310601548, 3377708310601548 }
-    if versioning.IsSampled(4000, false, false, false) == true then
+    if versioning.IsSampled(8000, false, false, false) == true then
       r0_7.advcare = { "advcare_asr_driver", 0, 562949953421312 }
     end
     local r0_8 = r0_7[r0_1]

@@ -36,47 +36,48 @@ if r0_1[string.lower(r0_0)] then
       if isnull(r0_7) then
         return mp.CLEAN
       end
-      do
-        local r0_8 = string.lower(r0_7)
-        r0_7 = r0_8
-        r0_8 = false
+      r0_7 = string.lower(r0_7)
+      if not string.find(r0_7, "\\mosaic_files\\scripts\\variables", 1, true)
+        and not string.find(r0_7, "\\mosaic_files\\scripts\\monitor", 1, true) then
+        local r0_8 = false
         local r0_9 = MpCommon.ExpandEnvironmentVariables("%SystemDrive%\\inetpub\\wwwroot")
-        local r0_10 = not (isnull(r0_9) or not string.find(r0_7, string.lower(r0_9), 1, true))
-          or r0_8
-        local r0_11
-        if r0_10 then
-          r0_11 = r0_10
+        if not (isnull(r0_9) or not string.find(r0_7, string.lower(r0_9), 1, true)) then
+          r0_8 = true
+        end
+        local r0_10
+        if r0_8 then
+          r0_10 = r0_8
         else
-          local r0_12 = MpCommon.ExpandEnvironmentVariables("%windir%\\system32\\inetsrv\\config\\applicationHost.config")
+          local r0_11 = MpCommon.ExpandEnvironmentVariables("%windir%\\system32\\inetsrv\\config\\applicationHost.config")
+          if isnull(r0_11) then
+            return mp.CLEAN
+          end
+          local r0_12 = MpCommon.GetIisInstallPaths(r0_11)
           if isnull(r0_12) then
             return mp.CLEAN
           end
-          local r0_13 = MpCommon.GetIisInstallPaths(r0_12)
-          if isnull(r0_13) then
-            return mp.CLEAN
-          end
-          local r0_14, r0_15, r0_16 = ipairs(r0_13)
-          r0_11 = r0_10
-          for r0_17, r0_18 in r0_14, r0_15, r0_16 do
-            if not isnull(r0_18.Path) and string.find(r0_7, string.lower(r0_18.Path), 1, true) then
-              r0_11 = true
+          local r0_13, r0_14, r0_15 = ipairs(r0_12)
+          r0_10 = r0_8
+          for r0_16, r0_17 in r0_13, r0_14, r0_15 do
+            if not isnull(r0_17.Path) and string.find(r0_7, string.lower(r0_17.Path), 1, true) then
+              r0_10 = true
               break
             end
           end
         end
-        if r0_11 then
-          local r0_19 = mp.getfilesize()
-          if not isnull(r0_19) and not (r0_19 < 20) then
-            local r0_20 = r0_19 > 524288 and 524288 or r0_19
+        if r0_10 then
+          local r0_18 = mp.getfilesize()
+          if not isnull(r0_18) and not (r0_18 < 20) then
+            local r0_19 = r0_18 > 524288 and 524288 or r0_18
             mp.readprotection(false)
-            local r0_21 = mp.readfile(0, r0_20)
+            local r0_20 = mp.readfile(0, r0_19)
             mp.readprotection(true)
-            if isnull(r0_21) then
+            if isnull(r0_20) then
               return mp.CLEAN
             end
-            local r0_22 = string.lower(tostring(r0_21))
+            local r0_21 = string.lower(tostring(r0_20))
 
-            local function r0_23(p1_0, p1_1)
+            local function r0_22(p1_0, p1_1)
               for r1_0, r1_1 in ipairs(p1_1) do
                 if string.find(p1_0, r1_1, 1, true) then
                   return true
@@ -85,135 +86,135 @@ if r0_1[string.lower(r0_0)] then
               return false
             end
 
-            local r0_24, r0_25, r0_26, r0_27 = 0, false, false, false
-            local r0_28 = {
+            local r0_23, r0_24, r0_25, r0_26 = 0, false, false, false
+            local r0_27 = {
               "request.form", "request.querystring", "request.item", "request[", "request(",
               "request.cookies", "request.servervariables", "request.headers", "request.params",
               "request.inputstream", "request.binaryread", "request.files", "request.rawurl",
               "request.path", "context.request", "httpcontext.current.request", "server.urldecode"
             }
-            if r0_23(r0_22, r0_28) then
-              r0_25 = true
-              r0_24 = r0_24 + 2
+            if r0_22(r0_21, r0_27) then
+              r0_24 = true
+              r0_23 = r0_23 + 2
             end
-            local r0_29 = {
+            local r0_28 = {
               "process.start", "processstartinfo", "system.diagnostics.process",
               "diagnostics.process", "wscript.shell", "wshshell", "shell.application",
               "shellexecute", "win32_process", "redirectstandardoutput", "useshellexecute",
               "standardoutput.readtoend", "cmd.exe /c", "cmd.exe ", "command.com", "cmd /c",
               "%comspec%", "comspec", "powershell", "pwsh.exe", "/bin/sh", "/bin/bash", "bash -c"
             }
-            if r0_23(r0_22, r0_29) then
-              r0_26 = true
-              r0_24 = r0_24 + 5
+            if r0_22(r0_21, r0_28) then
+              r0_25 = true
+              r0_23 = r0_23 + 5
             end
-            local r0_30 = {
+            local r0_29 = {
               "executeglobal", "executestatement", "assembly.load", "reflection.assembly",
               "appdomain.currentdomain.load", "csharpcodeprovider", "vbcodeprovider",
               "codedomprovider", "compileassemblyfrom", "icodecompiler", "microsoft.jscript",
               "jscript.eval", "scriptcontrol"
             }
-            if r0_23(r0_22, r0_30) then
-              r0_27 = true
-              r0_24 = r0_24 + 5
+            if r0_22(r0_21, r0_29) then
+              r0_26 = true
+              r0_23 = r0_23 + 5
             end
-            local r0_31 = {
+            local r0_30 = {
               "eval(request", "eval (request", "execute(request", "execute request",
               "executeglobal request", "executeglobal(request", "executestatement request",
               "response.write(eval", "eval(page.request"
             }
-            local r0_32 = r0_23(r0_22, r0_31)
-            local r0_33 = {
+            local r0_31 = r0_22(r0_21, r0_30)
+            local r0_32 = {
               "activator.createinstance", "invokemember", "methodinfo", ".invoke(", "getmethod(",
               "bindingflags", "marshal.getdelegateforfunctionpointer", "loadlibrary", "virtualalloc",
               "createthread", "writeprocessmemory", "rtlmovememory"
             }
-            local r0_34 = r0_23(r0_22, r0_33)
-            if r0_34 then
-              r0_24 = r0_24 + 2
+            local r0_33 = r0_22(r0_21, r0_32)
+            if r0_33 then
+              r0_23 = r0_23 + 2
             end
-            r0_34 = string
-            r0_34 = r0_34.find
-            r0_34 = r0_34(r0_22, "eval(", 1, true)
-            if r0_34 or string.find(r0_22, "new function(", 1, true) then
-              r0_24 = r0_24 + 1
+            r0_33 = string
+            r0_33 = r0_33.find
+            r0_33 = r0_33(r0_21, "eval(", 1, true)
+            if r0_33 or string.find(r0_21, "new function(", 1, true) then
+              r0_23 = r0_23 + 1
             end
-            r0_34 = {
+            r0_33 = {
               "frombase64string", "convert.frombase64", "tobase64string", "encoding.utf8.getstring",
               "encoding.ascii.getstring", "encoding.unicode.getstring", "gzipstream",
               "deflatestream", "cryptostream", "rijndaelmanaged", "aesmanaged",
               "tripledescryptoserviceprovider", "vbscript.encode", "jscript.encode", "#@~^"
             }
-            local r0_35 = r0_23
-            r0_35 = r0_35(r0_22, r0_34)
-            if r0_35 then
-              r0_24 = r0_24 + 2
+            local r0_34 = r0_22
+            r0_34 = r0_34(r0_21, r0_33)
+            if r0_34 then
+              r0_23 = r0_23 + 2
             end
-            r0_35 = {
+            r0_34 = {
               "webclient", "downloadstring", "downloadfile", "downloaddata", "uploadfile",
               "httpwebrequest", "webrequest.create", "tcpclient", "net.sockets",
               "msxml2.serverxmlhttp", "serverxmlhttp", "winhttp.winhttprequest", "xmlhttp"
             }
-            local r0_36 = r0_23(r0_22, r0_35)
-            if r0_36 then
-              r0_24 = r0_24 + 2
+            local r0_35 = r0_22(r0_21, r0_34)
+            if r0_35 then
+              r0_23 = r0_23 + 2
             end
-            r0_36 = {
+            r0_35 = {
               "scripting.filesystemobject", "filesystemobject", "file.writeallbytes",
               "file.writealltext", "file.readallbytes", "streamwriter", "binarywrite", "postedfile",
               "saveas(", "httppostedfile"
             }
-            local r0_37 = r0_23(r0_22, r0_36)
-            if r0_37 then
-              r0_24 = r0_24 + 2
+            local r0_36 = r0_22(r0_21, r0_35)
+            if r0_36 then
+              r0_23 = r0_23 + 2
             end
-            r0_37 = {
+            r0_36 = {
               "response.write", "response.binarywrite", "response.clear", "response.addheader"
             }
-            local r0_38 = r0_23(r0_22, r0_37)
-            if r0_38 then
-              r0_24 = r0_24 + 1
+            local r0_37 = r0_22(r0_21, r0_36)
+            if r0_37 then
+              r0_23 = r0_23 + 1
             end
-            r0_38 = {
+            r0_37 = {
               "china chopper", "caidao", "antsword", "behinder", "godzilla", "aspxspy", "iisspy",
               "wso_version", "wso shell", "b374k", "c99shell", "r57shell", "regeorg", "georg says",
               "regeorgtunnel", "tunna", "weevely", "p0wny", "altman", "k8cscan", "jspspy",
               "awen asp.net webshell", "cmdasp", "labshell", "twebshell", "antichat", "kacak"
             }
-            local r0_39 = r0_23(r0_22, r0_38)
-            local r0_40 = {
+            local r0_38 = r0_22(r0_21, r0_37)
+            local r0_39 = {
               "redirectstandardoutput", "standardoutput.readtoend", "stdout.readall", ".stdout",
               "redirectstandarderror", "standarderror.readtoend"
             }
-            local r0_41 = r0_23(r0_22, r0_40)
-            if r0_39 then
+            local r0_40 = r0_22(r0_21, r0_39)
+            if r0_38 then
               set_research_data("webshell_path", r0_7, false)
               set_research_data("webshell_reason", "family_fingerprint", false)
-              set_research_data("webshell_score", tostring(r0_24), false)
+              set_research_data("webshell_score", tostring(r0_23), false)
               return mp.INFECTED
             end
-            if r0_32 then
+            if r0_31 then
               set_research_data("webshell_path", r0_7, false)
               set_research_data("webshell_reason", "eval_of_request", false)
-              set_research_data("webshell_score", tostring(r0_24), false)
+              set_research_data("webshell_score", tostring(r0_23), false)
               return mp.INFECTED
             end
-            if r0_25 and r0_27 then
+            if r0_24 and r0_26 then
               set_research_data("webshell_path", r0_7, false)
               set_research_data("webshell_reason", "input_to_dyncode", false)
-              set_research_data("webshell_score", tostring(r0_24), false)
+              set_research_data("webshell_score", tostring(r0_23), false)
               return mp.INFECTED
             end
-            if r0_25 and r0_26 and r0_41 then
+            if r0_24 and r0_25 and r0_40 then
               set_research_data("webshell_path", r0_7, false)
               set_research_data("webshell_reason", "command_shell_with_output", false)
-              set_research_data("webshell_score", tostring(r0_24), false)
+              set_research_data("webshell_score", tostring(r0_23), false)
               return mp.INFECTED
             end
-            if r0_25 and r0_26 and r0_24 >= 9 then
+            if r0_24 and r0_25 and r0_23 >= 9 then
               set_research_data("webshell_path", r0_7, false)
               set_research_data("webshell_reason", "input_to_cmdexec", false)
-              set_research_data("webshell_score", tostring(r0_24), false)
+              set_research_data("webshell_score", tostring(r0_23), false)
               return mp.INFECTED
             end
             return mp.CLEAN
@@ -222,6 +223,7 @@ if r0_1[string.lower(r0_0)] then
         end
         return mp.CLEAN
       end
+      return mp.CLEAN
     end
     return mp.CLEAN
   end
