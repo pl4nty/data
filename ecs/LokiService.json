@@ -1,7 +1,7 @@
 {
     "CalendarCompanion": {
         "CalendarCompanionDFVersion": "1.20261119.12.0",
-        "CalendarCompanionMsitVersion": "1.20260525.11.0",
+        "CalendarCompanionMsitVersion": "1.20261119.12.0",
         "CalendarCompanionProdVersion": "1.20260513.9.0",
         "CompanionRing": "Prod",
         "HostAppRing": "Prod",
@@ -1020,7 +1020,7 @@
         "LpcForceIntegratedLogger": false,
         "LpcTopicsEnabled": false,
         "LpcV1Version": "1.20250505.3.0",
-        "LpcVersion": "1.20261108.14.0",
+        "LpcVersion": "1.20261116.3.0",
         "MacGroupAdditionalPanels": false,
         "MagnificentHeader": false,
         "NavigateToTopicsEVEnabled": false,
@@ -2863,7 +2863,7 @@
     "PeopleInTaskbar": {
         "PeopleCompanionRing": "Prod",
         "PeopleInTaskbarDFVersion": "1.20261119.12.0",
-        "PeopleInTaskbarMsitVersion": "1.20260603.10.0",
+        "PeopleInTaskbarMsitVersion": "1.20261119.12.0",
         "PeopleInTaskbarProdVersion": "1.20260520.11.0",
         "PeopleInTaskbarVersion": "1.20260526.10.0",
         "allowFallbackTenantIndexEntityServeFetch": 1,

@@ -428,6 +428,7 @@
             "EnableAndroidCpWebEnrollment": true,
             "EnableAndroidDeviceGatewayService": true,
             "EnableAndroidDeviceGatewayServiceForByodWp": true,
+            "EnableAndroidEsimReporting": true,
             "EnableAndroidSyncCredentialProviderProcessing": true,
             "EnableAndroidWPDeviceMigrationPolicyPreprocessing": true,
             "EnableAndroidWpDeviceMigrationFinalization": true,
@@ -1082,7 +1083,8 @@
         "FlightingV2": {
             "DotNetUpdateSyncEnabled": true,
             "MoveToApLs": true,
-            "QualityUpdateApprovalEnabled": true
+            "QualityUpdateApprovalEnabled": true,
+            "UseOboForLicenseCheck": true
         }
     },
     "Segmentation": {
@@ -1191,6 +1193,7 @@
             "EnableMaintenanceWindowsBlade": true,
             "EnableWpa3PersonalForIosFlight": true,
             "ExplorerDcv2DeviceSummary": true,
+            "HideDeprecatedAppleSoftwareUpdates": true,
             "HidePCAAndCRAFromAgentsL1": true,
             "TunnelVpnStrictModeV2": true,
             "UX_DisableAssociationMACRandomization": true,

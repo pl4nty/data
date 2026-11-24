@@ -1743,7 +1743,6 @@
         "SARMCompressLargeBlocks": true,
         "SARMEnforceRunningQuota": true,
         "SARMEnsureContainerExists": true,
-        "SARMSkipCompressSourceContentHash": true,
         "SESSION_STORAGE_IWP": true,
         "SPA_AUTH_IWP": true,
         "SPA_REDIRECT_OPT_IWP": true,
