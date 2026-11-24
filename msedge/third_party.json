@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 6878740,
+    "size": 6878756,
     "file_count": 193
   },
   {
@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 34450535,
-    "file_count": 4097
+    "size": 34471130,
+    "file_count": 4098
   },
   {
     "name": "boringssl",
@@ -86,7 +86,7 @@
   },
   {
     "name": "breakpad",
-    "size": 18022465,
+    "size": 18022712,
     "file_count": 1010
   },
   {
@@ -106,8 +106,8 @@
   },
   {
     "name": "chromium-bidi",
-    "size": 39408,
-    "file_count": 5
+    "size": 73209,
+    "file_count": 11
   },
   {
     "name": "cld_3",
@@ -151,8 +151,8 @@
   },
   {
     "name": "dawn",
-    "size": 128291493,
-    "file_count": 19366
+    "size": 128297398,
+    "file_count": 19367
   },
   {
     "name": "dbus",
@@ -161,7 +161,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 5514032,
+    "size": 5515256,
     "file_count": 64
   },
   {
@@ -206,8 +206,8 @@
   },
   {
     "name": "eigen3",
-    "size": 24344381,
-    "file_count": 2468
+    "size": 25043830,
+    "file_count": 2490
   },
   {
     "name": "entity_extraction",
@@ -241,7 +241,7 @@
   },
   {
     "name": "ffmpeg",
-    "size": 101838284,
+    "size": 101838298,
     "file_count": 11916
   },
   {
@@ -276,8 +276,8 @@
   },
   {
     "name": "glslang",
-    "size": 47086961,
-    "file_count": 3885
+    "size": 47138067,
+    "file_count": 3899
   },
   {
     "name": "googletest",
@@ -291,8 +291,8 @@
   },
   {
     "name": "grpc",
-    "size": 31316566,
-    "file_count": 3479
+    "size": 31320060,
+    "file_count": 3480
   },
   {
     "name": "gsettings-desktop-schemas",
@@ -351,7 +351,7 @@
   },
   {
     "name": "inspector_protocol",
-    "size": 53375,
+    "size": 53849,
     "file_count": 12
   },
   {
@@ -401,8 +401,8 @@
   },
   {
     "name": "libc++",
-    "size": 12994505,
-    "file_count": 1848
+    "size": 12882634,
+    "file_count": 1829
   },
   {
     "name": "libc++abi",
@@ -461,7 +461,7 @@
   },
   {
     "name": "libusb",
-    "size": 837001,
+    "size": 837080,
     "file_count": 64
   },
   {
@@ -511,8 +511,8 @@
   },
   {
     "name": "metrics_proto",
-    "size": 303568,
-    "file_count": 46
+    "size": 300224,
+    "file_count": 45
   },
   {
     "name": "microsoft_dlis_tokenizers",
@@ -521,7 +521,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 19438059,
+    "size": 19549675,
     "file_count": 19
   },
   {
@@ -566,12 +566,12 @@
   },
   {
     "name": "oak",
-    "size": 15070875,
+    "size": 15127556,
     "file_count": 153
   },
   {
     "name": "omnibox_proto",
-    "size": 88887,
+    "size": 90037,
     "file_count": 38
   },
   {
@@ -611,7 +611,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4952681,
+    "size": 4957255,
     "file_count": 649
   },
   {
@@ -696,7 +696,7 @@
   },
   {
     "name": "skia",
-    "size": 3492746,
+    "size": 3493151,
     "file_count": 1223
   },
   {
@@ -750,6 +750,11 @@
     "file_count": 65
   },
   {
+    "name": "tink",
+    "size": 83750,
+    "file_count": 49
+  },
+  {
     "name": "trust_protection_lists",
     "size": 53837,
     "file_count": 7
@@ -766,8 +771,8 @@
   },
   {
     "name": "undocked_copilot",
-    "size": 37513622,
-    "file_count": 51
+    "size": 37516540,
+    "file_count": 53
   },
   {
     "name": "undocked_copilot_mac",
@@ -796,7 +801,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 8122569,
+    "size": 8119148,
     "file_count": 213
   },
   {

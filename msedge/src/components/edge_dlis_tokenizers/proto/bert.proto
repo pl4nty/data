@@ -1,0 +1,13 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto3";
+option optimize_for = LITE_RUNTIME;
+package edge_dlis_tokenizers.proto;
+
+// Field numbers and types preserve the existing DLIS BERT vocabulary wire
+// format.
+message BertVocabulary {
+  repeated string words = 1;
+}
