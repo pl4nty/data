@@ -76,8 +76,8 @@
   },
   {
     "name": "blink",
-    "size": 34471130,
-    "file_count": 4098
+    "size": 34471737,
+    "file_count": 4096
   },
   {
     "name": "boringssl",
@@ -86,7 +86,7 @@
   },
   {
     "name": "breakpad",
-    "size": 18022712,
+    "size": 18027035,
     "file_count": 1010
   },
   {
@@ -106,7 +106,7 @@
   },
   {
     "name": "chromium-bidi",
-    "size": 73209,
+    "size": 76185,
     "file_count": 11
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "crabbyavif",
-    "size": 52990,
+    "size": 54457,
     "file_count": 5
   },
   {
@@ -151,8 +151,8 @@
   },
   {
     "name": "dawn",
-    "size": 128297398,
-    "file_count": 19367
+    "size": 128339453,
+    "file_count": 19379
   },
   {
     "name": "dbus",
@@ -276,8 +276,8 @@
   },
   {
     "name": "glslang",
-    "size": 47138067,
-    "file_count": 3899
+    "size": 47194929,
+    "file_count": 3909
   },
   {
     "name": "googletest",
@@ -361,7 +361,7 @@
   },
   {
     "name": "jdk",
-    "size": 3022,
+    "size": 3058,
     "file_count": 3
   },
   {
@@ -376,7 +376,7 @@
   },
   {
     "name": "jni_zero",
-    "size": 31630,
+    "size": 30341,
     "file_count": 2
   },
   {
@@ -401,8 +401,8 @@
   },
   {
     "name": "libc++",
-    "size": 12882634,
-    "file_count": 1829
+    "size": 12994505,
+    "file_count": 1848
   },
   {
     "name": "libc++abi",
@@ -486,8 +486,8 @@
   },
   {
     "name": "litert",
-    "size": 116368,
-    "file_count": 35
+    "size": 125743,
+    "file_count": 38
   },
   {
     "name": "llvm-build",
@@ -561,8 +561,8 @@
   },
   {
     "name": "node",
-    "size": 61331930,
-    "file_count": 3339
+    "size": 61911107,
+    "file_count": 3443
   },
   {
     "name": "oak",
@@ -611,7 +611,7 @@
   },
   {
     "name": "perfetto",
-    "size": 4957255,
+    "size": 4958722,
     "file_count": 649
   },
   {
@@ -696,7 +696,7 @@
   },
   {
     "name": "skia",
-    "size": 3493151,
+    "size": 3493421,
     "file_count": 1223
   },
   {
@@ -711,7 +711,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 557187,
+    "size": 558136,
     "file_count": 15
   },
   {
@@ -741,8 +741,8 @@
   },
   {
     "name": "tflite",
-    "size": 1984761,
-    "file_count": 563
+    "size": 2000743,
+    "file_count": 568
   },
   {
     "name": "tflite_support",
@@ -801,8 +801,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 8119148,
-    "file_count": 213
+    "size": 8131414,
+    "file_count": 214
   },
   {
     "name": "vulkan_memory_allocator",
@@ -816,7 +816,7 @@
   },
   {
     "name": "webdriver",
-    "size": 449994,
+    "size": 450943,
     "file_count": 21
   },
   {
