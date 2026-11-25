@@ -1,5 +1,769 @@
 [
     {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p>Make presentations easier to see from anywhere in the room, even when you're not in a Teams meeting. On Microsoft Teams Rooms on Android with dual displays, content you share through an HDMI connection can now appear on both screens at once. You can start or stop showing your content on both screens from the room controls. Admins can use settings to manage how this works in their rooms.</p>",
+        "id": 582052,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Android"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Android"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Show your shared content on both room displays"
+    },
+    {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p>Admins should be able to track the detection and meeting access activity of external bots in the meetings and events hosted in their tenant.</p>",
+        "id": 582050,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: External bot detection and activity reports in Admin Center"
+    },
+    {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p>We are introducing organization-wide page templates in SharePoint, enabling organizations to provide reusable, approved starting points for page creation across sites within a tenant. Managed centrally in the SharePoint site associated with your organization's brand center, these templates help authors reduce repetitive setup and create pages with consistent content.</p>",
+        "id": 581865,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "SharePoint"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "SharePoint"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "SharePoint: Organization-wide page templates "
+    },
+    {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p>This feature adds UTGST (Union Territory Goods and Services Tax) to the Commerce channel - store Commerce/POS/Trade POS and e\u2011commerce transactions in union territories.</p>\n<p>What UTGST is: For union territories in India that don't have a legislature, the GST Council introduced UTGST, which is comparable to SGST. UTGST applies to the following union territories of India: Chandigarh Lakshadweep Daman and Diu Dadra and Nagar Haveli Andaman and Nicobar Islands. Delhi and Puducherry have their own legislatures, so they stay on SGST.</p>",
+        "id": 581799,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "May CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Commerce"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Commerce"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Commerce: UTGST Tax support in Commerce [India Tax Localization]"
+    },
+    {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p>This feature adds lead times set per customer or per product to the ATP promise date, so the date reflects how each customer and each item is actually served.</p>\n<p>Customer lead time: time that applies to everything shipped to a given customer, such as agreed service levels, delivery schedules, or extra handling and documentation.</p>\n<p>Product lead time: time that applies to a given item whoever orders it, such as packing, quality checks, kitting or vendor lead time for items you don't stock.</p>",
+        "id": 581798,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Supply Chain Management"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Supply Chain Management"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Supply Chain Management: ATP with customer & product lead time"
+    },
+    {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p>This feature lets a business choose which incoming supply counts when the system calculates available-to-promise (ATP), so delivery promises match its own order-promising policy. It is in preview from version 10.0.50.</p>\n<p>It allows business to design ATP calculations for their business needs through different parameters to exclude purchase order or transfer order or production order. By default, these are not excluded.</p>",
+        "id": 581797,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/available-to-promise-supply-exclusions",
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Supply Chain Management"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Supply Chain Management"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Supply Chain Management: Configurable ATP with Receipt Control "
+    },
+    {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p>Administrators can now manage system administrator users and security roles for both finance and operations apps and Dataverse from a single, unified experience in Power Platform admin center. Instead of switching between the finance and operations Users and Security configuration pages and the Dataverse user and role pages, admins can add and enable users, assign and remove roles, and review user access across both from one place. This generally available release follows the public preview and gives admins consistent, centralized identity and access administration for finance and operations environments.</p>",
+        "id": 581777,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Power Platform governance and administration"
+            },
+            {
+                "tagName": "Dynamics 365 Finance and Operations cross-app"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Power Platform governance and administration"
+                },
+                {
+                    "tagName": "Dynamics 365 Finance and Operations cross-app"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Power Platform governance and administration: Unify finance and operations system administrator user and role management in Power Platform admin center"
+    },
+    {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p><strong>Business value</strong></p>\n<p>Onboarding in Dynamics 365 Human Resources spans several pages and two people: HR administrators hire the candidate, enroll leave and set compensation, while the new employee completes personal details, address, emergency contacts and identification. Steps are easy to miss.<br>\nA new agentic onboarding experience will brings the tasks into one guided conversation over live Human Resources data. Every change is previewed and confirmed explicitly, and all reads and writes run under the signed-in user's security roles and legal entities, so teams move faster without giving up control.</p>\n<p><strong>Capability details</strong></p>\n<ul>\n<li><strong>Ready-to-start worklist:</strong> unprocessed candidates whose estimated start date falls in the configured trigger lead-days window, across the HR manager's legal entities.</li>\n<li><strong>Guided hire:</strong> opens the standard Hire new worker dialog with real lookup values (worker type, employment type, dates, position, personnel number, checklist templates), then creates the worker and re-reads the result.</li>\n<li><strong>Start date adjustment, leave plan enrollment and fixed compensation,</strong> each confirmed and read back, plus a read-only onboarding status view.</li>\n<li><strong>New employee self-service:</strong> own checklist grouped overdue, pending and done, plus personal details, home address, emergency contacts and identification.</li>\n<li><strong>Identification capture:</strong> the employee uploads a passport, license, national ID or work permit image; the agent proposes the type, number, issuing country and dates, masks the number and requires confirmation. The image is not retained.</li>\n<li><strong>Also included:</strong> natural-language address entry, progress summary, an introductory email draft and resource links.</li>\n</ul>\n<p><strong>Enablement</strong></p>\n<p>Configured per legal entity in Human resources parameters: the Copilot HR manager toggle and Copilot trigger lead days drive the candidate worklist. Administrator capabilities require the Human resource manager or assistant role; employee capabilities run under self-service access</p>",
+        "id": 581772,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "July CY2027",
+        "publicPreviewDate": "March CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Human Resources"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Human Resources"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Human Resources: Agent onboarding for new employees"
+    },
+    {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p>When you enable the Enable Project Revenue recognition using the cost estimate instead of the EAC (estimate at complete) setting, you activate this feature.</p>\n<ul>\n<li>Uses the original project estimate for PoC calculations: Delivers stable, predictable revenue without EAC-driven fluctuations.</li>\n<li>Anchors revenue recognition to a fixed baseline: Improves transparency and boosts confidence in reported project financials.</li>\n<li>Reduces reliance on changing forecasts: Minimizes rework and exceptions during month-end close.</li>\n<li>Provides clear traceability from estimate to recognition: Strengthens audit readiness and compliance.</li>\n<li>Aligns revenue with initial project expectations: Enhances visibility into true project performance and profitability.</li>\n<li>Creates smoother revenue trends across reporting periods: Enables better executive decision-making and financial planning.</li>\n<li>Standardizes how teams evaluate project progress: Supports consistent financial processes across the organization.</li>\n</ul>",
+        "id": 580871,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/project-operations/revenue-recognition/rev-rec-cost-estimates",
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "May CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Enable Project Revenue recognition using cost estimate instead of EAC (estimate at complete)"
+    },
+    {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p>Enhancements that are a part of this release expand who can use the Multi-attribute report export, increases the supported scale, and gives authorized users more control over the questions and attributes included.</p>",
+        "id": 580455,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva - Viva Glint: Enhanced multi-attribute report exports"
+    },
+    {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p>Scheduling teams planning work over several months need to see upcoming bookings while retaining an hourly view of their schedules. The current hourly view supports up to 28 days. The planned extended view is designed to help teams review bookings across a longer planning horizon without switching to a less detailed view, or paging through multiple time periods. Loading and refresh improvements aim to reduce waiting as teams review and update their schedules.</p>\n<p>Administrators can configure the planned capability in schedule board settings to extend the hourly view to up to 180 days. The update also introduces on-demand booking loading and improvements to schedule board loading and refresh performance. Loading screens are improved to reduce full-screen locking during refresh and scrolling. Refresh is designed to cover all bookings in view, helping scheduling teams review changes across the displayed period.</p>",
+        "id": 579966,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Field Service: Plan further ahead with 180-day hourly schedule board view"
+    },
+    {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p>Scheduling teams planning multiday work do so using the <em>aggregate</em> views on the schedule board - the daily, weekly, and monthly views. On those views, multiple bookings are aggregated into a single object that spans the entire period.</p>\n<p>This improvement will allow administrators to configure the template and tooltips that are available on those views, so they can display information relevant to their dispatchers Custom html templates will bind to the requirement, rather than the booking, allowing fields common to the entire aggregation to be displayed. Tooltips will allow paging through each booking in the aggregation, so each can be viewed without needing to navigate to the underlying record.</p>",
+        "id": 579965,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Field Service"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Field Service"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Field Service: Custom tooltips and templates on schedule board aggregate views"
+    },
+    {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p>The Approvals Agent in Dynamics 365 Project Operations uses AI to perform an initial review of submitted time, expense, and material entries against policy documents written in natural language. It classifies entries as Ready for approval or Needs review, helping project managers prioritize entries that require attention.</p>\n<p>Organizations can choose between two operating modes. In Classify mode, approvers review the agent\u2019s classifications and manually approve entries. In Classify and auto approve mode, entries classified as Ready for approval are automatically processed for approval, while entries classified as Needs review remain available for human review.</p>\n<p>Administrators can configure organization-wide policies and project-specific policies for each entry type. A project-specific policy takes precedence over the corresponding organization-wide policy. Project-level controls determine which projects use the agent, with a configurable default for new projects.</p>\n<p>Approvers can review classified entries, approve or reject them, or return them to the agent for reevaluation after a policy update. If no applicable policy document exists for an entry type, the agent does not classify those entries.</p>",
+        "id": 578903,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": "https://learn.microsoft.com/en-us/dynamics365/project-operations/approvals/approvals-agent-intro",
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "April CY2025",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Activity Approvals Agent"
+    },
+    {
+        "created": "2026-11-25T00:10:31",
+        "description": "<p>Before you can invoice a project, every eligible unbilled sales actual has to be marked ready to invoice. Today, project managers and billing administrators do that by selecting records in a grid that's capped at 1,000 per page, then repeating the action page after page. For firms with tens of thousands of actuals in a billing cycle, that adds up to hours of repetitive work before a single invoice gets created.</p>\n<p>Now you can mark every eligible actual for a project, contract, or contract line in one action, without selecting records yourself. The same eligibility rules you rely on today still apply, so anything that isn't ready to bill stays off the invoice. You spend less time preparing invoices, get them out on schedule, and improve cash flow without giving up accuracy.</p>",
+        "id": 578902,
+        "locale": null,
+        "modified": "2026-11-25T00:10:31",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "September CY2027",
+        "publicPreviewDate": "March CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Project Operations"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Project Operations"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Project Operations: Mark all eligible actuals ready to invoice in bulk"
+    },
+    {
         "created": "2026-11-24T00:13:11",
         "description": "<p>Choose whether to track email opens separately from other tracking in Dynamics 365 Customer Insights - Journeys. A dedicated consent purpose lets you omit tracking pixels from new emails while link clicks, website interactions, UTM parameters, and form prefill continue to follow their existing tracking consent settings.</p>",
         "id": 581967,
@@ -414,7 +1178,7 @@
         "description": "<p>Ask your questions live and take part in the conversation, even at events with up to 100,000 attendees. In events this size, attendees can now raise their hand in Teams when they have a question. Organizers can then let people with a raised hand turn on their mic and camera to ask their question or speak during the event.</p>",
         "id": 581720,
         "locale": null,
-        "modified": "2026-11-24T00:13:11",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
@@ -425,10 +1189,19 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
+                "tagName": "Android"
+            },
+            {
                 "tagName": "Desktop"
             },
             {
+                "tagName": "iOS"
+            },
+            {
                 "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -445,10 +1218,19 @@
             ],
             "platforms": [
                 {
+                    "tagName": "Android"
+                },
+                {
                     "tagName": "Desktop"
                 },
                 {
+                    "tagName": "iOS"
+                },
+                {
                     "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -469,7 +1251,7 @@
         "description": "<p>Stay more engaged and connected with the audience, even at events with up to 100,000 attendees. Teams now supports reactions in events at this scale. You can send reactions during the event and see the reactions others send, so everyone can share the moment together.</p>",
         "id": 581719,
         "locale": null,
-        "modified": "2026-11-24T00:13:11",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
@@ -480,10 +1262,19 @@
                 "tagName": "Worldwide (Standard Multi-Tenant)"
             },
             {
+                "tagName": "Android"
+            },
+            {
                 "tagName": "Desktop"
             },
             {
+                "tagName": "iOS"
+            },
+            {
                 "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
             },
             {
                 "tagName": "Microsoft Teams"
@@ -500,10 +1291,19 @@
             ],
             "platforms": [
                 {
+                    "tagName": "Android"
+                },
+                {
                     "tagName": "Desktop"
                 },
                 {
+                    "tagName": "iOS"
+                },
+                {
                     "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
                 }
             ],
             "products": [
@@ -15682,10 +16482,10 @@
         "description": "<p>Associate channels with a tag so members are automatically added to those channels when they join the tag. This helps teams keep channel membership in sync with evolving groups, reduces manual management, and ensures members have access to the conversations and content most relevant to their role.</p>",
         "id": 577174,
         "locale": null,
-        "modified": "2026-11-19T00:53:06",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2027",
-        "publicPreviewDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -32910,12 +33710,12 @@
         "description": "<p>Participants joining webinars and structured meetings from Teams Rooms on Android can view and interact with PowerPoint Live presentations. This provides greater flexibility and accessibility while keeping room participants aligned with the active presentation.</p>",
         "id": 576195,
         "locale": null,
-        "modified": "2026-11-20T23:20:27",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -33593,9 +34393,9 @@
         "description": "<p>Microsoft Purview server-side auto-labeling will support legacy Microsoft Office file formats, including Word (.doc), Excel (.xls), and PowerPoint (.ppt). Organizations can automatically evaluate and apply sensitivity labels to these files in SharePoint and OneDrive.</p>",
         "id": 574363,
         "locale": null,
-        "modified": "2026-10-13T23:01:05",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "November CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -36352,12 +37152,12 @@
         "description": "<p>Previously, auto-expanding archive mailbox expansion was supported only up to 1.5\u202fTB, after which mailboxes would become inoperative. Archive mailboxes can now automatically expand beyond the 1.5\u202fTB limit, ensuring uninterrupted retention and enabling scalable archive growth as storage thresholds are reached. This capability to expand archives beyond 1.5 TB will be available to customers with eligible E5 licenses.</p>",
         "id": 573702,
         "locale": null,
-        "modified": "2026-10-06T22:56:31",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -37243,10 +38043,10 @@
         "description": "<p>Help people get started faster by automatically connecting new team members to relevant channels when they join a team. Improve engagement, accelerate onboarding, and make it easier to discover important information from day one.</p>",
         "id": 573452,
         "locale": null,
-        "modified": "2026-11-19T00:53:06",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2027",
-        "publicPreviewDate": "November CY2026",
+        "publicDisclosureAvailabilityDate": "November CY2026",
+        "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -44497,12 +45297,12 @@
         "description": "<p>For each enforced auto-labeling policy, admins can view how files processed during enforcement correlate to the latest simulation run. The per-policy coverage report shows volumes of files that have been labeled or are not yet labeled, and whether those files were included in the last simulation snapshot. This helps admins understand enforcement progress for a specific policy against the data state captured during simulation, while also identifying files that were not found in the simulation snapshot but were processed during enforcement.</p>",
         "id": 572677,
         "locale": null,
-        "modified": "2026-09-23T22:59:12",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "GCC"
@@ -50912,15 +51712,15 @@
     },
     {
         "created": "2026-08-24T22:41:12",
-        "description": "You will soon be able to manage multiple inbox rules at the same time. Select every rule or choose only the ones you want to update. You can then delete, enable, or disable the selected rules in one action. This makes it faster and easier to keep your rules organized. #newoutlookforwindows",
+        "description": "<p>You will soon be able to manage multiple inbox rules at the same time. Select every rule or choose only the ones you want to update. You can then delete, enable, or disable the selected rules in one action. This makes it faster and easier to keep your rules organized. #newoutlookforwindows</p>",
         "id": 569430,
         "locale": null,
-        "modified": "2026-08-24T22:41:12",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -54519,7 +55319,7 @@
         "description": "<p>We're introducing a set of left-navigation improvements in Viva Engage on the web that give people more control over their navigation pane. These are additive, user-driven changes \u2014 users can collapse the left nav, resize its width, favorite up to 50 communities, and drag to reorder their favorited communities. None of these changes alter which destinations appear in the navigation. These enhancements are applicable to all surfaces that have the Engage left navigation menu - Web, and the Engage app in Teams and Outlook.</p>",
         "id": 568763,
         "locale": null,
-        "modified": "2026-09-23T22:59:12",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "August CY2026",
         "publicPreviewDate": "",
@@ -59077,12 +59877,12 @@
         "description": "<p>You can now add a category to your Favorites and then drag emails right onto it to apply that category. No need to open menus or right-click each message. Just pin the category you use most to Favorites, then drop your emails on it to tag them in one quick motion. It's a faster, more visual way to keep your inbox sorted the way you like. #newoutlookforwindows</p>",
         "id": 567319,
         "locale": null,
-        "modified": "2026-09-08T22:57:21",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -66079,12 +66879,12 @@
         "description": "<p>New pay-as-you-go, consumption-based meter for additional OneDrive storage. Control which OneDrive accounts can grow beyond their licensed storage limits and give selected users more space as needed.</p>",
         "id": 562352,
         "locale": null,
-        "modified": "2026-10-06T22:56:31",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "July CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -82588,15 +83388,15 @@
     },
     {
         "created": "2026-03-04T00:00:25",
-        "description": "Managing your email automation in Outlook is now effortless with name search built into your key productivity tools. You can search within Rules, Conditional Formatting, Quick Steps, and Search Folders, filtering the list by name so you jump straight to the item you need. Whether you have dozens of rules or a growing library of quick steps, just type a few characters to narrow down results instantly. No more scrolling through long lists to find the right one, search puts you in control. Stay organized and make changes faster, right where you need them. #newoutlookforwindows",
+        "description": "<p>Managing your email automation in Outlook is now effortless with name search built into your key productivity tools. You can search within Rules, Conditional Formatting, Quick Steps, and Search Folders, filtering the list by name so you jump straight to the item you need. Whether you have dozens of rules or a growing library of quick steps, just type a few characters to narrow down results instantly. No more scrolling through long lists to find the right one, search puts you in control. Stay organized and make changes faster, right where you need them. #newoutlookforwindows</p>",
         "id": 557678,
         "locale": null,
-        "modified": "2026-05-19T22:45:25",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "April CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -94134,15 +94934,15 @@
     },
     {
         "created": "2026-01-06T23:45:19",
-        "description": "We are adding support for sort by flag status, flag due date and flag start date.",
+        "description": "<p>We are adding support for sort by flag status, flag due date and flag start date.</p>",
         "id": 543208,
         "locale": null,
-        "modified": "2026-01-06T23:45:19",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "May CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -103124,61 +103924,6 @@
     },
     {
         "created": "2025-11-07T00:30:39",
-        "description": "<p>Enhance Content Explorer by introducing new summary metrics that provide better visibility into scanning and classification activities. This update will include:</p>\n<ol>\n<li>Unscanned Files Summary<br>\nDisplays the count and percentage of files that have not been scanned for classification, helping admins identify gaps and take corrective action.</li>\n<li>Classification History Insights<br>\nShows trends and details of classification changes over time, helping admins to discover the stale data in their organization Updated November 2, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience.</li>\n</ol>",
-        "id": 526796,
-        "locale": null,
-        "modified": "2026-11-03T00:14:11",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "November CY2026",
-        "publicPreviewDate": "September CY2026",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Purview"
-            },
-            {
-                "tagName": "General Availability"
-            },
-            {
-                "tagName": "Preview"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Purview"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                },
-                {
-                    "tagName": "Preview"
-                }
-            ]
-        },
-        "title": "Microsoft Purview: Information Protection- New Summary Metrics in Content Explorer for Unscanned Files and Classification History Details"
-    },
-    {
-        "created": "2025-11-07T00:30:39",
         "description": "People Skills is releasing two updates to give you more control over how others see your skills profile and ease of access for skill profile management.  With these updates, you can easily control the order in which the skills you confirm are displayed to others in your profile card. Additionally, you'll find a new deep link directly to skill profile editing from the Skills component on the profile card.\nThese updates will begin rollout to customers in November and are expected to be available to all People Skills customers by December.",
         "id": 526787,
         "locale": null,
@@ -104209,55 +104954,6 @@
             ]
         },
         "title": "Microsoft Viva: Copilot Analytics - Highlights on Copilot adoption from Viva Engage"
-    },
-    {
-        "created": "2025-11-04T00:00:10",
-        "description": "<ol>\n<li>Makers can now scope their data in their agent created on custom connector data at a particular container.</li>\n<li>These containers will be defined during creation/updating of the custom connector.</li>\n</ol>\n<p>Note: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
-        "id": 502546,
-        "locale": null,
-        "modified": "2026-11-05T23:59:28",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Users can create agents scoped on Custom connector containers "
     },
     {
         "created": "2025-11-04T00:00:10",
@@ -105869,55 +106565,6 @@
             ]
         },
         "title": "Outlook: LDAP directory support for S/MIME in New Outlook"
-    },
-    {
-        "created": "2025-10-27T23:15:26",
-        "description": "<ol>\n<li>Maker can create agents by providing 3p URL.</li>\n<li>Maker can provide either an item URL or a container level, for e.g. ADO ticket/ ADO area path.</li>\n</ol>\n<p>Note: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
-        "id": 502547,
-        "locale": null,
-        "modified": "2026-11-05T23:59:28",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2025",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] User can create agents scoped on specific item/ container using\u00a0URL"
     },
     {
         "created": "2025-10-27T23:15:26",
@@ -109791,55 +110438,6 @@
             ]
         },
         "title": "Microsoft 365: Cloud Update - Rollback All Devices"
-    },
-    {
-        "created": "2025-10-15T22:45:29",
-        "description": "<p>Drive Copilot chat engagement for 3P content via deep citations, inline citations, side by side preview experiences.<br>\nNote: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
-        "id": 502543,
-        "locale": null,
-        "modified": "2026-11-06T23:04:41",
-        "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "March CY2026",
-        "publicPreviewDate": "",
-        "publicRoadmapStatus": "Include this month",
-        "status": "Cancelled",
-        "tags": [
-            {
-                "tagName": "Worldwide (Standard Multi-Tenant)"
-            },
-            {
-                "tagName": "Web"
-            },
-            {
-                "tagName": "Microsoft Copilot (Microsoft 365)"
-            },
-            {
-                "tagName": "General Availability"
-            }
-        ],
-        "tagsContainer": {
-            "cloudInstances": [
-                {
-                    "tagName": "Worldwide (Standard Multi-Tenant)"
-                }
-            ],
-            "platforms": [
-                {
-                    "tagName": "Web"
-                }
-            ],
-            "products": [
-                {
-                    "tagName": "Microsoft Copilot (Microsoft 365)"
-                }
-            ],
-            "releasePhase": [
-                {
-                    "tagName": "General Availability"
-                }
-            ]
-        },
-        "title": "Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Users can explore third-party content in Copilot chat with deep citations and side-by-side previews"
     },
     {
         "created": "2025-10-14T23:15:41",
@@ -120741,15 +121339,15 @@
     },
     {
         "created": "2025-07-02T23:15:48",
-        "description": "Users can set up Outlook rules to play a sound or show a desktop alert whenever an email that matches your chosen conditions arrives, whether it\u2019s from a specific person, includes certain words, or meets any other rule criteria you define. These features help you stay alerted to the emails that matter most. #newoutlookforwindows",
+        "description": "<p>Users can set up Outlook rules to play a sound or show a desktop alert whenever an email that matches your chosen conditions arrives, whether it\u2019s from a specific person, includes certain words, or meets any other rule criteria you define. These features help you stay alerted to the emails that matter most. #newoutlookforwindows</p>",
         "id": 497836,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -121535,12 +122133,12 @@
     },
     {
         "created": "2025-06-23T23:15:26",
-        "description": "Microsoft Places features will now be available in GCC cloud",
+        "description": "<p>Microsoft Places features will now be available in GCC cloud</p>",
         "id": 495465,
         "locale": null,
-        "modified": "2026-09-01T23:00:02",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "October CY2026",
+        "publicDisclosureAvailabilityDate": "March CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -122261,15 +122859,15 @@
     },
     {
         "created": "2025-06-10T23:00:26",
-        "description": "Create rules that trigger a desktop alert when specific emails arrive. This makes it easier to stay on top of important messages without missing a beat. Look for the new \"Display a Desktop Alert\" action when setting up or editing your rules. #newoutlookforwindows",
+        "description": "<p>Create rules that trigger a desktop alert when specific emails arrive. This makes it easier to stay on top of important messages without missing a beat. Look for the new \"Display a Desktop Alert\" action when setting up or editing your rules. #newoutlookforwindows</p>",
         "id": 496142,
         "locale": null,
-        "modified": "2025-10-28T23:15:02",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "GCC"
@@ -122328,15 +122926,15 @@
     },
     {
         "created": "2025-06-10T23:00:26",
-        "description": "Create rules that trigger a desktop alert when specific emails arrive. This makes it easier to stay on top of important messages without missing a beat. Look for the new \"Display a Desktop Alert\" action when setting up or editing your rules. #newoutlookforwindows",
+        "description": "<p>Create rules that trigger a desktop alert when specific emails arrive. This makes it easier to stay on top of important messages without missing a beat. Look for the new \"Display a Desktop Alert\" action when setting up or editing your rules. #newoutlookforwindows</p>",
         "id": 496141,
         "locale": null,
-        "modified": "2026-02-27T23:15:13",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "January CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "Rolling out",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -139828,9 +140426,9 @@
         "description": "<div>Out-of-the-box reports that contain information about all legal holds associated with eDiscovery cases in the Microsoft Purview compliance portal. Sort and filter your view based on various criteria and download the aggregated information for further analysis. </div>",
         "id": 93269,
         "locale": null,
-        "modified": "2026-08-17T22:52:47",
+        "modified": "2026-11-25T00:10:31",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicDisclosureAvailabilityDate": "May CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
