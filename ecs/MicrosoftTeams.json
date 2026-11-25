@@ -3125,6 +3125,12 @@
                     "Flight": "TMC.enableCustomizationModelGpt6Luna",
                     "IsEnabled": true
                 }
+            ],
+            "meetingCustomization_TimerRestart": [
+                {
+                    "Flight": "MT.enableStartOrRestart",
+                    "IsEnabled": true
+                }
             ]
         },
         "SomeDummyOptions": {

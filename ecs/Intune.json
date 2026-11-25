@@ -576,6 +576,7 @@
             "EnableRiskScoreOptimization": true,
             "EnableSideCarPolicyResultEnqueueDedupe": true,
             "EnableTenantComplianceQueryRollback": true,
+            "EnableUserlessCcBccNotification": true,
             "EnableWritePartnerTenantItemDisplayName": true,
             "EnabledCustomComplianceForMacOS": true,
             "FallBackToPrimaryUserForComplianceCalculation": true,

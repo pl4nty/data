@@ -485,6 +485,7 @@
         "EnableCloudPCPowerStateChangeAction": true,
         "EnableCloudPCReportingMigration": true,
         "EnableCloudPCTroubleshootCustomTimeRange": true,
+        "EnableCloudPcBackfillHoboTag": true,
         "EnableCloudPcBulkActionExecutionV2": true,
         "EnableCloudPcBulkCreateSnapshot": true,
         "EnableCloudPcBulkRelocate": true,
