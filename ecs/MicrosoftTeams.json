@@ -2489,7 +2489,15 @@
                 {
                     "Flight": "ChannelAgent.ClaudeModel",
                     "IsEnabled": true,
-                    "Value": "sonnet-46"
+                    "Value": "sonnet-5-5"
+                },
+                {
+                    "Flight": "ChannelAgent.EnableClaudeActionSummary",
+                    "IsEnabled": true
+                },
+                {
+                    "Flight": "TeamsAgent.enableDeliveryGuidance",
+                    "IsEnabled": true
                 },
                 {
                     "Flight": "ChannelAgent.enableResponseCompletionSkill",
@@ -2573,6 +2581,12 @@
             "PA_RESPONSE_STREAMING": [
                 {
                     "Flight": "paStreaming",
+                    "IsEnabled": true
+                }
+            ],
+            "ProjectAgentModelRegistry": [
+                {
+                    "Flight": "ChannelAgent.EnableProjectAgentModelRegistry",
                     "IsEnabled": true
                 }
             ],

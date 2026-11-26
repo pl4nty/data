@@ -1,5 +1,542 @@
 [
     {
+        "created": "2026-11-26T00:16:54",
+        "description": "<p>Admins and makers can create and manage filters for Filter-based Security through a simplified management experience. Filters define which Dataverse records users can access based on configurable conditions, helping organizations implement scalable, policy-driven record access without individually sharing records.</p>\n<p><strong>Customer benefit</strong><br>\nOrganizations can more easily configure and maintain Filter-based Security policies through a centralized experience. This simplifies security administration and makes it easier to manage dynamic record access as business requirements change</p>",
+        "id": 581895,
+        "locale": null,
+        "modified": "2026-11-26T00:16:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Power Platform governance and administration"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Power Platform governance and administration"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Microsoft Power Platform governance and administration: Create and manage Filter-based Security filters in Power Platform Maker portal"
+    },
+    {
+        "created": "2026-11-26T00:16:54",
+        "description": "<p>Redesigning the Customer transaction form to improve the performance and include the Multiledger aspect</p>",
+        "id": 581794,
+        "locale": null,
+        "modified": "2026-11-26T00:16:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "March CY2027",
+        "publicPreviewDate": "December CY2026",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance:  Customer Transaction Form Enhancement"
+    },
+    {
+        "created": "2026-11-26T00:16:54",
+        "description": "<p>This provides the end-to-end traceability of document relationships across the order to cash.</p>",
+        "id": 581793,
+        "locale": null,
+        "modified": "2026-11-26T00:16:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2027",
+        "publicPreviewDate": "March CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Finance explorer skill"
+    },
+    {
+        "created": "2026-11-26T00:16:54",
+        "description": "<p>This skill helps the user to provides the end-to-end traceability of document relationships for order to cash</p>",
+        "id": 581792,
+        "locale": null,
+        "modified": "2026-11-26T00:16:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2027",
+        "publicPreviewDate": "March CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Finance Explorer Skill"
+    },
+    {
+        "created": "2026-11-26T00:16:54",
+        "description": "<p>The Prepayment customer invoice feature can be enabled per legal entity/country region.</p>",
+        "id": 581783,
+        "locale": null,
+        "modified": "2026-11-26T00:16:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "December CY2026",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Enable Parameter-Based Configuration for Customer Prepayments"
+    },
+    {
+        "created": "2026-11-26T00:16:54",
+        "description": "<p>This feature provides the end-to-end traceability of document relationships across order to cash.</p>",
+        "id": 581782,
+        "locale": null,
+        "modified": "2026-11-26T00:16:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "June CY2027",
+        "publicPreviewDate": "March CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Finance"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Finance"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Finance: Explorer Skill"
+    },
+    {
+        "created": "2026-11-26T00:16:54",
+        "description": "<p>Enable employees to conveniently create, manage, and track HR-related cases through the Employee Self-Service (ESS) experience in Dynamics 365 Human Resources.</p>\n<p>Employees can submit HR inquiries, report issues, and request assistance for scenarios related to leave and absence, benefits, and personnel management.</p>\n<p>The capability provides a centralized experience for employees to raise HR cases, monitor their progress, and receive updates throughout the resolution process.</p>\n<p>Key capabilities include:</p>\n<p>Self-service case creation: Enable employees to submit HR-related inquiries and requests.<br>\nCase categorization: Organize cases based on the nature of the employee's request.<br>\nCase tracking: Allow employees to view the status and progress of their submitted cases.<br>\nCase notifications: Keep employees informed about case updates and resolution.<br>\nIntegrated HR case management: Enable HR teams to investigate, manage, and resolve employee requests through structured case management workflows.<br>\nBusiness value</p>\n<p>This capability empowers employees to independently manage HR inquiries while helping organizations streamline HR service delivery.</p>\n<p>Organizations can:</p>\n<p><strong>Improve employee experience:</strong> Provide a convenient, centralized experience for submitting and tracking HR requests.<br>\n<strong>Increase HR operational efficiency:</strong> Reduce manual communication and administrative effort associated with employee inquiries.<br>\n<strong>Enhance transparency</strong>: Give employees greater visibility into the progress and resolution of their HR cases.<br>\n<strong>Streamline HR service delivery</strong>: Standardize case submission, tracking, and resolution processes.<br>\n<strong>Improve accountability</strong>: Enable structured case ownership and tracking across HR teams.</p>",
+        "id": 581756,
+        "locale": null,
+        "modified": "2026-11-26T00:16:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "April CY2027",
+        "publicPreviewDate": "February CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Dynamics 365 Human Resources"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Dynamics 365 Human Resources"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                }
+            ]
+        },
+        "title": "Dynamics 365 Human Resources: Simplify HR case management with employee self-service"
+    },
+    {
+        "created": "2026-11-26T00:16:54",
+        "description": "<p>When someone shares a page in chat or a channel, you can open it in Teams, edit, and discuss with teammates. Open a page in your main Teams window or a new window, whichever works best for you.</p>",
+        "id": 580886,
+        "locale": null,
+        "modified": "2026-11-26T00:16:54",
+        "moreInfoLink": "https://support.microsoft.com/en-us/teams/teams-channels/manage-pages-and-loop-components-in-channels",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "January CY2027",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "GCC High"
+            },
+            {
+                "tagName": "DoD"
+            },
+            {
+                "tagName": "Desktop"
+            },
+            {
+                "tagName": "Mac"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Teams"
+            },
+            {
+                "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
+            },
+            {
+                "tagName": "Targeted Release"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                },
+                {
+                    "tagName": "GCC High"
+                },
+                {
+                    "tagName": "DoD"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Desktop"
+                },
+                {
+                    "tagName": "Mac"
+                },
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Teams"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
+                },
+                {
+                    "tagName": "Targeted Release"
+                }
+            ]
+        },
+        "title": "Microsoft Teams: Open and collaborate on Pages in Teams"
+    },
+    {
+        "created": "2026-11-26T00:16:54",
+        "description": "<p>Admins can now manage who has access to Viva Insights - Copilot Analytics, and what they can do, directly in the product. The new Access Management experience brings role assignment and permissions into one place for Global administrators, AI administrators and Viva Insights administrators, instead of managing access across Viva Feature Access Management (VFAM) settings in the Microsoft 365 admin center and in-product Manager Settings. Admins create access policies that combine a permission set, which defines what users can do, with a partition, which defines the population and datasets users can see. Policies can be assigned to individual users, Microsoft Entra security groups or, for group managers, organizational attributes. Existing role assignments continue to work, and users are automatically moved to system-defined access policies.</p>",
+        "id": 578862,
+        "locale": null,
+        "modified": "2026-11-26T00:16:54",
+        "moreInfoLink": null,
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "",
+        "publicRoadmapStatus": "Include this month",
+        "status": "In development",
+        "tags": [
+            {
+                "tagName": "Worldwide (Standard Multi-Tenant)"
+            },
+            {
+                "tagName": "GCC"
+            },
+            {
+                "tagName": "Web"
+            },
+            {
+                "tagName": "Microsoft Viva"
+            },
+            {
+                "tagName": "General Availability"
+            }
+        ],
+        "tagsContainer": {
+            "cloudInstances": [
+                {
+                    "tagName": "Worldwide (Standard Multi-Tenant)"
+                },
+                {
+                    "tagName": "GCC"
+                }
+            ],
+            "platforms": [
+                {
+                    "tagName": "Web"
+                }
+            ],
+            "products": [
+                {
+                    "tagName": "Microsoft Viva"
+                }
+            ],
+            "releasePhase": [
+                {
+                    "tagName": "General Availability"
+                }
+            ]
+        },
+        "title": "Microsoft Viva: Access Management for Copilot Analytics"
+    },
+    {
         "created": "2026-11-25T00:10:31",
         "description": "<p>Make presentations easier to see from anywhere in the room, even when you're not in a Teams meeting. On Microsoft Teams Rooms on Android with dual displays, content you share through an HDMI connection can now appear on both screens at once. You can start or stop showing your content on both screens from the room controls. Admins can use settings to manage how this works in their rooms.</p>",
         "id": 582052,
@@ -53,10 +590,10 @@
         "description": "<p>Admins should be able to track the detection and meeting access activity of external bots in the meetings and events hosted in their tenant.</p>",
         "id": 582050,
         "locale": null,
-        "modified": "2026-11-25T00:10:31",
+        "modified": "2026-11-26T00:16:54",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2027",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "February CY2027",
+        "publicPreviewDate": "January CY2027",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -74,6 +611,9 @@
             },
             {
                 "tagName": "General Availability"
+            },
+            {
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -98,6 +638,9 @@
             "releasePhase": [
                 {
                     "tagName": "General Availability"
+                },
+                {
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -16433,7 +16976,7 @@
         "description": "<p>Edit with Copilot makes it easier to edit and transform your Excel workbooks on your phone using natural language. Copilot can continue working on your task even when you move away from the app, so you can come back when the work is ready. Chat mode also remains available when you want to ask questions and get insights without making changes to your workbook.</p>",
         "id": 577177,
         "locale": null,
-        "modified": "2026-11-06T23:04:41",
+        "modified": "2026-11-26T00:16:54",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "October CY2026",
         "publicPreviewDate": "",
@@ -23602,10 +24145,10 @@
         "description": "<p>Microsoft Teams is expanding Markdown support in the compose box, giving you more ways to structure and format messages using familiar Markdown syntax. Create richer, more readable messages while staying in the Markdown authoring experience.</p>",
         "id": 576199,
         "locale": null,
-        "modified": "2026-10-26T23:15:50",
+        "modified": "2026-11-26T00:16:54",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "December CY2026",
-        "publicPreviewDate": "",
+        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicPreviewDate": "December CY2026",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
         "tags": [
@@ -23637,7 +24180,7 @@
                 "tagName": "General Availability"
             },
             {
-                "tagName": "Targeted Release"
+                "tagName": "Preview"
             }
         ],
         "tagsContainer": {
@@ -23676,7 +24219,7 @@
                     "tagName": "General Availability"
                 },
                 {
-                    "tagName": "Targeted Release"
+                    "tagName": "Preview"
                 }
             ]
         },
@@ -34845,12 +35388,12 @@
         "description": "<p>Shared mailbox users and delegates with read and manage (full access) and/or mail folder-level permission will now be able to access Copilot Chat directly from their shared and delegate mailboxes in classic Outlook, when added as a <a href=\"https://support.microsoft.com/en-us/outlook/sharing/open-and-use-a-shared-mailbox-in-outlook\">resource</a>.</p>",
         "id": 573698,
         "locale": null,
-        "modified": "2026-10-13T23:01:05",
+        "modified": "2026-11-26T00:16:54",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -35339,9 +35882,9 @@
         "description": "<p>Enables auto\u2011labeling of existing SharePoint files to match the default sensitivity label configured on their document library. This helps organizations close labeling gaps for data at rest and ensure consistent, secure\u2011by\u2011default protection across SharePoint libraries\u2014without relying on manual user labeling.</p>",
         "id": 575283,
         "locale": null,
-        "modified": "2026-11-20T23:20:27",
+        "modified": "2026-11-26T00:16:54",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicDisclosureAvailabilityDate": "December CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -35650,12 +36193,12 @@
         "description": "<p>Power Apps model-driven apps are now available as Business Apps in Work IQ. They can be accessed through the Work IQ (Preview) tool in Copilot Studio or through a natural-language chat experience powered by Work IQ MCP. In either experience, natural-language prompts let users list and read records or create, update, and delete them. For create and update, Work IQ maps supplied values to the appropriate app fields. Before a change is submitted, the proposed values require explicit user confirmation.</p>",
         "id": 571888,
         "locale": null,
-        "modified": "2026-10-12T23:01:05",
-        "moreInfoLink": null,
+        "modified": "2026-11-26T00:16:54",
+        "moreInfoLink": "https://learn.microsoft.com/power-apps/user/use-business-apps-work-iq",
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "September CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -55542,15 +56085,15 @@
     },
     {
         "created": "2026-08-04T22:45:42",
-        "description": "Copilot memory within Researcher brings forward relevant context from your past interactions\u2014helping ground insights, personalize outputs, and reduce repetitive setup as you explore complex topics.",
+        "description": "<p>Copilot memory within Researcher brings forward relevant context from your past interactions\u2014helping ground insights, personalize outputs, and reduce repetitive setup as you explore complex topics. Note: This roadmap item is no longer accurate and will be removed from the roadmap. We apologize for any inconvenience.</p>",
         "id": 562996,
         "locale": null,
-        "modified": "2026-08-04T22:45:42",
+        "modified": "2026-11-26T00:16:54",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -79482,15 +80025,15 @@
     },
     {
         "created": "2026-03-24T23:15:57",
-        "description": "Admin should be able to see the Endpoint DLP policy sync status on the Purview portal within 30 mins.",
+        "description": "<p>Admin should be able to see the Endpoint DLP policy sync status on the Purview portal within 30 mins.</p>",
         "id": 558682,
         "locale": null,
-        "modified": "2026-08-12T22:47:48",
+        "modified": "2026-11-26T00:16:54",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "November CY2026",
         "publicPreviewDate": "October CY2026",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Rolling out",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -84664,15 +85207,15 @@
     },
     {
         "created": "2026-02-25T00:15:23",
-        "description": "The default chat experience with Copilot in Word now allows Copilot to directly edit your document. All changes made by Copilot are fully reviewable and reversible, and users can turn this experience off if needed.",
+        "description": "<p>The default chat experience with Copilot in Word now allows Copilot to directly edit your document. All changes made by Copilot are fully reviewable and reversible, and users can turn this experience off if needed.</p>",
         "id": 557673,
         "locale": null,
-        "modified": "2026-02-25T00:15:23",
+        "modified": "2026-11-26T00:16:54",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "March CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -96019,15 +96562,15 @@
     },
     {
         "created": "2025-12-19T23:00:49",
-        "description": "Available for M365 users without a M365 Copilot license. From Chat, you can use natural language to generate and direct edits to new and existing documents, when in an Edit mode. In this mode, Copilot will ask clarifying questions if needed, and after making changes will recap actions take and recommended next steps. Changes to the document are supported with controls in the document canvas to review changes made.",
+        "description": "<p>Available for M365 users without a M365 Copilot license. From Chat, you can use natural language to generate and direct edits to new and existing documents, when in an Edit mode. In this mode, Copilot will ask clarifying questions if needed, and after making changes will recap actions take and recommended next steps. Changes to the document are supported with controls in the document canvas to review changes made.</p>",
         "id": 543241,
         "locale": null,
-        "modified": "2025-12-19T23:00:49",
+        "modified": "2026-11-26T00:16:54",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Launched",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -99813,12 +100356,12 @@
     },
     {
         "created": "2025-12-02T00:16:00",
-        "description": "Communication Compliance is improving the capabilities and customization of policy alerts. Admins will be able to customize the alert frequency per policy as well as adjust the email alerts frequency and recipients within the policy creation wizard. \nMicrosoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.",
+        "description": "<p>Communication Compliance is improving the capabilities and customization of policy alerts. Admins will be able to customize the alert frequency per policy as well as adjust the email alerts frequency and recipients within the policy creation wizard.<br>\nMicrosoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.</p>",
         "id": 529852,
         "locale": null,
-        "modified": "2025-12-02T00:16:00",
+        "modified": "2026-11-26T00:16:54",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2026",
+        "publicDisclosureAvailabilityDate": "August CY2027",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",
@@ -122078,15 +122621,15 @@
     },
     {
         "created": "2025-06-23T23:15:26",
-        "description": "Menus in Edge where the user has highlighted content in the browser will soon support a summarization, translation, and citation with Microsoft Copilot and Microsoft 365 Copilot Chat. ",
+        "description": "<p>Menus in Edge where the user has highlighted content in the browser will soon support a summarization, translation, and citation with Microsoft Copilot and Microsoft 365 Copilot Chat. Note: We have made the decision to cancel this planned release. We apologize for any inconvenience this may cause.</p>",
         "id": 497135,
         "locale": null,
-        "modified": "2026-02-19T00:15:25",
+        "modified": "2026-11-26T00:16:54",
         "moreInfoLink": null,
         "publicDisclosureAvailabilityDate": "February CY2026",
         "publicPreviewDate": "",
         "publicRoadmapStatus": "Include this month",
-        "status": "In development",
+        "status": "Cancelled",
         "tags": [
             {
                 "tagName": "Worldwide (Standard Multi-Tenant)"
@@ -138157,9 +138700,9 @@
         "description": "<p>This feature is about improving the alerting capabilities and customization in Communication Compliance.</p>",
         "id": 181825,
         "locale": null,
-        "modified": "2026-10-22T22:58:40",
+        "modified": "2026-11-26T00:16:54",
         "moreInfoLink": null,
-        "publicDisclosureAvailabilityDate": "January CY2027",
+        "publicDisclosureAvailabilityDate": "May CY2027",
         "publicPreviewDate": "July CY2025",
         "publicRoadmapStatus": "Include this month",
         "status": "In development",

@@ -555,6 +555,7 @@
         "EnableCrossRegionScheduleMigration": true,
         "EnableCseParameterValidation": true,
         "EnableCustomImageForwarderDataStream": true,
+        "EnableCustomImageVmOsDiskSizeFromImage": true,
         "EnableCustomizedBatchSizer": true,
         "EnableDBAutoSplit": true,
         "EnableDDSFlowInV2": true,

@@ -564,7 +564,9 @@
             "EnableCleanUp": true,
             "EnableComplianceCalculationCache": true,
             "EnableCompliancePolicyAssignmentHelperAuthority": true,
+            "EnableComplianceScriptMinuteScheduleEmissionInService": true,
             "EnableComplianceUpdateReportingPublisher": true,
+            "EnableCustomComplianceScriptRunInterval": true,
             "EnableDataSyncDsoiPatchTimeout": true,
             "EnableDeleteStalePartners": true,
             "EnableDeviceCleanupPtiDeletion": true,
@@ -1164,6 +1166,7 @@
     "UX_Compliance": {
         "FlightingV2": {
             "EnableBYOCPartnerComplianceUX": true,
+            "EnableComplianceScriptMinuteCadenceInUX": true,
             "EnableUXForCustomComplianceForMacOS": true
         }
     },
