@@ -1,7 +1,7 @@
 -- Threat: !InfrastructureShared
 -- Name: 32b37183e45b
 -- Type: 21
--- Includes: LuaFuncHelper
+-- Includes: LuaFuncHelper, ResearchData
 
 local l_0_0 = "AadTenantID"
 local l_0_1 = GetRollingQueueKeys(l_0_0)
@@ -28,5 +28,9 @@ else
 end
 if l_0_2 then
   bm.add_related_string("aadtenantid", l_0_2, bm.RelatedStringBMReport)
+  local l_0_10 = {}
+  l_0_10.aadtenantid = l_0_2
+  l_0_10.related_behaviors = bm.RelatedStringBMReport
+  set_research_data("AdditionalInfo", safeJsonSerialize(l_0_10), false)
 end
 return mp.INFECTED

@@ -137,10 +137,8 @@ for l_0_32, l_0_33 in ipairs(l_0_26) do
   end
 end
 local l_0_35
-local l_0_36 = l_0_12
 if l_0_13 <= l_0_25 then
   l_0_35 = "failure_burst"
-  l_0_36 = l_0_11
 elseif l_0_14 <= l_0_28 then
   l_0_35 = "password_spray"
 elseif l_0_15 <= l_0_27 then
@@ -150,7 +148,5 @@ elseif l_0_16 <= l_0_29 then
 end
 if l_0_35 ~= nil and not isTainted(l_0_23, "ssh-bruteforce-reported") then
   taint(l_0_23, "ssh-bruteforce-reported", l_0_17)
-  local l_0_37 = "username_" .. scrubData(l_0_10)
-  bm.trigger_sig("ssh-bruteforce-incoming", "reason:" .. l_0_35 .. ";source_type:" .. l_0_4 .. ";source:" .. l_0_5 .. ";username:" .. l_0_37 .. ";failures:" .. tostring(l_0_25) .. ";user_failures:" .. tostring(l_0_27) .. ";distinct_users:" .. tostring(l_0_28) .. ";common_users:" .. tostring(l_0_29) .. ";window:" .. tostring(l_0_36))
 end
 return mp.CLEAN

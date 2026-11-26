@@ -19,6 +19,21 @@ if l_0_2 and l_0_3 ~= nil then
   if IsProcNameInParentProcessTree("cmdhstr", l_0_6) then
     return mp.CLEAN
   end
+  local l_0_7 = mp.GetScannedPPID()
+  if not l_0_7 then
+    return mp.CLEAN
+  end
+  local l_0_8 = mp.GetProcessCommandLine(l_0_7)
+  if not l_0_8 then
+    return mp.CLEAN
+  end
+  l_0_8 = string.lower(l_0_8)
+  if string.find(l_0_8, "name=bes client", 1, true) then
+    return mp.CLEAN
+  end
+  if string.find(l_0_8, "bigfix enterprise\\bes client\\besclient.exe", 1, true) then
+    return mp.CLEAN
+  end
   if l_0_0 ~= nil and l_0_1 ~= nil then
     TrackPidAndTechnique(l_0_0, "T1562.004", "disablefirewall")
     if IsDetectionThresholdMet(l_0_0) then

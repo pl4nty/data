@@ -38,7 +38,8 @@ if r0_1[string.lower(r0_0)] then
       end
       r0_7 = string.lower(r0_7)
       if not string.find(r0_7, "\\mosaic_files\\scripts\\variables", 1, true)
-        and not string.find(r0_7, "\\mosaic_files\\scripts\\monitor", 1, true) then
+        and not string.find(r0_7, "\\mosaic_files\\scripts\\monitor", 1, true)
+        and not string.find(r0_7, "\\pstudio.net.web\\qmqimprod\\pstudioactions.ashx", 1, true) then
         local r0_8 = false
         local r0_9 = MpCommon.ExpandEnvironmentVariables("%SystemDrive%\\inetpub\\wwwroot")
         if not (isnull(r0_9) or not string.find(r0_7, string.lower(r0_9), 1, true)) then

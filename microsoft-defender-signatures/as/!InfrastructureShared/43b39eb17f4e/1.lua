@@ -12,5 +12,8 @@ if not isnull(l_0_0) and not isnull(l_0_0.command_line) then
   if string.find(l_0_1, "svchost.exe -k camera -s frameserver", 1, true) then
     return mp.CLEAN
   end
+  if string.find(l_0_1, "program files (x86)\\citrix\\ica client\\", 1, true) then
+    return mp.CLEAN
+  end
 end
 return mp.INFECTED
