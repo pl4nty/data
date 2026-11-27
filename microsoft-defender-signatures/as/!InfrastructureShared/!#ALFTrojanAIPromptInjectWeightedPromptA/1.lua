@@ -1,6 +1,7 @@
--- Threat: Trojan:AIPromptInject/WeightedPrompt.A
+-- Threat: !InfrastructureShared
+-- Name: !#ALF:Trojan:AIPromptInject/WeightedPrompt.A
 -- Type: 13
--- Includes: LuaFuncHelper
+-- Includes: LuaFuncHelper, ResearchData
 -- MpAttributes: MpIsAiNetPromptScan
 
 -- Fallback: decompiled by unluac-rs, not verified against the original bytecode
@@ -74,7 +75,7 @@ if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_NET_PROMPTSTR
     r0_15 = r0_21
     r0_14 = r0_14 + #r0_19
   end
-  if r0_16 >= 3 then
+  if r0_16 >= 6 then
     local r0_26 = {}
     r0_26.Score = r0_16
     local r0_27 = tostring
@@ -82,14 +83,12 @@ if mp.get_contextdata(mp.CONTEXT_DATA_SCANREASON) == mp.SCANREASON_NET_PROMPTSTR
     r0_28 = r0_28(string.sub(r0_17, 1, 10240)) or ""
     r0_27 = r0_27(r0_28)
     r0_26.LastMessage = r0_27
-    r0_26.EnableInPortal = true
+    r0_26.EnableInPortal = false
     r0_27 = safeJsonSerialize
     r0_27 = r0_27(r0_26)
     mp.SetDetectionString(r0_27)
-    if r0_16 >= 6 then
-      return mp.INFECTED
-    end
-    return mp.LOWFI
+    set_research_data("AdditionalInfo", r0_27, false)
+    return mp.INFECTED
   end
   return mp.CLEAN
 end

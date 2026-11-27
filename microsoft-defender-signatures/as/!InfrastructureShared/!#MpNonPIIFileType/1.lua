@@ -30,7 +30,12 @@ local l_0_0 = {
   "ALF:Backdoor:Win32/GarbageFile.F!dha",
   "ALF:Backdoor:Win64/NeedyMantis.F!dha",
   "ALF:Trojan:Win64/MutedBallast.D!dha",
-  "ALF:Trojan:Win32/RavenDoor.J!dha"
+  "ALF:Trojan:Win32/RavenDoor.J!dha",
+  "ALF:Trojan:Win32/QuartzTwill.D!dha",
+  "ALF:Trojan:Win32/QuartzTwill.E!dha",
+  "ALF:Trojan:Win32/MorvekDunal.B!dha",
+  "ALF:Trojan:Win64/BranikVexor.B!dha",
+  "ALF:Trojan:Win32/BlueLagoon.CB!dha"
 }
 for l_0_1, l_0_2 in ipairs(l_0_0) do
   if mp.get_mpattribute(l_0_2) then
