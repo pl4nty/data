@@ -1,5 +1,5 @@
 -- Threat: !InfrastructureShared
--- Name: 6b78231d2ddb
+-- Name: 1654065c4189f
 -- Type: 21
 
 if peattributes.isexe == true and peattributes.ismsil == true then
