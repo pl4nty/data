@@ -1,0 +1,102 @@
+{
+  "blocks": {
+    "{d9b9bd85-e105-416a-b13f-73e17f7ace69}": {
+      "entry": {
+        "APP_ID": "{9565b7a0-bd4f-4349-b4ef-f40a8fe76388}",
+        "APP_NAME": "TBT storage devices (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29991611",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{d9b9bd85-e105-416a-b13f-73e17f7ace69}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "PCI\\VEN_8086&DEV_1575*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_1576*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_1577*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_1578*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_15BF*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_15C0*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_15D2*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_15D3*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_15D9*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_15DA*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_15E7*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_15E8*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_15EA*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_15EB*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_8A0D*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_8A17*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_9A1B*"
+            },
+            {
+              "NAME": "PCI\\VEN_8086&DEV_9A1D*"
+            }
+          ]
+        },
+        "VENDOR": "Intel"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_11_05_05_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_11_05_05_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_11_05_05_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    }
+  },
+  "id": "29991611"
+}

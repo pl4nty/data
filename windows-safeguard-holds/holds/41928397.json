@@ -1,0 +1,54 @@
+{
+  "blocks": {
+    "{8b5f77d7-26d2-4221-8ab0-059f56532d5b}": {
+      "entry": {
+        "APP_ID": "{bca65c95-fde0-4a7a-af71-ee35e5212f9e}",
+        "APP_NAME": "Devices with Integrated 4-Channel Mic and have used Voice Recorder app",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41928397",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{8b5f77d7-26d2-4221-8ab0-059f56532d5b}",
+        "MATCH_PLUGIN": [
+          {
+            "COMMAND_LINE": "%ProgramFiles%\\WindowsApps\\Microsoft.WindowsSoundRecorder*\\VoiceRecorder.exe",
+            "NAME": "FileMatchingPlugin"
+          },
+          {
+            "COMMAND_LINE": "$Res = 0; $ContIdOfs = 8; $ChCntOfs = 10; $MaskOfs = 28; $ExpContId = [Byte[]]@(0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff); $ExpChCnt = [Byte[]]@(0x04,0x00); $ExpMask = [Byte[]]@(0x33,0x00,0x00,0x00); $RootKeyPath = 'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\MMDevices\\Audio\\Capture'; $Devices = Get-ChildItem -Path $RootKeyPath | Where-Object { $_.GetValue('DeviceState') -eq 1 }; foreach ($Device in $Devices) { $PropertiesKeyPath = 'Registry::' + $Device.Name + '\\Properties'; if (Test-Path -Path $PropertiesKeyPath) { $Properties = Get-ItemProperty -Path $PropertiesKeyPath; $ContIdKeyData = $Properties.'{8c7ed206-3f8a-4827-b3ab-ae9e1faefc6c},2'; if (-not $ContIdKeyData) { continue; } $ContId = $ContIdKeyData[$ContIdOfs..$($ContIdOfs + $ExpContId.Count - 1)]; $MixFormatData = $Properties.'{3d6e1656-2e50-4c4c-8d85-d0acae3c6c68},2'; if (-not $MixFormatData) { $MixFormatData =  $Properties.'{3d6e1656-2e50-4c4c-8d85-d0acae3c6c68},3'; } if (-not $MixFormatData) { continue; } $ChCnt = $MixFormatData[$ChCntOfs..$($ChCntOfs + $ExpChCnt.Count - 1)]; $Mask = $MixFormatData[$MaskOfs..$($MaskOfs + $ExpMask.Count - 1)]; if ($ContId -and $ChCnt -and $Mask -and (Compare-Object $ContId $ExpContId).Length -eq 0 -and (Compare-Object $ChCnt $ExpChCnt).Length -eq 0 -and (Compare-Object $Mask $ExpMask).Length -eq 0) { $Res = 1; break; } } } Write-Host 'Final result:', $Res;",
+            "NAME": "PowerShellMatchingPlugin"
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_10_27_03_01_AMD64",
+          "last": "2022_11_22_03_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_10_27_03_01_ARM64",
+          "last": "2022_11_22_03_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_10_27_03_01_X86",
+          "last": "2022_11_22_03_01_X86"
+        }
+      },
+      "source": "2022_11_22_03_02_ARM64"
+    }
+  },
+  "id": "41928397"
+}

@@ -1,0 +1,60 @@
+{
+  "blocks": {
+    "{78b8a4c9-560e-415f-aae9-ce294c81274b}": {
+      "entry": {
+        "APP_ID": "{1c74f5ca-bc31-430c-b604-4914e5efa737}",
+        "APP_NAME": "Surface 3 LTE (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26589889",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{78b8a4c9-560e-415f-aae9-ce294c81274b}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "{7dc8e73b-6f9e-5020-8a44-e1532f1d1ec3}"
+            },
+            {
+              "NAME": "{280ca7c4-f119-5fdc-abf6-c6ed8e7d3a81}"
+            },
+            {
+              "NAME": "{f4f57c3f-770f-59aa-a078-47e12f07e95d}"
+            },
+            {
+              "NAME": "{68a41967-41b9-5370-b4b1-a1451049e52c}"
+            }
+          ]
+        },
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_28_05_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_28_05_02_ARM64",
+          "last": "2020_08_06_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_28_05_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    }
+  },
+  "id": "26589889"
+}

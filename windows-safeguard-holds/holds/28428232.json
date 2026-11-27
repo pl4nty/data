@@ -1,0 +1,120 @@
+{
+  "blocks": {
+    "{8e3591cc-0224-46c5-b923-affd2c5147dd}": {
+      "entry": {
+        "APP_ID": "{ef1e88de-667b-4ed2-8544-b8e41de8226c}",
+        "APP_NAME": "Mobile broadband adapter (cxwmbclass.sys)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "28428232",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{8e3591cc-0224-46c5-b923-affd2c5147dd}",
+        "MATCHING_FILE": {
+          "NAME": "%windir%\\system32\\drivers\\cxwmbclass.sys"
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "usb\\vid_2cb7&pid_0210*"
+            },
+            {
+              "NAME": "usb\\vid_1519&pid_f214*"
+            },
+            {
+              "NAME": "usb\\vid_2cb7&pid_0002*"
+            },
+            {
+              "NAME": "usb\\vid_03f0&pid_026a*"
+            },
+            {
+              "NAME": "usb\\vid_1199&pid_907b*"
+            },
+            {
+              "NAME": "usb\\vid_1199&pid_a001*"
+            },
+            {
+              "NAME": "usb\\vid_03f0&pid_0857*"
+            },
+            {
+              "NAME": "usb\\vid_0bdb&pid_193e*"
+            },
+            {
+              "NAME": "usb\\vid_0bdb&pid_1926*"
+            },
+            {
+              "NAME": "usb\\vid_03f0&pid_3d1d*"
+            },
+            {
+              "NAME": "usb\\vid_413c&pid_818e*"
+            },
+            {
+              "NAME": "usb\\vid_413c&pid_8194*"
+            },
+            {
+              "NAME": "usb\\vid_413c&pid_81ac*"
+            },
+            {
+              "NAME": "usb\\vid_12d1&pid_1570*"
+            },
+            {
+              "NAME": "usb\\vid_03f0&subclass_0e*"
+            },
+            {
+              "NAME": "usb\\vid_1199&pid_68a2*"
+            },
+            {
+              "NAME": "usb\\vid_12d1&pid_15bb*"
+            },
+            {
+              "NAME": "usb\\vid_0489&pid_e0b1*"
+            },
+            {
+              "NAME": "usb\\vid_1199&pid_9061*"
+            },
+            {
+              "NAME": "usb\\vid_19d2&pid_0124*"
+            },
+            {
+              "NAME": "usb\\vid_413c&pid_81d9*"
+            },
+            {
+              "NAME": "usb\\vid_19d2&pid_1054*"
+            },
+            {
+              "NAME": "usb\\vid_0bdb&pid_1936*"
+            }
+          ]
+        },
+        "VENDOR": "Multiple"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_08_28_01_01_AMD64",
+          "last": "2020_10_01_04_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_08_28_01_02_ARM64",
+          "last": "2020_10_01_04_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_08_28_01_01_X86",
+          "last": "2020_10_01_04_03_X86"
+        }
+      },
+      "source": "2020_10_01_04_03_X86"
+    }
+  },
+  "id": "28428232"
+}

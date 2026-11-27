@@ -1,0 +1,53 @@
+{
+  "blocks": {
+    "{269afbb8-4644-49f7-9843-c6dd4820e840}": {
+      "entry": {
+        "APP_ID": "{2460099e-e35b-4cf9-bde9-016db213b01b}",
+        "APP_NAME": "Autodesk AutoCAD 2022 (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "56211213",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{269afbb8-4644-49f7-9843-c6dd4820e840}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Autodesk*",
+          "FROM_BIN_PRODUCT_VERSION": "24.1.0.0",
+          "NAME": "*",
+          "PRODUCT_NAME": "*AutoCAD*",
+          "UPTO_BIN_FILE_VERSION": "30.1.181.65535",
+          "UPTO_BIN_PRODUCT_VERSION": "24.1.65535.65535"
+        },
+        "NAME": "acad.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Autodesk, Inc."
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2025_02_13_02_01_AMD64",
+          "last": "2025_05_01_04_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2025_02_13_02_01_ARM64",
+          "last": "2025_05_01_04_05_ARM64"
+        },
+        "X86": {
+          "first": "2025_02_13_02_01_X86",
+          "last": "2025_05_01_04_02_X86"
+        }
+      },
+      "source": "2025_05_01_04_05_ARM64"
+    }
+  },
+  "id": "56211213"
+}

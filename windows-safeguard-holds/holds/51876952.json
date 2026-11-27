@@ -1,0 +1,318 @@
+{
+  "blocks": {
+    "{311fe14e-113e-4776-8bcb-0eca8b5dc3ad}": {
+      "entry": {
+        "APP_ID": "{e4d491ff-851e-4730-bf97-4517bf757733}",
+        "APP_NAME": "Intel IntcAudioBus.sys (24H2)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "51876952",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{311fe14e-113e-4776-8bcb-0eca8b5dc3ad}",
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_FILE": [
+              {
+                "BIN_FILE_VERSION": "10.29.0.5152",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcAudioBus.sys"
+              },
+              {
+                "BIN_FILE_VERSION": "10.30.0.5152",
+                "NAME": "%WinDir%\\System32\\drivers\\IntcAudioBus.sys"
+              }
+            ],
+            "MATCH_PLUGIN": [
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcAudioBus.sys -FromBinVersion 10.29.0.5152 -UptoBinVersion 10.29.0.5152",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcAudioBus.sys -FromBinVersion 10.30.0.5152 -UptoBinVersion 10.30.0.5152",
+                "NAME": "FileMatchingPlugin"
+              }
+            ]
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "MATCH_PLUGIN": [
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcAudioBus.sys -FromBinVersion 10.24.0.5714 -UptoBinVersion 10.24.*.*",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcAudioBus.sys -FromBinVersion 10.29.0.5714 -UptoBinVersion 10.29.*.*",
+                "NAME": "FileMatchingPlugin"
+              },
+              {
+                "COMMAND_LINE": "%WinDir%\\System32\\DriverStore\\FileRepository\\*\\IntcAudioBus.sys -FromBinVersion 10.30.0.5714 -UptoBinVersion 10.30.*.*",
+                "NAME": "FileMatchingPlugin"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11980HK*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11955M*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11950H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11900H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11850H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11800H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11855M*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11600H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11500H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11400H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11260H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11390H*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1185G7*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1165G7*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1155G7*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1145G7*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1135G7*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1125G4*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1115G4*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*7505*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*6305*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1185GRE*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1185G7E*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1145GRE*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1145G7E*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1115GRE*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1115G4E*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*6305E*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1180G7*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1160G7*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1140G7*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1130G7*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1120G4*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*1110G4*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11900KB*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11700B*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11500B*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+                "REG_VALUE_DATA_SZ": "*Intel*11100B*",
+                "REG_VALUE_NAME": "ProcessorNameString",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814751208898559,
+        "VENDOR": "Intel"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_06_20_05_01_AMD64",
+          "last": "2026_01_22_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_06_20_05_01_ARM64",
+          "last": "2026_01_22_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_06_20_05_01_X86",
+          "last": "2026_01_22_03_02_X86"
+        }
+      },
+      "source": "2026_01_22_03_05_ARM64"
+    }
+  },
+  "id": "51876952"
+}

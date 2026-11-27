@@ -1,0 +1,1513 @@
+{
+  "blocks": {
+    "{07595240-e662-453c-8421-9e90a8535848}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{07595240-e662-453c-8421-9e90a8535848}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "J:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"J:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{081df25e-b7b4-4ab9-a81b-b3f3601ad2a1}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{081df25e-b7b4-4ab9-a81b-b3f3601ad2a1}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "K:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"K:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{17df8ce1-ba8e-4fc3-908d-71f8bc1f190b}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{17df8ce1-ba8e-4fc3-908d-71f8bc1f190b}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "F:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"F:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{1f37d915-f848-45bd-8af3-1daf6e06e5a8}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{1f37d915-f848-45bd-8af3-1daf6e06e5a8}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "U:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"U:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{237a5f49-389a-4118-b997-781ab5ce7e97}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{237a5f49-389a-4118-b997-781ab5ce7e97}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "B:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"B:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{25721f01-2d85-4aa2-be6d-6baab98e0394}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{25721f01-2d85-4aa2-be6d-6baab98e0394}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "N:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"N:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{38e776a4-c7b4-4afd-aafa-bf29372bc7ac}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{38e776a4-c7b4-4afd-aafa-bf29372bc7ac}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "X:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"X:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{3e1226a6-30ac-4ff6-9e59-d8e10ed39bcb}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{3e1226a6-30ac-4ff6-9e59-d8e10ed39bcb}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "H:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"H:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{409ee9c4-ed67-45b7-92df-5033097cc528}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{409ee9c4-ed67-45b7-92df-5033097cc528}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "I:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"I:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{48a53621-8c93-4e8d-a257-7c3cd398f5ee}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{48a53621-8c93-4e8d-a257-7c3cd398f5ee}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "O:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"O:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{648e6938-9577-4bc2-abc3-8bc839ca3904}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{648e6938-9577-4bc2-abc3-8bc839ca3904}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "Y:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"Y:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{68f9333e-1cf7-4aef-a0de-ea5c303bfcef}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{68f9333e-1cf7-4aef-a0de-ea5c303bfcef}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "R:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"R:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{7194fef4-5f15-4267-b644-273c223f06bb}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{7194fef4-5f15-4267-b644-273c223f06bb}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "Z:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"Z:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{749c36a8-cd3d-4d29-b572-d795a928517b}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{749c36a8-cd3d-4d29-b572-d795a928517b}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "T:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"T:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{7723d824-b7fa-4da9-8872-0a0a113b985a}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{7723d824-b7fa-4da9-8872-0a0a113b985a}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "G:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"G:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{809c6a42-6aa7-4c8c-bb23-ae01a6aebb5a}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{809c6a42-6aa7-4c8c-bb23-ae01a6aebb5a}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "E:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"E:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{80ebcde5-577f-4766-9133-d9ecf77786ea}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{80ebcde5-577f-4766-9133-d9ecf77786ea}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "L:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"L:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{853c1207-286a-4681-9b74-c5d8870155ae}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{853c1207-286a-4681-9b74-c5d8870155ae}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "P:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"P:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{8a5220f7-6e5d-401c-a492-74fec2622b7e}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{8a5220f7-6e5d-401c-a492-74fec2622b7e}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "D:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"D:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{9a8f51d3-1a7a-469b-b91e-43e9ac72ec7b}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{9a8f51d3-1a7a-469b-b91e-43e9ac72ec7b}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "C:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"C:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{afc6422e-2928-436d-9608-800a853d34b1}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{afc6422e-2928-436d-9608-800a853d34b1}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "Q:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"Q:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{b61c1b24-fa49-42de-8d49-0e7f8a3655f5}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{b61c1b24-fa49-42de-8d49-0e7f8a3655f5}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "S:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"S:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{cce8f6f1-29b2-4172-8382-1f145e3f6ce2}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{cce8f6f1-29b2-4172-8382-1f145e3f6ce2}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "V:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"V:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{d5a7ce87-4337-4bd7-bb54-d9545f691fe8}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{d5a7ce87-4337-4bd7-bb54-d9545f691fe8}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "A:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"A:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{e294f2c9-99e6-4067-b1d5-b81bd3e42cff}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{e294f2c9-99e6-4067-b1d5-b81bd3e42cff}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "M:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"M:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    },
+    "{e3d97214-ea5c-4f86-a57d-eb33a82fb051}": {
+      "entry": {
+        "APP_ID": "{b6b80f6b-094a-4ad9-98a8-c54e5d690aaa}",
+        "APP_NAME": "Reserve Manager enabled with Low Disk Space",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29745406",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "CO21H2",
+        "EXE_ID": "{e3d97214-ea5c-4f86-a57d-eb33a82fb051}",
+        "MATCHING_REG": [
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ReserveManager",
+            "REG_VALUE_DATA_DWORD": 1,
+            "REG_VALUE_NAME": "PassedPolicy",
+            "REG_VALUE_TYPE": 4
+          },
+          {
+            "NAME": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+            "REG_VALUE_DATA_SZ": "W:*",
+            "REG_VALUE_NAME": "SystemRoot",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "root\\cimv2 Win32_LogicalDisk 0 FreeSpace int 32212254720 lte DeviceId \"W:\"",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_15_07_01_AMD64",
+          "last": "2021_04_12_01_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_15_07_02_ARM64",
+          "last": "2021_04_12_01_01_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_15_07_01_X86",
+          "last": "2021_04_12_01_01_X86"
+        }
+      },
+      "source": "2021_04_12_01_01_X86"
+    }
+  },
+  "id": "29745406"
+}

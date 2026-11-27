@@ -1,0 +1,67 @@
+{
+  "blocks": {
+    "{59751650-b260-4599-9566-4656a0a3d687}": {
+      "entry": {
+        "APP_ID": "{8fc8e8d5-ea73-462c-a6fb-009de2cb5c7b}",
+        "APP_NAME": "Dynabook EDU devices deactivated with 2004 upgrade",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "29586383",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H2",
+        "EXE_ID": "{59751650-b260-4599-9566-4656a0a3d687}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "*Dynabook*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "Satellite Pro E10-G-101",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "Satellite Pro ET10-G-103",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Dynabook"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_10_01_04_01_AMD64",
+          "last": "2021_02_12_02_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_10_01_04_02_ARM64",
+          "last": "2021_02_12_02_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_10_01_04_01_X86",
+          "last": "2021_02_12_02_03_X86"
+        }
+      },
+      "source": "2021_02_12_02_03_X86"
+    }
+  },
+  "id": "29586383"
+}

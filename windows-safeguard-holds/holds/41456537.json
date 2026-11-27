@@ -1,0 +1,50 @@
+{
+  "blocks": {
+    "{40479c80-f336-4885-944e-ebad3bdcbbc5}": {
+      "entry": {
+        "APP_ID": "{d577f865-e62a-469c-b79a-5cf3cf18e325}",
+        "APP_NAME": "Lenovo X13s Gen 1",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41456537",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{40479c80-f336-4885-944e-ebad3bdcbbc5}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*LENOVO*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*ThinkPad X13s Gen 1*",
+            "REG_VALUE_NAME": "SystemFamily",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "Lenovo"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "ARM64": {
+          "first": "2022_10_13_02_01_ARM64",
+          "last": "2022_10_27_03_02_ARM64"
+        }
+      },
+      "source": "2022_10_27_03_02_ARM64"
+    }
+  },
+  "id": "41456537"
+}

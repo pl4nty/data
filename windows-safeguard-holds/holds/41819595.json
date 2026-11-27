@@ -1,0 +1,58 @@
+{
+  "blocks": {
+    "{77b816f0-b922-48b1-aad2-b71e29b651e1}": {
+      "entry": {
+        "APP_ID": "{f10a158a-008a-48b1-a285-5b8227d4c39f}",
+        "APP_NAME": "HONOR Galileo devices",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41819595",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{77b816f0-b922-48b1-aad2-b71e29b651e1}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "HONOR",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "GLO-NX6",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "HONOR"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_10_20_12_01_AMD64",
+          "last": "2022_12_14_03_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_10_20_12_01_ARM64",
+          "last": "2022_12_14_03_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_10_20_12_01_X86",
+          "last": "2022_12_14_03_01_X86"
+        }
+      },
+      "source": "2022_12_14_03_02_ARM64"
+    }
+  },
+  "id": "41819595"
+}

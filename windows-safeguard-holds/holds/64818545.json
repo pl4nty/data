@@ -1,0 +1,47 @@
+{
+  "blocks": {
+    "{b56fa8ec-f74c-4edf-a821-3ce894c467c5}": {
+      "entry": {
+        "APP_ID": "{a17b39da-3c98-4d3c-b26a-ecc8ff3c2e17}",
+        "APP_NAME": "Samsung Galaxy Book3 Go 5G (25H2)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "64818545",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE25H2",
+        "DEST_OS_LT": "GE26H2",
+        "EXE_ID": "{b56fa8ec-f74c-4edf-a821-3ce894c467c5}",
+        "MATCHING_DEVICE": {
+          "NAME": "{2416505d-348f-5bed-9355-93e499ca271b}"
+        },
+        "NAME": "",
+        "VENDOR": "Samsung"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2026_10_29_11_01_AMD64",
+          "last": "2026_10_29_11_04_AMD64"
+        },
+        "ARM64": {
+          "first": "2026_10_29_11_01_ARM64",
+          "last": "2026_10_29_11_04_ARM64"
+        },
+        "X86": {
+          "first": "2026_10_29_11_01_X86",
+          "last": "2026_10_29_11_02_X86"
+        }
+      },
+      "source": "2026_10_29_11_04_ARM64"
+    }
+  },
+  "id": "64818545"
+}

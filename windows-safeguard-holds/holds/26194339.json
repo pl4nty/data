@@ -1,0 +1,79 @@
+{
+  "blocks": {
+    "{24dba4a5-d3e0-4889-86b3-8be67e876333}": {
+      "entry": {
+        "APP_ID": "{b4b6c47c-1c3e-4f2a-8eaa-5fb0c2a49e15}",
+        "APP_NAME": "Realtek audio drivers on Asus",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26194339",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{24dba4a5-d3e0-4889-86b3-8be67e876333}",
+        "MATCHING_FILE": {
+          "NAME": "%windir%\\System32\\Drivers\\rtkvhd64.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "6.0.1.8298"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "ASUSTeK COMPUTER INC.",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_DEVICE": [
+            {
+              "NAME": "hdaudio\\func_01&ven_10ec&dev_0256&subsys_10431d20*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_10ec&dev_0256&subsys_10431d50*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_10ec&dev_0256&subsys_10431d60*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_10ec&dev_0256&subsys_10431d90*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_10ec&dev_0256&subsys_1043144e*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_10ec&dev_0256&subsys_10431ef0*"
+            },
+            {
+              "NAME": "hdaudio\\func_01&ven_10ec&dev_0256&subsys_10431f00*"
+            }
+          ]
+        },
+        "VENDOR": "Realtek"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_01_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_01_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_01_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    }
+  },
+  "id": "26194339"
+}

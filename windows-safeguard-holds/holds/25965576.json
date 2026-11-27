@@ -1,0 +1,58 @@
+{
+  "blocks": {
+    "{486faad0-2ae2-4708-af70-6adc1cd0ff95}": {
+      "entry": {
+        "APP_ID": "{de4b9a4d-f5b6-474b-b1e0-9c78568943e7}",
+        "APP_NAME": "ThinkStation P340",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25965576",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{486faad0-2ae2-4708-af70-6adc1cd0ff95}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "LENOVO",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "30DH*",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "Lenovo"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_04_16_06_01_AMD64",
+          "last": "2020_09_25_01_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_04_16_06_02_ARM64",
+          "last": "2020_09_25_01_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_04_16_06_01_X86",
+          "last": "2020_09_25_01_03_X86"
+        }
+      },
+      "source": "2020_09_25_01_03_X86"
+    }
+  },
+  "id": "25965576"
+}

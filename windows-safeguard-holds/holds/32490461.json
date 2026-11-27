@@ -1,0 +1,44 @@
+{
+  "blocks": {
+    "{f359a23a-8a89-4a50-be4e-9d9027c32e86}": {
+      "entry": {
+        "APP_ID": "{91a77826-8422-49d2-a1ca-adb2abc5c346}",
+        "APP_NAME": "Microsoft Teams Room (Wu Offer Block) - 21H1",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "32490461",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "21H1",
+        "DEST_OS_LT": "21H2",
+        "EXE_ID": "{f359a23a-8a89-4a50-be4e-9d9027c32e86}",
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%systemdrive%\\Recovery\\OEM\\$oem$\\$1\\Rigel",
+          "NAME": "DirectoryExistsMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_04_29_01_01_AMD64",
+          "last": "2026_03_13_07_01_AMD64"
+        },
+        "X86": {
+          "first": "2021_04_29_01_01_X86",
+          "last": "2025_12_17_01_02_X86"
+        }
+      },
+      "source": "2026_03_13_07_01_AMD64"
+    }
+  },
+  "id": "32490461"
+}

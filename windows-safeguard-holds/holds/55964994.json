@@ -1,0 +1,47 @@
+{
+  "blocks": {
+    "{dd50bab4-f5de-42dc-8d67-65da9d957739}": {
+      "entry": {
+        "APP_ID": "{211537e9-ac25-4235-95ce-1b0b6ea799d0}",
+        "APP_NAME": "Devices with Digital TV Tuners",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "55964994",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{dd50bab4-f5de-42dc-8d67-65da9d957739}",
+        "MATCHING_REG": {
+          "NAME": "SYSTEM\\CurrentControlSet\\Control\\DeviceClasses\\{71985f48-1ca1-11d3-9cc8-00c04f7971e0}"
+        },
+        "NAME": "",
+        "VENDOR": "Multiple"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2025_02_06_03_01_AMD64",
+          "last": "2025_05_01_04_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2025_02_06_03_01_ARM64",
+          "last": "2025_05_01_04_05_ARM64"
+        },
+        "X86": {
+          "first": "2025_02_06_03_01_X86",
+          "last": "2025_05_01_04_02_X86"
+        }
+      },
+      "source": "2025_05_01_04_05_ARM64"
+    }
+  },
+  "id": "55964994"
+}

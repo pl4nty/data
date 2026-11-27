@@ -1,0 +1,58 @@
+{
+  "blocks": {
+    "{47e0745d-4111-45d8-9312-ef6ce7010b9c}": {
+      "entry": {
+        "APP_ID": "{b9ff68a4-fc2d-428d-a267-73ec357db47c}",
+        "APP_NAME": "Tobii Dynavox TD I-110 (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "55433415",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{47e0745d-4111-45d8-9312-ef6ce7010b9c}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*Tobii*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*TD110*",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "Tobii Dynavox"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_12_11_03_01_AMD64",
+          "last": "2025_09_18_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_12_11_03_01_ARM64",
+          "last": "2025_09_18_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_12_11_03_01_X86",
+          "last": "2025_09_18_03_02_X86"
+        }
+      },
+      "source": "2025_09_18_03_05_ARM64"
+    }
+  },
+  "id": "55433415"
+}

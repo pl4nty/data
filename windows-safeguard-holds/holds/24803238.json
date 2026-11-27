@@ -1,0 +1,46 @@
+{
+  "blocks": {
+    "{62170609-e32b-4c80-a92a-a1025fd653af}": {
+      "entry": {
+        "APP_ID": "{c3969b0e-314a-4baa-b07d-4446a4c2929c}",
+        "APP_NAME": "Nvidia Tesla driver (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "24803238",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{62170609-e32b-4c80-a92a-a1025fd653af}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "NVIDIA*",
+          "NAME": "%windir%\\system32\\drivers\\nvlddmkm.sys",
+          "PRODUCT_NAME": "NVIDIA*",
+          "UPTO_BIN_PRODUCT_VERSION": "21.21.13.5799"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_02_20_06_01_AMD64",
+          "last": "2020_08_06_04_02_AMD64"
+        },
+        "X86": {
+          "first": "2020_02_20_06_01_X86",
+          "last": "2020_08_06_04_02_X86"
+        }
+      },
+      "source": "2020_08_06_04_02_X86"
+    }
+  },
+  "id": "24803238"
+}

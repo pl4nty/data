@@ -1,0 +1,48 @@
+{
+  "blocks": {
+    "{499d06c7-bd8f-4581-b558-4865831e906a}": {
+      "entry": {
+        "APP_ID": "{5b900fc5-527e-4ec1-adf3-af5ca14660c4}",
+        "APP_NAME": " Aplicação Autenticação.gov",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "36632506",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "CU22H2",
+        "EXE_ID": "{499d06c7-bd8f-4581-b558-4865831e906a}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Portuguese Government",
+          "NAME": "*"
+        },
+        "NAME": "pteidguiV2.exe",
+        "VENDOR": "Portuguese Government"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2021_10_07_04_01_AMD64",
+          "last": "2021_11_04_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_10_07_04_01_ARM64",
+          "last": "2021_11_04_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2021_10_07_04_01_X86",
+          "last": "2021_11_04_04_02_X86"
+        }
+      },
+      "source": "2021_11_04_04_02_X86"
+    }
+  },
+  "id": "36632506"
+}

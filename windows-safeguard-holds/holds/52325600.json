@@ -1,0 +1,56 @@
+{
+  "blocks": {
+    "{f032d88e-90c5-4f69-97a2-6e4fdf6180de}": {
+      "entry": {
+        "APP_ID": "{043aa2f2-dd8a-4e54-9aa1-8dff25826db8}",
+        "APP_NAME": "Xunyou Netfilter2.sys (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52325600",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{f032d88e-90c5-4f69-97a2-6e4fdf6180de}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_FILE": [
+            {
+              "COMPANY_NAME": "*Xunyou*",
+              "NAME": "%WinDir%\\System32\\drivers\\netfilter2.sys"
+            },
+            {
+              "NAME": "%WinDir%\\System32\\drivers\\netfilter2.sys",
+              "PRODUCT_NAME": "*Xunyou*"
+            }
+          ]
+        },
+        "VENDOR": "Xunyou"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_07_11_04_01_AMD64",
+          "last": "2025_05_01_04_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_07_11_04_01_ARM64",
+          "last": "2025_05_01_04_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_07_11_04_01_X86",
+          "last": "2025_05_01_04_02_X86"
+        }
+      },
+      "source": "2025_05_01_04_05_ARM64"
+    }
+  },
+  "id": "52325600"
+}

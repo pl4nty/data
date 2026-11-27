@@ -1,0 +1,105 @@
+{
+  "blocks": {
+    "{91649c4a-67e9-40cf-93bd-8f6135f21527}": {
+      "entry": {
+        "APP_ID": "{5afa5a99-76ee-4921-a413-30fb50f18b33}",
+        "APP_NAME": "SQL Server unusable with Samsung drives (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "37395288",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "NI22H2",
+        "EXE_ID": "{91649c4a-67e9-40cf-93bd-8f6135f21527}",
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "SCSI\\DiskNVMe*SAMSUNG_SSD_980*"
+              },
+              {
+                "NAME": "SCSI\\DiskNVMe*PM991a_NVMe*"
+              },
+              {
+                "NAME": "SCSI\\DiskNVMe*SAMSUNG_MZVLQ1T0HBLB*"
+              },
+              {
+                "NAME": "SCSI\\DiskNVMe*SAMSUNG_MZVLQ512HBLU-00BH1*"
+              },
+              {
+                "NAME": "SCSI\\DiskNVMe*SAMSUNG_MZALQ512HBLU-00BL2*"
+              },
+              {
+                "NAME": "SCSI\\DiskNVMe*SAMSUNG_MZVLQ1T0HALB*"
+              },
+              {
+                "NAME": "SCSI\\DiskNVMe*SAMSUNG_MZ1LB960HAJQ-000MV*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Microsoft SQL Server\\110\\11.0"
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\Microsoft SQL Server\\110\\11.0"
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Microsoft SQL Server\\120\\12.0"
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\Microsoft SQL Server\\120\\12.0"
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Microsoft SQL Server\\130\\13.0"
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\Microsoft SQL Server\\130\\13.0"
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Microsoft SQL Server\\140\\14.0"
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\Microsoft SQL Server\\140\\14.0"
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\Microsoft SQL Server\\150\\15.0"
+              },
+              {
+                "NAME": "SOFTWARE\\WOW6432Node\\Microsoft\\Microsoft SQL Server\\150\\15.0"
+              }
+            ]
+          }
+        ],
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2021_12_16_03_01_AMD64",
+          "last": "2026_03_13_07_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_12_16_03_01_ARM64",
+          "last": "2026_03_13_07_01_ARM64"
+        },
+        "X86": {
+          "first": "2021_12_16_03_01_X86",
+          "last": "2026_01_29_03_02_X86"
+        }
+      },
+      "source": "2026_03_13_07_01_ARM64"
+    }
+  },
+  "id": "37395288"
+}

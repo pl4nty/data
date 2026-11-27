@@ -1,0 +1,1431 @@
+{
+  "blocks": {
+    "{1f9d9513-7d4c-46b9-86ae-7cef6c987e0b}": {
+      "entry": {
+        "APP_ID": "{0148e7dd-6918-4d7b-8c01-48da41dd0fbe}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702662",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{1f9d9513-7d4c-46b9-86ae-7cef6c987e0b}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Toshiba",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506d*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5113*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e&subsys_1179fb50&rev_1000*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f841&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f840&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f845&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f844&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f843&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f842&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Toshiba"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{4c47c69d-ff1d-47b0-8af1-8f29dfc3e0bf}": {
+      "entry": {
+        "APP_ID": "{0148e7dd-6918-4d7b-8c01-48da41dd0fbe}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702662",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{4c47c69d-ff1d-47b0-8af1-8f29dfc3e0bf}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dynabook Inc*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506d*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5113*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e&subsys_1179fb50&rev_1000*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f841&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f840&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f845&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f844&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f843&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f842&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Toshiba"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{63ba83e2-f629-4bb9-be8f-edca8e88a097}": {
+      "entry": {
+        "APP_ID": "{0148e7dd-6918-4d7b-8c01-48da41dd0fbe}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702662",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{63ba83e2-f629-4bb9-be8f-edca8e88a097}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.88.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Toshiba",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506d*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5113*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e&subsys_1179fb50&rev_1000*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f841&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f840&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f845&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f844&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f843&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f842&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Toshiba"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{83bf6fed-df58-4a61-95dd-061da71148e7}": {
+      "entry": {
+        "APP_ID": "{0148e7dd-6918-4d7b-8c01-48da41dd0fbe}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702662",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{83bf6fed-df58-4a61-95dd-061da71148e7}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.88.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dynabook Inc*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506d*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5113*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f841&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f840&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f845&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f844&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f843&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f842&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Toshiba"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{858ffe01-81bd-4c7c-92d6-469326a9ea90}": {
+      "entry": {
+        "APP_ID": "{0148e7dd-6918-4d7b-8c01-48da41dd0fbe}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702662",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{858ffe01-81bd-4c7c-92d6-469326a9ea90}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.88.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dynabook Inc*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506d*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5113*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e&subsys_1179fb50&rev_1000*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f841&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f840&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f845&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f844&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f843&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f842&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Toshiba"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{88656788-67de-4d7a-9e42-5c34ab248480}": {
+      "entry": {
+        "APP_ID": "{0148e7dd-6918-4d7b-8c01-48da41dd0fbe}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702662",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{88656788-67de-4d7a-9e42-5c34ab248480}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Toshiba",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506d*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5113*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f841&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f840&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f845&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f844&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f843&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f842&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Toshiba"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{a4bd8d71-c455-47da-8d7e-bcb7f0a300d9}": {
+      "entry": {
+        "APP_ID": "{0148e7dd-6918-4d7b-8c01-48da41dd0fbe}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702662",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{a4bd8d71-c455-47da-8d7e-bcb7f0a300d9}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dynabook Inc*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506d*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5113*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f841&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f840&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f845&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f844&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f843&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f842&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Toshiba"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{b6336471-4c6a-48a2-90a0-dda930d14193}": {
+      "entry": {
+        "APP_ID": "{0148e7dd-6918-4d7b-8c01-48da41dd0fbe}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702662",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{b6336471-4c6a-48a2-90a0-dda930d14193}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "8.66.0.0",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "8.66.88.65535"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Toshiba",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506d*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5113*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f841&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f840&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f845&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f844&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f843&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f842&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Toshiba"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{b9260b74-de85-40db-bcae-c0e4e5fbc1b2}": {
+      "entry": {
+        "APP_ID": "{0148e7dd-6918-4d7b-8c01-48da41dd0fbe}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702662",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{b9260b74-de85-40db-bcae-c0e4e5fbc1b2}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dynabook Inc*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506d*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5113*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f841&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f840&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f845&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f844&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f843&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f842&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Toshiba"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{ef32c2ae-a5f9-4d17-9b80-21ea19686791}": {
+      "entry": {
+        "APP_ID": "{0148e7dd-6918-4d7b-8c01-48da41dd0fbe}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702662",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{ef32c2ae-a5f9-4d17-9b80-21ea19686791}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.56.51",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt32.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Toshiba",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506d*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5113*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f841&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f840&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f845&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f844&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f843&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f842&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Toshiba"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{f003e6a2-5c39-41ea-ae1d-6003f67afea8}": {
+      "entry": {
+        "APP_ID": "{0148e7dd-6918-4d7b-8c01-48da41dd0fbe}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702662",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{f003e6a2-5c39-41ea-ae1d-6003f67afea8}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Dynabook Inc*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506d*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5113*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e&subsys_1179fb50&rev_1000*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f841&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f840&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f845&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f844&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f843&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f842&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Toshiba"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    },
+    "{f58eda86-d597-4370-960d-deb2029c1d5e}": {
+      "entry": {
+        "APP_ID": "{0148e7dd-6918-4d7b-8c01-48da41dd0fbe}",
+        "APP_NAME": "Synaptics CHDRT32.sys and CHDRT64.sys - Toshiba",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "25702662",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{f58eda86-d597-4370-960d-deb2029c1d5e}",
+        "MATCHING_FILE": {
+          "BIN_PRODUCT_VERSION": "8.65.47.53",
+          "NAME": "%windir%\\System32\\Drivers\\chdrt64.sys"
+        },
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "Toshiba",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5045*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5047*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5051*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5066*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5067*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5069*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506d*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_510f*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5113*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114*"
+              }
+            ]
+          },
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5111&subsys_117906c2&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_506e&subsys_1179fb50&rev_1000*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f841&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f840&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f845&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f844&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f843&rev_1001*"
+              },
+              {
+                "NAME": "hdaudio\\func_01&ven_14f1&dev_5114&subsys_1179f842&rev_1001*"
+              }
+            ],
+            "MATCH_LOGIC_NOT": true
+          }
+        ],
+        "VENDOR": "Toshiba"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_03_27_03_01_AMD64",
+          "last": "2020_11_24_07_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_03_27_03_02_ARM64",
+          "last": "2020_11_24_07_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_03_27_03_01_X86",
+          "last": "2020_11_24_07_03_X86"
+        }
+      },
+      "source": "2020_11_24_07_03_X86"
+    }
+  },
+  "id": "25702662"
+}

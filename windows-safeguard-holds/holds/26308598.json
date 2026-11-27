@@ -1,0 +1,53 @@
+{
+  "blocks": {
+    "{be6e6596-b50d-4735-a5f7-b9063ced90b7}": {
+      "entry": {
+        "APP_ID": "{0407ebd8-1f76-4311-a0ea-3ebf6d8130e5}",
+        "APP_NAME": "Trend Micro Virus Buster Cloud - tmevtmgr.sys",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26308598",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "EXE_ID": "{be6e6596-b50d-4735-a5f7-b9063ced90b7}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_FILE": [
+            {
+              "FROM_BIN_FILE_VERSION": "6.70.0.1000",
+              "NAME": "%windir%\\system32\\drivers\\tmevtmgr.sys",
+              "UPTO_BIN_FILE_VERSION": "6.70.0.1120"
+            },
+            {
+              "FROM_BIN_FILE_VERSION": "7.0.0.1000",
+              "NAME": "%windir%\\system32\\drivers\\tmevtmgr.sys",
+              "UPTO_BIN_FILE_VERSION": "7.0.0.1175"
+            }
+          ]
+        },
+        "VENDOR": "Trend Micro"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_07_07_01_AMD64",
+          "last": "2020_08_13_06_02_AMD64"
+        },
+        "X86": {
+          "first": "2020_05_07_07_01_X86",
+          "last": "2020_08_13_06_02_X86"
+        }
+      },
+      "source": "2020_08_13_06_02_X86"
+    }
+  },
+  "id": "26308598"
+}

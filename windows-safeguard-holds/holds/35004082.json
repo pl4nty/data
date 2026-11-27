@@ -1,0 +1,60 @@
+{
+  "blocks": {
+    "{cf96815d-7315-4a67-ad9d-5dc64b52b23f}": {
+      "entry": {
+        "APP_ID": "{621dda90-d08f-40e0-be62-a51a3a8ec857}",
+        "APP_NAME": "VirtualBox",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "35004082",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "NI22H2",
+        "EXE_ID": "{cf96815d-7315-4a67-ad9d-5dc64b52b23f}",
+        "MATCHING_FILE": [
+          {
+            "COMPANY_NAME": "Oracle*",
+            "NAME": "*",
+            "PRODUCT_NAME": "*VirtualBox",
+            "UPTO_BIN_PRODUCT_VERSION": "6.1.26.65535"
+          },
+          {
+            "MATCH_LOGIC_NOT": true,
+            "NAME": "Ld2VirtualBox.exe"
+          }
+        ],
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "ROOT\\CIMV2 Win32_ComputerSystem * HypervisorPresent int 0 ne",
+          "NAME": "WmiQueryMatchingPlugin"
+        },
+        "NAME": "VirtualBox.exe",
+        "VENDOR": "Oracle"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2021_09_29_04_01_AMD64",
+          "last": "2022_06_23_03_01_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_09_29_04_01_ARM64",
+          "last": "2022_06_23_03_01_ARM64"
+        },
+        "X86": {
+          "first": "2021_09_29_04_01_X86",
+          "last": "2022_06_23_03_01_X86"
+        }
+      },
+      "source": "2022_06_23_03_01_X86"
+    }
+  },
+  "id": "35004082"
+}

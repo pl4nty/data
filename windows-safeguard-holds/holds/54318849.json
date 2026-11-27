@@ -1,0 +1,50 @@
+{
+  "blocks": {
+    "{41882e2e-d486-4f81-b84b-b973177d26e2}": {
+      "entry": {
+        "APP_ID": "{4ae1782b-b413-4133-be9d-56aae7317e0a}",
+        "APP_NAME": "Incredibuild",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54318849",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{41882e2e-d486-4f81-b84b-b973177d26e2}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Incredibuild Software Ltd.",
+          "NAME": "*",
+          "PRODUCT_NAME": "Incredibuild"
+        },
+        "NAME": "BuildSystem.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "Incredibuild Software Ltd."
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_10_03_01_AMD64",
+          "last": "2025_03_06_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_10_03_01_ARM64",
+          "last": "2025_03_06_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_10_03_01_X86",
+          "last": "2025_03_06_03_02_X86"
+        }
+      },
+      "source": "2025_03_06_03_05_ARM64"
+    }
+  },
+  "id": "54318849"
+}

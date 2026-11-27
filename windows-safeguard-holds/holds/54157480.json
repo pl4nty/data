@@ -1,0 +1,156 @@
+{
+  "blocks": {
+    "{f15ae1af-dbe8-44b6-8eb5-02543dc964cd}": {
+      "entry": {
+        "APP_ID": "{654bf6b6-5ab0-462b-ae47-5d4dbe0d86da}",
+        "APP_NAME": "ASUS X415KA and X515KA (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54157480",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{f15ae1af-dbe8-44b6-8eb5-02543dc964cd}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "*ASUS*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*X415KA*",
+                "REG_VALUE_NAME": "BaseBoardProduct",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*X415KA*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*X515KA*",
+                "REG_VALUE_NAME": "BaseBoardProduct",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "*X515KA*",
+                "REG_VALUE_NAME": "SystemProductName",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X415KA.?",
+                "REG_VALUE_NAME": "BIOSVersion",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X415KA.??",
+                "REG_VALUE_NAME": "BIOSVersion",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X415KA.1??",
+                "REG_VALUE_NAME": "BIOSVersion",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X415KA.2??",
+                "REG_VALUE_NAME": "BIOSVersion",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X415KA.30?",
+                "REG_VALUE_NAME": "BIOSVersion",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X415KA.310",
+                "REG_VALUE_NAME": "BIOSVersion",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X515KA.?",
+                "REG_VALUE_NAME": "BIOSVersion",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X515KA.??",
+                "REG_VALUE_NAME": "BIOSVersion",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X515KA.1??",
+                "REG_VALUE_NAME": "BIOSVersion",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X515KA.2??",
+                "REG_VALUE_NAME": "BIOSVersion",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X515KA.30?",
+                "REG_VALUE_NAME": "BIOSVersion",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "X515KA.310",
+                "REG_VALUE_NAME": "BIOSVersion",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "VENDOR": "ASUS"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_10_03_02_01_AMD64",
+          "last": "2025_03_06_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_10_03_02_01_ARM64",
+          "last": "2025_03_06_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_10_03_02_01_X86",
+          "last": "2025_03_06_03_02_X86"
+        }
+      },
+      "source": "2025_03_06_03_05_ARM64"
+    }
+  },
+  "id": "54157480"
+}

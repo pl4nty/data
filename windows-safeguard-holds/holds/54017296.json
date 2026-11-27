@@ -1,0 +1,84 @@
+{
+  "blocks": {
+    "{ef682a55-9452-4691-b804-d774ae35eb80}": {
+      "entry": {
+        "APP_ID": "{b0cac2b8-4901-4016-8347-7859e5d24a01}",
+        "APP_NAME": "Huawei devices with TBT eGPUs",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "54017296",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{ef682a55-9452-4691-b804-d774ae35eb80}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "*HUAWEI*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCHING_REG": [
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "*VGHH-XX*",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "*ENZH-XX*",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "*CREFG-XX*",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "*HKFG-XX*",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            },
+            {
+              "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+              "REG_VALUE_DATA_SZ": "*MRGFG-XX*",
+              "REG_VALUE_NAME": "SystemProductName",
+              "REG_VALUE_TYPE": 1
+            }
+          ]
+        },
+        "VENDOR": "HUAWEI"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_26_05_01_AMD64",
+          "last": "2025_07_02_04_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_26_05_01_ARM64",
+          "last": "2025_07_02_04_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_26_05_01_X86",
+          "last": "2025_07_02_04_02_X86"
+        }
+      },
+      "source": "2025_07_02_04_05_ARM64"
+    }
+  },
+  "id": "54017296"
+}

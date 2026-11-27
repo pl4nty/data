@@ -1,0 +1,228 @@
+{
+  "blocks": {
+    "{c381c9cd-d1e5-4677-a82b-176072f80e22}": {
+      "entry": {
+        "APP_ID": "{99b1d1c0-c45b-4b75-887d-11f61dd3600e}",
+        "APP_NAME": "Realtek Audio - RTKVHD64.sys",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26071206",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{c381c9cd-d1e5-4677-a82b-176072f80e22}",
+        "MATCHING_FILE": {
+          "FROM_BIN_PRODUCT_VERSION": "6.0.8717.0",
+          "NAME": "%windir%\\System32\\Drivers\\RTKVHD64.sys",
+          "UPTO_BIN_PRODUCT_VERSION": "6.0.8919.65535"
+        },
+        "NAME": "",
+        "PICK_ONE": [
+          {
+            "MATCHING_DEVICE": [
+              {
+                "NAME": "HDAUDIO\\func_01&ven_10ec&dev_0269&*&rev_??02"
+              },
+              {
+                "NAME": "HDAUDIO\\FUNC_01&VEN_10EC&DEV_0256&SUBSYS_103C8267*"
+              },
+              {
+                "NAME": "HDAUDIO\\FUNC_01&VEN_10EC&DEV_0285&SUBSYS_103C8496*"
+              },
+              {
+                "NAME": "HDAUDIO\\FUNC_01&VEN_10EC&DEV_0295&SUBSYS_103C8497*"
+              },
+              {
+                "NAME": "HDAUDIO\\FUNC_01&VEN_10EC&DEV_0668&SUBSYS_1028079C*"
+              },
+              {
+                "NAME": "HDAUDIO\\FUNC_01&VEN_10EC&DEV_0668&SUBSYS_1028079D*"
+              },
+              {
+                "NAME": "HDAUDIO\\FUNC_01&VEN_10EC&DEV_0668&SUBSYS_102807D4*"
+              },
+              {
+                "NAME": "HDAUDIO\\FUNC_01&VEN_10EC&DEV_0668&SUBSYS_102807D5*"
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "MSI",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "LENOVO",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "ACER",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "SAMSUNG",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "COMPUTER",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "TREKSTOR",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "ONN",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "HP*",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "POSITIVO",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "MECHREVO",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "SONY_CORPORATION",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "EVOO Products Company*",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "Shinelon*",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "MACHENIKE",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "dell",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+                "REG_VALUE_DATA_SZ": "hasee",
+                "REG_VALUE_NAME": "SystemManufacturer",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          },
+          {
+            "MATCHING_REG": [
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*8}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*9}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*A}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*B}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*C}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*D}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*E}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              },
+              {
+                "NAME": "SOFTWARE\\Microsoft\\SQMClient",
+                "REG_VALUE_DATA_SZ": "{*F}",
+                "REG_VALUE_NAME": "MachineId",
+                "REG_VALUE_TYPE": 1
+              }
+            ]
+          }
+        ],
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "Realtek"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_04_23_05_01_AMD64",
+          "last": "2021_05_20_03_02_AMD64"
+        },
+        "X86": {
+          "first": "2020_04_23_05_01_X86",
+          "last": "2021_05_20_03_02_X86"
+        }
+      },
+      "source": "2021_05_20_03_02_X86"
+    }
+  },
+  "id": "26071206"
+}

@@ -1,0 +1,58 @@
+{
+  "blocks": {
+    "{ac933d39-808a-4554-acfc-a28b6fe6e455}": {
+      "entry": {
+        "APP_ID": "{89e352f9-36b7-4348-b6a2-51cbdc74a723}",
+        "APP_NAME": "Surface Pro X",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "53847657",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{ac933d39-808a-4554-acfc-a28b6fe6e455}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*Microsoft*",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "*Surface Pro X*",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_09_19_02_01_AMD64",
+          "last": "2025_01_23_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_09_19_02_01_ARM64",
+          "last": "2025_01_23_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_09_19_02_01_X86",
+          "last": "2025_01_23_03_02_X86"
+        }
+      },
+      "source": "2025_01_23_03_05_ARM64"
+    }
+  },
+  "id": "53847657"
+}

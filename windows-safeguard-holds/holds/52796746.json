@@ -1,0 +1,48 @@
+{
+  "blocks": {
+    "{4167f0c0-bd48-492b-bd0d-9d69f9e783df}": {
+      "entry": {
+        "APP_ID": "{6f4495ce-1302-427e-9e7a-de73f1f1c390}",
+        "APP_NAME": "Asphalt 8/9",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "52796746",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "GE24H2",
+        "DEST_OS_LT": "XY30H1",
+        "EXE_ID": "{4167f0c0-bd48-492b-bd0d-9d69f9e783df}",
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "%ProgramFiles%\\WindowsApps\\GAMELOFTSA.Asphalt8Airborne_*_0pp20fcewvvtj\\Asphalt8.exe",
+          "NAME": "FileMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Gameloft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2024_08_01_05_01_AMD64",
+          "last": "2025_02_27_03_05_AMD64"
+        },
+        "ARM64": {
+          "first": "2024_08_01_05_01_ARM64",
+          "last": "2025_02_27_03_05_ARM64"
+        },
+        "X86": {
+          "first": "2024_08_01_05_01_X86",
+          "last": "2025_02_27_03_02_X86"
+        }
+      },
+      "source": "2025_02_27_03_05_ARM64"
+    }
+  },
+  "id": "52796746"
+}

@@ -1,0 +1,58 @@
+{
+  "blocks": {
+    "{39e9872e-d1e4-49f5-97de-6a72a39989ee}": {
+      "entry": {
+        "APP_ID": "{826eb9ca-7820-4e58-ac34-b8e5a4b537e4}",
+        "APP_NAME": "Synaptics Fingerprint on XPS 13 9365",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "26222514",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "20H1",
+        "DEST_OS_LT": "21H1",
+        "EXE_ID": "{39e9872e-d1e4-49f5-97de-6a72a39989ee}",
+        "MATCHING_REG": [
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "Dell Inc.",
+            "REG_VALUE_NAME": "SystemManufacturer",
+            "REG_VALUE_TYPE": 1
+          },
+          {
+            "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "REG_VALUE_DATA_SZ": "XPS 13 9365",
+            "REG_VALUE_NAME": "SystemProductName",
+            "REG_VALUE_TYPE": 1
+          }
+        ],
+        "NAME": "",
+        "VENDOR": "Dell"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_05_07_07_01_AMD64",
+          "last": "2020_07_16_12_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_05_07_07_02_ARM64",
+          "last": "2020_07_16_12_02_ARM64"
+        },
+        "X86": {
+          "first": "2020_05_07_07_01_X86",
+          "last": "2020_07_16_12_02_X86"
+        }
+      },
+      "source": "2020_07_16_12_02_X86"
+    }
+  },
+  "id": "26222514"
+}

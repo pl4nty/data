@@ -1,0 +1,99 @@
+{
+  "blocks": {
+    "{7cac0127-d71d-4c5a-8f92-4634b0953d18}": {
+      "entry": {
+        "APP_ID": "{ea1e0dca-9e6f-4ed7-bb1d-e8f4b12e1d2d}",
+        "APP_NAME": "Devices with printer using Microsoft IPP Class Driver (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41332279",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{7cac0127-d71d-4c5a-8f92-4634b0953d18}",
+        "NAME": "",
+        "PICK_ONE": {
+          "MATCH_PLUGIN": [
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\spool\\V4Dirs\\*\\device_bidi_pdc.xml -Size 3448",
+              "NAME": "FileMatchingPlugin"
+            },
+            {
+              "COMMAND_LINE": "%WinDir%\\System32\\spool\\V4Dirs\\*\\device_bidi_pdc.xml -Size 3690",
+              "NAME": "FileMatchingPlugin"
+            }
+          ]
+        },
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_09_29_02_01_AMD64",
+          "last": "2022_11_03_03_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_09_29_02_01_ARM64",
+          "last": "2022_11_03_03_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_09_29_02_01_X86",
+          "last": "2022_11_03_03_01_X86"
+        }
+      },
+      "source": "2022_11_03_03_02_ARM64"
+    },
+    "{cce5bc0a-4441-4c83-9633-a4c1ec4731ff}": {
+      "entry": {
+        "APP_ID": "{ea1e0dca-9e6f-4ed7-bb1d-e8f4b12e1d2d}",
+        "APP_NAME": "Devices with printer using Microsoft IPP Class Driver (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "41332279",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI22H2",
+        "DEST_OS_LT": "CU23H2",
+        "EXE_ID": "{cce5bc0a-4441-4c83-9633-a4c1ec4731ff}",
+        "MATCH_PLUGIN": {
+          "COMMAND_LINE": "\"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Print\\Printers\\*\" ValueSearch \"Printer Driver\" eq \"Microsoft IPP Class Driver\" REG_SZ",
+          "NAME": "RegistryMatchingPlugin"
+        },
+        "NAME": "",
+        "VENDOR": "Microsoft"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2022_09_22_04_01_AMD64",
+          "last": "2022_09_22_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2022_09_22_04_01_ARM64",
+          "last": "2022_09_22_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2022_09_22_04_01_X86",
+          "last": "2022_09_22_04_01_X86"
+        }
+      },
+      "source": "2022_09_22_04_02_ARM64"
+    }
+  },
+  "id": "41332279"
+}

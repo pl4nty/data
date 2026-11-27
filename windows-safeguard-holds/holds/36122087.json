@@ -1,0 +1,181 @@
+{
+  "blocks": {
+    "{1eb80f03-e23d-48f3-9f39-9e42e2c101a1}": {
+      "entry": {
+        "APP_ID": "{c960cf5a-b5a9-471f-a770-6aaa79e3f0d7}",
+        "APP_NAME": "Dolphin SuperNova (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "36122087",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "CU22H2",
+        "EXE_ID": "{1eb80f03-e23d-48f3-9f39-9e42e2c101a1}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Dolphin Computer Access Ltd.",
+          "NAME": "*",
+          "PRODUCT_NAME": "ScreenReader"
+        },
+        "NAME": "Hal.EXE",
+        "VENDOR": "Dolphin Computer Access Ltd."
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2021_09_29_04_01_AMD64",
+          "last": "2021_11_11_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_09_29_04_01_ARM64",
+          "last": "2021_11_11_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2021_09_29_04_01_X86",
+          "last": "2021_11_11_04_02_X86"
+        }
+      },
+      "source": "2021_11_11_04_02_X86"
+    },
+    "{8659e6e2-72a1-4f82-bc5f-d2dce7d44f0c}": {
+      "entry": {
+        "APP_ID": "{c960cf5a-b5a9-471f-a770-6aaa79e3f0d7}",
+        "APP_NAME": "Dolphin SuperNova (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "36122087",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "CU22H2",
+        "EXE_ID": "{8659e6e2-72a1-4f82-bc5f-d2dce7d44f0c}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Dolphin Computer Access Ltd.",
+          "NAME": "*",
+          "PRODUCT_NAME": "SuperNova"
+        },
+        "NAME": "Snova.EXE",
+        "VENDOR": "Dolphin Computer Access Ltd."
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2021_09_29_04_01_AMD64",
+          "last": "2021_11_11_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_09_29_04_01_ARM64",
+          "last": "2021_11_11_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2021_09_29_04_01_X86",
+          "last": "2021_11_11_04_02_X86"
+        }
+      },
+      "source": "2021_11_11_04_02_X86"
+    },
+    "{bec5e7a9-051f-4afd-8353-4bc4ec326fd7}": {
+      "entry": {
+        "APP_ID": "{c960cf5a-b5a9-471f-a770-6aaa79e3f0d7}",
+        "APP_NAME": "Dolphin SuperNova (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "36122087",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "CU22H2",
+        "EXE_ID": "{bec5e7a9-051f-4afd-8353-4bc4ec326fd7}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Dolphin Computer Access Ltd.",
+          "NAME": "*",
+          "PRODUCT_NAME": "SuperNova"
+        },
+        "NAME": "Lunpls.EXE",
+        "VENDOR": "Dolphin Computer Access Ltd."
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2021_09_29_04_01_AMD64",
+          "last": "2021_11_11_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_09_29_04_01_ARM64",
+          "last": "2021_11_11_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2021_09_29_04_01_X86",
+          "last": "2021_11_11_04_02_X86"
+        }
+      },
+      "source": "2021_11_11_04_02_X86"
+    },
+    "{f8496208-32bd-416d-82df-02dfdfa96218}": {
+      "entry": {
+        "APP_ID": "{c960cf5a-b5a9-471f-a770-6aaa79e3f0d7}",
+        "APP_NAME": "Dolphin SuperNova (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "36122087",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "CO21H2",
+        "DEST_OS_LT": "CU22H2",
+        "EXE_ID": "{f8496208-32bd-416d-82df-02dfdfa96218}",
+        "MATCHING_FILE": {
+          "COMPANY_NAME": "Dolphin Computer Access Ltd.",
+          "NAME": "*",
+          "PRODUCT_NAME": "SuperNova"
+        },
+        "NAME": "Lunar.EXE",
+        "VENDOR": "Dolphin Computer Access Ltd."
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2021_09_29_04_01_AMD64",
+          "last": "2021_11_11_04_02_AMD64"
+        },
+        "ARM64": {
+          "first": "2021_09_29_04_01_ARM64",
+          "last": "2021_11_11_04_02_ARM64"
+        },
+        "X86": {
+          "first": "2021_09_29_04_01_X86",
+          "last": "2021_11_11_04_02_X86"
+        }
+      },
+      "source": "2021_11_11_04_02_X86"
+    }
+  },
+  "id": "36122087"
+}

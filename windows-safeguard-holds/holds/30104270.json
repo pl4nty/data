@@ -1,0 +1,51 @@
+{
+  "blocks": {
+    "{e151cf9e-e0de-46d6-89c8-fea707f1cbd8}": {
+      "entry": {
+        "APP_ID": "{04e4c295-d1dc-402f-89e3-72e104a1391b}",
+        "APP_NAME": "Huawei One-Key Recovery (Wu Offer Block)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "30104270",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "19H1",
+        "DEST_OS_LT": "21H2",
+        "EXE_ID": "{e151cf9e-e0de-46d6-89c8-fea707f1cbd8}",
+        "MATCHING_REG": {
+          "NAME": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+          "REG_VALUE_DATA_SZ": "*HUAWEI*",
+          "REG_VALUE_NAME": "SystemManufacturer",
+          "REG_VALUE_TYPE": 1
+        },
+        "NAME": "",
+        "SOURCE_OS_LTE": 2814750970609663,
+        "VENDOR": "HUAWEI"
+      },
+      "kind": "OS_UPGRADE",
+      "seen": {
+        "AMD64": {
+          "first": "2020_11_05_05_01_AMD64",
+          "last": "2021_01_28_04_03_AMD64"
+        },
+        "ARM64": {
+          "first": "2020_11_05_05_02_ARM64",
+          "last": "2021_01_28_04_03_ARM64"
+        },
+        "X86": {
+          "first": "2020_11_05_05_01_X86",
+          "last": "2021_01_28_04_03_X86"
+        }
+      },
+      "source": "2021_01_28_04_03_X86"
+    }
+  },
+  "id": "30104270"
+}

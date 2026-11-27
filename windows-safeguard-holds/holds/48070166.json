@@ -1,0 +1,49 @@
+{
+  "blocks": {
+    "{0aebdc40-7d31-4dc3-b9df-0771ee8b06bb}": {
+      "entry": {
+        "APP_ID": "{c4a50bf0-b1f8-4f0c-a43a-cc82001239b0}",
+        "APP_NAME": "StartAllBack (Feature_WASDKInFileExplorer) (23H2)",
+        "DATA": [
+          {
+            "DATA_STRING": "GatedBlock",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData"
+          },
+          {
+            "DATA_STRING": "48070166",
+            "DATA_VALUETYPE": 1,
+            "NAME": "AppraiserData_GatedBlockId"
+          }
+        ],
+        "DEST_OS_GTE": "NI23H2",
+        "DEST_OS_LT": "GE24H2",
+        "EXE_ID": "{0aebdc40-7d31-4dc3-b9df-0771ee8b06bb}",
+        "MATCHING_FILE": {
+          "FILE_DESCRIPTION": "StartAllBack",
+          "NAME": "*"
+        },
+        "NAME": "StartAllBackCfg.exe",
+        "RUNTIME_PLATFORM": 183,
+        "VENDOR": "www.startisback.com"
+      },
+      "kind": "MATCHING_INFO_BLOCK",
+      "seen": {
+        "AMD64": {
+          "first": "2023_12_07_04_01_AMD64",
+          "last": "2024_06_13_04_04_AMD64"
+        },
+        "ARM64": {
+          "first": "2023_12_07_04_01_ARM64",
+          "last": "2024_06_13_04_04_ARM64"
+        },
+        "X86": {
+          "first": "2023_12_07_04_01_X86",
+          "last": "2024_06_13_04_02_X86"
+        }
+      },
+      "source": "2024_06_13_04_04_ARM64"
+    }
+  },
+  "id": "48070166"
+}
