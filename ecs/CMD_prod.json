@@ -11,10 +11,14 @@
         "AddSuperFastLaneToWorkItemV2": true,
         "Aspen": {
             "CheckEnablement": {
+                "DnsSpoofingCheck": true,
                 "EndpointReachability": true,
                 "GraphicsCheck": true,
                 "InternetConnnectivity": true,
-                "OsVersion": true
+                "NetworkVpnCheck": true,
+                "OsVersion": true,
+                "ShortpathCompatibilityCheck": true,
+                "TlsInspectionCheck": true
             },
             "EnableHealthChecks": false,
             "LockOnDisconnect": true,

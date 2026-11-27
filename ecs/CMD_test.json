@@ -671,6 +671,8 @@
         "EnableDirectStreamForGpuProvisionByDefault": false,
         "EnableDirectStreamGpuDriverCseInstallation": false,
         "EnableDirectStreamTurnOffSetting": true,
+        "EnableDirectStream_Test": true,
+        "EnableDirectStream_Test2": true,
         "EnableDisasterRecoveryReport": true,
         "EnableDisasterRecoveryReportRealDataUX": true,
         "EnableDisconnectedAtColumnForReserve": true,
