@@ -3433,15 +3433,6 @@
             }
         }
     },
-    "TeamsInfoProtectionPhishDetectService": {
-        "rootSettingConfig": {
-            "settings": {
-                "phishingDetect": {
-                    "llmJudgeSamplingPermyriad": 100
-                }
-            }
-        }
-    },
     "TeamsInfoProtectionTippReceiverService": {
         "rootSettingConfig": {
             "settings": {
